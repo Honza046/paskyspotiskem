@@ -1,0 +1,482 @@
+{
+  "meta": {
+    "site_name": "Pásky s potiskem",
+    "logo_alt": "Pásky s potiskem",
+    "home_title": "Domů | Pásky s potiskem",
+    "home_description": "Pásky s potiskem | Výroba a prodej balicích lepicích pásek s potiskem od ALFA IN a.s.",
+    "gallery_title": "Galerie | Pásky s potiskem",
+    "gallery_description": "Galerie ukázek balicích pásek s potiskem od ALFA IN a.s. – jednobarevný tisk, rototisk, bezpečnostní a logistické pásky.",
+    "sortiment_title": "Sortiment | Pásky s potiskem",
+    "sortiment_description": "Sortiment lepicích pásek ALFA IN – BOPP pásky HOT MELT a ACRYL, speciální řady a ECO produkty s potiskem.",
+    "langNames": {
+      "cs": "Čeština",
+      "en": "English",
+      "de": "Deutsch"
+    }
+  },
+  "nav": {
+    "tagline": "ALFA IN - výroba, poradenství, prodej a servis",
+    "menu": "Menu",
+    "main_nav_label": "Hlavní navigace",
+    "home": "Úvod",
+    "gallery": "Galerie",
+    "sortiment": "Sortiment",
+    "references": "Reference",
+    "contacts": "Kontakty",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "youtube": "YouTube"
+  },
+  "footer": {
+    "address_heading": "Najdete nás na adrese",
+    "company": "ALFA IN a.s.",
+    "street": "č.p. 74",
+    "city": "675 21 Nová Ves u Třebíče",
+    "country": "Česká republika",
+    "show_on_map": "Ukaž na mapě",
+    "email_heading": "Napište na e-mail",
+    "phone_heading": "Volejte na číslo",
+    "phone_hours": "od 7:00 do 15:30 h",
+    "more_contacts": "Další kontakty",
+    "social_heading": "Sociální sítě",
+    "copyright": "Všechna práva vyhrazena",
+    "made_by": "vytvořil",
+    "made_by_link": "Jan Sedlář"
+  },
+  "home": {
+    "hero": {
+      "badge": "ISO 9001 · Přímo od výrobce",
+      "slides": [
+        {
+          "title": "LEPICÍ PÁSKY SE SPODNÍM TISKEM",
+          "subtitle": "Vysoce spolehlivé BOPP pásky s tiskem chráněným pod folií i ekologické varianty pro udržitelné balení.",
+          "cta_primary": "Prohlédnout nabídku",
+          "cta_secondary": "Nezávazná kalkulace"
+        },
+        {
+          "title": "PROČ SI VYBRAT NÁS?",
+          "subtitle": "Více než 30 let zkušeností a spolupráce s předními e-shopy i průmyslovými podniky. Spolehlivost, rychlé dodání a individuální přístup ke každé zakázce.",
+          "cta_primary": "Prohlédnout nabídku",
+          "cta_secondary": "Nezávazná kalkulace"
+        },
+        {
+          "title": "OTESTUJTE NAŠI KVALITU VE SVÉM PROVOZU",
+          "subtitle": "Nechte si zaslat bezplatný vzorek nebo nezávaznou kalkulaci na míru. Přesvědčte se o odolnosti a pevnosti lepidla ještě před objednávkou.",
+          "cta_primary": "Vyžádat vzorky",
+          "cta_secondary": "Nezávazná kalkulace"
+        }
+      ],
+      "cta_offer": "Prohlédnout nabídku",
+      "cta_quote": "Nezávazná kalkulace",
+      "cta_samples": "Vyžádat vzorky"
+    },
+    "about": {
+      "label": "O nás",
+      "title": "Tradiční český výrobce lepicích pásek s potiskem",
+      "lead": "Již více než 25 let pomáháme firmám bezpečně balit jejich zásilky a budovat silnou značku přímo na balicích materiálech. Jsme specialisté na zakázkový potisk lepicích pásek.",
+      "body1": "Naše moderní výrobní zázemí nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (Hot Melt, Akryl) a rychlém doručení po celé České republice.",
+      "body2": "Díky certifikovaným procesům ISO 9001 a využívání ekologických, udržovatelných materiálů jsme stabilním partnerem pro více než 100 aktivních odběratelů.",
+      "image_alt": "Výroba lepicích pásek ALFA IN"
+    },
+    "references": {
+      "label": "Reference",
+      "title": "Spokojení zákazníci napříč obory",
+      "subtitle": "Firmy, které na našich páskách s potiskem spoléhají každý den — od e-commerce po výrobu a zdravotnictví.",
+      "stat_customers": "aktivních odběratelů",
+      "stat_experience": "zkušeností s potiskem",
+      "stat_iso": "certifikovaná výroba",
+      "carousel_label": "Firmy, které s námi spolupracují"
+    },
+    "lepidla": {
+      "label": "Průvodce výběrem",
+      "title": "Jaké lepidlo zvolit?",
+      "hot_melt_badge": "Chlad & rychlost",
+      "hot_melt_title": "HOT MELT",
+      "hot_melt_subtitle": "Syntetický kaučuk",
+      "hot_melt_text": "Ideální volba do chladnějšího prostředí a nevytápěných skladů. Vyznačuje se extrémně rychlým a silným přilnutím k podkladu ihned po zalepení. Nelze snadno odlepit z fixační stretch fólie.",
+      "acryl_badge": "Ticho & UV odolnost",
+      "acryl_title": "ACRYL",
+      "acryl_subtitle": "S nehlučnou úpravou",
+      "acryl_text": "Zajišťuje tiché a komfortní odvíjení, které oceníte ve velkých balicích halách. Je vysoce odolné proti UV záření a stárnutí, což z něj dělá perfektní volbu pro dlouhodobé skladování zboží."
+    },
+    "sustainability": {
+      "label": "Ekologie & udržitelnost",
+      "title": "Udržitelné balení pro Váš e-shop i výrobu",
+      "subtitle": "Ekologická stopa obalových materiálů je pro nás prioritou. Naše lepicí pásky vyvíjíme s ohledem na snadnou recyklovatelnost a minimální dopad na životní prostředí.",
+      "card1_title": "100% Recyklovatelná fólie",
+      "card1_text": "Naše pásky jsou vyrobeny z moderní BOPP fólie, která je plně recyklovatelná. Na rozdíl od starších PVC materiálů při jejím zpracování nevznikají žádné toxické látky a je šetrná k přírodě.",
+      "card2_title": "Ekologická lepidla bez rozpouštědel",
+      "card2_text": "Používáme výhradně lepidla šetrná k životnímu prostředí. Akrylová lepidla jsou vyrobena na vodní bázi a Hot Melt technologie funguje bez použití jakýchkoliv chemických rozpouštědel či syntetických příměsí.",
+      "card3_title": "Bezproblémová recyklace kartonů",
+      "card3_text": "Díky pokročilé technologii dokážou moderní recyklační linky naše pásky z papírových krabic snadno oddělit. Vaši zákazníci tak mohou použité krabice bez obav vyhodit přímo do modrého kontejneru."
+    },
+    "benefits": {
+      "security_badge": "Bezpečnost",
+      "security_title": "Lepicí páska TAMPER EVIDENT – porušení zřejmé!",
+      "security_text": "Tato bezpečnostní lepicí páska se „tváří“ jako neutrální, nicméně při odlepení na krabici zanechává upozornění, které prakticky nelze odstranit. Páska je vhodná pro všechny typy kartonů i stretch folií, lze dodat v různých barvách či i s potiskem.",
+      "glue_badge": "Extrémní lepivost",
+      "glue_title": "EXTRA GLUE+ (ACRYL) a TACK+ (HOT MELT)",
+      "glue_text": "Pásky se zvýšenou vrstvou lepidla (33 % resp. 20 %) i s možností pevnější folie oproti standardu, určené i pro velmi obtížné aplikace jako např. velmi těžké balíky, nekvalitní kartony nebo prašné prostředí. Na kartonu drží velmi pevně — zjevný důkaz vykradení!"
+    },
+    "form": {
+      "label": "Poptávka",
+      "title": "Mám zájem o kalkulaci pásek s potiskem",
+      "open_3d": "Otevřít interaktivní 3D návrhář",
+      "open_3d_hint": "Vyzkoušejte materiál, barvu a potisk v prostorném 3D náhledu",
+      "step_label": "Krok {current} ze {total}",
+      "steps": [
+        "Specifikace produktu",
+        "Rozměry a množství",
+        "Kontaktní údaje"
+      ],
+      "step1_title": "Specifikace produktu",
+      "step1_hint": "Vyberte typ pásky, podkladovou barvu a počet barev k tisku.",
+      "tape_type": "Typ pásky (materiál)",
+      "base_color": "Podkladová barva",
+      "print_colors": "Počet barev k tisku",
+      "hot_melt_hint": "Syntetický kaučuk",
+      "acryl_hint": "Nehlučná úprava",
+      "colors": {
+        "bila": "bílá",
+        "hneda": "hnědá",
+        "transparentni": "transp.",
+        "jina": "jiná"
+      },
+      "continue": "Pokračovat",
+      "back": "Zpět",
+      "step2_title": "Rozměry a množství",
+      "step2_hint": "Upřesněte rozměry pásky a plánované objednávky.",
+      "design_recap_label": "Váš 3D návrh:",
+      "design_recap_empty": "bez textu",
+      "width_label": "Šíře pásky v mm",
+      "length_label": "Délka pásky v metrech",
+      "quantity_label": "Poptávané množství v kusech",
+      "quantity_hint": "Zadejte číslo od 1 do 999.",
+      "quantity_tip": "Tip: Od 360 ks získáváte dopravu zdarma a velkoobchodní ceny.",
+      "quantity_success": "🔥 Skvělá volba! Aktivovali jste velkoobchodní slevu 15 % a dopravu zdarma.",
+      "order_period_label": "Předpokládaná perioda objednávky",
+      "order_periods": {
+        "monthly": "Každý měsíc",
+        "quarterly": "Každé 3 měsíce",
+        "biannual": "Jednou za 6 měsíců",
+        "annual": "Jednou za 1 rok"
+      },
+      "step3_title": "Firemní a kontaktní údaje",
+      "step3_hint": "Doplňte údaje pro zpracování nezávazné kalkulace.",
+      "company_label": "Název společnosti",
+      "ico_label": "Vložte IČ Vaší společnosti",
+      "name_label": "Jméno a příjmení (Kontaktní osoba)",
+      "email_label": "E-mail",
+      "phone_label": "Telefon",
+      "note_label": "Poznámka",
+      "gdpr": "Odesláním souhlasíte se zpracováním osobních údajů",
+      "gdpr_link": "zpracováním osobních údajů",
+      "submit": "Odeslat poptávku",
+      "modal_title": "Interaktivní 3D návrhář",
+      "modal_subtitle": "Materiál, barva a potisk v reálném čase",
+      "modal_bg_label": "Pozadí studia",
+      "modal_bg_white": "Bílé pozadí",
+      "modal_bg_light": "Světle šedé pozadí",
+      "modal_bg_dark": "Tmavě šedé pozadí",
+      "modal_box_toggle": "Zobrazit na krabici",
+      "modal_rotate_hint": "Tažením myší otočíte model o 360°",
+      "accordion_material": "Materiál a podklad",
+      "accordion_dimensions": "Rozměry pásky",
+      "accordion_print": "Potisk a text",
+      "width_short": "Šíře pásky",
+      "length_short": "Délka / Návin"
+    },
+    "contacts": {
+      "label": "Tým",
+      "title": "KONTAKTY NA ODDĚLENÍ",
+      "karel_name": "Ing. Karel Petrák",
+      "karel_role": "Zastoupení pro prodej balicích pásek",
+      "vojtech_name": "Vojtěch Petrák",
+      "vojtech_role": "Asistent prodeje",
+      "more_contacts": "Další kontakty"
+    },
+    "sample": {
+      "label": "Testovací vzorek",
+      "title": "Nejste si jistí výběrem? Pošleme Vám vzorek zdarma.",
+      "text": "Chápeme, že kvalita lepicí pásky je pro hladký chod Vaší logistiky klíčová. Vyplňte naši poptávku a do poznámky napište, že máte zájem o testovací vzorek.",
+      "cta": "Vyplnit poptávku"
+    }
+  },
+  "gallery": {
+    "ui": {
+      "label": "Galerie",
+      "title": "Ukázky naší práce",
+      "subtitle": "Reálné reference z výroby i ukázky technologií tisku — filtrujte podle typu potisku, lepidla nebo odvětví.",
+      "cta_custom": "Chci vlastní potisk"
+    },
+    "filters": {
+      "filter": "Filtr",
+      "clear_all": "Vymazat vše",
+      "groups": {
+        "category": {
+          "label": "Typ tisku",
+          "options": {
+            "jednobarevny": "Jednobarevný tisk",
+            "vicebarevny": "Vícebarevný / Rototisk",
+            "bezpecnostni": "Bezpečnostní pásky",
+            "logisticke": "Logistické / Výstražné"
+          }
+        },
+        "adhesive": {
+          "label": "Lepidlo",
+          "options": {
+            "hot-melt": "Hot Melt",
+            "acryl": "Acryl"
+          }
+        },
+        "industry": {
+          "label": "Odvětví",
+          "options": {
+            "e-commerce": "E-commerce",
+            "vyroba": "Výroba",
+            "logistika": "Logistika",
+            "potraviny": "Potraviny",
+            "bezpecnost": "Bezpečnost"
+          }
+        },
+        "type": {
+          "label": "Typ ukázky",
+          "options": {
+            "reference": "Reálné reference",
+            "demo": "Možnosti tisku"
+          }
+        }
+      }
+    },
+    "sections": {
+      "featured": "Vybrané ukázky",
+      "references_title": "Reálné reference",
+      "references_subtitle": "Fotografie skutečných potisků z naší výroby. Po novém focení doplníme další reference.",
+      "demos_title": "Možnosti tisku a technologie",
+      "demos_subtitle": "Ukázky bezpečnostních, logistických a speciálních řešení — ilustrace technologií, které nabízíme.",
+      "empty": "Žádná ukázka neodpovídá vybraným filtrům. Zkuste ubrat některý z filtrů."
+    },
+    "cards": {
+      "view_detail": "Zobrazit detail",
+      "view_detail_aria": "Zobrazit detail: {title}",
+      "featured_badge": "Vybraná ukázka",
+      "technology_badge": "Technologie",
+      "technology_demo": "Ukázka technologie"
+    },
+    "lightbox": {
+      "close": "Zavřít",
+      "prev": "Předchozí",
+      "next": "Další",
+      "cta": "Chci podobný potisk",
+      "meta_industry": "Odvětví",
+      "meta_width": "Šířka",
+      "meta_colors": "Barvy",
+      "meta_adhesive": "Lepidlo"
+    },
+    "cta": {
+      "title": "Máte vlastní logo?",
+      "text": "Připravíme vám nezávaznou kalkulaci a vzorek potisku. Stačí nám poslat logo a požadované parametry pásky.",
+      "button": "Nezávazně poptat"
+    }
+  },
+  "sortiment": {
+    "ui": {
+      "label": "Sortiment",
+      "title": "Objevte naše lepicí pásky",
+      "subtitle": "Vyberte typ produktu podle materiálu a určení. U každé kategorie najdete detailní přehled dostupných variant.",
+      "filter": "Filtr",
+      "clear_all": "Vymazat vše",
+      "results_title": "Nalezené produkty podle filtrů",
+      "empty": "Žádná páska neodpovídá vybrané kombinaci filtrů. Zkuste ubrat některý z filtrů.",
+      "show_products": "Zobrazit produkty",
+      "cta_quote": "Nezávazná kalkulace"
+    },
+    "filters": {
+      "properties": {
+        "label": "Vlastnosti",
+        "ekologicke": "Ekologické",
+        "tiche": "Tiché (Low Noise)",
+        "odstranitelne": "Odstranitelné bez stop",
+        "vyztuzene": "Vyztužené"
+      },
+      "resistance": {
+        "label": "Odolnost",
+        "mrazuvzdorne": "Mrazuvzdorné (do −70 °C)",
+        "vysoke-teploty": "Vysoké teploty",
+        "chemicka-odolnost": "Chemická odolnost"
+      },
+      "usage": {
+        "label": "Použití",
+        "rucni": "Ruční aplikace",
+        "stroje": "Stroje a baličky"
+      }
+    },
+    "categories": {
+      "papirove-pasky": {
+        "title": "Papírové pásky",
+        "description": "Ekologické řešení pro bezpečné balení s vysokou lepivostí. Ideální pro plně recyklovatelné kartonové obaly a čistý korporátní design.",
+        "intro": "Papírové lepicí pásky spojují spolehlivé lepení s maximální ekologickou šetrností. Díky papírovému nosiči jsou plně recyklovatelné společně s kartonem a představují elegantní, čistě vypadající řešení pro firmy, které dbají na udržitelnost i vizuální dojem zásilek.",
+        "properties": {
+          "Plná recyklovatelnost": "Páska i karton putují do jednoho kontejneru – bez nutnosti oddělovat materiály.",
+          "Vysoká lepivost": "Spolehlivé přilnutí i na recyklovaný karton a členité povrchy.",
+          "Čistý design": "Matný papírový povrch působí prémiově a lze jej snadno potisknout logem."
+        },
+        "applications": [
+          "E-shopy s důrazem na udržitelné balení",
+          "Uzavírání kartonových krabic a obalů",
+          "Firemní branding přímo na zásilce",
+          "Ruční i poloautomatické balení"
+        ]
+      },
+      "bopp-pasky": {
+        "title": "BOPP pásky",
+        "description": "Nejrozšířenější průmyslové balicí pásky z biaxiálně orientovaného polypropylenu. Vynikají skvělou pevností v tahu a dlouhou životností.",
+        "intro": "BOPP pásky jsou standardem pro každodenní balení ve výrobě, logistice i e-commerce. Fólie z biaxiálně orientovaného polypropylenu nabízí vynikající poměr ceny a výkonu, dostupnost v akrylovém i hot melt provedení a širokou škálu šířek a barev.",
+        "properties": {
+          "Vysoká pevnost v tahu": "Odolná fólie, která se při balení nepřetrhne ani pod napětím.",
+          "ACRYL i HOT MELT": "Volba lepidla podle prostředí – tiché odvíjení, nebo rychlé přilnutí za chladu.",
+          "Dlouhá životnost": "Odolnost proti UV a stárnutí pro dlouhodobé skladování."
+        },
+        "applications": [
+          "Standardní uzavírání kartonů",
+          "Automatické balicí stroje",
+          "Expedice a skladová logistika",
+          "Potisk firemním logem a informacemi"
+        ]
+      },
+      "bopet-pasky": {
+        "title": "BOPET pásky",
+        "description": "Prémiové polyesterové pásky s extrémní odolností proti roztržení, chemikáliím a teplotním výkyvům. Navržené pro nejnáročnější průmyslové aplikace.",
+        "intro": "BOPET pásky na bázi polyesterové fólie jsou určeny tam, kde běžné pásky nestačí. Zvládají vysoké teploty, agresivní chemické prostředí i mechanické namáhání a udrží si své vlastnosti i v extrémních podmínkách.",
+        "properties": {
+          "Teplotní odolnost": "Stabilní výkon při vysokých i nízkých teplotách.",
+          "Chemická odolnost": "Odolává rozpouštědlům, olejům a agresivnímu prostředí.",
+          "Odolnost proti roztržení": "Pevná polyesterová fólie s minimální tažností."
+        },
+        "applications": [
+          "Náročné průmyslové provozy",
+          "Maskování při práškovém lakování",
+          "Fixace v prostředí s vysokými teplotami",
+          "Elektrotechnika a specializovaná výroba"
+        ]
+      },
+      "textilni-pasky": {
+        "title": "Textilní lepicí pásky",
+        "description": "Vysoce pevné a univerzální pásky zpevněné textilní mřížkou. Perfektně drží na drsném povrchu, snadno se trhají rukou a jsou ideální pro rychlé opravy i svazování.",
+        "intro": "Textilní (duct) pásky jsou nepostradatelným univerzálem. Textilní výztuž jim dodává vysokou pevnost a zároveň umožňuje snadné odtržení rukou bez nůžek. Skvěle drží i na hrubých a nerovných površích.",
+        "properties": {
+          "Textilní výztuž": "Vysoká pevnost a odolnost proti protržení.",
+          "Trhání rukou": "Rychlá práce bez nutnosti nářadí.",
+          "Přilnavost na drsný povrch": "Drží na kovu, dřevě, betonu i plastu."
+        },
+        "applications": [
+          "Rychlé opravy a provizorní spoje",
+          "Svazování a fixace předmětů",
+          "Zpevnění balíků a obalů",
+          "Údržba, montáže a řemeslo"
+        ]
+      },
+      "vyztuzene-pasky": {
+        "title": "Vyztužené pásky",
+        "description": "Pásky zpevněné podélnými nebo křížovými skelnými vlákny. Nabízejí maximální pevnost při fixaci těžkých nákladů, palet a nadrozměrných balíků.",
+        "intro": "Vyztužené (filament) pásky obsahují skelná vlákna vedená podélně nebo křížem, která zásadně zvyšují pevnost v tahu. Jsou určené pro fixaci těžkých a nadrozměrných zásilek, kde je potřeba absolutní jistota.",
+        "properties": {
+          "Skelná vlákna": "Podélné nebo křížové vyztužení pro maximální pevnost.",
+          "Nosnost": "Spolehlivá fixace těžkých břemen a palet.",
+          "Odolnost proti přetržení": "Vydrží i vysoké tahové zatížení."
+        },
+        "applications": [
+          "Fixace těžkých a nadrozměrných balíků",
+          "Zajištění zboží na paletách",
+          "Svazování trubek, profilů a tyčí",
+          "Náročná přeprava a export"
+        ]
+      },
+      "mopp-pasky": {
+        "title": "MOPP pásky",
+        "description": "Monoaxiálně orientované pásky s extrémní pevností v jednom směru a nulovou elasticitou. Speciálně určené pro fixaci elektrospotřebičů, komponentů nebo stahování palet.",
+        "intro": "MOPP pásky mají monoaxiálně orientovanou fólii s extrémní pevností v podélném směru a prakticky nulovou tažností. Nahrazují vyztužené pásky tam, kde je potřeba pevná fixace bez skelných vláken.",
+        "properties": {
+          "Extrémní pevnost": "Vysoká pevnost v tahu v jednom směru.",
+          "Nulová elasticita": "Fixace se nepovolí ani při zatížení.",
+          "Bez skelných vláken": "Čistá fixace bez uvolňujících se vláken."
+        },
+        "applications": [
+          "Fixace dveří elektrospotřebičů",
+          "Zajištění komponentů během přepravy",
+          "Stahování a fixace palet",
+          "Svazování bez skelných vláken"
+        ]
+      },
+      "odstranitelne-pasky": {
+        "title": "Odstranitelné pásky",
+        "description": "Pásky se speciálním složením lepidla, které nezanechává žádné stopy po odlepení. Ideální pro dočasné značení, ochranu citlivých povrchů nebo logistické procesy.",
+        "intro": "Odstranitelné pásky používají speciální lepidlo, které pevně drží, ale po odlepení nezanechává žádné zbytky ani poškození povrchu. Jsou ideální pro dočasné aplikace a ochranu citlivých materiálů.",
+        "properties": {
+          "Beze stop": "Po odlepení nezůstává lepidlo ani reziduum.",
+          "Šetrné k povrchu": "Nepoškodí lak, sklo ani citlivé materiály.",
+          "Spolehlivá drživost": "Drží po celou dobu potřebné aplikace."
+        },
+        "applications": [
+          "Dočasné značení a etikety",
+          "Ochrana citlivých povrchů",
+          "Logistické a výrobní procesy",
+          "Fixace, která se musí opět odstranit"
+        ]
+      },
+      "malirske-pasky": {
+        "title": "Malířské pásky",
+        "description": "Krepové papírové pásky navržené pro přesné zakrývání při malování a lakování. Chrání hrany před protečením barvy a po dokončení práce se čistě odlepí.",
+        "intro": "Malířské krepové pásky zajišťují ostré a čisté hrany při malování a lakování. Papírový krepový nosič se dobře přizpůsobí povrchu, snadno se trhá a po dokončení práce se odlepí bez zbytků lepidla.",
+        "properties": {
+          "Ostré hrany": "Zabraňuje protečení barvy pod pásku.",
+          "Čisté odlepení": "Po práci nezanechává lepidlo ani stopy.",
+          "Snadná aplikace": "Krep se přizpůsobí tvaru a snadno se trhá."
+        },
+        "applications": [
+          "Malování a lakování interiérů",
+          "Zakrývání hran a přechodů",
+          "Lakovny a autolakovny",
+          "Kutilské a řemeslné práce"
+        ]
+      },
+      "udrzitelne-pasky": {
+        "title": "Udržitelné pásky",
+        "description": "Inovativní obalová řešení vyrobená z recyklovaných materiálů s ohledem na minimální ekologickou stopu a podporu cirkulární ekonomiky.",
+        "intro": "Udržitelná řada pásek je vyrobena z recyklovaných materiálů a navržena tak, aby minimalizovala dopad na životní prostředí. Pomáhá firmám plnit ESG cíle a budovat obraz zodpovědné značky bez kompromisů ve výkonu.",
+        "properties": {
+          "Recyklovaný obsah": "Materiály s vysokým podílem recyklátu.",
+          "Nižší uhlíková stopa": "Šetrnější výroba a cirkulární přístup.",
+          "Bez kompromisů": "Ekologie při zachování spolehlivého lepení."
+        },
+        "applications": [
+          "Firmy s ESG a udržitelnými cíli",
+          "Zelené balení pro e-shopy",
+          "Cirkulární obalové procesy",
+          "Budování zodpovědné značky"
+        ]
+      }
+    }
+  },
+  "js": {
+    "gallery": {
+      "remove_filter": "Odebrat filtr",
+      "count_all": "{count} ukázek",
+      "count_filtered": "Zobrazeno {visible} z {total}",
+      "color_one": "1 barva",
+      "color_few": "{n} barvy",
+      "color_many": "{n} barev"
+    },
+    "sortiment": {
+      "remove_filter": "Odebrat filtr",
+      "product_one": "1 produkt",
+      "product_few": "{n} produkty",
+      "product_many": "{n} produktů",
+      "detail": "Detail",
+      "inquire": "Poptat"
+    },
+    "form": {
+      "step_label": "Krok {current} ze {total}"
+    }
+  }
+}

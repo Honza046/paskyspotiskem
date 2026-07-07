@@ -1,0 +1,482 @@
+{
+  "meta": {
+    "site_name": "Printed Packaging Tapes",
+    "logo_alt": "Printed packaging tapes",
+    "home_title": "Home | Printed Packaging Tapes",
+    "home_description": "Printed packaging tapes | Manufacturing and supply of custom printed adhesive tapes by ALFA IN a.s.",
+    "gallery_title": "Gallery | Printed Packaging Tapes",
+    "gallery_description": "Gallery of printed packaging tape samples by ALFA IN a.s. — single-colour print, rotogravure, security and logistics tapes.",
+    "sortiment_title": "Product Range | Printed Packaging Tapes",
+    "sortiment_description": "ALFA IN adhesive tape range — BOPP tapes HOT MELT and ACRYL, special lines and ECO products with custom printing.",
+    "langNames": {
+      "cs": "Čeština",
+      "en": "English",
+      "de": "Deutsch"
+    }
+  },
+  "nav": {
+    "tagline": "ALFA IN — manufacturing, consulting, sales and service",
+    "menu": "Menu",
+    "main_nav_label": "Main navigation",
+    "home": "Home",
+    "gallery": "Gallery",
+    "sortiment": "Product range",
+    "references": "References",
+    "contacts": "Contact",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "youtube": "YouTube"
+  },
+  "footer": {
+    "address_heading": "Visit us at",
+    "company": "ALFA IN a.s.",
+    "street": "No. 74",
+    "city": "675 21 Nová Ves u Třebíče",
+    "country": "Czech Republic",
+    "show_on_map": "Show on map",
+    "email_heading": "Email us",
+    "phone_heading": "Call us",
+    "phone_hours": "7:00 a.m. – 3:30 p.m.",
+    "more_contacts": "More contacts",
+    "social_heading": "Social media",
+    "copyright": "All rights reserved",
+    "made_by": "created by",
+    "made_by_link": "Jan Sedlář"
+  },
+  "home": {
+    "hero": {
+      "badge": "ISO 9001 · Direct from the manufacturer",
+      "slides": [
+        {
+          "title": "ADHESIVE TAPES WITH REVERSE PRINTING",
+          "subtitle": "Highly reliable BOPP tapes with print protected under a film layer, plus eco-friendly options for sustainable packaging.",
+          "cta_primary": "Browse our range",
+          "cta_secondary": "Request a quote"
+        },
+        {
+          "title": "WHY CHOOSE US?",
+          "subtitle": "Over 30 years of experience and partnerships with leading e-commerce and industrial companies. Reliability, fast delivery and a personal approach to every order.",
+          "cta_primary": "Browse our range",
+          "cta_secondary": "Request a quote"
+        },
+        {
+          "title": "TEST OUR QUALITY IN YOUR OPERATION",
+          "subtitle": "Request a free sample or a no-obligation custom quote. See the strength and adhesive performance before you order.",
+          "cta_primary": "Request samples",
+          "cta_secondary": "Request a quote"
+        }
+      ],
+      "cta_offer": "Browse our range",
+      "cta_quote": "Request a quote",
+      "cta_samples": "Request samples"
+    },
+    "about": {
+      "label": "About us",
+      "title": "A traditional Czech manufacturer of printed adhesive tapes",
+      "lead": "For more than 25 years we have helped companies pack their shipments securely and build a strong brand directly on packaging materials. We specialise in custom printing of adhesive tapes.",
+      "body1": "Our modern production facility allows us to respond flexibly to the needs of both small e-shops and large industrial enterprises. We pride ourselves on precise printing (up to 8 colours), premium adhesive quality (Hot Melt, Acrylic) and fast delivery throughout the Czech Republic.",
+      "body2": "Thanks to ISO 9001 certified processes and the use of ecological, sustainable materials, we are a reliable partner for more than 100 active customers.",
+      "image_alt": "ALFA IN adhesive tape production"
+    },
+    "references": {
+      "label": "References",
+      "title": "Satisfied customers across industries",
+      "subtitle": "Companies that rely on our printed tapes every day — from e-commerce to manufacturing and healthcare.",
+      "stat_customers": "active customers",
+      "stat_experience": "years of printing experience",
+      "stat_iso": "certified production",
+      "carousel_label": "Companies we work with"
+    },
+    "lepidla": {
+      "label": "Selection guide",
+      "title": "Which adhesive should you choose?",
+      "hot_melt_badge": "Cold & speed",
+      "hot_melt_title": "HOT MELT",
+      "hot_melt_subtitle": "Synthetic rubber",
+      "hot_melt_text": "The ideal choice for cooler environments and unheated warehouses. It bonds to the substrate extremely quickly and strongly immediately after application. It cannot be easily removed from stretch wrap.",
+      "acryl_badge": "Quiet & UV resistant",
+      "acryl_title": "ACRYL",
+      "acryl_subtitle": "With low-noise unwind",
+      "acryl_text": "Ensures quiet, comfortable unwinding appreciated in large packing halls. Highly resistant to UV radiation and ageing, making it the perfect choice for long-term goods storage."
+    },
+    "sustainability": {
+      "label": "Ecology & sustainability",
+      "title": "Sustainable packaging for your e-shop and production",
+      "subtitle": "The environmental footprint of packaging materials is our priority. We develop our adhesive tapes with easy recyclability and minimal environmental impact in mind.",
+      "card1_title": "100% recyclable film",
+      "card1_text": "Our tapes are made from modern BOPP film that is fully recyclable. Unlike older PVC materials, no toxic substances are released during processing and it is gentle on the environment.",
+      "card2_title": "Eco-friendly solvent-free adhesives",
+      "card2_text": "We use exclusively environmentally friendly adhesives. Acrylic adhesives are water-based and Hot Melt technology works without any chemical solvents or synthetic additives.",
+      "card3_title": "Easy cardboard recycling",
+      "card3_text": "Thanks to advanced technology, modern recycling lines can easily separate our tapes from cardboard boxes. Your customers can dispose of used boxes directly in the paper recycling bin without concern."
+    },
+    "benefits": {
+      "security_badge": "Security",
+      "security_title": "TAMPER EVIDENT tape — tampering is obvious!",
+      "security_text": "This security tape looks neutral, but when removed it leaves a warning on the box that is virtually impossible to eliminate. Suitable for all types of cardboard and stretch film, available in various colours and with custom printing.",
+      "glue_badge": "Extreme adhesion",
+      "glue_title": "EXTRA GLUE+ (ACRYL) and TACK+ (HOT MELT)",
+      "glue_text": "Tapes with an increased adhesive layer (33% and 20% respectively) and the option of a stronger film than standard, designed for very demanding applications such as heavy parcels, poor-quality cardboard or dusty environments. They bond extremely firmly to cardboard — clear evidence of tampering!"
+    },
+    "form": {
+      "label": "Inquiry",
+      "title": "I would like a quote for printed tapes",
+      "open_3d": "Open interactive 3D designer",
+      "open_3d_hint": "Try material, colour and print in a spacious 3D preview",
+      "step_label": "Step {current} of {total}",
+      "steps": [
+        "Product specification",
+        "Dimensions and quantity",
+        "Contact details"
+      ],
+      "step1_title": "Product specification",
+      "step1_hint": "Select tape type, base colour and number of print colours.",
+      "tape_type": "Tape type (material)",
+      "base_color": "Base colour",
+      "print_colors": "Number of print colours",
+      "hot_melt_hint": "Synthetic rubber",
+      "acryl_hint": "Low-noise unwind",
+      "colors": {
+        "bila": "white",
+        "hneda": "brown",
+        "transparentni": "transp.",
+        "jina": "other"
+      },
+      "continue": "Continue",
+      "back": "Back",
+      "step2_title": "Dimensions and quantity",
+      "step2_hint": "Specify tape dimensions and planned order volumes.",
+      "design_recap_label": "Your 3D design:",
+      "design_recap_empty": "no text",
+      "width_label": "Tape width in mm",
+      "length_label": "Tape length in metres",
+      "quantity_label": "Requested quantity in rolls",
+      "quantity_hint": "Enter a number from 1 to 999.",
+      "quantity_tip": "Tip: From 360 rolls you get free shipping and wholesale prices.",
+      "quantity_success": "🔥 Great choice! You have activated a 15% wholesale discount and free shipping.",
+      "order_period_label": "Expected order frequency",
+      "order_periods": {
+        "monthly": "Every month",
+        "quarterly": "Every 3 months",
+        "biannual": "Every 6 months",
+        "annual": "Once a year"
+      },
+      "step3_title": "Company and contact details",
+      "step3_hint": "Provide details for processing your non-binding quote.",
+      "company_label": "Company name",
+      "ico_label": "Enter your company registration number",
+      "name_label": "Full name (contact person)",
+      "email_label": "Email",
+      "phone_label": "Phone",
+      "note_label": "Note",
+      "gdpr": "By submitting you agree to the processing of personal data",
+      "gdpr_link": "processing of personal data",
+      "submit": "Send inquiry",
+      "modal_title": "Interactive 3D designer",
+      "modal_subtitle": "Material, colour and print in real time",
+      "modal_bg_label": "Studio background",
+      "modal_bg_white": "White background",
+      "modal_bg_light": "Light grey background",
+      "modal_bg_dark": "Dark grey background",
+      "modal_box_toggle": "Show on a box",
+      "modal_rotate_hint": "Drag with the mouse to rotate the model 360°",
+      "accordion_material": "Material and base",
+      "accordion_dimensions": "Tape dimensions",
+      "accordion_print": "Print and text",
+      "width_short": "Tape width",
+      "length_short": "Length / Roll"
+    },
+    "contacts": {
+      "label": "Team",
+      "title": "DEPARTMENT CONTACTS",
+      "karel_name": "Ing. Karel Petrák",
+      "karel_role": "Sales representative for packaging tapes",
+      "vojtech_name": "Vojtěch Petrák",
+      "vojtech_role": "Sales assistant",
+      "more_contacts": "More contacts"
+    },
+    "sample": {
+      "label": "Test sample",
+      "title": "Not sure which tape to choose? We will send you a free sample.",
+      "text": "We understand that tape quality is key to smooth logistics. Fill in our inquiry form and note in the message that you would like a test sample.",
+      "cta": "Fill in inquiry"
+    }
+  },
+  "gallery": {
+    "ui": {
+      "label": "Gallery",
+      "title": "Examples of our work",
+      "subtitle": "Real production references and print technology showcases — filter by print type, adhesive or industry.",
+      "cta_custom": "I want custom printing"
+    },
+    "filters": {
+      "filter": "Filter",
+      "clear_all": "Clear all",
+      "groups": {
+        "category": {
+          "label": "Print type",
+          "options": {
+            "jednobarevny": "Single-colour print",
+            "vicebarevny": "Multi-colour / Rotogravure",
+            "bezpecnostni": "Security tapes",
+            "logisticke": "Logistics / Warning tapes"
+          }
+        },
+        "adhesive": {
+          "label": "Adhesive",
+          "options": {
+            "hot-melt": "Hot Melt",
+            "acryl": "Acrylic"
+          }
+        },
+        "industry": {
+          "label": "Industry",
+          "options": {
+            "e-commerce": "E-commerce",
+            "vyroba": "Manufacturing",
+            "logistika": "Logistics",
+            "potraviny": "Food industry",
+            "bezpecnost": "Security"
+          }
+        },
+        "type": {
+          "label": "Sample type",
+          "options": {
+            "reference": "Real references",
+            "demo": "Print options"
+          }
+        }
+      }
+    },
+    "sections": {
+      "featured": "Featured samples",
+      "references_title": "Real references",
+      "references_subtitle": "Photographs of actual prints from our production. We will add more references after the next photo shoot.",
+      "demos_title": "Print options and technologies",
+      "demos_subtitle": "Examples of security, logistics and special solutions — illustrations of the technologies we offer.",
+      "empty": "No sample matches the selected filters. Try removing one of the filters."
+    },
+    "cards": {
+      "view_detail": "View details",
+      "view_detail_aria": "View details: {title}",
+      "featured_badge": "Featured sample",
+      "technology_badge": "Technology",
+      "technology_demo": "Technology showcase"
+    },
+    "lightbox": {
+      "close": "Close",
+      "prev": "Previous",
+      "next": "Next",
+      "cta": "I want similar printing",
+      "meta_industry": "Industry",
+      "meta_width": "Width",
+      "meta_colors": "Colours",
+      "meta_adhesive": "Adhesive"
+    },
+    "cta": {
+      "title": "Have your own logo?",
+      "text": "We will prepare a non-binding quote and a print sample. Just send us your logo and the required tape parameters.",
+      "button": "Request a quote"
+    }
+  },
+  "sortiment": {
+    "ui": {
+      "label": "Product range",
+      "title": "Discover our adhesive tapes",
+      "subtitle": "Choose a product type by material and application. Each category includes a detailed overview of available variants.",
+      "filter": "Filter",
+      "clear_all": "Clear all",
+      "results_title": "Products matching your filters",
+      "empty": "No tape matches the selected filter combination. Try removing one of the filters.",
+      "show_products": "View products",
+      "cta_quote": "Request a quote"
+    },
+    "filters": {
+      "properties": {
+        "label": "Properties",
+        "ekologicke": "Eco-friendly",
+        "tiche": "Low noise",
+        "odstranitelne": "Residue-free removable",
+        "vyztuzene": "Reinforced"
+      },
+      "resistance": {
+        "label": "Resistance",
+        "mrazuvzdorne": "Cold-resistant (down to −70 °C)",
+        "vysoke-teploty": "High temperatures",
+        "chemicka-odolnost": "Chemical resistance"
+      },
+      "usage": {
+        "label": "Application",
+        "rucni": "Manual application",
+        "stroje": "Machines and packers"
+      }
+    },
+    "categories": {
+      "papirove-pasky": {
+        "title": "Paper tapes",
+        "description": "An eco-friendly solution for secure packaging with high adhesion. Ideal for fully recyclable cardboard boxes and clean corporate branding.",
+        "intro": "Paper adhesive tapes combine reliable bonding with maximum environmental responsibility. Thanks to the paper carrier, they are fully recyclable together with cardboard and offer an elegant, clean-looking solution for companies that care about sustainability and the visual impact of their shipments.",
+        "properties": {
+          "Fully recyclable": "Tape and cardboard go into the same bin — no need to separate materials.",
+          "High adhesion": "Reliable bonding even on recycled cardboard and uneven surfaces.",
+          "Clean design": "The matte paper surface looks premium and can be easily printed with your logo."
+        },
+        "applications": [
+          "E-shops focused on sustainable packaging",
+          "Sealing cardboard boxes and parcels",
+          "Corporate branding directly on shipments",
+          "Manual and semi-automatic packing"
+        ]
+      },
+      "bopp-pasky": {
+        "title": "BOPP tapes",
+        "description": "The most widely used industrial packaging tapes made from biaxially oriented polypropylene. Outstanding tensile strength and long service life.",
+        "intro": "BOPP tapes are the standard for everyday packing in manufacturing, logistics and e-commerce. Biaxially oriented polypropylene film delivers an excellent price-performance ratio, availability in acrylic and hot melt versions, and a wide range of widths and colours.",
+        "properties": {
+          "High tensile strength": "Durable film that will not tear under tension during packing.",
+          "ACRYL and HOT MELT": "Choose the adhesive to suit your environment — quiet unwinding or fast bonding in cold conditions.",
+          "Long service life": "Resistance to UV and ageing for long-term storage."
+        },
+        "applications": [
+          "Standard carton sealing",
+          "Automatic packing machines",
+          "Dispatch and warehouse logistics",
+          "Printing with company logos and information"
+        ]
+      },
+      "bopet-pasky": {
+        "title": "BOPET tapes",
+        "description": "Premium polyester tapes with extreme resistance to tearing, chemicals and temperature fluctuations. Designed for the most demanding industrial applications.",
+        "intro": "BOPET tapes based on polyester film are made for applications where standard tapes are not enough. They withstand high temperatures, aggressive chemicals and mechanical stress while maintaining their properties in extreme conditions.",
+        "properties": {
+          "Temperature resistance": "Stable performance at high and low temperatures.",
+          "Chemical resistance": "Resistant to solvents, oils and harsh environments.",
+          "Tear resistance": "Strong polyester film with minimal elongation."
+        },
+        "applications": [
+          "Demanding industrial operations",
+          "Masking in powder coating",
+          "Fixation in high-temperature environments",
+          "Electrical engineering and specialised manufacturing"
+        ]
+      },
+      "textilni-pasky": {
+        "title": "Cloth adhesive tapes",
+        "description": "Highly durable, versatile tapes reinforced with a textile mesh. They grip rough surfaces perfectly, tear easily by hand and are ideal for quick repairs and bundling.",
+        "intro": "Cloth (duct) tapes are an indispensable all-rounder. Textile reinforcement gives them high strength while allowing easy hand tearing without scissors. They adhere reliably even to coarse and uneven surfaces.",
+        "properties": {
+          "Textile reinforcement": "High strength and resistance to puncture.",
+          "Hand tearable": "Fast work without tools.",
+          "Adhesion on rough surfaces": "Bonds to metal, wood, concrete and plastic."
+        },
+        "applications": [
+          "Quick repairs and temporary joints",
+          "Bundling and securing items",
+          "Reinforcing parcels and packaging",
+          "Maintenance, assembly and crafts"
+        ]
+      },
+      "vyztuzene-pasky": {
+        "title": "Reinforced tapes",
+        "description": "Tapes reinforced with longitudinal or cross-laid glass fibres. Maximum strength for securing heavy loads, pallets and oversized parcels.",
+        "intro": "Reinforced (filament) tapes contain glass fibres laid longitudinally or crosswise, dramatically increasing tensile strength. They are designed for securing heavy and oversized shipments where absolute reliability is required.",
+        "properties": {
+          "Glass fibres": "Longitudinal or cross reinforcement for maximum strength.",
+          "Load capacity": "Reliable securing of heavy loads and pallets.",
+          "Break resistance": "Withstands high tensile loads."
+        },
+        "applications": [
+          "Securing heavy and oversized parcels",
+          "Stabilising goods on pallets",
+          "Bundling pipes, profiles and rods",
+          "Demanding transport and export"
+        ]
+      },
+      "mopp-pasky": {
+        "title": "MOPP tapes",
+        "description": "Monoaxially oriented tapes with extreme strength in one direction and zero elasticity. Specially designed for securing appliances, components or pallet strapping.",
+        "intro": "MOPP tapes feature monoaxially oriented film with extreme longitudinal strength and virtually zero elongation. They replace reinforced tapes where firm securing without glass fibres is needed.",
+        "properties": {
+          "Extreme strength": "High tensile strength in one direction.",
+          "Zero elasticity": "The securing will not loosen under load.",
+          "No glass fibres": "Clean securing without loose fibres."
+        },
+        "applications": [
+          "Securing appliance doors",
+          "Stabilising components during transport",
+          "Pallet strapping and securing",
+          "Bundling without glass fibres"
+        ]
+      },
+      "odstranitelne-pasky": {
+        "title": "Removable tapes",
+        "description": "Tapes with a special adhesive formulation that leaves no residue after removal. Ideal for temporary marking, protecting sensitive surfaces or logistics processes.",
+        "intro": "Removable tapes use a special adhesive that holds firmly yet leaves no residue or surface damage when peeled off. They are ideal for temporary applications and protecting sensitive materials.",
+        "properties": {
+          "Residue-free": "No adhesive or residue remains after removal.",
+          "Surface-friendly": "Will not damage paint, glass or sensitive materials.",
+          "Reliable hold": "Holds for the entire required application period."
+        },
+        "applications": [
+          "Temporary marking and labels",
+          "Protecting sensitive surfaces",
+          "Logistics and manufacturing processes",
+          "Fixation that must be removed again"
+        ]
+      },
+      "malirske-pasky": {
+        "title": "Masking tapes",
+        "description": "Crepe paper tapes designed for precise masking during painting and coating. They protect edges from paint bleed and peel off cleanly after the job is done.",
+        "intro": "Masking crepe tapes ensure sharp, clean edges when painting and coating. The crepe paper carrier conforms to the surface, tears easily and removes without adhesive residue after completion.",
+        "properties": {
+          "Sharp edges": "Prevents paint from bleeding under the tape.",
+          "Clean removal": "Leaves no adhesive or marks after use.",
+          "Easy application": "Crepe conforms to shape and tears easily."
+        },
+        "applications": [
+          "Interior painting and coating",
+          "Masking edges and transitions",
+          "Paint shops and body shops",
+          "DIY and craft work"
+        ]
+      },
+      "udrzitelne-pasky": {
+        "title": "Sustainable tapes",
+        "description": "Innovative packaging solutions made from recycled materials with minimal environmental impact and support for the circular economy.",
+        "intro": "Our sustainable tape range is made from recycled materials and designed to minimise environmental impact. It helps companies meet ESG goals and build a responsible brand image without compromising performance.",
+        "properties": {
+          "Recycled content": "Materials with a high recycled content.",
+          "Lower carbon footprint": "More sustainable production and circular approach.",
+          "No compromises": "Eco-friendly without sacrificing reliable bonding."
+        },
+        "applications": [
+          "Companies with ESG and sustainability goals",
+          "Green packaging for e-shops",
+          "Circular packaging processes",
+          "Building a responsible brand"
+        ]
+      }
+    }
+  },
+  "js": {
+    "gallery": {
+      "remove_filter": "Remove filter",
+      "count_all": "{count} samples",
+      "count_filtered": "Showing {visible} of {total}",
+      "color_one": "1 colour",
+      "color_few": "{n} colours",
+      "color_many": "{n} colours"
+    },
+    "sortiment": {
+      "remove_filter": "Remove filter",
+      "product_one": "1 product",
+      "product_few": "{n} products",
+      "product_many": "{n} products",
+      "detail": "Details",
+      "inquire": "Inquire"
+    },
+    "form": {
+      "step_label": "Step {current} of {total}"
+    }
+  }
+}

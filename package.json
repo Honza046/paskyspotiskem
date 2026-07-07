@@ -1,0 +1,7 @@
+{
+  "name": "paskyonline",
+  "private": true,
+  "scripts": {
+    "build": "python3 scripts/build_vercel.py"
+  }
+}

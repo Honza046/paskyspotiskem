@@ -1,0 +1,1456 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Generate data/i18n/cs.json, en.json and de.json from site source strings."""
+
+from __future__ import annotations
+
+import ast
+import json
+from pathlib import Path
+from typing import Any
+
+ROOT = Path(__file__).resolve().parent.parent
+OUT_DIR = ROOT / "data" / "i18n"
+GEN_PRODUCTS = ROOT / "scripts" / "gen_products.py"
+
+
+def load_cats() -> list[dict[str, Any]]:
+    """Load CATS from gen_products.py without executing that script."""
+    source = GEN_PRODUCTS.read_text(encoding="utf-8")
+    tree = ast.parse(source)
+    for node in tree.body:
+        if not isinstance(node, ast.Assign):
+            continue
+        for target in node.targets:
+            if isinstance(target, ast.Name) and target.id == "CATS":
+                value = ast.literal_eval(node.value)
+                if isinstance(value, list):
+                    return value
+    raise RuntimeError("CATS not found in gen_products.py")
+
+
+CATS = load_cats()
+
+
+# ---------------------------------------------------------------------------
+# Sortiment category translations (EN / DE) keyed by slug from gen_products.CATS
+# ---------------------------------------------------------------------------
+CATEGORY_EN: dict[str, dict[str, Any]] = {
+    "papirove-pasky": {
+        "title": "Paper tapes",
+        "description": "An eco-friendly solution for secure packaging with high adhesion. Ideal for fully recyclable cardboard boxes and clean corporate branding.",
+        "intro": "Paper adhesive tapes combine reliable bonding with maximum environmental responsibility. Thanks to the paper carrier, they are fully recyclable together with cardboard and offer an elegant, clean-looking solution for companies that care about sustainability and the visual impact of their shipments.",
+        "properties": {
+            "Plná recyklovatelnost": "Fully recyclable",
+            "Vysoká lepivost": "High adhesion",
+            "Čistý design": "Clean design",
+        },
+        "property_texts": {
+            "Plná recyklovatelnost": "Tape and cardboard go into the same bin — no need to separate materials.",
+            "Vysoká lepivost": "Reliable bonding even on recycled cardboard and uneven surfaces.",
+            "Čistý design": "The matte paper surface looks premium and can be easily printed with your logo.",
+        },
+        "applications": [
+            "E-shops focused on sustainable packaging",
+            "Sealing cardboard boxes and parcels",
+            "Corporate branding directly on shipments",
+            "Manual and semi-automatic packing",
+        ],
+    },
+    "bopp-pasky": {
+        "title": "BOPP tapes",
+        "description": "The most widely used industrial packaging tapes made from biaxially oriented polypropylene. Outstanding tensile strength and long service life.",
+        "intro": "BOPP tapes are the standard for everyday packing in manufacturing, logistics and e-commerce. Biaxially oriented polypropylene film delivers an excellent price-performance ratio, availability in acrylic and hot melt versions, and a wide range of widths and colours.",
+        "properties": {
+            "Vysoká pevnost v tahu": "High tensile strength",
+            "ACRYL i HOT MELT": "ACRYL and HOT MELT",
+            "Dlouhá životnost": "Long service life",
+        },
+        "property_texts": {
+            "Vysoká pevnost v tahu": "Durable film that will not tear under tension during packing.",
+            "ACRYL i HOT MELT": "Choose the adhesive to suit your environment — quiet unwinding or fast bonding in cold conditions.",
+            "Dlouhá životnost": "Resistance to UV and ageing for long-term storage.",
+        },
+        "applications": [
+            "Standard carton sealing",
+            "Automatic packing machines",
+            "Dispatch and warehouse logistics",
+            "Printing with company logos and information",
+        ],
+    },
+    "bopet-pasky": {
+        "title": "BOPET tapes",
+        "description": "Premium polyester tapes with extreme resistance to tearing, chemicals and temperature fluctuations. Designed for the most demanding industrial applications.",
+        "intro": "BOPET tapes based on polyester film are made for applications where standard tapes are not enough. They withstand high temperatures, aggressive chemicals and mechanical stress while maintaining their properties in extreme conditions.",
+        "properties": {
+            "Teplotní odolnost": "Temperature resistance",
+            "Chemická odolnost": "Chemical resistance",
+            "Odolnost proti roztržení": "Tear resistance",
+        },
+        "property_texts": {
+            "Teplotní odolnost": "Stable performance at high and low temperatures.",
+            "Chemická odolnost": "Resistant to solvents, oils and harsh environments.",
+            "Odolnost proti roztržení": "Strong polyester film with minimal elongation.",
+        },
+        "applications": [
+            "Demanding industrial operations",
+            "Masking in powder coating",
+            "Fixation in high-temperature environments",
+            "Electrical engineering and specialised manufacturing",
+        ],
+    },
+    "textilni-pasky": {
+        "title": "Cloth adhesive tapes",
+        "description": "Highly durable, versatile tapes reinforced with a textile mesh. They grip rough surfaces perfectly, tear easily by hand and are ideal for quick repairs and bundling.",
+        "intro": "Cloth (duct) tapes are an indispensable all-rounder. Textile reinforcement gives them high strength while allowing easy hand tearing without scissors. They adhere reliably even to coarse and uneven surfaces.",
+        "properties": {
+            "Textilní výztuž": "Textile reinforcement",
+            "Trhání rukou": "Hand tearable",
+            "Přilnavost na drsný povrch": "Adhesion on rough surfaces",
+        },
+        "property_texts": {
+            "Textilní výztuž": "High strength and resistance to puncture.",
+            "Trhání rukou": "Fast work without tools.",
+            "Přilnavost na drsný povrch": "Bonds to metal, wood, concrete and plastic.",
+        },
+        "applications": [
+            "Quick repairs and temporary joints",
+            "Bundling and securing items",
+            "Reinforcing parcels and packaging",
+            "Maintenance, assembly and crafts",
+        ],
+    },
+    "vyztuzene-pasky": {
+        "title": "Reinforced tapes",
+        "description": "Tapes reinforced with longitudinal or cross-laid glass fibres. Maximum strength for securing heavy loads, pallets and oversized parcels.",
+        "intro": "Reinforced (filament) tapes contain glass fibres laid longitudinally or crosswise, dramatically increasing tensile strength. They are designed for securing heavy and oversized shipments where absolute reliability is required.",
+        "properties": {
+            "Skelná vlákna": "Glass fibres",
+            "Nosnost": "Load capacity",
+            "Odolnost proti přetržení": "Break resistance",
+        },
+        "property_texts": {
+            "Skelná vlákna": "Longitudinal or cross reinforcement for maximum strength.",
+            "Nosnost": "Reliable securing of heavy loads and pallets.",
+            "Odolnost proti přetržení": "Withstands high tensile loads.",
+        },
+        "applications": [
+            "Securing heavy and oversized parcels",
+            "Stabilising goods on pallets",
+            "Bundling pipes, profiles and rods",
+            "Demanding transport and export",
+        ],
+    },
+    "mopp-pasky": {
+        "title": "MOPP tapes",
+        "description": "Monoaxially oriented tapes with extreme strength in one direction and zero elasticity. Specially designed for securing appliances, components or pallet strapping.",
+        "intro": "MOPP tapes feature monoaxially oriented film with extreme longitudinal strength and virtually zero elongation. They replace reinforced tapes where firm securing without glass fibres is needed.",
+        "properties": {
+            "Extrémní pevnost": "Extreme strength",
+            "Nulová elasticita": "Zero elasticity",
+            "Bez skelných vláken": "No glass fibres",
+        },
+        "property_texts": {
+            "Extrémní pevnost": "High tensile strength in one direction.",
+            "Nulová elasticita": "The securing will not loosen under load.",
+            "Bez skelných vláken": "Clean securing without loose fibres.",
+        },
+        "applications": [
+            "Securing appliance doors",
+            "Stabilising components during transport",
+            "Pallet strapping and securing",
+            "Bundling without glass fibres",
+        ],
+    },
+    "odstranitelne-pasky": {
+        "title": "Removable tapes",
+        "description": "Tapes with a special adhesive formulation that leaves no residue after removal. Ideal for temporary marking, protecting sensitive surfaces or logistics processes.",
+        "intro": "Removable tapes use a special adhesive that holds firmly yet leaves no residue or surface damage when peeled off. They are ideal for temporary applications and protecting sensitive materials.",
+        "properties": {
+            "Beze stop": "Residue-free",
+            "Šetrné k povrchu": "Surface-friendly",
+            "Spolehlivá drživost": "Reliable hold",
+        },
+        "property_texts": {
+            "Beze stop": "No adhesive or residue remains after removal.",
+            "Šetrné k povrchu": "Will not damage paint, glass or sensitive materials.",
+            "Spolehlivá drživost": "Holds for the entire required application period.",
+        },
+        "applications": [
+            "Temporary marking and labels",
+            "Protecting sensitive surfaces",
+            "Logistics and manufacturing processes",
+            "Fixation that must be removed again",
+        ],
+    },
+    "malirske-pasky": {
+        "title": "Masking tapes",
+        "description": "Crepe paper tapes designed for precise masking during painting and coating. They protect edges from paint bleed and peel off cleanly after the job is done.",
+        "intro": "Masking crepe tapes ensure sharp, clean edges when painting and coating. The crepe paper carrier conforms to the surface, tears easily and removes without adhesive residue after completion.",
+        "properties": {
+            "Ostré hrany": "Sharp edges",
+            "Čisté odlepení": "Clean removal",
+            "Snadná aplikace": "Easy application",
+        },
+        "property_texts": {
+            "Ostré hrany": "Prevents paint from bleeding under the tape.",
+            "Čisté odlepení": "Leaves no adhesive or marks after use.",
+            "Snadná aplikace": "Crepe conforms to shape and tears easily.",
+        },
+        "applications": [
+            "Interior painting and coating",
+            "Masking edges and transitions",
+            "Paint shops and body shops",
+            "DIY and craft work",
+        ],
+    },
+    "udrzitelne-pasky": {
+        "title": "Sustainable tapes",
+        "description": "Innovative packaging solutions made from recycled materials with minimal environmental impact and support for the circular economy.",
+        "intro": "Our sustainable tape range is made from recycled materials and designed to minimise environmental impact. It helps companies meet ESG goals and build a responsible brand image without compromising performance.",
+        "properties": {
+            "Recyklovaný obsah": "Recycled content",
+            "Nižší uhlíková stopa": "Lower carbon footprint",
+            "Bez kompromisů": "No compromises",
+        },
+        "property_texts": {
+            "Recyklovaný obsah": "Materials with a high recycled content.",
+            "Nižší uhlíková stopa": "More sustainable production and circular approach.",
+            "Bez kompromisů": "Eco-friendly without sacrificing reliable bonding.",
+        },
+        "applications": [
+            "Companies with ESG and sustainability goals",
+            "Green packaging for e-shops",
+            "Circular packaging processes",
+            "Building a responsible brand",
+        ],
+    },
+}
+
+CATEGORY_DE: dict[str, dict[str, Any]] = {
+    "papirove-pasky": {
+        "title": "Papierklebebänder",
+        "description": "Eine umweltfreundliche Lösung für sicheres Verpacken mit hoher Klebkraft. Ideal für vollständig recycelbare Kartonverpackungen und ein sauberes Corporate Design.",
+        "intro": "Papierklebebänder verbinden zuverlässige Haftung mit maximaler Umweltverträglichkeit. Dank des Papierträgers sind sie gemeinsam mit dem Karton vollständig recycelbar und bieten eine elegante, saubere Lösung für Unternehmen, die Wert auf Nachhaltigkeit und den visuellen Eindruck ihrer Sendungen legen.",
+        "properties": {
+            "Plná recyklovatelnost": "Vollständig recycelbar",
+            "Vysoká lepivost": "Hohe Klebkraft",
+            "Čistý design": "Sauberes Design",
+        },
+        "property_texts": {
+            "Plná recyklovatelnost": "Band und Karton landen in derselben Tonne – kein Trennen der Materialien nötig.",
+            "Vysoká lepivost": "Zuverlässige Haftung auch auf Recyclingkarton und unebenen Flächen.",
+            "Čistý design": "Die matte Papieroberfläche wirkt hochwertig und lässt sich leicht mit Ihrem Logo bedrucken.",
+        },
+        "applications": [
+            "E-Shops mit Fokus auf nachhaltige Verpackung",
+            "Verschließen von Kartons und Verpackungen",
+            "Corporate Branding direkt auf der Sendung",
+            "Manuelles und halbautomatisches Verpacken",
+        ],
+    },
+    "bopp-pasky": {
+        "title": "BOPP-Klebebänder",
+        "description": "Die am weitesten verbreiteten Industrie-Verpackungsbänder aus biaxial orientiertem Polypropylen. Hervorragende Zugfestigkeit und lange Lebensdauer.",
+        "intro": "BOPP-Klebebänder sind der Standard für den täglichen Einsatz in Produktion, Logistik und E-Commerce. Die Folie aus biaxial orientiertem Polypropylen bietet ein exzellentes Preis-Leistungs-Verhältnis, Verfügbarkeit in Acryl- und Hot-Melt-Ausführung sowie eine breite Palette an Breiten und Farben.",
+        "properties": {
+            "Vysoká pevnost v tahu": "Hohe Zugfestigkeit",
+            "ACRYL i HOT MELT": "ACRYL und HOT MELT",
+            "Dlouhá životnost": "Lange Lebensdauer",
+        },
+        "property_texts": {
+            "Vysoká pevnost v tahu": "Robuste Folie, die beim Verpacken auch unter Spannung nicht reißt.",
+            "ACRYL i HOT MELT": "Klebstoffwahl je nach Umgebung – leises Abrollen oder schnelle Haftung bei Kälte.",
+            "Dlouhá životnost": "Beständigkeit gegen UV und Alterung für langfristige Lagerung.",
+        },
+        "applications": [
+            "Standard-Kartonverschluss",
+            "Automatische Verpackungsmaschinen",
+            "Versand und Lagerlogistik",
+            "Bedruckung mit Firmenlogo und Informationen",
+        ],
+    },
+    "bopet-pasky": {
+        "title": "BOPET-Klebebänder",
+        "description": "Premium-Polyesterbänder mit extremer Beständigkeit gegen Reißen, Chemikalien und Temperaturschwankungen. Für die anspruchsvollsten Industrieanwendungen.",
+        "intro": "BOPET-Klebebänder auf Polyesterfolienbasis sind dort im Einsatz, wo Standardbänder nicht ausreichen. Sie widerstehen hohen Temperaturen, aggressiven Chemikalien und mechanischer Belastung und behalten ihre Eigenschaften auch unter extremen Bedingungen.",
+        "properties": {
+            "Teplotní odolnost": "Temperaturbeständigkeit",
+            "Chemická odolnost": "Chemische Beständigkeit",
+            "Odolnost proti roztržení": "Reißfestigkeit",
+        },
+        "property_texts": {
+            "Teplotní odolnost": "Stabile Leistung bei hohen und niedrigen Temperaturen.",
+            "Chemická odolnost": "Beständig gegen Lösungsmittel, Öle und aggressive Umgebungen.",
+            "Odolnost proti roztržení": "Starke Polyesterfolie mit minimaler Dehnung.",
+        },
+        "applications": [
+            "Anspruchsvolle Industriebetriebe",
+            "Abkleben beim Pulverbeschichten",
+            "Fixierung in Hochtemperaturumgebungen",
+            "Elektrotechnik und Spezialfertigung",
+        ],
+    },
+    "textilni-pasky": {
+        "title": "Gewebe-Klebebänder",
+        "description": "Hochfeste, vielseitige Bänder mit Textilgewebe-Verstärkung. Halten perfekt auf rauen Oberflächen, lassen sich per Hand abreißen und eignen sich ideal für schnelle Reparaturen und Bündelung.",
+        "intro": "Gewebe- (Duct-) Klebebänder sind unverzichtbare Allrounder. Die textile Verstärkung verleiht hohe Festigkeit und ermöglicht gleichzeitig ein einfaches Abreißen per Hand ohne Schere. Sie haften zuverlässig auch auf groben und unebenen Flächen.",
+        "properties": {
+            "Textilní výztuž": "Textilverstärkung",
+            "Trhání rukou": "Per Hand abreißbar",
+            "Přilnavost na drsný povrch": "Haftung auf rauen Oberflächen",
+        },
+        "property_texts": {
+            "Textilní výztuž": "Hohe Festigkeit und Beständigkeit gegen Durchstich.",
+            "Trhání rukou": "Schnelle Arbeit ohne Werkzeug.",
+            "Přilnavost na drsný povrch": "Haftet auf Metall, Holz, Beton und Kunststoff.",
+        },
+        "applications": [
+            "Schnelle Reparaturen und provisorische Verbindungen",
+            "Bündeln und Fixieren von Gegenständen",
+            "Verstärkung von Paketen und Verpackungen",
+            "Wartung, Montage und Handwerk",
+        ],
+    },
+    "vyztuzene-pasky": {
+        "title": "Verstärkte Klebebänder",
+        "description": "Bänder mit längs- oder kreuzverlaufenden Glasfasern. Maximale Festigkeit zur Sicherung schwerer Lasten, Paletten und übergroßer Pakete.",
+        "intro": "Verstärkte (Filament-) Klebebänder enthalten längs oder kreuz verlaufende Glasfasern, die die Zugfestigkeit erheblich erhöhen. Sie sind für die Sicherung schwerer und übergroßer Sendungen gedacht, bei denen absolute Zuverlässigkeit gefordert ist.",
+        "properties": {
+            "Skelná vlákna": "Glasfasern",
+            "Nosnost": "Tragfähigkeit",
+            "Odolnost proti přetržení": "Bruchfestigkeit",
+        },
+        "property_texts": {
+            "Skelná vlákna": "Längs- oder Kreuzverstärkung für maximale Festigkeit.",
+            "Nosnost": "Zuverlässige Sicherung schwerer Lasten und Paletten.",
+            "Odolnost proti přetržení": "Hält auch hohen Zugbelastungen stand.",
+        },
+        "applications": [
+            "Sicherung schwerer und übergroßer Pakete",
+            "Stabilisierung von Waren auf Paletten",
+            "Bündeln von Rohren, Profilen und Stäben",
+            "Anspruchsvoller Transport und Export",
+        ],
+    },
+    "mopp-pasky": {
+        "title": "MOPP-Klebebänder",
+        "description": "Monoaxial orientierte Bänder mit extremer Festigkeit in einer Richtung und null Elastizität. Speziell für die Fixierung von Geräten, Komponenten oder Paletten.",
+        "intro": "MOPP-Klebebänder haben eine monoaxial orientierte Folie mit extremer Längsfestigkeit und praktisch null Dehnung. Sie ersetzen verstärkte Bänder dort, wo eine feste Fixierung ohne Glasfasern benötigt wird.",
+        "properties": {
+            "Extrémní pevnost": "Extreme Festigkeit",
+            "Nulová elasticita": "Keine Elastizität",
+            "Bez skelných vláken": "Ohne Glasfasern",
+        },
+        "property_texts": {
+            "Extrémní pevnost": "Hohe Zugfestigkeit in einer Richtung.",
+            "Nulová elasticita": "Die Fixierung lockert sich auch unter Last nicht.",
+            "Bez skelných vláken": "Saubere Fixierung ohne sich lösende Fasern.",
+        },
+        "applications": [
+            "Fixierung von Gerätetüren",
+            "Sicherung von Komponenten beim Transport",
+            "Paletten-Umreifung und -Fixierung",
+            "Bündeln ohne Glasfasern",
+        ],
+    },
+    "odstranitelne-pasky": {
+        "title": "Abziehbare Klebebänder",
+        "description": "Bänder mit spezieller Klebstoffzusammensetzung, die nach dem Abziehen keine Rückstände hinterlassen. Ideal für temporäre Kennzeichnung, Schutz empfindlicher Oberflächen oder Logistikprozesse.",
+        "intro": "Abziehbare Klebebänder verwenden einen Spezialklebstoff, der fest haftet, aber beim Abziehen keine Rückstände oder Oberflächenschäden hinterlässt. Sie eignen sich ideal für temporäre Anwendungen und den Schutz empfindlicher Materialien.",
+        "properties": {
+            "Beze stop": "Rückstandsfrei",
+            "Šetrné k povrchu": "Oberflächenschonend",
+            "Spolehlivá drživost": "Zuverlässige Haftung",
+        },
+        "property_texts": {
+            "Beze stop": "Nach dem Abziehen bleibt kein Klebstoff oder Rückstand.",
+            "Šetrné k povrchu": "Beschädigt weder Lack, Glas noch empfindliche Materialien.",
+            "Spolehlivá drživost": "Hält während der gesamten benötigten Einsatzdauer.",
+        },
+        "applications": [
+            "Temporäre Kennzeichnung und Etiketten",
+            "Schutz empfindlicher Oberflächen",
+            "Logistik- und Fertigungsprozesse",
+            "Fixierung, die wieder entfernt werden muss",
+        ],
+    },
+    "malirske-pasky": {
+        "title": "Malerklebebänder",
+        "description": "Krepp-Papierbänder für präzises Abkleben beim Malen und Lackieren. Schützen Kanten vor Farbaustritt und lassen sich nach der Arbeit rückstandsfrei entfernen.",
+        "intro": "Maler-Kreppbänder sorgen für scharfe, saubere Kanten beim Malen und Lackieren. Der Krepp-Papierträger passt sich der Oberfläche an, lässt sich leicht abreißen und entfernt sich nach Abschluss der Arbeit ohne Klebstoffrückstände.",
+        "properties": {
+            "Ostré hrany": "Scharfe Kanten",
+            "Čisté odlepení": "Sauberes Abziehen",
+            "Snadná aplikace": "Einfache Anwendung",
+        },
+        "property_texts": {
+            "Ostré hrany": "Verhindert das Unterlaufen der Farbe unter das Band.",
+            "Čisté odlepení": "Hinterlässt nach der Arbeit weder Klebstoff noch Spuren.",
+            "Snadná aplikace": "Krepp passt sich der Form an und lässt sich leicht abreißen.",
+        },
+        "applications": [
+            "Innenanstrich und Lackierung",
+            "Abkleben von Kanten und Übergängen",
+            "Lackierereien und Karosseriewerkstätten",
+            "Heimwerker- und Handwerksarbeiten",
+        ],
+    },
+    "udrzitelne-pasky": {
+        "title": "Nachhaltige Klebebänder",
+        "description": "Innovative Verpackungslösungen aus recycelten Materialien mit minimalem ökologischen Fußabdruck und Unterstützung der Kreislaufwirtschaft.",
+        "intro": "Unsere nachhaltige Bandserie wird aus recycelten Materialien hergestellt und minimiert die Umweltbelastung. Sie hilft Unternehmen, ESG-Ziele zu erreichen und ein verantwortungsvolles Markenimage aufzubauen – ohne Kompromisse bei der Leistung.",
+        "properties": {
+            "Recyklovaný obsah": "Recycelter Anteil",
+            "Nižší uhlíková stopa": "Geringerer CO₂-Fußabdruck",
+            "Bez kompromisů": "Ohne Kompromisse",
+        },
+        "property_texts": {
+            "Recyklovaný obsah": "Materialien mit hohem Rezyklat-Anteil.",
+            "Nižší uhlíková stopa": "Schonendere Produktion und zirkulärer Ansatz.",
+            "Bez kompromisů": "Ökologie bei zuverlässiger Klebkraft.",
+        },
+        "applications": [
+            "Unternehmen mit ESG- und Nachhaltigkeitszielen",
+            "Grüne Verpackung für E-Shops",
+            "Zirkuläre Verpackungsprozesse",
+            "Aufbau einer verantwortungsvollen Marke",
+        ],
+    },
+}
+
+
+def build_sortiment_categories_cs() -> dict[str, Any]:
+    categories: dict[str, Any] = {}
+    for cat in CATS:
+        slug = cat["cat"]
+        categories[slug] = {
+            "title": cat["title"],
+            "description": cat["description"],
+            "intro": cat["intro"],
+            "properties": {title: text for title, text in cat["properties"]},
+            "applications": list(cat["apps"]),
+        }
+    return categories
+
+
+def translate_categories(
+    cs_categories: dict[str, Any], lang_map: dict[str, dict[str, Any]]
+) -> dict[str, Any]:
+    out: dict[str, Any] = {}
+    for slug, cs_cat in cs_categories.items():
+        tr = lang_map[slug]
+        props_cs = cs_cat["properties"]
+        props_out = {}
+        for cs_title, cs_text in props_cs.items():
+            en_title = tr["properties"].get(cs_title, cs_title)
+            en_text = tr["property_texts"].get(cs_title, cs_text)
+            props_out[en_title] = en_text
+        out[slug] = {
+            "title": tr["title"],
+            "description": tr["description"],
+            "intro": tr["intro"],
+            "properties": props_out,
+            "applications": tr["applications"],
+        }
+    return out
+
+
+def build_cs() -> dict[str, Any]:
+    cs_categories = build_sortiment_categories_cs()
+    return {
+        "meta": {
+            "site_name": "Pásky s potiskem",
+            "logo_alt": "Pásky s potiskem",
+            "home_title": "Domů | Pásky s potiskem",
+            "home_description": "Pásky s potiskem | Výroba a prodej balicích lepicích pásek s potiskem od ALFA IN a.s.",
+            "gallery_title": "Galerie | Pásky s potiskem",
+            "gallery_description": "Galerie ukázek balicích pásek s potiskem od ALFA IN a.s. – jednobarevný tisk, rototisk, bezpečnostní a logistické pásky.",
+            "sortiment_title": "Sortiment | Pásky s potiskem",
+            "sortiment_description": "Sortiment lepicích pásek ALFA IN – BOPP pásky HOT MELT a ACRYL, speciální řady a ECO produkty s potiskem.",
+        },
+        "nav": {
+            "tagline": "ALFA IN - výroba, poradenství, prodej a servis",
+            "menu": "Menu",
+            "main_nav_label": "Hlavní navigace",
+            "home": "Úvod",
+            "gallery": "Galerie",
+            "sortiment": "Sortiment",
+            "references": "Reference",
+            "contacts": "Kontakty",
+            "facebook": "Facebook",
+            "instagram": "Instagram",
+            "youtube": "YouTube",
+        },
+        "footer": {
+            "address_heading": "Najdete nás na adrese",
+            "company": "ALFA IN a.s.",
+            "street": "č.p. 74",
+            "city": "675 21 Nová Ves u Třebíče",
+            "country": "Česká republika",
+            "show_on_map": "Ukaž na mapě",
+            "email_heading": "Napište na e-mail",
+            "phone_heading": "Volejte na číslo",
+            "phone_hours": "od 7:00 do 15:30 h",
+            "more_contacts": "Další kontakty",
+            "social_heading": "Sociální sítě",
+            "copyright": "Všechna práva vyhrazena",
+            "made_by": "vytvořil",
+            "made_by_link": "Jan Sedlář",
+        },
+        "home": {
+            "hero": {
+                "badge": "ISO 9001 · Přímo od výrobce",
+                "slides": [
+                    {
+                        "title": "BALICÍ LEPICÍ PÁSKY",
+                        "subtitle": "Potištěné nebo neutrální balicí pásky samolepicí s ISO 9001.",
+                    },
+                    {
+                        "title": "PROČ POUŽÍVAT LEPICÍ PÁSKY S POTISKEM?",
+                        "subtitle": "Lepicí pásky balí, fixují, propagují a chrání Vaše zboží.",
+                    },
+                    {
+                        "title": "PROČ LEPICÍ PÁSKY S POTISKEM OD ALFA IN?",
+                        "subtitle": "Nabízíme FLEXOTISK až 8 barev a ROTOTISK až 10 barev s možností 3D / kvalitní trvanlivý spodní tisk za nejnižší ceny přímo z výroby.",
+                    },
+                ],
+                "cta_offer": "Prohlédnout nabídku",
+                "cta_quote": "Nezávazná kalkulace",
+            },
+            "about": {
+                "label": "O nás",
+                "title": "Tradiční český výrobce lepicích pásek s potiskem",
+                "lead": "Již více než 25 let pomáháme firmám bezpečně balit jejich zásilky a budovat silnou značku přímo na balicích materiálech. Jsme specialisté na zakázkový potisk lepicích pásek.",
+                "body1": "Naše moderní výrobní zázemí nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (Hot Melt, Akryl) a rychlém doručení po celé České republice.",
+                "body2": "Díky certifikovaným procesům ISO 9001 a využívání ekologických, udržovatelných materiálů jsme stabilním partnerem pro více než 100 aktivních odběratelů.",
+                "image_alt": "Výroba lepicích pásek ALFA IN",
+            },
+            "references": {
+                "label": "Reference",
+                "title": "Spokojení zákazníci napříč obory",
+                "subtitle": "Firmy, které na našich páskách s potiskem spoléhají každý den — od e-commerce po výrobu a zdravotnictví.",
+                "stat_customers": "aktivních odběratelů",
+                "stat_experience": "zkušeností s potiskem",
+                "stat_iso": "certifikovaná výroba",
+                "carousel_label": "Firmy, které s námi spolupracují",
+            },
+            "lepidla": {
+                "label": "Průvodce výběrem",
+                "title": "Jaké lepidlo zvolit?",
+                "hot_melt_badge": "Chlad & rychlost",
+                "hot_melt_title": "HOT MELT",
+                "hot_melt_subtitle": "Syntetický kaučuk",
+                "hot_melt_text": "Ideální volba do chladnějšího prostředí a nevytápěných skladů. Vyznačuje se extrémně rychlým a silným přilnutím k podkladu ihned po zalepení. Nelze snadno odlepit z fixační stretch fólie.",
+                "acryl_badge": "Ticho & UV odolnost",
+                "acryl_title": "ACRYL",
+                "acryl_subtitle": "S nehlučnou úpravou",
+                "acryl_text": "Zajišťuje tiché a komfortní odvíjení, které oceníte ve velkých balicích halách. Je vysoce odolné proti UV záření a stárnutí, což z něj dělá perfektní volbu pro dlouhodobé skladování zboží.",
+            },
+            "sustainability": {
+                "label": "Ekologie & udržitelnost",
+                "title": "Udržitelné balení pro Váš e-shop i výrobu",
+                "subtitle": "Ekologická stopa obalových materiálů je pro nás prioritou. Naše lepicí pásky vyvíjíme s ohledem na snadnou recyklovatelnost a minimální dopad na životní prostředí.",
+                "card1_title": "100% Recyklovatelná fólie",
+                "card1_text": "Naše pásky jsou vyrobeny z moderní BOPP fólie, která je plně recyklovatelná. Na rozdíl od starších PVC materiálů při jejím zpracování nevznikají žádné toxické látky a je šetrná k přírodě.",
+                "card2_title": "Ekologická lepidla bez rozpouštědel",
+                "card2_text": "Používáme výhradně lepidla šetrná k životnímu prostředí. Akrylová lepidla jsou vyrobena na vodní bázi a Hot Melt technologie funguje bez použití jakýchkoliv chemických rozpouštědel či syntetických příměsí.",
+                "card3_title": "Bezproblémová recyklace kartonů",
+                "card3_text": "Díky pokročilé technologii dokážou moderní recyklační linky naše pásky z papírových krabic snadno oddělit. Vaši zákazníci tak mohou použité krabice bez obav vyhodit přímo do modrého kontejneru.",
+            },
+            "benefits": {
+                "security_badge": "Bezpečnost",
+                "security_title": "Lepicí páska TAMPER EVIDENT – porušení zřejmé!",
+                "security_text": "Tato bezpečnostní lepicí páska se „tváří“ jako neutrální, nicméně při odlepení na krabici zanechává upozornění, které prakticky nelze odstranit. Páska je vhodná pro všechny typy kartonů i stretch folií, lze dodat v různých barvách či i s potiskem.",
+                "glue_badge": "Extrémní lepivost",
+                "glue_title": "EXTRA GLUE+ (ACRYL) a TACK+ (HOT MELT)",
+                "glue_text": "Pásky se zvýšenou vrstvou lepidla (33 % resp. 20 %) i s možností pevnější folie oproti standardu, určené i pro velmi obtížné aplikace jako např. velmi těžké balíky, nekvalitní kartony nebo prašné prostředí. Na kartonu drží velmi pevně — zjevný důkaz vykradení!",
+            },
+            "form": {
+                "label": "Poptávka",
+                "title": "Mám zájem o kalkulaci pásek s potiskem",
+                "open_3d": "Otevřít interaktivní 3D návrhář",
+                "open_3d_hint": "Vyzkoušejte materiál, barvu a potisk v prostorném 3D náhledu",
+                "step_label": "Krok {current} ze {total}",
+                "steps": ["Specifikace produktu", "Rozměry a množství", "Kontaktní údaje"],
+                "step1_title": "Specifikace produktu",
+                "step1_hint": "Vyberte typ pásky, podkladovou barvu a počet barev k tisku.",
+                "tape_type": "Typ pásky (materiál)",
+                "base_color": "Podkladová barva",
+                "print_colors": "Počet barev k tisku",
+                "hot_melt_hint": "Syntetický kaučuk",
+                "acryl_hint": "Nehlučná úprava",
+                "colors": {
+                    "bila": "bílá",
+                    "hneda": "hnědá",
+                    "transparentni": "transp.",
+                    "jina": "jiná",
+                },
+                "continue": "Pokračovat",
+                "back": "Zpět",
+                "step2_title": "Rozměry a množství",
+                "step2_hint": "Upřesněte rozměry pásky a plánované objednávky.",
+                "design_recap_label": "Váš 3D návrh:",
+                "design_recap_empty": "bez textu",
+                "width_label": "Šíře pásky v mm",
+                "length_label": "Délka pásky v metrech",
+                "quantity_label": "Poptávané množství v kusech",
+                "quantity_hint": "Zadejte číslo od 1 do 999.",
+                "quantity_tip": "Tip: Od 360 ks získáváte dopravu zdarma a velkoobchodní ceny.",
+                "quantity_success": "🔥 Skvělá volba! Aktivovali jste velkoobchodní slevu 15 % a dopravu zdarma.",
+                "order_period_label": "Předpokládaná perioda objednávky",
+                "order_periods": {
+                    "monthly": "Každý měsíc",
+                    "quarterly": "Každé 3 měsíce",
+                    "biannual": "Jednou za 6 měsíců",
+                    "annual": "Jednou za 1 rok",
+                },
+                "step3_title": "Firemní a kontaktní údaje",
+                "step3_hint": "Doplňte údaje pro zpracování nezávazné kalkulace.",
+                "company_label": "Název společnosti",
+                "ico_label": "Vložte IČ Vaší společnosti",
+                "name_label": "Jméno a příjmení (Kontaktní osoba)",
+                "email_label": "E-mail",
+                "phone_label": "Telefon",
+                "note_label": "Poznámka",
+                "gdpr": "Odesláním souhlasíte se zpracováním osobních údajů",
+                "gdpr_link": "zpracováním osobních údajů",
+                "submit": "Odeslat poptávku",
+                "modal_title": "Interaktivní 3D návrhář",
+                "modal_subtitle": "Materiál, barva a potisk v reálném čase",
+                "modal_bg_label": "Pozadí studia",
+                "modal_bg_white": "Bílé pozadí",
+                "modal_bg_light": "Světle šedé pozadí",
+                "modal_bg_dark": "Tmavě šedé pozadí",
+                "modal_box_toggle": "Zobrazit na krabici",
+                "modal_rotate_hint": "Tažením myší otočíte model o 360°",
+                "accordion_material": "Materiál a podklad",
+                "accordion_dimensions": "Rozměry pásky",
+                "accordion_print": "Potisk a text",
+                "width_short": "Šíře pásky",
+                "length_short": "Délka / Návin",
+            },
+            "contacts": {
+                "label": "Tým",
+                "title": "KONTAKTY NA ODDĚLENÍ",
+                "karel_name": "Ing. Karel Petrák",
+                "karel_role": "Zastoupení pro prodej balicích pásek",
+                "vojtech_name": "Vojtěch Petrák",
+                "vojtech_role": "Asistent prodeje",
+                "more_contacts": "Další kontakty",
+            },
+            "sample": {
+                "label": "Testovací vzorek",
+                "title": "Nejste si jistí výběrem? Pošleme Vám vzorek zdarma.",
+                "text": "Chápeme, že kvalita lepicí pásky je pro hladký chod Vaší logistiky klíčová. Vyplňte naši poptávku a do poznámky napište, že máte zájem o testovací vzorek.",
+                "cta": "Vyplnit poptávku",
+            },
+        },
+        "gallery": {
+            "ui": {
+                "label": "Galerie",
+                "title": "Ukázky naší práce",
+                "subtitle": "Reálné reference z výroby i ukázky technologií tisku — filtrujte podle typu potisku, lepidla nebo odvětví.",
+                "cta_custom": "Chci vlastní potisk",
+            },
+            "filters": {
+                "filter": "Filtr",
+                "clear_all": "Vymazat vše",
+                "groups": {
+                    "category": {
+                        "label": "Typ tisku",
+                        "options": {
+                            "jednobarevny": "Jednobarevný tisk",
+                            "vicebarevny": "Vícebarevný / Rototisk",
+                            "bezpecnostni": "Bezpečnostní pásky",
+                            "logisticke": "Logistické / Výstražné",
+                        },
+                    },
+                    "adhesive": {
+                        "label": "Lepidlo",
+                        "options": {
+                            "hot-melt": "Hot Melt",
+                            "acryl": "Acryl",
+                        },
+                    },
+                    "industry": {
+                        "label": "Odvětví",
+                        "options": {
+                            "e-commerce": "E-commerce",
+                            "vyroba": "Výroba",
+                            "logistika": "Logistika",
+                            "potraviny": "Potraviny",
+                            "bezpecnost": "Bezpečnost",
+                        },
+                    },
+                    "type": {
+                        "label": "Typ ukázky",
+                        "options": {
+                            "reference": "Reálné reference",
+                            "demo": "Možnosti tisku",
+                        },
+                    },
+                },
+            },
+            "sections": {
+                "featured": "Vybrané ukázky",
+                "references_title": "Reálné reference",
+                "references_subtitle": "Fotografie skutečných potisků z naší výroby. Po novém focení doplníme další reference.",
+                "demos_title": "Možnosti tisku a technologie",
+                "demos_subtitle": "Ukázky bezpečnostních, logistických a speciálních řešení — ilustrace technologií, které nabízíme.",
+                "empty": "Žádná ukázka neodpovídá vybraným filtrům. Zkuste ubrat některý z filtrů.",
+            },
+            "cards": {
+                "view_detail": "Zobrazit detail",
+                "view_detail_aria": "Zobrazit detail: {title}",
+                "featured_badge": "Vybraná ukázka",
+                "technology_badge": "Technologie",
+                "technology_demo": "Ukázka technologie",
+            },
+            "lightbox": {
+                "close": "Zavřít",
+                "prev": "Předchozí",
+                "next": "Další",
+                "cta": "Chci podobný potisk",
+                "meta_industry": "Odvětví",
+                "meta_width": "Šířka",
+                "meta_colors": "Barvy",
+                "meta_adhesive": "Lepidlo",
+            },
+            "cta": {
+                "title": "Máte vlastní logo?",
+                "text": "Připravíme vám nezávaznou kalkulaci a vzorek potisku. Stačí nám poslat logo a požadované parametry pásky.",
+                "button": "Nezávazně poptat",
+            },
+        },
+        "sortiment": {
+            "ui": {
+                "label": "Sortiment",
+                "title": "Objevte naše lepicí pásky",
+                "subtitle": "Vyberte typ produktu podle materiálu a určení. U každé kategorie najdete detailní přehled dostupných variant.",
+                "filter": "Filtr",
+                "clear_all": "Vymazat vše",
+                "results_title": "Nalezené produkty podle filtrů",
+                "empty": "Žádná páska neodpovídá vybrané kombinaci filtrů. Zkuste ubrat některý z filtrů.",
+                "show_products": "Zobrazit produkty",
+                "cta_quote": "Nezávazná kalkulace",
+            },
+            "filters": {
+                "properties": {
+                    "label": "Vlastnosti",
+                    "ekologicke": "Ekologické",
+                    "tiche": "Tiché (Low Noise)",
+                    "odstranitelne": "Odstranitelné bez stop",
+                    "vyztuzene": "Vyztužené",
+                },
+                "resistance": {
+                    "label": "Odolnost",
+                    "mrazuvzdorne": "Mrazuvzdorné (do −70 °C)",
+                    "vysoke-teploty": "Vysoké teploty",
+                    "chemicka-odolnost": "Chemická odolnost",
+                },
+                "usage": {
+                    "label": "Použití",
+                    "rucni": "Ruční aplikace",
+                    "stroje": "Stroje a baličky",
+                },
+            },
+            "categories": cs_categories,
+        },
+        "js": {
+            "gallery": {
+                "remove_filter": "Odebrat filtr",
+                "count_all": "{count} ukázek",
+                "count_filtered": "Zobrazeno {visible} z {total}",
+                "color_one": "1 barva",
+                "color_few": "{n} barvy",
+                "color_many": "{n} barev",
+            },
+            "sortiment": {
+                "remove_filter": "Odebrat filtr",
+                "product_one": "1 produkt",
+                "product_few": "{n} produkty",
+                "product_many": "{n} produktů",
+                "detail": "Detail",
+                "inquire": "Poptat",
+            },
+            "form": {
+                "step_label": "Krok {current} ze {total}",
+            },
+        },
+    }
+
+
+def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "meta": {
+            "site_name": "Printed Packaging Tapes",
+            "logo_alt": "Printed packaging tapes",
+            "home_title": "Home | Printed Packaging Tapes",
+            "home_description": "Printed packaging tapes | Manufacturing and supply of custom printed adhesive tapes by ALFA IN a.s.",
+            "gallery_title": "Gallery | Printed Packaging Tapes",
+            "gallery_description": "Gallery of printed packaging tape samples by ALFA IN a.s. — single-colour print, rotogravure, security and logistics tapes.",
+            "sortiment_title": "Product Range | Printed Packaging Tapes",
+            "sortiment_description": "ALFA IN adhesive tape range — BOPP tapes HOT MELT and ACRYL, special lines and ECO products with custom printing.",
+        },
+        "nav": {
+            "tagline": "ALFA IN — manufacturing, consulting, sales and service",
+            "menu": "Menu",
+            "main_nav_label": "Main navigation",
+            "home": "Home",
+            "gallery": "Gallery",
+            "sortiment": "Product range",
+            "references": "References",
+            "contacts": "Contact",
+            "facebook": "Facebook",
+            "instagram": "Instagram",
+            "youtube": "YouTube",
+        },
+        "footer": {
+            "address_heading": "Visit us at",
+            "company": "ALFA IN a.s.",
+            "street": "No. 74",
+            "city": "675 21 Nová Ves u Třebíče",
+            "country": "Czech Republic",
+            "show_on_map": "Show on map",
+            "email_heading": "Email us",
+            "phone_heading": "Call us",
+            "phone_hours": "7:00 a.m. – 3:30 p.m.",
+            "more_contacts": "More contacts",
+            "social_heading": "Social media",
+            "copyright": "All rights reserved",
+            "made_by": "created by",
+            "made_by_link": "Jan Sedlář",
+        },
+        "home": {
+            "hero": {
+                "badge": "ISO 9001 · Direct from the manufacturer",
+                "slides": [
+                    {
+                        "title": "PACKAGING ADHESIVE TAPES",
+                        "subtitle": "Printed or plain self-adhesive packaging tapes with ISO 9001 certification.",
+                    },
+                    {
+                        "title": "WHY USE PRINTED ADHESIVE TAPES?",
+                        "subtitle": "Adhesive tapes pack, secure, promote and protect your goods.",
+                    },
+                    {
+                        "title": "WHY PRINTED TAPES FROM ALFA IN?",
+                        "subtitle": "We offer flexo printing up to 8 colours and rotogravure up to 10 colours, including 3D options — durable reverse printing at factory-direct prices.",
+                    },
+                ],
+                "cta_offer": "Browse our range",
+                "cta_quote": "Request a quote",
+            },
+            "about": {
+                "label": "About us",
+                "title": "A traditional Czech manufacturer of printed adhesive tapes",
+                "lead": "For more than 25 years we have helped companies pack their shipments securely and build a strong brand directly on packaging materials. We specialise in custom printing of adhesive tapes.",
+                "body1": "Our modern production facility allows us to respond flexibly to the needs of both small e-shops and large industrial enterprises. We pride ourselves on precise printing (up to 8 colours), premium adhesive quality (Hot Melt, Acrylic) and fast delivery throughout the Czech Republic.",
+                "body2": "Thanks to ISO 9001 certified processes and the use of ecological, sustainable materials, we are a reliable partner for more than 100 active customers.",
+                "image_alt": "ALFA IN adhesive tape production",
+            },
+            "references": {
+                "label": "References",
+                "title": "Satisfied customers across industries",
+                "subtitle": "Companies that rely on our printed tapes every day — from e-commerce to manufacturing and healthcare.",
+                "stat_customers": "active customers",
+                "stat_experience": "years of printing experience",
+                "stat_iso": "certified production",
+                "carousel_label": "Companies we work with",
+            },
+            "lepidla": {
+                "label": "Selection guide",
+                "title": "Which adhesive should you choose?",
+                "hot_melt_badge": "Cold & speed",
+                "hot_melt_title": "HOT MELT",
+                "hot_melt_subtitle": "Synthetic rubber",
+                "hot_melt_text": "The ideal choice for cooler environments and unheated warehouses. It bonds to the substrate extremely quickly and strongly immediately after application. It cannot be easily removed from stretch wrap.",
+                "acryl_badge": "Quiet & UV resistant",
+                "acryl_title": "ACRYL",
+                "acryl_subtitle": "With low-noise unwind",
+                "acryl_text": "Ensures quiet, comfortable unwinding appreciated in large packing halls. Highly resistant to UV radiation and ageing, making it the perfect choice for long-term goods storage.",
+            },
+            "sustainability": {
+                "label": "Ecology & sustainability",
+                "title": "Sustainable packaging for your e-shop and production",
+                "subtitle": "The environmental footprint of packaging materials is our priority. We develop our adhesive tapes with easy recyclability and minimal environmental impact in mind.",
+                "card1_title": "100% recyclable film",
+                "card1_text": "Our tapes are made from modern BOPP film that is fully recyclable. Unlike older PVC materials, no toxic substances are released during processing and it is gentle on the environment.",
+                "card2_title": "Eco-friendly solvent-free adhesives",
+                "card2_text": "We use exclusively environmentally friendly adhesives. Acrylic adhesives are water-based and Hot Melt technology works without any chemical solvents or synthetic additives.",
+                "card3_title": "Easy cardboard recycling",
+                "card3_text": "Thanks to advanced technology, modern recycling lines can easily separate our tapes from cardboard boxes. Your customers can dispose of used boxes directly in the paper recycling bin without concern.",
+            },
+            "benefits": {
+                "security_badge": "Security",
+                "security_title": "TAMPER EVIDENT tape — tampering is obvious!",
+                "security_text": "This security tape looks neutral, but when removed it leaves a warning on the box that is virtually impossible to eliminate. Suitable for all types of cardboard and stretch film, available in various colours and with custom printing.",
+                "glue_badge": "Extreme adhesion",
+                "glue_title": "EXTRA GLUE+ (ACRYL) and TACK+ (HOT MELT)",
+                "glue_text": "Tapes with an increased adhesive layer (33% and 20% respectively) and the option of a stronger film than standard, designed for very demanding applications such as heavy parcels, poor-quality cardboard or dusty environments. They bond extremely firmly to cardboard — clear evidence of tampering!",
+            },
+            "form": {
+                "label": "Inquiry",
+                "title": "I would like a quote for printed tapes",
+                "open_3d": "Open interactive 3D designer",
+                "open_3d_hint": "Try material, colour and print in a spacious 3D preview",
+                "step_label": "Step {current} of {total}",
+                "steps": ["Product specification", "Dimensions and quantity", "Contact details"],
+                "step1_title": "Product specification",
+                "step1_hint": "Select tape type, base colour and number of print colours.",
+                "tape_type": "Tape type (material)",
+                "base_color": "Base colour",
+                "print_colors": "Number of print colours",
+                "hot_melt_hint": "Synthetic rubber",
+                "acryl_hint": "Low-noise unwind",
+                "colors": {
+                    "bila": "white",
+                    "hneda": "brown",
+                    "transparentni": "transp.",
+                    "jina": "other",
+                },
+                "continue": "Continue",
+                "back": "Back",
+                "step2_title": "Dimensions and quantity",
+                "step2_hint": "Specify tape dimensions and planned order volumes.",
+                "design_recap_label": "Your 3D design:",
+                "design_recap_empty": "no text",
+                "width_label": "Tape width in mm",
+                "length_label": "Tape length in metres",
+                "quantity_label": "Requested quantity in rolls",
+                "quantity_hint": "Enter a number from 1 to 999.",
+                "quantity_tip": "Tip: From 360 rolls you get free shipping and wholesale prices.",
+                "quantity_success": "🔥 Great choice! You have activated a 15% wholesale discount and free shipping.",
+                "order_period_label": "Expected order frequency",
+                "order_periods": {
+                    "monthly": "Every month",
+                    "quarterly": "Every 3 months",
+                    "biannual": "Every 6 months",
+                    "annual": "Once a year",
+                },
+                "step3_title": "Company and contact details",
+                "step3_hint": "Provide details for processing your non-binding quote.",
+                "company_label": "Company name",
+                "ico_label": "Enter your company registration number",
+                "name_label": "Full name (contact person)",
+                "email_label": "Email",
+                "phone_label": "Phone",
+                "note_label": "Note",
+                "gdpr": "By submitting you agree to the processing of personal data",
+                "gdpr_link": "processing of personal data",
+                "submit": "Send inquiry",
+                "modal_title": "Interactive 3D designer",
+                "modal_subtitle": "Material, colour and print in real time",
+                "modal_bg_label": "Studio background",
+                "modal_bg_white": "White background",
+                "modal_bg_light": "Light grey background",
+                "modal_bg_dark": "Dark grey background",
+                "modal_box_toggle": "Show on a box",
+                "modal_rotate_hint": "Drag with the mouse to rotate the model 360°",
+                "accordion_material": "Material and base",
+                "accordion_dimensions": "Tape dimensions",
+                "accordion_print": "Print and text",
+                "width_short": "Tape width",
+                "length_short": "Length / Roll",
+            },
+            "contacts": {
+                "label": "Team",
+                "title": "DEPARTMENT CONTACTS",
+                "karel_name": "Ing. Karel Petrák",
+                "karel_role": "Sales representative for packaging tapes",
+                "vojtech_name": "Vojtěch Petrák",
+                "vojtech_role": "Sales assistant",
+                "more_contacts": "More contacts",
+            },
+            "sample": {
+                "label": "Test sample",
+                "title": "Not sure which tape to choose? We will send you a free sample.",
+                "text": "We understand that tape quality is key to smooth logistics. Fill in our inquiry form and note in the message that you would like a test sample.",
+                "cta": "Fill in inquiry",
+            },
+        },
+        "gallery": {
+            "ui": {
+                "label": "Gallery",
+                "title": "Examples of our work",
+                "subtitle": "Real production references and print technology showcases — filter by print type, adhesive or industry.",
+                "cta_custom": "I want custom printing",
+            },
+            "filters": {
+                "filter": "Filter",
+                "clear_all": "Clear all",
+                "groups": {
+                    "category": {
+                        "label": "Print type",
+                        "options": {
+                            "jednobarevny": "Single-colour print",
+                            "vicebarevny": "Multi-colour / Rotogravure",
+                            "bezpecnostni": "Security tapes",
+                            "logisticke": "Logistics / Warning tapes",
+                        },
+                    },
+                    "adhesive": {
+                        "label": "Adhesive",
+                        "options": {
+                            "hot-melt": "Hot Melt",
+                            "acryl": "Acrylic",
+                        },
+                    },
+                    "industry": {
+                        "label": "Industry",
+                        "options": {
+                            "e-commerce": "E-commerce",
+                            "vyroba": "Manufacturing",
+                            "logistika": "Logistics",
+                            "potraviny": "Food industry",
+                            "bezpecnost": "Security",
+                        },
+                    },
+                    "type": {
+                        "label": "Sample type",
+                        "options": {
+                            "reference": "Real references",
+                            "demo": "Print options",
+                        },
+                    },
+                },
+            },
+            "sections": {
+                "featured": "Featured samples",
+                "references_title": "Real references",
+                "references_subtitle": "Photographs of actual prints from our production. We will add more references after the next photo shoot.",
+                "demos_title": "Print options and technologies",
+                "demos_subtitle": "Examples of security, logistics and special solutions — illustrations of the technologies we offer.",
+                "empty": "No sample matches the selected filters. Try removing one of the filters.",
+            },
+            "cards": {
+                "view_detail": "View details",
+                "view_detail_aria": "View details: {title}",
+                "featured_badge": "Featured sample",
+                "technology_badge": "Technology",
+                "technology_demo": "Technology showcase",
+            },
+            "lightbox": {
+                "close": "Close",
+                "prev": "Previous",
+                "next": "Next",
+                "cta": "I want similar printing",
+                "meta_industry": "Industry",
+                "meta_width": "Width",
+                "meta_colors": "Colours",
+                "meta_adhesive": "Adhesive",
+            },
+            "cta": {
+                "title": "Have your own logo?",
+                "text": "We will prepare a non-binding quote and a print sample. Just send us your logo and the required tape parameters.",
+                "button": "Request a quote",
+            },
+        },
+        "sortiment": {
+            "ui": {
+                "label": "Product range",
+                "title": "Discover our adhesive tapes",
+                "subtitle": "Choose a product type by material and application. Each category includes a detailed overview of available variants.",
+                "filter": "Filter",
+                "clear_all": "Clear all",
+                "results_title": "Products matching your filters",
+                "empty": "No tape matches the selected filter combination. Try removing one of the filters.",
+                "show_products": "View products",
+                "cta_quote": "Request a quote",
+            },
+            "filters": {
+                "properties": {
+                    "label": "Properties",
+                    "ekologicke": "Eco-friendly",
+                    "tiche": "Low noise",
+                    "odstranitelne": "Residue-free removable",
+                    "vyztuzene": "Reinforced",
+                },
+                "resistance": {
+                    "label": "Resistance",
+                    "mrazuvzdorne": "Cold-resistant (down to −70 °C)",
+                    "vysoke-teploty": "High temperatures",
+                    "chemicka-odolnost": "Chemical resistance",
+                },
+                "usage": {
+                    "label": "Application",
+                    "rucni": "Manual application",
+                    "stroje": "Machines and packers",
+                },
+            },
+            "categories": translate_categories(cs_categories, CATEGORY_EN),
+        },
+        "js": {
+            "gallery": {
+                "remove_filter": "Remove filter",
+                "count_all": "{count} samples",
+                "count_filtered": "Showing {visible} of {total}",
+                "color_one": "1 colour",
+                "color_few": "{n} colours",
+                "color_many": "{n} colours",
+            },
+            "sortiment": {
+                "remove_filter": "Remove filter",
+                "product_one": "1 product",
+                "product_few": "{n} products",
+                "product_many": "{n} products",
+                "detail": "Details",
+                "inquire": "Inquire",
+            },
+            "form": {
+                "step_label": "Step {current} of {total}",
+            },
+        },
+    }
+
+
+def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "meta": {
+            "site_name": "Bedruckte Verpackungsbänder",
+            "logo_alt": "Bedruckte Verpackungsbänder",
+            "home_title": "Startseite | Bedruckte Verpackungsbänder",
+            "home_description": "Bedruckte Verpackungsbänder | Herstellung und Vertrieb bedruckter Klebebänder von ALFA IN a.s.",
+            "gallery_title": "Galerie | Bedruckte Verpackungsbänder",
+            "gallery_description": "Galerie bedruckter Verpackungsbänder von ALFA IN a.s. – Einfarbigdruck, Rotogravur, Sicherheits- und Logistikbänder.",
+            "sortiment_title": "Sortiment | Bedruckte Verpackungsbänder",
+            "sortiment_description": "ALFA IN Klebeband-Sortiment – BOPP-Bänder HOT MELT und ACRYL, Spezialserien und ECO-Produkte mit Bedruckung.",
+        },
+        "nav": {
+            "tagline": "ALFA IN – Herstellung, Beratung, Vertrieb und Service",
+            "menu": "Menü",
+            "main_nav_label": "Hauptnavigation",
+            "home": "Startseite",
+            "gallery": "Galerie",
+            "sortiment": "Sortiment",
+            "references": "Referenzen",
+            "contacts": "Kontakt",
+            "facebook": "Facebook",
+            "instagram": "Instagram",
+            "youtube": "YouTube",
+        },
+        "footer": {
+            "address_heading": "Besuchen Sie uns unter",
+            "company": "ALFA IN a.s.",
+            "street": "č.p. 74",
+            "city": "675 21 Nová Ves u Třebíče",
+            "country": "Tschechische Republik",
+            "show_on_map": "Auf Karte anzeigen",
+            "email_heading": "Schreiben Sie uns",
+            "phone_heading": "Rufen Sie uns an",
+            "phone_hours": "7:00 – 15:30 Uhr",
+            "more_contacts": "Weitere Kontakte",
+            "social_heading": "Soziale Netzwerke",
+            "copyright": "Alle Rechte vorbehalten",
+            "made_by": "erstellt von",
+            "made_by_link": "Jan Sedlář",
+        },
+        "home": {
+            "hero": {
+                "badge": "ISO 9001 · Direkt vom Hersteller",
+                "slides": [
+                    {
+                        "title": "VERPACKUNGS-KLEBEBÄNDER",
+                        "subtitle": "Bedruckte oder neutrale selbstklebende Verpackungsbänder mit ISO 9001.",
+                    },
+                    {
+                        "title": "WARUM BEDRUCKTE KLEBEBÄNDER?",
+                        "subtitle": "Klebebänder verpacken, fixieren, bewerben und schützen Ihre Waren.",
+                    },
+                    {
+                        "title": "WARUM BEDRUCKTE BÄNDER VON ALFA IN?",
+                        "subtitle": "Flexodruck bis 8 Farben und Rotogravur bis 10 Farben, inkl. 3D-Optionen – langlebiger Rückseitendruck zu Fabrikpreisen.",
+                    },
+                ],
+                "cta_offer": "Angebot ansehen",
+                "cta_quote": "Unverbindliche Kalkulation",
+            },
+            "about": {
+                "label": "Über uns",
+                "title": "Traditioneller tschechischer Hersteller bedruckter Klebebänder",
+                "lead": "Seit mehr als 25 Jahren helfen wir Unternehmen, ihre Sendungen sicher zu verpacken und eine starke Marke direkt auf Verpackungsmaterialien aufzubauen. Wir sind Spezialisten für individuellen Druck auf Klebebändern.",
+                "body1": "Unsere moderne Produktionsstätte ermöglicht es uns, flexibel auf die Bedürfnisse kleiner E-Shops wie auch großer Industrieunternehmen zu reagieren. Wir legen Wert auf präzisen Druck (bis 8 Farben), erstklassige Klebstoffqualität (Hot Melt, Acryl) und schnelle Lieferung in der gesamten Tschechischen Republik.",
+                "body2": "Dank ISO-9001-zertifizierter Prozesse und dem Einsatz ökologischer, nachhaltiger Materialien sind wir ein zuverlässiger Partner für mehr als 100 aktive Abnehmer.",
+                "image_alt": "ALFA IN Klebeband-Produktion",
+            },
+            "references": {
+                "label": "Referenzen",
+                "title": "Zufriedene Kunden aus allen Branchen",
+                "subtitle": "Unternehmen, die täglich auf unsere bedruckten Bänder vertrauen – von E-Commerce über Produktion bis Gesundheitswesen.",
+                "stat_customers": "aktive Abnehmer",
+                "stat_experience": "Jahre Druckerfahrung",
+                "stat_iso": "zertifizierte Produktion",
+                "carousel_label": "Unternehmen, mit denen wir zusammenarbeiten",
+            },
+            "lepidla": {
+                "label": "Auswahlhilfe",
+                "title": "Welchen Klebstoff wählen?",
+                "hot_melt_badge": "Kälte & Schnelligkeit",
+                "hot_melt_title": "HOT MELT",
+                "hot_melt_subtitle": "Synthetischer Kautschuk",
+                "hot_melt_text": "Die ideale Wahl für kühlere Umgebungen und unbeheizte Lager. Er haftet extrem schnell und stark unmittelbar nach dem Aufbringen. Lässt sich nicht leicht von Stretchfolie ablösen.",
+                "acryl_badge": "Leise & UV-beständig",
+                "acryl_title": "ACRYL",
+                "acryl_subtitle": "Mit geräuscharmem Abrollen",
+                "acryl_text": "Sorgt für leises, komfortables Abrollen in großen Verpackungshallen. Hochbeständig gegen UV-Strahlung und Alterung – die perfekte Wahl für langfristige Lagerung.",
+            },
+            "sustainability": {
+                "label": "Ökologie & Nachhaltigkeit",
+                "title": "Nachhaltige Verpackung für Ihren E-Shop und Ihre Produktion",
+                "subtitle": "Der ökologische Fußabdruck von Verpackungsmaterialien hat für uns Priorität. Unsere Klebebänder entwickeln wir mit Blick auf einfache Recycelbarkeit und minimale Umweltbelastung.",
+                "card1_title": "100 % recycelbare Folie",
+                "card1_text": "Unsere Bänder bestehen aus moderner BOPP-Folie, die vollständig recycelbar ist. Im Gegensatz zu älteren PVC-Materialien entstehen bei der Verarbeitung keine giftigen Stoffe.",
+                "card2_title": "Ökologische lösemittelfreie Klebstoffe",
+                "card2_text": "Wir verwenden ausschließlich umweltfreundliche Klebstoffe. Acrylklebstoffe sind wasserbasiert und die Hot-Melt-Technologie arbeitet ohne chemische Lösungsmittel.",
+                "card3_title": "Problemloses Karton-Recycling",
+                "card3_text": "Dank moderner Technologie können Recyclinganlagen unsere Bänder leicht von Kartons trennen. Ihre Kunden können verwendete Kartons bedenkenlos in die Papiertonne werfen.",
+            },
+            "benefits": {
+                "security_badge": "Sicherheit",
+                "security_title": "TAMPER EVIDENT-Klebeband – Manipulation sichtbar!",
+                "security_text": "Dieses Sicherheitsband wirkt neutral, hinterlässt beim Abziehen jedoch eine praktisch nicht entfernbare Warnung auf dem Karton. Geeignet für alle Kartonarten und Stretchfolien, in verschiedenen Farben und mit Bedruckung.",
+                "glue_badge": "Extreme Klebkraft",
+                "glue_title": "EXTRA GLUE+ (ACRYL) und TACK+ (HOT MELT)",
+                "glue_text": "Bänder mit erhöhter Klebstoffschicht (33 % bzw. 20 %) und optional stärkerer Folie für anspruchsvolle Anwendungen wie schwere Pakete, minderwertigen Karton oder staubige Umgebungen. Haften extrem fest – eindeutiger Diebstahlnachweis!",
+            },
+            "form": {
+                "label": "Anfrage",
+                "title": "Ich interessiere mich für eine Kalkulation bedruckter Bänder",
+                "open_3d": "Interaktiven 3D-Designer öffnen",
+                "open_3d_hint": "Testen Sie Material, Farbe und Druck in einer großzügigen 3D-Vorschau",
+                "step_label": "Schritt {current} von {total}",
+                "steps": ["Produktspezifikation", "Abmessungen und Menge", "Kontaktdaten"],
+                "step1_title": "Produktspezifikation",
+                "step1_hint": "Wählen Sie Bandtyp, Grundfarbe und Anzahl der Druckfarben.",
+                "tape_type": "Bandtyp (Material)",
+                "base_color": "Grundfarbe",
+                "print_colors": "Anzahl der Druckfarben",
+                "hot_melt_hint": "Synthetischer Kautschuk",
+                "acryl_hint": "Geräuscharmes Abrollen",
+                "colors": {
+                    "bila": "weiß",
+                    "hneda": "braun",
+                    "transparentni": "transp.",
+                    "jina": "andere",
+                },
+                "continue": "Weiter",
+                "back": "Zurück",
+                "step2_title": "Abmessungen und Menge",
+                "step2_hint": "Geben Sie Bandabmessungen und geplante Bestellmengen an.",
+                "design_recap_label": "Ihr 3D-Entwurf:",
+                "design_recap_empty": "ohne Text",
+                "width_label": "Bandbreite in mm",
+                "length_label": "Bandlänge in Metern",
+                "quantity_label": "Gewünschte Menge in Rollen",
+                "quantity_hint": "Geben Sie eine Zahl von 1 bis 999 ein.",
+                "quantity_tip": "Tipp: Ab 360 Rollen erhalten Sie kostenlosen Versand und Großhandelspreise.",
+                "quantity_success": "🔥 Ausgezeichnete Wahl! Sie haben 15 % Großhandelsrabatt und kostenlosen Versand aktiviert.",
+                "order_period_label": "Voraussichtliche Bestellfrequenz",
+                "order_periods": {
+                    "monthly": "Jeden Monat",
+                    "quarterly": "Alle 3 Monate",
+                    "biannual": "Alle 6 Monate",
+                    "annual": "Einmal pro Jahr",
+                },
+                "step3_title": "Firmen- und Kontaktdaten",
+                "step3_hint": "Ergänzen Sie die Daten für die unverbindliche Kalkulation.",
+                "company_label": "Firmenname",
+                "ico_label": "Geben Sie Ihre Firmen-ID ein",
+                "name_label": "Vor- und Nachname (Ansprechpartner)",
+                "email_label": "E-Mail",
+                "phone_label": "Telefon",
+                "note_label": "Anmerkung",
+                "gdpr": "Mit dem Absenden stimmen Sie der Verarbeitung personenbezogener Daten zu",
+                "gdpr_link": "Verarbeitung personenbezogener Daten",
+                "submit": "Anfrage senden",
+                "modal_title": "Interaktiver 3D-Designer",
+                "modal_subtitle": "Material, Farbe und Druck in Echtzeit",
+                "modal_bg_label": "Studio-Hintergrund",
+                "modal_bg_white": "Weißer Hintergrund",
+                "modal_bg_light": "Hellgrauer Hintergrund",
+                "modal_bg_dark": "Dunkelgrauer Hintergrund",
+                "modal_box_toggle": "Auf Karton anzeigen",
+                "modal_rotate_hint": "Mit der Maus ziehen, um das Modell um 360° zu drehen",
+                "accordion_material": "Material und Untergrund",
+                "accordion_dimensions": "Bandabmessungen",
+                "accordion_print": "Druck und Text",
+                "width_short": "Bandbreite",
+                "length_short": "Länge / Rolle",
+            },
+            "contacts": {
+                "label": "Team",
+                "title": "ABTEILUNGSKONTAKTE",
+                "karel_name": "Ing. Karel Petrák",
+                "karel_role": "Vertretung für den Verkauf von Verpackungsbändern",
+                "vojtech_name": "Vojtěch Petrák",
+                "vojtech_role": "Verkaufsassistent",
+                "more_contacts": "Weitere Kontakte",
+            },
+            "sample": {
+                "label": "Testmuster",
+                "title": "Unsicher bei der Auswahl? Wir senden Ihnen ein kostenloses Muster.",
+                "text": "Wir wissen, dass die Qualität des Klebebands für reibungslose Logistik entscheidend ist. Füllen Sie unsere Anfrage aus und vermerken Sie in der Anmerkung, dass Sie ein Testmuster wünschen.",
+                "cta": "Anfrage ausfüllen",
+            },
+        },
+        "gallery": {
+            "ui": {
+                "label": "Galerie",
+                "title": "Beispiele unserer Arbeit",
+                "subtitle": "Echte Produktionsreferenzen und Drucktechnologie-Beispiele – filtern Sie nach Drucktyp, Klebstoff oder Branche.",
+                "cta_custom": "Ich möchte eigenen Druck",
+            },
+            "filters": {
+                "filter": "Filter",
+                "clear_all": "Alle löschen",
+                "groups": {
+                    "category": {
+                        "label": "Drucktyp",
+                        "options": {
+                            "jednobarevny": "Einfarbig",
+                            "vicebarevny": "Mehrfarbig / Rotogravur",
+                            "bezpecnostni": "Sicherheitsbänder",
+                            "logisticke": "Logistik- / Warnbänder",
+                        },
+                    },
+                    "adhesive": {
+                        "label": "Klebstoff",
+                        "options": {
+                            "hot-melt": "Hot Melt",
+                            "acryl": "Acryl",
+                        },
+                    },
+                    "industry": {
+                        "label": "Branche",
+                        "options": {
+                            "e-commerce": "E-Commerce",
+                            "vyroba": "Produktion",
+                            "logistika": "Logistik",
+                            "potraviny": "Lebensmittel",
+                            "bezpecnost": "Sicherheit",
+                        },
+                    },
+                    "type": {
+                        "label": "Beispieltyp",
+                        "options": {
+                            "reference": "Echte Referenzen",
+                            "demo": "Druckmöglichkeiten",
+                        },
+                    },
+                },
+            },
+            "sections": {
+                "featured": "Ausgewählte Beispiele",
+                "references_title": "Echte Referenzen",
+                "references_subtitle": "Fotos echter Drucke aus unserer Produktion. Weitere Referenzen folgen nach dem nächsten Fotoshooting.",
+                "demos_title": "Druckmöglichkeiten und Technologien",
+                "demos_subtitle": "Beispiele für Sicherheits-, Logistik- und Speziallösungen – Illustrationen der von uns angebotenen Technologien.",
+                "empty": "Kein Beispiel entspricht den gewählten Filtern. Versuchen Sie, einen Filter zu entfernen.",
+            },
+            "cards": {
+                "view_detail": "Details anzeigen",
+                "view_detail_aria": "Details anzeigen: {title}",
+                "featured_badge": "Ausgewähltes Beispiel",
+                "technology_badge": "Technologie",
+                "technology_demo": "Technologie-Beispiel",
+            },
+            "lightbox": {
+                "close": "Schließen",
+                "prev": "Zurück",
+                "next": "Weiter",
+                "cta": "Ähnlichen Druck anfragen",
+                "meta_industry": "Branche",
+                "meta_width": "Breite",
+                "meta_colors": "Farben",
+                "meta_adhesive": "Klebstoff",
+            },
+            "cta": {
+                "title": "Haben Sie ein eigenes Logo?",
+                "text": "Wir erstellen eine unverbindliche Kalkulation und ein Druckmuster. Senden Sie uns einfach Ihr Logo und die gewünschten Bandparameter.",
+                "button": "Unverbindlich anfragen",
+            },
+        },
+        "sortiment": {
+            "ui": {
+                "label": "Sortiment",
+                "title": "Entdecken Sie unsere Klebebänder",
+                "subtitle": "Wählen Sie den Produkttyp nach Material und Einsatzzweck. In jeder Kategorie finden Sie eine detaillierte Übersicht der verfügbaren Varianten.",
+                "filter": "Filter",
+                "clear_all": "Alle löschen",
+                "results_title": "Produkte nach Filtern",
+                "empty": "Kein Band entspricht der gewählten Filterkombination. Versuchen Sie, einen Filter zu entfernen.",
+                "show_products": "Produkte anzeigen",
+                "cta_quote": "Unverbindliche Kalkulation",
+            },
+            "filters": {
+                "properties": {
+                    "label": "Eigenschaften",
+                    "ekologicke": "Ökologisch",
+                    "tiche": "Leise (Low Noise)",
+                    "odstranitelne": "Rückstandsfrei abziehbar",
+                    "vyztuzene": "Verstärkt",
+                },
+                "resistance": {
+                    "label": "Beständigkeit",
+                    "mrazuvzdorne": "Kältebeständig (bis −70 °C)",
+                    "vysoke-teploty": "Hohe Temperaturen",
+                    "chemicka-odolnost": "Chemische Beständigkeit",
+                },
+                "usage": {
+                    "label": "Einsatz",
+                    "rucni": "Manuelle Anwendung",
+                    "stroje": "Maschinen und Packstationen",
+                },
+            },
+            "categories": translate_categories(cs_categories, CATEGORY_DE),
+        },
+        "js": {
+            "gallery": {
+                "remove_filter": "Filter entfernen",
+                "count_all": "{count} Beispiele",
+                "count_filtered": "{visible} von {total} angezeigt",
+                "color_one": "1 Farbe",
+                "color_few": "{n} Farben",
+                "color_many": "{n} Farben",
+            },
+            "sortiment": {
+                "remove_filter": "Filter entfernen",
+                "product_one": "1 Produkt",
+                "product_few": "{n} Produkte",
+                "product_many": "{n} Produkte",
+                "detail": "Details",
+                "inquire": "Anfragen",
+            },
+            "form": {
+                "step_label": "Schritt {current} von {total}",
+            },
+        },
+    }
+
+
+def write_json(path: Path, data: dict[str, Any]) -> int:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    text = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
+    path.write_text(text, encoding="utf-8")
+    return len(text.splitlines())
+
+
+def main() -> None:
+    cs = build_cs()
+    cs_categories = build_sortiment_categories_cs()
+    locales = {
+        "cs": cs,
+        "en": build_en(cs, cs_categories),
+        "de": build_de(cs, cs_categories),
+    }
+
+    print(f"Writing i18n JSON to {OUT_DIR}/")
+    for locale, data in locales.items():
+        path = OUT_DIR / f"{locale}.json"
+        lines = write_json(path, data)
+        print(f"  {path.name}: {lines} lines")
+
+
+if __name__ == "__main__":
+    main()

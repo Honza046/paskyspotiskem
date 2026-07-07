@@ -1,0 +1,10 @@
+# WordPress theme PHP (not needed for static Vercel deploy)
+*.php
+inc/
+template-parts/
+languages/
+docker-compose.yml
+dist/
+preview.html
+node_modules/
+.git/
