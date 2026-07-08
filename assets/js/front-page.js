@@ -15,7 +15,7 @@
         {
             title: 'OTESTUJTE NAŠI KVALITU VE SVÉM PROVOZU',
             subtitle: 'Nechte si zaslat bezplatný vzorek nebo nezávaznou kalkulaci na míru. Přesvědčte se o odolnosti a pevnosti lepidla ještě před objednávkou.',
-            ctaPrimary: { text: 'Vyžádat vzorky', href: '#gf_1' },
+            ctaPrimary: { text: 'Vyžádat vzorky', href: '#gf_1', inquirySample: true },
             ctaSecondary: { text: 'Nezávazná kalkulace', href: '#gf_1' },
         },
     ];
@@ -47,6 +47,7 @@
         if (ctaPrimary && slide.ctaPrimary) {
             ctaPrimary.textContent = slide.ctaPrimary.text;
             ctaPrimary.href = slide.ctaPrimary.href;
+            ctaPrimary.classList.toggle('js-inquiry-sample', !!slide.ctaPrimary.inquirySample);
         }
         if (ctaSecondary && slide.ctaSecondary) {
             ctaSecondary.textContent = slide.ctaSecondary.text;
@@ -79,168 +80,14 @@
         const stepNames = ['Specifikace produktu', 'Rozměry a množství', 'Kontaktní údaje'];
         let current = 0;
 
-        function updateDesignRecap() {
-            var recapEl = document.getElementById('design-recap-text');
-            if (!recapEl) return;
+        function toggleAcrylNoiseOption() {
             var material = form.querySelector('input[name="input_8"]:checked');
-            var baseColor = form.querySelector('input[name="input_9"]:checked');
-            var textForm = document.getElementById('tape-print-text-form');
-            var parts = [];
-            if (material) parts.push(material.value);
-            if (baseColor) parts.push(baseColor.value);
-            parts.push(textForm && textForm.value.trim() ? '"' + textForm.value.trim() + '"' : 'bez textu');
-            recapEl.textContent = parts.join(' · ');
+            var isAcryl = material && material.value === 'ACRYL';
+            var opt = document.getElementById('acryl-noise-option');
+            var cb = document.getElementById('input_acryl_no_silent');
+            if (opt) opt.classList.toggle('hidden', !isAcryl);
+            if (!isAcryl && cb) cb.checked = false;
         }
-
-        function syncModalFromForm() {
-            var modal = document.getElementById('tape-3d-modal');
-            if (!modal) return;
-            var material = form.querySelector('input[name="input_8"]:checked');
-            var baseColor = form.querySelector('input[name="input_9"]:checked');
-            if (material) {
-                var m = modal.querySelector('input[name="modal_input_8"][value="' + material.value + '"]');
-                if (m) m.checked = true;
-            }
-            if (baseColor) {
-                var c = modal.querySelector('input[name="modal_input_9"][value="' + baseColor.value + '"]');
-                if (c) c.checked = true;
-            }
-            var textForm = document.getElementById('tape-print-text-form');
-            var textModal = document.getElementById('tape-print-text');
-            if (textForm && textModal) textModal.value = textForm.value;
-            var colorHidden = document.getElementById('tape-text-color-value');
-            if (colorHidden) {
-                var colorRadio = modal.querySelector('input[name="tape_text_color"][value="' + colorHidden.value + '"]');
-                if (colorRadio) colorRadio.checked = true;
-                var colorCustom = document.getElementById('tape-text-color-custom');
-                if (colorCustom) colorCustom.value = colorHidden.value;
-            }
-            var sizeForm = document.getElementById('tape-text-size-form');
-            var sizeModal = document.getElementById('tape-text-size');
-            var sizeLabel = document.getElementById('tape-text-size-value');
-            if (sizeForm && sizeModal) {
-                sizeModal.value = sizeForm.value;
-                if (sizeLabel) sizeLabel.textContent = sizeForm.value;
-            }
-            var offsetForm = document.getElementById('tape-text-offset-form');
-            var offsetModal = document.getElementById('tape-text-offset');
-            var offsetLabel = document.getElementById('tape-text-offset-value');
-            if (offsetForm && offsetModal) {
-                offsetModal.value = offsetForm.value;
-                if (offsetLabel) offsetLabel.textContent = offsetForm.value;
-            }
-            var fontForm = document.getElementById('tape-font-form');
-            if (fontForm && modal) {
-                var fontRadio = modal.querySelector('input[name="tape_font_family"][value="' + fontForm.value + '"]');
-                if (fontRadio) fontRadio.checked = true;
-            }
-            var spacingForm = document.getElementById('tape-motif-spacing-form');
-            var spacingModal = document.getElementById('tape-motif-spacing');
-            var spacingLabel = document.getElementById('tape-motif-spacing-value');
-            if (spacingForm && spacingModal) {
-                spacingModal.value = spacingForm.value;
-                if (spacingLabel) spacingLabel.textContent = spacingForm.value;
-            }
-            var widthForm = form.querySelector('input[name="input_12"]:checked');
-            var modalWidths = ['25', '50', '75'];
-            if (widthForm && modalWidths.indexOf(widthForm.value) !== -1) {
-                var mw = modal.querySelector('input[name="modal_input_12"][value="' + widthForm.value + '"]');
-                if (mw) mw.checked = true;
-            }
-            var lengthForm = form.querySelector('input[name="input_11"]:checked');
-            var modalLengths = ['66', '132', '330'];
-            if (lengthForm && modalLengths.indexOf(lengthForm.value) !== -1) {
-                var ml = modal.querySelector('input[name="modal_input_11"][value="' + lengthForm.value + '"]');
-                if (ml) ml.checked = true;
-            }
-        }
-
-        function syncFormFromModal() {
-            var modal = document.getElementById('tape-3d-modal');
-            if (!modal) return;
-            var modalMaterial = modal.querySelector('input[name="modal_input_8"]:checked');
-            var modalColor = modal.querySelector('input[name="modal_input_9"]:checked');
-            if (modalMaterial) {
-                var f = form.querySelector('input[name="input_8"][value="' + modalMaterial.value + '"]');
-                if (f) f.checked = true;
-            }
-            if (modalColor) {
-                var fc = form.querySelector('input[name="input_9"][value="' + modalColor.value + '"]');
-                if (fc) fc.checked = true;
-            }
-            var textModal = document.getElementById('tape-print-text');
-            var textForm = document.getElementById('tape-print-text-form');
-            if (textModal && textForm) textForm.value = textModal.value;
-            var colorHidden = document.getElementById('tape-text-color-value');
-            var colorRadio = modal.querySelector('input[name="tape_text_color"]:checked');
-            var colorCustom = document.getElementById('tape-text-color-custom');
-            if (colorHidden) {
-                if (colorRadio) colorHidden.value = colorRadio.value;
-                else if (colorCustom) colorHidden.value = colorCustom.value;
-            }
-            var sizeModal = document.getElementById('tape-text-size');
-            var sizeForm = document.getElementById('tape-text-size-form');
-            if (sizeModal && sizeForm) sizeForm.value = sizeModal.value;
-            var offsetModal = document.getElementById('tape-text-offset');
-            var offsetForm = document.getElementById('tape-text-offset-form');
-            if (offsetModal && offsetForm) offsetForm.value = offsetModal.value;
-            var fontRadio = modal.querySelector('input[name="tape_font_family"]:checked');
-            var fontForm = document.getElementById('tape-font-form');
-            if (fontRadio && fontForm) fontForm.value = fontRadio.value;
-            var spacingModal = document.getElementById('tape-motif-spacing');
-            var spacingForm = document.getElementById('tape-motif-spacing-form');
-            if (spacingModal && spacingForm) spacingForm.value = spacingModal.value;
-            var modalWidth = modal.querySelector('input[name="modal_input_12"]:checked');
-            if (modalWidth) {
-                var fw = form.querySelector('input[name="input_12"][value="' + modalWidth.value + '"]');
-                if (fw) fw.checked = true;
-            }
-            var modalLength = modal.querySelector('input[name="modal_input_11"]:checked');
-            if (modalLength) {
-                var fl = form.querySelector('input[name="input_11"][value="' + modalLength.value + '"]');
-                if (fl) fl.checked = true;
-            }
-            updateDesignRecap();
-        }
-
-        function open3dModal() {
-            var modal = document.getElementById('tape-3d-modal');
-            if (!modal) return;
-            syncModalFromForm();
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            document.body.classList.add('modal-open');
-            if (window.TapeConfigurator3D) {
-                window.TapeConfigurator3D.syncFromForm();
-                requestAnimationFrame(function () {
-                    window.TapeConfigurator3D.resize();
-                    setTimeout(function () { window.TapeConfigurator3D.resize(); }, 150);
-                });
-            }
-        }
-
-        function close3dModal() {
-            var modal = document.getElementById('tape-3d-modal');
-            if (!modal) return;
-            syncFormFromModal();
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-            document.body.classList.remove('modal-open');
-        }
-
-        var modalOpenBtn = document.getElementById('tape-3d-modal-open');
-        var modalCloseBtn = document.getElementById('tape-3d-modal-close');
-        var modalEl = document.getElementById('tape-3d-modal');
-        if (modalOpenBtn) modalOpenBtn.addEventListener('click', open3dModal);
-        if (modalCloseBtn) modalCloseBtn.addEventListener('click', close3dModal);
-        if (modalEl) {
-            modalEl.addEventListener('click', function (e) {
-                if (e.target === modalEl) close3dModal();
-            });
-        }
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape' && modalEl && !modalEl.classList.contains('hidden')) close3dModal();
-        });
 
         function validatePage(index) {
             const page = pages[index];
@@ -269,8 +116,7 @@
                 dot.className = 'rounded-full transition-all ' + (i === index ? 'h-2 w-8 bg-orange-500' : i < index ? 'h-2 w-2 bg-orange-300' : 'h-2 w-2 bg-slate-200');
             });
 
-            if (index === 1) updateDesignRecap();
-            form.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            form.scrollIntoView({ behavior: 'auto', block: 'nearest' });
         }
 
         form.querySelectorAll('.btn-next').forEach(function (btn) {
@@ -293,11 +139,11 @@
         var qtyInput = document.getElementById('qty');
         var qtyBadge = document.getElementById('qty-discount-badge');
         var qtyBadgeText = document.getElementById('qty-discount-text');
-        var QTY_THRESHOLD = 360;
-        var tipText = 'Tip: Od 360 ks získáváte dopravu zdarma a velkoobchodní ceny.';
-        var successText = '🔥 Skvělá volba! Aktivovali jste velkoobchodní slevu 15 % a dopravu zdarma.';
-        var badgeGray = 'mt-2 overflow-hidden rounded-lg border px-3 py-1.5 text-xs leading-snug transition-all duration-300 ease-out opacity-100 max-h-16 border-slate-200 bg-slate-50 font-medium text-slate-500';
-        var badgeGreen = 'mt-2 overflow-hidden rounded-lg border px-3 py-1.5 text-xs leading-snug transition-all duration-300 ease-out opacity-100 max-h-16 border-emerald-200 bg-emerald-50 font-semibold text-emerald-700 shadow-sm shadow-emerald-100';
+        var QTY_MIN = 360;
+        var tipText = 'Minimální množství je 360 ks.';
+        var successText = '🔥 Skvělá volba! Máte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.';
+        var badgeGray = 'mt-2 overflow-hidden rounded-lg border px-3 py-1.5 text-xs leading-snug transition-all duration-300 ease-out opacity-100 max-h-24 border-slate-200 bg-slate-50 font-medium text-slate-500';
+        var badgeGreen = 'mt-2 overflow-hidden rounded-lg border px-3 py-1.5 text-xs leading-snug transition-all duration-300 ease-out opacity-100 max-h-24 border-emerald-200 bg-emerald-50 font-semibold text-emerald-700 shadow-sm shadow-emerald-100';
         var badgeHidden = 'mt-2 overflow-hidden rounded-lg border px-3 py-1.5 text-xs leading-snug transition-all duration-300 ease-out opacity-0 max-h-0 py-0 border-transparent pointer-events-none';
 
         function updateQtyDiscountBadge() {
@@ -307,12 +153,12 @@
             var qty = raw === '' ? NaN : parseInt(raw, 10);
 
             if (raw === '' || isNaN(qty)) {
-                qtyBadge.className = badgeHidden;
+                qtyBadge.className = badgeGray;
                 qtyBadgeText.textContent = tipText;
                 return;
             }
 
-            if (qty >= QTY_THRESHOLD) {
+            if (qty >= QTY_MIN) {
                 qtyBadge.className = badgeGreen;
                 qtyBadgeText.textContent = successText;
             } else {
@@ -322,9 +168,65 @@
         }
 
         if (qtyInput) {
-            qtyInput.addEventListener('input', updateQtyDiscountBadge);
+            qtyInput.addEventListener('invalid', function () {
+                if (qtyInput.validity.rangeUnderflow) {
+                    qtyInput.setCustomValidity('Minimální množství je 360 ks.');
+                }
+            });
+            qtyInput.addEventListener('input', function () {
+                qtyInput.setCustomValidity('');
+                updateQtyDiscountBadge();
+            });
             qtyInput.addEventListener('change', updateQtyDiscountBadge);
             updateQtyDiscountBadge();
+        }
+
+        form.querySelectorAll('input[name="input_8"]').forEach(function (radio) {
+            radio.addEventListener('change', toggleAcrylNoiseOption);
+        });
+        toggleAcrylNoiseOption();
+
+        var SAMPLE_NOTE_TEXT = 'Mám zájem o testovací vzorek.';
+        var CONTACT_STEP = 2;
+
+        function applySampleNote() {
+            var note = document.getElementById('note');
+            if (note) note.value = SAMPLE_NOTE_TEXT;
+        }
+
+        function openInquiryWithSample(e) {
+            if (e) e.preventDefault();
+            if (window.location.hash !== '#gf_1') {
+                history.replaceState(null, '', '#gf_1');
+            }
+            goTo(CONTACT_STEP);
+            applySampleNote();
+            var note = document.getElementById('note');
+            if (note) {
+                setTimeout(function () { note.focus(); }, 300);
+            }
+        }
+
+        window.__openInquiryWithSample = openInquiryWithSample;
+
+        document.addEventListener('click', function (e) {
+            if (e.target.closest('.js-inquiry-sample')) {
+                openInquiryWithSample(e);
+            }
+        });
+
+        var noteSampleBtn = document.getElementById('note-sample-btn');
+        if (noteSampleBtn) {
+            noteSampleBtn.addEventListener('click', function () {
+                applySampleNote();
+                var note = document.getElementById('note');
+                if (note) note.focus();
+            });
+        }
+
+        var inquiryParams = new URLSearchParams(window.location.search);
+        if (inquiryParams.get('vzorek') === '1' && window.location.hash === '#gf_1') {
+            setTimeout(openInquiryWithSample, 150);
         }
     })();
 })();

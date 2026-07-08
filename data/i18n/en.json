@@ -73,7 +73,7 @@
     "about": {
       "label": "About us",
       "title": "A traditional Czech manufacturer of printed adhesive tapes",
-      "lead": "For more than 25 years we have helped companies pack their shipments securely and build a strong brand directly on packaging materials. We specialise in custom printing of adhesive tapes.",
+      "lead": "For more than 30 years we have helped companies pack their shipments securely and build a strong brand directly on packaging materials. We specialise in custom printing of adhesive tapes.",
       "body1": "Our modern production facility allows us to respond flexibly to the needs of both small e-shops and large industrial enterprises. We pride ourselves on precise printing (up to 8 colours), premium adhesive quality (Hot Melt, Acrylic) and fast delivery throughout the Czech Republic.",
       "body2": "Thanks to ISO 9001 certified processes and the use of ecological, sustainable materials, we are a reliable partner for more than 100 active customers.",
       "image_alt": "ALFA IN adhesive tape production"
@@ -152,8 +152,8 @@
       "length_label": "Tape length in metres",
       "quantity_label": "Requested quantity in rolls",
       "quantity_hint": "Enter a number from 1 to 999.",
-      "quantity_tip": "Tip: From 360 rolls you get free shipping and wholesale prices.",
-      "quantity_success": "🔥 Great choice! You have activated a 15% wholesale discount and free shipping.",
+      "quantity_tip": "From 360 rolls you get free shipping. Delivery takes approximately 3–4 weeks.",
+      "quantity_success": "🔥 Great choice! You have free shipping. Delivery takes approximately 3–4 weeks.",
       "order_period_label": "Expected order frequency",
       "order_periods": {
         "monthly": "Every month",
@@ -198,8 +198,8 @@
     "sample": {
       "label": "Test sample",
       "title": "Not sure which tape to choose? We will send you a free sample.",
-      "text": "We understand that tape quality is key to smooth logistics. Fill in our inquiry form and note in the message that you would like a test sample.",
-      "cta": "Fill in inquiry"
+      "text": "We understand that tape quality is key to smooth logistics. Fill in the inquiry form — we will add the test sample note for you.",
+      "cta": "I want a sample"
     }
   },
   "gallery": {

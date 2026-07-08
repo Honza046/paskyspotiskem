@@ -1,0 +1,23 @@
+#gallery-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#gallery-lightbox[hidden] {
+    display: none !important;
+}
+
+#gallery-lightbox.is-open {
+    display: flex;
+}
+
+@media (min-width: 640px) {
+    #gallery-lightbox.is-open {
+        padding: 2rem;
+    }
+}

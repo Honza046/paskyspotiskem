@@ -18,7 +18,7 @@ function paskyonline_get_gallery_items() {
     return array(
         array(
             'id'          => 'alza',
-            'image'       => 'alza.jpg',
+            'image'       => 'gallery/gallery-alza.jpg',
             'title'       => 'Pásky s logem ALZA',
             'category'    => 'vicebarevny',
             'type'        => 'reference',
@@ -33,7 +33,7 @@ function paskyonline_get_gallery_items() {
         ),
         array(
             'id'          => 'jednobarevny-firemni',
-            'image'       => '1000x1000_900Potisk._._._.jpeg',
+            'image'       => 'gallery/gallery-jednobarevny-firemni.jpg',
             'title'       => 'Jednobarevný firemní potisk',
             'category'    => 'jednobarevny',
             'type'        => 'reference',
@@ -48,7 +48,7 @@ function paskyonline_get_gallery_items() {
         ),
         array(
             'id'          => 'flexotisk-8',
-            'image'       => 'flexotisk.jpg',
+            'image'       => 'gallery/gallery-flexotisk-8.jpg',
             'title'       => 'Flexotisk – 8 barev',
             'category'    => 'vicebarevny',
             'type'        => 'reference',
@@ -63,7 +63,7 @@ function paskyonline_get_gallery_items() {
         ),
         array(
             'id'          => 'rototisk-foto',
-            'image'       => 'trvanlivost.jpg',
+            'image'       => 'gallery/gallery-rototisk-foto.jpg',
             'title'       => 'Rototisk ve fotokvalitě',
             'category'    => 'vicebarevny',
             'type'        => 'reference',
@@ -89,7 +89,7 @@ function paskyonline_get_gallery_items() {
             'colors'        => 2,
             'adhesive'      => 'acryl',
             'description'   => 'Bezpečnostní páska s VOID efektem — při odlepení zanechá viditelné upozornění, které nelze bez stopy odstranit.',
-            'graphic'       => true,
+            'graphic'       => false,
             'graphic_style' => 'security',
         ),
         array(
@@ -105,12 +105,12 @@ function paskyonline_get_gallery_items() {
             'colors'        => 1,
             'adhesive'      => 'hot-melt',
             'description'   => 'Páska se zvýšenou vrstvou lepidla (+33 %) pro obtížné povrchy, těžké balíky a prašné skladové prostředí.',
-            'graphic'       => true,
+            'graphic'       => false,
             'graphic_style' => 'glue',
         ),
         array(
             'id'          => 'pecetni',
-            'image'       => 'pecet.jpg',
+            'image'       => 'gallery/gallery-pecetni.jpg',
             'title'       => 'Pečetní páska s potiskem',
             'category'    => 'bezpecnostni',
             'type'        => 'reference',
@@ -125,7 +125,7 @@ function paskyonline_get_gallery_items() {
         ),
         array(
             'id'          => 'logisticky-kontakty',
-            'image'       => '1000x1000_900Potisk.U.jpg',
+            'image'       => 'gallery/gallery-logisticky-kontakty.jpg',
             'title'       => 'Logistický potisk – kontakty',
             'category'    => 'logisticke',
             'type'        => 'reference',
@@ -140,7 +140,7 @@ function paskyonline_get_gallery_items() {
         ),
         array(
             'id'          => 'neutralni-bopp',
-            'image'       => 'moznost-vyberu.jpg',
+            'image'       => 'gallery/gallery-neutralni-bopp.jpg',
             'title'       => 'Neutrální BOPP 25 mm',
             'category'    => 'jednobarevny',
             'type'        => 'reference',
@@ -166,12 +166,12 @@ function paskyonline_get_gallery_items() {
             'colors'        => 4,
             'adhesive'      => 'hot-melt',
             'description'   => 'Hromadná výroba potištěných pásek pro e-shopy a fulfillment — konzistentní kvalita v celé sérii.',
-            'graphic'       => true,
+            'graphic'       => false,
             'graphic_style' => 'industrial',
         ),
         array(
             'id'          => 'vystrizny-krehke',
-            'image'       => 'slide-pasky-1920x624.jpg',
+            'image'       => 'gallery/gallery-vystrizny-krehke.jpg',
             'title'       => 'Výstražný potisk – křehké',
             'category'    => 'logisticke',
             'type'        => 'demo',
@@ -197,7 +197,7 @@ function paskyonline_get_gallery_items() {
             'colors'        => 1,
             'adhesive'      => 'hot-melt',
             'description'   => 'Kombinace logistického a bezpečnostního potisku pro sklady a distribuční centra.',
-            'graphic'       => true,
+            'graphic'       => false,
             'graphic_style' => 'security',
         ),
     );

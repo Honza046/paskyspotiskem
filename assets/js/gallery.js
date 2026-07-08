@@ -7,6 +7,15 @@
     var filterPanel = document.getElementById('gallery-filter');
     var items = Array.prototype.slice.call(document.querySelectorAll('[data-gallery-item]'));
     var modal = document.getElementById('gallery-lightbox');
+    if (modal) {
+        document.querySelectorAll('#gallery-lightbox').forEach(function (node, index) {
+            if (index > 0) {
+                node.parentNode.removeChild(node);
+            }
+        });
+        modal.hidden = true;
+        modal.classList.remove('is-open');
+    }
     var featuredSection = document.getElementById('gallery-featured-section');
     var referencesSection = document.getElementById('gallery-references-section');
     var demosSection = document.getElementById('gallery-demos-section');
@@ -428,8 +437,8 @@
             modalDescription.textContent = data.description || '';
             modalCta.href = inquiryUrl(data.title);
 
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
+            modal.hidden = false;
+            modal.classList.add('is-open');
             document.body.classList.add('overflow-hidden');
             closeBtn.focus();
 
@@ -442,8 +451,8 @@
         }
 
         function closeLightbox() {
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
+            modal.hidden = true;
+            modal.classList.remove('is-open');
             document.body.classList.remove('overflow-hidden');
             if (modalImg) {
                 modalImg.src = '';
@@ -494,7 +503,7 @@
             });
         }
         document.addEventListener('keydown', function (e) {
-            if (modal.classList.contains('hidden')) {
+            if (modal.hidden) {
                 return;
             }
             if (e.key === 'Escape') {

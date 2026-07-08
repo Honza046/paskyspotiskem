@@ -33,49 +33,6 @@ $theme_uri     = get_template_directory_uri();
         if ('scrollRestoration' in history) {
             history.scrollRestoration = 'manual';
         }
-        if (!window.location.hash) {
-            var html = document.documentElement;
-            html.classList.add('scroll-lock');
-            html.style.scrollBehavior = 'auto';
-            html.scrollTop = 0;
-            window.scrollTo(0, 0);
-        }
-        function resetScroll() {
-            if (window.location.hash) {
-                return;
-            }
-            var html = document.documentElement;
-            var prev = html.style.scrollBehavior;
-            html.style.scrollBehavior = 'auto';
-            html.scrollTop = 0;
-            if (document.body) {
-                document.body.scrollTop = 0;
-            }
-            window.scrollTo(0, 0);
-            html.style.scrollBehavior = prev;
-        }
-        function unlockScroll() {
-            resetScroll();
-            document.documentElement.classList.remove('scroll-lock');
-        }
-        document.addEventListener('DOMContentLoaded', function () {
-            resetScroll();
-            requestAnimationFrame(resetScroll);
-        });
-        window.addEventListener('load', function () {
-            requestAnimationFrame(function () {
-                requestAnimationFrame(unlockScroll);
-            });
-        });
-        window.addEventListener('pageshow', function () {
-            if (!window.location.hash) {
-                document.documentElement.classList.add('scroll-lock');
-                resetScroll();
-                requestAnimationFrame(function () {
-                    requestAnimationFrame(unlockScroll);
-                });
-            }
-        });
     })();
     </script>
     <meta name="theme-color" content="#ffffff">

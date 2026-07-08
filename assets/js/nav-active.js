@@ -138,7 +138,7 @@
         }
 
         var top = Math.max(0, sectionTop(target) - scrollOffset());
-        window.scrollTo({ top: top, behavior: 'smooth' });
+        window.scrollTo(0, top);
 
         if (typeof window.paskyonlineBeginAnchorNavigation === 'function') {
             window.paskyonlineBeginAnchorNavigation();

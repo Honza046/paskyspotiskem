@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 ITEMS = [
     {
         "id": "alza",
-        "image": "alza.jpg",
+        "image": "gallery/gallery-alza.jpg",
         "title": "Pásky s logem ALZA",
         "category": "vicebarevny",
         "type": "reference",
@@ -26,7 +26,7 @@ ITEMS = [
     },
     {
         "id": "jednobarevny-firemni",
-        "image": "1000x1000_900Potisk._._._.jpeg",
+        "image": "gallery/gallery-jednobarevny-firemni.jpg",
         "title": "Jednobarevný firemní potisk",
         "category": "jednobarevny",
         "type": "reference",
@@ -41,7 +41,7 @@ ITEMS = [
     },
     {
         "id": "flexotisk-8",
-        "image": "flexotisk.jpg",
+        "image": "gallery/gallery-flexotisk-8.jpg",
         "title": "Flexotisk – 8 barev",
         "category": "vicebarevny",
         "type": "reference",
@@ -56,7 +56,7 @@ ITEMS = [
     },
     {
         "id": "rototisk-foto",
-        "image": "trvanlivost.jpg",
+        "image": "gallery/gallery-rototisk-foto.jpg",
         "title": "Rototisk ve fotokvalitě",
         "category": "vicebarevny",
         "type": "reference",
@@ -71,7 +71,7 @@ ITEMS = [
     },
     {
         "id": "tamper-void",
-        "image": "vykradani.jpg",
+        "image": "gallery/gallery-tamper-void.jpg",
         "title": "Tamper Evident VOID",
         "category": "bezpecnostni",
         "type": "demo",
@@ -82,12 +82,12 @@ ITEMS = [
         "colors": 2,
         "adhesive": "acryl",
         "description": "Bezpečnostní páska s VOID efektem — při odlepení zanechá viditelné upozornění, které nelze bez stopy odstranit.",
-        "graphic": True,
+        "graphic": False,
         "graphic_style": "security",
     },
     {
         "id": "extra-glue",
-        "image": "Extra-glue.jpg",
+        "image": "gallery/gallery-extra-glue.jpg",
         "title": "EXTRA GLUE+ bezpečnostní série",
         "category": "bezpecnostni",
         "type": "demo",
@@ -98,12 +98,12 @@ ITEMS = [
         "colors": 1,
         "adhesive": "hot-melt",
         "description": "Páska se zvýšenou vrstvou lepidla (+33 %) pro obtížné povrchy, těžké balíky a prašné skladové prostředí.",
-        "graphic": True,
+        "graphic": False,
         "graphic_style": "glue",
     },
     {
         "id": "pecetni",
-        "image": "pecet.jpg",
+        "image": "gallery/gallery-pecetni.jpg",
         "title": "Pečetní páska s potiskem",
         "category": "bezpecnostni",
         "type": "reference",
@@ -118,7 +118,7 @@ ITEMS = [
     },
     {
         "id": "logisticky-kontakty",
-        "image": "1000x1000_900Potisk.U.jpg",
+        "image": "gallery/gallery-logisticky-kontakty.jpg",
         "title": "Logistický potisk – kontakty",
         "category": "logisticke",
         "type": "reference",
@@ -133,7 +133,7 @@ ITEMS = [
     },
     {
         "id": "neutralni-bopp",
-        "image": "moznost-vyberu.jpg",
+        "image": "gallery/gallery-neutralni-bopp.jpg",
         "title": "Neutrální BOPP 25 mm",
         "category": "jednobarevny",
         "type": "reference",
@@ -148,7 +148,7 @@ ITEMS = [
     },
     {
         "id": "prumyslova-serie",
-        "image": "kapacita.jpg",
+        "image": "gallery/gallery-prumyslova-serie.jpg",
         "title": "Průmyslová série pro e-shop",
         "category": "vicebarevny",
         "type": "demo",
@@ -159,12 +159,12 @@ ITEMS = [
         "colors": 4,
         "adhesive": "hot-melt",
         "description": "Hromadná výroba potištěných pásek pro e-shopy a fulfillment — konzistentní kvalita v celé sérii.",
-        "graphic": True,
+        "graphic": False,
         "graphic_style": "industrial",
     },
     {
         "id": "vystrizny-krehke",
-        "image": "slide-pasky-1920x624.jpg",
+        "image": "gallery/gallery-vystrizny-krehke.jpg",
         "title": "Výstražný potisk – křehké",
         "category": "logisticke",
         "type": "demo",
@@ -179,7 +179,7 @@ ITEMS = [
     },
     {
         "id": "bezpecnostni-sklad",
-        "image": "kradez2-1.jpg",
+        "image": "gallery/gallery-bezpecnostni-sklad.jpg",
         "title": "Bezpečnostní páska sklad",
         "category": "logisticke",
         "type": "demo",
@@ -190,7 +190,7 @@ ITEMS = [
         "colors": 1,
         "adhesive": "hot-melt",
         "description": "Kombinace logistického a bezpečnostního potisku pro sklady a distribuční centra.",
-        "graphic": True,
+        "graphic": False,
         "graphic_style": "security",
     },
 ]
@@ -456,17 +456,17 @@ def render_main() -> str:
 </main>
 
 <!-- LIGHTBOX -->
-<div id="gallery-lightbox" class="fixed inset-0 z-[100] hidden items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+<div id="gallery-lightbox" class="gallery-lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
     <div id="lightbox-backdrop" class="absolute inset-0 bg-slate-950/80 backdrop-blur-sm"></div>
+    <button type="button" id="lightbox-prev" class="absolute left-2 top-[35%] z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-white/90 text-slate-700 shadow-lg transition hover:bg-white hover:text-orange-600 sm:left-4 lg:top-1/2 lg:left-6" aria-label="Předchozí">
+        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+    </button>
+    <button type="button" id="lightbox-next" class="absolute right-2 top-[35%] z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-white/90 text-slate-700 shadow-lg transition hover:bg-white hover:text-orange-600 sm:right-4 lg:top-1/2 lg:right-6" aria-label="Další">
+        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+    </button>
     <div class="relative z-10 w-full max-w-5xl overflow-hidden rounded-2xl bg-white shadow-2xl">
         <button type="button" id="lightbox-close" class="absolute right-3 top-3 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-md transition hover:bg-white hover:text-orange-600" aria-label="Zavřít">
             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-        </button>
-        <button type="button" id="lightbox-prev" class="absolute left-3 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-md transition hover:bg-white hover:text-orange-600" aria-label="Předchozí">
-            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
-        </button>
-        <button type="button" id="lightbox-next" class="absolute right-3 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-md transition hover:bg-white hover:text-orange-600 sm:right-14" aria-label="Další">
-            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
         </button>
         <div class="flex flex-col lg:flex-row">
             <div id="lightbox-media" class="relative flex min-h-[220px] items-center justify-center bg-slate-100 lg:w-3/5">
@@ -496,7 +496,13 @@ def main() -> None:
     html_path = ROOT / "galerie.html"
     content = html_path.read_text(encoding="utf-8")
     new_block = render_main()
-    updated = re.sub(r"<main>.*?</main>\s*(?:<!-- LIGHTBOX -->.*?</div>\s*)?", new_block + "\n", content, count=1, flags=re.DOTALL)
+    updated = re.sub(
+        r"<main>.*?</main>\s*(?:<!-- LIGHTBOX -->.*?</div>\s*)*<!-- FOOTER -->",
+        new_block + "\n<!-- FOOTER -->",
+        content,
+        count=1,
+        flags=re.DOTALL,
+    )
     if updated == content:
         raise SystemExit("Failed to patch galerie.html — pattern not found")
     html_path.write_text(updated, encoding="utf-8")

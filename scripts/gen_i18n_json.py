@@ -521,7 +521,7 @@ def build_cs() -> dict[str, Any]:
             "about": {
                 "label": "O nás",
                 "title": "Tradiční český výrobce lepicích pásek s potiskem",
-                "lead": "Již více než 25 let pomáháme firmám bezpečně balit jejich zásilky a budovat silnou značku přímo na balicích materiálech. Jsme specialisté na zakázkový potisk lepicích pásek.",
+                "lead": "Již více než 30 let pomáháme firmám bezpečně balit jejich zásilky a budovat silnou značku přímo na balicích materiálech. Jsme specialisté na zakázkový potisk lepicích pásek.",
                 "body1": "Naše moderní výrobní zázemí nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (Hot Melt, Akryl) a rychlém doručení po celé České republice.",
                 "body2": "Díky certifikovaným procesům ISO 9001 a využívání ekologických, udržovatelných materiálů jsme stabilním partnerem pro více než 100 aktivních odběratelů.",
                 "image_alt": "Výroba lepicích pásek ALFA IN",
@@ -596,8 +596,8 @@ def build_cs() -> dict[str, Any]:
                 "length_label": "Délka pásky v metrech",
                 "quantity_label": "Poptávané množství v kusech",
                 "quantity_hint": "Zadejte číslo od 1 do 999.",
-                "quantity_tip": "Tip: Od 360 ks získáváte dopravu zdarma a velkoobchodní ceny.",
-                "quantity_success": "🔥 Skvělá volba! Aktivovali jste velkoobchodní slevu 15 % a dopravu zdarma.",
+                "quantity_tip": "Od 360 ks získáváte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
+                "quantity_success": "🔥 Skvělá volba! Máte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
                 "order_period_label": "Předpokládaná perioda objednávky",
                 "order_periods": {
                     "monthly": "Každý měsíc",
@@ -642,8 +642,8 @@ def build_cs() -> dict[str, Any]:
             "sample": {
                 "label": "Testovací vzorek",
                 "title": "Nejste si jistí výběrem? Pošleme Vám vzorek zdarma.",
-                "text": "Chápeme, že kvalita lepicí pásky je pro hladký chod Vaší logistiky klíčová. Vyplňte naši poptávku a do poznámky napište, že máte zájem o testovací vzorek.",
-                "cta": "Vyplnit poptávku",
+                "text": "Chápeme, že kvalita lepicí pásky je pro hladký chod Vaší logistiky klíčová. Vyplňte poptávku — poznámku o testovací vzorek doplníme za vás.",
+                "cta": "Mám zájem o vzorek",
             },
         },
         "gallery": {
@@ -845,7 +845,7 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "about": {
                 "label": "About us",
                 "title": "A traditional Czech manufacturer of printed adhesive tapes",
-                "lead": "For more than 25 years we have helped companies pack their shipments securely and build a strong brand directly on packaging materials. We specialise in custom printing of adhesive tapes.",
+                "lead": "For more than 30 years we have helped companies pack their shipments securely and build a strong brand directly on packaging materials. We specialise in custom printing of adhesive tapes.",
                 "body1": "Our modern production facility allows us to respond flexibly to the needs of both small e-shops and large industrial enterprises. We pride ourselves on precise printing (up to 8 colours), premium adhesive quality (Hot Melt, Acrylic) and fast delivery throughout the Czech Republic.",
                 "body2": "Thanks to ISO 9001 certified processes and the use of ecological, sustainable materials, we are a reliable partner for more than 100 active customers.",
                 "image_alt": "ALFA IN adhesive tape production",
@@ -920,8 +920,8 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "length_label": "Tape length in metres",
                 "quantity_label": "Requested quantity in rolls",
                 "quantity_hint": "Enter a number from 1 to 999.",
-                "quantity_tip": "Tip: From 360 rolls you get free shipping and wholesale prices.",
-                "quantity_success": "🔥 Great choice! You have activated a 15% wholesale discount and free shipping.",
+                "quantity_tip": "From 360 rolls you get free shipping. Delivery takes approximately 3–4 weeks.",
+                "quantity_success": "🔥 Great choice! You have free shipping. Delivery takes approximately 3–4 weeks.",
                 "order_period_label": "Expected order frequency",
                 "order_periods": {
                     "monthly": "Every month",
@@ -966,8 +966,8 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "sample": {
                 "label": "Test sample",
                 "title": "Not sure which tape to choose? We will send you a free sample.",
-                "text": "We understand that tape quality is key to smooth logistics. Fill in our inquiry form and note in the message that you would like a test sample.",
-                "cta": "Fill in inquiry",
+                "text": "We understand that tape quality is key to smooth logistics. Fill in the inquiry form — we will add the test sample note for you.",
+                "cta": "I want a sample",
             },
         },
         "gallery": {
@@ -1169,7 +1169,7 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "about": {
                 "label": "Über uns",
                 "title": "Traditioneller tschechischer Hersteller bedruckter Klebebänder",
-                "lead": "Seit mehr als 25 Jahren helfen wir Unternehmen, ihre Sendungen sicher zu verpacken und eine starke Marke direkt auf Verpackungsmaterialien aufzubauen. Wir sind Spezialisten für individuellen Druck auf Klebebändern.",
+                "lead": "Seit mehr als 30 Jahren helfen wir Unternehmen, ihre Sendungen sicher zu verpacken und eine starke Marke direkt auf Verpackungsmaterialien aufzubauen. Wir sind Spezialisten für individuellen Druck auf Klebebändern.",
                 "body1": "Unsere moderne Produktionsstätte ermöglicht es uns, flexibel auf die Bedürfnisse kleiner E-Shops wie auch großer Industrieunternehmen zu reagieren. Wir legen Wert auf präzisen Druck (bis 8 Farben), erstklassige Klebstoffqualität (Hot Melt, Acryl) und schnelle Lieferung in der gesamten Tschechischen Republik.",
                 "body2": "Dank ISO-9001-zertifizierter Prozesse und dem Einsatz ökologischer, nachhaltiger Materialien sind wir ein zuverlässiger Partner für mehr als 100 aktive Abnehmer.",
                 "image_alt": "ALFA IN Klebeband-Produktion",
@@ -1244,8 +1244,8 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "length_label": "Bandlänge in Metern",
                 "quantity_label": "Gewünschte Menge in Rollen",
                 "quantity_hint": "Geben Sie eine Zahl von 1 bis 999 ein.",
-                "quantity_tip": "Tipp: Ab 360 Rollen erhalten Sie kostenlosen Versand und Großhandelspreise.",
-                "quantity_success": "🔥 Ausgezeichnete Wahl! Sie haben 15 % Großhandelsrabatt und kostenlosen Versand aktiviert.",
+                "quantity_tip": "Ab 360 Rollen erhalten Sie kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
+                "quantity_success": "🔥 Ausgezeichnete Wahl! Sie haben kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
                 "order_period_label": "Voraussichtliche Bestellfrequenz",
                 "order_periods": {
                     "monthly": "Jeden Monat",
@@ -1290,8 +1290,8 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "sample": {
                 "label": "Testmuster",
                 "title": "Unsicher bei der Auswahl? Wir senden Ihnen ein kostenloses Muster.",
-                "text": "Wir wissen, dass die Qualität des Klebebands für reibungslose Logistik entscheidend ist. Füllen Sie unsere Anfrage aus und vermerken Sie in der Anmerkung, dass Sie ein Testmuster wünschen.",
-                "cta": "Anfrage ausfüllen",
+                "text": "Wir wissen, dass die Qualität des Klebebands für reibungslose Logistik entscheidend ist. Füllen Sie die Anfrage aus — den Hinweis auf ein Testmuster ergänzen wir für Sie.",
+                "cta": "Ich möchte ein Muster",
             },
         },
         "gallery": {

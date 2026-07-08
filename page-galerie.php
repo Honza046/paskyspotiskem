@@ -13,5 +13,7 @@ get_header();
 <?php get_template_part( 'template-parts/gallery', 'content' ); ?>
 </main>
 
+<?php get_template_part( 'template-parts/gallery', 'lightbox' ); ?>
+
 <?php
 get_footer();

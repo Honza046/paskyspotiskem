@@ -133,30 +133,16 @@ function paskyonline_enqueue_assets() {
             PASKYONLINE_VERSION,
             true
         );
-
-        wp_enqueue_script(
-            'three-js',
-            'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js',
-            array(),
-            '0.160.0',
-            true
-        );
-
-        wp_enqueue_script(
-            'paskyonline-tape-configurator',
-            get_template_directory_uri() . '/assets/js/tape-configurator-3d.js',
-            array( 'three-js' ),
-            PASKYONLINE_VERSION,
-            true
-        );
-
-        wp_add_inline_script(
-            'paskyonline-tape-configurator',
-            "document.addEventListener('DOMContentLoaded',function(){if(typeof initTapeConfigurator3D==='function'){initTapeConfigurator3D();}});"
-        );
     }
 
     if ( paskyonline_is_gallery_page() || paskyonline_is_sortiment_page() ) {
+        wp_enqueue_style(
+            'paskyonline-gallery-lightbox',
+            get_template_directory_uri() . '/assets/css/gallery-lightbox.css',
+            array( 'paskyonline-style' ),
+            PASKYONLINE_VERSION
+        );
+
         wp_enqueue_script(
             'paskyonline-gallery',
             get_template_directory_uri() . '/assets/js/gallery.js',

@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
         <div class="mb-14 grid grid-cols-1 gap-4 sm:grid-cols-3">
             <div class="rounded-2xl border border-slate-100 bg-slate-50 px-6 py-5 text-center">
-                <p class="text-3xl font-extrabold text-orange-600">100+</p>
+                <p class="text-3xl font-extrabold text-orange-600">300+</p>
                 <p class="mt-1 text-sm font-medium text-slate-600"><?php esc_html_e( 'aktivních odběratelů', 'paskyonline' ); ?></p>
             </div>
             <div class="rounded-2xl border border-slate-100 bg-slate-50 px-6 py-5 text-center">

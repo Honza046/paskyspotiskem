@@ -123,15 +123,9 @@
     function boot() {
         canHide = false;
         showHeader();
-        scrollTopInstant();
-        showHeader();
         bindAnchorNavLinks();
 
-        window.setTimeout(function () {
-            scrollTopInstant();
-            showHeader();
-            enableHide();
-        }, ENABLE_DELAY_MS);
+        window.setTimeout(enableHide, ENABLE_DELAY_MS);
     }
 
     window.addEventListener('hashchange', function () {
@@ -164,7 +158,6 @@
     });
 
     window.addEventListener('load', function () {
-        scrollTopInstant();
         showHeader();
         if (window.location.hash) {
             beginAnchorNavigation();
