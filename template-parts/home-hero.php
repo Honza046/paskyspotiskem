@@ -20,10 +20,10 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="max-w-2xl">
             <div id="hero-content">
                 <p class="mb-4 inline-flex items-center rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1.5 text-sm font-semibold text-orange-300" data-i18n="home.hero.badge">ISO 9001 · Přímo od výrobce</p>
-                <h1 id="hero-title" class="text-4xl font-extrabold leading-snug tracking-tight text-white sm:text-5xl lg:text-6xl">LEPICÍ PÁSKY SE SPODNÍM TISKEM</h1>
-                <p id="hero-subtitle" class="mt-10 text-lg leading-relaxed text-slate-300 sm:text-xl">Vysoce spolehlivé BOPP pásky s tiskem chráněným pod folií i ekologické varianty pro udržitelné balení.</p>
+                <h1 id="hero-title" class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl" style="line-height:1.12;">LEPICÍ PÁSKY SE SPODNÍM TISKEM</h1>
+                <p id="hero-subtitle" class="mt-3 text-lg leading-relaxed text-slate-300 sm:text-xl">Vysoce spolehlivé BOPP pásky s tiskem chráněným pod folií i ekologické varianty pro udržitelné balení.</p>
             </div>
-            <div class="mt-10 flex flex-wrap gap-4">
+            <div class="mt-4 flex flex-wrap gap-4">
                 <a id="hero-cta-primary" href="#nabidka" class="inline-flex items-center rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-orange-600/30 active:scale-[0.98]">Prohlédnout nabídku</a>
                 <a id="hero-cta-secondary" href="#gf_1" class="inline-flex items-center rounded-2xl border border-white/20 bg-white/10 px-7 py-3.5 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:border-white/40 hover:bg-white/20">Nezávazná kalkulace</a>
             </div>

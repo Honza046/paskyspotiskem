@@ -35,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="mb-14 text-center">
             <p class="mb-3 text-sm font-bold uppercase tracking-widest text-orange-600" data-i18n="home.references.label">Reference</p>
             <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl" data-i18n="home.references.title">Spokojení zákazníci napříč obory</h2>
-            <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600">Firmy, které na našich páskách s potiskem spoléhají každý den — od e-commerce po výrobu a zdravotnictví.</p>
+            <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600">Firmy, které na našich páskách s potiskem spoléhají každý den, od e-commerce po výrobu a zdravotnictví.</p>
         </div>
 
         <div class="mb-14 grid grid-cols-1 gap-4 sm:grid-cols-3">

@@ -30,7 +30,7 @@
         };
     </script>
     <style>
-        html { scroll-behavior: auto; scroll-padding-top: 5.5rem; }
+        html { scroll-behavior: auto; scroll-padding-top: 5.5rem; overscroll-behavior-y: none; }
         #uvod {
             background-color: #0f172a;
             min-height: calc(100vh - 5.5rem);
@@ -96,10 +96,10 @@
         <div class="max-w-2xl">
             <div id="hero-content">
                 <p class="mb-4 inline-flex items-center rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1.5 text-sm font-semibold text-orange-300" data-i18n="home.hero.badge">ISO 9001 · Přímo od výrobce</p>
-                <h1 id="hero-title" class="text-4xl font-extrabold leading-snug tracking-tight text-white sm:text-5xl lg:text-6xl">LEPICÍ PÁSKY SE SPODNÍM TISKEM</h1>
-                <p id="hero-subtitle" class="mt-10 text-lg leading-relaxed text-slate-300 sm:text-xl">Vysoce spolehlivé BOPP pásky s tiskem chráněným pod folií i ekologické varianty pro udržitelné balení.</p>
+                <h1 id="hero-title" class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl" style="line-height:1.12;">LEPICÍ PÁSKY SE SPODNÍM TISKEM</h1>
+                <p id="hero-subtitle" class="mt-3 text-lg leading-relaxed text-slate-300 sm:text-xl">Vysoce spolehlivé BOPP pásky s tiskem chráněným pod folií i ekologické varianty pro udržitelné balení.</p>
             </div>
-            <div class="mt-10 flex flex-wrap gap-4">
+            <div class="mt-4 flex flex-wrap gap-4">
                 <a id="hero-cta-primary" href="#nabidka" class="inline-flex items-center rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-orange-600/30 active:scale-[0.98]">Prohlédnout nabídku</a>
                 <a id="hero-cta-secondary" href="#gf_1" class="inline-flex items-center rounded-2xl border border-white/20 bg-white/10 px-7 py-3.5 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:border-white/40 hover:bg-white/20">Nezávazná kalkulace</a>
             </div>
@@ -137,7 +137,7 @@
         <div class="mb-14 text-center">
             <p class="mb-3 text-sm font-bold uppercase tracking-widest text-orange-600" data-i18n="home.references.label">Reference</p>
             <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl" data-i18n="home.references.title">Spokojení zákazníci napříč obory</h2>
-            <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600">Firmy, které na našich páskách s potiskem spoléhají každý den — od e-commerce po výrobu a zdravotnictví.</p>
+            <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600">Firmy, které na našich páskách s potiskem spoléhají každý den, od e-commerce po výrobu a zdravotnictví.</p>
         </div>
 
         <div class="mb-14 grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -160,34 +160,30 @@
             <div class="logo-carousel__viewport">
                 <div class="logo-carousel__track" aria-hidden="false">
                     <div class="logo-carousel__group">
-                        <div class="logo-carousel__item logo-carousel__item--alza"><img src="/loga/Alza_logo.png" alt="Alza" loading="lazy" decoding="async"><img src="/loga/alza-alzak.png" alt="" aria-hidden="true" class="logo-carousel__mascot" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item"><img src="/loga/tescoma-seeklogo.png" alt="Tescoma" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item"><img src="/loga/RMA_PIERBURG_BAREVNE-pro-dokumenty-a-excel-na-bile-pozadi_KVALITNI.jpg" alt="Pierburg" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item"><img src="/loga/wordmark-blacktag_v=1779091514.png" alt="Black Tag" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item"><img src="/loga/idCmboYVuN_logos.png" alt="Just nahrin" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item"><img src="/loga/idOlugJR_G_logos.png" alt="FIXED" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item"><img src="/loga/idTeLF6frI_1781781563665.png" alt="Dr. Max" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/idatQHbzbo_1781781887303.png" alt="KOH-I-NOOR HARDTMUTH" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item"><img src="/loga/iddXgbhi7m_logos.png" alt="CURAPROX" loading="lazy" decoding="async"></div>
+                        <div class="logo-carousel__item"><img src="/loga/wordmark-blacktag_v=1779091514.png" alt="Notino" loading="lazy" decoding="async"></div>
+                        <div class="logo-carousel__item"><img src="/loga/idCmboYVuN_logos.png" alt="Just nahrin" loading="lazy" decoding="async"></div>
+                        <div class="logo-carousel__item"><img src="/loga/idTeLF6frI_1781781563665.png" alt="Dr. Max" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/ideXl3nCqb_logos.png" alt="Pilulka" loading="lazy" decoding="async"></div>
+                        <div class="logo-carousel__item logo-carousel__item--alza"><img src="/loga/Alza_logo.png" alt="Alza" loading="lazy" decoding="async"><img src="/loga/alza-alzak.png" alt="" aria-hidden="true" class="logo-carousel__mascot" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item logo-carousel__item--wordmark"><img src="/loga/idgFDwSpdE_logos.png" alt="Mobil Pohotovost" loading="lazy" decoding="async"><span class="logo-carousel__wordmark">Mobil Pohotovost</span></div>
-                        <div class="logo-carousel__item"><img src="/loga/idrXT87fep_logos.png" alt="Yoggies" loading="lazy" decoding="async"></div>
+                        <div class="logo-carousel__item"><img src="/loga/tescoma-seeklogo.png" alt="Tescoma" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item logo-carousel__item--wordmark logo-carousel__item--gws"><img src="/loga/global-wines-spirits-icon.png" alt="Global Wines &amp; Spirits" loading="lazy" decoding="async"><span class="logo-carousel__wordmark logo-carousel__wordmark--gws"><span>GLOBAL WINES</span><span>&amp; SPIRITS</span></span></div>
+                        <div class="logo-carousel__item"><img src="/loga/RMA_PIERBURG_BAREVNE-pro-dokumenty-a-excel-na-bile-pozadi_KVALITNI.jpg" alt="Pierburg" loading="lazy" decoding="async"></div>
+                        <div class="logo-carousel__item"><img src="/loga/iddXgbhi7m_logos.png" alt="CURAPROX" loading="lazy" decoding="async"></div>
                     </div>
                     <div class="logo-carousel__group" aria-hidden="true">
-                        <div class="logo-carousel__item logo-carousel__item--alza"><img src="/loga/Alza_logo.png" alt="" loading="lazy" decoding="async"><img src="/loga/alza-alzak.png" alt="" aria-hidden="true" class="logo-carousel__mascot" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item"><img src="/loga/tescoma-seeklogo.png" alt="" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item"><img src="/loga/RMA_PIERBURG_BAREVNE-pro-dokumenty-a-excel-na-bile-pozadi_KVALITNI.jpg" alt="" loading="lazy" decoding="async"></div>
+                        <div class="logo-carousel__item"><img src="/loga/idatQHbzbo_1781781887303.png" alt="" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/wordmark-blacktag_v=1779091514.png" alt="" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/idCmboYVuN_logos.png" alt="" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item"><img src="/loga/idOlugJR_G_logos.png" alt="" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/idTeLF6frI_1781781563665.png" alt="" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item"><img src="/loga/idatQHbzbo_1781781887303.png" alt="" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item"><img src="/loga/iddXgbhi7m_logos.png" alt="" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/ideXl3nCqb_logos.png" alt="" loading="lazy" decoding="async"></div>
+                        <div class="logo-carousel__item logo-carousel__item--alza"><img src="/loga/Alza_logo.png" alt="" loading="lazy" decoding="async"><img src="/loga/alza-alzak.png" alt="" aria-hidden="true" class="logo-carousel__mascot" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item logo-carousel__item--wordmark"><img src="/loga/idgFDwSpdE_logos.png" alt="" loading="lazy" decoding="async"><span class="logo-carousel__wordmark">Mobil Pohotovost</span></div>
-                        <div class="logo-carousel__item"><img src="/loga/idrXT87fep_logos.png" alt="" loading="lazy" decoding="async"></div>
+                        <div class="logo-carousel__item"><img src="/loga/tescoma-seeklogo.png" alt="" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item logo-carousel__item--wordmark logo-carousel__item--gws"><img src="/loga/global-wines-spirits-icon.png" alt="" loading="lazy" decoding="async"><span class="logo-carousel__wordmark logo-carousel__wordmark--gws"><span>GLOBAL WINES</span><span>&amp; SPIRITS</span></span></div>
+                        <div class="logo-carousel__item"><img src="/loga/RMA_PIERBURG_BAREVNE-pro-dokumenty-a-excel-na-bile-pozadi_KVALITNI.jpg" alt="" loading="lazy" decoding="async"></div>
+                        <div class="logo-carousel__item"><img src="/loga/iddXgbhi7m_logos.png" alt="" loading="lazy" decoding="async"></div>
                     </div>
                 </div>
             </div>

@@ -560,7 +560,7 @@ footer .bottom .column.text-right {
 /* ------------------------------------------------------------------ */
 /* Tailwind component overrides (from index.html)                     */
 /* ------------------------------------------------------------------ */
-html { scroll-behavior: auto; scroll-padding-top: 5.5rem; }
+html { scroll-behavior: auto; scroll-padding-top: 5.5rem; overscroll-behavior-y: none; }
         #uvod {
             background-color: #0f172a;
             min-height: calc(100vh - 5.5rem);
