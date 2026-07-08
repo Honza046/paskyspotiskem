@@ -375,7 +375,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
     <div class="mx-auto grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-2">
         <article class="flex h-full flex-col rounded-3xl border border-slate-100 bg-white p-8 text-center shadow-sm">
-            <img src="<?php echo esc_url( paskyonline_image( 'karel-petrak1.png' ) ); ?>" alt="Ing. Karel Petrák" width="131" height="130" class="mx-auto mb-5 h-28 w-28 rounded-full border-4 border-white object-cover shadow-md ring-2 ring-orange-100">
+            <img src="<?php echo esc_url( paskyonline_image( 'karel-petrak-photo.png' ) ); ?>" alt="Ing. Karel Petrák" width="131" height="130" class="mx-auto mb-5 h-28 w-28 rounded-full border-4 border-white bg-white object-cover shadow-md ring-2 ring-orange-100">
             <h3 class="text-xl font-bold text-slate-900">Ing. Karel Petrák</h3>
             <p class="mt-1 text-sm text-slate-500">Zastoupení pro prodej balicích pásek</p>
             <div class="mt-6 flex flex-1 flex-col justify-start space-y-3">
@@ -391,9 +391,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         </article>
 
         <article class="flex h-full flex-col rounded-3xl border border-slate-100 bg-white p-8 text-center shadow-sm">
-            <div class="mx-auto mb-5 flex h-28 w-28 items-center justify-center rounded-full border-4 border-white bg-orange-50 shadow-md ring-2 ring-orange-100" aria-hidden="true">
-                <span class="text-2xl font-bold tracking-wide text-orange-600">VP</span>
-            </div>
+            <img src="<?php echo esc_url( paskyonline_image( 'vojtech-petrak-photo.png' ) ); ?>" alt="Vojtěch Petrák" width="131" height="130" class="mx-auto mb-5 h-28 w-28 rounded-full border-4 border-white bg-white object-cover shadow-md ring-2 ring-orange-100">
             <h3 class="text-xl font-bold text-slate-900">Vojtěch Petrák</h3>
             <p class="mt-1 text-sm text-slate-500">Asistent prodeje</p>
             <div class="mt-6 flex flex-1 flex-col justify-start space-y-3">
