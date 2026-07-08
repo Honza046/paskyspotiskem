@@ -151,7 +151,7 @@
       "width_label": "Bandbreite in mm",
       "length_label": "Bandlänge in Metern",
       "quantity_label": "Gewünschte Menge in Rollen",
-      "quantity_hint": "Geben Sie eine Zahl von 1 bis 999 ein.",
+      "quantity_hint": "Geben Sie eine Zahl von 360 bis 9999 ein.",
       "quantity_tip": "Ab 360 Rollen erhalten Sie kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
       "quantity_success": "🔥 Ausgezeichnete Wahl! Sie haben kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
       "order_period_label": "Voraussichtliche Bestellfrequenz",

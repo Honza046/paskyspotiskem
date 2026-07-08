@@ -222,7 +222,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                     <div id="acryl-noise-option" class="mb-6 hidden">
                         <label class="flex cursor-pointer items-start gap-3 rounded-xl border-2 border-slate-200 p-4 transition-all hover:border-slate-300 has-[:checked]:border-orange-500 has-[:checked]:bg-orange-50">
-                            <input type="checkbox" name="input_acryl_no_silent" id="input_acryl_no_silent" value="bez nehlučného činidla" class="mt-0.5 h-4 w-4 rounded border-slate-300 text-orange-600 focus:ring-orange-500/20">
+                            <input type="checkbox" name="input_acryl_no_silent" id="input_acryl_no_silent" value="bez nehlučného činidla" class="mt-0.5 h-4 w-4 rounded border-slate-300 accent-orange-600 focus:ring-orange-500/20">
                             <span class="text-sm leading-relaxed text-slate-700">
                                 <span class="font-semibold text-slate-900">Bez nehlučného činidla</span>
                                 <span class="mt-0.5 block text-xs text-slate-500">Standardně je u ACRYL pásek tiché odvíjení. Zaškrtněte, pokud preferujete variantu bez této úpravy.</span>
@@ -291,7 +291,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
                     <div class="mb-6">
                         <label for="qty" class="mb-2 block text-sm font-semibold text-slate-800">Poptávané množství v kusech <span class="text-orange-600">*</span></label>
-                        <input type="number" id="qty" name="input_19" min="360" max="999" placeholder="360" required class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-900 transition-all focus:border-orange-500 focus:outline-none focus:ring-4 focus:ring-orange-500/20">
+                        <input type="number" id="qty" name="input_19" min="360" max="9999" placeholder="360" required class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-900 transition-all focus:border-orange-500 focus:outline-none focus:ring-4 focus:ring-orange-500/20">
                         <p class="mt-1 text-xs text-slate-400">Minimální množství je 360 ks.</p>
                         <div id="qty-discount-badge" class="mt-2 overflow-hidden rounded-lg border px-3 py-1.5 text-xs leading-snug transition-all duration-300 ease-out opacity-100 max-h-24 border-slate-200 bg-slate-50 font-medium text-slate-500" role="status" aria-live="polite" aria-atomic="true">
                             <span id="qty-discount-text">Od 360 ks získáváte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.</span>
@@ -347,10 +347,10 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 <label for="note" class="block text-sm font-semibold text-slate-800">Poznámka</label>
                                 <button type="button" id="note-sample-btn" class="rounded-lg border border-orange-200 bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-700 transition-colors hover:border-orange-300 hover:bg-orange-100">Mám zájem o vzorek</button>
                             </div>
-                            <textarea id="note" name="input_13" rows="3" class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-900 transition-all focus:border-orange-500 focus:outline-none focus:ring-4 focus:ring-orange-500/20"></textarea>
+                            <textarea id="note" name="input_13" rows="3" class="w-full resize-none rounded-xl border border-slate-200 px-4 py-3 text-slate-900 transition-all focus:border-orange-500 focus:outline-none focus:ring-4 focus:ring-orange-500/20"></textarea>
                         </div>
                         <label class="flex cursor-pointer items-start gap-3 rounded-xl border-2 border-slate-200 p-4 transition-all has-[:checked]:border-orange-500 has-[:checked]:bg-orange-50">
-                            <input type="checkbox" name="input_14.1" required class="mt-0.5 h-4 w-4 rounded border-slate-300 text-orange-600 focus:ring-orange-500/20">
+                            <input type="checkbox" name="input_14.1" required class="mt-0.5 h-4 w-4 rounded border-slate-300 accent-orange-600 focus:ring-orange-500/20">
                             <span class="text-sm leading-relaxed">Odesláním souhlasíte se <a href="#" class="font-semibold text-orange-600 hover:underline">zpracováním osobních údajů</a> <span class="text-orange-600">*</span></span>
                         </label>
                     </div>

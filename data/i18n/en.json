@@ -151,7 +151,7 @@
       "width_label": "Tape width in mm",
       "length_label": "Tape length in metres",
       "quantity_label": "Requested quantity in rolls",
-      "quantity_hint": "Enter a number from 1 to 999.",
+      "quantity_hint": "Enter a number from 360 to 9999.",
       "quantity_tip": "From 360 rolls you get free shipping. Delivery takes approximately 3–4 weeks.",
       "quantity_success": "🔥 Great choice! You have free shipping. Delivery takes approximately 3–4 weeks.",
       "order_period_label": "Expected order frequency",

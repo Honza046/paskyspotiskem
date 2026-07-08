@@ -561,9 +561,19 @@ footer .bottom .column.text-right {
 /* Tailwind component overrides (from index.html)                     */
 /* ------------------------------------------------------------------ */
 html { scroll-behavior: auto; scroll-padding-top: 5.5rem; }
-        #uvod { background-color: #0f172a; }
+        #uvod {
+            background-color: #0f172a;
+            min-height: calc(100vh - 5.5rem);
+            min-height: calc(100dvh - 5.5rem);
+        }
+        .hero-inner {
+            padding-bottom: 3.5rem;
+        }
         .hero-slide { opacity: 0; transition: opacity 0.7s ease; pointer-events: none; }
         .hero-slide.is-active { opacity: 1; pointer-events: auto; }
         /* Text mimo formulář je jen ke čtení – bez blikajícího kurzoru */
         body { user-select: none; -webkit-user-select: none; }
+        #gform_1 input[type="checkbox"] { accent-color: #ea580c; }
+        #gform_1 input[type="number"] { accent-color: #ea580c; }
+        #gform_1 textarea { resize: none; }
         input, textarea, select, button, label, a { user-select: auto; -webkit-user-select: auto; }
