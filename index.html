@@ -67,26 +67,37 @@
         }
         .hero-slide { opacity: 0; transition: opacity 0.7s ease; pointer-events: none; }
         .hero-slide.is-active { opacity: 1; pointer-events: auto; }
+        #hero-dots {
+            --hero-dot-track: 0.5rem;
+            --hero-dot-idle: 0.5rem;
+            --hero-dot-pick: 0.75rem;
+            align-items: center;
+        }
         .hero-dot {
             position: relative;
-            height: 0.375rem;
-            width: 0.375rem;
+            box-sizing: border-box;
+            height: var(--hero-dot-track);
+            width: var(--hero-dot-idle);
             flex-shrink: 0;
             overflow: hidden;
             border-radius: 9999px;
-            background: rgba(255, 255, 255, 0.35);
-            transition: width 0.3s ease, background-color 0.3s ease;
+            background: rgba(255, 255, 255, 0.38);
+            border: 0;
+            padding: 0;
+            transition: width 0.22s ease, height 0.22s ease, background-color 0.22s ease;
         }
         .hero-dot.is-active {
             width: 2.25rem;
-            background: rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.28);
         }
         .hero-dot__fill {
             position: absolute;
-            inset: 0;
+            inset: 0 auto 0 0;
             width: 0;
+            height: 100%;
             border-radius: 9999px;
             background: #E67516;
+            transition: opacity 0.18s ease;
         }
         .hero-dot.is-active .hero-dot__fill.is-filling {
             animation: hero-dot-fill 6s linear forwards;
@@ -94,6 +105,37 @@
         @keyframes hero-dot-fill {
             from { width: 0; }
             to { width: 100%; }
+        }
+        @media (hover: hover) and (pointer: fine) {
+            #hero-dots {
+                gap: 0.625rem;
+                padding: 0.75rem 1.125rem;
+            }
+            .hero-dot {
+                cursor: pointer;
+            }
+            .hero-dot::before {
+                content: '';
+                position: absolute;
+                inset: -0.625rem;
+            }
+            #hero-dots.is-picking .hero-dot {
+                width: var(--hero-dot-pick);
+                height: var(--hero-dot-pick);
+                background: rgba(255, 255, 255, 0.42);
+            }
+            #hero-dots.is-picking .hero-dot.is-active {
+                background: #E67516;
+            }
+            #hero-dots.is-picking .hero-dot__fill {
+                opacity: 0;
+                animation: none !important;
+                width: 0 !important;
+            }
+            #hero-dots.is-picking .hero-dot:not(.is-active):hover,
+            #hero-dots.is-picking .hero-dot:not(.is-active):focus-visible {
+                background: rgba(255, 255, 255, 0.72);
+            }
         }
         /* Text mimo formulář je jen ke čtení – bez blikajícího kurzoru */
         body { user-select: none; -webkit-user-select: none; }
@@ -806,8 +848,38 @@
         });
     }
 
+    function restartFillAnimation() {
+        var activeFill = dotsWrap.querySelector('.hero-dot.is-active .hero-dot__fill');
+        if (!activeFill) return;
+        activeFill.classList.remove('is-filling');
+        void activeFill.offsetWidth;
+        activeFill.classList.add('is-filling');
+    }
+
     function start() { clearInterval(timer); timer = setInterval(function () { go(current + 1); }, 6000); }
     go(0); start();
+
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+        dotsWrap.addEventListener('mouseenter', function () {
+            clearInterval(timer);
+            dotsWrap.classList.add('is-picking');
+        });
+        dotsWrap.addEventListener('mouseleave', function () {
+            dotsWrap.classList.remove('is-picking');
+            start();
+            restartFillAnimation();
+        });
+        dotsWrap.addEventListener('focusin', function () {
+            clearInterval(timer);
+            dotsWrap.classList.add('is-picking');
+        });
+        dotsWrap.addEventListener('focusout', function (e) {
+            if (dotsWrap.contains(e.relatedTarget)) return;
+            dotsWrap.classList.remove('is-picking');
+            start();
+            restartFillAnimation();
+        });
+    }
 
     // Mobile swipe: browse slides with a finger, desktop is unaffected (touch-only events).
     (function () {
@@ -1009,7 +1081,7 @@
 <script src="/assets/js/footer-credit.js"></script>
 <script src="/assets/js/mobile-nav.js"></script>
 <script src="/assets/js/info-banner.js"></script>
-<script src="/assets/js/header-scroll.js?v=4"></script>
+<script src="/assets/js/header-scroll.js?v=5"></script>
 <script src="/assets/js/privacy-modal.js"></script>
 <script src="/assets/js/theme-toggle.js"></script>
 </body>

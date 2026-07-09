@@ -1,5 +1,5 @@
 /**
- * Hide sticky header on scroll down, reveal on scroll up only.
+ * Hide sticky header on scroll down, reveal on scroll up only (homepage hero only).
  * Info banner stays visible; only the main header collapses.
  */
 (function () {
@@ -25,6 +25,8 @@
         return;
     }
 
+    var isHomeHero = !!document.getElementById('uvod');
+    var fullSiteTopHeight = 0;
     var lastY = 0;
     var ticking = false;
     var hidden = false;
@@ -37,6 +39,9 @@
     var NOISE = 3;
     var ENABLE_DELAY_MS = 800;
     var ANCHOR_GRACE_MS = 1400;
+
+    document.documentElement.style.scrollBehavior = 'auto';
+    document.documentElement.style.overscrollBehaviorY = 'none';
 
     function closeMobileNav() {
         var mobileNav = document.getElementById('mobile-nav');
@@ -54,11 +59,28 @@
         }
     }
 
+    function measureFullSiteTopHeight() {
+        var siteTop = document.querySelector('.site-top');
+        if (!siteTop) {
+            return;
+        }
+        var wasHidden = hidden;
+        showHeader();
+        fullSiteTopHeight = siteTop.offsetHeight;
+        if (wasHidden && isHomeHero) {
+            setHidden(true);
+        }
+    }
+
     function syncSiteTopHeight() {
         var siteTop = document.querySelector('.site-top');
-        if (siteTop) {
-            document.documentElement.style.setProperty('--site-top-height', siteTop.offsetHeight + 'px');
+        if (!siteTop) {
+            return;
         }
+        var height = isHomeHero && fullSiteTopHeight > 0
+            ? fullSiteTopHeight
+            : siteTop.offsetHeight;
+        document.documentElement.style.setProperty('--site-top-height', height + 'px');
     }
 
     /** Lock hero block height once – avoids bg-cover / dvh rescaling while scrolling. */
@@ -80,6 +102,9 @@
 
     var resizeTimer;
     function onWindowResize() {
+        if (isHomeHero) {
+            measureFullSiteTopHeight();
+        }
         syncHeaderShellHeight();
         syncSiteTopHeight();
         clearTimeout(resizeTimer);
@@ -97,12 +122,18 @@
     }
 
     function initSiteTopHeight() {
+        measureFullSiteTopHeight();
         syncHeaderShellHeight();
         lockHeroLayout();
         syncSiteTopHeight();
         var siteTop = document.querySelector('.site-top');
         if (siteTop && typeof ResizeObserver !== 'undefined') {
             new ResizeObserver(function () {
+                if (isHomeHero) {
+                    if (!hidden) {
+                        measureFullSiteTopHeight();
+                    }
+                }
                 syncHeaderShellHeight();
                 syncSiteTopHeight();
             }).observe(siteTop);
@@ -112,7 +143,7 @@
     }
 
     function setHidden(shouldHide) {
-        if (hidden === shouldHide) {
+        if (!isHomeHero || hidden === shouldHide) {
             return;
         }
         if (shouldHide) {
@@ -126,7 +157,6 @@
             hideAccum = 0;
             showAccum = 0;
         }
-        window.requestAnimationFrame(syncSiteTopHeight);
     }
 
     function showHeader() {
@@ -137,11 +167,16 @@
         showAccum = 0;
         window.requestAnimationFrame(function () {
             syncHeaderShellHeight();
-            syncSiteTopHeight();
+            if (!isHomeHero) {
+                syncSiteTopHeight();
+            }
         });
     }
 
     function enableHide() {
+        if (!isHomeHero) {
+            return;
+        }
         canHide = true;
         lastY = window.scrollY;
         hideAccum = 0;
@@ -149,6 +184,9 @@
     }
 
     function beginAnchorNavigation() {
+        if (!isHomeHero) {
+            return;
+        }
         anchorNavigating = true;
         canHide = false;
         showHeader();
@@ -164,6 +202,9 @@
     }
 
     function bindAnchorNavLinks() {
+        if (!isHomeHero) {
+            return;
+        }
         var selector = '#main-nav a[href*="#"], #mobile-nav a[href*="#"]';
         document.querySelectorAll(selector).forEach(function (link) {
             link.addEventListener('click', function () {
@@ -177,6 +218,11 @@
     }
 
     function onScroll() {
+        if (!isHomeHero) {
+            ticking = false;
+            return;
+        }
+
         var y = window.scrollY;
 
         if (anchorNavigating) {
@@ -217,27 +263,31 @@
         showHeader();
         lastY = window.scrollY;
         bindAnchorNavLinks();
-        window.setTimeout(enableHide, ENABLE_DELAY_MS);
+        if (isHomeHero) {
+            window.setTimeout(enableHide, ENABLE_DELAY_MS);
+        }
     }
 
-    window.addEventListener('hashchange', function () {
-        beginAnchorNavigation();
-    });
+    if (isHomeHero) {
+        window.addEventListener('hashchange', function () {
+            beginAnchorNavigation();
+        });
 
-    window.addEventListener('scroll', function () {
-        if (!ticking) {
-            window.requestAnimationFrame(onScroll);
-            ticking = true;
-        }
-    }, { passive: true });
+        window.addEventListener('scroll', function () {
+            if (!ticking) {
+                window.requestAnimationFrame(onScroll);
+                ticking = true;
+            }
+        }, { passive: true });
 
-    window.addEventListener('wheel', enableHide, { once: true, passive: true });
-    window.addEventListener('touchmove', enableHide, { once: true, passive: true });
-    window.addEventListener('keydown', function (e) {
-        if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', ' '].indexOf(e.key) > -1) {
-            enableHide();
-        }
-    });
+        window.addEventListener('wheel', enableHide, { once: true, passive: true });
+        window.addEventListener('touchmove', enableHide, { once: true, passive: true });
+        window.addEventListener('keydown', function (e) {
+            if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', ' '].indexOf(e.key) > -1) {
+                enableHide();
+            }
+        });
+    }
 
     window.addEventListener('pageshow', function () {
         boot();
@@ -247,8 +297,12 @@
         showHeader();
         syncHeaderShellHeight();
         lockHeroLayout();
+        if (isHomeHero) {
+            measureFullSiteTopHeight();
+        }
+        syncSiteTopHeight();
         lastY = window.scrollY;
-        if (window.location.hash) {
+        if (isHomeHero && window.location.hash) {
             beginAnchorNavigation();
         }
     });
