@@ -25,10 +25,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/logo-carousel.css">
+    <link rel="stylesheet" href="/assets/css/logo-carousel.css?v=4">
     <link rel="stylesheet" href="/assets/css/privacy-modal.css">
     <link rel="stylesheet" href="/assets/css/theme-dark.css">
-    <link rel="stylesheet" href="/assets/css/info-banner.css">
+    <link rel="stylesheet" href="/assets/css/info-banner.css?v=3">
     <link rel="stylesheet" href="/assets/css/inquiry-dropdown.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -47,8 +47,20 @@
         html { scroll-behavior: auto; scroll-padding-top: var(--site-top-height, 7.75rem); overscroll-behavior-y: none; }
         #uvod {
             background-color: #0f172a;
-            min-height: calc(100svh - var(--site-top-height, 8rem));
-            min-height: calc(100dvh - var(--site-top-height, 8rem));
+            height: var(--hero-height, calc(100svh - var(--hero-top-offset, 8rem)));
+            overflow: hidden;
+            contain: layout paint;
+        }
+        #hero-slides,
+        .hero-slide {
+            overflow: hidden;
+        }
+        .hero-slide__img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
         }
         .hero-inner {
             padding-bottom: 3.5rem;
@@ -136,9 +148,15 @@
 <!-- HERO -->
 <section id="uvod" class="relative overflow-hidden">
     <div id="hero-slides" class="absolute inset-0">
-        <div class="hero-slide is-active absolute inset-0 bg-cover bg-center" style="background-image:url('/images/slide-pasky-1920x624.jpg')"></div>
-        <div class="hero-slide absolute inset-0 bg-cover bg-center" style="background-image:url('/images/slide22-1920x624.jpg')"></div>
-        <div class="hero-slide absolute inset-0 bg-cover bg-center" style="background-image:url('/images/slide3-1920x624.jpg')"></div>
+        <div class="hero-slide is-active absolute inset-0">
+            <img src="/images/slide-pasky-1920x624.jpg" alt="" class="hero-slide__img" width="1920" height="624" decoding="async" fetchpriority="high">
+        </div>
+        <div class="hero-slide absolute inset-0">
+            <img src="/images/slide22-1920x624.jpg" alt="" class="hero-slide__img" width="1920" height="624" decoding="async">
+        </div>
+        <div class="hero-slide absolute inset-0">
+            <img src="/images/slide3-1920x624.jpg" alt="" class="hero-slide__img" width="1920" height="624" decoding="async">
+        </div>
     </div>
     <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent"></div>
     <div class="hero-inner absolute inset-0 flex items-center">
@@ -168,7 +186,7 @@
             <span class="text-xs font-bold uppercase tracking-widest text-orange-600" data-i18n="home.about.label">O nás</span>
             <h2 class="mb-6 mt-2 text-3xl font-bold text-slate-900 md:text-4xl" data-i18n="home.about.title">Tradiční český dodavatel lepících pásek s potiskem</h2>
             <p class="mb-4 text-lg font-medium text-slate-700">Již více než 30 let pomáháme firmám bezpečně balit jejich zásilky a budovat silnou značku přímo na balicích materiálech. Jsme specialisté na zakázkový potisk lepicích pásek.</p>
-            <p class="mb-6 text-base leading-relaxed text-slate-600">Naše <span tabindex="0" class="group relative inline cursor-help font-semibold italic text-orange-600 outline-none">moderní výrobní zázemí<span class="pointer-events-none absolute bottom-full left-0 z-30 mb-2 w-72 rounded-xl bg-slate-900 px-4 py-3 text-sm font-normal not-italic leading-snug text-white opacity-0 shadow-xl transition-opacity duration-200 group-hover:opacity-100 group-focus:opacity-100 sm:w-80">Tzn. vertikálně orientované výrobní zázemí, kde se nevyrábí pouze lepicí pásky, ale také fólie. V případě surovinové krize tedy máme značnou konkurenční výhodu.<span class="absolute left-8 top-full -translate-x-1/2 border-8 border-transparent border-t-slate-900"></span></span></span> nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (Hot Melt, Akryl) a rychlém doručení po celé České republice i Evropské unii.</p>
+            <p class="mb-6 text-base leading-relaxed text-slate-600">Naše <span tabindex="0" class="group relative inline cursor-help font-semibold italic text-orange-600 outline-none">moderní výrobní zázemí<span class="pointer-events-none absolute bottom-full left-0 z-30 mb-2 w-72 rounded-xl bg-slate-900 px-4 py-3 text-sm font-normal not-italic leading-snug text-white opacity-0 shadow-xl transition-opacity duration-200 group-hover:opacity-100 group-focus:opacity-100 sm:w-80">Vertikálně integrované tzv. nevyrábí totiž pouze lepicí pásky, ale přímo i samotné fólie. V případě surovinové krize na trhu tak máme značnou konkurenční výhodu.<span class="absolute left-8 top-full -translate-x-1/2 border-8 border-transparent border-t-slate-900"></span></span></span> nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (Hot Melt, Akryl) a rychlém doručení po celé České republice i Evropské unii.</p>
             <p class="text-base leading-relaxed text-slate-600">Díky certifikovaným procesům ISO 9001 a používání ekologicky udržitelných materiálů jsme stabilním partnerem pro více než 300 aktivních odběratelů.</p>
         </div>
         <div class="relative overflow-hidden rounded-3xl shadow-xl">
@@ -242,7 +260,8 @@
 </section>
 
 <!-- SROVNÁVAČ LEPIDEL -->
-<section id="lepidla" class="mx-auto max-w-7xl border-t border-slate-100 px-4 pb-20 pt-16 md:pt-24">
+<section id="lepidla" class="border-t border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 pb-20 pt-16 md:pt-24">
     <div class="mb-12 text-center">
         <p class="mb-3 text-sm font-bold uppercase tracking-widest text-orange-600">Průvodce výběrem</p>
         <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Jaké lepidlo zvolit?</h2>
@@ -278,6 +297,7 @@
             </div>
             <p class="leading-relaxed text-slate-600">Zajišťuje tiché a komfortní odvíjení, které oceníte ve velkých balicích halách. Je vysoce odolné proti UV záření a stárnutí, což z něj dělá perfektní volbu pro dlouhodobé skladování zboží.</p>
         </article>
+    </div>
     </div>
 </section>
 
@@ -352,14 +372,16 @@
 </section>
 
 <!-- FORMULÁŘ – MULTI-STEP -->
-<section id="gf_1" class="mx-auto max-w-7xl border-t border-slate-100 px-4 pt-20 pb-20">
+<section id="gf_1" class="border-t border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 pt-20 pb-20">
     <div id="form-outer-head" class="mb-8 text-center">
         <p class="mb-2 text-sm font-bold uppercase tracking-widest text-orange-600">Poptávka</p>
         <h2 class="text-2xl font-extrabold text-slate-900 sm:text-3xl">Mám zájem o kalkulaci</h2>
     </div>
 
     <div id="gform_wrapper_1" class="gform_wrapper gform-theme--no-framework mx-auto w-full max-w-2xl" data-step="0">
-        <form id="gform_1" action="#" method="post" class="select-text overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-lg shadow-slate-200/50" novalidate>
+        <form id="gform_1" action="/api/inquiry" method="post" class="select-text overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-lg shadow-slate-200/50" novalidate>
+            <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="absolute -left-[9999px] h-px w-px opacity-0" value="">
 
             <!-- Progress -->
             <div class="gform_progress_wrap border-b border-slate-100 px-6 py-5">
@@ -562,6 +584,7 @@
 
             </div>
         </form>
+    </div>
     </div>
 </section>
 
@@ -872,6 +895,10 @@
         });
 
         form.addEventListener('submit', function (e) {
+            if (window.__submitInquiryForm) {
+                window.__submitInquiryForm(validatePage, current)(e);
+                return;
+            }
             if (!validatePage(current)) {
                 e.preventDefault();
             }
@@ -975,13 +1002,14 @@
 </script>
 <script src="/assets/js/inquiry-dropdown.js"></script>
 <script src="/assets/js/inquiry-material-picker.js"></script>
+<script src="/assets/js/inquiry-form.js?v=1"></script>
 <script src="/assets/js/i18n.js"></script>
 <script src="/assets/js/nav-active.js"></script>
 <link rel="stylesheet" href="/assets/css/footer-credit.css">
 <script src="/assets/js/footer-credit.js"></script>
 <script src="/assets/js/mobile-nav.js"></script>
 <script src="/assets/js/info-banner.js"></script>
-<script src="/assets/js/header-scroll.js"></script>
+<script src="/assets/js/header-scroll.js?v=4"></script>
 <script src="/assets/js/privacy-modal.js"></script>
 <script src="/assets/js/theme-toggle.js"></script>
 </body>

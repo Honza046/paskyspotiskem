@@ -10,22 +10,54 @@ html {
 }
 
 .site-top {
-    z-index: 50;
+    z-index: 60 !important;
+    isolation: isolate;
 }
 
 .site-header-shell {
-    display: grid;
-    grid-template-rows: 1fr;
-    transition: grid-template-rows 0.3s ease;
+    max-height: var(--site-header-height, 5.5rem);
+    transition: max-height 0.28s ease;
+}
+
+.site-header-shell:not(.is-collapsed) {
+    overflow: visible;
 }
 
 .site-header-shell.is-collapsed {
-    grid-template-rows: 0fr;
+    overflow: hidden;
+    max-height: 0;
 }
 
 .site-header-shell > .site-header {
-    min-height: 0;
+    overflow: visible;
+}
+
+.site-header-shell.is-collapsed > .site-header {
     overflow: hidden;
+    border-bottom-color: transparent;
+    pointer-events: none;
+}
+
+/* Language switcher dropdown must sit above hero / page content */
+.lang-dropdown {
+    position: relative;
+    z-index: 80;
+}
+
+.lang-dropdown__menu {
+    z-index: 90;
+}
+
+/* Solid header – backdrop-blur over scrolling hero causes a fake 3D parallax in Safari */
+header.site-header {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    will-change: auto;
+    background-color: rgba(255, 255, 255, 0.98) !important;
+}
+
+.dark header.site-header {
+    background-color: rgba(15, 23, 42, 0.98) !important;
 }
 
 .info-banner {

@@ -152,7 +152,7 @@
     color: #5c212e;
 }
 
-/* Global Wines – dark burgundy on light bg, light rose on dark bg */
+/* Global Wines – same grey default as other logos; brand burgundy on hover */
 .logo-carousel__item--gws .logo-carousel__gws-dark {
     display: none;
 }
@@ -166,26 +166,10 @@
     object-position: left center;
 }
 
-.dark .logo-carousel__item--gws .logo-carousel__gws-light {
-    display: none;
-}
-
-.dark .logo-carousel__item--gws .logo-carousel__gws-dark {
-    display: block;
-    filter: grayscale(100%) brightness(1.15) contrast(0.86);
+.dark .logo-carousel__item--gws .logo-carousel__wordmark--gws {
+    color: #94a3b8;
     opacity: 0.68;
-    transform: none;
-    transition: filter 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
-}
-
-.dark .logo-carousel__item--gws:hover .logo-carousel__gws-dark {
-    filter: none;
-    opacity: 1;
-    transform: scale(1.05);
-}
-
-.dark .logo-carousel__item--gws:hover .logo-carousel__wordmark--gws {
-    color: #bd8b94;
+    transition: opacity 0.25s ease;
 }
 
 .logo-carousel__wordmark--pierburg {
@@ -257,7 +241,7 @@
 
 /* Dark mode – unified medium grey partner logos, full color on hover */
 .dark .logo-carousel__item:not(.logo-carousel__item--wordmark):not(.logo-carousel__item--kohinoor) img:not(.logo-carousel__mascot),
-.dark .logo-carousel__item--wordmark img:not(.logo-carousel__mascot):not(.logo-carousel__gws-light):not(.logo-carousel__gws-dark) {
+.dark .logo-carousel__item--wordmark img:not(.logo-carousel__mascot):not(.logo-carousel__gws-dark) {
     filter: grayscale(100%) invert(1) brightness(0.9) contrast(0.86);
     opacity: 0.68;
     mix-blend-mode: normal;
@@ -271,7 +255,7 @@
     opacity: 0.68;
 }
 
-.dark .logo-carousel__item:not(.logo-carousel__item--kohinoor):not(.logo-carousel__item--gws):hover img:not(.logo-carousel__mascot) {
+.dark .logo-carousel__item:not(.logo-carousel__item--kohinoor):hover img:not(.logo-carousel__mascot) {
     filter: none;
     mix-blend-mode: normal;
     opacity: 1;
@@ -287,7 +271,7 @@
     opacity: 0.68;
 }
 
-.dark .logo-carousel__item--wordmark:hover .logo-carousel__wordmark {
+.dark .logo-carousel__item--wordmark:not(.logo-carousel__item--gws):hover .logo-carousel__wordmark {
     color: #7dd3fc;
     opacity: 1;
 }
@@ -298,6 +282,19 @@
 
 .dark .logo-carousel__item--mobil:hover .logo-carousel__wordmark {
     color: #203f85;
+}
+
+.dark .logo-carousel__item--gws:hover .logo-carousel__gws-light {
+    filter: brightness(1.5) saturate(1.08);
+    mix-blend-mode: normal;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.dark .logo-carousel__item--gws:hover .logo-carousel__wordmark--gws {
+    color: #d49aa5;
+    opacity: 1;
+    transition: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

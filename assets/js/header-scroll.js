@@ -30,8 +30,11 @@
     var hidden = false;
     var canHide = false;
     var anchorNavigating = false;
+    var hideAccum = 0;
+    var showAccum = 0;
     var MIN_SCROLL = 80;
-    var DELTA = 18;
+    var SCROLL_THRESHOLD = 40;
+    var NOISE = 3;
     var ENABLE_DELAY_MS = 800;
     var ANCHOR_GRACE_MS = 1400;
 
@@ -58,14 +61,53 @@
         }
     }
 
+    /** Lock hero block height once – avoids bg-cover / dvh rescaling while scrolling. */
+    function lockHeroLayout() {
+        var uvod = document.getElementById('uvod');
+        if (!uvod) {
+            return;
+        }
+        var banner = document.querySelector('.info-banner');
+        var hdr = document.querySelector('header.site-header');
+        if (!banner || !hdr) {
+            return;
+        }
+        var topOffset = banner.offsetHeight + hdr.offsetHeight;
+        var heroH = Math.max(320, window.innerHeight - topOffset);
+        document.documentElement.style.setProperty('--hero-top-offset', topOffset + 'px');
+        document.documentElement.style.setProperty('--hero-height', heroH + 'px');
+    }
+
+    var resizeTimer;
+    function onWindowResize() {
+        syncHeaderShellHeight();
+        syncSiteTopHeight();
+        clearTimeout(resizeTimer);
+        resizeTimer = window.setTimeout(lockHeroLayout, 150);
+    }
+
+    function syncHeaderShellHeight() {
+        if (hidden) {
+            return;
+        }
+        var h = header.offsetHeight;
+        if (h > 0) {
+            shell.style.setProperty('--site-header-height', h + 'px');
+        }
+    }
+
     function initSiteTopHeight() {
+        syncHeaderShellHeight();
+        lockHeroLayout();
         syncSiteTopHeight();
         var siteTop = document.querySelector('.site-top');
         if (siteTop && typeof ResizeObserver !== 'undefined') {
-            new ResizeObserver(syncSiteTopHeight).observe(siteTop);
-        } else {
-            window.addEventListener('resize', syncSiteTopHeight);
+            new ResizeObserver(function () {
+                syncHeaderShellHeight();
+                syncSiteTopHeight();
+            }).observe(siteTop);
         }
+        window.addEventListener('resize', onWindowResize);
         window.paskyonlineSyncSiteTopHeight = syncSiteTopHeight;
     }
 
@@ -73,11 +115,16 @@
         if (hidden === shouldHide) {
             return;
         }
+        if (shouldHide) {
+            syncHeaderShellHeight();
+        }
         hidden = shouldHide;
         shell.classList.toggle('is-collapsed', shouldHide);
         header.setAttribute('aria-hidden', shouldHide ? 'true' : 'false');
         if (shouldHide) {
             closeMobileNav();
+            hideAccum = 0;
+            showAccum = 0;
         }
         window.requestAnimationFrame(syncSiteTopHeight);
     }
@@ -86,12 +133,19 @@
         shell.classList.remove('is-collapsed');
         hidden = false;
         header.setAttribute('aria-hidden', 'false');
-        window.requestAnimationFrame(syncSiteTopHeight);
+        hideAccum = 0;
+        showAccum = 0;
+        window.requestAnimationFrame(function () {
+            syncHeaderShellHeight();
+            syncSiteTopHeight();
+        });
     }
 
     function enableHide() {
         canHide = true;
         lastY = window.scrollY;
+        hideAccum = 0;
+        showAccum = 0;
     }
 
     function beginAnchorNavigation() {
@@ -101,6 +155,8 @@
         window.setTimeout(function () {
             anchorNavigating = false;
             lastY = window.scrollY;
+            hideAccum = 0;
+            showAccum = 0;
             if (window.scrollY > MIN_SCROLL) {
                 canHide = true;
             }
@@ -135,10 +191,20 @@
             return;
         }
 
-        if (y > lastY + DELTA && y > MIN_SCROLL) {
-            setHidden(true);
-        } else if (y < lastY - DELTA) {
-            setHidden(false);
+        var delta = y - lastY;
+
+        if (delta > NOISE) {
+            showAccum = 0;
+            hideAccum += delta;
+            if (hideAccum >= SCROLL_THRESHOLD && y > MIN_SCROLL) {
+                setHidden(true);
+            }
+        } else if (delta < -NOISE) {
+            hideAccum = 0;
+            showAccum += -delta;
+            if (showAccum >= SCROLL_THRESHOLD) {
+                setHidden(false);
+            }
         }
 
         lastY = y;
@@ -179,6 +245,8 @@
 
     window.addEventListener('load', function () {
         showHeader();
+        syncHeaderShellHeight();
+        lockHeroLayout();
         lastY = window.scrollY;
         if (window.location.hash) {
             beginAnchorNavigation();
