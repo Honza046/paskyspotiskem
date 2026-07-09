@@ -13,6 +13,7 @@
     font: inherit;
     font-weight: 600;
     color: rgb(203 213 225);
+    text-decoration: none;
     cursor: pointer;
     transition: color 0.25s ease, text-shadow 0.25s ease, transform 0.25s ease;
 }

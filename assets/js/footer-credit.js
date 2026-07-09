@@ -64,12 +64,6 @@
         });
 
         button.addEventListener('mouseleave', restore);
-
-        button.addEventListener('click', function () {
-            if (typeof console !== 'undefined' && console.log) {
-                console.log('%c📦 Jan Sedlář %c— lepidlo drží svět pohromadě.', 'color:#ea580c;font-weight:bold', 'color:#94a3b8');
-            }
-        });
     }
 
     function boot() {
