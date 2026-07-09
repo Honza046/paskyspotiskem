@@ -1,0 +1,64 @@
+{
+  "categories": [
+    { "slug": "udrzitelne-pasky", "title": "Udržitelné pásky" },
+    { "slug": "bopp-pasky", "title": "BOPP pásky" },
+    { "slug": "bopet-pasky", "title": "BOPET pásky" },
+    { "slug": "papirove-pasky", "title": "Papírové pásky" },
+    { "slug": "odstranitelne-pasky", "title": "Odstranitelné pásky" },
+    { "slug": "vyztuzene-pasky", "title": "Vyztužené pásky" },
+    { "slug": "mopp-pasky", "title": "MOPP pásky" },
+    { "slug": "textilni-pasky", "title": "Textilní lepicí pásky" },
+    { "slug": "malirske-pasky", "title": "Malířské pásky" }
+  ],
+  "products": {
+    "udrzitelne-pasky": [
+      { "name": "Udržitelná páska Airtape", "tagline": "Lehká udržitelná páska pro každodenní ekologické balení.", "slug": "udrzitelna-paska-airtape" },
+      { "name": "Udržitelná páska ECO+ 50", "tagline": "Tenká recyklovaná páska pro standardní udržitelné balení.", "slug": "udrzitelna-paska-eco-50" },
+      { "name": "Udržitelná páska ECO+ 80", "tagline": "Silnější recyklovaná páska pro náročnější udržitelné balení.", "slug": "udrzitelna-paska-eco-80" },
+      { "name": "Udržitelná páska LOOPP", "tagline": "Páska z recyklovaného polypropylenu pro cirkulární ekonomiku.", "slug": "udrzitelna-paska-loopp" },
+      { "name": "Udržitelná páska NOPP", "tagline": "Udržitelná páska bez plastu pro plně recyklovatelné balení.", "slug": "udrzitelna-paska-nopp" },
+      { "name": "Udržitelná páska NOPP+", "tagline": "Vylepšená bezplastová páska s vyšší pevností a lepivostí.", "slug": "udrzitelna-paska-nopp" }
+    ],
+    "bopp-pasky": [
+      { "name": "BOPP páska Acrylic", "tagline": "Spolehlivá BOPP páska s akrylovým lepidlem a dlouhou životností.", "slug": "bopp-paska-acrylic" },
+      { "name": "BOPP páska Evergreen", "tagline": "Barevná BOPP páska pro značení a vizuální odlišení zásilek.", "slug": "bopp-paska-evergreen" },
+      { "name": "BOPP páska Hot Melt", "tagline": "BOPP páska s hot melt lepidlem pro rychlé a pevné přilnutí.", "slug": "bopp-paska-hot-melt" },
+      { "name": "BOPP páska Hot Melt II", "tagline": "Silnější BOPP páska s hot melt lepidlem pro náročnější balení.", "slug": "bopp-paska-hot-melt-ii" }
+    ],
+    "bopet-pasky": [
+      { "name": "BOPET páska AIT", "tagline": "Polyesterová páska se silikonovým lepidlem pro extrémní teploty.", "slug": "bopet-paska-ait" },
+      { "name": "BOPET páska ATE23", "tagline": "Tenká polyesterová páska s vysokou teplotní odolností.", "slug": "bopet-paska-ate23" },
+      { "name": "BOPET páska ECO HIT19", "tagline": "Polyesterová páska s recyklovaným obsahem a vysokou odolností.", "slug": "bopet-paska-eco-hit19" },
+      { "name": "BOPET páska HIT17", "tagline": "Ultratenká PET páska pro elektrotechniku a přesné aplikace.", "slug": "bopet-paska-hit17" }
+    ],
+    "papirove-pasky": [
+      { "name": "Papírová páska C660", "tagline": "Ekologická papírová páska s akrylovým lepidlem a čistým odvíjením.", "slug": "papirova-paska-c660" },
+      { "name": "Papírová páska C680", "tagline": "Univerzální papírová páska s vysokou lepivostí na recyklovaný karton.", "slug": "papirova-paska-c680" },
+      { "name": "Papírová páska C680 RT", "tagline": "Odolná papírová páska s vylepšenou přilnavostí pro těžší zásilky.", "slug": "papirova-paska-c680-rt" },
+      { "name": "Papírová páska C680R", "tagline": "Papírová páska z recyklovaného papíru pro udržitelné balení.", "slug": "papirova-paska-c680r" },
+      { "name": "Papírová páska C690", "tagline": "Prémiová kraftová páska s hot melt lepidlem a matným povrchem.", "slug": "papirova-paska-c690" },
+      { "name": "Papírová páska KH80", "tagline": "Silná papírová páska s hot melt lepidlem pro spolehlivé uzavírání kartonů.", "slug": "papirova-paska-kh80" },
+      { "name": "Papírová páska KS165", "tagline": "Extra pevná papírová páska s kaučukovým lepidlem pro náročné balení.", "slug": "papirova-paska-ks165" }
+    ],
+    "odstranitelne-pasky": [
+      { "name": "Odstranitelná páska ECO RIT19", "tagline": "Šetrná odstranitelná páska s recyklovaným obsahem.", "slug": "odstranitelna-paska-eco-rit19" },
+      { "name": "Odstranitelná páska R28-32", "tagline": "Odstranitelná páska, která po odlepení nezanechá žádné stopy.", "slug": "odstranitelna-paska-r28-32" }
+    ],
+    "vyztuzene-pasky": [
+      { "name": "Vyztužená páska RMPP32", "tagline": "Vyztužená páska se skelnými vlákny pro fixaci těžkých břemen.", "slug": "vyztuzena-paska-rmpp32" },
+      { "name": "Vyztužená páska RTPP32", "tagline": "Křížově vyztužená páska pro maximální pevnost ve všech směrech.", "slug": "vyztuzena-paska-rtpp32" }
+    ],
+    "mopp-pasky": [
+      { "name": "MOPP páska S45-50", "tagline": "Monoaxiální MOPP páska s extrémní pevností a nulovou tažností.", "slug": "mopp-paska-s45-50" }
+    ],
+    "textilni-pasky": [
+      { "name": "Textilní páska BC", "tagline": "Pevná textilní (duct) páska pro opravy a univerzální použití.", "slug": "textilni-paska-bc" },
+      { "name": "Textilní páska BC2", "tagline": "Extra silná textilní páska s vysokou pevností v tahu.", "slug": "textilni-paska-bc2" },
+      { "name": "Textilní páska NU", "tagline": "Univerzální textilní páska pro rychlé svazování a fixaci.", "slug": "textilni-paska-nu" }
+    ],
+    "malirske-pasky": [
+      { "name": "Malířská páska C580", "tagline": "Krepová malířská páska pro ostré hrany při běžném malování.", "slug": "malirska-paska-c580" },
+      { "name": "Malířská páska CS60-80", "tagline": "Teplotně odolná malířská páska pro lakování a náročné maskování.", "slug": "malirska-paska-cs60-80" }
+    ]
+  }
+}

@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
     (function () {
+        try {
+            if (localStorage.getItem('pasky-theme') === 'dark') {
+                document.documentElement.classList.add('dark');
+            }
+        } catch (e) {}
+    })();
+    </script>
+    <script>
+    (function () {
         if ('scrollRestoration' in history) {
             history.scrollRestoration = 'manual';
         }
@@ -17,9 +26,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/logo-carousel.css">
+    <link rel="stylesheet" href="/assets/css/privacy-modal.css">
+    <link rel="stylesheet" href="/assets/css/theme-dark.css">
+    <link rel="stylesheet" href="/assets/css/info-banner.css">
+    <link rel="stylesheet" href="/assets/css/inquiry-dropdown.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     fontFamily: {
@@ -30,17 +44,45 @@
         };
     </script>
     <style>
-        html { scroll-behavior: auto; scroll-padding-top: 5.5rem; overscroll-behavior-y: none; }
+        html { scroll-behavior: auto; scroll-padding-top: var(--site-top-height, 7.75rem); overscroll-behavior-y: none; }
         #uvod {
             background-color: #0f172a;
-            min-height: calc(100vh - 5.5rem);
-            min-height: calc(100dvh - 5.5rem);
+            min-height: calc(100svh - var(--site-top-height, 8rem));
+            min-height: calc(100dvh - var(--site-top-height, 8rem));
         }
         .hero-inner {
             padding-bottom: 3.5rem;
         }
         .hero-slide { opacity: 0; transition: opacity 0.7s ease; pointer-events: none; }
         .hero-slide.is-active { opacity: 1; pointer-events: auto; }
+        .hero-dot {
+            position: relative;
+            height: 0.375rem;
+            width: 0.375rem;
+            flex-shrink: 0;
+            overflow: hidden;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.35);
+            transition: width 0.3s ease, background-color 0.3s ease;
+        }
+        .hero-dot.is-active {
+            width: 2.25rem;
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .hero-dot__fill {
+            position: absolute;
+            inset: 0;
+            width: 0;
+            border-radius: 9999px;
+            background: #E67516;
+        }
+        .hero-dot.is-active .hero-dot__fill.is-filling {
+            animation: hero-dot-fill 6s linear forwards;
+        }
+        @keyframes hero-dot-fill {
+            from { width: 0; }
+            to { width: 100%; }
+        }
         /* Text mimo formulář je jen ke čtení – bez blikajícího kurzoru */
         body { user-select: none; -webkit-user-select: none; }
         #gform_1 input[type="checkbox"] { accent-color: #ea580c; }
@@ -51,8 +93,14 @@
 </head>
 <body class="select-none bg-slate-50 font-sans text-slate-600 antialiased" data-page="home">
 
-<!-- HEADER -->
-<header class="site-header sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur-md transition-transform duration-300 ease-in-out will-change-transform">
+<!-- SITE-TOP -->
+<div class="site-top sticky top-0 z-50">
+<div class="info-banner" role="region" aria-label="Důležité informace">
+        <div class="info-banner__viewport" aria-live="polite">
+        <p class="info-banner__message">Srpen: výroba a logistika mají 3týdenní výluku. Objednávky s dodáním před výlukou zašlete nejpozději do <strong>10. 7. 2026</strong>.</p>
+    </div>
+</div>
+<header class="site-header border-b border-slate-100 bg-white/90 backdrop-blur-md transition-transform duration-300 ease-in-out will-change-transform">
     <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4">
         <a href="/" class="flex shrink-0 items-center gap-1.5">
             <img src="/images/logo.svg" width="160" height="74" alt="Pásky s potiskem" data-i18n-attr="alt:meta.logo_alt" class="h-12 w-auto lg:h-14">
@@ -62,26 +110,28 @@
             <nav id="main-nav" class="hidden lg:block" aria-label="Hlavní navigace" data-i18n-attr="aria-label:nav.main_nav_label">
             <ul class="flex items-center gap-1">
                 <li><a href="/#uvod" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.home">Úvod</a></li>
-                <li><a href="/galerie.html" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.gallery">Galerie</a></li>
+                <li><a href="/galerie" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.gallery">Galerie</a></li>
                 <li><a href="/sortiment" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.sortiment">Sortiment</a></li>
                 <li><a href="#reference" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.references">Reference</a></li>
                 <li><a href="#kontakt1" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.contacts">Kontakty</a></li>
             </ul>
         </nav>
             <div data-lang-switcher class="relative shrink-0" aria-label="Language"></div>
-            <button id="menu-toggle" type="button" class="inline-flex items-center rounded-xl border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50 lg:hidden" aria-expanded="false" aria-controls="main-nav" data-i18n="nav.menu">Menu</button>
+            <button id="theme-toggle" type="button" class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200" aria-label="Přepnout tmavý režim" data-i18n-attr="aria-label:nav.theme_toggle"><svg class="h-5 w-5 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg class="hidden h-5 w-5 dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg></button>
+            <button id="menu-toggle" type="button" class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-slate-700 transition-colors hover:text-orange-600 lg:hidden" aria-expanded="false" aria-controls="mobile-nav" aria-label="Otevřít menu" data-i18n-attr="aria-label:nav.menu"><svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
         </div>
     </div>
     <nav id="mobile-nav" class="hidden border-t border-slate-100 bg-white px-4 py-4 lg:hidden">
         <ul class="space-y-1">
             <li><a href="/#uvod" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.home">Úvod</a></li>
-            <li><a href="/galerie.html" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.gallery">Galerie</a></li>
+            <li><a href="/galerie" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.gallery">Galerie</a></li>
             <li><a href="/sortiment" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.sortiment">Sortiment</a></li>
             <li><a href="#reference" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.references">Reference</a></li>
             <li><a href="#kontakt1" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.contacts">Kontakty</a></li>
         </ul>
     </nav>
 </header>
+</div><!-- /SITE-TOP -->
 
 <!-- HERO -->
 <section id="uvod" class="relative overflow-hidden">
@@ -116,10 +166,10 @@
     <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 py-16 md:py-24 lg:grid-cols-2">
         <div>
             <span class="text-xs font-bold uppercase tracking-widest text-orange-600" data-i18n="home.about.label">O nás</span>
-            <h2 class="mb-6 mt-2 text-3xl font-bold text-slate-900 md:text-4xl" data-i18n="home.about.title">Tradiční český výrobce lepicích pásek s potiskem</h2>
+            <h2 class="mb-6 mt-2 text-3xl font-bold text-slate-900 md:text-4xl" data-i18n="home.about.title">Tradiční český dodavatel lepících pásek s potiskem</h2>
             <p class="mb-4 text-lg font-medium text-slate-700">Již více než 30 let pomáháme firmám bezpečně balit jejich zásilky a budovat silnou značku přímo na balicích materiálech. Jsme specialisté na zakázkový potisk lepicích pásek.</p>
-            <p class="mb-6 text-base leading-relaxed text-slate-600">Naše moderní výrobní zázemí nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (Hot Melt, Akryl) a rychlém doručení po celé České republice.</p>
-            <p class="text-base leading-relaxed text-slate-600">Díky certifikovaným procesům ISO 9001 a využívání ekologických, udržovatelných materiálů jsme stabilním partnerem pro více než 100 aktivních odběratelů.</p>
+            <p class="mb-6 text-base leading-relaxed text-slate-600">Naše <span tabindex="0" class="group relative inline cursor-help font-semibold italic text-orange-600 outline-none">moderní výrobní zázemí<span class="pointer-events-none absolute bottom-full left-0 z-30 mb-2 w-72 rounded-xl bg-slate-900 px-4 py-3 text-sm font-normal not-italic leading-snug text-white opacity-0 shadow-xl transition-opacity duration-200 group-hover:opacity-100 group-focus:opacity-100 sm:w-80">Tzn. vertikálně orientované výrobní zázemí, kde se nevyrábí pouze lepicí pásky, ale také fólie. V případě surovinové krize tedy máme značnou konkurenční výhodu.<span class="absolute left-8 top-full -translate-x-1/2 border-8 border-transparent border-t-slate-900"></span></span></span> nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (Hot Melt, Akryl) a rychlém doručení po celé České republice i Evropské unii.</p>
+            <p class="text-base leading-relaxed text-slate-600">Díky certifikovaným procesům ISO 9001 a používání ekologicky udržitelných materiálů jsme stabilním partnerem pro více než 300 aktivních odběratelů.</p>
         </div>
         <div class="relative overflow-hidden rounded-3xl shadow-xl">
             <img src="/images/about-team.png" alt="Tým ALFA IN – zástupci společnosti" class="block aspect-[3/2] w-full object-cover">
@@ -160,29 +210,29 @@
             <div class="logo-carousel__viewport">
                 <div class="logo-carousel__track" aria-hidden="false">
                     <div class="logo-carousel__group">
-                        <div class="logo-carousel__item"><img src="/loga/idatQHbzbo_1781781887303.png" alt="KOH-I-NOOR HARDTMUTH" loading="lazy" decoding="async"></div>
+                        <div class="logo-carousel__item logo-carousel__item--kohinoor"><img class="logo-carousel__kohinoor-light" src="/loga/idatQHbzbo_1781781887303.png" alt="KOH-I-NOOR HARDTMUTH" loading="lazy" decoding="async"><img class="logo-carousel__kohinoor-dark" src="/loga/koh-i-noor-dark.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/wordmark-blacktag_v=1779091514.png" alt="Notino" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/idCmboYVuN_logos.png" alt="Just nahrin" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/idTeLF6frI_1781781563665.png" alt="Dr. Max" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/ideXl3nCqb_logos.png" alt="Pilulka" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item logo-carousel__item--alza"><img src="/loga/Alza_logo.png" alt="Alza" loading="lazy" decoding="async"><img src="/loga/alza-alzak.png" alt="" aria-hidden="true" class="logo-carousel__mascot" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item logo-carousel__item--wordmark"><img src="/loga/idgFDwSpdE_logos.png" alt="Mobil Pohotovost" loading="lazy" decoding="async"><span class="logo-carousel__wordmark">Mobil Pohotovost</span></div>
+                        <div class="logo-carousel__item logo-carousel__item--wordmark logo-carousel__item--mobil"><img src="/loga/mobil-pohotovost-icon.png" alt="Mobil Pohotovost" loading="lazy" decoding="async"><span class="logo-carousel__wordmark">Mobil Pohotovost</span></div>
                         <div class="logo-carousel__item"><img src="/loga/tescoma-seeklogo.png" alt="Tescoma" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item logo-carousel__item--wordmark logo-carousel__item--gws"><img src="/loga/global-wines-spirits-icon.png" alt="Global Wines &amp; Spirits" loading="lazy" decoding="async"><span class="logo-carousel__wordmark logo-carousel__wordmark--gws"><span>GLOBAL WINES</span><span>&amp; SPIRITS</span></span></div>
-                        <div class="logo-carousel__item"><img src="/loga/RMA_PIERBURG_BAREVNE-pro-dokumenty-a-excel-na-bile-pozadi_KVALITNI.jpg" alt="Pierburg" loading="lazy" decoding="async"></div>
+                        <div class="logo-carousel__item logo-carousel__item--wordmark logo-carousel__item--gws"><img class="logo-carousel__gws-light" src="/loga/global-wines-spirits-icon.png" alt="Global Wines &amp; Spirits" loading="lazy" decoding="async"><img class="logo-carousel__gws-dark" src="/loga/global-wines-spirits-icon-dark.png" alt="" aria-hidden="true" loading="lazy" decoding="async"><span class="logo-carousel__wordmark logo-carousel__wordmark--gws"><span>GLOBAL WINES</span><span>&amp; SPIRITS</span></span></div>
+                        <div class="logo-carousel__item logo-carousel__item--wordmark logo-carousel__item--pierburg"><img src="/loga/pierburg-icon.png" alt="Pierburg" loading="lazy" decoding="async"><span class="logo-carousel__wordmark logo-carousel__wordmark--pierburg"><span>PIERBURG</span><span>RHEINMETALL AUTOMOTIVE</span></span></div>
                         <div class="logo-carousel__item"><img src="/loga/iddXgbhi7m_logos.png" alt="CURAPROX" loading="lazy" decoding="async"></div>
                     </div>
                     <div class="logo-carousel__group" aria-hidden="true">
-                        <div class="logo-carousel__item"><img src="/loga/idatQHbzbo_1781781887303.png" alt="" loading="lazy" decoding="async"></div>
+                        <div class="logo-carousel__item logo-carousel__item--kohinoor"><img class="logo-carousel__kohinoor-light" src="/loga/idatQHbzbo_1781781887303.png" alt="" loading="lazy" decoding="async"><img class="logo-carousel__kohinoor-dark" src="/loga/koh-i-noor-dark.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/wordmark-blacktag_v=1779091514.png" alt="" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/idCmboYVuN_logos.png" alt="" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/idTeLF6frI_1781781563665.png" alt="" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/ideXl3nCqb_logos.png" alt="" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item logo-carousel__item--alza"><img src="/loga/Alza_logo.png" alt="" loading="lazy" decoding="async"><img src="/loga/alza-alzak.png" alt="" aria-hidden="true" class="logo-carousel__mascot" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item logo-carousel__item--wordmark"><img src="/loga/idgFDwSpdE_logos.png" alt="" loading="lazy" decoding="async"><span class="logo-carousel__wordmark">Mobil Pohotovost</span></div>
+                        <div class="logo-carousel__item logo-carousel__item--wordmark logo-carousel__item--mobil"><img src="/loga/mobil-pohotovost-icon.png" alt="" loading="lazy" decoding="async"><span class="logo-carousel__wordmark">Mobil Pohotovost</span></div>
                         <div class="logo-carousel__item"><img src="/loga/tescoma-seeklogo.png" alt="" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item logo-carousel__item--wordmark logo-carousel__item--gws"><img src="/loga/global-wines-spirits-icon.png" alt="" loading="lazy" decoding="async"><span class="logo-carousel__wordmark logo-carousel__wordmark--gws"><span>GLOBAL WINES</span><span>&amp; SPIRITS</span></span></div>
-                        <div class="logo-carousel__item"><img src="/loga/RMA_PIERBURG_BAREVNE-pro-dokumenty-a-excel-na-bile-pozadi_KVALITNI.jpg" alt="" loading="lazy" decoding="async"></div>
+                        <div class="logo-carousel__item logo-carousel__item--wordmark logo-carousel__item--gws"><img class="logo-carousel__gws-light" src="/loga/global-wines-spirits-icon.png" alt="" loading="lazy" decoding="async"><img class="logo-carousel__gws-dark" src="/loga/global-wines-spirits-icon-dark.png" alt="" aria-hidden="true" loading="lazy" decoding="async"><span class="logo-carousel__wordmark logo-carousel__wordmark--gws"><span>GLOBAL WINES</span><span>&amp; SPIRITS</span></span></div>
+                        <div class="logo-carousel__item logo-carousel__item--wordmark logo-carousel__item--pierburg"><img src="/loga/pierburg-icon.png" alt="" loading="lazy" decoding="async"><span class="logo-carousel__wordmark logo-carousel__wordmark--pierburg"><span>PIERBURG</span><span>RHEINMETALL AUTOMOTIVE</span></span></div>
                         <div class="logo-carousel__item"><img src="/loga/iddXgbhi7m_logos.png" alt="" loading="lazy" decoding="async"></div>
                     </div>
                 </div>
@@ -236,7 +286,7 @@
     <div class="mb-12 text-center">
         <p class="mb-3 text-sm font-bold uppercase tracking-widest text-emerald-600">Ekologie &amp; udržitelnost</p>
         <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Udržitelné balení pro Váš e-shop i výrobu</h2>
-        <p class="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-slate-600 sm:text-lg">Ekologická stopa obalových materiálů je pro nás prioritou. Naše lepicí pásky vyvíjíme s ohledem na snadnou recyklovatelnost a minimální dopad na životní prostředí.</p>
+        <p class="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-slate-600 sm:text-lg">Ekologická stopa obalových materiálů je pro nás prioritou. Nabízíme lepicí pásky vybrané s ohledem na snadnou recyklovatelnost a minimální dopad na životní prostředí.</p>
     </div>
 
     <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -261,7 +311,7 @@
 </section>
 
 <!-- VÝHODY – BEZPEČNOST & LEPIVOST -->
-<section class="mx-auto max-w-7xl px-4 pb-20">
+<section id="vyhody" class="mx-auto max-w-7xl px-4 pb-20">
     <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
 
         <article class="group relative flex flex-col overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-red-100 hover:shadow-lg">
@@ -289,7 +339,7 @@
             <div class="flex flex-1 flex-col px-8 pb-10 pt-6">
                 <span class="inline-flex w-fit rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-xs font-bold uppercase tracking-wide text-orange-700" data-i18n="home.benefits.glue.badge">Extrémní lepivost</span>
                 <h3 class="mt-4 text-2xl font-extrabold text-slate-900">EXTRA GLUE+ (ACRYL) a TACK+ (HOT MELT)</h3>
-                <p class="mt-4 leading-relaxed text-slate-600">Pásky se <strong class="font-semibold text-slate-800">zvýšenou vrstvou lepidla</strong> (33 % resp. 20 %) i s možností <strong class="font-semibold text-slate-800">pevnější folie</strong> oproti standardu, určené i pro velmi obtížné aplikace jako např. velmi těžké balíky, nekvalitní kartony nebo prašné prostředí. Na kartonu drží velmi pevně — <strong class="font-semibold text-orange-600">zjevný důkaz vykradení!</strong></p>
+                <p class="mt-4 leading-relaxed text-slate-600">Pásky se <strong class="font-semibold text-slate-800">zvýšenou vrstvou lepidla</strong> (33 % resp. 20 %) i s možností <strong class="font-semibold text-slate-800">pevnější folie</strong> oproti standardu, určené i pro velmi obtížné aplikace jako např. velmi těžké balíky, nekvalitní kartony nebo prašné prostředí. Na kartonu drží velmi pevně.</p>
                 <div class="mt-6 flex flex-wrap gap-2">
                     <span class="rounded-lg border border-orange-200 bg-orange-50 px-3 py-1.5 text-sm font-bold text-orange-700">EXTRA GLUE+</span>
                     <span class="rounded-lg border border-orange-200 bg-orange-50 px-3 py-1.5 text-sm font-bold text-orange-700">TACK+</span>
@@ -305,7 +355,7 @@
 <section id="gf_1" class="mx-auto max-w-7xl border-t border-slate-100 px-4 pt-20 pb-20">
     <div id="form-outer-head" class="mb-8 text-center">
         <p class="mb-2 text-sm font-bold uppercase tracking-widest text-orange-600">Poptávka</p>
-        <h2 class="text-2xl font-extrabold text-slate-900 sm:text-3xl">Mám zájem o kalkulaci pásek s potiskem</h2>
+        <h2 class="text-2xl font-extrabold text-slate-900 sm:text-3xl">Mám zájem o kalkulaci</h2>
     </div>
 
     <div id="gform_wrapper_1" class="gform_wrapper gform-theme--no-framework mx-auto w-full max-w-2xl" data-step="0">
@@ -332,13 +382,28 @@
                 <!-- KROK 1 — Specifikace produktu -->
                 <div class="gform_page" id="gform_page_1_1" data-step="0">
                     <h3 class="mb-1 text-lg font-bold text-slate-900">Specifikace produktu</h3>
-                    <p class="mb-6 text-sm text-slate-500">Vyberte typ pásky, podkladovou barvu a počet barev k tisku.</p>
+                    <p class="mb-6 text-sm text-slate-500">Vyberte materiál a případně konkrétní pásku, typ lepidla, podkladovou barvu a počet barev k tisku.</p>
 
-                    <fieldset class="mb-6">
-                        <legend class="mb-3 block text-sm font-semibold text-slate-800">Typ pásky (materiál) <span class="text-orange-600">*</span></legend>
+                    <div class="mb-6">
+                        <label for="input_material" class="mb-2 block text-sm font-semibold text-slate-800">Typ materiálu <span class="text-orange-600">*</span></label>
+                        <select id="input_material" name="input_material" required>
+                            <option value="" disabled selected>Vyberte materiál…</option>
+                        </select>
+                    </div>
+
+                    <div id="inquiry-product-wrap" class="mb-6 hidden">
+                        <label for="input_product" class="mb-2 block text-sm font-semibold text-slate-800">Konkrétní páska</label>
+                        <select id="input_product" name="input_product">
+                            <option value="" selected>Vyberte pásku (volitelné)…</option>
+                        </select>
+                        <p id="inquiry-product-hint" class="mt-2 hidden text-xs leading-relaxed text-slate-500"></p>
+                    </div>
+
+                    <fieldset id="inquiry-adhesive-wrap" class="mb-6">
+                        <legend class="mb-3 block text-sm font-semibold text-slate-800">Typ lepidla <span class="text-orange-600">*</span></legend>
                         <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
                             <label class="cursor-pointer">
-                                <input type="radio" name="input_8" value="HOT MELT" checked class="peer sr-only" required>
+                                <input type="radio" name="input_8" value="HOT MELT" checked class="peer sr-only">
                                 <span class="flex flex-col rounded-xl border-2 border-slate-200 px-4 py-4 text-center transition-all duration-200 hover:border-slate-300 peer-checked:border-orange-500 peer-checked:bg-orange-50 peer-checked:text-orange-700 peer-checked:shadow-sm">
                                     <span class="text-sm font-bold">HOT MELT</span>
                                     <span class="mt-1 text-xs text-slate-500 peer-checked:text-orange-600/80">Syntetický kaučuk</span>
@@ -485,7 +550,7 @@
                         </div>
                         <label class="flex cursor-pointer items-start gap-3 rounded-xl border-2 border-slate-200 p-4 transition-all has-[:checked]:border-orange-500 has-[:checked]:bg-orange-50">
                             <input type="checkbox" name="input_14.1" required class="mt-0.5 h-4 w-4 rounded border-slate-300 accent-orange-600 focus:ring-orange-500/20">
-                            <span class="text-sm leading-relaxed">Odesláním souhlasíte se <a href="#" class="font-semibold text-orange-600 hover:underline">zpracováním osobních údajů</a> <span class="text-orange-600">*</span></span>
+                            <span class="text-sm leading-relaxed"><span data-i18n="home.form.gdpr_before">Odesláním souhlasíte se</span> <button type="button" data-privacy-modal-open class="inline font-semibold text-orange-600 underline-offset-2 hover:underline" data-i18n="home.form.gdpr_link">zpracováním osobních údajů</button> <span class="text-orange-600">*</span></span>
                         </label>
                     </div>
 
@@ -552,7 +617,7 @@
         <div class="overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-8 text-center text-white shadow-xl sm:p-12">
             <p class="mb-3 text-sm font-bold uppercase tracking-widest text-orange-400" data-i18n="home.sample.label">Testovací vzorek</p>
             <h2 class="mx-auto max-w-3xl text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl lg:text-4xl">Nejste si jistí výběrem? Pošleme Vám vzorek zdarma.</h2>
-            <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg" data-i18n="home.sample.text">Chápeme, že kvalita lepicí pásky je pro hladký chod Vaší logistiky klíčová. Vyplňte poptávku — poznámku o testovací vzorek doplníme za vás.</p>
+            <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg" data-i18n="home.sample.text">Chápeme, že kvalita lepicí pásky je pro hladký chod Vaší logistiky klíčová. Vyplňte poptávku a poznámku o testovací vzorek doplníme za vás.</p>
             <div class="mt-8 flex justify-center">
                 <a href="#gf_1" id="sample-inquiry-cta" class="js-inquiry-sample inline-flex items-center rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-orange-600/40 active:scale-[0.98]" data-i18n="home.sample.cta">Mám zájem o vzorek</a>
             </div>
@@ -561,6 +626,36 @@
 </section>
 
 </main>
+
+<div id="privacy-modal" class="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title" hidden>
+    <div class="privacy-modal__backdrop" data-privacy-modal-close aria-hidden="true"></div>
+    <div class="privacy-modal__panel">
+        <div class="privacy-modal__header">
+            <h2 id="privacy-modal-title" class="text-lg font-bold text-slate-900 sm:text-xl" data-i18n="home.form.gdpr_modal.title">Zpracování osobních údajů</h2>
+            <button type="button" id="privacy-modal-close" class="privacy-modal__close" aria-label="Zavřít" data-i18n-attr="aria-label:home.form.gdpr_modal.close">
+                <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+        <div class="privacy-modal__body text-slate-600">
+            <p data-i18n="home.form.gdpr_modal.intro">Informace podle čl. 13 nařízení GDPR k vyplnění a odeslání poptávkového formuláře na této stránce.</p>
+            <h3 data-i18n="home.form.gdpr_modal.controller_heading">Správce osobních údajů</h3>
+            <p data-i18n="home.form.gdpr_modal.controller">ALFA IN a.s., IČ 255 35 366, č.p. 74, 675 21 Nová Ves u Třebíče. Kontakt: epo@alfain.eu, tel. +420 568 840 009, www.alfain.eu</p>
+            <h3 data-i18n="home.form.gdpr_modal.data_heading">Zpracovávané údaje</h3>
+            <p data-i18n="home.form.gdpr_modal.data">Jméno a příjmení, název společnosti, IČO, e-mail, telefon, poznámka a parametry poptávky uvedené ve formuláři.</p>
+            <h3 data-i18n="home.form.gdpr_modal.purpose_heading">Účel a právní základ</h3>
+            <p data-i18n="home.form.gdpr_modal.purpose">Vyřízení poptávky, příprava nezávazné kalkulace a následná komunikace. Právním titulem je váš souhlas (čl. 6 odst. 1 písm. a) GDPR) a jednání před uzavřením smlouvy / plnění smlouvy (čl. 6 odst. 1 písm. b) GDPR).</p>
+            <h3 data-i18n="home.form.gdpr_modal.retention_heading">Doba uchovávání</h3>
+            <p data-i18n="home.form.gdpr_modal.retention">Po dobu vyřízení poptávky a nejdéle 4 roky od posledního kontaktu, pokud nedojde k uzavření smlouvy; v případě smluvního vztahu po dobu trvání smlouvy a dále dle zákona.</p>
+            <h3 data-i18n="home.form.gdpr_modal.recipients_heading">Příjemci údajů</h3>
+            <p data-i18n="home.form.gdpr_modal.recipients">Údaje mohou být zpřístupněny zpracovatelům (IT správa, hosting, e-mailové služby) na základě smluv o zpracování osobních údajů a příslušným orgánům, pokud to ukládá zákon.</p>
+            <h3 data-i18n="home.form.gdpr_modal.rights_heading">Vaše práva</h3>
+            <p data-i18n="home.form.gdpr_modal.rights">Máte právo na přístup, opravu, výmaz, omezení zpracování, přenositelnost údajů, vznesení námitky a podání stížnosti u Úřadu pro ochranu osobních údajů (www.uoou.cz). Žádosti zasílejte na epo@alfain.eu.</p>
+        </div>
+        <div class="privacy-modal__footer">
+            <a href="https://www.alfain.eu/s567701-ochrana-osobnich-udaju" target="_blank" rel="noopener" class="text-sm font-semibold text-orange-600 hover:text-orange-700 hover:underline" data-i18n="home.form.gdpr_modal.full_link">Úplné znění zásad ochrany osobních údajů</a>
+        </div>
+    </div>
+</div>
 
 <!-- FOOTER -->
 <footer class="bg-slate-900 text-slate-400">
@@ -649,7 +744,11 @@
     slides.forEach(function (_, i) {
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.className = 'h-2.5 w-2.5 rounded-full border-2 border-white/60 transition-all' + (i === 0 ? ' bg-orange-500 border-orange-500 w-8' : '');
+        btn.className = 'hero-dot';
+        btn.setAttribute('aria-label', 'Slide ' + (i + 1));
+        const fill = document.createElement('span');
+        fill.className = 'hero-dot__fill';
+        btn.appendChild(fill);
         btn.addEventListener('click', function () { go(i); start(); });
         dotsWrap.appendChild(btn);
     });
@@ -672,19 +771,42 @@
             ctaSecondary.textContent = slide.ctaSecondary.text;
             ctaSecondary.href = slide.ctaSecondary.href;
         }
-        dotsWrap.querySelectorAll('button').forEach(function (dot, idx) {
-            dot.className = 'h-2.5 rounded-full border-2 border-white/60 transition-all ' + (idx === current ? 'w-8 bg-orange-500 border-orange-500' : 'w-2.5 bg-transparent');
+        dotsWrap.querySelectorAll('.hero-dot').forEach(function (dot, idx) {
+            dot.classList.toggle('is-active', idx === current);
+            const fill = dot.querySelector('.hero-dot__fill');
+            fill.classList.remove('is-filling');
+            if (idx === current) {
+                // restart the CSS animation
+                void fill.offsetWidth;
+                fill.classList.add('is-filling');
+            }
         });
     }
 
     function start() { clearInterval(timer); timer = setInterval(function () { go(current + 1); }, 6000); }
     go(0); start();
 
-    document.getElementById('menu-toggle').addEventListener('click', function () {
-        const nav = document.getElementById('mobile-nav');
-        const open = nav.classList.toggle('hidden') === false;
-        this.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
+    // Mobile swipe: browse slides with a finger, desktop is unaffected (touch-only events).
+    (function () {
+        const heroSection = document.getElementById('uvod');
+        let touchStartX = 0, touchStartY = 0, touching = false;
+        heroSection.addEventListener('touchstart', function (e) {
+            if (e.touches.length !== 1) return;
+            touching = true;
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+        }, { passive: true });
+        heroSection.addEventListener('touchend', function (e) {
+            if (!touching) return;
+            touching = false;
+            const dx = e.changedTouches[0].clientX - touchStartX;
+            const dy = e.changedTouches[0].clientY - touchStartY;
+            if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return;
+            go(current + (dx < 0 ? 1 : -1));
+            start();
+        }, { passive: true });
+    })();
+
 
     /* Multi-step form */
     (function () {
@@ -707,6 +829,7 @@
             if (opt) opt.classList.toggle('hidden', !isAcryl);
             if (!isAcryl && cb) cb.checked = false;
         }
+        window.__toggleAcrylNoiseOption = toggleAcrylNoiseOption;
 
         function validatePage(index) {
             const page = pages[index];
@@ -850,10 +973,16 @@
     })();
 })();
 </script>
+<script src="/assets/js/inquiry-dropdown.js"></script>
+<script src="/assets/js/inquiry-material-picker.js"></script>
 <script src="/assets/js/i18n.js"></script>
 <script src="/assets/js/nav-active.js"></script>
 <link rel="stylesheet" href="/assets/css/footer-credit.css">
 <script src="/assets/js/footer-credit.js"></script>
+<script src="/assets/js/mobile-nav.js"></script>
+<script src="/assets/js/info-banner.js"></script>
 <script src="/assets/js/header-scroll.js"></script>
+<script src="/assets/js/privacy-modal.js"></script>
+<script src="/assets/js/theme-toggle.js"></script>
 </body>
 </html>

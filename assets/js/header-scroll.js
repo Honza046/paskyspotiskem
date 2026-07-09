@@ -1,12 +1,27 @@
 /**
- * Hide sticky header on scroll down, reveal on scroll up.
- * Always visible on page load / refresh until the user scrolls down.
+ * Hide sticky header on scroll down, reveal on scroll up only.
+ * Info banner stays visible; only the main header collapses.
  */
 (function () {
     'use strict';
 
+    function wrapHeader(header) {
+        if (!header) {
+            return null;
+        }
+        if (header.parentElement && header.parentElement.classList.contains('site-header-shell')) {
+            return header.parentElement;
+        }
+        var shell = document.createElement('div');
+        shell.className = 'site-header-shell';
+        header.parentNode.insertBefore(shell, header);
+        shell.appendChild(header);
+        return shell;
+    }
+
     var header = document.querySelector('header.site-header');
-    if (!header) {
+    var shell = wrapHeader(header);
+    if (!header || !shell) {
         return;
     }
 
@@ -15,23 +30,10 @@
     var hidden = false;
     var canHide = false;
     var anchorNavigating = false;
-    var MIN_SCROLL = 120;
-    var DELTA = 10;
+    var MIN_SCROLL = 80;
+    var DELTA = 18;
     var ENABLE_DELAY_MS = 800;
     var ANCHOR_GRACE_MS = 1400;
-
-    function scrollTopInstant() {
-        if (window.location.hash) {
-            return;
-        }
-        var html = document.documentElement;
-        var prev = html.style.scrollBehavior;
-        html.style.scrollBehavior = 'auto';
-        html.scrollTop = 0;
-        document.body.scrollTop = 0;
-        window.scrollTo(0, 0);
-        html.style.scrollBehavior = prev;
-    }
 
     function closeMobileNav() {
         var mobileNav = document.getElementById('mobile-nav');
@@ -40,8 +42,31 @@
             mobileNav.classList.add('hidden');
             if (menuToggle) {
                 menuToggle.setAttribute('aria-expanded', 'false');
+                if (window.paskyI18n && typeof window.paskyI18n.t === 'function') {
+                    menuToggle.setAttribute('aria-label', window.paskyI18n.t('nav.menu'));
+                } else {
+                    menuToggle.setAttribute('aria-label', 'Otevřít menu');
+                }
             }
         }
+    }
+
+    function syncSiteTopHeight() {
+        var siteTop = document.querySelector('.site-top');
+        if (siteTop) {
+            document.documentElement.style.setProperty('--site-top-height', siteTop.offsetHeight + 'px');
+        }
+    }
+
+    function initSiteTopHeight() {
+        syncSiteTopHeight();
+        var siteTop = document.querySelector('.site-top');
+        if (siteTop && typeof ResizeObserver !== 'undefined') {
+            new ResizeObserver(syncSiteTopHeight).observe(siteTop);
+        } else {
+            window.addEventListener('resize', syncSiteTopHeight);
+        }
+        window.paskyonlineSyncSiteTopHeight = syncSiteTopHeight;
     }
 
     function setHidden(shouldHide) {
@@ -49,22 +74,24 @@
             return;
         }
         hidden = shouldHide;
-        header.classList.toggle('-translate-y-full', shouldHide);
+        shell.classList.toggle('is-collapsed', shouldHide);
         header.setAttribute('aria-hidden', shouldHide ? 'true' : 'false');
         if (shouldHide) {
             closeMobileNav();
         }
+        window.requestAnimationFrame(syncSiteTopHeight);
     }
 
     function showHeader() {
-        header.classList.remove('-translate-y-full');
+        shell.classList.remove('is-collapsed');
         hidden = false;
         header.setAttribute('aria-hidden', 'false');
-        lastY = window.scrollY;
+        window.requestAnimationFrame(syncSiteTopHeight);
     }
 
     function enableHide() {
         canHide = true;
+        lastY = window.scrollY;
     }
 
     function beginAnchorNavigation() {
@@ -74,7 +101,6 @@
         window.setTimeout(function () {
             anchorNavigating = false;
             lastY = window.scrollY;
-            showHeader();
             if (window.scrollY > MIN_SCROLL) {
                 canHide = true;
             }
@@ -98,19 +124,18 @@
         var y = window.scrollY;
 
         if (anchorNavigating) {
-            showHeader();
             lastY = y;
             ticking = false;
             return;
         }
 
-        if (!canHide || y <= MIN_SCROLL) {
-            showHeader();
+        if (!canHide) {
+            lastY = y;
             ticking = false;
             return;
         }
 
-        if (y > lastY + DELTA) {
+        if (y > lastY + DELTA && y > MIN_SCROLL) {
             setHidden(true);
         } else if (y < lastY - DELTA) {
             setHidden(false);
@@ -122,21 +147,16 @@
 
     function boot() {
         canHide = false;
+        initSiteTopHeight();
         showHeader();
+        lastY = window.scrollY;
         bindAnchorNavLinks();
-
         window.setTimeout(enableHide, ENABLE_DELAY_MS);
     }
 
     window.addEventListener('hashchange', function () {
         beginAnchorNavigation();
     });
-
-    window.addEventListener('scrollend', function () {
-        if (window.location.hash) {
-            showHeader();
-        }
-    }, { passive: true });
 
     window.addEventListener('scroll', function () {
         if (!ticking) {
@@ -159,6 +179,7 @@
 
     window.addEventListener('load', function () {
         showHeader();
+        lastY = window.scrollY;
         if (window.location.hash) {
             beginAnchorNavigation();
         }

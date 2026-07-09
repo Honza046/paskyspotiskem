@@ -1,0 +1,138 @@
+/**
+ * Custom dropdowns for inquiry form (replaces native OS select UI).
+ */
+.inquiry-dropdown {
+    position: relative;
+}
+
+.inquiry-dropdown__trigger {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    border-radius: 0.75rem;
+    border: 2px solid #e2e8f0;
+    background: #fff;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #0f172a;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.inquiry-dropdown__trigger:hover {
+    border-color: #cbd5e1;
+}
+
+.inquiry-dropdown__trigger:focus-visible {
+    border-color: #f97316;
+    outline: none;
+    box-shadow: 0 0 0 4px rgb(249 115 22 / 0.2);
+}
+
+.inquiry-dropdown.is-open .inquiry-dropdown__trigger {
+    border-color: #f97316;
+    box-shadow: 0 0 0 4px rgb(249 115 22 / 0.15);
+}
+
+.inquiry-dropdown__label.is-placeholder {
+    font-weight: 500;
+    color: #64748b;
+}
+
+.inquiry-dropdown__chevron {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #94a3b8;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.inquiry-dropdown.is-open .inquiry-dropdown__chevron {
+    transform: rotate(180deg);
+    color: #ea580c;
+}
+
+.inquiry-dropdown__menu {
+    position: absolute;
+    z-index: 40;
+    top: calc(100% + 0.375rem);
+    left: 0;
+    right: 0;
+    display: none;
+    max-height: 16rem;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0.375rem;
+    list-style: none;
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+    background: #fff;
+    box-shadow: 0 16px 40px rgb(15 23 42 / 0.12);
+}
+
+.inquiry-dropdown.is-open .inquiry-dropdown__menu {
+    display: block;
+}
+
+.inquiry-dropdown__option {
+    border-radius: 0.5rem;
+    padding: 0.625rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: #334155;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.inquiry-dropdown__option:hover,
+.inquiry-dropdown__option:focus {
+    background: #fff7ed;
+    color: #c2410c;
+    outline: none;
+}
+
+.inquiry-dropdown__option.is-selected {
+    background: #ffedd5;
+    color: #ea580c;
+}
+
+.inquiry-dropdown__option.is-selected::after {
+    content: "✓";
+    float: right;
+    font-weight: 800;
+}
+
+.dark .inquiry-dropdown__trigger {
+    border-color: #334155;
+    background: #1e293b;
+    color: #f1f5f9;
+}
+
+.dark .inquiry-dropdown__trigger:hover {
+    border-color: #475569;
+}
+
+.dark .inquiry-dropdown__label.is-placeholder {
+    color: #94a3b8;
+}
+
+.dark .inquiry-dropdown__menu {
+    border-color: #334155;
+    background: #1e293b;
+    box-shadow: 0 16px 40px rgb(0 0 0 / 0.35);
+}
+
+.dark .inquiry-dropdown__option {
+    color: #cbd5e1;
+}
+
+.dark .inquiry-dropdown__option:hover,
+.dark .inquiry-dropdown__option:focus,
+.dark .inquiry-dropdown__option.is-selected {
+    background: rgb(234 88 12 / 0.15);
+    color: #fdba74;
+}

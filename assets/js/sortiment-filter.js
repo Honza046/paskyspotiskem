@@ -64,10 +64,18 @@
     }
 
     function cardHTML(p) {
+        var portrait = !!p.portrait;
+        var imageBoxClass = portrait
+            ? 'product-image-frame block w-full h-56 flex items-center justify-center overflow-hidden'
+            : 'product-image-frame block w-full h-56 flex items-center justify-center overflow-hidden p-6';
+        var imageClass = portrait
+            ? 'h-52 w-auto max-w-none scale-[1.75] object-contain mix-blend-multiply contrast-[1.1] brightness-[1.05] transform transition-transform duration-300 group-hover:scale-[1.85]'
+            : 'w-full h-full object-contain max-h-48 mix-blend-multiply contrast-[1.1] brightness-[1.05] transform transition-transform duration-300 group-hover:scale-105';
+
         return '' +
         '<article class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-100 hover:shadow-lg">' +
-            '<a href="' + esc(p.detail) + '" class="block w-full h-56 flex items-center justify-center overflow-hidden p-6 bg-white">' +
-                '<img src="' + esc(p.image) + '" alt="' + esc(p.name) + '" loading="lazy" class="w-full h-full object-contain max-h-48 mix-blend-multiply contrast-[1.1] brightness-[1.05] transform transition-transform duration-300 group-hover:scale-105">' +
+            '<a href="' + esc(p.detail) + '" class="' + imageBoxClass + '">' +
+                '<img src="' + esc(p.image) + '" alt="' + esc(p.name) + '" loading="lazy" class="' + imageClass + '">' +
             '</a>' +
             '<div class="flex flex-1 flex-col p-6">' +
                 '<span class="text-xs font-semibold uppercase tracking-wide text-orange-600">' + esc(p.category) + '</span>' +

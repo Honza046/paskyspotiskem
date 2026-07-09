@@ -16,7 +16,8 @@
   },
   "nav": {
     "tagline": "ALFA IN – Herstellung, Beratung, Vertrieb und Service",
-    "menu": "Menü",
+    "menu": "Menü öffnen",
+    "menu_close": "Menü schließen",
     "main_nav_label": "Hauptnavigation",
     "home": "Startseite",
     "gallery": "Galerie",
@@ -25,7 +26,9 @@
     "contacts": "Kontakt",
     "facebook": "Facebook",
     "instagram": "Instagram",
-    "youtube": "YouTube"
+    "youtube": "YouTube",
+    "theme_toggle": "Dunkelmodus umschalten",
+    "theme_light": "Hellmodus"
   },
   "footer": {
     "address_heading": "Besuchen Sie uns unter",
@@ -102,7 +105,7 @@
     "sustainability": {
       "label": "Ökologie & Nachhaltigkeit",
       "title": "Nachhaltige Verpackung für Ihren E-Shop und Ihre Produktion",
-      "subtitle": "Der ökologische Fußabdruck von Verpackungsmaterialien hat für uns Priorität. Unsere Klebebänder entwickeln wir mit Blick auf einfache Recycelbarkeit und minimale Umweltbelastung.",
+      "subtitle": "Der ökologische Fußabdruck von Verpackungsmaterialien hat für uns Priorität. Wir bieten Klebebänder, die mit Blick auf einfache Recycelbarkeit und minimale Umweltbelastung ausgewählt wurden.",
       "card1_title": "100 % recycelbare Folie",
       "card1_text": "Unsere Bänder bestehen aus moderner BOPP-Folie, die vollständig recycelbar ist. Im Gegensatz zu älteren PVC-Materialien entstehen bei der Verarbeitung keine giftigen Stoffe.",
       "card2_title": "Ökologische lösemittelfreie Klebstoffe",
@@ -116,11 +119,11 @@
       "security_text": "Dieses Sicherheitsband wirkt neutral, hinterlässt beim Abziehen jedoch eine praktisch nicht entfernbare Warnung auf dem Karton. Geeignet für alle Kartonarten und Stretchfolien, in verschiedenen Farben und mit Bedruckung.",
       "glue_badge": "Extreme Klebkraft",
       "glue_title": "EXTRA GLUE+ (ACRYL) und TACK+ (HOT MELT)",
-      "glue_text": "Bänder mit erhöhter Klebstoffschicht (33 % bzw. 20 %) und optional stärkerer Folie für anspruchsvolle Anwendungen wie schwere Pakete, minderwertigen Karton oder staubige Umgebungen. Haften extrem fest – eindeutiger Diebstahlnachweis!"
+      "glue_text": "Bänder mit erhöhter Klebstoffschicht (33 % bzw. 20 %) und optional stärkerer Folie für anspruchsvolle Anwendungen wie schwere Pakete, minderwertigen Karton oder staubige Umgebungen. Haften extrem fest auf Karton."
     },
     "form": {
       "label": "Anfrage",
-      "title": "Ich interessiere mich für eine Kalkulation bedruckter Bänder",
+      "title": "Ich interessiere mich für eine Kalkulation",
       "open_3d": "Interaktiven 3D-Designer öffnen",
       "open_3d_hint": "Testen Sie Material, Farbe und Druck in einer großzügigen 3D-Vorschau",
       "step_label": "Schritt {current} von {total}",
@@ -131,7 +134,7 @@
       ],
       "step1_title": "Produktspezifikation",
       "step1_hint": "Wählen Sie Bandtyp, Grundfarbe und Anzahl der Druckfarben.",
-      "tape_type": "Bandtyp (Material)",
+      "tape_type": "Klebstofftyp",
       "base_color": "Grundfarbe",
       "print_colors": "Anzahl der Druckfarben",
       "hot_melt_hint": "Synthetischer Kautschuk",
@@ -170,7 +173,26 @@
       "phone_label": "Telefon",
       "note_label": "Anmerkung",
       "gdpr": "Mit dem Absenden stimmen Sie der Verarbeitung personenbezogener Daten zu",
+      "gdpr_before": "Mit dem Absenden stimmen Sie der",
       "gdpr_link": "Verarbeitung personenbezogener Daten",
+      "gdpr_modal": {
+        "title": "Verarbeitung personenbezogener Daten",
+        "close": "Schließen",
+        "intro": "Informationen gemäß Art. 13 DSGVO zum Ausfüllen und Absenden des Anfrageformulars auf dieser Seite.",
+        "controller_heading": "Verantwortlicher",
+        "controller": "ALFA IN a.s., ID-Nr. 255 35 366, č.p. 74, 675 21 Nová Ves u Třebíče, Tschechien. Kontakt: epo@alfain.eu, Tel. +420 568 840 009, www.alfain.eu",
+        "data_heading": "Verarbeitete Daten",
+        "data": "Name, Firmenname, Firmen-ID, E-Mail, Telefon, Anmerkung und im Formular angegebene Anfrageparameter.",
+        "purpose_heading": "Zweck und Rechtsgrundlage",
+        "purpose": "Bearbeitung der Anfrage, Erstellung eines unverbindlichen Angebots und anschließende Kommunikation. Rechtsgrundlage: Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) und Vertragsanbahnung / Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).",
+        "retention_heading": "Speicherdauer",
+        "retention": "Für die Dauer der Bearbeitung der Anfrage und höchstens 4 Jahre ab dem letzten Kontakt, wenn kein Vertrag zustande kommt; bei Vertragsverhältnis für die Dauer des Vertrags und danach gesetzlich vorgeschrieben.",
+        "recipients_heading": "Empfänger",
+        "recipients": "Daten können Auftragsverarbeitern (IT-Verwaltung, Hosting, E-Mail-Dienste) auf Grundlage von Auftragsverarbeitungsverträgen und zuständigen Behörden offengelegt werden, sofern gesetzlich vorgeschrieben.",
+        "rights_heading": "Ihre Rechte",
+        "rights": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit, Widerspruch und Beschwerde beim Amt für den Schutz personenbezogener Daten (www.uoou.cz). Anfragen senden Sie an epo@alfain.eu.",
+        "full_link": "Vollständige Datenschutzrichtlinie"
+      },
       "submit": "Anfrage senden",
       "modal_title": "Interaktiver 3D-Designer",
       "modal_subtitle": "Material, Farbe und Druck in Echtzeit",

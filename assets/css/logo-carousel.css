@@ -38,7 +38,7 @@
     justify-content: center;
 }
 
-.logo-carousel__item:not(.logo-carousel__item--wordmark) img:not(.logo-carousel__mascot) {
+.logo-carousel__item:not(.logo-carousel__item--wordmark):not(.logo-carousel__item--kohinoor) img:not(.logo-carousel__mascot) {
     display: block;
     width: 9.5rem;
     height: 3.5rem;
@@ -91,7 +91,7 @@
     transform: none;
 }
 
-.logo-carousel__item:hover img:not(.logo-carousel__mascot) {
+.logo-carousel__item:not(.logo-carousel__item--kohinoor):hover img:not(.logo-carousel__mascot) {
     filter: grayscale(0%);
     opacity: 1;
     transform: scale(1.05);
@@ -152,6 +152,154 @@
     color: #5c212e;
 }
 
+/* Global Wines – dark burgundy on light bg, light rose on dark bg */
+.logo-carousel__item--gws .logo-carousel__gws-dark {
+    display: none;
+}
+
+.logo-carousel__item--gws .logo-carousel__gws-light,
+.logo-carousel__item--gws .logo-carousel__gws-dark {
+    width: 3.125rem;
+    height: 3.125rem;
+    flex-shrink: 0;
+    object-fit: contain;
+    object-position: left center;
+}
+
+.dark .logo-carousel__item--gws .logo-carousel__gws-light {
+    display: none;
+}
+
+.dark .logo-carousel__item--gws .logo-carousel__gws-dark {
+    display: block;
+    filter: grayscale(100%) brightness(1.15) contrast(0.86);
+    opacity: 0.68;
+    transform: none;
+    transition: filter 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+}
+
+.dark .logo-carousel__item--gws:hover .logo-carousel__gws-dark {
+    filter: none;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.dark .logo-carousel__item--gws:hover .logo-carousel__wordmark--gws {
+    color: #bd8b94;
+}
+
+.logo-carousel__wordmark--pierburg {
+    display: flex;
+    flex-direction: column;
+    gap: 0.12rem;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+}
+
+.logo-carousel__wordmark--pierburg span:first-child {
+    font-size: 0.9375rem;
+    letter-spacing: 0.04em;
+}
+
+.logo-carousel__item--pierburg:hover .logo-carousel__wordmark--pierburg {
+    color: #003090;
+}
+
+.logo-carousel__item--mobil:hover .logo-carousel__wordmark {
+    color: #203f85;
+}
+
+/* Koh-i-noor – one logo: dark text on light bg, white text on dark bg */
+.logo-carousel__item--kohinoor .logo-carousel__kohinoor-light,
+.logo-carousel__item--kohinoor .logo-carousel__kohinoor-dark {
+    width: 9.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+    object-position: center;
+    transition: filter 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+    outline: none;
+    border: 0;
+}
+
+.logo-carousel__item--kohinoor .logo-carousel__kohinoor-light {
+    display: block;
+    filter: grayscale(100%);
+    opacity: 0.78;
+}
+
+.logo-carousel__item--kohinoor .logo-carousel__kohinoor-dark {
+    display: none;
+}
+
+.logo-carousel__item--kohinoor:hover .logo-carousel__kohinoor-light {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.dark .logo-carousel__item--kohinoor .logo-carousel__kohinoor-light {
+    display: none;
+}
+
+.dark .logo-carousel__item--kohinoor .logo-carousel__kohinoor-dark {
+    display: block;
+    filter: grayscale(100%) brightness(1.15) contrast(0.86);
+    opacity: 0.68;
+}
+
+.dark .logo-carousel__item--kohinoor:hover .logo-carousel__kohinoor-dark {
+    filter: none;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Dark mode – unified medium grey partner logos, full color on hover */
+.dark .logo-carousel__item:not(.logo-carousel__item--wordmark):not(.logo-carousel__item--kohinoor) img:not(.logo-carousel__mascot),
+.dark .logo-carousel__item--wordmark img:not(.logo-carousel__mascot):not(.logo-carousel__gws-light):not(.logo-carousel__gws-dark) {
+    filter: grayscale(100%) invert(1) brightness(0.9) contrast(0.86);
+    opacity: 0.68;
+    mix-blend-mode: normal;
+}
+
+/* Black-background assets (Notino, Dr. Max) – screen keeps the same grey as Just nahrin */
+.dark .logo-carousel__item img[src*="wordmark-blacktag"]:not(.logo-carousel__mascot),
+.dark .logo-carousel__item img[src*="idTeLF6frI"]:not(.logo-carousel__mascot) {
+    filter: grayscale(100%) brightness(1.08) contrast(0.84);
+    mix-blend-mode: screen;
+    opacity: 0.68;
+}
+
+.dark .logo-carousel__item:not(.logo-carousel__item--kohinoor):not(.logo-carousel__item--gws):hover img:not(.logo-carousel__mascot) {
+    filter: none;
+    mix-blend-mode: normal;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.dark .logo-carousel__item--alza:hover img:not(.logo-carousel__mascot) {
+    transform: none;
+}
+
+.dark .logo-carousel__wordmark {
+    color: #94a3b8;
+    opacity: 0.68;
+}
+
+.dark .logo-carousel__item--wordmark:hover .logo-carousel__wordmark {
+    color: #7dd3fc;
+    opacity: 1;
+}
+
+.dark .logo-carousel__item--pierburg:hover .logo-carousel__wordmark--pierburg {
+    color: #2090f0;
+}
+
+.dark .logo-carousel__item--mobil:hover .logo-carousel__wordmark {
+    color: #203f85;
+}
+
 @media (prefers-reduced-motion: reduce) {
     .logo-carousel__track {
         animation: none;
@@ -185,5 +333,32 @@
         opacity: 1;
         visibility: visible;
         transform: translateY(22%);
+    }
+}
+
+/* Mobile: swap the auto-scrolling marquee for a manual swipeable strip. */
+@media (max-width: 767px) {
+    .logo-carousel__viewport {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x proximity;
+        scrollbar-width: none;
+    }
+
+    .logo-carousel__viewport::-webkit-scrollbar {
+        display: none;
+    }
+
+    .logo-carousel__track {
+        width: max-content;
+        animation: none;
+    }
+
+    .logo-carousel__group[aria-hidden="true"] {
+        display: none;
+    }
+
+    .logo-carousel__item {
+        scroll-snap-align: start;
     }
 }

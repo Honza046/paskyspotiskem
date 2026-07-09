@@ -174,6 +174,11 @@
                     mobileNav.classList.add('hidden');
                     if (menuToggle) {
                         menuToggle.setAttribute('aria-expanded', 'false');
+                        if (window.paskyI18n && typeof window.paskyI18n.t === 'function') {
+                            menuToggle.setAttribute('aria-label', window.paskyI18n.t('nav.menu'));
+                        } else {
+                            menuToggle.setAttribute('aria-label', 'Otevřít menu');
+                        }
                     }
                 }
             });

@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
     (function () {
+        try {
+            if (localStorage.getItem('pasky-theme') === 'dark') {
+                document.documentElement.classList.add('dark');
+            }
+        } catch (e) {}
+    })();
+    </script>
+    <script>
+    (function () {
         if ('scrollRestoration' in history) {
             history.scrollRestoration = 'manual';
         }
@@ -20,9 +29,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/theme-dark.css">
+    <link rel="stylesheet" href="/assets/css/info-banner.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     fontFamily: {
@@ -40,8 +52,14 @@
 </head>
 <body class="select-none bg-slate-50 font-sans text-slate-600 antialiased" data-page="sortiment">
 
-<!-- HEADER -->
-<header class="site-header sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur-md transition-transform duration-300 ease-in-out will-change-transform">
+<!-- SITE-TOP -->
+<div class="site-top sticky top-0 z-50">
+<div class="info-banner" role="region" aria-label="Důležité informace">
+        <div class="info-banner__viewport" aria-live="polite">
+        <p class="info-banner__message">Srpen: výroba a logistika mají 3týdenní výluku. Objednávky s dodáním před výlukou zašlete nejpozději do <strong>10. 7. 2026</strong>.</p>
+    </div>
+</div>
+<header class="site-header border-b border-slate-100 bg-white/90 backdrop-blur-md transition-transform duration-300 ease-in-out will-change-transform">
     <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4">
         <a href="/" class="flex shrink-0 items-center gap-1.5">
             <img src="/images/logo.svg" width="160" height="74" alt="Pásky s potiskem" class="h-12 w-auto lg:h-14">
@@ -51,34 +69,36 @@
             <nav id="main-nav" class="hidden lg:block" aria-label="Hlavní navigace">
             <ul class="flex items-center gap-1">
                 <li><a href="/#uvod" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.home">Úvod</a></li>
-                <li><a href="/galerie.html" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.gallery">Galerie</a></li>
+                <li><a href="/galerie" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.gallery">Galerie</a></li>
                 <li><a href="/sortiment" class="px-2 py-1 text-sm font-semibold text-orange-600 transition-colors hover:text-orange-600" data-i18n="nav.sortiment">Sortiment</a></li>
                 <li><a href="/#reference" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.references">Reference</a></li>
                 <li><a href="/#kontakt1" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.contacts">Kontakty</a></li>
             </ul>
         </nav>
             <div data-lang-switcher class="relative shrink-0" aria-label="Language"></div>
-            <button id="menu-toggle" type="button" class="inline-flex items-center rounded-xl border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50 lg:hidden" aria-expanded="false" aria-controls="main-nav">Menu</button>
+            <button id="theme-toggle" type="button" class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-slate-700 transition-colors hover:text-orange-600 dark:text-slate-200" aria-label="Přepnout tmavý režim" data-i18n-attr="aria-label:nav.theme_toggle"><svg class="h-5 w-5 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg class="hidden h-5 w-5 dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg></button>
+            <button id="menu-toggle" type="button" class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-slate-700 transition-colors hover:text-orange-600 lg:hidden" aria-expanded="false" aria-controls="mobile-nav" aria-label="Otevřít menu" data-i18n-attr="aria-label:nav.menu"><svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
         </div>
     </div>
     <nav id="mobile-nav" class="hidden border-t border-slate-100 bg-white px-4 py-4 lg:hidden">
         <ul class="space-y-1">
             <li><a href="/#uvod" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.home">Úvod</a></li>
-            <li><a href="/galerie.html" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.gallery">Galerie</a></li>
+            <li><a href="/galerie" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.gallery">Galerie</a></li>
             <li><a href="/sortiment" class="block px-2 py-2 font-semibold text-orange-600" data-i18n="nav.sortiment">Sortiment</a></li>
             <li><a href="/#reference" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.references">Reference</a></li>
             <li><a href="/#kontakt1" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.contacts">Kontakty</a></li>
         </ul>
     </nav>
 </header>
+</div><!-- /SITE-TOP -->
 
 <main>
 
 <section class="mx-auto max-w-7xl px-4 py-10 sm:py-14">
     <nav class="mb-8 text-sm text-slate-500" aria-label="Drobečková navigace">
-        <a href="/" class="hover:text-orange-600">Domů</a>
+        <a href="/index.html" class="hover:text-orange-600">Domů</a>
         <span class="mx-2 text-slate-300">/</span>
-        <a href="/sortiment" class="hover:text-orange-600">Sortiment</a>
+        <a href="/sortiment.html" class="hover:text-orange-600">Sortiment</a>
         <span class="mx-2 text-slate-300">/</span>
         <a href="/sortiment/vyztuzene-pasky" class="hover:text-orange-600">Vyztužené pásky</a>
         <span class="mx-2 text-slate-300">/</span>
@@ -86,8 +106,8 @@
     </nav>
 
     <div class="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-14">
-        <div class="flex items-center justify-center rounded-3xl border border-slate-100 bg-white p-8 shadow-sm sm:p-12">
-            <img src="/Vyztu%C5%BEen%C3%A9%20P%C3%A1sky/rtpp32.png" alt="Vyztužená páska RTPP32" class="h-[360px] w-full object-contain mix-blend-multiply contrast-[1.1] brightness-[1.05] sm:h-[440px]">
+        <div class="product-image-frame flex items-center justify-center rounded-3xl border border-slate-100 p-8 shadow-sm sm:p-12">
+            <img src="/Vyztu%C5%BEen%C3%A9%20P%C3%A1sky/rtpp32.jpg" alt="Vyztužená páska RTPP32" class="h-[360px] w-full object-contain mix-blend-multiply contrast-[1.1] brightness-[1.05] sm:h-[440px]">
         </div>
         <div class="flex flex-col justify-center">
             <span class="text-sm font-semibold uppercase tracking-wide text-orange-600">Vyztužené pásky</span>
@@ -99,7 +119,7 @@
                 <span class="rounded-full bg-slate-100 px-4 py-1.5 text-xs font-semibold text-slate-700">−10 až +60 °C</span>
             </div>
             <div class="mt-8 flex flex-wrap gap-4">
-                <a href="/#gf_1" class="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25 transition-all hover:scale-[1.02] hover:shadow-xl">Nezávazně poptat / Kalkulace <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></a>
+                <a href="/index.html#gf_1" class="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25 transition-all hover:scale-[1.02] hover:shadow-xl">Nezávazně poptat / Kalkulace <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></a>
                 <a href="/sortiment/vyztuzene-pasky" class="inline-flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12"/></svg> Zpět na kategorii</a>
             </div>
         </div>
@@ -143,14 +163,14 @@
                 </div>
                 <p class="mt-4 text-xs leading-relaxed text-slate-400">Uvedené hodnoty jsou orientační a mohou se lišit podle konkrétní šířky, návinu a provedení. Rádi vám připravíme přesnou specifikaci na míru.</p>
                 <div class="mt-8">
-                    <div class="rounded-2xl border border-orange-100 bg-gradient-to-br from-orange-50/80 to-white p-6 shadow-sm">
+                    <div class="product-tailor-box rounded-2xl bg-slate-50 p-6">
                         <h3 class="text-base font-bold text-slate-900">Na míru vašemu provozu</h3>
-                        <ul class="mt-3 space-y-2.5 text-sm leading-relaxed text-slate-600">
+                        <ul class="product-tailor-list mt-3 space-y-2.5 text-sm leading-relaxed text-slate-600">
                             <li class="flex gap-2"><span class="font-bold text-orange-600" aria-hidden="true">•</span>Volitelná šířka a délka návinu</li>
                             <li class="flex gap-2"><span class="font-bold text-orange-600" aria-hidden="true">•</span>Barva podkladu a počet barev potisku</li>
                             <li class="flex gap-2"><span class="font-bold text-orange-600" aria-hidden="true">•</span>Nezávazná kalkulace a vzorek před objednávkou</li>
                         </ul>
-                        <a href="/#gf_1" class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-orange-600 transition-colors hover:text-orange-700">Nezávazně poptat <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></a>
+                        <a href="/index.html#gf_1" class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-orange-600 transition-colors hover:text-orange-700">Nezávazně poptat <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></a>
                     </div>
                 </div>
             </div>
@@ -205,13 +225,13 @@
             <p class="text-sm leading-relaxed text-slate-600">
                 <span class="font-bold text-slate-900">Pásku lze objednat i bez potisku.</span>
                 Pokud nepotřebujete logo na pásku, stejný materiál vám dodáme v nepotištěném provedení, ideální pro okamžité balení nebo skladové zásoby.
-                <a href="/#kontakt1" class="font-semibold text-orange-600 transition-colors hover:text-orange-700">Zeptejte se na dostupnost</a>
+                <a href="/index.html#kontakt1" class="font-semibold text-orange-600 transition-colors hover:text-orange-700">Zeptejte se na dostupnost</a>
             </p>
         </div>
 
         <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
             <a href="/sortiment/vyztuzene-pasky" class="inline-flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-6 py-3 text-sm font-bold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12"/></svg> Zpět na Vyztužené pásky</a>
-            <a href="/#kontakt1" class="inline-flex items-center rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25 transition-all hover:scale-[1.02] hover:shadow-xl">Mám zájem o tuto pásku</a>
+            <a href="/index.html#kontakt1" class="inline-flex items-center rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25 transition-all hover:scale-[1.02] hover:shadow-xl">Mám zájem o tuto pásku</a>
         </div>
     </div>
 </section>
@@ -274,84 +294,76 @@
 <script id="sortiment-products" type="application/json">
 [
   {
-    "name": "Papírová páska KH80",
-    "tagline": "Silná papírová páska s hot melt lepidlem pro spolehlivé uzavírání kartonů.",
-    "image": "/Pap%C3%ADrov%C3%A9%20P%C3%A1sky/KH80.png",
-    "detail": "/sortiment/papirove-pasky/papirova-paska-kh80",
-    "category": "Papírové pásky",
+    "name": "Udržitelná páska Airtape",
+    "tagline": "Lehká udržitelná páska pro každodenní ekologické balení.",
+    "image": "/Udr%C5%BEiteln%C3%A9%20P%C3%A1sky/airtape.jpg",
+    "detail": "/sortiment/udrzitelne-pasky/udrzitelna-paska-airtape",
+    "category": "Udržitelné pásky",
     "tags": [
       "ekologicke",
       "rucni"
-    ]
+    ],
+    "portrait": true
   },
   {
-    "name": "Papírová páska KS165",
-    "tagline": "Extra pevná papírová páska s kaučukovým lepidlem pro náročné balení.",
-    "image": "/Pap%C3%ADrov%C3%A9%20P%C3%A1sky/KS165.png",
-    "detail": "/sortiment/papirove-pasky/papirova-paska-ks165",
-    "category": "Papírové pásky",
+    "name": "Udržitelná páska ECO+ 50",
+    "tagline": "Tenká recyklovaná páska pro standardní udržitelné balení.",
+    "image": "/Udr%C5%BEiteln%C3%A9%20P%C3%A1sky/eco%2B50.jpg",
+    "detail": "/sortiment/udrzitelne-pasky/udrzitelna-paska-eco-50",
+    "category": "Udržitelné pásky",
     "tags": [
       "ekologicke",
-      "rucni"
-    ]
-  },
-  {
-    "name": "Papírová páska C660",
-    "tagline": "Ekologická papírová páska s akrylovým lepidlem a čistým odvíjením.",
-    "image": "/Pap%C3%ADrov%C3%A9%20P%C3%A1sky/c660.png",
-    "detail": "/sortiment/papirove-pasky/papirova-paska-c660",
-    "category": "Papírové pásky",
-    "tags": [
-      "ekologicke",
-      "tiche",
-      "rucni"
-    ]
-  },
-  {
-    "name": "Papírová páska C680",
-    "tagline": "Univerzální papírová páska s vysokou lepivostí na recyklovaný karton.",
-    "image": "/Pap%C3%ADrov%C3%A9%20P%C3%A1sky/c680.png",
-    "detail": "/sortiment/papirove-pasky/papirova-paska-c680",
-    "category": "Papírové pásky",
-    "tags": [
-      "ekologicke",
-      "rucni",
       "stroje"
-    ]
+    ],
+    "portrait": true
   },
   {
-    "name": "Papírová páska C680R",
-    "tagline": "Papírová páska z recyklovaného papíru pro udržitelné balení.",
-    "image": "/Pap%C3%ADrov%C3%A9%20P%C3%A1sky/c680r.jpeg",
-    "detail": "/sortiment/papirove-pasky/papirova-paska-c680r",
-    "category": "Papírové pásky",
+    "name": "Udržitelná páska ECO+ 80",
+    "tagline": "Silnější recyklovaná páska pro náročnější udržitelné balení.",
+    "image": "/Udr%C5%BEiteln%C3%A9%20P%C3%A1sky/eco%2B80.jpg",
+    "detail": "/sortiment/udrzitelne-pasky/udrzitelna-paska-eco-80",
+    "category": "Udržitelné pásky",
     "tags": [
       "ekologicke",
-      "rucni"
-    ]
-  },
-  {
-    "name": "Papírová páska C680 RT",
-    "tagline": "Odolná papírová páska s vylepšenou přilnavostí pro těžší zásilky.",
-    "image": "/Pap%C3%ADrov%C3%A9%20P%C3%A1sky/c680RT.jpeg",
-    "detail": "/sortiment/papirove-pasky/papirova-paska-c680-rt",
-    "category": "Papírové pásky",
-    "tags": [
-      "ekologicke",
-      "rucni",
       "stroje"
-    ]
+    ],
+    "portrait": true
   },
   {
-    "name": "Papírová páska C690",
-    "tagline": "Prémiová kraftová páska s hot melt lepidlem a matným povrchem.",
-    "image": "/Pap%C3%ADrov%C3%A9%20P%C3%A1sky/c690.png",
-    "detail": "/sortiment/papirove-pasky/papirova-paska-c690",
-    "category": "Papírové pásky",
+    "name": "Udržitelná páska LOOPP",
+    "tagline": "Páska z recyklovaného polypropylenu pro cirkulární ekonomiku.",
+    "image": "/Udr%C5%BEiteln%C3%A9%20P%C3%A1sky/loopp.jpg",
+    "detail": "/sortiment/udrzitelne-pasky/udrzitelna-paska-loopp",
+    "category": "Udržitelné pásky",
+    "tags": [
+      "ekologicke",
+      "stroje"
+    ],
+    "portrait": true
+  },
+  {
+    "name": "Udržitelná páska NOPP",
+    "tagline": "Udržitelná páska bez plastu pro plně recyklovatelné balení.",
+    "image": "/Udr%C5%BEiteln%C3%A9%20P%C3%A1sky/nopp.jpg",
+    "detail": "/sortiment/udrzitelne-pasky/udrzitelna-paska-nopp",
+    "category": "Udržitelné pásky",
     "tags": [
       "ekologicke",
       "rucni"
-    ]
+    ],
+    "portrait": true
+  },
+  {
+    "name": "Udržitelná páska NOPP+",
+    "tagline": "Vylepšená bezplastová páska s vyšší pevností a lepivostí.",
+    "image": "/Udr%C5%BEiteln%C3%A9%20P%C3%A1sky/nopp%2B.jpg",
+    "detail": "/sortiment/udrzitelne-pasky/udrzitelna-paska-nopp",
+    "category": "Udržitelné pásky",
+    "tags": [
+      "ekologicke",
+      "rucni"
+    ],
+    "portrait": true
   },
   {
     "name": "BOPP páska Acrylic",
@@ -363,7 +375,20 @@
       "tiche",
       "rucni",
       "stroje"
-    ]
+    ],
+    "portrait": false
+  },
+  {
+    "name": "BOPP páska Evergreen",
+    "tagline": "Barevná BOPP páska pro značení a vizuální odlišení zásilek.",
+    "image": "/BOPP%20Tapes/EVERGREEN.jpg",
+    "detail": "/sortiment/bopp-pasky/bopp-paska-evergreen",
+    "category": "BOPP pásky",
+    "tags": [
+      "mrazuvzdorne",
+      "stroje"
+    ],
+    "portrait": false
   },
   {
     "name": "BOPP páska Hot Melt",
@@ -374,251 +399,277 @@
     "tags": [
       "rucni",
       "stroje"
-    ]
+    ],
+    "portrait": false
   },
   {
     "name": "BOPP páska Hot Melt II",
     "tagline": "Silnější BOPP páska s hot melt lepidlem pro náročnější balení.",
-    "image": "/BOPP%20Tapes/BOPPHOTMELT1.png",
+    "image": "/BOPP%20Tapes/BOPPHOTMELT1.jpg",
     "detail": "/sortiment/bopp-pasky/bopp-paska-hot-melt-ii",
     "category": "BOPP pásky",
     "tags": [
       "rucni",
       "stroje"
-    ]
-  },
-  {
-    "name": "BOPP páska Evergreen",
-    "tagline": "Barevná BOPP páska pro značení a vizuální odlišení zásilek.",
-    "image": "/BOPP%20Tapes/EVERGREEN.png",
-    "detail": "/sortiment/bopp-pasky/bopp-paska-evergreen",
-    "category": "BOPP pásky",
-    "tags": [
-      "mrazuvzdorne",
-      "stroje"
-    ]
-  },
-  {
-    "name": "BOPET páska ATE23",
-    "tagline": "Tenká polyesterová páska s vysokou teplotní odolností.",
-    "image": "/BOPET%20Tapes/ATE23.png",
-    "detail": "/sortiment/bopet-pasky/bopet-paska-ate23",
-    "category": "BOPET pásky",
-    "tags": [
-      "vysoke-teploty",
-      "chemicka-odolnost"
-    ]
+    ],
+    "portrait": false
   },
   {
     "name": "BOPET páska AIT",
     "tagline": "Polyesterová páska se silikonovým lepidlem pro extrémní teploty.",
-    "image": "/BOPET%20Tapes/BOPETAIT.png",
+    "image": "/BOPET%20Tapes/BOPETAIT.jpg",
     "detail": "/sortiment/bopet-pasky/bopet-paska-ait",
     "category": "BOPET pásky",
     "tags": [
       "vysoke-teploty",
       "mrazuvzdorne",
       "chemicka-odolnost"
-    ]
+    ],
+    "portrait": false
   },
   {
-    "name": "BOPET páska HIT17",
-    "tagline": "Ultratenká PET páska pro elektrotechniku a přesné aplikace.",
-    "image": "/BOPET%20Tapes/BOPETHIT17.png",
-    "detail": "/sortiment/bopet-pasky/bopet-paska-hit17",
+    "name": "BOPET páska ATE23",
+    "tagline": "Tenká polyesterová páska s vysokou teplotní odolností.",
+    "image": "/BOPET%20Tapes/ATE23.jpg",
+    "detail": "/sortiment/bopet-pasky/bopet-paska-ate23",
     "category": "BOPET pásky",
     "tags": [
       "vysoke-teploty",
       "chemicka-odolnost"
-    ]
+    ],
+    "portrait": false
   },
   {
     "name": "BOPET páska ECO HIT19",
     "tagline": "Polyesterová páska s recyklovaným obsahem a vysokou odolností.",
-    "image": "/BOPET%20Tapes/ECOHIT19.png",
+    "image": "/BOPET%20Tapes/ECOHIT19.jpg",
     "detail": "/sortiment/bopet-pasky/bopet-paska-eco-hit19",
     "category": "BOPET pásky",
     "tags": [
       "ekologicke",
       "vysoke-teploty",
       "chemicka-odolnost"
-    ]
+    ],
+    "portrait": false
   },
   {
-    "name": "Textilní páska BC",
-    "tagline": "Pevná textilní (duct) páska pro opravy a univerzální použití.",
-    "image": "/Textiln%C3%AD%20Lep%C3%ADc%C3%AD%20P%C3%A1sky/BC.png",
-    "detail": "/sortiment/textilni-pasky/textilni-paska-bc",
-    "category": "Textilní lepicí pásky",
+    "name": "BOPET páska HIT17",
+    "tagline": "Ultratenká PET páska pro elektrotechniku a přesné aplikace.",
+    "image": "/BOPET%20Tapes/BOPETHIT17.jpg",
+    "detail": "/sortiment/bopet-pasky/bopet-paska-hit17",
+    "category": "BOPET pásky",
     "tags": [
-      "vyztuzene",
+      "vysoke-teploty",
+      "chemicka-odolnost"
+    ],
+    "portrait": false
+  },
+  {
+    "name": "Papírová páska C660",
+    "tagline": "Ekologická papírová páska s akrylovým lepidlem a čistým odvíjením.",
+    "image": "/Pap%C3%ADrov%C3%A9%20P%C3%A1sky/c660.jpg",
+    "detail": "/sortiment/papirove-pasky/papirova-paska-c660",
+    "category": "Papírové pásky",
+    "tags": [
+      "ekologicke",
+      "tiche",
       "rucni"
-    ]
+    ],
+    "portrait": false
   },
   {
-    "name": "Textilní páska BC2",
-    "tagline": "Extra silná textilní páska s vysokou pevností v tahu.",
-    "image": "/Textiln%C3%AD%20Lep%C3%ADc%C3%AD%20P%C3%A1sky/BC2.png",
-    "detail": "/sortiment/textilni-pasky/textilni-paska-bc2",
-    "category": "Textilní lepicí pásky",
+    "name": "Papírová páska C680",
+    "tagline": "Univerzální papírová páska s vysokou lepivostí na recyklovaný karton.",
+    "image": "/Pap%C3%ADrov%C3%A9%20P%C3%A1sky/c680.jpg",
+    "detail": "/sortiment/papirove-pasky/papirova-paska-c680",
+    "category": "Papírové pásky",
     "tags": [
-      "vyztuzene",
-      "rucni"
-    ]
-  },
-  {
-    "name": "Textilní páska NU",
-    "tagline": "Univerzální textilní páska pro rychlé svazování a fixaci.",
-    "image": "/Textiln%C3%AD%20Lep%C3%ADc%C3%AD%20P%C3%A1sky/NU.png",
-    "detail": "/sortiment/textilni-pasky/textilni-paska-nu",
-    "category": "Textilní lepicí pásky",
-    "tags": [
-      "vyztuzene",
-      "rucni"
-    ]
-  },
-  {
-    "name": "Vyztužená páska RMPP32",
-    "tagline": "Vyztužená páska se skelnými vlákny pro fixaci těžkých břemen.",
-    "image": "/Vyztu%C5%BEen%C3%A9%20P%C3%A1sky/rmpp32.png",
-    "detail": "/sortiment/vyztuzene-pasky/vyztuzena-paska-rmpp32",
-    "category": "Vyztužené pásky",
-    "tags": [
-      "vyztuzene",
+      "ekologicke",
+      "rucni",
       "stroje"
-    ]
+    ],
+    "portrait": false
   },
   {
-    "name": "Vyztužená páska RTPP32",
-    "tagline": "Křížově vyztužená páska pro maximální pevnost ve všech směrech.",
-    "image": "/Vyztu%C5%BEen%C3%A9%20P%C3%A1sky/rtpp32.png",
-    "detail": "/sortiment/vyztuzene-pasky/vyztuzena-paska-rtpp32",
-    "category": "Vyztužené pásky",
+    "name": "Papírová páska C680 RT",
+    "tagline": "Odolná papírová páska s vylepšenou přilnavostí pro těžší zásilky.",
+    "image": "/Pap%C3%ADrov%C3%A9%20P%C3%A1sky/c680RT.jpeg",
+    "detail": "/sortiment/papirove-pasky/papirova-paska-c680-rt",
+    "category": "Papírové pásky",
     "tags": [
-      "vyztuzene",
+      "ekologicke",
+      "rucni",
       "stroje"
-    ]
+    ],
+    "portrait": false
   },
   {
-    "name": "MOPP páska S45-50",
-    "tagline": "Monoaxiální MOPP páska s extrémní pevností a nulovou tažností.",
-    "image": "/MOPP%20P%C3%A1sky/s45-50.png",
-    "detail": "/sortiment/mopp-pasky/mopp-paska-s45-50",
-    "category": "MOPP pásky",
+    "name": "Papírová páska C680R",
+    "tagline": "Papírová páska z recyklovaného papíru pro udržitelné balení.",
+    "image": "/Pap%C3%ADrov%C3%A9%20P%C3%A1sky/c680r.jpeg",
+    "detail": "/sortiment/papirove-pasky/papirova-paska-c680r",
+    "category": "Papírové pásky",
     "tags": [
-      "vyztuzene",
-      "stroje"
-    ]
-  },
-  {
-    "name": "Odstranitelná páska R28-32",
-    "tagline": "Odstranitelná páska, která po odlepení nezanechá žádné stopy.",
-    "image": "/Odstraniteln%C3%A9%20P%C3%A1sky/r28-32.png",
-    "detail": "/sortiment/odstranitelne-pasky/odstranitelna-paska-r28-32",
-    "category": "Odstranitelné pásky",
-    "tags": [
-      "odstranitelne",
+      "ekologicke",
       "rucni"
-    ]
+    ],
+    "portrait": false
+  },
+  {
+    "name": "Papírová páska C690",
+    "tagline": "Prémiová kraftová páska s hot melt lepidlem a matným povrchem.",
+    "image": "/Pap%C3%ADrov%C3%A9%20P%C3%A1sky/c690.jpg",
+    "detail": "/sortiment/papirove-pasky/papirova-paska-c690",
+    "category": "Papírové pásky",
+    "tags": [
+      "ekologicke",
+      "rucni"
+    ],
+    "portrait": false
+  },
+  {
+    "name": "Papírová páska KH80",
+    "tagline": "Silná papírová páska s hot melt lepidlem pro spolehlivé uzavírání kartonů.",
+    "image": "/Pap%C3%ADrov%C3%A9%20P%C3%A1sky/KH80.jpg",
+    "detail": "/sortiment/papirove-pasky/papirova-paska-kh80",
+    "category": "Papírové pásky",
+    "tags": [
+      "ekologicke",
+      "rucni"
+    ],
+    "portrait": false
+  },
+  {
+    "name": "Papírová páska KS165",
+    "tagline": "Extra pevná papírová páska s kaučukovým lepidlem pro náročné balení.",
+    "image": "/Pap%C3%ADrov%C3%A9%20P%C3%A1sky/KS165.jpg",
+    "detail": "/sortiment/papirove-pasky/papirova-paska-ks165",
+    "category": "Papírové pásky",
+    "tags": [
+      "ekologicke",
+      "rucni"
+    ],
+    "portrait": false
   },
   {
     "name": "Odstranitelná páska ECO RIT19",
     "tagline": "Šetrná odstranitelná páska s recyklovaným obsahem.",
-    "image": "/Odstraniteln%C3%A9%20P%C3%A1sky/ECORIT19.png",
+    "image": "/Odstraniteln%C3%A9%20P%C3%A1sky/ECORIT19.jpg",
     "detail": "/sortiment/odstranitelne-pasky/odstranitelna-paska-eco-rit19",
     "category": "Odstranitelné pásky",
     "tags": [
       "odstranitelne",
       "ekologicke",
       "rucni"
-    ]
+    ],
+    "portrait": false
+  },
+  {
+    "name": "Odstranitelná páska R28-32",
+    "tagline": "Odstranitelná páska, která po odlepení nezanechá žádné stopy.",
+    "image": "/Odstraniteln%C3%A9%20P%C3%A1sky/r28-32.jpg",
+    "detail": "/sortiment/odstranitelne-pasky/odstranitelna-paska-r28-32",
+    "category": "Odstranitelné pásky",
+    "tags": [
+      "odstranitelne",
+      "rucni"
+    ],
+    "portrait": false
+  },
+  {
+    "name": "Vyztužená páska RMPP32",
+    "tagline": "Vyztužená páska se skelnými vlákny pro fixaci těžkých břemen.",
+    "image": "/Vyztu%C5%BEen%C3%A9%20P%C3%A1sky/rmpp32.jpg",
+    "detail": "/sortiment/vyztuzene-pasky/vyztuzena-paska-rmpp32",
+    "category": "Vyztužené pásky",
+    "tags": [
+      "vyztuzene",
+      "stroje"
+    ],
+    "portrait": false
+  },
+  {
+    "name": "Vyztužená páska RTPP32",
+    "tagline": "Křížově vyztužená páska pro maximální pevnost ve všech směrech.",
+    "image": "/Vyztu%C5%BEen%C3%A9%20P%C3%A1sky/rtpp32.jpg",
+    "detail": "/sortiment/vyztuzene-pasky/vyztuzena-paska-rtpp32",
+    "category": "Vyztužené pásky",
+    "tags": [
+      "vyztuzene",
+      "stroje"
+    ],
+    "portrait": false
+  },
+  {
+    "name": "MOPP páska S45-50",
+    "tagline": "Monoaxiální MOPP páska s extrémní pevností a nulovou tažností.",
+    "image": "/MOPP%20P%C3%A1sky/s45-50.jpg",
+    "detail": "/sortiment/mopp-pasky/mopp-paska-s45-50",
+    "category": "MOPP pásky",
+    "tags": [
+      "vyztuzene",
+      "stroje"
+    ],
+    "portrait": false
+  },
+  {
+    "name": "Textilní páska BC",
+    "tagline": "Pevná textilní (duct) páska pro opravy a univerzální použití.",
+    "image": "/Textiln%C3%AD%20Lep%C3%ADc%C3%AD%20P%C3%A1sky/BC.jpg",
+    "detail": "/sortiment/textilni-pasky/textilni-paska-bc",
+    "category": "Textilní lepicí pásky",
+    "tags": [
+      "vyztuzene",
+      "rucni"
+    ],
+    "portrait": false
+  },
+  {
+    "name": "Textilní páska BC2",
+    "tagline": "Extra silná textilní páska s vysokou pevností v tahu.",
+    "image": "/Textiln%C3%AD%20Lep%C3%ADc%C3%AD%20P%C3%A1sky/BC2.jpg",
+    "detail": "/sortiment/textilni-pasky/textilni-paska-bc2",
+    "category": "Textilní lepicí pásky",
+    "tags": [
+      "vyztuzene",
+      "rucni"
+    ],
+    "portrait": false
+  },
+  {
+    "name": "Textilní páska NU",
+    "tagline": "Univerzální textilní páska pro rychlé svazování a fixaci.",
+    "image": "/Textiln%C3%AD%20Lep%C3%ADc%C3%AD%20P%C3%A1sky/NU.jpg",
+    "detail": "/sortiment/textilni-pasky/textilni-paska-nu",
+    "category": "Textilní lepicí pásky",
+    "tags": [
+      "vyztuzene",
+      "rucni"
+    ],
+    "portrait": false
   },
   {
     "name": "Malířská páska C580",
     "tagline": "Krepová malířská páska pro ostré hrany při běžném malování.",
-    "image": "/Mal%C3%AD%C5%99sk%C3%A9%20P%C3%A1sky/c580.png",
+    "image": "/Mal%C3%AD%C5%99sk%C3%A9%20P%C3%A1sky/c580.jpg",
     "detail": "/sortiment/malirske-pasky/malirska-paska-c580",
     "category": "Malířské pásky",
     "tags": [
       "rucni"
-    ]
+    ],
+    "portrait": false
   },
   {
     "name": "Malířská páska CS60-80",
     "tagline": "Teplotně odolná malířská páska pro lakování a náročné maskování.",
-    "image": "/Mal%C3%AD%C5%99sk%C3%A9%20P%C3%A1sky/cs60-80.png",
+    "image": "/Mal%C3%AD%C5%99sk%C3%A9%20P%C3%A1sky/cs60-80.jpg",
     "detail": "/sortiment/malirske-pasky/malirska-paska-cs60-80",
     "category": "Malířské pásky",
     "tags": [
       "vysoke-teploty",
       "rucni"
-    ]
-  },
-  {
-    "name": "Udržitelná páska NOPP",
-    "tagline": "Udržitelná páska bez plastu pro plně recyklovatelné balení.",
-    "image": "/Udr%C5%BEiteln%C3%A9%20P%C3%A1sky/nopp.png",
-    "detail": "/sortiment/udrzitelne-pasky/udrzitelna-paska-nopp",
-    "category": "Udržitelné pásky",
-    "tags": [
-      "ekologicke",
-      "rucni"
-    ]
-  },
-  {
-    "name": "Udržitelná páska NOPP+",
-    "tagline": "Vylepšená bezplastová páska s vyšší pevností a lepivostí.",
-    "image": "/Udr%C5%BEiteln%C3%A9%20P%C3%A1sky/nopp%2B.png",
-    "detail": "/sortiment/udrzitelne-pasky/udrzitelna-paska-nopp",
-    "category": "Udržitelné pásky",
-    "tags": [
-      "ekologicke",
-      "rucni"
-    ]
-  },
-  {
-    "name": "Udržitelná páska LOOPP",
-    "tagline": "Páska z recyklovaného polypropylenu pro cirkulární ekonomiku.",
-    "image": "/Udr%C5%BEiteln%C3%A9%20P%C3%A1sky/loopp.png",
-    "detail": "/sortiment/udrzitelne-pasky/udrzitelna-paska-loopp",
-    "category": "Udržitelné pásky",
-    "tags": [
-      "ekologicke",
-      "stroje"
-    ]
-  },
-  {
-    "name": "Udržitelná páska Airtape",
-    "tagline": "Lehká udržitelná páska pro každodenní ekologické balení.",
-    "image": "/Udr%C5%BEiteln%C3%A9%20P%C3%A1sky/airtape.png",
-    "detail": "/sortiment/udrzitelne-pasky/udrzitelna-paska-airtape",
-    "category": "Udržitelné pásky",
-    "tags": [
-      "ekologicke",
-      "rucni"
-    ]
-  },
-  {
-    "name": "Udržitelná páska ECO+ 50",
-    "tagline": "Tenká recyklovaná páska pro standardní udržitelné balení.",
-    "image": "/Udr%C5%BEiteln%C3%A9%20P%C3%A1sky/eco%2B50.png",
-    "detail": "/sortiment/udrzitelne-pasky/udrzitelna-paska-eco-50",
-    "category": "Udržitelné pásky",
-    "tags": [
-      "ekologicke",
-      "stroje"
-    ]
-  },
-  {
-    "name": "Udržitelná páska ECO+ 80",
-    "tagline": "Silnější recyklovaná páska pro náročnější udržitelné balení.",
-    "image": "/Udr%C5%BEiteln%C3%A9%20P%C3%A1sky/eco%2B80.png",
-    "detail": "/sortiment/udrzitelne-pasky/udrzitelna-paska-eco-80",
-    "category": "Udržitelné pásky",
-    "tags": [
-      "ekologicke",
-      "stroje"
-    ]
+    ],
+    "portrait": false
   }
 ]
 </script>
@@ -627,6 +678,9 @@
 <script src="/assets/js/nav-active.js"></script>
 <link rel="stylesheet" href="/assets/css/footer-credit.css">
 <script src="/assets/js/footer-credit.js"></script>
+<script src="/assets/js/mobile-nav.js"></script>
+<script src="/assets/js/info-banner.js"></script>
 <script src="/assets/js/header-scroll.js"></script>
+<script src="/assets/js/theme-toggle.js"></script>
 </body>
 </html>

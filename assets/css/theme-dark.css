@@ -1,0 +1,433 @@
+/**
+ * Dark mode overrides (class "dark" on <html>).
+ * Complements Tailwind utility classes across static pages.
+ */
+
+:root {
+    color-scheme: light;
+}
+
+.dark {
+    color-scheme: dark;
+}
+
+/* --- Base ---------------------------------------------------------------- */
+.dark body {
+    background-color: #0f172a;
+    color: #94a3b8;
+}
+
+/* --- Info banner & header ------------------------------------------------ */
+.dark .info-banner {
+    border-bottom: 1px solid rgb(124 45 18 / 0.5);
+}
+
+/* --- Header & nav -------------------------------------------------------- */
+.dark .site-header {
+    border-color: rgb(30 41 59);
+    background-color: rgb(15 23 42 / 0.92);
+}
+
+.dark #mobile-nav {
+    border-color: rgb(30 41 59);
+    background-color: #0f172a;
+}
+
+.dark .site-header .text-slate-500 {
+    color: #94a3b8;
+}
+
+/* --- Surfaces ------------------------------------------------------------ */
+.dark .bg-white,
+.dark .bg-white\/90,
+.dark .bg-white\/80,
+.dark .bg-white\/95 {
+    background-color: #1e293b !important;
+}
+
+.dark .bg-slate-50 {
+    background-color: #0f172a !important;
+}
+
+.dark .bg-slate-100 {
+    background-color: #334155 !important;
+}
+
+.dark .hover\:bg-slate-50:hover {
+    background-color: #334155 !important;
+}
+
+/* Accent tints – slightly muted on dark */
+.dark .bg-orange-50 {
+    background-color: rgb(234 88 12 / 0.12) !important;
+}
+
+.dark .bg-sky-50 {
+    background-color: rgb(14 165 233 / 0.12) !important;
+}
+
+.dark .bg-amber-50 {
+    background-color: rgb(245 158 11 / 0.12) !important;
+}
+
+.dark .bg-emerald-50 {
+    background-color: rgb(16 185 129 / 0.12) !important;
+}
+
+.dark .bg-red-50 {
+    background-color: rgb(239 68 68 / 0.12) !important;
+}
+
+.dark .hover\:bg-orange-50:hover {
+    background-color: rgb(234 88 12 / 0.18) !important;
+}
+
+/* --- Text ---------------------------------------------------------------- */
+.dark .text-slate-900 {
+    color: #f1f5f9 !important;
+}
+
+.dark .text-slate-800 {
+    color: #e2e8f0 !important;
+}
+
+.dark .text-slate-700 {
+    color: #cbd5e1 !important;
+}
+
+.dark .text-slate-600 {
+    color: #94a3b8 !important;
+}
+
+.dark .text-slate-500 {
+    color: #94a3b8 !important;
+}
+
+.dark .text-slate-400 {
+    color: #64748b !important;
+}
+
+.dark .text-slate-300 {
+    color: #94a3b8 !important;
+}
+
+/* Footer social icons – white glyphs (default + brand hover) */
+.dark footer#kontakt1 a[href*="facebook.com"],
+.dark footer#kontakt1 a[href*="instagram.com"],
+.dark footer#kontakt1 a[href*="youtube.com"] {
+    color: #ffffff !important;
+}
+
+/* --- Borders ------------------------------------------------------------- */
+.dark .border-slate-100,
+.dark .border-slate-200 {
+    border-color: rgb(51 65 85) !important;
+}
+
+.dark .hover\:border-slate-200:hover,
+.dark .hover\:border-slate-300:hover {
+    border-color: rgb(71 85 105) !important;
+}
+
+.dark .border-white\/60 {
+    border-color: rgb(51 65 85 / 0.8) !important;
+}
+
+/* Reference stat cards – lighter than section bg (inverse of light mode) */
+.dark #reference .grid > .rounded-2xl.bg-slate-50 {
+    background-color: #334155 !important;
+    border-color: rgb(71 85 105) !important;
+}
+
+/* --- Gradients ----------------------------------------------------------- */
+.dark .from-white {
+    --tw-gradient-from: #1e293b var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(30 41 59 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.dark .to-slate-50 {
+    --tw-gradient-to: #0f172a var(--tw-gradient-to-position);
+}
+
+.dark .to-white {
+    --tw-gradient-to: #1e293b var(--tw-gradient-to-position);
+}
+
+.dark .from-orange-50\/80 {
+    --tw-gradient-from: rgb(234 88 12 / 0.1) var(--tw-gradient-from-position);
+}
+
+/* --- Form inputs --------------------------------------------------------- */
+.dark #gform_1 input:not([type="checkbox"]):not([type="radio"]),
+.dark #gform_1 textarea,
+.dark #gform_1 select {
+    background-color: #0f172a;
+    border-color: #475569;
+    color: #e2e8f0;
+}
+
+.dark #gform_1 input::placeholder,
+.dark #gform_1 textarea::placeholder {
+    color: #64748b;
+}
+
+.dark #gform_1 label {
+    color: #cbd5e1;
+}
+
+/* Radio / option tiles – default (unselected) */
+.dark #gform_1 fieldset label > span,
+.dark #gform_1 .gform_page label.cursor-pointer > span {
+    background-color: #0f172a !important;
+    border-color: #475569 !important;
+    color: #cbd5e1 !important;
+    box-shadow: none !important;
+}
+
+.dark #gform_1 fieldset label > span span.text-slate-500 {
+    color: #94a3b8 !important;
+}
+
+/* Radio / option tiles – selected */
+.dark #gform_1 fieldset label:has(> input.peer:checked) > span,
+.dark #gform_1 .gform_page label.cursor-pointer:has(> input.peer:checked) > span {
+    background-color: rgb(234 88 12 / 0.2) !important;
+    border-color: #f97316 !important;
+    color: #fdba74 !important;
+    box-shadow: none !important;
+}
+
+.dark #gform_1 fieldset label:has(> input.peer:checked) > span span,
+.dark #gform_1 .gform_page label.cursor-pointer:has(> input.peer:checked) > span span {
+    color: rgb(251 146 60 / 0.92) !important;
+}
+
+/* Checkbox option rows (ACRYL noise, GDPR) */
+.dark #gform_1 label:has(> input[type="checkbox"]:checked) {
+    background-color: rgb(234 88 12 / 0.2) !important;
+    border-color: #f97316 !important;
+}
+
+.dark #gform_1 label:has(> input[type="checkbox"]) {
+    background-color: #0f172a !important;
+    border-color: #475569 !important;
+}
+
+.dark #gform_1 label:has(> input[type="checkbox"]:checked) .text-slate-900 {
+    color: #f1f5f9 !important;
+}
+
+.dark #gform_1 .gform_progress_wrap .bg-slate-100 {
+    background-color: #334155 !important;
+}
+
+.dark #gform_1 #form-progress-dots .bg-slate-200 {
+    background-color: #475569 !important;
+}
+
+.dark #gform_1 .btn-prev {
+    background-color: #1e293b !important;
+    border-color: #475569 !important;
+    color: #e2e8f0 !important;
+}
+
+.dark #gform_1 .btn-prev:hover {
+    background-color: #334155 !important;
+    border-color: #64748b !important;
+}
+
+.dark #gform_1 #note-sample-btn {
+    border-color: transparent !important;
+    background-color: rgb(234 88 12 / 0.22) !important;
+    color: #fdba74 !important;
+}
+
+.dark #gform_1 #qty-discount-badge.border-slate-200 {
+    border-color: #475569 !important;
+    background-color: #0f172a !important;
+    color: #94a3b8 !important;
+}
+
+.dark #gform_1 #qty-discount-badge.border-emerald-200 {
+    border-color: transparent !important;
+    background-color: rgb(16 185 129 / 0.2) !important;
+    color: #6ee7b7 !important;
+    box-shadow: none !important;
+}
+
+/* Sortiment – lighter body copy */
+.dark body[data-page="sortiment"] .text-slate-600 {
+    color: #cbd5e1 !important;
+}
+
+/* Sortiment category cards – decorative tape (same framing as BOPP reference) */
+.category-tape-deco {
+    position: absolute;
+    right: -8%;
+    bottom: -6%;
+    width: 20rem;
+    height: 20rem;
+    object-fit: contain;
+    object-position: bottom right;
+    opacity: 0.2;
+    pointer-events: none;
+    transform: rotate(12deg);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.category-tape-deco--dark {
+    display: none;
+}
+
+#sortiment-categories a.group:hover > .category-tape-deco {
+    transform: rotate(9deg) scale(1.1);
+}
+
+.dark #sortiment-categories .category-tape-deco--light {
+    display: none;
+}
+
+.dark #sortiment-categories .category-tape-deco--dark {
+    display: block;
+}
+
+/* Decorative category cover tapes */
+.dark #sortiment-categories a.group {
+    isolation: isolate;
+    contain: layout style;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease !important;
+}
+
+/* --- Product / sortiment images ------------------------------------------ */
+.product-image-frame {
+    background-color: #ffffff;
+}
+
+.dark .product-image-frame {
+    background: linear-gradient(165deg, #eef2f7 0%, #e2e8f0 50%, #eef2f7 100%) !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    isolation: isolate;
+}
+
+/* multiply on light stage = white JPEG bg vanishes, tape colors stay true */
+.dark .product-image-frame img {
+    mix-blend-mode: multiply !important;
+    filter: none !important;
+}
+
+.dark a.group:hover .product-image-frame img,
+.dark article.group:hover .product-image-frame img {
+    transform: scale(1.04);
+}
+
+/* Product detail – „Na míru vašemu provozu“ box */
+.dark .product-tailor-box {
+    background-color: rgb(51 65 85 / 0.28) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.dark .product-tailor-list,
+.dark .product-tailor-list li {
+    color: #cbd5e1 !important;
+}
+
+/* Homepage benefit teaser with white image area */
+.dark article .relative.h-52.overflow-hidden.bg-white,
+.dark article .relative.h-52.overflow-hidden.bg-white.sm\:h-56 {
+    background: linear-gradient(155deg, #1e293b, #334155) !important;
+}
+
+/* --- Glue guide badges (#lepidla) ---------------------------------------- */
+.dark #lepidla span.border-sky-200,
+.dark #lepidla span.border-amber-200 {
+    border-color: transparent !important;
+}
+
+.dark #lepidla span.border-sky-200 {
+    background-color: rgb(14 165 233 / 0.22) !important;
+}
+
+.dark #lepidla span.border-amber-200 {
+    background-color: rgb(245 158 11 / 0.22) !important;
+}
+
+.dark #lepidla .text-sky-700 {
+    color: #7dd3fc !important;
+}
+
+.dark #lepidla .text-amber-700 {
+    color: #fcd34d !important;
+}
+
+/* Benefits badges (#vyhody – Tamper / Extra Glue) */
+.dark #vyhody span.border-red-200,
+.dark #vyhody span.border-orange-200 {
+    border-color: transparent !important;
+}
+
+.dark #vyhody span.border-red-200 {
+    background-color: rgb(239 68 68 / 0.22) !important;
+}
+
+.dark #vyhody span.border-orange-200 {
+    background-color: rgb(249 115 22 / 0.22) !important;
+}
+
+.dark #vyhody .text-red-700 {
+    color: #fca5a5 !important;
+}
+
+.dark #vyhody .text-orange-700 {
+    color: #fdba74 !important;
+}
+
+.dark #vyhody strong.text-slate-800 {
+    color: #e2e8f0 !important;
+}
+
+/* --- Privacy modal ------------------------------------------------------- */
+.dark .privacy-modal__panel {
+    background: #1e293b;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+}
+
+.dark .privacy-modal__header,
+.dark .privacy-modal__footer {
+    border-color: #334155;
+}
+
+.dark .privacy-modal__body p {
+    color: #94a3b8;
+}
+
+.dark .privacy-modal__close:hover {
+    background: #334155;
+}
+
+/* --- Shadows (softer on dark) -------------------------------------------- */
+.dark .shadow-sm,
+.dark .shadow-lg {
+    --tw-shadow-color: rgb(0 0 0 / 0.35);
+}
+
+/* --- Theme toggle focus -------------------------------------------------- */
+#theme-toggle:focus-visible {
+    outline: 2px solid #ea580c;
+    outline-offset: 2px;
+}
+
+/* --- Smooth transition when toggling ------------------------------------- */
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.15s ease,
+        box-shadow 0.2s ease !important;
+}

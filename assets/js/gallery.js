@@ -517,13 +517,4 @@
             }
         });
     }
-
-    var menuToggle = document.getElementById('menu-toggle');
-    var mobileNav = document.getElementById('mobile-nav');
-    if (menuToggle && mobileNav) {
-        menuToggle.addEventListener('click', function () {
-            var open = mobileNav.classList.toggle('hidden') === false;
-            menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-        });
-    }
 })();

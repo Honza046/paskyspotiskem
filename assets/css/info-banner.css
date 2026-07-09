@@ -1,0 +1,73 @@
+/**
+ * Top info banner – rotating announcements above site header.
+ */
+:root {
+    --info-banner-height: 2.25rem;
+}
+
+html {
+    scroll-padding-top: var(--site-top-height, 7.75rem);
+}
+
+.site-top {
+    z-index: 50;
+}
+
+.site-header-shell {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 0.3s ease;
+}
+
+.site-header-shell.is-collapsed {
+    grid-template-rows: 0fr;
+}
+
+.site-header-shell > .site-header {
+    min-height: 0;
+    overflow: hidden;
+}
+
+.info-banner {
+    overflow: hidden;
+    background: linear-gradient(90deg, #c2410c 0%, #ea580c 50%, #d97706 100%);
+    color: #fff;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.info-banner__viewport {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--info-banner-height);
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.info-banner__message {
+    margin: 0;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.45s ease;
+    will-change: opacity;
+}
+
+.info-banner__message.is-fading {
+    opacity: 0;
+}
+
+.info-banner__message strong {
+    font-weight: 800;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .info-banner__message {
+        transition: none;
+    }
+}
+
+.dark .info-banner {
+    background: linear-gradient(90deg, #7c2d12 0%, #9a3412 50%, #c2410c 100%);
+}
