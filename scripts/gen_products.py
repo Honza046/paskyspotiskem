@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Generate sortiment product data (PHP) + static preview pages."""
-import html, unicodedata, urllib.parse, glob, os
+import html, re, unicodedata, urllib.parse, glob, os
 
 def esc(s): return html.escape(s, quote=True)
 def url(p): return '/' + urllib.parse.quote(p)
@@ -9,6 +9,8 @@ def url(p): return '/' + urllib.parse.quote(p)
 def slugify(s):
     s = unicodedata.normalize('NFKD', s).encode('ascii','ignore').decode('ascii')
     s = s.lower()
+    # NOPP+ → nopp-plus, but keep ECO+ 50 → eco-50
+    s = re.sub(r'\+(?!\s*\d)', ' plus ', s)
     out=[]
     for ch in s:
         if ch.isalnum(): out.append(ch)
@@ -178,10 +180,267 @@ for cat in CATS:
         p["slug"]=slugify(p["name"])
         p["tags"]=TAGMAP.get(p["name"],[])
 
+def _adhesive_benefit(lepidlo):
+    l = lepidlo.lower()
+    if "akryl" in l:
+        return (
+            "Akrylové lepidlo",
+            "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách.",
+        )
+    if "hot melt" in l:
+        return (
+            "Hot melt lepidlo",
+            "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení.",
+        )
+    if "kaučuk" in l or "solvent" in l:
+        return (
+            "Kaučukové lepidlo",
+            "Vysoká okamžitá přilnavost a pevné spojení i na recyklovaném kartonu.",
+        )
+    if "silikon" in l:
+        return (
+            "Silikonové lepidlo",
+            "Stabilní výkon v extrémních teplotách a snadné odlepení bez zbytků lepidla.",
+        )
+    if "odstranitel" in l:
+        return (
+            "Odstranitelné lepidlo",
+            "Během použití pevně drží, po odlepení nezanechává stopy ani poškození povrchu.",
+        )
+    short = lepidlo.split("(")[0].strip()
+    return (short, "Lepidlo zvolené pro konkrétní požadavky dané aplikace a provozu.")
+
+def product_benefits(cat_slug, p):
+    """Product-specific benefit cards – derived from params, not generic category copy."""
+    params = p["params"]
+    nosic = params["Nosič / materiál"]
+    lepidlo = params["Typ lepidla"]
+    temp = params["Teplotní odolnost"]
+    pevnost = params["Pevnost v tahu"]
+    pril = params["Přilnavost (ocel)"]
+    tl = params["Tloušťka"]
+    nl = nosic.lower()
+
+    if cat_slug == "udrzitelne-pasky":
+        if "papír" in nl or "fsc" in nl:
+            b1 = ("Bezplastový papírový nosič", "Plně recyklovatelné balení – páska putuje spolu s kartonem bez oddělování.")
+        else:
+            b1 = ("Recyklovaný polypropylen", f"{nosic} s nižší ekologickou stopou při zachování spolehlivého lepení.")
+        b3 = ("Teplotní rozsah " + temp, f"Pevnost v tahu {pevnost} pro každodenní provoz skladu i expedice.")
+    elif cat_slug == "bopp-pasky":
+        b1 = (f"Pevnost v tahu {pevnost}", f"BOPP fólie o tloušťce {tl} vydrží napětí při balení i při dlouhodobém skladování.")
+        if "barevn" in nl:
+            b3 = ("Barevné odlišení zásilek", f"Vizuální značení balíků a skladová orientace v rozsahu {temp}.")
+        elif "akryl" in lepidlo.lower():
+            b3 = ("Dlouhá životnost", f"Odolnost proti UV a stárnutí v teplotním rozsahu {temp}.")
+        else:
+            b3 = ("Rychlé přilnutí", f"Přilnavost {pril} – okamžitě drží i při nižších teplotách ({temp}).")
+    elif cat_slug == "bopet-pasky":
+        b1 = (f"Teplotní rozsah {temp}", f"Polyesterový nosič ({tl}) si drží vlastnosti v náročných provozech.")
+        if "recyklovan" in nl:
+            b3 = ("Recyklovaný polyester", f"Pevnost {pevnost} s nižší ekologickou stopou než běžná PET fólie.")
+        elif "silikon" in lepidlo.lower():
+            b3 = ("Extrémní teploty", "Výkon při vysokých teplotách lakování i při mrazu – bez poškození povrchu.")
+        else:
+            b3 = ("Chemická odolnost", f"Pevnost {pevnost} – odolává rozpouštědlům, olejům a agresivnímu prostředí.")
+    elif cat_slug == "papirove-pasky":
+        if "recyklovan" in nl:
+            b1 = ("Recyklovaný papírový nosič", "Páska i karton putují společně do recyklace – bez oddělování materiálů.")
+        else:
+            b1 = ("Plná recyklovatelnost", f"Kraftový papírový nosič ({tl}) – ekologické balení s čistým matným vzhledem.")
+        b3 = (f"Pevnost {pevnost}", f"Přilnavost {pril} i na recyklovaný karton a členité povrchy ({temp}).")
+    elif cat_slug == "odstranitelne-pasky":
+        b1 = ("Beze stop po odlepení", f"{nosic} ({tl}) – po sejmutí nezanechává lepidlo ani poškození povrchu.")
+        b3 = (f"Spolehlivá drživost", f"Přilnavost {pril} po celou dobu potřebné aplikace ({temp}).")
+    elif cat_slug == "vyztuzene-pasky":
+        if "podéln" in nl or "rmpp" in p["name"].lower():
+            b1 = ("Podélná skelná vlákna", f"Pevnost v tahu {pevnost} – maximální odolnost ve směru nátahu.")
+        else:
+            b1 = ("Křížová skelná vlákna", f"Pevnost v tahu {pevnost} – odolnost ve všech směrech zatížení.")
+        b3 = ("Fixace těžkých břemen", f"Přilnavost {pril} – spolehlivá fixace palet a nadrozměrných zásilek.")
+    elif cat_slug == "mopp-pasky":
+        b1 = (f"Extrémní pevnost {pevnost}", f"MOPP fólie ({tl}) s prakticky nulovou tažností v podélném směru.")
+        b3 = ("Bez skelných vláken", f"Čistá fixace bez uvolňujících se vláken – teplotní rozsah {temp}.")
+    elif cat_slug == "textilni-pasky":
+        b1 = (f"Pevnost v tahu {pevnost}", f"Textilní výztuž ({tl}) – odolnost proti protržení při náročném použití.")
+        b3 = ("Přilnavost na drsný povrch", f"Přilnavost {pril} – drží na kovu, dřevě, betonu i plastu ({temp}).")
+    elif cat_slug == "malirske-pasky":
+        b1 = ("Ostré hrany bez protečení", f"Krepový nosič ({tl}) – barva nepronikne pod pásku při malování.")
+        if "vysoke-teploty" in p.get("tags", []):
+            b3 = (f"Teplotní odolnost {temp}", "Vhodná pro lakování a náročné maskování v autoservisech.")
+        else:
+            b3 = ("Čisté odlepení", f"Po dokončení práce nezanechává lepidlo ani stopy ({temp}).")
+    else:
+        b1 = (nosic, f"Materiál s pevností {pevnost} a tloušťkou {tl}.")
+        b3 = (f"Teplotní rozsah {temp}", f"Přilnavost {pril} pro spolehlivý provoz.")
+
+    return [b1, _adhesive_benefit(lepidlo), b3]
+
+def product_uses(cat, p):
+    """Pick relevant use cases for this product (not the full generic category list)."""
+    tags = set(p.get("tags", []))
+    slug = cat["cat"]
+    apps = cat["apps"]
+
+    if slug == "bopp-pasky":
+        uses = [apps[0]]
+        if "stroje" in tags:
+            uses.append(apps[1])
+        if "tiche" in tags:
+            uses.append("Tiché ruční odvíjení ve skladech a expedici")
+        elif "mrazuvzdorne" in tags:
+            uses.append("Provoz v chladírenských a mrazicích skladech")
+        else:
+            uses.append(apps[2])
+        uses.append(apps[3])
+    elif slug == "bopet-pasky":
+        uses = [apps[0]]
+        if "vysoke-teploty" in tags:
+            uses.append(apps[2])
+        if "chemicka-odolnost" in tags:
+            uses.append(apps[1])
+        if "ekologicke" in tags:
+            uses.append("Aplikace s důrazem na udržitelnější materiál")
+        uses.append(apps[3])
+    elif slug == "papirove-pasky":
+        uses = [apps[1], apps[2]]
+        if "stroje" in tags:
+            uses.append(apps[3])
+        else:
+            uses.append("Ruční balení a uzavírání e-commerce zásilek")
+        if "ekologicke" in tags:
+            uses.insert(0, apps[0])
+    elif slug == "udrzitelne-pasky":
+        uses = list(apps)
+        if "stroje" in tags and "rucni" not in tags:
+            uses = [apps[0], apps[2], apps[3], "Automatické balicí linky s ESG cíli"]
+    elif slug == "odstranitelne-pasky":
+        uses = list(apps)
+    elif slug == "vyztuzene-pasky":
+        uses = list(apps[:3])
+        if "stroje" in tags:
+            uses.append("Strojové balení těžkých zásilek")
+    elif slug == "mopp-pasky":
+        uses = list(apps)
+    elif slug == "textilni-pasky":
+        uses = list(apps)
+    elif slug == "malirske-pasky":
+        uses = list(apps)
+        if "vysoke-teploty" in tags:
+            uses[2] = "Práškové lakování a vysokoteplotní procesy"
+    else:
+        uses = list(apps)
+
+    seen = set()
+    out = []
+    for u in uses:
+        if u not in seen:
+            seen.add(u)
+            out.append(u)
+    return out[:4]
+
+# Categories where potisk / vzorek zdarma is a primary offer
+SAMPLE_CATEGORIES = frozenset({'bopp-pasky', 'bopet-pasky', 'papirove-pasky', 'udrzitelne-pasky'})
+
+CATEGORY_CTA = {
+    'udrzitelne-pasky': ('Spočítat eko pásku', 'Poptat udržitelnou pásku s potiskem'),
+    'bopp-pasky': ('Kalkulace balicí pásky', 'Poptat BOPP pásku s logem'),
+    'bopet-pasky': ('Kalkulace technické pásky', 'Poptat BOPET pásku na míru'),
+    'papirove-pasky': ('Kalkulace papírové pásky', 'Poptat eko pásku s potiskem'),
+    'odstranitelne-pasky': ('Vyžádat cenovou nabídku', 'Poptat odstranitelnou pásku'),
+    'vyztuzene-pasky': ('Vyžádat cenovou nabídku', 'Poptat vyztuženou pásku'),
+    'mopp-pasky': ('Vyžádat cenovou nabídku', 'Poptat MOPP pásku'),
+    'textilni-pasky': ('Vyžádat cenovou nabídku', 'Poptat textilní pásku'),
+    'malirske-pasky': ('Vyžádat cenovou nabídku', 'Poptat malířskou pásku'),
+}
+
+def category_ctas(cat):
+    return CATEGORY_CTA.get(cat['cat'], ('Vyžádat cenovou nabídku', 'Poptat z této kategorie'))
+
+def product_ctas(cat, p):
+    slug = cat['cat']
+    name = p['name']
+    if slug in SAMPLE_CATEGORIES:
+        return {
+            'hero': 'Kalkulace s potiskem',
+            'tailor_link': 'Chci vzorek zdarma',
+            'tailor_bullet': 'Vzorek s vaším logem před objednávkou',
+            'bottom': 'Vzorek nebo kalkulace zdarma',
+        }
+    bottom_by_cat = {
+        'malirske-pasky': 'Poptat malířskou pásku',
+        'odstranitelne-pasky': 'Poptat odstranitelnou pásku',
+        'vyztuzene-pasky': 'Poptat vyztuženou pásku',
+        'mopp-pasky': 'Poptat MOPP pásku',
+        'textilni-pasky': 'Poptat textilní pásku',
+    }
+    return {
+        'hero': 'Vyžádat cenovou nabídku',
+        'tailor_link': 'Nezávazně konzultovat',
+        'tailor_bullet': 'Konzultace parametrů před objednávkou',
+        'bottom': bottom_by_cat.get(slug, 'Poptat ' + name.lower()),
+    }
+
+def product_tailor_box(cat, p):
+    cta = product_ctas(cat, p)
+    if cat['cat'] in SAMPLE_CATEGORIES:
+        bullets = [
+            'Volitelná šířka a délka návinu',
+            'Barva podkladu a počet barev potisku',
+            cta['tailor_bullet'],
+        ]
+    else:
+        bullets = [
+            'Volitelná šířka a délka návinu',
+            'Různé provedení lepidla a nosiče',
+            cta['tailor_bullet'],
+        ]
+    bullet_html = '\n'.join(
+        '                            <li class="flex gap-2"><span class="font-bold text-orange-600" aria-hidden="true">•</span>%s</li>' % esc(b)
+        for b in bullets
+    )
+    return '''                <div class="mt-8">
+                    <div class="product-tailor-box rounded-2xl bg-slate-50 p-6">
+                        <h3 class="text-base font-bold text-slate-900">Na míru vašemu provozu</h3>
+                        <ul class="product-tailor-list mt-3 space-y-2.5 text-sm leading-relaxed text-slate-600">
+%s
+                        </ul>
+                        <a href="/index.html#gf_1" class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-orange-600 transition-colors hover:text-orange-700">%s %s</a>
+                    </div>
+                </div>''' % (bullet_html, esc(cta['tailor_link']), FWD)
+
+# Build product JSON before page generation (embedded in footer on every page).
+import json
+PRODUCT_JSON_ITEMS=[]
+for cat in CATS:
+    for p in PRODUCTS[cat["cat"]]:
+        PRODUCT_JSON_ITEMS.append({
+            "name":p["name"],
+            "tagline":p["tagline"],
+            "image":url(p["image"]),
+            "detail":"/sortiment/%s/%s"%(cat["cat"],p["slug"]),
+            "category":cat["title"],
+            "tags":p["tags"],
+            "portrait":cat["cat"] in {"udrzitelne-pasky"},
+        })
+PRODUCT_JSON_BLOB=json.dumps(PRODUCT_JSON_ITEMS, ensure_ascii=False, indent=2)
+
+def inject_product_json(html):
+    start_m='<script id="sortiment-products" type="application/json">'
+    end_m='</script>'
+    if start_m not in html or end_m not in html:
+        return html
+    i=html.index(start_m)+len(start_m)
+    j=html.index(end_m,i)
+    return html[:i]+"\n"+PRODUCT_JSON_BLOB+"\n"+html[j:]
+
+_sortiment_html = open("sortiment.html", encoding="utf-8").read()
+open("sortiment.html", "w", encoding="utf-8").write(inject_product_json(_sortiment_html))
+
 # ---------------------------------------------------------------------------
 # Static page generation: shared header/footer from sortiment.html
 # ---------------------------------------------------------------------------
-base=open("sortiment.html").read()
+base=open("sortiment.html", encoding="utf-8").read()
 if "<!-- SITE-TOP -->" in base and "<!-- /SITE-TOP -->" in base:
     start = base.index("<!-- SITE-TOP -->")
     end = base.index("<!-- /SITE-TOP -->") + len("<!-- /SITE-TOP -->")
@@ -201,21 +460,70 @@ header=absolutize(header); footer=absolutize(footer)
 header=header.replace('<a href="/sortiment.html" class="rounded-lg px-4 py-2 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-100 hover:text-orange-600">Sortiment</a>','<a href="/sortiment.html" class="rounded-lg bg-orange-50 px-4 py-2 text-sm font-semibold text-orange-600">Sortiment</a>')
 header=header.replace('<a href="/sortiment.html" class="block rounded-xl px-4 py-3 font-semibold text-slate-800 hover:bg-slate-50">Sortiment</a>','<a href="/sortiment.html" class="block rounded-xl bg-orange-50 px-4 py-3 font-semibold text-orange-600">Sortiment</a>')
 
+_SVG = 'class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"'
+FEATURE_ICONS = {
+    'recycle': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v6h6M20 20v-6h-6"/><path stroke-linecap="round" stroke-linejoin="round" d="M5 19a9 9 0 0114-7.5M19 5a9 9 0 01-14 7.5"/></svg>',
+    'leaf': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4-3-7-7-7-11a7 7 0 0114 0c0 4-3 8-7 11z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 10V21"/></svg>',
+    'shield': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7l8-4z"/></svg>',
+    'strength': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M7 12h10M5 9l-2 3 2 3M19 9l2 3-2 3"/></svg>',
+    'adhesive': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M12 3c-2.5 0-4 1.8-4 4v9a4 4 0 008 0V7c0-2.2-1.5-4-4-4z"/><path stroke-linecap="round" d="M10 7h4"/></svg>',
+    'durability': f'<svg {_SVG}><circle cx="12" cy="12" r="4"/><path stroke-linecap="round" d="M12 3v1M12 20v1M3 12h1M20 12h1M5.6 5.6l.7.7M17.7 17.7l.7.7M18.4 5.6l-.7.7M6.3 17.7l-.7.7"/></svg>',
+    'temperature': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M14 4v8.5a4 4 0 11-4 0V4a2 2 0 114 0z"/></svg>',
+    'chemical': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M9 3h6l3 7-6 11-6-11 3-7z"/><path stroke-linecap="round" d="M9 10h6"/></svg>',
+    'tear': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 4v6c0 4-3 7-7 8-4-1-7-4-7-8V7l7-4z"/><path stroke-linecap="round" d="M9 12l2 2 4-4"/></svg>',
+    'design': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z"/><path stroke-linecap="round" d="M5 19h14"/></svg>',
+    'clean_peel': f'<svg {_SVG}><rect x="4" y="8" width="14" height="10" rx="1"/><path stroke-linecap="round" stroke-linejoin="round" d="M4 8l4-4h10v4"/></svg>',
+    'surface_safe': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M8 12V8a4 4 0 118 0v4"/><path stroke-linecap="round" stroke-linejoin="round" d="M6 12h12v6a2 2 0 01-2 2H8a2 2 0 01-2-2v-6z"/></svg>',
+    'grip': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h8M10 9v6M14 9v6"/><path stroke-linecap="round" d="M6 8h12v8H6z"/></svg>',
+    'fibers': f'<svg {_SVG}><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>',
+    'weight': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16v10H4z"/><path stroke-linecap="round" d="M8 8V6a4 4 0 018 0v2"/></svg>',
+    'rigid': f'<svg {_SVG}><rect x="6" y="10" width="12" height="9" rx="1"/><path stroke-linecap="round" d="M9 10V7a3 3 0 016 0v3"/></svg>',
+    'no_fibers': f'<svg {_SVG}><path stroke-linecap="round" d="M4 7h16M4 12h10"/><path stroke-linecap="round" d="M18 6l-4 12"/></svg>',
+    'fabric': f'<svg {_SVG}><path stroke-linecap="round" d="M4 5h16v14H4z"/><path stroke-linecap="round" d="M8 5v14M16 5v14M4 12h16"/></svg>',
+    'hand_tear': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M8 12V9a2 2 0 114 0v1"/><path stroke-linecap="round" stroke-linejoin="round" d="M7 14l-2 4h6l-1-4"/><path stroke-linecap="round" d="M14 10v6l2 3h4l-2-5"/></svg>',
+    'rough_surface': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M4 18l4-6 3 4 4-8 5 10"/></svg>',
+    'sharp_edge': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M5 19V5h14"/><path stroke-linecap="round" d="M5 19h14"/></svg>',
+    'apply': f'<svg {_SVG}><circle cx="12" cy="12" r="7"/><path stroke-linecap="round" d="M12 8v8M8 12h8"/></svg>',
+    'tape': f'<svg {_SVG}><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5"/><path stroke-linecap="round" d="M12 5V3M12 21v-2"/></svg>',
+}
+
+def _norm_feature(title):
+    return unicodedata.normalize('NFKD', title).encode('ascii', 'ignore').decode('ascii').lower()
+
+def feature_icon(title):
+    t = _norm_feature(title)
+    rules = (
+        (('beze stop', 'odstranitelne lepidlo', 'ciste odlepen', 'bez stop'), 'clean_peel'),
+        (('ostre hrany', 'protecen'), 'sharp_edge'),
+        (('bez skelnych', 'bez vlaken'), 'no_fibers'),
+        (('sklen', 'vlakn', 'podelna', 'krizova'), 'fibers'),
+        (('nulova elastic',), 'rigid'),
+        (('uhlikov', 'uhlova stopa'), 'leaf'),
+        (('recykl', 'bezplastov', 'fsc'), 'recycle'),
+        (('chemick',), 'chemical'),
+        (('teplot', 'extremni teplot'), 'temperature'),
+        (('roztr', 'pretrz', 'protrz'), 'tear'),
+        (('lepidlo', 'akryl', 'hot melt', 'kaucuk', 'prilnut', 'prilnav', 'lepiv'), 'adhesive'),
+        (('pevnost', 'tahu', 'nosnost', 'extremni pevnost'), 'strength'),
+        (('zivotnost', 'uv', 'starnut'), 'durability'),
+        (('textiln',), 'fabric'),
+        (('trhani rukou',), 'hand_tear'),
+        (('drsn', 'povrch'), 'rough_surface'),
+        (('design', 'potisk', 'barevn', 'cisty design', 'matny'), 'design'),
+        (('drzivost', 'fixace', 'tezke', 'bremen'), 'grip'),
+        (('snadna aplik', 'krep'), 'apply'),
+        (('setrne k povrchu', 'setrne'), 'surface_safe'),
+        (('kompromis', 'spolehliv'), 'shield'),
+    )
+    for keywords, key in rules:
+        if any(k in t for k in keywords):
+            return FEATURE_ICONS[key]
+    return FEATURE_ICONS['tape']
+
 CHK='<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>'
 ARR='<svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>'
 BACK='<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12"/></svg>'
 FWD='<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>'
-PRODUCT_LEFT_EXTRA='''                <div class="mt-8">
-                    <div class="product-tailor-box rounded-2xl bg-slate-50 p-6">
-                        <h3 class="text-base font-bold text-slate-900">Na míru vašemu provozu</h3>
-                        <ul class="product-tailor-list mt-3 space-y-2.5 text-sm leading-relaxed text-slate-600">
-                            <li class="flex gap-2"><span class="font-bold text-orange-600" aria-hidden="true">•</span>Volitelná šířka a délka návinu</li>
-                            <li class="flex gap-2"><span class="font-bold text-orange-600" aria-hidden="true">•</span>Barva podkladu a počet barev potisku</li>
-                            <li class="flex gap-2"><span class="font-bold text-orange-600" aria-hidden="true">•</span>Nezávazná kalkulace a vzorek před objednávkou</li>
-                        </ul>
-                        <a href="/index.html#gf_1" class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-orange-600 transition-colors hover:text-orange-700">Nezávazně poptat %s</a>
-                    </div>
-                </div>''' % FWD
 PRODUCT_BOTTOM_NOTE='''        <div class="mx-auto mt-14 max-w-3xl rounded-2xl border border-slate-200 bg-white px-6 py-5 text-center shadow-sm sm:px-8">
             <p class="text-sm leading-relaxed text-slate-600">
                 <span class="font-bold text-slate-900">Pásku lze objednat i bez potisku.</span>
@@ -259,11 +567,12 @@ def page(title, main):
 # 2) Category pages (product cards link to product detail)
 # ---------------------------------------------------------------------------
 for cat in CATS:
+    cat_cta = category_ctas(cat)
     props="\n".join('''            <article class="flex h-full flex-col rounded-2xl border border-slate-100 bg-white p-7 shadow-sm">
                 <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-orange-50 text-orange-600" aria-hidden="true">%s</div>
                 <h3 class="text-lg font-bold text-slate-900">%s</h3>
                 <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">%s</p>
-            </article>'''%(CHK,esc(t),esc(x)) for t,x in cat["properties"])
+            </article>'''%(feature_icon(t),esc(t),esc(x)) for t,x in cat["properties"])
     apps="\n".join('''                <div class="flex items-center gap-3 rounded-xl border border-slate-100 bg-white px-5 py-4">
                     <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-orange-600" aria-hidden="true">%s</span>
                     <span class="text-sm font-medium text-slate-700">%s</span>
@@ -298,7 +607,7 @@ for cat in CATS:
                 <p class="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">%s</p>
             </div>
             <div class="shrink-0">
-                <a href="/index.html#gf_1" class="inline-flex items-center rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25 transition-all hover:scale-[1.02] hover:shadow-xl">Nezávazná kalkulace</a>
+                <a href="/index.html#gf_1" class="inline-flex items-center rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25 transition-all hover:scale-[1.02] hover:shadow-xl">%s</a>
             </div>
         </div>
     </div>
@@ -328,14 +637,14 @@ for cat in CATS:
         </div>
         <div class="mt-12 flex flex-wrap items-center justify-center gap-4">
             <a href="/sortiment.html" class="inline-flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-6 py-3 text-sm font-bold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50">%s Zpět na sortiment</a>
-            <a href="/index.html#gf_1" class="inline-flex items-center rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25 transition-all hover:scale-[1.02] hover:shadow-xl">Mám zájem o tuto kategorii</a>
+            <a href="/index.html#gf_1" class="inline-flex items-center rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25 transition-all hover:scale-[1.02] hover:shadow-xl">%s</a>
         </div>
     </div>
 </section>
 
 </main>
 
-'''%(esc(cat["title"]),esc(cat["title"]),esc(cat["intro"]),props,cards,apps,BACK)
+'''%(esc(cat["title"]),esc(cat["title"]),esc(cat["intro"]),esc(cat_cta[0]),props,cards,apps,BACK,esc(cat_cta[1]))
     os.makedirs("sortiment/%s"%cat["cat"],exist_ok=True)
     open("sortiment/%s/index.html"%cat["cat"],"w").write(page(cat["title"],main))
 print("rebuilt %d category pages"%len(CATS))
@@ -346,6 +655,8 @@ print("rebuilt %d category pages"%len(CATS))
 n=0
 for cat in CATS:
     for p in PRODUCTS[cat["cat"]]:
+        cta = product_ctas(cat, p)
+        tailor = product_tailor_box(cat, p)
         rows="\n".join('''                    <tr class="border-b border-slate-100 last:border-0">
                         <th scope="row" class="w-1/2 px-6 py-4 pr-4 text-left align-top text-sm font-semibold text-slate-500">%s</th>
                         <td class="px-6 py-4 text-sm font-semibold text-slate-900">%s</td>
@@ -356,11 +667,11 @@ for cat in CATS:
                         <h3 class="text-base font-bold text-slate-900">%s</h3>
                         <p class="mt-1 text-sm leading-relaxed text-slate-600">%s</p>
                     </div>
-                </div>'''%(CHK,esc(t),esc(x)) for t,x in cat["properties"])
+                </div>'''%(feature_icon(t),esc(t),esc(x)) for t,x in product_benefits(cat["cat"], p))
         uses="\n".join('''                <li class="flex items-center gap-3 rounded-xl border border-slate-100 bg-white px-5 py-4">
                     <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-orange-600" aria-hidden="true">%s</span>
                     <span class="text-sm font-medium text-slate-700">%s</span>
-                </li>'''%(ARR,esc(a)) for a in cat["apps"])
+                </li>'''%(ARR,esc(a)) for a in product_uses(cat, p))
 
         main='''
 
@@ -391,7 +702,7 @@ for cat in CATS:
                 <span class="rounded-full bg-slate-100 px-4 py-1.5 text-xs font-semibold text-slate-700">%s</span>
             </div>
             <div class="mt-8 flex flex-wrap gap-4">
-                <a href="/index.html#gf_1" class="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25 transition-all hover:scale-[1.02] hover:shadow-xl">Nezávazně poptat / Kalkulace %s</a>
+                <a href="/index.html#gf_1" class="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25 transition-all hover:scale-[1.02] hover:shadow-xl">%s %s</a>
                 <a href="/sortiment/%s" class="inline-flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50">%s Zpět na kategorii</a>
             </div>
         </div>
@@ -427,7 +738,7 @@ for cat in CATS:
 
 %s
             <a href="/sortiment/%s" class="inline-flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-6 py-3 text-sm font-bold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50">%s Zpět na %s</a>
-            <a href="/index.html#kontakt1" class="inline-flex items-center rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25 transition-all hover:scale-[1.02] hover:shadow-xl">Mám zájem o tuto pásku</a>
+            <a href="/index.html#gf_1" class="inline-flex items-center rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25 transition-all hover:scale-[1.02] hover:shadow-xl">%s</a>
         </div>
     </div>
 </section>
@@ -438,40 +749,12 @@ for cat in CATS:
      product_detail_image_box(cat["cat"]),url(p["image"]),esc(p["name"]),product_detail_image_cls(cat["cat"]),
      esc(cat["title"]),esc(p["name"]),esc(p["tagline"]),
      esc(p["params"]["Nosič / materiál"]),esc(p["params"]["Typ lepidla"]),esc(p["params"]["Teplotní odolnost"]),
-     FWD,cat["cat"],BACK,
-     rows,PRODUCT_LEFT_EXTRA,advs,uses,
+     esc(cta['hero']),FWD,cat["cat"],BACK,
+     rows,tailor,advs,uses,
      PRODUCT_BOTTOM_NOTE,
-     cat["cat"],BACK,esc(cat["title"]))
+     cat["cat"],BACK,esc(cat["title"]),esc(cta['bottom']))
         os.makedirs("sortiment/%s/%s"%(cat["cat"],p["slug"]),exist_ok=True)
         open("sortiment/%s/%s/index.html"%(cat["cat"],p["slug"]),"w").write(page(p["name"],main))
         n+=1
 print("generated %d product detail pages"%n)
-
-# ---------------------------------------------------------------------------
-# 4) Inject product JSON (for tag filter) into sortiment.html
-# ---------------------------------------------------------------------------
-import json
-items=[]
-for cat in CATS:
-    for p in PRODUCTS[cat["cat"]]:
-        items.append({
-            "name":p["name"],
-            "tagline":p["tagline"],
-            "image":url(p["image"]),
-            "detail":"/sortiment/%s/%s"%(cat["cat"],p["slug"]),
-            "category":cat["title"],
-            "tags":p["tags"],
-            "portrait":cat["cat"] in PORTRAIT_CATEGORIES,
-        })
-blob=json.dumps(items, ensure_ascii=False, indent=2)
-s=open("sortiment.html").read()
-start_m='<script id="sortiment-products" type="application/json">'
-end_m='</script>'
-if start_m in s:
-    i=s.index(start_m)+len(start_m)
-    j=s.index(end_m,i)
-    s=s[:i]+"\n"+blob+"\n"+s[j:]
-    open("sortiment.html","w").write(s)
-    print("injected product JSON into sortiment.html (%d items)"%len(items))
-else:
-    print("WARN: JSON marker not found in sortiment.html – add the filter block first")
+print("product JSON ready (%d items)"%len(PRODUCT_JSON_ITEMS))

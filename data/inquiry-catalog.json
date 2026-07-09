@@ -17,7 +17,7 @@
       { "name": "Udržitelná páska ECO+ 80", "tagline": "Silnější recyklovaná páska pro náročnější udržitelné balení.", "slug": "udrzitelna-paska-eco-80" },
       { "name": "Udržitelná páska LOOPP", "tagline": "Páska z recyklovaného polypropylenu pro cirkulární ekonomiku.", "slug": "udrzitelna-paska-loopp" },
       { "name": "Udržitelná páska NOPP", "tagline": "Udržitelná páska bez plastu pro plně recyklovatelné balení.", "slug": "udrzitelna-paska-nopp" },
-      { "name": "Udržitelná páska NOPP+", "tagline": "Vylepšená bezplastová páska s vyšší pevností a lepivostí.", "slug": "udrzitelna-paska-nopp" }
+      { "name": "Udržitelná páska NOPP+", "tagline": "Vylepšená bezplastová páska s vyšší pevností a lepivostí.", "slug": "udrzitelna-paska-nopp-plus" }
     ],
     "bopp-pasky": [
       { "name": "BOPP páska Acrylic", "tagline": "Spolehlivá BOPP páska s akrylovým lepidlem a dlouhou životností.", "slug": "bopp-paska-acrylic" },
