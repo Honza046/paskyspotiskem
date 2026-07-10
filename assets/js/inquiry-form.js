@@ -102,21 +102,32 @@
         if (head) head.classList.add('hidden');
     }
 
-    window.__submitInquiryForm = function (validatePage, currentStep) {
+    window.__submitInquiryForm = function (validatePage, currentStep, goToStep, validateAll) {
         return async function handleSubmit(e) {
             e.preventDefault();
 
-            if (typeof validatePage === 'function' && !validatePage(currentStep)) {
+            var validation = { ok: true, firstInvalid: -1 };
+            if (typeof validateAll === 'function') {
+                validation = validateAll();
+            } else if (typeof validatePage === 'function') {
+                validation = { ok: validatePage(currentStep), firstInvalid: currentStep };
+            }
+
+            if (!validation.ok) {
+                if (typeof goToStep === 'function' && validation.firstInvalid >= 0) {
+                    goToStep(validation.firstInvalid);
+                }
                 return;
             }
 
             setSubmitting(true);
 
             try {
+                var payload = collectPayload();
                 var response = await fetch('/api/inquiry', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(collectPayload()),
+                    body: JSON.stringify(payload),
                 });
 
                 var data = await response.json().catch(function () { return {}; });

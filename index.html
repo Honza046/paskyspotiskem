@@ -939,6 +939,25 @@
             return true;
         }
 
+        function validateAllPages() {
+            for (let i = 0; i < pages.length; i++) {
+                const page = pages[i];
+                const fields = page.querySelectorAll('input[required], textarea[required], select[required]');
+                for (const field of fields) {
+                    if (!field.checkValidity()) {
+                        goTo(i);
+                        field.reportValidity();
+                        field.focus();
+                        return { ok: false, firstInvalid: i };
+                    }
+                }
+            }
+            return { ok: true, firstInvalid: -1 };
+        }
+
+        window.__validateAllInquiryPages = validateAllPages;
+        window.__goToInquiryStep = goTo;
+
         function goTo(index) {
             if (index < 0 || index >= pages.length) return;
             pages.forEach(function (page, i) {
@@ -968,10 +987,10 @@
 
         form.addEventListener('submit', function (e) {
             if (window.__submitInquiryForm) {
-                window.__submitInquiryForm(validatePage, current)(e);
+                window.__submitInquiryForm(validatePage, current, goTo, validateAllPages)(e);
                 return;
             }
-            if (!validatePage(current)) {
+            if (!validateAllPages().ok) {
                 e.preventDefault();
             }
         });
@@ -1028,7 +1047,7 @@
         toggleAcrylNoiseOption();
 
         var SAMPLE_NOTE_TEXT = 'Mám zájem o testovací vzorek.';
-        var CONTACT_STEP = 2;
+        var FIRST_STEP = 0;
 
         function applySampleNote() {
             var note = document.getElementById('note');
@@ -1040,12 +1059,10 @@
             if (window.location.hash !== '#gf_1') {
                 history.replaceState(null, '', '#gf_1');
             }
-            goTo(CONTACT_STEP);
             applySampleNote();
-            var note = document.getElementById('note');
-            if (note) {
-                setTimeout(function () { note.focus(); }, 300);
-            }
+            goTo(FIRST_STEP);
+            var section = document.getElementById('gf_1');
+            if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
         window.__openInquiryWithSample = openInquiryWithSample;
@@ -1074,7 +1091,7 @@
 </script>
 <script src="/assets/js/inquiry-dropdown.js"></script>
 <script src="/assets/js/inquiry-material-picker.js"></script>
-<script src="/assets/js/inquiry-form.js?v=2"></script>
+<script src="/assets/js/inquiry-form.js?v=3"></script>
 <script src="/assets/js/i18n.js"></script>
 <script src="/assets/js/nav-active.js"></script>
 <link rel="stylesheet" href="/assets/css/footer-credit.css?v=3">
