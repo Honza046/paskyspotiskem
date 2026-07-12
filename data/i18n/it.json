@@ -1,0 +1,2444 @@
+{
+  "meta": {
+    "site_name": "Nastri adesivi stampati",
+    "logo_alt": "Nastri adesivi stampati",
+    "home_title": "Home | Nastri adesivi stampati",
+    "home_description": "Nastri adesivi stampati | Produzione e fornitura di nastri adesivi personalizzati da ALFA IN a.s.",
+    "gallery_title": "Galleria | Nastri adesivi stampati",
+    "gallery_description": "Galleria di nastri adesivi stampati di ALFA IN a.s. — stampa monocolore, rotocalco, nastri di sicurezza e logistici.",
+    "sortiment_title": "Assortimento | Nastri adesivi stampati",
+    "sortiment_description": "Gamma di nastri adesivi ALFA IN — nastri BOPP HOT MELT e ACRILICI, linee speciali e prodotti ECO con stampa personalizzata.",
+    "langNames": {
+      "cs": "Čeština",
+      "en": "English",
+      "de": "Deutsch",
+      "it": "Italiano"
+    },
+    "htmlLang": "it"
+  },
+  "nav": {
+    "tagline": "ALFA IN — produzione, consulenza, vendita e assistenza",
+    "menu": "Apri menu",
+    "menu_close": "Chiudi menu",
+    "main_nav_label": "Navigazione principale",
+    "home": "Home",
+    "gallery": "Galleria",
+    "sortiment": "Assortimento",
+    "references": "Referenze",
+    "contacts": "Contatti",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "youtube": "YouTube"
+  },
+  "info_banner": {
+    "aria_label": "Informazioni importanti",
+    "messages": [
+      "Agosto: produzione e logistica saranno ferme per 3 settimane. Per la consegna prima della pausa, inviate l'ordine entro il <strong>10 luglio 2026</strong>.",
+      "Per gli ordini di luglio e agosto, i tempi di consegna sono di 3–4 settimane con consegna a <strong>settembre 2026</strong>."
+    ]
+  },
+  "footer": {
+    "address_heading": "Ci trovate qui",
+    "company": "ALFA IN a.s.",
+    "street": "n. 74",
+    "city": "675 21 Nová Ves u Třebíče",
+    "country": "Repubblica Ceca",
+    "show_on_map": "Mostra sulla mappa",
+    "email_heading": "Scriveteci",
+    "phone_heading": "Chiamateci",
+    "phone_hours": "7:00 – 15:30",
+    "more_contacts": "Altri contatti",
+    "social_heading": "Social media",
+    "copyright": "Tutti i diritti riservati",
+    "made_by": "realizzato da",
+    "made_by_link": "Jan Sedlář"
+  },
+  "home": {
+    "hero": {
+      "badge": "ISO 9001 · Direttamente dal produttore",
+      "slides": [
+        {
+          "title": "NASTRI ADESIVI PER IMBALLAGGIO",
+          "subtitle": "Nastri adesivi per imballaggio stampati o neutri con certificazione ISO 9001."
+        },
+        {
+          "title": "PERCHÉ USARE NASTRI ADESIVI STAMPATI?",
+          "subtitle": "I nastri adesivi imballano, proteggono, promuovono e mettono in sicurezza le vostre merci."
+        },
+        {
+          "title": "PERCHÉ I NASTRI STAMPATI DI ALFA IN?",
+          "subtitle": "Offriamo stampa flexo fino a 8 colori e rotocalco fino a 10 colori, anche in 3D, stampa inversa resistente a prezzi diretti dal produttore."
+        }
+      ],
+      "cta_offer": "Scopri la gamma",
+      "cta_quote": "Richiedi un preventivo",
+      "cta_sample": "Richiedi campioni"
+    },
+    "about": {
+      "label": "Chi siamo",
+      "title": "Produttore ceco tradizionale di nastri adesivi stampati",
+      "lead": "Da oltre 30 anni aiutiamo le aziende a imballare le spedizioni in modo sicuro e a costruire un marchio forte direttamente sui materiali di imballaggio. Siamo specializzati nella stampa personalizzata di nastri adesivi.",
+      "body1": "Il nostro moderno stabilimento ci permette di rispondere in modo flessibile alle esigenze sia dei piccoli e-shop sia delle grandi imprese industriali. Puntiamo su una stampa precisa (fino a 8 colori), adesivi premium (Hot Melt, Acrilico) e consegne rapide in tutta la Repubblica Ceca.",
+      "body2": "Grazie a processi certificati ISO 9001 e all'uso di materiali ecologici e sostenibili, siamo un partner affidabile per oltre 100 clienti attivi.",
+      "image_alt": "Produzione di nastri adesivi ALFA IN",
+      "team_title": "Team ALFA IN",
+      "team_subtitle": "Tradizione, esperienza e approccio personale a ogni ordine"
+    },
+    "references": {
+      "label": "Referenze",
+      "title": "Clienti soddisfatti in diversi settori",
+      "subtitle": "Aziende che ogni giorno si affidano ai nostri nastri stampati, dall'e-commerce alla produzione e alla sanità.",
+      "stat_customers": "clienti attivi",
+      "stat_experience": "anni di esperienza nella stampa",
+      "stat_iso": "produzione certificata",
+      "carousel_label": "Aziende con cui collaboriamo"
+    },
+    "lepidla": {
+      "label": "Guida alla scelta",
+      "title": "Quale adesivo scegliere?",
+      "hot_melt_badge": "Freddo e velocità",
+      "hot_melt_title": "HOT MELT",
+      "hot_melt_subtitle": "Gomma sintetica",
+      "hot_melt_text": "La scelta ideale per ambienti più freddi e magazzini non riscaldati. Aderisce al supporto in modo estremamente rapido e forte subito dopo l'applicazione. Non può essere rimosso facilmente dalla pellicola stretch.",
+      "acryl_badge": "Silenzioso e resistente ai UV",
+      "acryl_title": "ACRYL",
+      "acryl_subtitle": "Con svolgimento silenzioso",
+      "acryl_text": "Garantisce uno svolgimento silenzioso e confortevole, apprezzato nelle grandi sale di imballaggio. Altamente resistente ai raggi UV e all'invecchiamento, perfetto per lo stoccaggio a lungo termine."
+    },
+    "sustainability": {
+      "label": "Ecologia e sostenibilità",
+      "title": "Imballaggio sostenibile per il vostro e-shop e la produzione",
+      "subtitle": "L'impronta ambientale dei materiali di imballaggio è la nostra priorità. Offriamo nastri adesivi selezionati per la facile riciclabilità e il minimo impatto ambientale.",
+      "card1_title": "Film riciclabile al 100%",
+      "card1_text": "I nostri nastri sono realizzati con moderno film BOPP completamente riciclabile. A differenza dei vecchi materiali PVC, durante la lavorazione non vengono rilasciate sostanze tossiche ed è delicato sull'ambiente.",
+      "card2_title": "Adesivi ecologici senza solventi",
+      "card2_text": "Utilizziamo esclusivamente adesivi rispettosi dell'ambiente. Gli adesivi acrilici sono a base acquosa e la tecnologia Hot Melt funziona senza solventi chimici o additivi sintetici.",
+      "card3_title": "Recycling del cartone senza problemi",
+      "card3_text": "Grazie alla tecnologia avanzata, le moderne linee di riciclo possono separare facilmente i nostri nastri dalle scatole di cartone. I vostri clienti possono gettare le scatole usate direttamente nel contenitore della carta."
+    },
+    "benefits": {
+      "security_badge": "Sicurezza",
+      "security_title": "Nastro TAMPER EVIDENT, la manomissione è evidente!",
+      "security_text": "Questo nastro di sicurezza appare neutro, ma una volta rimosso lascia sull'imballo un avviso praticamente impossibile da eliminare. Adatto a tutti i tipi di cartone e pellicola stretch, disponibile in vari colori e con stampa personalizzata.",
+      "glue_badge": "Adesione estrema",
+      "glue_title": "EXTRA GLUE+ (ACRYL) e TACK+ (HOT MELT)",
+      "glue_text": "Nastri con strato adesivo aumentato (33% e 20% rispettivamente) e possibilità di un film più resistente rispetto allo standard, progettati per applicazioni molto impegnative come pacchi pesanti, cartone di scarsa qualità o ambienti polverosi. Aderiscono estremamente bene al cartone.",
+      "glue_extra_tag": "+33% adesivo"
+    },
+    "form": {
+      "label": "Richiesta",
+      "title": "Desidero un preventivo",
+      "open_3d": "Open interactive 3D designer",
+      "open_3d_hint": "Try material, colour and print in a spacious 3D preview",
+      "step_label": "Passo {current} di {total}",
+      "steps": [
+        "Specifiche prodotto",
+        "Dimensioni e quantità",
+        "Dati di contatto"
+      ],
+      "step1_title": "Specifiche prodotto",
+      "step1_hint": "Selezionate materiale ed eventualmente un nastro specifico, tipo di adesivo, colore di fondo e numero di colori di stampa.",
+      "material_label": "Tipo di materiale",
+      "material_placeholder": "Seleziona materiale…",
+      "product_label": "Nastro specifico",
+      "product_placeholder": "Seleziona nastro (facoltativo)…",
+      "catalog_error": "Impossibile caricare il catalogo",
+      "tape_type": "Tipo di adesivo",
+      "acryl_no_silent_title": "Senza trattamento antirumore",
+      "acryl_no_silent_text": "I nastri ACRYL hanno normalmente svolgimento silenzioso. Selezionate se preferite la variante senza questo trattamento.",
+      "base_color": "Colore di fondo",
+      "print_colors": "Numero di colori di stampa",
+      "hot_melt_hint": "Gomma sintetica",
+      "acryl_hint": "Svolgimento silenzioso",
+      "colors": {
+        "bila": "bianco",
+        "hneda": "marrone",
+        "transparentni": "transp.",
+        "jina": "altro"
+      },
+      "continue": "Continua",
+      "back": "Indietro",
+      "step2_title": "Dimensioni e quantità",
+      "step2_hint": "Indicate le dimensioni del nastro e i volumi di ordine previsti.",
+      "design_recap_label": "Your 3D design:",
+      "design_recap_empty": "no text",
+      "width_label": "Larghezza del nastro in mm",
+      "length_label": "Lunghezza del nastro in metri",
+      "quantity_label": "Quantità richiesta in rotoli",
+      "quantity_hint": "Inserite un numero da 360 a 9999.",
+      "quantity_min": "La quantità minima è 360 rotoli.",
+      "quantity_tip": "Da 360 rotoli la spedizione è gratuita. La consegna richiede circa 3–4 settimane.",
+      "quantity_success": "🔥 Ottima scelta! Avete la spedizione gratuita. La consegna richiede circa 3–4 settimane.",
+      "sample_note_btn": "Voglio un campione",
+      "sample_note_text": "Sono interessato a un campione di prova.",
+      "order_period_label": "Frequenza di ordine prevista",
+      "order_periods": {
+        "monthly": "Ogni mese",
+        "quarterly": "Ogni 3 mesi",
+        "biannual": "Ogni 6 mesi",
+        "annual": "Una volta all'anno"
+      },
+      "step3_title": "Dati aziendali e di contatto",
+      "step3_hint": "Completate i dati per l'elaborazione del preventivo non vincolante.",
+      "company_label": "Nome dell'azienda",
+      "ico_label": "Inserite il numero di registrazione della vostra azienda",
+      "name_label": "Nome e cognome (persona di contatto)",
+      "email_label": "E-mail",
+      "phone_label": "Telefono",
+      "note_label": "Nota",
+      "gdpr": "Inviando accettate il trattamento dei dati personali",
+      "gdpr_before": "Inviando accettate il",
+      "gdpr_link": "trattamento dei dati personali",
+      "gdpr_modal": {
+        "title": "Trattamento dei dati personali",
+        "close": "Chiudi",
+        "intro": "Informazioni ai sensi dell'art. 13 GDPR per la compilazione e l'invio del modulo di richiesta su questa pagina.",
+        "controller_heading": "Titolare del trattamento",
+        "controller": "ALFA IN a.s., ID 255 35 366, č.p. 74, 675 21 Nová Ves u Třebíče, Repubblica Ceca. Contatto: epo@alfain.eu, tel. +420 568 840 009, www.alfain.eu",
+        "data_heading": "Dati trattati",
+        "data": "Nome e cognome, ragione sociale, ID azienda, e-mail, telefono, nota e parametri della richiesta inseriti nel modulo.",
+        "purpose_heading": "Finalità e base giuridica",
+        "purpose": "Gestione della richiesta, preparazione di un preventivo non vincolante e comunicazione successiva. Base giuridica: il vostro consenso (art. 6 par. 1 lett. a GDPR) e misure precontrattuali / esecuzione del contratto (art. 6 par. 1 lett. b GDPR).",
+        "retention_heading": "Periodo di conservazione",
+        "retention": "Per il tempo necessario a gestire la richiesta e al massimo 4 anni dall'ultimo contatto se non viene concluso un contratto; in caso di rapporto contrattuale per la durata del contratto e successivamente come richiesto dalla legge.",
+        "recipients_heading": "Destinatari",
+        "recipients": "I dati possono essere comunicati a responsabili del trattamento (amministrazione IT, hosting, servizi e-mail) sulla base di accordi di trattamento e alle autorità competenti ove richiesto dalla legge.",
+        "rights_heading": "I vostri diritti",
+        "rights": "Avete diritto di accesso, rettifica, cancellazione, limitazione del trattamento, portabilità dei dati, opposizione e reclamo all'Ufficio per la protezione dei dati personali (www.uoou.cz). Inviate le richieste a epo@alfain.eu.",
+        "full_link": "Testo completo dell'informativa sulla privacy"
+      },
+      "submit": "Invia richiesta",
+      "modal_title": "Interactive 3D designer",
+      "modal_subtitle": "Material, colour and print in real time",
+      "modal_bg_label": "Studio background",
+      "modal_bg_white": "White background",
+      "modal_bg_light": "Light grey background",
+      "modal_bg_dark": "Dark grey background",
+      "modal_box_toggle": "Show on a box",
+      "modal_rotate_hint": "Drag with the mouse to rotate the model 360°",
+      "accordion_material": "Material and base",
+      "accordion_dimensions": "Tape dimensions",
+      "accordion_print": "Print and text",
+      "width_short": "Tape width",
+      "length_short": "Length / Roll"
+    },
+    "contacts": {
+      "label": "Team",
+      "title": "CONTATTI PER REPARTO",
+      "karel_name": "Ing. Karel Petrák",
+      "karel_role": "Rappresentante vendite nastri da imballaggio",
+      "vojtech_name": "Vojtěch Petrák",
+      "vojtech_role": "Assistente vendite",
+      "more_contacts": "Altri contatti"
+    },
+    "sample": {
+      "label": "Campione di prova",
+      "title": "Non siete sicuri della scelta? Vi invieremo un campione gratuito.",
+      "text": "Comprendiamo che la qualità del nastro è fondamentale per una logistica fluida. Compilate il modulo di richiesta e aggiungeremo noi la nota sul campione di prova.",
+      "cta": "Voglio un campione"
+    }
+  },
+  "gallery": {
+    "ui": {
+      "label": "Galleria",
+      "title": "Esempi del nostro lavoro",
+      "subtitle": "Referenze reali dalla produzione ed esempi di tecnologie di stampa — filtrate per tipo di stampa, adesivo o settore.",
+      "cta_custom": "Voglio una stampa personalizzata"
+    },
+    "filters": {
+      "filter": "Filter",
+      "clear_all": "Clear all",
+      "groups": {
+        "category": {
+          "label": "Print type",
+          "options": {
+            "jednobarevny": "Single-colour print",
+            "vicebarevny": "Multi-colour / Rotogravure",
+            "bezpecnostni": "Security tapes",
+            "logisticke": "Logistics / Warning tapes"
+          }
+        },
+        "adhesive": {
+          "label": "Adhesive",
+          "options": {
+            "hot-melt": "Hot Melt",
+            "acryl": "Acrylic"
+          }
+        },
+        "industry": {
+          "label": "Industry",
+          "options": {
+            "e-commerce": "E-commerce",
+            "vyroba": "Manufacturing",
+            "logistika": "Logistics",
+            "potraviny": "Food industry",
+            "bezpecnost": "Security"
+          }
+        },
+        "type": {
+          "label": "Sample type",
+          "options": {
+            "reference": "Real references",
+            "demo": "Print options"
+          }
+        }
+      }
+    },
+    "sections": {
+      "featured": "Esempi selezionati",
+      "references_title": "Referenze reali",
+      "references_subtitle": "Fotografie di stampe reali dalla nostra produzione. Aggiungeremo altre referenze dopo un nuovo servizio fotografico.",
+      "demos_title": "Possibilità di stampa e tecnologie",
+      "demos_subtitle": "Esempi di soluzioni di sicurezza, logistica e speciali — illustrazione delle tecnologie che offriamo.",
+      "empty": "Nessun esempio corrisponde ai filtri selezionati. Provate a rimuoverne alcuni."
+    },
+    "cards": {
+      "view_detail": "Visualizza dettagli",
+      "view_detail_aria": "Visualizza dettagli: {title}",
+      "featured_badge": "Featured sample",
+      "technology_badge": "Technology",
+      "technology_demo": "Technology showcase"
+    },
+    "lightbox": {
+      "close": "Close",
+      "prev": "Previous",
+      "next": "Next",
+      "cta": "I want similar printing",
+      "meta_industry": "Industry",
+      "meta_width": "Width",
+      "meta_colors": "Colours",
+      "meta_adhesive": "Adhesive"
+    },
+    "cta": {
+      "title": "Avete un logo?",
+      "text": "Prepareremo un preventivo non vincolante e un campione di stampa. Basta inviarci il logo e i parametri desiderati del nastro.",
+      "button": "Richiedi senza impegno"
+    },
+    "items": {
+      "alza": {
+        "title": "Nastri con logo ALZA",
+        "description": "Stampa del marchio multilingue per imballaggi e-commerce, con logo e slogan ripetuti su nastro BOPP standard.",
+        "industry_label": "E-commerce"
+      },
+      "flexotisk-8": {
+        "title": "Stampa flessografica – 8 colori",
+        "description": "Stampa flessografica in quadricromia ad alta risoluzione, adatta a un branding d'impatto sui nastri e alle applicazioni alimentari.",
+        "industry_label": "Industria alimentare"
+      },
+      "jednobarevny-firemni": {
+        "title": "Stampa aziendale monocolore",
+        "description": "Classica stampa del logo a un colore su nastri BOPP trasparenti o bianchi, ideale per imballaggi aziendali e logistica di magazzino.",
+        "industry_label": "Produzione"
+      },
+      "rototisk-foto": {
+        "title": "Rotocalco in qualità fotografica",
+        "description": "Stampa rotocalco in qualità fotografica per immagini complesse e una lunga durata della stampa.",
+        "industry_label": "Industria alimentare"
+      },
+      "pecetni": {
+        "title": "Nastro sigillante stampato",
+        "description": "Nastro sigillante con stampa personalizzata per proteggere spedizioni e documenti da aperture non autorizzate.",
+        "industry_label": "Sicurezza"
+      },
+      "logisticky-kontakty": {
+        "title": "Stampa logistica – contatti",
+        "description": "Stampa informativa con recapiti, codice QR o istruzioni per il destinatario della spedizione.",
+        "industry_label": "Logistica"
+      },
+      "neutralni-bopp": {
+        "title": "BOPP neutro 25 mm",
+        "description": "Nastro BOPP stretto con stampa semplice per l'imballaggio manuale e le spedizioni più leggere.",
+        "industry_label": "Produzione"
+      },
+      "tamper-void": {
+        "title": "Tamper Evident VOID",
+        "description": "Nastro di sicurezza con effetto VOID che, quando viene rimosso, lascia un avviso visibile.",
+        "industry_label": "Sicurezza"
+      },
+      "extra-glue": {
+        "title": "Serie di sicurezza EXTRA GLUE+",
+        "description": "Nastro con strato adesivo maggiorato (+33%) per superfici difficili, colli pesanti e ambienti di magazzino polverosi.",
+        "industry_label": "Sicurezza"
+      },
+      "prumyslova-serie": {
+        "title": "Serie industriale per e-commerce",
+        "description": "Produzione in serie di nastri stampati per e-shop e centri di fulfilment, con qualità costante per l'intera fornitura.",
+        "industry_label": "E-commerce"
+      },
+      "vystrizny-krehke": {
+        "title": "Stampa di avvertimento – fragile",
+        "description": "Nastri di avvertimento stampati con “Fragile”, “Non capovolgere” o un simbolo personalizzato per proteggere le merci durante il trasporto.",
+        "industry_label": "Logistica"
+      },
+      "bezpecnostni-sklad": {
+        "title": "Nastro di sicurezza per magazzino",
+        "description": "Combinazione di stampa logistica e di sicurezza per magazzini e centri di distribuzione.",
+        "industry_label": "Sicurezza"
+      }
+    }
+  },
+  "sortiment": {
+    "ui": {
+      "label": "Assortimento",
+      "title": "Scoprite i nostri nastri adesivi",
+      "subtitle": "Scegliete il tipo di prodotto in base al materiale e all'utilizzo. In ogni categoria troverete una panoramica dettagliata delle varianti disponibili.",
+      "filter": "Filtro",
+      "clear_all": "Cancella tutto",
+      "results_title": "Prodotti trovati in base ai filtri",
+      "empty": "Nessun nastro corrisponde ai filtri selezionati. Provate a rimuoverne alcuni.",
+      "show_products": "Mostra prodotti",
+      "cta_quote": "Preventivo non vincolante"
+    },
+    "filters": {
+      "properties": {
+        "label": "Properties",
+        "ekologicke": "Eco-friendly",
+        "tiche": "Low noise",
+        "odstranitelne": "Residue-free removable",
+        "vyztuzene": "Reinforced"
+      },
+      "resistance": {
+        "label": "Resistance",
+        "mrazuvzdorne": "Cold-resistant (down to −70 °C)",
+        "vysoke-teploty": "High temperatures",
+        "chemicka-odolnost": "Chemical resistance"
+      },
+      "usage": {
+        "label": "Application",
+        "rucni": "Manual application",
+        "stroje": "Machines and packers"
+      }
+    },
+    "categories": {
+      "udrzitelne-pasky": {
+        "title": "Nastri sostenibili",
+        "description": "Soluzioni di imballaggio innovative realizzate con materiali riciclati, con un impatto ambientale minimo e a sostegno dell'economia circolare.",
+        "intro": "La nostra gamma di nastri sostenibili è realizzata con materiali riciclati e progettata per ridurre al minimo l'impatto ambientale. Aiuta le aziende a raggiungere gli obiettivi ESG e a costruire un'immagine di marca responsabile senza compromettere le prestazioni.",
+        "properties": {
+          "Contenuto riciclato": "Materiali con un'elevata percentuale di riciclato.",
+          "Minore impronta di carbonio": "Produzione più sostenibile e approccio circolare.",
+          "Senza compromessi": "Sostenibilità senza rinunciare a un incollaggio affidabile."
+        },
+        "applications": [
+          "Aziende con obiettivi ESG e di sostenibilità",
+          "Imballaggi sostenibili per e-shop",
+          "Processi di imballaggio circolari",
+          "Costruzione di un marchio responsabile"
+        ]
+      },
+      "bopp-pasky": {
+        "title": "Nastri BOPP",
+        "description": "I nastri per imballaggio industriale più diffusi, realizzati in polipropilene biorientato. Offrono eccellente resistenza alla trazione e lunga durata.",
+        "intro": "I nastri BOPP sono lo standard per l'imballaggio quotidiano nella produzione, nella logistica e nell'e-commerce. Il film in polipropilene biorientato offre un eccellente rapporto qualità-prezzo, versioni acriliche e hot melt e un'ampia scelta di larghezze e colori.",
+        "properties": {
+          "Elevata resistenza alla trazione": "Film resistente che non si strappa durante l'imballaggio, neppure sotto tensione.",
+          "ACRILICO e HOT MELT": "Scegliete l'adesivo in base all'ambiente: svolgimento silenzioso o adesione rapida al freddo.",
+          "Lunga durata": "Resistenza ai raggi UV e all'invecchiamento per lo stoccaggio a lungo termine."
+        },
+        "applications": [
+          "Chiusura standard dei cartoni",
+          "Macchine automatiche per imballaggio",
+          "Spedizioni e logistica di magazzino",
+          "Stampa di loghi e informazioni aziendali"
+        ]
+      },
+      "bopet-pasky": {
+        "title": "Nastri BOPET",
+        "description": "Nastri in poliestere premium con estrema resistenza allo strappo, agli agenti chimici e alle variazioni di temperatura. Progettati per le applicazioni industriali più impegnative.",
+        "intro": "I nastri BOPET a base di film in poliestere sono destinati alle applicazioni in cui i nastri standard non sono sufficienti. Resistono alle alte temperature, agli agenti chimici aggressivi e alle sollecitazioni meccaniche, mantenendo le proprie caratteristiche anche in condizioni estreme.",
+        "properties": {
+          "Resistenza alla temperatura": "Prestazioni stabili alle alte e alle basse temperature.",
+          "Resistenza chimica": "Resistente a solventi, oli e ambienti aggressivi.",
+          "Resistenza allo strappo": "Robusto film in poliestere con allungamento minimo."
+        },
+        "applications": [
+          "Impianti industriali impegnativi",
+          "Mascheratura nella verniciatura a polvere",
+          "Fissaggio in ambienti ad alta temperatura",
+          "Elettrotecnica e produzione specializzata"
+        ]
+      },
+      "papirove-pasky": {
+        "title": "Nastri in carta",
+        "description": "Una soluzione ecologica per imballaggi sicuri con elevata adesione. Ideale per scatole in cartone completamente riciclabili e un'immagine aziendale pulita.",
+        "intro": "I nastri adesivi in carta combinano un incollaggio affidabile con la massima attenzione all'ambiente. Grazie al supporto in carta, sono completamente riciclabili insieme al cartone e rappresentano una soluzione elegante e ordinata per le aziende attente alla sostenibilità e all'immagine delle proprie spedizioni.",
+        "properties": {
+          "Completamente riciclabile": "Nastro e cartone possono essere conferiti nello stesso contenitore, senza separare i materiali.",
+          "Elevata adesione": "Incollaggio affidabile anche su cartone riciclato e superfici irregolari.",
+          "Design pulito": "La superficie opaca della carta ha un aspetto premium e può essere facilmente stampata con il vostro logo."
+        },
+        "applications": [
+          "E-shop orientati al packaging sostenibile",
+          "Chiusura di scatole e imballaggi in cartone",
+          "Branding aziendale direttamente sulle spedizioni",
+          "Imballaggio manuale e semiautomatico"
+        ]
+      },
+      "odstranitelne-pasky": {
+        "title": "Nastri rimovibili",
+        "description": "Nastri con una speciale formulazione adesiva che non lascia residui dopo la rimozione. Ideali per marcature temporanee, protezione di superfici sensibili o processi logistici.",
+        "intro": "I nastri rimovibili utilizzano un adesivo speciale che tiene saldamente ma non lascia residui né danneggia la superficie quando viene rimosso. Sono ideali per applicazioni temporanee e per la protezione di materiali delicati.",
+        "properties": {
+          "Senza residui": "Dopo la rimozione non restano adesivo né residui.",
+          "Delicato sulle superfici": "Non danneggia vernice, vetro o materiali sensibili.",
+          "Tenuta affidabile": "Tiene per tutta la durata necessaria dell'applicazione."
+        },
+        "applications": [
+          "Marcature ed etichette temporanee",
+          "Protezione di superfici sensibili",
+          "Processi logistici e produttivi",
+          "Fissaggi che devono essere rimossi"
+        ]
+      },
+      "vyztuzene-pasky": {
+        "title": "Nastri rinforzati",
+        "description": "Nastri rinforzati con fibre di vetro longitudinali o incrociate. Offrono la massima resistenza per fissare carichi pesanti, pallet e colli fuori sagoma.",
+        "intro": "I nastri rinforzati contengono fibre di vetro disposte longitudinalmente o incrociate che aumentano sensibilmente la resistenza alla trazione. Sono progettati per fissare spedizioni pesanti e fuori sagoma, dove è richiesta la massima affidabilità.",
+        "properties": {
+          "Fibre di vetro": "Rinforzo longitudinale o incrociato per la massima resistenza.",
+          "Capacità di carico": "Fissaggio affidabile di carichi pesanti e pallet.",
+          "Resistenza alla rottura": "Resiste anche a elevati carichi di trazione."
+        },
+        "applications": [
+          "Fissaggio di colli pesanti e fuori sagoma",
+          "Messa in sicurezza delle merci sui pallet",
+          "Fascettatura di tubi, profili e barre",
+          "Trasporti ed esportazioni impegnativi"
+        ]
+      },
+      "mopp-pasky": {
+        "title": "Nastri MOPP",
+        "description": "Nastri mono-orientati con estrema resistenza in una direzione ed elasticità pressoché nulla. Specificamente progettati per fissare elettrodomestici, componenti o pallet.",
+        "intro": "I nastri MOPP hanno un film mono-orientato con estrema resistenza longitudinale e allungamento praticamente nullo. Sostituiscono i nastri rinforzati dove è necessario un fissaggio solido senza fibre di vetro.",
+        "properties": {
+          "Resistenza estrema": "Elevata resistenza alla trazione in una direzione.",
+          "Elasticità nulla": "Il fissaggio non si allenta nemmeno sotto carico.",
+          "Senza fibre di vetro": "Fissaggio pulito senza rilascio di fibre."
+        },
+        "applications": [
+          "Fissaggio delle porte degli elettrodomestici",
+          "Messa in sicurezza dei componenti durante il trasporto",
+          "Reggiatura e fissaggio dei pallet",
+          "Fascettatura senza fibre di vetro"
+        ]
+      },
+      "textilni-pasky": {
+        "title": "Nastri adesivi telati",
+        "description": "Nastri molto resistenti e versatili rinforzati con una rete tessile. Aderiscono perfettamente alle superfici ruvide, si strappano facilmente a mano e sono ideali per riparazioni rapide e fascettatura.",
+        "intro": "I nastri telati sono un indispensabile prodotto universale. Il rinforzo tessile conferisce elevata resistenza e consente allo stesso tempo di strapparli facilmente a mano senza forbici. Aderiscono in modo affidabile anche alle superfici ruvide e irregolari.",
+        "properties": {
+          "Rinforzo tessile": "Elevata resistenza e protezione dalla perforazione.",
+          "Strappabile a mano": "Lavoro rapido senza utensili.",
+          "Adesione su superfici ruvide": "Aderisce a metallo, legno, cemento e plastica."
+        },
+        "applications": [
+          "Riparazioni rapide e giunzioni provvisorie",
+          "Fascettatura e fissaggio di oggetti",
+          "Rinforzo di colli e imballaggi",
+          "Manutenzione, montaggio e lavori artigianali"
+        ]
+      },
+      "malirske-pasky": {
+        "title": "Nastri per mascheratura",
+        "description": "Nastri in carta crespata progettati per una mascheratura precisa durante la pittura e la verniciatura. Proteggono i bordi dalle sbavature di colore e si rimuovono pulitamente al termine del lavoro.",
+        "intro": "I nastri di carta crespata per mascheratura garantiscono bordi netti e puliti durante la pittura e la verniciatura. Il supporto in carta crespata si adatta alla superficie, si strappa facilmente e si rimuove senza residui di adesivo al termine del lavoro.",
+        "properties": {
+          "Bordi netti": "Impedisce al colore di infiltrarsi sotto il nastro.",
+          "Rimozione pulita": "Non lascia adesivo né segni dopo l'uso.",
+          "Applicazione semplice": "La carta crespata si adatta alla forma e si strappa facilmente."
+        },
+        "applications": [
+          "Pittura e verniciatura di interni",
+          "Mascheratura di bordi e passaggi",
+          "Verniciature industriali e carrozzerie",
+          "Lavori fai da te e artigianali"
+        ]
+      }
+    },
+    "products": {
+      "udrzitelna-paska-airtape": {
+        "name": "Nastro sostenibile Airtape",
+        "tagline": "Nastro sostenibile leggero per imballaggi ecologici quotidiani.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Nastri sostenibili",
+        "benefits": [
+          {
+            "title": "Polipropilene riciclato",
+            "text": "Film PP riciclato con minore impatto ambientale mantenendo un incollaggio affidabile."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Intervallo di temperatura −5 a +60 °C",
+            "text": "Resistenza alla trazione 42 N/25 mm per l'uso quotidiano in magazzino e spedizione."
+          }
+        ],
+        "uses": [
+          "Aziende con obiettivi ESG e di sostenibilità",
+          "Imballaggi verdi per e-shop",
+          "Processi di imballaggio circolari",
+          "Costruzione di un marchio responsabile"
+        ],
+        "params_values": {
+          "carrier": "Film PP riciclato",
+          "thickness": "40 µm",
+          "adhesive": "Acrilico",
+          "adhesion": "2,8 N/25 mm",
+          "temperature": "−5 a +60 °C",
+          "strength": "42 N/25 mm"
+        },
+        "spec_pills": [
+          "Film PP riciclato",
+          "Acrilico",
+          "−5 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri sostenibili"
+        }
+      },
+      "udrzitelna-paska-eco-50": {
+        "name": "Nastro sostenibile ECO+ 50",
+        "tagline": "Nastro sottile riciclato per imballaggi sostenibili standard.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Nastri sostenibili",
+        "benefits": [
+          {
+            "title": "Polipropilene riciclato",
+            "text": "Film PP riciclato con minore impatto ambientale mantenendo un incollaggio affidabile."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Intervallo di temperatura −5 a +60 °C",
+            "text": "Resistenza alla trazione 45 N/25 mm per l'uso quotidiano in magazzino e spedizione."
+          }
+        ],
+        "uses": [
+          "Aziende con obiettivi ESG e di sostenibilità",
+          "Processi di imballaggio circolari",
+          "Costruzione di un marchio responsabile",
+          "Linee di imballaggio automatiche con obiettivi ESG"
+        ],
+        "params_values": {
+          "carrier": "Film PP riciclato",
+          "thickness": "50 µm",
+          "adhesive": "Acrilico",
+          "adhesion": "3,0 N/25 mm",
+          "temperature": "−5 a +60 °C",
+          "strength": "45 N/25 mm"
+        },
+        "spec_pills": [
+          "Film PP riciclato",
+          "Acrilico",
+          "−5 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri sostenibili"
+        }
+      },
+      "udrzitelna-paska-eco-80": {
+        "name": "Nastro sostenibile ECO+ 80",
+        "tagline": "Nastro riciclato più resistente per imballaggi sostenibili più impegnativi.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Nastri sostenibili",
+        "benefits": [
+          {
+            "title": "Polipropilene riciclato",
+            "text": "Film PP riciclato con minore impatto ambientale mantenendo un incollaggio affidabile."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Intervallo di temperatura −5 a +60 °C",
+            "text": "Resistenza alla trazione 52 N/25 mm per l'uso quotidiano in magazzino e spedizione."
+          }
+        ],
+        "uses": [
+          "Aziende con obiettivi ESG e di sostenibilità",
+          "Processi di imballaggio circolari",
+          "Costruzione di un marchio responsabile",
+          "Linee di imballaggio automatiche con obiettivi ESG"
+        ],
+        "params_values": {
+          "carrier": "Film PP riciclato",
+          "thickness": "80 µm",
+          "adhesive": "Acrilico",
+          "adhesion": "3,4 N/25 mm",
+          "temperature": "−5 a +60 °C",
+          "strength": "52 N/25 mm"
+        },
+        "spec_pills": [
+          "Film PP riciclato",
+          "Acrilico",
+          "−5 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri sostenibili"
+        }
+      },
+      "udrzitelna-paska-loopp": {
+        "name": "Nastro sostenibile LOOPP",
+        "tagline": "Nastro in polipropilene riciclato per l'economia circolare.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Nastri sostenibili",
+        "benefits": [
+          {
+            "title": "Polipropilene riciclato",
+            "text": "Film PP riciclato con minore impatto ambientale mantenendo un incollaggio affidabile."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Intervallo di temperatura −5 a +60 °C",
+            "text": "Resistenza alla trazione 46 N/25 mm per l'uso quotidiano in magazzino e spedizione."
+          }
+        ],
+        "uses": [
+          "Aziende con obiettivi ESG e di sostenibilità",
+          "Processi di imballaggio circolari",
+          "Costruzione di un marchio responsabile",
+          "Linee di imballaggio automatiche con obiettivi ESG"
+        ],
+        "params_values": {
+          "carrier": "Film PP riciclato",
+          "thickness": "45 µm",
+          "adhesive": "Acrilico",
+          "adhesion": "3,0 N/25 mm",
+          "temperature": "−5 a +60 °C",
+          "strength": "46 N/25 mm"
+        },
+        "spec_pills": [
+          "Film PP riciclato",
+          "Acrilico",
+          "−5 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri sostenibili"
+        }
+      },
+      "udrzitelna-paska-nopp": {
+        "name": "Nastro sostenibile NOPP",
+        "tagline": "Nastro sostenibile senza plastica per imballaggi completamente riciclabili.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Nastri sostenibili",
+        "benefits": [
+          {
+            "title": "Supporto in carta senza plastica",
+            "text": "Imballaggio completamente riciclabile: il nastro va con il cartone senza separazione."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Intervallo di temperatura −5 a +60 °C",
+            "text": "Resistenza alla trazione 50 N/25 mm per l'uso quotidiano in magazzino e spedizione."
+          }
+        ],
+        "uses": [
+          "Aziende con obiettivi ESG e di sostenibilità",
+          "Imballaggi verdi per e-shop",
+          "Processi di imballaggio circolari",
+          "Costruzione di un marchio responsabile"
+        ],
+        "params_values": {
+          "carrier": "Carta (FSC)",
+          "thickness": "110 µm",
+          "adhesive": "Acrilico (senza solventi)",
+          "adhesion": "4,0 N/25 mm",
+          "temperature": "−5 a +60 °C",
+          "strength": "50 N/25 mm"
+        },
+        "spec_pills": [
+          "Carta (FSC)",
+          "Acrilico (senza solventi)",
+          "−5 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri sostenibili"
+        }
+      },
+      "udrzitelna-paska-nopp-plus": {
+        "name": "Nastro sostenibile NOPP+",
+        "tagline": "Nastro senza plastica migliorato con maggiore resistenza e adesione.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Nastri sostenibili",
+        "benefits": [
+          {
+            "title": "Supporto in carta senza plastica",
+            "text": "Imballaggio completamente riciclabile: il nastro va con il cartone senza separazione."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Intervallo di temperatura −5 a +65 °C",
+            "text": "Resistenza alla trazione 55 N/25 mm per l'uso quotidiano in magazzino e spedizione."
+          }
+        ],
+        "uses": [
+          "Aziende con obiettivi ESG e di sostenibilità",
+          "Imballaggi verdi per e-shop",
+          "Processi di imballaggio circolari",
+          "Costruzione di un marchio responsabile"
+        ],
+        "params_values": {
+          "carrier": "Carta (FSC)",
+          "thickness": "120 µm",
+          "adhesive": "Acrilico",
+          "adhesion": "4,4 N/25 mm",
+          "temperature": "−5 a +65 °C",
+          "strength": "55 N/25 mm"
+        },
+        "spec_pills": [
+          "Carta (FSC)",
+          "Acrilico",
+          "−5 a +65 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri sostenibili"
+        }
+      },
+      "bopp-paska-acrylic": {
+        "name": "Nastro BOPP Acrylic",
+        "tagline": "Nastro BOPP affidabile con adesivo acrilico e lunga durata.",
+        "category_slug": "bopp-pasky",
+        "category_title": "Nastri BOPP",
+        "benefits": [
+          {
+            "title": "Resistenza alla trazione 45 N/25 mm",
+            "text": "Il film BOPP spesso 45 µm resiste alla tensione durante l'imballaggio e lo stoccaggio a lungo termine."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Lunga durata",
+            "text": "Resistenza ai raggi UV e all'invecchiamento nell'intervallo di temperatura −5 až +60 °C."
+          }
+        ],
+        "uses": [
+          "Chiusura standard dei cartoni",
+          "Macchine automatiche per imballaggio",
+          "Svolgimento manuale silenzioso in magazzino e spedizione",
+          "Stampa con logo e informazioni aziendali"
+        ],
+        "params_values": {
+          "carrier": "Film BOPP",
+          "thickness": "45 µm",
+          "adhesive": "Acrilico (dispersione acquosa)",
+          "adhesion": "2,8 N/25 mm",
+          "temperature": "−5 a +60 °C",
+          "strength": "45 N/25 mm"
+        },
+        "spec_pills": [
+          "Film BOPP",
+          "Acrilico (dispersione acquosa)",
+          "−5 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri BOPP"
+        }
+      },
+      "bopp-paska-evergreen": {
+        "name": "Nastro BOPP Evergreen",
+        "tagline": "Nastro BOPP colorato per etichettatura e identificazione visiva delle spedizioni.",
+        "category_slug": "bopp-pasky",
+        "category_title": "Nastri BOPP",
+        "benefits": [
+          {
+            "title": "Resistenza alla trazione 46 N/25 mm",
+            "text": "Il film BOPP spesso 45 µm resiste alla tensione durante l'imballaggio e lo stoccaggio a lungo termine."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Identificazione visiva delle spedizioni",
+            "text": "Marcatura visiva dei colli e orientamento in magazzino nell'intervallo −5 až +60 °C."
+          }
+        ],
+        "uses": [
+          "Chiusura standard dei cartoni",
+          "Macchine automatiche per imballaggio",
+          "Utilizzo in magazzini refrigerati e congelati",
+          "Stampa con logo e informazioni aziendali"
+        ],
+        "params_values": {
+          "carrier": "Film BOPP (colorato)",
+          "thickness": "45 µm",
+          "adhesive": "Acrilico",
+          "adhesion": "3,0 N/25 mm",
+          "temperature": "−5 a +60 °C",
+          "strength": "46 N/25 mm"
+        },
+        "spec_pills": [
+          "Film BOPP (colorato)",
+          "Acrilico",
+          "−5 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri BOPP"
+        }
+      },
+      "bopp-paska-hot-melt": {
+        "name": "Nastro BOPP Hot Melt",
+        "tagline": "Nastro BOPP con adesivo hot melt per un'adesione rapida e resistente.",
+        "category_slug": "bopp-pasky",
+        "category_title": "Nastri BOPP",
+        "benefits": [
+          {
+            "title": "Resistenza alla trazione 42 N/25 mm",
+            "text": "Il film BOPP spesso 40 µm resiste alla tensione durante l'imballaggio e lo stoccaggio a lungo termine."
+          },
+          {
+            "title": "Adesivo hot melt",
+            "text": "Adesione rapida e resistente anche a basse temperature, adatta al confezionamento manuale e automatico."
+          },
+          {
+            "title": "Adesione rapida",
+            "text": "Adesione 3,5 N/25 mm: aderisce immediatamente anche a basse temperature (0 až +50 °C)."
+          }
+        ],
+        "uses": [
+          "Chiusura standard dei cartoni",
+          "Macchine automatiche per imballaggio",
+          "Spedizione e logistica di magazzino",
+          "Stampa con logo e informazioni aziendali"
+        ],
+        "params_values": {
+          "carrier": "Film BOPP",
+          "thickness": "40 µm",
+          "adhesive": "Hot melt (gomma sintetica)",
+          "adhesion": "3,5 N/25 mm",
+          "temperature": "0 a +50 °C",
+          "strength": "42 N/25 mm"
+        },
+        "spec_pills": [
+          "Film BOPP",
+          "Hot melt (gomma sintetica)",
+          "0 a +50 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri BOPP"
+        }
+      },
+      "bopp-paska-hot-melt-ii": {
+        "name": "Nastro BOPP Hot Melt II",
+        "tagline": "Nastro BOPP più resistente con adesivo hot melt per imballaggi più pesanti.",
+        "category_slug": "bopp-pasky",
+        "category_title": "Nastri BOPP",
+        "benefits": [
+          {
+            "title": "Resistenza alla trazione 48 N/25 mm",
+            "text": "Il film BOPP spesso 48 µm resiste alla tensione durante l'imballaggio e lo stoccaggio a lungo termine."
+          },
+          {
+            "title": "Adesivo hot melt",
+            "text": "Adesione rapida e resistente anche a basse temperature, adatta al confezionamento manuale e automatico."
+          },
+          {
+            "title": "Adesione rapida",
+            "text": "Adesione 3,8 N/25 mm: aderisce immediatamente anche a basse temperature (0 až +55 °C)."
+          }
+        ],
+        "uses": [
+          "Chiusura standard dei cartoni",
+          "Macchine automatiche per imballaggio",
+          "Spedizione e logistica di magazzino",
+          "Stampa con logo e informazioni aziendali"
+        ],
+        "params_values": {
+          "carrier": "Film BOPP",
+          "thickness": "48 µm",
+          "adhesive": "Hot melt",
+          "adhesion": "3,8 N/25 mm",
+          "temperature": "0 a +55 °C",
+          "strength": "48 N/25 mm"
+        },
+        "spec_pills": [
+          "Film BOPP",
+          "Hot melt",
+          "0 a +55 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri BOPP"
+        }
+      },
+      "bopet-paska-ait": {
+        "name": "Nastro BOPET AIT",
+        "tagline": "Nastro in poliestere con adesivo siliconico per temperature estreme.",
+        "category_slug": "bopet-pasky",
+        "category_title": "Nastri BOPET",
+        "benefits": [
+          {
+            "title": "Intervallo di temperatura −40 a +180 °C",
+            "text": "Supporto in poliestere (30 µm) mantiene le proprie caratteristiche in condizioni impegnative."
+          },
+          {
+            "title": "Adesivo siliconico",
+            "text": "Prestazioni stabili a temperature estreme e rimozione senza residui di adesivo."
+          },
+          {
+            "title": "Temperature estreme",
+            "text": "Prestazioni ad alte temperature di verniciatura e al freddo, senza danneggiare la superficie."
+          }
+        ],
+        "uses": [
+          "Impianti industriali impegnativi",
+          "Fissaggio in ambienti ad alta temperatura",
+          "Mascheratura nella verniciatura a polvere",
+          "Elettrotecnica e produzione specializzata"
+        ],
+        "params_values": {
+          "carrier": "Film in poliestere (PET)",
+          "thickness": "30 µm",
+          "adhesive": "Silicone",
+          "adhesion": "3,0 N/25 mm",
+          "temperature": "−40 a +180 °C",
+          "strength": "65 N/25 mm"
+        },
+        "spec_pills": [
+          "Film in poliestere (PET)",
+          "Silicone",
+          "−40 a +180 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri BOPET"
+        }
+      },
+      "bopet-paska-ate23": {
+        "name": "Nastro BOPET ATE23",
+        "tagline": "Nastro sottile in poliestere con elevata resistenza alla temperatura.",
+        "category_slug": "bopet-pasky",
+        "category_title": "Nastri BOPET",
+        "benefits": [
+          {
+            "title": "Intervallo di temperatura −40 a +150 °C",
+            "text": "Supporto in poliestere (25 µm) mantiene le proprie caratteristiche in condizioni impegnative."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Resistenza chimica",
+            "text": "Resistenza 60 N/25 mm: resiste a solventi, oli e ambienti aggressivi."
+          }
+        ],
+        "uses": [
+          "Impianti industriali impegnativi",
+          "Fissaggio in ambienti ad alta temperatura",
+          "Mascheratura nella verniciatura a polvere",
+          "Elettrotecnica e produzione specializzata"
+        ],
+        "params_values": {
+          "carrier": "Film in poliestere (PET)",
+          "thickness": "25 µm",
+          "adhesive": "Acrilico",
+          "adhesion": "3,5 N/25 mm",
+          "temperature": "−40 a +150 °C",
+          "strength": "60 N/25 mm"
+        },
+        "spec_pills": [
+          "Film in poliestere (PET)",
+          "Acrilico",
+          "−40 a +150 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri BOPET"
+        }
+      },
+      "bopet-paska-eco-hit19": {
+        "name": "Nastro BOPET ECO HIT19",
+        "tagline": "Nastro in poliestere con contenuto riciclato e alta resistenza.",
+        "category_slug": "bopet-pasky",
+        "category_title": "Nastri BOPET",
+        "benefits": [
+          {
+            "title": "Intervallo di temperatura −40 a +150 °C",
+            "text": "Supporto in poliestere (19 µm) mantiene le proprie caratteristiche in condizioni impegnative."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Poliestere riciclato",
+            "text": "Resistenza 58 N/25 mm con minore impatto ambientale rispetto al film PET standard."
+          }
+        ],
+        "uses": [
+          "Impianti industriali impegnativi",
+          "Fissaggio in ambienti ad alta temperatura",
+          "Mascheratura nella verniciatura a polvere",
+          "Applicazioni con attenzione a materiali più sostenibili"
+        ],
+        "params_values": {
+          "carrier": "Film PET riciclato",
+          "thickness": "19 µm",
+          "adhesive": "Acrilico",
+          "adhesion": "3,3 N/25 mm",
+          "temperature": "−40 a +150 °C",
+          "strength": "58 N/25 mm"
+        },
+        "spec_pills": [
+          "Film PET riciclato",
+          "Acrilico",
+          "−40 a +150 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri BOPET"
+        }
+      },
+      "bopet-paska-hit17": {
+        "name": "Nastro BOPET HIT17",
+        "tagline": "Nastro PET ultrasottile per elettrotecnica e applicazioni di precisione.",
+        "category_slug": "bopet-pasky",
+        "category_title": "Nastri BOPET",
+        "benefits": [
+          {
+            "title": "Intervallo di temperatura −40 a +155 °C",
+            "text": "Supporto in poliestere (17 µm) mantiene le proprie caratteristiche in condizioni impegnative."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Resistenza chimica",
+            "text": "Resistenza 55 N/25 mm: resiste a solventi, oli e ambienti aggressivi."
+          }
+        ],
+        "uses": [
+          "Impianti industriali impegnativi",
+          "Fissaggio in ambienti ad alta temperatura",
+          "Mascheratura nella verniciatura a polvere",
+          "Elettrotecnica e produzione specializzata"
+        ],
+        "params_values": {
+          "carrier": "Film in poliestere (PET)",
+          "thickness": "17 µm",
+          "adhesive": "Acrilico",
+          "adhesion": "3,2 N/25 mm",
+          "temperature": "−40 a +155 °C",
+          "strength": "55 N/25 mm"
+        },
+        "spec_pills": [
+          "Film in poliestere (PET)",
+          "Acrilico",
+          "−40 a +155 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri BOPET"
+        }
+      },
+      "papirova-paska-c660": {
+        "name": "Nastro di carta C660",
+        "tagline": "Nastro di carta ecologico con adesivo acrilico e svolgimento silenzioso.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Nastri in carta",
+        "benefits": [
+          {
+            "title": "Completamente riciclabile",
+            "text": "Supporto in carta kraft (100 µm): imballaggio ecologico con aspetto opaco e pulito."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Resistenza 45 N/25 mm",
+            "text": "Adesione 3,8 N/25 mm anche su cartone riciclato e superfici irregolari (−5 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "E-shop orientati al packaging sostenibile",
+          "Chiusura di scatole e imballaggi in cartone",
+          "Branding aziendale direttamente sulle spedizioni",
+          "Imballaggio manuale e chiusura di spedizioni e-commerce"
+        ],
+        "params_values": {
+          "carrier": "Supporto in carta",
+          "thickness": "100 µm",
+          "adhesive": "Acrilico (dispersione)",
+          "adhesion": "3,8 N/25 mm",
+          "temperature": "−5 a +60 °C",
+          "strength": "45 N/25 mm"
+        },
+        "spec_pills": [
+          "Supporto in carta",
+          "Acrilico (dispersione)",
+          "−5 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri in carta"
+        }
+      },
+      "papirova-paska-c680": {
+        "name": "Nastro di carta C680",
+        "tagline": "Nastro di carta universale con elevata adesione sul cartone riciclato.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Nastri in carta",
+        "benefits": [
+          {
+            "title": "Completamente riciclabile",
+            "text": "Supporto in carta kraft (115 µm): imballaggio ecologico con aspetto opaco e pulito."
+          },
+          {
+            "title": "Adesivo in gomma",
+            "text": "Elevata adesione immediata e tenuta sicura anche sul cartone riciclato."
+          },
+          {
+            "title": "Resistenza 50 N/25 mm",
+            "text": "Adesione 4,2 N/25 mm anche su cartone riciclato e superfici irregolari (−10 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "E-shop orientati al packaging sostenibile",
+          "Chiusura di scatole e imballaggi in cartone",
+          "Branding aziendale direttamente sulle spedizioni",
+          "Imballaggio manuale e semiautomatico"
+        ],
+        "params_values": {
+          "carrier": "Supporto in carta",
+          "thickness": "115 µm",
+          "adhesive": "Gomma",
+          "adhesion": "4,2 N/25 mm",
+          "temperature": "−10 a +60 °C",
+          "strength": "50 N/25 mm"
+        },
+        "spec_pills": [
+          "Supporto in carta",
+          "Gomma",
+          "−10 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri in carta"
+        }
+      },
+      "papirova-paska-c680-rt": {
+        "name": "Nastro di carta C680 RT",
+        "tagline": "Nastro di carta resistente con adesione migliorata per spedizioni più pesanti.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Nastri in carta",
+        "benefits": [
+          {
+            "title": "Completamente riciclabile",
+            "text": "Supporto in carta kraft (120 µm): imballaggio ecologico con aspetto opaco e pulito."
+          },
+          {
+            "title": "Adesivo in gomma",
+            "text": "Elevata adesione immediata e tenuta sicura anche sul cartone riciclato."
+          },
+          {
+            "title": "Resistenza 52 N/25 mm",
+            "text": "Adesione 4,3 N/25 mm anche su cartone riciclato e superfici irregolari (−10 až +65 °C)."
+          }
+        ],
+        "uses": [
+          "E-shop orientati al packaging sostenibile",
+          "Chiusura di scatole e imballaggi in cartone",
+          "Branding aziendale direttamente sulle spedizioni",
+          "Imballaggio manuale e semiautomatico"
+        ],
+        "params_values": {
+          "carrier": "Supporto in carta",
+          "thickness": "120 µm",
+          "adhesive": "Gomma",
+          "adhesion": "4,3 N/25 mm",
+          "temperature": "−10 a +65 °C",
+          "strength": "52 N/25 mm"
+        },
+        "spec_pills": [
+          "Supporto in carta",
+          "Gomma",
+          "−10 a +65 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri in carta"
+        }
+      },
+      "papirova-paska-c680r": {
+        "name": "Nastro di carta C680R",
+        "tagline": "Nastro di carta realizzato con carta riciclata per imballaggi sostenibili.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Nastri in carta",
+        "benefits": [
+          {
+            "title": "Supporto in carta riciclato",
+            "text": "Nastro e cartone vengono riciclati insieme, senza separare i materiali."
+          },
+          {
+            "title": "Adesivo in gomma",
+            "text": "Elevata adesione immediata e tenuta sicura anche sul cartone riciclato."
+          },
+          {
+            "title": "Resistenza 48 N/25 mm",
+            "text": "Adesione 4,0 N/25 mm anche su cartone riciclato e superfici irregolari (−10 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "E-shop orientati al packaging sostenibile",
+          "Chiusura di scatole e imballaggi in cartone",
+          "Branding aziendale direttamente sulle spedizioni",
+          "Imballaggio manuale e chiusura di spedizioni e-commerce"
+        ],
+        "params_values": {
+          "carrier": "Carta riciclata",
+          "thickness": "115 µm",
+          "adhesive": "Gomma",
+          "adhesion": "4,0 N/25 mm",
+          "temperature": "−10 a +60 °C",
+          "strength": "48 N/25 mm"
+        },
+        "spec_pills": [
+          "Carta riciclata",
+          "Gomma",
+          "−10 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri in carta"
+        }
+      },
+      "papirova-paska-c690": {
+        "name": "Nastro di carta C690",
+        "tagline": "Nastro kraft premium con adesivo hot melt e finitura opaca.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Nastri in carta",
+        "benefits": [
+          {
+            "title": "Completamente riciclabile",
+            "text": "Supporto in carta kraft (130 µm): imballaggio ecologico con aspetto opaco e pulito."
+          },
+          {
+            "title": "Adesivo hot melt",
+            "text": "Adesione rapida e resistente anche a basse temperature, adatta al confezionamento manuale e automatico."
+          },
+          {
+            "title": "Resistenza 60 N/25 mm",
+            "text": "Adesione 4,8 N/25 mm anche su cartone riciclato e superfici irregolari (−10 až +70 °C)."
+          }
+        ],
+        "uses": [
+          "E-shop orientati al packaging sostenibile",
+          "Chiusura di scatole e imballaggi in cartone",
+          "Branding aziendale direttamente sulle spedizioni",
+          "Imballaggio manuale e chiusura di spedizioni e-commerce"
+        ],
+        "params_values": {
+          "carrier": "Supporto in carta kraft",
+          "thickness": "130 µm",
+          "adhesive": "Hot melt",
+          "adhesion": "4,8 N/25 mm",
+          "temperature": "−10 a +70 °C",
+          "strength": "60 N/25 mm"
+        },
+        "spec_pills": [
+          "Supporto in carta kraft",
+          "Hot melt",
+          "−10 a +70 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri in carta"
+        }
+      },
+      "papirova-paska-kh80": {
+        "name": "Nastro di carta KH80",
+        "tagline": "Nastro di carta resistente con adesivo hot melt per una chiusura affidabile dei cartoni.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Nastri in carta",
+        "benefits": [
+          {
+            "title": "Completamente riciclabile",
+            "text": "Supporto in carta kraft (120 µm): imballaggio ecologico con aspetto opaco e pulito."
+          },
+          {
+            "title": "Adesivo hot melt",
+            "text": "Adesione rapida e resistente anche a basse temperature, adatta al confezionamento manuale e automatico."
+          },
+          {
+            "title": "Resistenza 55 N/25 mm",
+            "text": "Adesione 4,5 N/25 mm anche su cartone riciclato e superfici irregolari (−10 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "E-shop orientati al packaging sostenibile",
+          "Chiusura di scatole e imballaggi in cartone",
+          "Branding aziendale direttamente sulle spedizioni",
+          "Imballaggio manuale e chiusura di spedizioni e-commerce"
+        ],
+        "params_values": {
+          "carrier": "Supporto in carta kraft",
+          "thickness": "120 µm",
+          "adhesive": "Hot melt (gomma sintetica)",
+          "adhesion": "4,5 N/25 mm",
+          "temperature": "−10 a +60 °C",
+          "strength": "55 N/25 mm"
+        },
+        "spec_pills": [
+          "Supporto in carta kraft",
+          "Hot melt (gomma sintetica)",
+          "−10 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri in carta"
+        }
+      },
+      "papirova-paska-ks165": {
+        "name": "Nastro di carta KS165",
+        "tagline": "Nastro di carta extra resistente con adesivo in gomma per imballaggi impegnativi.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Nastri in carta",
+        "benefits": [
+          {
+            "title": "Completamente riciclabile",
+            "text": "Supporto in carta kraft (150 µm): imballaggio ecologico con aspetto opaco e pulito."
+          },
+          {
+            "title": "Adesivo in gomma",
+            "text": "Elevata adesione immediata e tenuta sicura anche sul cartone riciclato."
+          },
+          {
+            "title": "Resistenza 70 N/25 mm",
+            "text": "Adesione 5,5 N/25 mm anche su cartone riciclato e superfici irregolari (−20 až +70 °C)."
+          }
+        ],
+        "uses": [
+          "E-shop orientati al packaging sostenibile",
+          "Chiusura di scatole e imballaggi in cartone",
+          "Branding aziendale direttamente sulle spedizioni",
+          "Imballaggio manuale e chiusura di spedizioni e-commerce"
+        ],
+        "params_values": {
+          "carrier": "Supporto in carta kraft",
+          "thickness": "150 µm",
+          "adhesive": "Gomma (solvente)",
+          "adhesion": "5,5 N/25 mm",
+          "temperature": "−20 a +70 °C",
+          "strength": "70 N/25 mm"
+        },
+        "spec_pills": [
+          "Supporto in carta kraft",
+          "Gomma (solvente)",
+          "−20 a +70 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri in carta"
+        }
+      },
+      "odstranitelna-paska-eco-rit19": {
+        "name": "Nastro rimovibile ECO RIT19",
+        "tagline": "Nastro rimovibile delicato con contenuto riciclato.",
+        "category_slug": "odstranitelne-pasky",
+        "category_title": "Nastri rimovibili",
+        "benefits": [
+          {
+            "title": "Senza residui dopo la rimozione",
+            "text": "Film PET riciclato (19 µm): non lascia adesivo né danni alla superficie dopo la rimozione."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Tenuta affidabile",
+            "text": "Adesione 1,8 N/25 mm per tutta la durata necessaria dell'applicazione (−5 až +55 °C)."
+          }
+        ],
+        "uses": [
+          "Marcature ed etichette temporanee",
+          "Protezione di superfici sensibili",
+          "Processi logistici e produttivi",
+          "Fissaggi che devono essere rimossi"
+        ],
+        "params_values": {
+          "carrier": "Film PET riciclato",
+          "thickness": "19 µm",
+          "adhesive": "Acrilico rimovibile",
+          "adhesion": "1,8 N/25 mm",
+          "temperature": "−5 a +55 °C",
+          "strength": "45 N/25 mm"
+        },
+        "spec_pills": [
+          "Film PET riciclato",
+          "Acrilico rimovibile",
+          "−5 a +55 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Richiedi un preventivo",
+          "tailor_link": "Richiedi una consulenza",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Diverse versioni di adesivo e supporto",
+            "Consulenza sui parametri prima dell'ordine"
+          ],
+          "bottom": "Richiedi nastro rimovibile",
+          "back_category": "Torna a Nastri rimovibili"
+        }
+      },
+      "odstranitelna-paska-r28-32": {
+        "name": "Nastro rimovibile R28-32",
+        "tagline": "Nastro rimovibile che non lascia tracce dopo la rimozione.",
+        "category_slug": "odstranitelne-pasky",
+        "category_title": "Nastri rimovibili",
+        "benefits": [
+          {
+            "title": "Senza residui dopo la rimozione",
+            "text": "Film BOPP (50 µm): non lascia adesivo né danni alla superficie dopo la rimozione."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Tenuta affidabile",
+            "text": "Adesione 1,5 N/25 mm per tutta la durata necessaria dell'applicazione (−5 až +50 °C)."
+          }
+        ],
+        "uses": [
+          "Marcature ed etichette temporanee",
+          "Protezione di superfici sensibili",
+          "Processi logistici e produttivi",
+          "Fissaggi che devono essere rimossi"
+        ],
+        "params_values": {
+          "carrier": "Film BOPP",
+          "thickness": "50 µm",
+          "adhesive": "Acrilico rimovibile",
+          "adhesion": "1,5 N/25 mm",
+          "temperature": "−5 a +50 °C",
+          "strength": "40 N/25 mm"
+        },
+        "spec_pills": [
+          "Film BOPP",
+          "Acrilico rimovibile",
+          "−5 a +50 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Richiedi un preventivo",
+          "tailor_link": "Richiedi una consulenza",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Diverse versioni di adesivo e supporto",
+            "Consulenza sui parametri prima dell'ordine"
+          ],
+          "bottom": "Richiedi nastro rimovibile",
+          "back_category": "Torna a Nastri rimovibili"
+        }
+      },
+      "vyztuzena-paska-rmpp32": {
+        "name": "Nastro rinforzato RMPP32",
+        "tagline": "Nastro rinforzato con fibre di vetro per fissare carichi pesanti.",
+        "category_slug": "vyztuzene-pasky",
+        "category_title": "Nastri rinforzati",
+        "benefits": [
+          {
+            "title": "Fibre di vetro longitudinali",
+            "text": "Resistenza alla trazione 300 N/25 mm: massima resistenza nella direzione di trazione."
+          },
+          {
+            "title": "Adesivo hot melt",
+            "text": "Adesione rapida e resistente anche a basse temperature, adatta al confezionamento manuale e automatico."
+          },
+          {
+            "title": "Fissaggio di carichi pesanti",
+            "text": "Adesione 4,5 N/25 mm: fissaggio affidabile di pallet e spedizioni fuori sagoma."
+          }
+        ],
+        "uses": [
+          "Fissaggio di colli pesanti e fuori sagoma",
+          "Messa in sicurezza delle merci sui pallet",
+          "Fascettatura di tubi, profili e barre",
+          "Imballaggio automatico di spedizioni pesanti"
+        ],
+        "params_values": {
+          "carrier": "MOPP + fibre di vetro longitudinali",
+          "thickness": "130 µm",
+          "adhesive": "Hot melt (gomma sintetica)",
+          "adhesion": "4,5 N/25 mm",
+          "temperature": "−10 a +60 °C",
+          "strength": "300 N/25 mm"
+        },
+        "spec_pills": [
+          "MOPP + fibre di vetro longitudinali",
+          "Hot melt (gomma sintetica)",
+          "−10 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Richiedi un preventivo",
+          "tailor_link": "Richiedi una consulenza",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Diverse versioni di adesivo e supporto",
+            "Consulenza sui parametri prima dell'ordine"
+          ],
+          "bottom": "Richiedi nastro rinforzato",
+          "back_category": "Torna a Nastri rinforzati"
+        }
+      },
+      "vyztuzena-paska-rtpp32": {
+        "name": "Nastro rinforzato RTPP32",
+        "tagline": "Nastro rinforzato incrociato per la massima resistenza in ogni direzione.",
+        "category_slug": "vyztuzene-pasky",
+        "category_title": "Nastri rinforzati",
+        "benefits": [
+          {
+            "title": "Fibre di vetro incrociate",
+            "text": "Resistenza alla trazione 320 N/25 mm: resistenza in tutte le direzioni di carico."
+          },
+          {
+            "title": "Adesivo hot melt",
+            "text": "Adesione rapida e resistente anche a basse temperature, adatta al confezionamento manuale e automatico."
+          },
+          {
+            "title": "Fissaggio di carichi pesanti",
+            "text": "Adesione 4,7 N/25 mm: fissaggio affidabile di pallet e spedizioni fuori sagoma."
+          }
+        ],
+        "uses": [
+          "Fissaggio di colli pesanti e fuori sagoma",
+          "Messa in sicurezza delle merci sui pallet",
+          "Fascettatura di tubi, profili e barre",
+          "Imballaggio automatico di spedizioni pesanti"
+        ],
+        "params_values": {
+          "carrier": "MOPP + fibre di vetro incrociate",
+          "thickness": "140 µm",
+          "adhesive": "Hot melt",
+          "adhesion": "4,7 N/25 mm",
+          "temperature": "−10 a +60 °C",
+          "strength": "320 N/25 mm"
+        },
+        "spec_pills": [
+          "MOPP + fibre di vetro incrociate",
+          "Hot melt",
+          "−10 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Richiedi un preventivo",
+          "tailor_link": "Richiedi una consulenza",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Diverse versioni di adesivo e supporto",
+            "Consulenza sui parametri prima dell'ordine"
+          ],
+          "bottom": "Richiedi nastro rinforzato",
+          "back_category": "Torna a Nastri rinforzati"
+        }
+      },
+      "mopp-paska-s45-50": {
+        "name": "Nastro MOPP S45-50",
+        "tagline": "Nastro MOPP monoassiale con resistenza estrema e allungamento nullo.",
+        "category_slug": "mopp-pasky",
+        "category_title": "Nastri MOPP",
+        "benefits": [
+          {
+            "title": "Resistenza estrema 250 N/25 mm",
+            "text": "Film MOPP (100 µm) con allungamento praticamente nullo in direzione longitudinale."
+          },
+          {
+            "title": "Adesivo hot melt",
+            "text": "Adesione rapida e resistente anche a basse temperature, adatta al confezionamento manuale e automatico."
+          },
+          {
+            "title": "Senza fibre di vetro",
+            "text": "Fissaggio pulito senza rilascio di fibre: intervallo di temperatura −10 až +60 °C."
+          }
+        ],
+        "uses": [
+          "Fissaggio delle porte degli elettrodomestici",
+          "Messa in sicurezza dei componenti durante il trasporto",
+          "Reggiatura e fissaggio dei pallet",
+          "Fascettatura senza fibre di vetro"
+        ],
+        "params_values": {
+          "carrier": "Film MOPP",
+          "thickness": "100 µm",
+          "adhesive": "Hot melt",
+          "adhesion": "4,0 N/25 mm",
+          "temperature": "−10 a +60 °C",
+          "strength": "250 N/25 mm"
+        },
+        "spec_pills": [
+          "Film MOPP",
+          "Hot melt",
+          "−10 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Richiedi un preventivo",
+          "tailor_link": "Richiedi una consulenza",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Diverse versioni di adesivo e supporto",
+            "Consulenza sui parametri prima dell'ordine"
+          ],
+          "bottom": "Richiedi nastro MOPP",
+          "back_category": "Torna a Nastri MOPP"
+        }
+      },
+      "textilni-paska-bc": {
+        "name": "Nastro telato BC",
+        "tagline": "Nastro telato resistente (duct tape) per riparazioni e uso universale.",
+        "category_slug": "textilni-pasky",
+        "category_title": "Nastri adesivi telati",
+        "benefits": [
+          {
+            "title": "Resistenza alla trazione 120 N/25 mm",
+            "text": "Rinforzo tessile (250 µm): resistenza allo strappo in condizioni di uso impegnative."
+          },
+          {
+            "title": "Adesivo in gomma",
+            "text": "Elevata adesione immediata e tenuta sicura anche sul cartone riciclato."
+          },
+          {
+            "title": "Adesione su superfici ruvide",
+            "text": "Adesione 6,0 N/25 mm: aderisce a metallo, legno, cemento e plastica (−10 až +70 °C)."
+          }
+        ],
+        "uses": [
+          "Riparazioni rapide e giunzioni provvisorie",
+          "Fascettatura e fissaggio di oggetti",
+          "Rinforzo di colli e imballaggi",
+          "Manutenzione, montaggio e lavori artigianali"
+        ],
+        "params_values": {
+          "carrier": "Rinforzo tessile + laminato PE",
+          "thickness": "250 µm",
+          "adhesive": "Gomma (sintetica)",
+          "adhesion": "6,0 N/25 mm",
+          "temperature": "−10 a +70 °C",
+          "strength": "120 N/25 mm"
+        },
+        "spec_pills": [
+          "Rinforzo tessile + laminato PE",
+          "Gomma (sintetica)",
+          "−10 a +70 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Richiedi un preventivo",
+          "tailor_link": "Richiedi una consulenza",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Diverse versioni di adesivo e supporto",
+            "Consulenza sui parametri prima dell'ordine"
+          ],
+          "bottom": "Richiedi nastro telato",
+          "back_category": "Torna a Nastri adesivi telati"
+        }
+      },
+      "textilni-paska-bc2": {
+        "name": "Nastro telato BC2",
+        "tagline": "Nastro telato extra resistente con elevata resistenza alla trazione.",
+        "category_slug": "textilni-pasky",
+        "category_title": "Nastri adesivi telati",
+        "benefits": [
+          {
+            "title": "Resistenza alla trazione 130 N/25 mm",
+            "text": "Rinforzo tessile (280 µm): resistenza allo strappo in condizioni di uso impegnative."
+          },
+          {
+            "title": "Adesivo in gomma",
+            "text": "Elevata adesione immediata e tenuta sicura anche sul cartone riciclato."
+          },
+          {
+            "title": "Adesione su superfici ruvide",
+            "text": "Adesione 6,5 N/25 mm: aderisce a metallo, legno, cemento e plastica (−10 až +70 °C)."
+          }
+        ],
+        "uses": [
+          "Riparazioni rapide e giunzioni provvisorie",
+          "Fascettatura e fissaggio di oggetti",
+          "Rinforzo di colli e imballaggi",
+          "Manutenzione, montaggio e lavori artigianali"
+        ],
+        "params_values": {
+          "carrier": "Rinforzo tessile + laminato PE",
+          "thickness": "280 µm",
+          "adhesive": "Gomma (sintetica)",
+          "adhesion": "6,5 N/25 mm",
+          "temperature": "−10 a +70 °C",
+          "strength": "130 N/25 mm"
+        },
+        "spec_pills": [
+          "Rinforzo tessile + laminato PE",
+          "Gomma (sintetica)",
+          "−10 a +70 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Richiedi un preventivo",
+          "tailor_link": "Richiedi una consulenza",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Diverse versioni di adesivo e supporto",
+            "Consulenza sui parametri prima dell'ordine"
+          ],
+          "bottom": "Richiedi nastro telato",
+          "back_category": "Torna a Nastri adesivi telati"
+        }
+      },
+      "textilni-paska-nu": {
+        "name": "Nastro telato NU",
+        "tagline": "Nastro telato universale per fascettatura e fissaggio rapidi.",
+        "category_slug": "textilni-pasky",
+        "category_title": "Nastri adesivi telati",
+        "benefits": [
+          {
+            "title": "Resistenza alla trazione 110 N/25 mm",
+            "text": "Rinforzo tessile (220 µm): resistenza allo strappo in condizioni di uso impegnative."
+          },
+          {
+            "title": "Adesivo in gomma",
+            "text": "Elevata adesione immediata e tenuta sicura anche sul cartone riciclato."
+          },
+          {
+            "title": "Adesione su superfici ruvide",
+            "text": "Adesione 5,5 N/25 mm: aderisce a metallo, legno, cemento e plastica (−10 až +65 °C)."
+          }
+        ],
+        "uses": [
+          "Riparazioni rapide e giunzioni provvisorie",
+          "Fascettatura e fissaggio di oggetti",
+          "Rinforzo di colli e imballaggi",
+          "Manutenzione, montaggio e lavori artigianali"
+        ],
+        "params_values": {
+          "carrier": "Rinforzo tessile + laminato PE",
+          "thickness": "220 µm",
+          "adhesive": "Gomma",
+          "adhesion": "5,5 N/25 mm",
+          "temperature": "−10 a +65 °C",
+          "strength": "110 N/25 mm"
+        },
+        "spec_pills": [
+          "Rinforzo tessile + laminato PE",
+          "Gomma",
+          "−10 a +65 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Richiedi un preventivo",
+          "tailor_link": "Richiedi una consulenza",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Diverse versioni di adesivo e supporto",
+            "Consulenza sui parametri prima dell'ordine"
+          ],
+          "bottom": "Richiedi nastro telato",
+          "back_category": "Torna a Nastri adesivi telati"
+        }
+      },
+      "malirska-paska-c580": {
+        "name": "Nastro per mascheratura C580",
+        "tagline": "Nastro per mascheratura in carta crespata per bordi netti nella pittura quotidiana.",
+        "category_slug": "malirske-pasky",
+        "category_title": "Nastri per mascheratura",
+        "benefits": [
+          {
+            "title": "Bordi netti senza sbavature",
+            "text": "Supporto in carta crespata (130 µm): il colore non penetra sotto il nastro durante la pittura."
+          },
+          {
+            "title": "Adesivo in gomma",
+            "text": "Elevata adesione immediata e tenuta sicura anche sul cartone riciclato."
+          },
+          {
+            "title": "Rimozione pulita",
+            "text": "Non lascia adesivo né segni al termine del lavoro (do +80 °C)."
+          }
+        ],
+        "uses": [
+          "Pittura e verniciatura di interni",
+          "Mascheratura di bordi e passaggi",
+          "Verniciature industriali e carrozzerie",
+          "Lavori fai da te e artigianali"
+        ],
+        "params_values": {
+          "carrier": "Carta crespa",
+          "thickness": "130 µm",
+          "adhesive": "Gomma",
+          "adhesion": "2,8 N/25 mm",
+          "temperature": "fino a +80 °C",
+          "strength": "28 N/25 mm"
+        },
+        "spec_pills": [
+          "Carta crespa",
+          "Gomma",
+          "fino a +80 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Richiedi un preventivo",
+          "tailor_link": "Richiedi una consulenza",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Diverse versioni di adesivo e supporto",
+            "Consulenza sui parametri prima dell'ordine"
+          ],
+          "bottom": "Richiedi nastro per mascheratura",
+          "back_category": "Torna a Nastri per mascheratura"
+        }
+      },
+      "malirska-paska-cs60-80": {
+        "name": "Nastro per mascheratura CS60-80",
+        "tagline": "Nastro per mascheratura resistente al calore per verniciatura e mascherature impegnative.",
+        "category_slug": "malirske-pasky",
+        "category_title": "Nastri per mascheratura",
+        "benefits": [
+          {
+            "title": "Bordi netti senza sbavature",
+            "text": "Supporto in carta crespata (150 µm): il colore non penetra sotto il nastro durante la pittura."
+          },
+          {
+            "title": "Adesivo in gomma",
+            "text": "Elevata adesione immediata e tenuta sicura anche sul cartone riciclato."
+          },
+          {
+            "title": "Resistenza alla temperatura fino a +100 °C",
+            "text": "Adatta alla verniciatura e a mascherature impegnative nelle carrozzerie."
+          }
+        ],
+        "uses": [
+          "Pittura e verniciatura di interni",
+          "Mascheratura di bordi e passaggi",
+          "Verniciatura a polvere e processi ad alta temperatura",
+          "Lavori fai da te e artigianali"
+        ],
+        "params_values": {
+          "carrier": "Carta crespa",
+          "thickness": "150 µm",
+          "adhesive": "Gomma (resistente al calore)",
+          "adhesion": "3,0 N/25 mm",
+          "temperature": "fino a +100 °C",
+          "strength": "32 N/25 mm"
+        },
+        "spec_pills": [
+          "Carta crespa",
+          "Gomma (resistente al calore)",
+          "fino a +100 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Richiedi un preventivo",
+          "tailor_link": "Richiedi una consulenza",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Diverse versioni di adesivo e supporto",
+            "Consulenza sui parametri prima dell'ordine"
+          ],
+          "bottom": "Richiedi nastro per mascheratura",
+          "back_category": "Torna a Nastri per mascheratura"
+        }
+      }
+    },
+    "page": {
+      "breadcrumb_home": "Home",
+      "breadcrumb_sortiment": "Assortimento",
+      "breadcrumb_aria": "Navigazione a breadcrumb",
+      "section_key_properties": "Caratteristiche principali",
+      "section_products": "Prodotti di questa categoria",
+      "section_typical_use": "Applicazioni tipiche",
+      "section_technical_params": "Parametri tecnici",
+      "section_benefits": "Vantaggi principali e applicazioni",
+      "section_uses_label": "Applicazioni tipiche",
+      "view_detail": "Visualizza dettagli",
+      "back_to_sortiment": "Torna all'assortimento",
+      "back_to_category": "Torna alla categoria",
+      "back_to_category_short": "Torna a {category}",
+      "params_note": "I valori indicati sono orientativi e possono variare in base alla larghezza, alla lunghezza della bobina e alla versione specifica. Saremo lieti di preparare una specifica precisa su misura per voi.",
+      "tailor_title": "Su misura per la vostra attività",
+      "tailor_bullet_width": "Larghezza e lunghezza della bobina personalizzabili",
+      "tailor_bullet_print": "Colore di fondo e numero di colori di stampa",
+      "tailor_bullet_sample": "Campione con il vostro logo prima dell'ordine",
+      "tailor_bullet_consult": "Consulenza sui parametri prima dell'ordine",
+      "tailor_bullet_params": "Diverse versioni di adesivo e supporto",
+      "no_print_note": "Il nastro è disponibile anche senza stampa.",
+      "no_print_body": "Se non vi serve un logo sul nastro, possiamo fornire lo stesso materiale neutro, ideale per imballaggio immediato o scorte di magazzino.",
+      "no_print_link": "Chiedete la disponibilità",
+      "product_card_detail": "Visualizza dettagli"
+    },
+    "category_ctas": {
+      "udrzitelne-pasky": {
+        "hero": "Calcola preventivo nastro ecologico",
+        "bottom": "Richiedi nastro sostenibile stampato"
+      },
+      "bopp-pasky": {
+        "hero": "Preventivo nastro da imballaggio",
+        "bottom": "Richiedi nastro BOPP con logo"
+      },
+      "bopet-pasky": {
+        "hero": "Preventivo nastro tecnico",
+        "bottom": "Richiedi nastro BOPET su misura"
+      },
+      "papirove-pasky": {
+        "hero": "Preventivo nastro di carta",
+        "bottom": "Richiedi nastro ecologico stampato"
+      },
+      "odstranitelne-pasky": {
+        "hero": "Richiedi un preventivo",
+        "bottom": "Richiedi nastro rimovibile"
+      },
+      "vyztuzene-pasky": {
+        "hero": "Richiedi un preventivo",
+        "bottom": "Richiedi nastro rinforzato"
+      },
+      "mopp-pasky": {
+        "hero": "Richiedi un preventivo",
+        "bottom": "Richiedi nastro MOPP"
+      },
+      "textilni-pasky": {
+        "hero": "Richiedi un preventivo",
+        "bottom": "Richiedi nastro telato"
+      },
+      "malirske-pasky": {
+        "hero": "Richiedi un preventivo",
+        "bottom": "Richiedi nastro per mascheratura"
+      }
+    }
+  },
+  "js": {
+    "gallery": {
+      "remove_filter": "Rimuovi filtro",
+      "count_all": "{count} esempi",
+      "count_filtered": "Visualizzati {visible} di {total}",
+      "color_one": "1 colour",
+      "color_few": "{n} colours",
+      "color_many": "{n} colours"
+    },
+    "sortiment": {
+      "remove_filter": "Rimuovi filtro",
+      "product_one": "1 prodotto",
+      "product_few": "{n} prodotti",
+      "product_many": "{n} prodotti",
+      "detail": "Dettagli",
+      "inquire": "Richiedi"
+    },
+    "form": {
+      "step_label": "Passo {current} di {total}"
+    }
+  }
+}

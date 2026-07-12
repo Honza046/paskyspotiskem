@@ -54,7 +54,7 @@
 
 <!-- SITE-TOP -->
 <div class="site-top sticky top-0 z-50">
-<div class="info-banner" role="region" aria-label="Důležité informace">
+<div class="info-banner" role="region" aria-label="Důležité informace" data-i18n-attr="aria-label:info_banner.aria_label">
         <div class="info-banner__viewport" aria-live="polite">
         <p class="info-banner__message">Srpen: výroba a logistika mají 3týdenní výluku. Objednávky s dodáním před výlukou zašlete nejpozději do <strong>10. 7. 2026</strong>.</p>
     </div>
@@ -63,7 +63,7 @@
     <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4">
         <a href="/" class="flex shrink-0 items-center gap-1.5">
             <img src="/images/logo.svg" width="160" height="74" alt="Pásky s potiskem" class="h-12 w-auto lg:h-14">
-            <span class="hidden text-sm text-slate-500 sm:block">Pásky s potiskem</span>
+            <span class="hidden text-sm text-slate-500 sm:block" data-i18n="meta.site_name">Pásky s potiskem</span>
         </a>
         <div class="flex items-center gap-2 lg:gap-4">
             <nav id="main-nav" class="hidden lg:block" aria-label="Hlavní navigace">
@@ -98,7 +98,7 @@
     <div class="mx-auto max-w-7xl px-4 py-16 text-center sm:py-20">
         <p class="mb-3 text-sm font-bold uppercase tracking-widest text-orange-600" data-i18n="sortiment.ui.label">Sortiment</p>
         <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl" data-i18n="sortiment.ui.title">Objevte naše lepicí pásky</h1>
-        <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg">Vyberte typ produktu podle materiálu a určení. U každé kategorie najdete detailní přehled dostupných variant.</p>
+        <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600 sm:text-lg" data-i18n="sortiment.ui.subtitle">Vyberte typ produktu podle materiálu a určení. U každé kategorie najdete detailní přehled dostupných variant.</p>
     </div>
 </section>
 
@@ -107,7 +107,7 @@
     <div id="sortiment-filter" class="mb-0 flex flex-wrap items-center gap-4 border-b border-slate-100 py-4">
         <div class="flex items-center gap-2 font-medium text-slate-800">
             <svg class="h-5 w-5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 4h18M6 8h12M9 12h6M11 16h2"/></svg>
-            Filtr
+            <span data-i18n-filter-label data-i18n="sortiment.ui.filter">Filtr</span>
         </div>
 
         <!-- Vlastnosti -->
@@ -166,7 +166,7 @@
     </div>
     <div id="sortiment-results-grid" data-inquiry="/index.html#gf_1" class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"></div>
     <div id="sortiment-empty" class="mt-8 hidden rounded-2xl border border-dashed border-slate-200 bg-white p-12 text-center">
-        <p class="text-slate-500">Žádná páska neodpovídá vybrané kombinaci filtrů. Zkuste ubrat některý z filtrů.</p>
+        <p class="text-slate-500" data-i18n="sortiment.ui.empty">Žádná páska neodpovídá vybrané kombinaci filtrů. Zkuste ubrat některý z filtrů.</p>
     </div>
 </section>
 
@@ -720,14 +720,15 @@
   }
 ]
 </script>
-<script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/i18n.js?v=5"></script>
+<script src="/assets/js/i18n-pages.js?v=5"></script>
 <script src="/assets/js/sortiment-filter.js"></script>
 <script src="/assets/js/nav-active.js"></script>
 <link rel="stylesheet" href="/assets/css/footer-credit.css?v=3">
 <script src="/assets/js/footer-credit.js?v=3"></script>
 <script src="/assets/js/mobile-nav.js"></script>
 <script src="/assets/js/info-banner.js"></script>
-<script src="/assets/js/header-scroll.js?v=7"></script>
+<script src="/assets/js/header-scroll.js?v=8"></script>
 <script src="/assets/js/theme-toggle.js"></script>
 </body>
 </html>

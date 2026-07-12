@@ -758,3 +758,7 @@ for cat in CATS:
         n+=1
 print("generated %d product detail pages"%n)
 print("product JSON ready (%d items)"%len(PRODUCT_JSON_ITEMS))
+
+import shutil
+shutil.copy2("sortiment.html", "sortiment/index.html")
+print("copied sortiment.html → sortiment/index.html")

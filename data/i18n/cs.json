@@ -11,8 +11,10 @@
     "langNames": {
       "cs": "Čeština",
       "en": "English",
-      "de": "Deutsch"
-    }
+      "de": "Deutsch",
+      "it": "Italiano"
+    },
+    "htmlLang": "cs"
   },
   "nav": {
     "tagline": "ALFA IN - výroba, poradenství, prodej a servis",
@@ -26,9 +28,14 @@
     "contacts": "Kontakty",
     "facebook": "Facebook",
     "instagram": "Instagram",
-    "youtube": "YouTube",
-    "theme_toggle": "Přepnout tmavý režim",
-    "theme_light": "Světlý režim"
+    "youtube": "YouTube"
+  },
+  "info_banner": {
+    "aria_label": "Důležité informace",
+    "messages": [
+      "Srpen: výroba a logistika mají 3týdenní výluku. Objednávky s dodáním před výlukou zašlete nejpozději do <strong>10. 7. 2026</strong>.",
+      "U objednávek z července a srpna platí dodací lhůta 3–4 týdny s dodáním v <strong>září 2026</strong>."
+    ]
   },
   "footer": {
     "address_heading": "Najdete nás na adrese",
@@ -51,27 +58,21 @@
       "badge": "ISO 9001 · Přímo od výrobce",
       "slides": [
         {
-          "title": "LEPICÍ PÁSKY SE SPODNÍM TISKEM",
-          "subtitle": "Vysoce spolehlivé BOPP pásky s tiskem chráněným pod folií i ekologické varianty pro udržitelné balení.",
-          "cta_primary": "Prohlédnout nabídku",
-          "cta_secondary": "Nezávazná kalkulace"
+          "title": "BALICÍ LEPICÍ PÁSKY",
+          "subtitle": "Potištěné nebo neutrální balicí pásky samolepicí s ISO 9001."
         },
         {
-          "title": "PROČ SI VYBRAT NÁS?",
-          "subtitle": "Více než 30 let zkušeností a spolupráce s předními e-shopy i průmyslovými podniky. Spolehlivost, rychlé dodání a individuální přístup ke každé zakázce.",
-          "cta_primary": "Prohlédnout nabídku",
-          "cta_secondary": "Nezávazná kalkulace"
+          "title": "PROČ POUŽÍVAT LEPICÍ PÁSKY S POTISKEM?",
+          "subtitle": "Lepicí pásky balí, fixují, propagují a chrání Vaše zboží."
         },
         {
-          "title": "OTESTUJTE NAŠI KVALITU VE SVÉM PROVOZU",
-          "subtitle": "Nechte si zaslat bezplatný vzorek nebo nezávaznou kalkulaci na míru. Přesvědčte se o odolnosti a pevnosti lepidla ještě před objednávkou.",
-          "cta_primary": "Vyžádat vzorky",
-          "cta_secondary": "Nezávazná kalkulace"
+          "title": "PROČ LEPICÍ PÁSKY S POTISKEM OD ALFA IN?",
+          "subtitle": "Nabízíme FLEXOTISK až 8 barev a ROTOTISK až 10 barev s možností 3D / kvalitní trvanlivý spodní tisk za nejnižší ceny přímo z výroby."
         }
       ],
       "cta_offer": "Prohlédnout nabídku",
       "cta_quote": "Nezávazná kalkulace",
-      "cta_samples": "Vyžádat vzorky"
+      "cta_sample": "Vyžádat vzorky"
     },
     "about": {
       "label": "O nás",
@@ -79,12 +80,14 @@
       "lead": "Již více než 30 let pomáháme firmám bezpečně balit jejich zásilky a budovat silnou značku přímo na balicích materiálech. Jsme specialisté na zakázkový potisk lepicích pásek.",
       "body1": "Naše moderní výrobní zázemí nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (Hot Melt, Akryl) a rychlém doručení po celé České republice i Evropské unii.",
       "body2": "Díky certifikovaným procesům ISO 9001 a používání ekologicky udržitelných materiálů jsme stabilním partnerem pro více než 300 aktivních odběratelů.",
-      "image_alt": "Výroba lepicích pásek ALFA IN"
+      "image_alt": "Výroba lepicích pásek ALFA IN",
+      "team_title": "Tým ALFA IN",
+      "team_subtitle": "Tradice, zkušenosti a osobní přístup ke každé zakázce"
     },
     "references": {
       "label": "Reference",
       "title": "Spokojení zákazníci napříč obory",
-      "subtitle": "Firmy, které na našich páskách s potiskem spoléhají každý den, od e-commerce po výrobu a zdravotnictví.",
+      "subtitle": "Firmy, které na našich páskách s potiskem spoléhají každý den od e-commerce po výrobu a zdravotnictví.",
       "stat_customers": "aktivních odběratelů",
       "stat_experience": "zkušeností s potiskem",
       "stat_iso": "certifikovaná výroba",
@@ -119,7 +122,8 @@
       "security_text": "Tato bezpečnostní lepicí páska se „tváří“ jako neutrální, nicméně při odlepení na krabici zanechává upozornění, které prakticky nelze odstranit. Páska je vhodná pro všechny typy kartonů i stretch folií, lze dodat v různých barvách či i s potiskem.",
       "glue_badge": "Extrémní lepivost",
       "glue_title": "EXTRA GLUE+ (ACRYL) a TACK+ (HOT MELT)",
-      "glue_text": "Pásky se zvýšenou vrstvou lepidla (33 % resp. 20 %) i s možností pevnější folie oproti standardu, určené i pro velmi obtížné aplikace jako např. velmi těžké balíky, nekvalitní kartony nebo prašné prostředí. Na kartonu drží velmi pevně."
+      "glue_text": "Pásky se zvýšenou vrstvou lepidla (33 % resp. 20 %) i s možností pevnější folie oproti standardu, určené i pro velmi obtížné aplikace jako např. velmi těžké balíky, nekvalitní kartony nebo prašné prostředí. Na kartonu drží velmi pevně.",
+      "glue_extra_tag": "+33 % lepidla"
     },
     "form": {
       "label": "Poptávka",
@@ -133,8 +137,15 @@
         "Kontaktní údaje"
       ],
       "step1_title": "Specifikace produktu",
-      "step1_hint": "Vyberte typ pásky, podkladovou barvu a počet barev k tisku.",
+      "step1_hint": "Vyberte materiál a případně konkrétní pásku, typ lepidla, podkladovou barvu a počet barev k tisku.",
+      "material_label": "Typ materiálu",
+      "material_placeholder": "Vyberte materiál…",
+      "product_label": "Konkrétní páska",
+      "product_placeholder": "Vyberte pásku (volitelné)…",
+      "catalog_error": "Katalog se nepodařilo načíst",
       "tape_type": "Typ lepidla",
+      "acryl_no_silent_title": "Bez nehlučného činidla",
+      "acryl_no_silent_text": "Standardně je u ACRYL pásek tiché odvíjení. Zaškrtněte, pokud preferujete variantu bez této úpravy.",
       "base_color": "Podkladová barva",
       "print_colors": "Počet barev k tisku",
       "hot_melt_hint": "Syntetický kaučuk",
@@ -155,8 +166,11 @@
       "length_label": "Délka pásky v metrech",
       "quantity_label": "Poptávané množství v kusech",
       "quantity_hint": "Zadejte číslo od 360 do 9999.",
+      "quantity_min": "Minimální množství je 360 ks.",
       "quantity_tip": "Od 360 ks získáváte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
       "quantity_success": "🔥 Skvělá volba! Máte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
+      "sample_note_btn": "Mám zájem o vzorek",
+      "sample_note_text": "Mám zájem o testovací vzorek.",
       "order_period_label": "Předpokládaná perioda objednávky",
       "order_periods": {
         "monthly": "Každý měsíc",
@@ -299,6 +313,68 @@
       "title": "Máte vlastní logo?",
       "text": "Připravíme vám nezávaznou kalkulaci a vzorek potisku. Stačí nám poslat logo a požadované parametry pásky.",
       "button": "Nezávazně poptat"
+    },
+    "items": {
+      "alza": {
+        "title": "Pásky s logem ALZA",
+        "description": "Vícejazyčný brand potisk pro e-commerce balení s opakovaným logem a sloganem na standardní BOPP pásku.",
+        "industry_label": "E-commerce"
+      },
+      "flexotisk-8": {
+        "title": "Flexotisk – 8 barev",
+        "description": "Plnobarevný flexotisk s vysokým rozlišením — vhodný pro atraktivní brand na balících páskách i potravinářských aplikacích.",
+        "industry_label": "Potraviny"
+      },
+      "jednobarevny-firemni": {
+        "title": "Jednobarevný firemní potisk",
+        "description": "Klasický jednobarevný potisk loga na průhledné nebo bílé BOPP pásky — ideální pro firemní balení a skladovou logistiku.",
+        "industry_label": "Výroba"
+      },
+      "rototisk-foto": {
+        "title": "Rototisk ve fotokvalitě",
+        "description": "Rotogravurní tisk s fotografickou kvalitou pro náročné vizuály a dlouhodobou odolnost potisku.",
+        "industry_label": "Potraviny"
+      },
+      "pecetni": {
+        "title": "Pečetní páska s potiskem",
+        "description": "Pečetní páska s vlastním potiskem pro zabezpečení zásilek a dokumentů proti neoprávněnému otevření.",
+        "industry_label": "Bezpečnost"
+      },
+      "logisticky-kontakty": {
+        "title": "Logistický potisk – kontakty",
+        "description": "Informační potisk s kontakty, QR kódem nebo instrukcemi pro příjemce zásilky.",
+        "industry_label": "Logistika"
+      },
+      "neutralni-bopp": {
+        "title": "Neutrální BOPP 25 mm",
+        "description": "Úzká BOPP páska s jednoduchým potiskem pro ruční balení a lehčí zásilky.",
+        "industry_label": "Výroba"
+      },
+      "tamper-void": {
+        "title": "Tamper Evident VOID",
+        "description": "Bezpečnostní páska s VOID efektem — při odlepení zanechá viditelné upozornění, které nelze bez stopy odstranit.",
+        "industry_label": "Bezpečnost"
+      },
+      "extra-glue": {
+        "title": "EXTRA GLUE+ bezpečnostní série",
+        "description": "Páska se zvýšenou vrstvou lepidla (+33 %) pro obtížné povrchy, těžké balíky a prašné skladové prostředí.",
+        "industry_label": "Bezpečnost"
+      },
+      "prumyslova-serie": {
+        "title": "Průmyslová série pro e-shop",
+        "description": "Hromadná výroba potištěných pásek pro e-shopy a fulfillment — konzistentní kvalita v celé sérii.",
+        "industry_label": "E-commerce"
+      },
+      "vystrizny-krehke": {
+        "title": "Výstražný potisk – křehké",
+        "description": "Výstražné pásky s potiskem „Křehké“, „Neklopit“ nebo vlastním symbolem pro ochranu zboží při přepravě.",
+        "industry_label": "Logistika"
+      },
+      "bezpecnostni-sklad": {
+        "title": "Bezpečnostní páska sklad",
+        "description": "Kombinace logistického a bezpečnostního potisku pro sklady a distribuční centra.",
+        "industry_label": "Bezpečnost"
+      }
     }
   },
   "sortiment": {
@@ -334,20 +410,20 @@
       }
     },
     "categories": {
-      "papirove-pasky": {
-        "title": "Papírové pásky",
-        "description": "Ekologické řešení pro bezpečné balení s vysokou lepivostí. Ideální pro plně recyklovatelné kartonové obaly a čistý korporátní design.",
-        "intro": "Papírové lepicí pásky spojují spolehlivé lepení s maximální ekologickou šetrností. Díky papírovému nosiči jsou plně recyklovatelné společně s kartonem a představují elegantní, čistě vypadající řešení pro firmy, které dbají na udržitelnost i vizuální dojem zásilek.",
+      "udrzitelne-pasky": {
+        "title": "Udržitelné pásky",
+        "description": "Inovativní obalová řešení vyrobená z recyklovaných materiálů s ohledem na minimální ekologickou stopu a podporu cirkulární ekonomiky.",
+        "intro": "Udržitelná řada pásek je vyrobena z recyklovaných materiálů a navržena tak, aby minimalizovala dopad na životní prostředí. Pomáhá firmám plnit ESG cíle a budovat obraz zodpovědné značky bez kompromisů ve výkonu.",
         "properties": {
-          "Plná recyklovatelnost": "Páska i karton putují do jednoho kontejneru – bez nutnosti oddělovat materiály.",
-          "Vysoká lepivost": "Spolehlivé přilnutí i na recyklovaný karton a členité povrchy.",
-          "Čistý design": "Matný papírový povrch působí prémiově a lze jej snadno potisknout logem."
+          "Recyklovaný obsah": "Materiály s vysokým podílem recyklátu.",
+          "Nižší uhlíková stopa": "Šetrnější výroba a cirkulární přístup.",
+          "Bez kompromisů": "Ekologie při zachování spolehlivého lepení."
         },
         "applications": [
-          "E-shopy s důrazem na udržitelné balení",
-          "Uzavírání kartonových krabic a obalů",
-          "Firemní branding přímo na zásilce",
-          "Ruční i poloautomatické balení"
+          "Firmy s ESG a udržitelnými cíli",
+          "Zelené balení pro e-shopy",
+          "Cirkulární obalové procesy",
+          "Budování zodpovědné značky"
         ]
       },
       "bopp-pasky": {
@@ -382,20 +458,36 @@
           "Elektrotechnika a specializovaná výroba"
         ]
       },
-      "textilni-pasky": {
-        "title": "Textilní lepicí pásky",
-        "description": "Vysoce pevné a univerzální pásky zpevněné textilní mřížkou. Perfektně drží na drsném povrchu, snadno se trhají rukou a jsou ideální pro rychlé opravy i svazování.",
-        "intro": "Textilní (duct) pásky jsou nepostradatelným univerzálem. Textilní výztuž jim dodává vysokou pevnost a zároveň umožňuje snadné odtržení rukou bez nůžek. Skvěle drží i na hrubých a nerovných površích.",
+      "papirove-pasky": {
+        "title": "Papírové pásky",
+        "description": "Ekologické řešení pro bezpečné balení s vysokou lepivostí. Ideální pro plně recyklovatelné kartonové obaly a čistý korporátní design.",
+        "intro": "Papírové lepicí pásky spojují spolehlivé lepení s maximální ekologickou šetrností. Díky papírovému nosiči jsou plně recyklovatelné společně s kartonem a představují elegantní, čistě vypadající řešení pro firmy, které dbají na udržitelnost i vizuální dojem zásilek.",
         "properties": {
-          "Textilní výztuž": "Vysoká pevnost a odolnost proti protržení.",
-          "Trhání rukou": "Rychlá práce bez nutnosti nářadí.",
-          "Přilnavost na drsný povrch": "Drží na kovu, dřevě, betonu i plastu."
+          "Plná recyklovatelnost": "Páska i karton putují do jednoho kontejneru – bez nutnosti oddělovat materiály.",
+          "Vysoká lepivost": "Spolehlivé přilnutí i na recyklovaný karton a členité povrchy.",
+          "Čistý design": "Matný papírový povrch působí prémiově a lze jej snadno potisknout logem."
         },
         "applications": [
-          "Rychlé opravy a provizorní spoje",
-          "Svazování a fixace předmětů",
-          "Zpevnění balíků a obalů",
-          "Údržba, montáže a řemeslo"
+          "E-shopy s důrazem na udržitelné balení",
+          "Uzavírání kartonových krabic a obalů",
+          "Firemní branding přímo na zásilce",
+          "Ruční i poloautomatické balení"
+        ]
+      },
+      "odstranitelne-pasky": {
+        "title": "Odstranitelné pásky",
+        "description": "Pásky se speciálním složením lepidla, které nezanechává žádné stopy po odlepení. Ideální pro dočasné značení, ochranu citlivých povrchů nebo logistické procesy.",
+        "intro": "Odstranitelné pásky používají speciální lepidlo, které pevně drží, ale po odlepení nezanechává žádné zbytky ani poškození povrchu. Jsou ideální pro dočasné aplikace a ochranu citlivých materiálů.",
+        "properties": {
+          "Beze stop": "Po odlepení nezůstává lepidlo ani reziduum.",
+          "Šetrné k povrchu": "Nepoškodí lak, sklo ani citlivé materiály.",
+          "Spolehlivá drživost": "Drží po celou dobu potřebné aplikace."
+        },
+        "applications": [
+          "Dočasné značení a etikety",
+          "Ochrana citlivých povrchů",
+          "Logistické a výrobní procesy",
+          "Fixace, která se musí opět odstranit"
         ]
       },
       "vyztuzene-pasky": {
@@ -430,20 +522,20 @@
           "Svazování bez skelných vláken"
         ]
       },
-      "odstranitelne-pasky": {
-        "title": "Odstranitelné pásky",
-        "description": "Pásky se speciálním složením lepidla, které nezanechává žádné stopy po odlepení. Ideální pro dočasné značení, ochranu citlivých povrchů nebo logistické procesy.",
-        "intro": "Odstranitelné pásky používají speciální lepidlo, které pevně drží, ale po odlepení nezanechává žádné zbytky ani poškození povrchu. Jsou ideální pro dočasné aplikace a ochranu citlivých materiálů.",
+      "textilni-pasky": {
+        "title": "Textilní lepicí pásky",
+        "description": "Vysoce pevné a univerzální pásky zpevněné textilní mřížkou. Perfektně drží na drsném povrchu, snadno se trhají rukou a jsou ideální pro rychlé opravy i svazování.",
+        "intro": "Textilní (duct) pásky jsou nepostradatelným univerzálem. Textilní výztuž jim dodává vysokou pevnost a zároveň umožňuje snadné odtržení rukou bez nůžek. Skvěle drží i na hrubých a nerovných površích.",
         "properties": {
-          "Beze stop": "Po odlepení nezůstává lepidlo ani reziduum.",
-          "Šetrné k povrchu": "Nepoškodí lak, sklo ani citlivé materiály.",
-          "Spolehlivá drživost": "Drží po celou dobu potřebné aplikace."
+          "Textilní výztuž": "Vysoká pevnost a odolnost proti protržení.",
+          "Trhání rukou": "Rychlá práce bez nutnosti nářadí.",
+          "Přilnavost na drsný povrch": "Drží na kovu, dřevě, betonu i plastu."
         },
         "applications": [
-          "Dočasné značení a etikety",
-          "Ochrana citlivých povrchů",
-          "Logistické a výrobní procesy",
-          "Fixace, která se musí opět odstranit"
+          "Rychlé opravy a provizorní spoje",
+          "Svazování a fixace předmětů",
+          "Zpevnění balíků a obalů",
+          "Údržba, montáže a řemeslo"
         ]
       },
       "malirske-pasky": {
@@ -461,22 +553,1870 @@
           "Lakovny a autolakovny",
           "Kutilské a řemeslné práce"
         ]
-      },
-      "udrzitelne-pasky": {
-        "title": "Udržitelné pásky",
-        "description": "Inovativní obalová řešení vyrobená z recyklovaných materiálů s ohledem na minimální ekologickou stopu a podporu cirkulární ekonomiky.",
-        "intro": "Udržitelná řada pásek je vyrobena z recyklovaných materiálů a navržena tak, aby minimalizovala dopad na životní prostředí. Pomáhá firmám plnit ESG cíle a budovat obraz zodpovědné značky bez kompromisů ve výkonu.",
-        "properties": {
-          "Recyklovaný obsah": "Materiály s vysokým podílem recyklátu.",
-          "Nižší uhlíková stopa": "Šetrnější výroba a cirkulární přístup.",
-          "Bez kompromisů": "Ekologie při zachování spolehlivého lepení."
-        },
-        "applications": [
+      }
+    },
+    "products": {
+      "udrzitelna-paska-airtape": {
+        "name": "Udržitelná páska Airtape",
+        "tagline": "Lehká udržitelná páska pro každodenní ekologické balení.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Udržitelné pásky",
+        "benefits": [
+          {
+            "title": "Recyklovaný polypropylen",
+            "text": "Recyklovaná PP fólie s nižší ekologickou stopou při zachování spolehlivého lepení."
+          },
+          {
+            "title": "Akrylové lepidlo",
+            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+          },
+          {
+            "title": "Teplotní rozsah −5 až +60 °C",
+            "text": "Pevnost v tahu 42 N/25 mm pro každodenní provoz skladu i expedice."
+          }
+        ],
+        "uses": [
           "Firmy s ESG a udržitelnými cíli",
           "Zelené balení pro e-shopy",
           "Cirkulární obalové procesy",
           "Budování zodpovědné značky"
-        ]
+        ],
+        "params_values": {
+          "carrier": "Recyklovaná PP fólie",
+          "thickness": "40 µm",
+          "adhesive": "Akrylové",
+          "adhesion": "2,8 N/25 mm",
+          "temperature": "−5 až +60 °C",
+          "strength": "42 N/25 mm"
+        },
+        "spec_pills": [
+          "Recyklovaná PP fólie",
+          "Akrylové",
+          "−5 až +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na Udržitelné pásky"
+        }
+      },
+      "udrzitelna-paska-eco-50": {
+        "name": "Udržitelná páska ECO+ 50",
+        "tagline": "Tenká recyklovaná páska pro standardní udržitelné balení.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Udržitelné pásky",
+        "benefits": [
+          {
+            "title": "Recyklovaný polypropylen",
+            "text": "Recyklovaná PP fólie s nižší ekologickou stopou při zachování spolehlivého lepení."
+          },
+          {
+            "title": "Akrylové lepidlo",
+            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+          },
+          {
+            "title": "Teplotní rozsah −5 až +60 °C",
+            "text": "Pevnost v tahu 45 N/25 mm pro každodenní provoz skladu i expedice."
+          }
+        ],
+        "uses": [
+          "Firmy s ESG a udržitelnými cíli",
+          "Cirkulární obalové procesy",
+          "Budování zodpovědné značky",
+          "Automatické balicí linky s ESG cíli"
+        ],
+        "params_values": {
+          "carrier": "Recyklovaná PP fólie",
+          "thickness": "50 µm",
+          "adhesive": "Akrylové",
+          "adhesion": "3,0 N/25 mm",
+          "temperature": "−5 až +60 °C",
+          "strength": "45 N/25 mm"
+        },
+        "spec_pills": [
+          "Recyklovaná PP fólie",
+          "Akrylové",
+          "−5 až +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na Udržitelné pásky"
+        }
+      },
+      "udrzitelna-paska-eco-80": {
+        "name": "Udržitelná páska ECO+ 80",
+        "tagline": "Silnější recyklovaná páska pro náročnější udržitelné balení.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Udržitelné pásky",
+        "benefits": [
+          {
+            "title": "Recyklovaný polypropylen",
+            "text": "Recyklovaná PP fólie s nižší ekologickou stopou při zachování spolehlivého lepení."
+          },
+          {
+            "title": "Akrylové lepidlo",
+            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+          },
+          {
+            "title": "Teplotní rozsah −5 až +60 °C",
+            "text": "Pevnost v tahu 52 N/25 mm pro každodenní provoz skladu i expedice."
+          }
+        ],
+        "uses": [
+          "Firmy s ESG a udržitelnými cíli",
+          "Cirkulární obalové procesy",
+          "Budování zodpovědné značky",
+          "Automatické balicí linky s ESG cíli"
+        ],
+        "params_values": {
+          "carrier": "Recyklovaná PP fólie",
+          "thickness": "80 µm",
+          "adhesive": "Akrylové",
+          "adhesion": "3,4 N/25 mm",
+          "temperature": "−5 až +60 °C",
+          "strength": "52 N/25 mm"
+        },
+        "spec_pills": [
+          "Recyklovaná PP fólie",
+          "Akrylové",
+          "−5 až +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na Udržitelné pásky"
+        }
+      },
+      "udrzitelna-paska-loopp": {
+        "name": "Udržitelná páska LOOPP",
+        "tagline": "Páska z recyklovaného polypropylenu pro cirkulární ekonomiku.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Udržitelné pásky",
+        "benefits": [
+          {
+            "title": "Recyklovaný polypropylen",
+            "text": "Recyklovaná PP fólie s nižší ekologickou stopou při zachování spolehlivého lepení."
+          },
+          {
+            "title": "Akrylové lepidlo",
+            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+          },
+          {
+            "title": "Teplotní rozsah −5 až +60 °C",
+            "text": "Pevnost v tahu 46 N/25 mm pro každodenní provoz skladu i expedice."
+          }
+        ],
+        "uses": [
+          "Firmy s ESG a udržitelnými cíli",
+          "Cirkulární obalové procesy",
+          "Budování zodpovědné značky",
+          "Automatické balicí linky s ESG cíli"
+        ],
+        "params_values": {
+          "carrier": "Recyklovaná PP fólie",
+          "thickness": "45 µm",
+          "adhesive": "Akrylové",
+          "adhesion": "3,0 N/25 mm",
+          "temperature": "−5 až +60 °C",
+          "strength": "46 N/25 mm"
+        },
+        "spec_pills": [
+          "Recyklovaná PP fólie",
+          "Akrylové",
+          "−5 až +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na Udržitelné pásky"
+        }
+      },
+      "udrzitelna-paska-nopp": {
+        "name": "Udržitelná páska NOPP",
+        "tagline": "Udržitelná páska bez plastu pro plně recyklovatelné balení.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Udržitelné pásky",
+        "benefits": [
+          {
+            "title": "Bezplastový papírový nosič",
+            "text": "Plně recyklovatelné balení – páska putuje spolu s kartonem bez oddělování."
+          },
+          {
+            "title": "Akrylové lepidlo",
+            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+          },
+          {
+            "title": "Teplotní rozsah −5 až +60 °C",
+            "text": "Pevnost v tahu 50 N/25 mm pro každodenní provoz skladu i expedice."
+          }
+        ],
+        "uses": [
+          "Firmy s ESG a udržitelnými cíli",
+          "Zelené balení pro e-shopy",
+          "Cirkulární obalové procesy",
+          "Budování zodpovědné značky"
+        ],
+        "params_values": {
+          "carrier": "Papír (FSC)",
+          "thickness": "110 µm",
+          "adhesive": "Akrylové (bez rozpouštědel)",
+          "adhesion": "4,0 N/25 mm",
+          "temperature": "−5 až +60 °C",
+          "strength": "50 N/25 mm"
+        },
+        "spec_pills": [
+          "Papír (FSC)",
+          "Akrylové (bez rozpouštědel)",
+          "−5 až +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na Udržitelné pásky"
+        }
+      },
+      "udrzitelna-paska-nopp-plus": {
+        "name": "Udržitelná páska NOPP+",
+        "tagline": "Vylepšená bezplastová páska s vyšší pevností a lepivostí.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Udržitelné pásky",
+        "benefits": [
+          {
+            "title": "Bezplastový papírový nosič",
+            "text": "Plně recyklovatelné balení – páska putuje spolu s kartonem bez oddělování."
+          },
+          {
+            "title": "Akrylové lepidlo",
+            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+          },
+          {
+            "title": "Teplotní rozsah −5 až +65 °C",
+            "text": "Pevnost v tahu 55 N/25 mm pro každodenní provoz skladu i expedice."
+          }
+        ],
+        "uses": [
+          "Firmy s ESG a udržitelnými cíli",
+          "Zelené balení pro e-shopy",
+          "Cirkulární obalové procesy",
+          "Budování zodpovědné značky"
+        ],
+        "params_values": {
+          "carrier": "Papír (FSC)",
+          "thickness": "120 µm",
+          "adhesive": "Akrylové",
+          "adhesion": "4,4 N/25 mm",
+          "temperature": "−5 až +65 °C",
+          "strength": "55 N/25 mm"
+        },
+        "spec_pills": [
+          "Papír (FSC)",
+          "Akrylové",
+          "−5 až +65 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na Udržitelné pásky"
+        }
+      },
+      "bopp-paska-acrylic": {
+        "name": "BOPP páska Acrylic",
+        "tagline": "Spolehlivá BOPP páska s akrylovým lepidlem a dlouhou životností.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP pásky",
+        "benefits": [
+          {
+            "title": "Pevnost v tahu 45 N/25 mm",
+            "text": "BOPP fólie o tloušťce 45 µm vydrží napětí při balení i při dlouhodobém skladování."
+          },
+          {
+            "title": "Akrylové lepidlo",
+            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+          },
+          {
+            "title": "Dlouhá životnost",
+            "text": "Odolnost proti UV a stárnutí v teplotním rozsahu −5 až +60 °C."
+          }
+        ],
+        "uses": [
+          "Standardní uzavírání kartonů",
+          "Automatické balicí stroje",
+          "Tiché ruční odvíjení ve skladech a expedici",
+          "Potisk firemním logem a informacemi"
+        ],
+        "params_values": {
+          "carrier": "BOPP fólie",
+          "thickness": "45 µm",
+          "adhesive": "Akrylové (vodní disperze)",
+          "adhesion": "2,8 N/25 mm",
+          "temperature": "−5 až +60 °C",
+          "strength": "45 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP fólie",
+          "Akrylové (vodní disperze)",
+          "−5 až +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na BOPP pásky"
+        }
+      },
+      "bopp-paska-evergreen": {
+        "name": "BOPP páska Evergreen",
+        "tagline": "Barevná BOPP páska pro značení a vizuální odlišení zásilek.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP pásky",
+        "benefits": [
+          {
+            "title": "Pevnost v tahu 46 N/25 mm",
+            "text": "BOPP fólie o tloušťce 45 µm vydrží napětí při balení i při dlouhodobém skladování."
+          },
+          {
+            "title": "Akrylové lepidlo",
+            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+          },
+          {
+            "title": "Barevné odlišení zásilek",
+            "text": "Vizuální značení balíků a skladová orientace v rozsahu −5 až +60 °C."
+          }
+        ],
+        "uses": [
+          "Standardní uzavírání kartonů",
+          "Automatické balicí stroje",
+          "Provoz v chladírenských a mrazicích skladech",
+          "Potisk firemním logem a informacemi"
+        ],
+        "params_values": {
+          "carrier": "BOPP fólie (barevná)",
+          "thickness": "45 µm",
+          "adhesive": "Akrylové",
+          "adhesion": "3,0 N/25 mm",
+          "temperature": "−5 až +60 °C",
+          "strength": "46 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP fólie (barevná)",
+          "Akrylové",
+          "−5 až +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na BOPP pásky"
+        }
+      },
+      "bopp-paska-hot-melt": {
+        "name": "BOPP páska Hot Melt",
+        "tagline": "BOPP páska s hot melt lepidlem pro rychlé a pevné přilnutí.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP pásky",
+        "benefits": [
+          {
+            "title": "Pevnost v tahu 42 N/25 mm",
+            "text": "BOPP fólie o tloušťce 40 µm vydrží napětí při balení i při dlouhodobém skladování."
+          },
+          {
+            "title": "Hot melt lepidlo",
+            "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
+          },
+          {
+            "title": "Rychlé přilnutí",
+            "text": "Přilnavost 3,5 N/25 mm – okamžitě drží i při nižších teplotách (0 až +50 °C)."
+          }
+        ],
+        "uses": [
+          "Standardní uzavírání kartonů",
+          "Automatické balicí stroje",
+          "Expedice a skladová logistika",
+          "Potisk firemním logem a informacemi"
+        ],
+        "params_values": {
+          "carrier": "BOPP fólie",
+          "thickness": "40 µm",
+          "adhesive": "Hot melt (syntetický kaučuk)",
+          "adhesion": "3,5 N/25 mm",
+          "temperature": "0 až +50 °C",
+          "strength": "42 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP fólie",
+          "Hot melt (syntetický kaučuk)",
+          "0 až +50 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na BOPP pásky"
+        }
+      },
+      "bopp-paska-hot-melt-ii": {
+        "name": "BOPP páska Hot Melt II",
+        "tagline": "Silnější BOPP páska s hot melt lepidlem pro náročnější balení.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP pásky",
+        "benefits": [
+          {
+            "title": "Pevnost v tahu 48 N/25 mm",
+            "text": "BOPP fólie o tloušťce 48 µm vydrží napětí při balení i při dlouhodobém skladování."
+          },
+          {
+            "title": "Hot melt lepidlo",
+            "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
+          },
+          {
+            "title": "Rychlé přilnutí",
+            "text": "Přilnavost 3,8 N/25 mm – okamžitě drží i při nižších teplotách (0 až +55 °C)."
+          }
+        ],
+        "uses": [
+          "Standardní uzavírání kartonů",
+          "Automatické balicí stroje",
+          "Expedice a skladová logistika",
+          "Potisk firemním logem a informacemi"
+        ],
+        "params_values": {
+          "carrier": "BOPP fólie",
+          "thickness": "48 µm",
+          "adhesive": "Hot melt",
+          "adhesion": "3,8 N/25 mm",
+          "temperature": "0 až +55 °C",
+          "strength": "48 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP fólie",
+          "Hot melt",
+          "0 až +55 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na BOPP pásky"
+        }
+      },
+      "bopet-paska-ait": {
+        "name": "BOPET páska AIT",
+        "tagline": "Polyesterová páska se silikonovým lepidlem pro extrémní teploty.",
+        "category_slug": "bopet-pasky",
+        "category_title": "BOPET pásky",
+        "benefits": [
+          {
+            "title": "Teplotní rozsah −40 až +180 °C",
+            "text": "Polyesterový nosič (30 µm) si drží vlastnosti v náročných provozech."
+          },
+          {
+            "title": "Silikonové lepidlo",
+            "text": "Stabilní výkon v extrémních teplotách a snadné odlepení bez zbytků lepidla."
+          },
+          {
+            "title": "Extrémní teploty",
+            "text": "Výkon při vysokých teplotách lakování i při mrazu – bez poškození povrchu."
+          }
+        ],
+        "uses": [
+          "Náročné průmyslové provozy",
+          "Fixace v prostředí s vysokými teplotami",
+          "Maskování při práškovém lakování",
+          "Elektrotechnika a specializovaná výroba"
+        ],
+        "params_values": {
+          "carrier": "Polyesterová (PET) fólie",
+          "thickness": "30 µm",
+          "adhesive": "Silikonové",
+          "adhesion": "3,0 N/25 mm",
+          "temperature": "−40 až +180 °C",
+          "strength": "65 N/25 mm"
+        },
+        "spec_pills": [
+          "Polyesterová (PET) fólie",
+          "Silikonové",
+          "−40 až +180 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na BOPET pásky"
+        }
+      },
+      "bopet-paska-ate23": {
+        "name": "BOPET páska ATE23",
+        "tagline": "Tenká polyesterová páska s vysokou teplotní odolností.",
+        "category_slug": "bopet-pasky",
+        "category_title": "BOPET pásky",
+        "benefits": [
+          {
+            "title": "Teplotní rozsah −40 až +150 °C",
+            "text": "Polyesterový nosič (25 µm) si drží vlastnosti v náročných provozech."
+          },
+          {
+            "title": "Akrylové lepidlo",
+            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+          },
+          {
+            "title": "Chemická odolnost",
+            "text": "Pevnost 60 N/25 mm – odolává rozpouštědlům, olejům a agresivnímu prostředí."
+          }
+        ],
+        "uses": [
+          "Náročné průmyslové provozy",
+          "Fixace v prostředí s vysokými teplotami",
+          "Maskování při práškovém lakování",
+          "Elektrotechnika a specializovaná výroba"
+        ],
+        "params_values": {
+          "carrier": "Polyesterová (PET) fólie",
+          "thickness": "25 µm",
+          "adhesive": "Akrylové",
+          "adhesion": "3,5 N/25 mm",
+          "temperature": "−40 až +150 °C",
+          "strength": "60 N/25 mm"
+        },
+        "spec_pills": [
+          "Polyesterová (PET) fólie",
+          "Akrylové",
+          "−40 až +150 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na BOPET pásky"
+        }
+      },
+      "bopet-paska-eco-hit19": {
+        "name": "BOPET páska ECO HIT19",
+        "tagline": "Polyesterová páska s recyklovaným obsahem a vysokou odolností.",
+        "category_slug": "bopet-pasky",
+        "category_title": "BOPET pásky",
+        "benefits": [
+          {
+            "title": "Teplotní rozsah −40 až +150 °C",
+            "text": "Polyesterový nosič (19 µm) si drží vlastnosti v náročných provozech."
+          },
+          {
+            "title": "Akrylové lepidlo",
+            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+          },
+          {
+            "title": "Recyklovaný polyester",
+            "text": "Pevnost 58 N/25 mm s nižší ekologickou stopou než běžná PET fólie."
+          }
+        ],
+        "uses": [
+          "Náročné průmyslové provozy",
+          "Fixace v prostředí s vysokými teplotami",
+          "Maskování při práškovém lakování",
+          "Aplikace s důrazem na udržitelnější materiál"
+        ],
+        "params_values": {
+          "carrier": "Recyklovaná PET fólie",
+          "thickness": "19 µm",
+          "adhesive": "Akrylové",
+          "adhesion": "3,3 N/25 mm",
+          "temperature": "−40 až +150 °C",
+          "strength": "58 N/25 mm"
+        },
+        "spec_pills": [
+          "Recyklovaná PET fólie",
+          "Akrylové",
+          "−40 až +150 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na BOPET pásky"
+        }
+      },
+      "bopet-paska-hit17": {
+        "name": "BOPET páska HIT17",
+        "tagline": "Ultratenká PET páska pro elektrotechniku a přesné aplikace.",
+        "category_slug": "bopet-pasky",
+        "category_title": "BOPET pásky",
+        "benefits": [
+          {
+            "title": "Teplotní rozsah −40 až +155 °C",
+            "text": "Polyesterový nosič (17 µm) si drží vlastnosti v náročných provozech."
+          },
+          {
+            "title": "Akrylové lepidlo",
+            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+          },
+          {
+            "title": "Chemická odolnost",
+            "text": "Pevnost 55 N/25 mm – odolává rozpouštědlům, olejům a agresivnímu prostředí."
+          }
+        ],
+        "uses": [
+          "Náročné průmyslové provozy",
+          "Fixace v prostředí s vysokými teplotami",
+          "Maskování při práškovém lakování",
+          "Elektrotechnika a specializovaná výroba"
+        ],
+        "params_values": {
+          "carrier": "Polyesterová (PET) fólie",
+          "thickness": "17 µm",
+          "adhesive": "Akrylové",
+          "adhesion": "3,2 N/25 mm",
+          "temperature": "−40 až +155 °C",
+          "strength": "55 N/25 mm"
+        },
+        "spec_pills": [
+          "Polyesterová (PET) fólie",
+          "Akrylové",
+          "−40 až +155 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na BOPET pásky"
+        }
+      },
+      "papirova-paska-c660": {
+        "name": "Papírová páska C660",
+        "tagline": "Ekologická papírová páska s akrylovým lepidlem a čistým odvíjením.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Papírové pásky",
+        "benefits": [
+          {
+            "title": "Plná recyklovatelnost",
+            "text": "Kraftový papírový nosič (100 µm) – ekologické balení s čistým matným vzhledem."
+          },
+          {
+            "title": "Akrylové lepidlo",
+            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+          },
+          {
+            "title": "Pevnost 45 N/25 mm",
+            "text": "Přilnavost 3,8 N/25 mm i na recyklovaný karton a členité povrchy (−5 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "E-shopy s důrazem na udržitelné balení",
+          "Uzavírání kartonových krabic a obalů",
+          "Firemní branding přímo na zásilce",
+          "Ruční balení a uzavírání e-commerce zásilek"
+        ],
+        "params_values": {
+          "carrier": "Papírový nosič",
+          "thickness": "100 µm",
+          "adhesive": "Akrylové (disperzní)",
+          "adhesion": "3,8 N/25 mm",
+          "temperature": "−5 až +60 °C",
+          "strength": "45 N/25 mm"
+        },
+        "spec_pills": [
+          "Papírový nosič",
+          "Akrylové (disperzní)",
+          "−5 až +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na Papírové pásky"
+        }
+      },
+      "papirova-paska-c680": {
+        "name": "Papírová páska C680",
+        "tagline": "Univerzální papírová páska s vysokou lepivostí na recyklovaný karton.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Papírové pásky",
+        "benefits": [
+          {
+            "title": "Plná recyklovatelnost",
+            "text": "Kraftový papírový nosič (115 µm) – ekologické balení s čistým matným vzhledem."
+          },
+          {
+            "title": "Kaučukové lepidlo",
+            "text": "Vysoká okamžitá přilnavost a pevné spojení i na recyklovaném kartonu."
+          },
+          {
+            "title": "Pevnost 50 N/25 mm",
+            "text": "Přilnavost 4,2 N/25 mm i na recyklovaný karton a členité povrchy (−10 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "E-shopy s důrazem na udržitelné balení",
+          "Uzavírání kartonových krabic a obalů",
+          "Firemní branding přímo na zásilce",
+          "Ruční i poloautomatické balení"
+        ],
+        "params_values": {
+          "carrier": "Papírový nosič",
+          "thickness": "115 µm",
+          "adhesive": "Kaučukové",
+          "adhesion": "4,2 N/25 mm",
+          "temperature": "−10 až +60 °C",
+          "strength": "50 N/25 mm"
+        },
+        "spec_pills": [
+          "Papírový nosič",
+          "Kaučukové",
+          "−10 až +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na Papírové pásky"
+        }
+      },
+      "papirova-paska-c680-rt": {
+        "name": "Papírová páska C680 RT",
+        "tagline": "Odolná papírová páska s vylepšenou přilnavostí pro těžší zásilky.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Papírové pásky",
+        "benefits": [
+          {
+            "title": "Plná recyklovatelnost",
+            "text": "Kraftový papírový nosič (120 µm) – ekologické balení s čistým matným vzhledem."
+          },
+          {
+            "title": "Kaučukové lepidlo",
+            "text": "Vysoká okamžitá přilnavost a pevné spojení i na recyklovaném kartonu."
+          },
+          {
+            "title": "Pevnost 52 N/25 mm",
+            "text": "Přilnavost 4,3 N/25 mm i na recyklovaný karton a členité povrchy (−10 až +65 °C)."
+          }
+        ],
+        "uses": [
+          "E-shopy s důrazem na udržitelné balení",
+          "Uzavírání kartonových krabic a obalů",
+          "Firemní branding přímo na zásilce",
+          "Ruční i poloautomatické balení"
+        ],
+        "params_values": {
+          "carrier": "Papírový nosič",
+          "thickness": "120 µm",
+          "adhesive": "Kaučukové",
+          "adhesion": "4,3 N/25 mm",
+          "temperature": "−10 až +65 °C",
+          "strength": "52 N/25 mm"
+        },
+        "spec_pills": [
+          "Papírový nosič",
+          "Kaučukové",
+          "−10 až +65 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na Papírové pásky"
+        }
+      },
+      "papirova-paska-c680r": {
+        "name": "Papírová páska C680R",
+        "tagline": "Papírová páska z recyklovaného papíru pro udržitelné balení.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Papírové pásky",
+        "benefits": [
+          {
+            "title": "Recyklovaný papírový nosič",
+            "text": "Páska i karton putují společně do recyklace – bez oddělování materiálů."
+          },
+          {
+            "title": "Kaučukové lepidlo",
+            "text": "Vysoká okamžitá přilnavost a pevné spojení i na recyklovaném kartonu."
+          },
+          {
+            "title": "Pevnost 48 N/25 mm",
+            "text": "Přilnavost 4,0 N/25 mm i na recyklovaný karton a členité povrchy (−10 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "E-shopy s důrazem na udržitelné balení",
+          "Uzavírání kartonových krabic a obalů",
+          "Firemní branding přímo na zásilce",
+          "Ruční balení a uzavírání e-commerce zásilek"
+        ],
+        "params_values": {
+          "carrier": "Recyklovaný papír",
+          "thickness": "115 µm",
+          "adhesive": "Kaučukové",
+          "adhesion": "4,0 N/25 mm",
+          "temperature": "−10 až +60 °C",
+          "strength": "48 N/25 mm"
+        },
+        "spec_pills": [
+          "Recyklovaný papír",
+          "Kaučukové",
+          "−10 až +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na Papírové pásky"
+        }
+      },
+      "papirova-paska-c690": {
+        "name": "Papírová páska C690",
+        "tagline": "Prémiová kraftová páska s hot melt lepidlem a matným povrchem.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Papírové pásky",
+        "benefits": [
+          {
+            "title": "Plná recyklovatelnost",
+            "text": "Kraftový papírový nosič (130 µm) – ekologické balení s čistým matným vzhledem."
+          },
+          {
+            "title": "Hot melt lepidlo",
+            "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
+          },
+          {
+            "title": "Pevnost 60 N/25 mm",
+            "text": "Přilnavost 4,8 N/25 mm i na recyklovaný karton a členité povrchy (−10 až +70 °C)."
+          }
+        ],
+        "uses": [
+          "E-shopy s důrazem na udržitelné balení",
+          "Uzavírání kartonových krabic a obalů",
+          "Firemní branding přímo na zásilce",
+          "Ruční balení a uzavírání e-commerce zásilek"
+        ],
+        "params_values": {
+          "carrier": "Papírový nosič (kraft)",
+          "thickness": "130 µm",
+          "adhesive": "Hot melt",
+          "adhesion": "4,8 N/25 mm",
+          "temperature": "−10 až +70 °C",
+          "strength": "60 N/25 mm"
+        },
+        "spec_pills": [
+          "Papírový nosič (kraft)",
+          "Hot melt",
+          "−10 až +70 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na Papírové pásky"
+        }
+      },
+      "papirova-paska-kh80": {
+        "name": "Papírová páska KH80",
+        "tagline": "Silná papírová páska s hot melt lepidlem pro spolehlivé uzavírání kartonů.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Papírové pásky",
+        "benefits": [
+          {
+            "title": "Plná recyklovatelnost",
+            "text": "Kraftový papírový nosič (120 µm) – ekologické balení s čistým matným vzhledem."
+          },
+          {
+            "title": "Hot melt lepidlo",
+            "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
+          },
+          {
+            "title": "Pevnost 55 N/25 mm",
+            "text": "Přilnavost 4,5 N/25 mm i na recyklovaný karton a členité povrchy (−10 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "E-shopy s důrazem na udržitelné balení",
+          "Uzavírání kartonových krabic a obalů",
+          "Firemní branding přímo na zásilce",
+          "Ruční balení a uzavírání e-commerce zásilek"
+        ],
+        "params_values": {
+          "carrier": "Papírový nosič (kraft)",
+          "thickness": "120 µm",
+          "adhesive": "Hot melt (syntetický kaučuk)",
+          "adhesion": "4,5 N/25 mm",
+          "temperature": "−10 až +60 °C",
+          "strength": "55 N/25 mm"
+        },
+        "spec_pills": [
+          "Papírový nosič (kraft)",
+          "Hot melt (syntetický kaučuk)",
+          "−10 až +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na Papírové pásky"
+        }
+      },
+      "papirova-paska-ks165": {
+        "name": "Papírová páska KS165",
+        "tagline": "Extra pevná papírová páska s kaučukovým lepidlem pro náročné balení.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Papírové pásky",
+        "benefits": [
+          {
+            "title": "Plná recyklovatelnost",
+            "text": "Kraftový papírový nosič (150 µm) – ekologické balení s čistým matným vzhledem."
+          },
+          {
+            "title": "Kaučukové lepidlo",
+            "text": "Vysoká okamžitá přilnavost a pevné spojení i na recyklovaném kartonu."
+          },
+          {
+            "title": "Pevnost 70 N/25 mm",
+            "text": "Přilnavost 5,5 N/25 mm i na recyklovaný karton a členité povrchy (−20 až +70 °C)."
+          }
+        ],
+        "uses": [
+          "E-shopy s důrazem na udržitelné balení",
+          "Uzavírání kartonových krabic a obalů",
+          "Firemní branding přímo na zásilce",
+          "Ruční balení a uzavírání e-commerce zásilek"
+        ],
+        "params_values": {
+          "carrier": "Papírový nosič (kraft)",
+          "thickness": "150 µm",
+          "adhesive": "Kaučukové (solvent)",
+          "adhesion": "5,5 N/25 mm",
+          "temperature": "−20 až +70 °C",
+          "strength": "70 N/25 mm"
+        },
+        "spec_pills": [
+          "Papírový nosič (kraft)",
+          "Kaučukové (solvent)",
+          "−20 až +70 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Vzorek s vaším logem před objednávkou"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na Papírové pásky"
+        }
+      },
+      "odstranitelna-paska-eco-rit19": {
+        "name": "Odstranitelná páska ECO RIT19",
+        "tagline": "Šetrná odstranitelná páska s recyklovaným obsahem.",
+        "category_slug": "odstranitelne-pasky",
+        "category_title": "Odstranitelné pásky",
+        "benefits": [
+          {
+            "title": "Beze stop po odlepení",
+            "text": "Recyklovaná PET fólie (19 µm) – po sejmutí nezanechává lepidlo ani poškození povrchu."
+          },
+          {
+            "title": "Akrylové lepidlo",
+            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+          },
+          {
+            "title": "Spolehlivá drživost",
+            "text": "Přilnavost 1,8 N/25 mm po celou dobu potřebné aplikace (−5 až +55 °C)."
+          }
+        ],
+        "uses": [
+          "Dočasné značení a etikety",
+          "Ochrana citlivých povrchů",
+          "Logistické a výrobní procesy",
+          "Fixace, která se musí opět odstranit"
+        ],
+        "params_values": {
+          "carrier": "Recyklovaná PET fólie",
+          "thickness": "19 µm",
+          "adhesive": "Odstranitelné akrylové",
+          "adhesion": "1,8 N/25 mm",
+          "temperature": "−5 až +55 °C",
+          "strength": "45 N/25 mm"
+        },
+        "spec_pills": [
+          "Recyklovaná PET fólie",
+          "Odstranitelné akrylové",
+          "−5 až +55 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Vyžádat cenovou nabídku",
+          "tailor_link": "Nezávazně konzultovat",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Různé provedení lepidla a nosiče",
+            "Konzultace parametrů před objednávkou"
+          ],
+          "bottom": "Poptat odstranitelnou pásku",
+          "back_category": "Zpět na Odstranitelné pásky"
+        }
+      },
+      "odstranitelna-paska-r28-32": {
+        "name": "Odstranitelná páska R28-32",
+        "tagline": "Odstranitelná páska, která po odlepení nezanechá žádné stopy.",
+        "category_slug": "odstranitelne-pasky",
+        "category_title": "Odstranitelné pásky",
+        "benefits": [
+          {
+            "title": "Beze stop po odlepení",
+            "text": "BOPP fólie (50 µm) – po sejmutí nezanechává lepidlo ani poškození povrchu."
+          },
+          {
+            "title": "Akrylové lepidlo",
+            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+          },
+          {
+            "title": "Spolehlivá drživost",
+            "text": "Přilnavost 1,5 N/25 mm po celou dobu potřebné aplikace (−5 až +50 °C)."
+          }
+        ],
+        "uses": [
+          "Dočasné značení a etikety",
+          "Ochrana citlivých povrchů",
+          "Logistické a výrobní procesy",
+          "Fixace, která se musí opět odstranit"
+        ],
+        "params_values": {
+          "carrier": "BOPP fólie",
+          "thickness": "50 µm",
+          "adhesive": "Odstranitelné akrylové",
+          "adhesion": "1,5 N/25 mm",
+          "temperature": "−5 až +50 °C",
+          "strength": "40 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP fólie",
+          "Odstranitelné akrylové",
+          "−5 až +50 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Vyžádat cenovou nabídku",
+          "tailor_link": "Nezávazně konzultovat",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Různé provedení lepidla a nosiče",
+            "Konzultace parametrů před objednávkou"
+          ],
+          "bottom": "Poptat odstranitelnou pásku",
+          "back_category": "Zpět na Odstranitelné pásky"
+        }
+      },
+      "vyztuzena-paska-rmpp32": {
+        "name": "Vyztužená páska RMPP32",
+        "tagline": "Vyztužená páska se skelnými vlákny pro fixaci těžkých břemen.",
+        "category_slug": "vyztuzene-pasky",
+        "category_title": "Vyztužené pásky",
+        "benefits": [
+          {
+            "title": "Podélná skelná vlákna",
+            "text": "Pevnost v tahu 300 N/25 mm – maximální odolnost ve směru nátahu."
+          },
+          {
+            "title": "Hot melt lepidlo",
+            "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
+          },
+          {
+            "title": "Fixace těžkých břemen",
+            "text": "Přilnavost 4,5 N/25 mm – spolehlivá fixace palet a nadrozměrných zásilek."
+          }
+        ],
+        "uses": [
+          "Fixace těžkých a nadrozměrných balíků",
+          "Zajištění zboží na paletách",
+          "Svazování trubek, profilů a tyčí",
+          "Strojové balení těžkých zásilek"
+        ],
+        "params_values": {
+          "carrier": "MOPP + podélná skelná vlákna",
+          "thickness": "130 µm",
+          "adhesive": "Hot melt (syntetický kaučuk)",
+          "adhesion": "4,5 N/25 mm",
+          "temperature": "−10 až +60 °C",
+          "strength": "300 N/25 mm"
+        },
+        "spec_pills": [
+          "MOPP + podélná skelná vlákna",
+          "Hot melt (syntetický kaučuk)",
+          "−10 až +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Vyžádat cenovou nabídku",
+          "tailor_link": "Nezávazně konzultovat",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Různé provedení lepidla a nosiče",
+            "Konzultace parametrů před objednávkou"
+          ],
+          "bottom": "Poptat vyztuženou pásku",
+          "back_category": "Zpět na Vyztužené pásky"
+        }
+      },
+      "vyztuzena-paska-rtpp32": {
+        "name": "Vyztužená páska RTPP32",
+        "tagline": "Křížově vyztužená páska pro maximální pevnost ve všech směrech.",
+        "category_slug": "vyztuzene-pasky",
+        "category_title": "Vyztužené pásky",
+        "benefits": [
+          {
+            "title": "Křížová skelná vlákna",
+            "text": "Pevnost v tahu 320 N/25 mm – odolnost ve všech směrech zatížení."
+          },
+          {
+            "title": "Hot melt lepidlo",
+            "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
+          },
+          {
+            "title": "Fixace těžkých břemen",
+            "text": "Přilnavost 4,7 N/25 mm – spolehlivá fixace palet a nadrozměrných zásilek."
+          }
+        ],
+        "uses": [
+          "Fixace těžkých a nadrozměrných balíků",
+          "Zajištění zboží na paletách",
+          "Svazování trubek, profilů a tyčí",
+          "Strojové balení těžkých zásilek"
+        ],
+        "params_values": {
+          "carrier": "MOPP + křížová skelná vlákna",
+          "thickness": "140 µm",
+          "adhesive": "Hot melt",
+          "adhesion": "4,7 N/25 mm",
+          "temperature": "−10 až +60 °C",
+          "strength": "320 N/25 mm"
+        },
+        "spec_pills": [
+          "MOPP + křížová skelná vlákna",
+          "Hot melt",
+          "−10 až +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Vyžádat cenovou nabídku",
+          "tailor_link": "Nezávazně konzultovat",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Různé provedení lepidla a nosiče",
+            "Konzultace parametrů před objednávkou"
+          ],
+          "bottom": "Poptat vyztuženou pásku",
+          "back_category": "Zpět na Vyztužené pásky"
+        }
+      },
+      "mopp-paska-s45-50": {
+        "name": "MOPP páska S45-50",
+        "tagline": "Monoaxiální MOPP páska s extrémní pevností a nulovou tažností.",
+        "category_slug": "mopp-pasky",
+        "category_title": "MOPP pásky",
+        "benefits": [
+          {
+            "title": "Extrémní pevnost 250 N/25 mm",
+            "text": "MOPP fólie (100 µm) s prakticky nulovou tažností v podélném směru."
+          },
+          {
+            "title": "Hot melt lepidlo",
+            "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
+          },
+          {
+            "title": "Bez skelných vláken",
+            "text": "Čistá fixace bez uvolňujících se vláken – teplotní rozsah −10 až +60 °C."
+          }
+        ],
+        "uses": [
+          "Fixace dveří elektrospotřebičů",
+          "Zajištění komponentů během přepravy",
+          "Stahování a fixace palet",
+          "Svazování bez skelných vláken"
+        ],
+        "params_values": {
+          "carrier": "MOPP fólie",
+          "thickness": "100 µm",
+          "adhesive": "Hot melt",
+          "adhesion": "4,0 N/25 mm",
+          "temperature": "−10 až +60 °C",
+          "strength": "250 N/25 mm"
+        },
+        "spec_pills": [
+          "MOPP fólie",
+          "Hot melt",
+          "−10 až +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Vyžádat cenovou nabídku",
+          "tailor_link": "Nezávazně konzultovat",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Různé provedení lepidla a nosiče",
+            "Konzultace parametrů před objednávkou"
+          ],
+          "bottom": "Poptat MOPP pásku",
+          "back_category": "Zpět na MOPP pásky"
+        }
+      },
+      "textilni-paska-bc": {
+        "name": "Textilní páska BC",
+        "tagline": "Pevná textilní (duct) páska pro opravy a univerzální použití.",
+        "category_slug": "textilni-pasky",
+        "category_title": "Textilní lepicí pásky",
+        "benefits": [
+          {
+            "title": "Pevnost v tahu 120 N/25 mm",
+            "text": "Textilní výztuž (250 µm) – odolnost proti protržení při náročném použití."
+          },
+          {
+            "title": "Kaučukové lepidlo",
+            "text": "Vysoká okamžitá přilnavost a pevné spojení i na recyklovaném kartonu."
+          },
+          {
+            "title": "Přilnavost na drsný povrch",
+            "text": "Přilnavost 6,0 N/25 mm – drží na kovu, dřevě, betonu i plastu (−10 až +70 °C)."
+          }
+        ],
+        "uses": [
+          "Rychlé opravy a provizorní spoje",
+          "Svazování a fixace předmětů",
+          "Zpevnění balíků a obalů",
+          "Údržba, montáže a řemeslo"
+        ],
+        "params_values": {
+          "carrier": "Textilní výztuž + PE laminát",
+          "thickness": "250 µm",
+          "adhesive": "Kaučukové (syntetické)",
+          "adhesion": "6,0 N/25 mm",
+          "temperature": "−10 až +70 °C",
+          "strength": "120 N/25 mm"
+        },
+        "spec_pills": [
+          "Textilní výztuž + PE laminát",
+          "Kaučukové (syntetické)",
+          "−10 až +70 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Vyžádat cenovou nabídku",
+          "tailor_link": "Nezávazně konzultovat",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Různé provedení lepidla a nosiče",
+            "Konzultace parametrů před objednávkou"
+          ],
+          "bottom": "Poptat textilní pásku",
+          "back_category": "Zpět na Textilní lepicí pásky"
+        }
+      },
+      "textilni-paska-bc2": {
+        "name": "Textilní páska BC2",
+        "tagline": "Extra silná textilní páska s vysokou pevností v tahu.",
+        "category_slug": "textilni-pasky",
+        "category_title": "Textilní lepicí pásky",
+        "benefits": [
+          {
+            "title": "Pevnost v tahu 130 N/25 mm",
+            "text": "Textilní výztuž (280 µm) – odolnost proti protržení při náročném použití."
+          },
+          {
+            "title": "Kaučukové lepidlo",
+            "text": "Vysoká okamžitá přilnavost a pevné spojení i na recyklovaném kartonu."
+          },
+          {
+            "title": "Přilnavost na drsný povrch",
+            "text": "Přilnavost 6,5 N/25 mm – drží na kovu, dřevě, betonu i plastu (−10 až +70 °C)."
+          }
+        ],
+        "uses": [
+          "Rychlé opravy a provizorní spoje",
+          "Svazování a fixace předmětů",
+          "Zpevnění balíků a obalů",
+          "Údržba, montáže a řemeslo"
+        ],
+        "params_values": {
+          "carrier": "Textilní výztuž + PE laminát",
+          "thickness": "280 µm",
+          "adhesive": "Kaučukové (syntetické)",
+          "adhesion": "6,5 N/25 mm",
+          "temperature": "−10 až +70 °C",
+          "strength": "130 N/25 mm"
+        },
+        "spec_pills": [
+          "Textilní výztuž + PE laminát",
+          "Kaučukové (syntetické)",
+          "−10 až +70 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Vyžádat cenovou nabídku",
+          "tailor_link": "Nezávazně konzultovat",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Různé provedení lepidla a nosiče",
+            "Konzultace parametrů před objednávkou"
+          ],
+          "bottom": "Poptat textilní pásku",
+          "back_category": "Zpět na Textilní lepicí pásky"
+        }
+      },
+      "textilni-paska-nu": {
+        "name": "Textilní páska NU",
+        "tagline": "Univerzální textilní páska pro rychlé svazování a fixaci.",
+        "category_slug": "textilni-pasky",
+        "category_title": "Textilní lepicí pásky",
+        "benefits": [
+          {
+            "title": "Pevnost v tahu 110 N/25 mm",
+            "text": "Textilní výztuž (220 µm) – odolnost proti protržení při náročném použití."
+          },
+          {
+            "title": "Kaučukové lepidlo",
+            "text": "Vysoká okamžitá přilnavost a pevné spojení i na recyklovaném kartonu."
+          },
+          {
+            "title": "Přilnavost na drsný povrch",
+            "text": "Přilnavost 5,5 N/25 mm – drží na kovu, dřevě, betonu i plastu (−10 až +65 °C)."
+          }
+        ],
+        "uses": [
+          "Rychlé opravy a provizorní spoje",
+          "Svazování a fixace předmětů",
+          "Zpevnění balíků a obalů",
+          "Údržba, montáže a řemeslo"
+        ],
+        "params_values": {
+          "carrier": "Textilní výztuž + PE laminát",
+          "thickness": "220 µm",
+          "adhesive": "Kaučukové",
+          "adhesion": "5,5 N/25 mm",
+          "temperature": "−10 až +65 °C",
+          "strength": "110 N/25 mm"
+        },
+        "spec_pills": [
+          "Textilní výztuž + PE laminát",
+          "Kaučukové",
+          "−10 až +65 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Vyžádat cenovou nabídku",
+          "tailor_link": "Nezávazně konzultovat",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Různé provedení lepidla a nosiče",
+            "Konzultace parametrů před objednávkou"
+          ],
+          "bottom": "Poptat textilní pásku",
+          "back_category": "Zpět na Textilní lepicí pásky"
+        }
+      },
+      "malirska-paska-c580": {
+        "name": "Malířská páska C580",
+        "tagline": "Krepová malířská páska pro ostré hrany při běžném malování.",
+        "category_slug": "malirske-pasky",
+        "category_title": "Malířské pásky",
+        "benefits": [
+          {
+            "title": "Ostré hrany bez protečení",
+            "text": "Krepový nosič (130 µm) – barva nepronikne pod pásku při malování."
+          },
+          {
+            "title": "Kaučukové lepidlo",
+            "text": "Vysoká okamžitá přilnavost a pevné spojení i na recyklovaném kartonu."
+          },
+          {
+            "title": "Čisté odlepení",
+            "text": "Po dokončení práce nezanechává lepidlo ani stopy (do +80 °C)."
+          }
+        ],
+        "uses": [
+          "Malování a lakování interiérů",
+          "Zakrývání hran a přechodů",
+          "Lakovny a autolakovny",
+          "Kutilské a řemeslné práce"
+        ],
+        "params_values": {
+          "carrier": "Krepový papír",
+          "thickness": "130 µm",
+          "adhesive": "Kaučukové",
+          "adhesion": "2,8 N/25 mm",
+          "temperature": "do +80 °C",
+          "strength": "28 N/25 mm"
+        },
+        "spec_pills": [
+          "Krepový papír",
+          "Kaučukové",
+          "do +80 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Vyžádat cenovou nabídku",
+          "tailor_link": "Nezávazně konzultovat",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Různé provedení lepidla a nosiče",
+            "Konzultace parametrů před objednávkou"
+          ],
+          "bottom": "Poptat malířskou pásku",
+          "back_category": "Zpět na Malířské pásky"
+        }
+      },
+      "malirska-paska-cs60-80": {
+        "name": "Malířská páska CS60-80",
+        "tagline": "Teplotně odolná malířská páska pro lakování a náročné maskování.",
+        "category_slug": "malirske-pasky",
+        "category_title": "Malířské pásky",
+        "benefits": [
+          {
+            "title": "Ostré hrany bez protečení",
+            "text": "Krepový nosič (150 µm) – barva nepronikne pod pásku při malování."
+          },
+          {
+            "title": "Kaučukové lepidlo",
+            "text": "Vysoká okamžitá přilnavost a pevné spojení i na recyklovaném kartonu."
+          },
+          {
+            "title": "Teplotní odolnost do +100 °C",
+            "text": "Vhodná pro lakování a náročné maskování v autoservisech."
+          }
+        ],
+        "uses": [
+          "Malování a lakování interiérů",
+          "Zakrývání hran a přechodů",
+          "Práškové lakování a vysokoteplotní procesy",
+          "Kutilské a řemeslné práce"
+        ],
+        "params_values": {
+          "carrier": "Krepový papír",
+          "thickness": "150 µm",
+          "adhesive": "Kaučukové (odolné teplu)",
+          "adhesion": "3,0 N/25 mm",
+          "temperature": "do +100 °C",
+          "strength": "32 N/25 mm"
+        },
+        "spec_pills": [
+          "Krepový papír",
+          "Kaučukové (odolné teplu)",
+          "do +100 °C"
+        ],
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "ctas": {
+          "hero": "Vyžádat cenovou nabídku",
+          "tailor_link": "Nezávazně konzultovat",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Různé provedení lepidla a nosiče",
+            "Konzultace parametrů před objednávkou"
+          ],
+          "bottom": "Poptat malířskou pásku",
+          "back_category": "Zpět na Malířské pásky"
+        }
+      }
+    },
+    "page": {
+      "breadcrumb_home": "Domů",
+      "breadcrumb_sortiment": "Sortiment",
+      "breadcrumb_aria": "Drobečková navigace",
+      "section_key_properties": "Klíčové vlastnosti",
+      "section_products": "Produkty v této kategorii",
+      "section_typical_use": "Typické použití",
+      "section_technical_params": "Technické parametry",
+      "section_benefits": "Hlavní výhody a použití",
+      "section_uses_label": "Typické použití",
+      "view_detail": "Zobrazit detail",
+      "back_to_sortiment": "Zpět na sortiment",
+      "back_to_category": "Zpět na kategorii",
+      "back_to_category_short": "Zpět na {category}",
+      "params_note": "Uvedené hodnoty jsou orientační a mohou se lišit podle konkrétní šířky, návinu a provedení. Rádi vám připravíme přesnou specifikaci na míru.",
+      "tailor_title": "Na míru vašemu provozu",
+      "tailor_bullet_width": "Volitelná šířka a délka návinu",
+      "tailor_bullet_print": "Barva podkladu a počet barev potisku",
+      "tailor_bullet_sample": "Vzorek s vaším logem před objednávkou",
+      "tailor_bullet_consult": "Konzultace parametrů před objednávkou",
+      "tailor_bullet_params": "Různé provedení lepidla a nosiče",
+      "no_print_note": "Pásku lze objednat i bez potisku.",
+      "no_print_body": "Pokud nepotřebujete logo na pásku, stejný materiál vám dodáme v nepotištěném provedení, ideální pro okamžité balení nebo skladové zásoby.",
+      "no_print_link": "Zeptejte se na dostupnost",
+      "product_card_detail": "Zobrazit detail"
+    },
+    "category_ctas": {
+      "udrzitelne-pasky": {
+        "hero": "Spočítat eko pásku",
+        "bottom": "Poptat udržitelnou pásku s potiskem"
+      },
+      "bopp-pasky": {
+        "hero": "Kalkulace balicí pásky",
+        "bottom": "Poptat BOPP pásku s logem"
+      },
+      "bopet-pasky": {
+        "hero": "Kalkulace technické pásky",
+        "bottom": "Poptat BOPET pásku na míru"
+      },
+      "papirove-pasky": {
+        "hero": "Kalkulace papírové pásky",
+        "bottom": "Poptat eko pásku s potiskem"
+      },
+      "odstranitelne-pasky": {
+        "hero": "Vyžádat cenovou nabídku",
+        "bottom": "Poptat odstranitelnou pásku"
+      },
+      "vyztuzene-pasky": {
+        "hero": "Vyžádat cenovou nabídku",
+        "bottom": "Poptat vyztuženou pásku"
+      },
+      "mopp-pasky": {
+        "hero": "Vyžádat cenovou nabídku",
+        "bottom": "Poptat MOPP pásku"
+      },
+      "textilni-pasky": {
+        "hero": "Vyžádat cenovou nabídku",
+        "bottom": "Poptat textilní pásku"
+      },
+      "malirske-pasky": {
+        "hero": "Vyžádat cenovou nabídku",
+        "bottom": "Poptat malířskou pásku"
       }
     }
   },

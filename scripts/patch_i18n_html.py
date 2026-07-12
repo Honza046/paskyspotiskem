@@ -116,16 +116,19 @@ def apply_map(text: str, mapping: list[tuple[str, str]]) -> str:
 
 
 def inject_i18n_script(text: str, prefix: str) -> str:
-    src = f'{prefix}/assets/js/i18n.js'
-    tag = f'<script src="{src}"></script>'
+    i18n_src = f'{prefix}/assets/js/i18n.js'
+    pages_src = f'{prefix}/assets/js/i18n-pages.js'
+    i18n_tag = f'<script src="{i18n_src}"></script>'
+    pages_tag = f'<script src="{pages_src}"></script>'
     if 'assets/js/i18n.js' in text:
-        # normalize: ensure i18n is before other app scripts
         text = re.sub(r'<script src="[^"]*assets/js/i18n\.js"></script>\s*', '', text)
-    # insert before first assets/js script or before </body>
+    if 'assets/js/i18n-pages.js' in text:
+        text = re.sub(r'<script src="[^"]*assets/js/i18n-pages\.js"></script>\s*', '', text)
+    bundle = i18n_tag + '\n' + pages_tag + '\n'
     if re.search(r'<script src="[^"]*assets/js/', text):
-        text = re.sub(r'(<script src="[^"]*assets/js/)', tag + '\n\\1', text, count=1)
+        text = re.sub(r'(<script src="[^"]*assets/js/)', bundle + '\\1', text, count=1)
     else:
-        text = text.replace('</body>', f'{tag}\n</body>')
+        text = text.replace('</body>', bundle + '</body>')
     return text
 
 

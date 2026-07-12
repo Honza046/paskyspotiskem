@@ -83,19 +83,19 @@
         document.documentElement.style.setProperty('--site-top-height', height + 'px');
     }
 
-    /** Lock hero block height once – avoids bg-cover / dvh rescaling while scrolling. */
+    /** Lock hero block height – recalc when site-top size changes (i18n banner text, etc.). */
     function lockHeroLayout() {
         var uvod = document.getElementById('uvod');
         if (!uvod) {
             return;
         }
-        var banner = document.querySelector('.info-banner');
-        var hdr = document.querySelector('header.site-header');
-        if (!banner || !hdr) {
+        var siteTop = document.querySelector('.site-top');
+        if (!siteTop) {
             return;
         }
-        var topOffset = banner.offsetHeight + hdr.offsetHeight;
-        var heroH = Math.max(320, window.innerHeight - topOffset);
+        var topOffset = siteTop.offsetHeight;
+        var viewportH = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+        var heroH = Math.max(320, Math.ceil(viewportH - topOffset));
         document.documentElement.style.setProperty('--hero-top-offset', topOffset + 'px');
         document.documentElement.style.setProperty('--hero-height', heroH + 'px');
     }
@@ -133,6 +133,7 @@
                     if (!hidden) {
                         measureFullSiteTopHeight();
                     }
+                    lockHeroLayout();
                 }
                 syncHeaderShellHeight();
                 syncSiteTopHeight();
@@ -308,6 +309,17 @@
     });
 
     window.paskyonlineBeginAnchorNavigation = beginAnchorNavigation;
+    window.paskyonlineLockHeroLayout = lockHeroLayout;
+
+    document.addEventListener('pasky:i18n-ready', function () {
+        window.requestAnimationFrame(function () {
+            if (isHomeHero) {
+                measureFullSiteTopHeight();
+                lockHeroLayout();
+            }
+            syncSiteTopHeight();
+        });
+    });
 
     boot();
 })();

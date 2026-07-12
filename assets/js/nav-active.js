@@ -8,6 +8,7 @@
     var HOME_SECTIONS = [
         { id: 'uvod', key: 'home' },
         { id: 'reference', key: 'reference' },
+        { id: 'gf_1', key: 'contact' },
         { id: 'kontakt1', key: 'contact' },
     ];
     var navClickLock = null;
@@ -101,18 +102,14 @@
 
     function homeSectionKey() {
         var probe = window.scrollY + scrollOffset() + 1;
-        var refEl = document.getElementById('reference');
-        var kontaktEl = document.getElementById('kontakt1');
-        var refTop = refEl ? sectionTop(refEl) : Infinity;
-        var kontaktTop = kontaktEl ? sectionTop(kontaktEl) : Infinity;
-
-        if (probe >= kontaktTop) {
-            return 'contact';
-        }
-        if (probe >= refTop) {
-            return 'reference';
-        }
-        return 'home';
+        var active = 'home';
+        HOME_SECTIONS.forEach(function (section) {
+            var el = document.getElementById(section.id);
+            if (el && sectionTop(el) <= probe) {
+                active = section.key;
+            }
+        });
+        return active;
     }
 
     function clearNavClickLock() {

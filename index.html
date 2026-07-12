@@ -47,9 +47,11 @@
         html { scroll-behavior: auto; scroll-padding-top: var(--site-top-height, 7.75rem); overscroll-behavior-y: none; }
         #uvod {
             background-color: #0f172a;
-            height: var(--hero-height, calc(100svh - var(--hero-top-offset, 8rem)));
+            height: var(--hero-height, calc(100svh - var(--site-top-height, 8rem)));
             overflow: hidden;
             contain: layout paint;
+            /* Cover sub-pixel gap above the next (white) section after layout shifts */
+            box-shadow: 0 2px 0 0 #0f172a;
         }
         #hero-slides,
         .hero-slide {
@@ -149,7 +151,7 @@
 
 <!-- SITE-TOP -->
 <div class="site-top sticky top-0 z-50">
-<div class="info-banner" role="region" aria-label="Důležité informace">
+<div class="info-banner" role="region" aria-label="Důležité informace" data-i18n-attr="aria-label:info_banner.aria_label">
         <div class="info-banner__viewport" aria-live="polite">
         <p class="info-banner__message">Srpen: výroba a logistika mají 3týdenní výluku. Objednávky s dodáním před výlukou zašlete nejpozději do <strong>10. 7. 2026</strong>.</p>
     </div>
@@ -247,7 +249,7 @@
         <div class="mb-14 text-center">
             <p class="mb-3 text-sm font-bold uppercase tracking-widest text-orange-600" data-i18n="home.references.label">Reference</p>
             <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl" data-i18n="home.references.title">Spokojení zákazníci napříč obory</h2>
-            <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600">Firmy, které na našich páskách s potiskem spoléhají každý den, od e-commerce po výrobu a zdravotnictví.</p>
+            <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600" data-i18n="home.references.subtitle">Firmy, které na našich páskách s potiskem spoléhají každý den od e-commerce po výrobu a zdravotnictví.</p>
         </div>
 
         <div class="mb-14 grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -451,14 +453,14 @@
                     <div class="mb-6">
                         <label for="input_material" class="mb-2 block text-sm font-semibold text-slate-800">Typ materiálu <span class="text-orange-600">*</span></label>
                         <select id="input_material" name="input_material" required>
-                            <option value="" disabled selected>Vyberte materiál…</option>
+                            <option value="" disabled selected hidden></option>
                         </select>
                     </div>
 
                     <div id="inquiry-product-wrap" class="mb-6 hidden">
                         <label for="input_product" class="mb-2 block text-sm font-semibold text-slate-800">Konkrétní páska</label>
                         <select id="input_product" name="input_product">
-                            <option value="" selected>Vyberte pásku (volitelné)…</option>
+                            <option value="" selected hidden></option>
                         </select>
                         <p id="inquiry-product-hint" class="mt-2 hidden text-xs leading-relaxed text-slate-500"></p>
                     </div>
@@ -633,7 +635,7 @@
 <!-- KONTAKTY -->
 <section id="kontakt1" class="mx-auto max-w-7xl px-4 pb-20">
     <div class="mb-12 text-center">
-        <p class="mb-3 text-sm font-bold uppercase tracking-widest text-orange-600">Tým</p>
+        <p class="mb-3 text-sm font-bold uppercase tracking-widest text-orange-600" data-i18n="home.contacts.label">Tým</p>
         <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl" data-i18n="home.contacts.title">KONTAKTY NA ODDĚLENÍ</h2>
     </div>
 
@@ -958,21 +960,26 @@
         window.__validateAllInquiryPages = validateAllPages;
         window.__goToInquiryStep = goTo;
 
-        function goTo(index) {
+        function goTo(index, options) {
             if (index < 0 || index >= pages.length) return;
+            options = options || {};
             pages.forEach(function (page, i) {
                 page.classList.toggle('hidden', i !== index);
             });
             current = index;
             const pct = ((index + 1) / pages.length) * 100;
             progressBar.style.width = pct + '%';
-            stepLabel.textContent = 'Krok ' + (index + 1) + ' ze ' + pages.length;
-            stepName.textContent = stepNames[index];
+            var names = window.__formStepNames || stepNames;
+            var tpl = window.__formStepLabelTpl || 'Krok {current} ze {total}';
+            stepLabel.textContent = tpl.replace('{current}', String(index + 1)).replace('{total}', String(pages.length));
+            stepName.textContent = names[index] || stepNames[index];
             dots.forEach(function (dot, i) {
                 dot.className = 'rounded-full transition-all ' + (i === index ? 'h-2 w-8 bg-orange-500' : i < index ? 'h-2 w-2 bg-orange-300' : 'h-2 w-2 bg-slate-200');
             });
 
-            form.scrollIntoView({ behavior: 'auto', block: 'nearest' });
+            if (options.scroll !== false) {
+                form.scrollIntoView({ behavior: 'auto', block: 'nearest' });
+            }
         }
 
         form.querySelectorAll('.btn-next').forEach(function (btn) {
@@ -1000,8 +1007,13 @@
         var qtyBadge = document.getElementById('qty-discount-badge');
         var qtyBadgeText = document.getElementById('qty-discount-text');
         var QTY_MIN = 360;
-        var tipText = 'Minimální množství je 360 ks.';
-        var successText = '🔥 Skvělá volba! Máte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.';
+        function getQtyTexts() {
+            return window.__formQtyTexts || {
+                tip: 'Minimální množství je 360 ks.',
+                success: '🔥 Skvělá volba! Máte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.',
+                invalid: 'Minimální množství je 360 ks.'
+            };
+        }
         var badgeGray = 'mt-2 overflow-hidden rounded-lg border px-3 py-1.5 text-xs leading-snug transition-all duration-300 ease-out opacity-100 max-h-24 border-slate-200 bg-slate-50 font-medium text-slate-500';
         var badgeGreen = 'mt-2 overflow-hidden rounded-lg border px-3 py-1.5 text-xs leading-snug transition-all duration-300 ease-out opacity-100 max-h-24 border-emerald-200 bg-emerald-50 font-semibold text-emerald-700 shadow-sm shadow-emerald-100';
         var badgeHidden = 'mt-2 overflow-hidden rounded-lg border px-3 py-1.5 text-xs leading-snug transition-all duration-300 ease-out opacity-0 max-h-0 py-0 border-transparent pointer-events-none';
@@ -1009,28 +1021,30 @@
         function updateQtyDiscountBadge() {
             if (!qtyInput || !qtyBadge || !qtyBadgeText) return;
 
+            var texts = getQtyTexts();
             var raw = qtyInput.value.trim();
             var qty = raw === '' ? NaN : parseInt(raw, 10);
 
             if (raw === '' || isNaN(qty)) {
                 qtyBadge.className = badgeGray;
-                qtyBadgeText.textContent = tipText;
+                qtyBadgeText.textContent = texts.tip;
                 return;
             }
 
             if (qty >= QTY_MIN) {
                 qtyBadge.className = badgeGreen;
-                qtyBadgeText.textContent = successText;
+                qtyBadgeText.textContent = texts.success;
             } else {
                 qtyBadge.className = badgeGray;
-                qtyBadgeText.textContent = tipText;
+                qtyBadgeText.textContent = texts.tip;
             }
         }
+        window.__updateQtyDiscountBadge = updateQtyDiscountBadge;
 
         if (qtyInput) {
             qtyInput.addEventListener('invalid', function () {
                 if (qtyInput.validity.rangeUnderflow) {
-                    qtyInput.setCustomValidity('Minimální množství je 360 ks.');
+                    qtyInput.setCustomValidity(getQtyTexts().invalid);
                 }
             });
             qtyInput.addEventListener('input', function () {
@@ -1046,12 +1060,15 @@
         });
         toggleAcrylNoiseOption();
 
-        var SAMPLE_NOTE_TEXT = 'Mám zájem o testovací vzorek.';
+        function getSampleNoteText() {
+            return window.__sampleNoteText || 'Mám zájem o testovací vzorek.';
+        }
+
         var FIRST_STEP = 0;
 
         function applySampleNote() {
             var note = document.getElementById('note');
-            if (note) note.value = SAMPLE_NOTE_TEXT;
+            if (note) note.value = getSampleNoteText();
         }
 
         function openInquiryWithSample(e) {
@@ -1090,15 +1107,16 @@
 })();
 </script>
 <script src="/assets/js/inquiry-dropdown.js"></script>
-<script src="/assets/js/inquiry-material-picker.js"></script>
+<script src="/assets/js/i18n.js?v=5"></script>
+<script src="/assets/js/i18n-pages.js?v=5"></script>
+<script src="/assets/js/inquiry-material-picker.js?v=3"></script>
 <script src="/assets/js/inquiry-form.js?v=3"></script>
-<script src="/assets/js/i18n.js"></script>
 <script src="/assets/js/nav-active.js"></script>
 <link rel="stylesheet" href="/assets/css/footer-credit.css?v=3">
 <script src="/assets/js/footer-credit.js?v=3"></script>
 <script src="/assets/js/mobile-nav.js"></script>
+<script src="/assets/js/header-scroll.js?v=8"></script>
 <script src="/assets/js/info-banner.js"></script>
-<script src="/assets/js/header-scroll.js?v=7"></script>
 <script src="/assets/js/privacy-modal.js"></script>
 <script src="/assets/js/theme-toggle.js"></script>
 </body>

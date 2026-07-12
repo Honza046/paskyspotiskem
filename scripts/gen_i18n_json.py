@@ -1,13 +1,26 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Generate data/i18n/cs.json, en.json and de.json from site source strings."""
+"""Generate data/i18n/cs.json, en.json, de.json and it.json from site source strings."""
 
 from __future__ import annotations
 
 import ast
+import copy
 import json
+import sys
 from pathlib import Path
 from typing import Any
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from i18n_product_builder import (  # noqa: E402
+    CATEGORY_IT,
+    load_gp_namespace,
+    merge_into_gallery,
+    merge_into_sortiment,
+)
+
+LANG_NAMES = {"cs": "Čeština", "en": "English", "de": "Deutsch", "it": "Italiano"}
+HTML_LANG = {"cs": "cs", "en": "en", "de": "de", "it": "it"}
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "data" / "i18n"
@@ -483,6 +496,13 @@ def build_cs() -> dict[str, Any]:
             "instagram": "Instagram",
             "youtube": "YouTube",
         },
+        "info_banner": {
+            "aria_label": "Důležité informace",
+            "messages": [
+                "Srpen: výroba a logistika mají 3týdenní výluku. Objednávky s dodáním před výlukou zašlete nejpozději do <strong>10. 7. 2026</strong>.",
+                "U objednávek z července a srpna platí dodací lhůta 3–4 týdny s dodáním v <strong>září 2026</strong>.",
+            ],
+        },
         "footer": {
             "address_heading": "Najdete nás na adrese",
             "company": "ALFA IN a.s.",
@@ -518,6 +538,7 @@ def build_cs() -> dict[str, Any]:
                 ],
                 "cta_offer": "Prohlédnout nabídku",
                 "cta_quote": "Nezávazná kalkulace",
+                "cta_sample": "Vyžádat vzorky",
             },
             "about": {
                 "label": "O nás",
@@ -526,11 +547,13 @@ def build_cs() -> dict[str, Any]:
                 "body1": "Naše moderní výrobní zázemí nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (Hot Melt, Akryl) a rychlém doručení po celé České republice i Evropské unii.",
                 "body2": "Díky certifikovaným procesům ISO 9001 a používání ekologicky udržitelných materiálů jsme stabilním partnerem pro více než 300 aktivních odběratelů.",
                 "image_alt": "Výroba lepicích pásek ALFA IN",
+                "team_title": "Tým ALFA IN",
+                "team_subtitle": "Tradice, zkušenosti a osobní přístup ke každé zakázce",
             },
             "references": {
                 "label": "Reference",
                 "title": "Spokojení zákazníci napříč obory",
-                "subtitle": "Firmy, které na našich páskách s potiskem spoléhají každý den — od e-commerce po výrobu a zdravotnictví.",
+                "subtitle": "Firmy, které na našich páskách s potiskem spoléhají každý den od e-commerce po výrobu a zdravotnictví.",
                 "stat_customers": "aktivních odběratelů",
                 "stat_experience": "zkušeností s potiskem",
                 "stat_iso": "certifikovaná výroba",
@@ -566,6 +589,7 @@ def build_cs() -> dict[str, Any]:
                 "glue_badge": "Extrémní lepivost",
                 "glue_title": "EXTRA GLUE+ (ACRYL) a TACK+ (HOT MELT)",
                 "glue_text": "Pásky se zvýšenou vrstvou lepidla (33 % resp. 20 %) i s možností pevnější folie oproti standardu, určené i pro velmi obtížné aplikace jako např. velmi těžké balíky, nekvalitní kartony nebo prašné prostředí. Na kartonu drží velmi pevně.",
+                "glue_extra_tag": "+33 % lepidla",
             },
             "form": {
                 "label": "Poptávka",
@@ -575,8 +599,15 @@ def build_cs() -> dict[str, Any]:
                 "step_label": "Krok {current} ze {total}",
                 "steps": ["Specifikace produktu", "Rozměry a množství", "Kontaktní údaje"],
                 "step1_title": "Specifikace produktu",
-                "step1_hint": "Vyberte typ pásky, podkladovou barvu a počet barev k tisku.",
+                "step1_hint": "Vyberte materiál a případně konkrétní pásku, typ lepidla, podkladovou barvu a počet barev k tisku.",
+                "material_label": "Typ materiálu",
+                "material_placeholder": "Vyberte materiál…",
+                "product_label": "Konkrétní páska",
+                "product_placeholder": "Vyberte pásku (volitelné)…",
+                "catalog_error": "Katalog se nepodařilo načíst",
                 "tape_type": "Typ lepidla",
+                "acryl_no_silent_title": "Bez nehlučného činidla",
+                "acryl_no_silent_text": "Standardně je u ACRYL pásek tiché odvíjení. Zaškrtněte, pokud preferujete variantu bez této úpravy.",
                 "base_color": "Podkladová barva",
                 "print_colors": "Počet barev k tisku",
                 "hot_melt_hint": "Syntetický kaučuk",
@@ -597,8 +628,11 @@ def build_cs() -> dict[str, Any]:
                 "length_label": "Délka pásky v metrech",
                 "quantity_label": "Poptávané množství v kusech",
                 "quantity_hint": "Zadejte číslo od 360 do 9999.",
+                "quantity_min": "Minimální množství je 360 ks.",
                 "quantity_tip": "Od 360 ks získáváte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
                 "quantity_success": "🔥 Skvělá volba! Máte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
+                "sample_note_btn": "Mám zájem o vzorek",
+                "sample_note_text": "Mám zájem o testovací vzorek.",
                 "order_period_label": "Předpokládaná perioda objednávky",
                 "order_periods": {
                     "monthly": "Každý měsíc",
@@ -820,12 +854,19 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "main_nav_label": "Main navigation",
             "home": "Home",
             "gallery": "Gallery",
-            "sortiment": "Product range",
+            "sortiment": "Products",
             "references": "References",
             "contacts": "Contact",
             "facebook": "Facebook",
             "instagram": "Instagram",
             "youtube": "YouTube",
+        },
+        "info_banner": {
+            "aria_label": "Important information",
+            "messages": [
+                "August: production and logistics will be shut down for 3 weeks. To receive delivery before the shutdown, place your order by <strong>10 July 2026</strong>.",
+                "For July and August orders, the delivery time is 3–4 weeks with delivery in <strong>September 2026</strong>.",
+            ],
         },
         "footer": {
             "address_heading": "Visit us at",
@@ -857,11 +898,12 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                     },
                     {
                         "title": "WHY PRINTED TAPES FROM ALFA IN?",
-                        "subtitle": "We offer flexo printing up to 8 colours and rotogravure up to 10 colours, including 3D options — durable reverse printing at factory-direct prices.",
+                        "subtitle": "We offer flexo printing up to 8 colours and rotogravure up to 10 colours, including 3D options, durable reverse printing at factory-direct prices.",
                     },
                 ],
                 "cta_offer": "Browse our range",
                 "cta_quote": "Request a quote",
+                "cta_sample": "Request samples",
             },
             "about": {
                 "label": "About us",
@@ -870,11 +912,13 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "body1": "Our modern production facility allows us to respond flexibly to the needs of both small e-shops and large industrial enterprises. We pride ourselves on precise printing (up to 8 colours), premium adhesive quality (Hot Melt, Acrylic) and fast delivery throughout the Czech Republic.",
                 "body2": "Thanks to ISO 9001 certified processes and the use of ecological, sustainable materials, we are a reliable partner for more than 100 active customers.",
                 "image_alt": "ALFA IN adhesive tape production",
+                "team_title": "ALFA IN team",
+                "team_subtitle": "Tradition, experience and a personal approach to every order",
             },
             "references": {
                 "label": "References",
                 "title": "Satisfied customers across industries",
-                "subtitle": "Companies that rely on our printed tapes every day — from e-commerce to manufacturing and healthcare.",
+                "subtitle": "Companies that rely on our printed tapes every day, from e-commerce to manufacturing and healthcare.",
                 "stat_customers": "active customers",
                 "stat_experience": "years of printing experience",
                 "stat_iso": "certified production",
@@ -910,6 +954,7 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "glue_badge": "Extreme adhesion",
                 "glue_title": "EXTRA GLUE+ (ACRYL) and TACK+ (HOT MELT)",
                 "glue_text": "Tapes with an increased adhesive layer (33% and 20% respectively) and the option of a stronger film than standard, designed for very demanding applications such as heavy parcels, poor-quality cardboard or dusty environments. They bond extremely firmly to cardboard.",
+                "glue_extra_tag": "+33% adhesive",
             },
             "form": {
                 "label": "Inquiry",
@@ -919,8 +964,15 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "step_label": "Step {current} of {total}",
                 "steps": ["Product specification", "Dimensions and quantity", "Contact details"],
                 "step1_title": "Product specification",
-                "step1_hint": "Select tape type, base colour and number of print colours.",
+                "step1_hint": "Select material and optionally a specific tape, adhesive type, base colour and number of print colours.",
+                "material_label": "Material type",
+                "material_placeholder": "Select material…",
+                "product_label": "Specific tape",
+                "product_placeholder": "Select tape (optional)…",
+                "catalog_error": "Could not load catalogue",
                 "tape_type": "Adhesive type",
+                "acryl_no_silent_title": "Without low-noise treatment",
+                "acryl_no_silent_text": "ACRYL tapes normally have quiet unwinding. Check this if you prefer the variant without this treatment.",
                 "base_color": "Base colour",
                 "print_colors": "Number of print colours",
                 "hot_melt_hint": "Synthetic rubber",
@@ -941,8 +993,11 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "length_label": "Tape length in metres",
                 "quantity_label": "Requested quantity in rolls",
                 "quantity_hint": "Enter a number from 360 to 9999.",
+                "quantity_min": "Minimum quantity is 360 rolls.",
                 "quantity_tip": "From 360 rolls you get free shipping. Delivery takes approximately 3–4 weeks.",
                 "quantity_success": "🔥 Great choice! You have free shipping. Delivery takes approximately 3–4 weeks.",
+                "sample_note_btn": "I want a sample",
+                "sample_note_text": "I am interested in a test sample.",
                 "order_period_label": "Expected order frequency",
                 "order_periods": {
                     "monthly": "Every month",
@@ -1006,7 +1061,7 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "sample": {
                 "label": "Test sample",
                 "title": "Not sure which tape to choose? We will send you a free sample.",
-                "text": "We understand that tape quality is key to smooth logistics. Fill in the inquiry form — we will add the test sample note for you.",
+                "text": "We understand that tape quality is key to smooth logistics. Fill in the inquiry form and we will add the test sample note for you.",
                 "cta": "I want a sample",
             },
         },
@@ -1171,6 +1226,13 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "instagram": "Instagram",
             "youtube": "YouTube",
         },
+        "info_banner": {
+            "aria_label": "Wichtige Informationen",
+            "messages": [
+                "August: Produktion und Logistik sind 3 Wochen lang geschlossen. Bestellungen mit Lieferung vor der Schließung senden Sie bitte bis spätestens <strong>10. 7. 2026</strong>.",
+                "Bei Bestellungen aus Juli und August gilt eine Lieferzeit von 3–4 Wochen mit Lieferung im <strong>September 2026</strong>.",
+            ],
+        },
         "footer": {
             "address_heading": "Besuchen Sie uns unter",
             "company": "ALFA IN a.s.",
@@ -1201,11 +1263,12 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                     },
                     {
                         "title": "WARUM BEDRUCKTE BÄNDER VON ALFA IN?",
-                        "subtitle": "Flexodruck bis 8 Farben und Rotogravur bis 10 Farben, inkl. 3D-Optionen – langlebiger Rückseitendruck zu Fabrikpreisen.",
+                        "subtitle": "Flexodruck bis 8 Farben und Rotogravur bis 10 Farben, inkl. 3D-Optionen, langlebiger Rückseitendruck zu Fabrikpreisen.",
                     },
                 ],
                 "cta_offer": "Angebot ansehen",
                 "cta_quote": "Unverbindliche Kalkulation",
+                "cta_sample": "Muster anfordern",
             },
             "about": {
                 "label": "Über uns",
@@ -1214,11 +1277,13 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "body1": "Unsere moderne Produktionsstätte ermöglicht es uns, flexibel auf die Bedürfnisse kleiner E-Shops wie auch großer Industrieunternehmen zu reagieren. Wir legen Wert auf präzisen Druck (bis 8 Farben), erstklassige Klebstoffqualität (Hot Melt, Acryl) und schnelle Lieferung in der gesamten Tschechischen Republik.",
                 "body2": "Dank ISO-9001-zertifizierter Prozesse und dem Einsatz ökologischer, nachhaltiger Materialien sind wir ein zuverlässiger Partner für mehr als 100 aktive Abnehmer.",
                 "image_alt": "ALFA IN Klebeband-Produktion",
+                "team_title": "Team ALFA IN",
+                "team_subtitle": "Tradition, Erfahrung und persönlicher Ansatz bei jedem Auftrag",
             },
             "references": {
                 "label": "Referenzen",
                 "title": "Zufriedene Kunden aus allen Branchen",
-                "subtitle": "Unternehmen, die täglich auf unsere bedruckten Bänder vertrauen – von E-Commerce über Produktion bis Gesundheitswesen.",
+                "subtitle": "Unternehmen, die täglich auf unsere bedruckten Bänder vertrauen, von E-Commerce über Produktion bis Gesundheitswesen.",
                 "stat_customers": "aktive Abnehmer",
                 "stat_experience": "Jahre Druckerfahrung",
                 "stat_iso": "zertifizierte Produktion",
@@ -1254,6 +1319,7 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "glue_badge": "Extreme Klebkraft",
                 "glue_title": "EXTRA GLUE+ (ACRYL) und TACK+ (HOT MELT)",
                 "glue_text": "Bänder mit erhöhter Klebstoffschicht (33 % bzw. 20 %) und optional stärkerer Folie für anspruchsvolle Anwendungen wie schwere Pakete, minderwertigen Karton oder staubige Umgebungen. Haften extrem fest auf Karton.",
+                "glue_extra_tag": "+33 % Klebstoff",
             },
             "form": {
                 "label": "Anfrage",
@@ -1263,8 +1329,15 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "step_label": "Schritt {current} von {total}",
                 "steps": ["Produktspezifikation", "Abmessungen und Menge", "Kontaktdaten"],
                 "step1_title": "Produktspezifikation",
-                "step1_hint": "Wählen Sie Bandtyp, Grundfarbe und Anzahl der Druckfarben.",
+                "step1_hint": "Wählen Sie Material und optional ein konkretes Band, Klebstofftyp, Grundfarbe und Anzahl der Druckfarben.",
+                "material_label": "Materialtyp",
+                "material_placeholder": "Material wählen…",
+                "product_label": "Konkretes Band",
+                "product_placeholder": "Band wählen (optional)…",
+                "catalog_error": "Katalog konnte nicht geladen werden",
                 "tape_type": "Klebstofftyp",
+                "acryl_no_silent_title": "Ohne geräuscharme Behandlung",
+                "acryl_no_silent_text": "ACRYL-Bänder rollen standardmäßig geräuscharm ab. Aktivieren Sie dies, wenn Sie die Variante ohne diese Behandlung bevorzugen.",
                 "base_color": "Grundfarbe",
                 "print_colors": "Anzahl der Druckfarben",
                 "hot_melt_hint": "Synthetischer Kautschuk",
@@ -1285,8 +1358,11 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "length_label": "Bandlänge in Metern",
                 "quantity_label": "Gewünschte Menge in Rollen",
                 "quantity_hint": "Geben Sie eine Zahl von 360 bis 9999 ein.",
+                "quantity_min": "Mindestmenge ist 360 Rollen.",
                 "quantity_tip": "Ab 360 Rollen erhalten Sie kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
                 "quantity_success": "🔥 Ausgezeichnete Wahl! Sie haben kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
+                "sample_note_btn": "Ich möchte ein Muster",
+                "sample_note_text": "Ich interessiere mich für ein Testmuster.",
                 "order_period_label": "Voraussichtliche Bestellfrequenz",
                 "order_periods": {
                     "monthly": "Jeden Monat",
@@ -1350,7 +1426,7 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "sample": {
                 "label": "Testmuster",
                 "title": "Unsicher bei der Auswahl? Wir senden Ihnen ein kostenloses Muster.",
-                "text": "Wir wissen, dass die Qualität des Klebebands für reibungslose Logistik entscheidend ist. Füllen Sie die Anfrage aus — den Hinweis auf ein Testmuster ergänzen wir für Sie.",
+                "text": "Wir wissen, dass die Qualität des Klebebands für reibungslose Logistik entscheidend ist. Füllen Sie die Anfrage aus, den Hinweis auf ein Testmuster ergänzen wir für Sie.",
                 "cta": "Ich möchte ein Muster",
             },
         },
@@ -1496,17 +1572,329 @@ def write_json(path: Path, data: dict[str, Any]) -> int:
     return len(text.splitlines())
 
 
+def finalize_locale(data: dict[str, Any], locale: str, ns: dict) -> dict[str, Any]:
+    out = copy.deepcopy(data)
+    out["meta"]["langNames"] = LANG_NAMES
+    out["meta"]["htmlLang"] = HTML_LANG[locale]
+    if "sortiment" in out:
+        out["sortiment"] = merge_into_sortiment(out["sortiment"], locale, ns)
+    if "gallery" in out:
+        out["gallery"] = merge_into_gallery(out["gallery"], locale)
+    return out
+
+
+def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any]:
+    """Italian locale — based on EN structure with IT copy and category translations."""
+    it = copy.deepcopy(build_en(cs, cs_categories))
+    it["meta"].update(
+        {
+            "site_name": "Nastri adesivi stampati",
+            "logo_alt": "Nastri adesivi stampati",
+            "home_title": "Home | Nastri adesivi stampati",
+            "home_description": "Nastri adesivi stampati | Produzione e fornitura di nastri adesivi personalizzati da ALFA IN a.s.",
+            "gallery_title": "Galleria | Nastri adesivi stampati",
+            "gallery_description": "Galleria di nastri adesivi stampati di ALFA IN a.s. — stampa monocolore, rotocalco, nastri di sicurezza e logistici.",
+            "sortiment_title": "Assortimento | Nastri adesivi stampati",
+            "sortiment_description": "Gamma di nastri adesivi ALFA IN — nastri BOPP HOT MELT e ACRILICI, linee speciali e prodotti ECO con stampa personalizzata.",
+        }
+    )
+    it["nav"] = {
+        "tagline": "ALFA IN — produzione, consulenza, vendita e assistenza",
+        "menu": "Apri menu",
+        "menu_close": "Chiudi menu",
+        "main_nav_label": "Navigazione principale",
+        "home": "Home",
+        "gallery": "Galleria",
+        "sortiment": "Assortimento",
+        "references": "Referenze",
+        "contacts": "Contatti",
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "youtube": "YouTube",
+    }
+    it["info_banner"] = {
+        "aria_label": "Informazioni importanti",
+        "messages": [
+            "Agosto: produzione e logistica saranno ferme per 3 settimane. Per la consegna prima della pausa, inviate l'ordine entro il <strong>10 luglio 2026</strong>.",
+            "Per gli ordini di luglio e agosto, i tempi di consegna sono di 3–4 settimane con consegna a <strong>settembre 2026</strong>.",
+        ],
+    }
+    it["footer"] = {
+        "address_heading": "Ci trovate qui",
+        "company": "ALFA IN a.s.",
+        "street": "n. 74",
+        "city": "675 21 Nová Ves u Třebíče",
+        "country": "Repubblica Ceca",
+        "show_on_map": "Mostra sulla mappa",
+        "email_heading": "Scriveteci",
+        "phone_heading": "Chiamateci",
+        "phone_hours": "7:00 – 15:30",
+        "more_contacts": "Altri contatti",
+        "social_heading": "Social media",
+        "copyright": "Tutti i diritti riservati",
+        "made_by": "realizzato da",
+        "made_by_link": "Jan Sedlář",
+    }
+    it["home"]["hero"].update(
+        {
+            "badge": "ISO 9001 · Direttamente dal produttore",
+            "slides": [
+                {
+                    "title": "NASTRI ADESIVI PER IMBALLAGGIO",
+                    "subtitle": "Nastri adesivi per imballaggio stampati o neutri con certificazione ISO 9001.",
+                },
+                {
+                    "title": "PERCHÉ USARE NASTRI ADESIVI STAMPATI?",
+                    "subtitle": "I nastri adesivi imballano, proteggono, promuovono e mettono in sicurezza le vostre merci.",
+                },
+                {
+                    "title": "PERCHÉ I NASTRI STAMPATI DI ALFA IN?",
+                    "subtitle": "Offriamo stampa flexo fino a 8 colori e rotocalco fino a 10 colori, anche in 3D, stampa inversa resistente a prezzi diretti dal produttore.",
+                },
+            ],
+            "cta_offer": "Scopri la gamma",
+            "cta_quote": "Richiedi un preventivo",
+            "cta_sample": "Richiedi campioni",
+        }
+    )
+    it["home"]["about"].update(
+        {
+            "label": "Chi siamo",
+            "title": "Produttore ceco tradizionale di nastri adesivi stampati",
+            "lead": "Da oltre 30 anni aiutiamo le aziende a imballare le spedizioni in modo sicuro e a costruire un marchio forte direttamente sui materiali di imballaggio. Siamo specializzati nella stampa personalizzata di nastri adesivi.",
+            "body1": "Il nostro moderno stabilimento ci permette di rispondere in modo flessibile alle esigenze sia dei piccoli e-shop sia delle grandi imprese industriali. Puntiamo su una stampa precisa (fino a 8 colori), adesivi premium (Hot Melt, Acrilico) e consegne rapide in tutta la Repubblica Ceca.",
+            "body2": "Grazie a processi certificati ISO 9001 e all'uso di materiali ecologici e sostenibili, siamo un partner affidabile per oltre 100 clienti attivi.",
+            "image_alt": "Produzione di nastri adesivi ALFA IN",
+            "team_title": "Team ALFA IN",
+            "team_subtitle": "Tradizione, esperienza e approccio personale a ogni ordine",
+        }
+    )
+    it["home"]["references"].update(
+        {
+            "label": "Referenze",
+            "title": "Clienti soddisfatti in diversi settori",
+            "subtitle": "Aziende che ogni giorno si affidano ai nostri nastri stampati, dall'e-commerce alla produzione e alla sanità.",
+            "stat_customers": "clienti attivi",
+            "stat_experience": "anni di esperienza nella stampa",
+            "stat_iso": "produzione certificata",
+            "carousel_label": "Aziende con cui collaboriamo",
+        }
+    )
+    it["home"]["sample"].update(
+        {
+            "label": "Campione di prova",
+            "title": "Non siete sicuri della scelta? Vi invieremo un campione gratuito.",
+            "text": "Comprendiamo che la qualità del nastro è fondamentale per una logistica fluida. Compilate il modulo di richiesta e aggiungeremo noi la nota sul campione di prova.",
+            "cta": "Voglio un campione",
+        }
+    )
+    it["home"]["lepidla"].update(
+        {
+            "label": "Guida alla scelta",
+            "title": "Quale adesivo scegliere?",
+            "hot_melt_badge": "Freddo e velocità",
+            "hot_melt_title": "HOT MELT",
+            "hot_melt_subtitle": "Gomma sintetica",
+            "hot_melt_text": "La scelta ideale per ambienti più freddi e magazzini non riscaldati. Aderisce al supporto in modo estremamente rapido e forte subito dopo l'applicazione. Non può essere rimosso facilmente dalla pellicola stretch.",
+            "acryl_badge": "Silenzioso e resistente ai UV",
+            "acryl_title": "ACRYL",
+            "acryl_subtitle": "Con svolgimento silenzioso",
+            "acryl_text": "Garantisce uno svolgimento silenzioso e confortevole, apprezzato nelle grandi sale di imballaggio. Altamente resistente ai raggi UV e all'invecchiamento, perfetto per lo stoccaggio a lungo termine.",
+        }
+    )
+    it["home"]["sustainability"].update(
+        {
+            "label": "Ecologia e sostenibilità",
+            "title": "Imballaggio sostenibile per il vostro e-shop e la produzione",
+            "subtitle": "L'impronta ambientale dei materiali di imballaggio è la nostra priorità. Offriamo nastri adesivi selezionati per la facile riciclabilità e il minimo impatto ambientale.",
+            "card1_title": "Film riciclabile al 100%",
+            "card1_text": "I nostri nastri sono realizzati con moderno film BOPP completamente riciclabile. A differenza dei vecchi materiali PVC, durante la lavorazione non vengono rilasciate sostanze tossiche ed è delicato sull'ambiente.",
+            "card2_title": "Adesivi ecologici senza solventi",
+            "card2_text": "Utilizziamo esclusivamente adesivi rispettosi dell'ambiente. Gli adesivi acrilici sono a base acquosa e la tecnologia Hot Melt funziona senza solventi chimici o additivi sintetici.",
+            "card3_title": "Recycling del cartone senza problemi",
+            "card3_text": "Grazie alla tecnologia avanzata, le moderne linee di riciclo possono separare facilmente i nostri nastri dalle scatole di cartone. I vostri clienti possono gettare le scatole usate direttamente nel contenitore della carta.",
+        }
+    )
+    it["home"]["benefits"].update(
+        {
+            "security_badge": "Sicurezza",
+            "security_title": "Nastro TAMPER EVIDENT, la manomissione è evidente!",
+            "security_text": "Questo nastro di sicurezza appare neutro, ma una volta rimosso lascia sull'imballo un avviso praticamente impossibile da eliminare. Adatto a tutti i tipi di cartone e pellicola stretch, disponibile in vari colori e con stampa personalizzata.",
+            "glue_badge": "Adesione estrema",
+            "glue_title": "EXTRA GLUE+ (ACRYL) e TACK+ (HOT MELT)",
+            "glue_text": "Nastri con strato adesivo aumentato (33% e 20% rispettivamente) e possibilità di un film più resistente rispetto allo standard, progettati per applicazioni molto impegnative come pacchi pesanti, cartone di scarsa qualità o ambienti polverosi. Aderiscono estremamente bene al cartone.",
+            "glue_extra_tag": "+33% adesivo",
+        }
+    )
+    it["home"]["contacts"].update(
+        {
+            "label": "Team",
+            "title": "CONTATTI PER REPARTO",
+            "karel_name": "Ing. Karel Petrák",
+            "karel_role": "Rappresentante vendite nastri da imballaggio",
+            "vojtech_name": "Vojtěch Petrák",
+            "vojtech_role": "Assistente vendite",
+            "more_contacts": "Altri contatti",
+        }
+    )
+    it["home"]["form"].update(
+        {
+            "label": "Richiesta",
+            "title": "Desidero un preventivo",
+            "step_label": "Passo {current} di {total}",
+            "steps": ["Specifiche prodotto", "Dimensioni e quantità", "Dati di contatto"],
+            "step1_title": "Specifiche prodotto",
+            "step1_hint": "Selezionate materiale ed eventualmente un nastro specifico, tipo di adesivo, colore di fondo e numero di colori di stampa.",
+            "material_label": "Tipo di materiale",
+            "material_placeholder": "Seleziona materiale…",
+            "product_label": "Nastro specifico",
+            "product_placeholder": "Seleziona nastro (facoltativo)…",
+            "catalog_error": "Impossibile caricare il catalogo",
+            "tape_type": "Tipo di adesivo",
+            "hot_melt_hint": "Gomma sintetica",
+            "acryl_hint": "Svolgimento silenzioso",
+            "base_color": "Colore di fondo",
+            "print_colors": "Numero di colori di stampa",
+            "colors": {
+                "bila": "bianco",
+                "hneda": "marrone",
+                "transparentni": "transp.",
+                "jina": "altro",
+            },
+            "acryl_no_silent_title": "Senza trattamento antirumore",
+            "acryl_no_silent_text": "I nastri ACRYL hanno normalmente svolgimento silenzioso. Selezionate se preferite la variante senza questo trattamento.",
+            "continue": "Continua",
+            "back": "Indietro",
+            "step2_title": "Dimensioni e quantità",
+            "step2_hint": "Indicate le dimensioni del nastro e i volumi di ordine previsti.",
+            "width_label": "Larghezza del nastro in mm",
+            "length_label": "Lunghezza del nastro in metri",
+            "quantity_label": "Quantità richiesta in rotoli",
+            "quantity_hint": "Inserite un numero da 360 a 9999.",
+            "quantity_min": "La quantità minima è 360 rotoli.",
+            "quantity_tip": "Da 360 rotoli la spedizione è gratuita. La consegna richiede circa 3–4 settimane.",
+            "quantity_success": "🔥 Ottima scelta! Avete la spedizione gratuita. La consegna richiede circa 3–4 settimane.",
+            "order_period_label": "Frequenza di ordine prevista",
+            "order_periods": {
+                "monthly": "Ogni mese",
+                "quarterly": "Ogni 3 mesi",
+                "biannual": "Ogni 6 mesi",
+                "annual": "Una volta all'anno",
+            },
+            "step3_title": "Dati aziendali e di contatto",
+            "step3_hint": "Completate i dati per l'elaborazione del preventivo non vincolante.",
+            "company_label": "Nome dell'azienda",
+            "ico_label": "Inserite il numero di registrazione della vostra azienda",
+            "name_label": "Nome e cognome (persona di contatto)",
+            "email_label": "E-mail",
+            "phone_label": "Telefono",
+            "note_label": "Nota",
+            "sample_note_btn": "Voglio un campione",
+            "sample_note_text": "Sono interessato a un campione di prova.",
+            "gdpr": "Inviando accettate il trattamento dei dati personali",
+            "gdpr_before": "Inviando accettate il",
+            "gdpr_link": "trattamento dei dati personali",
+            "gdpr_modal": {
+                "title": "Trattamento dei dati personali",
+                "close": "Chiudi",
+                "intro": "Informazioni ai sensi dell'art. 13 GDPR per la compilazione e l'invio del modulo di richiesta su questa pagina.",
+                "controller_heading": "Titolare del trattamento",
+                "controller": "ALFA IN a.s., ID 255 35 366, č.p. 74, 675 21 Nová Ves u Třebíče, Repubblica Ceca. Contatto: epo@alfain.eu, tel. +420 568 840 009, www.alfain.eu",
+                "data_heading": "Dati trattati",
+                "data": "Nome e cognome, ragione sociale, ID azienda, e-mail, telefono, nota e parametri della richiesta inseriti nel modulo.",
+                "purpose_heading": "Finalità e base giuridica",
+                "purpose": "Gestione della richiesta, preparazione di un preventivo non vincolante e comunicazione successiva. Base giuridica: il vostro consenso (art. 6 par. 1 lett. a GDPR) e misure precontrattuali / esecuzione del contratto (art. 6 par. 1 lett. b GDPR).",
+                "retention_heading": "Periodo di conservazione",
+                "retention": "Per il tempo necessario a gestire la richiesta e al massimo 4 anni dall'ultimo contatto se non viene concluso un contratto; in caso di rapporto contrattuale per la durata del contratto e successivamente come richiesto dalla legge.",
+                "recipients_heading": "Destinatari",
+                "recipients": "I dati possono essere comunicati a responsabili del trattamento (amministrazione IT, hosting, servizi e-mail) sulla base di accordi di trattamento e alle autorità competenti ove richiesto dalla legge.",
+                "rights_heading": "I vostri diritti",
+                "rights": "Avete diritto di accesso, rettifica, cancellazione, limitazione del trattamento, portabilità dei dati, opposizione e reclamo all'Ufficio per la protezione dei dati personali (www.uoou.cz). Inviate le richieste a epo@alfain.eu.",
+                "full_link": "Testo completo dell'informativa sulla privacy",
+            },
+            "submit": "Invia richiesta",
+        }
+    )
+    it["sortiment"]["categories"] = translate_categories(cs_categories, CATEGORY_IT)
+    it["sortiment"]["ui"].update(
+        {
+            "label": "Assortimento",
+            "title": "Scoprite i nostri nastri adesivi",
+            "subtitle": "Scegliete il tipo di prodotto in base al materiale e all'utilizzo. In ogni categoria troverete una panoramica dettagliata delle varianti disponibili.",
+            "filter": "Filtro",
+            "clear_all": "Cancella tutto",
+            "results_title": "Prodotti trovati in base ai filtri",
+            "empty": "Nessun nastro corrisponde ai filtri selezionati. Provate a rimuoverne alcuni.",
+            "show_products": "Mostra prodotti",
+            "cta_quote": "Preventivo non vincolante",
+        }
+    )
+    it["gallery"]["ui"].update(
+        {
+            "label": "Galleria",
+            "title": "Esempi del nostro lavoro",
+            "subtitle": "Referenze reali dalla produzione ed esempi di tecnologie di stampa — filtrate per tipo di stampa, adesivo o settore.",
+            "cta_custom": "Voglio una stampa personalizzata",
+        }
+    )
+    it["gallery"]["sections"].update(
+        {
+            "featured": "Esempi selezionati",
+            "references_title": "Referenze reali",
+            "references_subtitle": "Fotografie di stampe reali dalla nostra produzione. Aggiungeremo altre referenze dopo un nuovo servizio fotografico.",
+            "demos_title": "Possibilità di stampa e tecnologie",
+            "demos_subtitle": "Esempi di soluzioni di sicurezza, logistica e speciali — illustrazione delle tecnologie che offriamo.",
+            "empty": "Nessun esempio corrisponde ai filtri selezionati. Provate a rimuoverne alcuni.",
+        }
+    )
+    it["gallery"]["cards"].update(
+        {
+            "view_detail": "Visualizza dettagli",
+            "view_detail_aria": "Visualizza dettagli: {title}",
+        }
+    )
+    it["gallery"]["cta"].update(
+        {
+            "title": "Avete un logo?",
+            "text": "Prepareremo un preventivo non vincolante e un campione di stampa. Basta inviarci il logo e i parametri desiderati del nastro.",
+            "button": "Richiedi senza impegno",
+        }
+    )
+    it["js"]["gallery"].update(
+        {
+            "remove_filter": "Rimuovi filtro",
+            "count_all": "{count} esempi",
+            "count_filtered": "Visualizzati {visible} di {total}",
+        }
+    )
+    it["js"]["sortiment"].update(
+        {
+            "remove_filter": "Rimuovi filtro",
+            "product_one": "1 prodotto",
+            "product_few": "{n} prodotti",
+            "product_many": "{n} prodotti",
+            "detail": "Dettagli",
+            "inquire": "Richiedi",
+        }
+    )
+    it["js"]["form"]["step_label"] = "Passo {current} di {total}"
+    return it
+
+
 def main() -> None:
     cs = build_cs()
     cs_categories = build_sortiment_categories_cs()
+    ns = load_gp_namespace()
     locales = {
         "cs": cs,
         "en": build_en(cs, cs_categories),
         "de": build_de(cs, cs_categories),
+        "it": build_it(cs, cs_categories),
     }
 
     print(f"Writing i18n JSON to {OUT_DIR}/")
     for locale, data in locales.items():
+        data = finalize_locale(data, locale, ns)
         path = OUT_DIR / f"{locale}.json"
         lines = write_json(path, data)
         print(f"  {path.name}: {lines} lines")

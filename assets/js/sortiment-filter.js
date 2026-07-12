@@ -33,6 +33,42 @@
     var pills = Array.prototype.slice.call(panel.querySelectorAll('[data-tag]'));
     var dropdowns = Array.prototype.slice.call(panel.querySelectorAll('[data-dropdown]'));
 
+    function t(key, fallback) {
+        if (window.paskyI18n && typeof window.paskyI18n.t === 'function') {
+            return window.paskyI18n.t(key, fallback);
+        }
+        return fallback;
+    }
+
+    function productSlugFromDetail(detail) {
+        var parts = String(detail || '').split('/').filter(Boolean);
+        return parts[parts.length - 1] || '';
+    }
+
+    function localizedProduct(p) {
+        var slug = productSlugFromDetail(p.detail);
+        var loc = window.paskyI18n && window.paskyI18n.get
+            ? window.paskyI18n.get('sortiment.products.' + slug)
+            : null;
+        if (!loc) return p;
+        return {
+            name: loc.name || p.name,
+            tagline: loc.tagline || p.tagline,
+            category: loc.category_title || p.category,
+            detail: p.detail,
+            image: p.image,
+            tags: p.tags,
+            portrait: p.portrait,
+        };
+    }
+
+    function countLabel(n) {
+        if (n === 1) return t('js.sortiment.product_one', '1 produkt');
+        var few = t('js.sortiment.product_few', '{n} produkty').replace('{n}', String(n));
+        var many = t('js.sortiment.product_many', '{n} produktů').replace('{n}', String(n));
+        return n >= 2 && n <= 4 ? few : many;
+    }
+
     function labelOf(tag) {
         for (var i = 0; i < pills.length; i++) {
             if (pills[i].getAttribute('data-tag') === tag) {
@@ -64,6 +100,7 @@
     }
 
     function cardHTML(p) {
+        p = localizedProduct(p);
         var portrait = !!p.portrait;
         var imageBoxClass = portrait
             ? 'product-image-frame block w-full h-56 flex items-center justify-center overflow-hidden'
@@ -82,8 +119,8 @@
                 '<a href="' + esc(p.detail) + '"><h3 class="mt-1 text-lg font-bold text-slate-900 hover:text-orange-600">' + esc(p.name) + '</h3></a>' +
                 '<p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">' + esc(p.tagline || '') + '</p>' +
                 '<div class="mt-5 flex gap-2">' +
-                    '<a href="' + esc(p.detail) + '" class="flex-1 inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-bold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50">Detail</a>' +
-                    '<a href="' + esc(inquiryUrl) + '" class="flex-1 inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 px-4 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:scale-[1.02] hover:shadow-md">Poptat</a>' +
+                    '<a href="' + esc(p.detail) + '" class="flex-1 inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-bold text-slate-700 transition-all hover:border-slate-300 hover:bg-slate-50">' + esc(t('js.sortiment.detail', 'Detail')) + '</a>' +
+                    '<a href="' + esc(inquiryUrl) + '" class="flex-1 inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 px-4 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:scale-[1.02] hover:shadow-md">' + esc(t('js.sortiment.inquire', 'Poptat')) + '</a>' +
                 '</div>' +
             '</div>' +
         '</article>';
@@ -93,7 +130,7 @@
         return '' +
         '<span class="bg-orange-50 text-orange-600 border border-orange-100 text-xs font-semibold rounded-full px-3 py-1 flex items-center gap-1.5">' +
             esc(labelOf(tag)) +
-            '<button type="button" data-remove="' + esc(tag) + '" aria-label="Odebrat filtr" class="flex h-4 w-4 items-center justify-center rounded-full text-orange-500 transition-colors hover:bg-orange-100 hover:text-orange-700">' +
+            '<button type="button" data-remove="' + esc(tag) + '" aria-label="' + esc(t('js.sortiment.remove_filter', 'Odebrat filtr')) + '" class="flex h-4 w-4 items-center justify-center rounded-full text-orange-500 transition-colors hover:bg-orange-100 hover:text-orange-700">' +
                 '<svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18"/></svg>' +
             '</button>' +
         '</span>';
@@ -143,9 +180,7 @@
         results.classList.remove('hidden');
 
         if (resultsCount) {
-            resultsCount.textContent = matches.length === 1
-                ? '1 produkt'
-                : (matches.length >= 2 && matches.length <= 4 ? matches.length + ' produkty' : matches.length + ' produktů');
+            resultsCount.textContent = countLabel(matches.length);
         }
 
         if (matches.length === 0) {
@@ -219,4 +254,11 @@
     }
 
     render();
+
+    document.addEventListener('pasky:i18n-ready', function () {
+        render();
+    });
+    document.addEventListener('pasky:i18n-pages-applied', function () {
+        render();
+    });
 })();

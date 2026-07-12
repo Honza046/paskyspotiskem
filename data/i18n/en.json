@@ -11,8 +11,10 @@
     "langNames": {
       "cs": "Čeština",
       "en": "English",
-      "de": "Deutsch"
-    }
+      "de": "Deutsch",
+      "it": "Italiano"
+    },
+    "htmlLang": "en"
   },
   "nav": {
     "tagline": "ALFA IN — manufacturing, consulting, sales and service",
@@ -21,14 +23,19 @@
     "main_nav_label": "Main navigation",
     "home": "Home",
     "gallery": "Gallery",
-    "sortiment": "Product range",
+    "sortiment": "Products",
     "references": "References",
     "contacts": "Contact",
     "facebook": "Facebook",
     "instagram": "Instagram",
-    "youtube": "YouTube",
-    "theme_toggle": "Toggle dark mode",
-    "theme_light": "Light mode"
+    "youtube": "YouTube"
+  },
+  "info_banner": {
+    "aria_label": "Important information",
+    "messages": [
+      "August: production and logistics will be shut down for 3 weeks. To receive delivery before the shutdown, place your order by <strong>10 July 2026</strong>.",
+      "For July and August orders, the delivery time is 3–4 weeks with delivery in <strong>September 2026</strong>."
+    ]
   },
   "footer": {
     "address_heading": "Visit us at",
@@ -51,27 +58,21 @@
       "badge": "ISO 9001 · Direct from the manufacturer",
       "slides": [
         {
-          "title": "ADHESIVE TAPES WITH REVERSE PRINTING",
-          "subtitle": "Highly reliable BOPP tapes with print protected under a film layer, plus eco-friendly options for sustainable packaging.",
-          "cta_primary": "Browse our range",
-          "cta_secondary": "Request a quote"
+          "title": "PACKAGING ADHESIVE TAPES",
+          "subtitle": "Printed or plain self-adhesive packaging tapes with ISO 9001 certification."
         },
         {
-          "title": "WHY CHOOSE US?",
-          "subtitle": "Over 30 years of experience and partnerships with leading e-commerce and industrial companies. Reliability, fast delivery and a personal approach to every order.",
-          "cta_primary": "Browse our range",
-          "cta_secondary": "Request a quote"
+          "title": "WHY USE PRINTED ADHESIVE TAPES?",
+          "subtitle": "Adhesive tapes pack, secure, promote and protect your goods."
         },
         {
-          "title": "TEST OUR QUALITY IN YOUR OPERATION",
-          "subtitle": "Request a free sample or a no-obligation custom quote. See the strength and adhesive performance before you order.",
-          "cta_primary": "Request samples",
-          "cta_secondary": "Request a quote"
+          "title": "WHY PRINTED TAPES FROM ALFA IN?",
+          "subtitle": "We offer flexo printing up to 8 colours and rotogravure up to 10 colours, including 3D options, durable reverse printing at factory-direct prices."
         }
       ],
       "cta_offer": "Browse our range",
       "cta_quote": "Request a quote",
-      "cta_samples": "Request samples"
+      "cta_sample": "Request samples"
     },
     "about": {
       "label": "About us",
@@ -79,12 +80,14 @@
       "lead": "For more than 30 years we have helped companies pack their shipments securely and build a strong brand directly on packaging materials. We specialise in custom printing of adhesive tapes.",
       "body1": "Our modern production facility allows us to respond flexibly to the needs of both small e-shops and large industrial enterprises. We pride ourselves on precise printing (up to 8 colours), premium adhesive quality (Hot Melt, Acrylic) and fast delivery throughout the Czech Republic.",
       "body2": "Thanks to ISO 9001 certified processes and the use of ecological, sustainable materials, we are a reliable partner for more than 100 active customers.",
-      "image_alt": "ALFA IN adhesive tape production"
+      "image_alt": "ALFA IN adhesive tape production",
+      "team_title": "ALFA IN team",
+      "team_subtitle": "Tradition, experience and a personal approach to every order"
     },
     "references": {
       "label": "References",
       "title": "Satisfied customers across industries",
-      "subtitle": "Companies that rely on our printed tapes every day — from e-commerce to manufacturing and healthcare.",
+      "subtitle": "Companies that rely on our printed tapes every day, from e-commerce to manufacturing and healthcare.",
       "stat_customers": "active customers",
       "stat_experience": "years of printing experience",
       "stat_iso": "certified production",
@@ -119,7 +122,8 @@
       "security_text": "This security tape looks neutral, but when removed it leaves a warning on the box that is virtually impossible to eliminate. Suitable for all types of cardboard and stretch film, available in various colours and with custom printing.",
       "glue_badge": "Extreme adhesion",
       "glue_title": "EXTRA GLUE+ (ACRYL) and TACK+ (HOT MELT)",
-      "glue_text": "Tapes with an increased adhesive layer (33% and 20% respectively) and the option of a stronger film than standard, designed for very demanding applications such as heavy parcels, poor-quality cardboard or dusty environments. They bond extremely firmly to cardboard."
+      "glue_text": "Tapes with an increased adhesive layer (33% and 20% respectively) and the option of a stronger film than standard, designed for very demanding applications such as heavy parcels, poor-quality cardboard or dusty environments. They bond extremely firmly to cardboard.",
+      "glue_extra_tag": "+33% adhesive"
     },
     "form": {
       "label": "Inquiry",
@@ -133,8 +137,15 @@
         "Contact details"
       ],
       "step1_title": "Product specification",
-      "step1_hint": "Select tape type, base colour and number of print colours.",
+      "step1_hint": "Select material and optionally a specific tape, adhesive type, base colour and number of print colours.",
+      "material_label": "Material type",
+      "material_placeholder": "Select material…",
+      "product_label": "Specific tape",
+      "product_placeholder": "Select tape (optional)…",
+      "catalog_error": "Could not load catalogue",
       "tape_type": "Adhesive type",
+      "acryl_no_silent_title": "Without low-noise treatment",
+      "acryl_no_silent_text": "ACRYL tapes normally have quiet unwinding. Check this if you prefer the variant without this treatment.",
       "base_color": "Base colour",
       "print_colors": "Number of print colours",
       "hot_melt_hint": "Synthetic rubber",
@@ -155,8 +166,11 @@
       "length_label": "Tape length in metres",
       "quantity_label": "Requested quantity in rolls",
       "quantity_hint": "Enter a number from 360 to 9999.",
+      "quantity_min": "Minimum quantity is 360 rolls.",
       "quantity_tip": "From 360 rolls you get free shipping. Delivery takes approximately 3–4 weeks.",
       "quantity_success": "🔥 Great choice! You have free shipping. Delivery takes approximately 3–4 weeks.",
+      "sample_note_btn": "I want a sample",
+      "sample_note_text": "I am interested in a test sample.",
       "order_period_label": "Expected order frequency",
       "order_periods": {
         "monthly": "Every month",
@@ -220,7 +234,7 @@
     "sample": {
       "label": "Test sample",
       "title": "Not sure which tape to choose? We will send you a free sample.",
-      "text": "We understand that tape quality is key to smooth logistics. Fill in the inquiry form — we will add the test sample note for you.",
+      "text": "We understand that tape quality is key to smooth logistics. Fill in the inquiry form and we will add the test sample note for you.",
       "cta": "I want a sample"
     }
   },
@@ -299,6 +313,68 @@
       "title": "Have your own logo?",
       "text": "We will prepare a non-binding quote and a print sample. Just send us your logo and the required tape parameters.",
       "button": "Request a quote"
+    },
+    "items": {
+      "alza": {
+        "title": "ALZA logo tapes",
+        "description": "Multilingual brand printing for e-commerce packaging, featuring a repeated logo and slogan on standard BOPP tape.",
+        "industry_label": "E-commerce"
+      },
+      "flexotisk-8": {
+        "title": "Flexographic printing – 8 colours",
+        "description": "High-resolution full-colour flexographic printing, suitable for impactful tape branding and food-industry applications.",
+        "industry_label": "Food industry"
+      },
+      "jednobarevny-firemni": {
+        "title": "Single-colour corporate print",
+        "description": "Classic single-colour logo printing on clear or white BOPP tapes, ideal for corporate packaging and warehouse logistics.",
+        "industry_label": "Manufacturing"
+      },
+      "rototisk-foto": {
+        "title": "Photographic-quality rotogravure",
+        "description": "Rotogravure printing with photographic quality for demanding visuals and long-lasting print durability.",
+        "industry_label": "Food industry"
+      },
+      "pecetni": {
+        "title": "Printed sealing tape",
+        "description": "Sealing tape with custom printing to protect shipments and documents against unauthorised opening.",
+        "industry_label": "Security"
+      },
+      "logisticky-kontakty": {
+        "title": "Logistics print – contacts",
+        "description": "Informational printing with contact details, a QR code or instructions for the shipment recipient.",
+        "industry_label": "Logistics"
+      },
+      "neutralni-bopp": {
+        "title": "Plain BOPP 25 mm",
+        "description": "Narrow BOPP tape with simple printing for manual packing and lighter shipments.",
+        "industry_label": "Manufacturing"
+      },
+      "tamper-void": {
+        "title": "Tamper Evident VOID",
+        "description": "Security tape with a VOID effect that leaves a visible warning when removed and cannot be removed without evidence.",
+        "industry_label": "Security"
+      },
+      "extra-glue": {
+        "title": "EXTRA GLUE+ security series",
+        "description": "Tape with an increased adhesive layer (+33%) for difficult surfaces, heavy parcels and dusty warehouse environments.",
+        "industry_label": "Security"
+      },
+      "prumyslova-serie": {
+        "title": "Industrial e-commerce series",
+        "description": "Volume production of printed tapes for e-shops and fulfilment operations, with consistent quality across the entire run.",
+        "industry_label": "E-commerce"
+      },
+      "vystrizny-krehke": {
+        "title": "Warning print – fragile",
+        "description": "Warning tapes printed with “Fragile”, “Do not tilt” or a custom symbol to protect goods during transport.",
+        "industry_label": "Logistics"
+      },
+      "bezpecnostni-sklad": {
+        "title": "Warehouse security tape",
+        "description": "A combination of logistics and security printing for warehouses and distribution centres.",
+        "industry_label": "Security"
+      }
     }
   },
   "sortiment": {
@@ -334,20 +410,20 @@
       }
     },
     "categories": {
-      "papirove-pasky": {
-        "title": "Paper tapes",
-        "description": "An eco-friendly solution for secure packaging with high adhesion. Ideal for fully recyclable cardboard boxes and clean corporate branding.",
-        "intro": "Paper adhesive tapes combine reliable bonding with maximum environmental responsibility. Thanks to the paper carrier, they are fully recyclable together with cardboard and offer an elegant, clean-looking solution for companies that care about sustainability and the visual impact of their shipments.",
+      "udrzitelne-pasky": {
+        "title": "Sustainable tapes",
+        "description": "Innovative packaging solutions made from recycled materials with minimal environmental impact and support for the circular economy.",
+        "intro": "Our sustainable tape range is made from recycled materials and designed to minimise environmental impact. It helps companies meet ESG goals and build a responsible brand image without compromising performance.",
         "properties": {
-          "Fully recyclable": "Tape and cardboard go into the same bin — no need to separate materials.",
-          "High adhesion": "Reliable bonding even on recycled cardboard and uneven surfaces.",
-          "Clean design": "The matte paper surface looks premium and can be easily printed with your logo."
+          "Recycled content": "Materials with a high recycled content.",
+          "Lower carbon footprint": "More sustainable production and circular approach.",
+          "No compromises": "Eco-friendly without sacrificing reliable bonding."
         },
         "applications": [
-          "E-shops focused on sustainable packaging",
-          "Sealing cardboard boxes and parcels",
-          "Corporate branding directly on shipments",
-          "Manual and semi-automatic packing"
+          "Companies with ESG and sustainability goals",
+          "Green packaging for e-shops",
+          "Circular packaging processes",
+          "Building a responsible brand"
         ]
       },
       "bopp-pasky": {
@@ -382,20 +458,36 @@
           "Electrical engineering and specialised manufacturing"
         ]
       },
-      "textilni-pasky": {
-        "title": "Cloth adhesive tapes",
-        "description": "Highly durable, versatile tapes reinforced with a textile mesh. They grip rough surfaces perfectly, tear easily by hand and are ideal for quick repairs and bundling.",
-        "intro": "Cloth (duct) tapes are an indispensable all-rounder. Textile reinforcement gives them high strength while allowing easy hand tearing without scissors. They adhere reliably even to coarse and uneven surfaces.",
+      "papirove-pasky": {
+        "title": "Paper tapes",
+        "description": "An eco-friendly solution for secure packaging with high adhesion. Ideal for fully recyclable cardboard boxes and clean corporate branding.",
+        "intro": "Paper adhesive tapes combine reliable bonding with maximum environmental responsibility. Thanks to the paper carrier, they are fully recyclable together with cardboard and offer an elegant, clean-looking solution for companies that care about sustainability and the visual impact of their shipments.",
         "properties": {
-          "Textile reinforcement": "High strength and resistance to puncture.",
-          "Hand tearable": "Fast work without tools.",
-          "Adhesion on rough surfaces": "Bonds to metal, wood, concrete and plastic."
+          "Fully recyclable": "Tape and cardboard go into the same bin — no need to separate materials.",
+          "High adhesion": "Reliable bonding even on recycled cardboard and uneven surfaces.",
+          "Clean design": "The matte paper surface looks premium and can be easily printed with your logo."
         },
         "applications": [
-          "Quick repairs and temporary joints",
-          "Bundling and securing items",
-          "Reinforcing parcels and packaging",
-          "Maintenance, assembly and crafts"
+          "E-shops focused on sustainable packaging",
+          "Sealing cardboard boxes and parcels",
+          "Corporate branding directly on shipments",
+          "Manual and semi-automatic packing"
+        ]
+      },
+      "odstranitelne-pasky": {
+        "title": "Removable tapes",
+        "description": "Tapes with a special adhesive formulation that leaves no residue after removal. Ideal for temporary marking, protecting sensitive surfaces or logistics processes.",
+        "intro": "Removable tapes use a special adhesive that holds firmly yet leaves no residue or surface damage when peeled off. They are ideal for temporary applications and protecting sensitive materials.",
+        "properties": {
+          "Residue-free": "No adhesive or residue remains after removal.",
+          "Surface-friendly": "Will not damage paint, glass or sensitive materials.",
+          "Reliable hold": "Holds for the entire required application period."
+        },
+        "applications": [
+          "Temporary marking and labels",
+          "Protecting sensitive surfaces",
+          "Logistics and manufacturing processes",
+          "Fixation that must be removed again"
         ]
       },
       "vyztuzene-pasky": {
@@ -430,20 +522,20 @@
           "Bundling without glass fibres"
         ]
       },
-      "odstranitelne-pasky": {
-        "title": "Removable tapes",
-        "description": "Tapes with a special adhesive formulation that leaves no residue after removal. Ideal for temporary marking, protecting sensitive surfaces or logistics processes.",
-        "intro": "Removable tapes use a special adhesive that holds firmly yet leaves no residue or surface damage when peeled off. They are ideal for temporary applications and protecting sensitive materials.",
+      "textilni-pasky": {
+        "title": "Cloth adhesive tapes",
+        "description": "Highly durable, versatile tapes reinforced with a textile mesh. They grip rough surfaces perfectly, tear easily by hand and are ideal for quick repairs and bundling.",
+        "intro": "Cloth (duct) tapes are an indispensable all-rounder. Textile reinforcement gives them high strength while allowing easy hand tearing without scissors. They adhere reliably even to coarse and uneven surfaces.",
         "properties": {
-          "Residue-free": "No adhesive or residue remains after removal.",
-          "Surface-friendly": "Will not damage paint, glass or sensitive materials.",
-          "Reliable hold": "Holds for the entire required application period."
+          "Textile reinforcement": "High strength and resistance to puncture.",
+          "Hand tearable": "Fast work without tools.",
+          "Adhesion on rough surfaces": "Bonds to metal, wood, concrete and plastic."
         },
         "applications": [
-          "Temporary marking and labels",
-          "Protecting sensitive surfaces",
-          "Logistics and manufacturing processes",
-          "Fixation that must be removed again"
+          "Quick repairs and temporary joints",
+          "Bundling and securing items",
+          "Reinforcing parcels and packaging",
+          "Maintenance, assembly and crafts"
         ]
       },
       "malirske-pasky": {
@@ -461,22 +553,1870 @@
           "Paint shops and body shops",
           "DIY and craft work"
         ]
-      },
-      "udrzitelne-pasky": {
-        "title": "Sustainable tapes",
-        "description": "Innovative packaging solutions made from recycled materials with minimal environmental impact and support for the circular economy.",
-        "intro": "Our sustainable tape range is made from recycled materials and designed to minimise environmental impact. It helps companies meet ESG goals and build a responsible brand image without compromising performance.",
-        "properties": {
-          "Recycled content": "Materials with a high recycled content.",
-          "Lower carbon footprint": "More sustainable production and circular approach.",
-          "No compromises": "Eco-friendly without sacrificing reliable bonding."
-        },
-        "applications": [
+      }
+    },
+    "products": {
+      "udrzitelna-paska-airtape": {
+        "name": "Sustainable tape Airtape",
+        "tagline": "Lightweight sustainable tape for everyday eco-friendly packaging.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Sustainable tapes",
+        "benefits": [
+          {
+            "title": "Recycled polypropylene",
+            "text": "Recycled PP film with a lower environmental footprint while maintaining reliable bonding."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Temperature range −5 to +60 °C",
+            "text": "Tensile strength 42 N/25 mm for everyday warehouse and dispatch operations."
+          }
+        ],
+        "uses": [
           "Companies with ESG and sustainability goals",
           "Green packaging for e-shops",
           "Circular packaging processes",
           "Building a responsible brand"
-        ]
+        ],
+        "params_values": {
+          "carrier": "Recycled PP film",
+          "thickness": "40 µm",
+          "adhesive": "Acrylic",
+          "adhesion": "2,8 N/25 mm",
+          "temperature": "−5 to +60 °C",
+          "strength": "42 N/25 mm"
+        },
+        "spec_pills": [
+          "Recycled PP film",
+          "Acrylic",
+          "−5 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to Sustainable tapes"
+        }
+      },
+      "udrzitelna-paska-eco-50": {
+        "name": "Sustainable tape ECO+ 50",
+        "tagline": "Thin recycled tape for standard sustainable packaging.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Sustainable tapes",
+        "benefits": [
+          {
+            "title": "Recycled polypropylene",
+            "text": "Recycled PP film with a lower environmental footprint while maintaining reliable bonding."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Temperature range −5 to +60 °C",
+            "text": "Tensile strength 45 N/25 mm for everyday warehouse and dispatch operations."
+          }
+        ],
+        "uses": [
+          "Companies with ESG and sustainability goals",
+          "Circular packaging processes",
+          "Building a responsible brand",
+          "Automatic packing lines with ESG goals"
+        ],
+        "params_values": {
+          "carrier": "Recycled PP film",
+          "thickness": "50 µm",
+          "adhesive": "Acrylic",
+          "adhesion": "3,0 N/25 mm",
+          "temperature": "−5 to +60 °C",
+          "strength": "45 N/25 mm"
+        },
+        "spec_pills": [
+          "Recycled PP film",
+          "Acrylic",
+          "−5 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to Sustainable tapes"
+        }
+      },
+      "udrzitelna-paska-eco-80": {
+        "name": "Sustainable tape ECO+ 80",
+        "tagline": "Stronger recycled tape for more demanding sustainable packaging.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Sustainable tapes",
+        "benefits": [
+          {
+            "title": "Recycled polypropylene",
+            "text": "Recycled PP film with a lower environmental footprint while maintaining reliable bonding."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Temperature range −5 to +60 °C",
+            "text": "Tensile strength 52 N/25 mm for everyday warehouse and dispatch operations."
+          }
+        ],
+        "uses": [
+          "Companies with ESG and sustainability goals",
+          "Circular packaging processes",
+          "Building a responsible brand",
+          "Automatic packing lines with ESG goals"
+        ],
+        "params_values": {
+          "carrier": "Recycled PP film",
+          "thickness": "80 µm",
+          "adhesive": "Acrylic",
+          "adhesion": "3,4 N/25 mm",
+          "temperature": "−5 to +60 °C",
+          "strength": "52 N/25 mm"
+        },
+        "spec_pills": [
+          "Recycled PP film",
+          "Acrylic",
+          "−5 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to Sustainable tapes"
+        }
+      },
+      "udrzitelna-paska-loopp": {
+        "name": "Sustainable tape LOOPP",
+        "tagline": "Tape made from recycled polypropylene for the circular economy.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Sustainable tapes",
+        "benefits": [
+          {
+            "title": "Recycled polypropylene",
+            "text": "Recycled PP film with a lower environmental footprint while maintaining reliable bonding."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Temperature range −5 to +60 °C",
+            "text": "Tensile strength 46 N/25 mm for everyday warehouse and dispatch operations."
+          }
+        ],
+        "uses": [
+          "Companies with ESG and sustainability goals",
+          "Circular packaging processes",
+          "Building a responsible brand",
+          "Automatic packing lines with ESG goals"
+        ],
+        "params_values": {
+          "carrier": "Recycled PP film",
+          "thickness": "45 µm",
+          "adhesive": "Acrylic",
+          "adhesion": "3,0 N/25 mm",
+          "temperature": "−5 to +60 °C",
+          "strength": "46 N/25 mm"
+        },
+        "spec_pills": [
+          "Recycled PP film",
+          "Acrylic",
+          "−5 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to Sustainable tapes"
+        }
+      },
+      "udrzitelna-paska-nopp": {
+        "name": "Sustainable tape NOPP",
+        "tagline": "Plastic-free sustainable tape for fully recyclable packaging.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Sustainable tapes",
+        "benefits": [
+          {
+            "title": "Plastic-free paper carrier",
+            "text": "Fully recyclable packaging — tape goes with the carton without separation."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Temperature range −5 to +60 °C",
+            "text": "Tensile strength 50 N/25 mm for everyday warehouse and dispatch operations."
+          }
+        ],
+        "uses": [
+          "Companies with ESG and sustainability goals",
+          "Green packaging for e-shops",
+          "Circular packaging processes",
+          "Building a responsible brand"
+        ],
+        "params_values": {
+          "carrier": "Paper (FSC)",
+          "thickness": "110 µm",
+          "adhesive": "Acrylic (solvent-free)",
+          "adhesion": "4,0 N/25 mm",
+          "temperature": "−5 to +60 °C",
+          "strength": "50 N/25 mm"
+        },
+        "spec_pills": [
+          "Paper (FSC)",
+          "Acrylic (solvent-free)",
+          "−5 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to Sustainable tapes"
+        }
+      },
+      "udrzitelna-paska-nopp-plus": {
+        "name": "Sustainable tape NOPP+",
+        "tagline": "Enhanced plastic-free tape with higher strength and adhesion.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Sustainable tapes",
+        "benefits": [
+          {
+            "title": "Plastic-free paper carrier",
+            "text": "Fully recyclable packaging — tape goes with the carton without separation."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Temperature range −5 to +65 °C",
+            "text": "Tensile strength 55 N/25 mm for everyday warehouse and dispatch operations."
+          }
+        ],
+        "uses": [
+          "Companies with ESG and sustainability goals",
+          "Green packaging for e-shops",
+          "Circular packaging processes",
+          "Building a responsible brand"
+        ],
+        "params_values": {
+          "carrier": "Paper (FSC)",
+          "thickness": "120 µm",
+          "adhesive": "Acrylic",
+          "adhesion": "4,4 N/25 mm",
+          "temperature": "−5 to +65 °C",
+          "strength": "55 N/25 mm"
+        },
+        "spec_pills": [
+          "Paper (FSC)",
+          "Acrylic",
+          "−5 to +65 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to Sustainable tapes"
+        }
+      },
+      "bopp-paska-acrylic": {
+        "name": "BOPP tape Acrylic",
+        "tagline": "Reliable BOPP tape with acrylic adhesive and long service life.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP tapes",
+        "benefits": [
+          {
+            "title": "Tensile strength 45 N/25 mm",
+            "text": "BOPP film 45 µm thick withstands tension during packing and long-term storage."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Long service life",
+            "text": "UV and ageing resistance in the temperature range −5 až +60 °C."
+          }
+        ],
+        "uses": [
+          "Standard carton sealing",
+          "Automatic packing machines",
+          "Quiet manual unwinding in warehouses and dispatch",
+          "Printing with company logos and information"
+        ],
+        "params_values": {
+          "carrier": "BOPP film",
+          "thickness": "45 µm",
+          "adhesive": "Acrylic (water-based dispersion)",
+          "adhesion": "2,8 N/25 mm",
+          "temperature": "−5 to +60 °C",
+          "strength": "45 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP film",
+          "Acrylic (water-based dispersion)",
+          "−5 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to BOPP tapes"
+        }
+      },
+      "bopp-paska-evergreen": {
+        "name": "BOPP tape Evergreen",
+        "tagline": "Coloured BOPP tape for labelling and visual shipment identification.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP tapes",
+        "benefits": [
+          {
+            "title": "Tensile strength 46 N/25 mm",
+            "text": "BOPP film 45 µm thick withstands tension during packing and long-term storage."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Colour-coded shipment identification",
+            "text": "Visual parcel labelling and warehouse orientation in the range −5 až +60 °C."
+          }
+        ],
+        "uses": [
+          "Standard carton sealing",
+          "Automatic packing machines",
+          "Use in chilled and frozen warehouses",
+          "Printing with company logos and information"
+        ],
+        "params_values": {
+          "carrier": "BOPP film (coloured)",
+          "thickness": "45 µm",
+          "adhesive": "Acrylic",
+          "adhesion": "3,0 N/25 mm",
+          "temperature": "−5 to +60 °C",
+          "strength": "46 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP film (coloured)",
+          "Acrylic",
+          "−5 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to BOPP tapes"
+        }
+      },
+      "bopp-paska-hot-melt": {
+        "name": "BOPP tape Hot Melt",
+        "tagline": "BOPP tape with hot melt adhesive for fast, strong bonding.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP tapes",
+        "benefits": [
+          {
+            "title": "Tensile strength 42 N/25 mm",
+            "text": "BOPP film 40 µm thick withstands tension during packing and long-term storage."
+          },
+          {
+            "title": "Hot melt adhesive",
+            "text": "Fast, strong bonding even at lower temperatures — suitable for manual and machine packing."
+          },
+          {
+            "title": "Fast bonding",
+            "text": "Adhesion 3,5 N/25 mm — bonds instantly even at lower temperatures (0 až +50 °C)."
+          }
+        ],
+        "uses": [
+          "Standard carton sealing",
+          "Automatic packing machines",
+          "Dispatch and warehouse logistics",
+          "Printing with company logos and information"
+        ],
+        "params_values": {
+          "carrier": "BOPP film",
+          "thickness": "40 µm",
+          "adhesive": "Hot melt (synthetic rubber)",
+          "adhesion": "3,5 N/25 mm",
+          "temperature": "0 to +50 °C",
+          "strength": "42 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP film",
+          "Hot melt (synthetic rubber)",
+          "0 to +50 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to BOPP tapes"
+        }
+      },
+      "bopp-paska-hot-melt-ii": {
+        "name": "BOPP tape Hot Melt II",
+        "tagline": "Stronger BOPP tape with hot melt adhesive for heavier packaging.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP tapes",
+        "benefits": [
+          {
+            "title": "Tensile strength 48 N/25 mm",
+            "text": "BOPP film 48 µm thick withstands tension during packing and long-term storage."
+          },
+          {
+            "title": "Hot melt adhesive",
+            "text": "Fast, strong bonding even at lower temperatures — suitable for manual and machine packing."
+          },
+          {
+            "title": "Fast bonding",
+            "text": "Adhesion 3,8 N/25 mm — bonds instantly even at lower temperatures (0 až +55 °C)."
+          }
+        ],
+        "uses": [
+          "Standard carton sealing",
+          "Automatic packing machines",
+          "Dispatch and warehouse logistics",
+          "Printing with company logos and information"
+        ],
+        "params_values": {
+          "carrier": "BOPP film",
+          "thickness": "48 µm",
+          "adhesive": "Hot melt",
+          "adhesion": "3,8 N/25 mm",
+          "temperature": "0 to +55 °C",
+          "strength": "48 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP film",
+          "Hot melt",
+          "0 to +55 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to BOPP tapes"
+        }
+      },
+      "bopet-paska-ait": {
+        "name": "BOPET tape AIT",
+        "tagline": "Polyester tape with silicone adhesive for extreme temperatures.",
+        "category_slug": "bopet-pasky",
+        "category_title": "BOPET tapes",
+        "benefits": [
+          {
+            "title": "Temperature range −40 to +180 °C",
+            "text": "Polyester carrier (30 µm) retains its properties in demanding operations."
+          },
+          {
+            "title": "Silicone adhesive",
+            "text": "Stable performance at extreme temperatures and clean removal without adhesive residue."
+          },
+          {
+            "title": "Extreme temperatures",
+            "text": "Performance at high coating temperatures and in frost — without surface damage."
+          }
+        ],
+        "uses": [
+          "Demanding industrial operations",
+          "Fixing in high-temperature environments",
+          "Masking during powder coating",
+          "Electronics and specialised manufacturing"
+        ],
+        "params_values": {
+          "carrier": "Polyester (PET) film",
+          "thickness": "30 µm",
+          "adhesive": "Silicone",
+          "adhesion": "3,0 N/25 mm",
+          "temperature": "−40 to +180 °C",
+          "strength": "65 N/25 mm"
+        },
+        "spec_pills": [
+          "Polyester (PET) film",
+          "Silicone",
+          "−40 to +180 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to BOPET tapes"
+        }
+      },
+      "bopet-paska-ate23": {
+        "name": "BOPET tape ATE23",
+        "tagline": "Thin polyester tape with high temperature resistance.",
+        "category_slug": "bopet-pasky",
+        "category_title": "BOPET tapes",
+        "benefits": [
+          {
+            "title": "Temperature range −40 to +150 °C",
+            "text": "Polyester carrier (25 µm) retains its properties in demanding operations."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Chemical resistance",
+            "text": "Strength 60 N/25 mm — resists solvents, oils and aggressive environments."
+          }
+        ],
+        "uses": [
+          "Demanding industrial operations",
+          "Fixing in high-temperature environments",
+          "Masking during powder coating",
+          "Electronics and specialised manufacturing"
+        ],
+        "params_values": {
+          "carrier": "Polyester (PET) film",
+          "thickness": "25 µm",
+          "adhesive": "Acrylic",
+          "adhesion": "3,5 N/25 mm",
+          "temperature": "−40 to +150 °C",
+          "strength": "60 N/25 mm"
+        },
+        "spec_pills": [
+          "Polyester (PET) film",
+          "Acrylic",
+          "−40 to +150 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to BOPET tapes"
+        }
+      },
+      "bopet-paska-eco-hit19": {
+        "name": "BOPET tape ECO HIT19",
+        "tagline": "Polyester tape with recycled content and high durability.",
+        "category_slug": "bopet-pasky",
+        "category_title": "BOPET tapes",
+        "benefits": [
+          {
+            "title": "Temperature range −40 to +150 °C",
+            "text": "Polyester carrier (19 µm) retains its properties in demanding operations."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Recycled polyester",
+            "text": "Strength 58 N/25 mm with a lower environmental footprint than standard PET film."
+          }
+        ],
+        "uses": [
+          "Demanding industrial operations",
+          "Fixing in high-temperature environments",
+          "Masking during powder coating",
+          "Applications with a focus on more sustainable materials"
+        ],
+        "params_values": {
+          "carrier": "Recycled PET film",
+          "thickness": "19 µm",
+          "adhesive": "Acrylic",
+          "adhesion": "3,3 N/25 mm",
+          "temperature": "−40 to +150 °C",
+          "strength": "58 N/25 mm"
+        },
+        "spec_pills": [
+          "Recycled PET film",
+          "Acrylic",
+          "−40 to +150 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to BOPET tapes"
+        }
+      },
+      "bopet-paska-hit17": {
+        "name": "BOPET tape HIT17",
+        "tagline": "Ultra-thin PET tape for electronics and precision applications.",
+        "category_slug": "bopet-pasky",
+        "category_title": "BOPET tapes",
+        "benefits": [
+          {
+            "title": "Temperature range −40 to +155 °C",
+            "text": "Polyester carrier (17 µm) retains its properties in demanding operations."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Chemical resistance",
+            "text": "Strength 55 N/25 mm — resists solvents, oils and aggressive environments."
+          }
+        ],
+        "uses": [
+          "Demanding industrial operations",
+          "Fixing in high-temperature environments",
+          "Masking during powder coating",
+          "Electronics and specialised manufacturing"
+        ],
+        "params_values": {
+          "carrier": "Polyester (PET) film",
+          "thickness": "17 µm",
+          "adhesive": "Acrylic",
+          "adhesion": "3,2 N/25 mm",
+          "temperature": "−40 to +155 °C",
+          "strength": "55 N/25 mm"
+        },
+        "spec_pills": [
+          "Polyester (PET) film",
+          "Acrylic",
+          "−40 to +155 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to BOPET tapes"
+        }
+      },
+      "papirova-paska-c660": {
+        "name": "Paper tape C660",
+        "tagline": "Eco-friendly paper tape with acrylic adhesive and quiet unwinding.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Paper tapes",
+        "benefits": [
+          {
+            "title": "Fully recyclable",
+            "text": "Kraft paper carrier (100 µm) — eco-friendly packaging with a clean matte look."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Strength 45 N/25 mm",
+            "text": "Adhesion 3,8 N/25 mm on recycled cardboard and uneven surfaces (−5 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "E-shops focused on sustainable packaging",
+          "Sealing cardboard boxes and packaging",
+          "Corporate branding directly on shipments",
+          "Manual packing and sealing of e-commerce shipments"
+        ],
+        "params_values": {
+          "carrier": "Paper carrier",
+          "thickness": "100 µm",
+          "adhesive": "Acrylic (dispersion)",
+          "adhesion": "3,8 N/25 mm",
+          "temperature": "−5 to +60 °C",
+          "strength": "45 N/25 mm"
+        },
+        "spec_pills": [
+          "Paper carrier",
+          "Acrylic (dispersion)",
+          "−5 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to Paper tapes"
+        }
+      },
+      "papirova-paska-c680": {
+        "name": "Paper tape C680",
+        "tagline": "Universal paper tape with high adhesion on recycled cardboard.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Paper tapes",
+        "benefits": [
+          {
+            "title": "Fully recyclable",
+            "text": "Kraft paper carrier (115 µm) — eco-friendly packaging with a clean matte look."
+          },
+          {
+            "title": "Rubber adhesive",
+            "text": "High immediate adhesion and a firm bond even on recycled cardboard."
+          },
+          {
+            "title": "Strength 50 N/25 mm",
+            "text": "Adhesion 4,2 N/25 mm on recycled cardboard and uneven surfaces (−10 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "E-shops focused on sustainable packaging",
+          "Sealing cardboard boxes and packaging",
+          "Corporate branding directly on shipments",
+          "Manual and semi-automatic packing"
+        ],
+        "params_values": {
+          "carrier": "Paper carrier",
+          "thickness": "115 µm",
+          "adhesive": "Rubber-based",
+          "adhesion": "4,2 N/25 mm",
+          "temperature": "−10 to +60 °C",
+          "strength": "50 N/25 mm"
+        },
+        "spec_pills": [
+          "Paper carrier",
+          "Rubber-based",
+          "−10 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to Paper tapes"
+        }
+      },
+      "papirova-paska-c680-rt": {
+        "name": "Paper tape C680 RT",
+        "tagline": "Durable paper tape with improved adhesion for heavier shipments.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Paper tapes",
+        "benefits": [
+          {
+            "title": "Fully recyclable",
+            "text": "Kraft paper carrier (120 µm) — eco-friendly packaging with a clean matte look."
+          },
+          {
+            "title": "Rubber adhesive",
+            "text": "High immediate adhesion and a firm bond even on recycled cardboard."
+          },
+          {
+            "title": "Strength 52 N/25 mm",
+            "text": "Adhesion 4,3 N/25 mm on recycled cardboard and uneven surfaces (−10 až +65 °C)."
+          }
+        ],
+        "uses": [
+          "E-shops focused on sustainable packaging",
+          "Sealing cardboard boxes and packaging",
+          "Corporate branding directly on shipments",
+          "Manual and semi-automatic packing"
+        ],
+        "params_values": {
+          "carrier": "Paper carrier",
+          "thickness": "120 µm",
+          "adhesive": "Rubber-based",
+          "adhesion": "4,3 N/25 mm",
+          "temperature": "−10 to +65 °C",
+          "strength": "52 N/25 mm"
+        },
+        "spec_pills": [
+          "Paper carrier",
+          "Rubber-based",
+          "−10 to +65 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to Paper tapes"
+        }
+      },
+      "papirova-paska-c680r": {
+        "name": "Paper tape C680R",
+        "tagline": "Paper tape made from recycled paper for sustainable packaging.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Paper tapes",
+        "benefits": [
+          {
+            "title": "Recycled paper carrier",
+            "text": "Tape and carton are recycled together — no need to separate materials."
+          },
+          {
+            "title": "Rubber adhesive",
+            "text": "High immediate adhesion and a firm bond even on recycled cardboard."
+          },
+          {
+            "title": "Strength 48 N/25 mm",
+            "text": "Adhesion 4,0 N/25 mm on recycled cardboard and uneven surfaces (−10 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "E-shops focused on sustainable packaging",
+          "Sealing cardboard boxes and packaging",
+          "Corporate branding directly on shipments",
+          "Manual packing and sealing of e-commerce shipments"
+        ],
+        "params_values": {
+          "carrier": "Recycled paper",
+          "thickness": "115 µm",
+          "adhesive": "Rubber-based",
+          "adhesion": "4,0 N/25 mm",
+          "temperature": "−10 to +60 °C",
+          "strength": "48 N/25 mm"
+        },
+        "spec_pills": [
+          "Recycled paper",
+          "Rubber-based",
+          "−10 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to Paper tapes"
+        }
+      },
+      "papirova-paska-c690": {
+        "name": "Paper tape C690",
+        "tagline": "Premium kraft paper tape with hot melt adhesive and matte finish.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Paper tapes",
+        "benefits": [
+          {
+            "title": "Fully recyclable",
+            "text": "Kraft paper carrier (130 µm) — eco-friendly packaging with a clean matte look."
+          },
+          {
+            "title": "Hot melt adhesive",
+            "text": "Fast, strong bonding even at lower temperatures — suitable for manual and machine packing."
+          },
+          {
+            "title": "Strength 60 N/25 mm",
+            "text": "Adhesion 4,8 N/25 mm on recycled cardboard and uneven surfaces (−10 až +70 °C)."
+          }
+        ],
+        "uses": [
+          "E-shops focused on sustainable packaging",
+          "Sealing cardboard boxes and packaging",
+          "Corporate branding directly on shipments",
+          "Manual packing and sealing of e-commerce shipments"
+        ],
+        "params_values": {
+          "carrier": "Paper carrier (kraft)",
+          "thickness": "130 µm",
+          "adhesive": "Hot melt",
+          "adhesion": "4,8 N/25 mm",
+          "temperature": "−10 to +70 °C",
+          "strength": "60 N/25 mm"
+        },
+        "spec_pills": [
+          "Paper carrier (kraft)",
+          "Hot melt",
+          "−10 to +70 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to Paper tapes"
+        }
+      },
+      "papirova-paska-kh80": {
+        "name": "Paper tape KH80",
+        "tagline": "Strong paper tape with hot melt adhesive for reliable carton sealing.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Paper tapes",
+        "benefits": [
+          {
+            "title": "Fully recyclable",
+            "text": "Kraft paper carrier (120 µm) — eco-friendly packaging with a clean matte look."
+          },
+          {
+            "title": "Hot melt adhesive",
+            "text": "Fast, strong bonding even at lower temperatures — suitable for manual and machine packing."
+          },
+          {
+            "title": "Strength 55 N/25 mm",
+            "text": "Adhesion 4,5 N/25 mm on recycled cardboard and uneven surfaces (−10 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "E-shops focused on sustainable packaging",
+          "Sealing cardboard boxes and packaging",
+          "Corporate branding directly on shipments",
+          "Manual packing and sealing of e-commerce shipments"
+        ],
+        "params_values": {
+          "carrier": "Paper carrier (kraft)",
+          "thickness": "120 µm",
+          "adhesive": "Hot melt (synthetic rubber)",
+          "adhesion": "4,5 N/25 mm",
+          "temperature": "−10 to +60 °C",
+          "strength": "55 N/25 mm"
+        },
+        "spec_pills": [
+          "Paper carrier (kraft)",
+          "Hot melt (synthetic rubber)",
+          "−10 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to Paper tapes"
+        }
+      },
+      "papirova-paska-ks165": {
+        "name": "Paper tape KS165",
+        "tagline": "Extra-strong paper tape with rubber adhesive for demanding packaging.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Paper tapes",
+        "benefits": [
+          {
+            "title": "Fully recyclable",
+            "text": "Kraft paper carrier (150 µm) — eco-friendly packaging with a clean matte look."
+          },
+          {
+            "title": "Rubber adhesive",
+            "text": "High immediate adhesion and a firm bond even on recycled cardboard."
+          },
+          {
+            "title": "Strength 70 N/25 mm",
+            "text": "Adhesion 5,5 N/25 mm on recycled cardboard and uneven surfaces (−20 až +70 °C)."
+          }
+        ],
+        "uses": [
+          "E-shops focused on sustainable packaging",
+          "Sealing cardboard boxes and packaging",
+          "Corporate branding directly on shipments",
+          "Manual packing and sealing of e-commerce shipments"
+        ],
+        "params_values": {
+          "carrier": "Paper carrier (kraft)",
+          "thickness": "150 µm",
+          "adhesive": "Rubber-based (solvent)",
+          "adhesion": "5,5 N/25 mm",
+          "temperature": "−20 to +70 °C",
+          "strength": "70 N/25 mm"
+        },
+        "spec_pills": [
+          "Paper carrier (kraft)",
+          "Rubber-based (solvent)",
+          "−20 to +70 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to Paper tapes"
+        }
+      },
+      "odstranitelna-paska-eco-rit19": {
+        "name": "Removable tape ECO RIT19",
+        "tagline": "Gentle removable tape with recycled content.",
+        "category_slug": "odstranitelne-pasky",
+        "category_title": "Removable tapes",
+        "benefits": [
+          {
+            "title": "No residue after removal",
+            "text": "Recycled PET film (19 µm) — leaves no adhesive or surface damage after removal."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Reliable hold",
+            "text": "Adhesion 1,8 N/25 mm for the entire required application period (−5 až +55 °C)."
+          }
+        ],
+        "uses": [
+          "Temporary marking and labels",
+          "Protection of sensitive surfaces",
+          "Logistics and production processes",
+          "Fixing that must be removed again"
+        ],
+        "params_values": {
+          "carrier": "Recycled PET film",
+          "thickness": "19 µm",
+          "adhesive": "Removable acrylic",
+          "adhesion": "1,8 N/25 mm",
+          "temperature": "−5 to +55 °C",
+          "strength": "45 N/25 mm"
+        },
+        "spec_pills": [
+          "Recycled PET film",
+          "Removable acrylic",
+          "−5 to +55 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Request a quote",
+          "tailor_link": "Request a consultation",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Various adhesive and carrier options",
+            "Parameter consultation before ordering"
+          ],
+          "bottom": "Enquire about removable tape",
+          "back_category": "Back to Removable tapes"
+        }
+      },
+      "odstranitelna-paska-r28-32": {
+        "name": "Removable tape R28-32",
+        "tagline": "Removable tape that leaves no trace after peeling.",
+        "category_slug": "odstranitelne-pasky",
+        "category_title": "Removable tapes",
+        "benefits": [
+          {
+            "title": "No residue after removal",
+            "text": "BOPP film (50 µm) — leaves no adhesive or surface damage after removal."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Reliable hold",
+            "text": "Adhesion 1,5 N/25 mm for the entire required application period (−5 až +50 °C)."
+          }
+        ],
+        "uses": [
+          "Temporary marking and labels",
+          "Protection of sensitive surfaces",
+          "Logistics and production processes",
+          "Fixing that must be removed again"
+        ],
+        "params_values": {
+          "carrier": "BOPP film",
+          "thickness": "50 µm",
+          "adhesive": "Removable acrylic",
+          "adhesion": "1,5 N/25 mm",
+          "temperature": "−5 to +50 °C",
+          "strength": "40 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP film",
+          "Removable acrylic",
+          "−5 to +50 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Request a quote",
+          "tailor_link": "Request a consultation",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Various adhesive and carrier options",
+            "Parameter consultation before ordering"
+          ],
+          "bottom": "Enquire about removable tape",
+          "back_category": "Back to Removable tapes"
+        }
+      },
+      "vyztuzena-paska-rmpp32": {
+        "name": "Reinforced tape RMPP32",
+        "tagline": "Reinforced tape with glass fibres for securing heavy loads.",
+        "category_slug": "vyztuzene-pasky",
+        "category_title": "Reinforced tapes",
+        "benefits": [
+          {
+            "title": "Longitudinal glass fibres",
+            "text": "Tensile strength 300 N/25 mm — maximum resistance in the direction of pull."
+          },
+          {
+            "title": "Hot melt adhesive",
+            "text": "Fast, strong bonding even at lower temperatures — suitable for manual and machine packing."
+          },
+          {
+            "title": "Securing heavy loads",
+            "text": "Adhesion 4,5 N/25 mm — reliable securing of pallets and oversized shipments."
+          }
+        ],
+        "uses": [
+          "Securing heavy and oversized parcels",
+          "Securing goods on pallets",
+          "Bundling pipes, profiles and rods",
+          "Machine packing of heavy shipments"
+        ],
+        "params_values": {
+          "carrier": "MOPP + longitudinal glass fibres",
+          "thickness": "130 µm",
+          "adhesive": "Hot melt (synthetic rubber)",
+          "adhesion": "4,5 N/25 mm",
+          "temperature": "−10 to +60 °C",
+          "strength": "300 N/25 mm"
+        },
+        "spec_pills": [
+          "MOPP + longitudinal glass fibres",
+          "Hot melt (synthetic rubber)",
+          "−10 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Request a quote",
+          "tailor_link": "Request a consultation",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Various adhesive and carrier options",
+            "Parameter consultation before ordering"
+          ],
+          "bottom": "Enquire about reinforced tape",
+          "back_category": "Back to Reinforced tapes"
+        }
+      },
+      "vyztuzena-paska-rtpp32": {
+        "name": "Reinforced tape RTPP32",
+        "tagline": "Cross-reinforced tape for maximum strength in all directions.",
+        "category_slug": "vyztuzene-pasky",
+        "category_title": "Reinforced tapes",
+        "benefits": [
+          {
+            "title": "Cross-laid glass fibres",
+            "text": "Tensile strength 320 N/25 mm — resistance in all directions of load."
+          },
+          {
+            "title": "Hot melt adhesive",
+            "text": "Fast, strong bonding even at lower temperatures — suitable for manual and machine packing."
+          },
+          {
+            "title": "Securing heavy loads",
+            "text": "Adhesion 4,7 N/25 mm — reliable securing of pallets and oversized shipments."
+          }
+        ],
+        "uses": [
+          "Securing heavy and oversized parcels",
+          "Securing goods on pallets",
+          "Bundling pipes, profiles and rods",
+          "Machine packing of heavy shipments"
+        ],
+        "params_values": {
+          "carrier": "MOPP + cross-laid glass fibres",
+          "thickness": "140 µm",
+          "adhesive": "Hot melt",
+          "adhesion": "4,7 N/25 mm",
+          "temperature": "−10 to +60 °C",
+          "strength": "320 N/25 mm"
+        },
+        "spec_pills": [
+          "MOPP + cross-laid glass fibres",
+          "Hot melt",
+          "−10 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Request a quote",
+          "tailor_link": "Request a consultation",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Various adhesive and carrier options",
+            "Parameter consultation before ordering"
+          ],
+          "bottom": "Enquire about reinforced tape",
+          "back_category": "Back to Reinforced tapes"
+        }
+      },
+      "mopp-paska-s45-50": {
+        "name": "MOPP tape S45-50",
+        "tagline": "Monoaxial MOPP tape with extreme strength and zero stretch.",
+        "category_slug": "mopp-pasky",
+        "category_title": "MOPP tapes",
+        "benefits": [
+          {
+            "title": "Extreme strength 250 N/25 mm",
+            "text": "MOPP film (100 µm) with virtually zero stretch in the longitudinal direction."
+          },
+          {
+            "title": "Hot melt adhesive",
+            "text": "Fast, strong bonding even at lower temperatures — suitable for manual and machine packing."
+          },
+          {
+            "title": "No glass fibres",
+            "text": "Clean fixing without loose fibres — temperature range −10 až +60 °C."
+          }
+        ],
+        "uses": [
+          "Securing appliance doors",
+          "Securing components during transport",
+          "Strapping and securing pallets",
+          "Bundling without glass fibres"
+        ],
+        "params_values": {
+          "carrier": "MOPP film",
+          "thickness": "100 µm",
+          "adhesive": "Hot melt",
+          "adhesion": "4,0 N/25 mm",
+          "temperature": "−10 to +60 °C",
+          "strength": "250 N/25 mm"
+        },
+        "spec_pills": [
+          "MOPP film",
+          "Hot melt",
+          "−10 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Request a quote",
+          "tailor_link": "Request a consultation",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Various adhesive and carrier options",
+            "Parameter consultation before ordering"
+          ],
+          "bottom": "Enquire about MOPP tape",
+          "back_category": "Back to MOPP tapes"
+        }
+      },
+      "textilni-paska-bc": {
+        "name": "Cloth tape BC",
+        "tagline": "Strong cloth (duct) tape for repairs and universal use.",
+        "category_slug": "textilni-pasky",
+        "category_title": "Cloth adhesive tapes",
+        "benefits": [
+          {
+            "title": "Tensile strength 120 N/25 mm",
+            "text": "Textile reinforcement (250 µm) — tear resistance for demanding use."
+          },
+          {
+            "title": "Rubber adhesive",
+            "text": "High immediate adhesion and a firm bond even on recycled cardboard."
+          },
+          {
+            "title": "Adhesion on rough surfaces",
+            "text": "Adhesion 6,0 N/25 mm — holds on metal, wood, concrete and plastic (−10 až +70 °C)."
+          }
+        ],
+        "uses": [
+          "Quick repairs and temporary joints",
+          "Bundling and securing items",
+          "Reinforcing parcels and packaging",
+          "Maintenance, assembly and craft work"
+        ],
+        "params_values": {
+          "carrier": "Textile reinforcement + PE laminate",
+          "thickness": "250 µm",
+          "adhesive": "Rubber-based (synthetic)",
+          "adhesion": "6,0 N/25 mm",
+          "temperature": "−10 to +70 °C",
+          "strength": "120 N/25 mm"
+        },
+        "spec_pills": [
+          "Textile reinforcement + PE laminate",
+          "Rubber-based (synthetic)",
+          "−10 to +70 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Request a quote",
+          "tailor_link": "Request a consultation",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Various adhesive and carrier options",
+            "Parameter consultation before ordering"
+          ],
+          "bottom": "Enquire about cloth tape",
+          "back_category": "Back to Cloth adhesive tapes"
+        }
+      },
+      "textilni-paska-bc2": {
+        "name": "Cloth tape BC2",
+        "tagline": "Extra-strong cloth tape with high tensile strength.",
+        "category_slug": "textilni-pasky",
+        "category_title": "Cloth adhesive tapes",
+        "benefits": [
+          {
+            "title": "Tensile strength 130 N/25 mm",
+            "text": "Textile reinforcement (280 µm) — tear resistance for demanding use."
+          },
+          {
+            "title": "Rubber adhesive",
+            "text": "High immediate adhesion and a firm bond even on recycled cardboard."
+          },
+          {
+            "title": "Adhesion on rough surfaces",
+            "text": "Adhesion 6,5 N/25 mm — holds on metal, wood, concrete and plastic (−10 až +70 °C)."
+          }
+        ],
+        "uses": [
+          "Quick repairs and temporary joints",
+          "Bundling and securing items",
+          "Reinforcing parcels and packaging",
+          "Maintenance, assembly and craft work"
+        ],
+        "params_values": {
+          "carrier": "Textile reinforcement + PE laminate",
+          "thickness": "280 µm",
+          "adhesive": "Rubber-based (synthetic)",
+          "adhesion": "6,5 N/25 mm",
+          "temperature": "−10 to +70 °C",
+          "strength": "130 N/25 mm"
+        },
+        "spec_pills": [
+          "Textile reinforcement + PE laminate",
+          "Rubber-based (synthetic)",
+          "−10 to +70 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Request a quote",
+          "tailor_link": "Request a consultation",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Various adhesive and carrier options",
+            "Parameter consultation before ordering"
+          ],
+          "bottom": "Enquire about cloth tape",
+          "back_category": "Back to Cloth adhesive tapes"
+        }
+      },
+      "textilni-paska-nu": {
+        "name": "Cloth tape NU",
+        "tagline": "Universal cloth tape for quick bundling and fixing.",
+        "category_slug": "textilni-pasky",
+        "category_title": "Cloth adhesive tapes",
+        "benefits": [
+          {
+            "title": "Tensile strength 110 N/25 mm",
+            "text": "Textile reinforcement (220 µm) — tear resistance for demanding use."
+          },
+          {
+            "title": "Rubber adhesive",
+            "text": "High immediate adhesion and a firm bond even on recycled cardboard."
+          },
+          {
+            "title": "Adhesion on rough surfaces",
+            "text": "Adhesion 5,5 N/25 mm — holds on metal, wood, concrete and plastic (−10 až +65 °C)."
+          }
+        ],
+        "uses": [
+          "Quick repairs and temporary joints",
+          "Bundling and securing items",
+          "Reinforcing parcels and packaging",
+          "Maintenance, assembly and craft work"
+        ],
+        "params_values": {
+          "carrier": "Textile reinforcement + PE laminate",
+          "thickness": "220 µm",
+          "adhesive": "Rubber-based",
+          "adhesion": "5,5 N/25 mm",
+          "temperature": "−10 to +65 °C",
+          "strength": "110 N/25 mm"
+        },
+        "spec_pills": [
+          "Textile reinforcement + PE laminate",
+          "Rubber-based",
+          "−10 to +65 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Request a quote",
+          "tailor_link": "Request a consultation",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Various adhesive and carrier options",
+            "Parameter consultation before ordering"
+          ],
+          "bottom": "Enquire about cloth tape",
+          "back_category": "Back to Cloth adhesive tapes"
+        }
+      },
+      "malirska-paska-c580": {
+        "name": "Masking tape C580",
+        "tagline": "Crepe masking tape for sharp edges in everyday painting.",
+        "category_slug": "malirske-pasky",
+        "category_title": "Masking tapes",
+        "benefits": [
+          {
+            "title": "Sharp edges without bleed-through",
+            "text": "Crepe carrier (130 µm) — paint will not bleed under the tape."
+          },
+          {
+            "title": "Rubber adhesive",
+            "text": "High immediate adhesion and a firm bond even on recycled cardboard."
+          },
+          {
+            "title": "Clean removal",
+            "text": "Leaves no adhesive or marks after the job is done (do +80 °C)."
+          }
+        ],
+        "uses": [
+          "Interior painting and coating",
+          "Masking edges and transitions",
+          "Paint shops and body shops",
+          "DIY and craft work"
+        ],
+        "params_values": {
+          "carrier": "Crepe paper",
+          "thickness": "130 µm",
+          "adhesive": "Rubber-based",
+          "adhesion": "2,8 N/25 mm",
+          "temperature": "up to +80 °C",
+          "strength": "28 N/25 mm"
+        },
+        "spec_pills": [
+          "Crepe paper",
+          "Rubber-based",
+          "up to +80 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Request a quote",
+          "tailor_link": "Request a consultation",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Various adhesive and carrier options",
+            "Parameter consultation before ordering"
+          ],
+          "bottom": "Enquire about masking tape",
+          "back_category": "Back to Masking tapes"
+        }
+      },
+      "malirska-paska-cs60-80": {
+        "name": "Masking tape CS60-80",
+        "tagline": "Heat-resistant masking tape for painting and demanding masking.",
+        "category_slug": "malirske-pasky",
+        "category_title": "Masking tapes",
+        "benefits": [
+          {
+            "title": "Sharp edges without bleed-through",
+            "text": "Crepe carrier (150 µm) — paint will not bleed under the tape."
+          },
+          {
+            "title": "Rubber adhesive",
+            "text": "High immediate adhesion and a firm bond even on recycled cardboard."
+          },
+          {
+            "title": "Temperature resistance up to +100 °C",
+            "text": "Suitable for coating and demanding masking in body shops."
+          }
+        ],
+        "uses": [
+          "Interior painting and coating",
+          "Masking edges and transitions",
+          "Powder coating and high-temperature processes",
+          "DIY and craft work"
+        ],
+        "params_values": {
+          "carrier": "Crepe paper",
+          "thickness": "150 µm",
+          "adhesive": "Rubber-based (heat-resistant)",
+          "adhesion": "3,0 N/25 mm",
+          "temperature": "up to +100 °C",
+          "strength": "32 N/25 mm"
+        },
+        "spec_pills": [
+          "Crepe paper",
+          "Rubber-based (heat-resistant)",
+          "up to +100 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Request a quote",
+          "tailor_link": "Request a consultation",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Various adhesive and carrier options",
+            "Parameter consultation before ordering"
+          ],
+          "bottom": "Enquire about masking tape",
+          "back_category": "Back to Masking tapes"
+        }
+      }
+    },
+    "page": {
+      "breadcrumb_home": "Home",
+      "breadcrumb_sortiment": "Product range",
+      "breadcrumb_aria": "Breadcrumb navigation",
+      "section_key_properties": "Key properties",
+      "section_products": "Products in this category",
+      "section_typical_use": "Typical applications",
+      "section_technical_params": "Technical specifications",
+      "section_benefits": "Key benefits and applications",
+      "section_uses_label": "Typical applications",
+      "view_detail": "View details",
+      "back_to_sortiment": "Back to product range",
+      "back_to_category": "Back to category",
+      "back_to_category_short": "Back to {category}",
+      "params_note": "The stated values are indicative and may vary depending on the specific width, roll length and version. We will be happy to prepare an exact specification tailored to your requirements.",
+      "tailor_title": "Tailored to your operation",
+      "tailor_bullet_width": "Custom width and roll length",
+      "tailor_bullet_print": "Base colour and number of print colours",
+      "tailor_bullet_sample": "Sample with your logo before ordering",
+      "tailor_bullet_consult": "Parameter consultation before ordering",
+      "tailor_bullet_params": "Various adhesive and carrier options",
+      "no_print_note": "This tape is also available without printing.",
+      "no_print_body": "If you do not need a logo on the tape, we can supply the same material unprinted, ideal for immediate packing or stock.",
+      "no_print_link": "Ask about availability",
+      "product_card_detail": "View details"
+    },
+    "category_ctas": {
+      "udrzitelne-pasky": {
+        "hero": "Calculate eco tape quote",
+        "bottom": "Enquire about sustainable printed tape"
+      },
+      "bopp-pasky": {
+        "hero": "Packaging tape quote",
+        "bottom": "Enquire about BOPP tape with logo"
+      },
+      "bopet-pasky": {
+        "hero": "Technical tape quote",
+        "bottom": "Enquire about custom BOPET tape"
+      },
+      "papirove-pasky": {
+        "hero": "Paper tape quote",
+        "bottom": "Enquire about eco printed tape"
+      },
+      "odstranitelne-pasky": {
+        "hero": "Request a quote",
+        "bottom": "Enquire about removable tape"
+      },
+      "vyztuzene-pasky": {
+        "hero": "Request a quote",
+        "bottom": "Enquire about reinforced tape"
+      },
+      "mopp-pasky": {
+        "hero": "Request a quote",
+        "bottom": "Enquire about MOPP tape"
+      },
+      "textilni-pasky": {
+        "hero": "Request a quote",
+        "bottom": "Enquire about cloth tape"
+      },
+      "malirske-pasky": {
+        "hero": "Request a quote",
+        "bottom": "Enquire about masking tape"
       }
     }
   },

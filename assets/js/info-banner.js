@@ -1,10 +1,11 @@
 /**
  * Rotate info-banner messages – one element, fade out → swap → fade in.
+ * Messages are loaded from i18n JSON (info_banner.messages).
  */
 (function () {
     'use strict';
 
-    var TEXTS = [
+    var DEFAULT_TEXTS = [
         'Srpen: výroba a logistika mají 3týdenní výluku. Objednávky s dodáním před výlukou zašlete nejpozději do <strong>10. 7. 2026</strong>.',
         'U objednávek z července a srpna platí dodací lhůta 3–4 týdny s dodáním v <strong>září 2026</strong>.',
     ];
@@ -14,16 +15,45 @@
 
     var el = document.querySelector('.info-banner__message');
     var viewport = el && el.parentElement;
+    var banner = document.querySelector('.info-banner');
     if (!el || !viewport) {
         return;
     }
 
+    var TEXTS = DEFAULT_TEXTS.slice();
     var index = 0;
     var busy = false;
     var timer = null;
+    var started = false;
+
+    function getTexts() {
+        if (window.paskyI18n && typeof window.paskyI18n.get === 'function') {
+            var msgs = window.paskyI18n.get('info_banner.messages');
+            if (Array.isArray(msgs) && msgs.length) {
+                return msgs.slice();
+            }
+        }
+        return DEFAULT_TEXTS.slice();
+    }
+
+    function applyAriaLabel() {
+        if (!banner) {
+            return;
+        }
+        if (window.paskyI18n && typeof window.paskyI18n.t === 'function') {
+            banner.setAttribute('aria-label', window.paskyI18n.t('info_banner.aria_label', 'Důležité informace'));
+        }
+    }
 
     function prefersReducedMotion() {
         return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    }
+
+    function clearTimer() {
+        if (timer) {
+            window.clearTimeout(timer);
+            timer = null;
+        }
     }
 
     function setViewportHeight() {
@@ -43,6 +73,9 @@
         viewport.style.minHeight = maxHeight + 'px';
         if (typeof window.paskyonlineSyncSiteTopHeight === 'function') {
             window.paskyonlineSyncSiteTopHeight();
+        }
+        if (typeof window.paskyonlineLockHeroLayout === 'function') {
+            window.paskyonlineLockHeroLayout();
         }
     }
 
@@ -67,11 +100,15 @@
     }
 
     function scheduleNext() {
+        clearTimer();
+        if (TEXTS.length <= 1) {
+            return;
+        }
         timer = window.setTimeout(cycle, DISPLAY_MS);
     }
 
     function cycle() {
-        if (busy) {
+        if (busy || TEXTS.length <= 1) {
             return;
         }
         busy = true;
@@ -104,8 +141,43 @@
         });
     }
 
-    el.innerHTML = TEXTS[0];
-    setViewportHeight();
-    window.addEventListener('resize', setViewportHeight);
-    scheduleNext();
+    function showCurrent() {
+        index = 0;
+        el.innerHTML = TEXTS[0];
+        setViewportHeight();
+    }
+
+    function restart() {
+        clearTimer();
+        busy = false;
+        TEXTS = getTexts();
+        applyAriaLabel();
+        showCurrent();
+        scheduleNext();
+    }
+
+    function boot() {
+        if (started) {
+            restart();
+            return;
+        }
+        started = true;
+        TEXTS = getTexts();
+        applyAriaLabel();
+        showCurrent();
+        window.addEventListener('resize', setViewportHeight);
+        scheduleNext();
+    }
+
+    document.addEventListener('pasky:i18n-ready', boot);
+
+    if (window.paskyI18n) {
+        boot();
+    } else {
+        window.setTimeout(function () {
+            if (!started) {
+                boot();
+            }
+        }, 2500);
+    }
 })();

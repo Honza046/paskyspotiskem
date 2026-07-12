@@ -1,12 +1,13 @@
 /**
- * Client-side i18n for static HTML pages (CS / EN / DE).
+ * Client-side i18n for static HTML pages (CS / EN / DE / IT).
  */
 (function () {
     'use strict';
 
-    var SUPPORTED = ['cs', 'en', 'de'];
+    var SUPPORTED = ['cs', 'en', 'de', 'it'];
     var DEFAULT = 'cs';
     var STORAGE_KEY = 'paskyonline_lang';
+    var HTML_LANG = { cs: 'cs', en: 'en', de: 'de', it: 'it' };
 
     function getQueryLang() {
         var params = new URLSearchParams(window.location.search);
@@ -45,21 +46,9 @@
         return cur;
     }
 
-    function resolveBasePath() {
-        var path = window.location.pathname;
-        var parts = path.split('/').filter(Boolean);
-        if (parts.length && /\.[a-z0-9]+$/i.test(parts[parts.length - 1])) {
-            parts.pop();
-        }
-        if (parts.length === 0) {
-            return '.';
-        }
-        return parts.map(function () { return '..'; }).join('/');
-    }
-
     function fetchJson(url) {
         return fetch(url, { credentials: 'same-origin' }).then(function (r) {
-            if (!r.ok) throw new Error('i18n load failed');
+            if (!r.ok) throw new Error('i18n load failed: ' + url);
             return r.json();
         });
     }
@@ -107,14 +96,13 @@
     function updateMeta(tree) {
         var meta = tree.meta || {};
         var page = document.body.getAttribute('data-page') || 'home';
-        if (meta.htmlLang) {
-            document.documentElement.lang = meta.htmlLang;
-        }
+        var lang = HTML_LANG[tree._locale] || 'cs';
+        document.documentElement.lang = meta.htmlLang || lang;
         if (page === 'gallery' && meta.gallery_title) {
             document.title = meta.gallery_title;
-        } else if (page === 'sortiment' && meta.sortiment_title) {
+        } else if (page === 'sortiment' && meta.sortiment_title && !parseSortimentSlug()) {
             document.title = meta.sortiment_title;
-        } else if (meta.home_title) {
+        } else if (meta.home_title && (page === 'home' || !page)) {
             document.title = meta.home_title;
         } else if (meta.title) {
             document.title = meta.title;
@@ -126,9 +114,14 @@
         }
     }
 
-    function flagImg(code, basePath) {
+    function parseSortimentSlug() {
+        var parts = window.location.pathname.split('/').filter(Boolean);
+        return parts[0] === 'sortiment' && parts.length > 1;
+    }
+
+    function flagImg(code) {
         var img = document.createElement('img');
-        img.src = basePath + '/images/flags/' + code + '.svg';
+        img.src = '/images/flags/' + code + '.svg';
         img.alt = '';
         img.width = 20;
         img.height = 15;
@@ -141,11 +134,12 @@
         var switcher = document.querySelector('[data-lang-switcher]');
         if (!switcher) return;
 
-        var names = (tree.meta && tree.meta.langNames) || { cs: 'Čeština', en: 'English', de: 'Deutsch' };
+        var names = (tree.meta && tree.meta.langNames) || {
+            cs: 'Čeština', en: 'English', de: 'Deutsch', it: 'Italiano'
+        };
         var path = window.location.pathname;
         var search = new URLSearchParams(window.location.search);
         search.delete('lang');
-        var assetBase = resolveBasePath();
 
         switcher.className = 'lang-dropdown relative shrink-0';
         switcher.setAttribute('aria-label', 'Language');
@@ -159,7 +153,7 @@
 
         var flagWrap = document.createElement('span');
         flagWrap.className = 'flex h-5 w-5 shrink-0 overflow-hidden rounded-full';
-        flagWrap.appendChild(flagImg(locale, assetBase));
+        flagWrap.appendChild(flagImg(locale));
 
         var label = document.createElement('span');
         label.className = 'max-w-0 overflow-hidden whitespace-nowrap opacity-0 transition-all duration-300 ease-out group-hover/lang:ml-2 group-hover/lang:max-w-[8rem] group-hover/lang:opacity-100';
@@ -193,7 +187,7 @@
 
             var optFlag = document.createElement('span');
             optFlag.className = 'flex h-5 w-5 shrink-0 overflow-hidden rounded-full ring-1 ring-slate-200';
-            optFlag.appendChild(flagImg(code, assetBase));
+            optFlag.appendChild(flagImg(code));
 
             var optLabel = document.createElement('span');
             optLabel.textContent = names[code] || code.toUpperCase();
@@ -246,19 +240,24 @@
 
     function patchHeroSlides(tree) {
         var slides = getByPath(tree, 'home.hero.slides');
+        var hero = getByPath(tree, 'home.hero') || {};
         if (!Array.isArray(slides) || !window.__heroSlides) return;
         slides.forEach(function (s, i) {
-            if (window.__heroSlides[i]) {
-                window.__heroSlides[i].title = s.title || window.__heroSlides[i].title;
-                window.__heroSlides[i].subtitle = s.subtitle || window.__heroSlides[i].subtitle;
-                if (s.cta_primary) {
-                    window.__heroSlides[i].ctaPrimary = window.__heroSlides[i].ctaPrimary || {};
-                    window.__heroSlides[i].ctaPrimary.text = s.cta_primary;
-                }
-                if (s.cta_secondary) {
-                    window.__heroSlides[i].ctaSecondary = window.__heroSlides[i].ctaSecondary || {};
-                    window.__heroSlides[i].ctaSecondary.text = s.cta_secondary;
-                }
+            if (!window.__heroSlides[i]) return;
+            if (s.title) window.__heroSlides[i].title = s.title;
+            if (s.subtitle) window.__heroSlides[i].subtitle = s.subtitle;
+
+            var isSampleSlide = i === slides.length - 1 && !!window.__heroSlides[i].ctaPrimary &&
+                window.__heroSlides[i].ctaPrimary.inquirySample;
+            var primaryText = s.cta_primary ||
+                (isSampleSlide && hero.cta_sample ? hero.cta_sample : hero.cta_offer);
+            var secondaryText = s.cta_secondary || hero.cta_quote;
+
+            if (primaryText && window.__heroSlides[i].ctaPrimary) {
+                window.__heroSlides[i].ctaPrimary.text = primaryText;
+            }
+            if (secondaryText && window.__heroSlides[i].ctaSecondary) {
+                window.__heroSlides[i].ctaSecondary.text = secondaryText;
             }
         });
         if (typeof window.__heroRefresh === 'function') {
@@ -267,6 +266,7 @@
     }
 
     function exposeApi(locale, tree) {
+        tree._locale = locale;
         window.paskyI18n = {
             locale: locale,
             t: function (key, fallback) {
@@ -284,12 +284,9 @@
 
     function init() {
         var locale = getLocale();
-        var base = (window.paskyonlineI18n && window.paskyonlineI18n.baseUrl)
-            ? window.paskyonlineI18n.baseUrl
-            : (resolveBasePath() + '/data/i18n/');
-        if (base.slice(-1) !== '/') base += '/';
+        var base = '/data/i18n/';
 
-        fetchJson(base + locale + '.json')
+        fetchJson(base + locale + '.json?v=5')
             .then(function (tree) {
                 applyText(document, tree);
                 updateMeta(tree);
@@ -297,9 +294,11 @@
                 patchHeroSlides(tree);
                 exposeApi(locale, tree);
             })
-            .catch(function () {
+            .catch(function (err) {
+                console.warn('i18n:', err);
                 if (locale !== DEFAULT) {
                     fetchJson(base + DEFAULT + '.json').then(function (tree) {
+                        tree._locale = DEFAULT;
                         exposeApi(DEFAULT, tree);
                     });
                 }
