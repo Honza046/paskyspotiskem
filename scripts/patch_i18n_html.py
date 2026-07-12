@@ -115,9 +115,21 @@ def apply_map(text: str, mapping: list[tuple[str, str]]) -> str:
     return text
 
 
+BOOT_TAG = '    <script src="/assets/js/i18n-boot.js?v=2"></script>\n'
+
+
+def inject_i18n_boot(text: str) -> str:
+    if 'i18n-boot.js' in text:
+        return text
+    anchor = '    </script>\n    <meta name="description"'
+    if anchor in text:
+        return text.replace(anchor, '    </script>\n' + BOOT_TAG + '    <meta name="description"', 1)
+    return text
+
+
 def inject_i18n_script(text: str, prefix: str) -> str:
-    i18n_src = f'{prefix}/assets/js/i18n.js'
-    pages_src = f'{prefix}/assets/js/i18n-pages.js'
+    i18n_src = f'{prefix}/assets/js/i18n.js?v=7'
+    pages_src = f'{prefix}/assets/js/i18n-pages.js?v=6'
     i18n_tag = f'<script src="{i18n_src}"></script>'
     pages_tag = f'<script src="{pages_src}"></script>'
     if 'assets/js/i18n.js' in text:
@@ -138,6 +150,7 @@ def patch_file(path: Path) -> bool:
     prefix = depth_prefix(path)
 
     text = patch_common(text)
+    text = inject_i18n_boot(text)
     text = inject_i18n_script(text, prefix if prefix != '.' else '.')
 
     name = path.name

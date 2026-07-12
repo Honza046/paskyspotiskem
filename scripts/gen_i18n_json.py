@@ -1851,6 +1851,68 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
         {
             "view_detail": "Visualizza dettagli",
             "view_detail_aria": "Visualizza dettagli: {title}",
+            "featured_badge": "Esempio selezionato",
+            "technology_badge": "Tecnologia",
+            "technology_demo": "Esempio tecnologico",
+        }
+    )
+    it["gallery"]["filters"].update(
+        {
+            "filter": "Filtro",
+            "clear_all": "Cancella tutto",
+        }
+    )
+    it["gallery"]["filters"]["groups"]["category"].update(
+        {
+            "label": "Tipo di stampa",
+            "options": {
+                "jednobarevny": "Stampa monocolore",
+                "vicebarevny": "Multicolore / Rotocalco",
+                "bezpecnostni": "Nastri di sicurezza",
+                "logisticke": "Nastri logistici / di avvertimento",
+            },
+        }
+    )
+    it["gallery"]["filters"]["groups"]["adhesive"].update(
+        {
+            "label": "Adesivo",
+            "options": {
+                "hot-melt": "Hot Melt",
+                "acryl": "Acrilico",
+            },
+        }
+    )
+    it["gallery"]["filters"]["groups"]["industry"].update(
+        {
+            "label": "Settore",
+            "options": {
+                "e-commerce": "E-commerce",
+                "vyroba": "Produzione",
+                "logistika": "Logistica",
+                "potraviny": "Alimentare",
+                "bezpecnost": "Sicurezza",
+            },
+        }
+    )
+    it["gallery"]["filters"]["groups"]["type"].update(
+        {
+            "label": "Tipo di esempio",
+            "options": {
+                "reference": "Referenze reali",
+                "demo": "Possibilità di stampa",
+            },
+        }
+    )
+    it["gallery"]["lightbox"].update(
+        {
+            "close": "Chiudi",
+            "prev": "Precedente",
+            "next": "Avanti",
+            "cta": "Voglio una stampa simile",
+            "meta_industry": "Settore",
+            "meta_width": "Larghezza",
+            "meta_colors": "Colori",
+            "meta_adhesive": "Adesivo",
         }
     )
     it["gallery"]["cta"].update(
@@ -1865,6 +1927,9 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "remove_filter": "Rimuovi filtro",
             "count_all": "{count} esempi",
             "count_filtered": "Visualizzati {visible} di {total}",
+            "color_one": "1 colore",
+            "color_few": "{n} colori",
+            "color_many": "{n} colori",
         }
     )
     it["js"]["sortiment"].update(

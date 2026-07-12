@@ -363,11 +363,90 @@
         document.title = prod.name + ' | ' + t('meta.site_name', 'Pásky s potiskem');
     }
 
+    function colorsLabel(num, tree) {
+        var js = (tree.get && tree.get('js.gallery')) || {};
+        var n = parseInt(num, 10);
+        if (n === 1) {
+            return js.color_one || '1 barva';
+        }
+        if (n >= 2 && n <= 4) {
+            return (js.color_few || '{n} barvy').replace('{n}', String(n));
+        }
+        return (js.color_many || '{n} barev').replace('{n}', String(n));
+    }
+
+    function applyGalleryFilters(tree) {
+        var filters = tree.get('gallery.filters') || {};
+        var groups = filters.groups || {};
+        var filterBar = document.getElementById('gallery-filter');
+        if (!filterBar) return;
+
+        var filterHeading = filterBar.querySelector('.flex.items-center.gap-2.font-medium');
+        if (filterHeading && filters.filter) {
+            filterHeading.childNodes.forEach(function (node) {
+                if (node.nodeType === 3 && node.textContent.trim()) {
+                    node.textContent = ' ' + filters.filter;
+                }
+            });
+        }
+
+        if (filters.clear_all) {
+            var clearBtn = document.getElementById('gallery-clear');
+            if (clearBtn) setText(clearBtn, filters.clear_all);
+        }
+
+        var groupKeys = ['category', 'adhesive', 'industry', 'type'];
+        var dropdowns = filterBar.querySelectorAll('[data-dropdown]');
+        groupKeys.forEach(function (key, index) {
+            var data = groups[key];
+            var dropdown = dropdowns[index];
+            if (!data || !dropdown) return;
+            var toggle = dropdown.querySelector('[data-dropdown-toggle] > span:first-child');
+            if (toggle && data.label) setText(toggle, data.label);
+            dropdown.querySelectorAll('[data-tag]').forEach(function (btn) {
+                var tag = btn.getAttribute('data-tag');
+                if (!tag || !data.options || !data.options[tag]) return;
+                btn.setAttribute('data-label', data.options[tag]);
+                var span = btn.querySelector('span:first-child');
+                if (span) setText(span, data.options[tag]);
+            });
+        });
+
+        var empty = document.querySelector('#gallery-empty p');
+        var emptyText = tree.get('gallery.sections.empty');
+        if (empty && emptyText) setText(empty, emptyText);
+    }
+
+    function applyGalleryCardTags(item, tree, data) {
+        var cardBody = item.querySelector('.p-4, .p-5');
+        if (!cardBody) return;
+        var pills = cardBody.querySelector('[class*="flex-wrap"]');
+        if (!pills) return;
+        var spans = pills.querySelectorAll('span');
+        if (spans.length < 3) return;
+        if (data.industry_label) setText(spans[0], data.industry_label);
+        var colors = item.getAttribute('data-colors');
+        if (colors) setText(spans[2], colorsLabel(colors, tree));
+    }
+
     function applyGalleryPage(tree) {
         if (document.body.getAttribute('data-page') !== 'gallery') return;
         var items = tree.get('gallery.items') || {};
         var cards = tree.get('gallery.cards') || {};
         var sections = tree.get('gallery.sections') || {};
+        var ui = tree.get('gallery.ui') || {};
+        var lightbox = tree.get('gallery.lightbox') || {};
+
+        var hero = document.querySelector('main > section.border-b.border-slate-100.bg-white');
+        if (hero) {
+            setText(hero.querySelector('p.mb-2'), ui.label);
+            setText(hero.querySelector('h1'), ui.title);
+            setText(hero.querySelector('.max-w-2xl p'), ui.subtitle);
+            var heroCta = hero.querySelector('a[href*="#gf"]');
+            if (heroCta && ui.cta_custom) setText(heroCta, ui.cta_custom);
+        }
+
+        applyGalleryFilters(tree);
 
         document.querySelectorAll('[data-gallery-item]').forEach(function (item) {
             var id = item.getAttribute('data-id');
@@ -380,16 +459,35 @@
             var titleEl = item.querySelector('h2, h3');
             setText(titleEl, data.title);
 
+            var img = item.querySelector('img');
+            if (img && data.title) {
+                img.setAttribute('alt', data.title);
+            }
+
             var desc = item.querySelector('[data-lightbox-trigger]');
             if (desc && cards.view_detail_aria) {
                 desc.setAttribute('aria-label', cards.view_detail_aria.replace('{title}', data.title));
             }
 
-            var overlayBtn = item.querySelector('[data-lightbox-trigger] span span');
-            if (overlayBtn && cards.view_detail) setText(overlayBtn, cards.view_detail);
+            var overlayWrap = item.querySelector('[data-lightbox-trigger] [class*="group-hover:opacity-100"]');
+            if (overlayWrap && cards.view_detail) {
+                var svg = overlayWrap.querySelector('svg');
+                overlayWrap.textContent = '';
+                if (svg) overlayWrap.appendChild(svg);
+                overlayWrap.appendChild(document.createTextNode(' ' + cards.view_detail));
+            }
 
-            var industryTag = item.querySelector('.rounded-md.bg-slate-100');
-            if (industryTag && data.industry_label) setText(industryTag, data.industry_label);
+            var featuredBadge = item.querySelector('[data-lightbox-trigger] > span.absolute.left-3.top-3');
+            if (featuredBadge && item.getAttribute('data-featured') === 'true' && cards.featured_badge) {
+                setText(featuredBadge, cards.featured_badge);
+            }
+
+            var techBadge = item.querySelector('[data-lightbox-trigger] > span.absolute.right-3.top-3');
+            if (techBadge && cards.technology_badge) {
+                setText(techBadge, cards.technology_badge);
+            }
+
+            applyGalleryCardTags(item, tree, data);
         });
 
         document.querySelectorAll('#gallery-featured-section h2, #gallery-references-section h2, #gallery-demos-section h2').forEach(function (h2) {
@@ -404,9 +502,42 @@
         });
 
         var cta = tree.get('gallery.cta') || {};
-        if (cta.title) setText(document.querySelector('section.border-t h2'), cta.title);
-        if (cta.text) setText(document.querySelector('section.border-t p'), cta.text);
-        if (cta.button) setText(document.querySelector('section.border-t a'), cta.button);
+        var ctaSection = document.querySelector('main > section.border-t.border-slate-100.bg-white');
+        if (ctaSection) {
+            if (cta.title) setText(ctaSection.querySelector('h2'), cta.title);
+            if (cta.text) setText(ctaSection.querySelector('p'), cta.text);
+            if (cta.button) {
+                var ctaLink = ctaSection.querySelector('a[href*="#gf"]');
+                if (ctaLink) setCtaLabel(ctaLink, cta.button);
+            }
+        }
+
+        if (lightbox.close) {
+            var closeBtn = document.getElementById('lightbox-close');
+            if (closeBtn) closeBtn.setAttribute('aria-label', lightbox.close);
+        }
+        if (lightbox.prev) {
+            var prevBtn = document.getElementById('lightbox-prev');
+            if (prevBtn) prevBtn.setAttribute('aria-label', lightbox.prev);
+        }
+        if (lightbox.next) {
+            var nextBtn = document.getElementById('lightbox-next');
+            if (nextBtn) nextBtn.setAttribute('aria-label', lightbox.next);
+        }
+        if (lightbox.cta) {
+            var modalCta = document.getElementById('lightbox-cta');
+            if (modalCta) setCtaLabel(modalCta, lightbox.cta);
+        }
+        if (cards.technology_demo) {
+            var techLabel = document.querySelector('#lightbox-graphic span.text-xs');
+            if (techLabel) setText(techLabel, cards.technology_demo);
+        }
+
+        var logoTagline = document.querySelector('.site-header span.hidden.text-sm');
+        if (logoTagline) {
+            var siteName = tree.get('meta.site_name');
+            if (siteName) setText(logoTagline, siteName);
+        }
     }
 
     function setLabel(forId, text, required) {

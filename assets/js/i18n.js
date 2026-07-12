@@ -7,7 +7,9 @@
     var SUPPORTED = ['cs', 'en', 'de', 'it'];
     var DEFAULT = 'cs';
     var STORAGE_KEY = 'paskyonline_lang';
+    var I18N_VER = '7';
     var HTML_LANG = { cs: 'cs', en: 'en', de: 'de', it: 'it' };
+    var currentLocale = null;
 
     function getQueryLang() {
         var params = new URLSearchParams(window.location.search);
@@ -50,6 +52,20 @@
         return fetch(url, { credentials: 'same-origin' }).then(function (r) {
             if (!r.ok) throw new Error('i18n load failed: ' + url);
             return r.json();
+        });
+    }
+
+    function jsonUrl(locale) {
+        return '/data/i18n/' + locale + '.json?v=' + I18N_VER;
+    }
+
+    function pending() {
+        document.documentElement.classList.add('i18n-pending');
+    }
+
+    function reveal() {
+        requestAnimationFrame(function () {
+            document.documentElement.classList.remove('i18n-pending');
         });
     }
 
@@ -130,16 +146,70 @@
         return img;
     }
 
+    function switchLocale(code, newUrl) {
+        if (code === currentLocale) return;
+        pending();
+        try { localStorage.setItem(STORAGE_KEY, code); } catch (err) {}
+
+        fetchJson(jsonUrl(code))
+            .then(function (tree) {
+                applyLocale(code, tree);
+                if (newUrl && window.history && history.replaceState) {
+                    history.replaceState({ locale: code }, '', newUrl);
+                }
+            })
+            .catch(function (err) {
+                console.warn('i18n switch:', err);
+                reveal();
+            });
+    }
+
+    function updateLangSwitcherState(switcher, locale, tree) {
+        var names = (tree.meta && tree.meta.langNames) || {
+            cs: 'Čeština', en: 'English', de: 'Deutsch', it: 'Italiano'
+        };
+        switcher._locale = locale;
+
+        var trigger = switcher.querySelector('button[aria-haspopup="listbox"]');
+        var menu = switcher.querySelector('[role="listbox"]');
+        if (!trigger || !menu) return;
+
+        var flagWrap = trigger.querySelector('span.flex.h-5');
+        if (flagWrap) {
+            flagWrap.innerHTML = '';
+            flagWrap.appendChild(flagImg(locale));
+        }
+        var label = trigger.querySelector('span.max-w-0');
+        if (label) label.textContent = names[locale] || locale.toUpperCase();
+
+        menu.querySelectorAll('[role="option"]').forEach(function (opt) {
+            var code = opt.getAttribute('data-lang');
+            var selected = code === locale;
+            opt.className = 'flex w-full items-center gap-2.5 px-3 py-2 text-left text-sm transition-colors hover:bg-orange-50 hover:text-orange-700' +
+                (selected ? ' bg-orange-50 font-semibold text-orange-700' : ' text-slate-700');
+            if (selected) {
+                opt.setAttribute('aria-selected', 'true');
+            } else {
+                opt.removeAttribute('aria-selected');
+            }
+        });
+    }
+
     function buildLangLinks(locale, tree) {
         var switcher = document.querySelector('[data-lang-switcher]');
         if (!switcher) return;
+
+        if (switcher.dataset.initialized === '1') {
+            updateLangSwitcherState(switcher, locale, tree);
+            return;
+        }
+        switcher.dataset.initialized = '1';
+        switcher._locale = locale;
 
         var names = (tree.meta && tree.meta.langNames) || {
             cs: 'Čeština', en: 'English', de: 'Deutsch', it: 'Italiano'
         };
         var path = window.location.pathname;
-        var search = new URLSearchParams(window.location.search);
-        search.delete('lang');
 
         switcher.className = 'lang-dropdown relative shrink-0';
         switcher.setAttribute('aria-label', 'Language');
@@ -167,11 +237,19 @@
         menu.setAttribute('role', 'listbox');
 
         function navigateTo(code) {
-            if (code === locale) return;
-            try { localStorage.setItem(STORAGE_KEY, code); } catch (err) {}
+            if (code === switcher._locale) return;
+            var search = new URLSearchParams(window.location.search);
+            search.delete('lang');
             search.set('lang', code);
             var qs = search.toString();
-            window.location.href = path + (qs ? '?' + qs : '') + window.location.hash;
+            var newUrl = path + (qs ? '?' + qs : '') + window.location.hash;
+            switchLocale(code, newUrl);
+        }
+
+        function closeMenu() {
+            menu.classList.add('hidden');
+            trigger.setAttribute('aria-expanded', 'false');
+            label.classList.remove('!ml-2', '!max-w-[8rem]', '!opacity-100');
         }
 
         SUPPORTED.forEach(function (code) {
@@ -206,12 +284,6 @@
             menu.classList.remove('hidden');
             trigger.setAttribute('aria-expanded', 'true');
             label.classList.add('!ml-2', '!max-w-[8rem]', '!opacity-100');
-        }
-
-        function closeMenu() {
-            menu.classList.add('hidden');
-            trigger.setAttribute('aria-expanded', 'false');
-            label.classList.remove('!ml-2', '!max-w-[8rem]', '!opacity-100');
         }
 
         trigger.addEventListener('click', function (e) {
@@ -282,24 +354,30 @@
         document.dispatchEvent(new CustomEvent('pasky:i18n-ready', { detail: { locale: locale, tree: tree } }));
     }
 
+    function applyLocale(locale, tree) {
+        tree._locale = locale;
+        applyText(document, tree);
+        updateMeta(tree);
+        buildLangLinks(locale, tree);
+        patchHeroSlides(tree);
+        exposeApi(locale, tree);
+        currentLocale = locale;
+        reveal();
+    }
+
     function init() {
         var locale = getLocale();
-        var base = '/data/i18n/';
 
-        fetchJson(base + locale + '.json?v=5')
+        fetchJson(jsonUrl(locale))
             .then(function (tree) {
-                applyText(document, tree);
-                updateMeta(tree);
-                buildLangLinks(locale, tree);
-                patchHeroSlides(tree);
-                exposeApi(locale, tree);
+                applyLocale(locale, tree);
             })
             .catch(function (err) {
                 console.warn('i18n:', err);
+                reveal();
                 if (locale !== DEFAULT) {
-                    fetchJson(base + DEFAULT + '.json').then(function (tree) {
-                        tree._locale = DEFAULT;
-                        exposeApi(DEFAULT, tree);
+                    fetchJson(jsonUrl(DEFAULT)).then(function (tree) {
+                        applyLocale(DEFAULT, tree);
                     });
                 }
             });

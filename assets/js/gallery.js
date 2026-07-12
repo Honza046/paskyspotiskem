@@ -149,7 +149,7 @@
         return '' +
             '<span class="flex items-center gap-1.5 rounded-full border border-orange-100 bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-600">' +
                 esc(labelOf(tag)) +
-                '<button type="button" data-remove="' + esc(tag) + '" aria-label="Odebrat filtr" class="flex h-4 w-4 items-center justify-center rounded-full text-orange-500 transition-colors hover:bg-orange-100 hover:text-orange-700">' +
+                '<button type="button" data-remove="' + esc(tag) + '" aria-label="' + esc(jsT('js.gallery.remove_filter', 'Odebrat filtr')) + '" class="flex h-4 w-4 items-center justify-center rounded-full text-orange-500 transition-colors hover:bg-orange-100 hover:text-orange-700">' +
                     '<svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18"/></svg>' +
                 '</button>' +
             '</span>';
@@ -329,6 +329,7 @@
 
         renderFilters();
         document.addEventListener('pasky:i18n-ready', renderFilters);
+        document.addEventListener('pasky:i18n-pages-applied', renderFilters);
     }
 
     if (items.length && modal) {
@@ -394,6 +395,10 @@
             return base + sep + 'poptavka=' + encodeURIComponent(title) + hash;
         }
 
+        function lightboxLabel(key, fallback) {
+            return jsT('gallery.lightbox.' + key, fallback);
+        }
+
         function openLightboxAt(index) {
             if (!visibleItems.length) {
                 visibleItems = items.filter(function (item) {
@@ -429,13 +434,20 @@
             }
 
             modalMeta.innerHTML =
-                metaRow('Odvětví', data.industry) +
-                metaRow('Šířka', data.width) +
-                metaRow('Barvy', colorsLabel(data.colors)) +
-                metaRow('Lepidlo', data.adhesive);
+                metaRow(lightboxLabel('meta_industry', 'Odvětví'), data.industry) +
+                metaRow(lightboxLabel('meta_width', 'Šířka'), data.width) +
+                metaRow(lightboxLabel('meta_colors', 'Barvy'), colorsLabel(data.colors)) +
+                metaRow(lightboxLabel('meta_adhesive', 'Lepidlo'), data.adhesive);
 
             modalDescription.textContent = data.description || '';
             modalCta.href = inquiryUrl(data.title);
+            if (modalCta.childNodes.length) {
+                var ctaText = lightboxLabel('cta', 'Chci podobný potisk');
+                var ctaSvg = modalCta.querySelector('svg');
+                modalCta.textContent = '';
+                modalCta.appendChild(document.createTextNode(ctaText + (ctaSvg ? ' ' : '')));
+                if (ctaSvg) modalCta.appendChild(ctaSvg);
+            }
 
             modal.hidden = false;
             modal.classList.add('is-open');
@@ -514,6 +526,12 @@
             }
             if (e.key === 'ArrowRight') {
                 stepLightbox(1);
+            }
+        });
+
+        document.addEventListener('pasky:i18n-pages-applied', function () {
+            if (currentIndex >= 0) {
+                openLightboxAt(currentIndex);
             }
         });
     }
