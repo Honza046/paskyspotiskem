@@ -25,6 +25,7 @@
     "gallery": "Galerie",
     "sortiment": "Sortiment",
     "references": "Reference",
+    "faq": "FAQ",
     "contacts": "Kontakty",
     "facebook": "Facebook",
     "instagram": "Instagram",
@@ -58,16 +59,16 @@
       "badge": "ISO 9001 · Přímo od výrobce",
       "slides": [
         {
-          "title": "BALICÍ LEPICÍ PÁSKY",
-          "subtitle": "Potištěné nebo neutrální balicí pásky samolepicí s ISO 9001."
+          "title": "LEPICÍ PÁSKY SE SPODNÍM TISKEM",
+          "subtitle": "Spolehlivé BOPP pásky s tiskem chráněným pod folií i eko varianty pro udržitelné balení."
         },
         {
-          "title": "PROČ POUŽÍVAT LEPICÍ PÁSKY S POTISKEM?",
-          "subtitle": "Lepicí pásky balí, fixují, propagují a chrání Vaše zboží."
+          "title": "PROČ SI VYBRAT NÁS?",
+          "subtitle": "Více než 20 let zkušeností a spolupráce s e-shopy i průmyslem. Spolehlivost, rychlé dodání a individuální přístup ke každé zakázce."
         },
         {
-          "title": "PROČ LEPICÍ PÁSKY S POTISKEM OD ALFA IN?",
-          "subtitle": "Nabízíme FLEXOTISK až 8 barev a ROTOTISK až 10 barev s možností 3D / kvalitní trvanlivý spodní tisk za nejnižší ceny přímo z výroby."
+          "title": "OTESTUJTE NAŠI KVALITU VE SVÉM PROVOZU",
+          "subtitle": "Bezplatný vzorek nebo nezávazná kalkulace na míru. Přesvědčte se o odolnosti a pevnosti lepidla ještě před objednávkou."
         }
       ],
       "cta_offer": "Prohlédnout nabídku",
@@ -231,6 +232,38 @@
       "vojtech_role": "Asistent prodeje",
       "more_contacts": "Další kontakty"
     },
+    "faq": {
+      "label": "Časté dotazy",
+      "title": "Odpovědi před objednávkou",
+      "subtitle": "Nejčastější otázky k potisku, dodacím lhůtám a výběru materiálu. Pokud si nejste jistí, napište nám, poradíme.",
+      "cta": "Nezávazná kalkulace →",
+      "items": [
+        {
+          "q": "Jaké je minimální množství objednávky?",
+          "a": "Standardně od 360 ks na jednu variantu pásky. U větších objednávek získáte dopravu zdarma v rámci ČR. Přesné podmínky vám upřesníme v kalkulaci."
+        },
+        {
+          "q": "Jak dlouho trvá výroba pásky s potiskem?",
+          "a": "Typická dodací lhůta je 3 až 4 týdny od schválení grafického náhledu a objednávky. U urgentních zakázek se snažíme najít řešení individuálně, napište nám termín v poptávce."
+        },
+        {
+          "q": "Mohu objednat pásku i bez potisku?",
+          "a": "Ano. Stejný materiál dodáme i v nepotištěném provedení pro okamžité balení nebo skladové zásoby. Stačí uvést v poznámce k poptávce."
+        },
+        {
+          "q": "Jaký je rozdíl mezi HOT MELT a ACRYL?",
+          "a": "HOT MELT rychle a pevně přilne i v chladu, vhodný do skladů a expedice. ACRYL je tišší při odvíjení a odolnější vůči UV, ideální pro dlouhodobé skladování. Více v sekci <a href=\"#lepidla\">Jaké lepidlo zvolit?</a>."
+        },
+        {
+          "q": "Dodáváte vzorky zdarma?",
+          "a": "Ano, u vybraných materiálů a u stávajících grafických návrhů vám rádi zašleme testovací vzorek. V poptávce uveďte „Mám zájem o vzorek“ nebo použijte tlačítko níže na stránce."
+        },
+        {
+          "q": "Jaké technologie potisku nabízíte?",
+          "a": "Flexotisk až 8 barev a rototisk až 10 barev včetně kvalitního spodního tisku. Vhodnou technologii doporučíme podle nároku na barvy, množství a design loga."
+        }
+      ]
+    },
     "sample": {
       "label": "Testovací vzorek",
       "title": "Nejste si jistí výběrem? Pošleme Vám vzorek zdarma.",
@@ -386,6 +419,10 @@
       "clear_all": "Vymazat vše",
       "results_title": "Nalezené produkty podle filtrů",
       "empty": "Žádná páska neodpovídá vybrané kombinaci filtrů. Zkuste ubrat některý z filtrů.",
+      "featured_label": "Doporučujeme",
+      "featured_title": "Nejčastěji poptávané pásky",
+      "categories_label": "Kategorie",
+      "categories_title": "Celý sortiment",
       "show_products": "Zobrazit produkty",
       "cta_quote": "Nezávazná kalkulace"
     },
@@ -2435,7 +2472,13 @@
       "product_few": "{n} produkty",
       "product_many": "{n} produktů",
       "detail": "Detail",
-      "inquire": "Poptat"
+      "inquire": "Poptat",
+      "tag_eco": "ECO",
+      "tag_cold": "-70 °C",
+      "tag_hot": "Vysoké teploty",
+      "tag_chem": "Chemická odolnost",
+      "tag_machines": "Stroje",
+      "tag_hand": "Ruční"
     },
     "form": {
       "step_label": "Krok {current} ze {total}"

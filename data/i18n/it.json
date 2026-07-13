@@ -25,6 +25,7 @@
     "gallery": "Galleria",
     "sortiment": "Assortimento",
     "references": "Referenze",
+    "faq": "FAQ",
     "contacts": "Contatti",
     "facebook": "Facebook",
     "instagram": "Instagram",
@@ -58,16 +59,16 @@
       "badge": "ISO 9001 · Direttamente dal produttore",
       "slides": [
         {
-          "title": "NASTRI ADESIVI PER IMBALLAGGIO",
-          "subtitle": "Nastri adesivi per imballaggio stampati o neutri con certificazione ISO 9001."
+          "title": "NASTRI ADESIVI CON STAMPA PROTETTA",
+          "subtitle": "Nastri BOPP affidabili con stampa protetta sotto pellicola e varianti eco per imballaggi sostenibili."
         },
         {
-          "title": "PERCHÉ USARE NASTRI ADESIVI STAMPATI?",
-          "subtitle": "I nastri adesivi imballano, proteggono, promuovono e mettono in sicurezza le vostre merci."
+          "title": "PERCHÉ SCEGLIERCI?",
+          "subtitle": "Oltre 20 anni di esperienza con e-commerce e industria. Affidabilità, consegna rapida e approccio personalizzato a ogni ordine."
         },
         {
-          "title": "PERCHÉ I NASTRI STAMPATI DI ALFA IN?",
-          "subtitle": "Offriamo stampa flexo fino a 8 colori e rotocalco fino a 10 colori, anche in 3D, stampa inversa resistente a prezzi diretti dal produttore."
+          "title": "TESTATE LA NOSTRA QUALITÀ NEL VOSTRO REPARTO",
+          "subtitle": "Campione gratuito o preventivo senza impegno su misura. Verificate resistenza e adesione prima dell'ordine."
         }
       ],
       "cta_offer": "Scopri la gamma",
@@ -79,7 +80,7 @@
       "title": "Produttore ceco tradizionale di nastri adesivi stampati",
       "lead": "Da oltre 30 anni aiutiamo le aziende a imballare le spedizioni in modo sicuro e a costruire un marchio forte direttamente sui materiali di imballaggio. Siamo specializzati nella stampa personalizzata di nastri adesivi.",
       "body1": "Il nostro moderno stabilimento ci permette di rispondere in modo flessibile alle esigenze sia dei piccoli e-shop sia delle grandi imprese industriali. Puntiamo su una stampa precisa (fino a 8 colori), adesivi premium (Hot Melt, Acrilico) e consegne rapide in tutta la Repubblica Ceca.",
-      "body2": "Grazie a processi certificati ISO 9001 e all'uso di materiali ecologici e sostenibili, siamo un partner affidabile per oltre 100 clienti attivi.",
+      "body2": "Grazie a processi certificati ISO 9001 e all'uso di materiali ecologici e sostenibili, siamo un partner affidabile per oltre 300 clienti attivi.",
       "image_alt": "Produzione di nastri adesivi ALFA IN",
       "team_title": "Team ALFA IN",
       "team_subtitle": "Tradizione, esperienza e approccio personale a ogni ordine"
@@ -230,6 +231,38 @@
       "vojtech_name": "Vojtěch Petrák",
       "vojtech_role": "Assistente vendite",
       "more_contacts": "Altri contatti"
+    },
+    "faq": {
+      "label": "Domande frequenti",
+      "title": "Risposte prima dell'ordine",
+      "subtitle": "Le domande più comuni su stampa, tempi di consegna e scelta del materiale. Non siete sicuri? Scriveteci, vi consiglieremo.",
+      "cta": "Richiesta di preventivo →",
+      "items": [
+        {
+          "q": "Qual è la quantità minima d'ordine?",
+          "a": "Di norma da 360 rotoli per variante di nastro. Per ordini maggiori la spedizione in Repubblica Ceca è gratuita. Le condizioni precise le confermeremo nel preventivo."
+        },
+        {
+          "q": "Quanto tempo richiede la produzione del nastro stampato?",
+          "a": "Il tempo di consegna tipico è di 3 o 4 settimane dall'approvazione della bozza grafica e conferma dell'ordine. Per urgenze cerchiamo soluzioni individuali, indicate la scadenza nella richiesta."
+        },
+        {
+          "q": "Posso ordinare il nastro anche senza stampa?",
+          "a": "Sì. Lo stesso materiale è disponibile anche non stampato per imballaggio immediato o scorte. Basta indicarlo nelle note della richiesta."
+        },
+        {
+          "q": "Qual è la differenza tra HOT MELT e ACRYL?",
+          "a": "HOT MELT aderisce rapidamente e saldamente anche al freddo, ideale per magazzini e spedizioni. ACRYL è più silenzioso durante lo srotolamento e più resistente ai UV, adatto allo stoccaggio a lungo termine. Maggiori info nella sezione <a href=\"#lepidla\">Quale adesivo scegliere?</a>."
+        },
+        {
+          "q": "Fornite campioni gratuiti?",
+          "a": "Sì, per materiali selezionati e grafiche esistenti inviamo volentieri un campione di prova. Indicate „Voglio un campione“ nella richiesta o usate il pulsante più in basso nella pagina."
+        },
+        {
+          "q": "Quali tecnologie di stampa offrite?",
+          "a": "Flexografia fino a 8 colori e rotocalco fino a 10 colori, inclusa stampa sul retro di alta qualità. Consigliamo la tecnologia più adatta in base a colori, quantità e design del logo."
+        }
+      ]
     },
     "sample": {
       "label": "Campione di prova",
@@ -386,6 +419,10 @@
       "clear_all": "Cancella tutto",
       "results_title": "Prodotti trovati in base ai filtri",
       "empty": "Nessun nastro corrisponde ai filtri selezionati. Provate a rimuoverne alcuni.",
+      "featured_label": "Consigliati",
+      "featured_title": "Nastri più richiesti",
+      "categories_label": "Categorie",
+      "categories_title": "Intero assortimento",
       "show_products": "Mostra prodotti",
       "cta_quote": "Preventivo non vincolante"
     },
@@ -2435,7 +2472,13 @@
       "product_few": "{n} prodotti",
       "product_many": "{n} prodotti",
       "detail": "Dettagli",
-      "inquire": "Richiedi"
+      "inquire": "Richiedi",
+      "tag_eco": "ECO",
+      "tag_cold": "-70 °C",
+      "tag_hot": "Alte temperature",
+      "tag_chem": "Resistenza chimica",
+      "tag_machines": "Macchine",
+      "tag_hand": "Manuale"
     },
     "form": {
       "step_label": "Passo {current} di {total}"

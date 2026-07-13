@@ -25,6 +25,7 @@
     "gallery": "Gallery",
     "sortiment": "Products",
     "references": "References",
+    "faq": "FAQ",
     "contacts": "Contact",
     "facebook": "Facebook",
     "instagram": "Instagram",
@@ -58,16 +59,16 @@
       "badge": "ISO 9001 · Direct from the manufacturer",
       "slides": [
         {
-          "title": "PACKAGING ADHESIVE TAPES",
-          "subtitle": "Printed or plain self-adhesive packaging tapes with ISO 9001 certification."
+          "title": "ADHESIVE TAPES WITH REVERSE PRINTING",
+          "subtitle": "Reliable BOPP tapes with print protected under the film, plus eco options for sustainable packaging."
         },
         {
-          "title": "WHY USE PRINTED ADHESIVE TAPES?",
-          "subtitle": "Adhesive tapes pack, secure, promote and protect your goods."
+          "title": "WHY CHOOSE US?",
+          "subtitle": "Over 20 years of experience with e-commerce and industry. Reliability, fast delivery and a personal approach to every order."
         },
         {
-          "title": "WHY PRINTED TAPES FROM ALFA IN?",
-          "subtitle": "We offer flexo printing up to 8 colours and rotogravure up to 10 colours, including 3D options, durable reverse printing at factory-direct prices."
+          "title": "TEST OUR QUALITY IN YOUR OPERATION",
+          "subtitle": "Request a free sample or a no-obligation custom quote. Check strength and adhesion before you order."
         }
       ],
       "cta_offer": "Browse our range",
@@ -79,7 +80,7 @@
       "title": "A traditional Czech manufacturer of printed adhesive tapes",
       "lead": "For more than 30 years we have helped companies pack their shipments securely and build a strong brand directly on packaging materials. We specialise in custom printing of adhesive tapes.",
       "body1": "Our modern production facility allows us to respond flexibly to the needs of both small e-shops and large industrial enterprises. We pride ourselves on precise printing (up to 8 colours), premium adhesive quality (Hot Melt, Acrylic) and fast delivery throughout the Czech Republic.",
-      "body2": "Thanks to ISO 9001 certified processes and the use of ecological, sustainable materials, we are a reliable partner for more than 100 active customers.",
+      "body2": "Thanks to ISO 9001 certified processes and the use of ecological, sustainable materials, we are a reliable partner for more than 300 active customers.",
       "image_alt": "ALFA IN adhesive tape production",
       "team_title": "ALFA IN team",
       "team_subtitle": "Tradition, experience and a personal approach to every order"
@@ -230,6 +231,38 @@
       "vojtech_name": "Vojtěch Petrák",
       "vojtech_role": "Sales assistant",
       "more_contacts": "More contacts"
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Answers before you order",
+      "subtitle": "Common questions about printing, lead times and material choice. Not sure? Contact us, we will advise you.",
+      "cta": "Request a quote →",
+      "items": [
+        {
+          "q": "What is the minimum order quantity?",
+          "a": "Typically from 360 rolls per tape variant. Larger orders qualify for free delivery within the Czech Republic. We will confirm exact terms in your quote."
+        },
+        {
+          "q": "How long does printed tape production take?",
+          "a": "Typical lead time is 3 to 4 weeks from approval of the artwork proof and order confirmation. For urgent jobs we try to find individual solutions, mention your deadline in the inquiry."
+        },
+        {
+          "q": "Can I order tape without printing?",
+          "a": "Yes. We can supply the same material unprinted for immediate packing or stock. Just mention it in the inquiry notes."
+        },
+        {
+          "q": "What is the difference between HOT MELT and ACRYL?",
+          "a": "HOT MELT bonds quickly and firmly even in cold conditions, ideal for warehouses and dispatch. ACRYL is quieter when unwinding and more UV-resistant, suited for long-term storage. More in the <a href=\"#lepidla\">Which adhesive to choose?</a> section."
+        },
+        {
+          "q": "Do you provide free samples?",
+          "a": "Yes, for selected materials and existing artwork we are happy to send a test sample. Add “I want a sample” in your inquiry or use the button further down the page."
+        },
+        {
+          "q": "Which printing technologies do you offer?",
+          "a": "Flexographic printing up to 8 colours and rotogravure up to 10 colours including high-quality reverse printing. We recommend the best option based on colour requirements, volume and logo design."
+        }
+      ]
     },
     "sample": {
       "label": "Test sample",
@@ -386,6 +419,10 @@
       "clear_all": "Clear all",
       "results_title": "Products matching your filters",
       "empty": "No tape matches the selected filter combination. Try removing one of the filters.",
+      "featured_label": "Recommended",
+      "featured_title": "Most requested tapes",
+      "categories_label": "Categories",
+      "categories_title": "Full product range",
       "show_products": "View products",
       "cta_quote": "Request a quote"
     },
@@ -2435,7 +2472,13 @@
       "product_few": "{n} products",
       "product_many": "{n} products",
       "detail": "Details",
-      "inquire": "Inquire"
+      "inquire": "Inquire",
+      "tag_eco": "ECO",
+      "tag_cold": "-70 °C",
+      "tag_hot": "High temperature",
+      "tag_chem": "Chemical resistance",
+      "tag_machines": "Machines",
+      "tag_hand": "Manual"
     },
     "form": {
       "step_label": "Step {current} of {total}"

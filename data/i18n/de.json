@@ -25,6 +25,7 @@
     "gallery": "Galerie",
     "sortiment": "Sortiment",
     "references": "Referenzen",
+    "faq": "FAQ",
     "contacts": "Kontakt",
     "facebook": "Facebook",
     "instagram": "Instagram",
@@ -58,16 +59,16 @@
       "badge": "ISO 9001 · Direkt vom Hersteller",
       "slides": [
         {
-          "title": "VERPACKUNGS-KLEBEBÄNDER",
-          "subtitle": "Bedruckte oder neutrale selbstklebende Verpackungsbänder mit ISO 9001."
+          "title": "KLEBEBÄNDER MIT RÜCKSEITENDRUCK",
+          "subtitle": "Zuverlässige BOPP-Bänder mit unter der Folie geschütztem Druck und Öko-Varianten für nachhaltige Verpackung."
         },
         {
-          "title": "WARUM BEDRUCKTE KLEBEBÄNDER?",
-          "subtitle": "Klebebänder verpacken, fixieren, bewerben und schützen Ihre Waren."
+          "title": "WARUM UNS WÄHLEN?",
+          "subtitle": "Mehr als 20 Jahre Erfahrung mit E-Commerce und Industrie. Zuverlässigkeit, schnelle Lieferung und individueller Ansatz bei jeder Bestellung."
         },
         {
-          "title": "WARUM BEDRUCKTE BÄNDER VON ALFA IN?",
-          "subtitle": "Flexodruck bis 8 Farben und Rotogravur bis 10 Farben, inkl. 3D-Optionen, langlebiger Rückseitendruck zu Fabrikpreisen."
+          "title": "TESTEN SIE UNSERE QUALITÄT IN IHREM BETRIEB",
+          "subtitle": "Kostenloses Muster oder unverbindliche Kalkulation. Überzeugen Sie sich von Festigkeit und Klebkraft vor der Bestellung."
         }
       ],
       "cta_offer": "Angebot ansehen",
@@ -79,7 +80,7 @@
       "title": "Traditioneller tschechischer Hersteller bedruckter Klebebänder",
       "lead": "Seit mehr als 30 Jahren helfen wir Unternehmen, ihre Sendungen sicher zu verpacken und eine starke Marke direkt auf Verpackungsmaterialien aufzubauen. Wir sind Spezialisten für individuellen Druck auf Klebebändern.",
       "body1": "Unsere moderne Produktionsstätte ermöglicht es uns, flexibel auf die Bedürfnisse kleiner E-Shops wie auch großer Industrieunternehmen zu reagieren. Wir legen Wert auf präzisen Druck (bis 8 Farben), erstklassige Klebstoffqualität (Hot Melt, Acryl) und schnelle Lieferung in der gesamten Tschechischen Republik.",
-      "body2": "Dank ISO-9001-zertifizierter Prozesse und dem Einsatz ökologischer, nachhaltiger Materialien sind wir ein zuverlässiger Partner für mehr als 100 aktive Abnehmer.",
+      "body2": "Dank ISO-9001-zertifizierter Prozesse und dem Einsatz ökologischer, nachhaltiger Materialien sind wir ein zuverlässiger Partner für mehr als 300 aktive Abnehmer.",
       "image_alt": "ALFA IN Klebeband-Produktion",
       "team_title": "Team ALFA IN",
       "team_subtitle": "Tradition, Erfahrung und persönlicher Ansatz bei jedem Auftrag"
@@ -230,6 +231,38 @@
       "vojtech_name": "Vojtěch Petrák",
       "vojtech_role": "Verkaufsassistent",
       "more_contacts": "Weitere Kontakte"
+    },
+    "faq": {
+      "label": "Häufige Fragen",
+      "title": "Antworten vor der Bestellung",
+      "subtitle": "Die häufigsten Fragen zu Druck, Lieferzeiten und Materialwahl. Unsicher? Schreiben Sie uns, wir beraten Sie gern.",
+      "cta": "Unverbindliche Kalkulation →",
+      "items": [
+        {
+          "q": "Wie ist die Mindestbestellmenge?",
+          "a": "In der Regel ab 360 Rollen pro Bandvariante. Bei größeren Bestellungen erhalten Sie kostenlosen Versand innerhalb Tschechiens. Genaue Konditionen nennen wir Ihnen in der Kalkulation."
+        },
+        {
+          "q": "Wie lange dauert die Produktion bedruckter Bänder?",
+          "a": "Typische Lieferzeit beträgt 3 bis 4 Wochen nach Freigabe des Druckproofs und Bestellbestätigung. Bei dringenden Aufträgen suchen wir individuelle Lösungen, nennen Sie Ihren Termin in der Anfrage."
+        },
+        {
+          "q": "Kann ich Klebeband auch unbedruckt bestellen?",
+          "a": "Ja. Dasselbe Material liefern wir auch unbedruckt für sofortigen Einsatz oder Lagerbestand. Einfach in der Anfrage vermerken."
+        },
+        {
+          "q": "Was ist der Unterschied zwischen HOT MELT und ACRYL?",
+          "a": "HOT MELT haftet schnell und fest auch bei Kälte, ideal für Lager und Versand. ACRYL ist leiser beim Abrollen und UV-beständiger, geeignet für Langzeitlagerung. Mehr im Abschnitt <a href=\"#lepidla\">Welchen Klebstoff wählen?</a>."
+        },
+        {
+          "q": "Liefern Sie kostenlose Muster?",
+          "a": "Ja, für ausgewählte Materialien und bestehende Druckdaten senden wir gern ein Testmuster. Vermerken Sie „Ich möchte ein Muster“ in der Anfrage oder nutzen Sie den Button weiter unten auf der Seite."
+        },
+        {
+          "q": "Welche Drucktechnologien bieten Sie an?",
+          "a": "Flexodruck bis zu 8 Farben und Tiefdruck bis zu 10 Farben inklusive hochwertigem Unterdruck. Die passende Technologie empfehlen wir nach Farbanforderungen, Menge und Logodesign."
+        }
+      ]
     },
     "sample": {
       "label": "Testmuster",
@@ -386,6 +419,10 @@
       "clear_all": "Alle löschen",
       "results_title": "Produkte nach Filtern",
       "empty": "Kein Band entspricht der gewählten Filterkombination. Versuchen Sie, einen Filter zu entfernen.",
+      "featured_label": "Empfohlen",
+      "featured_title": "Am häufigsten angefragte Bänder",
+      "categories_label": "Kategorien",
+      "categories_title": "Gesamtes Sortiment",
       "show_products": "Produkte anzeigen",
       "cta_quote": "Unverbindliche Kalkulation"
     },
@@ -2435,7 +2472,13 @@
       "product_few": "{n} Produkte",
       "product_many": "{n} Produkte",
       "detail": "Details",
-      "inquire": "Anfragen"
+      "inquire": "Anfragen",
+      "tag_eco": "ECO",
+      "tag_cold": "-70 °C",
+      "tag_hot": "Hohe Temperaturen",
+      "tag_chem": "Chemische Beständigkeit",
+      "tag_machines": "Maschinen",
+      "tag_hand": "Manuell"
     },
     "form": {
       "step_label": "Schritt {current} von {total}"

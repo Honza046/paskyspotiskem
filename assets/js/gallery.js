@@ -324,8 +324,18 @@
                     setPill(pill, false);
                 });
                 renderFilters();
+                document.dispatchEvent(new CustomEvent('pasky:gallery-type-cleared'));
             });
         }
+
+        window.paskyGallerySetTypeFilter = function (typeTag) {
+            pills.forEach(function (pill) {
+                if (pill.getAttribute('data-filter-group') === 'type') {
+                    setPill(pill, !!typeTag && pill.getAttribute('data-tag') === typeTag);
+                }
+            });
+            renderFilters();
+        };
 
         renderFilters();
         document.addEventListener('pasky:i18n-ready', renderFilters);

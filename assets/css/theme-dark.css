@@ -285,6 +285,26 @@
     transform: rotate(9deg) scale(1.1);
 }
 
+/* Udržitelné – product photo (white bg removed via multiply) */
+.category-tape-deco--eco {
+    bottom: -22%;
+    mix-blend-mode: multiply;
+    opacity: 0.22;
+}
+
+#sortiment-categories a.group:hover > .category-tape-deco--eco {
+    transform: rotate(9deg) scale(1.1);
+}
+
+.dark .category-tape-deco--eco {
+    mix-blend-mode: normal;
+    opacity: 0.2;
+}
+
+.dark #sortiment-categories a.group:hover > .category-tape-deco--eco {
+    transform: rotate(9deg) scale(1.1);
+}
+
 .dark #sortiment-categories .category-tape-deco--light {
     display: none;
 }

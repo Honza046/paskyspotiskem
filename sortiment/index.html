@@ -30,8 +30,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/theme-dark.css">
+    <link rel="stylesheet" href="/assets/css/theme-dark.css?v=5">
     <link rel="stylesheet" href="/assets/css/info-banner.css?v=5">
+    <link rel="stylesheet" href="/assets/css/sortiment-cards.css?v=6">
+    <link rel="stylesheet" href="/assets/css/cult-effects.css?v=9">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -74,6 +76,8 @@
                 <li><a href="/sortiment" class="px-2 py-1 text-sm font-semibold text-orange-600 transition-colors hover:text-orange-600" data-i18n="nav.sortiment">Sortiment</a></li>
                 <li><a href="/#reference" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.references">Reference</a></li>
                 <li><a href="/#kontakt1" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.contacts">Kontakty</a></li>
+                <li><a href="/#faq" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.faq">FAQ</a></li>
+                
             </ul>
         </nav>
             <div data-lang-switcher class="relative shrink-0" aria-label="Language"></div>
@@ -88,6 +92,8 @@
             <li><a href="/sortiment" class="block px-2 py-2 font-semibold text-orange-600" data-i18n="nav.sortiment">Sortiment</a></li>
             <li><a href="/#reference" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.references">Reference</a></li>
             <li><a href="/#kontakt1" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.contacts">Kontakty</a></li>
+                <li><a href="/#faq" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.faq">FAQ</a></li>
+            
         </ul>
     </nav>
 </header>
@@ -113,12 +119,12 @@
 
         <!-- Vlastnosti -->
         <div class="relative" data-dropdown>
-            <button type="button" data-dropdown-toggle class="relative flex cursor-pointer items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-slate-300">
+            <button type="button" data-dropdown-toggle class="relative flex cursor-pointer items-center gap-2 glass glass--pill rounded-full px-5 py-2 text-sm font-medium text-slate-700">
                 <span>Vlastnosti</span>
                 <span data-count class="hidden h-5 min-w-[20px] items-center justify-center rounded-full bg-orange-600 px-1.5 text-xs font-bold text-white"></span>
                 <svg data-chevron class="h-4 w-4 text-slate-400 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
             </button>
-            <div data-dropdown-menu class="absolute left-0 top-full z-50 mt-2 hidden min-w-[220px] flex-col gap-2 rounded-2xl border border-slate-100 bg-white p-4 shadow-xl flex">
+            <div data-dropdown-menu class="absolute left-0 top-full z-50 mt-2 hidden min-w-[220px] flex-col gap-2 glass glass--menu rounded-2xl p-4 shadow-xl flex">
                 <button type="button" data-tag="ekologicke" data-label="Ekologické" aria-pressed="false" class="flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"><span>Ekologické</span><span data-check class="hidden text-orange-600"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></button>
                 <button type="button" data-tag="tiche" data-label="Tiché (Low Noise)" aria-pressed="false" class="flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"><span>Tiché (Low Noise)</span><span data-check class="hidden text-orange-600"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></button>
                 <button type="button" data-tag="odstranitelne" data-label="Odstranitelné bez stop" aria-pressed="false" class="flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"><span>Odstranitelné bez stop</span><span data-check class="hidden text-orange-600"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></button>
@@ -128,12 +134,12 @@
 
         <!-- Odolnost -->
         <div class="relative" data-dropdown>
-            <button type="button" data-dropdown-toggle class="relative flex cursor-pointer items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-slate-300">
+            <button type="button" data-dropdown-toggle class="relative flex cursor-pointer items-center gap-2 glass glass--pill rounded-full px-5 py-2 text-sm font-medium text-slate-700">
                 <span>Odolnost</span>
                 <span data-count class="hidden h-5 min-w-[20px] items-center justify-center rounded-full bg-orange-600 px-1.5 text-xs font-bold text-white"></span>
                 <svg data-chevron class="h-4 w-4 text-slate-400 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
             </button>
-            <div data-dropdown-menu class="absolute left-0 top-full z-50 mt-2 hidden min-w-[220px] flex-col gap-2 rounded-2xl border border-slate-100 bg-white p-4 shadow-xl flex">
+            <div data-dropdown-menu class="absolute left-0 top-full z-50 mt-2 hidden min-w-[220px] flex-col gap-2 glass glass--menu rounded-2xl p-4 shadow-xl flex">
                 <button type="button" data-tag="mrazuvzdorne" data-label="Mrazuvzdorné (do −70 °C)" aria-pressed="false" class="flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"><span>Mrazuvzdorné (do −70 °C)</span><span data-check class="hidden text-orange-600"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></button>
                 <button type="button" data-tag="vysoke-teploty" data-label="Vysoké teploty" aria-pressed="false" class="flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"><span>Vysoké teploty</span><span data-check class="hidden text-orange-600"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></button>
                 <button type="button" data-tag="chemicka-odolnost" data-label="Chemická odolnost" aria-pressed="false" class="flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"><span>Chemická odolnost</span><span data-check class="hidden text-orange-600"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></button>
@@ -142,12 +148,12 @@
 
         <!-- Použití -->
         <div class="relative" data-dropdown>
-            <button type="button" data-dropdown-toggle class="relative flex cursor-pointer items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-slate-300">
+            <button type="button" data-dropdown-toggle class="relative flex cursor-pointer items-center gap-2 glass glass--pill rounded-full px-5 py-2 text-sm font-medium text-slate-700">
                 <span>Použití</span>
                 <span data-count class="hidden h-5 min-w-[20px] items-center justify-center rounded-full bg-orange-600 px-1.5 text-xs font-bold text-white"></span>
                 <svg data-chevron class="h-4 w-4 text-slate-400 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
             </button>
-            <div data-dropdown-menu class="absolute left-0 top-full z-50 mt-2 hidden min-w-[220px] flex-col gap-2 rounded-2xl border border-slate-100 bg-white p-4 shadow-xl flex">
+            <div data-dropdown-menu class="absolute left-0 top-full z-50 mt-2 hidden min-w-[220px] flex-col gap-2 glass glass--menu rounded-2xl p-4 shadow-xl flex">
                 <button type="button" data-tag="rucni" data-label="Ruční aplikace" aria-pressed="false" class="flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"><span>Ruční aplikace</span><span data-check class="hidden text-orange-600"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></button>
                 <button type="button" data-tag="stroje" data-label="Stroje a baličky" aria-pressed="false" class="flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50"><span>Stroje a baličky</span><span data-check class="hidden text-orange-600"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></button>
             </div>
@@ -171,13 +177,92 @@
     </div>
 </section>
 
-<section id="sortiment-categories" class="mx-auto max-w-7xl px-4 pb-12 pt-4 sm:pt-6">
+<!-- Doporučené produkty (kompaktní) -->
+<section id="sortiment-featured" class="mx-auto max-w-7xl px-4 pt-4 pb-2 sm:pt-5">
+    <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
+        <div>
+            <p class="text-xs font-bold uppercase tracking-widest text-orange-600" data-i18n="sortiment.ui.featured_label">Doporučujeme</p>
+            <h2 class="mt-0.5 text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl" data-i18n="sortiment.ui.featured_title">Nejčastěji poptávané pásky</h2>
+        </div>
+    </div>
+    <div class="sortiment-featured-band rounded-2xl border border-slate-200/70 bg-slate-50 p-3 sm:p-4">
+    <div class="grid grid-cols-1 gap-3 lg:grid-cols-3">
+        <a href="/sortiment/bopp-pasky/bopp-paska-acrylic" class="shift-card group">
+            <div class="shift-card__inner">
+                <div class="shift-card__media">
+                    <img src="/BOPP%20Tapes/BOPPACRYLIC.jpeg" alt="" loading="lazy">
+                </div>
+                <div class="shift-card__body">
+                    <span class="shift-card__category">BOPP pásky</span>
+                    <h3 class="shift-card__title">BOPP páska Acrylic</h3>
+                    <p class="shift-card__tagline">Spolehlivá BOPP páska s akrylovým lepidlem a dlouhou životností.</p>
+                    <div class="shift-card__extra">
+                        <div class="shift-card__tags">
+                            <span>Tiché odvíjení</span>
+                            <span>Stroje i ručně</span>
+                        </div>
+                    </div>
+                    <span class="shift-card__cta">Zobrazit detail →</span>
+                </div>
+            </div>
+        </a>
+        <a href="/sortiment/udrzitelne-pasky/udrzitelna-paska-eco-80" class="shift-card group">
+            <div class="shift-card__inner">
+                <div class="shift-card__media">
+                    <img src="/Udr%C5%BEiteln%C3%A9%20P%C3%A1sky/eco%2B80.jpg" alt="" loading="lazy" class="shift-card__img--eco">
+                </div>
+                <div class="shift-card__body">
+                    <span class="shift-card__category">Udržitelné pásky</span>
+                    <h3 class="shift-card__title">Udržitelná páska ECO+ 80</h3>
+                    <p class="shift-card__tagline">Silnější recyklovaná páska pro náročnější udržitelné balení.</p>
+                    <div class="shift-card__extra">
+                        <div class="shift-card__tags">
+                            <span>ECO</span>
+                            <span>Recyklovaný materiál</span>
+                        </div>
+                    </div>
+                    <span class="shift-card__cta">Zobrazit detail →</span>
+                </div>
+            </div>
+        </a>
+        <a href="/sortiment/bopet-pasky/bopet-paska-eco-hit19" class="shift-card group">
+            <div class="shift-card__inner">
+                <div class="shift-card__media">
+                    <img src="/BOPET%20Tapes/ECOHIT19.jpg" alt="" loading="lazy">
+                </div>
+                <div class="shift-card__body">
+                    <span class="shift-card__category">BOPET pásky</span>
+                    <h3 class="shift-card__title">BOPET páska ECO HIT19</h3>
+                    <p class="shift-card__tagline">Polyesterová páska s recyklovaným obsahem a vysokou odolností.</p>
+                    <div class="shift-card__extra">
+                        <div class="shift-card__tags">
+                            <span>Vysoké teploty</span>
+                            <span>Chemická odolnost</span>
+                        </div>
+                    </div>
+                    <span class="shift-card__cta">Zobrazit detail →</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    </div>
+</section>
+
+<section id="sortiment-categories" class="mx-auto max-w-7xl px-4 pb-12 pt-8 sm:pt-10">
+    <div class="sortiment-categories-head mb-6 sm:mb-8">
+        <p class="text-xs font-bold uppercase tracking-widest text-slate-500" data-i18n="sortiment.ui.categories_label">Kategorie</p>
+        <h2 class="mt-0.5 text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl" data-i18n="sortiment.ui.categories_title">Celý sortiment</h2>
+    </div>
     <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <a href="/sortiment/udrzitelne-pasky" class="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-100 hover:shadow-lg">
-            <img src="/Udr%C5%BEiteln%C3%A9%20P%C3%A1sky/eco%2B50-nobg.png" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--light">
-            <img src="/dark/udrzitelna-cover-dark.jpeg" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--dark">
+        <a href="/sortiment/udrzitelne-pasky" class="category-card group relative flex h-full cursor-pointer flex-col overflow-hidden glass glass--card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+            <img src="/Udr%C5%BEiteln%C3%A9%20P%C3%A1sky/udrzitelna-cover.jpg?v=3" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--light category-tape-deco--eco">
+            <img src="/dark/udrzitelna-cover-dark.jpeg" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--dark category-tape-deco--eco">
             <div class="relative z-10 flex h-full flex-col">
-                <h3 class="text-xl font-bold text-slate-900">Udržitelné pásky</h3>
+                <div class="category-card__title-row">
+                    <h3 class="text-xl font-bold text-slate-900">Udržitelné pásky</h3>
+                    <span class="category-card__badge product-tag product-tag--ekologicke">ECO</span>
+                </div>
+                <span class="category-card__count" data-category-count="6">6 produktů</span>
                 <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Inovativní obalová řešení vyrobená z recyklovaných materiálů s ohledem na minimální ekologickou stopu a podporu cirkulární ekonomiky.</p>
                 <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-orange-600">
                     Zobrazit produkty
@@ -185,11 +270,12 @@
                 </span>
             </div>
         </a>
-        <a href="/sortiment/bopp-pasky" class="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-100 hover:shadow-lg">
+        <a href="/sortiment/bopp-pasky" class="category-card group relative flex h-full cursor-pointer flex-col overflow-hidden glass glass--card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
             <img src="/BOPP%20Tapes/BOPP_Cover-nobg.png" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--light">
             <img src="/dark/bopp-cover-dark.jpeg" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--dark">
             <div class="relative z-10 flex h-full flex-col">
                 <h3 class="text-xl font-bold text-slate-900">BOPP pásky</h3>
+                <span class="category-card__count" data-category-count="4">4 produkty</span>
                 <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Nejrozšířenější průmyslové balicí pásky z biaxiálně orientovaného polypropylenu. Vynikají skvělou pevností v tahu a dlouhou životností.</p>
                 <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-orange-600">
                     Zobrazit produkty
@@ -197,11 +283,12 @@
                 </span>
             </div>
         </a>
-        <a href="/sortiment/bopet-pasky" class="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-100 hover:shadow-lg">
+        <a href="/sortiment/bopet-pasky" class="category-card group relative flex h-full cursor-pointer flex-col overflow-hidden glass glass--card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
             <img src="/BOPET%20Tapes/BOPET_Cover-nobg.png" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--light">
             <img src="/dark/bopet-cover-dark.jpeg" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--dark">
             <div class="relative z-10 flex h-full flex-col">
                 <h3 class="text-xl font-bold text-slate-900">BOPET pásky</h3>
+                <span class="category-card__count" data-category-count="4">4 produkty</span>
                 <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Prémiové polyesterové pásky s extrémní odolností proti roztržení, chemikáliím a teplotním výkyvům. Navržené pro nejnáročnější průmyslové aplikace.</p>
                 <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-orange-600">
                     Zobrazit produkty
@@ -209,11 +296,12 @@
                 </span>
             </div>
         </a>
-        <a href="/sortiment/papirove-pasky" class="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-100 hover:shadow-lg">
+        <a href="/sortiment/papirove-pasky" class="category-card group relative flex h-full cursor-pointer flex-col overflow-hidden glass glass--card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
             <img src="/Pap%C3%ADrov%C3%A9%20P%C3%A1sky/Pap%C3%ADrov%C3%A1cover-nobg.png" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--light">
             <img src="/dark/papirova-cover-dark.jpeg" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--dark">
             <div class="relative z-10 flex h-full flex-col">
                 <h3 class="text-xl font-bold text-slate-900">Papírové pásky</h3>
+                <span class="category-card__count" data-category-count="7">7 produktů</span>
                 <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Ekologické řešení pro bezpečné balení s vysokou lepivostí. Ideální pro plně recyklovatelné kartonové obaly a čistý korporátní design.</p>
                 <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-orange-600">
                     Zobrazit produkty
@@ -221,11 +309,12 @@
                 </span>
             </div>
         </a>
-        <a href="/sortiment/odstranitelne-pasky" class="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-100 hover:shadow-lg">
+        <a href="/sortiment/odstranitelne-pasky" class="category-card group relative flex h-full cursor-pointer flex-col overflow-hidden glass glass--card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
             <img src="/Odstraniteln%C3%A9%20P%C3%A1sky/removable%20cover-nobg.png" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--light">
             <img src="/dark/odstranitelnepasky-cover-dark.jpeg" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--dark">
             <div class="relative z-10 flex h-full flex-col">
                 <h3 class="text-xl font-bold text-slate-900">Odstranitelné pásky</h3>
+                <span class="category-card__count" data-category-count="2">2 produkty</span>
                 <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Pásky se speciálním složením lepidla, které nezanechává žádné stopy po odlepení. Ideální pro dočasné značení, ochranu citlivých povrchů nebo logistické procesy.</p>
                 <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-orange-600">
                     Zobrazit produkty
@@ -233,11 +322,12 @@
                 </span>
             </div>
         </a>
-        <a href="/sortiment/vyztuzene-pasky" class="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-100 hover:shadow-lg">
+        <a href="/sortiment/vyztuzene-pasky" class="category-card group relative flex h-full cursor-pointer flex-col overflow-hidden glass glass--card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
             <img src="/Vyztu%C5%BEen%C3%A9%20P%C3%A1sky/Reinforcedcover-nobg.png" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--light">
             <img src="/dark/vyztuzena-cover-dark.jpeg" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--dark">
             <div class="relative z-10 flex h-full flex-col">
                 <h3 class="text-xl font-bold text-slate-900">Vyztužené pásky</h3>
+                <span class="category-card__count" data-category-count="2">2 produkty</span>
                 <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Pásky zpevněné podélnými nebo křížovými skelnými vlákny. Nabízejí maximální pevnost při fixaci těžkých nákladů, palet a nadrozměrných balíků.</p>
                 <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-orange-600">
                     Zobrazit produkty
@@ -245,11 +335,12 @@
                 </span>
             </div>
         </a>
-        <a href="/sortiment/mopp-pasky" class="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-100 hover:shadow-lg">
+        <a href="/sortiment/mopp-pasky" class="category-card group relative flex h-full cursor-pointer flex-col overflow-hidden glass glass--card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
             <img src="/MOPP%20P%C3%A1sky/moppcvoer-nobg.png" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--light">
             <img src="/dark/mopp-cover-dark.jpeg" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--dark">
             <div class="relative z-10 flex h-full flex-col">
                 <h3 class="text-xl font-bold text-slate-900">MOPP pásky</h3>
+                <span class="category-card__count" data-category-count="1">1 produkt</span>
                 <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Monoaxiálně orientované pásky s extrémní pevností v jednom směru a nulovou elasticitou. Speciálně určené pro fixaci elektrospotřebičů, komponentů nebo stahování palet.</p>
                 <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-orange-600">
                     Zobrazit produkty
@@ -257,11 +348,12 @@
                 </span>
             </div>
         </a>
-        <a href="/sortiment/textilni-pasky" class="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-100 hover:shadow-lg">
+        <a href="/sortiment/textilni-pasky" class="category-card group relative flex h-full cursor-pointer flex-col overflow-hidden glass glass--card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
             <img src="/Textiln%C3%AD%20Lep%C3%ADc%C3%AD%20P%C3%A1sky/Duct_Cover-2-nobg.png" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--light">
             <img src="/dark/ducttapes-cover-dark.jpeg" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--dark">
             <div class="relative z-10 flex h-full flex-col">
                 <h3 class="text-xl font-bold text-slate-900">Textilní lepicí pásky</h3>
+                <span class="category-card__count" data-category-count="3">3 produkty</span>
                 <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Vysoce pevné a univerzální pásky zpevněné textilní mřížkou. Perfektně drží na drsném povrchu, snadno se trhají rukou a jsou ideální pro rychlé opravy i svazování.</p>
                 <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-orange-600">
                     Zobrazit produkty
@@ -269,11 +361,12 @@
                 </span>
             </div>
         </a>
-        <a href="/sortiment/malirske-pasky" class="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-100 hover:shadow-lg">
+        <a href="/sortiment/malirske-pasky" class="category-card group relative flex h-full cursor-pointer flex-col overflow-hidden glass glass--card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
             <img src="/Mal%C3%AD%C5%99sk%C3%A9%20P%C3%A1sky/mal%C3%AD%C5%99sk%C3%A1cover-nobg.png" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--light">
             <img src="/dark/malirskepasky-cover-dark.jpeg" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--dark">
             <div class="relative z-10 flex h-full flex-col">
                 <h3 class="text-xl font-bold text-slate-900">Malířské pásky</h3>
+                <span class="category-card__count" data-category-count="2">2 produkty</span>
                 <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Krepové papírové pásky navržené pro přesné zakrývání při malování a lakování. Chrání hrany před protečením barvy a po dokončení práce se čistě odlepí.</p>
                 <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-orange-600">
                     Zobrazit produkty
@@ -723,7 +816,8 @@
 </script>
 <script src="/assets/js/i18n.js?v=8"></script>
 <script src="/assets/js/i18n-pages.js?v=6"></script>
-<script src="/assets/js/sortiment-filter.js"></script>
+<script src="/assets/js/cult-effects.js?v=1"></script>
+<script src="/assets/js/sortiment-filter.js?v=3"></script>
 <script src="/assets/js/nav-active.js"></script>
 <link rel="stylesheet" href="/assets/css/footer-credit.css?v=3">
 <script src="/assets/js/footer-credit.js?v=3"></script>

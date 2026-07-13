@@ -698,7 +698,7 @@
             var refSection = document.querySelector('#reference');
             if (refSection) {
                 setText(refSection.querySelector('.text-center p.mx-auto'), refs.subtitle);
-                var statLabels = refSection.querySelectorAll('.sm\\:grid-cols-3 p.text-sm.font-medium');
+                var statLabels = refSection.querySelectorAll('.ref-stat-card__label');
                 var statKeys = ['stat_customers', 'stat_experience', 'stat_iso'];
                 statLabels.forEach(function (el, i) {
                     if (refs[statKeys[i]]) setText(el, refs[statKeys[i]]);

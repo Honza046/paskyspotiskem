@@ -11,6 +11,7 @@
     var dataEl = document.getElementById('sortiment-products');
     var panel = document.getElementById('sortiment-filter');
     var categoryGrid = document.getElementById('sortiment-categories');
+    var featuredSection = document.getElementById('sortiment-featured');
     var results = document.getElementById('sortiment-results');
     var resultsGrid = document.getElementById('sortiment-results-grid');
     var resultsCount = document.getElementById('sortiment-results-count');
@@ -69,6 +70,46 @@
         return n >= 2 && n <= 4 ? few : many;
     }
 
+    var TAG_BADGE_ORDER = ['ekologicke', 'mrazuvzdorne', 'vysoke-teploty', 'chemicka-odolnost', 'stroje', 'rucni'];
+    var TAG_BADGE_KEYS = {
+        ekologicke: 'js.sortiment.tag_eco',
+        mrazuvzdorne: 'js.sortiment.tag_cold',
+        'vysoke-teploty': 'js.sortiment.tag_hot',
+        'chemicka-odolnost': 'js.sortiment.tag_chem',
+        stroje: 'js.sortiment.tag_machines',
+        rucni: 'js.sortiment.tag_hand',
+    };
+    var TAG_BADGE_FALLBACK = {
+        ekologicke: 'ECO',
+        mrazuvzdorne: '-70 °C',
+        'vysoke-teploty': 'Vysoké teploty',
+        'chemicka-odolnost': 'Chemická odolnost',
+        stroje: 'Stroje',
+        rucni: 'Ruční',
+    };
+
+    function tagBadgeLabel(tag) {
+        var key = TAG_BADGE_KEYS[tag];
+        return key ? t(key, TAG_BADGE_FALLBACK[tag] || tag) : tag;
+    }
+
+    function tagPillsHTML(tags, maxShow) {
+        maxShow = maxShow || 2;
+        var pt = tags || [];
+        var shown = TAG_BADGE_ORDER.filter(function (tag) { return pt.indexOf(tag) !== -1; }).slice(0, maxShow);
+        if (!shown.length) return '';
+        return '<div class="product-tags">' + shown.map(function (tag) {
+            return '<span class="product-tag product-tag--' + esc(tag) + '">' + esc(tagBadgeLabel(tag)) + '</span>';
+        }).join('') + '</div>';
+    }
+
+    function updateCategoryCounts() {
+        document.querySelectorAll('[data-category-count]').forEach(function (el) {
+            var n = parseInt(el.getAttribute('data-category-count'), 10);
+            if (!isNaN(n)) el.textContent = countLabel(n);
+        });
+    }
+
     function labelOf(tag) {
         for (var i = 0; i < pills.length; i++) {
             if (pills[i].getAttribute('data-tag') === tag) {
@@ -110,8 +151,9 @@
             : 'w-full h-full object-contain max-h-48 mix-blend-multiply contrast-[1.1] brightness-[1.05] transform transition-transform duration-300 group-hover:scale-105';
 
         return '' +
-        '<article class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-100 hover:shadow-lg">' +
-            '<a href="' + esc(p.detail) + '" class="' + imageBoxClass + '">' +
+        '<article class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-100 hover:shadow-lg">' +
+            '<a href="' + esc(p.detail) + '" class="' + imageBoxClass + ' relative">' +
+                tagPillsHTML(p.tags) +
                 '<img src="' + esc(p.image) + '" alt="' + esc(p.name) + '" loading="lazy" class="' + imageClass + '">' +
             '</a>' +
             '<div class="flex flex-1 flex-col p-6">' +
@@ -166,6 +208,7 @@
 
         if (tags.length === 0) {
             categoryGrid.classList.remove('hidden');
+            if (featuredSection) featuredSection.classList.remove('hidden');
             results.classList.add('hidden');
             return;
         }
@@ -177,6 +220,7 @@
         });
 
         categoryGrid.classList.add('hidden');
+        if (featuredSection) featuredSection.classList.add('hidden');
         results.classList.remove('hidden');
 
         if (resultsCount) {
@@ -254,11 +298,14 @@
     }
 
     render();
+    updateCategoryCounts();
 
     document.addEventListener('pasky:i18n-ready', function () {
         render();
+        updateCategoryCounts();
     });
     document.addEventListener('pasky:i18n-pages-applied', function () {
         render();
+        updateCategoryCounts();
     });
 })();

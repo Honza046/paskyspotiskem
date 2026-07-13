@@ -524,16 +524,16 @@ def build_cs() -> dict[str, Any]:
                 "badge": "ISO 9001 · Přímo od výrobce",
                 "slides": [
                     {
-                        "title": "BALICÍ LEPICÍ PÁSKY",
-                        "subtitle": "Potištěné nebo neutrální balicí pásky samolepicí s ISO 9001.",
+                        "title": "LEPICÍ PÁSKY SE SPODNÍM TISKEM",
+                        "subtitle": "Spolehlivé BOPP pásky s tiskem chráněným pod folií i eko varianty pro udržitelné balení.",
                     },
                     {
-                        "title": "PROČ POUŽÍVAT LEPICÍ PÁSKY S POTISKEM?",
-                        "subtitle": "Lepicí pásky balí, fixují, propagují a chrání Vaše zboží.",
+                        "title": "PROČ SI VYBRAT NÁS?",
+                        "subtitle": "Více než 20 let zkušeností a spolupráce s e-shopy i průmyslem. Spolehlivost, rychlé dodání a individuální přístup ke každé zakázce.",
                     },
                     {
-                        "title": "PROČ LEPICÍ PÁSKY S POTISKEM OD ALFA IN?",
-                        "subtitle": "Nabízíme FLEXOTISK až 8 barev a ROTOTISK až 10 barev s možností 3D / kvalitní trvanlivý spodní tisk za nejnižší ceny přímo z výroby.",
+                        "title": "OTESTUJTE NAŠI KVALITU VE SVÉM PROVOZU",
+                        "subtitle": "Bezplatný vzorek nebo nezávazná kalkulace na míru. Přesvědčte se o odolnosti a pevnosti lepidla ještě před objednávkou.",
                     },
                 ],
                 "cta_offer": "Prohlédnout nabídku",
@@ -889,16 +889,16 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "badge": "ISO 9001 · Direct from the manufacturer",
                 "slides": [
                     {
-                        "title": "PACKAGING ADHESIVE TAPES",
-                        "subtitle": "Printed or plain self-adhesive packaging tapes with ISO 9001 certification.",
+                        "title": "ADHESIVE TAPES WITH REVERSE PRINTING",
+                        "subtitle": "Reliable BOPP tapes with print protected under the film, plus eco options for sustainable packaging.",
                     },
                     {
-                        "title": "WHY USE PRINTED ADHESIVE TAPES?",
-                        "subtitle": "Adhesive tapes pack, secure, promote and protect your goods.",
+                        "title": "WHY CHOOSE US?",
+                        "subtitle": "Over 20 years of experience with e-commerce and industry. Reliability, fast delivery and a personal approach to every order.",
                     },
                     {
-                        "title": "WHY PRINTED TAPES FROM ALFA IN?",
-                        "subtitle": "We offer flexo printing up to 8 colours and rotogravure up to 10 colours, including 3D options, durable reverse printing at factory-direct prices.",
+                        "title": "TEST OUR QUALITY IN YOUR OPERATION",
+                        "subtitle": "Request a free sample or a no-obligation custom quote. Check strength and adhesion before you order.",
                     },
                 ],
                 "cta_offer": "Browse our range",
@@ -910,7 +910,7 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "title": "A traditional Czech manufacturer of printed adhesive tapes",
                 "lead": "For more than 30 years we have helped companies pack their shipments securely and build a strong brand directly on packaging materials. We specialise in custom printing of adhesive tapes.",
                 "body1": "Our modern production facility allows us to respond flexibly to the needs of both small e-shops and large industrial enterprises. We pride ourselves on precise printing (up to 8 colours), premium adhesive quality (Hot Melt, Acrylic) and fast delivery throughout the Czech Republic.",
-                "body2": "Thanks to ISO 9001 certified processes and the use of ecological, sustainable materials, we are a reliable partner for more than 100 active customers.",
+                "body2": "Thanks to ISO 9001 certified processes and the use of ecological, sustainable materials, we are a reliable partner for more than 300 active customers.",
                 "image_alt": "ALFA IN adhesive tape production",
                 "team_title": "ALFA IN team",
                 "team_subtitle": "Tradition, experience and a personal approach to every order",
@@ -1254,16 +1254,16 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "badge": "ISO 9001 · Direkt vom Hersteller",
                 "slides": [
                     {
-                        "title": "VERPACKUNGS-KLEBEBÄNDER",
-                        "subtitle": "Bedruckte oder neutrale selbstklebende Verpackungsbänder mit ISO 9001.",
+                        "title": "KLEBEBÄNDER MIT RÜCKSEITENDRUCK",
+                        "subtitle": "Zuverlässige BOPP-Bänder mit unter der Folie geschütztem Druck und Öko-Varianten für nachhaltige Verpackung.",
                     },
                     {
-                        "title": "WARUM BEDRUCKTE KLEBEBÄNDER?",
-                        "subtitle": "Klebebänder verpacken, fixieren, bewerben und schützen Ihre Waren.",
+                        "title": "WARUM UNS WÄHLEN?",
+                        "subtitle": "Mehr als 20 Jahre Erfahrung mit E-Commerce und Industrie. Zuverlässigkeit, schnelle Lieferung und individueller Ansatz bei jeder Bestellung.",
                     },
                     {
-                        "title": "WARUM BEDRUCKTE BÄNDER VON ALFA IN?",
-                        "subtitle": "Flexodruck bis 8 Farben und Rotogravur bis 10 Farben, inkl. 3D-Optionen, langlebiger Rückseitendruck zu Fabrikpreisen.",
+                        "title": "TESTEN SIE UNSERE QUALITÄT IN IHREM BETRIEB",
+                        "subtitle": "Kostenloses Muster oder unverbindliche Kalkulation. Überzeugen Sie sich von Festigkeit und Klebkraft vor der Bestellung.",
                     },
                 ],
                 "cta_offer": "Angebot ansehen",
@@ -1275,7 +1275,7 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "title": "Traditioneller tschechischer Hersteller bedruckter Klebebänder",
                 "lead": "Seit mehr als 30 Jahren helfen wir Unternehmen, ihre Sendungen sicher zu verpacken und eine starke Marke direkt auf Verpackungsmaterialien aufzubauen. Wir sind Spezialisten für individuellen Druck auf Klebebändern.",
                 "body1": "Unsere moderne Produktionsstätte ermöglicht es uns, flexibel auf die Bedürfnisse kleiner E-Shops wie auch großer Industrieunternehmen zu reagieren. Wir legen Wert auf präzisen Druck (bis 8 Farben), erstklassige Klebstoffqualität (Hot Melt, Acryl) und schnelle Lieferung in der gesamten Tschechischen Republik.",
-                "body2": "Dank ISO-9001-zertifizierter Prozesse und dem Einsatz ökologischer, nachhaltiger Materialien sind wir ein zuverlässiger Partner für mehr als 100 aktive Abnehmer.",
+                "body2": "Dank ISO-9001-zertifizierter Prozesse und dem Einsatz ökologischer, nachhaltiger Materialien sind wir ein zuverlässiger Partner für mehr als 300 aktive Abnehmer.",
                 "image_alt": "ALFA IN Klebeband-Produktion",
                 "team_title": "Team ALFA IN",
                 "team_subtitle": "Tradition, Erfahrung und persönlicher Ansatz bei jedem Auftrag",
@@ -1640,16 +1640,16 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "badge": "ISO 9001 · Direttamente dal produttore",
             "slides": [
                 {
-                    "title": "NASTRI ADESIVI PER IMBALLAGGIO",
-                    "subtitle": "Nastri adesivi per imballaggio stampati o neutri con certificazione ISO 9001.",
+                    "title": "NASTRI ADESIVI CON STAMPA PROTETTA",
+                    "subtitle": "Nastri BOPP affidabili con stampa protetta sotto pellicola e varianti eco per imballaggi sostenibili.",
                 },
                 {
-                    "title": "PERCHÉ USARE NASTRI ADESIVI STAMPATI?",
-                    "subtitle": "I nastri adesivi imballano, proteggono, promuovono e mettono in sicurezza le vostre merci.",
+                    "title": "PERCHÉ SCEGLIERCI?",
+                    "subtitle": "Oltre 20 anni di esperienza con e-commerce e industria. Affidabilità, consegna rapida e approccio personalizzato a ogni ordine.",
                 },
                 {
-                    "title": "PERCHÉ I NASTRI STAMPATI DI ALFA IN?",
-                    "subtitle": "Offriamo stampa flexo fino a 8 colori e rotocalco fino a 10 colori, anche in 3D, stampa inversa resistente a prezzi diretti dal produttore.",
+                    "title": "TESTATE LA NOSTRA QUALITÀ NEL VOSTRO REPARTO",
+                    "subtitle": "Campione gratuito o preventivo senza impegno su misura. Verificate resistenza e adesione prima dell'ordine.",
                 },
             ],
             "cta_offer": "Scopri la gamma",
@@ -1663,7 +1663,7 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "title": "Produttore ceco tradizionale di nastri adesivi stampati",
             "lead": "Da oltre 30 anni aiutiamo le aziende a imballare le spedizioni in modo sicuro e a costruire un marchio forte direttamente sui materiali di imballaggio. Siamo specializzati nella stampa personalizzata di nastri adesivi.",
             "body1": "Il nostro moderno stabilimento ci permette di rispondere in modo flessibile alle esigenze sia dei piccoli e-shop sia delle grandi imprese industriali. Puntiamo su una stampa precisa (fino a 8 colori), adesivi premium (Hot Melt, Acrilico) e consegne rapide in tutta la Repubblica Ceca.",
-            "body2": "Grazie a processi certificati ISO 9001 e all'uso di materiali ecologici e sostenibili, siamo un partner affidabile per oltre 100 clienti attivi.",
+            "body2": "Grazie a processi certificati ISO 9001 e all'uso di materiali ecologici e sostenibili, siamo un partner affidabile per oltre 300 clienti attivi.",
             "image_alt": "Produzione di nastri adesivi ALFA IN",
             "team_title": "Team ALFA IN",
             "team_subtitle": "Tradizione, esperienza e approccio personale a ogni ordine",

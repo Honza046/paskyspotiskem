@@ -536,6 +536,27 @@ PRODUCT_BOTTOM_NOTE='''        <div class="mx-auto mt-14 max-w-3xl rounded-2xl b
 IMG_CLS='w-full h-full object-contain max-h-56 mix-blend-multiply contrast-[1.1] brightness-[1.05] transform transition-transform duration-300 group-hover:scale-105'
 PORTRAIT_CATEGORIES = {'udrzitelne-pasky'}
 
+TAG_BADGE_ORDER = ['ekologicke', 'mrazuvzdorne', 'vysoke-teploty', 'chemicka-odolnost', 'stroje', 'rucni']
+TAG_BADGE_LABELS = {
+    'ekologicke': 'ECO',
+    'mrazuvzdorne': '-70 °C',
+    'vysoke-teploty': 'Vysoké teploty',
+    'chemicka-odolnost': 'Chemická odolnost',
+    'stroje': 'Stroje',
+    'rucni': 'Ruční',
+}
+
+def product_tag_pills_html(tags, max_show=2):
+    pt = set(tags or [])
+    shown = [t for t in TAG_BADGE_ORDER if t in pt][:max_show]
+    if not shown:
+        return ''
+    pills = ''.join(
+        '<span class="product-tag product-tag--%s">%s</span>' % (t, esc(TAG_BADGE_LABELS[t]))
+        for t in shown
+    )
+    return '<div class="product-tags">%s</div>' % pills
+
 def product_card_image_box(cat_slug):
     base = 'product-image-frame w-full h-64 flex items-center justify-center overflow-hidden'
     if cat_slug in PORTRAIT_CATEGORIES:
@@ -577,8 +598,9 @@ for cat in CATS:
                     <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-orange-600" aria-hidden="true">%s</span>
                     <span class="text-sm font-medium text-slate-700">%s</span>
                 </div>'''%(ARR,esc(a)) for a in cat["apps"])
-    cards="\n".join('''            <a href="/sortiment/%s/%s" class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-100 hover:shadow-lg">
-                <div class="%s">
+    cards="\n".join('''            <a href="/sortiment/%s/%s" class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-100 hover:shadow-lg">
+                <div class="%s relative">
+                    %s
                     <img src="%s" alt="%s" loading="lazy" class="%s">
                 </div>
                 <div class="flex flex-1 flex-col p-6">
@@ -586,7 +608,7 @@ for cat in CATS:
                     <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">%s</p>
                     <span class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 px-5 py-3 text-sm font-bold text-white shadow-sm transition-all group-hover:scale-[1.02] group-hover:shadow-md">Zobrazit detail %s</span>
                 </div>
-            </a>'''%(cat["cat"],p["slug"],product_card_image_box(cat["cat"]),url(p["image"]),esc(p["name"]),product_card_image_cls(cat["cat"]),esc(p["name"]),esc(p["tagline"]),FWD) for p in PRODUCTS[cat["cat"]])
+            </a>'''%(cat["cat"],p["slug"],product_card_image_box(cat["cat"]),product_tag_pills_html(p["tags"]),url(p["image"]),esc(p["name"]),product_card_image_cls(cat["cat"]),esc(p["name"]),esc(p["tagline"]),FWD) for p in PRODUCTS[cat["cat"]])
 
     main='''
 
