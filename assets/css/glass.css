@@ -176,6 +176,32 @@ label:has(input[type="checkbox"]:checked).glass--chip {
         inset 0 1px 1px rgba(255, 255, 255, 0.95);
 }
 
+/* Inside glass card: nested backdrop-filter breaks in Safari – use opaque bg */
+.glass--card .glass--chip,
+.glass--card .glass--menu {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+}
+
+.glass--card .glass--chip {
+    background: linear-gradient(
+        160deg,
+        rgba(255, 255, 255, 0.97) 0%,
+        rgba(248, 250, 252, 0.95) 100%
+    );
+    border-color: #e2e8f0;
+}
+
+.glass--card .glass--chip::before {
+    display: none;
+}
+
+.glass--card .glass--menu {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+}
+
 /* --- Dark mode ----------------------------------------------------------- */
 .dark .glass--card {
     background: linear-gradient(
@@ -268,6 +294,21 @@ label:has(input[type="checkbox"]:checked).glass--chip {
         rgba(30, 41, 59, 0.75) 100%
     );
     border-color: rgba(148, 163, 184, 0.35);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.dark .glass--card .glass--chip {
+    background: linear-gradient(
+        160deg,
+        rgba(51, 65, 85, 0.97) 0%,
+        rgba(30, 41, 59, 0.95) 100%
+    );
+    border-color: #334155;
+}
+
+.dark .glass--card .glass--menu {
+    background: #1e293b;
+    border-color: #334155;
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
 }
 

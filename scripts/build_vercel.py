@@ -70,11 +70,21 @@ def ensure_footer_credit(html: str) -> str:
     return html
 
 
+def ensure_vercel_analytics(html: str) -> str:
+    if 'vercel-analytics.js' in html or '/_vercel/insights/script.js' in html:
+        return html
+    insert = '<script src="/assets/js/vercel-analytics.js" defer></script>\n'
+    if '</body>' in html:
+        return html.replace('</body>', insert + '</body>', 1)
+    return html
+
+
 def patch_file(path: Path) -> None:
     if not path.exists():
         return
     content = absolutize_html(path.read_text(encoding='utf-8'))
     content = ensure_footer_credit(content)
+    content = ensure_vercel_analytics(content)
     path.write_text(content, encoding='utf-8')
     print(f'  patched {path.relative_to(ROOT)}')
 
