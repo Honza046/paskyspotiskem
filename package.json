@@ -3,5 +3,8 @@
   "private": true,
   "scripts": {
     "build": "python3 scripts/build_vercel.py"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
   }
 }
