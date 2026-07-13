@@ -12,18 +12,15 @@
     justify-content: space-between;
     gap: 0.75rem;
     border-radius: 0.75rem;
-    border: 2px solid #e2e8f0;
-    background: #fff;
     padding: 0.75rem 1rem;
     text-align: left;
     font-size: 0.875rem;
     font-weight: 600;
     color: #0f172a;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .inquiry-dropdown__trigger:hover {
-    border-color: #cbd5e1;
+    border-color: rgba(255, 255, 255, 0.95);
 }
 
 .inquiry-dropdown__trigger:focus-visible {
@@ -68,9 +65,6 @@
     padding: 0.375rem;
     list-style: none;
     border-radius: 0.75rem;
-    border: 1px solid #e2e8f0;
-    background: #fff;
-    box-shadow: 0 16px 40px rgb(15 23 42 / 0.12);
 }
 
 .inquiry-dropdown.is-open .inquiry-dropdown__menu {
@@ -107,13 +101,7 @@
 }
 
 .dark .inquiry-dropdown__trigger {
-    border-color: #334155;
-    background: #1e293b;
     color: #f1f5f9;
-}
-
-.dark .inquiry-dropdown__trigger:hover {
-    border-color: #475569;
 }
 
 .dark .inquiry-dropdown__label.is-placeholder {
@@ -121,8 +109,6 @@
 }
 
 .dark .inquiry-dropdown__menu {
-    border-color: #334155;
-    background: #1e293b;
     box-shadow: 0 16px 40px rgb(0 0 0 / 0.35);
 }
 
@@ -135,4 +121,79 @@
 .dark .inquiry-dropdown__option.is-selected {
     background: rgb(234 88 12 / 0.15);
     color: #fdba74;
+}
+
+/* Form validation */
+.field-error {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-top: 0.625rem;
+    padding: 0.625rem 0.875rem;
+    border-radius: 0.75rem;
+    border: 1.5px solid #fb923c;
+    background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+    box-shadow: 0 4px 14px rgb(234 88 12 / 0.12);
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #c2410c;
+    animation: field-error-in 0.28s ease-out both;
+}
+
+@keyframes field-error-in {
+    from {
+        opacity: 0;
+        transform: translateY(-0.25rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.field-error::before {
+    content: "";
+    flex-shrink: 0;
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-top: 0.05rem;
+    background: center / contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23ea580c' stroke-width='2.25'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12 9v4m0 4h.01M10.29 3.86l-8.4 14.55A1 1 0 002.74 20h18.52a1 1 0 00.85-1.59l-8.4-14.55a1 1 0 00-1.72 0z'/%3E%3C/svg%3E");
+}
+
+.inquiry-dropdown.is-invalid .inquiry-dropdown__trigger {
+    border-color: #ea580c;
+    background: #fff7ed;
+    box-shadow: 0 0 0 4px rgb(234 88 12 / 0.22);
+}
+
+.inquiry-dropdown.is-invalid .inquiry-dropdown__label.is-placeholder {
+    color: #c2410c;
+    font-weight: 600;
+}
+
+#gform_1 input.is-invalid:not([type="checkbox"]):not([type="radio"]),
+#gform_1 textarea.is-invalid,
+#gform_1 select.is-invalid {
+    border-color: #ea580c !important;
+    background: #fff7ed;
+    box-shadow: 0 0 0 4px rgb(234 88 12 / 0.2);
+}
+
+#gform_1 label.is-invalid {
+    border-color: #fb923c !important;
+    background: #fff7ed;
+    box-shadow: 0 0 0 4px rgb(234 88 12 / 0.12);
+}
+
+.dark .field-error {
+    border-color: #fb923c;
+    background: linear-gradient(135deg, rgb(234 88 12 / 0.22) 0%, rgb(234 88 12 / 0.14) 100%);
+    box-shadow: 0 4px 14px rgb(0 0 0 / 0.2);
+    color: #fdba74;
+}
+
+.dark .inquiry-dropdown.is-invalid .inquiry-dropdown__trigger {
+    border-color: #fb923c;
+    background: rgb(234 88 12 / 0.1);
 }

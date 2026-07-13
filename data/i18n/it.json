@@ -170,6 +170,13 @@
       "quantity_min": "La quantità minima è 360 rotoli.",
       "quantity_tip": "Da 360 rotoli la spedizione è gratuita. La consegna richiede circa 3–4 settimane.",
       "quantity_success": "🔥 Ottima scelta! Avete la spedizione gratuita. La consegna richiede circa 3–4 settimane.",
+      "validation": {
+        "material_required": "Selezionate un materiale dall'elenco.",
+        "required": "Compilate questo campo.",
+        "email_required": "Inserite il vostro indirizzo e-mail.",
+        "email_invalid": "Inserite un indirizzo e-mail valido.",
+        "gdpr_required": "Per l'invio è necessario il consenso al trattamento dei dati."
+      },
       "sample_note_btn": "Voglio un campione",
       "sample_note_text": "Sono interessato a un campione di prova.",
       "order_period_label": "Frequenza di ordine prevista",

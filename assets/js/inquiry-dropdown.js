@@ -74,7 +74,7 @@
 
         var trigger = document.createElement('button');
         trigger.type = 'button';
-        trigger.className = 'inquiry-dropdown__trigger';
+        trigger.className = 'inquiry-dropdown__trigger glass glass--chip';
         trigger.setAttribute('aria-haspopup', 'listbox');
         trigger.setAttribute('aria-expanded', 'false');
         trigger.setAttribute('aria-controls', listId);
@@ -98,7 +98,7 @@
         trigger.appendChild(chevron);
 
         var menu = document.createElement('ul');
-        menu.className = 'inquiry-dropdown__menu';
+        menu.className = 'inquiry-dropdown__menu glass glass--menu';
         menu.id = listId;
         menu.setAttribute('role', 'listbox');
 

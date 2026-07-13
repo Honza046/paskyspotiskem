@@ -29,33 +29,20 @@
     border-bottom-color: #334155;
 }
 
-/* --- Category cards (replaces missing glass.css on sortiment) ------------ */
-#sortiment-categories .category-card {
-    --category-card-bg: #ffffff;
-    background: var(--category-card-bg);
-    border: 1px solid #e2e8f0;
-    box-shadow:
-        0 1px 2px rgba(15, 23, 42, 0.04),
-        0 4px 16px rgba(15, 23, 42, 0.04);
-}
-
+/* --- Category cards – glass (visuals in glass.css) ----------------------- */
 #sortiment-categories .category-card:hover {
-    border-color: #fdba74;
+    border-color: rgba(251, 146, 60, 0.45);
     box-shadow:
-        0 4px 8px rgba(15, 23, 42, 0.05),
-        0 16px 40px rgba(234, 88, 12, 0.08);
-}
-
-.dark #sortiment-categories .category-card {
-    --category-card-bg: #1e293b;
-    background: var(--category-card-bg);
-    border-color: #334155;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        0 14px 40px rgba(234, 88, 12, 0.1),
+        0 2px 4px rgba(15, 23, 42, 0.05),
+        inset 0 1px 1px rgba(255, 255, 255, 1);
 }
 
 .dark #sortiment-categories .category-card:hover {
-    border-color: #ea580c;
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+    border-color: rgba(251, 146, 60, 0.45);
+    box-shadow:
+        0 14px 40px rgba(0, 0, 0, 0.32),
+        inset 0 1px 1px rgba(255, 255, 255, 0.16);
 }
 
 .category-card__title-row {

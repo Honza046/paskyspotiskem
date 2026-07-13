@@ -1,0 +1,339 @@
+/**
+ * Shared light glass morphism – cards, chips, filter UI.
+ * Matches reference stat cards (.ref-stat-card).
+ */
+
+/* --- Card ---------------------------------------------------------------- */
+.glass--card {
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0);
+    -webkit-backdrop-filter: blur(24px) saturate(1.65);
+    backdrop-filter: blur(24px) saturate(1.65);
+    background: linear-gradient(
+        160deg,
+        rgba(255, 255, 255, 0.52) 0%,
+        rgba(241, 245, 249, 0.28) 55%,
+        rgba(226, 232, 240, 0.22) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.82);
+    box-shadow:
+        0 8px 32px rgba(15, 23, 42, 0.07),
+        0 1px 2px rgba(15, 23, 42, 0.04),
+        inset 0 1px 1px rgba(255, 255, 255, 0.95),
+        inset 0 -1px 0 rgba(148, 163, 184, 0.12);
+    transition: box-shadow 0.25s ease, border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+
+.glass--card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.72) 0%,
+        rgba(255, 255, 255, 0.18) 38%,
+        transparent 62%
+    );
+    pointer-events: none;
+}
+
+.glass--card::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 12%;
+    right: 12%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.95), transparent);
+    pointer-events: none;
+}
+
+.glass--card:hover {
+    border-color: rgba(255, 255, 255, 0.95);
+    background: linear-gradient(
+        160deg,
+        rgba(255, 255, 255, 0.62) 0%,
+        rgba(241, 245, 249, 0.34) 55%,
+        rgba(226, 232, 240, 0.26) 100%
+    );
+    box-shadow:
+        0 14px 40px rgba(15, 23, 42, 0.1),
+        0 2px 4px rgba(15, 23, 42, 0.05),
+        inset 0 1px 1px rgba(255, 255, 255, 1),
+        inset 0 -1px 0 rgba(148, 163, 184, 0.15);
+}
+
+.glass--card > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* --- Chip (nested fields, contact links, form options) ------------------- */
+.glass--chip {
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0);
+    -webkit-backdrop-filter: blur(16px) saturate(1.55);
+    backdrop-filter: blur(16px) saturate(1.55);
+    background: linear-gradient(
+        160deg,
+        rgba(255, 255, 255, 0.45) 0%,
+        rgba(248, 250, 252, 0.32) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    box-shadow:
+        0 2px 12px rgba(15, 23, 42, 0.04),
+        inset 0 1px 1px rgba(255, 255, 255, 0.9),
+        inset 0 -1px 0 rgba(148, 163, 184, 0.1);
+    transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.glass--chip::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.55) 0%,
+        transparent 55%
+    );
+    pointer-events: none;
+}
+
+.glass--chip > * {
+    position: relative;
+    z-index: 1;
+}
+
+a.glass--chip:hover,
+button.glass--chip:hover {
+    border-color: rgba(251, 146, 60, 0.45);
+    background: linear-gradient(
+        160deg,
+        rgba(255, 247, 237, 0.65) 0%,
+        rgba(255, 237, 213, 0.38) 100%
+    );
+    box-shadow:
+        0 4px 16px rgba(234, 88, 12, 0.08),
+        inset 0 1px 1px rgba(255, 255, 255, 0.95);
+}
+
+label:has(input:checked) .glass--chip,
+label:has(input[type="checkbox"]:checked).glass--chip {
+    border-color: #f97316;
+    background: linear-gradient(
+        160deg,
+        rgba(255, 247, 237, 0.78) 0%,
+        rgba(255, 237, 213, 0.48) 100%
+    );
+    box-shadow:
+        0 4px 14px rgba(234, 88, 12, 0.1),
+        inset 0 1px 1px rgba(255, 255, 255, 0.95);
+}
+
+/* --- Filter pill & menu (gallery / sortiment) ---------------------------- */
+.glass--pill {
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0);
+    -webkit-backdrop-filter: blur(20px) saturate(1.6);
+    backdrop-filter: blur(20px) saturate(1.6);
+    background: linear-gradient(
+        160deg,
+        rgba(255, 255, 255, 0.58) 0%,
+        rgba(241, 245, 249, 0.35) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow:
+        0 2px 12px rgba(15, 23, 42, 0.05),
+        inset 0 1px 1px rgba(255, 255, 255, 0.9);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass--pill:hover {
+    border-color: rgba(255, 255, 255, 0.95);
+    box-shadow:
+        0 4px 16px rgba(15, 23, 42, 0.08),
+        inset 0 1px 1px rgba(255, 255, 255, 1);
+}
+
+.glass--menu {
+    position: relative;
+    overflow: hidden;
+    -webkit-backdrop-filter: blur(24px) saturate(1.65);
+    backdrop-filter: blur(24px) saturate(1.65);
+    background: linear-gradient(
+        160deg,
+        rgba(255, 255, 255, 0.72) 0%,
+        rgba(241, 245, 249, 0.55) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    box-shadow:
+        0 8px 32px rgba(15, 23, 42, 0.1),
+        inset 0 1px 1px rgba(255, 255, 255, 0.95);
+}
+
+/* --- Dark mode ----------------------------------------------------------- */
+.dark .glass--card {
+    background: linear-gradient(
+        160deg,
+        rgba(71, 85, 105, 0.42) 0%,
+        rgba(51, 65, 85, 0.28) 55%,
+        rgba(30, 41, 59, 0.22) 100%
+    );
+    border-color: rgba(148, 163, 184, 0.35);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.25),
+        inset 0 1px 1px rgba(255, 255, 255, 0.12),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.dark .glass--card::before {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.14) 0%,
+        rgba(255, 255, 255, 0.04) 38%,
+        transparent 62%
+    );
+}
+
+.dark .glass--card::after {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+}
+
+.dark .glass--card:hover {
+    border-color: rgba(148, 163, 184, 0.5);
+    box-shadow:
+        0 14px 40px rgba(0, 0, 0, 0.32),
+        inset 0 1px 1px rgba(255, 255, 255, 0.16);
+}
+
+.dark .glass--chip {
+    background: linear-gradient(
+        160deg,
+        rgba(71, 85, 105, 0.38) 0%,
+        rgba(51, 65, 85, 0.28) 100%
+    );
+    border-color: rgba(148, 163, 184, 0.32);
+    box-shadow:
+        0 2px 12px rgba(0, 0, 0, 0.18),
+        inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.dark .glass--chip::before {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.1) 0%,
+        transparent 55%
+    );
+}
+
+.dark a.glass--chip:hover,
+.dark button.glass--chip:hover {
+    border-color: rgba(251, 146, 60, 0.45);
+    background: linear-gradient(
+        160deg,
+        rgba(124, 45, 18, 0.35) 0%,
+        rgba(67, 20, 7, 0.25) 100%
+    );
+}
+
+.dark label:has(input:checked) .glass--chip,
+.dark label:has(input[type="checkbox"]:checked).glass--chip {
+    border-color: #ea580c;
+    background: linear-gradient(
+        160deg,
+        rgba(124, 45, 18, 0.45) 0%,
+        rgba(67, 20, 7, 0.32) 100%
+    );
+}
+
+.dark .glass--pill {
+    background: linear-gradient(
+        160deg,
+        rgba(71, 85, 105, 0.45) 0%,
+        rgba(51, 65, 85, 0.35) 100%
+    );
+    border-color: rgba(148, 163, 184, 0.35);
+    color: #e2e8f0;
+}
+
+.dark .glass--menu {
+    background: linear-gradient(
+        160deg,
+        rgba(51, 65, 85, 0.85) 0%,
+        rgba(30, 41, 59, 0.75) 100%
+    );
+    border-color: rgba(148, 163, 184, 0.35);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* --- Fallbacks ----------------------------------------------------------- */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .glass--card {
+        background: #f1f5f9;
+    }
+
+    .glass--chip {
+        background: #f8fafc;
+    }
+
+    .glass--pill,
+    .glass--menu {
+        background: #ffffff;
+    }
+
+    .dark .glass--card,
+    .dark .glass--chip {
+        background: #334155;
+    }
+
+    .dark .glass--pill,
+    .dark .glass--menu {
+        background: #1e293b;
+    }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+    .glass--card,
+    .glass--chip,
+    .glass--pill,
+    .glass--menu {
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
+
+    .glass--card {
+        background: #f1f5f9;
+    }
+
+    .glass--chip {
+        background: #f8fafc;
+    }
+
+    .glass--pill,
+    .glass--menu {
+        background: #ffffff;
+    }
+
+    .dark .glass--card,
+    .dark .glass--chip {
+        background: #334155;
+    }
+
+    .dark .glass--pill,
+    .dark .glass--menu {
+        background: #1e293b;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .glass--card,
+    .glass--chip,
+    .glass--pill {
+        transition: none;
+    }
+}

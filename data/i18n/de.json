@@ -170,6 +170,13 @@
       "quantity_min": "Mindestmenge ist 360 Rollen.",
       "quantity_tip": "Ab 360 Rollen erhalten Sie kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
       "quantity_success": "🔥 Ausgezeichnete Wahl! Sie haben kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
+      "validation": {
+        "material_required": "Bitte wählen Sie ein Material aus der Liste.",
+        "required": "Bitte füllen Sie dieses Feld aus.",
+        "email_required": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+        "email_invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+        "gdpr_required": "Zum Absenden ist die Zustimmung zur Datenverarbeitung erforderlich."
+      },
       "sample_note_btn": "Ich möchte ein Muster",
       "sample_note_text": "Ich interessiere mich für ein Testmuster.",
       "order_period_label": "Voraussichtliche Bestellfrequenz",

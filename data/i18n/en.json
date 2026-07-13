@@ -170,6 +170,13 @@
       "quantity_min": "Minimum quantity is 360 rolls.",
       "quantity_tip": "From 360 rolls you get free shipping. Delivery takes approximately 3–4 weeks.",
       "quantity_success": "🔥 Great choice! You have free shipping. Delivery takes approximately 3–4 weeks.",
+      "validation": {
+        "material_required": "Please select a material from the list.",
+        "required": "Please fill in this field.",
+        "email_required": "Please enter your email address.",
+        "email_invalid": "Please enter a valid email address.",
+        "gdpr_required": "Consent to data processing is required to submit."
+      },
       "sample_note_btn": "I want a sample",
       "sample_note_text": "I am interested in a test sample.",
       "order_period_label": "Expected order frequency",

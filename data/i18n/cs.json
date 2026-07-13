@@ -170,6 +170,13 @@
       "quantity_min": "Minimální množství je 360 ks.",
       "quantity_tip": "Od 360 ks získáváte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
       "quantity_success": "🔥 Skvělá volba! Máte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
+      "validation": {
+        "material_required": "Vyberte materiál ze seznamu.",
+        "required": "Vyplňte toto pole.",
+        "email_required": "Zadejte e-mailovou adresu.",
+        "email_invalid": "Zadejte platný e-mail.",
+        "gdpr_required": "Pro odeslání je nutný souhlas se zpracováním údajů."
+      },
       "sample_note_btn": "Mám zájem o vzorek",
       "sample_note_text": "Mám zájem o testovací vzorek.",
       "order_period_label": "Předpokládaná perioda objednávky",

@@ -649,6 +649,7 @@
             success: formData.quantity_success,
             invalid: formData.quantity_min || formData.quantity_tip
         };
+        window.__formValidationTexts = formData.validation || {};
         window.__sampleNoteText = formData.sample_note_text || window.__sampleNoteText;
 
         if (typeof window.__updateQtyDiscountBadge === 'function') {
