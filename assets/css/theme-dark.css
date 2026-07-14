@@ -326,21 +326,16 @@
 }
 
 .dark .product-image-frame {
-    background: linear-gradient(165deg, #eef2f7 0%, #e2e8f0 50%, #eef2f7 100%) !important;
+    background: #ffffff !important;
     border-color: transparent !important;
     box-shadow: none !important;
     isolation: isolate;
 }
 
-/* multiply on light stage = white JPEG bg vanishes, tape colors stay true */
+/* multiply on white stage = JPEG white vanishes, tape colors stay true */
 .dark .product-image-frame img {
     mix-blend-mode: multiply !important;
-    filter: none !important;
-}
-
-.dark a.group:hover .product-image-frame img,
-.dark article.group:hover .product-image-frame img {
-    transform: scale(1.04);
+    filter: contrast(1.1) brightness(1.05) !important;
 }
 
 /* Product detail – „Na míru vašemu provozu“ box */

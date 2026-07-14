@@ -90,7 +90,8 @@ PRODUCTS = {
  "bopp-pasky":[
    P("BOPP páska Acrylic","BOPP Tapes/BOPPACRYLIC.jpeg","Spolehlivá BOPP páska s akrylovým lepidlem a dlouhou životností.","BOPP fólie","45 µm","Akrylové (vodní disperze)","2,8 N/25 mm","−5 až +60 °C","45 N/25 mm"),
    P("BOPP páska Hot Melt","BOPP Tapes/BOPPHOTMELT.jpeg","BOPP páska s hot melt lepidlem pro rychlé a pevné přilnutí.","BOPP fólie","40 µm","Hot melt (syntetický kaučuk)","3,5 N/25 mm","0 až +50 °C","42 N/25 mm"),
-   P("BOPP páska Hot Melt II","BOPP Tapes/BOPPHOTMELT1.jpg","Silnější BOPP páska s hot melt lepidlem pro náročnější balení.","BOPP fólie","48 µm","Hot melt","3,8 N/25 mm","0 až +55 °C","48 N/25 mm"),
+   P("BOPP páska EXTRA GLUE+","BOPP Tapes/BOPPACRYLIC.jpeg","Akrylová BOPP páska se zvýšenou vrstvou lepidla (+33 %) pro náročné povrchy a recyklovaný karton.","BOPP fólie","40 µm","Akrylové (zvýšená vrstva +33 %)","4,0 N/25 mm","−5 až +60 °C","45 N/25 mm"),
+   P("BOPP páska TACK+","BOPP Tapes/BOPPHOTMELT1.jpg","Hot melt BOPP páska s vyšší přilnavostí (+20 %) a super tack pro balicí stroje a recyklovaný karton.","BOPP fólie","40 µm","Hot melt (super tack, +20 %)","4,2 N/25 mm","0 až +55 °C","42 N/25 mm"),
    P("BOPP páska Evergreen","BOPP Tapes/EVERGREEN.jpg","Barevná BOPP páska pro značení a vizuální odlišení zásilek.","BOPP fólie (barevná)","45 µm","Akrylové","3,0 N/25 mm","−5 až +60 °C","46 N/25 mm"),
  ],
  "bopet-pasky":[
@@ -126,6 +127,8 @@ PRODUCTS = {
    P("Udržitelná páska Airtape","Udržitelné Pásky/airtape.jpg","Lehká udržitelná páska pro každodenní ekologické balení.","Recyklovaná PP fólie","40 µm","Akrylové","2,8 N/25 mm","−5 až +60 °C","42 N/25 mm"),
    P("Udržitelná páska ECO+ 50","Udržitelné Pásky/eco+50.jpg","Tenká recyklovaná páska pro standardní udržitelné balení.","Recyklovaná PP fólie","50 µm","Akrylové","3,0 N/25 mm","−5 až +60 °C","45 N/25 mm"),
    P("Udržitelná páska ECO+ 80","Udržitelné Pásky/eco+80.jpg","Silnější recyklovaná páska pro náročnější udržitelné balení.","Recyklovaná PP fólie","80 µm","Akrylové","3,4 N/25 mm","−5 až +60 °C","52 N/25 mm"),
+   P("Udržitelná páska ECO+ 100","Udržitelné Pásky/eco+100.jpg","100% regenerovaná BOPP fólie z postindustriálního odpadu pro prémiové udržitelné balení.","100% regenerovaná BOPP fólie","35 µm","Akrylové","3,5 N/25 mm","−5 až +60 °C","55 N/25 mm"),
+   P("Udržitelná páska POLY+","Udržitelné Pásky/poly-plus.jpg","Ekologická alternativa k PVC – matná neodrážející BOPP páska s tichým akrylovým lepidlem.","BOPP fólie (matná, 35 µm)","35 µm","Akrylové (tiché, bez rozpouštědel)","3,8 N/25 mm","−5 až +60 °C","50 N/25 mm"),
  ],
 }
 
@@ -146,7 +149,8 @@ TAGMAP = {
  "Papírová páska C690":["ekologicke","rucni"],
  "BOPP páska Acrylic":["tiche","rucni","stroje"],
  "BOPP páska Hot Melt":["rucni","stroje"],
- "BOPP páska Hot Melt II":["rucni","stroje"],
+ "BOPP páska EXTRA GLUE+":["tiche","rucni","stroje"],
+ "BOPP páska TACK+":["rucni","stroje"],
  "BOPP páska Evergreen":["mrazuvzdorne","stroje"],
  "BOPET páska ATE23":["vysoke-teploty","chemicka-odolnost"],
  "BOPET páska AIT":["vysoke-teploty","mrazuvzdorne","chemicka-odolnost"],
@@ -168,6 +172,8 @@ TAGMAP = {
  "Udržitelná páska Airtape":["ekologicke","rucni"],
  "Udržitelná páska ECO+ 50":["ekologicke","stroje"],
  "Udržitelná páska ECO+ 80":["ekologicke","stroje"],
+ "Udržitelná páska ECO+ 100":["ekologicke","stroje"],
+ "Udržitelná páska POLY+":["ekologicke","tiche","rucni","stroje"],
 }
 
 # sort products alphabetically within each category
@@ -222,19 +228,33 @@ def product_benefits(cat_slug, p):
     nl = nosic.lower()
 
     if cat_slug == "udrzitelne-pasky":
-        if "papír" in nl or "fsc" in nl:
+        if p["name"] == "Udržitelná páska ECO+ 100":
+            b1 = ("100% regenerovaná BOPP fólie", "Vyrobeno výhradně z postindustriálního odpadu – plně recyklovatelná bez nového granulátu.")
+            b3 = ("Teplotní rozsah " + temp, f"Pevnost v tahu {pevnost} pro náročnější udržitelné balení ve skladu i expedici.")
+        elif p["name"] == "Udržitelná páska POLY+":
+            b1 = ("Ekologická alternativa k PVC", "Matná BOPP fólie 35 µm bez chloru a rozpouštědel – vhodná náhrada vinylových pásek.")
+            b3 = ("Tiché odvíjení a snadné trhání", f"Přilnavost {pril}, low-noise acrylic, easy tear a UV odolnost ({temp}).")
+        elif "papír" in nl or "fsc" in nl:
             b1 = ("Bezplastový papírový nosič", "Plně recyklovatelné balení – páska putuje spolu s kartonem bez oddělování.")
+            b3 = ("Teplotní rozsah " + temp, f"Pevnost v tahu {pevnost} pro každodenní provoz skladu i expedice.")
         else:
             b1 = ("Recyklovaný polypropylen", f"{nosic} s nižší ekologickou stopou při zachování spolehlivého lepení.")
-        b3 = ("Teplotní rozsah " + temp, f"Pevnost v tahu {pevnost} pro každodenní provoz skladu i expedice.")
+            b3 = ("Teplotní rozsah " + temp, f"Pevnost v tahu {pevnost} pro každodenní provoz skladu i expedice.")
     elif cat_slug == "bopp-pasky":
-        b1 = (f"Pevnost v tahu {pevnost}", f"BOPP fólie o tloušťce {tl} vydrží napětí při balení i při dlouhodobém skladování.")
-        if "barevn" in nl:
-            b3 = ("Barevné odlišení zásilek", f"Vizuální značení balíků a skladová orientace v rozsahu {temp}.")
-        elif "akryl" in lepidlo.lower():
-            b3 = ("Dlouhá životnost", f"Odolnost proti UV a stárnutí v teplotním rozsahu {temp}.")
+        if p["name"] == "BOPP páska EXTRA GLUE+":
+            b1 = ("Zvýšená vrstva lepidla (+33 %)", "Vysoká přilnavost i na recyklovaném kartonu, prašných a nerovných površích.")
+            b3 = ("Tiché odvíjení a UV odolnost", f"Přilnavost {pril} s nízkou hlučností – spolehlivý výkon ve skladu ({temp}).")
+        elif p["name"] == "BOPP páska TACK+":
+            b1 = ("Super tack (+20 % přilnavosti)", "Okamžitá přilnavost a vyšší drživost než standardní hot melt – doporučeno pro balicí stroje.")
+            b3 = ("Snadné odvíjení pro stroje", f"Přilnavost {pril} na všech typech kartonů včetně recyklovaných ({temp}).")
         else:
-            b3 = ("Rychlé přilnutí", f"Přilnavost {pril} – okamžitě drží i při nižších teplotách ({temp}).")
+            b1 = (f"Pevnost v tahu {pevnost}", f"BOPP fólie o tloušťce {tl} vydrží napětí při balení i při dlouhodobém skladování.")
+            if "barevn" in nl:
+                b3 = ("Barevné odlišení zásilek", f"Vizuální značení balíků a skladová orientace v rozsahu {temp}.")
+            elif "akryl" in lepidlo.lower():
+                b3 = ("Dlouhá životnost", f"Odolnost proti UV a stárnutí v teplotním rozsahu {temp}.")
+            else:
+                b3 = ("Rychlé přilnutí", f"Přilnavost {pril} – okamžitě drží i při nižších teplotách ({temp}).")
     elif cat_slug == "bopet-pasky":
         b1 = (f"Teplotní rozsah {temp}", f"Polyesterový nosič ({tl}) si drží vlastnosti v náročných provozech.")
         if "recyklovan" in nl:
@@ -283,16 +303,21 @@ def product_uses(cat, p):
     apps = cat["apps"]
 
     if slug == "bopp-pasky":
-        uses = [apps[0]]
-        if "stroje" in tags:
-            uses.append(apps[1])
-        if "tiche" in tags:
-            uses.append("Tiché ruční odvíjení ve skladech a expedici")
-        elif "mrazuvzdorne" in tags:
-            uses.append("Provoz v chladírenských a mrazicích skladech")
+        if p["name"] == "BOPP páska EXTRA GLUE+":
+            uses = [apps[0], "Recyklovaný karton a náročné povrchy", apps[1], apps[3]]
+        elif p["name"] == "BOPP páska TACK+":
+            uses = [apps[0], apps[1], "Recyklovaný karton a náročné povrchy", "Strojové balení těžkých zásilek"]
         else:
-            uses.append(apps[2])
-        uses.append(apps[3])
+            uses = [apps[0]]
+            if "stroje" in tags:
+                uses.append(apps[1])
+            if "tiche" in tags:
+                uses.append("Tiché ruční odvíjení ve skladech a expedici")
+            elif "mrazuvzdorne" in tags:
+                uses.append("Provoz v chladírenských a mrazicích skladech")
+            else:
+                uses.append(apps[2])
+            uses.append(apps[3])
     elif slug == "bopet-pasky":
         uses = [apps[0]]
         if "vysoke-teploty" in tags:
@@ -312,7 +337,9 @@ def product_uses(cat, p):
             uses.insert(0, apps[0])
     elif slug == "udrzitelne-pasky":
         uses = list(apps)
-        if "stroje" in tags and "rucni" not in tags:
+        if p["name"] == "Udržitelná páska POLY+":
+            uses = [apps[0], "Potisk až 10 barev (reverse printing)", apps[2], "Uzavírání kartonů všech typů povrchů"]
+        elif "stroje" in tags and "rucni" not in tags:
             uses = [apps[0], apps[2], apps[3], "Automatické balicí linky s ESG cíli"]
     elif slug == "odstranitelne-pasky":
         uses = list(apps)

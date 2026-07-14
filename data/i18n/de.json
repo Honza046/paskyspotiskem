@@ -25,7 +25,6 @@
     "gallery": "Galerie",
     "sortiment": "Sortiment",
     "references": "Referenzen",
-    "faq": "FAQ",
     "contacts": "Kontakt",
     "facebook": "Facebook",
     "instagram": "Instagram",
@@ -239,38 +238,6 @@
       "vojtech_role": "Verkaufsassistent",
       "more_contacts": "Weitere Kontakte"
     },
-    "faq": {
-      "label": "Häufige Fragen",
-      "title": "Antworten vor der Bestellung",
-      "subtitle": "Die häufigsten Fragen zu Druck, Lieferzeiten und Materialwahl. Unsicher? Schreiben Sie uns, wir beraten Sie gern.",
-      "cta": "Unverbindliche Kalkulation →",
-      "items": [
-        {
-          "q": "Wie ist die Mindestbestellmenge?",
-          "a": "In der Regel ab 360 Rollen pro Bandvariante. Bei größeren Bestellungen erhalten Sie kostenlosen Versand innerhalb Tschechiens. Genaue Konditionen nennen wir Ihnen in der Kalkulation."
-        },
-        {
-          "q": "Wie lange dauert die Produktion bedruckter Bänder?",
-          "a": "Typische Lieferzeit beträgt 3 bis 4 Wochen nach Freigabe des Druckproofs und Bestellbestätigung. Bei dringenden Aufträgen suchen wir individuelle Lösungen, nennen Sie Ihren Termin in der Anfrage."
-        },
-        {
-          "q": "Kann ich Klebeband auch unbedruckt bestellen?",
-          "a": "Ja. Dasselbe Material liefern wir auch unbedruckt für sofortigen Einsatz oder Lagerbestand. Einfach in der Anfrage vermerken."
-        },
-        {
-          "q": "Was ist der Unterschied zwischen HOT MELT und ACRYL?",
-          "a": "HOT MELT haftet schnell und fest auch bei Kälte, ideal für Lager und Versand. ACRYL ist leiser beim Abrollen und UV-beständiger, geeignet für Langzeitlagerung. Mehr im Abschnitt <a href=\"#lepidla\">Welchen Klebstoff wählen?</a>."
-        },
-        {
-          "q": "Liefern Sie kostenlose Muster?",
-          "a": "Ja, für ausgewählte Materialien und bestehende Druckdaten senden wir gern ein Testmuster. Vermerken Sie „Ich möchte ein Muster“ in der Anfrage oder nutzen Sie den Button weiter unten auf der Seite."
-        },
-        {
-          "q": "Welche Drucktechnologien bieten Sie an?",
-          "a": "Flexodruck bis zu 8 Farben und Tiefdruck bis zu 10 Farben inklusive hochwertigem Unterdruck. Die passende Technologie empfehlen wir nach Farbanforderungen, Menge und Logodesign."
-        }
-      ]
-    },
     "sample": {
       "label": "Testmuster",
       "title": "Unsicher bei der Auswahl? Wir senden Ihnen ein kostenloses Muster.",
@@ -426,10 +393,6 @@
       "clear_all": "Alle löschen",
       "results_title": "Produkte nach Filtern",
       "empty": "Kein Band entspricht der gewählten Filterkombination. Versuchen Sie, einen Filter zu entfernen.",
-      "featured_label": "Empfohlen",
-      "featured_title": "Am häufigsten angefragte Bänder",
-      "categories_label": "Kategorien",
-      "categories_title": "Gesamtes Sortiment",
       "show_products": "Produkte anzeigen",
       "cta_quote": "Unverbindliche Kalkulation"
     },
@@ -635,6 +598,64 @@
         },
         "spec_pills": [
           "Recycelte PP-Folie",
+          "Acryl",
+          "−5 bis +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Träger / Material",
+          "thickness": "Dicke",
+          "adhesive": "Klebstofftyp",
+          "adhesion": "Haftung (Stahl)",
+          "temperature": "Temperaturbeständigkeit",
+          "strength": "Zugfestigkeit"
+        },
+        "ctas": {
+          "hero": "Kalkulation mit Bedruckung",
+          "tailor_link": "Ich möchte ein kostenloses Muster",
+          "tailor_bullets": [
+            "Wählbare Breite und Rollenlänge",
+            "Grundfarbe und Anzahl der Druckfarben",
+            "Muster mit Ihrem Logo vor der Bestellung"
+          ],
+          "bottom": "Kostenloses Muster oder Kalkulation",
+          "back_category": "Zurück zu Nachhaltige Klebebänder"
+        }
+      },
+      "udrzitelna-paska-eco-100": {
+        "name": "Nachhaltiges Klebeband ECO+ 100",
+        "tagline": "100 % regenerierte BOPP-Folie aus postindustriellen Abfällen für anspruchsvolle nachhaltige Verpackung.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Nachhaltige Klebebänder",
+        "benefits": [
+          {
+            "title": "100 % regenerierte BOPP-Folie",
+            "text": "Hergestellt ausschließlich aus postindustriellen Abfällen – vollständig recycelbar ohne Neumaterial."
+          },
+          {
+            "title": "Acrylklebstoff",
+            "text": "Leises Abrollen, langfristig stabile Klebkraft und zuverlässige Leistung unter Lagerbedingungen."
+          },
+          {
+            "title": "Temperaturbereich −5 bis +60 °C",
+            "text": "Zugfestigkeit 55 N/25 mm für anspruchsvollere nachhaltige Verpackung im Lager und Versand."
+          }
+        ],
+        "uses": [
+          "Unternehmen mit ESG- und Nachhaltigkeitszielen",
+          "Zirkuläre Verpackungsprozesse",
+          "Aufbau einer verantwortungsvollen Marke",
+          "Automatische Verpackungslinien mit ESG-Zielen"
+        ],
+        "params_values": {
+          "carrier": "100 % regenerierte BOPP-Folie",
+          "thickness": "35 µm",
+          "adhesive": "Acryl",
+          "adhesion": "3,5 N/25 mm",
+          "temperature": "−5 bis +60 °C",
+          "strength": "55 N/25 mm"
+        },
+        "spec_pills": [
+          "100 % regenerierte BOPP-Folie",
           "Acryl",
           "−5 bis +60 °C"
         ],
@@ -948,6 +969,64 @@
           "back_category": "Zurück zu Nachhaltige Klebebänder"
         }
       },
+      "udrzitelna-paska-poly-plus": {
+        "name": "Nachhaltiges Klebeband POLY+",
+        "tagline": "Ökologische PVC-Alternative – mattes, nicht reflektierendes BOPP-Klebeband mit leisem Acrylklebstoff.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Nachhaltige Klebebänder",
+        "benefits": [
+          {
+            "title": "Ökologische PVC-Alternative",
+            "text": "Matte 35 µm BOPP-Folie ohne Chlor und Lösungsmittel – geeigneter Ersatz für Vinylbänder."
+          },
+          {
+            "title": "Acrylklebstoff",
+            "text": "Leises Abrollen, langfristig stabile Klebkraft und zuverlässige Leistung unter Lagerbedingungen."
+          },
+          {
+            "title": "Leises Abrollen und leichtes Abreißen",
+            "text": "Klebkraft 3,8 N/25 mm, leiser Acrylklebstoff, Easy-Tear und UV-Beständigkeit (−5 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "Unternehmen mit ESG- und Nachhaltigkeitszielen",
+          "Bedruckung bis zu 10 Farben (Reverse-Druck)",
+          "Zirkuläre Verpackungsprozesse",
+          "Verschließen von Kartons aller Oberflächentypen"
+        ],
+        "params_values": {
+          "carrier": "BOPP-Folie (matt, 35 µm)",
+          "thickness": "35 µm",
+          "adhesive": "Acryl (leise, lösungsmittelfrei)",
+          "adhesion": "3,8 N/25 mm",
+          "temperature": "−5 bis +60 °C",
+          "strength": "50 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP-Folie (matt, 35 µm)",
+          "Acryl (leise, lösungsmittelfrei)",
+          "−5 bis +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Träger / Material",
+          "thickness": "Dicke",
+          "adhesive": "Klebstofftyp",
+          "adhesion": "Haftung (Stahl)",
+          "temperature": "Temperaturbeständigkeit",
+          "strength": "Zugfestigkeit"
+        },
+        "ctas": {
+          "hero": "Kalkulation mit Bedruckung",
+          "tailor_link": "Ich möchte ein kostenloses Muster",
+          "tailor_bullets": [
+            "Wählbare Breite und Rollenlänge",
+            "Grundfarbe und Anzahl der Druckfarben",
+            "Muster mit Ihrem Logo vor der Bestellung"
+          ],
+          "bottom": "Kostenloses Muster oder Kalkulation",
+          "back_category": "Zurück zu Nachhaltige Klebebänder"
+        }
+      },
       "bopp-paska-acrylic": {
         "name": "BOPP-Klebeband Acrylic",
         "tagline": "Zuverlässiges BOPP-Klebeband mit Acrylklebstoff und langer Lebensdauer.",
@@ -984,6 +1063,64 @@
         "spec_pills": [
           "BOPP-Folie",
           "Acryl (wässrige Dispersion)",
+          "−5 bis +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Träger / Material",
+          "thickness": "Dicke",
+          "adhesive": "Klebstofftyp",
+          "adhesion": "Haftung (Stahl)",
+          "temperature": "Temperaturbeständigkeit",
+          "strength": "Zugfestigkeit"
+        },
+        "ctas": {
+          "hero": "Kalkulation mit Bedruckung",
+          "tailor_link": "Ich möchte ein kostenloses Muster",
+          "tailor_bullets": [
+            "Wählbare Breite und Rollenlänge",
+            "Grundfarbe und Anzahl der Druckfarben",
+            "Muster mit Ihrem Logo vor der Bestellung"
+          ],
+          "bottom": "Kostenloses Muster oder Kalkulation",
+          "back_category": "Zurück zu BOPP-Klebebänder"
+        }
+      },
+      "bopp-paska-extra-glue-plus": {
+        "name": "BOPP-Klebeband EXTRA GLUE+",
+        "tagline": "Acryl-BOPP-Klebeband mit erhöhter Klebstoffschicht (+33 %) für anspruchsvolle Oberflächen und Recyclingkarton.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP-Klebebänder",
+        "benefits": [
+          {
+            "title": "Erhöhte Klebstoffschicht (+33 %)",
+            "text": "Hohe Klebkraft auch auf Recyclingkarton, staubigen und unebenen Oberflächen."
+          },
+          {
+            "title": "Acrylklebstoff",
+            "text": "Leises Abrollen, langfristig stabile Klebkraft und zuverlässige Leistung unter Lagerbedingungen."
+          },
+          {
+            "title": "Leises Abrollen und UV-Beständigkeit",
+            "text": "Klebkraft 4,0 N/25 mm mit geringer Geräuschentwicklung – zuverlässige Leistung im Lager (−5 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "Standard-Kartonverschluss",
+          "Recyclingkarton und anspruchsvolle Oberflächen",
+          "Automatische Verpackungsmaschinen",
+          "Bedruckung mit Firmenlogo und Informationen"
+        ],
+        "params_values": {
+          "carrier": "BOPP-Folie",
+          "thickness": "40 µm",
+          "adhesive": "Acryl (erhöhte Klebstoffschicht +33 %)",
+          "adhesion": "4,0 N/25 mm",
+          "temperature": "−5 bis +60 °C",
+          "strength": "45 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP-Folie",
+          "Acryl (erhöhte Klebstoffschicht +33 %)",
           "−5 bis +60 °C"
         ],
         "params_labels": {
@@ -1122,42 +1259,42 @@
           "back_category": "Zurück zu BOPP-Klebebänder"
         }
       },
-      "bopp-paska-hot-melt-ii": {
-        "name": "BOPP-Klebeband Hot Melt II",
-        "tagline": "Stärkeres BOPP-Klebeband mit Hot-Melt-Klebstoff für anspruchsvolleres Verpacken.",
+      "bopp-paska-tack-plus": {
+        "name": "BOPP-Klebeband TACK+",
+        "tagline": "Hot-Melt-BOPP-Klebeband mit höherer Klebkraft (+20 %) und Super-Tack für Verpackungsmaschinen und Recyclingkarton.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP-Klebebänder",
         "benefits": [
           {
-            "title": "Zugfestigkeit 48 N/25 mm",
-            "text": "BOPP-Folie mit 48 µm Dicke hält Spannung beim Verpacken und bei langfristiger Lagerung stand."
+            "title": "Super-Tack (+20 % Klebkraft)",
+            "text": "Sofortige Klebkraft und höhere Haftung als Standard-Hot-Melt – empfohlen für Verpackungsmaschinen."
           },
           {
             "title": "Hot-Melt-Klebstoff",
             "text": "Schnelle, feste Haftung auch bei niedrigen Temperaturen – für manuelles und maschinelles Verpacken."
           },
           {
-            "title": "Schnelle Haftung",
-            "text": "Klebkraft 3,8 N/25 mm – haftet sofort auch bei niedrigen Temperaturen (0 až +55 °C)."
+            "title": "Leichtes Abrollen für Maschinen",
+            "text": "Klebkraft 4,2 N/25 mm auf allen Kartontypen einschließlich Recyclingkarton (0 až +55 °C)."
           }
         ],
         "uses": [
           "Standard-Kartonverschluss",
           "Automatische Verpackungsmaschinen",
-          "Versand und Lagerlogistik",
-          "Bedruckung mit Firmenlogo und Informationen"
+          "Recyclingkarton und anspruchsvolle Oberflächen",
+          "Maschinelles Verpacken schwerer Sendungen"
         ],
         "params_values": {
           "carrier": "BOPP-Folie",
-          "thickness": "48 µm",
-          "adhesive": "Hot Melt",
-          "adhesion": "3,8 N/25 mm",
+          "thickness": "40 µm",
+          "adhesive": "Hot Melt (Super-Tack, +20 %)",
+          "adhesion": "4,2 N/25 mm",
           "temperature": "0 bis +55 °C",
-          "strength": "48 N/25 mm"
+          "strength": "42 N/25 mm"
         },
         "spec_pills": [
           "BOPP-Folie",
-          "Hot Melt",
+          "Hot Melt (Super-Tack, +20 %)",
           "0 bis +55 °C"
         ],
         "params_labels": {
@@ -2479,13 +2616,7 @@
       "product_few": "{n} Produkte",
       "product_many": "{n} Produkte",
       "detail": "Details",
-      "inquire": "Anfragen",
-      "tag_eco": "ECO",
-      "tag_cold": "-70 °C",
-      "tag_hot": "Hohe Temperaturen",
-      "tag_chem": "Chemische Beständigkeit",
-      "tag_machines": "Maschinen",
-      "tag_hand": "Manuell"
+      "inquire": "Anfragen"
     },
     "form": {
       "step_label": "Schritt {current} von {total}"

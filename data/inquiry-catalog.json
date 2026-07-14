@@ -23,7 +23,8 @@
       { "name": "BOPP páska Acrylic", "tagline": "Spolehlivá BOPP páska s akrylovým lepidlem a dlouhou životností.", "slug": "bopp-paska-acrylic" },
       { "name": "BOPP páska Evergreen", "tagline": "Barevná BOPP páska pro značení a vizuální odlišení zásilek.", "slug": "bopp-paska-evergreen" },
       { "name": "BOPP páska Hot Melt", "tagline": "BOPP páska s hot melt lepidlem pro rychlé a pevné přilnutí.", "slug": "bopp-paska-hot-melt" },
-      { "name": "BOPP páska Hot Melt II", "tagline": "Silnější BOPP páska s hot melt lepidlem pro náročnější balení.", "slug": "bopp-paska-hot-melt-ii" }
+      { "name": "BOPP páska EXTRA GLUE+", "tagline": "Akrylová BOPP páska se zvýšenou vrstvou lepidla (+33 %) pro náročné povrchy a recyklovaný karton.", "slug": "bopp-paska-extra-glue-plus" },
+      { "name": "BOPP páska TACK+", "tagline": "Hot melt BOPP páska s vyšší přilnavostí (+20 %) a super tack pro balicí stroje a recyklovaný karton.", "slug": "bopp-paska-tack-plus" }
     ],
     "bopet-pasky": [
       { "name": "BOPET páska AIT", "tagline": "Polyesterová páska se silikonovým lepidlem pro extrémní teploty.", "slug": "bopet-paska-ait" },

@@ -25,7 +25,6 @@
     "gallery": "Galleria",
     "sortiment": "Assortimento",
     "references": "Referenze",
-    "faq": "FAQ",
     "contacts": "Contatti",
     "facebook": "Facebook",
     "instagram": "Instagram",
@@ -239,38 +238,6 @@
       "vojtech_role": "Assistente vendite",
       "more_contacts": "Altri contatti"
     },
-    "faq": {
-      "label": "Domande frequenti",
-      "title": "Risposte prima dell'ordine",
-      "subtitle": "Le domande più comuni su stampa, tempi di consegna e scelta del materiale. Non siete sicuri? Scriveteci, vi consiglieremo.",
-      "cta": "Richiesta di preventivo →",
-      "items": [
-        {
-          "q": "Qual è la quantità minima d'ordine?",
-          "a": "Di norma da 360 rotoli per variante di nastro. Per ordini maggiori la spedizione in Repubblica Ceca è gratuita. Le condizioni precise le confermeremo nel preventivo."
-        },
-        {
-          "q": "Quanto tempo richiede la produzione del nastro stampato?",
-          "a": "Il tempo di consegna tipico è di 3 o 4 settimane dall'approvazione della bozza grafica e conferma dell'ordine. Per urgenze cerchiamo soluzioni individuali, indicate la scadenza nella richiesta."
-        },
-        {
-          "q": "Posso ordinare il nastro anche senza stampa?",
-          "a": "Sì. Lo stesso materiale è disponibile anche non stampato per imballaggio immediato o scorte. Basta indicarlo nelle note della richiesta."
-        },
-        {
-          "q": "Qual è la differenza tra HOT MELT e ACRYL?",
-          "a": "HOT MELT aderisce rapidamente e saldamente anche al freddo, ideale per magazzini e spedizioni. ACRYL è più silenzioso durante lo srotolamento e più resistente ai UV, adatto allo stoccaggio a lungo termine. Maggiori info nella sezione <a href=\"#lepidla\">Quale adesivo scegliere?</a>."
-        },
-        {
-          "q": "Fornite campioni gratuiti?",
-          "a": "Sì, per materiali selezionati e grafiche esistenti inviamo volentieri un campione di prova. Indicate „Voglio un campione“ nella richiesta o usate il pulsante più in basso nella pagina."
-        },
-        {
-          "q": "Quali tecnologie di stampa offrite?",
-          "a": "Flexografia fino a 8 colori e rotocalco fino a 10 colori, inclusa stampa sul retro di alta qualità. Consigliamo la tecnologia più adatta in base a colori, quantità e design del logo."
-        }
-      ]
-    },
     "sample": {
       "label": "Campione di prova",
       "title": "Non siete sicuri della scelta? Vi invieremo un campione gratuito.",
@@ -426,10 +393,6 @@
       "clear_all": "Cancella tutto",
       "results_title": "Prodotti trovati in base ai filtri",
       "empty": "Nessun nastro corrisponde ai filtri selezionati. Provate a rimuoverne alcuni.",
-      "featured_label": "Consigliati",
-      "featured_title": "Nastri più richiesti",
-      "categories_label": "Categorie",
-      "categories_title": "Intero assortimento",
       "show_products": "Mostra prodotti",
       "cta_quote": "Preventivo non vincolante"
     },
@@ -635,6 +598,64 @@
         },
         "spec_pills": [
           "Film PP riciclato",
+          "Acrilico",
+          "−5 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri sostenibili"
+        }
+      },
+      "udrzitelna-paska-eco-100": {
+        "name": "Nastro sostenibile ECO+ 100",
+        "tagline": "Film BOPP rigenerato al 100% da scarti post-industriali per imballaggi sostenibili premium.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Nastri sostenibili",
+        "benefits": [
+          {
+            "title": "Film BOPP rigenerato al 100%",
+            "text": "Prodotto interamente da scarti post-industriali: completamente riciclabile senza granulato vergine."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Intervallo di temperatura −5 a +60 °C",
+            "text": "Resistenza alla trazione 55 N/25 mm per imballaggi sostenibili più impegnativi in magazzino e spedizione."
+          }
+        ],
+        "uses": [
+          "Aziende con obiettivi ESG e di sostenibilità",
+          "Processi di imballaggio circolari",
+          "Costruzione di un marchio responsabile",
+          "Linee di imballaggio automatiche con obiettivi ESG"
+        ],
+        "params_values": {
+          "carrier": "Film BOPP rigenerato al 100%",
+          "thickness": "35 µm",
+          "adhesive": "Acrilico",
+          "adhesion": "3,5 N/25 mm",
+          "temperature": "−5 a +60 °C",
+          "strength": "55 N/25 mm"
+        },
+        "spec_pills": [
+          "Film BOPP rigenerato al 100%",
           "Acrilico",
           "−5 a +60 °C"
         ],
@@ -948,6 +969,64 @@
           "back_category": "Torna a Nastri sostenibili"
         }
       },
+      "udrzitelna-paska-poly-plus": {
+        "name": "Nastro sostenibile POLY+",
+        "tagline": "Alternativa ecologica al PVC: nastro BOPP opaco non riflettente con adesivo acrilico silenzioso.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Nastri sostenibili",
+        "benefits": [
+          {
+            "title": "Alternativa ecologica al PVC",
+            "text": "Film BOPP opaco da 35 µm senza cloro né solventi: sostituto adatto ai nastri in vinile."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Svolgimento silenzioso e strappo facile",
+            "text": "Adesione 3,8 N/25 mm, acrilico silenzioso, strappo facile e resistenza UV (−5 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "Aziende con obiettivi ESG e di sostenibilità",
+          "Stampa fino a 10 colori (reverse printing)",
+          "Processi di imballaggio circolari",
+          "Chiusura di cartoni su tutti i tipi di superficie"
+        ],
+        "params_values": {
+          "carrier": "Film BOPP (opaco, 35 µm)",
+          "thickness": "35 µm",
+          "adhesive": "Acrilico (silenzioso, senza solventi)",
+          "adhesion": "3,8 N/25 mm",
+          "temperature": "−5 a +60 °C",
+          "strength": "50 N/25 mm"
+        },
+        "spec_pills": [
+          "Film BOPP (opaco, 35 µm)",
+          "Acrilico (silenzioso, senza solventi)",
+          "−5 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri sostenibili"
+        }
+      },
       "bopp-paska-acrylic": {
         "name": "Nastro BOPP Acrylic",
         "tagline": "Nastro BOPP affidabile con adesivo acrilico e lunga durata.",
@@ -984,6 +1063,64 @@
         "spec_pills": [
           "Film BOPP",
           "Acrilico (dispersione acquosa)",
+          "−5 a +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Campione con il vostro logo prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri BOPP"
+        }
+      },
+      "bopp-paska-extra-glue-plus": {
+        "name": "Nastro BOPP EXTRA GLUE+",
+        "tagline": "Nastro BOPP acrilico con strato adesivo aumentato (+33%) per superfici difficili e cartone riciclato.",
+        "category_slug": "bopp-pasky",
+        "category_title": "Nastri BOPP",
+        "benefits": [
+          {
+            "title": "Strato adesivo aumentato (+33%)",
+            "text": "Elevata adesione anche su cartone riciclato, superfici polverose e irregolari."
+          },
+          {
+            "title": "Adesivo acrilico",
+            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+          },
+          {
+            "title": "Svolgimento silenzioso e resistenza UV",
+            "text": "Adesione 4,0 N/25 mm con basso rumore: prestazioni affidabili in magazzino (−5 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "Chiusura standard dei cartoni",
+          "Cartone riciclato e superfici difficili",
+          "Macchine automatiche per imballaggio",
+          "Stampa con logo e informazioni aziendali"
+        ],
+        "params_values": {
+          "carrier": "Film BOPP",
+          "thickness": "40 µm",
+          "adhesive": "Acrilico (strato adesivo aumentato +33%)",
+          "adhesion": "4,0 N/25 mm",
+          "temperature": "−5 a +60 °C",
+          "strength": "45 N/25 mm"
+        },
+        "spec_pills": [
+          "Film BOPP",
+          "Acrilico (strato adesivo aumentato +33%)",
           "−5 a +60 °C"
         ],
         "params_labels": {
@@ -1122,42 +1259,42 @@
           "back_category": "Torna a Nastri BOPP"
         }
       },
-      "bopp-paska-hot-melt-ii": {
-        "name": "Nastro BOPP Hot Melt II",
-        "tagline": "Nastro BOPP più resistente con adesivo hot melt per imballaggi più pesanti.",
+      "bopp-paska-tack-plus": {
+        "name": "Nastro BOPP TACK+",
+        "tagline": "Nastro BOPP hot melt con adesione superiore (+20%) e super tack per macchine da imballaggio e cartone riciclato.",
         "category_slug": "bopp-pasky",
         "category_title": "Nastri BOPP",
         "benefits": [
           {
-            "title": "Resistenza alla trazione 48 N/25 mm",
-            "text": "Il film BOPP spesso 48 µm resiste alla tensione durante l'imballaggio e lo stoccaggio a lungo termine."
+            "title": "Super tack (+20% adesione)",
+            "text": "Adesione immediata e tenuta superiore al hot melt standard: consigliato per macchine da imballaggio."
           },
           {
             "title": "Adesivo hot melt",
             "text": "Adesione rapida e resistente anche a basse temperature, adatta al confezionamento manuale e automatico."
           },
           {
-            "title": "Adesione rapida",
-            "text": "Adesione 3,8 N/25 mm: aderisce immediatamente anche a basse temperature (0 až +55 °C)."
+            "title": "Svolgimento facile per macchine",
+            "text": "Adesione 4,2 N/25 mm su tutti i tipi di cartone, incluso il riciclato (0 až +55 °C)."
           }
         ],
         "uses": [
           "Chiusura standard dei cartoni",
           "Macchine automatiche per imballaggio",
-          "Spedizione e logistica di magazzino",
-          "Stampa con logo e informazioni aziendali"
+          "Cartone riciclato e superfici difficili",
+          "Imballaggio automatico di spedizioni pesanti"
         ],
         "params_values": {
           "carrier": "Film BOPP",
-          "thickness": "48 µm",
-          "adhesive": "Hot melt",
-          "adhesion": "3,8 N/25 mm",
+          "thickness": "40 µm",
+          "adhesive": "Hot melt (super tack, +20%)",
+          "adhesion": "4,2 N/25 mm",
           "temperature": "0 a +55 °C",
-          "strength": "48 N/25 mm"
+          "strength": "42 N/25 mm"
         },
         "spec_pills": [
           "Film BOPP",
-          "Hot melt",
+          "Hot melt (super tack, +20%)",
           "0 a +55 °C"
         ],
         "params_labels": {
@@ -2479,13 +2616,7 @@
       "product_few": "{n} prodotti",
       "product_many": "{n} prodotti",
       "detail": "Dettagli",
-      "inquire": "Richiedi",
-      "tag_eco": "ECO",
-      "tag_cold": "-70 °C",
-      "tag_hot": "Alte temperature",
-      "tag_chem": "Resistenza chimica",
-      "tag_machines": "Macchine",
-      "tag_hand": "Manuale"
+      "inquire": "Richiedi"
     },
     "form": {
       "step_label": "Passo {current} di {total}"

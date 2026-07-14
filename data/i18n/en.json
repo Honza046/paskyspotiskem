@@ -25,7 +25,6 @@
     "gallery": "Gallery",
     "sortiment": "Products",
     "references": "References",
-    "faq": "FAQ",
     "contacts": "Contact",
     "facebook": "Facebook",
     "instagram": "Instagram",
@@ -239,38 +238,6 @@
       "vojtech_role": "Sales assistant",
       "more_contacts": "More contacts"
     },
-    "faq": {
-      "label": "FAQ",
-      "title": "Answers before you order",
-      "subtitle": "Common questions about printing, lead times and material choice. Not sure? Contact us, we will advise you.",
-      "cta": "Request a quote →",
-      "items": [
-        {
-          "q": "What is the minimum order quantity?",
-          "a": "Typically from 360 rolls per tape variant. Larger orders qualify for free delivery within the Czech Republic. We will confirm exact terms in your quote."
-        },
-        {
-          "q": "How long does printed tape production take?",
-          "a": "Typical lead time is 3 to 4 weeks from approval of the artwork proof and order confirmation. For urgent jobs we try to find individual solutions, mention your deadline in the inquiry."
-        },
-        {
-          "q": "Can I order tape without printing?",
-          "a": "Yes. We can supply the same material unprinted for immediate packing or stock. Just mention it in the inquiry notes."
-        },
-        {
-          "q": "What is the difference between HOT MELT and ACRYL?",
-          "a": "HOT MELT bonds quickly and firmly even in cold conditions, ideal for warehouses and dispatch. ACRYL is quieter when unwinding and more UV-resistant, suited for long-term storage. More in the <a href=\"#lepidla\">Which adhesive to choose?</a> section."
-        },
-        {
-          "q": "Do you provide free samples?",
-          "a": "Yes, for selected materials and existing artwork we are happy to send a test sample. Add “I want a sample” in your inquiry or use the button further down the page."
-        },
-        {
-          "q": "Which printing technologies do you offer?",
-          "a": "Flexographic printing up to 8 colours and rotogravure up to 10 colours including high-quality reverse printing. We recommend the best option based on colour requirements, volume and logo design."
-        }
-      ]
-    },
     "sample": {
       "label": "Test sample",
       "title": "Not sure which tape to choose? We will send you a free sample.",
@@ -426,10 +393,6 @@
       "clear_all": "Clear all",
       "results_title": "Products matching your filters",
       "empty": "No tape matches the selected filter combination. Try removing one of the filters.",
-      "featured_label": "Recommended",
-      "featured_title": "Most requested tapes",
-      "categories_label": "Categories",
-      "categories_title": "Full product range",
       "show_products": "View products",
       "cta_quote": "Request a quote"
     },
@@ -635,6 +598,64 @@
         },
         "spec_pills": [
           "Recycled PP film",
+          "Acrylic",
+          "−5 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to Sustainable tapes"
+        }
+      },
+      "udrzitelna-paska-eco-100": {
+        "name": "Sustainable tape ECO+ 100",
+        "tagline": "100% regenerated BOPP film from post-industrial waste for premium sustainable packaging.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Sustainable tapes",
+        "benefits": [
+          {
+            "title": "100% regenerated BOPP film",
+            "text": "Made entirely from post-industrial waste — fully recyclable without virgin granulate."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Temperature range −5 to +60 °C",
+            "text": "Tensile strength 55 N/25 mm for more demanding sustainable packing in warehouse and dispatch."
+          }
+        ],
+        "uses": [
+          "Companies with ESG and sustainability goals",
+          "Circular packaging processes",
+          "Building a responsible brand",
+          "Automatic packing lines with ESG goals"
+        ],
+        "params_values": {
+          "carrier": "100% regenerated BOPP film",
+          "thickness": "35 µm",
+          "adhesive": "Acrylic",
+          "adhesion": "3,5 N/25 mm",
+          "temperature": "−5 to +60 °C",
+          "strength": "55 N/25 mm"
+        },
+        "spec_pills": [
+          "100% regenerated BOPP film",
           "Acrylic",
           "−5 to +60 °C"
         ],
@@ -948,6 +969,64 @@
           "back_category": "Back to Sustainable tapes"
         }
       },
+      "udrzitelna-paska-poly-plus": {
+        "name": "Sustainable tape POLY+",
+        "tagline": "Eco-friendly PVC alternative — matte non-reflective BOPP tape with quiet acrylic adhesive.",
+        "category_slug": "udrzitelne-pasky",
+        "category_title": "Sustainable tapes",
+        "benefits": [
+          {
+            "title": "Eco-friendly PVC alternative",
+            "text": "Matte 35 µm BOPP film without chlorine or solvents — a suitable replacement for vinyl tapes."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Quiet unwinding and easy tear",
+            "text": "Adhesion 3,8 N/25 mm, low-noise acrylic, easy tear and UV resistance (−5 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "Companies with ESG and sustainability goals",
+          "Printing up to 10 colours (reverse printing)",
+          "Circular packaging processes",
+          "Sealing cartons of all surface types"
+        ],
+        "params_values": {
+          "carrier": "BOPP film (matte, 35 µm)",
+          "thickness": "35 µm",
+          "adhesive": "Acrylic (quiet, solvent-free)",
+          "adhesion": "3,8 N/25 mm",
+          "temperature": "−5 to +60 °C",
+          "strength": "50 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP film (matte, 35 µm)",
+          "Acrylic (quiet, solvent-free)",
+          "−5 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to Sustainable tapes"
+        }
+      },
       "bopp-paska-acrylic": {
         "name": "BOPP tape Acrylic",
         "tagline": "Reliable BOPP tape with acrylic adhesive and long service life.",
@@ -984,6 +1063,64 @@
         "spec_pills": [
           "BOPP film",
           "Acrylic (water-based dispersion)",
+          "−5 to +60 °C"
+        ],
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Sample with your logo before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to BOPP tapes"
+        }
+      },
+      "bopp-paska-extra-glue-plus": {
+        "name": "BOPP tape EXTRA GLUE+",
+        "tagline": "Acrylic BOPP tape with an increased adhesive layer (+33%) for demanding surfaces and recycled cardboard.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP tapes",
+        "benefits": [
+          {
+            "title": "Increased adhesive layer (+33%)",
+            "text": "High adhesion even on recycled cardboard, dusty and uneven surfaces."
+          },
+          {
+            "title": "Acrylic adhesive",
+            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+          },
+          {
+            "title": "Quiet unwinding and UV resistance",
+            "text": "Adhesion 4,0 N/25 mm with low noise — reliable performance in warehouse conditions (−5 až +60 °C)."
+          }
+        ],
+        "uses": [
+          "Standard carton sealing",
+          "Recycled cardboard and demanding surfaces",
+          "Automatic packing machines",
+          "Printing with company logos and information"
+        ],
+        "params_values": {
+          "carrier": "BOPP film",
+          "thickness": "40 µm",
+          "adhesive": "Acrylic (increased adhesive layer +33%)",
+          "adhesion": "4,0 N/25 mm",
+          "temperature": "−5 to +60 °C",
+          "strength": "45 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP film",
+          "Acrylic (increased adhesive layer +33%)",
           "−5 to +60 °C"
         ],
         "params_labels": {
@@ -1122,42 +1259,42 @@
           "back_category": "Back to BOPP tapes"
         }
       },
-      "bopp-paska-hot-melt-ii": {
-        "name": "BOPP tape Hot Melt II",
-        "tagline": "Stronger BOPP tape with hot melt adhesive for heavier packaging.",
+      "bopp-paska-tack-plus": {
+        "name": "BOPP tape TACK+",
+        "tagline": "Hot melt BOPP tape with higher adhesion (+20%) and super tack for packing machines and recycled cardboard.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP tapes",
         "benefits": [
           {
-            "title": "Tensile strength 48 N/25 mm",
-            "text": "BOPP film 48 µm thick withstands tension during packing and long-term storage."
+            "title": "Super tack (+20% adhesion)",
+            "text": "Instant adhesion and higher hold than standard hot melt — recommended for packing machines."
           },
           {
             "title": "Hot melt adhesive",
             "text": "Fast, strong bonding even at lower temperatures — suitable for manual and machine packing."
           },
           {
-            "title": "Fast bonding",
-            "text": "Adhesion 3,8 N/25 mm — bonds instantly even at lower temperatures (0 až +55 °C)."
+            "title": "Easy unwinding for machines",
+            "text": "Adhesion 4,2 N/25 mm on all carton types including recycled (0 až +55 °C)."
           }
         ],
         "uses": [
           "Standard carton sealing",
           "Automatic packing machines",
-          "Dispatch and warehouse logistics",
-          "Printing with company logos and information"
+          "Recycled cardboard and demanding surfaces",
+          "Machine packing of heavy shipments"
         ],
         "params_values": {
           "carrier": "BOPP film",
-          "thickness": "48 µm",
-          "adhesive": "Hot melt",
-          "adhesion": "3,8 N/25 mm",
+          "thickness": "40 µm",
+          "adhesive": "Hot melt (super tack, +20%)",
+          "adhesion": "4,2 N/25 mm",
           "temperature": "0 to +55 °C",
-          "strength": "48 N/25 mm"
+          "strength": "42 N/25 mm"
         },
         "spec_pills": [
           "BOPP film",
-          "Hot melt",
+          "Hot melt (super tack, +20%)",
           "0 to +55 °C"
         ],
         "params_labels": {
@@ -2479,13 +2616,7 @@
       "product_few": "{n} products",
       "product_many": "{n} products",
       "detail": "Details",
-      "inquire": "Inquire",
-      "tag_eco": "ECO",
-      "tag_cold": "-70 °C",
-      "tag_hot": "High temperature",
-      "tag_chem": "Chemical resistance",
-      "tag_machines": "Machines",
-      "tag_hand": "Manual"
+      "inquire": "Inquire"
     },
     "form": {
       "step_label": "Step {current} of {total}"
