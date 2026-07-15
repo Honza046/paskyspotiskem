@@ -2,12 +2,12 @@
   "meta": {
     "site_name": "Pásky s potiskem",
     "logo_alt": "Pásky s potiskem",
-    "home_title": "Domů | Pásky s potiskem",
-    "home_description": "Pásky s potiskem | Výroba a prodej balicích lepicích pásek s potiskem od ALFA IN a.s.",
-    "gallery_title": "Galerie | Pásky s potiskem",
-    "gallery_description": "Galerie ukázek balicích pásek s potiskem od ALFA IN a.s. – jednobarevný tisk, rototisk, bezpečnostní a logistické pásky.",
-    "sortiment_title": "Sortiment | Pásky s potiskem",
-    "sortiment_description": "Sortiment lepicích pásek ALFA IN – BOPP pásky HOT MELT a ACRYL, speciální řady a ECO produkty s potiskem.",
+    "home_title": "Pásky s potiskem | Lepicí pásky s logem na míru | ALFA IN",
+    "home_description": "Výroba a prodej lepicích pásek s potiskem – pásky s logem pro firmy, e-shopy a sklady. BOPP, eko a speciální pásky, potisk až 8 barev, dodání po celé ČR. Nezávazná kalkulace.",
+    "gallery_title": "Galerie pásek s potiskem | Realizace ALFA IN",
+    "gallery_description": "Ukázky lepicích pásek s potiskem – loga firem, bezpečnostní pásky, eko varianty a speciální tisky. Inspirace pro vaši pásku s potiskem na míru.",
+    "sortiment_title": "Sortiment lepicích pásek | Pásky s potiskem",
+    "sortiment_description": "Kompletní sortiment lepicích pásek s potiskem – BOPP, BOPET, papírové, eko a speciální pásky. Vyberte materiál a poptávejte pásku na míru od výrobce ALFA IN.",
     "langNames": {
       "cs": "Čeština",
       "en": "English",
@@ -76,9 +76,13 @@
     },
     "about": {
       "label": "O nás",
-      "title": "Tradiční český dodavatel lepících pásek s potiskem",
-      "lead": "Již více než 30 let pomáháme firmám bezpečně balit jejich zásilky a budovat silnou značku přímo na balicích materiálech. Jsme specialisté na zakázkový potisk lepicích pásek.",
-      "body1": "Naše moderní výrobní zázemí nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (Hot Melt, Akryl) a rychlém doručení po celé České republice i Evropské unii.",
+      "title": "Tradiční český dodavatel pásek s potiskem i bez",
+      "lead": "Již více než 30 let pomáháme firmám bezpečně balit jejich zásilky a budovat silnou značku přímo na balicích materiálech. Nabízíme lepicí pásky s vlastním potiskem i v neutrální variantě bez potisku.",
+      "body1_prefix": "Naše ",
+      "body1_highlight": "moderní výrobní zázemí",
+      "body1_tooltip": "Nevyrábíme totiž pouze lepicí pásky, ale přímo i samotné fólie, což nám v případě surovinové krize na trhu dává značnou konkurenční výhodu.",
+      "body1_suffix": " nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (HOT MELT a ACRYL) a rychlém doručení po celé České republice i Evropské unii.",
+      "body1": "Naše moderní výrobní zázemí nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (HOT MELT a ACRYL) a rychlém doručení po celé České republice i Evropské unii.",
       "body2": "Díky certifikovaným procesům ISO 9001 a používání ekologicky udržitelných materiálů jsme stabilním partnerem pro více než 300 aktivních odběratelů.",
       "image_alt": "Výroba lepicích pásek ALFA IN",
       "team_title": "Tým ALFA IN",
@@ -112,7 +116,7 @@
       "card1_title": "100% Recyklovatelná fólie",
       "card1_text": "Naše pásky jsou vyrobeny z moderní BOPP fólie, která je plně recyklovatelná. Na rozdíl od starších PVC materiálů při jejím zpracování nevznikají žádné toxické látky a je šetrná k přírodě.",
       "card2_title": "Ekologická lepidla bez rozpouštědel",
-      "card2_text": "Používáme výhradně lepidla šetrná k životnímu prostředí. Akrylová lepidla jsou vyrobena na vodní bázi a Hot Melt technologie funguje bez použití jakýchkoliv chemických rozpouštědel či syntetických příměsí.",
+      "card2_text": "Používáme výhradně lepidla šetrná k životnímu prostředí. Akrylová lepidla jsou vyrobena na vodní bázi a HOT MELT technologie funguje bez použití jakýchkoliv chemických rozpouštědel či syntetických příměsí.",
       "card3_title": "Bezproblémová recyklace kartonů",
       "card3_text": "Díky pokročilé technologii dokážou moderní recyklační linky naše pásky z papírových krabic snadno oddělit. Vaši zákazníci tak mohou použité krabice bez obav vyhodit přímo do modrého kontejneru."
     },
@@ -268,8 +272,8 @@
         "adhesive": {
           "label": "Lepidlo",
           "options": {
-            "hot-melt": "Hot Melt",
-            "acryl": "Acryl"
+            "hot-melt": "HOT MELT",
+            "acryl": "ACRYL"
           }
         },
         "industry": {
@@ -436,7 +440,7 @@
       "bopp-pasky": {
         "title": "BOPP pásky",
         "description": "Nejrozšířenější průmyslové balicí pásky z biaxiálně orientovaného polypropylenu. Vynikají skvělou pevností v tahu a dlouhou životností.",
-        "intro": "BOPP pásky jsou standardem pro každodenní balení ve výrobě, logistice i e-commerce. Fólie z biaxiálně orientovaného polypropylenu nabízí vynikající poměr ceny a výkonu, dostupnost v akrylovém i hot melt provedení a širokou škálu šířek a barev.",
+        "intro": "BOPP pásky jsou standardem pro každodenní balení ve výrobě, logistice i e-commerce. Fólie z biaxiálně orientovaného polypropylenu nabízí vynikající poměr ceny a výkonu, dostupnost v akrylovém i HOT MELT provedení a širokou škálu šířek a barev.",
         "properties": {
           "Vysoká pevnost v tahu": "Odolná fólie, která se při balení nepřetrhne ani pod napětím.",
           "ACRYL i HOT MELT": "Volba lepidla podle prostředí, tiché odvíjení, nebo rychlé přilnutí za chladu.",
@@ -985,7 +989,7 @@
           },
           {
             "title": "Tiché odvíjení a snadné trhání",
-            "text": "Přilnavost 3,8 N/25 mm, low-noise acrylic, easy tear a UV odolnost (−5 až +60 °C)."
+            "text": "Přilnavost 3,8 N/25 mm, nehlučné akrylové lepidlo, snadné tržení a UV odolnost (−5 až +60 °C)."
           }
         ],
         "uses": [
@@ -1028,7 +1032,7 @@
         }
       },
       "bopp-paska-acrylic": {
-        "name": "BOPP páska Acrylic",
+        "name": "BOPP páska ACRYL",
         "tagline": "Spolehlivá BOPP páska s akrylovým lepidlem a dlouhou životností.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP pásky",
@@ -1202,8 +1206,8 @@
         }
       },
       "bopp-paska-hot-melt": {
-        "name": "BOPP páska Hot Melt",
-        "tagline": "BOPP páska s hot melt lepidlem pro rychlé a pevné přilnutí.",
+        "name": "BOPP páska HOT MELT",
+        "tagline": "BOPP páska s HOT MELT lepidlem pro rychlé a pevné přilnutí.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP pásky",
         "benefits": [
@@ -1212,7 +1216,7 @@
             "text": "BOPP fólie o tloušťce 40 µm vydrží napětí při balení i při dlouhodobém skladování."
           },
           {
-            "title": "Hot melt lepidlo",
+            "title": "HOT MELT lepidlo",
             "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
           },
           {
@@ -1229,14 +1233,14 @@
         "params_values": {
           "carrier": "BOPP fólie",
           "thickness": "40 µm",
-          "adhesive": "Hot melt (syntetický kaučuk)",
+          "adhesive": "HOT MELT (syntetický kaučuk)",
           "adhesion": "3,5 N/25 mm",
           "temperature": "0 až +50 °C",
           "strength": "42 N/25 mm"
         },
         "spec_pills": [
           "BOPP fólie",
-          "Hot melt (syntetický kaučuk)",
+          "HOT MELT (syntetický kaučuk)",
           "0 až +50 °C"
         ],
         "params_labels": {
@@ -1261,16 +1265,16 @@
       },
       "bopp-paska-tack-plus": {
         "name": "BOPP páska TACK+",
-        "tagline": "Hot melt BOPP páska s vyšší přilnavostí (+20 %) a super tack pro balicí stroje a recyklovaný karton.",
+        "tagline": "HOT MELT BOPP páska s vyšší přilnavostí (+20 %) a super tack pro balicí stroje a recyklovaný karton.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP pásky",
         "benefits": [
           {
             "title": "Super tack (+20 % přilnavosti)",
-            "text": "Okamžitá přilnavost a vyšší drživost než standardní hot melt – doporučeno pro balicí stroje."
+            "text": "Okamžitá přilnavost a vyšší drživost než standardní HOT MELT – doporučeno pro balicí stroje."
           },
           {
-            "title": "Hot melt lepidlo",
+            "title": "HOT MELT lepidlo",
             "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
           },
           {
@@ -1287,14 +1291,14 @@
         "params_values": {
           "carrier": "BOPP fólie",
           "thickness": "40 µm",
-          "adhesive": "Hot melt (super tack, +20 %)",
+          "adhesive": "HOT MELT (super tack, +20 %)",
           "adhesion": "4,2 N/25 mm",
           "temperature": "0 až +55 °C",
           "strength": "42 N/25 mm"
         },
         "spec_pills": [
           "BOPP fólie",
-          "Hot melt (super tack, +20 %)",
+          "HOT MELT (super tack, +20 %)",
           "0 až +55 °C"
         ],
         "params_labels": {
@@ -1783,7 +1787,7 @@
       },
       "papirova-paska-c690": {
         "name": "Papírová páska C690",
-        "tagline": "Prémiová kraftová páska s hot melt lepidlem a matným povrchem.",
+        "tagline": "Prémiová kraftová páska s HOT MELT lepidlem a matným povrchem.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
         "benefits": [
@@ -1792,7 +1796,7 @@
             "text": "Kraftový papírový nosič (130 µm) – ekologické balení s čistým matným vzhledem."
           },
           {
-            "title": "Hot melt lepidlo",
+            "title": "HOT MELT lepidlo",
             "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
           },
           {
@@ -1809,14 +1813,14 @@
         "params_values": {
           "carrier": "Papírový nosič (kraft)",
           "thickness": "130 µm",
-          "adhesive": "Hot melt",
+          "adhesive": "HOT MELT",
           "adhesion": "4,8 N/25 mm",
           "temperature": "−10 až +70 °C",
           "strength": "60 N/25 mm"
         },
         "spec_pills": [
           "Papírový nosič (kraft)",
-          "Hot melt",
+          "HOT MELT",
           "−10 až +70 °C"
         ],
         "params_labels": {
@@ -1841,7 +1845,7 @@
       },
       "papirova-paska-kh80": {
         "name": "Papírová páska KH80",
-        "tagline": "Silná papírová páska s hot melt lepidlem pro spolehlivé uzavírání kartonů.",
+        "tagline": "Silná papírová páska s HOT MELT lepidlem pro spolehlivé uzavírání kartonů.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
         "benefits": [
@@ -1850,7 +1854,7 @@
             "text": "Kraftový papírový nosič (120 µm) – ekologické balení s čistým matným vzhledem."
           },
           {
-            "title": "Hot melt lepidlo",
+            "title": "HOT MELT lepidlo",
             "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
           },
           {
@@ -1867,14 +1871,14 @@
         "params_values": {
           "carrier": "Papírový nosič (kraft)",
           "thickness": "120 µm",
-          "adhesive": "Hot melt (syntetický kaučuk)",
+          "adhesive": "HOT MELT (syntetický kaučuk)",
           "adhesion": "4,5 N/25 mm",
           "temperature": "−10 až +60 °C",
           "strength": "55 N/25 mm"
         },
         "spec_pills": [
           "Papírový nosič (kraft)",
-          "Hot melt (syntetický kaučuk)",
+          "HOT MELT (syntetický kaučuk)",
           "−10 až +60 °C"
         ],
         "params_labels": {
@@ -2082,7 +2086,7 @@
             "text": "Pevnost v tahu 300 N/25 mm – maximální odolnost ve směru nátahu."
           },
           {
-            "title": "Hot melt lepidlo",
+            "title": "HOT MELT lepidlo",
             "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
           },
           {
@@ -2099,14 +2103,14 @@
         "params_values": {
           "carrier": "MOPP + podélná skelná vlákna",
           "thickness": "130 µm",
-          "adhesive": "Hot melt (syntetický kaučuk)",
+          "adhesive": "HOT MELT (syntetický kaučuk)",
           "adhesion": "4,5 N/25 mm",
           "temperature": "−10 až +60 °C",
           "strength": "300 N/25 mm"
         },
         "spec_pills": [
           "MOPP + podélná skelná vlákna",
-          "Hot melt (syntetický kaučuk)",
+          "HOT MELT (syntetický kaučuk)",
           "−10 až +60 °C"
         ],
         "params_labels": {
@@ -2140,7 +2144,7 @@
             "text": "Pevnost v tahu 320 N/25 mm – odolnost ve všech směrech zatížení."
           },
           {
-            "title": "Hot melt lepidlo",
+            "title": "HOT MELT lepidlo",
             "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
           },
           {
@@ -2157,14 +2161,14 @@
         "params_values": {
           "carrier": "MOPP + křížová skelná vlákna",
           "thickness": "140 µm",
-          "adhesive": "Hot melt",
+          "adhesive": "HOT MELT",
           "adhesion": "4,7 N/25 mm",
           "temperature": "−10 až +60 °C",
           "strength": "320 N/25 mm"
         },
         "spec_pills": [
           "MOPP + křížová skelná vlákna",
-          "Hot melt",
+          "HOT MELT",
           "−10 až +60 °C"
         ],
         "params_labels": {
@@ -2198,7 +2202,7 @@
             "text": "MOPP fólie (100 µm) s prakticky nulovou tažností v podélném směru."
           },
           {
-            "title": "Hot melt lepidlo",
+            "title": "HOT MELT lepidlo",
             "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
           },
           {
@@ -2215,14 +2219,14 @@
         "params_values": {
           "carrier": "MOPP fólie",
           "thickness": "100 µm",
-          "adhesive": "Hot melt",
+          "adhesive": "HOT MELT",
           "adhesion": "4,0 N/25 mm",
           "temperature": "−10 až +60 °C",
           "strength": "250 N/25 mm"
         },
         "spec_pills": [
           "MOPP fólie",
-          "Hot melt",
+          "HOT MELT",
           "−10 až +60 °C"
         ],
         "params_labels": {

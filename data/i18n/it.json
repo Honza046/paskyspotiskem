@@ -76,8 +76,12 @@
     },
     "about": {
       "label": "Chi siamo",
-      "title": "Produttore ceco tradizionale di nastri adesivi stampati",
-      "lead": "Da oltre 30 anni aiutiamo le aziende a imballare le spedizioni in modo sicuro e a costruire un marchio forte direttamente sui materiali di imballaggio. Siamo specializzati nella stampa personalizzata di nastri adesivi.",
+      "title": "Fornitore ceco tradizionale di nastri adesivi",
+      "lead": "Da oltre 30 anni aiutiamo le aziende a imballare le spedizioni in modo sicuro e a costruire un marchio forte direttamente sui materiali di imballaggio. Offriamo nastri adesivi con stampa personalizzata e anche in variante neutra senza stampa.",
+      "body1_prefix": "Il nostro ",
+      "body1_highlight": "moderno stabilimento produttivo",
+      "body1_tooltip": "Non produciamo solo nastri adesivi, ma anche le pellicole stesse, il che ci offre un significativo vantaggio competitivo in caso di crisi delle materie prime.",
+      "body1_suffix": " ci permette di rispondere in modo flessibile alle esigenze sia dei piccoli e-shop sia delle grandi imprese industriali. Puntiamo su una stampa precisa (fino a 8 colori), adesivi premium (HOT MELT e ACRILICO) e consegne rapide in tutta la Repubblica Ceca e nell'Unione europea.",
       "body1": "Il nostro moderno stabilimento ci permette di rispondere in modo flessibile alle esigenze sia dei piccoli e-shop sia delle grandi imprese industriali. Puntiamo su una stampa precisa (fino a 8 colori), adesivi premium (Hot Melt, Acrilico) e consegne rapide in tutta la Repubblica Ceca.",
       "body2": "Grazie a processi certificati ISO 9001 e all'uso di materiali ecologici e sostenibili, siamo un partner affidabile per oltre 300 clienti attivi.",
       "image_alt": "Produzione di nastri adesivi ALFA IN",
@@ -985,7 +989,7 @@
           },
           {
             "title": "Svolgimento silenzioso e strappo facile",
-            "text": "Adesione 3,8 N/25 mm, acrilico silenzioso, strappo facile e resistenza UV (−5 až +60 °C)."
+            "text": "Adesione 3,8 N/25 mm, adesivo acrilico silenzioso, strappo facile e resistenza UV (−5 až +60 °C)."
           }
         ],
         "uses": [
@@ -1028,7 +1032,7 @@
         }
       },
       "bopp-paska-acrylic": {
-        "name": "Nastro BOPP Acrylic",
+        "name": "Nastro BOPP ACRYL",
         "tagline": "Nastro BOPP affidabile con adesivo acrilico e lunga durata.",
         "category_slug": "bopp-pasky",
         "category_title": "Nastri BOPP",
@@ -1202,7 +1206,7 @@
         }
       },
       "bopp-paska-hot-melt": {
-        "name": "Nastro BOPP Hot Melt",
+        "name": "Nastro BOPP HOT MELT",
         "tagline": "Nastro BOPP con adesivo hot melt per un'adesione rapida e resistente.",
         "category_slug": "bopp-pasky",
         "category_title": "Nastri BOPP",
@@ -1267,7 +1271,7 @@
         "benefits": [
           {
             "title": "Super tack (+20% adesione)",
-            "text": "Adesione immediata e tenuta superiore al hot melt standard: consigliato per macchine da imballaggio."
+            "text": "Adesione immediata e tenuta superiore allo HOT MELT standard: consigliato per macchine da imballaggio."
           },
           {
             "title": "Adesivo hot melt",

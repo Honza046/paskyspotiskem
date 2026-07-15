@@ -1,6 +1,8 @@
 /**
  * Top info banner – rotating announcements above site header.
  */
+@import url('perf-lite.css');
+
 :root {
     --info-banner-height: 2.25rem;
 }
@@ -17,27 +19,39 @@ html {
 }
 
 .site-header-shell {
-    max-height: var(--site-header-height, 5.5rem);
-    transition: max-height 0.28s ease;
+    height: var(--site-header-height, 5.5rem);
+    overflow: hidden;
+    flex-shrink: 0;
 }
 
 .site-header-shell:not(.is-collapsed) {
     overflow: visible;
 }
 
-.site-header-shell.is-collapsed {
-    overflow: hidden;
-    max-height: 0;
-}
-
 .site-header-shell > .site-header {
     overflow: visible;
+    transition: transform 0.28s ease;
+    transform: translateY(0);
 }
 
 .site-header-shell.is-collapsed > .site-header {
     overflow: hidden;
     border-bottom-color: transparent;
     pointer-events: none;
+    transform: translateY(-100%);
+}
+
+/* After the hero, reclaim the header slot so content can use full width below the banner. */
+html.site-top-compact .site-header-shell {
+    height: 0;
+}
+
+html.site-top-compact .site-header-shell > .site-header {
+    transform: translateY(-100%);
+}
+
+html.perf-lite .site-header-shell > .site-header {
+    transition: none;
 }
 
 /* Language switcher dropdown must sit above hero / page content */

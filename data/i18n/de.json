@@ -76,8 +76,12 @@
     },
     "about": {
       "label": "Über uns",
-      "title": "Traditioneller tschechischer Hersteller bedruckter Klebebänder",
-      "lead": "Seit mehr als 30 Jahren helfen wir Unternehmen, ihre Sendungen sicher zu verpacken und eine starke Marke direkt auf Verpackungsmaterialien aufzubauen. Wir sind Spezialisten für individuellen Druck auf Klebebändern.",
+      "title": "Traditioneller tschechischer Lieferant von Klebebändern",
+      "lead": "Seit mehr als 30 Jahren helfen wir Unternehmen, ihre Sendungen sicher zu verpacken und eine starke Marke direkt auf Verpackungsmaterialien aufzubauen. Wir bieten Klebebänder mit individuellem Druck sowie neutrale Varianten ohne Druck.",
+      "body1_prefix": "Unsere ",
+      "body1_highlight": "moderne Produktionsstätte",
+      "body1_tooltip": "Wir produzieren nicht nur Klebebänder, sondern auch die Folien selbst – das verschafft uns bei Rohstoffkrisen am Markt einen deutlichen Wettbewerbsvorteil.",
+      "body1_suffix": " ermöglicht es uns, flexibel auf die Bedürfnisse kleiner E-Shops wie auch großer Industrieunternehmen zu reagieren. Wir legen Wert auf präzisen Druck (bis 8 Farben), erstklassige Klebstoffqualität (HOT MELT und ACRYL) und schnelle Lieferung in der gesamten Tschechischen Republik und der Europäischen Union.",
       "body1": "Unsere moderne Produktionsstätte ermöglicht es uns, flexibel auf die Bedürfnisse kleiner E-Shops wie auch großer Industrieunternehmen zu reagieren. Wir legen Wert auf präzisen Druck (bis 8 Farben), erstklassige Klebstoffqualität (Hot Melt, Acryl) und schnelle Lieferung in der gesamten Tschechischen Republik.",
       "body2": "Dank ISO-9001-zertifizierter Prozesse und dem Einsatz ökologischer, nachhaltiger Materialien sind wir ein zuverlässiger Partner für mehr als 300 aktive Abnehmer.",
       "image_alt": "ALFA IN Klebeband-Produktion",
@@ -268,8 +272,8 @@
         "adhesive": {
           "label": "Klebstoff",
           "options": {
-            "hot-melt": "Hot Melt",
-            "acryl": "Acryl"
+            "hot-melt": "HOT MELT",
+            "acryl": "ACRYL"
           }
         },
         "industry": {
@@ -985,7 +989,7 @@
           },
           {
             "title": "Leises Abrollen und leichtes Abreißen",
-            "text": "Klebkraft 3,8 N/25 mm, leiser Acrylklebstoff, Easy-Tear und UV-Beständigkeit (−5 až +60 °C)."
+            "text": "Klebkraft 3,8 N/25 mm, leiser Acrylklebstoff, leichtes Abreißen und UV-Beständigkeit (−5 až +60 °C)."
           }
         ],
         "uses": [
@@ -1028,7 +1032,7 @@
         }
       },
       "bopp-paska-acrylic": {
-        "name": "BOPP-Klebeband Acrylic",
+        "name": "BOPP-Klebeband ACRYL",
         "tagline": "Zuverlässiges BOPP-Klebeband mit Acrylklebstoff und langer Lebensdauer.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP-Klebebänder",
@@ -1202,7 +1206,7 @@
         }
       },
       "bopp-paska-hot-melt": {
-        "name": "BOPP-Klebeband Hot Melt",
+        "name": "BOPP-Klebeband HOT MELT",
         "tagline": "BOPP-Klebeband mit Hot-Melt-Klebstoff für schnelle, feste Haftung.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP-Klebebänder",
@@ -1267,7 +1271,7 @@
         "benefits": [
           {
             "title": "Super-Tack (+20 % Klebkraft)",
-            "text": "Sofortige Klebkraft und höhere Haftung als Standard-Hot-Melt – empfohlen für Verpackungsmaschinen."
+            "text": "Sofortige Haftung und höhere Klebkraft als Standard-HOT MELT – empfohlen für Verpackungsmaschinen."
           },
           {
             "title": "Hot-Melt-Klebstoff",

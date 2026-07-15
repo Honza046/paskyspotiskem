@@ -1,0 +1,127 @@
+/**
+ * Lighter visuals when GPU acceleration is unavailable (SwiftShader / software GL)
+ * or the user prefers reduced motion/transparency. Activated via html.perf-lite.
+ */
+
+html.perf-lite .site-header-shell {
+    transition: none;
+}
+
+html.perf-lite .site-header-shell > .site-header {
+    transition: none;
+}
+
+html.perf-lite .info-banner__message {
+    transition: none;
+    will-change: auto;
+}
+
+html.perf-lite header.site-header,
+html.perf-lite .site-header {
+    transition: none !important;
+}
+
+html.perf-lite .glass--card,
+html.perf-lite .glass--chip,
+html.perf-lite .glass--pill,
+html.perf-lite .glass--menu {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    transform: none !important;
+}
+
+html.perf-lite .glass--card {
+    background: #f1f5f9;
+}
+
+html.perf-lite .glass--chip {
+    background: #f8fafc;
+}
+
+html.perf-lite .glass--pill,
+html.perf-lite .glass--menu {
+    background: #ffffff;
+}
+
+html.perf-lite.dark .glass--card,
+html.perf-lite.dark .glass--chip {
+    background: #334155;
+}
+
+html.perf-lite.dark .glass--pill,
+html.perf-lite.dark .glass--menu {
+    background: #1e293b;
+}
+
+html.perf-lite .backdrop-blur-sm,
+html.perf-lite .backdrop-blur-md,
+html.perf-lite .backdrop-blur-lg {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+}
+
+html.perf-lite .edge-blur-bottom::after {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+}
+
+html.perf-lite .logo-carousel__track {
+    animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+html.perf-lite .logo-carousel__group {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+html.perf-lite .logo-carousel__group[aria-hidden="true"] {
+    display: none;
+}
+
+html.perf-lite .logo-carousel__viewport {
+    -webkit-mask-image: none;
+    mask-image: none;
+    padding: 0;
+}
+
+html.perf-lite .logo-carousel__item:not(.logo-carousel__item--wordmark):not(.logo-carousel__item--kohinoor) img:not(.logo-carousel__mascot),
+html.perf-lite .logo-carousel__item--wordmark img:not(.logo-carousel__mascot) {
+    filter: none !important;
+    opacity: 0.85 !important;
+    transform: none !important;
+    transition: opacity 0.2s ease;
+}
+
+html.perf-lite .logo-carousel__item--kohinoor .logo-carousel__kohinoor-light,
+html.perf-lite .logo-carousel__item--kohinoor .logo-carousel__kohinoor-dark {
+    filter: none !important;
+    opacity: 0.85 !important;
+    transform: none !important;
+}
+
+html.perf-lite .hero-slide {
+    transition: opacity 0.35s ease;
+}
+
+html.perf-lite .hero-dot__fill.is-filling {
+    animation: none !important;
+    width: 100% !important;
+}
+
+html.perf-lite .hero-dot,
+html.perf-lite .dir-tabs__indicator,
+html.perf-lite .glass--card,
+html.perf-lite .glass--chip {
+    transition-duration: 0.15s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .site-header-shell {
+        transition: none;
+    }
+}

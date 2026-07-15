@@ -18,6 +18,22 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / 'scripts'))
+
+from seo import (  # noqa: E402
+    GALLERY_DESCRIPTION,
+    GALLERY_TITLE,
+    HOME_DESCRIPTION,
+    HOME_FAQ,
+    HOME_TITLE,
+    SORTIMENT_DESCRIPTION,
+    SORTIMENT_TITLE,
+    apply_page_seo,
+    breadcrumb_schema,
+    faq_schema,
+    organization_schema,
+    website_schema,
+)
 
 
 def absolutize_html(html: str) -> str:
@@ -79,6 +95,54 @@ def ensure_vercel_analytics(html: str) -> str:
     return html
 
 
+def apply_root_seo(path: Path) -> None:
+    if not path.exists():
+        return
+    name = path.name
+    if name == 'index.html':
+        content = apply_page_seo(
+            path.read_text(encoding='utf-8'),
+            title=HOME_TITLE,
+            description=HOME_DESCRIPTION,
+            path='/',
+            schemas=[
+                organization_schema(),
+                website_schema(),
+                faq_schema(HOME_FAQ),
+            ],
+        )
+    elif name == 'galerie.html':
+        content = apply_page_seo(
+            path.read_text(encoding='utf-8'),
+            title=GALLERY_TITLE,
+            description=GALLERY_DESCRIPTION,
+            path='/galerie',
+            schemas=[
+                breadcrumb_schema([
+                    ('/', 'Domů'),
+                    ('/galerie', 'Galerie'),
+                ]),
+            ],
+        )
+    elif name == 'sortiment.html':
+        content = apply_page_seo(
+            path.read_text(encoding='utf-8'),
+            title=SORTIMENT_TITLE,
+            description=SORTIMENT_DESCRIPTION,
+            path='/sortiment',
+            schemas=[
+                breadcrumb_schema([
+                    ('/', 'Domů'),
+                    ('/sortiment', 'Sortiment'),
+                ]),
+            ],
+        )
+    else:
+        return
+    path.write_text(content, encoding='utf-8')
+    print(f'  seo {path.relative_to(ROOT)}')
+
+
 def patch_file(path: Path) -> None:
     if not path.exists():
         return
@@ -124,6 +188,15 @@ def main() -> int:
 
     for html_path in (ROOT / 'sortiment').rglob('index.html'):
         patch_file(html_path)
+
+    for page in root_pages:
+        apply_root_seo(page)
+    apply_root_seo(sortiment_dir / 'index.html')
+
+    sitemap_script = ROOT / 'scripts' / 'gen_sitemap.py'
+    if sitemap_script.exists():
+        print('  running gen_sitemap.py…')
+        subprocess.run([sys.executable, str(sitemap_script)], cwd=ROOT, check=True)
 
     print('Done.')
     return 0

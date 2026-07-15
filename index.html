@@ -19,9 +19,27 @@
         }
     })();
     </script>
-    <script src="/assets/js/i18n-boot.js?v=3"></script>
-    <meta name="description" content="Pásky s potiskem | Výroba a prodej balicích lepicích pásek s potiskem od ALFA IN a.s.">
-    <title>Domů | Pásky s potiskem</title>
+    <script src="/assets/js/i18n-boot.js?v=4"></script>
+    <meta name="description" content="Výroba a prodej lepicích pásek s potiskem – pásky s logem pro firmy, e-shopy a sklady. BOPP, eko a speciální pásky, potisk až 8 barev, dodání po celé ČR. Nezávazná kalkulace.">
+    <!-- seo:extra -->
+    <link rel="canonical" href="https://www.paskyspotiskem.cz/">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pásky s potiskem">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:title" content="Pásky s potiskem | Lepicí pásky s logem na míru | ALFA IN">
+    <meta property="og:description" content="Výroba a prodej lepicích pásek s potiskem – pásky s logem pro firmy, e-shopy a sklady. BOPP, eko a speciální pásky, potisk až 8 barev, dodání po celé ČR. Nezávazná kalkulace.">
+    <meta property="og:url" content="https://www.paskyspotiskem.cz/">
+    <meta property="og:image" content="https://www.paskyspotiskem.cz/images/slide-pasky-1920x624.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pásky s potiskem | Lepicí pásky s logem na míru | ALFA IN">
+    <meta name="twitter:description" content="Výroba a prodej lepicích pásek s potiskem – pásky s logem pro firmy, e-shopy a sklady. BOPP, eko a speciální pásky, potisk až 8 barev, dodání po celé ČR. Nezávazná kalkulace.">
+    <meta name="twitter:image" content="https://www.paskyspotiskem.cz/images/slide-pasky-1920x624.jpg">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ALFA IN a.s. – Pásky s potiskem","url":"https://www.paskyspotiskem.cz","logo":"https://www.paskyspotiskem.cz/images/logo.svg","description":"Výroba a prodej lepicích pásek s potiskem – pásky s logem pro firmy, e-shopy a sklady. BOPP, eko a speciální pásky, potisk až 8 barev, dodání po celé ČR. Nezávazná kalkulace.","parentOrganization":{"@type":"Organization","name":"ALFA IN a.s.","url":"https://www.alfain.eu/"},"contactPoint":[{"@type":"ContactPoint","telephone":"+420-602-746-017","contactType":"sales","areaServed":"CZ","availableLanguage":["cs","en","de"]}],"sameAs":["https://www.facebook.com/AlfaIncz","https://www.instagram.com/AlfaIncz","https://www.youtube.com/AlfaInas","https://www.alfain.eu/"]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Pásky s potiskem","url":"https://www.paskyspotiskem.cz","description":"Výroba a prodej lepicích pásek s potiskem – pásky s logem pro firmy, e-shopy a sklady. BOPP, eko a speciální pásky, potisk až 8 barev, dodání po celé ČR. Nezávazná kalkulace.","inLanguage":"cs-CZ","publisher":{"@type":"Organization","name":"ALFA IN a.s."}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jaké je minimální množství objednávky pásky s potiskem?","acceptedAnswer":{"@type":"Answer","text":"Standardně od 360 ks na jednu variantu pásky. U větších objednávek získáte dopravu zdarma v rámci ČR."}},{"@type":"Question","name":"Jak dlouho trvá výroba pásky s potiskem?","acceptedAnswer":{"@type":"Answer","text":"Typická dodací lhůta je 3 až 4 týdny od schválení grafického náhledu a objednávky."}},{"@type":"Question","name":"Mohu objednat lepicí pásku i bez potisku?","acceptedAnswer":{"@type":"Answer","text":"Ano. Stejný materiál dodáme i v nepotištěném provedení pro okamžité balení nebo skladové zásoby."}},{"@type":"Question","name":"Jaký je rozdíl mezi HOT MELT a ACRYL lepidlem na páskách?","acceptedAnswer":{"@type":"Answer","text":"HOT MELT rychle a pevně přilne i v chladu. ACRYL je tišší při odvíjení a odolnější vůči UV."}},{"@type":"Question","name":"Dodáváte vzorky lepicích pásek zdarma?","acceptedAnswer":{"@type":"Answer","text":"Ano, vzorek nebo nezávaznou kalkulaci připravíme na vyžádání přes formulář na webu."}}]}</script>
+    <!-- /seo:extra -->
+    <title>Pásky s potiskem | Lepicí pásky s logem na míru | ALFA IN</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +48,7 @@
     <link rel="stylesheet" href="/assets/css/privacy-modal.css">
     <link rel="stylesheet" href="/assets/css/theme-dark.css">
     <link rel="stylesheet" href="/assets/css/faq.css?v=2">
-    <link rel="stylesheet" href="/assets/css/info-banner.css?v=5">
+    <link rel="stylesheet" href="/assets/css/info-banner.css?v=7">
     <link rel="stylesheet" href="/assets/css/inquiry-dropdown.css?v=4">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -53,8 +71,11 @@
         #uvod {
             background-color: #0f172a;
             height: var(--hero-height, calc(100svh - var(--site-top-height, 8rem)));
+            min-height: var(--hero-height, calc(100svh - var(--site-top-height, 8rem)));
+            max-height: var(--hero-height, calc(100svh - var(--site-top-height, 8rem)));
             overflow: hidden;
-            contain: layout paint;
+            contain: layout paint style;
+            isolation: isolate;
             /* Cover sub-pixel gap above the next (white) section after layout shifts */
             box-shadow: 0 2px 0 0 #0f172a;
         }
@@ -62,12 +83,25 @@
         .hero-slide {
             overflow: hidden;
         }
+        #hero-slides {
+            contain: strict;
+        }
+        #hero-slides,
+        .hero-slide,
+        .hero-slide__img {
+            transform: none !important;
+            will-change: auto;
+        }
         .hero-slide__img {
             display: block;
             width: 100%;
             height: 100%;
+            min-width: 100%;
+            min-height: 100%;
             object-fit: cover;
             object-position: center;
+            max-width: none;
+            max-height: none;
         }
         .hero-inner {
             padding-bottom: 3.5rem;
@@ -162,7 +196,7 @@
         <p class="info-banner__message">Srpen: výroba a logistika mají 3týdenní výluku. Objednávky s dodáním před výlukou zašlete nejpozději do <strong>10. 7. 2026</strong>.</p>
     </div>
 </div>
-<header class="site-header border-b border-slate-100 bg-white/90 backdrop-blur-md transition-transform duration-300 ease-in-out will-change-transform">
+<header class="site-header border-b border-slate-100 bg-white/90 transition-transform duration-300 ease-in-out">
     <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4">
         <a href="/" class="flex shrink-0 items-center gap-1.5">
             <img src="/images/logo.svg" width="160" height="74" alt="Pásky s potiskem" data-i18n-attr="alt:meta.logo_alt" class="h-12 w-auto lg:h-14">
@@ -203,13 +237,13 @@
 <section id="uvod" class="relative overflow-hidden">
     <div id="hero-slides" class="absolute inset-0">
         <div class="hero-slide is-active absolute inset-0">
-            <img src="/images/slide-pasky-1920x624.jpg" alt="" class="hero-slide__img" width="1920" height="624" decoding="async" fetchpriority="high">
+            <img src="/images/slide-pasky-1920x624.jpg" alt="Lepicí pásky s potiskem – výroba ALFA IN" class="hero-slide__img" width="1920" height="624" decoding="async" fetchpriority="high">
         </div>
         <div class="hero-slide absolute inset-0">
-            <img src="/images/slide22-1920x624.jpg" alt="" class="hero-slide__img" width="1920" height="624" decoding="async">
+            <img src="/images/slide22-1920x624.jpg" alt="Balicí pásky s potiskem pro firmy a e-shopy" class="hero-slide__img" width="1920" height="624" decoding="async">
         </div>
         <div class="hero-slide absolute inset-0">
-            <img src="/images/slide3-1920x624.jpg" alt="" class="hero-slide__img" width="1920" height="624" decoding="async">
+            <img src="/images/slide3-1920x624.jpg" alt="Vzorky lepicích pásek s potiskem zdarma" class="hero-slide__img" width="1920" height="624" decoding="async">
         </div>
     </div>
     <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent"></div>
@@ -218,7 +252,8 @@
         <div class="max-w-2xl">
             <div id="hero-content">
                 <p class="mb-4 inline-flex items-center rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1.5 text-sm font-semibold text-orange-300" data-i18n="home.hero.badge">ISO 9001 · Přímo od výrobce</p>
-                <h1 id="hero-title" class="gradient-heading text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl" style="line-height:1.12;">LEPICÍ PÁSKY SE SPODNÍM TISKEM</h1>
+                <h1 class="gradient-heading text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl" style="line-height:1.12;">Pásky s potiskem</h1>
+                <p id="hero-headline" class="gradient-heading mt-3 text-2xl font-bold tracking-tight text-white sm:text-3xl" style="line-height:1.15;">Lepicí pásky se spodním tiskem</p>
                 <p id="hero-subtitle" class="mt-3 text-lg leading-relaxed text-slate-300 sm:text-xl">Spolehlivé BOPP pásky s tiskem chráněným pod folií i eko varianty pro udržitelné balení.</p>
             </div>
             <div class="mt-4 flex flex-wrap gap-4">
@@ -238,10 +273,10 @@
     <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 py-16 md:py-24 lg:grid-cols-2">
         <div>
             <span class="text-xs font-bold uppercase tracking-widest text-orange-600" data-i18n="home.about.label">O nás</span>
-            <h2 class="mb-6 mt-2 text-3xl font-bold text-slate-900 md:text-4xl" data-i18n="home.about.title">Tradiční český dodavatel lepících pásek s potiskem</h2>
-            <p class="mb-4 text-lg font-medium text-slate-700">Již více než 30 let pomáháme firmám bezpečně balit jejich zásilky a budovat silnou značku přímo na balicích materiálech. Jsme specialisté na zakázkový potisk lepicích pásek.</p>
-            <p class="mb-6 text-base leading-relaxed text-slate-600">Naše <span tabindex="0" class="group relative inline cursor-help font-semibold italic text-orange-600 outline-none">vertikálně integrované výrobní zázemí<span class="pointer-events-none absolute bottom-full left-0 z-30 mb-2 w-72 rounded-xl bg-slate-900 px-4 py-3 text-sm font-normal not-italic leading-snug text-white opacity-0 shadow-xl transition-opacity duration-200 group-hover:opacity-100 group-focus:opacity-100 sm:w-80">Nevyrábíme totiž pouze lepicí pásky, ale přímo i samotné fólie, což nám v případě surovinové krize na trhu dává značnou konkurenční výhodu.<span class="absolute left-8 top-full -translate-x-1/2 border-8 border-transparent border-t-slate-900"></span></span></span> nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (Hot Melt, Akryl) a rychlém doručení po celé České republice i Evropské unii.</p>
-            <p class="text-base leading-relaxed text-slate-600">Díky certifikovaným procesům ISO 9001 a používání ekologicky udržitelných materiálů jsme stabilním partnerem pro více než 300 aktivních odběratelů.</p>
+            <h2 class="mb-6 mt-2 text-3xl font-bold text-slate-900 md:text-4xl" data-i18n="home.about.title">Tradiční český dodavatel pásek s potiskem i bez</h2>
+            <p class="mb-4 text-lg font-medium text-slate-700" data-i18n="home.about.lead">Již více než 30 let pomáháme firmám bezpečně balit jejich zásilky a budovat silnou značku přímo na balicích materiálech. Nabízíme lepicí pásky s vlastním potiskem i v neutrální variantě bez potisku.</p>
+            <p class="mb-6 text-base leading-relaxed text-slate-600" data-about-body1>Naše <span tabindex="0" class="group relative inline cursor-help font-semibold italic text-orange-600 outline-none">moderní výrobní zázemí<span class="pointer-events-none absolute bottom-full left-0 z-30 mb-2 w-72 rounded-xl bg-slate-900 px-4 py-3 text-sm font-normal not-italic leading-snug text-white opacity-0 shadow-xl transition-opacity duration-200 group-hover:opacity-100 group-focus:opacity-100 sm:w-80">Nevyrábíme totiž pouze lepicí pásky, ale přímo i samotné fólie, což nám v případě surovinové krize na trhu dává značnou konkurenční výhodu.<span class="absolute left-8 top-full -translate-x-1/2 border-8 border-transparent border-t-slate-900"></span></span></span> nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (HOT MELT a ACRYL) a rychlém doručení po celé České republice i Evropské unii.</p>
+            <p class="text-base leading-relaxed text-slate-600" data-i18n="home.about.body2">Díky certifikovaným procesům ISO 9001 a používání ekologicky udržitelných materiálů jsme stabilním partnerem pro více než 300 aktivních odběratelů.</p>
         </div>
         <div class="relative overflow-hidden rounded-3xl shadow-xl">
             <img src="/images/about-team.png" alt="Tým ALFA IN – zástupci společnosti" class="block aspect-[3/2] w-full object-cover">
@@ -375,7 +410,7 @@
         <article class="glass glass--card flex h-full flex-col rounded-2xl p-8">
             <span class="card-emoji mb-5 block text-2xl leading-none" aria-hidden="true">🍃</span>
             <h3 class="mb-3 text-lg font-bold text-slate-900">Ekologická lepidla bez rozpouštědel</h3>
-            <p class="text-sm leading-relaxed text-slate-600">Používáme výhradně lepidla šetrná k životnímu prostředí. Akrylová lepidla jsou vyrobena na vodní bázi a Hot Melt technologie funguje bez použití jakýchkoliv chemických rozpouštědel či syntetických příměsí.</p>
+            <p class="text-sm leading-relaxed text-slate-600">Používáme výhradně lepidla šetrná k životnímu prostředí. Akrylová lepidla jsou vyrobena na vodní bázi a HOT MELT technologie funguje bez použití jakýchkoliv chemických rozpouštědel či syntetických příměsí.</p>
         </article>
 
         <article class="glass glass--card flex h-full flex-col rounded-2xl p-8">
@@ -874,26 +909,26 @@
 (function () {
     const slides = [
         {
-            title: 'LEPICÍ PÁSKY SE SPODNÍM TISKEM',
+            headline: 'Lepicí pásky se spodním tiskem',
             subtitle: 'Spolehlivé BOPP pásky s tiskem chráněným pod folií i eko varianty pro udržitelné balení.',
             ctaPrimary: { text: 'Prohlédnout nabídku', href: '#nabidka' },
             ctaSecondary: { text: 'Nezávazná kalkulace', href: '#gf_1' },
         },
         {
-            title: 'PROČ SI VYBRAT NÁS?',
+            headline: 'Proč si vybrat nás?',
             subtitle: 'Více než 20 let zkušeností a spolupráce s e-shopy i průmyslem. Spolehlivost, rychlé dodání a individuální přístup ke každé zakázce.',
             ctaPrimary: { text: 'Prohlédnout nabídku', href: '#nabidka' },
             ctaSecondary: { text: 'Nezávazná kalkulace', href: '#gf_1' },
         },
         {
-            title: 'OTESTUJTE NAŠI KVALITU VE SVÉM PROVOZU',
+            headline: 'Otestujte naši kvalitu ve svém provozu',
             subtitle: 'Bezplatný vzorek nebo nezávazná kalkulace na míru. Přesvědčte se o odolnosti a pevnosti lepidla ještě před objednávkou.',
             ctaPrimary: { text: 'Vyžádat vzorky', href: '#gf_1', inquirySample: true },
             ctaSecondary: { text: 'Nezávazná kalkulace', href: '#gf_1' },
         },
     ];
     const els = document.querySelectorAll('.hero-slide');
-    const title = document.getElementById('hero-title');
+    const headline = document.getElementById('hero-headline');
     const subtitle = document.getElementById('hero-subtitle');
     const ctaPrimary = document.getElementById('hero-cta-primary');
     const ctaSecondary = document.getElementById('hero-cta-secondary');
@@ -919,7 +954,7 @@
         current = (i + slides.length) % slides.length;
         const slide = slides[current];
         els.forEach(function (el, idx) { el.classList.toggle('is-active', idx === current); });
-        title.textContent = slide.title;
+        headline.textContent = slide.headline;
         subtitle.textContent = slide.subtitle;
         if (ctaPrimary && slide.ctaPrimary) {
             ctaPrimary.textContent = slide.ctaPrimary.text;
@@ -1287,14 +1322,14 @@
 <script src="/assets/js/faq.js?v=2"></script>
 <script src="/assets/js/inquiry-dropdown.js"></script>
 <script src="/assets/js/i18n.js?v=13"></script>
-<script src="/assets/js/i18n-pages.js?v=8"></script>
+<script src="/assets/js/i18n-pages.js?v=9"></script>
 <script src="/assets/js/inquiry-material-picker.js?v=3"></script>
 <script src="/assets/js/inquiry-form.js?v=3"></script>
 <script src="/assets/js/nav-active.js"></script>
 <link rel="stylesheet" href="/assets/css/footer-credit.css?v=3">
 <script src="/assets/js/footer-credit.js?v=3"></script>
 <script src="/assets/js/mobile-nav.js"></script>
-<script src="/assets/js/header-scroll.js?v=8"></script>
+<script src="/assets/js/header-scroll.js?v=10"></script>
 <script src="/assets/js/info-banner.js"></script>
 <script src="/assets/js/privacy-modal.js"></script>
 <script src="/assets/js/theme-toggle.js"></script>

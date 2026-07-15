@@ -29,6 +29,30 @@
         if (el && typeof html === 'string') el.innerHTML = html;
     }
 
+    function escHtml(value) {
+        return String(value)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;');
+    }
+
+    function renderAboutBody1(p, about) {
+        if (!p || !about) return;
+        if (about.body1_highlight && about.body1_tooltip) {
+            p.innerHTML =
+                escHtml(about.body1_prefix || '') +
+                '<span tabindex="0" class="group relative inline cursor-help font-semibold italic text-orange-600 outline-none">' +
+                escHtml(about.body1_highlight) +
+                '<span class="pointer-events-none absolute bottom-full left-0 z-30 mb-2 w-72 rounded-xl bg-slate-900 px-4 py-3 text-sm font-normal not-italic leading-snug text-white opacity-0 shadow-xl transition-opacity duration-200 group-hover:opacity-100 group-focus:opacity-100 sm:w-80">' +
+                escHtml(about.body1_tooltip) +
+                '<span class="absolute left-8 top-full -translate-x-1/2 border-8 border-transparent border-t-slate-900"></span></span></span>' +
+                escHtml(about.body1_suffix || '');
+            return;
+        }
+        if (about.body1) setText(p, about.body1);
+    }
+
     function setCtaLabel(el, label) {
         if (!el || !label) return;
         var svg = el.querySelector('svg');
@@ -680,7 +704,7 @@
                 if (textCol) {
                     var paras = textCol.querySelectorAll('p');
                     if (paras[0] && about.lead) setText(paras[0], about.lead);
-                    if (paras[1] && about.body1) setText(paras[1], about.body1);
+                    if (paras[1]) renderAboutBody1(paras[1] || textCol.querySelector('[data-about-body1]'), about);
                     if (paras[2] && about.body2) setText(paras[2], about.body2);
                 }
                 var teamOverlay = aboutSection.querySelector('.absolute.bottom-4');

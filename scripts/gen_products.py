@@ -1,7 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Generate sortiment product data (PHP) + static preview pages."""
-import html, re, unicodedata, urllib.parse, glob, os
+import html, re, unicodedata, urllib.parse, glob, os, sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from seo import (
+    SORTIMENT_DESCRIPTION,
+    SORTIMENT_TITLE,
+    apply_page_seo,
+    breadcrumb_schema,
+    category_meta_description,
+    page_title,
+    product_meta_description,
+    product_schema,
+)
 
 def esc(s): return html.escape(s, quote=True)
 def url(p): return '/' + urllib.parse.quote(p)
@@ -29,7 +41,7 @@ CATS = [
   "apps":["Firmy s ESG a udržitelnými cíli","Zelené balení pro e-shopy","Cirkulární obalové procesy","Budování zodpovědné značky"]},
  {"title":"BOPP pásky","cat":"bopp-pasky","cover":"BOPP Tapes/BOPP_Cover.webp",
   "description":"Nejrozšířenější průmyslové balicí pásky z biaxiálně orientovaného polypropylenu. Vynikají skvělou pevností v tahu a dlouhou životností.",
-  "intro":"BOPP pásky jsou standardem pro každodenní balení ve výrobě, logistice i e-commerce. Fólie z biaxiálně orientovaného polypropylenu nabízí vynikající poměr ceny a výkonu, dostupnost v akrylovém i hot melt provedení a širokou škálu šířek a barev.",
+  "intro":"BOPP pásky jsou standardem pro každodenní balení ve výrobě, logistice i e-commerce. Fólie z biaxiálně orientovaného polypropylenu nabízí vynikající poměr ceny a výkonu, dostupnost v akrylovém i HOT MELT provedení a širokou škálu šířek a barev.",
   "properties":[("Vysoká pevnost v tahu","Odolná fólie, která se při balení nepřetrhne ani pod napětím."),("ACRYL i HOT MELT","Volba lepidla podle prostředí, tiché odvíjení, nebo rychlé přilnutí za chladu."),("Dlouhá životnost","Odolnost proti UV a stárnutí pro dlouhodobé skladování.")],
   "apps":["Standardní uzavírání kartonů","Automatické balicí stroje","Expedice a skladová logistika","Potisk firemním logem a informacemi"]},
  {"title":"BOPET pásky","cat":"bopet-pasky","cover":"BOPET Tapes/BOPET_Cover.webp",
@@ -79,19 +91,19 @@ def P(name, image, tagline, nosic, tl, lep, pril, temp, pev):
 
 PRODUCTS = {
  "papirove-pasky":[
-   P("Papírová páska KH80","Papírové Pásky/KH80.jpg","Silná papírová páska s hot melt lepidlem pro spolehlivé uzavírání kartonů.","Papírový nosič (kraft)","120 µm","Hot melt (syntetický kaučuk)","4,5 N/25 mm","−10 až +60 °C","55 N/25 mm"),
+   P("Papírová páska KH80","Papírové Pásky/KH80.jpg","Silná papírová páska s HOT MELT lepidlem pro spolehlivé uzavírání kartonů.","Papírový nosič (kraft)","120 µm","HOT MELT (syntetický kaučuk)","4,5 N/25 mm","−10 až +60 °C","55 N/25 mm"),
    P("Papírová páska KS165","Papírové Pásky/KS165.jpg","Extra pevná papírová páska s kaučukovým lepidlem pro náročné balení.","Papírový nosič (kraft)","150 µm","Kaučukové (solvent)","5,5 N/25 mm","−20 až +70 °C","70 N/25 mm"),
    P("Papírová páska C660","Papírové Pásky/c660.jpg","Ekologická papírová páska s akrylovým lepidlem a čistým odvíjením.","Papírový nosič","100 µm","Akrylové (disperzní)","3,8 N/25 mm","−5 až +60 °C","45 N/25 mm"),
    P("Papírová páska C680","Papírové Pásky/c680.jpg","Univerzální papírová páska s vysokou lepivostí na recyklovaný karton.","Papírový nosič","115 µm","Kaučukové","4,2 N/25 mm","−10 až +60 °C","50 N/25 mm"),
    P("Papírová páska C680R","Papírové Pásky/c680r.jpeg","Papírová páska z recyklovaného papíru pro udržitelné balení.","Recyklovaný papír","115 µm","Kaučukové","4,0 N/25 mm","−10 až +60 °C","48 N/25 mm"),
    P("Papírová páska C680 RT","Papírové Pásky/c680RT.jpeg","Odolná papírová páska s vylepšenou přilnavostí pro těžší zásilky.","Papírový nosič","120 µm","Kaučukové","4,3 N/25 mm","−10 až +65 °C","52 N/25 mm"),
-   P("Papírová páska C690","Papírové Pásky/c690.jpg","Prémiová kraftová páska s hot melt lepidlem a matným povrchem.","Papírový nosič (kraft)","130 µm","Hot melt","4,8 N/25 mm","−10 až +70 °C","60 N/25 mm"),
+   P("Papírová páska C690","Papírové Pásky/c690.jpg","Prémiová kraftová páska s HOT MELT lepidlem a matným povrchem.","Papírový nosič (kraft)","130 µm","HOT MELT","4,8 N/25 mm","−10 až +70 °C","60 N/25 mm"),
  ],
  "bopp-pasky":[
-   P("BOPP páska Acrylic","BOPP Tapes/BOPPACRYLIC.jpeg","Spolehlivá BOPP páska s akrylovým lepidlem a dlouhou životností.","BOPP fólie","45 µm","Akrylové (vodní disperze)","2,8 N/25 mm","−5 až +60 °C","45 N/25 mm"),
-   P("BOPP páska Hot Melt","BOPP Tapes/BOPPHOTMELT.jpeg","BOPP páska s hot melt lepidlem pro rychlé a pevné přilnutí.","BOPP fólie","40 µm","Hot melt (syntetický kaučuk)","3,5 N/25 mm","0 až +50 °C","42 N/25 mm"),
+   P("BOPP páska ACRYL","BOPP Tapes/BOPPACRYLIC.jpeg","Spolehlivá BOPP páska s akrylovým lepidlem a dlouhou životností.","BOPP fólie","45 µm","Akrylové (vodní disperze)","2,8 N/25 mm","−5 až +60 °C","45 N/25 mm"),
+   P("BOPP páska HOT MELT","BOPP Tapes/BOPPHOTMELT.jpeg","BOPP páska s HOT MELT lepidlem pro rychlé a pevné přilnutí.","BOPP fólie","40 µm","HOT MELT (syntetický kaučuk)","3,5 N/25 mm","0 až +50 °C","42 N/25 mm"),
    P("BOPP páska EXTRA GLUE+","BOPP Tapes/BOPPACRYLIC.jpeg","Akrylová BOPP páska se zvýšenou vrstvou lepidla (+33 %) pro náročné povrchy a recyklovaný karton.","BOPP fólie","40 µm","Akrylové (zvýšená vrstva +33 %)","4,0 N/25 mm","−5 až +60 °C","45 N/25 mm"),
-   P("BOPP páska TACK+","BOPP Tapes/BOPPHOTMELT1.jpg","Hot melt BOPP páska s vyšší přilnavostí (+20 %) a super tack pro balicí stroje a recyklovaný karton.","BOPP fólie","40 µm","Hot melt (super tack, +20 %)","4,2 N/25 mm","0 až +55 °C","42 N/25 mm"),
+   P("BOPP páska TACK+","BOPP Tapes/BOPPHOTMELT1.jpg","HOT MELT BOPP páska s vyšší přilnavostí (+20 %) a super tack pro balicí stroje a recyklovaný karton.","BOPP fólie","40 µm","HOT MELT (super tack, +20 %)","4,2 N/25 mm","0 až +55 °C","42 N/25 mm"),
    P("BOPP páska Evergreen","BOPP Tapes/EVERGREEN.jpg","Barevná BOPP páska pro značení a vizuální odlišení zásilek.","BOPP fólie (barevná)","45 µm","Akrylové","3,0 N/25 mm","−5 až +60 °C","46 N/25 mm"),
  ],
  "bopet-pasky":[
@@ -106,11 +118,11 @@ PRODUCTS = {
    P("Textilní páska NU","Textilní Lepící Pásky/NU.jpg","Univerzální textilní páska pro rychlé svazování a fixaci.","Textilní výztuž + PE laminát","220 µm","Kaučukové","5,5 N/25 mm","−10 až +65 °C","110 N/25 mm"),
  ],
  "vyztuzene-pasky":[
-   P("Vyztužená páska RMPP32","Vyztužené Pásky/rmpp32.jpg","Vyztužená páska se skelnými vlákny pro fixaci těžkých břemen.","MOPP + podélná skelná vlákna","130 µm","Hot melt (syntetický kaučuk)","4,5 N/25 mm","−10 až +60 °C","300 N/25 mm"),
-   P("Vyztužená páska RTPP32","Vyztužené Pásky/rtpp32.jpg","Křížově vyztužená páska pro maximální pevnost ve všech směrech.","MOPP + křížová skelná vlákna","140 µm","Hot melt","4,7 N/25 mm","−10 až +60 °C","320 N/25 mm"),
+   P("Vyztužená páska RMPP32","Vyztužené Pásky/rmpp32.jpg","Vyztužená páska se skelnými vlákny pro fixaci těžkých břemen.","MOPP + podélná skelná vlákna","130 µm","HOT MELT (syntetický kaučuk)","4,5 N/25 mm","−10 až +60 °C","300 N/25 mm"),
+   P("Vyztužená páska RTPP32","Vyztužené Pásky/rtpp32.jpg","Křížově vyztužená páska pro maximální pevnost ve všech směrech.","MOPP + křížová skelná vlákna","140 µm","HOT MELT","4,7 N/25 mm","−10 až +60 °C","320 N/25 mm"),
  ],
  "mopp-pasky":[
-   P("MOPP páska S45-50","MOPP Pásky/s45-50.jpg","Monoaxiální MOPP páska s extrémní pevností a nulovou tažností.","MOPP fólie","100 µm","Hot melt","4,0 N/25 mm","−10 až +60 °C","250 N/25 mm"),
+   P("MOPP páska S45-50","MOPP Pásky/s45-50.jpg","Monoaxiální MOPP páska s extrémní pevností a nulovou tažností.","MOPP fólie","100 µm","HOT MELT","4,0 N/25 mm","−10 až +60 °C","250 N/25 mm"),
  ],
  "odstranitelne-pasky":[
    P("Odstranitelná páska R28-32","Odstranitelné Pásky/r28-32.jpg","Odstranitelná páska, která po odlepení nezanechá žádné stopy.","BOPP fólie","50 µm","Odstranitelné akrylové","1,5 N/25 mm","−5 až +50 °C","40 N/25 mm"),
@@ -147,8 +159,8 @@ TAGMAP = {
  "Papírová páska C680R":["ekologicke","rucni"],
  "Papírová páska C680 RT":["ekologicke","rucni","stroje"],
  "Papírová páska C690":["ekologicke","rucni"],
- "BOPP páska Acrylic":["tiche","rucni","stroje"],
- "BOPP páska Hot Melt":["rucni","stroje"],
+ "BOPP páska ACRYL":["tiche","rucni","stroje"],
+ "BOPP páska HOT MELT":["rucni","stroje"],
  "BOPP páska EXTRA GLUE+":["tiche","rucni","stroje"],
  "BOPP páska TACK+":["rucni","stroje"],
  "BOPP páska Evergreen":["mrazuvzdorne","stroje"],
@@ -180,10 +192,15 @@ TAGMAP = {
 for k in PRODUCTS:
     PRODUCTS[k] = sorted(PRODUCTS[k], key=lambda p: p["name"])
 
+SLUG_OVERRIDES = {
+    "BOPP páska ACRYL": "bopp-paska-acrylic",
+    "BOPP páska HOT MELT": "bopp-paska-hot-melt",
+}
+
 # assign slugs + tags
 for cat in CATS:
     for p in PRODUCTS[cat["cat"]]:
-        p["slug"]=slugify(p["name"])
+        p["slug"] = SLUG_OVERRIDES.get(p["name"], slugify(p["name"]))
         p["tags"]=TAGMAP.get(p["name"],[])
 
 def _adhesive_benefit(lepidlo):
@@ -195,7 +212,7 @@ def _adhesive_benefit(lepidlo):
         )
     if "hot melt" in l:
         return (
-            "Hot melt lepidlo",
+            "HOT MELT lepidlo",
             "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení.",
         )
     if "kaučuk" in l or "solvent" in l:
@@ -233,7 +250,7 @@ def product_benefits(cat_slug, p):
             b3 = ("Teplotní rozsah " + temp, f"Pevnost v tahu {pevnost} pro náročnější udržitelné balení ve skladu i expedici.")
         elif p["name"] == "Udržitelná páska POLY+":
             b1 = ("Ekologická alternativa k PVC", "Matná BOPP fólie 35 µm bez chloru a rozpouštědel – vhodná náhrada vinylových pásek.")
-            b3 = ("Tiché odvíjení a snadné trhání", f"Přilnavost {pril}, low-noise acrylic, easy tear a UV odolnost ({temp}).")
+            b3 = ("Tiché odvíjení a snadné trhání", f"Přilnavost {pril}, nehlučné akrylové lepidlo, snadné tržení a UV odolnost ({temp}).")
         elif "papír" in nl or "fsc" in nl:
             b1 = ("Bezplastový papírový nosič", "Plně recyklovatelné balení – páska putuje spolu s kartonem bez oddělování.")
             b3 = ("Teplotní rozsah " + temp, f"Pevnost v tahu {pevnost} pro každodenní provoz skladu i expedice.")
@@ -245,7 +262,7 @@ def product_benefits(cat_slug, p):
             b1 = ("Zvýšená vrstva lepidla (+33 %)", "Vysoká přilnavost i na recyklovaném kartonu, prašných a nerovných površích.")
             b3 = ("Tiché odvíjení a UV odolnost", f"Přilnavost {pril} s nízkou hlučností – spolehlivý výkon ve skladu ({temp}).")
         elif p["name"] == "BOPP páska TACK+":
-            b1 = ("Super tack (+20 % přilnavosti)", "Okamžitá přilnavost a vyšší drživost než standardní hot melt – doporučeno pro balicí stroje.")
+            b1 = ("Super tack (+20 % přilnavosti)", "Okamžitá přilnavost a vyšší drživost než standardní HOT MELT – doporučeno pro balicí stroje.")
             b3 = ("Snadné odvíjení pro stroje", f"Přilnavost {pril} na všech typech kartonů včetně recyklovaných ({temp}).")
         else:
             b1 = (f"Pevnost v tahu {pevnost}", f"BOPP fólie o tloušťce {tl} vydrží napětí při balení i při dlouhodobém skladování.")
@@ -607,9 +624,21 @@ def product_detail_image_cls(cat_slug):
         return 'h-[360px] w-auto max-w-none scale-[1.35] ' + base + ' sm:h-[440px] sm:scale-[1.4]'
     return 'h-[360px] w-full ' + base + ' sm:h-[440px]'
 
-def page(title, main):
-    p=header+main+footer
-    return p.replace('<title>Sortiment | Pásky s potiskem</title>', '<title>%s | Pásky s potiskem</title>'%esc(title))
+def page(title, description, path, main, schemas=None, og_image=None, og_type='website'):
+    p = header + main + footer
+    full_title = page_title(title)
+    image = og_image or '/images/slide-pasky-1920x624.jpg'
+    if image and not image.startswith('/'):
+        image = '/' + image
+    return apply_page_seo(
+        p,
+        title=full_title,
+        description=description,
+        path=path,
+        og_type=og_type,
+        og_image=image,
+        schemas=schemas,
+    )
 
 # ---------------------------------------------------------------------------
 # 2) Category pages (product cards link to product detail)
@@ -695,7 +724,20 @@ for cat in CATS:
 
 '''%(esc(cat["title"]),esc(cat["title"]),esc(cat["intro"]),esc(cat_cta[0]),props,cards,apps,BACK,esc(cat_cta[1]))
     os.makedirs("sortiment/%s"%cat["cat"],exist_ok=True)
-    open("sortiment/%s/index.html"%cat["cat"],"w").write(page(cat["title"],main))
+    cat_path = f'/sortiment/{cat["cat"]}'
+    cat_desc = category_meta_description(cat['title'], cat['description'])
+    cat_schemas = [
+        breadcrumb_schema([
+            ('/', 'Domů'),
+            ('/sortiment', 'Sortiment'),
+            (cat_path, cat['title']),
+        ]),
+    ]
+    open("sortiment/%s/index.html"%cat["cat"],"w").write(page(
+        cat["title"], cat_desc, cat_path, main,
+        schemas=cat_schemas,
+        og_image=cat['cover'],
+    ))
 print("rebuilt %d category pages"%len(CATS))
 
 # ---------------------------------------------------------------------------
@@ -803,11 +845,41 @@ for cat in CATS:
      PRODUCT_BOTTOM_NOTE,
      cat["cat"],BACK,esc(cat["title"]),esc(cta['bottom']))
         os.makedirs("sortiment/%s/%s"%(cat["cat"],p["slug"]),exist_ok=True)
-        open("sortiment/%s/%s/index.html"%(cat["cat"],p["slug"]),"w").write(page(p["name"],main))
+        prod_path = f'/sortiment/{cat["cat"]}/{p["slug"]}'
+        prod_desc = product_meta_description(p['name'], p['tagline'])
+        prod_schemas = [
+            breadcrumb_schema([
+                ('/', 'Domů'),
+                ('/sortiment', 'Sortiment'),
+                (f'/sortiment/{cat["cat"]}', cat['title']),
+                (prod_path, p['name']),
+            ]),
+            product_schema(p['name'], p['tagline'], prod_path, p['image']),
+        ]
+        open("sortiment/%s/%s/index.html"%(cat["cat"],p["slug"]),"w").write(page(
+            p["name"], prod_desc, prod_path, main,
+            schemas=prod_schemas,
+            og_image=p['image'],
+            og_type='product',
+        ))
         n+=1
 print("generated %d product detail pages"%n)
 print("product JSON ready (%d items)"%len(PRODUCT_JSON_ITEMS))
 
 import shutil
+_sortiment_final = open("sortiment.html", encoding="utf-8").read()
+_sortiment_final = apply_page_seo(
+    _sortiment_final,
+    title=SORTIMENT_TITLE,
+    description=SORTIMENT_DESCRIPTION,
+    path='/sortiment',
+    schemas=[
+        breadcrumb_schema([
+            ('/', 'Domů'),
+            ('/sortiment', 'Sortiment'),
+        ]),
+    ],
+)
+open("sortiment.html", "w", encoding="utf-8").write(_sortiment_final)
 shutil.copy2("sortiment.html", "sortiment/index.html")
 print("copied sortiment.html → sortiment/index.html")

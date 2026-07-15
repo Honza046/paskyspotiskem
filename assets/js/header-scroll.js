@@ -27,6 +27,8 @@
 
     var isHomeHero = !!document.getElementById('uvod');
     var fullSiteTopHeight = 0;
+    var lockedHeroHeight = 0;
+    var lastLayoutWidth = 0;
     var lastY = 0;
     var ticking = false;
     var hidden = false;
@@ -42,6 +44,9 @@
 
     document.documentElement.style.scrollBehavior = 'auto';
     document.documentElement.style.overscrollBehaviorY = 'none';
+    if (isHomeHero) {
+        document.documentElement.classList.add('home-hero');
+    }
 
     function closeMobileNav() {
         var mobileNav = document.getElementById('mobile-nav');
@@ -83,32 +88,66 @@
         document.documentElement.style.setProperty('--site-top-height', height + 'px');
     }
 
-    /** Lock hero block height – recalc when site-top size changes (i18n banner text, etc.). */
-    function lockHeroLayout() {
+    /** Lock hero block height once – collapsing header must not resize/zoom hero photos. */
+    function lockHeroLayout(force) {
         var uvod = document.getElementById('uvod');
         if (!uvod) {
             return;
         }
+
+        var layoutWidth = window.innerWidth;
+        if (!force && lockedHeroHeight > 0 && layoutWidth === lastLayoutWidth) {
+            return;
+        }
+
         var siteTop = document.querySelector('.site-top');
         if (!siteTop) {
             return;
         }
-        var topOffset = siteTop.offsetHeight;
-        var viewportH = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+
+        if (isHomeHero && fullSiteTopHeight <= 0) {
+            measureFullSiteTopHeight();
+        }
+
+        var topOffset = isHomeHero && fullSiteTopHeight > 0
+            ? fullSiteTopHeight
+            : siteTop.offsetHeight;
+        var viewportH = window.innerHeight;
         var heroH = Math.max(320, Math.ceil(viewportH - topOffset));
+
+        lockedHeroHeight = heroH;
+        lastLayoutWidth = layoutWidth;
         document.documentElement.style.setProperty('--hero-top-offset', topOffset + 'px');
         document.documentElement.style.setProperty('--hero-height', heroH + 'px');
+    }
+
+    function syncSiteTopCompact(scrollY) {
+        if (!isHomeHero) {
+            return;
+        }
+        var uvod = document.getElementById('uvod');
+        if (!uvod) {
+            return;
+        }
+        var heroEnd = uvod.offsetTop + uvod.offsetHeight;
+        document.documentElement.classList.toggle('site-top-compact', scrollY > heroEnd - 24);
     }
 
     var resizeTimer;
     function onWindowResize() {
         if (isHomeHero) {
+            fullSiteTopHeight = 0;
             measureFullSiteTopHeight();
+            lockHeroLayout(true);
         }
         syncHeaderShellHeight();
         syncSiteTopHeight();
         clearTimeout(resizeTimer);
-        resizeTimer = window.setTimeout(lockHeroLayout, 150);
+        resizeTimer = window.setTimeout(function () {
+            if (isHomeHero) {
+                lockHeroLayout(true);
+            }
+        }, 150);
     }
 
     function syncHeaderShellHeight() {
@@ -124,22 +163,18 @@
     function initSiteTopHeight() {
         measureFullSiteTopHeight();
         syncHeaderShellHeight();
-        lockHeroLayout();
+        lockHeroLayout(true);
         syncSiteTopHeight();
-        var siteTop = document.querySelector('.site-top');
-        if (siteTop && typeof ResizeObserver !== 'undefined') {
-            new ResizeObserver(function () {
-                if (isHomeHero) {
-                    if (!hidden) {
-                        measureFullSiteTopHeight();
-                    }
-                    lockHeroLayout();
-                }
-                syncHeaderShellHeight();
-                syncSiteTopHeight();
-            }).observe(siteTop);
-        }
-        window.addEventListener('resize', onWindowResize);
+        syncSiteTopCompact(window.scrollY);
+
+        var lastObservedWidth = window.innerWidth;
+        window.addEventListener('resize', function () {
+            if (window.innerWidth === lastObservedWidth) {
+                return;
+            }
+            lastObservedWidth = window.innerWidth;
+            onWindowResize();
+        });
         window.paskyonlineSyncSiteTopHeight = syncSiteTopHeight;
     }
 
@@ -196,6 +231,7 @@
             lastY = window.scrollY;
             hideAccum = 0;
             showAccum = 0;
+            syncSiteTopCompact(window.scrollY);
             if (window.scrollY > MIN_SCROLL) {
                 canHide = true;
             }
@@ -219,12 +255,16 @@
     }
 
     function onScroll() {
+        var y = window.scrollY;
+
+        if (isHomeHero) {
+            syncSiteTopCompact(y);
+        }
+
         if (!isHomeHero) {
             ticking = false;
             return;
         }
-
-        var y = window.scrollY;
 
         if (anchorNavigating) {
             lastY = y;
@@ -297,9 +337,11 @@
     window.addEventListener('load', function () {
         showHeader();
         syncHeaderShellHeight();
-        lockHeroLayout();
         if (isHomeHero) {
+            fullSiteTopHeight = 0;
             measureFullSiteTopHeight();
+            lockHeroLayout(true);
+            syncSiteTopCompact(window.scrollY);
         }
         syncSiteTopHeight();
         lastY = window.scrollY;
@@ -314,8 +356,10 @@
     document.addEventListener('pasky:i18n-ready', function () {
         window.requestAnimationFrame(function () {
             if (isHomeHero) {
+                fullSiteTopHeight = 0;
                 measureFullSiteTopHeight();
-                lockHeroLayout();
+                lockHeroLayout(true);
+                syncSiteTopCompact(window.scrollY);
             }
             syncSiteTopHeight();
         });

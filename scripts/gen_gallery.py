@@ -207,7 +207,7 @@ FILTER_GROUPS = {
     },
     "adhesive": {
         "label": "Lepidlo",
-        "options": {"hot-melt": "Hot Melt", "acryl": "Acryl"},
+        "options": {"hot-melt": "HOT MELT", "acryl": "ACRYL"},
     },
     "industry": {
         "label": "Odvětví",
@@ -228,7 +228,7 @@ FILTER_GROUPS = {
     },
 }
 
-ADHESIVE_LABELS = {"hot-melt": "Hot Melt", "acryl": "Acryl"}
+ADHESIVE_LABELS = {"hot-melt": "HOT MELT", "acryl": "ACRYL"}
 INDUSTRY_LABELS = {
     "e-commerce": "E-commerce",
     "vyroba": "Výroba",

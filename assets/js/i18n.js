@@ -142,7 +142,12 @@
             document.title = meta.title;
         }
         var desc = document.querySelector('meta[name="description"]');
-        var descKey = page === 'gallery' ? meta.gallery_description : (page === 'sortiment' ? meta.sortiment_description : meta.home_description);
+        var isSortimentDetail = page === 'sortiment' && parseSortimentSlug();
+        var descKey = page === 'gallery' ? meta.gallery_description
+            : (page === 'sortiment' && !isSortimentDetail ? meta.sortiment_description : null);
+        if (!descKey && page !== 'sortiment') {
+            descKey = meta.home_description;
+        }
         if (desc && descKey) {
             desc.setAttribute('content', descKey);
         }

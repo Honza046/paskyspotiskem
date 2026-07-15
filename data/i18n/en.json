@@ -76,8 +76,12 @@
     },
     "about": {
       "label": "About us",
-      "title": "A traditional Czech manufacturer of printed adhesive tapes",
-      "lead": "For more than 30 years we have helped companies pack their shipments securely and build a strong brand directly on packaging materials. We specialise in custom printing of adhesive tapes.",
+      "title": "Traditional Czech supplier of printed and plain tapes",
+      "lead": "For more than 30 years we have helped companies pack their shipments securely and build a strong brand directly on packaging materials. We offer custom-printed adhesive tapes as well as plain neutral tapes.",
+      "body1_prefix": "Our ",
+      "body1_highlight": "modern production facility",
+      "body1_tooltip": "We do not only manufacture adhesive tapes — we also produce the films ourselves, which gives us a significant competitive advantage when raw materials are in short supply.",
+      "body1_suffix": " allows us to respond flexibly to the needs of both small e-shops and large industrial enterprises. We pride ourselves on precise printing (up to 8 colours), premium adhesive quality (HOT MELT and ACRYL) and fast delivery throughout the Czech Republic and the European Union.",
       "body1": "Our modern production facility allows us to respond flexibly to the needs of both small e-shops and large industrial enterprises. We pride ourselves on precise printing (up to 8 colours), premium adhesive quality (Hot Melt, Acrylic) and fast delivery throughout the Czech Republic.",
       "body2": "Thanks to ISO 9001 certified processes and the use of ecological, sustainable materials, we are a reliable partner for more than 300 active customers.",
       "image_alt": "ALFA IN adhesive tape production",
@@ -985,7 +989,7 @@
           },
           {
             "title": "Quiet unwinding and easy tear",
-            "text": "Adhesion 3,8 N/25 mm, low-noise acrylic, easy tear and UV resistance (−5 až +60 °C)."
+            "text": "Adhesion 3,8 N/25 mm, low-noise acrylic adhesive, easy tear and UV resistance (−5 až +60 °C)."
           }
         ],
         "uses": [
@@ -1028,7 +1032,7 @@
         }
       },
       "bopp-paska-acrylic": {
-        "name": "BOPP tape Acrylic",
+        "name": "BOPP tape ACRYL",
         "tagline": "Reliable BOPP tape with acrylic adhesive and long service life.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP tapes",
@@ -1202,7 +1206,7 @@
         }
       },
       "bopp-paska-hot-melt": {
-        "name": "BOPP tape Hot Melt",
+        "name": "BOPP tape HOT MELT",
         "tagline": "BOPP tape with hot melt adhesive for fast, strong bonding.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP tapes",
@@ -1267,7 +1271,7 @@
         "benefits": [
           {
             "title": "Super tack (+20% adhesion)",
-            "text": "Instant adhesion and higher hold than standard hot melt — recommended for packing machines."
+            "text": "Instant adhesion and higher hold than standard HOT MELT — recommended for packing machines."
           },
           {
             "title": "Hot melt adhesive",

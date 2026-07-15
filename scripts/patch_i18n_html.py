@@ -115,7 +115,7 @@ def apply_map(text: str, mapping: list[tuple[str, str]]) -> str:
     return text
 
 
-BOOT_TAG = '    <script src="/assets/js/i18n-boot.js?v=3"></script>\n'
+BOOT_TAG = '    <script src="/assets/js/i18n-boot.js?v=4"></script>\n'
 
 
 def inject_i18n_boot(text: str) -> str:

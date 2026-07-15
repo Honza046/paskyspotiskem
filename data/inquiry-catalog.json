@@ -20,11 +20,11 @@
       { "name": "Udržitelná páska NOPP+", "tagline": "Vylepšená bezplastová páska s vyšší pevností a lepivostí.", "slug": "udrzitelna-paska-nopp-plus" }
     ],
     "bopp-pasky": [
-      { "name": "BOPP páska Acrylic", "tagline": "Spolehlivá BOPP páska s akrylovým lepidlem a dlouhou životností.", "slug": "bopp-paska-acrylic" },
+      { "name": "BOPP páska ACRYL", "tagline": "Spolehlivá BOPP páska s akrylovým lepidlem a dlouhou životností.", "slug": "bopp-paska-acrylic" },
       { "name": "BOPP páska Evergreen", "tagline": "Barevná BOPP páska pro značení a vizuální odlišení zásilek.", "slug": "bopp-paska-evergreen" },
-      { "name": "BOPP páska Hot Melt", "tagline": "BOPP páska s hot melt lepidlem pro rychlé a pevné přilnutí.", "slug": "bopp-paska-hot-melt" },
+      { "name": "BOPP páska HOT MELT", "tagline": "BOPP páska s HOT MELT lepidlem pro rychlé a pevné přilnutí.", "slug": "bopp-paska-hot-melt" },
       { "name": "BOPP páska EXTRA GLUE+", "tagline": "Akrylová BOPP páska se zvýšenou vrstvou lepidla (+33 %) pro náročné povrchy a recyklovaný karton.", "slug": "bopp-paska-extra-glue-plus" },
-      { "name": "BOPP páska TACK+", "tagline": "Hot melt BOPP páska s vyšší přilnavostí (+20 %) a super tack pro balicí stroje a recyklovaný karton.", "slug": "bopp-paska-tack-plus" }
+      { "name": "BOPP páska TACK+", "tagline": "HOT MELT BOPP páska s vyšší přilnavostí (+20 %) a super tack pro balicí stroje a recyklovaný karton.", "slug": "bopp-paska-tack-plus" }
     ],
     "bopet-pasky": [
       { "name": "BOPET páska AIT", "tagline": "Polyesterová páska se silikonovým lepidlem pro extrémní teploty.", "slug": "bopet-paska-ait" },
@@ -37,8 +37,8 @@
       { "name": "Papírová páska C680", "tagline": "Univerzální papírová páska s vysokou lepivostí na recyklovaný karton.", "slug": "papirova-paska-c680" },
       { "name": "Papírová páska C680 RT", "tagline": "Odolná papírová páska s vylepšenou přilnavostí pro těžší zásilky.", "slug": "papirova-paska-c680-rt" },
       { "name": "Papírová páska C680R", "tagline": "Papírová páska z recyklovaného papíru pro udržitelné balení.", "slug": "papirova-paska-c680r" },
-      { "name": "Papírová páska C690", "tagline": "Prémiová kraftová páska s hot melt lepidlem a matným povrchem.", "slug": "papirova-paska-c690" },
-      { "name": "Papírová páska KH80", "tagline": "Silná papírová páska s hot melt lepidlem pro spolehlivé uzavírání kartonů.", "slug": "papirova-paska-kh80" },
+      { "name": "Papírová páska C690", "tagline": "Prémiová kraftová páska s HOT MELT lepidlem a matným povrchem.", "slug": "papirova-paska-c690" },
+      { "name": "Papírová páska KH80", "tagline": "Silná papírová páska s HOT MELT lepidlem pro spolehlivé uzavírání kartonů.", "slug": "papirova-paska-kh80" },
       { "name": "Papírová páska KS165", "tagline": "Extra pevná papírová páska s kaučukovým lepidlem pro náročné balení.", "slug": "papirova-paska-ks165" }
     ],
     "odstranitelne-pasky": [
