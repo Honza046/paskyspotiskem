@@ -3,21 +3,15 @@
  * or the user prefers reduced motion/transparency. Activated via html.perf-lite.
  */
 
-html.perf-lite .site-header-shell {
-    transition: none;
-}
-
-html.perf-lite .site-header-shell > .site-header {
-    transition: none;
-}
-
 html.perf-lite .info-banner__message {
     transition: none;
     will-change: auto;
 }
 
 html.perf-lite header.site-header,
-html.perf-lite .site-header {
+html.perf-lite .site-header,
+html.perf-lite .site-header-shell,
+html.perf-lite .site-header-shell > .site-header {
     transition: none !important;
 }
 

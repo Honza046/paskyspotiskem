@@ -1,6 +1,6 @@
 /**
- * Hide sticky header on scroll down, reveal on scroll up only (homepage hero only).
- * Info banner stays visible; only the main header collapses.
+ * Sticky site-top: locked homepage hero, solid header,
+ * hide after hero (scroll down) / reveal on deliberate scroll up.
  */
 (function () {
     'use strict';
@@ -30,16 +30,16 @@
     var lockedHeroHeight = 0;
     var lastLayoutWidth = 0;
     var lastY = 0;
-    var ticking = false;
+    var scrollTicking = false;
     var hidden = false;
-    var canHide = false;
     var anchorNavigating = false;
     var hideAccum = 0;
     var showAccum = 0;
-    var MIN_SCROLL = 80;
-    var SCROLL_THRESHOLD = 40;
+
     var NOISE = 3;
-    var ENABLE_DELAY_MS = 800;
+    var HIDE_THRESHOLD = 56;
+    var SHOW_THRESHOLD = 140;
+    var PAST_HERO_DEFAULT = 72;
     var ANCHOR_GRACE_MS = 1400;
 
     document.documentElement.style.scrollBehavior = 'auto';
@@ -70,9 +70,11 @@
             return;
         }
         var wasHidden = hidden;
-        showHeader();
+        if (wasHidden) {
+            setHidden(false);
+        }
         fullSiteTopHeight = siteTop.offsetHeight;
-        if (wasHidden && isHomeHero) {
+        if (wasHidden && pastHeroZone()) {
             setHidden(true);
         }
     }
@@ -82,13 +84,9 @@
         if (!siteTop) {
             return;
         }
-        var height = isHomeHero && fullSiteTopHeight > 0
-            ? fullSiteTopHeight
-            : siteTop.offsetHeight;
-        document.documentElement.style.setProperty('--site-top-height', height + 'px');
+        document.documentElement.style.setProperty('--site-top-height', siteTop.offsetHeight + 'px');
     }
 
-    /** Lock hero block height once – collapsing header must not resize/zoom hero photos. */
     function lockHeroLayout(force) {
         var uvod = document.getElementById('uvod');
         if (!uvod) {
@@ -121,35 +119,6 @@
         document.documentElement.style.setProperty('--hero-height', heroH + 'px');
     }
 
-    function syncSiteTopCompact(scrollY) {
-        if (!isHomeHero) {
-            return;
-        }
-        var uvod = document.getElementById('uvod');
-        if (!uvod) {
-            return;
-        }
-        var heroEnd = uvod.offsetTop + uvod.offsetHeight;
-        document.documentElement.classList.toggle('site-top-compact', scrollY > heroEnd - 24);
-    }
-
-    var resizeTimer;
-    function onWindowResize() {
-        if (isHomeHero) {
-            fullSiteTopHeight = 0;
-            measureFullSiteTopHeight();
-            lockHeroLayout(true);
-        }
-        syncHeaderShellHeight();
-        syncSiteTopHeight();
-        clearTimeout(resizeTimer);
-        resizeTimer = window.setTimeout(function () {
-            if (isHomeHero) {
-                lockHeroLayout(true);
-            }
-        }, 150);
-    }
-
     function syncHeaderShellHeight() {
         if (hidden) {
             return;
@@ -160,26 +129,22 @@
         }
     }
 
-    function initSiteTopHeight() {
-        measureFullSiteTopHeight();
-        syncHeaderShellHeight();
-        lockHeroLayout(true);
-        syncSiteTopHeight();
-        syncSiteTopCompact(window.scrollY);
-
-        var lastObservedWidth = window.innerWidth;
-        window.addEventListener('resize', function () {
-            if (window.innerWidth === lastObservedWidth) {
-                return;
-            }
-            lastObservedWidth = window.innerWidth;
-            onWindowResize();
-        });
-        window.paskyonlineSyncSiteTopHeight = syncSiteTopHeight;
+    function pastHeroZone() {
+        if (!isHomeHero) {
+            return window.scrollY > PAST_HERO_DEFAULT;
+        }
+        var uvod = document.getElementById('uvod');
+        if (!uvod) {
+            return window.scrollY > PAST_HERO_DEFAULT;
+        }
+        return window.scrollY >= uvod.offsetTop + uvod.offsetHeight - 40;
     }
 
     function setHidden(shouldHide) {
-        if (!isHomeHero || hidden === shouldHide) {
+        if (hidden === shouldHide) {
+            return;
+        }
+        if (shouldHide && !pastHeroZone()) {
             return;
         }
         if (shouldHide) {
@@ -193,55 +158,109 @@
             hideAccum = 0;
             showAccum = 0;
         }
+        window.requestAnimationFrame(syncSiteTopHeight);
     }
 
     function showHeader() {
-        shell.classList.remove('is-collapsed');
-        hidden = false;
-        header.setAttribute('aria-hidden', 'false');
+        setHidden(false);
         hideAccum = 0;
         showAccum = 0;
-        window.requestAnimationFrame(function () {
-            syncHeaderShellHeight();
-            if (!isHomeHero) {
-                syncSiteTopHeight();
-            }
-        });
+        window.requestAnimationFrame(syncHeaderShellHeight);
     }
 
-    function enableHide() {
-        if (!isHomeHero) {
+    function syncScrollState() {
+        var y = window.scrollY;
+
+        if (!pastHeroZone()) {
+            showHeader();
+            lastY = y;
+            scrollTicking = false;
             return;
         }
-        canHide = true;
-        lastY = window.scrollY;
-        hideAccum = 0;
-        showAccum = 0;
+
+        if (anchorNavigating) {
+            lastY = y;
+            scrollTicking = false;
+            return;
+        }
+
+        var delta = y - lastY;
+
+        if (delta > NOISE) {
+            showAccum = 0;
+            hideAccum += delta;
+            if (hideAccum >= HIDE_THRESHOLD) {
+                setHidden(true);
+            }
+        } else if (delta < -NOISE) {
+            hideAccum = 0;
+            showAccum += -delta;
+            if (showAccum >= SHOW_THRESHOLD) {
+                setHidden(false);
+            }
+        }
+
+        lastY = y;
+        scrollTicking = false;
+    }
+
+    function onScroll() {
+        if (!scrollTicking) {
+            scrollTicking = true;
+            window.requestAnimationFrame(syncScrollState);
+        }
+    }
+
+    function refreshLayout(forceHero) {
+        if (isHomeHero) {
+            if (forceHero) {
+                fullSiteTopHeight = 0;
+            }
+            measureFullSiteTopHeight();
+            lockHeroLayout(!!forceHero);
+        }
+        syncHeaderShellHeight();
+        syncSiteTopHeight();
+    }
+
+    var resizeTimer;
+    function onWindowResize() {
+        refreshLayout(true);
+        clearTimeout(resizeTimer);
+        resizeTimer = window.setTimeout(function () {
+            if (isHomeHero) {
+                lockHeroLayout(true);
+            }
+            syncScrollState();
+        }, 150);
+    }
+
+    function initLayout() {
+        refreshLayout(true);
+
+        var lastObservedWidth = window.innerWidth;
+        window.addEventListener('resize', function () {
+            if (window.innerWidth === lastObservedWidth) {
+                return;
+            }
+            lastObservedWidth = window.innerWidth;
+            onWindowResize();
+        });
+        window.paskyonlineSyncSiteTopHeight = syncSiteTopHeight;
     }
 
     function beginAnchorNavigation() {
-        if (!isHomeHero) {
-            return;
-        }
         anchorNavigating = true;
-        canHide = false;
         showHeader();
         window.setTimeout(function () {
             anchorNavigating = false;
             lastY = window.scrollY;
             hideAccum = 0;
             showAccum = 0;
-            syncSiteTopCompact(window.scrollY);
-            if (window.scrollY > MIN_SCROLL) {
-                canHide = true;
-            }
         }, ANCHOR_GRACE_MS);
     }
 
     function bindAnchorNavLinks() {
-        if (!isHomeHero) {
-            return;
-        }
         var selector = '#main-nav a[href*="#"], #mobile-nav a[href*="#"]';
         document.querySelectorAll(selector).forEach(function (link) {
             link.addEventListener('click', function () {
@@ -254,114 +273,27 @@
         });
     }
 
-    function onScroll() {
-        var y = window.scrollY;
-
-        if (isHomeHero) {
-            syncSiteTopCompact(y);
-        }
-
-        if (!isHomeHero) {
-            ticking = false;
-            return;
-        }
-
-        if (anchorNavigating) {
-            lastY = y;
-            ticking = false;
-            return;
-        }
-
-        if (!canHide) {
-            lastY = y;
-            ticking = false;
-            return;
-        }
-
-        var delta = y - lastY;
-
-        if (delta > NOISE) {
-            showAccum = 0;
-            hideAccum += delta;
-            if (hideAccum >= SCROLL_THRESHOLD && y > MIN_SCROLL) {
-                setHidden(true);
-            }
-        } else if (delta < -NOISE) {
-            hideAccum = 0;
-            showAccum += -delta;
-            if (showAccum >= SCROLL_THRESHOLD) {
-                setHidden(false);
-            }
-        }
-
-        lastY = y;
-        ticking = false;
-    }
-
     function boot() {
-        canHide = false;
-        initSiteTopHeight();
-        showHeader();
-        lastY = window.scrollY;
+        initLayout();
         bindAnchorNavLinks();
-        if (isHomeHero) {
-            window.setTimeout(enableHide, ENABLE_DELAY_MS);
-        }
-    }
-
-    if (isHomeHero) {
-        window.addEventListener('hashchange', function () {
-            beginAnchorNavigation();
-        });
-
-        window.addEventListener('scroll', function () {
-            if (!ticking) {
-                window.requestAnimationFrame(onScroll);
-                ticking = true;
-            }
-        }, { passive: true });
-
-        window.addEventListener('wheel', enableHide, { once: true, passive: true });
-        window.addEventListener('touchmove', enableHide, { once: true, passive: true });
-        window.addEventListener('keydown', function (e) {
-            if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', ' '].indexOf(e.key) > -1) {
-                enableHide();
-            }
-        });
-    }
-
-    window.addEventListener('pageshow', function () {
-        boot();
-    });
-
-    window.addEventListener('load', function () {
-        showHeader();
-        syncHeaderShellHeight();
-        if (isHomeHero) {
-            fullSiteTopHeight = 0;
-            measureFullSiteTopHeight();
-            lockHeroLayout(true);
-            syncSiteTopCompact(window.scrollY);
-        }
-        syncSiteTopHeight();
         lastY = window.scrollY;
-        if (isHomeHero && window.location.hash) {
-            beginAnchorNavigation();
-        }
-    });
+        syncScrollState();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('hashchange', beginAnchorNavigation);
+    }
 
+    window.addEventListener('pageshow', boot);
+    window.addEventListener('load', function () {
+        boot();
+        syncScrollState();
+    });
     window.paskyonlineBeginAnchorNavigation = beginAnchorNavigation;
     window.paskyonlineLockHeroLayout = lockHeroLayout;
 
     document.addEventListener('pasky:i18n-ready', function () {
         window.requestAnimationFrame(function () {
-            if (isHomeHero) {
-                fullSiteTopHeight = 0;
-                measureFullSiteTopHeight();
-                lockHeroLayout(true);
-                syncSiteTopCompact(window.scrollY);
-            }
-            syncSiteTopHeight();
+            refreshLayout(true);
+            syncScrollState();
         });
     });
 
