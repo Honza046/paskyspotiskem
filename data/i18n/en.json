@@ -170,8 +170,8 @@
       "length_label": "Tape length in metres",
       "quantity_label": "Requested quantity in rolls",
       "quantity_hint": "Enter a number from 360 to 9999.",
-      "quantity_min": "Minimum quantity is 360 rolls.",
-      "quantity_tip": "From 360 rolls you get free shipping. Delivery takes approximately 3–4 weeks.",
+      "quantity_min": "ACRYL from 360 pcs, HOT MELT from 504 pcs.",
+      "quantity_tip": "ACRYL from 360 pcs, HOT MELT from 504 pcs. Free shipping from 360 pcs. Delivery approx. 3–4 weeks.",
       "quantity_success": "🔥 Great choice! You have free shipping. Delivery takes approximately 3–4 weeks.",
       "validation": {
         "material_required": "Please select a material from the list.",
@@ -605,6 +605,7 @@
           "Acrylic",
           "−5 to +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -628,21 +629,21 @@
       },
       "udrzitelna-paska-eco-100": {
         "name": "Sustainable tape ECO+ 100",
-        "tagline": "100% regenerated BOPP film from post-industrial waste for premium sustainable packaging.",
+        "tagline": "100% regenerated BOPP film from post-industrial waste. Maximum ecological standard without compromising performance.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
         "benefits": [
           {
+            "title": "Identical mechanical properties",
+            "text": "The tape delivers the same tensile strength and reliability as standard BOPP versions despite 100% regenerated material."
+          },
+          {
             "title": "100% regenerated BOPP film",
-            "text": "Made entirely from post-industrial waste — fully recyclable without virgin granulate."
+            "text": "Made from clean post-industrial waste from our own film production — without virgin granulate."
           },
           {
-            "title": "Acrylic adhesive",
-            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
-          },
-          {
-            "title": "Temperature range −5 to +60 °C",
-            "text": "Tensile strength 55 N/25 mm for more demanding sustainable packing in warehouse and dispatch."
+            "title": "Supporting corporate reputation",
+            "text": "ECO+ tapes reliably protect goods and demonstrate environmental responsibility — in a plain finish or with company print."
           }
         ],
         "uses": [
@@ -652,27 +653,28 @@
           "Automatic packing lines with ESG goals"
         ],
         "params_values": {
-          "carrier": "100% regenerated BOPP film",
-          "thickness": "35 µm",
-          "adhesive": "Acrylic",
-          "adhesion": "3,5 N/25 mm",
-          "temperature": "−5 to +60 °C",
-          "strength": "55 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "strength": "14–28 °C",
+          "temperature": "0 to +60 °C"
         },
         "spec_pills": [
-          "100% regenerated BOPP film",
-          "Acrylic",
-          "−5 to +60 °C"
+          "100% regenerated",
+          "BOPP",
+          "ACRYL / HOT MELT"
         ],
+        "min_qty_note": "Available in ACRYL and HOT MELT. Min. quantity: ACRYL from 360 pcs, HOT MELT from 504 pcs.",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
           "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -687,21 +689,21 @@
       },
       "udrzitelna-paska-eco-50": {
         "name": "Sustainable tape ECO+ 50",
-        "tagline": "Thin recycled tape for standard sustainable packaging.",
+        "tagline": "Efficient packaging with 50% regenerated material. The optimal balance of ecology and best price.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
         "benefits": [
           {
-            "title": "Recycled polypropylene",
-            "text": "Recycled PP film with a lower environmental footprint while maintaining reliable bonding."
+            "title": "Same price and quality",
+            "text": "It has the same mechanical properties and reliability as standard BOPP versions, but without an “eco surcharge”."
           },
           {
-            "title": "Acrylic adhesive",
-            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+            "title": "Film from our own production waste",
+            "text": "The carrier contains 50% post-industrial waste generated directly in our film production and immediately returned to the loop."
           },
           {
-            "title": "Temperature range −5 to +60 °C",
-            "text": "Tensile strength 45 N/25 mm for everyday warehouse and dispatch operations."
+            "title": "Supporting corporate reputation",
+            "text": "ECO+ tapes reliably protect goods and demonstrate environmental responsibility — in a plain finish or with company print."
           }
         ],
         "uses": [
@@ -711,27 +713,28 @@
           "Automatic packing lines with ESG goals"
         ],
         "params_values": {
-          "carrier": "Recycled PP film",
-          "thickness": "50 µm",
-          "adhesive": "Acrylic",
-          "adhesion": "3,0 N/25 mm",
-          "temperature": "−5 to +60 °C",
-          "strength": "45 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "strength": "14–28 °C",
+          "temperature": "0 to +60 °C"
         },
         "spec_pills": [
-          "Recycled PP film",
-          "Acrylic",
-          "−5 to +60 °C"
+          "50% regenerated",
+          "BOPP",
+          "ACRYL / HOT MELT"
         ],
+        "min_qty_note": "Available in ACRYL and HOT MELT. Min. quantity: ACRYL from 360 pcs, HOT MELT from 504 pcs.",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
           "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -746,21 +749,21 @@
       },
       "udrzitelna-paska-eco-80": {
         "name": "Sustainable tape ECO+ 80",
-        "tagline": "Stronger recycled tape for more demanding sustainable packaging.",
+        "tagline": "BOPP film with 80% regenerated material. Combines a high ecological standard with full strength.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
         "benefits": [
           {
-            "title": "Recycled polypropylene",
-            "text": "Recycled PP film with a lower environmental footprint while maintaining reliable bonding."
+            "title": "Identical mechanical properties",
+            "text": "It has the same tensile strength and reliability as standard BOPP versions despite the high recycled content."
           },
           {
-            "title": "Acrylic adhesive",
-            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+            "title": "Film from our own production waste",
+            "text": "The carrier contains 80% post-industrial waste generated directly in our film production and immediately returned to the loop."
           },
           {
-            "title": "Temperature range −5 to +60 °C",
-            "text": "Tensile strength 52 N/25 mm for everyday warehouse and dispatch operations."
+            "title": "Supporting corporate reputation",
+            "text": "ECO+ tapes reliably protect goods and demonstrate environmental responsibility — in a plain finish or with company print."
           }
         ],
         "uses": [
@@ -770,27 +773,28 @@
           "Automatic packing lines with ESG goals"
         ],
         "params_values": {
-          "carrier": "Recycled PP film",
-          "thickness": "80 µm",
-          "adhesive": "Acrylic",
-          "adhesion": "3,4 N/25 mm",
-          "temperature": "−5 to +60 °C",
-          "strength": "52 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "strength": "14–28 °C",
+          "temperature": "0 to +60 °C"
         },
         "spec_pills": [
-          "Recycled PP film",
-          "Acrylic",
-          "−5 to +60 °C"
+          "80% regenerated",
+          "BOPP",
+          "ACRYL / HOT MELT"
         ],
+        "min_qty_note": "Available in ACRYL and HOT MELT. Min. quantity: ACRYL from 360 pcs, HOT MELT from 504 pcs.",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
           "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -841,6 +845,7 @@
           "Acrylic",
           "−5 to +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -900,6 +905,7 @@
           "Acrylic (solvent-free)",
           "−5 to +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -959,6 +965,7 @@
           "Acrylic",
           "−5 to +65 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -1018,6 +1025,7 @@
           "Acrylic (quiet, solvent-free)",
           "−5 to +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -1077,6 +1085,7 @@
           "ACRYL (Low noise / Noisy)",
           "−10 to +60 °C"
         ],
+        "min_qty_note": "Minimum quantity from 360 pcs (ACRYL).",
         "params_labels": {
           "carrier": "Carrier",
           "thickness": "Film thickness",
@@ -1136,6 +1145,7 @@
           "Acrylic (increased adhesive layer +33%)",
           "−5 to +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -1195,6 +1205,7 @@
           "Acrylic",
           "−5 to +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -1254,6 +1265,7 @@
           "Hot melt",
           "0 to +50 °C"
         ],
+        "min_qty_note": "Minimum quantity from 504 pcs (HOT MELT).",
         "params_labels": {
           "carrier": "Carrier",
           "thickness": "Film thickness",
@@ -1313,6 +1325,7 @@
           "Hot melt (super tack, +20%)",
           "0 to +55 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -1372,6 +1385,7 @@
           "Silicone",
           "−40 to +180 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -1431,6 +1445,7 @@
           "Acrylic",
           "−40 to +150 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -1490,6 +1505,7 @@
           "Acrylic",
           "−40 to +150 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -1549,6 +1565,7 @@
           "Acrylic",
           "−40 to +155 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -1608,6 +1625,7 @@
           "Acrylic (dispersion)",
           "−5 to +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -1667,6 +1685,7 @@
           "Rubber-based",
           "−10 to +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -1726,6 +1745,7 @@
           "Rubber-based",
           "−10 to +65 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -1785,6 +1805,7 @@
           "Rubber-based",
           "−10 to +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -1844,6 +1865,7 @@
           "Hot melt",
           "−10 to +70 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -1903,6 +1925,7 @@
           "Hot melt (synthetic rubber)",
           "−10 to +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -1962,6 +1985,7 @@
           "Rubber-based (solvent)",
           "−20 to +70 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -2021,6 +2045,7 @@
           "Removable acrylic",
           "−5 to +55 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -2080,6 +2105,7 @@
           "Removable acrylic",
           "−5 to +50 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -2139,6 +2165,7 @@
           "Hot melt (synthetic rubber)",
           "−10 to +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -2198,6 +2225,7 @@
           "Hot melt",
           "−10 to +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -2257,6 +2285,7 @@
           "Hot melt",
           "−10 to +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -2316,6 +2345,7 @@
           "Rubber-based (synthetic)",
           "−10 to +70 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -2375,6 +2405,7 @@
           "Rubber-based (synthetic)",
           "−10 to +70 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -2434,6 +2465,7 @@
           "Rubber-based",
           "−10 to +65 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -2493,6 +2525,7 @@
           "Rubber-based",
           "up to +80 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -2552,6 +2585,7 @@
           "Rubber-based (heat-resistant)",
           "up to +100 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
           "thickness": "Thickness",
@@ -2596,7 +2630,7 @@
       "tailor_bullet_consult": "Parameter consultation before ordering",
       "tailor_bullet_params": "Various adhesive and carrier options",
       "no_print_note": "This tape is also available without printing.",
-      "no_print_body": "If you do not need a logo on the tape, we can supply the same material unprinted, ideal for immediate packing or stock.",
+      "no_print_body": "Neutral (unprinted) version of the same material — ideal for immediate packing or stock.",
       "no_print_link": "Ask about availability",
       "product_card_detail": "View details"
     },

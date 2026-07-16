@@ -137,9 +137,9 @@ PRODUCTS = {
    P("Udržitelná páska NOPP+","Udržitelné Pásky/nopp+.jpg","Vylepšená bezplastová páska s vyšší pevností a lepivostí.","Papír (FSC)","120 µm","Akrylové","4,4 N/25 mm","−5 až +65 °C","55 N/25 mm"),
    P("Udržitelná páska LOOPP","Udržitelné Pásky/loopp.jpg","Páska z recyklovaného polypropylenu pro cirkulární ekonomiku.","Recyklovaná PP fólie","45 µm","Akrylové","3,0 N/25 mm","−5 až +60 °C","46 N/25 mm"),
    P("Udržitelná páska Airtape","Udržitelné Pásky/airtape.jpg","Lehká udržitelná páska pro každodenní ekologické balení.","Recyklovaná PP fólie","40 µm","Akrylové","2,8 N/25 mm","−5 až +60 °C","42 N/25 mm"),
-   P("Udržitelná páska ECO+ 50","Udržitelné Pásky/eco+50.jpg","Tenká recyklovaná páska pro standardní udržitelné balení.","Recyklovaná PP fólie","50 µm","Akrylové","3,0 N/25 mm","−5 až +60 °C","45 N/25 mm"),
-   P("Udržitelná páska ECO+ 80","Udržitelné Pásky/eco+80.jpg","Silnější recyklovaná páska pro náročnější udržitelné balení.","Recyklovaná PP fólie","80 µm","Akrylové","3,4 N/25 mm","−5 až +60 °C","52 N/25 mm"),
-   P("Udržitelná páska ECO+ 100","Udržitelné Pásky/eco+100.jpg","100% regenerovaná BOPP fólie z postindustriálního odpadu pro prémiové udržitelné balení.","100% regenerovaná BOPP fólie","35 µm","Akrylové","3,5 N/25 mm","−5 až +60 °C","55 N/25 mm"),
+   P("Udržitelná páska ECO+ 50","Udržitelné Pásky/eco+50.jpg","Efektivní balení s 50% podílem regenerovaného materiálu. Optimální rovnováha mezi ekologií a nejlepší cenou.","BOPP","25 / 28 / 32 µm","ACRYL (Low noise / Noisy) / HOT MELT","21 µm (ACRYL) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
+   P("Udržitelná páska ECO+ 80","Udržitelné Pásky/eco+80.jpg","BOPP fólie s 80% podílem regenerovaného materiálu. Spojuje vysoký ekologický standard a stoprocentní pevnost.","BOPP","25 / 28 / 32 µm","ACRYL (Low noise / Noisy) / HOT MELT","21 µm (ACRYL) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
+   P("Udržitelná páska ECO+ 100","Udržitelné Pásky/eco+100.jpg","100% regenerovaná BOPP fólie z postindustriálního odpadu. Maximální ekologický standard bez kompromisů ve výkonu.","BOPP","25 / 28 / 32 µm","ACRYL (Low noise / Noisy) / HOT MELT","21 µm (ACRYL) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
    P("Udržitelná páska POLY+","Udržitelné Pásky/poly-plus.jpg","Ekologická alternativa k PVC – matná neodrážející BOPP páska s tichým akrylovým lepidlem.","BOPP fólie (matná, 35 µm)","35 µm","Akrylové (tiché, bez rozpouštědel)","3,8 N/25 mm","−5 až +60 °C","50 N/25 mm"),
  ],
 }
@@ -197,8 +197,8 @@ SLUG_OVERRIDES = {
     "BOPP páska HOT MELT": "bopp-paska-hot-melt",
 }
 
-# ACRYL / HOT MELT use a detailed tech-spec schema (film + adhesive thickness, two temperature ranges).
-BOPP_TECH_SPEC_PARAMS = {
+# Detailed tech-spec schema (film + adhesive thickness, two temperature ranges).
+TECH_SPEC_PARAMS = {
     "BOPP páska ACRYL": {
         "Nosič": "BOPP",
         "Tloušťka fólie": "25 / 28 / 32 µm",
@@ -215,6 +215,30 @@ BOPP_TECH_SPEC_PARAMS = {
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "0 až +50 °C",
     },
+    "Udržitelná páska ECO+ 50": {
+        "Nosič": "BOPP",
+        "Tloušťka fólie": "25 / 28 / 32 µm",
+        "Typ lepidla": "ACRYL (Low noise / Noisy) / HOT MELT",
+        "Tloušťka lepidla": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+        "Skladovací a aplikační teplota": "14–28 °C",
+        "Provozní teplota po nalepení": "0 až +60 °C",
+    },
+    "Udržitelná páska ECO+ 80": {
+        "Nosič": "BOPP",
+        "Tloušťka fólie": "25 / 28 / 32 µm",
+        "Typ lepidla": "ACRYL (Low noise / Noisy) / HOT MELT",
+        "Tloušťka lepidla": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+        "Skladovací a aplikační teplota": "14–28 °C",
+        "Provozní teplota po nalepení": "0 až +60 °C",
+    },
+    "Udržitelná páska ECO+ 100": {
+        "Nosič": "BOPP",
+        "Tloušťka fólie": "25 / 28 / 32 µm",
+        "Typ lepidla": "ACRYL (Low noise / Noisy) / HOT MELT",
+        "Tloušťka lepidla": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+        "Skladovací a aplikační teplota": "14–28 °C",
+        "Provozní teplota po nalepení": "0 až +60 °C",
+    },
 }
 
 # assign slugs + tags
@@ -222,12 +246,19 @@ for cat in CATS:
     for p in PRODUCTS[cat["cat"]]:
         p["slug"] = SLUG_OVERRIDES.get(p["name"], slugify(p["name"]))
         p["tags"]=TAGMAP.get(p["name"],[])
-        if p["name"] in BOPP_TECH_SPEC_PARAMS:
-            p["params"] = dict(BOPP_TECH_SPEC_PARAMS[p["name"]])
+        if p["name"] in TECH_SPEC_PARAMS:
+            p["params"] = dict(TECH_SPEC_PARAMS[p["name"]])
             p["tech_spec"] = True
 
 def product_spec_pills(p):
-    """Hero pills: carrier, adhesive type, operating temperature."""
+    """Hero pills: carrier, adhesive type, operating temperature (ECO+ uses regenerát % instead of adhesive/temp)."""
+    name = p["name"]
+    if name == "Udržitelná páska ECO+ 50":
+        return ("50 % regenerát", "BOPP", "ACRYL / HOT MELT")
+    if name == "Udržitelná páska ECO+ 80":
+        return ("80 % regenerát", "BOPP", "ACRYL / HOT MELT")
+    if name == "Udržitelná páska ECO+ 100":
+        return ("100 % regenerát", "BOPP", "ACRYL / HOT MELT")
     params = p["params"]
     carrier = params.get("Nosič") or params.get("Nosič / materiál", "")
     adhesive = params.get("Typ lepidla", "")
@@ -237,6 +268,18 @@ def product_spec_pills(p):
         or ""
     )
     return carrier, adhesive, temp
+
+
+def product_min_qty_note(p):
+    """Optional note under tech specs about minimum order quantity."""
+    name = p["name"]
+    if name == "BOPP páska ACRYL":
+        return "Minimální množství od 360 ks (ACRYL)."
+    if name == "BOPP páska HOT MELT":
+        return "Minimální množství od 504 ks (HOT MELT)."
+    if name.startswith("Udržitelná páska ECO+"):
+        return "Dostupné v ACRYL i HOT MELT. Min. množství: ACRYL od 360 ks, HOT MELT od 504 ks."
+    return ""
 
 def _adhesive_benefit(lepidlo):
     l = lepidlo.lower()
@@ -284,10 +327,25 @@ def product_benefits(cat_slug, p):
     nl = nosic.lower()
 
     if cat_slug == "udrzitelne-pasky":
+        if p["name"] == "Udržitelná páska ECO+ 50":
+            return [
+                ("Stejná cena i kvalita", "Má stejné mechanické vlastnosti a spolehlivost jako standardní BOPP verze, ale bez „ekologické přirážky“."),
+                ("Fólie z vlastního výrobního odpadu", "Nosný materiál obsahuje 50 % postindustriálního odpadu, který vzniká přímo při naší výrobě fólií a je ihned efektivně vracen zpět do oběhu."),
+                ("Podpora firemní reputace", "Pásky řady ECO+ spolehlivě chrání zboží a prokazují ekologickou odpovědnost – ať už v neutrálním provedení, nebo s firemním potiskem."),
+            ]
+        if p["name"] == "Udržitelná páska ECO+ 80":
+            return [
+                ("Identické mechanické vlastnosti", "Má stejnou pevnost v tahu a spolehlivost jako standardní BOPP verze i přes vysoký podíl recyklovaného materiálu."),
+                ("Fólie z vlastního odpadu z výroby", "Nosný materiál obsahuje 80 % postindustriálního odpadu, který vzniká přímo při naší výrobě fólií a je ihned efektivně vracen zpět do oběhu."),
+                ("Podpora firemní reputace", "Pásky řady ECO+ spolehlivě chrání zboží a prokazují ekologickou odpovědnost – ať už v neutrálním provedení, nebo s firemním potiskem."),
+            ]
         if p["name"] == "Udržitelná páska ECO+ 100":
-            b1 = ("100% regenerovaná BOPP fólie", "Vyrobeno výhradně z postindustriálního odpadu – plně recyklovatelná bez nového granulátu.")
-            b3 = ("Teplotní rozsah " + temp, f"Pevnost v tahu {pevnost} pro náročnější udržitelné balení ve skladu i expedici.")
-        elif p["name"] == "Udržitelná páska POLY+":
+            return [
+                ("Identické mechanické vlastnosti", "Páska vykazuje stejnou pevnost v tahu a spolehlivost jako standardní BOPP verze i přes 100% regenerovaný materiál."),
+                ("100% regenerovaná BOPP fólie", "Vyrobeno z čistého postindustriálního odpadu z naší vlastní výroby fólií – bez nového granulátu."),
+                ("Podpora firemní reputace", "Pásky řady ECO+ spolehlivě chrání zboží a prokazují ekologickou odpovědnost – ať už v neutrálním provedení, nebo s firemním potiskem."),
+            ]
+        if p["name"] == "Udržitelná páska POLY+":
             b1 = ("Ekologická alternativa k PVC", "Matná BOPP fólie 35 µm bez chloru a rozpouštědel – vhodná náhrada vinylových pásek.")
             b3 = ("Tiché odvíjení a snadné trhání", f"Přilnavost {pril}, nehlučné akrylové lepidlo, snadné tržení a UV odolnost ({temp}).")
         elif "papír" in nl or "fsc" in nl:
@@ -608,21 +666,21 @@ def feature_icon(title):
         (('sklen', 'vlakn', 'podelna', 'krizova'), 'fibers'),
         (('nulova elastic',), 'rigid'),
         (('uhlikov', 'uhlova stopa'), 'leaf'),
-        (('recykl', 'bezplastov', 'fsc'), 'recycle'),
+        (('recykl', 'bezplastov', 'fsc', 'odpadu', 'postindustrial'), 'recycle'),
         (('chemick',), 'chemical'),
         (('teplot', 'extremni teplot'), 'temperature'),
         (('roztr', 'pretrz', 'protrz'), 'tear'),
         (('lepidlo', 'akryl', 'hot melt', 'kaucuk', 'prilnut', 'prilnav', 'lepiv'), 'adhesive'),
-        (('pevnost', 'tahu', 'nosnost', 'extremni pevnost'), 'strength'),
+        (('pevnost', 'tahu', 'nosnost', 'extremni pevnost', 'mechanicke'), 'strength'),
         (('zivotnost', 'uv', 'starnut'), 'durability'),
         (('textiln',), 'fabric'),
         (('trhani rukou',), 'hand_tear'),
         (('drsn', 'povrch'), 'rough_surface'),
-        (('design', 'potisk', 'barevn', 'cisty design', 'matny'), 'design'),
+        (('design', 'potisk', 'barevn', 'cisty design', 'matny', 'reputace', 'firemni'), 'design'),
         (('drzivost', 'fixace', 'tezke', 'bremen'), 'grip'),
         (('snadna aplik', 'krep'), 'apply'),
         (('setrne k povrchu', 'setrne'), 'surface_safe'),
-        (('kompromis', 'spolehliv'), 'shield'),
+        (('kompromis', 'spolehliv', 'stejna cena', 'cena i kvalita'), 'shield'),
     )
     for keywords, key in rules:
         if any(k in t for k in keywords):
@@ -633,10 +691,10 @@ CHK='<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" 
 ARR='<svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>'
 BACK='<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12"/></svg>'
 FWD='<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>'
-PRODUCT_BOTTOM_NOTE='''        <div class="mx-auto mt-14 max-w-3xl rounded-2xl border border-slate-200 bg-white px-6 py-5 text-center shadow-sm sm:px-8">
-            <p class="text-sm leading-relaxed text-slate-600">
+PRODUCT_BOTTOM_NOTE='''        <div class="product-neutral-note mx-auto mt-14 max-w-3xl px-6 py-6 text-center sm:px-8">
+            <p class="text-sm leading-relaxed text-slate-700">
                 <span class="font-bold text-slate-900">Pásku lze objednat i bez potisku.</span>
-                Pokud nepotřebujete logo na pásku, stejný materiál vám dodáme v nepotištěném provedení, ideální pro okamžité balení nebo skladové zásoby.
+                Neutrální (nepotištěná) verze stejného materiálu — ideální pro okamžité balení nebo skladové zásoby.
                 <a href="/index.html#kontakt1" class="font-semibold text-orange-600 transition-colors hover:text-orange-700">Zeptejte se na dostupnost</a>
             </p>
         </div>
@@ -813,6 +871,11 @@ for cat in CATS:
     for p in PRODUCTS[cat["cat"]]:
         cta = product_ctas(cat, p)
         tailor = product_tailor_box(cat, p)
+        min_qty = product_min_qty_note(p)
+        min_qty_html = (
+            '<p class="product-min-qty mt-3 text-sm font-medium leading-relaxed text-slate-600">%s</p>' % esc(min_qty)
+            if min_qty else ''
+        )
         rows="\n".join('''                    <tr class="border-b border-slate-100 last:border-0">
                         <th scope="row" class="w-1/2 px-6 py-4 pr-4 text-left align-top text-sm font-semibold text-slate-500">%s</th>
                         <td class="px-6 py-4 text-sm font-semibold text-slate-900">%s</td>
@@ -879,6 +942,7 @@ for cat in CATS:
                 </div>
                 <p class="mt-4 text-xs leading-relaxed text-slate-400">Uvedené hodnoty jsou orientační a mohou se lišit podle konkrétní šířky, návinu a provedení. Rádi vám připravíme přesnou specifikaci na míru.</p>
 %s
+%s
             </div>
             <div>
                 <h2 class="mb-6 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">Hlavní výhody a použití</h2>
@@ -906,7 +970,7 @@ for cat in CATS:
      esc(cat["title"]),esc(p["name"]),esc(p["tagline"]),
      *[esc(x) for x in product_spec_pills(p)],
      esc(cta['hero']),FWD,cat["cat"],BACK,
-     rows,tailor,advs,uses,
+     rows,min_qty_html,tailor,advs,uses,
      PRODUCT_BOTTOM_NOTE,
      cat["cat"],BACK,esc(cat["title"]),esc(cta['bottom']))
         os.makedirs("sortiment/%s/%s"%(cat["cat"],p["slug"]),exist_ok=True)

@@ -632,8 +632,8 @@ def build_cs() -> dict[str, Any]:
                 "length_label": "Délka pásky v metrech",
                 "quantity_label": "Poptávané množství v kusech",
                 "quantity_hint": "Zadejte číslo od 360 do 9999.",
-                "quantity_min": "Minimální množství je 360 ks.",
-                "quantity_tip": "Od 360 ks získáváte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
+                "quantity_min": "ACRYL od 360 ks, HOT MELT od 504 ks.",
+                "quantity_tip": "ACRYL od 360 ks, HOT MELT od 504 ks. Od 360 ks doprava zdarma. Dodání cca 3–4 týdny.",
                 "quantity_success": "🔥 Skvělá volba! Máte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
                 "validation": {
                     "material_required": "Vyberte materiál ze seznamu.",
@@ -1008,8 +1008,8 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "length_label": "Tape length in metres",
                 "quantity_label": "Requested quantity in rolls",
                 "quantity_hint": "Enter a number from 360 to 9999.",
-                "quantity_min": "Minimum quantity is 360 rolls.",
-                "quantity_tip": "From 360 rolls you get free shipping. Delivery takes approximately 3–4 weeks.",
+                "quantity_min": "ACRYL from 360 pcs, HOT MELT from 504 pcs.",
+                "quantity_tip": "ACRYL from 360 pcs, HOT MELT from 504 pcs. Free shipping from 360 pcs. Delivery approx. 3–4 weeks.",
                 "quantity_success": "🔥 Great choice! You have free shipping. Delivery takes approximately 3–4 weeks.",
                 "validation": {
                     "material_required": "Please select a material from the list.",
@@ -1384,8 +1384,8 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "length_label": "Bandlänge in Metern",
                 "quantity_label": "Gewünschte Menge in Rollen",
                 "quantity_hint": "Geben Sie eine Zahl von 360 bis 9999 ein.",
-                "quantity_min": "Mindestmenge ist 360 Rollen.",
-                "quantity_tip": "Ab 360 Rollen erhalten Sie kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
+                "quantity_min": "ACRYL ab 360 Stk., HOT MELT ab 504 Stk.",
+                "quantity_tip": "ACRYL ab 360 Stk., HOT MELT ab 504 Stk. Ab 360 Stk. kostenloser Versand. Lieferzeit ca. 3–4 Wochen.",
                 "quantity_success": "🔥 Ausgezeichnete Wahl! Sie haben kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
                 "validation": {
                     "material_required": "Bitte wählen Sie ein Material aus der Liste.",
@@ -1808,8 +1808,8 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "length_label": "Lunghezza del nastro in metri",
             "quantity_label": "Quantità richiesta in rotoli",
             "quantity_hint": "Inserite un numero da 360 a 9999.",
-            "quantity_min": "La quantità minima è 360 rotoli.",
-            "quantity_tip": "Da 360 rotoli la spedizione è gratuita. La consegna richiede circa 3–4 settimane.",
+            "quantity_min": "ACRYL da 360 pz, HOT MELT da 504 pz.",
+            "quantity_tip": "ACRYL da 360 pz, HOT MELT da 504 pz. Spedizione gratuita da 360 pz. Consegna circa 3–4 settimane.",
             "quantity_success": "🔥 Ottima scelta! Avete la spedizione gratuita. La consegna richiede circa 3–4 settimane.",
             "validation": {
                 "material_required": "Selezionate un materiale dall'elenco.",

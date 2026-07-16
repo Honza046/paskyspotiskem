@@ -170,8 +170,8 @@
       "length_label": "Délka pásky v metrech",
       "quantity_label": "Poptávané množství v kusech",
       "quantity_hint": "Zadejte číslo od 360 do 9999.",
-      "quantity_min": "Minimální množství je 360 ks.",
-      "quantity_tip": "Od 360 ks získáváte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
+      "quantity_min": "ACRYL od 360 ks, HOT MELT od 504 ks.",
+      "quantity_tip": "ACRYL od 360 ks, HOT MELT od 504 ks. Od 360 ks doprava zdarma. Dodání cca 3–4 týdny.",
       "quantity_success": "🔥 Skvělá volba! Máte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
       "validation": {
         "material_required": "Vyberte materiál ze seznamu.",
@@ -605,6 +605,7 @@
           "Akrylové",
           "−5 až +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -628,21 +629,21 @@
       },
       "udrzitelna-paska-eco-100": {
         "name": "Udržitelná páska ECO+ 100",
-        "tagline": "100% regenerovaná BOPP fólie z postindustriálního odpadu pro prémiové udržitelné balení.",
+        "tagline": "100% regenerovaná BOPP fólie z postindustriálního odpadu. Maximální ekologický standard bez kompromisů ve výkonu.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
         "benefits": [
           {
+            "title": "Identické mechanické vlastnosti",
+            "text": "Páska vykazuje stejnou pevnost v tahu a spolehlivost jako standardní BOPP verze i přes 100% regenerovaný materiál."
+          },
+          {
             "title": "100% regenerovaná BOPP fólie",
-            "text": "Vyrobeno výhradně z postindustriálního odpadu – plně recyklovatelná bez nového granulátu."
+            "text": "Vyrobeno z čistého postindustriálního odpadu z naší vlastní výroby fólií – bez nového granulátu."
           },
           {
-            "title": "Akrylové lepidlo",
-            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
-          },
-          {
-            "title": "Teplotní rozsah −5 až +60 °C",
-            "text": "Pevnost v tahu 55 N/25 mm pro náročnější udržitelné balení ve skladu i expedici."
+            "title": "Podpora firemní reputace",
+            "text": "Pásky řady ECO+ spolehlivě chrání zboží a prokazují ekologickou odpovědnost – ať už v neutrálním provedení, nebo s firemním potiskem."
           }
         ],
         "uses": [
@@ -652,27 +653,28 @@
           "Automatické balicí linky s ESG cíli"
         ],
         "params_values": {
-          "carrier": "100% regenerovaná BOPP fólie",
-          "thickness": "35 µm",
-          "adhesive": "Akrylové",
-          "adhesion": "3,5 N/25 mm",
-          "temperature": "−5 až +60 °C",
-          "strength": "55 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "strength": "14–28 °C",
+          "temperature": "0 až +60 °C"
         },
         "spec_pills": [
-          "100% regenerovaná BOPP fólie",
-          "Akrylové",
-          "−5 až +60 °C"
+          "100 % regenerát",
+          "BOPP",
+          "ACRYL / HOT MELT"
         ],
+        "min_qty_note": "Dostupné v ACRYL i HOT MELT. Min. množství: ACRYL od 360 ks, HOT MELT od 504 ks.",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -687,21 +689,21 @@
       },
       "udrzitelna-paska-eco-50": {
         "name": "Udržitelná páska ECO+ 50",
-        "tagline": "Tenká recyklovaná páska pro standardní udržitelné balení.",
+        "tagline": "Efektivní balení s 50% podílem regenerovaného materiálu. Optimální rovnováha mezi ekologií a nejlepší cenou.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
         "benefits": [
           {
-            "title": "Recyklovaný polypropylen",
-            "text": "Recyklovaná PP fólie s nižší ekologickou stopou při zachování spolehlivého lepení."
+            "title": "Stejná cena i kvalita",
+            "text": "Má stejné mechanické vlastnosti a spolehlivost jako standardní BOPP verze, ale bez „ekologické přirážky“."
           },
           {
-            "title": "Akrylové lepidlo",
-            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+            "title": "Fólie z vlastního výrobního odpadu",
+            "text": "Nosný materiál obsahuje 50 % postindustriálního odpadu, který vzniká přímo při naší výrobě fólií a je ihned efektivně vracen zpět do oběhu."
           },
           {
-            "title": "Teplotní rozsah −5 až +60 °C",
-            "text": "Pevnost v tahu 45 N/25 mm pro každodenní provoz skladu i expedice."
+            "title": "Podpora firemní reputace",
+            "text": "Pásky řady ECO+ spolehlivě chrání zboží a prokazují ekologickou odpovědnost – ať už v neutrálním provedení, nebo s firemním potiskem."
           }
         ],
         "uses": [
@@ -711,27 +713,28 @@
           "Automatické balicí linky s ESG cíli"
         ],
         "params_values": {
-          "carrier": "Recyklovaná PP fólie",
-          "thickness": "50 µm",
-          "adhesive": "Akrylové",
-          "adhesion": "3,0 N/25 mm",
-          "temperature": "−5 až +60 °C",
-          "strength": "45 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "strength": "14–28 °C",
+          "temperature": "0 až +60 °C"
         },
         "spec_pills": [
-          "Recyklovaná PP fólie",
-          "Akrylové",
-          "−5 až +60 °C"
+          "50 % regenerát",
+          "BOPP",
+          "ACRYL / HOT MELT"
         ],
+        "min_qty_note": "Dostupné v ACRYL i HOT MELT. Min. množství: ACRYL od 360 ks, HOT MELT od 504 ks.",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -746,21 +749,21 @@
       },
       "udrzitelna-paska-eco-80": {
         "name": "Udržitelná páska ECO+ 80",
-        "tagline": "Silnější recyklovaná páska pro náročnější udržitelné balení.",
+        "tagline": "BOPP fólie s 80% podílem regenerovaného materiálu. Spojuje vysoký ekologický standard a stoprocentní pevnost.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
         "benefits": [
           {
-            "title": "Recyklovaný polypropylen",
-            "text": "Recyklovaná PP fólie s nižší ekologickou stopou při zachování spolehlivého lepení."
+            "title": "Identické mechanické vlastnosti",
+            "text": "Má stejnou pevnost v tahu a spolehlivost jako standardní BOPP verze i přes vysoký podíl recyklovaného materiálu."
           },
           {
-            "title": "Akrylové lepidlo",
-            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+            "title": "Fólie z vlastního odpadu z výroby",
+            "text": "Nosný materiál obsahuje 80 % postindustriálního odpadu, který vzniká přímo při naší výrobě fólií a je ihned efektivně vracen zpět do oběhu."
           },
           {
-            "title": "Teplotní rozsah −5 až +60 °C",
-            "text": "Pevnost v tahu 52 N/25 mm pro každodenní provoz skladu i expedice."
+            "title": "Podpora firemní reputace",
+            "text": "Pásky řady ECO+ spolehlivě chrání zboží a prokazují ekologickou odpovědnost – ať už v neutrálním provedení, nebo s firemním potiskem."
           }
         ],
         "uses": [
@@ -770,27 +773,28 @@
           "Automatické balicí linky s ESG cíli"
         ],
         "params_values": {
-          "carrier": "Recyklovaná PP fólie",
-          "thickness": "80 µm",
-          "adhesive": "Akrylové",
-          "adhesion": "3,4 N/25 mm",
-          "temperature": "−5 až +60 °C",
-          "strength": "52 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "strength": "14–28 °C",
+          "temperature": "0 až +60 °C"
         },
         "spec_pills": [
-          "Recyklovaná PP fólie",
-          "Akrylové",
-          "−5 až +60 °C"
+          "80 % regenerát",
+          "BOPP",
+          "ACRYL / HOT MELT"
         ],
+        "min_qty_note": "Dostupné v ACRYL i HOT MELT. Min. množství: ACRYL od 360 ks, HOT MELT od 504 ks.",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -841,6 +845,7 @@
           "Akrylové",
           "−5 až +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -900,6 +905,7 @@
           "Akrylové (bez rozpouštědel)",
           "−5 až +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -959,6 +965,7 @@
           "Akrylové",
           "−5 až +65 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -1018,6 +1025,7 @@
           "Akrylové (tiché, bez rozpouštědel)",
           "−5 až +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -1077,6 +1085,7 @@
           "ACRYL (Low noise / Noisy)",
           "−10 až +60 °C"
         ],
+        "min_qty_note": "Minimální množství od 360 ks (ACRYL).",
         "params_labels": {
           "carrier": "Nosič",
           "thickness": "Tloušťka fólie",
@@ -1136,6 +1145,7 @@
           "Akrylové (zvýšená vrstva +33 %)",
           "−5 až +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -1195,6 +1205,7 @@
           "Akrylové",
           "−5 až +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -1254,6 +1265,7 @@
           "HOT MELT",
           "0 až +50 °C"
         ],
+        "min_qty_note": "Minimální množství od 504 ks (HOT MELT).",
         "params_labels": {
           "carrier": "Nosič",
           "thickness": "Tloušťka fólie",
@@ -1313,6 +1325,7 @@
           "HOT MELT (super tack, +20 %)",
           "0 až +55 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -1372,6 +1385,7 @@
           "Silikonové",
           "−40 až +180 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -1431,6 +1445,7 @@
           "Akrylové",
           "−40 až +150 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -1490,6 +1505,7 @@
           "Akrylové",
           "−40 až +150 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -1549,6 +1565,7 @@
           "Akrylové",
           "−40 až +155 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -1608,6 +1625,7 @@
           "Akrylové (disperzní)",
           "−5 až +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -1667,6 +1685,7 @@
           "Kaučukové",
           "−10 až +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -1726,6 +1745,7 @@
           "Kaučukové",
           "−10 až +65 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -1785,6 +1805,7 @@
           "Kaučukové",
           "−10 až +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -1844,6 +1865,7 @@
           "HOT MELT",
           "−10 až +70 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -1903,6 +1925,7 @@
           "HOT MELT (syntetický kaučuk)",
           "−10 až +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -1962,6 +1985,7 @@
           "Kaučukové (solvent)",
           "−20 až +70 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -2021,6 +2045,7 @@
           "Odstranitelné akrylové",
           "−5 až +55 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -2080,6 +2105,7 @@
           "Odstranitelné akrylové",
           "−5 až +50 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -2139,6 +2165,7 @@
           "HOT MELT (syntetický kaučuk)",
           "−10 až +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -2198,6 +2225,7 @@
           "HOT MELT",
           "−10 až +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -2257,6 +2285,7 @@
           "HOT MELT",
           "−10 až +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -2316,6 +2345,7 @@
           "Kaučukové (syntetické)",
           "−10 až +70 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -2375,6 +2405,7 @@
           "Kaučukové (syntetické)",
           "−10 až +70 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -2434,6 +2465,7 @@
           "Kaučukové",
           "−10 až +65 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -2493,6 +2525,7 @@
           "Kaučukové",
           "do +80 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -2552,6 +2585,7 @@
           "Kaučukové (odolné teplu)",
           "do +100 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
           "thickness": "Tloušťka",
@@ -2596,7 +2630,7 @@
       "tailor_bullet_consult": "Konzultace parametrů před objednávkou",
       "tailor_bullet_params": "Různé provedení lepidla a nosiče",
       "no_print_note": "Pásku lze objednat i bez potisku.",
-      "no_print_body": "Pokud nepotřebujete logo na pásku, stejný materiál vám dodáme v nepotištěném provedení, ideální pro okamžité balení nebo skladové zásoby.",
+      "no_print_body": "Neutrální (nepotištěná) verze stejného materiálu — ideální pro okamžité balení nebo skladové zásoby.",
       "no_print_link": "Zeptejte se na dostupnost",
       "product_card_detail": "Zobrazit detail"
     },

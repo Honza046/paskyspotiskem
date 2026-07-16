@@ -21,6 +21,7 @@ html {
     gap: 0;
     margin: 0;
     padding: 0;
+    overflow: visible;
     background-color: #ffffff;
 }
 
@@ -30,7 +31,8 @@ html {
 
 .site-header-shell {
     height: var(--site-header-height, 5.5rem);
-    overflow: hidden;
+    /* visible so language dropdown can escape the header bar */
+    overflow: visible;
     flex-shrink: 0;
     margin: 0;
     padding: 0;
@@ -40,12 +42,14 @@ html {
 
 .site-header-shell > .site-header {
     overflow: visible;
-    transform: translateY(0);
+    /* no idle transform – transform traps position:fixed and breaks dropdowns */
+    transform: none;
     transition: transform 0.28s ease;
 }
 
 .site-header-shell.is-collapsed {
     height: 0;
+    overflow: hidden;
 }
 
 .site-header-shell.is-collapsed > .site-header {
@@ -54,14 +58,35 @@ html {
     transform: translateY(-100%);
 }
 
-/* Language switcher dropdown must sit above hero / page content */
+/* Language switcher – positioning in CSS (not Tailwind JIT via JS) */
 .lang-dropdown {
     position: relative;
     z-index: 80;
 }
 
 .lang-dropdown__menu {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 0.375rem);
     z-index: 90;
+    min-width: 11rem;
+    transform-origin: top right;
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+    background-color: #ffffff;
+    padding: 0.25rem 0;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1), 0 0 0 1px rgb(0 0 0 / 0.05);
+}
+
+.lang-dropdown__menu[hidden],
+.lang-dropdown__menu.is-hidden {
+    display: none;
+}
+
+.dark .lang-dropdown__menu {
+    border-color: #334155;
+    background-color: #1e293b;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 0 0 1px rgb(0 0 0 / 0.2);
 }
 
 /* Solid header – no glass / blur (avoids white gap above header when scrolling). */

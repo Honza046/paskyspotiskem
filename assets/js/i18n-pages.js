@@ -331,6 +331,12 @@
         var note = document.querySelector('main .overflow-hidden.rounded-2xl + p.text-xs, main table + p.text-xs');
         if (note && page.params_note) setText(note, page.params_note);
 
+        var minQty = document.querySelector('main .product-min-qty');
+        if (minQty) {
+            if (prod.min_qty_note) setText(minQty, prod.min_qty_note);
+            else minQty.hidden = true;
+        }
+
         var benefits = prod.benefits || [];
         document.querySelectorAll('main .grid.grid-cols-1.gap-4 > div.flex.gap-4').forEach(function (card, i) {
             if (!benefits[i]) return;
@@ -355,7 +361,7 @@
         var bottomCta = document.querySelector('main section.border-t a.bg-gradient-to-r, main section:last-of-type a.bg-gradient-to-r');
         if (bottomCta && ctas.bottom) setText(bottomCta, ctas.bottom);
 
-        var noPrint = document.querySelector('.max-w-3xl.rounded-2xl p');
+        var noPrint = document.querySelector('.product-neutral-note p, .max-w-3xl.rounded-2xl p');
         if (noPrint && page.no_print_note) {
             var bold = noPrint.querySelector('.font-bold');
             var link = noPrint.querySelector('a');

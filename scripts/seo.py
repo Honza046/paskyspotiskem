@@ -229,7 +229,7 @@ def product_meta_description(name: str, tagline: str) -> str:
 HOME_FAQ = [
     (
         'Jaké je minimální množství objednávky pásky s potiskem?',
-        'Standardně od 360 ks na jednu variantu pásky. U větších objednávek získáte dopravu zdarma v rámci ČR.',
+        'Standardně ACRYL od 360 ks a HOT MELT od 504 ks na jednu variantu pásky. U větších objednávek získáte dopravu zdarma v rámci ČR.',
     ),
     (
         'Jak dlouho trvá výroba pásky s potiskem?',

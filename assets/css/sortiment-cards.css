@@ -242,3 +242,55 @@
     border-color: rgba(251, 146, 60, 0.35);
     color: #fdba74;
 }
+
+/* Neutral (unprinted) tape callout – soft glass / backlight */
+.product-neutral-note {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(248, 250, 252, 0.88) 100%);
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.6) inset,
+        0 12px 40px -16px rgba(234, 88, 12, 0.28),
+        0 4px 24px -8px rgba(15, 23, 42, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.product-neutral-note::before {
+    content: "";
+    position: absolute;
+    inset: -40% -20% auto;
+    height: 70%;
+    background: radial-gradient(ellipse at center, rgba(251, 146, 60, 0.22) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.product-neutral-note > p {
+    position: relative;
+    z-index: 1;
+}
+
+.dark .product-neutral-note {
+    border-color: rgba(51, 65, 85, 0.9);
+    background:
+        linear-gradient(180deg, rgba(30, 41, 59, 0.92) 0%, rgba(15, 23, 42, 0.88) 100%);
+    box-shadow:
+        0 0 0 1px rgba(148, 163, 184, 0.08) inset,
+        0 12px 40px -16px rgba(234, 88, 12, 0.35),
+        0 4px 24px -8px rgba(0, 0, 0, 0.4);
+}
+
+.dark .product-neutral-note::before {
+    background: radial-gradient(ellipse at center, rgba(234, 88, 12, 0.2) 0%, transparent 70%);
+}
+
+.dark .product-neutral-note p {
+    color: #cbd5e1;
+}
+
+.dark .product-neutral-note .font-bold {
+    color: #f8fafc;
+}

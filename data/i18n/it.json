@@ -170,8 +170,8 @@
       "length_label": "Lunghezza del nastro in metri",
       "quantity_label": "Quantità richiesta in rotoli",
       "quantity_hint": "Inserite un numero da 360 a 9999.",
-      "quantity_min": "La quantità minima è 360 rotoli.",
-      "quantity_tip": "Da 360 rotoli la spedizione è gratuita. La consegna richiede circa 3–4 settimane.",
+      "quantity_min": "ACRYL da 360 pz, HOT MELT da 504 pz.",
+      "quantity_tip": "ACRYL da 360 pz, HOT MELT da 504 pz. Spedizione gratuita da 360 pz. Consegna circa 3–4 settimane.",
       "quantity_success": "🔥 Ottima scelta! Avete la spedizione gratuita. La consegna richiede circa 3–4 settimane.",
       "validation": {
         "material_required": "Selezionate un materiale dall'elenco.",
@@ -605,6 +605,7 @@
           "Acrilico",
           "−5 a +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -628,21 +629,21 @@
       },
       "udrzitelna-paska-eco-100": {
         "name": "Nastro sostenibile ECO+ 100",
-        "tagline": "Film BOPP rigenerato al 100% da scarti post-industriali per imballaggi sostenibili premium.",
+        "tagline": "Film BOPP rigenerato al 100% da scarti post-industriali. Massimo standard ecologico senza compromessi sulle prestazioni.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nastri sostenibili",
         "benefits": [
           {
+            "title": "Proprietà meccaniche identiche",
+            "text": "Il nastro offre la stessa resistenza alla trazione e affidabilità delle versioni BOPP standard, nonostante il materiale rigenerato al 100%."
+          },
+          {
             "title": "Film BOPP rigenerato al 100%",
-            "text": "Prodotto interamente da scarti post-industriali: completamente riciclabile senza granulato vergine."
+            "text": "Prodotto da scarti post-industriali puliti della nostra produzione di film, senza granulato vergine."
           },
           {
-            "title": "Adesivo acrilico",
-            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
-          },
-          {
-            "title": "Intervallo di temperatura −5 a +60 °C",
-            "text": "Resistenza alla trazione 55 N/25 mm per imballaggi sostenibili più impegnativi in magazzino e spedizione."
+            "title": "Supporto alla reputazione aziendale",
+            "text": "I nastri ECO+ proteggono merce in modo affidabile e dimostrano responsabilità ambientale, in versione neutra o con stampa aziendale."
           }
         ],
         "uses": [
@@ -652,27 +653,28 @@
           "Linee di imballaggio automatiche con obiettivi ESG"
         ],
         "params_values": {
-          "carrier": "Film BOPP rigenerato al 100%",
-          "thickness": "35 µm",
-          "adhesive": "Acrilico",
-          "adhesion": "3,5 N/25 mm",
-          "temperature": "−5 a +60 °C",
-          "strength": "55 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "strength": "14–28 °C",
+          "temperature": "0 a +60 °C"
         },
         "spec_pills": [
-          "Film BOPP rigenerato al 100%",
-          "Acrilico",
-          "−5 a +60 °C"
+          "100% rigenerato",
+          "BOPP",
+          "ACRYL / HOT MELT"
         ],
+        "min_qty_note": "Disponibile in ACRYL e HOT MELT. Quantità min.: ACRYL da 360 pz, HOT MELT da 504 pz.",
         "params_labels": {
-          "carrier": "Supporto / materiale",
-          "thickness": "Spessore",
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
           "adhesive": "Tipo di adesivo",
-          "adhesion": "Adesione (acciaio)",
-          "temperature": "Resistenza alla temperatura",
-          "strength": "Resistenza alla trazione"
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -687,21 +689,21 @@
       },
       "udrzitelna-paska-eco-50": {
         "name": "Nastro sostenibile ECO+ 50",
-        "tagline": "Nastro sottile riciclato per imballaggi sostenibili standard.",
+        "tagline": "Imballaggio efficiente con il 50% di materiale rigenerato. Il giusto equilibrio tra ecologia e miglior prezzo.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nastri sostenibili",
         "benefits": [
           {
-            "title": "Polipropilene riciclato",
-            "text": "Film PP riciclato con minore impatto ambientale mantenendo un incollaggio affidabile."
+            "title": "Stesso prezzo e stessa qualità",
+            "text": "Stesse proprietà meccaniche e affidabilità delle versioni BOPP standard, ma senza “maggiorazione ecologica”."
           },
           {
-            "title": "Adesivo acrilico",
-            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+            "title": "Film dai nostri scarti di produzione",
+            "text": "Il supporto contiene il 50% di scarti post-industriali generati direttamente nella nostra produzione di film e subito reimmessi nel ciclo."
           },
           {
-            "title": "Intervallo di temperatura −5 a +60 °C",
-            "text": "Resistenza alla trazione 45 N/25 mm per l'uso quotidiano in magazzino e spedizione."
+            "title": "Supporto alla reputazione aziendale",
+            "text": "I nastri ECO+ proteggono merce in modo affidabile e dimostrano responsabilità ambientale, in versione neutra o con stampa aziendale."
           }
         ],
         "uses": [
@@ -711,27 +713,28 @@
           "Linee di imballaggio automatiche con obiettivi ESG"
         ],
         "params_values": {
-          "carrier": "Film PP riciclato",
-          "thickness": "50 µm",
-          "adhesive": "Acrilico",
-          "adhesion": "3,0 N/25 mm",
-          "temperature": "−5 a +60 °C",
-          "strength": "45 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "strength": "14–28 °C",
+          "temperature": "0 a +60 °C"
         },
         "spec_pills": [
-          "Film PP riciclato",
-          "Acrilico",
-          "−5 a +60 °C"
+          "50% rigenerato",
+          "BOPP",
+          "ACRYL / HOT MELT"
         ],
+        "min_qty_note": "Disponibile in ACRYL e HOT MELT. Quantità min.: ACRYL da 360 pz, HOT MELT da 504 pz.",
         "params_labels": {
-          "carrier": "Supporto / materiale",
-          "thickness": "Spessore",
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
           "adhesive": "Tipo di adesivo",
-          "adhesion": "Adesione (acciaio)",
-          "temperature": "Resistenza alla temperatura",
-          "strength": "Resistenza alla trazione"
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -746,21 +749,21 @@
       },
       "udrzitelna-paska-eco-80": {
         "name": "Nastro sostenibile ECO+ 80",
-        "tagline": "Nastro riciclato più resistente per imballaggi sostenibili più impegnativi.",
+        "tagline": "Film BOPP con l’80% di materiale rigenerato. Unisce un elevato standard ecologico e piena resistenza.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nastri sostenibili",
         "benefits": [
           {
-            "title": "Polipropilene riciclato",
-            "text": "Film PP riciclato con minore impatto ambientale mantenendo un incollaggio affidabile."
+            "title": "Proprietà meccaniche identiche",
+            "text": "Stessa resistenza alla trazione e affidabilità delle versioni BOPP standard, nonostante l’alto contenuto di riciclato."
           },
           {
-            "title": "Adesivo acrilico",
-            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+            "title": "Film dai nostri scarti di produzione",
+            "text": "Il supporto contiene l’80% di scarti post-industriali generati direttamente nella nostra produzione di film e subito reimmessi nel ciclo."
           },
           {
-            "title": "Intervallo di temperatura −5 a +60 °C",
-            "text": "Resistenza alla trazione 52 N/25 mm per l'uso quotidiano in magazzino e spedizione."
+            "title": "Supporto alla reputazione aziendale",
+            "text": "I nastri ECO+ proteggono merce in modo affidabile e dimostrano responsabilità ambientale, in versione neutra o con stampa aziendale."
           }
         ],
         "uses": [
@@ -770,27 +773,28 @@
           "Linee di imballaggio automatiche con obiettivi ESG"
         ],
         "params_values": {
-          "carrier": "Film PP riciclato",
-          "thickness": "80 µm",
-          "adhesive": "Acrilico",
-          "adhesion": "3,4 N/25 mm",
-          "temperature": "−5 a +60 °C",
-          "strength": "52 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "strength": "14–28 °C",
+          "temperature": "0 a +60 °C"
         },
         "spec_pills": [
-          "Film PP riciclato",
-          "Acrilico",
-          "−5 a +60 °C"
+          "80% rigenerato",
+          "BOPP",
+          "ACRYL / HOT MELT"
         ],
+        "min_qty_note": "Disponibile in ACRYL e HOT MELT. Quantità min.: ACRYL da 360 pz, HOT MELT da 504 pz.",
         "params_labels": {
-          "carrier": "Supporto / materiale",
-          "thickness": "Spessore",
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
           "adhesive": "Tipo di adesivo",
-          "adhesion": "Adesione (acciaio)",
-          "temperature": "Resistenza alla temperatura",
-          "strength": "Resistenza alla trazione"
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -841,6 +845,7 @@
           "Acrilico",
           "−5 a +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -900,6 +905,7 @@
           "Acrilico (senza solventi)",
           "−5 a +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -959,6 +965,7 @@
           "Acrilico",
           "−5 a +65 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -1018,6 +1025,7 @@
           "Acrilico (silenzioso, senza solventi)",
           "−5 a +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -1077,6 +1085,7 @@
           "ACRYL (Low noise / Noisy)",
           "−10 a +60 °C"
         ],
+        "min_qty_note": "Quantità minima da 360 pz (ACRYL).",
         "params_labels": {
           "carrier": "Supporto",
           "thickness": "Spessore del film",
@@ -1136,6 +1145,7 @@
           "Acrilico (strato adesivo aumentato +33%)",
           "−5 a +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -1195,6 +1205,7 @@
           "Acrilico",
           "−5 a +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -1254,6 +1265,7 @@
           "Hot melt",
           "0 a +50 °C"
         ],
+        "min_qty_note": "Quantità minima da 504 pz (HOT MELT).",
         "params_labels": {
           "carrier": "Supporto",
           "thickness": "Spessore del film",
@@ -1313,6 +1325,7 @@
           "Hot melt (super tack, +20%)",
           "0 a +55 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -1372,6 +1385,7 @@
           "Silicone",
           "−40 a +180 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -1431,6 +1445,7 @@
           "Acrilico",
           "−40 a +150 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -1490,6 +1505,7 @@
           "Acrilico",
           "−40 a +150 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -1549,6 +1565,7 @@
           "Acrilico",
           "−40 a +155 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -1608,6 +1625,7 @@
           "Acrilico (dispersione)",
           "−5 a +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -1667,6 +1685,7 @@
           "Gomma",
           "−10 a +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -1726,6 +1745,7 @@
           "Gomma",
           "−10 a +65 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -1785,6 +1805,7 @@
           "Gomma",
           "−10 a +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -1844,6 +1865,7 @@
           "Hot melt",
           "−10 a +70 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -1903,6 +1925,7 @@
           "Hot melt (gomma sintetica)",
           "−10 a +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -1962,6 +1985,7 @@
           "Gomma (solvente)",
           "−20 a +70 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -2021,6 +2045,7 @@
           "Acrilico rimovibile",
           "−5 a +55 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -2080,6 +2105,7 @@
           "Acrilico rimovibile",
           "−5 a +50 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -2139,6 +2165,7 @@
           "Hot melt (gomma sintetica)",
           "−10 a +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -2198,6 +2225,7 @@
           "Hot melt",
           "−10 a +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -2257,6 +2285,7 @@
           "Hot melt",
           "−10 a +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -2316,6 +2345,7 @@
           "Gomma (sintetica)",
           "−10 a +70 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -2375,6 +2405,7 @@
           "Gomma (sintetica)",
           "−10 a +70 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -2434,6 +2465,7 @@
           "Gomma",
           "−10 a +65 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -2493,6 +2525,7 @@
           "Gomma",
           "fino a +80 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -2552,6 +2585,7 @@
           "Gomma (resistente al calore)",
           "fino a +100 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
           "thickness": "Spessore",
@@ -2596,7 +2630,7 @@
       "tailor_bullet_consult": "Consulenza sui parametri prima dell'ordine",
       "tailor_bullet_params": "Diverse versioni di adesivo e supporto",
       "no_print_note": "Il nastro è disponibile anche senza stampa.",
-      "no_print_body": "Se non vi serve un logo sul nastro, possiamo fornire lo stesso materiale neutro, ideale per imballaggio immediato o scorte di magazzino.",
+      "no_print_body": "Versione neutra (non stampata) dello stesso materiale — ideale per imballaggio immediato o scorte di magazzino.",
       "no_print_link": "Chiedete la disponibilità",
       "product_card_detail": "Visualizza dettagli"
     },

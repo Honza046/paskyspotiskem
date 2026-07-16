@@ -7,7 +7,7 @@
     var SUPPORTED = ['cs', 'en', 'de', 'it'];
     var DEFAULT = 'cs';
     var STORAGE_KEY = 'paskyonline_lang';
-    var I18N_VER = '19';
+    var I18N_VER = '21';
     var HTML_LANG = { cs: 'cs', en: 'en', de: 'de', it: 'it' };
     var currentLocale = null;
     var localeCache = {};
@@ -255,8 +255,9 @@
         trigger.appendChild(label);
 
         var menu = document.createElement('div');
-        menu.className = 'lang-dropdown__menu absolute right-0 top-[calc(100%+0.375rem)] z-[90] hidden min-w-[11rem] origin-top-right rounded-xl border border-slate-200 bg-white py-1 shadow-lg ring-1 ring-black/5';
+        menu.className = 'lang-dropdown__menu is-hidden';
         menu.setAttribute('role', 'listbox');
+        menu.setAttribute('hidden', '');
 
         function navigateTo(code) {
             if (code === switcher._locale) return;
@@ -269,7 +270,8 @@
         }
 
         function closeMenu() {
-            menu.classList.add('hidden');
+            menu.classList.add('is-hidden');
+            menu.setAttribute('hidden', '');
             trigger.setAttribute('aria-expanded', 'false');
             label.classList.remove('!ml-2', '!max-w-[8rem]', '!opacity-100');
         }
@@ -303,7 +305,8 @@
         });
 
         function openMenu() {
-            menu.classList.remove('hidden');
+            menu.classList.remove('is-hidden');
+            menu.removeAttribute('hidden');
             trigger.setAttribute('aria-expanded', 'true');
             label.classList.add('!ml-2', '!max-w-[8rem]', '!opacity-100');
             prefetchLocales(switcher._locale);
@@ -311,7 +314,7 @@
 
         trigger.addEventListener('click', function (e) {
             e.stopPropagation();
-            if (menu.classList.contains('hidden')) {
+            if (menu.classList.contains('is-hidden') || menu.hasAttribute('hidden')) {
                 openMenu();
             } else {
                 closeMenu();

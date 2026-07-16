@@ -170,8 +170,8 @@
       "length_label": "Bandlänge in Metern",
       "quantity_label": "Gewünschte Menge in Rollen",
       "quantity_hint": "Geben Sie eine Zahl von 360 bis 9999 ein.",
-      "quantity_min": "Mindestmenge ist 360 Rollen.",
-      "quantity_tip": "Ab 360 Rollen erhalten Sie kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
+      "quantity_min": "ACRYL ab 360 Stk., HOT MELT ab 504 Stk.",
+      "quantity_tip": "ACRYL ab 360 Stk., HOT MELT ab 504 Stk. Ab 360 Stk. kostenloser Versand. Lieferzeit ca. 3–4 Wochen.",
       "quantity_success": "🔥 Ausgezeichnete Wahl! Sie haben kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
       "validation": {
         "material_required": "Bitte wählen Sie ein Material aus der Liste.",
@@ -605,6 +605,7 @@
           "Acryl",
           "−5 bis +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -628,21 +629,21 @@
       },
       "udrzitelna-paska-eco-100": {
         "name": "Nachhaltiges Klebeband ECO+ 100",
-        "tagline": "100 % regenerierte BOPP-Folie aus postindustriellen Abfällen für anspruchsvolle nachhaltige Verpackung.",
+        "tagline": "100 % regenerierte BOPP-Folie aus postindustriellen Abfällen. Maximaler ökologischer Standard ohne Kompromisse bei der Leistung.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nachhaltige Klebebänder",
         "benefits": [
           {
+            "title": "Identische mechanische Eigenschaften",
+            "text": "Das Band bietet dieselbe Zugfestigkeit und Zuverlässigkeit wie Standard-BOPP-Varianten – trotz 100 % regeneriertem Material."
+          },
+          {
             "title": "100 % regenerierte BOPP-Folie",
-            "text": "Hergestellt ausschließlich aus postindustriellen Abfällen – vollständig recycelbar ohne Neumaterial."
+            "text": "Hergestellt aus sauberem postindustriellen Abfall aus unserer eigenen Folienproduktion – ohne Neumaterial."
           },
           {
-            "title": "Acrylklebstoff",
-            "text": "Leises Abrollen, langfristig stabile Klebkraft und zuverlässige Leistung unter Lagerbedingungen."
-          },
-          {
-            "title": "Temperaturbereich −5 bis +60 °C",
-            "text": "Zugfestigkeit 55 N/25 mm für anspruchsvollere nachhaltige Verpackung im Lager und Versand."
+            "title": "Stärkung der Unternehmensreputation",
+            "text": "ECO+-Bänder schützen Ware zuverlässig und zeigen ökologische Verantwortung – neutral oder mit Firmendruck."
           }
         ],
         "uses": [
@@ -652,27 +653,28 @@
           "Automatische Verpackungslinien mit ESG-Zielen"
         ],
         "params_values": {
-          "carrier": "100 % regenerierte BOPP-Folie",
-          "thickness": "35 µm",
-          "adhesive": "Acryl",
-          "adhesion": "3,5 N/25 mm",
-          "temperature": "−5 bis +60 °C",
-          "strength": "55 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "strength": "14–28 °C",
+          "temperature": "0 bis +60 °C"
         },
         "spec_pills": [
-          "100 % regenerierte BOPP-Folie",
-          "Acryl",
-          "−5 bis +60 °C"
+          "100 % regeneriert",
+          "BOPP",
+          "ACRYL / HOT MELT"
         ],
+        "min_qty_note": "Erhältlich in ACRYL und HOT MELT. Mindestmenge: ACRYL ab 360 Stk., HOT MELT ab 504 Stk.",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
           "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -687,21 +689,21 @@
       },
       "udrzitelna-paska-eco-50": {
         "name": "Nachhaltiges Klebeband ECO+ 50",
-        "tagline": "Dünnes recyceltes Klebeband für standardmäßige nachhaltige Verpackung.",
+        "tagline": "Effizientes Verpacken mit 50 % regeneriertem Material. Optimale Balance aus Ökologie und bestem Preis.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nachhaltige Klebebänder",
         "benefits": [
           {
-            "title": "Recyceltes Polypropylen",
-            "text": "Recycelte PP-Folie mit geringerem ökologischen Fußabdruck bei zuverlässiger Klebkraft."
+            "title": "Gleicher Preis und gleiche Qualität",
+            "text": "Gleiche mechanische Eigenschaften und Zuverlässigkeit wie Standard-BOPP-Varianten – ohne „Öko-Aufpreis“."
           },
           {
-            "title": "Acrylklebstoff",
-            "text": "Leises Abrollen, langfristig stabile Klebkraft und zuverlässige Leistung unter Lagerbedingungen."
+            "title": "Folie aus eigenem Produktionsabfall",
+            "text": "Der Träger enthält 50 % postindustriellen Abfall aus unserer Folienproduktion, der sofort effizient in den Kreislauf zurückgeführt wird."
           },
           {
-            "title": "Temperaturbereich −5 bis +60 °C",
-            "text": "Zugfestigkeit 45 N/25 mm für den täglichen Lager- und Versandbetrieb."
+            "title": "Stärkung der Unternehmensreputation",
+            "text": "ECO+-Bänder schützen Ware zuverlässig und zeigen ökologische Verantwortung – neutral oder mit Firmendruck."
           }
         ],
         "uses": [
@@ -711,27 +713,28 @@
           "Automatische Verpackungslinien mit ESG-Zielen"
         ],
         "params_values": {
-          "carrier": "Recycelte PP-Folie",
-          "thickness": "50 µm",
-          "adhesive": "Acryl",
-          "adhesion": "3,0 N/25 mm",
-          "temperature": "−5 bis +60 °C",
-          "strength": "45 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "strength": "14–28 °C",
+          "temperature": "0 bis +60 °C"
         },
         "spec_pills": [
-          "Recycelte PP-Folie",
-          "Acryl",
-          "−5 bis +60 °C"
+          "50 % regeneriert",
+          "BOPP",
+          "ACRYL / HOT MELT"
         ],
+        "min_qty_note": "Erhältlich in ACRYL und HOT MELT. Mindestmenge: ACRYL ab 360 Stk., HOT MELT ab 504 Stk.",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
           "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -746,21 +749,21 @@
       },
       "udrzitelna-paska-eco-80": {
         "name": "Nachhaltiges Klebeband ECO+ 80",
-        "tagline": "Stärkeres recyceltes Klebeband für anspruchsvollere nachhaltige Verpackung.",
+        "tagline": "BOPP-Folie mit 80 % regeneriertem Material. Verbindet hohen ökologischen Standard mit voller Festigkeit.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nachhaltige Klebebänder",
         "benefits": [
           {
-            "title": "Recyceltes Polypropylen",
-            "text": "Recycelte PP-Folie mit geringerem ökologischen Fußabdruck bei zuverlässiger Klebkraft."
+            "title": "Identische mechanische Eigenschaften",
+            "text": "Gleiche Zugfestigkeit und Zuverlässigkeit wie Standard-BOPP-Varianten – trotz hohem Recyclinganteil."
           },
           {
-            "title": "Acrylklebstoff",
-            "text": "Leises Abrollen, langfristig stabile Klebkraft und zuverlässige Leistung unter Lagerbedingungen."
+            "title": "Folie aus eigenem Produktionsabfall",
+            "text": "Der Träger enthält 80 % postindustriellen Abfall aus unserer Folienproduktion, der sofort effizient in den Kreislauf zurückgeführt wird."
           },
           {
-            "title": "Temperaturbereich −5 bis +60 °C",
-            "text": "Zugfestigkeit 52 N/25 mm für den täglichen Lager- und Versandbetrieb."
+            "title": "Stärkung der Unternehmensreputation",
+            "text": "ECO+-Bänder schützen Ware zuverlässig und zeigen ökologische Verantwortung – neutral oder mit Firmendruck."
           }
         ],
         "uses": [
@@ -770,27 +773,28 @@
           "Automatische Verpackungslinien mit ESG-Zielen"
         ],
         "params_values": {
-          "carrier": "Recycelte PP-Folie",
-          "thickness": "80 µm",
-          "adhesive": "Acryl",
-          "adhesion": "3,4 N/25 mm",
-          "temperature": "−5 bis +60 °C",
-          "strength": "52 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "strength": "14–28 °C",
+          "temperature": "0 bis +60 °C"
         },
         "spec_pills": [
-          "Recycelte PP-Folie",
-          "Acryl",
-          "−5 bis +60 °C"
+          "80 % regeneriert",
+          "BOPP",
+          "ACRYL / HOT MELT"
         ],
+        "min_qty_note": "Erhältlich in ACRYL und HOT MELT. Mindestmenge: ACRYL ab 360 Stk., HOT MELT ab 504 Stk.",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
           "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -841,6 +845,7 @@
           "Acryl",
           "−5 bis +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -900,6 +905,7 @@
           "Acryl (lösungsmittelfrei)",
           "−5 bis +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -959,6 +965,7 @@
           "Acryl",
           "−5 bis +65 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -1018,6 +1025,7 @@
           "Acryl (leise, lösungsmittelfrei)",
           "−5 bis +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -1077,6 +1085,7 @@
           "ACRYL (Low noise / Noisy)",
           "−10 bis +60 °C"
         ],
+        "min_qty_note": "Mindestmenge ab 360 Stk. (ACRYL).",
         "params_labels": {
           "carrier": "Träger",
           "thickness": "Foliendicke",
@@ -1136,6 +1145,7 @@
           "Acryl (erhöhte Klebstoffschicht +33 %)",
           "−5 bis +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -1195,6 +1205,7 @@
           "Acryl",
           "−5 bis +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -1254,6 +1265,7 @@
           "Hot Melt",
           "0 bis +50 °C"
         ],
+        "min_qty_note": "Mindestmenge ab 504 Stk. (HOT MELT).",
         "params_labels": {
           "carrier": "Träger",
           "thickness": "Foliendicke",
@@ -1313,6 +1325,7 @@
           "Hot Melt (Super-Tack, +20 %)",
           "0 bis +55 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -1372,6 +1385,7 @@
           "Silikon",
           "−40 bis +180 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -1431,6 +1445,7 @@
           "Acryl",
           "−40 bis +150 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -1490,6 +1505,7 @@
           "Acryl",
           "−40 bis +150 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -1549,6 +1565,7 @@
           "Acryl",
           "−40 bis +155 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -1608,6 +1625,7 @@
           "Acryl (Dispersion)",
           "−5 bis +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -1667,6 +1685,7 @@
           "Kautschuk",
           "−10 bis +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -1726,6 +1745,7 @@
           "Kautschuk",
           "−10 bis +65 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -1785,6 +1805,7 @@
           "Kautschuk",
           "−10 bis +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -1844,6 +1865,7 @@
           "Hot Melt",
           "−10 bis +70 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -1903,6 +1925,7 @@
           "Hot Melt (Synthesekautschuk)",
           "−10 bis +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -1962,6 +1985,7 @@
           "Kautschuk (Lösungsmittel)",
           "−20 bis +70 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -2021,6 +2045,7 @@
           "Abziehbares Acryl",
           "−5 bis +55 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -2080,6 +2105,7 @@
           "Abziehbares Acryl",
           "−5 bis +50 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -2139,6 +2165,7 @@
           "Hot Melt (Synthesekautschuk)",
           "−10 bis +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -2198,6 +2225,7 @@
           "Hot Melt",
           "−10 bis +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -2257,6 +2285,7 @@
           "Hot Melt",
           "−10 bis +60 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -2316,6 +2345,7 @@
           "Kautschuk (synthetisch)",
           "−10 bis +70 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -2375,6 +2405,7 @@
           "Kautschuk (synthetisch)",
           "−10 bis +70 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -2434,6 +2465,7 @@
           "Kautschuk",
           "−10 bis +65 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -2493,6 +2525,7 @@
           "Kautschuk",
           "bis +80 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -2552,6 +2585,7 @@
           "Kautschuk (hitzebeständig)",
           "bis +100 °C"
         ],
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
           "thickness": "Dicke",
@@ -2596,7 +2630,7 @@
       "tailor_bullet_consult": "Beratung zu den Parametern vor der Bestellung",
       "tailor_bullet_params": "Verschiedene Klebstoff- und Trägerausführungen",
       "no_print_note": "Dieses Band ist auch ohne Bedruckung erhältlich.",
-      "no_print_body": "Wenn Sie kein Logo auf dem Band benötigen, liefern wir dasselbe Material unbedruckt – ideal für den sofortigen Einsatz oder Lagerbestand.",
+      "no_print_body": "Neutrale (unbedruckte) Version desselben Materials – ideal für den sofortigen Einsatz oder Lagerbestand.",
       "no_print_link": "Verfügbarkeit anfragen",
       "product_card_detail": "Details anzeigen"
     },
