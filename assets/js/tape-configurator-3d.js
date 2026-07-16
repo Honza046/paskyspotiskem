@@ -1,5 +1,5 @@
 /**
- * Live 3D tape configurator (Three.js) — fullscreen modal.
+ * Live 3D tape configurator (Three.js), fullscreen modal.
  */
 (function (global) {
     'use strict';

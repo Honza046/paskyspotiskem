@@ -1,5 +1,5 @@
 /**
- * Footer credit easter egg — hover Jan Sedlář for a surprise.
+ * Footer credit easter egg, hover Jan Sedlář for a surprise.
  */
 (function () {
     'use strict';

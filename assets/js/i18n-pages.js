@@ -613,7 +613,7 @@
             var hint = radio.parentElement && radio.parentElement.querySelector('span.mt-1');
             if (!hint) return;
             if (radio.value === 'HOT MELT') setText(hint, formData.hot_melt_hint);
-            if (radio.value === 'ACRYL') setText(hint, formData.acryl_hint);
+            if (radio.value === 'Akryl' || radio.value === 'ACRYL') setText(hint, formData.acryl_hint);
         });
 
         var acrylBox = document.querySelector('#acryl-noise-option');

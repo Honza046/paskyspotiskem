@@ -229,7 +229,7 @@ def product_meta_description(name: str, tagline: str) -> str:
 HOME_FAQ = [
     (
         'Jaké je minimální množství objednávky pásky s potiskem?',
-        'Standardně ACRYL od 360 ks a HOT MELT od 504 ks na jednu variantu pásky. U větších objednávek získáte dopravu zdarma v rámci ČR.',
+        'Standardně Akryl od 360 ks a HOT MELT od 504 ks na jednu variantu pásky. U větších objednávek získáte dopravu zdarma v rámci ČR.',
     ),
     (
         'Jak dlouho trvá výroba pásky s potiskem?',
@@ -240,8 +240,8 @@ HOME_FAQ = [
         'Ano. Stejný materiál dodáme i v nepotištěném provedení pro okamžité balení nebo skladové zásoby.',
     ),
     (
-        'Jaký je rozdíl mezi HOT MELT a ACRYL lepidlem na páskách?',
-        'HOT MELT rychle a pevně přilne i v chladu. ACRYL je tišší při odvíjení a odolnější vůči UV.',
+        'Jaký je rozdíl mezi HOT MELT a Akryl lepidlem na páskách?',
+        'HOT MELT rychle a pevně přilne i v chladu. Akryl je tišší při odvíjení a odolnější vůči UV.',
     ),
     (
         'Dodáváte vzorky lepicích pásek zdarma?',

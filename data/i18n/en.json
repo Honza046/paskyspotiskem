@@ -5,9 +5,9 @@
     "home_title": "Home | Printed Packaging Tapes",
     "home_description": "Printed packaging tapes | Manufacturing and supply of custom printed adhesive tapes by ALFA IN a.s.",
     "gallery_title": "Gallery | Printed Packaging Tapes",
-    "gallery_description": "Gallery of printed packaging tape samples by ALFA IN a.s. — single-colour print, rotogravure, security and logistics tapes.",
+    "gallery_description": "Gallery of printed packaging tape samples by ALFA IN a.s., single-colour print, rotogravure, security and logistics tapes.",
     "sortiment_title": "Product Range | Printed Packaging Tapes",
-    "sortiment_description": "ALFA IN adhesive tape range — BOPP tapes HOT MELT and ACRYL, special lines and ECO products with custom printing.",
+    "sortiment_description": "ALFA IN adhesive tape range, BOPP tapes HOT MELT and Akryl, special lines and ECO products with custom printing.",
     "langNames": {
       "cs": "Čeština",
       "en": "English",
@@ -17,7 +17,7 @@
     "htmlLang": "en"
   },
   "nav": {
-    "tagline": "ALFA IN — manufacturing, consulting, sales and service",
+    "tagline": "ALFA IN, manufacturing, consulting, sales and service",
     "menu": "Open menu",
     "menu_close": "Close menu",
     "main_nav_label": "Main navigation",
@@ -80,8 +80,8 @@
       "lead": "For more than 30 years we have helped companies pack their shipments securely and build a strong brand directly on packaging materials. We offer custom-printed adhesive tapes as well as plain neutral tapes.",
       "body1_prefix": "Our ",
       "body1_highlight": "modern production facility",
-      "body1_tooltip": "We do not only manufacture adhesive tapes — we also produce the films ourselves, which gives us a significant competitive advantage when raw materials are in short supply.",
-      "body1_suffix": " allows us to respond flexibly to the needs of both small e-shops and large industrial enterprises. We pride ourselves on precise printing (up to 8 colours), premium adhesive quality (HOT MELT and ACRYL) and fast delivery throughout the Czech Republic and the European Union.",
+      "body1_tooltip": "We do not only manufacture adhesive tapes, we also produce the films ourselves, which gives us a significant competitive advantage when raw materials are in short supply.",
+      "body1_suffix": " allows us to respond flexibly to the needs of both small e-shops and large industrial enterprises. We pride ourselves on precise printing (up to 8 colours), premium adhesive quality (HOT MELT and Akryl) and fast delivery throughout the Czech Republic and the European Union.",
       "body1": "Our modern production facility allows us to respond flexibly to the needs of both small e-shops and large industrial enterprises. We pride ourselves on precise printing (up to 8 colours), premium adhesive quality (Hot Melt, Acrylic) and fast delivery throughout the Czech Republic.",
       "body2": "Thanks to ISO 9001 certified processes and the use of ecological, sustainable materials, we are a reliable partner for more than 300 active customers.",
       "image_alt": "ALFA IN adhesive tape production",
@@ -105,7 +105,7 @@
       "hot_melt_subtitle": "Synthetic rubber",
       "hot_melt_text": "The ideal choice for cooler environments and unheated warehouses. It bonds to the substrate extremely quickly and strongly immediately after application. It cannot be easily removed from stretch wrap.",
       "acryl_badge": "Quiet & UV resistant",
-      "acryl_title": "ACRYL",
+      "acryl_title": "Akryl",
       "acryl_subtitle": "With low-noise unwind",
       "acryl_text": "Ensures quiet, comfortable unwinding appreciated in large packing halls. Highly resistant to UV radiation and ageing, making it the perfect choice for long-term goods storage."
     },
@@ -122,10 +122,10 @@
     },
     "benefits": {
       "security_badge": "Security",
-      "security_title": "TAMPER EVIDENT tape — tampering is obvious!",
+      "security_title": "TAMPER EVIDENT tape, tampering is obvious!",
       "security_text": "This security tape looks neutral, but when removed it leaves a warning on the box that is virtually impossible to eliminate. Suitable for all types of cardboard and stretch film, available in various colours and with custom printing.",
       "glue_badge": "Extreme adhesion",
-      "glue_title": "EXTRA GLUE+ (ACRYL) and TACK+ (HOT MELT)",
+      "glue_title": "EXTRA GLUE+ (Akryl) and TACK+ (HOT MELT)",
       "glue_text": "Tapes with an increased adhesive layer (33% and 20% respectively) and the option of a stronger film than standard, designed for very demanding applications such as heavy parcels, poor-quality cardboard or dusty environments. They bond extremely firmly to cardboard.",
       "glue_extra_tag": "+33% adhesive"
     },
@@ -149,7 +149,7 @@
       "catalog_error": "Could not load catalogue",
       "tape_type": "Adhesive type",
       "acryl_no_silent_title": "Without low-noise treatment",
-      "acryl_no_silent_text": "ACRYL tapes normally have quiet unwinding. Check this if you prefer the variant without this treatment.",
+      "acryl_no_silent_text": "Akryl tapes normally have quiet unwinding. Check this if you prefer the variant without this treatment.",
       "base_color": "Base colour",
       "print_colors": "Number of print colours",
       "hot_melt_hint": "Synthetic rubber",
@@ -170,8 +170,8 @@
       "length_label": "Tape length in metres",
       "quantity_label": "Requested quantity in rolls",
       "quantity_hint": "Enter a number from 360 to 9999.",
-      "quantity_min": "ACRYL from 360 pcs, HOT MELT from 504 pcs.",
-      "quantity_tip": "ACRYL from 360 pcs, HOT MELT from 504 pcs. Free shipping from 360 pcs. Delivery approx. 3–4 weeks.",
+      "quantity_min": "Akryl from 360 pcs, HOT MELT from 504 pcs.",
+      "quantity_tip": "Akryl from 360 pcs, HOT MELT from 504 pcs. Free shipping from 360 pcs. Delivery approx. 3–4 weeks.",
       "quantity_success": "🔥 Great choice! You have free shipping. Delivery takes approximately 3–4 weeks.",
       "validation": {
         "material_required": "Please select a material from the list.",
@@ -253,7 +253,7 @@
     "ui": {
       "label": "Gallery",
       "title": "Examples of our work",
-      "subtitle": "Real production references and print technology showcases — filter by print type, adhesive or industry.",
+      "subtitle": "Real production references and print technology showcases, filter by print type, adhesive or industry.",
       "cta_custom": "I want custom printing"
     },
     "filters": {
@@ -300,7 +300,7 @@
       "references_title": "Real references",
       "references_subtitle": "Photographs of actual prints from our production. We will add more references after the next photo shoot.",
       "demos_title": "Print options and technologies",
-      "demos_subtitle": "Examples of security, logistics and special solutions — illustrations of the technologies we offer.",
+      "demos_subtitle": "Examples of security, logistics and special solutions, illustrations of the technologies we offer.",
       "empty": "No sample matches the selected filters. Try removing one of the filters."
     },
     "cards": {
@@ -474,7 +474,7 @@
         "description": "An eco-friendly solution for secure packaging with high adhesion. Ideal for fully recyclable cardboard boxes and clean corporate branding.",
         "intro": "Paper adhesive tapes combine reliable bonding with maximum environmental responsibility. Thanks to the paper carrier, they are fully recyclable together with cardboard and offer an elegant, clean-looking solution for companies that care about sustainability and the visual impact of their shipments.",
         "properties": {
-          "Fully recyclable": "Tape and cardboard go into the same bin — no need to separate materials.",
+          "Fully recyclable": "Tape and cardboard go into the same bin, no need to separate materials.",
           "High adhesion": "Reliable bonding even on recycled cardboard and uneven surfaces.",
           "Clean design": "The matte paper surface looks premium and can be easily printed with your logo."
         },
@@ -639,11 +639,11 @@
           },
           {
             "title": "100% regenerated BOPP film",
-            "text": "Made from clean post-industrial waste from our own film production — without virgin granulate."
+            "text": "Made from clean post-industrial waste from our own film production, without virgin granulate."
           },
           {
             "title": "Supporting corporate reputation",
-            "text": "ECO+ tapes reliably protect goods and demonstrate environmental responsibility — in a plain finish or with company print."
+            "text": "ECO+ tapes reliably protect goods and demonstrate environmental responsibility, in a plain finish or with company print."
           }
         ],
         "uses": [
@@ -655,17 +655,17 @@
         "params_values": {
           "carrier": "BOPP",
           "thickness": "25 / 28 / 32 µm",
-          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
-          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "adhesive": "Akryl (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (Akryl) / 18 µm (HOT MELT)",
           "strength": "14–28 °C",
           "temperature": "0 to +60 °C"
         },
         "spec_pills": [
           "100% regenerated",
           "BOPP",
-          "ACRYL / HOT MELT"
+          "Akryl / HOT MELT"
         ],
-        "min_qty_note": "Available in ACRYL and HOT MELT. Min. quantity: ACRYL from 360 pcs, HOT MELT from 504 pcs.",
+        "min_qty_note": "Available as Akryl and HOT MELT. Min. quantity: Akryl from 360 pcs, HOT MELT from 504 pcs.",
         "params_labels": {
           "carrier": "Carrier",
           "thickness": "Film thickness",
@@ -703,7 +703,7 @@
           },
           {
             "title": "Supporting corporate reputation",
-            "text": "ECO+ tapes reliably protect goods and demonstrate environmental responsibility — in a plain finish or with company print."
+            "text": "ECO+ tapes reliably protect goods and demonstrate environmental responsibility, in a plain finish or with company print."
           }
         ],
         "uses": [
@@ -715,17 +715,17 @@
         "params_values": {
           "carrier": "BOPP",
           "thickness": "25 / 28 / 32 µm",
-          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
-          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "adhesive": "Akryl (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (Akryl) / 18 µm (HOT MELT)",
           "strength": "14–28 °C",
           "temperature": "0 to +60 °C"
         },
         "spec_pills": [
           "50% regenerated",
           "BOPP",
-          "ACRYL / HOT MELT"
+          "Akryl / HOT MELT"
         ],
-        "min_qty_note": "Available in ACRYL and HOT MELT. Min. quantity: ACRYL from 360 pcs, HOT MELT from 504 pcs.",
+        "min_qty_note": "Available as Akryl and HOT MELT. Min. quantity: Akryl from 360 pcs, HOT MELT from 504 pcs.",
         "params_labels": {
           "carrier": "Carrier",
           "thickness": "Film thickness",
@@ -763,7 +763,7 @@
           },
           {
             "title": "Supporting corporate reputation",
-            "text": "ECO+ tapes reliably protect goods and demonstrate environmental responsibility — in a plain finish or with company print."
+            "text": "ECO+ tapes reliably protect goods and demonstrate environmental responsibility, in a plain finish or with company print."
           }
         ],
         "uses": [
@@ -775,17 +775,17 @@
         "params_values": {
           "carrier": "BOPP",
           "thickness": "25 / 28 / 32 µm",
-          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
-          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "adhesive": "Akryl (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (Akryl) / 18 µm (HOT MELT)",
           "strength": "14–28 °C",
           "temperature": "0 to +60 °C"
         },
         "spec_pills": [
           "80% regenerated",
           "BOPP",
-          "ACRYL / HOT MELT"
+          "Akryl / HOT MELT"
         ],
-        "min_qty_note": "Available in ACRYL and HOT MELT. Min. quantity: ACRYL from 360 pcs, HOT MELT from 504 pcs.",
+        "min_qty_note": "Available as Akryl and HOT MELT. Min. quantity: Akryl from 360 pcs, HOT MELT from 504 pcs.",
         "params_labels": {
           "carrier": "Carrier",
           "thickness": "Film thickness",
@@ -875,7 +875,7 @@
         "benefits": [
           {
             "title": "Plastic-free paper carrier",
-            "text": "Fully recyclable packaging — tape goes with the carton without separation."
+            "text": "Fully recyclable packaging, tape goes with the carton without separation."
           },
           {
             "title": "Acrylic adhesive",
@@ -935,7 +935,7 @@
         "benefits": [
           {
             "title": "Plastic-free paper carrier",
-            "text": "Fully recyclable packaging — tape goes with the carton without separation."
+            "text": "Fully recyclable packaging, tape goes with the carton without separation."
           },
           {
             "title": "Acrylic adhesive",
@@ -989,13 +989,13 @@
       },
       "udrzitelna-paska-poly-plus": {
         "name": "Sustainable tape POLY+",
-        "tagline": "Eco-friendly PVC alternative — matte non-reflective BOPP tape with quiet acrylic adhesive.",
+        "tagline": "Eco-friendly PVC alternative, matte non-reflective BOPP tape with quiet acrylic adhesive.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
         "benefits": [
           {
             "title": "Eco-friendly PVC alternative",
-            "text": "Matte 35 µm BOPP film without chlorine or solvents — a suitable replacement for vinyl tapes."
+            "text": "Matte 35 µm BOPP film without chlorine or solvents, a suitable replacement for vinyl tapes."
           },
           {
             "title": "Acrylic adhesive",
@@ -1048,7 +1048,7 @@
         }
       },
       "bopp-paska-acrylic": {
-        "name": "BOPP tape ACRYL",
+        "name": "BOPP tape Akryl",
         "tagline": "Reliable BOPP tape with long service life.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP tapes",
@@ -1059,7 +1059,7 @@
           },
           {
             "title": "Low-noise unwinding",
-            "text": "Optional low-noise finish — quiet unwinding and operating temperature down to −10 °C."
+            "text": "Optional low-noise finish, quiet unwinding and operating temperature down to −10 °C."
           },
           {
             "title": "High UV resistance",
@@ -1075,17 +1075,17 @@
         "params_values": {
           "carrier": "BOPP",
           "thickness": "25 / 28 / 32 µm",
-          "adhesive": "ACRYL (Low noise / Noisy)",
+          "adhesive": "Akryl (Low noise / Noisy)",
           "adhesion": "21 µm",
           "strength": "14–28 °C",
           "temperature": "−10 to +60 °C"
         },
         "spec_pills": [
           "BOPP",
-          "ACRYL (Low noise / Noisy)",
+          "Akryl (Low noise / Noisy)",
           "−10 to +60 °C"
         ],
-        "min_qty_note": "Minimum quantity from 360 pcs (ACRYL).",
+        "min_qty_note": "Minimum quantity from 360 pcs (Akryl).",
         "params_labels": {
           "carrier": "Carrier",
           "thickness": "Film thickness",
@@ -1123,7 +1123,7 @@
           },
           {
             "title": "Quiet unwinding and UV resistance",
-            "text": "Adhesion 4,0 N/25 mm with low noise — reliable performance in warehouse conditions (−5 až +60 °C)."
+            "text": "Adhesion 4,0 N/25 mm with low noise, reliable performance in warehouse conditions (−5 až +60 °C)."
           }
         ],
         "uses": [
@@ -1243,7 +1243,7 @@
           },
           {
             "title": "High adhesion",
-            "text": "Hard to peel off stretch film — a clear sign of shipment security."
+            "text": "Hard to peel off stretch film, a clear sign of shipment security."
           }
         ],
         "uses": [
@@ -1295,11 +1295,11 @@
         "benefits": [
           {
             "title": "Super tack (+20% adhesion)",
-            "text": "Instant adhesion and higher hold than standard HOT MELT — recommended for packing machines."
+            "text": "Instant adhesion and higher hold than standard HOT MELT, recommended for packing machines."
           },
           {
             "title": "Hot melt adhesive",
-            "text": "Fast, strong bonding even at lower temperatures — suitable for manual and machine packing."
+            "text": "Fast, strong bonding even at lower temperatures, suitable for manual and machine packing."
           },
           {
             "title": "Easy unwinding for machines",
@@ -1363,7 +1363,7 @@
           },
           {
             "title": "Extreme temperatures",
-            "text": "Performance at high coating temperatures and in frost — without surface damage."
+            "text": "Performance at high coating temperatures and in frost, without surface damage."
           }
         ],
         "uses": [
@@ -1423,7 +1423,7 @@
           },
           {
             "title": "Chemical resistance",
-            "text": "Strength 60 N/25 mm — resists solvents, oils and aggressive environments."
+            "text": "Strength 60 N/25 mm, resists solvents, oils and aggressive environments."
           }
         ],
         "uses": [
@@ -1543,7 +1543,7 @@
           },
           {
             "title": "Chemical resistance",
-            "text": "Strength 55 N/25 mm — resists solvents, oils and aggressive environments."
+            "text": "Strength 55 N/25 mm, resists solvents, oils and aggressive environments."
           }
         ],
         "uses": [
@@ -1595,7 +1595,7 @@
         "benefits": [
           {
             "title": "Fully recyclable",
-            "text": "Kraft paper carrier (100 µm) — eco-friendly packaging with a clean matte look."
+            "text": "Kraft paper carrier (100 µm), eco-friendly packaging with a clean matte look."
           },
           {
             "title": "Acrylic adhesive",
@@ -1655,7 +1655,7 @@
         "benefits": [
           {
             "title": "Fully recyclable",
-            "text": "Kraft paper carrier (115 µm) — eco-friendly packaging with a clean matte look."
+            "text": "Kraft paper carrier (115 µm), eco-friendly packaging with a clean matte look."
           },
           {
             "title": "Rubber adhesive",
@@ -1715,7 +1715,7 @@
         "benefits": [
           {
             "title": "Fully recyclable",
-            "text": "Kraft paper carrier (120 µm) — eco-friendly packaging with a clean matte look."
+            "text": "Kraft paper carrier (120 µm), eco-friendly packaging with a clean matte look."
           },
           {
             "title": "Rubber adhesive",
@@ -1775,7 +1775,7 @@
         "benefits": [
           {
             "title": "Recycled paper carrier",
-            "text": "Tape and carton are recycled together — no need to separate materials."
+            "text": "Tape and carton are recycled together, no need to separate materials."
           },
           {
             "title": "Rubber adhesive",
@@ -1835,11 +1835,11 @@
         "benefits": [
           {
             "title": "Fully recyclable",
-            "text": "Kraft paper carrier (130 µm) — eco-friendly packaging with a clean matte look."
+            "text": "Kraft paper carrier (130 µm), eco-friendly packaging with a clean matte look."
           },
           {
             "title": "Hot melt adhesive",
-            "text": "Fast, strong bonding even at lower temperatures — suitable for manual and machine packing."
+            "text": "Fast, strong bonding even at lower temperatures, suitable for manual and machine packing."
           },
           {
             "title": "Strength 60 N/25 mm",
@@ -1895,11 +1895,11 @@
         "benefits": [
           {
             "title": "Fully recyclable",
-            "text": "Kraft paper carrier (120 µm) — eco-friendly packaging with a clean matte look."
+            "text": "Kraft paper carrier (120 µm), eco-friendly packaging with a clean matte look."
           },
           {
             "title": "Hot melt adhesive",
-            "text": "Fast, strong bonding even at lower temperatures — suitable for manual and machine packing."
+            "text": "Fast, strong bonding even at lower temperatures, suitable for manual and machine packing."
           },
           {
             "title": "Strength 55 N/25 mm",
@@ -1955,7 +1955,7 @@
         "benefits": [
           {
             "title": "Fully recyclable",
-            "text": "Kraft paper carrier (150 µm) — eco-friendly packaging with a clean matte look."
+            "text": "Kraft paper carrier (150 µm), eco-friendly packaging with a clean matte look."
           },
           {
             "title": "Rubber adhesive",
@@ -2015,7 +2015,7 @@
         "benefits": [
           {
             "title": "No residue after removal",
-            "text": "Recycled PET film (19 µm) — leaves no adhesive or surface damage after removal."
+            "text": "Recycled PET film (19 µm), leaves no adhesive or surface damage after removal."
           },
           {
             "title": "Acrylic adhesive",
@@ -2075,7 +2075,7 @@
         "benefits": [
           {
             "title": "No residue after removal",
-            "text": "BOPP film (50 µm) — leaves no adhesive or surface damage after removal."
+            "text": "BOPP film (50 µm), leaves no adhesive or surface damage after removal."
           },
           {
             "title": "Acrylic adhesive",
@@ -2135,15 +2135,15 @@
         "benefits": [
           {
             "title": "Longitudinal glass fibres",
-            "text": "Tensile strength 300 N/25 mm — maximum resistance in the direction of pull."
+            "text": "Tensile strength 300 N/25 mm, maximum resistance in the direction of pull."
           },
           {
             "title": "Hot melt adhesive",
-            "text": "Fast, strong bonding even at lower temperatures — suitable for manual and machine packing."
+            "text": "Fast, strong bonding even at lower temperatures, suitable for manual and machine packing."
           },
           {
             "title": "Securing heavy loads",
-            "text": "Adhesion 4,5 N/25 mm — reliable securing of pallets and oversized shipments."
+            "text": "Adhesion 4,5 N/25 mm, reliable securing of pallets and oversized shipments."
           }
         ],
         "uses": [
@@ -2195,15 +2195,15 @@
         "benefits": [
           {
             "title": "Cross-laid glass fibres",
-            "text": "Tensile strength 320 N/25 mm — resistance in all directions of load."
+            "text": "Tensile strength 320 N/25 mm, resistance in all directions of load."
           },
           {
             "title": "Hot melt adhesive",
-            "text": "Fast, strong bonding even at lower temperatures — suitable for manual and machine packing."
+            "text": "Fast, strong bonding even at lower temperatures, suitable for manual and machine packing."
           },
           {
             "title": "Securing heavy loads",
-            "text": "Adhesion 4,7 N/25 mm — reliable securing of pallets and oversized shipments."
+            "text": "Adhesion 4,7 N/25 mm, reliable securing of pallets and oversized shipments."
           }
         ],
         "uses": [
@@ -2259,11 +2259,11 @@
           },
           {
             "title": "Hot melt adhesive",
-            "text": "Fast, strong bonding even at lower temperatures — suitable for manual and machine packing."
+            "text": "Fast, strong bonding even at lower temperatures, suitable for manual and machine packing."
           },
           {
             "title": "No glass fibres",
-            "text": "Clean fixing without loose fibres — temperature range −10 až +60 °C."
+            "text": "Clean fixing without loose fibres, temperature range −10 až +60 °C."
           }
         ],
         "uses": [
@@ -2315,7 +2315,7 @@
         "benefits": [
           {
             "title": "Tensile strength 120 N/25 mm",
-            "text": "Textile reinforcement (250 µm) — tear resistance for demanding use."
+            "text": "Textile reinforcement (250 µm), tear resistance for demanding use."
           },
           {
             "title": "Rubber adhesive",
@@ -2323,7 +2323,7 @@
           },
           {
             "title": "Adhesion on rough surfaces",
-            "text": "Adhesion 6,0 N/25 mm — holds on metal, wood, concrete and plastic (−10 až +70 °C)."
+            "text": "Adhesion 6,0 N/25 mm, holds on metal, wood, concrete and plastic (−10 až +70 °C)."
           }
         ],
         "uses": [
@@ -2375,7 +2375,7 @@
         "benefits": [
           {
             "title": "Tensile strength 130 N/25 mm",
-            "text": "Textile reinforcement (280 µm) — tear resistance for demanding use."
+            "text": "Textile reinforcement (280 µm), tear resistance for demanding use."
           },
           {
             "title": "Rubber adhesive",
@@ -2383,7 +2383,7 @@
           },
           {
             "title": "Adhesion on rough surfaces",
-            "text": "Adhesion 6,5 N/25 mm — holds on metal, wood, concrete and plastic (−10 až +70 °C)."
+            "text": "Adhesion 6,5 N/25 mm, holds on metal, wood, concrete and plastic (−10 až +70 °C)."
           }
         ],
         "uses": [
@@ -2435,7 +2435,7 @@
         "benefits": [
           {
             "title": "Tensile strength 110 N/25 mm",
-            "text": "Textile reinforcement (220 µm) — tear resistance for demanding use."
+            "text": "Textile reinforcement (220 µm), tear resistance for demanding use."
           },
           {
             "title": "Rubber adhesive",
@@ -2443,7 +2443,7 @@
           },
           {
             "title": "Adhesion on rough surfaces",
-            "text": "Adhesion 5,5 N/25 mm — holds on metal, wood, concrete and plastic (−10 až +65 °C)."
+            "text": "Adhesion 5,5 N/25 mm, holds on metal, wood, concrete and plastic (−10 až +65 °C)."
           }
         ],
         "uses": [
@@ -2495,7 +2495,7 @@
         "benefits": [
           {
             "title": "Sharp edges without bleed-through",
-            "text": "Crepe carrier (130 µm) — paint will not bleed under the tape."
+            "text": "Crepe carrier (130 µm), paint will not bleed under the tape."
           },
           {
             "title": "Rubber adhesive",
@@ -2555,7 +2555,7 @@
         "benefits": [
           {
             "title": "Sharp edges without bleed-through",
-            "text": "Crepe carrier (150 µm) — paint will not bleed under the tape."
+            "text": "Crepe carrier (150 µm), paint will not bleed under the tape."
           },
           {
             "title": "Rubber adhesive",
@@ -2630,7 +2630,7 @@
       "tailor_bullet_consult": "Parameter consultation before ordering",
       "tailor_bullet_params": "Various adhesive and carrier options",
       "no_print_note": "This tape is also available without printing.",
-      "no_print_body": "Neutral (unprinted) version of the same material — ideal for immediate packing or stock.",
+      "no_print_body": "Neutral (unprinted) version of the same material, ideal for immediate packing or stock.",
       "no_print_link": "Ask about availability",
       "product_card_detail": "View details"
     },

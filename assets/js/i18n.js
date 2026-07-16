@@ -7,7 +7,7 @@
     var SUPPORTED = ['cs', 'en', 'de', 'it'];
     var DEFAULT = 'cs';
     var STORAGE_KEY = 'paskyonline_lang';
-    var I18N_VER = '21';
+    var I18N_VER = '22';
     var HTML_LANG = { cs: 'cs', en: 'en', de: 'de', it: 'it' };
     var currentLocale = null;
     var localeCache = {};

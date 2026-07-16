@@ -36,7 +36,7 @@ ITEMS = [
         "width": "48 mm",
         "colors": 1,
         "adhesive": "acryl",
-        "description": "Klasický jednobarevný potisk loga na průhledné nebo bílé BOPP pásky — ideální pro firemní balení a skladovou logistiku.",
+        "description": "Klasický jednobarevný potisk loga na průhledné nebo bílé BOPP pásky, ideální pro firemní balení a skladovou logistiku.",
         "graphic": False,
     },
     {
@@ -51,7 +51,7 @@ ITEMS = [
         "width": "48 mm",
         "colors": 8,
         "adhesive": "hot-melt",
-        "description": "Plnobarevný flexotisk s vysokým rozlišením — vhodný pro atraktivní brand na balících páskách i potravinářských aplikacích.",
+        "description": "Plnobarevný flexotisk s vysokým rozlišením, vhodný pro atraktivní brand na balících páskách i potravinářských aplikacích.",
         "graphic": False,
     },
     {
@@ -81,7 +81,7 @@ ITEMS = [
         "width": "48 mm",
         "colors": 2,
         "adhesive": "acryl",
-        "description": "Bezpečnostní páska s VOID efektem — při odlepení zanechá viditelné upozornění, které nelze bez stopy odstranit.",
+        "description": "Bezpečnostní páska s VOID efektem, při odlepení zanechá viditelné upozornění, které nelze bez stopy odstranit.",
         "graphic": False,
         "graphic_style": "security",
     },
@@ -158,7 +158,7 @@ ITEMS = [
         "width": "48 mm",
         "colors": 4,
         "adhesive": "hot-melt",
-        "description": "Hromadná výroba potištěných pásek pro e-shopy a fulfillment — konzistentní kvalita v celé sérii.",
+        "description": "Hromadná výroba potištěných pásek pro e-shopy a fulfillment, konzistentní kvalita v celé sérii.",
         "graphic": False,
         "graphic_style": "industrial",
     },
@@ -207,7 +207,7 @@ FILTER_GROUPS = {
     },
     "adhesive": {
         "label": "Lepidlo",
-        "options": {"hot-melt": "HOT MELT", "acryl": "ACRYL"},
+        "options": {"hot-melt": "HOT MELT", "acryl": "Akryl"},
     },
     "industry": {
         "label": "Odvětví",
@@ -228,7 +228,7 @@ FILTER_GROUPS = {
     },
 }
 
-ADHESIVE_LABELS = {"hot-melt": "HOT MELT", "acryl": "ACRYL"}
+ADHESIVE_LABELS = {"hot-melt": "HOT MELT", "acryl": "Akryl"}
 INDUSTRY_LABELS = {
     "e-commerce": "E-commerce",
     "vyroba": "Výroba",
@@ -376,7 +376,7 @@ def render_main() -> str:
         <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div class="max-w-2xl">
                 <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Ukázky naší práce</h1>
-                <p class="mt-3 text-base leading-relaxed text-slate-600">Reálné reference z výroby i ukázky technologií tisku — filtrujte podle typu potisku, lepidla nebo odvětví.</p>
+                <p class="mt-3 text-base leading-relaxed text-slate-600">Reálné reference z výroby i ukázky technologií tisku, filtrujte podle typu potisku, lepidla nebo odvětví.</p>
             </div>
             <a href="index.html#gf_1" class="inline-flex shrink-0 items-center justify-center rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-6 py-3 text-sm font-bold text-white shadow-lg shadow-orange-600/20 transition-all hover:scale-[1.02] hover:shadow-xl">Chci vlastní potisk</a>
         </div>
@@ -424,7 +424,7 @@ def render_main() -> str:
 <section id="gallery-demos-section" class="mx-auto max-w-7xl px-4 pb-12 pt-8 sm:pb-16 sm:pt-12">
     <div class="mb-6 border-b border-slate-100 pb-4">
         <h2 class="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">Možnosti tisku a technologie</h2>
-        <p class="mt-1 text-sm text-slate-500">Ukázky bezpečnostních, logistických a speciálních řešení — ilustrace technologií, které nabízíme.</p>
+        <p class="mt-1 text-sm text-slate-500">Ukázky bezpečnostních, logistických a speciálních řešení, ilustrace technologií, které nabízíme.</p>
     </div>
     <div id="gallery-demos" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 {chr(10).join('        ' + render_card(i) for i in demos)}
@@ -504,7 +504,7 @@ def main() -> None:
         flags=re.DOTALL,
     )
     if updated == content:
-        raise SystemExit("Failed to patch galerie.html — pattern not found")
+        raise SystemExit("Failed to patch galerie.html, pattern not found")
     html_path.write_text(updated, encoding="utf-8")
     print(f"Updated {html_path}")
 

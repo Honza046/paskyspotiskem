@@ -81,8 +81,8 @@
       "body1_prefix": "Naše ",
       "body1_highlight": "moderní výrobní zázemí",
       "body1_tooltip": "Nevyrábíme totiž pouze lepicí pásky, ale přímo i samotné fólie, což nám v případě surovinové krize na trhu dává značnou konkurenční výhodu.",
-      "body1_suffix": " nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (HOT MELT a ACRYL) a rychlém doručení po celé České republice i Evropské unii.",
-      "body1": "Naše moderní výrobní zázemí nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (HOT MELT a ACRYL) a rychlém doručení po celé České republice i Evropské unii.",
+      "body1_suffix": " nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (HOT MELT a Akryl) a rychlém doručení po celé České republice i Evropské unii.",
+      "body1": "Naše moderní výrobní zázemí nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (HOT MELT a Akryl) a rychlém doručení po celé České republice i Evropské unii.",
       "body2": "Díky certifikovaným procesům ISO 9001 a používání ekologicky udržitelných materiálů jsme stabilním partnerem pro více než 300 aktivních odběratelů.",
       "image_alt": "Výroba lepicích pásek ALFA IN",
       "team_title": "Tým ALFA IN",
@@ -105,7 +105,7 @@
       "hot_melt_subtitle": "Syntetický kaučuk",
       "hot_melt_text": "Ideální volba do chladnějšího prostředí a nevytápěných skladů. Vyznačuje se extrémně rychlým a silným přilnutím k podkladu ihned po zalepení. Nelze snadno odlepit z fixační stretch fólie.",
       "acryl_badge": "Ticho & UV odolnost",
-      "acryl_title": "ACRYL",
+      "acryl_title": "Akryl",
       "acryl_subtitle": "S nehlučnou úpravou",
       "acryl_text": "Zajišťuje tiché a komfortní odvíjení, které oceníte ve velkých balicích halách. Je vysoce odolné proti UV záření a stárnutí, což z něj dělá perfektní volbu pro dlouhodobé skladování zboží."
     },
@@ -125,7 +125,7 @@
       "security_title": "Lepicí páska TAMPER EVIDENT – porušení zřejmé!",
       "security_text": "Tato bezpečnostní lepicí páska se „tváří“ jako neutrální, nicméně při odlepení na krabici zanechává upozornění, které prakticky nelze odstranit. Páska je vhodná pro všechny typy kartonů i stretch folií, lze dodat v různých barvách či i s potiskem.",
       "glue_badge": "Extrémní lepivost",
-      "glue_title": "EXTRA GLUE+ (ACRYL) a TACK+ (HOT MELT)",
+      "glue_title": "EXTRA GLUE+ (Akryl) a TACK+ (HOT MELT)",
       "glue_text": "Pásky se zvýšenou vrstvou lepidla (33 % resp. 20 %) i s možností pevnější folie oproti standardu, určené i pro velmi obtížné aplikace jako např. velmi těžké balíky, nekvalitní kartony nebo prašné prostředí. Na kartonu drží velmi pevně.",
       "glue_extra_tag": "+33 % lepidla"
     },
@@ -149,7 +149,7 @@
       "catalog_error": "Katalog se nepodařilo načíst",
       "tape_type": "Typ lepidla",
       "acryl_no_silent_title": "Bez nehlučného činidla",
-      "acryl_no_silent_text": "Standardně je u ACRYL pásek tiché odvíjení. Zaškrtněte, pokud preferujete variantu bez této úpravy.",
+      "acryl_no_silent_text": "Standardně je u Akryl pásek tiché odvíjení. Zaškrtněte, pokud preferujete variantu bez této úpravy.",
       "base_color": "Podkladová barva",
       "print_colors": "Počet barev k tisku",
       "hot_melt_hint": "Syntetický kaučuk",
@@ -170,8 +170,8 @@
       "length_label": "Délka pásky v metrech",
       "quantity_label": "Poptávané množství v kusech",
       "quantity_hint": "Zadejte číslo od 360 do 9999.",
-      "quantity_min": "ACRYL od 360 ks, HOT MELT od 504 ks.",
-      "quantity_tip": "ACRYL od 360 ks, HOT MELT od 504 ks. Od 360 ks doprava zdarma. Dodání cca 3–4 týdny.",
+      "quantity_min": "Akryl od 360 ks, HOT MELT od 504 ks.",
+      "quantity_tip": "Akryl od 360 ks, HOT MELT od 504 ks. Od 360 ks doprava zdarma. Dodání cca 3–4 týdny.",
       "quantity_success": "🔥 Skvělá volba! Máte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
       "validation": {
         "material_required": "Vyberte materiál ze seznamu.",
@@ -253,7 +253,7 @@
     "ui": {
       "label": "Galerie",
       "title": "Ukázky naší práce",
-      "subtitle": "Reálné reference z výroby i ukázky technologií tisku — filtrujte podle typu potisku, lepidla nebo odvětví.",
+      "subtitle": "Reálné reference z výroby i ukázky technologií tisku, filtrujte podle typu potisku, lepidla nebo odvětví.",
       "cta_custom": "Chci vlastní potisk"
     },
     "filters": {
@@ -273,7 +273,7 @@
           "label": "Lepidlo",
           "options": {
             "hot-melt": "HOT MELT",
-            "acryl": "ACRYL"
+            "acryl": "Akryl"
           }
         },
         "industry": {
@@ -300,7 +300,7 @@
       "references_title": "Reálné reference",
       "references_subtitle": "Fotografie skutečných potisků z naší výroby. Po novém focení doplníme další reference.",
       "demos_title": "Možnosti tisku a technologie",
-      "demos_subtitle": "Ukázky bezpečnostních, logistických a speciálních řešení — ilustrace technologií, které nabízíme.",
+      "demos_subtitle": "Ukázky bezpečnostních, logistických a speciálních řešení, ilustrace technologií, které nabízíme.",
       "empty": "Žádná ukázka neodpovídá vybraným filtrům. Zkuste ubrat některý z filtrů."
     },
     "cards": {
@@ -333,12 +333,12 @@
       },
       "flexotisk-8": {
         "title": "Flexotisk – 8 barev",
-        "description": "Plnobarevný flexotisk s vysokým rozlišením — vhodný pro atraktivní brand na balících páskách i potravinářských aplikacích.",
+        "description": "Plnobarevný flexotisk s vysokým rozlišením, vhodný pro atraktivní brand na balících páskách i potravinářských aplikacích.",
         "industry_label": "Potraviny"
       },
       "jednobarevny-firemni": {
         "title": "Jednobarevný firemní potisk",
-        "description": "Klasický jednobarevný potisk loga na průhledné nebo bílé BOPP pásky — ideální pro firemní balení a skladovou logistiku.",
+        "description": "Klasický jednobarevný potisk loga na průhledné nebo bílé BOPP pásky, ideální pro firemní balení a skladovou logistiku.",
         "industry_label": "Výroba"
       },
       "rototisk-foto": {
@@ -363,7 +363,7 @@
       },
       "tamper-void": {
         "title": "Tamper Evident VOID",
-        "description": "Bezpečnostní páska s VOID efektem — při odlepení zanechá viditelné upozornění, které nelze bez stopy odstranit.",
+        "description": "Bezpečnostní páska s VOID efektem, při odlepení zanechá viditelné upozornění, které nelze bez stopy odstranit.",
         "industry_label": "Bezpečnost"
       },
       "extra-glue": {
@@ -373,7 +373,7 @@
       },
       "prumyslova-serie": {
         "title": "Průmyslová série pro e-shop",
-        "description": "Hromadná výroba potištěných pásek pro e-shopy a fulfillment — konzistentní kvalita v celé sérii.",
+        "description": "Hromadná výroba potištěných pásek pro e-shopy a fulfillment, konzistentní kvalita v celé sérii.",
         "industry_label": "E-commerce"
       },
       "vystrizny-krehke": {
@@ -655,17 +655,17 @@
         "params_values": {
           "carrier": "BOPP",
           "thickness": "25 / 28 / 32 µm",
-          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
-          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "adhesive": "Akryl (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (Akryl) / 18 µm (HOT MELT)",
           "strength": "14–28 °C",
           "temperature": "0 až +60 °C"
         },
         "spec_pills": [
           "100 % regenerát",
           "BOPP",
-          "ACRYL / HOT MELT"
+          "Akryl / HOT MELT"
         ],
-        "min_qty_note": "Dostupné v ACRYL i HOT MELT. Min. množství: ACRYL od 360 ks, HOT MELT od 504 ks.",
+        "min_qty_note": "Dostupné jako Akryl i HOT MELT. Min. množství: Akryl od 360 ks, HOT MELT od 504 ks.",
         "params_labels": {
           "carrier": "Nosič",
           "thickness": "Tloušťka fólie",
@@ -715,17 +715,17 @@
         "params_values": {
           "carrier": "BOPP",
           "thickness": "25 / 28 / 32 µm",
-          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
-          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "adhesive": "Akryl (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (Akryl) / 18 µm (HOT MELT)",
           "strength": "14–28 °C",
           "temperature": "0 až +60 °C"
         },
         "spec_pills": [
           "50 % regenerát",
           "BOPP",
-          "ACRYL / HOT MELT"
+          "Akryl / HOT MELT"
         ],
-        "min_qty_note": "Dostupné v ACRYL i HOT MELT. Min. množství: ACRYL od 360 ks, HOT MELT od 504 ks.",
+        "min_qty_note": "Dostupné jako Akryl i HOT MELT. Min. množství: Akryl od 360 ks, HOT MELT od 504 ks.",
         "params_labels": {
           "carrier": "Nosič",
           "thickness": "Tloušťka fólie",
@@ -775,17 +775,17 @@
         "params_values": {
           "carrier": "BOPP",
           "thickness": "25 / 28 / 32 µm",
-          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
-          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "adhesive": "Akryl (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (Akryl) / 18 µm (HOT MELT)",
           "strength": "14–28 °C",
           "temperature": "0 až +60 °C"
         },
         "spec_pills": [
           "80 % regenerát",
           "BOPP",
-          "ACRYL / HOT MELT"
+          "Akryl / HOT MELT"
         ],
-        "min_qty_note": "Dostupné v ACRYL i HOT MELT. Min. množství: ACRYL od 360 ks, HOT MELT od 504 ks.",
+        "min_qty_note": "Dostupné jako Akryl i HOT MELT. Min. množství: Akryl od 360 ks, HOT MELT od 504 ks.",
         "params_labels": {
           "carrier": "Nosič",
           "thickness": "Tloušťka fólie",
@@ -1048,7 +1048,7 @@
         }
       },
       "bopp-paska-acrylic": {
-        "name": "BOPP páska ACRYL",
+        "name": "BOPP páska Akryl",
         "tagline": "Spolehlivá BOPP páska s dlouhou životností.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP pásky",
@@ -1075,17 +1075,17 @@
         "params_values": {
           "carrier": "BOPP",
           "thickness": "25 / 28 / 32 µm",
-          "adhesive": "ACRYL (Low noise / Noisy)",
+          "adhesive": "Akryl (Low noise / Noisy)",
           "adhesion": "21 µm",
           "strength": "14–28 °C",
           "temperature": "−10 až +60 °C"
         },
         "spec_pills": [
           "BOPP",
-          "ACRYL (Low noise / Noisy)",
+          "Akryl (Low noise / Noisy)",
           "−10 až +60 °C"
         ],
-        "min_qty_note": "Minimální množství od 360 ks (ACRYL).",
+        "min_qty_note": "Minimální množství od 360 ks (Akryl).",
         "params_labels": {
           "carrier": "Nosič",
           "thickness": "Tloušťka fólie",
@@ -2630,7 +2630,7 @@
       "tailor_bullet_consult": "Konzultace parametrů před objednávkou",
       "tailor_bullet_params": "Různé provedení lepidla a nosiče",
       "no_print_note": "Pásku lze objednat i bez potisku.",
-      "no_print_body": "Neutrální (nepotištěná) verze stejného materiálu — ideální pro okamžité balení nebo skladové zásoby.",
+      "no_print_body": "Neutrální (nepotištěná) verze stejného materiálu, ideální pro okamžité balení nebo skladové zásoby.",
       "no_print_link": "Zeptejte se na dostupnost",
       "product_card_detail": "Zobrazit detail"
     },

@@ -127,7 +127,7 @@
         var name = (selected.value || '').toLowerCase();
         var target = null;
         if (name.indexOf('acrylic') !== -1 || name.indexOf('acryl') !== -1) {
-            target = 'ACRYL';
+            target = 'Akryl';
         } else if (name.indexOf('hot melt') !== -1) {
             target = 'HOT MELT';
         }

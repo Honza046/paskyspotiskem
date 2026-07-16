@@ -59,7 +59,7 @@ CATEGORY_EN: dict[str, dict[str, Any]] = {
             "Čistý design": "Clean design",
         },
         "property_texts": {
-            "Plná recyklovatelnost": "Tape and cardboard go into the same bin — no need to separate materials.",
+            "Plná recyklovatelnost": "Tape and cardboard go into the same bin, no need to separate materials.",
             "Vysoká lepivost": "Reliable bonding even on recycled cardboard and uneven surfaces.",
             "Čistý design": "The matte paper surface looks premium and can be easily printed with your logo.",
         },
@@ -547,8 +547,8 @@ def build_cs() -> dict[str, Any]:
                 "body1_prefix": "Naše ",
                 "body1_highlight": "moderní výrobní zázemí",
                 "body1_tooltip": "Nevyrábíme totiž pouze lepicí pásky, ale přímo i samotné fólie, což nám v případě surovinové krize na trhu dává značnou konkurenční výhodu.",
-                "body1_suffix": " nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (HOT MELT a ACRYL) a rychlém doručení po celé České republice i Evropské unii.",
-                "body1": "Naše moderní výrobní zázemí nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (HOT MELT a ACRYL) a rychlém doručení po celé České republice i Evropské unii.",
+                "body1_suffix": " nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (HOT MELT a Akryl) a rychlém doručení po celé České republice i Evropské unii.",
+                "body1": "Naše moderní výrobní zázemí nám umožňuje flexibilně reagovat na potřeby jak malých e-shopů, tak velkých průmyslových podniků. Zakládáme si na precizním tisku (až 8 barev), špičkové kvalitě použitých lepidel (HOT MELT a Akryl) a rychlém doručení po celé České republice i Evropské unii.",
                 "body2": "Díky certifikovaným procesům ISO 9001 a používání ekologicky udržitelných materiálů jsme stabilním partnerem pro více než 300 aktivních odběratelů.",
                 "image_alt": "Výroba lepicích pásek ALFA IN",
                 "team_title": "Tým ALFA IN",
@@ -571,7 +571,7 @@ def build_cs() -> dict[str, Any]:
                 "hot_melt_subtitle": "Syntetický kaučuk",
                 "hot_melt_text": "Ideální volba do chladnějšího prostředí a nevytápěných skladů. Vyznačuje se extrémně rychlým a silným přilnutím k podkladu ihned po zalepení. Nelze snadno odlepit z fixační stretch fólie.",
                 "acryl_badge": "Ticho & UV odolnost",
-                "acryl_title": "ACRYL",
+                "acryl_title": "Akryl",
                 "acryl_subtitle": "S nehlučnou úpravou",
                 "acryl_text": "Zajišťuje tiché a komfortní odvíjení, které oceníte ve velkých balicích halách. Je vysoce odolné proti UV záření a stárnutí, což z něj dělá perfektní volbu pro dlouhodobé skladování zboží.",
             },
@@ -591,7 +591,7 @@ def build_cs() -> dict[str, Any]:
                 "security_title": "Lepicí páska TAMPER EVIDENT – porušení zřejmé!",
                 "security_text": "Tato bezpečnostní lepicí páska se „tváří“ jako neutrální, nicméně při odlepení na krabici zanechává upozornění, které prakticky nelze odstranit. Páska je vhodná pro všechny typy kartonů i stretch folií, lze dodat v různých barvách či i s potiskem.",
                 "glue_badge": "Extrémní lepivost",
-                "glue_title": "EXTRA GLUE+ (ACRYL) a TACK+ (HOT MELT)",
+                "glue_title": "EXTRA GLUE+ (Akryl) a TACK+ (HOT MELT)",
                 "glue_text": "Pásky se zvýšenou vrstvou lepidla (33 % resp. 20 %) i s možností pevnější folie oproti standardu, určené i pro velmi obtížné aplikace jako např. velmi těžké balíky, nekvalitní kartony nebo prašné prostředí. Na kartonu drží velmi pevně.",
                 "glue_extra_tag": "+33 % lepidla",
             },
@@ -611,7 +611,7 @@ def build_cs() -> dict[str, Any]:
                 "catalog_error": "Katalog se nepodařilo načíst",
                 "tape_type": "Typ lepidla",
                 "acryl_no_silent_title": "Bez nehlučného činidla",
-                "acryl_no_silent_text": "Standardně je u ACRYL pásek tiché odvíjení. Zaškrtněte, pokud preferujete variantu bez této úpravy.",
+                "acryl_no_silent_text": "Standardně je u Akryl pásek tiché odvíjení. Zaškrtněte, pokud preferujete variantu bez této úpravy.",
                 "base_color": "Podkladová barva",
                 "print_colors": "Počet barev k tisku",
                 "hot_melt_hint": "Syntetický kaučuk",
@@ -632,8 +632,8 @@ def build_cs() -> dict[str, Any]:
                 "length_label": "Délka pásky v metrech",
                 "quantity_label": "Poptávané množství v kusech",
                 "quantity_hint": "Zadejte číslo od 360 do 9999.",
-                "quantity_min": "ACRYL od 360 ks, HOT MELT od 504 ks.",
-                "quantity_tip": "ACRYL od 360 ks, HOT MELT od 504 ks. Od 360 ks doprava zdarma. Dodání cca 3–4 týdny.",
+                "quantity_min": "Akryl od 360 ks, HOT MELT od 504 ks.",
+                "quantity_tip": "Akryl od 360 ks, HOT MELT od 504 ks. Od 360 ks doprava zdarma. Dodání cca 3–4 týdny.",
                 "quantity_success": "🔥 Skvělá volba! Máte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
                 "validation": {
                     "material_required": "Vyberte materiál ze seznamu.",
@@ -715,7 +715,7 @@ def build_cs() -> dict[str, Any]:
             "ui": {
                 "label": "Galerie",
                 "title": "Ukázky naší práce",
-                "subtitle": "Reálné reference z výroby i ukázky technologií tisku — filtrujte podle typu potisku, lepidla nebo odvětví.",
+                "subtitle": "Reálné reference z výroby i ukázky technologií tisku, filtrujte podle typu potisku, lepidla nebo odvětví.",
                 "cta_custom": "Chci vlastní potisk",
             },
             "filters": {
@@ -735,7 +735,7 @@ def build_cs() -> dict[str, Any]:
                         "label": "Lepidlo",
                         "options": {
                             "hot-melt": "HOT MELT",
-                            "acryl": "ACRYL",
+                            "acryl": "Akryl",
                         },
                     },
                     "industry": {
@@ -762,7 +762,7 @@ def build_cs() -> dict[str, Any]:
                 "references_title": "Reálné reference",
                 "references_subtitle": "Fotografie skutečných potisků z naší výroby. Po novém focení doplníme další reference.",
                 "demos_title": "Možnosti tisku a technologie",
-                "demos_subtitle": "Ukázky bezpečnostních, logistických a speciálních řešení — ilustrace technologií, které nabízíme.",
+                "demos_subtitle": "Ukázky bezpečnostních, logistických a speciálních řešení, ilustrace technologií, které nabízíme.",
                 "empty": "Žádná ukázka neodpovídá vybraným filtrům. Zkuste ubrat některý z filtrů.",
             },
             "cards": {
@@ -854,12 +854,12 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "home_title": "Home | Printed Packaging Tapes",
             "home_description": "Printed packaging tapes | Manufacturing and supply of custom printed adhesive tapes by ALFA IN a.s.",
             "gallery_title": "Gallery | Printed Packaging Tapes",
-            "gallery_description": "Gallery of printed packaging tape samples by ALFA IN a.s. — single-colour print, rotogravure, security and logistics tapes.",
+            "gallery_description": "Gallery of printed packaging tape samples by ALFA IN a.s., single-colour print, rotogravure, security and logistics tapes.",
             "sortiment_title": "Product Range | Printed Packaging Tapes",
-            "sortiment_description": "ALFA IN adhesive tape range — BOPP tapes HOT MELT and ACRYL, special lines and ECO products with custom printing.",
+            "sortiment_description": "ALFA IN adhesive tape range, BOPP tapes HOT MELT and Akryl, special lines and ECO products with custom printing.",
         },
         "nav": {
-            "tagline": "ALFA IN — manufacturing, consulting, sales and service",
+            "tagline": "ALFA IN, manufacturing, consulting, sales and service",
             "menu": "Open menu",
             "menu_close": "Close menu",
             "main_nav_label": "Main navigation",
@@ -922,8 +922,8 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "lead": "For more than 30 years we have helped companies pack their shipments securely and build a strong brand directly on packaging materials. We offer custom-printed adhesive tapes as well as plain neutral tapes.",
                 "body1_prefix": "Our ",
                 "body1_highlight": "modern production facility",
-                "body1_tooltip": "We do not only manufacture adhesive tapes — we also produce the films ourselves, which gives us a significant competitive advantage when raw materials are in short supply.",
-                "body1_suffix": " allows us to respond flexibly to the needs of both small e-shops and large industrial enterprises. We pride ourselves on precise printing (up to 8 colours), premium adhesive quality (HOT MELT and ACRYL) and fast delivery throughout the Czech Republic and the European Union.",
+                "body1_tooltip": "We do not only manufacture adhesive tapes, we also produce the films ourselves, which gives us a significant competitive advantage when raw materials are in short supply.",
+                "body1_suffix": " allows us to respond flexibly to the needs of both small e-shops and large industrial enterprises. We pride ourselves on precise printing (up to 8 colours), premium adhesive quality (HOT MELT and Akryl) and fast delivery throughout the Czech Republic and the European Union.",
                 "body1": "Our modern production facility allows us to respond flexibly to the needs of both small e-shops and large industrial enterprises. We pride ourselves on precise printing (up to 8 colours), premium adhesive quality (Hot Melt, Acrylic) and fast delivery throughout the Czech Republic.",
                 "body2": "Thanks to ISO 9001 certified processes and the use of ecological, sustainable materials, we are a reliable partner for more than 300 active customers.",
                 "image_alt": "ALFA IN adhesive tape production",
@@ -947,7 +947,7 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "hot_melt_subtitle": "Synthetic rubber",
                 "hot_melt_text": "The ideal choice for cooler environments and unheated warehouses. It bonds to the substrate extremely quickly and strongly immediately after application. It cannot be easily removed from stretch wrap.",
                 "acryl_badge": "Quiet & UV resistant",
-                "acryl_title": "ACRYL",
+                "acryl_title": "Akryl",
                 "acryl_subtitle": "With low-noise unwind",
                 "acryl_text": "Ensures quiet, comfortable unwinding appreciated in large packing halls. Highly resistant to UV radiation and ageing, making it the perfect choice for long-term goods storage.",
             },
@@ -964,10 +964,10 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             },
             "benefits": {
                 "security_badge": "Security",
-                "security_title": "TAMPER EVIDENT tape — tampering is obvious!",
+                "security_title": "TAMPER EVIDENT tape, tampering is obvious!",
                 "security_text": "This security tape looks neutral, but when removed it leaves a warning on the box that is virtually impossible to eliminate. Suitable for all types of cardboard and stretch film, available in various colours and with custom printing.",
                 "glue_badge": "Extreme adhesion",
-                "glue_title": "EXTRA GLUE+ (ACRYL) and TACK+ (HOT MELT)",
+                "glue_title": "EXTRA GLUE+ (Akryl) and TACK+ (HOT MELT)",
                 "glue_text": "Tapes with an increased adhesive layer (33% and 20% respectively) and the option of a stronger film than standard, designed for very demanding applications such as heavy parcels, poor-quality cardboard or dusty environments. They bond extremely firmly to cardboard.",
                 "glue_extra_tag": "+33% adhesive",
             },
@@ -987,7 +987,7 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "catalog_error": "Could not load catalogue",
                 "tape_type": "Adhesive type",
                 "acryl_no_silent_title": "Without low-noise treatment",
-                "acryl_no_silent_text": "ACRYL tapes normally have quiet unwinding. Check this if you prefer the variant without this treatment.",
+                "acryl_no_silent_text": "Akryl tapes normally have quiet unwinding. Check this if you prefer the variant without this treatment.",
                 "base_color": "Base colour",
                 "print_colors": "Number of print colours",
                 "hot_melt_hint": "Synthetic rubber",
@@ -1008,8 +1008,8 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "length_label": "Tape length in metres",
                 "quantity_label": "Requested quantity in rolls",
                 "quantity_hint": "Enter a number from 360 to 9999.",
-                "quantity_min": "ACRYL from 360 pcs, HOT MELT from 504 pcs.",
-                "quantity_tip": "ACRYL from 360 pcs, HOT MELT from 504 pcs. Free shipping from 360 pcs. Delivery approx. 3–4 weeks.",
+                "quantity_min": "Akryl from 360 pcs, HOT MELT from 504 pcs.",
+                "quantity_tip": "Akryl from 360 pcs, HOT MELT from 504 pcs. Free shipping from 360 pcs. Delivery approx. 3–4 weeks.",
                 "quantity_success": "🔥 Great choice! You have free shipping. Delivery takes approximately 3–4 weeks.",
                 "validation": {
                     "material_required": "Please select a material from the list.",
@@ -1091,7 +1091,7 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "ui": {
                 "label": "Gallery",
                 "title": "Examples of our work",
-                "subtitle": "Real production references and print technology showcases — filter by print type, adhesive or industry.",
+                "subtitle": "Real production references and print technology showcases, filter by print type, adhesive or industry.",
                 "cta_custom": "I want custom printing",
             },
             "filters": {
@@ -1138,7 +1138,7 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "references_title": "Real references",
                 "references_subtitle": "Photographs of actual prints from our production. We will add more references after the next photo shoot.",
                 "demos_title": "Print options and technologies",
-                "demos_subtitle": "Examples of security, logistics and special solutions — illustrations of the technologies we offer.",
+                "demos_subtitle": "Examples of security, logistics and special solutions, illustrations of the technologies we offer.",
                 "empty": "No sample matches the selected filters. Try removing one of the filters.",
             },
             "cards": {
@@ -1232,7 +1232,7 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "gallery_title": "Galerie | Bedruckte Verpackungsbänder",
             "gallery_description": "Galerie bedruckter Verpackungsbänder von ALFA IN a.s. – Einfarbigdruck, Rotogravur, Sicherheits- und Logistikbänder.",
             "sortiment_title": "Sortiment | Bedruckte Verpackungsbänder",
-            "sortiment_description": "ALFA IN Klebeband-Sortiment – BOPP-Bänder HOT MELT und ACRYL, Spezialserien und ECO-Produkte mit Bedruckung.",
+            "sortiment_description": "ALFA IN Klebeband-Sortiment – BOPP-Bänder HOT MELT und Akryl, Spezialserien und ECO-Produkte mit Bedruckung.",
         },
         "nav": {
             "tagline": "ALFA IN – Herstellung, Beratung, Vertrieb und Service",
@@ -1294,12 +1294,12 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             },
             "about": {
                 "label": "Über uns",
-                "title": "Traditioneller tschechischer Lieferant — Klebebänder mit und ohne Druck",
+                "title": "Traditioneller tschechischer Lieferant, Klebebänder mit und ohne Druck",
                 "lead": "Seit mehr als 30 Jahren helfen wir Unternehmen, ihre Sendungen sicher zu verpacken und eine starke Marke direkt auf Verpackungsmaterialien aufzubauen. Wir bieten Klebebänder mit individuellem Druck sowie neutrale Varianten ohne Druck.",
                 "body1_prefix": "Unsere ",
                 "body1_highlight": "moderne Produktionsstätte",
                 "body1_tooltip": "Wir produzieren nicht nur Klebebänder, sondern auch die Folien selbst – das verschafft uns bei Rohstoffkrisen am Markt einen deutlichen Wettbewerbsvorteil.",
-                "body1_suffix": " ermöglicht es uns, flexibel auf die Bedürfnisse kleiner E-Shops wie auch großer Industrieunternehmen zu reagieren. Wir legen Wert auf präzisen Druck (bis 8 Farben), erstklassige Klebstoffqualität (HOT MELT und ACRYL) und schnelle Lieferung in der gesamten Tschechischen Republik und der Europäischen Union.",
+                "body1_suffix": " ermöglicht es uns, flexibel auf die Bedürfnisse kleiner E-Shops wie auch großer Industrieunternehmen zu reagieren. Wir legen Wert auf präzisen Druck (bis 8 Farben), erstklassige Klebstoffqualität (HOT MELT und Akryl) und schnelle Lieferung in der gesamten Tschechischen Republik und der Europäischen Union.",
                 "body1": "Unsere moderne Produktionsstätte ermöglicht es uns, flexibel auf die Bedürfnisse kleiner E-Shops wie auch großer Industrieunternehmen zu reagieren. Wir legen Wert auf präzisen Druck (bis 8 Farben), erstklassige Klebstoffqualität (Hot Melt, Acryl) und schnelle Lieferung in der gesamten Tschechischen Republik.",
                 "body2": "Dank ISO-9001-zertifizierter Prozesse und dem Einsatz ökologischer, nachhaltiger Materialien sind wir ein zuverlässiger Partner für mehr als 300 aktive Abnehmer.",
                 "image_alt": "ALFA IN Klebeband-Produktion",
@@ -1323,7 +1323,7 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "hot_melt_subtitle": "Synthetischer Kautschuk",
                 "hot_melt_text": "Die ideale Wahl für kühlere Umgebungen und unbeheizte Lager. Er haftet extrem schnell und stark unmittelbar nach dem Aufbringen. Lässt sich nicht leicht von Stretchfolie ablösen.",
                 "acryl_badge": "Leise & UV-beständig",
-                "acryl_title": "ACRYL",
+                "acryl_title": "Akryl",
                 "acryl_subtitle": "Mit geräuscharmem Abrollen",
                 "acryl_text": "Sorgt für leises, komfortables Abrollen in großen Verpackungshallen. Hochbeständig gegen UV-Strahlung und Alterung – die perfekte Wahl für langfristige Lagerung.",
             },
@@ -1343,7 +1343,7 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "security_title": "TAMPER EVIDENT-Klebeband – Manipulation sichtbar!",
                 "security_text": "Dieses Sicherheitsband wirkt neutral, hinterlässt beim Abziehen jedoch eine praktisch nicht entfernbare Warnung auf dem Karton. Geeignet für alle Kartonarten und Stretchfolien, in verschiedenen Farben und mit Bedruckung.",
                 "glue_badge": "Extreme Klebkraft",
-                "glue_title": "EXTRA GLUE+ (ACRYL) und TACK+ (HOT MELT)",
+                "glue_title": "EXTRA GLUE+ (Akryl) und TACK+ (HOT MELT)",
                 "glue_text": "Bänder mit erhöhter Klebstoffschicht (33 % bzw. 20 %) und optional stärkerer Folie für anspruchsvolle Anwendungen wie schwere Pakete, minderwertigen Karton oder staubige Umgebungen. Haften extrem fest auf Karton.",
                 "glue_extra_tag": "+33 % Klebstoff",
             },
@@ -1363,7 +1363,7 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "catalog_error": "Katalog konnte nicht geladen werden",
                 "tape_type": "Klebstofftyp",
                 "acryl_no_silent_title": "Ohne geräuscharme Behandlung",
-                "acryl_no_silent_text": "ACRYL-Bänder rollen standardmäßig geräuscharm ab. Aktivieren Sie dies, wenn Sie die Variante ohne diese Behandlung bevorzugen.",
+                "acryl_no_silent_text": "Akryl-Bänder rollen standardmäßig geräuscharm ab. Aktivieren Sie dies, wenn Sie die Variante ohne diese Behandlung bevorzugen.",
                 "base_color": "Grundfarbe",
                 "print_colors": "Anzahl der Druckfarben",
                 "hot_melt_hint": "Synthetischer Kautschuk",
@@ -1384,8 +1384,8 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "length_label": "Bandlänge in Metern",
                 "quantity_label": "Gewünschte Menge in Rollen",
                 "quantity_hint": "Geben Sie eine Zahl von 360 bis 9999 ein.",
-                "quantity_min": "ACRYL ab 360 Stk., HOT MELT ab 504 Stk.",
-                "quantity_tip": "ACRYL ab 360 Stk., HOT MELT ab 504 Stk. Ab 360 Stk. kostenloser Versand. Lieferzeit ca. 3–4 Wochen.",
+                "quantity_min": "Akryl ab 360 Stk., HOT MELT ab 504 Stk.",
+                "quantity_tip": "Akryl ab 360 Stk., HOT MELT ab 504 Stk. Ab 360 Stk. kostenloser Versand. Lieferzeit ca. 3–4 Wochen.",
                 "quantity_success": "🔥 Ausgezeichnete Wahl! Sie haben kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
                 "validation": {
                     "material_required": "Bitte wählen Sie ein Material aus der Liste.",
@@ -1487,7 +1487,7 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                         "label": "Klebstoff",
                         "options": {
                             "hot-melt": "HOT MELT",
-                            "acryl": "ACRYL",
+                            "acryl": "Akryl",
                         },
                     },
                     "industry": {
@@ -1617,7 +1617,7 @@ def finalize_locale(data: dict[str, Any], locale: str, ns: dict) -> dict[str, An
 
 
 def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any]:
-    """Italian locale — based on EN structure with IT copy and category translations."""
+    """Italian locale, based on EN structure with IT copy and category translations."""
     it = copy.deepcopy(build_en(cs, cs_categories))
     it["meta"].update(
         {
@@ -1626,13 +1626,13 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "home_title": "Home | Nastri adesivi stampati",
             "home_description": "Nastri adesivi stampati | Produzione e fornitura di nastri adesivi personalizzati da ALFA IN a.s.",
             "gallery_title": "Galleria | Nastri adesivi stampati",
-            "gallery_description": "Galleria di nastri adesivi stampati di ALFA IN a.s. — stampa monocolore, rotocalco, nastri di sicurezza e logistici.",
+            "gallery_description": "Galleria di nastri adesivi stampati di ALFA IN a.s., stampa monocolore, rotocalco, nastri di sicurezza e logistici.",
             "sortiment_title": "Assortimento | Nastri adesivi stampati",
-            "sortiment_description": "Gamma di nastri adesivi ALFA IN — nastri BOPP HOT MELT e ACRILICI, linee speciali e prodotti ECO con stampa personalizzata.",
+            "sortiment_description": "Gamma di nastri adesivi ALFA IN, nastri BOPP HOT MELT e ACRILICI, linee speciali e prodotti ECO con stampa personalizzata.",
         }
     )
     it["nav"] = {
-        "tagline": "ALFA IN — produzione, consulenza, vendita e assistenza",
+        "tagline": "ALFA IN, produzione, consulenza, vendita e assistenza",
         "menu": "Apri menu",
         "menu_close": "Chiudi menu",
         "main_nav_label": "Navigazione principale",
@@ -1693,7 +1693,7 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
     it["home"]["about"].update(
         {
             "label": "Chi siamo",
-            "title": "Fornitore ceco tradizionale — nastri con e senza stampa",
+            "title": "Fornitore ceco tradizionale, nastri con e senza stampa",
             "lead": "Da oltre 30 anni aiutiamo le aziende a imballare le spedizioni in modo sicuro e a costruire un marchio forte direttamente sui materiali di imballaggio. Offriamo nastri adesivi con stampa personalizzata e anche in variante neutra senza stampa.",
             "body1_prefix": "Il nostro ",
             "body1_highlight": "moderno stabilimento produttivo",
@@ -1734,7 +1734,7 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "hot_melt_subtitle": "Gomma sintetica",
             "hot_melt_text": "La scelta ideale per ambienti più freddi e magazzini non riscaldati. Aderisce al supporto in modo estremamente rapido e forte subito dopo l'applicazione. Non può essere rimosso facilmente dalla pellicola stretch.",
             "acryl_badge": "Silenzioso e resistente ai UV",
-            "acryl_title": "ACRYL",
+            "acryl_title": "Akryl",
             "acryl_subtitle": "Con svolgimento silenzioso",
             "acryl_text": "Garantisce uno svolgimento silenzioso e confortevole, apprezzato nelle grandi sale di imballaggio. Altamente resistente ai raggi UV e all'invecchiamento, perfetto per lo stoccaggio a lungo termine.",
         }
@@ -1758,7 +1758,7 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "security_title": "Nastro TAMPER EVIDENT, la manomissione è evidente!",
             "security_text": "Questo nastro di sicurezza appare neutro, ma una volta rimosso lascia sull'imballo un avviso praticamente impossibile da eliminare. Adatto a tutti i tipi di cartone e pellicola stretch, disponibile in vari colori e con stampa personalizzata.",
             "glue_badge": "Adesione estrema",
-            "glue_title": "EXTRA GLUE+ (ACRYL) e TACK+ (HOT MELT)",
+            "glue_title": "EXTRA GLUE+ (Akryl) e TACK+ (HOT MELT)",
             "glue_text": "Nastri con strato adesivo aumentato (33% e 20% rispettivamente) e possibilità di un film più resistente rispetto allo standard, progettati per applicazioni molto impegnative come pacchi pesanti, cartone di scarsa qualità o ambienti polverosi. Aderiscono estremamente bene al cartone.",
             "glue_extra_tag": "+33% adesivo",
         }
@@ -1799,7 +1799,7 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "jina": "altro",
             },
             "acryl_no_silent_title": "Senza trattamento antirumore",
-            "acryl_no_silent_text": "I nastri ACRYL hanno normalmente svolgimento silenzioso. Selezionate se preferite la variante senza questo trattamento.",
+            "acryl_no_silent_text": "I nastri Akryl hanno normalmente svolgimento silenzioso. Selezionate se preferite la variante senza questo trattamento.",
             "continue": "Continua",
             "back": "Indietro",
             "step2_title": "Dimensioni e quantità",
@@ -1808,8 +1808,8 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "length_label": "Lunghezza del nastro in metri",
             "quantity_label": "Quantità richiesta in rotoli",
             "quantity_hint": "Inserite un numero da 360 a 9999.",
-            "quantity_min": "ACRYL da 360 pz, HOT MELT da 504 pz.",
-            "quantity_tip": "ACRYL da 360 pz, HOT MELT da 504 pz. Spedizione gratuita da 360 pz. Consegna circa 3–4 settimane.",
+            "quantity_min": "Akryl da 360 pz, HOT MELT da 504 pz.",
+            "quantity_tip": "Akryl da 360 pz, HOT MELT da 504 pz. Spedizione gratuita da 360 pz. Consegna circa 3–4 settimane.",
             "quantity_success": "🔥 Ottima scelta! Avete la spedizione gratuita. La consegna richiede circa 3–4 settimane.",
             "validation": {
                 "material_required": "Selezionate un materiale dall'elenco.",
@@ -1877,7 +1877,7 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
         {
             "label": "Galleria",
             "title": "Esempi del nostro lavoro",
-            "subtitle": "Referenze reali dalla produzione ed esempi di tecnologie di stampa — filtrate per tipo di stampa, adesivo o settore.",
+            "subtitle": "Referenze reali dalla produzione ed esempi di tecnologie di stampa, filtrate per tipo di stampa, adesivo o settore.",
             "cta_custom": "Voglio una stampa personalizzata",
         }
     )
@@ -1887,7 +1887,7 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "references_title": "Referenze reali",
             "references_subtitle": "Fotografie di stampe reali dalla nostra produzione. Aggiungeremo altre referenze dopo un nuovo servizio fotografico.",
             "demos_title": "Possibilità di stampa e tecnologie",
-            "demos_subtitle": "Esempi di soluzioni di sicurezza, logistica e speciali — illustrazione delle tecnologie che offriamo.",
+            "demos_subtitle": "Esempi di soluzioni di sicurezza, logistica e speciali, illustrazione delle tecnologie che offriamo.",
             "empty": "Nessun esempio corrisponde ai filtri selezionati. Provate a rimuoverne alcuni.",
         }
     )

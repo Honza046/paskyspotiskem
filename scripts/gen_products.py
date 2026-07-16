@@ -100,7 +100,7 @@ PRODUCTS = {
    P("Papírová páska C690","Papírové Pásky/c690.jpg","Prémiová kraftová páska s HOT MELT lepidlem a matným povrchem.","Papírový nosič (kraft)","130 µm","HOT MELT","4,8 N/25 mm","−10 až +70 °C","60 N/25 mm"),
  ],
  "bopp-pasky":[
-   P("BOPP páska ACRYL","BOPP Tapes/BOPPACRYLIC.jpeg","Spolehlivá BOPP páska s dlouhou životností.","BOPP","25 / 28 / 32 µm","ACRYL (Low noise / Noisy)","21 µm","−10 až +60 °C","14–28 °C"),
+   P("BOPP páska Akryl","BOPP Tapes/BOPPACRYLIC.jpeg","Spolehlivá BOPP páska s dlouhou životností.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy)","21 µm","−10 až +60 °C","14–28 °C"),
    P("BOPP páska HOT MELT","BOPP Tapes/BOPPHOTMELT.jpeg","BOPP páska s HOT MELT lepidlem pro rychlé a pevné přilnutí.","BOPP","25 / 28 / 32 µm","HOT MELT","18 µm","0 až +50 °C","14–28 °C"),
    P("BOPP páska EXTRA GLUE+","BOPP Tapes/BOPPACRYLIC.jpeg","Akrylová BOPP páska se zvýšenou vrstvou lepidla (+33 %) pro náročné povrchy a recyklovaný karton.","BOPP fólie","40 µm","Akrylové (zvýšená vrstva +33 %)","4,0 N/25 mm","−5 až +60 °C","45 N/25 mm"),
    P("BOPP páska TACK+","BOPP Tapes/BOPPHOTMELT1.jpg","HOT MELT BOPP páska s vyšší přilnavostí (+20 %) a super tack pro balicí stroje a recyklovaný karton.","BOPP fólie","40 µm","HOT MELT (super tack, +20 %)","4,2 N/25 mm","0 až +55 °C","42 N/25 mm"),
@@ -137,9 +137,9 @@ PRODUCTS = {
    P("Udržitelná páska NOPP+","Udržitelné Pásky/nopp+.jpg","Vylepšená bezplastová páska s vyšší pevností a lepivostí.","Papír (FSC)","120 µm","Akrylové","4,4 N/25 mm","−5 až +65 °C","55 N/25 mm"),
    P("Udržitelná páska LOOPP","Udržitelné Pásky/loopp.jpg","Páska z recyklovaného polypropylenu pro cirkulární ekonomiku.","Recyklovaná PP fólie","45 µm","Akrylové","3,0 N/25 mm","−5 až +60 °C","46 N/25 mm"),
    P("Udržitelná páska Airtape","Udržitelné Pásky/airtape.jpg","Lehká udržitelná páska pro každodenní ekologické balení.","Recyklovaná PP fólie","40 µm","Akrylové","2,8 N/25 mm","−5 až +60 °C","42 N/25 mm"),
-   P("Udržitelná páska ECO+ 50","Udržitelné Pásky/eco+50.jpg","Efektivní balení s 50% podílem regenerovaného materiálu. Optimální rovnováha mezi ekologií a nejlepší cenou.","BOPP","25 / 28 / 32 µm","ACRYL (Low noise / Noisy) / HOT MELT","21 µm (ACRYL) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
-   P("Udržitelná páska ECO+ 80","Udržitelné Pásky/eco+80.jpg","BOPP fólie s 80% podílem regenerovaného materiálu. Spojuje vysoký ekologický standard a stoprocentní pevnost.","BOPP","25 / 28 / 32 µm","ACRYL (Low noise / Noisy) / HOT MELT","21 µm (ACRYL) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
-   P("Udržitelná páska ECO+ 100","Udržitelné Pásky/eco+100.jpg","100% regenerovaná BOPP fólie z postindustriálního odpadu. Maximální ekologický standard bez kompromisů ve výkonu.","BOPP","25 / 28 / 32 µm","ACRYL (Low noise / Noisy) / HOT MELT","21 µm (ACRYL) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
+   P("Udržitelná páska ECO+ 50","Udržitelné Pásky/eco+50.jpg","Efektivní balení s 50% podílem regenerovaného materiálu. Optimální rovnováha mezi ekologií a nejlepší cenou.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
+   P("Udržitelná páska ECO+ 80","Udržitelné Pásky/eco+80.jpg","BOPP fólie s 80% podílem regenerovaného materiálu. Spojuje vysoký ekologický standard a stoprocentní pevnost.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
+   P("Udržitelná páska ECO+ 100","Udržitelné Pásky/eco+100.jpg","100% regenerovaná BOPP fólie z postindustriálního odpadu. Maximální ekologický standard bez kompromisů ve výkonu.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
    P("Udržitelná páska POLY+","Udržitelné Pásky/poly-plus.jpg","Ekologická alternativa k PVC – matná neodrážející BOPP páska s tichým akrylovým lepidlem.","BOPP fólie (matná, 35 µm)","35 µm","Akrylové (tiché, bez rozpouštědel)","3,8 N/25 mm","−5 až +60 °C","50 N/25 mm"),
  ],
 }
@@ -159,7 +159,7 @@ TAGMAP = {
  "Papírová páska C680R":["ekologicke","rucni"],
  "Papírová páska C680 RT":["ekologicke","rucni","stroje"],
  "Papírová páska C690":["ekologicke","rucni"],
- "BOPP páska ACRYL":["tiche","rucni","stroje"],
+ "BOPP páska Akryl":["tiche","rucni","stroje"],
  "BOPP páska HOT MELT":["rucni","stroje"],
  "BOPP páska EXTRA GLUE+":["tiche","rucni","stroje"],
  "BOPP páska TACK+":["rucni","stroje"],
@@ -193,16 +193,16 @@ for k in PRODUCTS:
     PRODUCTS[k] = sorted(PRODUCTS[k], key=lambda p: p["name"])
 
 SLUG_OVERRIDES = {
-    "BOPP páska ACRYL": "bopp-paska-acrylic",
+    "BOPP páska Akryl": "bopp-paska-acrylic",
     "BOPP páska HOT MELT": "bopp-paska-hot-melt",
 }
 
 # Detailed tech-spec schema (film + adhesive thickness, two temperature ranges).
 TECH_SPEC_PARAMS = {
-    "BOPP páska ACRYL": {
+    "BOPP páska Akryl": {
         "Nosič": "BOPP",
         "Tloušťka fólie": "25 / 28 / 32 µm",
-        "Typ lepidla": "ACRYL (Low noise / Noisy)",
+        "Typ lepidla": "Akryl (Low noise / Noisy)",
         "Tloušťka lepidla": "21 µm",
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "−10 až +60 °C",
@@ -218,24 +218,24 @@ TECH_SPEC_PARAMS = {
     "Udržitelná páska ECO+ 50": {
         "Nosič": "BOPP",
         "Tloušťka fólie": "25 / 28 / 32 µm",
-        "Typ lepidla": "ACRYL (Low noise / Noisy) / HOT MELT",
-        "Tloušťka lepidla": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+        "Typ lepidla": "Akryl (Low noise / Noisy) / HOT MELT",
+        "Tloušťka lepidla": "21 µm (Akryl) / 18 µm (HOT MELT)",
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "0 až +60 °C",
     },
     "Udržitelná páska ECO+ 80": {
         "Nosič": "BOPP",
         "Tloušťka fólie": "25 / 28 / 32 µm",
-        "Typ lepidla": "ACRYL (Low noise / Noisy) / HOT MELT",
-        "Tloušťka lepidla": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+        "Typ lepidla": "Akryl (Low noise / Noisy) / HOT MELT",
+        "Tloušťka lepidla": "21 µm (Akryl) / 18 µm (HOT MELT)",
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "0 až +60 °C",
     },
     "Udržitelná páska ECO+ 100": {
         "Nosič": "BOPP",
         "Tloušťka fólie": "25 / 28 / 32 µm",
-        "Typ lepidla": "ACRYL (Low noise / Noisy) / HOT MELT",
-        "Tloušťka lepidla": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+        "Typ lepidla": "Akryl (Low noise / Noisy) / HOT MELT",
+        "Tloušťka lepidla": "21 µm (Akryl) / 18 µm (HOT MELT)",
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "0 až +60 °C",
     },
@@ -254,11 +254,11 @@ def product_spec_pills(p):
     """Hero pills: carrier, adhesive type, operating temperature (ECO+ uses regenerát % instead of adhesive/temp)."""
     name = p["name"]
     if name == "Udržitelná páska ECO+ 50":
-        return ("50 % regenerát", "BOPP", "ACRYL / HOT MELT")
+        return ("50 % regenerát", "BOPP", "Akryl / HOT MELT")
     if name == "Udržitelná páska ECO+ 80":
-        return ("80 % regenerát", "BOPP", "ACRYL / HOT MELT")
+        return ("80 % regenerát", "BOPP", "Akryl / HOT MELT")
     if name == "Udržitelná páska ECO+ 100":
-        return ("100 % regenerát", "BOPP", "ACRYL / HOT MELT")
+        return ("100 % regenerát", "BOPP", "Akryl / HOT MELT")
     params = p["params"]
     carrier = params.get("Nosič") or params.get("Nosič / materiál", "")
     adhesive = params.get("Typ lepidla", "")
@@ -273,12 +273,12 @@ def product_spec_pills(p):
 def product_min_qty_note(p):
     """Optional note under tech specs about minimum order quantity."""
     name = p["name"]
-    if name == "BOPP páska ACRYL":
-        return "Minimální množství od 360 ks (ACRYL)."
+    if name == "BOPP páska Akryl":
+        return "Minimální množství od 360 ks (Akryl)."
     if name == "BOPP páska HOT MELT":
         return "Minimální množství od 504 ks (HOT MELT)."
     if name.startswith("Udržitelná páska ECO+"):
-        return "Dostupné v ACRYL i HOT MELT. Min. množství: ACRYL od 360 ks, HOT MELT od 504 ks."
+        return "Dostupné jako Akryl i HOT MELT. Min. množství: Akryl od 360 ks, HOT MELT od 504 ks."
     return ""
 
 def _adhesive_benefit(lepidlo):
@@ -355,7 +355,7 @@ def product_benefits(cat_slug, p):
             b1 = ("Recyklovaný polypropylen", f"{nosic} s nižší ekologickou stopou při zachování spolehlivého lepení.")
             b3 = ("Teplotní rozsah " + temp, f"Pevnost v tahu {pevnost} pro každodenní provoz skladu i expedice.")
     elif cat_slug == "bopp-pasky":
-        if p["name"] == "BOPP páska ACRYL":
+        if p["name"] == "BOPP páska Akryl":
             return [
                 ("Nejčistější lepidlo", "Na bázi vodní disperze bez chemických rozpouštědel."),
                 ("Low noise odvíjení", "Možnost nehlučné úpravy – tiché odvíjení a provozní teplota až do −10 °C."),
@@ -429,7 +429,7 @@ def product_uses(cat, p):
     apps = cat["apps"]
 
     if slug == "bopp-pasky":
-        if p["name"] == "BOPP páska ACRYL":
+        if p["name"] == "BOPP páska Akryl":
             uses = [
                 "Ruční balení s tichým (low noise) odvíjením",
                 "Automatické balicí stroje – hlučná (noisy) verze",
@@ -694,7 +694,7 @@ FWD='<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" 
 PRODUCT_BOTTOM_NOTE='''        <div class="product-neutral-note mx-auto mt-14 max-w-3xl px-6 py-6 text-center sm:px-8">
             <p class="text-sm leading-relaxed text-slate-700">
                 <span class="font-bold text-slate-900">Pásku lze objednat i bez potisku.</span>
-                Neutrální (nepotištěná) verze stejného materiálu — ideální pro okamžité balení nebo skladové zásoby.
+                Neutrální (nepotištěná) verze stejného materiálu, ideální pro okamžité balení nebo skladové zásoby.
                 <a href="/index.html#kontakt1" class="font-semibold text-orange-600 transition-colors hover:text-orange-700">Zeptejte se na dostupnost</a>
             </p>
         </div>

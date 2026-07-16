@@ -5,9 +5,9 @@
     "home_title": "Home | Nastri adesivi stampati",
     "home_description": "Nastri adesivi stampati | Produzione e fornitura di nastri adesivi personalizzati da ALFA IN a.s.",
     "gallery_title": "Galleria | Nastri adesivi stampati",
-    "gallery_description": "Galleria di nastri adesivi stampati di ALFA IN a.s. — stampa monocolore, rotocalco, nastri di sicurezza e logistici.",
+    "gallery_description": "Galleria di nastri adesivi stampati di ALFA IN a.s., stampa monocolore, rotocalco, nastri di sicurezza e logistici.",
     "sortiment_title": "Assortimento | Nastri adesivi stampati",
-    "sortiment_description": "Gamma di nastri adesivi ALFA IN — nastri BOPP HOT MELT e ACRILICI, linee speciali e prodotti ECO con stampa personalizzata.",
+    "sortiment_description": "Gamma di nastri adesivi ALFA IN, nastri BOPP HOT MELT e ACRILICI, linee speciali e prodotti ECO con stampa personalizzata.",
     "langNames": {
       "cs": "Čeština",
       "en": "English",
@@ -17,7 +17,7 @@
     "htmlLang": "it"
   },
   "nav": {
-    "tagline": "ALFA IN — produzione, consulenza, vendita e assistenza",
+    "tagline": "ALFA IN, produzione, consulenza, vendita e assistenza",
     "menu": "Apri menu",
     "menu_close": "Chiudi menu",
     "main_nav_label": "Navigazione principale",
@@ -76,7 +76,7 @@
     },
     "about": {
       "label": "Chi siamo",
-      "title": "Fornitore ceco tradizionale — nastri con e senza stampa",
+      "title": "Fornitore ceco tradizionale, nastri con e senza stampa",
       "lead": "Da oltre 30 anni aiutiamo le aziende a imballare le spedizioni in modo sicuro e a costruire un marchio forte direttamente sui materiali di imballaggio. Offriamo nastri adesivi con stampa personalizzata e anche in variante neutra senza stampa.",
       "body1_prefix": "Il nostro ",
       "body1_highlight": "moderno stabilimento produttivo",
@@ -105,7 +105,7 @@
       "hot_melt_subtitle": "Gomma sintetica",
       "hot_melt_text": "La scelta ideale per ambienti più freddi e magazzini non riscaldati. Aderisce al supporto in modo estremamente rapido e forte subito dopo l'applicazione. Non può essere rimosso facilmente dalla pellicola stretch.",
       "acryl_badge": "Silenzioso e resistente ai UV",
-      "acryl_title": "ACRYL",
+      "acryl_title": "Akryl",
       "acryl_subtitle": "Con svolgimento silenzioso",
       "acryl_text": "Garantisce uno svolgimento silenzioso e confortevole, apprezzato nelle grandi sale di imballaggio. Altamente resistente ai raggi UV e all'invecchiamento, perfetto per lo stoccaggio a lungo termine."
     },
@@ -125,7 +125,7 @@
       "security_title": "Nastro TAMPER EVIDENT, la manomissione è evidente!",
       "security_text": "Questo nastro di sicurezza appare neutro, ma una volta rimosso lascia sull'imballo un avviso praticamente impossibile da eliminare. Adatto a tutti i tipi di cartone e pellicola stretch, disponibile in vari colori e con stampa personalizzata.",
       "glue_badge": "Adesione estrema",
-      "glue_title": "EXTRA GLUE+ (ACRYL) e TACK+ (HOT MELT)",
+      "glue_title": "EXTRA GLUE+ (Akryl) e TACK+ (HOT MELT)",
       "glue_text": "Nastri con strato adesivo aumentato (33% e 20% rispettivamente) e possibilità di un film più resistente rispetto allo standard, progettati per applicazioni molto impegnative come pacchi pesanti, cartone di scarsa qualità o ambienti polverosi. Aderiscono estremamente bene al cartone.",
       "glue_extra_tag": "+33% adesivo"
     },
@@ -149,7 +149,7 @@
       "catalog_error": "Impossibile caricare il catalogo",
       "tape_type": "Tipo di adesivo",
       "acryl_no_silent_title": "Senza trattamento antirumore",
-      "acryl_no_silent_text": "I nastri ACRYL hanno normalmente svolgimento silenzioso. Selezionate se preferite la variante senza questo trattamento.",
+      "acryl_no_silent_text": "I nastri Akryl hanno normalmente svolgimento silenzioso. Selezionate se preferite la variante senza questo trattamento.",
       "base_color": "Colore di fondo",
       "print_colors": "Numero di colori di stampa",
       "hot_melt_hint": "Gomma sintetica",
@@ -170,8 +170,8 @@
       "length_label": "Lunghezza del nastro in metri",
       "quantity_label": "Quantità richiesta in rotoli",
       "quantity_hint": "Inserite un numero da 360 a 9999.",
-      "quantity_min": "ACRYL da 360 pz, HOT MELT da 504 pz.",
-      "quantity_tip": "ACRYL da 360 pz, HOT MELT da 504 pz. Spedizione gratuita da 360 pz. Consegna circa 3–4 settimane.",
+      "quantity_min": "Akryl da 360 pz, HOT MELT da 504 pz.",
+      "quantity_tip": "Akryl da 360 pz, HOT MELT da 504 pz. Spedizione gratuita da 360 pz. Consegna circa 3–4 settimane.",
       "quantity_success": "🔥 Ottima scelta! Avete la spedizione gratuita. La consegna richiede circa 3–4 settimane.",
       "validation": {
         "material_required": "Selezionate un materiale dall'elenco.",
@@ -253,7 +253,7 @@
     "ui": {
       "label": "Galleria",
       "title": "Esempi del nostro lavoro",
-      "subtitle": "Referenze reali dalla produzione ed esempi di tecnologie di stampa — filtrate per tipo di stampa, adesivo o settore.",
+      "subtitle": "Referenze reali dalla produzione ed esempi di tecnologie di stampa, filtrate per tipo di stampa, adesivo o settore.",
       "cta_custom": "Voglio una stampa personalizzata"
     },
     "filters": {
@@ -300,7 +300,7 @@
       "references_title": "Referenze reali",
       "references_subtitle": "Fotografie di stampe reali dalla nostra produzione. Aggiungeremo altre referenze dopo un nuovo servizio fotografico.",
       "demos_title": "Possibilità di stampa e tecnologie",
-      "demos_subtitle": "Esempi di soluzioni di sicurezza, logistica e speciali — illustrazione delle tecnologie che offriamo.",
+      "demos_subtitle": "Esempi di soluzioni di sicurezza, logistica e speciali, illustrazione delle tecnologie che offriamo.",
       "empty": "Nessun esempio corrisponde ai filtri selezionati. Provate a rimuoverne alcuni."
     },
     "cards": {
@@ -655,17 +655,17 @@
         "params_values": {
           "carrier": "BOPP",
           "thickness": "25 / 28 / 32 µm",
-          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
-          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "adhesive": "Akryl (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (Akryl) / 18 µm (HOT MELT)",
           "strength": "14–28 °C",
           "temperature": "0 a +60 °C"
         },
         "spec_pills": [
           "100% rigenerato",
           "BOPP",
-          "ACRYL / HOT MELT"
+          "Akryl / HOT MELT"
         ],
-        "min_qty_note": "Disponibile in ACRYL e HOT MELT. Quantità min.: ACRYL da 360 pz, HOT MELT da 504 pz.",
+        "min_qty_note": "Disponibile come Akryl e HOT MELT. Quantità min.: Akryl da 360 pz, HOT MELT da 504 pz.",
         "params_labels": {
           "carrier": "Supporto",
           "thickness": "Spessore del film",
@@ -715,17 +715,17 @@
         "params_values": {
           "carrier": "BOPP",
           "thickness": "25 / 28 / 32 µm",
-          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
-          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "adhesive": "Akryl (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (Akryl) / 18 µm (HOT MELT)",
           "strength": "14–28 °C",
           "temperature": "0 a +60 °C"
         },
         "spec_pills": [
           "50% rigenerato",
           "BOPP",
-          "ACRYL / HOT MELT"
+          "Akryl / HOT MELT"
         ],
-        "min_qty_note": "Disponibile in ACRYL e HOT MELT. Quantità min.: ACRYL da 360 pz, HOT MELT da 504 pz.",
+        "min_qty_note": "Disponibile come Akryl e HOT MELT. Quantità min.: Akryl da 360 pz, HOT MELT da 504 pz.",
         "params_labels": {
           "carrier": "Supporto",
           "thickness": "Spessore del film",
@@ -775,17 +775,17 @@
         "params_values": {
           "carrier": "BOPP",
           "thickness": "25 / 28 / 32 µm",
-          "adhesive": "ACRYL (Low noise / Noisy) / HOT MELT",
-          "adhesion": "21 µm (ACRYL) / 18 µm (HOT MELT)",
+          "adhesive": "Akryl (Low noise / Noisy) / HOT MELT",
+          "adhesion": "21 µm (Akryl) / 18 µm (HOT MELT)",
           "strength": "14–28 °C",
           "temperature": "0 a +60 °C"
         },
         "spec_pills": [
           "80% rigenerato",
           "BOPP",
-          "ACRYL / HOT MELT"
+          "Akryl / HOT MELT"
         ],
-        "min_qty_note": "Disponibile in ACRYL e HOT MELT. Quantità min.: ACRYL da 360 pz, HOT MELT da 504 pz.",
+        "min_qty_note": "Disponibile come Akryl e HOT MELT. Quantità min.: Akryl da 360 pz, HOT MELT da 504 pz.",
         "params_labels": {
           "carrier": "Supporto",
           "thickness": "Spessore del film",
@@ -1048,7 +1048,7 @@
         }
       },
       "bopp-paska-acrylic": {
-        "name": "Nastro BOPP ACRYL",
+        "name": "Nastro BOPP Akryl",
         "tagline": "Nastro BOPP affidabile con lunga durata.",
         "category_slug": "bopp-pasky",
         "category_title": "Nastri BOPP",
@@ -1075,17 +1075,17 @@
         "params_values": {
           "carrier": "BOPP",
           "thickness": "25 / 28 / 32 µm",
-          "adhesive": "ACRYL (Low noise / Noisy)",
+          "adhesive": "Akryl (Low noise / Noisy)",
           "adhesion": "21 µm",
           "strength": "14–28 °C",
           "temperature": "−10 a +60 °C"
         },
         "spec_pills": [
           "BOPP",
-          "ACRYL (Low noise / Noisy)",
+          "Akryl (Low noise / Noisy)",
           "−10 a +60 °C"
         ],
-        "min_qty_note": "Quantità minima da 360 pz (ACRYL).",
+        "min_qty_note": "Quantità minima da 360 pz (Akryl).",
         "params_labels": {
           "carrier": "Supporto",
           "thickness": "Spessore del film",
@@ -2630,7 +2630,7 @@
       "tailor_bullet_consult": "Consulenza sui parametri prima dell'ordine",
       "tailor_bullet_params": "Diverse versioni di adesivo e supporto",
       "no_print_note": "Il nastro è disponibile anche senza stampa.",
-      "no_print_body": "Versione neutra (non stampata) dello stesso materiale — ideale per imballaggio immediato o scorte di magazzino.",
+      "no_print_body": "Versione neutra (non stampata) dello stesso materiale, ideale per imballaggio immediato o scorte di magazzino.",
       "no_print_link": "Chiedete la disponibilità",
       "product_card_detail": "Visualizza dettagli"
     },
