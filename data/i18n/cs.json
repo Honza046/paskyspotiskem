@@ -442,9 +442,9 @@
         "description": "Nejrozšířenější průmyslové balicí pásky z biaxiálně orientovaného polypropylenu. Vynikají skvělou pevností v tahu a dlouhou životností.",
         "intro": "BOPP pásky jsou standardem pro každodenní balení ve výrobě, logistice i e-commerce. Fólie z biaxiálně orientovaného polypropylenu nabízí vynikající poměr ceny a výkonu, dostupnost v akrylovém i HOT MELT provedení a širokou škálu šířek a barev.",
         "properties": {
-          "Vysoká pevnost v tahu": "Odolná fólie, která se při balení nepřetrhne ani pod napětím.",
-          "ACRYL i HOT MELT": "Volba lepidla podle prostředí, tiché odvíjení, nebo rychlé přilnutí za chladu.",
-          "Dlouhá životnost": "Odolnost proti UV a stárnutí pro dlouhodobé skladování."
+          "Vynikající poměr cena/výkon": "Špičkový výkon za příznivou cenu pro každodenní průmyslové i e-commerce balení.",
+          "Ekologická šetrnost": "Neobsahuje prostředí škodlivé látky jako PVC.",
+          "Fyzikální a chemická stálost": "Stabilní vlastnosti fólie i lepidla při skladování, přepravě a běžném provozu."
         },
         "applications": [
           "Standardní uzavírání kartonů",
@@ -613,6 +613,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -671,6 +672,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -729,6 +731,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -787,6 +790,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -845,6 +849,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -903,6 +908,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -961,6 +967,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1019,6 +1026,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1033,50 +1041,51 @@
       },
       "bopp-paska-acrylic": {
         "name": "BOPP páska ACRYL",
-        "tagline": "Spolehlivá BOPP páska s akrylovým lepidlem a dlouhou životností.",
+        "tagline": "Spolehlivá BOPP páska s dlouhou životností.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP pásky",
         "benefits": [
           {
-            "title": "Pevnost v tahu 45 N/25 mm",
-            "text": "BOPP fólie o tloušťce 45 µm vydrží napětí při balení i při dlouhodobém skladování."
+            "title": "Nejčistější lepidlo",
+            "text": "Na bázi vodní disperze bez chemických rozpouštědel."
           },
           {
-            "title": "Akrylové lepidlo",
-            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+            "title": "Low noise odvíjení",
+            "text": "Možnost nehlučné úpravy – tiché odvíjení a provozní teplota až do −10 °C."
           },
           {
-            "title": "Dlouhá životnost",
-            "text": "Odolnost proti UV a stárnutí v teplotním rozsahu −5 až +60 °C."
+            "title": "Vysoká odolnost proti UV",
+            "text": "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování a UV zatížení."
           }
         ],
         "uses": [
+          "Ruční balení s tichým (low noise) odvíjením",
+          "Automatické balicí stroje – hlučná (noisy) verze",
           "Standardní uzavírání kartonů",
-          "Automatické balicí stroje",
-          "Tiché ruční odvíjení ve skladech a expedici",
           "Potisk firemním logem a informacemi"
         ],
         "params_values": {
-          "carrier": "BOPP fólie",
-          "thickness": "45 µm",
-          "adhesive": "Akrylové (vodní disperze)",
-          "adhesion": "2,8 N/25 mm",
-          "temperature": "−5 až +60 °C",
-          "strength": "45 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "ACRYL (Low noise / Noisy)",
+          "adhesion": "21 µm",
+          "strength": "14–28 °C",
+          "temperature": "−10 až +60 °C"
         },
         "spec_pills": [
-          "BOPP fólie",
-          "Akrylové (vodní disperze)",
-          "−5 až +60 °C"
+          "BOPP",
+          "ACRYL (Low noise / Noisy)",
+          "−10 až +60 °C"
         ],
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení"
         },
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1135,6 +1144,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1193,6 +1203,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1212,45 +1223,46 @@
         "category_title": "BOPP pásky",
         "benefits": [
           {
-            "title": "Pevnost v tahu 42 N/25 mm",
-            "text": "BOPP fólie o tloušťce 40 µm vydrží napětí při balení i při dlouhodobém skladování."
+            "title": "Snadné odvíjení",
+            "text": "Snižuje fyzickou námahu při ručním balení a hodí se i pro automatické balicí stroje."
           },
           {
-            "title": "HOT MELT lepidlo",
-            "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
+            "title": "Partner pro recyklované kartony",
+            "text": "Díky vysoké lepivosti ideální na recyklované kartony a do prašného prostředí."
           },
           {
-            "title": "Rychlé přilnutí",
-            "text": "Přilnavost 3,5 N/25 mm – okamžitě drží i při nižších teplotách (0 až +50 °C)."
+            "title": "Vysoká přilnavost",
+            "text": "Nelze snadno odlepit ze stretch fólií – zřetelný důkaz zabezpečení zásilky."
           }
         ],
         "uses": [
           "Standardní uzavírání kartonů",
           "Automatické balicí stroje",
-          "Expedice a skladová logistika",
-          "Potisk firemním logem a informacemi"
+          "Recyklované kartony a prašné prostředí",
+          "Zabezpečení zásilek na stretch fólii"
         ],
         "params_values": {
-          "carrier": "BOPP fólie",
-          "thickness": "40 µm",
-          "adhesive": "HOT MELT (syntetický kaučuk)",
-          "adhesion": "3,5 N/25 mm",
-          "temperature": "0 až +50 °C",
-          "strength": "42 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "HOT MELT",
+          "adhesion": "18 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 až +50 °C"
         },
         "spec_pills": [
-          "BOPP fólie",
-          "HOT MELT (syntetický kaučuk)",
+          "BOPP",
+          "HOT MELT",
           "0 až +50 °C"
         ],
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení"
         },
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1309,6 +1321,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1367,6 +1380,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1425,6 +1439,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1483,6 +1498,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1541,6 +1557,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1599,6 +1616,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1657,6 +1675,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1715,6 +1734,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1773,6 +1793,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1831,6 +1852,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1889,6 +1911,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1947,6 +1970,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -2005,6 +2029,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -2063,6 +2088,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -2121,6 +2147,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -2179,6 +2206,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -2237,6 +2265,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -2295,6 +2324,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -2353,6 +2383,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -2411,6 +2442,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -2469,6 +2501,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -2527,6 +2560,7 @@
           "temperature": "Teplotní odolnost",
           "strength": "Pevnost v tahu"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",

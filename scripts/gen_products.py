@@ -42,7 +42,7 @@ CATS = [
  {"title":"BOPP pásky","cat":"bopp-pasky","cover":"BOPP Tapes/BOPP_Cover.webp",
   "description":"Nejrozšířenější průmyslové balicí pásky z biaxiálně orientovaného polypropylenu. Vynikají skvělou pevností v tahu a dlouhou životností.",
   "intro":"BOPP pásky jsou standardem pro každodenní balení ve výrobě, logistice i e-commerce. Fólie z biaxiálně orientovaného polypropylenu nabízí vynikající poměr ceny a výkonu, dostupnost v akrylovém i HOT MELT provedení a širokou škálu šířek a barev.",
-  "properties":[("Vysoká pevnost v tahu","Odolná fólie, která se při balení nepřetrhne ani pod napětím."),("ACRYL i HOT MELT","Volba lepidla podle prostředí, tiché odvíjení, nebo rychlé přilnutí za chladu."),("Dlouhá životnost","Odolnost proti UV a stárnutí pro dlouhodobé skladování.")],
+  "properties":[("Vynikající poměr cena/výkon","Špičkový výkon za příznivou cenu pro každodenní průmyslové i e-commerce balení."),("Ekologická šetrnost","Neobsahuje prostředí škodlivé látky jako PVC."),("Fyzikální a chemická stálost","Stabilní vlastnosti fólie i lepidla při skladování, přepravě a běžném provozu.")],
   "apps":["Standardní uzavírání kartonů","Automatické balicí stroje","Expedice a skladová logistika","Potisk firemním logem a informacemi"]},
  {"title":"BOPET pásky","cat":"bopet-pasky","cover":"BOPET Tapes/BOPET_Cover.webp",
   "description":"Prémiové polyesterové pásky s extrémní odolností proti roztržení, chemikáliím a teplotním výkyvům. Navržené pro nejnáročnější průmyslové aplikace.",
@@ -100,8 +100,8 @@ PRODUCTS = {
    P("Papírová páska C690","Papírové Pásky/c690.jpg","Prémiová kraftová páska s HOT MELT lepidlem a matným povrchem.","Papírový nosič (kraft)","130 µm","HOT MELT","4,8 N/25 mm","−10 až +70 °C","60 N/25 mm"),
  ],
  "bopp-pasky":[
-   P("BOPP páska ACRYL","BOPP Tapes/BOPPACRYLIC.jpeg","Spolehlivá BOPP páska s akrylovým lepidlem a dlouhou životností.","BOPP fólie","45 µm","Akrylové (vodní disperze)","2,8 N/25 mm","−5 až +60 °C","45 N/25 mm"),
-   P("BOPP páska HOT MELT","BOPP Tapes/BOPPHOTMELT.jpeg","BOPP páska s HOT MELT lepidlem pro rychlé a pevné přilnutí.","BOPP fólie","40 µm","HOT MELT (syntetický kaučuk)","3,5 N/25 mm","0 až +50 °C","42 N/25 mm"),
+   P("BOPP páska ACRYL","BOPP Tapes/BOPPACRYLIC.jpeg","Spolehlivá BOPP páska s dlouhou životností.","BOPP","25 / 28 / 32 µm","ACRYL (Low noise / Noisy)","21 µm","−10 až +60 °C","14–28 °C"),
+   P("BOPP páska HOT MELT","BOPP Tapes/BOPPHOTMELT.jpeg","BOPP páska s HOT MELT lepidlem pro rychlé a pevné přilnutí.","BOPP","25 / 28 / 32 µm","HOT MELT","18 µm","0 až +50 °C","14–28 °C"),
    P("BOPP páska EXTRA GLUE+","BOPP Tapes/BOPPACRYLIC.jpeg","Akrylová BOPP páska se zvýšenou vrstvou lepidla (+33 %) pro náročné povrchy a recyklovaný karton.","BOPP fólie","40 µm","Akrylové (zvýšená vrstva +33 %)","4,0 N/25 mm","−5 až +60 °C","45 N/25 mm"),
    P("BOPP páska TACK+","BOPP Tapes/BOPPHOTMELT1.jpg","HOT MELT BOPP páska s vyšší přilnavostí (+20 %) a super tack pro balicí stroje a recyklovaný karton.","BOPP fólie","40 µm","HOT MELT (super tack, +20 %)","4,2 N/25 mm","0 až +55 °C","42 N/25 mm"),
    P("BOPP páska Evergreen","BOPP Tapes/EVERGREEN.jpg","Barevná BOPP páska pro značení a vizuální odlišení zásilek.","BOPP fólie (barevná)","45 µm","Akrylové","3,0 N/25 mm","−5 až +60 °C","46 N/25 mm"),
@@ -197,11 +197,46 @@ SLUG_OVERRIDES = {
     "BOPP páska HOT MELT": "bopp-paska-hot-melt",
 }
 
+# ACRYL / HOT MELT use a detailed tech-spec schema (film + adhesive thickness, two temperature ranges).
+BOPP_TECH_SPEC_PARAMS = {
+    "BOPP páska ACRYL": {
+        "Nosič": "BOPP",
+        "Tloušťka fólie": "25 / 28 / 32 µm",
+        "Typ lepidla": "ACRYL (Low noise / Noisy)",
+        "Tloušťka lepidla": "21 µm",
+        "Skladovací a aplikační teplota": "14–28 °C",
+        "Provozní teplota po nalepení": "−10 až +60 °C",
+    },
+    "BOPP páska HOT MELT": {
+        "Nosič": "BOPP",
+        "Tloušťka fólie": "25 / 28 / 32 µm",
+        "Typ lepidla": "HOT MELT",
+        "Tloušťka lepidla": "18 µm",
+        "Skladovací a aplikační teplota": "14–28 °C",
+        "Provozní teplota po nalepení": "0 až +50 °C",
+    },
+}
+
 # assign slugs + tags
 for cat in CATS:
     for p in PRODUCTS[cat["cat"]]:
         p["slug"] = SLUG_OVERRIDES.get(p["name"], slugify(p["name"]))
         p["tags"]=TAGMAP.get(p["name"],[])
+        if p["name"] in BOPP_TECH_SPEC_PARAMS:
+            p["params"] = dict(BOPP_TECH_SPEC_PARAMS[p["name"]])
+            p["tech_spec"] = True
+
+def product_spec_pills(p):
+    """Hero pills: carrier, adhesive type, operating temperature."""
+    params = p["params"]
+    carrier = params.get("Nosič") or params.get("Nosič / materiál", "")
+    adhesive = params.get("Typ lepidla", "")
+    temp = (
+        params.get("Provozní teplota po nalepení")
+        or params.get("Teplotní odolnost")
+        or ""
+    )
+    return carrier, adhesive, temp
 
 def _adhesive_benefit(lepidlo):
     l = lepidlo.lower()
@@ -236,12 +271,16 @@ def _adhesive_benefit(lepidlo):
 def product_benefits(cat_slug, p):
     """Product-specific benefit cards – derived from params, not generic category copy."""
     params = p["params"]
-    nosic = params["Nosič / materiál"]
-    lepidlo = params["Typ lepidla"]
-    temp = params["Teplotní odolnost"]
-    pevnost = params["Pevnost v tahu"]
-    pril = params["Přilnavost (ocel)"]
-    tl = params["Tloušťka"]
+    nosic = params.get("Nosič") or params.get("Nosič / materiál", "")
+    lepidlo = params.get("Typ lepidla", "")
+    temp = (
+        params.get("Provozní teplota po nalepení")
+        or params.get("Teplotní odolnost")
+        or ""
+    )
+    pevnost = params.get("Pevnost v tahu", "")
+    pril = params.get("Přilnavost (ocel)", "")
+    tl = params.get("Tloušťka fólie") or params.get("Tloušťka", "")
     nl = nosic.lower()
 
     if cat_slug == "udrzitelne-pasky":
@@ -258,6 +297,18 @@ def product_benefits(cat_slug, p):
             b1 = ("Recyklovaný polypropylen", f"{nosic} s nižší ekologickou stopou při zachování spolehlivého lepení.")
             b3 = ("Teplotní rozsah " + temp, f"Pevnost v tahu {pevnost} pro každodenní provoz skladu i expedice.")
     elif cat_slug == "bopp-pasky":
+        if p["name"] == "BOPP páska ACRYL":
+            return [
+                ("Nejčistější lepidlo", "Na bázi vodní disperze bez chemických rozpouštědel."),
+                ("Low noise odvíjení", "Možnost nehlučné úpravy – tiché odvíjení a provozní teplota až do −10 °C."),
+                ("Vysoká odolnost proti UV", "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování a UV zatížení."),
+            ]
+        if p["name"] == "BOPP páska HOT MELT":
+            return [
+                ("Snadné odvíjení", "Snižuje fyzickou námahu při ručním balení a hodí se i pro automatické balicí stroje."),
+                ("Partner pro recyklované kartony", "Díky vysoké lepivosti ideální na recyklované kartony a do prašného prostředí."),
+                ("Vysoká přilnavost", "Nelze snadno odlepit ze stretch fólií – zřetelný důkaz zabezpečení zásilky."),
+            ]
         if p["name"] == "BOPP páska EXTRA GLUE+":
             b1 = ("Zvýšená vrstva lepidla (+33 %)", "Vysoká přilnavost i na recyklovaném kartonu, prašných a nerovných površích.")
             b3 = ("Tiché odvíjení a UV odolnost", f"Přilnavost {pril} s nízkou hlučností – spolehlivý výkon ve skladu ({temp}).")
@@ -320,7 +371,21 @@ def product_uses(cat, p):
     apps = cat["apps"]
 
     if slug == "bopp-pasky":
-        if p["name"] == "BOPP páska EXTRA GLUE+":
+        if p["name"] == "BOPP páska ACRYL":
+            uses = [
+                "Ruční balení s tichým (low noise) odvíjením",
+                "Automatické balicí stroje – hlučná (noisy) verze",
+                apps[0],
+                apps[3],
+            ]
+        elif p["name"] == "BOPP páska HOT MELT":
+            uses = [
+                apps[0],
+                apps[1],
+                "Recyklované kartony a prašné prostředí",
+                "Zabezpečení zásilek na stretch fólii",
+            ]
+        elif p["name"] == "BOPP páska EXTRA GLUE+":
             uses = [apps[0], "Recyklovaný karton a náročné povrchy", apps[1], apps[3]]
         elif p["name"] == "BOPP páska TACK+":
             uses = [apps[0], apps[1], "Recyklovaný karton a náročné povrchy", "Strojové balení těžkých zásilek"]
@@ -839,7 +904,7 @@ for cat in CATS:
 '''%(cat["cat"],esc(cat["title"]),esc(p["name"]),
      product_detail_image_box(cat["cat"]),url(p["image"]),esc(p["name"]),product_detail_image_cls(cat["cat"]),
      esc(cat["title"]),esc(p["name"]),esc(p["tagline"]),
-     esc(p["params"]["Nosič / materiál"]),esc(p["params"]["Typ lepidla"]),esc(p["params"]["Teplotní odolnost"]),
+     *[esc(x) for x in product_spec_pills(p)],
      esc(cta['hero']),FWD,cat["cat"],BACK,
      rows,tailor,advs,uses,
      PRODUCT_BOTTOM_NOTE,

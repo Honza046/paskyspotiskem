@@ -76,7 +76,7 @@
     },
     "about": {
       "label": "Über uns",
-      "title": "Traditioneller tschechischer Lieferant von Klebebändern",
+      "title": "Traditioneller tschechischer Lieferant — Klebebänder mit und ohne Druck",
       "lead": "Seit mehr als 30 Jahren helfen wir Unternehmen, ihre Sendungen sicher zu verpacken und eine starke Marke direkt auf Verpackungsmaterialien aufzubauen. Wir bieten Klebebänder mit individuellem Druck sowie neutrale Varianten ohne Druck.",
       "body1_prefix": "Unsere ",
       "body1_highlight": "moderne Produktionsstätte",
@@ -442,9 +442,9 @@
         "description": "Die am weitesten verbreiteten Industrie-Verpackungsbänder aus biaxial orientiertem Polypropylen. Hervorragende Zugfestigkeit und lange Lebensdauer.",
         "intro": "BOPP-Klebebänder sind der Standard für den täglichen Einsatz in Produktion, Logistik und E-Commerce. Die Folie aus biaxial orientiertem Polypropylen bietet ein exzellentes Preis-Leistungs-Verhältnis, Verfügbarkeit in Acryl- und Hot-Melt-Ausführung sowie eine breite Palette an Breiten und Farben.",
         "properties": {
-          "Hohe Zugfestigkeit": "Robuste Folie, die beim Verpacken auch unter Spannung nicht reißt.",
-          "ACRYL und HOT MELT": "Klebstoffwahl je nach Umgebung – leises Abrollen oder schnelle Haftung bei Kälte.",
-          "Lange Lebensdauer": "Beständigkeit gegen UV und Alterung für langfristige Lagerung."
+          "Hervorragendes Preis-Leistungs-Verhältnis": "Spitzenleistung zu einem günstigen Preis für den täglichen Einsatz in Industrie und E-Commerce.",
+          "Umweltfreundlichkeit": "Enthält keine umweltschädlichen Stoffe wie PVC.",
+          "Physikalische und chemische Beständigkeit": "Stabile Folien- und Klebstoffeigenschaften bei Lagerung, Transport und alltäglichem Einsatz."
         },
         "applications": [
           "Standard-Kartonverschluss",
@@ -613,6 +613,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -671,6 +672,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -729,6 +731,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -787,6 +790,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -845,6 +849,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -903,6 +908,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -961,6 +967,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1019,6 +1026,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1033,50 +1041,51 @@
       },
       "bopp-paska-acrylic": {
         "name": "BOPP-Klebeband ACRYL",
-        "tagline": "Zuverlässiges BOPP-Klebeband mit Acrylklebstoff und langer Lebensdauer.",
+        "tagline": "Zuverlässiges BOPP-Klebeband mit langer Lebensdauer.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP-Klebebänder",
         "benefits": [
           {
-            "title": "Zugfestigkeit 45 N/25 mm",
-            "text": "BOPP-Folie mit 45 µm Dicke hält Spannung beim Verpacken und bei langfristiger Lagerung stand."
+            "title": "Sauberster Klebstoff",
+            "text": "Auf Basis einer wässrigen Dispersion ohne chemische Lösungsmittel."
           },
           {
-            "title": "Acrylklebstoff",
-            "text": "Leises Abrollen, langfristig stabile Klebkraft und zuverlässige Leistung unter Lagerbedingungen."
+            "title": "Low-Noise-Abrollen",
+            "text": "Optionale geräuscharme Ausstattung – leises Abrollen und Betriebstemperatur bis −10 °C."
           },
           {
-            "title": "Lange Lebensdauer",
-            "text": "UV- und Alterungsbeständigkeit im Temperaturbereich −5 až +60 °C."
+            "title": "Hohe UV-Beständigkeit",
+            "text": "Acrylklebstoff behält die Klebkraft auch bei langer Lagerung und UV-Belastung."
           }
         ],
         "uses": [
+          "Manuelles Verpacken mit leisem (Low-Noise) Abrollen",
+          "Automatische Verpackungsmaschinen – laute (Noisy) Version",
           "Standard-Kartonverschluss",
-          "Automatische Verpackungsmaschinen",
-          "Leises manuelles Abrollen in Lagern und im Versand",
           "Bedruckung mit Firmenlogo und Informationen"
         ],
         "params_values": {
-          "carrier": "BOPP-Folie",
-          "thickness": "45 µm",
-          "adhesive": "Acryl (wässrige Dispersion)",
-          "adhesion": "2,8 N/25 mm",
-          "temperature": "−5 bis +60 °C",
-          "strength": "45 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "ACRYL (Low noise / Noisy)",
+          "adhesion": "21 µm",
+          "strength": "14–28 °C",
+          "temperature": "−10 bis +60 °C"
         },
         "spec_pills": [
-          "BOPP-Folie",
-          "Acryl (wässrige Dispersion)",
-          "−5 bis +60 °C"
+          "BOPP",
+          "ACRYL (Low noise / Noisy)",
+          "−10 bis +60 °C"
         ],
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
           "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben"
         },
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1135,6 +1144,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1193,6 +1203,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1212,45 +1223,46 @@
         "category_title": "BOPP-Klebebänder",
         "benefits": [
           {
-            "title": "Zugfestigkeit 42 N/25 mm",
-            "text": "BOPP-Folie mit 40 µm Dicke hält Spannung beim Verpacken und bei langfristiger Lagerung stand."
+            "title": "Leichtes Abrollen",
+            "text": "Verringert die körperliche Belastung beim manuellen Verpacken und eignet sich auch für automatische Verpackungsmaschinen."
           },
           {
-            "title": "Hot-Melt-Klebstoff",
-            "text": "Schnelle, feste Haftung auch bei niedrigen Temperaturen – für manuelles und maschinelles Verpacken."
+            "title": "Partner für Recyclingkartons",
+            "text": "Dank hoher Klebkraft ideal für Recyclingkartons und staubige Umgebungen."
           },
           {
-            "title": "Schnelle Haftung",
-            "text": "Klebkraft 3,5 N/25 mm – haftet sofort auch bei niedrigen Temperaturen (0 až +50 °C)."
+            "title": "Hohe Klebkraft",
+            "text": "Lässt sich nicht leicht von Stretchfolie abziehen – klarer Nachweis der Sendungssicherung."
           }
         ],
         "uses": [
           "Standard-Kartonverschluss",
           "Automatische Verpackungsmaschinen",
-          "Versand und Lagerlogistik",
-          "Bedruckung mit Firmenlogo und Informationen"
+          "Recyclingkartons und staubige Umgebungen",
+          "Sicherung von Sendungen auf Stretchfolie"
         ],
         "params_values": {
-          "carrier": "BOPP-Folie",
-          "thickness": "40 µm",
-          "adhesive": "Hot Melt (Synthesekautschuk)",
-          "adhesion": "3,5 N/25 mm",
-          "temperature": "0 bis +50 °C",
-          "strength": "42 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "Hot Melt",
+          "adhesion": "18 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 bis +50 °C"
         },
         "spec_pills": [
-          "BOPP-Folie",
-          "Hot Melt (Synthesekautschuk)",
+          "BOPP",
+          "Hot Melt",
           "0 bis +50 °C"
         ],
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
           "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben"
         },
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1309,6 +1321,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1367,6 +1380,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1425,6 +1439,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1483,6 +1498,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1541,6 +1557,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1599,6 +1616,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1657,6 +1675,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1715,6 +1734,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1773,6 +1793,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1831,6 +1852,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1889,6 +1911,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1947,6 +1970,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -2005,6 +2029,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -2063,6 +2088,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -2121,6 +2147,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -2179,6 +2206,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -2237,6 +2265,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -2295,6 +2324,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -2353,6 +2383,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -2411,6 +2442,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -2469,6 +2501,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -2527,6 +2560,7 @@
           "temperature": "Temperaturbeständigkeit",
           "strength": "Zugfestigkeit"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",

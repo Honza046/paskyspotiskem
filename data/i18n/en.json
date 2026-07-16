@@ -442,9 +442,9 @@
         "description": "The most widely used industrial packaging tapes made from biaxially oriented polypropylene. Outstanding tensile strength and long service life.",
         "intro": "BOPP tapes are the standard for everyday packing in manufacturing, logistics and e-commerce. Biaxially oriented polypropylene film delivers an excellent price-performance ratio, availability in acrylic and hot melt versions, and a wide range of widths and colours.",
         "properties": {
-          "High tensile strength": "Durable film that will not tear under tension during packing.",
-          "ACRYL and HOT MELT": "Choose the adhesive to suit your environment — quiet unwinding or fast bonding in cold conditions.",
-          "Long service life": "Resistance to UV and ageing for long-term storage."
+          "Excellent price/performance ratio": "Top performance at a favourable price for everyday industrial and e-commerce packing.",
+          "Environmental friendliness": "Contains no environmentally harmful substances such as PVC.",
+          "Physical and chemical stability": "Stable film and adhesive properties during storage, transport and everyday use."
         },
         "applications": [
           "Standard carton sealing",
@@ -613,6 +613,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -671,6 +672,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -729,6 +731,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -787,6 +790,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -845,6 +849,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -903,6 +908,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -961,6 +967,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1019,6 +1026,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1033,50 +1041,51 @@
       },
       "bopp-paska-acrylic": {
         "name": "BOPP tape ACRYL",
-        "tagline": "Reliable BOPP tape with acrylic adhesive and long service life.",
+        "tagline": "Reliable BOPP tape with long service life.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP tapes",
         "benefits": [
           {
-            "title": "Tensile strength 45 N/25 mm",
-            "text": "BOPP film 45 µm thick withstands tension during packing and long-term storage."
+            "title": "Cleanest adhesive",
+            "text": "Water-based dispersion without chemical solvents."
           },
           {
-            "title": "Acrylic adhesive",
-            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+            "title": "Low-noise unwinding",
+            "text": "Optional low-noise finish — quiet unwinding and operating temperature down to −10 °C."
           },
           {
-            "title": "Long service life",
-            "text": "UV and ageing resistance in the temperature range −5 až +60 °C."
+            "title": "High UV resistance",
+            "text": "Acrylic adhesive keeps its stickiness during long-term storage and UV exposure."
           }
         ],
         "uses": [
+          "Manual packing with quiet (low noise) unwinding",
+          "Automatic packing machines – noisy version",
           "Standard carton sealing",
-          "Automatic packing machines",
-          "Quiet manual unwinding in warehouses and dispatch",
           "Printing with company logos and information"
         ],
         "params_values": {
-          "carrier": "BOPP film",
-          "thickness": "45 µm",
-          "adhesive": "Acrylic (water-based dispersion)",
-          "adhesion": "2,8 N/25 mm",
-          "temperature": "−5 to +60 °C",
-          "strength": "45 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "ACRYL (Low noise / Noisy)",
+          "adhesion": "21 µm",
+          "strength": "14–28 °C",
+          "temperature": "−10 to +60 °C"
         },
         "spec_pills": [
-          "BOPP film",
-          "Acrylic (water-based dispersion)",
-          "−5 to +60 °C"
+          "BOPP",
+          "ACRYL (Low noise / Noisy)",
+          "−10 to +60 °C"
         ],
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
           "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application"
         },
+        "tech_spec": true,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1135,6 +1144,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1193,6 +1203,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1212,45 +1223,46 @@
         "category_title": "BOPP tapes",
         "benefits": [
           {
-            "title": "Tensile strength 42 N/25 mm",
-            "text": "BOPP film 40 µm thick withstands tension during packing and long-term storage."
+            "title": "Easy unwinding",
+            "text": "Reduces physical strain during manual packing and is also great for automatic packing machines."
           },
           {
-            "title": "Hot melt adhesive",
-            "text": "Fast, strong bonding even at lower temperatures — suitable for manual and machine packing."
+            "title": "Partner for recycled cartons",
+            "text": "Thanks to high stickiness, ideal for recycled cartons and dusty environments."
           },
           {
-            "title": "Fast bonding",
-            "text": "Adhesion 3,5 N/25 mm — bonds instantly even at lower temperatures (0 až +50 °C)."
+            "title": "High adhesion",
+            "text": "Hard to peel off stretch film — a clear sign of shipment security."
           }
         ],
         "uses": [
           "Standard carton sealing",
           "Automatic packing machines",
-          "Dispatch and warehouse logistics",
-          "Printing with company logos and information"
+          "Recycled cartons and dusty environments",
+          "Securing shipments on stretch film"
         ],
         "params_values": {
-          "carrier": "BOPP film",
-          "thickness": "40 µm",
-          "adhesive": "Hot melt (synthetic rubber)",
-          "adhesion": "3,5 N/25 mm",
-          "temperature": "0 to +50 °C",
-          "strength": "42 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "Hot melt",
+          "adhesion": "18 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 to +50 °C"
         },
         "spec_pills": [
-          "BOPP film",
-          "Hot melt (synthetic rubber)",
+          "BOPP",
+          "Hot melt",
           "0 to +50 °C"
         ],
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
           "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application"
         },
+        "tech_spec": true,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1309,6 +1321,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1367,6 +1380,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1425,6 +1439,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1483,6 +1498,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1541,6 +1557,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1599,6 +1616,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1657,6 +1675,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1715,6 +1734,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1773,6 +1793,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1831,6 +1852,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1889,6 +1911,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1947,6 +1970,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -2005,6 +2029,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -2063,6 +2088,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -2121,6 +2147,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -2179,6 +2206,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -2237,6 +2265,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -2295,6 +2324,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -2353,6 +2383,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -2411,6 +2442,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -2469,6 +2501,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -2527,6 +2560,7 @@
           "temperature": "Temperature resistance",
           "strength": "Tensile strength"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",

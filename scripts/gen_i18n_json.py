@@ -75,14 +75,14 @@ CATEGORY_EN: dict[str, dict[str, Any]] = {
         "description": "The most widely used industrial packaging tapes made from biaxially oriented polypropylene. Outstanding tensile strength and long service life.",
         "intro": "BOPP tapes are the standard for everyday packing in manufacturing, logistics and e-commerce. Biaxially oriented polypropylene film delivers an excellent price-performance ratio, availability in acrylic and hot melt versions, and a wide range of widths and colours.",
         "properties": {
-            "Vysoká pevnost v tahu": "High tensile strength",
-            "ACRYL i HOT MELT": "ACRYL and HOT MELT",
-            "Dlouhá životnost": "Long service life",
+            "Vynikající poměr cena/výkon": "Excellent price/performance ratio",
+            "Ekologická šetrnost": "Environmental friendliness",
+            "Fyzikální a chemická stálost": "Physical and chemical stability",
         },
         "property_texts": {
-            "Vysoká pevnost v tahu": "Durable film that will not tear under tension during packing.",
-            "ACRYL i HOT MELT": "Choose the adhesive to suit your environment — quiet unwinding or fast bonding in cold conditions.",
-            "Dlouhá životnost": "Resistance to UV and ageing for long-term storage.",
+            "Vynikající poměr cena/výkon": "Top performance at a favourable price for everyday industrial and e-commerce packing.",
+            "Ekologická šetrnost": "Contains no environmentally harmful substances such as PVC.",
+            "Fyzikální a chemická stálost": "Stable film and adhesive properties during storage, transport and everyday use.",
         },
         "applications": [
             "Standard carton sealing",
@@ -267,14 +267,14 @@ CATEGORY_DE: dict[str, dict[str, Any]] = {
         "description": "Die am weitesten verbreiteten Industrie-Verpackungsbänder aus biaxial orientiertem Polypropylen. Hervorragende Zugfestigkeit und lange Lebensdauer.",
         "intro": "BOPP-Klebebänder sind der Standard für den täglichen Einsatz in Produktion, Logistik und E-Commerce. Die Folie aus biaxial orientiertem Polypropylen bietet ein exzellentes Preis-Leistungs-Verhältnis, Verfügbarkeit in Acryl- und Hot-Melt-Ausführung sowie eine breite Palette an Breiten und Farben.",
         "properties": {
-            "Vysoká pevnost v tahu": "Hohe Zugfestigkeit",
-            "ACRYL i HOT MELT": "ACRYL und HOT MELT",
-            "Dlouhá životnost": "Lange Lebensdauer",
+            "Vynikající poměr cena/výkon": "Hervorragendes Preis-Leistungs-Verhältnis",
+            "Ekologická šetrnost": "Umweltfreundlichkeit",
+            "Fyzikální a chemická stálost": "Physikalische und chemische Beständigkeit",
         },
         "property_texts": {
-            "Vysoká pevnost v tahu": "Robuste Folie, die beim Verpacken auch unter Spannung nicht reißt.",
-            "ACRYL i HOT MELT": "Klebstoffwahl je nach Umgebung – leises Abrollen oder schnelle Haftung bei Kälte.",
-            "Dlouhá životnost": "Beständigkeit gegen UV und Alterung für langfristige Lagerung.",
+            "Vynikající poměr cena/výkon": "Spitzenleistung zu einem günstigen Preis für den täglichen Einsatz in Industrie und E-Commerce.",
+            "Ekologická šetrnost": "Enthält keine umweltschädlichen Stoffe wie PVC.",
+            "Fyzikální a chemická stálost": "Stabile Folien- und Klebstoffeigenschaften bei Lagerung, Transport und alltäglichem Einsatz.",
         },
         "applications": [
             "Standard-Kartonverschluss",

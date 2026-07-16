@@ -76,7 +76,7 @@
     },
     "about": {
       "label": "Chi siamo",
-      "title": "Fornitore ceco tradizionale di nastri adesivi",
+      "title": "Fornitore ceco tradizionale — nastri con e senza stampa",
       "lead": "Da oltre 30 anni aiutiamo le aziende a imballare le spedizioni in modo sicuro e a costruire un marchio forte direttamente sui materiali di imballaggio. Offriamo nastri adesivi con stampa personalizzata e anche in variante neutra senza stampa.",
       "body1_prefix": "Il nostro ",
       "body1_highlight": "moderno stabilimento produttivo",
@@ -442,9 +442,9 @@
         "description": "I nastri per imballaggio industriale più diffusi, realizzati in polipropilene biorientato. Offrono eccellente resistenza alla trazione e lunga durata.",
         "intro": "I nastri BOPP sono lo standard per l'imballaggio quotidiano nella produzione, nella logistica e nell'e-commerce. Il film in polipropilene biorientato offre un eccellente rapporto qualità-prezzo, versioni acriliche e hot melt e un'ampia scelta di larghezze e colori.",
         "properties": {
-          "Elevata resistenza alla trazione": "Film resistente che non si strappa durante l'imballaggio, neppure sotto tensione.",
-          "ACRILICO e HOT MELT": "Scegliete l'adesivo in base all'ambiente: svolgimento silenzioso o adesione rapida al freddo.",
-          "Lunga durata": "Resistenza ai raggi UV e all'invecchiamento per lo stoccaggio a lungo termine."
+          "Eccellente rapporto qualità/prezzo": "Prestazioni elevate a un prezzo conveniente per l'imballaggio quotidiano in industria ed e-commerce.",
+          "Rispetto per l'ambiente": "Non contiene sostanze dannose per l'ambiente come il PVC.",
+          "Stabilità fisica e chimica": "Proprietà stabili del film e dell'adesivo durante stoccaggio, trasporto e uso quotidiano."
         },
         "applications": [
           "Chiusura standard dei cartoni",
@@ -613,6 +613,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -671,6 +672,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -729,6 +731,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -787,6 +790,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -845,6 +849,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -903,6 +908,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -961,6 +967,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1019,6 +1026,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1033,50 +1041,51 @@
       },
       "bopp-paska-acrylic": {
         "name": "Nastro BOPP ACRYL",
-        "tagline": "Nastro BOPP affidabile con adesivo acrilico e lunga durata.",
+        "tagline": "Nastro BOPP affidabile con lunga durata.",
         "category_slug": "bopp-pasky",
         "category_title": "Nastri BOPP",
         "benefits": [
           {
-            "title": "Resistenza alla trazione 45 N/25 mm",
-            "text": "Il film BOPP spesso 45 µm resiste alla tensione durante l'imballaggio e lo stoccaggio a lungo termine."
+            "title": "Adesivo più puro",
+            "text": "A base di dispersione acquosa senza solventi chimici."
           },
           {
-            "title": "Adesivo acrilico",
-            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+            "title": "Svolgimento low noise",
+            "text": "Opzione low noise: svolgimento silenzioso e temperatura di esercizio fino a −10 °C."
           },
           {
-            "title": "Lunga durata",
-            "text": "Resistenza ai raggi UV e all'invecchiamento nell'intervallo di temperatura −5 až +60 °C."
+            "title": "Elevata resistenza ai raggi UV",
+            "text": "L'adesivo acrilico mantiene l'adesione anche con stoccaggio prolungato e esposizione UV."
           }
         ],
         "uses": [
+          "Imballaggio manuale con svolgimento silenzioso (low noise)",
+          "Macchine automatiche per imballaggio – versione noisy",
           "Chiusura standard dei cartoni",
-          "Macchine automatiche per imballaggio",
-          "Svolgimento manuale silenzioso in magazzino e spedizione",
           "Stampa con logo e informazioni aziendali"
         ],
         "params_values": {
-          "carrier": "Film BOPP",
-          "thickness": "45 µm",
-          "adhesive": "Acrilico (dispersione acquosa)",
-          "adhesion": "2,8 N/25 mm",
-          "temperature": "−5 a +60 °C",
-          "strength": "45 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "ACRYL (Low noise / Noisy)",
+          "adhesion": "21 µm",
+          "strength": "14–28 °C",
+          "temperature": "−10 a +60 °C"
         },
         "spec_pills": [
-          "Film BOPP",
-          "Acrilico (dispersione acquosa)",
-          "−5 a +60 °C"
+          "BOPP",
+          "ACRYL (Low noise / Noisy)",
+          "−10 a +60 °C"
         ],
         "params_labels": {
-          "carrier": "Supporto / materiale",
-          "thickness": "Spessore",
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
           "adhesive": "Tipo di adesivo",
-          "adhesion": "Adesione (acciaio)",
-          "temperature": "Resistenza alla temperatura",
-          "strength": "Resistenza alla trazione"
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione"
         },
+        "tech_spec": true,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1135,6 +1144,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1193,6 +1203,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1212,45 +1223,46 @@
         "category_title": "Nastri BOPP",
         "benefits": [
           {
-            "title": "Resistenza alla trazione 42 N/25 mm",
-            "text": "Il film BOPP spesso 40 µm resiste alla tensione durante l'imballaggio e lo stoccaggio a lungo termine."
+            "title": "Svolgimento facile",
+            "text": "Riduce lo sforzo fisico nell'imballaggio manuale ed è ideale anche per macchine automatiche."
           },
           {
-            "title": "Adesivo hot melt",
-            "text": "Adesione rapida e resistente anche a basse temperature, adatta al confezionamento manuale e automatico."
+            "title": "Partner per cartoni riciclati",
+            "text": "Grazie all'elevata adesività, ideale per cartoni riciclati e ambienti polverosi."
           },
           {
-            "title": "Adesione rapida",
-            "text": "Adesione 3,5 N/25 mm: aderisce immediatamente anche a basse temperature (0 až +50 °C)."
+            "title": "Elevata adesione",
+            "text": "Difficile da staccare dal film stretch: prova evidente della sicurezza della spedizione."
           }
         ],
         "uses": [
           "Chiusura standard dei cartoni",
           "Macchine automatiche per imballaggio",
-          "Spedizione e logistica di magazzino",
-          "Stampa con logo e informazioni aziendali"
+          "Cartoni riciclati e ambienti polverosi",
+          "Sicurezza delle spedizioni su film stretch"
         ],
         "params_values": {
-          "carrier": "Film BOPP",
-          "thickness": "40 µm",
-          "adhesive": "Hot melt (gomma sintetica)",
-          "adhesion": "3,5 N/25 mm",
-          "temperature": "0 a +50 °C",
-          "strength": "42 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "25 / 28 / 32 µm",
+          "adhesive": "Hot melt",
+          "adhesion": "18 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 a +50 °C"
         },
         "spec_pills": [
-          "Film BOPP",
-          "Hot melt (gomma sintetica)",
+          "BOPP",
+          "Hot melt",
           "0 a +50 °C"
         ],
         "params_labels": {
-          "carrier": "Supporto / materiale",
-          "thickness": "Spessore",
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
           "adhesive": "Tipo di adesivo",
-          "adhesion": "Adesione (acciaio)",
-          "temperature": "Resistenza alla temperatura",
-          "strength": "Resistenza alla trazione"
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione"
         },
+        "tech_spec": true,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1309,6 +1321,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1367,6 +1380,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1425,6 +1439,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1483,6 +1498,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1541,6 +1557,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1599,6 +1616,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1657,6 +1675,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1715,6 +1734,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1773,6 +1793,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1831,6 +1852,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1889,6 +1911,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -1947,6 +1970,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
@@ -2005,6 +2029,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Richiedi un preventivo",
           "tailor_link": "Richiedi una consulenza",
@@ -2063,6 +2088,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Richiedi un preventivo",
           "tailor_link": "Richiedi una consulenza",
@@ -2121,6 +2147,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Richiedi un preventivo",
           "tailor_link": "Richiedi una consulenza",
@@ -2179,6 +2206,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Richiedi un preventivo",
           "tailor_link": "Richiedi una consulenza",
@@ -2237,6 +2265,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Richiedi un preventivo",
           "tailor_link": "Richiedi una consulenza",
@@ -2295,6 +2324,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Richiedi un preventivo",
           "tailor_link": "Richiedi una consulenza",
@@ -2353,6 +2383,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Richiedi un preventivo",
           "tailor_link": "Richiedi una consulenza",
@@ -2411,6 +2442,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Richiedi un preventivo",
           "tailor_link": "Richiedi una consulenza",
@@ -2469,6 +2501,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Richiedi un preventivo",
           "tailor_link": "Richiedi una consulenza",
@@ -2527,6 +2560,7 @@
           "temperature": "Resistenza alla temperatura",
           "strength": "Resistenza alla trazione"
         },
+        "tech_spec": false,
         "ctas": {
           "hero": "Richiedi un preventivo",
           "tailor_link": "Richiedi una consulenza",
