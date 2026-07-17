@@ -605,6 +605,8 @@
           "Akrylové",
           "−5 až +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -665,6 +667,28 @@
           "BOPP",
           "Akryl / HOT MELT"
         ],
+        "tech_variants": {
+          "akryl": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 až +60 °C"
+          },
+          "hot_melt": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "HOT MELT",
+            "adhesion": "18 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 až +50 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "akryl": "Akryl",
+          "hot_melt": "HOT MELT"
+        },
         "min_qty_note": "Dostupné jako Akryl i HOT MELT. Min. množství: Akryl od 360 ks, HOT MELT od 504 ks.",
         "params_labels": {
           "carrier": "Nosič",
@@ -725,6 +749,28 @@
           "BOPP",
           "Akryl / HOT MELT"
         ],
+        "tech_variants": {
+          "akryl": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 až +60 °C"
+          },
+          "hot_melt": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "HOT MELT",
+            "adhesion": "18 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 až +50 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "akryl": "Akryl",
+          "hot_melt": "HOT MELT"
+        },
         "min_qty_note": "Dostupné jako Akryl i HOT MELT. Min. množství: Akryl od 360 ks, HOT MELT od 504 ks.",
         "params_labels": {
           "carrier": "Nosič",
@@ -785,6 +831,28 @@
           "BOPP",
           "Akryl / HOT MELT"
         ],
+        "tech_variants": {
+          "akryl": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 až +60 °C"
+          },
+          "hot_melt": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "HOT MELT",
+            "adhesion": "18 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 až +50 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "akryl": "Akryl",
+          "hot_melt": "HOT MELT"
+        },
         "min_qty_note": "Dostupné jako Akryl i HOT MELT. Min. množství: Akryl od 360 ks, HOT MELT od 504 ks.",
         "params_labels": {
           "carrier": "Nosič",
@@ -845,6 +913,8 @@
           "Akrylové",
           "−5 až +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -905,6 +975,8 @@
           "Akrylové (bez rozpouštědel)",
           "−5 až +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -965,6 +1037,8 @@
           "Akrylové",
           "−5 až +65 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -1025,6 +1099,8 @@
           "Akrylové (tiché, bez rozpouštědel)",
           "−5 až +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -1085,6 +1161,8 @@
           "Akryl (Low noise / Noisy)",
           "−10 až +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "Minimální množství od 360 ks (Akryl).",
         "params_labels": {
           "carrier": "Nosič",
@@ -1145,6 +1223,8 @@
           "Akrylové (zvýšená vrstva +33 %)",
           "−5 až +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -1205,6 +1285,8 @@
           "Akrylové",
           "−5 až +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -1265,6 +1347,8 @@
           "HOT MELT",
           "0 až +50 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "Minimální množství od 504 ks (HOT MELT).",
         "params_labels": {
           "carrier": "Nosič",
@@ -1325,6 +1409,8 @@
           "HOT MELT (super tack, +20 %)",
           "0 až +55 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -1385,6 +1471,8 @@
           "Silikonové",
           "−40 až +180 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -1445,6 +1533,8 @@
           "Akrylové",
           "−40 až +150 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -1505,6 +1595,8 @@
           "Akrylové",
           "−40 až +150 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -1565,6 +1657,8 @@
           "Akrylové",
           "−40 až +155 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -1625,6 +1719,8 @@
           "Akrylové (disperzní)",
           "−5 až +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -1685,6 +1781,8 @@
           "Kaučukové",
           "−10 až +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -1745,6 +1843,8 @@
           "Kaučukové",
           "−10 až +65 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -1805,6 +1905,8 @@
           "Kaučukové",
           "−10 až +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -1865,6 +1967,8 @@
           "HOT MELT",
           "−10 až +70 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -1925,6 +2029,8 @@
           "HOT MELT (syntetický kaučuk)",
           "−10 až +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -1985,6 +2091,8 @@
           "Kaučukové (solvent)",
           "−20 až +70 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -2045,6 +2153,8 @@
           "Odstranitelné akrylové",
           "−5 až +55 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -2105,6 +2215,8 @@
           "Odstranitelné akrylové",
           "−5 až +50 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -2165,6 +2277,8 @@
           "HOT MELT (syntetický kaučuk)",
           "−10 až +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -2225,6 +2339,8 @@
           "HOT MELT",
           "−10 až +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -2285,6 +2401,8 @@
           "HOT MELT",
           "−10 až +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -2345,6 +2463,8 @@
           "Kaučukové (syntetické)",
           "−10 až +70 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -2405,6 +2525,8 @@
           "Kaučukové (syntetické)",
           "−10 až +70 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -2465,6 +2587,8 @@
           "Kaučukové",
           "−10 až +65 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -2525,6 +2649,8 @@
           "Kaučukové",
           "do +80 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",
@@ -2585,6 +2711,8 @@
           "Kaučukové (odolné teplu)",
           "do +100 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič / materiál",

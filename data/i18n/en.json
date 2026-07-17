@@ -605,6 +605,8 @@
           "Acrylic",
           "−5 to +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -665,6 +667,28 @@
           "BOPP",
           "Akryl / HOT MELT"
         ],
+        "tech_variants": {
+          "akryl": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 to +60 °C"
+          },
+          "hot_melt": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Hot melt",
+            "adhesion": "18 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 to +50 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "akryl": "Akryl",
+          "hot_melt": "HOT MELT"
+        },
         "min_qty_note": "Available as Akryl and HOT MELT. Min. quantity: Akryl from 360 pcs, HOT MELT from 504 pcs.",
         "params_labels": {
           "carrier": "Carrier",
@@ -725,6 +749,28 @@
           "BOPP",
           "Akryl / HOT MELT"
         ],
+        "tech_variants": {
+          "akryl": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 to +60 °C"
+          },
+          "hot_melt": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Hot melt",
+            "adhesion": "18 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 to +50 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "akryl": "Akryl",
+          "hot_melt": "HOT MELT"
+        },
         "min_qty_note": "Available as Akryl and HOT MELT. Min. quantity: Akryl from 360 pcs, HOT MELT from 504 pcs.",
         "params_labels": {
           "carrier": "Carrier",
@@ -785,6 +831,28 @@
           "BOPP",
           "Akryl / HOT MELT"
         ],
+        "tech_variants": {
+          "akryl": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 to +60 °C"
+          },
+          "hot_melt": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Hot melt",
+            "adhesion": "18 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 to +50 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "akryl": "Akryl",
+          "hot_melt": "HOT MELT"
+        },
         "min_qty_note": "Available as Akryl and HOT MELT. Min. quantity: Akryl from 360 pcs, HOT MELT from 504 pcs.",
         "params_labels": {
           "carrier": "Carrier",
@@ -845,6 +913,8 @@
           "Acrylic",
           "−5 to +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -905,6 +975,8 @@
           "Acrylic (solvent-free)",
           "−5 to +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -965,6 +1037,8 @@
           "Acrylic",
           "−5 to +65 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -1025,6 +1099,8 @@
           "Acrylic (quiet, solvent-free)",
           "−5 to +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -1085,6 +1161,8 @@
           "Akryl (Low noise / Noisy)",
           "−10 to +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "Minimum quantity from 360 pcs (Akryl).",
         "params_labels": {
           "carrier": "Carrier",
@@ -1145,6 +1223,8 @@
           "Acrylic (increased adhesive layer +33%)",
           "−5 to +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -1205,6 +1285,8 @@
           "Acrylic",
           "−5 to +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -1265,6 +1347,8 @@
           "Hot melt",
           "0 to +50 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "Minimum quantity from 504 pcs (HOT MELT).",
         "params_labels": {
           "carrier": "Carrier",
@@ -1325,6 +1409,8 @@
           "Hot melt (super tack, +20%)",
           "0 to +55 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -1385,6 +1471,8 @@
           "Silicone",
           "−40 to +180 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -1445,6 +1533,8 @@
           "Acrylic",
           "−40 to +150 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -1505,6 +1595,8 @@
           "Acrylic",
           "−40 to +150 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -1565,6 +1657,8 @@
           "Acrylic",
           "−40 to +155 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -1625,6 +1719,8 @@
           "Acrylic (dispersion)",
           "−5 to +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -1685,6 +1781,8 @@
           "Rubber-based",
           "−10 to +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -1745,6 +1843,8 @@
           "Rubber-based",
           "−10 to +65 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -1805,6 +1905,8 @@
           "Rubber-based",
           "−10 to +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -1865,6 +1967,8 @@
           "Hot melt",
           "−10 to +70 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -1925,6 +2029,8 @@
           "Hot melt (synthetic rubber)",
           "−10 to +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -1985,6 +2091,8 @@
           "Rubber-based (solvent)",
           "−20 to +70 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -2045,6 +2153,8 @@
           "Removable acrylic",
           "−5 to +55 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -2105,6 +2215,8 @@
           "Removable acrylic",
           "−5 to +50 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -2165,6 +2277,8 @@
           "Hot melt (synthetic rubber)",
           "−10 to +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -2225,6 +2339,8 @@
           "Hot melt",
           "−10 to +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -2285,6 +2401,8 @@
           "Hot melt",
           "−10 to +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -2345,6 +2463,8 @@
           "Rubber-based (synthetic)",
           "−10 to +70 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -2405,6 +2525,8 @@
           "Rubber-based (synthetic)",
           "−10 to +70 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -2465,6 +2587,8 @@
           "Rubber-based",
           "−10 to +65 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -2525,6 +2649,8 @@
           "Rubber-based",
           "up to +80 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",
@@ -2585,6 +2711,8 @@
           "Rubber-based (heat-resistant)",
           "up to +100 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Carrier / material",

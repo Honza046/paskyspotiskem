@@ -328,6 +328,48 @@
             if (paramsValues[paramKeys[i]]) setText(td, paramsValues[paramKeys[i]]);
         });
 
+        var techSwitcher = document.querySelector('[data-tech-switcher]');
+        if (techSwitcher && prod.tech_variants) {
+            var variantLabels = prod.tech_variant_labels || {};
+            var activeVariant = techSwitcher.getAttribute('data-active-variant') || 'akryl';
+            if (!prod.tech_variants[activeVariant]) activeVariant = 'akryl';
+
+            techSwitcher.querySelectorAll('[data-tech-trigger]').forEach(function (btn) {
+                var variant = btn.getAttribute('data-tech-trigger');
+                if (variantLabels[variant]) setText(btn, variantLabels[variant]);
+                btn.classList.toggle('is-active', variant === activeVariant);
+            });
+
+            Object.keys(prod.tech_variants).forEach(function (variant) {
+                var table = document.querySelector('[data-tech-table="' + variant + '"]');
+                if (!table) return;
+                table.classList.toggle('hidden', variant !== activeVariant);
+                var values = prod.tech_variants[variant];
+                table.querySelectorAll('th').forEach(function (th, i) {
+                    if (labels[paramKeys[i]]) setText(th, labels[paramKeys[i]]);
+                });
+                table.querySelectorAll('tbody tr td:last-child').forEach(function (td, i) {
+                    if (values[paramKeys[i]]) setText(td, values[paramKeys[i]]);
+                });
+            });
+
+            if (techSwitcher.dataset.initialized !== '1') {
+                techSwitcher.dataset.initialized = '1';
+                techSwitcher.addEventListener('click', function (e) {
+                    var btn = e.target.closest('[data-tech-trigger]');
+                    if (!btn) return;
+                    var variant = btn.getAttribute('data-tech-trigger');
+                    techSwitcher.setAttribute('data-active-variant', variant);
+                    techSwitcher.querySelectorAll('[data-tech-trigger]').forEach(function (trigger) {
+                        trigger.classList.toggle('is-active', trigger === btn);
+                    });
+                    document.querySelectorAll('[data-tech-table]').forEach(function (table) {
+                        table.classList.toggle('hidden', table.getAttribute('data-tech-table') !== variant);
+                    });
+                });
+            }
+        }
+
         var note = document.querySelector('main .overflow-hidden.rounded-2xl + p.text-xs, main table + p.text-xs');
         if (note && page.params_note) setText(note, page.params_note);
 

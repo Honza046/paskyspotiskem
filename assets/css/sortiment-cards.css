@@ -243,6 +243,42 @@
     color: #fdba74;
 }
 
+.tech-variant-trigger {
+    border: 0;
+    border-radius: 0.9rem;
+    padding: 0.625rem 1rem;
+    background: transparent;
+    color: #475569;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1;
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-variant-trigger:hover {
+    color: #0f172a;
+}
+
+.tech-variant-trigger.is-active {
+    background: #ffffff;
+    color: #ea580c;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+.dark .tech-variant-trigger {
+    color: #cbd5e1;
+}
+
+.dark .tech-variant-trigger:hover {
+    color: #f8fafc;
+}
+
+.dark .tech-variant-trigger.is-active {
+    background: #1e293b;
+    color: #fb923c;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
 /* Neutral (unprinted) tape callout – soft glass / backlight */
 .product-neutral-note {
     position: relative;

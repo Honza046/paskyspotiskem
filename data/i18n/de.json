@@ -605,6 +605,8 @@
           "Acryl",
           "−5 bis +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -665,6 +667,28 @@
           "BOPP",
           "Akryl / HOT MELT"
         ],
+        "tech_variants": {
+          "akryl": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 bis +60 °C"
+          },
+          "hot_melt": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Hot Melt",
+            "adhesion": "18 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 bis +50 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "akryl": "Akryl",
+          "hot_melt": "HOT MELT"
+        },
         "min_qty_note": "Erhältlich als Akryl und HOT MELT. Mindestmenge: Akryl ab 360 Stk., HOT MELT ab 504 Stk.",
         "params_labels": {
           "carrier": "Träger",
@@ -725,6 +749,28 @@
           "BOPP",
           "Akryl / HOT MELT"
         ],
+        "tech_variants": {
+          "akryl": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 bis +60 °C"
+          },
+          "hot_melt": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Hot Melt",
+            "adhesion": "18 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 bis +50 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "akryl": "Akryl",
+          "hot_melt": "HOT MELT"
+        },
         "min_qty_note": "Erhältlich als Akryl und HOT MELT. Mindestmenge: Akryl ab 360 Stk., HOT MELT ab 504 Stk.",
         "params_labels": {
           "carrier": "Träger",
@@ -785,6 +831,28 @@
           "BOPP",
           "Akryl / HOT MELT"
         ],
+        "tech_variants": {
+          "akryl": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 bis +60 °C"
+          },
+          "hot_melt": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Hot Melt",
+            "adhesion": "18 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 bis +50 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "akryl": "Akryl",
+          "hot_melt": "HOT MELT"
+        },
         "min_qty_note": "Erhältlich als Akryl und HOT MELT. Mindestmenge: Akryl ab 360 Stk., HOT MELT ab 504 Stk.",
         "params_labels": {
           "carrier": "Träger",
@@ -845,6 +913,8 @@
           "Acryl",
           "−5 bis +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -905,6 +975,8 @@
           "Acryl (lösungsmittelfrei)",
           "−5 bis +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -965,6 +1037,8 @@
           "Acryl",
           "−5 bis +65 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -1025,6 +1099,8 @@
           "Acryl (leise, lösungsmittelfrei)",
           "−5 bis +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -1085,6 +1161,8 @@
           "Akryl (Low noise / Noisy)",
           "−10 bis +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "Mindestmenge ab 360 Stk. (Akryl).",
         "params_labels": {
           "carrier": "Träger",
@@ -1145,6 +1223,8 @@
           "Acryl (erhöhte Klebstoffschicht +33 %)",
           "−5 bis +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -1205,6 +1285,8 @@
           "Acryl",
           "−5 bis +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -1265,6 +1347,8 @@
           "Hot Melt",
           "0 bis +50 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "Mindestmenge ab 504 Stk. (HOT MELT).",
         "params_labels": {
           "carrier": "Träger",
@@ -1325,6 +1409,8 @@
           "Hot Melt (Super-Tack, +20 %)",
           "0 bis +55 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -1385,6 +1471,8 @@
           "Silikon",
           "−40 bis +180 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -1445,6 +1533,8 @@
           "Acryl",
           "−40 bis +150 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -1505,6 +1595,8 @@
           "Acryl",
           "−40 bis +150 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -1565,6 +1657,8 @@
           "Acryl",
           "−40 bis +155 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -1625,6 +1719,8 @@
           "Acryl (Dispersion)",
           "−5 bis +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -1685,6 +1781,8 @@
           "Kautschuk",
           "−10 bis +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -1745,6 +1843,8 @@
           "Kautschuk",
           "−10 bis +65 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -1805,6 +1905,8 @@
           "Kautschuk",
           "−10 bis +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -1865,6 +1967,8 @@
           "Hot Melt",
           "−10 bis +70 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -1925,6 +2029,8 @@
           "Hot Melt (Synthesekautschuk)",
           "−10 bis +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -1985,6 +2091,8 @@
           "Kautschuk (Lösungsmittel)",
           "−20 bis +70 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -2045,6 +2153,8 @@
           "Abziehbares Acryl",
           "−5 bis +55 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -2105,6 +2215,8 @@
           "Abziehbares Acryl",
           "−5 bis +50 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -2165,6 +2277,8 @@
           "Hot Melt (Synthesekautschuk)",
           "−10 bis +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -2225,6 +2339,8 @@
           "Hot Melt",
           "−10 bis +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -2285,6 +2401,8 @@
           "Hot Melt",
           "−10 bis +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -2345,6 +2463,8 @@
           "Kautschuk (synthetisch)",
           "−10 bis +70 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -2405,6 +2525,8 @@
           "Kautschuk (synthetisch)",
           "−10 bis +70 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -2465,6 +2587,8 @@
           "Kautschuk",
           "−10 bis +65 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -2525,6 +2649,8 @@
           "Kautschuk",
           "bis +80 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",
@@ -2585,6 +2711,8 @@
           "Kautschuk (hitzebeständig)",
           "bis +100 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger / Material",

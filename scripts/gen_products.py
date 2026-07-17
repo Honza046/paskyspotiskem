@@ -241,6 +241,63 @@ TECH_SPEC_PARAMS = {
     },
 }
 
+ECO_TECH_VARIANTS = {
+    "Udržitelná páska ECO+ 50": {
+        "akryl": {
+            "Nosič": "BOPP",
+            "Tloušťka fólie": "25 / 28 / 32 µm",
+            "Typ lepidla": "Akryl (Low noise / Noisy)",
+            "Tloušťka lepidla": "21 µm",
+            "Skladovací a aplikační teplota": "14–28 °C",
+            "Provozní teplota po nalepení": "−10 až +60 °C",
+        },
+        "hot_melt": {
+            "Nosič": "BOPP",
+            "Tloušťka fólie": "25 / 28 / 32 µm",
+            "Typ lepidla": "HOT MELT",
+            "Tloušťka lepidla": "18 µm",
+            "Skladovací a aplikační teplota": "14–28 °C",
+            "Provozní teplota po nalepení": "0 až +50 °C",
+        },
+    },
+    "Udržitelná páska ECO+ 80": {
+        "akryl": {
+            "Nosič": "BOPP",
+            "Tloušťka fólie": "25 / 28 / 32 µm",
+            "Typ lepidla": "Akryl (Low noise / Noisy)",
+            "Tloušťka lepidla": "21 µm",
+            "Skladovací a aplikační teplota": "14–28 °C",
+            "Provozní teplota po nalepení": "−10 až +60 °C",
+        },
+        "hot_melt": {
+            "Nosič": "BOPP",
+            "Tloušťka fólie": "25 / 28 / 32 µm",
+            "Typ lepidla": "HOT MELT",
+            "Tloušťka lepidla": "18 µm",
+            "Skladovací a aplikační teplota": "14–28 °C",
+            "Provozní teplota po nalepení": "0 až +50 °C",
+        },
+    },
+    "Udržitelná páska ECO+ 100": {
+        "akryl": {
+            "Nosič": "BOPP",
+            "Tloušťka fólie": "25 / 28 / 32 µm",
+            "Typ lepidla": "Akryl (Low noise / Noisy)",
+            "Tloušťka lepidla": "21 µm",
+            "Skladovací a aplikační teplota": "14–28 °C",
+            "Provozní teplota po nalepení": "−10 až +60 °C",
+        },
+        "hot_melt": {
+            "Nosič": "BOPP",
+            "Tloušťka fólie": "25 / 28 / 32 µm",
+            "Typ lepidla": "HOT MELT",
+            "Tloušťka lepidla": "18 µm",
+            "Skladovací a aplikační teplota": "14–28 °C",
+            "Provozní teplota po nalepení": "0 až +50 °C",
+        },
+    },
+}
+
 # assign slugs + tags
 for cat in CATS:
     for p in PRODUCTS[cat["cat"]]:
@@ -270,6 +327,10 @@ def product_spec_pills(p):
     return carrier, adhesive, temp
 
 
+def product_tech_variant_tables(p):
+    return ECO_TECH_VARIANTS.get(p["name"])
+
+
 def product_min_qty_note(p):
     """Optional note under tech specs about minimum order quantity."""
     name = p["name"]
@@ -280,6 +341,42 @@ def product_min_qty_note(p):
     if name.startswith("Udržitelná páska ECO+"):
         return "Dostupné jako Akryl i HOT MELT. Min. množství: Akryl od 360 ks, HOT MELT od 504 ks."
     return ""
+
+
+def product_param_rows_html(params):
+    return "\n".join('''                    <tr class="border-b border-slate-100 last:border-0">
+                        <th scope="row" class="w-1/2 px-6 py-4 pr-4 text-left align-top text-sm font-semibold text-slate-500">%s</th>
+                        <td class="px-6 py-4 text-sm font-semibold text-slate-900">%s</td>
+                    </tr>''' % (esc(k), esc(v)) for k, v in params.items())
+
+
+def product_tech_table_html(p):
+    variants = product_tech_variant_tables(p)
+    if not variants:
+        return '''                <div class="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
+                    <table class="w-full">
+                        <tbody>
+%s
+                        </tbody>
+                    </table>
+                </div>''' % product_param_rows_html(p["params"])
+
+    tables = []
+    for key, label in (("akryl", "Akryl"), ("hot_melt", "HOT MELT")):
+        hidden = '' if key == 'akryl' else ' hidden'
+        tables.append('''                    <table class="tech-variant-table w-full%s" data-tech-table="%s">
+                        <tbody>
+%s
+                        </tbody>
+                    </table>''' % (hidden, key, product_param_rows_html(variants[key])))
+
+    return '''                <div class="mb-4 inline-flex rounded-2xl bg-slate-100 p-1" data-tech-switcher data-active-variant="akryl">
+                    <button type="button" class="tech-variant-trigger is-active" data-tech-trigger="akryl">Akryl</button>
+                    <button type="button" class="tech-variant-trigger" data-tech-trigger="hot_melt">HOT MELT</button>
+                </div>
+                <div class="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
+%s
+                </div>''' % "\n".join(tables)
 
 def _adhesive_benefit(lepidlo):
     l = lepidlo.lower()
@@ -876,10 +973,7 @@ for cat in CATS:
             '<p class="product-min-qty mt-3 text-sm font-medium leading-relaxed text-slate-600">%s</p>' % esc(min_qty)
             if min_qty else ''
         )
-        rows="\n".join('''                    <tr class="border-b border-slate-100 last:border-0">
-                        <th scope="row" class="w-1/2 px-6 py-4 pr-4 text-left align-top text-sm font-semibold text-slate-500">%s</th>
-                        <td class="px-6 py-4 text-sm font-semibold text-slate-900">%s</td>
-                    </tr>'''%(esc(k),esc(v)) for k,v in p["params"].items())
+        tech_table = product_tech_table_html(p)
         advs="\n".join('''                <div class="flex gap-4 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
                     <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-orange-50 text-orange-600" aria-hidden="true">%s</span>
                     <div>
@@ -933,13 +1027,7 @@ for cat in CATS:
         <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
                 <h2 class="mb-6 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">Technické parametry</h2>
-                <div class="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
-                    <table class="w-full">
-                        <tbody>
 %s
-                        </tbody>
-                    </table>
-                </div>
                 <p class="mt-4 text-xs leading-relaxed text-slate-400">Uvedené hodnoty jsou orientační a mohou se lišit podle konkrétní šířky, návinu a provedení. Rádi vám připravíme přesnou specifikaci na míru.</p>
 %s
 %s
@@ -970,7 +1058,7 @@ for cat in CATS:
      esc(cat["title"]),esc(p["name"]),esc(p["tagline"]),
      *[esc(x) for x in product_spec_pills(p)],
      esc(cta['hero']),FWD,cat["cat"],BACK,
-     rows,min_qty_html,tailor,advs,uses,
+     tech_table,min_qty_html,tailor,advs,uses,
      PRODUCT_BOTTOM_NOTE,
      cat["cat"],BACK,esc(cat["title"]),esc(cta['bottom']))
         os.makedirs("sortiment/%s/%s"%(cat["cat"],p["slug"]),exist_ok=True)

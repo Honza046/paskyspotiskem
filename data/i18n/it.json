@@ -605,6 +605,8 @@
           "Acrilico",
           "−5 a +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -665,6 +667,28 @@
           "BOPP",
           "Akryl / HOT MELT"
         ],
+        "tech_variants": {
+          "akryl": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 a +60 °C"
+          },
+          "hot_melt": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Hot melt",
+            "adhesion": "18 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 a +50 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "akryl": "Akryl",
+          "hot_melt": "HOT MELT"
+        },
         "min_qty_note": "Disponibile come Akryl e HOT MELT. Quantità min.: Akryl da 360 pz, HOT MELT da 504 pz.",
         "params_labels": {
           "carrier": "Supporto",
@@ -725,6 +749,28 @@
           "BOPP",
           "Akryl / HOT MELT"
         ],
+        "tech_variants": {
+          "akryl": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 a +60 °C"
+          },
+          "hot_melt": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Hot melt",
+            "adhesion": "18 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 a +50 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "akryl": "Akryl",
+          "hot_melt": "HOT MELT"
+        },
         "min_qty_note": "Disponibile come Akryl e HOT MELT. Quantità min.: Akryl da 360 pz, HOT MELT da 504 pz.",
         "params_labels": {
           "carrier": "Supporto",
@@ -785,6 +831,28 @@
           "BOPP",
           "Akryl / HOT MELT"
         ],
+        "tech_variants": {
+          "akryl": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 a +60 °C"
+          },
+          "hot_melt": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Hot melt",
+            "adhesion": "18 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 a +50 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "akryl": "Akryl",
+          "hot_melt": "HOT MELT"
+        },
         "min_qty_note": "Disponibile come Akryl e HOT MELT. Quantità min.: Akryl da 360 pz, HOT MELT da 504 pz.",
         "params_labels": {
           "carrier": "Supporto",
@@ -845,6 +913,8 @@
           "Acrilico",
           "−5 a +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -905,6 +975,8 @@
           "Acrilico (senza solventi)",
           "−5 a +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -965,6 +1037,8 @@
           "Acrilico",
           "−5 a +65 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -1025,6 +1099,8 @@
           "Acrilico (silenzioso, senza solventi)",
           "−5 a +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -1085,6 +1161,8 @@
           "Akryl (Low noise / Noisy)",
           "−10 a +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "Quantità minima da 360 pz (Akryl).",
         "params_labels": {
           "carrier": "Supporto",
@@ -1145,6 +1223,8 @@
           "Acrilico (strato adesivo aumentato +33%)",
           "−5 a +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -1205,6 +1285,8 @@
           "Acrilico",
           "−5 a +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -1265,6 +1347,8 @@
           "Hot melt",
           "0 a +50 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "Quantità minima da 504 pz (HOT MELT).",
         "params_labels": {
           "carrier": "Supporto",
@@ -1325,6 +1409,8 @@
           "Hot melt (super tack, +20%)",
           "0 a +55 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -1385,6 +1471,8 @@
           "Silicone",
           "−40 a +180 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -1445,6 +1533,8 @@
           "Acrilico",
           "−40 a +150 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -1505,6 +1595,8 @@
           "Acrilico",
           "−40 a +150 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -1565,6 +1657,8 @@
           "Acrilico",
           "−40 a +155 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -1625,6 +1719,8 @@
           "Acrilico (dispersione)",
           "−5 a +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -1685,6 +1781,8 @@
           "Gomma",
           "−10 a +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -1745,6 +1843,8 @@
           "Gomma",
           "−10 a +65 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -1805,6 +1905,8 @@
           "Gomma",
           "−10 a +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -1865,6 +1967,8 @@
           "Hot melt",
           "−10 a +70 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -1925,6 +2029,8 @@
           "Hot melt (gomma sintetica)",
           "−10 a +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -1985,6 +2091,8 @@
           "Gomma (solvente)",
           "−20 a +70 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -2045,6 +2153,8 @@
           "Acrilico rimovibile",
           "−5 a +55 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -2105,6 +2215,8 @@
           "Acrilico rimovibile",
           "−5 a +50 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -2165,6 +2277,8 @@
           "Hot melt (gomma sintetica)",
           "−10 a +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -2225,6 +2339,8 @@
           "Hot melt",
           "−10 a +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -2285,6 +2401,8 @@
           "Hot melt",
           "−10 a +60 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -2345,6 +2463,8 @@
           "Gomma (sintetica)",
           "−10 a +70 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -2405,6 +2525,8 @@
           "Gomma (sintetica)",
           "−10 a +70 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -2465,6 +2587,8 @@
           "Gomma",
           "−10 a +65 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -2525,6 +2649,8 @@
           "Gomma",
           "fino a +80 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",
@@ -2585,6 +2711,8 @@
           "Gomma (resistente al calore)",
           "fino a +100 °C"
         ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Supporto / materiale",

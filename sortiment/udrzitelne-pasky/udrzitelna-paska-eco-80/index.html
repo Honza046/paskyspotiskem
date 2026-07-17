@@ -49,7 +49,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/theme-dark.css?v=6">
     <link rel="stylesheet" href="/assets/css/info-banner.css?v=15">
-    <link rel="stylesheet" href="/assets/css/sortiment-cards.css?v=11">
+    <link rel="stylesheet" href="/assets/css/sortiment-cards.css?v=12">
     <link rel="stylesheet" href="/assets/css/cult-effects.css?v=12">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -155,8 +155,12 @@
         <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
                 <h2 class="mb-6 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">Technické parametry</h2>
+                <div class="mb-4 inline-flex rounded-2xl bg-slate-100 p-1" data-tech-switcher data-active-variant="akryl">
+                    <button type="button" class="tech-variant-trigger is-active" data-tech-trigger="akryl">Akryl</button>
+                    <button type="button" class="tech-variant-trigger" data-tech-trigger="hot_melt">HOT MELT</button>
+                </div>
                 <div class="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
-                    <table class="w-full">
+                    <table class="tech-variant-table w-full" data-tech-table="akryl">
                         <tbody>
                     <tr class="border-b border-slate-100 last:border-0">
                         <th scope="row" class="w-1/2 px-6 py-4 pr-4 text-left align-top text-sm font-semibold text-slate-500">Nosič</th>
@@ -168,11 +172,11 @@
                     </tr>
                     <tr class="border-b border-slate-100 last:border-0">
                         <th scope="row" class="w-1/2 px-6 py-4 pr-4 text-left align-top text-sm font-semibold text-slate-500">Typ lepidla</th>
-                        <td class="px-6 py-4 text-sm font-semibold text-slate-900">Akryl (Low noise / Noisy) / HOT MELT</td>
+                        <td class="px-6 py-4 text-sm font-semibold text-slate-900">Akryl (Low noise / Noisy)</td>
                     </tr>
                     <tr class="border-b border-slate-100 last:border-0">
                         <th scope="row" class="w-1/2 px-6 py-4 pr-4 text-left align-top text-sm font-semibold text-slate-500">Tloušťka lepidla</th>
-                        <td class="px-6 py-4 text-sm font-semibold text-slate-900">21 µm (Akryl) / 18 µm (HOT MELT)</td>
+                        <td class="px-6 py-4 text-sm font-semibold text-slate-900">21 µm</td>
                     </tr>
                     <tr class="border-b border-slate-100 last:border-0">
                         <th scope="row" class="w-1/2 px-6 py-4 pr-4 text-left align-top text-sm font-semibold text-slate-500">Skladovací a aplikační teplota</th>
@@ -180,7 +184,35 @@
                     </tr>
                     <tr class="border-b border-slate-100 last:border-0">
                         <th scope="row" class="w-1/2 px-6 py-4 pr-4 text-left align-top text-sm font-semibold text-slate-500">Provozní teplota po nalepení</th>
-                        <td class="px-6 py-4 text-sm font-semibold text-slate-900">0 až +60 °C</td>
+                        <td class="px-6 py-4 text-sm font-semibold text-slate-900">−10 až +60 °C</td>
+                    </tr>
+                        </tbody>
+                    </table>
+                    <table class="tech-variant-table w-full hidden" data-tech-table="hot_melt">
+                        <tbody>
+                    <tr class="border-b border-slate-100 last:border-0">
+                        <th scope="row" class="w-1/2 px-6 py-4 pr-4 text-left align-top text-sm font-semibold text-slate-500">Nosič</th>
+                        <td class="px-6 py-4 text-sm font-semibold text-slate-900">BOPP</td>
+                    </tr>
+                    <tr class="border-b border-slate-100 last:border-0">
+                        <th scope="row" class="w-1/2 px-6 py-4 pr-4 text-left align-top text-sm font-semibold text-slate-500">Tloušťka fólie</th>
+                        <td class="px-6 py-4 text-sm font-semibold text-slate-900">25 / 28 / 32 µm</td>
+                    </tr>
+                    <tr class="border-b border-slate-100 last:border-0">
+                        <th scope="row" class="w-1/2 px-6 py-4 pr-4 text-left align-top text-sm font-semibold text-slate-500">Typ lepidla</th>
+                        <td class="px-6 py-4 text-sm font-semibold text-slate-900">HOT MELT</td>
+                    </tr>
+                    <tr class="border-b border-slate-100 last:border-0">
+                        <th scope="row" class="w-1/2 px-6 py-4 pr-4 text-left align-top text-sm font-semibold text-slate-500">Tloušťka lepidla</th>
+                        <td class="px-6 py-4 text-sm font-semibold text-slate-900">18 µm</td>
+                    </tr>
+                    <tr class="border-b border-slate-100 last:border-0">
+                        <th scope="row" class="w-1/2 px-6 py-4 pr-4 text-left align-top text-sm font-semibold text-slate-500">Skladovací a aplikační teplota</th>
+                        <td class="px-6 py-4 text-sm font-semibold text-slate-900">14–28 °C</td>
+                    </tr>
+                    <tr class="border-b border-slate-100 last:border-0">
+                        <th scope="row" class="w-1/2 px-6 py-4 pr-4 text-left align-top text-sm font-semibold text-slate-500">Provozní teplota po nalepení</th>
+                        <td class="px-6 py-4 text-sm font-semibold text-slate-900">0 až +50 °C</td>
                     </tr>
                         </tbody>
                     </table>
@@ -738,7 +770,7 @@
 ]
 </script>
 <script src="/assets/js/i18n.js?v=16"></script>
-<script src="/assets/js/i18n-pages.js?v=12"></script>
+<script src="/assets/js/i18n-pages.js?v=13"></script>
 <script src="/assets/js/cult-effects.js?v=4"></script>
 <script src="/assets/js/sortiment-filter.js?v=3"></script>
 <script src="/assets/js/nav-active.js"></script>

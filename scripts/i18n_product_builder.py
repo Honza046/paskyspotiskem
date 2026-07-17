@@ -666,6 +666,19 @@ def _params_from_product(p: dict) -> dict[str, str]:
     return {key: params[cs_key] for key, cs_key in keys}
 
 
+def _tech_variants_from_product(ns: dict, p: dict) -> dict[str, dict[str, str]]:
+    variants = ns["product_tech_variant_tables"](p)
+    if not variants:
+        return {}
+    out: dict[str, dict[str, str]] = {}
+    for variant, params in variants.items():
+        out[variant] = {
+            key: params[cs_key]
+            for key, cs_key in TECH_SPEC_PARAM_FIELD_KEYS
+        }
+    return out
+
+
 def _spec_pills(params_values: dict[str, str]) -> list[str]:
     return [params_values["carrier"], params_values["adhesive"], params_values["temperature"]]
 
@@ -694,6 +707,7 @@ def _build_cs_product(cat: dict, p: dict, ns: dict) -> tuple[str, dict]:
     ctas = product_ctas(cat, p)
     page = SORTIMENT_PAGE["cs"]
     params_values = _params_from_product(p)
+    tech_variants = _tech_variants_from_product(ns, p)
     labels = TECH_SPEC_PARAM_LABELS["cs"] if p.get("tech_spec") else PARAM_LABELS["cs"]
     return slug, {
         "name": p["name"],
@@ -704,6 +718,8 @@ def _build_cs_product(cat: dict, p: dict, ns: dict) -> tuple[str, dict]:
         "uses": uses,
         "params_values": params_values,
         "spec_pills": list(ns["product_spec_pills"](p)),
+        "tech_variants": tech_variants,
+        "tech_variant_labels": {"akryl": "Akryl", "hot_melt": "HOT MELT"} if tech_variants else {},
         "min_qty_note": ns["product_min_qty_note"](p),
         "params_labels": labels,
         "tech_spec": bool(p.get("tech_spec")),
@@ -757,6 +773,9 @@ def build_products_locale(ns: dict, locale: str) -> dict:
         )
         for key, value in product["params_values"].items():
             product["params_values"][key] = _translate_param_value(locale, value)
+        for variant, params in product.get("tech_variants", {}).items():
+            for key, value in params.items():
+                params[key] = _translate_param_value(locale, value)
         product["spec_pills"] = [_translate_param_value(locale, pill) for pill in product["spec_pills"]]
         if product.get("min_qty_note"):
             product["min_qty_note"] = MIN_QTY_NOTE_MAP[product["min_qty_note"]][locale]
