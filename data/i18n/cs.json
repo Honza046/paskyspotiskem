@@ -623,7 +623,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na Udržitelné pásky"
@@ -668,13 +668,21 @@
           "Akryl / HOT MELT"
         ],
         "tech_variants": {
-          "akryl": {
+          "low_noise": {
             "carrier": "BOPP",
             "thickness": "25 / 28 / 32 µm",
-            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesive": "Akryl (Low noise)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
             "temperature": "−10 až +60 °C"
+          },
+          "noisy": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 až +60 °C"
           },
           "hot_melt": {
             "carrier": "BOPP",
@@ -686,7 +694,8 @@
           }
         },
         "tech_variant_labels": {
-          "akryl": "Akryl",
+          "low_noise": "Low noise",
+          "noisy": "Noisy",
           "hot_melt": "HOT MELT"
         },
         "min_qty_note": "Dostupné jako Akryl i HOT MELT. Min. množství: Akryl od 360 ks, HOT MELT od 504 ks.",
@@ -705,7 +714,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na Udržitelné pásky"
@@ -750,13 +759,21 @@
           "Akryl / HOT MELT"
         ],
         "tech_variants": {
-          "akryl": {
+          "low_noise": {
             "carrier": "BOPP",
             "thickness": "25 / 28 / 32 µm",
-            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesive": "Akryl (Low noise)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
             "temperature": "−10 až +60 °C"
+          },
+          "noisy": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 až +60 °C"
           },
           "hot_melt": {
             "carrier": "BOPP",
@@ -768,7 +785,8 @@
           }
         },
         "tech_variant_labels": {
-          "akryl": "Akryl",
+          "low_noise": "Low noise",
+          "noisy": "Noisy",
           "hot_melt": "HOT MELT"
         },
         "min_qty_note": "Dostupné jako Akryl i HOT MELT. Min. množství: Akryl od 360 ks, HOT MELT od 504 ks.",
@@ -787,7 +805,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na Udržitelné pásky"
@@ -832,13 +850,21 @@
           "Akryl / HOT MELT"
         ],
         "tech_variants": {
-          "akryl": {
+          "low_noise": {
             "carrier": "BOPP",
             "thickness": "25 / 28 / 32 µm",
-            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesive": "Akryl (Low noise)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
             "temperature": "−10 až +60 °C"
+          },
+          "noisy": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 až +60 °C"
           },
           "hot_melt": {
             "carrier": "BOPP",
@@ -850,7 +876,8 @@
           }
         },
         "tech_variant_labels": {
-          "akryl": "Akryl",
+          "low_noise": "Low noise",
+          "noisy": "Noisy",
           "hot_melt": "HOT MELT"
         },
         "min_qty_note": "Dostupné jako Akryl i HOT MELT. Min. množství: Akryl od 360 ks, HOT MELT od 504 ks.",
@@ -869,7 +896,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na Udržitelné pásky"
@@ -931,7 +958,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na Udržitelné pásky"
@@ -993,7 +1020,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na Udržitelné pásky"
@@ -1055,7 +1082,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na Udržitelné pásky"
@@ -1117,7 +1144,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na Udržitelné pásky"
@@ -1161,6 +1188,88 @@
           "Akryl (Low noise / Noisy)",
           "−10 až +60 °C"
         ],
+        "tech_variants": {
+          "low_noise": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Low noise)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 až +60 °C"
+          },
+          "noisy": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 až +60 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "low_noise": "Low noise",
+          "noisy": "Noisy"
+        },
+        "min_qty_note": "Minimální množství od 360 ks (Akryl).",
+        "params_labels": {
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení"
+        },
+        "tech_spec": true,
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Otestování kvality před objednáním"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na BOPP pásky"
+        }
+      },
+      "bopp-paska-extra-glue-plus": {
+        "name": "BOPP páska EXTRA GLUE+",
+        "tagline": "Akrylová páska se zvýšenou vrstvou lepidla pro náročné povrchy.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP pásky",
+        "benefits": [
+          {
+            "title": "Zvýšená vrstva lepidla (+33 %)",
+            "text": "Vysoká přilnavost s extrémní lepivostí oproti standard Akryl."
+          },
+          {
+            "title": "Partner pro obtížné aplikace",
+            "text": "Díky větší vrstvě lepidla vhodná pro obtížné aplikace jako prašné prostředí, opravdu velmi těžké balíky nebo recyklované kartony."
+          },
+          {
+            "title": "Vysoká odolnost proti UV",
+            "text": "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování i UV zatížení."
+          }
+        ],
+        "uses": [
+          "Standardní uzavírání kartonů",
+          "Recyklovaný karton a náročné povrchy",
+          "Automatické balicí stroje",
+          "Potisk firemním logem a informacemi"
+        ],
+        "params_values": {
+          "carrier": "BOPP",
+          "thickness": "28 / 32 / 35 µm",
+          "adhesive": "Akryl",
+          "adhesion": "28 µm",
+          "strength": "14–28 °C",
+          "temperature": "−10 až +60 °C"
+        },
+        "spec_pills": [
+          "BOPP",
+          "Akryl",
+          "−10 až +60 °C"
+        ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "Minimální množství od 360 ks (Akryl).",
@@ -1179,69 +1288,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
-          ],
-          "bottom": "Vzorek nebo kalkulace zdarma",
-          "back_category": "Zpět na BOPP pásky"
-        }
-      },
-      "bopp-paska-extra-glue-plus": {
-        "name": "BOPP páska EXTRA GLUE+",
-        "tagline": "Akrylová BOPP páska se zvýšenou vrstvou lepidla (+33 %) pro náročné povrchy a recyklovaný karton.",
-        "category_slug": "bopp-pasky",
-        "category_title": "BOPP pásky",
-        "benefits": [
-          {
-            "title": "Zvýšená vrstva lepidla (+33 %)",
-            "text": "Vysoká přilnavost i na recyklovaném kartonu, prašných a nerovných površích."
-          },
-          {
-            "title": "Akrylové lepidlo",
-            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
-          },
-          {
-            "title": "Tiché odvíjení a UV odolnost",
-            "text": "Přilnavost 4,0 N/25 mm s nízkou hlučností – spolehlivý výkon ve skladu (−5 až +60 °C)."
-          }
-        ],
-        "uses": [
-          "Standardní uzavírání kartonů",
-          "Recyklovaný karton a náročné povrchy",
-          "Automatické balicí stroje",
-          "Potisk firemním logem a informacemi"
-        ],
-        "params_values": {
-          "carrier": "BOPP fólie",
-          "thickness": "40 µm",
-          "adhesive": "Akrylové (zvýšená vrstva +33 %)",
-          "adhesion": "4,0 N/25 mm",
-          "temperature": "−5 až +60 °C",
-          "strength": "45 N/25 mm"
-        },
-        "spec_pills": [
-          "BOPP fólie",
-          "Akrylové (zvýšená vrstva +33 %)",
-          "−5 až +60 °C"
-        ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
-        "min_qty_note": "",
-        "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
-          "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
-        },
-        "tech_spec": false,
-        "ctas": {
-          "hero": "Kalkulace s potiskem",
-          "tailor_link": "Chci vzorek zdarma",
-          "tailor_bullets": [
-            "Volitelná šířka a délka návinu",
-            "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na BOPP pásky"
@@ -1303,7 +1350,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na BOPP pásky"
@@ -1365,7 +1412,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na BOPP pásky"
@@ -1373,21 +1420,21 @@
       },
       "bopp-paska-tack-plus": {
         "name": "BOPP páska TACK+",
-        "tagline": "HOT MELT BOPP páska s vyšší přilnavostí (+20 %) a super tack pro balicí stroje a recyklovaný karton.",
+        "tagline": "HOT MELT páska s extrémní přilnavostí a okamžitým lepivým efektem. Pro obtížné aplikace.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP pásky",
         "benefits": [
           {
-            "title": "Super tack (+20 % přilnavosti)",
-            "text": "Okamžitá přilnavost a vyšší drživost než standardní HOT MELT – doporučeno pro balicí stroje."
+            "title": "Super tack (+20 % lepivost)",
+            "text": "Okamžitá přilnavost s extrémní lepivostí oproti standard HOT MELT."
           },
           {
-            "title": "HOT MELT lepidlo",
-            "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
+            "title": "Partner pro obtížné aplikace",
+            "text": "Díky vylepšené formuli HOT MELT (tack+) vhodná pro obtížné aplikace jako prašné prostředí, velmi těžké balíky nebo recyklované kartony."
           },
           {
-            "title": "Snadné odvíjení pro stroje",
-            "text": "Přilnavost 4,2 N/25 mm na všech typech kartonů včetně recyklovaných (0 až +55 °C)."
+            "title": "Snadné odvíjení",
+            "text": "Snižuje fyzickou námahu při ručním balení a je výborná pro automatické balicí stroje."
           }
         ],
         "uses": [
@@ -1397,37 +1444,37 @@
           "Strojové balení těžkých zásilek"
         ],
         "params_values": {
-          "carrier": "BOPP fólie",
-          "thickness": "40 µm",
-          "adhesive": "HOT MELT (super tack, +20 %)",
-          "adhesion": "4,2 N/25 mm",
-          "temperature": "0 až +55 °C",
-          "strength": "42 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 / 32 µm",
+          "adhesive": "HOT MELT (tack+)",
+          "adhesion": "18 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 až +50 °C"
         },
         "spec_pills": [
-          "BOPP fólie",
-          "HOT MELT (super tack, +20 %)",
-          "0 až +55 °C"
+          "BOPP",
+          "HOT MELT (tack+)",
+          "0 až +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
-        "min_qty_note": "",
+        "min_qty_note": "Minimální množství od 504 ks (HOT MELT).",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na BOPP pásky"
@@ -1489,7 +1536,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na BOPET pásky"
@@ -1551,7 +1598,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na BOPET pásky"
@@ -1613,7 +1660,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na BOPET pásky"
@@ -1675,7 +1722,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na BOPET pásky"
@@ -1737,7 +1784,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na Papírové pásky"
@@ -1799,7 +1846,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na Papírové pásky"
@@ -1861,7 +1908,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na Papírové pásky"
@@ -1923,7 +1970,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na Papírové pásky"
@@ -1985,7 +2032,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na Papírové pásky"
@@ -2047,7 +2094,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na Papírové pásky"
@@ -2109,7 +2156,7 @@
           "tailor_bullets": [
             "Volitelná šířka a délka návinu",
             "Barva podkladu a počet barev potisku",
-            "Vzorek s vaším logem před objednávkou"
+            "Otestování kvality před objednáním"
           ],
           "bottom": "Vzorek nebo kalkulace zdarma",
           "back_category": "Zpět na Papírové pásky"
@@ -2754,7 +2801,7 @@
       "tailor_title": "Na míru vašemu provozu",
       "tailor_bullet_width": "Volitelná šířka a délka návinu",
       "tailor_bullet_print": "Barva podkladu a počet barev potisku",
-      "tailor_bullet_sample": "Vzorek s vaším logem před objednávkou",
+      "tailor_bullet_sample": "Otestování kvality před objednáním",
       "tailor_bullet_consult": "Konzultace parametrů před objednávkou",
       "tailor_bullet_params": "Různé provedení lepidla a nosiče",
       "no_print_note": "Pásku lze objednat i bez potisku.",

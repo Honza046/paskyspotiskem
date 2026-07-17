@@ -623,7 +623,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to Sustainable tapes"
@@ -668,13 +668,21 @@
           "Akryl / HOT MELT"
         ],
         "tech_variants": {
-          "akryl": {
+          "low_noise": {
             "carrier": "BOPP",
             "thickness": "25 / 28 / 32 µm",
-            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesive": "Akryl (Low noise)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
             "temperature": "−10 to +60 °C"
+          },
+          "noisy": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 to +60 °C"
           },
           "hot_melt": {
             "carrier": "BOPP",
@@ -686,7 +694,8 @@
           }
         },
         "tech_variant_labels": {
-          "akryl": "Akryl",
+          "low_noise": "Low noise",
+          "noisy": "Noisy",
           "hot_melt": "HOT MELT"
         },
         "min_qty_note": "Available as Akryl and HOT MELT. Min. quantity: Akryl from 360 pcs, HOT MELT from 504 pcs.",
@@ -705,7 +714,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to Sustainable tapes"
@@ -750,13 +759,21 @@
           "Akryl / HOT MELT"
         ],
         "tech_variants": {
-          "akryl": {
+          "low_noise": {
             "carrier": "BOPP",
             "thickness": "25 / 28 / 32 µm",
-            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesive": "Akryl (Low noise)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
             "temperature": "−10 to +60 °C"
+          },
+          "noisy": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 to +60 °C"
           },
           "hot_melt": {
             "carrier": "BOPP",
@@ -768,7 +785,8 @@
           }
         },
         "tech_variant_labels": {
-          "akryl": "Akryl",
+          "low_noise": "Low noise",
+          "noisy": "Noisy",
           "hot_melt": "HOT MELT"
         },
         "min_qty_note": "Available as Akryl and HOT MELT. Min. quantity: Akryl from 360 pcs, HOT MELT from 504 pcs.",
@@ -787,7 +805,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to Sustainable tapes"
@@ -832,13 +850,21 @@
           "Akryl / HOT MELT"
         ],
         "tech_variants": {
-          "akryl": {
+          "low_noise": {
             "carrier": "BOPP",
             "thickness": "25 / 28 / 32 µm",
-            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesive": "Akryl (Low noise)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
             "temperature": "−10 to +60 °C"
+          },
+          "noisy": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 to +60 °C"
           },
           "hot_melt": {
             "carrier": "BOPP",
@@ -850,7 +876,8 @@
           }
         },
         "tech_variant_labels": {
-          "akryl": "Akryl",
+          "low_noise": "Low noise",
+          "noisy": "Noisy",
           "hot_melt": "HOT MELT"
         },
         "min_qty_note": "Available as Akryl and HOT MELT. Min. quantity: Akryl from 360 pcs, HOT MELT from 504 pcs.",
@@ -869,7 +896,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to Sustainable tapes"
@@ -931,7 +958,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to Sustainable tapes"
@@ -993,7 +1020,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to Sustainable tapes"
@@ -1055,7 +1082,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to Sustainable tapes"
@@ -1117,7 +1144,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to Sustainable tapes"
@@ -1161,6 +1188,88 @@
           "Akryl (Low noise / Noisy)",
           "−10 to +60 °C"
         ],
+        "tech_variants": {
+          "low_noise": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Low noise)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 to +60 °C"
+          },
+          "noisy": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 to +60 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "low_noise": "Low noise",
+          "noisy": "Noisy"
+        },
+        "min_qty_note": "Minimum quantity from 360 pcs (Akryl).",
+        "params_labels": {
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application"
+        },
+        "tech_spec": true,
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Quality testing before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to BOPP tapes"
+        }
+      },
+      "bopp-paska-extra-glue-plus": {
+        "name": "BOPP tape EXTRA GLUE+",
+        "tagline": "Acrylic tape with an increased adhesive layer for demanding surfaces.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP tapes",
+        "benefits": [
+          {
+            "title": "Increased adhesive layer (+33%)",
+            "text": "High adhesion with extreme tack compared to standard Akryl."
+          },
+          {
+            "title": "Partner for demanding applications",
+            "text": "Thanks to the thicker adhesive layer, suitable for demanding applications such as dusty environments, truly very heavy parcels or recycled cardboard."
+          },
+          {
+            "title": "High UV resistance",
+            "text": "Acrylic adhesive keeps its tack even during long-term storage and UV exposure."
+          }
+        ],
+        "uses": [
+          "Standard carton sealing",
+          "Recycled cardboard and demanding surfaces",
+          "Automatic packing machines",
+          "Printing with company logos and information"
+        ],
+        "params_values": {
+          "carrier": "BOPP",
+          "thickness": "28 / 32 / 35 µm",
+          "adhesive": "Akryl",
+          "adhesion": "28 µm",
+          "strength": "14–28 °C",
+          "temperature": "−10 to +60 °C"
+        },
+        "spec_pills": [
+          "BOPP",
+          "Akryl",
+          "−10 to +60 °C"
+        ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "Minimum quantity from 360 pcs (Akryl).",
@@ -1179,69 +1288,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
-          ],
-          "bottom": "Free sample or quote",
-          "back_category": "Back to BOPP tapes"
-        }
-      },
-      "bopp-paska-extra-glue-plus": {
-        "name": "BOPP tape EXTRA GLUE+",
-        "tagline": "Acrylic BOPP tape with an increased adhesive layer (+33%) for demanding surfaces and recycled cardboard.",
-        "category_slug": "bopp-pasky",
-        "category_title": "BOPP tapes",
-        "benefits": [
-          {
-            "title": "Increased adhesive layer (+33%)",
-            "text": "High adhesion even on recycled cardboard, dusty and uneven surfaces."
-          },
-          {
-            "title": "Acrylic adhesive",
-            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
-          },
-          {
-            "title": "Quiet unwinding and UV resistance",
-            "text": "Adhesion 4,0 N/25 mm with low noise, reliable performance in warehouse conditions (−5 až +60 °C)."
-          }
-        ],
-        "uses": [
-          "Standard carton sealing",
-          "Recycled cardboard and demanding surfaces",
-          "Automatic packing machines",
-          "Printing with company logos and information"
-        ],
-        "params_values": {
-          "carrier": "BOPP film",
-          "thickness": "40 µm",
-          "adhesive": "Acrylic (increased adhesive layer +33%)",
-          "adhesion": "4,0 N/25 mm",
-          "temperature": "−5 to +60 °C",
-          "strength": "45 N/25 mm"
-        },
-        "spec_pills": [
-          "BOPP film",
-          "Acrylic (increased adhesive layer +33%)",
-          "−5 to +60 °C"
-        ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
-        "min_qty_note": "",
-        "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
-          "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
-        },
-        "tech_spec": false,
-        "ctas": {
-          "hero": "Quote with printing",
-          "tailor_link": "I want a free sample",
-          "tailor_bullets": [
-            "Custom width and roll length",
-            "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to BOPP tapes"
@@ -1303,7 +1350,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to BOPP tapes"
@@ -1365,7 +1412,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to BOPP tapes"
@@ -1373,21 +1420,21 @@
       },
       "bopp-paska-tack-plus": {
         "name": "BOPP tape TACK+",
-        "tagline": "Hot melt BOPP tape with higher adhesion (+20%) and super tack for packing machines and recycled cardboard.",
+        "tagline": "HOT MELT tape with extreme adhesion and instant tack. For demanding applications.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP tapes",
         "benefits": [
           {
             "title": "Super tack (+20% adhesion)",
-            "text": "Instant adhesion and higher hold than standard HOT MELT, recommended for packing machines."
+            "text": "Instant adhesion with extreme tack compared to standard HOT MELT."
           },
           {
-            "title": "Hot melt adhesive",
-            "text": "Fast, strong bonding even at lower temperatures, suitable for manual and machine packing."
+            "title": "Partner for demanding applications",
+            "text": "Thanks to the improved HOT MELT (tack+) formula, suitable for demanding applications such as dusty environments, very heavy parcels or recycled cardboard."
           },
           {
-            "title": "Easy unwinding for machines",
-            "text": "Adhesion 4,2 N/25 mm on all carton types including recycled (0 až +55 °C)."
+            "title": "Easy unwinding",
+            "text": "Reduces physical strain during manual packing and is excellent for automatic packing machines."
           }
         ],
         "uses": [
@@ -1397,37 +1444,37 @@
           "Machine packing of heavy shipments"
         ],
         "params_values": {
-          "carrier": "BOPP film",
-          "thickness": "40 µm",
-          "adhesive": "Hot melt (super tack, +20%)",
-          "adhesion": "4,2 N/25 mm",
-          "temperature": "0 to +55 °C",
-          "strength": "42 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 / 32 µm",
+          "adhesive": "HOT MELT (tack+)",
+          "adhesion": "18 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 to +50 °C"
         },
         "spec_pills": [
-          "BOPP film",
-          "Hot melt (super tack, +20%)",
-          "0 to +55 °C"
+          "BOPP",
+          "HOT MELT (tack+)",
+          "0 to +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
-        "min_qty_note": "",
+        "min_qty_note": "Minimum quantity from 504 pcs (HOT MELT).",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
           "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to BOPP tapes"
@@ -1489,7 +1536,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to BOPET tapes"
@@ -1551,7 +1598,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to BOPET tapes"
@@ -1613,7 +1660,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to BOPET tapes"
@@ -1675,7 +1722,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to BOPET tapes"
@@ -1737,7 +1784,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to Paper tapes"
@@ -1799,7 +1846,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to Paper tapes"
@@ -1861,7 +1908,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to Paper tapes"
@@ -1923,7 +1970,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to Paper tapes"
@@ -1985,7 +2032,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to Paper tapes"
@@ -2047,7 +2094,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to Paper tapes"
@@ -2109,7 +2156,7 @@
           "tailor_bullets": [
             "Custom width and roll length",
             "Base colour and number of print colours",
-            "Sample with your logo before ordering"
+            "Quality testing before ordering"
           ],
           "bottom": "Free sample or quote",
           "back_category": "Back to Paper tapes"
@@ -2754,7 +2801,7 @@
       "tailor_title": "Tailored to your operation",
       "tailor_bullet_width": "Custom width and roll length",
       "tailor_bullet_print": "Base colour and number of print colours",
-      "tailor_bullet_sample": "Sample with your logo before ordering",
+      "tailor_bullet_sample": "Quality testing before ordering",
       "tailor_bullet_consult": "Parameter consultation before ordering",
       "tailor_bullet_params": "Various adhesive and carrier options",
       "no_print_note": "This tape is also available without printing.",

@@ -623,7 +623,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri sostenibili"
@@ -668,13 +668,21 @@
           "Akryl / HOT MELT"
         ],
         "tech_variants": {
-          "akryl": {
+          "low_noise": {
             "carrier": "BOPP",
             "thickness": "25 / 28 / 32 µm",
-            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesive": "Akryl (Low noise)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
             "temperature": "−10 a +60 °C"
+          },
+          "noisy": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 a +60 °C"
           },
           "hot_melt": {
             "carrier": "BOPP",
@@ -686,7 +694,8 @@
           }
         },
         "tech_variant_labels": {
-          "akryl": "Akryl",
+          "low_noise": "Low noise",
+          "noisy": "Noisy",
           "hot_melt": "HOT MELT"
         },
         "min_qty_note": "Disponibile come Akryl e HOT MELT. Quantità min.: Akryl da 360 pz, HOT MELT da 504 pz.",
@@ -705,7 +714,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri sostenibili"
@@ -750,13 +759,21 @@
           "Akryl / HOT MELT"
         ],
         "tech_variants": {
-          "akryl": {
+          "low_noise": {
             "carrier": "BOPP",
             "thickness": "25 / 28 / 32 µm",
-            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesive": "Akryl (Low noise)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
             "temperature": "−10 a +60 °C"
+          },
+          "noisy": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 a +60 °C"
           },
           "hot_melt": {
             "carrier": "BOPP",
@@ -768,7 +785,8 @@
           }
         },
         "tech_variant_labels": {
-          "akryl": "Akryl",
+          "low_noise": "Low noise",
+          "noisy": "Noisy",
           "hot_melt": "HOT MELT"
         },
         "min_qty_note": "Disponibile come Akryl e HOT MELT. Quantità min.: Akryl da 360 pz, HOT MELT da 504 pz.",
@@ -787,7 +805,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri sostenibili"
@@ -832,13 +850,21 @@
           "Akryl / HOT MELT"
         ],
         "tech_variants": {
-          "akryl": {
+          "low_noise": {
             "carrier": "BOPP",
             "thickness": "25 / 28 / 32 µm",
-            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesive": "Akryl (Low noise)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
             "temperature": "−10 a +60 °C"
+          },
+          "noisy": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 a +60 °C"
           },
           "hot_melt": {
             "carrier": "BOPP",
@@ -850,7 +876,8 @@
           }
         },
         "tech_variant_labels": {
-          "akryl": "Akryl",
+          "low_noise": "Low noise",
+          "noisy": "Noisy",
           "hot_melt": "HOT MELT"
         },
         "min_qty_note": "Disponibile come Akryl e HOT MELT. Quantità min.: Akryl da 360 pz, HOT MELT da 504 pz.",
@@ -869,7 +896,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri sostenibili"
@@ -931,7 +958,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri sostenibili"
@@ -993,7 +1020,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri sostenibili"
@@ -1055,7 +1082,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri sostenibili"
@@ -1117,7 +1144,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri sostenibili"
@@ -1161,6 +1188,88 @@
           "Akryl (Low noise / Noisy)",
           "−10 a +60 °C"
         ],
+        "tech_variants": {
+          "low_noise": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Low noise)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 a +60 °C"
+          },
+          "noisy": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 a +60 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "low_noise": "Low noise",
+          "noisy": "Noisy"
+        },
+        "min_qty_note": "Quantità minima da 360 pz (Akryl).",
+        "params_labels": {
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione"
+        },
+        "tech_spec": true,
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Test della qualità prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri BOPP"
+        }
+      },
+      "bopp-paska-extra-glue-plus": {
+        "name": "Nastro BOPP EXTRA GLUE+",
+        "tagline": "Nastro acrilico con strato adesivo aumentato per superfici impegnative.",
+        "category_slug": "bopp-pasky",
+        "category_title": "Nastri BOPP",
+        "benefits": [
+          {
+            "title": "Strato adesivo aumentato (+33%)",
+            "text": "Elevata adesione con tack estremo rispetto all’Akryl standard."
+          },
+          {
+            "title": "Partner per applicazioni impegnative",
+            "text": "Grazie allo strato adesivo più spesso, adatto ad applicazioni impegnative come ambienti polverosi, pacchi davvero molto pesanti o cartone riciclato."
+          },
+          {
+            "title": "Elevata resistenza ai raggi UV",
+            "text": "L’adesivo acrilico mantiene il tack anche durante lo stoccaggio prolungato e l’esposizione ai raggi UV."
+          }
+        ],
+        "uses": [
+          "Chiusura standard dei cartoni",
+          "Cartone riciclato e superfici difficili",
+          "Macchine automatiche per imballaggio",
+          "Stampa con logo e informazioni aziendali"
+        ],
+        "params_values": {
+          "carrier": "BOPP",
+          "thickness": "28 / 32 / 35 µm",
+          "adhesive": "Akryl",
+          "adhesion": "28 µm",
+          "strength": "14–28 °C",
+          "temperature": "−10 a +60 °C"
+        },
+        "spec_pills": [
+          "BOPP",
+          "Akryl",
+          "−10 a +60 °C"
+        ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "Quantità minima da 360 pz (Akryl).",
@@ -1179,69 +1288,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
-          ],
-          "bottom": "Campione o preventivo gratuito",
-          "back_category": "Torna a Nastri BOPP"
-        }
-      },
-      "bopp-paska-extra-glue-plus": {
-        "name": "Nastro BOPP EXTRA GLUE+",
-        "tagline": "Nastro BOPP acrilico con strato adesivo aumentato (+33%) per superfici difficili e cartone riciclato.",
-        "category_slug": "bopp-pasky",
-        "category_title": "Nastri BOPP",
-        "benefits": [
-          {
-            "title": "Strato adesivo aumentato (+33%)",
-            "text": "Elevata adesione anche su cartone riciclato, superfici polverose e irregolari."
-          },
-          {
-            "title": "Adesivo acrilico",
-            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
-          },
-          {
-            "title": "Svolgimento silenzioso e resistenza UV",
-            "text": "Adesione 4,0 N/25 mm con basso rumore: prestazioni affidabili in magazzino (−5 až +60 °C)."
-          }
-        ],
-        "uses": [
-          "Chiusura standard dei cartoni",
-          "Cartone riciclato e superfici difficili",
-          "Macchine automatiche per imballaggio",
-          "Stampa con logo e informazioni aziendali"
-        ],
-        "params_values": {
-          "carrier": "Film BOPP",
-          "thickness": "40 µm",
-          "adhesive": "Acrilico (strato adesivo aumentato +33%)",
-          "adhesion": "4,0 N/25 mm",
-          "temperature": "−5 a +60 °C",
-          "strength": "45 N/25 mm"
-        },
-        "spec_pills": [
-          "Film BOPP",
-          "Acrilico (strato adesivo aumentato +33%)",
-          "−5 a +60 °C"
-        ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
-        "min_qty_note": "",
-        "params_labels": {
-          "carrier": "Supporto / materiale",
-          "thickness": "Spessore",
-          "adhesive": "Tipo di adesivo",
-          "adhesion": "Adesione (acciaio)",
-          "temperature": "Resistenza alla temperatura",
-          "strength": "Resistenza alla trazione"
-        },
-        "tech_spec": false,
-        "ctas": {
-          "hero": "Preventivo con stampa",
-          "tailor_link": "Voglio un campione gratuito",
-          "tailor_bullets": [
-            "Larghezza e lunghezza della bobina personalizzabili",
-            "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri BOPP"
@@ -1303,7 +1350,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri BOPP"
@@ -1365,7 +1412,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri BOPP"
@@ -1373,21 +1420,21 @@
       },
       "bopp-paska-tack-plus": {
         "name": "Nastro BOPP TACK+",
-        "tagline": "Nastro BOPP hot melt con adesione superiore (+20%) e super tack per macchine da imballaggio e cartone riciclato.",
+        "tagline": "Nastro HOT MELT con adesione estrema e effetto tack immediato. Per applicazioni impegnative.",
         "category_slug": "bopp-pasky",
         "category_title": "Nastri BOPP",
         "benefits": [
           {
             "title": "Super tack (+20% adesione)",
-            "text": "Adesione immediata e tenuta superiore allo HOT MELT standard: consigliato per macchine da imballaggio."
+            "text": "Adesione immediata con tack estremo rispetto allo HOT MELT standard."
           },
           {
-            "title": "Adesivo hot melt",
-            "text": "Adesione rapida e resistente anche a basse temperature, adatta al confezionamento manuale e automatico."
+            "title": "Partner per applicazioni impegnative",
+            "text": "Grazie alla formula HOT MELT (tack+) migliorata, adatta ad applicazioni impegnative come ambienti polverosi, pacchi molto pesanti o cartone riciclato."
           },
           {
-            "title": "Svolgimento facile per macchine",
-            "text": "Adesione 4,2 N/25 mm su tutti i tipi di cartone, incluso il riciclato (0 až +55 °C)."
+            "title": "Svolgimento facile",
+            "text": "Riduce lo sforzo fisico nel confezionamento manuale ed è ottima per macchine automatiche di imballaggio."
           }
         ],
         "uses": [
@@ -1397,37 +1444,37 @@
           "Imballaggio automatico di spedizioni pesanti"
         ],
         "params_values": {
-          "carrier": "Film BOPP",
-          "thickness": "40 µm",
-          "adhesive": "Hot melt (super tack, +20%)",
-          "adhesion": "4,2 N/25 mm",
-          "temperature": "0 a +55 °C",
-          "strength": "42 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 / 32 µm",
+          "adhesive": "HOT MELT (tack+)",
+          "adhesion": "18 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 a +50 °C"
         },
         "spec_pills": [
-          "Film BOPP",
-          "Hot melt (super tack, +20%)",
-          "0 a +55 °C"
+          "BOPP",
+          "HOT MELT (tack+)",
+          "0 a +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
-        "min_qty_note": "",
+        "min_qty_note": "Quantità minima da 504 pz (HOT MELT).",
         "params_labels": {
-          "carrier": "Supporto / materiale",
-          "thickness": "Spessore",
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
           "adhesive": "Tipo di adesivo",
-          "adhesion": "Adesione (acciaio)",
-          "temperature": "Resistenza alla temperatura",
-          "strength": "Resistenza alla trazione"
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri BOPP"
@@ -1489,7 +1536,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri BOPET"
@@ -1551,7 +1598,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri BOPET"
@@ -1613,7 +1660,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri BOPET"
@@ -1675,7 +1722,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri BOPET"
@@ -1737,7 +1784,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri in carta"
@@ -1799,7 +1846,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri in carta"
@@ -1861,7 +1908,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri in carta"
@@ -1923,7 +1970,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri in carta"
@@ -1985,7 +2032,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri in carta"
@@ -2047,7 +2094,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri in carta"
@@ -2109,7 +2156,7 @@
           "tailor_bullets": [
             "Larghezza e lunghezza della bobina personalizzabili",
             "Colore di fondo e numero di colori di stampa",
-            "Campione con il vostro logo prima dell'ordine"
+            "Test della qualità prima dell'ordine"
           ],
           "bottom": "Campione o preventivo gratuito",
           "back_category": "Torna a Nastri in carta"
@@ -2754,7 +2801,7 @@
       "tailor_title": "Su misura per la vostra attività",
       "tailor_bullet_width": "Larghezza e lunghezza della bobina personalizzabili",
       "tailor_bullet_print": "Colore di fondo e numero di colori di stampa",
-      "tailor_bullet_sample": "Campione con il vostro logo prima dell'ordine",
+      "tailor_bullet_sample": "Test della qualità prima dell'ordine",
       "tailor_bullet_consult": "Consulenza sui parametri prima dell'ordine",
       "tailor_bullet_params": "Diverse versioni di adesivo e supporto",
       "no_print_note": "Il nastro è disponibile anche senza stampa.",

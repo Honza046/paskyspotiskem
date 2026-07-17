@@ -277,8 +277,8 @@
 }
 
 .dark .logo-carousel__item--mobil .logo-carousel__wordmark {
-    color: #203f85;
-    opacity: 0.78;
+    color: #94a3b8;
+    opacity: 0.68;
 }
 
 .dark .logo-carousel__item--pierburg:hover .logo-carousel__wordmark--pierburg {
@@ -288,6 +288,13 @@
 .dark .logo-carousel__item--mobil:hover .logo-carousel__wordmark {
     color: #203f85;
     opacity: 1;
+}
+
+.dark .logo-carousel__item--mobil:hover img:not(.logo-carousel__mascot) {
+    filter: none;
+    mix-blend-mode: normal;
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 .dark .logo-carousel__item--gws:hover .logo-carousel__gws-light {

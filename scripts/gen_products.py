@@ -102,8 +102,8 @@ PRODUCTS = {
  "bopp-pasky":[
    P("BOPP páska Akryl","BOPP Tapes/BOPPACRYLIC.jpeg","Spolehlivá BOPP páska s dlouhou životností.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy)","21 µm","−10 až +60 °C","14–28 °C"),
    P("BOPP páska HOT MELT","BOPP Tapes/BOPPHOTMELT.jpeg","BOPP páska s HOT MELT lepidlem pro rychlé a pevné přilnutí.","BOPP","25 / 28 / 32 µm","HOT MELT","18 µm","0 až +50 °C","14–28 °C"),
-   P("BOPP páska EXTRA GLUE+","BOPP Tapes/BOPPACRYLIC.jpeg","Akrylová BOPP páska se zvýšenou vrstvou lepidla (+33 %) pro náročné povrchy a recyklovaný karton.","BOPP fólie","40 µm","Akrylové (zvýšená vrstva +33 %)","4,0 N/25 mm","−5 až +60 °C","45 N/25 mm"),
-   P("BOPP páska TACK+","BOPP Tapes/BOPPHOTMELT1.jpg","HOT MELT BOPP páska s vyšší přilnavostí (+20 %) a super tack pro balicí stroje a recyklovaný karton.","BOPP fólie","40 µm","HOT MELT (super tack, +20 %)","4,2 N/25 mm","0 až +55 °C","42 N/25 mm"),
+   P("BOPP páska EXTRA GLUE+","BOPP Tapes/BOPPACRYLIC.jpeg","Akrylová páska se zvýšenou vrstvou lepidla pro náročné povrchy.","BOPP","28 / 32 / 35 µm","Akryl","28 µm","−10 až +60 °C","14–28 °C"),
+   P("BOPP páska TACK+","BOPP Tapes/BOPPHOTMELT1.jpg","HOT MELT páska s extrémní přilnavostí a okamžitým lepivým efektem. Pro obtížné aplikace.","BOPP","28 / 32 µm","HOT MELT (tack+)","18 µm","0 až +50 °C","14–28 °C"),
    P("BOPP páska Evergreen","BOPP Tapes/EVERGREEN.jpg","Barevná BOPP páska pro značení a vizuální odlišení zásilek.","BOPP fólie (barevná)","45 µm","Akrylové","3,0 N/25 mm","−5 až +60 °C","46 N/25 mm"),
  ],
  "bopet-pasky":[
@@ -215,6 +215,22 @@ TECH_SPEC_PARAMS = {
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "0 až +50 °C",
     },
+    "BOPP páska TACK+": {
+        "Nosič": "BOPP",
+        "Tloušťka fólie": "28 / 32 µm",
+        "Typ lepidla": "HOT MELT (tack+)",
+        "Tloušťka lepidla": "18 µm",
+        "Skladovací a aplikační teplota": "14–28 °C",
+        "Provozní teplota po nalepení": "0 až +50 °C",
+    },
+    "BOPP páska EXTRA GLUE+": {
+        "Nosič": "BOPP",
+        "Tloušťka fólie": "28 / 32 / 35 µm",
+        "Typ lepidla": "Akryl",
+        "Tloušťka lepidla": "28 µm",
+        "Skladovací a aplikační teplota": "14–28 °C",
+        "Provozní teplota po nalepení": "−10 až +60 °C",
+    },
     "Udržitelná páska ECO+ 50": {
         "Nosič": "BOPP",
         "Tloušťka fólie": "25 / 28 / 32 µm",
@@ -241,60 +257,56 @@ TECH_SPEC_PARAMS = {
     },
 }
 
-ECO_TECH_VARIANTS = {
+_ACRYL_LOW_NOISE = {
+    "Nosič": "BOPP",
+    "Tloušťka fólie": "25 / 28 / 32 µm",
+    "Typ lepidla": "Akryl (Low noise)",
+    "Tloušťka lepidla": "21 µm",
+    "Skladovací a aplikační teplota": "14–28 °C",
+    "Provozní teplota po nalepení": "−10 až +60 °C",
+}
+_ACRYL_NOISY = {
+    "Nosič": "BOPP",
+    "Tloušťka fólie": "25 / 28 / 32 µm",
+    "Typ lepidla": "Akryl (Noisy)",
+    "Tloušťka lepidla": "21 µm",
+    "Skladovací a aplikační teplota": "14–28 °C",
+    "Provozní teplota po nalepení": "0 až +60 °C",
+}
+_HOT_MELT = {
+    "Nosič": "BOPP",
+    "Tloušťka fólie": "25 / 28 / 32 µm",
+    "Typ lepidla": "HOT MELT",
+    "Tloušťka lepidla": "18 µm",
+    "Skladovací a aplikační teplota": "14–28 °C",
+    "Provozní teplota po nalepení": "0 až +50 °C",
+}
+
+TECH_VARIANT_LABELS = {
+    "low_noise": "Low noise",
+    "noisy": "Noisy",
+    "hot_melt": "HOT MELT",
+}
+
+TECH_VARIANTS = {
+    "BOPP páska Akryl": {
+        "low_noise": dict(_ACRYL_LOW_NOISE),
+        "noisy": dict(_ACRYL_NOISY),
+    },
     "Udržitelná páska ECO+ 50": {
-        "akryl": {
-            "Nosič": "BOPP",
-            "Tloušťka fólie": "25 / 28 / 32 µm",
-            "Typ lepidla": "Akryl (Low noise / Noisy)",
-            "Tloušťka lepidla": "21 µm",
-            "Skladovací a aplikační teplota": "14–28 °C",
-            "Provozní teplota po nalepení": "−10 až +60 °C",
-        },
-        "hot_melt": {
-            "Nosič": "BOPP",
-            "Tloušťka fólie": "25 / 28 / 32 µm",
-            "Typ lepidla": "HOT MELT",
-            "Tloušťka lepidla": "18 µm",
-            "Skladovací a aplikační teplota": "14–28 °C",
-            "Provozní teplota po nalepení": "0 až +50 °C",
-        },
+        "low_noise": dict(_ACRYL_LOW_NOISE),
+        "noisy": dict(_ACRYL_NOISY),
+        "hot_melt": dict(_HOT_MELT),
     },
     "Udržitelná páska ECO+ 80": {
-        "akryl": {
-            "Nosič": "BOPP",
-            "Tloušťka fólie": "25 / 28 / 32 µm",
-            "Typ lepidla": "Akryl (Low noise / Noisy)",
-            "Tloušťka lepidla": "21 µm",
-            "Skladovací a aplikační teplota": "14–28 °C",
-            "Provozní teplota po nalepení": "−10 až +60 °C",
-        },
-        "hot_melt": {
-            "Nosič": "BOPP",
-            "Tloušťka fólie": "25 / 28 / 32 µm",
-            "Typ lepidla": "HOT MELT",
-            "Tloušťka lepidla": "18 µm",
-            "Skladovací a aplikační teplota": "14–28 °C",
-            "Provozní teplota po nalepení": "0 až +50 °C",
-        },
+        "low_noise": dict(_ACRYL_LOW_NOISE),
+        "noisy": dict(_ACRYL_NOISY),
+        "hot_melt": dict(_HOT_MELT),
     },
     "Udržitelná páska ECO+ 100": {
-        "akryl": {
-            "Nosič": "BOPP",
-            "Tloušťka fólie": "25 / 28 / 32 µm",
-            "Typ lepidla": "Akryl (Low noise / Noisy)",
-            "Tloušťka lepidla": "21 µm",
-            "Skladovací a aplikační teplota": "14–28 °C",
-            "Provozní teplota po nalepení": "−10 až +60 °C",
-        },
-        "hot_melt": {
-            "Nosič": "BOPP",
-            "Tloušťka fólie": "25 / 28 / 32 µm",
-            "Typ lepidla": "HOT MELT",
-            "Tloušťka lepidla": "18 µm",
-            "Skladovací a aplikační teplota": "14–28 °C",
-            "Provozní teplota po nalepení": "0 až +50 °C",
-        },
+        "low_noise": dict(_ACRYL_LOW_NOISE),
+        "noisy": dict(_ACRYL_NOISY),
+        "hot_melt": dict(_HOT_MELT),
     },
 }
 
@@ -328,7 +340,14 @@ def product_spec_pills(p):
 
 
 def product_tech_variant_tables(p):
-    return ECO_TECH_VARIANTS.get(p["name"])
+    return TECH_VARIANTS.get(p["name"])
+
+
+def product_tech_variant_labels(p):
+    variants = product_tech_variant_tables(p)
+    if not variants:
+        return {}
+    return {key: TECH_VARIANT_LABELS[key] for key in variants}
 
 
 def product_min_qty_note(p):
@@ -336,7 +355,11 @@ def product_min_qty_note(p):
     name = p["name"]
     if name == "BOPP páska Akryl":
         return "Minimální množství od 360 ks (Akryl)."
+    if name == "BOPP páska EXTRA GLUE+":
+        return "Minimální množství od 360 ks (Akryl)."
     if name == "BOPP páska HOT MELT":
+        return "Minimální množství od 504 ks (HOT MELT)."
+    if name == "BOPP páska TACK+":
         return "Minimální množství od 504 ks (HOT MELT)."
     if name.startswith("Udržitelná páska ECO+"):
         return "Dostupné jako Akryl i HOT MELT. Min. množství: Akryl od 360 ks, HOT MELT od 504 ks."
@@ -361,22 +384,31 @@ def product_tech_table_html(p):
                     </table>
                 </div>''' % product_param_rows_html(p["params"])
 
+    labels = product_tech_variant_labels(p)
+    keys = list(variants.keys())
+    default_key = keys[0]
+    buttons = []
     tables = []
-    for key, label in (("akryl", "Akryl"), ("hot_melt", "HOT MELT")):
-        hidden = '' if key == 'akryl' else ' hidden'
+    for key in keys:
+        is_default = key == default_key
+        active_cls = ' is-active' if is_default else ''
+        hidden = '' if is_default else ' hidden'
+        buttons.append(
+            '<button type="button" class="tech-variant-trigger%s" data-tech-trigger="%s">%s</button>'
+            % (active_cls, key, esc(labels[key]))
+        )
         tables.append('''                    <table class="tech-variant-table w-full%s" data-tech-table="%s">
                         <tbody>
 %s
                         </tbody>
                     </table>''' % (hidden, key, product_param_rows_html(variants[key])))
 
-    return '''                <div class="mb-4 inline-flex rounded-2xl bg-slate-100 p-1" data-tech-switcher data-active-variant="akryl">
-                    <button type="button" class="tech-variant-trigger is-active" data-tech-trigger="akryl">Akryl</button>
-                    <button type="button" class="tech-variant-trigger" data-tech-trigger="hot_melt">HOT MELT</button>
+    return '''                <div class="mb-4 inline-flex flex-wrap rounded-2xl bg-slate-100 p-1" data-tech-switcher data-active-variant="%s">
+                    %s
                 </div>
                 <div class="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
 %s
-                </div>''' % "\n".join(tables)
+                </div>''' % (default_key, "\n                    ".join(buttons), "\n".join(tables))
 
 def _adhesive_benefit(lepidlo):
     l = lepidlo.lower()
@@ -464,20 +496,25 @@ def product_benefits(cat_slug, p):
                 ("Partner pro recyklované kartony", "Díky vysoké lepivosti ideální na recyklované kartony a do prašného prostředí."),
                 ("Vysoká přilnavost", "Nelze snadno odlepit ze stretch fólií – zřetelný důkaz zabezpečení zásilky."),
             ]
+        if p["name"] == "BOPP páska TACK+":
+            return [
+                ("Super tack (+20 % lepivost)", "Okamžitá přilnavost s extrémní lepivostí oproti standard HOT MELT."),
+                ("Partner pro obtížné aplikace", "Díky vylepšené formuli HOT MELT (tack+) vhodná pro obtížné aplikace jako prašné prostředí, velmi těžké balíky nebo recyklované kartony."),
+                ("Snadné odvíjení", "Snižuje fyzickou námahu při ručním balení a je výborná pro automatické balicí stroje."),
+            ]
         if p["name"] == "BOPP páska EXTRA GLUE+":
-            b1 = ("Zvýšená vrstva lepidla (+33 %)", "Vysoká přilnavost i na recyklovaném kartonu, prašných a nerovných površích.")
-            b3 = ("Tiché odvíjení a UV odolnost", f"Přilnavost {pril} s nízkou hlučností – spolehlivý výkon ve skladu ({temp}).")
-        elif p["name"] == "BOPP páska TACK+":
-            b1 = ("Super tack (+20 % přilnavosti)", "Okamžitá přilnavost a vyšší drživost než standardní HOT MELT – doporučeno pro balicí stroje.")
-            b3 = ("Snadné odvíjení pro stroje", f"Přilnavost {pril} na všech typech kartonů včetně recyklovaných ({temp}).")
+            return [
+                ("Zvýšená vrstva lepidla (+33 %)", "Vysoká přilnavost s extrémní lepivostí oproti standard Akryl."),
+                ("Partner pro obtížné aplikace", "Díky větší vrstvě lepidla vhodná pro obtížné aplikace jako prašné prostředí, opravdu velmi těžké balíky nebo recyklované kartony."),
+                ("Vysoká odolnost proti UV", "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování i UV zatížení."),
+            ]
+        b1 = (f"Pevnost v tahu {pevnost}", f"BOPP fólie o tloušťce {tl} vydrží napětí při balení i při dlouhodobém skladování.")
+        if "barevn" in nl:
+            b3 = ("Barevné odlišení zásilek", f"Vizuální značení balíků a skladová orientace v rozsahu {temp}.")
+        elif "akryl" in lepidlo.lower():
+            b3 = ("Dlouhá životnost", f"Odolnost proti UV a stárnutí v teplotním rozsahu {temp}.")
         else:
-            b1 = (f"Pevnost v tahu {pevnost}", f"BOPP fólie o tloušťce {tl} vydrží napětí při balení i při dlouhodobém skladování.")
-            if "barevn" in nl:
-                b3 = ("Barevné odlišení zásilek", f"Vizuální značení balíků a skladová orientace v rozsahu {temp}.")
-            elif "akryl" in lepidlo.lower():
-                b3 = ("Dlouhá životnost", f"Odolnost proti UV a stárnutí v teplotním rozsahu {temp}.")
-            else:
-                b3 = ("Rychlé přilnutí", f"Přilnavost {pril} – okamžitě drží i při nižších teplotách ({temp}).")
+            b3 = ("Rychlé přilnutí", f"Přilnavost {pril} – okamžitě drží i při nižších teplotách ({temp}).")
     elif cat_slug == "bopet-pasky":
         b1 = (f"Teplotní rozsah {temp}", f"Polyesterový nosič ({tl}) si drží vlastnosti v náročných provozech.")
         if "recyklovan" in nl:
@@ -628,7 +665,7 @@ def product_ctas(cat, p):
         return {
             'hero': 'Kalkulace s potiskem',
             'tailor_link': 'Chci vzorek zdarma',
-            'tailor_bullet': 'Vzorek s vaším logem před objednávkou',
+            'tailor_bullet': 'Otestování kvality před objednáním',
             'bottom': 'Vzorek nebo kalkulace zdarma',
         }
     bottom_by_cat = {

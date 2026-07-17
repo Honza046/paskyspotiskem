@@ -331,8 +331,9 @@
         var techSwitcher = document.querySelector('[data-tech-switcher]');
         if (techSwitcher && prod.tech_variants) {
             var variantLabels = prod.tech_variant_labels || {};
-            var activeVariant = techSwitcher.getAttribute('data-active-variant') || 'akryl';
-            if (!prod.tech_variants[activeVariant]) activeVariant = 'akryl';
+            var variantKeys = Object.keys(prod.tech_variants);
+            var activeVariant = techSwitcher.getAttribute('data-active-variant') || variantKeys[0];
+            if (!prod.tech_variants[activeVariant]) activeVariant = variantKeys[0];
 
             techSwitcher.querySelectorAll('[data-tech-trigger]').forEach(function (btn) {
                 var variant = btn.getAttribute('data-tech-trigger');

@@ -623,7 +623,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu Nachhaltige Klebebänder"
@@ -668,13 +668,21 @@
           "Akryl / HOT MELT"
         ],
         "tech_variants": {
-          "akryl": {
+          "low_noise": {
             "carrier": "BOPP",
             "thickness": "25 / 28 / 32 µm",
-            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesive": "Akryl (Low noise)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
             "temperature": "−10 bis +60 °C"
+          },
+          "noisy": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 bis +60 °C"
           },
           "hot_melt": {
             "carrier": "BOPP",
@@ -686,7 +694,8 @@
           }
         },
         "tech_variant_labels": {
-          "akryl": "Akryl",
+          "low_noise": "Low noise",
+          "noisy": "Noisy",
           "hot_melt": "HOT MELT"
         },
         "min_qty_note": "Erhältlich als Akryl und HOT MELT. Mindestmenge: Akryl ab 360 Stk., HOT MELT ab 504 Stk.",
@@ -705,7 +714,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu Nachhaltige Klebebänder"
@@ -750,13 +759,21 @@
           "Akryl / HOT MELT"
         ],
         "tech_variants": {
-          "akryl": {
+          "low_noise": {
             "carrier": "BOPP",
             "thickness": "25 / 28 / 32 µm",
-            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesive": "Akryl (Low noise)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
             "temperature": "−10 bis +60 °C"
+          },
+          "noisy": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 bis +60 °C"
           },
           "hot_melt": {
             "carrier": "BOPP",
@@ -768,7 +785,8 @@
           }
         },
         "tech_variant_labels": {
-          "akryl": "Akryl",
+          "low_noise": "Low noise",
+          "noisy": "Noisy",
           "hot_melt": "HOT MELT"
         },
         "min_qty_note": "Erhältlich als Akryl und HOT MELT. Mindestmenge: Akryl ab 360 Stk., HOT MELT ab 504 Stk.",
@@ -787,7 +805,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu Nachhaltige Klebebänder"
@@ -832,13 +850,21 @@
           "Akryl / HOT MELT"
         ],
         "tech_variants": {
-          "akryl": {
+          "low_noise": {
             "carrier": "BOPP",
             "thickness": "25 / 28 / 32 µm",
-            "adhesive": "Akryl (Low noise / Noisy)",
+            "adhesive": "Akryl (Low noise)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
             "temperature": "−10 bis +60 °C"
+          },
+          "noisy": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 bis +60 °C"
           },
           "hot_melt": {
             "carrier": "BOPP",
@@ -850,7 +876,8 @@
           }
         },
         "tech_variant_labels": {
-          "akryl": "Akryl",
+          "low_noise": "Low noise",
+          "noisy": "Noisy",
           "hot_melt": "HOT MELT"
         },
         "min_qty_note": "Erhältlich als Akryl und HOT MELT. Mindestmenge: Akryl ab 360 Stk., HOT MELT ab 504 Stk.",
@@ -869,7 +896,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu Nachhaltige Klebebänder"
@@ -931,7 +958,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu Nachhaltige Klebebänder"
@@ -993,7 +1020,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu Nachhaltige Klebebänder"
@@ -1055,7 +1082,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu Nachhaltige Klebebänder"
@@ -1117,7 +1144,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu Nachhaltige Klebebänder"
@@ -1161,6 +1188,88 @@
           "Akryl (Low noise / Noisy)",
           "−10 bis +60 °C"
         ],
+        "tech_variants": {
+          "low_noise": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Low noise)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 bis +60 °C"
+          },
+          "noisy": {
+            "carrier": "BOPP",
+            "thickness": "25 / 28 / 32 µm",
+            "adhesive": "Akryl (Noisy)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 bis +60 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "low_noise": "Low noise",
+          "noisy": "Noisy"
+        },
+        "min_qty_note": "Mindestmenge ab 360 Stk. (Akryl).",
+        "params_labels": {
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
+          "adhesive": "Klebstofftyp",
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben"
+        },
+        "tech_spec": true,
+        "ctas": {
+          "hero": "Kalkulation mit Bedruckung",
+          "tailor_link": "Ich möchte ein kostenloses Muster",
+          "tailor_bullets": [
+            "Wählbare Breite und Rollenlänge",
+            "Grundfarbe und Anzahl der Druckfarben",
+            "Qualitätsprüfung vor der Bestellung"
+          ],
+          "bottom": "Kostenloses Muster oder Kalkulation",
+          "back_category": "Zurück zu BOPP-Klebebänder"
+        }
+      },
+      "bopp-paska-extra-glue-plus": {
+        "name": "BOPP-Klebeband EXTRA GLUE+",
+        "tagline": "Acrylklebeband mit erhöhter Klebstoffschicht für anspruchsvolle Oberflächen.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP-Klebebänder",
+        "benefits": [
+          {
+            "title": "Erhöhte Klebstoffschicht (+33 %)",
+            "text": "Hohe Haftung mit extremem Tack im Vergleich zu Standard-Akryl."
+          },
+          {
+            "title": "Partner für anspruchsvolle Anwendungen",
+            "text": "Dank der dickeren Klebstoffschicht geeignet für anspruchsvolle Anwendungen wie staubige Umgebungen, wirklich sehr schwere Pakete oder Recyclingkarton."
+          },
+          {
+            "title": "Hohe UV-Beständigkeit",
+            "text": "Acrylklebstoff behält seine Klebkraft auch bei langfristiger Lagerung und UV-Belastung."
+          }
+        ],
+        "uses": [
+          "Standard-Kartonverschluss",
+          "Recyclingkarton und anspruchsvolle Oberflächen",
+          "Automatische Verpackungsmaschinen",
+          "Bedruckung mit Firmenlogo und Informationen"
+        ],
+        "params_values": {
+          "carrier": "BOPP",
+          "thickness": "28 / 32 / 35 µm",
+          "adhesive": "Akryl",
+          "adhesion": "28 µm",
+          "strength": "14–28 °C",
+          "temperature": "−10 bis +60 °C"
+        },
+        "spec_pills": [
+          "BOPP",
+          "Akryl",
+          "−10 bis +60 °C"
+        ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "Mindestmenge ab 360 Stk. (Akryl).",
@@ -1179,69 +1288,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
-          ],
-          "bottom": "Kostenloses Muster oder Kalkulation",
-          "back_category": "Zurück zu BOPP-Klebebänder"
-        }
-      },
-      "bopp-paska-extra-glue-plus": {
-        "name": "BOPP-Klebeband EXTRA GLUE+",
-        "tagline": "Acryl-BOPP-Klebeband mit erhöhter Klebstoffschicht (+33 %) für anspruchsvolle Oberflächen und Recyclingkarton.",
-        "category_slug": "bopp-pasky",
-        "category_title": "BOPP-Klebebänder",
-        "benefits": [
-          {
-            "title": "Erhöhte Klebstoffschicht (+33 %)",
-            "text": "Hohe Klebkraft auch auf Recyclingkarton, staubigen und unebenen Oberflächen."
-          },
-          {
-            "title": "Acrylklebstoff",
-            "text": "Leises Abrollen, langfristig stabile Klebkraft und zuverlässige Leistung unter Lagerbedingungen."
-          },
-          {
-            "title": "Leises Abrollen und UV-Beständigkeit",
-            "text": "Klebkraft 4,0 N/25 mm mit geringer Geräuschentwicklung – zuverlässige Leistung im Lager (−5 až +60 °C)."
-          }
-        ],
-        "uses": [
-          "Standard-Kartonverschluss",
-          "Recyclingkarton und anspruchsvolle Oberflächen",
-          "Automatische Verpackungsmaschinen",
-          "Bedruckung mit Firmenlogo und Informationen"
-        ],
-        "params_values": {
-          "carrier": "BOPP-Folie",
-          "thickness": "40 µm",
-          "adhesive": "Acryl (erhöhte Klebstoffschicht +33 %)",
-          "adhesion": "4,0 N/25 mm",
-          "temperature": "−5 bis +60 °C",
-          "strength": "45 N/25 mm"
-        },
-        "spec_pills": [
-          "BOPP-Folie",
-          "Acryl (erhöhte Klebstoffschicht +33 %)",
-          "−5 bis +60 °C"
-        ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
-        "min_qty_note": "",
-        "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
-          "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
-        },
-        "tech_spec": false,
-        "ctas": {
-          "hero": "Kalkulation mit Bedruckung",
-          "tailor_link": "Ich möchte ein kostenloses Muster",
-          "tailor_bullets": [
-            "Wählbare Breite und Rollenlänge",
-            "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu BOPP-Klebebänder"
@@ -1303,7 +1350,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu BOPP-Klebebänder"
@@ -1365,7 +1412,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu BOPP-Klebebänder"
@@ -1373,21 +1420,21 @@
       },
       "bopp-paska-tack-plus": {
         "name": "BOPP-Klebeband TACK+",
-        "tagline": "Hot-Melt-BOPP-Klebeband mit höherer Klebkraft (+20 %) und Super-Tack für Verpackungsmaschinen und Recyclingkarton.",
+        "tagline": "HOT-MELT-Klebeband mit extremer Haftung und sofortigem Tack. Für anspruchsvolle Anwendungen.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP-Klebebänder",
         "benefits": [
           {
             "title": "Super-Tack (+20 % Klebkraft)",
-            "text": "Sofortige Haftung und höhere Klebkraft als Standard-HOT MELT – empfohlen für Verpackungsmaschinen."
+            "text": "Sofortige Haftung mit extremem Tack im Vergleich zu Standard-HOT-MELT."
           },
           {
-            "title": "Hot-Melt-Klebstoff",
-            "text": "Schnelle, feste Haftung auch bei niedrigen Temperaturen – für manuelles und maschinelles Verpacken."
+            "title": "Partner für anspruchsvolle Anwendungen",
+            "text": "Dank der verbesserten HOT-MELT-(tack+)-Formel geeignet für anspruchsvolle Anwendungen wie staubige Umgebungen, sehr schwere Pakete oder Recyclingkarton."
           },
           {
-            "title": "Leichtes Abrollen für Maschinen",
-            "text": "Klebkraft 4,2 N/25 mm auf allen Kartontypen einschließlich Recyclingkarton (0 až +55 °C)."
+            "title": "Leichtes Abrollen",
+            "text": "Reduziert die körperliche Belastung beim manuellen Verpacken und eignet sich hervorragend für automatische Verpackungsmaschinen."
           }
         ],
         "uses": [
@@ -1397,37 +1444,37 @@
           "Maschinelles Verpacken schwerer Sendungen"
         ],
         "params_values": {
-          "carrier": "BOPP-Folie",
-          "thickness": "40 µm",
-          "adhesive": "Hot Melt (Super-Tack, +20 %)",
-          "adhesion": "4,2 N/25 mm",
-          "temperature": "0 bis +55 °C",
-          "strength": "42 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 / 32 µm",
+          "adhesive": "HOT MELT (tack+)",
+          "adhesion": "18 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 bis +50 °C"
         },
         "spec_pills": [
-          "BOPP-Folie",
-          "Hot Melt (Super-Tack, +20 %)",
-          "0 bis +55 °C"
+          "BOPP",
+          "HOT MELT (tack+)",
+          "0 bis +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
-        "min_qty_note": "",
+        "min_qty_note": "Mindestmenge ab 504 Stk. (HOT MELT).",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
           "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu BOPP-Klebebänder"
@@ -1489,7 +1536,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu BOPET-Klebebänder"
@@ -1551,7 +1598,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu BOPET-Klebebänder"
@@ -1613,7 +1660,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu BOPET-Klebebänder"
@@ -1675,7 +1722,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu BOPET-Klebebänder"
@@ -1737,7 +1784,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu Papierklebebänder"
@@ -1799,7 +1846,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu Papierklebebänder"
@@ -1861,7 +1908,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu Papierklebebänder"
@@ -1923,7 +1970,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu Papierklebebänder"
@@ -1985,7 +2032,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu Papierklebebänder"
@@ -2047,7 +2094,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu Papierklebebänder"
@@ -2109,7 +2156,7 @@
           "tailor_bullets": [
             "Wählbare Breite und Rollenlänge",
             "Grundfarbe und Anzahl der Druckfarben",
-            "Muster mit Ihrem Logo vor der Bestellung"
+            "Qualitätsprüfung vor der Bestellung"
           ],
           "bottom": "Kostenloses Muster oder Kalkulation",
           "back_category": "Zurück zu Papierklebebänder"
@@ -2754,7 +2801,7 @@
       "tailor_title": "Passend für Ihren Betrieb",
       "tailor_bullet_width": "Wählbare Breite und Rollenlänge",
       "tailor_bullet_print": "Grundfarbe und Anzahl der Druckfarben",
-      "tailor_bullet_sample": "Muster mit Ihrem Logo vor der Bestellung",
+      "tailor_bullet_sample": "Qualitätsprüfung vor der Bestellung",
       "tailor_bullet_consult": "Beratung zu den Parametern vor der Bestellung",
       "tailor_bullet_params": "Verschiedene Klebstoff- und Trägerausführungen",
       "no_print_note": "Dieses Band ist auch ohne Bedruckung erhältlich.",
