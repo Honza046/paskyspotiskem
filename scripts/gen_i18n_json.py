@@ -588,8 +588,9 @@ def build_cs() -> dict[str, Any]:
             },
             "benefits": {
                 "eco_badge": "Udržitelnost",
-                "eco_title": "Pásky ECO+ – regenerát bez kompromisů ve výkonu",
-                "eco_text": "Řada ECO+ spojuje balení s podílem regenerovaného BOPP materiálu (50 %, 80 % nebo 100 %) a stejnou pevností jako standardní pásky. Dostupné jako Akryl i HOT MELT, v neutrálním provedení i s firemním potiskem.",
+                "eco_title": "Pásky ECO+ – regenerát z vlastní výroby",
+                "eco_text": "Fólie ECO+ vzniká z postindustriálního odpadu při výrobě BOPP fólií – materiál se ihned vrací zpět do oběhu. Volíte podíl regenerátu 50 %, 80 % nebo 100 % při stejné pevnosti jako standardní páska, bez ekologické přirážky. Dostupné jako Akryl i HOT MELT, neutrálně i s potiskem.",
+                "eco_link": "Prohlédnout řadu ECO+ →",
                 "glue_badge": "Extrémní lepivost",
                 "glue_title": "EXTRA GLUE+ (Akryl) a TACK+ (HOT MELT)",
                 "glue_text": "Pásky se zvýšenou vrstvou lepidla (33 % resp. 20 %) i s možností pevnější folie oproti standardu, určené i pro velmi obtížné aplikace jako např. velmi těžké balíky, nekvalitní kartony nebo prašné prostředí. Na kartonu drží velmi pevně.",
@@ -964,8 +965,9 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             },
             "benefits": {
                 "eco_badge": "Sustainability",
-                "eco_title": "ECO+ tapes – regenerated material without compromising performance",
-                "eco_text": "The ECO+ range combines packaging with regenerated BOPP content (50%, 80% or 100%) and the same strength as standard tapes. Available as Akryl or HOT MELT, plain or with custom printing.",
+                "eco_title": "ECO+ tapes – regenerated from our own production",
+                "eco_text": "ECO+ film is made from post-industrial waste from BOPP film production – the material is returned to the loop immediately. Choose 50%, 80% or 100% regenerated content with the same strength as a standard tape, with no eco surcharge. Available as Akryl or HOT MELT, plain or printed.",
+                "eco_link": "Browse the ECO+ range →",
                 "glue_badge": "Extreme adhesion",
                 "glue_title": "EXTRA GLUE+ (Akryl) and TACK+ (HOT MELT)",
                 "glue_text": "Tapes with an increased adhesive layer (33% and 20% respectively) and the option of a stronger film than standard, designed for very demanding applications such as heavy parcels, poor-quality cardboard or dusty environments. They bond extremely firmly to cardboard.",
@@ -1340,8 +1342,9 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             },
             "benefits": {
                 "eco_badge": "Nachhaltigkeit",
-                "eco_title": "ECO+-Bänder – Regenerat ohne Kompromisse bei der Leistung",
-                "eco_text": "Die ECO+-Serie verbindet Verpackung mit regeneriertem BOPP-Anteil (50 %, 80 % oder 100 %) und derselben Festigkeit wie Standardbänder. Erhältlich als Akryl oder HOT MELT, neutral oder mit Firmenbedruckung.",
+                "eco_title": "ECO+-Bänder – Regenerat aus eigener Produktion",
+                "eco_text": "ECO+-Folie entsteht aus postindustriellem Abfall der BOPP-Folienproduktion – das Material wird sofort in den Kreislauf zurückgeführt. Wählen Sie 50 %, 80 % oder 100 % Regeneratanteil bei gleicher Festigkeit wie Standardband, ohne Öko-Aufpreis. Erhältlich als Akryl oder HOT MELT, neutral oder bedruckt.",
+                "eco_link": "ECO+-Serie ansehen →",
                 "glue_badge": "Extreme Klebkraft",
                 "glue_title": "EXTRA GLUE+ (Akryl) und TACK+ (HOT MELT)",
                 "glue_text": "Bänder mit erhöhter Klebstoffschicht (33 % bzw. 20 %) und optional stärkerer Folie für anspruchsvolle Anwendungen wie schwere Pakete, minderwertigen Karton oder staubige Umgebungen. Haften extrem fest auf Karton.",
@@ -1755,8 +1758,9 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
     it["home"]["benefits"].update(
         {
             "eco_badge": "Sostenibilità",
-            "eco_title": "Nastri ECO+ – materiale rigenerato senza compromessi sulle prestazioni",
-            "eco_text": "La gamma ECO+ unisce imballaggi con contenuto di BOPP rigenerato (50%, 80% o 100%) e la stessa resistenza dei nastri standard. Disponibili come Akryl o HOT MELT, neutri o con stampa personalizzata.",
+            "eco_title": "Nastri ECO+ – materiale rigenerato dalla nostra produzione",
+            "eco_text": "Il film ECO+ nasce da scarti postindustriali della produzione di film BOPP: il materiale torna subito in circolo. Scegliete il 50%, 80% o 100% di contenuto rigenerato con la stessa resistenza del nastro standard, senza sovrapprezzo ecologico. Disponibili come Akryl o HOT MELT, neutri o stampati.",
+            "eco_link": "Scopri la gamma ECO+ →",
             "glue_badge": "Adesione estrema",
             "glue_title": "EXTRA GLUE+ (Akryl) e TACK+ (HOT MELT)",
             "glue_text": "Nastri con strato adesivo aumentato (33% e 20% rispettivamente) e possibilità di un film più resistente rispetto allo standard, progettati per applicazioni molto impegnative come pacchi pesanti, cartone di scarsa qualità o ambienti polverosi. Aderiscono estremamente bene al cartone.",

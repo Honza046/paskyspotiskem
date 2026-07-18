@@ -832,6 +832,8 @@
                     setText(benefitCards[0].querySelector('span.inline-flex'), benefits.eco_badge || benefits.security_badge);
                     setText(benefitCards[0].querySelector('h3'), benefits.eco_title || benefits.security_title);
                     setText(benefitCards[0].querySelector('p.leading-relaxed'), benefits.eco_text || benefits.security_text);
+                    var ecoLink = benefitCards[0].querySelector('a[data-i18n="home.benefits.eco.link"], a[href*="udrzitelne-pasky"]');
+                    if (ecoLink && benefits.eco_link) setText(ecoLink, benefits.eco_link);
                 }
                 if (benefitCards[1]) {
                     setText(benefitCards[1].querySelector('span.inline-flex'), benefits.glue_badge);
