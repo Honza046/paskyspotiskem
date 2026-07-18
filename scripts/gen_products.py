@@ -104,6 +104,7 @@ PRODUCTS = {
    P("BOPP páska HOT MELT","BOPP Tapes/BOPPHOTMELT.jpeg","BOPP páska s HOT MELT lepidlem pro rychlé a pevné přilnutí.","BOPP","25 / 28 / 32 µm","HOT MELT","18 µm","0 až +50 °C","14–28 °C"),
    P("BOPP páska EXTRA GLUE+","BOPP Tapes/BOPPACRYLIC.jpeg","Akrylová páska se zvýšenou vrstvou lepidla pro náročné povrchy.","BOPP","28 / 32 / 35 µm","Akryl","28 µm","−10 až +60 °C","14–28 °C"),
    P("BOPP páska TACK+","BOPP Tapes/BOPPHOTMELT1.jpg","HOT MELT páska s extrémní přilnavostí a okamžitým lepivým efektem. Pro obtížné aplikace.","BOPP","28 / 32 µm","HOT MELT (tack+)","18 µm","0 až +50 °C","14–28 °C"),
+   P("BOPP páska Tamper Evident","BOPP Tapes/TAMPER-EVIDENT.jpg","Bezpečnostní páska s VOID efektem – při odlepení zanechá viditelné upozornění, které nelze bez stopy odstranit.","BOPP fólie","45 µm","Bezpečnostní (VOID)","3,5 N/25 mm","−5 až +60 °C","40 N/25 mm"),
    P("BOPP páska Evergreen","BOPP Tapes/EVERGREEN.jpg","Barevná BOPP páska pro značení a vizuální odlišení zásilek.","BOPP fólie (barevná)","45 µm","Akrylové","3,0 N/25 mm","−5 až +60 °C","46 N/25 mm"),
  ],
  "bopet-pasky":[
@@ -163,6 +164,7 @@ TAGMAP = {
  "BOPP páska HOT MELT":["rucni","stroje"],
  "BOPP páska EXTRA GLUE+":["tiche","rucni","stroje"],
  "BOPP páska TACK+":["rucni","stroje"],
+ "BOPP páska Tamper Evident":["rucni","stroje"],
  "BOPP páska Evergreen":["mrazuvzdorne","stroje"],
  "BOPET páska ATE23":["vysoke-teploty","chemicka-odolnost"],
  "BOPET páska AIT":["vysoke-teploty","mrazuvzdorne","chemicka-odolnost"],
@@ -508,6 +510,12 @@ def product_benefits(cat_slug, p):
                 ("Partner pro obtížné aplikace", "Díky větší vrstvě lepidla vhodná pro obtížné aplikace jako prašné prostředí, opravdu velmi těžké balíky nebo recyklované kartony."),
                 ("Vysoká odolnost proti UV", "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování i UV zatížení."),
             ]
+        if p["name"] == "BOPP páska Tamper Evident":
+            return [
+                ("VOID efekt při odlepení", "Při sejmutí zanechá na krabici upozornění VOID / OPEN / FRAUD, které prakticky nelze odstranit."),
+                ("Neutrální vzhled", "Tváří se jako běžná balicí páska, dokud ji někdo neoprávněně neodlepí."),
+                ("Kartony i stretch fólie", "Vhodná pro všechny typy kartonů i stretch fólií, dostupná v různých barvách a s potiskem."),
+            ]
         b1 = (f"Pevnost v tahu {pevnost}", f"BOPP fólie o tloušťce {tl} vydrží napětí při balení i při dlouhodobém skladování.")
         if "barevn" in nl:
             b3 = ("Barevné odlišení zásilek", f"Vizuální značení balíků a skladová orientace v rozsahu {temp}.")
@@ -581,6 +589,13 @@ def product_uses(cat, p):
             uses = [apps[0], "Recyklovaný karton a náročné povrchy", apps[1], apps[3]]
         elif p["name"] == "BOPP páska TACK+":
             uses = [apps[0], apps[1], "Recyklovaný karton a náročné povrchy", "Strojové balení těžkých zásilek"]
+        elif p["name"] == "BOPP páska Tamper Evident":
+            uses = [
+                "Zabezpečení zásilek proti neoprávněnému otevření",
+                "E-commerce a cenné balíky",
+                apps[2],
+                apps[3],
+            ]
         else:
             uses = [apps[0]]
             if "stroje" in tags:
@@ -811,7 +826,7 @@ def feature_icon(title):
         (('trhani rukou',), 'hand_tear'),
         (('drsn', 'povrch'), 'rough_surface'),
         (('design', 'potisk', 'barevn', 'cisty design', 'matny', 'reputace', 'firemni'), 'design'),
-        (('drzivost', 'fixace', 'tezke', 'bremen'), 'grip'),
+        (('drzivost', 'fixace', 'tezke', 'bremen', 'void', 'tamper', 'zabezpec'), 'grip'),
         (('snadna aplik', 'krep'), 'apply'),
         (('setrne k povrchu', 'setrne'), 'surface_safe'),
         (('kompromis', 'spolehliv', 'stejna cena', 'cena i kvalita'), 'shield'),

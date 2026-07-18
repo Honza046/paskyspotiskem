@@ -167,8 +167,8 @@
 }
 
 .dark .logo-carousel__item--gws .logo-carousel__wordmark--gws {
-    color: #94a3b8;
-    opacity: 0.68;
+    color: #a6a6a6;
+    opacity: 0.72;
     transition: opacity 0.25s ease;
 }
 
@@ -229,8 +229,8 @@
 
 .dark .logo-carousel__item--kohinoor .logo-carousel__kohinoor-dark {
     display: block;
-    filter: grayscale(100%) brightness(1.15) contrast(0.86);
-    opacity: 0.68;
+    filter: brightness(0) invert(0.65);
+    opacity: 0.72;
 }
 
 .dark .logo-carousel__item--kohinoor:hover .logo-carousel__kohinoor-dark {
@@ -239,20 +239,12 @@
     transform: scale(1.05);
 }
 
-/* Dark mode – unified medium grey partner logos, full color on hover */
+/* Dark mode – same flat grey for every logo; full brand color only on hover */
 .dark .logo-carousel__item:not(.logo-carousel__item--wordmark):not(.logo-carousel__item--kohinoor) img:not(.logo-carousel__mascot),
 .dark .logo-carousel__item--wordmark img:not(.logo-carousel__mascot):not(.logo-carousel__gws-dark) {
-    filter: grayscale(100%) invert(1) brightness(0.9) contrast(0.86);
-    opacity: 0.68;
+    filter: brightness(0) invert(0.65);
+    opacity: 0.72;
     mix-blend-mode: normal;
-}
-
-/* Black-background assets (Notino, Dr. Max) – screen keeps the same grey as Just nahrin */
-.dark .logo-carousel__item img[src*="wordmark-blacktag"]:not(.logo-carousel__mascot),
-.dark .logo-carousel__item img[src*="idTeLF6frI"]:not(.logo-carousel__mascot) {
-    filter: grayscale(100%) brightness(1.08) contrast(0.84);
-    mix-blend-mode: screen;
-    opacity: 0.68;
 }
 
 .dark .logo-carousel__item:not(.logo-carousel__item--kohinoor):hover img:not(.logo-carousel__mascot) {
@@ -267,8 +259,8 @@
 }
 
 .dark .logo-carousel__wordmark {
-    color: #94a3b8;
-    opacity: 0.68;
+    color: #a6a6a6;
+    opacity: 0.72;
 }
 
 .dark .logo-carousel__item--wordmark:not(.logo-carousel__item--gws):not(.logo-carousel__item--mobil):hover .logo-carousel__wordmark {
@@ -277,8 +269,8 @@
 }
 
 .dark .logo-carousel__item--mobil .logo-carousel__wordmark {
-    color: #94a3b8;
-    opacity: 0.68;
+    color: #a6a6a6;
+    opacity: 0.72;
 }
 
 .dark .logo-carousel__item--pierburg:hover .logo-carousel__wordmark--pierburg {

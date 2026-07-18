@@ -829,9 +829,9 @@
             if (vyhody) {
                 var benefitCards = vyhody.querySelectorAll('article');
                 if (benefitCards[0]) {
-                    setText(benefitCards[0].querySelector('span.inline-flex'), benefits.security_badge);
-                    setText(benefitCards[0].querySelector('h3'), benefits.security_title);
-                    setText(benefitCards[0].querySelector('p.leading-relaxed'), benefits.security_text);
+                    setText(benefitCards[0].querySelector('span.inline-flex'), benefits.eco_badge || benefits.security_badge);
+                    setText(benefitCards[0].querySelector('h3'), benefits.eco_title || benefits.security_title);
+                    setText(benefitCards[0].querySelector('p.leading-relaxed'), benefits.eco_text || benefits.security_text);
                 }
                 if (benefitCards[1]) {
                     setText(benefitCards[1].querySelector('span.inline-flex'), benefits.glue_badge);

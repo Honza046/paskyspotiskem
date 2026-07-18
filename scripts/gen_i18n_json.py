@@ -587,9 +587,9 @@ def build_cs() -> dict[str, Any]:
                 "card3_text": "Díky pokročilé technologii dokážou moderní recyklační linky naše pásky z papírových krabic snadno oddělit. Vaši zákazníci tak mohou použité krabice bez obav vyhodit přímo do modrého kontejneru.",
             },
             "benefits": {
-                "security_badge": "Bezpečnost",
-                "security_title": "Lepicí páska TAMPER EVIDENT – porušení zřejmé!",
-                "security_text": "Tato bezpečnostní lepicí páska se „tváří“ jako neutrální, nicméně při odlepení na krabici zanechává upozornění, které prakticky nelze odstranit. Páska je vhodná pro všechny typy kartonů i stretch folií, lze dodat v různých barvách či i s potiskem.",
+                "eco_badge": "Udržitelnost",
+                "eco_title": "Pásky ECO+ – regenerát bez kompromisů ve výkonu",
+                "eco_text": "Řada ECO+ spojuje balení s podílem regenerovaného BOPP materiálu (50 %, 80 % nebo 100 %) a stejnou pevností jako standardní pásky. Dostupné jako Akryl i HOT MELT, v neutrálním provedení i s firemním potiskem.",
                 "glue_badge": "Extrémní lepivost",
                 "glue_title": "EXTRA GLUE+ (Akryl) a TACK+ (HOT MELT)",
                 "glue_text": "Pásky se zvýšenou vrstvou lepidla (33 % resp. 20 %) i s možností pevnější folie oproti standardu, určené i pro velmi obtížné aplikace jako např. velmi těžké balíky, nekvalitní kartony nebo prašné prostředí. Na kartonu drží velmi pevně.",
@@ -963,9 +963,9 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "card3_text": "Thanks to advanced technology, modern recycling lines can easily separate our tapes from cardboard boxes. Your customers can dispose of used boxes directly in the paper recycling bin without concern.",
             },
             "benefits": {
-                "security_badge": "Security",
-                "security_title": "TAMPER EVIDENT tape, tampering is obvious!",
-                "security_text": "This security tape looks neutral, but when removed it leaves a warning on the box that is virtually impossible to eliminate. Suitable for all types of cardboard and stretch film, available in various colours and with custom printing.",
+                "eco_badge": "Sustainability",
+                "eco_title": "ECO+ tapes – regenerated material without compromising performance",
+                "eco_text": "The ECO+ range combines packaging with regenerated BOPP content (50%, 80% or 100%) and the same strength as standard tapes. Available as Akryl or HOT MELT, plain or with custom printing.",
                 "glue_badge": "Extreme adhesion",
                 "glue_title": "EXTRA GLUE+ (Akryl) and TACK+ (HOT MELT)",
                 "glue_text": "Tapes with an increased adhesive layer (33% and 20% respectively) and the option of a stronger film than standard, designed for very demanding applications such as heavy parcels, poor-quality cardboard or dusty environments. They bond extremely firmly to cardboard.",
@@ -1339,9 +1339,9 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "card3_text": "Dank moderner Technologie können Recyclinganlagen unsere Bänder leicht von Kartons trennen. Ihre Kunden können verwendete Kartons bedenkenlos in die Papiertonne werfen.",
             },
             "benefits": {
-                "security_badge": "Sicherheit",
-                "security_title": "TAMPER EVIDENT-Klebeband – Manipulation sichtbar!",
-                "security_text": "Dieses Sicherheitsband wirkt neutral, hinterlässt beim Abziehen jedoch eine praktisch nicht entfernbare Warnung auf dem Karton. Geeignet für alle Kartonarten und Stretchfolien, in verschiedenen Farben und mit Bedruckung.",
+                "eco_badge": "Nachhaltigkeit",
+                "eco_title": "ECO+-Bänder – Regenerat ohne Kompromisse bei der Leistung",
+                "eco_text": "Die ECO+-Serie verbindet Verpackung mit regeneriertem BOPP-Anteil (50 %, 80 % oder 100 %) und derselben Festigkeit wie Standardbänder. Erhältlich als Akryl oder HOT MELT, neutral oder mit Firmenbedruckung.",
                 "glue_badge": "Extreme Klebkraft",
                 "glue_title": "EXTRA GLUE+ (Akryl) und TACK+ (HOT MELT)",
                 "glue_text": "Bänder mit erhöhter Klebstoffschicht (33 % bzw. 20 %) und optional stärkerer Folie für anspruchsvolle Anwendungen wie schwere Pakete, minderwertigen Karton oder staubige Umgebungen. Haften extrem fest auf Karton.",
@@ -1754,9 +1754,9 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
     )
     it["home"]["benefits"].update(
         {
-            "security_badge": "Sicurezza",
-            "security_title": "Nastro TAMPER EVIDENT, la manomissione è evidente!",
-            "security_text": "Questo nastro di sicurezza appare neutro, ma una volta rimosso lascia sull'imballo un avviso praticamente impossibile da eliminare. Adatto a tutti i tipi di cartone e pellicola stretch, disponibile in vari colori e con stampa personalizzata.",
+            "eco_badge": "Sostenibilità",
+            "eco_title": "Nastri ECO+ – materiale rigenerato senza compromessi sulle prestazioni",
+            "eco_text": "La gamma ECO+ unisce imballaggi con contenuto di BOPP rigenerato (50%, 80% o 100%) e la stessa resistenza dei nastri standard. Disponibili come Akryl o HOT MELT, neutri o con stampa personalizzata.",
             "glue_badge": "Adesione estrema",
             "glue_title": "EXTRA GLUE+ (Akryl) e TACK+ (HOT MELT)",
             "glue_text": "Nastri con strato adesivo aumentato (33% e 20% rispettivamente) e possibilità di un film più resistente rispetto allo standard, progettati per applicazioni molto impegnative come pacchi pesanti, cartone di scarsa qualità o ambienti polverosi. Aderiscono estremamente bene al cartone.",

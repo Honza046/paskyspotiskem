@@ -52,7 +52,7 @@ INDEX_MAP = [
      ' data-i18n="home.references.title">Spokojení zákazníci napříč obory</h2>'),
     ('>Firmy, které s námi spolupracují</p>',
      ' data-i18n="home.references.carousel_label">Firmy, které s námi spolupracují</p>'),
-    ('>Bezpečnost</span>', ' data-i18n="home.benefits.security.badge">Bezpečnost</span>'),
+    ('>Udržitelnost</span>', ' data-i18n="home.benefits.eco.badge">Udržitelnost</span>'),
     ('>Extrémní lepivost</span>', ' data-i18n="home.benefits.glue.badge">Extrémní lepivost</span>'),
     ('>KONTAKTY NA ODDĚLENÍ</h2>', ' data-i18n="home.contacts.title">KONTAKTY NA ODDĚLENÍ</h2>'),
     ('>Testovací vzorek</p>', ' data-i18n="home.sample.label">Testovací vzorek</p>'),

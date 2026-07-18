@@ -121,9 +121,9 @@
       "card3_text": "Díky pokročilé technologii dokážou moderní recyklační linky naše pásky z papírových krabic snadno oddělit. Vaši zákazníci tak mohou použité krabice bez obav vyhodit přímo do modrého kontejneru."
     },
     "benefits": {
-      "security_badge": "Bezpečnost",
-      "security_title": "Lepicí páska TAMPER EVIDENT – porušení zřejmé!",
-      "security_text": "Tato bezpečnostní lepicí páska se „tváří“ jako neutrální, nicméně při odlepení na krabici zanechává upozornění, které prakticky nelze odstranit. Páska je vhodná pro všechny typy kartonů i stretch folií, lze dodat v různých barvách či i s potiskem.",
+      "eco_badge": "Udržitelnost",
+      "eco_title": "Pásky ECO+ – regenerát bez kompromisů ve výkonu",
+      "eco_text": "Řada ECO+ spojuje balení s podílem regenerovaného BOPP materiálu (50 %, 80 % nebo 100 %) a stejnou pevností jako standardní pásky. Dostupné jako Akryl i HOT MELT, v neutrálním provedení i s firemním potiskem.",
       "glue_badge": "Extrémní lepivost",
       "glue_title": "EXTRA GLUE+ (Akryl) a TACK+ (HOT MELT)",
       "glue_text": "Pásky se zvýšenou vrstvou lepidla (33 % resp. 20 %) i s možností pevnější folie oproti standardu, určené i pro velmi obtížné aplikace jako např. velmi těžké balíky, nekvalitní kartony nebo prašné prostředí. Na kartonu drží velmi pevně.",
@@ -1468,6 +1468,68 @@
           "temperature": "Provozní teplota po nalepení"
         },
         "tech_spec": true,
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Otestování kvality před objednáním"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na BOPP pásky"
+        }
+      },
+      "bopp-paska-tamper-evident": {
+        "name": "BOPP páska Tamper Evident",
+        "tagline": "Bezpečnostní páska s VOID efektem – při odlepení zanechá viditelné upozornění, které nelze bez stopy odstranit.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP pásky",
+        "benefits": [
+          {
+            "title": "VOID efekt při odlepení",
+            "text": "Při sejmutí zanechá na krabici upozornění VOID / OPEN / FRAUD, které prakticky nelze odstranit."
+          },
+          {
+            "title": "Neutrální vzhled",
+            "text": "Tváří se jako běžná balicí páska, dokud ji někdo neoprávněně neodlepí."
+          },
+          {
+            "title": "Kartony i stretch fólie",
+            "text": "Vhodná pro všechny typy kartonů i stretch fólií, dostupná v různých barvách a s potiskem."
+          }
+        ],
+        "uses": [
+          "Zabezpečení zásilek proti neoprávněnému otevření",
+          "E-commerce a cenné balíky",
+          "Expedice a skladová logistika",
+          "Potisk firemním logem a informacemi"
+        ],
+        "params_values": {
+          "carrier": "BOPP fólie",
+          "thickness": "45 µm",
+          "adhesive": "Bezpečnostní (VOID)",
+          "adhesion": "3,5 N/25 mm",
+          "temperature": "−5 až +60 °C",
+          "strength": "40 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP fólie",
+          "Bezpečnostní (VOID)",
+          "−5 až +60 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Nosič / materiál",
+          "thickness": "Tloušťka",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Přilnavost (ocel)",
+          "temperature": "Teplotní odolnost",
+          "strength": "Pevnost v tahu"
+        },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",

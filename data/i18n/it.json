@@ -121,9 +121,9 @@
       "card3_text": "Grazie alla tecnologia avanzata, le moderne linee di riciclo possono separare facilmente i nostri nastri dalle scatole di cartone. I vostri clienti possono gettare le scatole usate direttamente nel contenitore della carta."
     },
     "benefits": {
-      "security_badge": "Sicurezza",
-      "security_title": "Nastro TAMPER EVIDENT, la manomissione è evidente!",
-      "security_text": "Questo nastro di sicurezza appare neutro, ma una volta rimosso lascia sull'imballo un avviso praticamente impossibile da eliminare. Adatto a tutti i tipi di cartone e pellicola stretch, disponibile in vari colori e con stampa personalizzata.",
+      "eco_badge": "Sostenibilità",
+      "eco_title": "Nastri ECO+ – materiale rigenerato senza compromessi sulle prestazioni",
+      "eco_text": "La gamma ECO+ unisce imballaggi con contenuto di BOPP rigenerato (50%, 80% o 100%) e la stessa resistenza dei nastri standard. Disponibili come Akryl o HOT MELT, neutri o con stampa personalizzata.",
       "glue_badge": "Adesione estrema",
       "glue_title": "EXTRA GLUE+ (Akryl) e TACK+ (HOT MELT)",
       "glue_text": "Nastri con strato adesivo aumentato (33% e 20% rispettivamente) e possibilità di un film più resistente rispetto allo standard, progettati per applicazioni molto impegnative come pacchi pesanti, cartone di scarsa qualità o ambienti polverosi. Aderiscono estremamente bene al cartone.",
@@ -1468,6 +1468,68 @@
           "temperature": "Temperatura di esercizio dopo l'applicazione"
         },
         "tech_spec": true,
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Test della qualità prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri BOPP"
+        }
+      },
+      "bopp-paska-tamper-evident": {
+        "name": "Nastro BOPP Tamper Evident",
+        "tagline": "Nastro di sicurezza con effetto VOID: una volta rimosso lascia un avviso visibile che non può essere eliminato senza lasciare traccia.",
+        "category_slug": "bopp-pasky",
+        "category_title": "Nastri BOPP",
+        "benefits": [
+          {
+            "title": "Effetto VOID alla rimozione",
+            "text": "Una volta rimosso lascia sull’imballo un avviso VOID / OPEN / FRAUD praticamente impossibile da eliminare."
+          },
+          {
+            "title": "Aspetto neutro",
+            "text": "Sembra un nastro da imballaggio comune finché qualcuno non lo rimuove senza autorizzazione."
+          },
+          {
+            "title": "Cartone e film stretch",
+            "text": "Adatto a tutti i tipi di cartone e film stretch, disponibile in vari colori e con stampa personalizzata."
+          }
+        ],
+        "uses": [
+          "Protezione delle spedizioni contro l’apertura non autorizzata",
+          "E-commerce e pacchi di valore",
+          "Spedizione e logistica di magazzino",
+          "Stampa con logo e informazioni aziendali"
+        ],
+        "params_values": {
+          "carrier": "Film BOPP",
+          "thickness": "45 µm",
+          "adhesive": "Sicurezza (VOID)",
+          "adhesion": "3,5 N/25 mm",
+          "temperature": "−5 a +60 °C",
+          "strength": "40 N/25 mm"
+        },
+        "spec_pills": [
+          "Film BOPP",
+          "Sicurezza (VOID)",
+          "−5 a +60 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Supporto / materiale",
+          "thickness": "Spessore",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Adesione (acciaio)",
+          "temperature": "Resistenza alla temperatura",
+          "strength": "Resistenza alla trazione"
+        },
+        "tech_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
           "tailor_link": "Voglio un campione gratuito",

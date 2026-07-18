@@ -121,9 +121,9 @@
       "card3_text": "Dank moderner Technologie können Recyclinganlagen unsere Bänder leicht von Kartons trennen. Ihre Kunden können verwendete Kartons bedenkenlos in die Papiertonne werfen."
     },
     "benefits": {
-      "security_badge": "Sicherheit",
-      "security_title": "TAMPER EVIDENT-Klebeband – Manipulation sichtbar!",
-      "security_text": "Dieses Sicherheitsband wirkt neutral, hinterlässt beim Abziehen jedoch eine praktisch nicht entfernbare Warnung auf dem Karton. Geeignet für alle Kartonarten und Stretchfolien, in verschiedenen Farben und mit Bedruckung.",
+      "eco_badge": "Nachhaltigkeit",
+      "eco_title": "ECO+-Bänder – Regenerat ohne Kompromisse bei der Leistung",
+      "eco_text": "Die ECO+-Serie verbindet Verpackung mit regeneriertem BOPP-Anteil (50 %, 80 % oder 100 %) und derselben Festigkeit wie Standardbänder. Erhältlich als Akryl oder HOT MELT, neutral oder mit Firmenbedruckung.",
       "glue_badge": "Extreme Klebkraft",
       "glue_title": "EXTRA GLUE+ (Akryl) und TACK+ (HOT MELT)",
       "glue_text": "Bänder mit erhöhter Klebstoffschicht (33 % bzw. 20 %) und optional stärkerer Folie für anspruchsvolle Anwendungen wie schwere Pakete, minderwertigen Karton oder staubige Umgebungen. Haften extrem fest auf Karton.",
@@ -1468,6 +1468,68 @@
           "temperature": "Betriebstemperatur nach dem Aufkleben"
         },
         "tech_spec": true,
+        "ctas": {
+          "hero": "Kalkulation mit Bedruckung",
+          "tailor_link": "Ich möchte ein kostenloses Muster",
+          "tailor_bullets": [
+            "Wählbare Breite und Rollenlänge",
+            "Grundfarbe und Anzahl der Druckfarben",
+            "Qualitätsprüfung vor der Bestellung"
+          ],
+          "bottom": "Kostenloses Muster oder Kalkulation",
+          "back_category": "Zurück zu BOPP-Klebebänder"
+        }
+      },
+      "bopp-paska-tamper-evident": {
+        "name": "BOPP-Klebeband Tamper Evident",
+        "tagline": "Sicherheitsband mit VOID-Effekt – beim Abziehen hinterlässt es einen sichtbaren Hinweis, der nicht spurlos entfernt werden kann.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP-Klebebänder",
+        "benefits": [
+          {
+            "title": "VOID-Effekt beim Abziehen",
+            "text": "Beim Abziehen hinterlässt es einen VOID-/OPEN-/FRAUD-Hinweis auf dem Karton, der praktisch nicht entfernt werden kann."
+          },
+          {
+            "title": "Neutrales Erscheinungsbild",
+            "text": "Es wirkt wie ein gewöhnliches Klebeband, bis es unbefugt abgezogen wird."
+          },
+          {
+            "title": "Karton und Stretchfolie",
+            "text": "Geeignet für alle Kartonarten und Stretchfolien, in verschiedenen Farben und mit Bedruckung erhältlich."
+          }
+        ],
+        "uses": [
+          "Sicherung von Sendungen gegen unbefugtes Öffnen",
+          "E-Commerce und wertvolle Pakete",
+          "Versand und Lagerlogistik",
+          "Bedruckung mit Firmenlogo und Informationen"
+        ],
+        "params_values": {
+          "carrier": "BOPP-Folie",
+          "thickness": "45 µm",
+          "adhesive": "Sicherheit (VOID)",
+          "adhesion": "3,5 N/25 mm",
+          "temperature": "−5 bis +60 °C",
+          "strength": "40 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP-Folie",
+          "Sicherheit (VOID)",
+          "−5 bis +60 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Träger / Material",
+          "thickness": "Dicke",
+          "adhesive": "Klebstofftyp",
+          "adhesion": "Haftung (Stahl)",
+          "temperature": "Temperaturbeständigkeit",
+          "strength": "Zugfestigkeit"
+        },
+        "tech_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",

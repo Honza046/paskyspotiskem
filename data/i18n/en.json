@@ -121,9 +121,9 @@
       "card3_text": "Thanks to advanced technology, modern recycling lines can easily separate our tapes from cardboard boxes. Your customers can dispose of used boxes directly in the paper recycling bin without concern."
     },
     "benefits": {
-      "security_badge": "Security",
-      "security_title": "TAMPER EVIDENT tape, tampering is obvious!",
-      "security_text": "This security tape looks neutral, but when removed it leaves a warning on the box that is virtually impossible to eliminate. Suitable for all types of cardboard and stretch film, available in various colours and with custom printing.",
+      "eco_badge": "Sustainability",
+      "eco_title": "ECO+ tapes – regenerated material without compromising performance",
+      "eco_text": "The ECO+ range combines packaging with regenerated BOPP content (50%, 80% or 100%) and the same strength as standard tapes. Available as Akryl or HOT MELT, plain or with custom printing.",
       "glue_badge": "Extreme adhesion",
       "glue_title": "EXTRA GLUE+ (Akryl) and TACK+ (HOT MELT)",
       "glue_text": "Tapes with an increased adhesive layer (33% and 20% respectively) and the option of a stronger film than standard, designed for very demanding applications such as heavy parcels, poor-quality cardboard or dusty environments. They bond extremely firmly to cardboard.",
@@ -1468,6 +1468,68 @@
           "temperature": "Operating temperature after application"
         },
         "tech_spec": true,
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Quality testing before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to BOPP tapes"
+        }
+      },
+      "bopp-paska-tamper-evident": {
+        "name": "BOPP tape Tamper Evident",
+        "tagline": "Security tape with a VOID effect – when peeled off it leaves a visible warning that cannot be removed without a trace.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP tapes",
+        "benefits": [
+          {
+            "title": "VOID effect on removal",
+            "text": "When removed it leaves a VOID / OPEN / FRAUD warning on the box that is virtually impossible to eliminate."
+          },
+          {
+            "title": "Neutral appearance",
+            "text": "It looks like ordinary packing tape until someone peels it off without authorization."
+          },
+          {
+            "title": "Cardboard and stretch film",
+            "text": "Suitable for all types of cardboard and stretch film, available in various colours and with custom printing."
+          }
+        ],
+        "uses": [
+          "Securing shipments against unauthorized opening",
+          "E-commerce and valuable parcels",
+          "Dispatch and warehouse logistics",
+          "Printing with company logos and information"
+        ],
+        "params_values": {
+          "carrier": "BOPP film",
+          "thickness": "45 µm",
+          "adhesive": "Security (VOID)",
+          "adhesion": "3,5 N/25 mm",
+          "temperature": "−5 to +60 °C",
+          "strength": "40 N/25 mm"
+        },
+        "spec_pills": [
+          "BOPP film",
+          "Security (VOID)",
+          "−5 to +60 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Carrier / material",
+          "thickness": "Thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesion (steel)",
+          "temperature": "Temperature resistance",
+          "strength": "Tensile strength"
+        },
+        "tech_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
