@@ -26,6 +26,7 @@
     align-items: center;
     gap: 5rem;
     padding: 0 2.5rem;
+    overflow: visible;
 }
 
 .logo-carousel__item {
@@ -36,9 +37,21 @@
     flex-shrink: 0;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+    transform-origin: center center;
+    transition: transform 0.28s cubic-bezier(0.34, 1.25, 0.64, 1);
 }
 
-.logo-carousel__item:not(.logo-carousel__item--wordmark):not(.logo-carousel__item--kohinoor) img:not(.logo-carousel__mascot) {
+/* Unified pop for every partner logo */
+.logo-carousel__item:hover,
+.logo-carousel__item:focus-within {
+    z-index: 20;
+    transform: scale(1.08);
+}
+
+.logo-carousel__item:not(.logo-carousel__item--wordmark):not(.logo-carousel__item--kohinoor):not(.logo-carousel__item--tescoma):not(.logo-carousel__item--curaprox):not(.logo-carousel__item--notino):not(.logo-carousel__item--alza) img:not(.logo-carousel__mascot) {
     display: block;
     width: 9.5rem;
     height: 3.5rem;
@@ -51,14 +64,106 @@
     border: 0;
 }
 
-.logo-carousel__item--alza {
-    position: relative;
-    overflow: visible;
-    z-index: 1;
+/* Tescoma – grey badge while scrolling; color + pop on hover */
+.logo-carousel__item--tescoma img {
+    display: block;
+    width: 9.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+    object-position: center;
+    outline: none;
+    border: 0;
+    filter: grayscale(100%);
+    opacity: 0.78;
+    transition: filter 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
 }
 
-.logo-carousel__item--alza:hover {
-    z-index: 20;
+.logo-carousel__item--tescoma:hover img {
+    filter: none;
+    opacity: 1;
+}
+
+/* Curaprox – grey badge while scrolling; color + pop on hover */
+.logo-carousel__item--curaprox img {
+    display: block;
+    width: 9.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+    object-position: center;
+    outline: none;
+    border: 0;
+    filter: grayscale(100%);
+    opacity: 0.78;
+    transition: filter 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+}
+
+.logo-carousel__item--curaprox:hover img {
+    filter: none;
+    opacity: 1;
+}
+
+/* Notino – muted grey badge idle; black + white on hover */
+.logo-carousel__item--notino .logo-carousel__notino-idle,
+.logo-carousel__item--notino .logo-carousel__notino-hover {
+    display: block;
+    width: 9.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+    object-position: center;
+    outline: none;
+    border: 0;
+    transition: opacity 0.25s ease;
+}
+
+.logo-carousel__item--notino .logo-carousel__notino-idle {
+    filter: none;
+    opacity: 0.78;
+}
+
+.logo-carousel__item--notino .logo-carousel__notino-hover {
+    display: none;
+    filter: none;
+    opacity: 1;
+}
+
+.logo-carousel__item--notino:hover .logo-carousel__notino-idle {
+    display: none;
+}
+
+.logo-carousel__item--notino:hover .logo-carousel__notino-hover {
+    display: block;
+}
+
+/* Alza idle: carousel grey wordmark + slightly lighter "a"; brand colors on hover */
+.logo-carousel__item--alza .logo-carousel__alza-idle,
+.logo-carousel__item--alza .logo-carousel__alza-brand {
+    display: block;
+    width: 9.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+    object-position: center;
+    outline: none;
+    border: 0;
+    transition: opacity 0.25s ease;
+}
+
+.logo-carousel__item--alza .logo-carousel__alza-idle {
+    filter: none;
+    opacity: 0.78;
+}
+
+.logo-carousel__item--alza .logo-carousel__alza-brand {
+    display: none;
+    filter: none;
+    opacity: 1;
+}
+
+.logo-carousel__item--alza:hover .logo-carousel__alza-idle {
+    display: none;
+}
+
+.logo-carousel__item--alza:hover .logo-carousel__alza-brand {
+    display: block;
 }
 
 .logo-carousel__mascot {
@@ -85,16 +190,9 @@
     transform: translateY(22%);
 }
 
-.logo-carousel__item--alza:hover img:not(.logo-carousel__mascot) {
+.logo-carousel__item:not(.logo-carousel__item--kohinoor):not(.logo-carousel__item--tescoma):not(.logo-carousel__item--curaprox):not(.logo-carousel__item--notino):not(.logo-carousel__item--alza):hover img:not(.logo-carousel__mascot) {
     filter: grayscale(0%);
     opacity: 1;
-    transform: none;
-}
-
-.logo-carousel__item:not(.logo-carousel__item--kohinoor):hover img:not(.logo-carousel__mascot) {
-    filter: grayscale(0%);
-    opacity: 1;
-    transform: scale(1.05);
 }
 
 .logo-carousel__item--wordmark {
@@ -120,7 +218,6 @@
 .logo-carousel__item--wordmark:hover img:not(.logo-carousel__mascot) {
     filter: grayscale(0%);
     opacity: 1;
-    transform: scale(1.05);
 }
 
 .logo-carousel__wordmark {
@@ -220,7 +317,6 @@
 .logo-carousel__item--kohinoor:hover .logo-carousel__kohinoor-light {
     filter: grayscale(0%);
     opacity: 1;
-    transform: scale(1.05);
 }
 
 .dark .logo-carousel__item--kohinoor .logo-carousel__kohinoor-light {
@@ -236,26 +332,59 @@
 .dark .logo-carousel__item--kohinoor:hover .logo-carousel__kohinoor-dark {
     filter: none;
     opacity: 1;
-    transform: scale(1.05);
 }
 
 /* Dark mode – same flat grey for every logo; full brand color only on hover */
-.dark .logo-carousel__item:not(.logo-carousel__item--wordmark):not(.logo-carousel__item--kohinoor) img:not(.logo-carousel__mascot),
+.dark .logo-carousel__item:not(.logo-carousel__item--wordmark):not(.logo-carousel__item--kohinoor):not(.logo-carousel__item--tescoma):not(.logo-carousel__item--curaprox):not(.logo-carousel__item--notino):not(.logo-carousel__item--alza) img:not(.logo-carousel__mascot),
 .dark .logo-carousel__item--wordmark img:not(.logo-carousel__mascot):not(.logo-carousel__gws-dark) {
     filter: brightness(0) invert(0.65);
     opacity: 0.72;
     mix-blend-mode: normal;
 }
 
-.dark .logo-carousel__item:not(.logo-carousel__item--kohinoor):hover img:not(.logo-carousel__mascot) {
+.dark .logo-carousel__item--tescoma img,
+.dark .logo-carousel__item--curaprox img {
+    /* keep rectangle + readable light text; don't flatten with brightness(0) */
+    filter: grayscale(100%) brightness(1.15);
+    opacity: 0.8;
+    mix-blend-mode: normal;
+}
+
+.dark .logo-carousel__item--notino .logo-carousel__notino-idle {
+    filter: none;
+    opacity: 0.72;
+    mix-blend-mode: normal;
+}
+
+/* Alza idle asset already has carousel grey + lighter "a" — no filter */
+.dark .logo-carousel__item--alza .logo-carousel__alza-idle {
+    filter: none;
+    opacity: 0.72;
+    mix-blend-mode: normal;
+}
+
+.dark .logo-carousel__item--tescoma:hover img,
+.dark .logo-carousel__item--curaprox:hover img {
+    filter: none;
+    opacity: 1;
+}
+
+.dark .logo-carousel__item--notino:hover .logo-carousel__notino-hover {
+    filter: none;
+    opacity: 1;
+}
+
+.dark .logo-carousel__item:not(.logo-carousel__item--kohinoor):not(.logo-carousel__item--tescoma):not(.logo-carousel__item--curaprox):not(.logo-carousel__item--notino):not(.logo-carousel__item--alza):hover img:not(.logo-carousel__mascot) {
     filter: none;
     mix-blend-mode: normal;
     opacity: 1;
-    transform: scale(1.05);
 }
 
-.dark .logo-carousel__item--alza:hover img:not(.logo-carousel__mascot) {
-    transform: none;
+/* Alza hover: full brand colors (white "a" on blue square) */
+.dark .logo-carousel__item--alza:hover .logo-carousel__alza-brand {
+    filter: none;
+    mix-blend-mode: normal;
+    opacity: 1;
 }
 
 .dark .logo-carousel__wordmark {
@@ -286,14 +415,12 @@
     filter: none;
     mix-blend-mode: normal;
     opacity: 1;
-    transform: scale(1.05);
 }
 
 .dark .logo-carousel__item--gws:hover .logo-carousel__gws-light {
     filter: brightness(1.5) saturate(1.08);
     mix-blend-mode: normal;
     opacity: 1;
-    transform: scale(1.05);
 }
 
 .dark .logo-carousel__item--gws:hover .logo-carousel__wordmark--gws {
@@ -303,6 +430,13 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+    .logo-carousel__item,
+    .logo-carousel__item:hover,
+    .logo-carousel__item:focus-within {
+        transform: none;
+        transition: none;
+    }
+
     .logo-carousel__track {
         animation: none;
         flex-wrap: wrap;
