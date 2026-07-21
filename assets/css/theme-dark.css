@@ -378,9 +378,10 @@
     color: #fcd34d !important;
 }
 
-/* Benefits badges (#vyhody – Tamper / Extra Glue) */
+/* Benefits badges (#vyhody – ECO+ / Extra Glue) */
 .dark #vyhody span.border-red-200,
-.dark #vyhody span.border-orange-200 {
+.dark #vyhody span.border-orange-200,
+.dark #vyhody span.border-emerald-200 {
     border-color: transparent !important;
 }
 
@@ -392,12 +393,29 @@
     background-color: rgb(249 115 22 / 0.22) !important;
 }
 
+.dark #vyhody span.border-emerald-200 {
+    background-color: rgb(16 185 129 / 0.18) !important;
+}
+
 .dark #vyhody .text-red-700 {
     color: #fca5a5 !important;
 }
 
 .dark #vyhody .text-orange-700 {
     color: #fdba74 !important;
+}
+
+.dark #vyhody .text-emerald-700 {
+    color: #6ee7b7 !important;
+}
+
+.dark #vyhody a.text-emerald-700 {
+    color: #34d399 !important;
+}
+
+.dark #vyhody a.text-emerald-700:hover,
+.dark #vyhody a.hover\:text-emerald-800:hover {
+    color: #6ee7b7 !important;
 }
 
 .dark #vyhody strong.text-slate-800 {
