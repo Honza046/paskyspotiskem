@@ -208,6 +208,7 @@ TECH_SPEC_PARAMS = {
         "Tloušťka lepidla": "21 µm",
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "−10 až +60 °C",
+        "Minimální množství": "od 360 ks",
     },
     "BOPP páska HOT MELT": {
         "Nosič": "BOPP",
@@ -216,6 +217,7 @@ TECH_SPEC_PARAMS = {
         "Tloušťka lepidla": "18 µm",
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "0 až +50 °C",
+        "Minimální množství": "od 504 ks",
     },
     "BOPP páska TACK+": {
         "Nosič": "BOPP",
@@ -224,6 +226,7 @@ TECH_SPEC_PARAMS = {
         "Tloušťka lepidla": "18 µm",
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "0 až +50 °C",
+        "Minimální množství": "od 504 ks",
     },
     "BOPP páska EXTRA GLUE+": {
         "Nosič": "BOPP",
@@ -232,6 +235,7 @@ TECH_SPEC_PARAMS = {
         "Tloušťka lepidla": "28 µm",
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "−10 až +60 °C",
+        "Minimální množství": "od 360 ks",
     },
     "Udržitelná páska ECO+ 50": {
         "Nosič": "BOPP",
@@ -240,6 +244,7 @@ TECH_SPEC_PARAMS = {
         "Tloušťka lepidla": "21 µm (Akryl) / 18 µm (HOT MELT)",
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "0 až +60 °C",
+        "Minimální množství": "Akryl od 360 ks / HOT MELT od 504 ks",
     },
     "Udržitelná páska ECO+ 80": {
         "Nosič": "BOPP",
@@ -248,6 +253,7 @@ TECH_SPEC_PARAMS = {
         "Tloušťka lepidla": "21 µm (Akryl) / 18 µm (HOT MELT)",
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "0 až +60 °C",
+        "Minimální množství": "Akryl od 360 ks / HOT MELT od 504 ks",
     },
     "Udržitelná páska ECO+ 100": {
         "Nosič": "BOPP",
@@ -256,6 +262,7 @@ TECH_SPEC_PARAMS = {
         "Tloušťka lepidla": "21 µm (Akryl) / 18 µm (HOT MELT)",
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "0 až +60 °C",
+        "Minimální množství": "Akryl od 360 ks / HOT MELT od 504 ks",
     },
 }
 
@@ -266,6 +273,7 @@ _ACRYL_LOW_NOISE = {
     "Tloušťka lepidla": "21 µm",
     "Skladovací a aplikační teplota": "14–28 °C",
     "Provozní teplota po nalepení": "−10 až +60 °C",
+    "Minimální množství": "od 360 ks",
 }
 _ACRYL_NOISY = {
     "Nosič": "BOPP",
@@ -274,6 +282,7 @@ _ACRYL_NOISY = {
     "Tloušťka lepidla": "21 µm",
     "Skladovací a aplikační teplota": "14–28 °C",
     "Provozní teplota po nalepení": "0 až +60 °C",
+    "Minimální množství": "od 360 ks",
 }
 _HOT_MELT = {
     "Nosič": "BOPP",
@@ -282,6 +291,7 @@ _HOT_MELT = {
     "Tloušťka lepidla": "18 µm",
     "Skladovací a aplikační teplota": "14–28 °C",
     "Provozní teplota po nalepení": "0 až +50 °C",
+    "Minimální množství": "od 504 ks",
 }
 
 TECH_VARIANT_LABELS = {
@@ -353,18 +363,7 @@ def product_tech_variant_labels(p):
 
 
 def product_min_qty_note(p):
-    """Optional note under tech specs about minimum order quantity."""
-    name = p["name"]
-    if name == "BOPP páska Akryl":
-        return "Minimální množství od 360 ks (Akryl)."
-    if name == "BOPP páska EXTRA GLUE+":
-        return "Minimální množství od 360 ks (Akryl)."
-    if name == "BOPP páska HOT MELT":
-        return "Minimální množství od 504 ks (HOT MELT)."
-    if name == "BOPP páska TACK+":
-        return "Minimální množství od 504 ks (HOT MELT)."
-    if name.startswith("Udržitelná páska ECO+"):
-        return "Dostupné jako Akryl i HOT MELT. Min. množství: Akryl od 360 ks, HOT MELT od 504 ks."
+    """Legacy footnote — qty now lives in the tech table row."""
     return ""
 
 

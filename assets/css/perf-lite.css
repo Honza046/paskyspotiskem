@@ -83,7 +83,7 @@ html.perf-lite .logo-carousel__viewport {
     padding: 0;
 }
 
-html.perf-lite .logo-carousel__item:not(.logo-carousel__item--wordmark):not(.logo-carousel__item--kohinoor):not(.logo-carousel__item--tescoma):not(.logo-carousel__item--curaprox):not(.logo-carousel__item--notino):not(.logo-carousel__item--alza) img:not(.logo-carousel__mascot),
+html.perf-lite .logo-carousel__item:not(.logo-carousel__item--wordmark):not(.logo-carousel__item--kohinoor):not(.logo-carousel__item--tescoma):not(.logo-carousel__item--curaprox):not(.logo-carousel__item--drmax):not(.logo-carousel__item--notino):not(.logo-carousel__item--alza) img:not(.logo-carousel__mascot),
 html.perf-lite .logo-carousel__item--wordmark img:not(.logo-carousel__mascot) {
     filter: none !important;
     opacity: 0.85 !important;
@@ -95,6 +95,7 @@ html.perf-lite .logo-carousel__item--kohinoor .logo-carousel__kohinoor-light,
 html.perf-lite .logo-carousel__item--kohinoor .logo-carousel__kohinoor-dark,
 html.perf-lite .logo-carousel__item--tescoma img,
 html.perf-lite .logo-carousel__item--curaprox img,
+html.perf-lite .logo-carousel__item--drmax img,
 html.perf-lite .logo-carousel__item--notino .logo-carousel__notino-idle,
 html.perf-lite .logo-carousel__item--notino .logo-carousel__notino-hover,
 html.perf-lite .logo-carousel__item--alza .logo-carousel__alza-idle,

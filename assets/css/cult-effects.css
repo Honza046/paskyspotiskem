@@ -2,6 +2,24 @@
  * Cult UI–inspired effects (CSS ports for static HTML).
  */
 
+/* Hide native scrollbar; scrolling still works */
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
 /* --- Hero radial glow ---------------------------------------------------- */
 #uvod::before {
     content: "";
@@ -67,7 +85,149 @@
     mix-blend-mode: soft-light;
 }
 
-/* --- Section edge blur --------------------------------------------------- */
+/* --- Soft section joins (no hairline dividers) --------------------------- */
+main > section.border-t.border-slate-100,
+section.border-t.border-slate-100 {
+    border-top-width: 0 !important;
+    border-top-color: transparent !important;
+}
+
+/*
+ * K1-style edge fades (k1restaurant.vercel.app):
+ * tall solid wash — color → color/70 → transparent — h-28 / md:h-40.
+ * Real overlay divs (.section-edge-fade), not backdrop-filter blur.
+ */
+:root {
+    --page-bg: #f8fafc;
+    --elevated-bg: #ffffff;
+    --footer-bg: #0f172a;
+}
+
+.dark {
+    --page-bg: #0f172a;
+    --elevated-bg: #1e293b;
+    --footer-bg: #0f172a;
+}
+
+.section-edge-fade {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 7rem;
+}
+
+@media (min-width: 768px) {
+    .section-edge-fade {
+        height: 10rem;
+    }
+}
+
+.section-edge-fade--top {
+    top: 0;
+    background: linear-gradient(
+        to bottom,
+        var(--edge-fade-color, var(--page-bg)) 0%,
+        color-mix(in oklab, var(--edge-fade-color, var(--page-bg)) 70%, transparent) 50%,
+        transparent 100%
+    );
+}
+
+.section-edge-fade--bottom {
+    bottom: 0;
+    background: linear-gradient(
+        to top,
+        var(--edge-fade-color, var(--page-bg)) 0%,
+        color-mix(in oklab, var(--edge-fade-color, var(--page-bg)) 70%, transparent) 50%,
+        transparent 100%
+    );
+}
+
+@supports not (color: color-mix(in oklab, red, transparent)) {
+    .section-edge-fade--top {
+        background: linear-gradient(
+            to bottom,
+            var(--edge-fade-color, var(--page-bg)) 0%,
+            transparent 100%
+        );
+    }
+    .section-edge-fade--bottom {
+        background: linear-gradient(
+            to top,
+            var(--edge-fade-color, var(--page-bg)) 0%,
+            transparent 100%
+        );
+    }
+}
+
+/* Výhody → Poptávka (page → elevated) */
+#gf_1 > .section-edge-fade--top {
+    --edge-fade-color: var(--page-bg);
+    height: 3.25rem;
+}
+
+@media (min-width: 768px) {
+    #gf_1 > .section-edge-fade--top {
+        height: 4rem;
+    }
+}
+
+/* Dotazník (elevated) → Tým (page): keep fade below the form card */
+#gf_1 > .section-edge-fade--bottom {
+    --edge-fade-color: var(--page-bg);
+    height: 3.5rem;
+    bottom: -0.25rem;
+}
+
+@media (min-width: 768px) {
+    #gf_1 > .section-edge-fade--bottom {
+        height: 4.25rem;
+        bottom: -0.5rem;
+    }
+}
+
+#gf_1 #gform_wrapper_1 {
+    position: relative;
+    z-index: 11;
+}
+
+/* O nás (page) → Reference (elevated): short top wash only */
+#reference > .section-edge-fade--top {
+    --edge-fade-color: var(--page-bg);
+    height: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    #reference > .section-edge-fade--top {
+        height: 3rem;
+    }
+}
+
+#reference .mx-auto {
+    position: relative;
+    z-index: 11;
+}
+
+/* Reference (carousel) → Průvodce: keep fade below logos */
+#reference > .section-edge-fade--bottom {
+    --edge-fade-color: var(--page-bg);
+    height: 3rem;
+}
+
+@media (min-width: 768px) {
+    #reference > .section-edge-fade--bottom {
+        height: 3.75rem;
+    }
+}
+
+#reference .logo-carousel {
+    position: relative;
+    z-index: 11;
+    padding-bottom: 2.5rem;
+}
+
+/* --- Section edge blur (legacy for other pages) -------------------------- */
 .edge-blur-bottom {
     position: relative;
 }
@@ -78,21 +238,28 @@
     bottom: -1px;
     left: 0;
     right: 0;
-    height: 3rem;
+    height: 3.5rem;
     pointer-events: none;
-    background: linear-gradient(to bottom, transparent, rgba(248, 250, 252, 0.85));
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    mask-image: linear-gradient(to bottom, transparent, #000 70%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 70%);
+    z-index: 2;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.92));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    mask-image: linear-gradient(to bottom, transparent, #000 65%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 65%);
 }
 
-#reference.edge-blur-bottom::after {
-    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.9));
+/* Homepage uses K1 overlay divs — kill legacy ::after on those sections */
+#o-nas.edge-blur-bottom::after,
+#reference.edge-blur-bottom::after,
+#gf_1.edge-blur-bottom::after,
+#kontakt1.edge-blur-bottom::after,
+#vzorek-zdarma.edge-blur-bottom::after {
+    content: none;
+    display: none;
 }
 
 .dark .edge-blur-bottom::after {
-    background: linear-gradient(to bottom, transparent, rgba(15, 23, 42, 0.85));
+    background: linear-gradient(to bottom, transparent, rgba(15, 23, 42, 0.92));
 }
 
 /* Border beam disabled – too distracting for B2B UI; keep pill button styles only. */

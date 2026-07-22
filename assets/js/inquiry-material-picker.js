@@ -138,6 +138,9 @@
         if (typeof window.__toggleAcrylNoiseOption === 'function') {
             window.__toggleAcrylNoiseOption();
         }
+        if (typeof window.__syncQtyMinForAdhesive === 'function') {
+            window.__syncQtyMinForAdhesive();
+        }
     }
 
     function updateProductHint() {

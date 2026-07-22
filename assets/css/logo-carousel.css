@@ -51,7 +51,7 @@
     transform: scale(1.08);
 }
 
-.logo-carousel__item:not(.logo-carousel__item--wordmark):not(.logo-carousel__item--kohinoor):not(.logo-carousel__item--tescoma):not(.logo-carousel__item--curaprox):not(.logo-carousel__item--notino):not(.logo-carousel__item--alza) img:not(.logo-carousel__mascot) {
+.logo-carousel__item:not(.logo-carousel__item--wordmark):not(.logo-carousel__item--kohinoor):not(.logo-carousel__item--tescoma):not(.logo-carousel__item--curaprox):not(.logo-carousel__item--drmax):not(.logo-carousel__item--notino):not(.logo-carousel__item--alza) img:not(.logo-carousel__mascot) {
     display: block;
     width: 9.5rem;
     height: 3.5rem;
@@ -98,6 +98,25 @@
 }
 
 .logo-carousel__item--curaprox:hover img {
+    filter: none;
+    opacity: 1;
+}
+
+/* Dr.Max – pill badge; keep contrast in dark mode */
+.logo-carousel__item--drmax img {
+    display: block;
+    width: 9.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+    object-position: center;
+    outline: none;
+    border: 0;
+    filter: grayscale(100%);
+    opacity: 0.78;
+    transition: filter 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
+}
+
+.logo-carousel__item--drmax:hover img {
     filter: none;
     opacity: 1;
 }
@@ -190,7 +209,7 @@
     transform: translateY(22%);
 }
 
-.logo-carousel__item:not(.logo-carousel__item--kohinoor):not(.logo-carousel__item--tescoma):not(.logo-carousel__item--curaprox):not(.logo-carousel__item--notino):not(.logo-carousel__item--alza):hover img:not(.logo-carousel__mascot) {
+.logo-carousel__item:not(.logo-carousel__item--kohinoor):not(.logo-carousel__item--tescoma):not(.logo-carousel__item--curaprox):not(.logo-carousel__item--drmax):not(.logo-carousel__item--notino):not(.logo-carousel__item--alza):hover img:not(.logo-carousel__mascot) {
     filter: grayscale(0%);
     opacity: 1;
 }
@@ -335,7 +354,7 @@
 }
 
 /* Dark mode – same flat grey for every logo; full brand color only on hover */
-.dark .logo-carousel__item:not(.logo-carousel__item--wordmark):not(.logo-carousel__item--kohinoor):not(.logo-carousel__item--tescoma):not(.logo-carousel__item--curaprox):not(.logo-carousel__item--notino):not(.logo-carousel__item--alza) img:not(.logo-carousel__mascot),
+.dark .logo-carousel__item:not(.logo-carousel__item--wordmark):not(.logo-carousel__item--kohinoor):not(.logo-carousel__item--tescoma):not(.logo-carousel__item--curaprox):not(.logo-carousel__item--drmax):not(.logo-carousel__item--notino):not(.logo-carousel__item--alza) img:not(.logo-carousel__mascot),
 .dark .logo-carousel__item--wordmark img:not(.logo-carousel__mascot):not(.logo-carousel__gws-dark) {
     filter: brightness(0) invert(0.65);
     opacity: 0.72;
@@ -343,7 +362,8 @@
 }
 
 .dark .logo-carousel__item--tescoma img,
-.dark .logo-carousel__item--curaprox img {
+.dark .logo-carousel__item--curaprox img,
+.dark .logo-carousel__item--drmax img {
     /* keep rectangle + readable light text; don't flatten with brightness(0) */
     filter: grayscale(100%) brightness(1.15);
     opacity: 0.8;
@@ -364,7 +384,8 @@
 }
 
 .dark .logo-carousel__item--tescoma:hover img,
-.dark .logo-carousel__item--curaprox:hover img {
+.dark .logo-carousel__item--curaprox:hover img,
+.dark .logo-carousel__item--drmax:hover img {
     filter: none;
     opacity: 1;
 }
@@ -374,7 +395,7 @@
     opacity: 1;
 }
 
-.dark .logo-carousel__item:not(.logo-carousel__item--kohinoor):not(.logo-carousel__item--tescoma):not(.logo-carousel__item--curaprox):not(.logo-carousel__item--notino):not(.logo-carousel__item--alza):hover img:not(.logo-carousel__mascot) {
+.dark .logo-carousel__item:not(.logo-carousel__item--kohinoor):not(.logo-carousel__item--tescoma):not(.logo-carousel__item--curaprox):not(.logo-carousel__item--drmax):not(.logo-carousel__item--notino):not(.logo-carousel__item--alza):hover img:not(.logo-carousel__mascot) {
     filter: none;
     mix-blend-mode: normal;
     opacity: 1;

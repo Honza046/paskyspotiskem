@@ -251,6 +251,7 @@ TECH_SPEC_PARAM_FIELD_KEYS = [
     ("adhesion", "Tloušťka lepidla"),
     ("strength", "Skladovací a aplikační teplota"),
     ("temperature", "Provozní teplota po nalepení"),
+    ("min_qty", "Minimální množství"),
 ]
 
 TECH_SPEC_PARAM_LABELS = {
@@ -261,6 +262,7 @@ TECH_SPEC_PARAM_LABELS = {
         "adhesion": "Tloušťka lepidla",
         "strength": "Skladovací a aplikační teplota",
         "temperature": "Provozní teplota po nalepení",
+        "min_qty": "Minimální množství",
     },
     "en": {
         "carrier": "Carrier",
@@ -269,6 +271,7 @@ TECH_SPEC_PARAM_LABELS = {
         "adhesion": "Adhesive thickness",
         "strength": "Storage and application temperature",
         "temperature": "Operating temperature after application",
+        "min_qty": "Minimum quantity",
     },
     "de": {
         "carrier": "Träger",
@@ -277,6 +280,7 @@ TECH_SPEC_PARAM_LABELS = {
         "adhesion": "Klebstoffdicke",
         "strength": "Lager- und Verarbeitungstemperatur",
         "temperature": "Betriebstemperatur nach dem Aufkleben",
+        "min_qty": "Mindestmenge",
     },
     "it": {
         "carrier": "Supporto",
@@ -285,6 +289,7 @@ TECH_SPEC_PARAM_LABELS = {
         "adhesion": "Spessore dell'adesivo",
         "strength": "Temperatura di stoccaggio e applicazione",
         "temperature": "Temperatura di esercizio dopo l'applicazione",
+        "min_qty": "Quantità minima",
     },
 }
 
@@ -346,6 +351,21 @@ PARAM_VALUE_MAP: dict[str, dict[str, str]] = {
         "en": "21 µm (Akryl) / 18 µm (HOT MELT)",
         "de": "21 µm (Akryl) / 18 µm (HOT MELT)",
         "it": "21 µm (Akryl) / 18 µm (HOT MELT)",
+    },
+    "od 360 ks": {
+        "en": "from 360 pcs",
+        "de": "ab 360 Stk.",
+        "it": "da 360 pz",
+    },
+    "od 504 ks": {
+        "en": "from 504 pcs",
+        "de": "ab 504 Stk.",
+        "it": "da 504 pz",
+    },
+    "Akryl od 360 ks / HOT MELT od 504 ks": {
+        "en": "Akryl from 360 pcs / HOT MELT from 504 pcs",
+        "de": "Akryl ab 360 Stk. / HOT MELT ab 504 Stk.",
+        "it": "Akryl da 360 pz / HOT MELT da 504 pz",
     },
     "50 % regenerát": {
         "en": "50% regenerated",

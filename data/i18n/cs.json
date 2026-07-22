@@ -154,7 +154,7 @@
       "base_color": "Podkladová barva",
       "print_colors": "Počet barev k tisku",
       "hot_melt_hint": "Syntetický kaučuk",
-      "acryl_hint": "Nehlučná úprava",
+      "acryl_hint": "vodní disperze",
       "colors": {
         "bila": "bílá",
         "hneda": "hnědá",
@@ -170,9 +170,13 @@
       "width_label": "Šíře pásky v mm",
       "length_label": "Délka pásky v metrech",
       "quantity_label": "Poptávané množství v kusech",
-      "quantity_hint": "Zadejte číslo od 360 do 9999.",
+      "quantity_hint": "Zadejte číslo podle zvoleného lepidla.",
       "quantity_min": "Akryl od 360 ks, HOT MELT od 504 ks.",
-      "quantity_tip": "Akryl od 360 ks, HOT MELT od 504 ks. Od 360 ks doprava zdarma. Dodání cca 3–4 týdny.",
+      "quantity_min_acryl": "Minimální množství od 360 ks (Akryl).",
+      "quantity_min_hotmelt": "Minimální množství od 504 ks (HOT MELT).",
+      "quantity_tip": "Akryl od 360 ks, HOT MELT od 504 ks. Dodání cca 3–4 týdny.",
+      "quantity_tip_acryl": "Minimální množství od 360 ks (Akryl). Dodání cca 3–4 týdny.",
+      "quantity_tip_hotmelt": "Minimální množství od 504 ks (HOT MELT). Dodání cca 3–4 týdny.",
       "quantity_success": "🔥 Skvělá volba! Máte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
       "validation": {
         "material_required": "Vyberte materiál ze seznamu.",
@@ -661,7 +665,8 @@
           "adhesive": "Akryl (Low noise / Noisy) / HOT MELT",
           "adhesion": "21 µm (Akryl) / 18 µm (HOT MELT)",
           "strength": "14–28 °C",
-          "temperature": "0 až +60 °C"
+          "temperature": "0 až +60 °C",
+          "min_qty": "Akryl od 360 ks / HOT MELT od 504 ks"
         },
         "spec_pills": [
           "100 % regenerát",
@@ -675,7 +680,8 @@
             "adhesive": "Akryl (Low noise)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
-            "temperature": "−10 až +60 °C"
+            "temperature": "−10 až +60 °C",
+            "min_qty": "od 360 ks"
           },
           "noisy": {
             "carrier": "BOPP",
@@ -683,7 +689,8 @@
             "adhesive": "Akryl (Noisy)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
-            "temperature": "0 až +60 °C"
+            "temperature": "0 až +60 °C",
+            "min_qty": "od 360 ks"
           },
           "hot_melt": {
             "carrier": "BOPP",
@@ -691,7 +698,8 @@
             "adhesive": "HOT MELT",
             "adhesion": "18 µm",
             "strength": "14–28 °C",
-            "temperature": "0 až +50 °C"
+            "temperature": "0 až +50 °C",
+            "min_qty": "od 504 ks"
           }
         },
         "tech_variant_labels": {
@@ -699,14 +707,15 @@
           "noisy": "Noisy",
           "hot_melt": "HOT MELT"
         },
-        "min_qty_note": "Dostupné jako Akryl i HOT MELT. Min. množství: Akryl od 360 ks, HOT MELT od 504 ks.",
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič",
           "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
           "adhesion": "Tloušťka lepidla",
           "strength": "Skladovací a aplikační teplota",
-          "temperature": "Provozní teplota po nalepení"
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
         },
         "tech_spec": true,
         "ctas": {
@@ -752,7 +761,8 @@
           "adhesive": "Akryl (Low noise / Noisy) / HOT MELT",
           "adhesion": "21 µm (Akryl) / 18 µm (HOT MELT)",
           "strength": "14–28 °C",
-          "temperature": "0 až +60 °C"
+          "temperature": "0 až +60 °C",
+          "min_qty": "Akryl od 360 ks / HOT MELT od 504 ks"
         },
         "spec_pills": [
           "50 % regenerát",
@@ -766,7 +776,8 @@
             "adhesive": "Akryl (Low noise)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
-            "temperature": "−10 až +60 °C"
+            "temperature": "−10 až +60 °C",
+            "min_qty": "od 360 ks"
           },
           "noisy": {
             "carrier": "BOPP",
@@ -774,7 +785,8 @@
             "adhesive": "Akryl (Noisy)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
-            "temperature": "0 až +60 °C"
+            "temperature": "0 až +60 °C",
+            "min_qty": "od 360 ks"
           },
           "hot_melt": {
             "carrier": "BOPP",
@@ -782,7 +794,8 @@
             "adhesive": "HOT MELT",
             "adhesion": "18 µm",
             "strength": "14–28 °C",
-            "temperature": "0 až +50 °C"
+            "temperature": "0 až +50 °C",
+            "min_qty": "od 504 ks"
           }
         },
         "tech_variant_labels": {
@@ -790,14 +803,15 @@
           "noisy": "Noisy",
           "hot_melt": "HOT MELT"
         },
-        "min_qty_note": "Dostupné jako Akryl i HOT MELT. Min. množství: Akryl od 360 ks, HOT MELT od 504 ks.",
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič",
           "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
           "adhesion": "Tloušťka lepidla",
           "strength": "Skladovací a aplikační teplota",
-          "temperature": "Provozní teplota po nalepení"
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
         },
         "tech_spec": true,
         "ctas": {
@@ -843,7 +857,8 @@
           "adhesive": "Akryl (Low noise / Noisy) / HOT MELT",
           "adhesion": "21 µm (Akryl) / 18 µm (HOT MELT)",
           "strength": "14–28 °C",
-          "temperature": "0 až +60 °C"
+          "temperature": "0 až +60 °C",
+          "min_qty": "Akryl od 360 ks / HOT MELT od 504 ks"
         },
         "spec_pills": [
           "80 % regenerát",
@@ -857,7 +872,8 @@
             "adhesive": "Akryl (Low noise)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
-            "temperature": "−10 až +60 °C"
+            "temperature": "−10 až +60 °C",
+            "min_qty": "od 360 ks"
           },
           "noisy": {
             "carrier": "BOPP",
@@ -865,7 +881,8 @@
             "adhesive": "Akryl (Noisy)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
-            "temperature": "0 až +60 °C"
+            "temperature": "0 až +60 °C",
+            "min_qty": "od 360 ks"
           },
           "hot_melt": {
             "carrier": "BOPP",
@@ -873,7 +890,8 @@
             "adhesive": "HOT MELT",
             "adhesion": "18 µm",
             "strength": "14–28 °C",
-            "temperature": "0 až +50 °C"
+            "temperature": "0 až +50 °C",
+            "min_qty": "od 504 ks"
           }
         },
         "tech_variant_labels": {
@@ -881,14 +899,15 @@
           "noisy": "Noisy",
           "hot_melt": "HOT MELT"
         },
-        "min_qty_note": "Dostupné jako Akryl i HOT MELT. Min. množství: Akryl od 360 ks, HOT MELT od 504 ks.",
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič",
           "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
           "adhesion": "Tloušťka lepidla",
           "strength": "Skladovací a aplikační teplota",
-          "temperature": "Provozní teplota po nalepení"
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
         },
         "tech_spec": true,
         "ctas": {
@@ -1182,7 +1201,8 @@
           "adhesive": "Akryl (Low noise / Noisy)",
           "adhesion": "21 µm",
           "strength": "14–28 °C",
-          "temperature": "−10 až +60 °C"
+          "temperature": "−10 až +60 °C",
+          "min_qty": "od 360 ks"
         },
         "spec_pills": [
           "BOPP",
@@ -1196,7 +1216,8 @@
             "adhesive": "Akryl (Low noise)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
-            "temperature": "−10 až +60 °C"
+            "temperature": "−10 až +60 °C",
+            "min_qty": "od 360 ks"
           },
           "noisy": {
             "carrier": "BOPP",
@@ -1204,21 +1225,23 @@
             "adhesive": "Akryl (Noisy)",
             "adhesion": "21 µm",
             "strength": "14–28 °C",
-            "temperature": "0 až +60 °C"
+            "temperature": "0 až +60 °C",
+            "min_qty": "od 360 ks"
           }
         },
         "tech_variant_labels": {
           "low_noise": "Low noise",
           "noisy": "Noisy"
         },
-        "min_qty_note": "Minimální množství od 360 ks (Akryl).",
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič",
           "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
           "adhesion": "Tloušťka lepidla",
           "strength": "Skladovací a aplikační teplota",
-          "temperature": "Provozní teplota po nalepení"
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
         },
         "tech_spec": true,
         "ctas": {
@@ -1264,7 +1287,8 @@
           "adhesive": "Akryl",
           "adhesion": "28 µm",
           "strength": "14–28 °C",
-          "temperature": "−10 až +60 °C"
+          "temperature": "−10 až +60 °C",
+          "min_qty": "od 360 ks"
         },
         "spec_pills": [
           "BOPP",
@@ -1273,14 +1297,15 @@
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
-        "min_qty_note": "Minimální množství od 360 ks (Akryl).",
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič",
           "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
           "adhesion": "Tloušťka lepidla",
           "strength": "Skladovací a aplikační teplota",
-          "temperature": "Provozní teplota po nalepení"
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
         },
         "tech_spec": true,
         "ctas": {
@@ -1388,7 +1413,8 @@
           "adhesive": "HOT MELT",
           "adhesion": "18 µm",
           "strength": "14–28 °C",
-          "temperature": "0 až +50 °C"
+          "temperature": "0 až +50 °C",
+          "min_qty": "od 504 ks"
         },
         "spec_pills": [
           "BOPP",
@@ -1397,14 +1423,15 @@
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
-        "min_qty_note": "Minimální množství od 504 ks (HOT MELT).",
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič",
           "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
           "adhesion": "Tloušťka lepidla",
           "strength": "Skladovací a aplikační teplota",
-          "temperature": "Provozní teplota po nalepení"
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
         },
         "tech_spec": true,
         "ctas": {
@@ -1450,7 +1477,8 @@
           "adhesive": "HOT MELT (tack+)",
           "adhesion": "18 µm",
           "strength": "14–28 °C",
-          "temperature": "0 až +50 °C"
+          "temperature": "0 až +50 °C",
+          "min_qty": "od 504 ks"
         },
         "spec_pills": [
           "BOPP",
@@ -1459,14 +1487,15 @@
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
-        "min_qty_note": "Minimální množství od 504 ks (HOT MELT).",
+        "min_qty_note": "",
         "params_labels": {
           "carrier": "Nosič",
           "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
           "adhesion": "Tloušťka lepidla",
           "strength": "Skladovací a aplikační teplota",
-          "temperature": "Provozní teplota po nalepení"
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
         },
         "tech_spec": true,
         "ctas": {

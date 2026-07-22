@@ -318,7 +318,9 @@
         });
 
         var labels = prod.params_labels || {};
-        var paramKeys = ['carrier', 'thickness', 'adhesive', 'adhesion', 'temperature', 'strength'];
+        var paramKeys = prod.tech_spec
+            ? ['carrier', 'thickness', 'adhesive', 'adhesion', 'strength', 'temperature', 'min_qty']
+            : ['carrier', 'thickness', 'adhesive', 'adhesion', 'temperature', 'strength'];
         document.querySelectorAll('main table th').forEach(function (th, i) {
             if (labels[paramKeys[i]]) setText(th, labels[paramKeys[i]]);
         });
@@ -689,9 +691,9 @@
         if (periodLegend && formData.order_period_label) periodLegend.textContent = formData.order_period_label;
 
         setLabel('qty', formData.quantity_label, true);
-        var qtyMinHint = document.querySelector('#qty + p.text-xs');
+        var qtyMinHint = document.getElementById('qty-min-hint') || document.querySelector('#qty + p.text-xs');
         if (qtyMinHint) {
-            setText(qtyMinHint, formData.quantity_min || formData.quantity_hint || qtyMinHint.textContent);
+            setText(qtyMinHint, formData.quantity_min_hotmelt || formData.quantity_min || formData.quantity_hint || qtyMinHint.textContent);
         }
 
         var periodKeys = ['monthly', 'quarterly', 'biannual', 'annual'];
@@ -719,9 +721,20 @@
 
         window.__formQtyTexts = {
             tip: formData.quantity_tip || formData.quantity_min,
+            tipAcryl: formData.quantity_tip_acryl || formData.quantity_min_acryl || formData.quantity_tip,
+            tipHotMelt: formData.quantity_tip_hotmelt || formData.quantity_min_hotmelt || formData.quantity_tip,
+            minAcryl: formData.quantity_min_acryl || formData.quantity_min,
+            minHotMelt: formData.quantity_min_hotmelt || formData.quantity_min,
             success: formData.quantity_success,
-            invalid: formData.quantity_min || formData.quantity_tip
+            invalid: formData.quantity_min || formData.quantity_tip,
+            invalidAcryl: formData.quantity_min_acryl || formData.quantity_min,
+            invalidHotMelt: formData.quantity_min_hotmelt || formData.quantity_min
         };
+        if (typeof window.__syncQtyMinForAdhesive === 'function') {
+            window.__syncQtyMinForAdhesive();
+        } else if (typeof window.__updateQtyDiscountBadge === 'function') {
+            window.__updateQtyDiscountBadge();
+        }
         window.__formValidationTexts = formData.validation || {};
         window.__sampleNoteText = formData.sample_note_text || window.__sampleNoteText;
 

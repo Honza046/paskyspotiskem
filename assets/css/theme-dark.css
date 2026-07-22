@@ -177,41 +177,42 @@
 }
 
 /* Radio / option tiles – default (unselected) */
-.dark #gform_1 fieldset label > span,
-.dark #gform_1 .gform_page label.cursor-pointer > span {
+.dark #gform_1 fieldset label:has(> input[type="radio"]) > span,
+.dark #gform_1 .gform_page label.cursor-pointer:has(> input[type="radio"]) > span {
     background-color: #0f172a !important;
     border-color: #475569 !important;
     color: #cbd5e1 !important;
     box-shadow: none !important;
 }
 
-.dark #gform_1 fieldset label > span span.text-slate-500 {
+.dark #gform_1 fieldset label:has(> input[type="radio"]) > span span.text-slate-500 {
     color: #94a3b8 !important;
 }
 
 /* Radio / option tiles – selected */
-.dark #gform_1 fieldset label:has(> input.peer:checked) > span,
-.dark #gform_1 .gform_page label.cursor-pointer:has(> input.peer:checked) > span {
+.dark #gform_1 fieldset label:has(> input[type="radio"].peer:checked) > span,
+.dark #gform_1 .gform_page label.cursor-pointer:has(> input[type="radio"].peer:checked) > span {
     background-color: rgb(234 88 12 / 0.2) !important;
     border-color: #f97316 !important;
     color: #fdba74 !important;
     box-shadow: none !important;
 }
 
-.dark #gform_1 fieldset label:has(> input.peer:checked) > span span,
-.dark #gform_1 .gform_page label.cursor-pointer:has(> input.peer:checked) > span span {
+.dark #gform_1 fieldset label:has(> input[type="radio"].peer:checked) > span span,
+.dark #gform_1 .gform_page label.cursor-pointer:has(> input[type="radio"].peer:checked) > span span {
     color: rgb(251 146 60 / 0.92) !important;
 }
 
-/* Checkbox option rows (ACRYL noise, GDPR) */
+/* Checkbox option rows (ACRYL noise, GDPR) – keep glass chip, never paint inner text box */
 .dark #gform_1 label:has(> input[type="checkbox"]:checked) {
-    background-color: rgb(234 88 12 / 0.2) !important;
     border-color: #f97316 !important;
 }
 
-.dark #gform_1 label:has(> input[type="checkbox"]) {
-    background-color: #0f172a !important;
-    border-color: #475569 !important;
+.dark #gform_1 label:has(> input[type="checkbox"]) > span {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    color: inherit !important;
 }
 
 .dark #gform_1 label:has(> input[type="checkbox"]:checked) .text-slate-900 {
