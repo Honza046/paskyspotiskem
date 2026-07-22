@@ -313,7 +313,7 @@ def render_card(item: dict, featured_layout: bool = False) -> str:
         tags += f'<span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">{esc(industry)}</span>'
     tags += f'<span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">{esc(item["width"])}</span>'
     tags += f'<span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">{colors_label(item["colors"])}</span>'
-    tags += f'<span class="rounded-md bg-orange-50 px-2 py-0.5 text-xs font-semibold text-orange-700">{esc(adhesive)}</span>'
+    tags += f'<span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">{esc(adhesive)}</span>'
 
     client = item.get("client", "")
     client_html = f'<p class="text-xs font-semibold uppercase tracking-wide text-orange-600">{esc(client)}</p>' if client else ""
@@ -439,13 +439,15 @@ def render_main() -> str:
     <div id="gallery-results" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
 </section>
 
+<div class="gallery-to-cta-fade" aria-hidden="true"></div>
+
 <!-- CTA -->
-<section class="border-t border-slate-100 bg-white">
-    <div class="mx-auto max-w-7xl px-4 py-12 sm:py-16">
+<section id="gallery-cta" class="relative">
+    <div class="relative z-[1] mx-auto max-w-7xl px-4 py-12 sm:py-16">
         <div class="rounded-3xl bg-gradient-to-br from-orange-600 to-amber-500 px-6 py-10 text-center text-white shadow-xl shadow-orange-600/20 sm:px-12 sm:py-14">
             <h2 class="text-2xl font-extrabold tracking-tight sm:text-3xl">Máte vlastní logo?</h2>
             <p class="mx-auto mt-3 max-w-xl text-base text-orange-50">Připravíme vám nezávaznou kalkulaci a vzorek potisku. Stačí nám poslat logo a požadované parametry pásky.</p>
-            <a href="index.html#gf_1" class="mt-6 inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-3.5 text-sm font-bold text-orange-600 shadow-lg transition-all hover:scale-[1.02] hover:shadow-xl">
+            <a href="index.html#gf_1" class="gallery-cta__btn mt-6 inline-flex items-center gap-2 rounded-full px-8 py-3.5 text-sm font-bold shadow-lg transition-all hover:scale-[1.02] hover:shadow-xl">
                 Nezávazně poptat
                 <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
             </a>

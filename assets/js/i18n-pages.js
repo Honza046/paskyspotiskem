@@ -691,10 +691,6 @@
         if (periodLegend && formData.order_period_label) periodLegend.textContent = formData.order_period_label;
 
         setLabel('qty', formData.quantity_label, true);
-        var qtyMinHint = document.getElementById('qty-min-hint') || document.querySelector('#qty + p.text-xs');
-        if (qtyMinHint) {
-            setText(qtyMinHint, formData.quantity_min_hotmelt || formData.quantity_min || formData.quantity_hint || qtyMinHint.textContent);
-        }
 
         var periodKeys = ['monthly', 'quarterly', 'biannual', 'annual'];
         document.querySelectorAll('input[name="input_18"]').forEach(function (radio, i) {
