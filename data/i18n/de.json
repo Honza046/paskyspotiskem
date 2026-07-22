@@ -26,6 +26,7 @@
     "sortiment": "Sortiment",
     "references": "Referenzen",
     "contacts": "Kontakt",
+    "faq": "FAQ",
     "facebook": "Facebook",
     "instagram": "Instagram",
     "youtube": "YouTube"
@@ -252,7 +253,28 @@
       "title": "Unsicher bei der Auswahl? Wir senden Ihnen ein kostenloses Muster.",
       "text": "Wir wissen, dass die Qualität des Klebebands für reibungslose Logistik entscheidend ist. Füllen Sie die Anfrage aus, den Hinweis auf ein Testmuster ergänzen wir für Sie.",
       "cta": "Ich möchte ein Muster"
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Antworten vor der Bestellung",
+      "subtitle": "Häufige Fragen zu Druck, Lieferzeiten und Materialien. Unsicher? Schreiben Sie uns — wir helfen.",
+      "all_link": "Alle Fragen und Suche anzeigen →"
     }
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Fragen und Antworten",
+    "subtitle": "Finden Sie Antworten zu Druck, Terminen, Klebstoffen und Mustern. Filtern Sie nach Thema oder suchen Sie ein Stichwort.",
+    "search_label": "In Fragen suchen",
+    "search_placeholder": "Suchen… z. B. HOT MELT, Muster, Lieferzeit",
+    "filters_label": "Themenfilter",
+    "empty_title": "Keine Treffer",
+    "empty_text": "Versuchen Sie ein anderes Stichwort oder einen anderen Filter. Oder schreiben Sie uns — wir helfen.",
+    "empty_cta": "Nachricht schreiben →",
+    "contact_label": "Kontakt",
+    "cta_title": "Keine passende Antwort gefunden?",
+    "cta_text": "Schreiben Sie uns eine kurze Nachricht — wir melden uns mit einer Antwort oder Empfehlung zu Material und Druck.",
+    "cta_button": "Nachricht senden"
   },
   "gallery": {
     "ui": {

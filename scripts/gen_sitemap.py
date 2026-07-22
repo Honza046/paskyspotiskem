@@ -17,6 +17,7 @@ def collect_urls() -> list[tuple[str, str, str]]:
         ('/', 'weekly', '1.0'),
         ('/sortiment', 'weekly', '0.9'),
         ('/galerie', 'weekly', '0.8'),
+        ('/faq', 'monthly', '0.7'),
     ]
     sortiment_root = ROOT / 'sortiment'
     if sortiment_root.is_dir():

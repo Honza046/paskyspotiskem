@@ -26,6 +26,7 @@
     "sortiment": "Products",
     "references": "References",
     "contacts": "Contact",
+    "faq": "FAQ",
     "facebook": "Facebook",
     "instagram": "Instagram",
     "youtube": "YouTube"
@@ -252,7 +253,28 @@
       "title": "Not sure which tape to choose? We will send you a free sample.",
       "text": "We understand that tape quality is key to smooth logistics. Fill in the inquiry form and we will add the test sample note for you.",
       "cta": "I want a sample"
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "Answers before you order",
+      "subtitle": "Common questions about printing, lead times and materials. Not sure? Contact us — we will help.",
+      "all_link": "Browse all questions and search →"
     }
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Questions and answers",
+    "subtitle": "Find answers about printing, lead times, adhesives and samples. Filter by topic or search a keyword.",
+    "search_label": "Search questions",
+    "search_placeholder": "Search… e.g. HOT MELT, sample, lead time",
+    "filters_label": "Topic filter",
+    "empty_title": "No results",
+    "empty_text": "Try another keyword or filter. Or send us an inquiry — we will help.",
+    "empty_cta": "Write a message →",
+    "contact_label": "Contact",
+    "cta_title": "Didn’t find your answer?",
+    "cta_text": "Send us a short message — we will reply with an answer or a material and print recommendation.",
+    "cta_button": "Send message"
   },
   "gallery": {
     "ui": {

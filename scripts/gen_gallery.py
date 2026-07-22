@@ -268,7 +268,17 @@ ITEMS = [
 ]
 
 # Real client photos shown in "Reálné reference" (Bonami/Notino also in featured).
-REAL_REFERENCE_IDS = ["bonami", "just-nahrin", "notino", "vorsicht-glas", "alfain", "papir-fsc", "alfain-sklad", "fenske"]
+# Order mixes close-ups vs. warehouse scenes and spreads similar brands/colors.
+REAL_REFERENCE_IDS = [
+    "alfain-sklad",
+    "notino",
+    "papir-fsc",
+    "fenske",
+    "bonami",
+    "vorsicht-glas",
+    "just-nahrin",
+    "alfain",
+]
 
 FILTER_GROUPS = {
     "category": {

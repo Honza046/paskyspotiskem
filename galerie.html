@@ -94,7 +94,7 @@
                 <li><a href="/sortiment" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.sortiment">Sortiment</a></li>
                 <li><a href="/#reference" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.references">Reference</a></li>
                 <li><a href="/#kontakt1" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.contacts">Kontakty</a></li>
-                <li><a href="/#faq" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.faq">FAQ</a></li>
+                <li><a href="/faq" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.faq">FAQ</a></li>
                 
             </ul>
         </nav>
@@ -110,7 +110,7 @@
             <li><a href="/sortiment" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.sortiment">Sortiment</a></li>
             <li><a href="/#reference" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.references">Reference</a></li>
             <li><a href="/#kontakt1" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.contacts">Kontakty</a></li>
-                <li><a href="/#faq" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.faq">FAQ</a></li>
+                <li><a href="/faq" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.faq">FAQ</a></li>
             
         </ul>
     </nav>
@@ -289,9 +289,9 @@
         <h2 class="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">Reálné reference</h2>
     </div>
     <div id="gallery-references" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="bonami" data-category="jednobarevny" data-adhesive="acryl" data-industry="e-commerce" data-type="reference" data-featured="true" data-image="images/gallery/gallery-bonami.jpg" data-title="Pásky s logem Bonami" data-client="Bonami" data-width="48 mm" data-colors="1" data-adhesive-label="Akryl" data-industry-label="E-commerce" data-location="" data-description="Jednobarevný brand potisk na bílé BOPP pásce – logo a ilustrace nábytku pro e-commerce balení." data-graphic="false" data-graphic-style="security">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Pásky s logem Bonami">
-        <img src="images/gallery/gallery-bonami.jpg" alt="Pásky s logem Bonami" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="alfain-sklad" data-category="jednobarevny" data-adhesive="hot-melt" data-industry="logistika" data-type="reference" data-featured="false" data-image="images/gallery/gallery-alfain-sklad.jpg" data-title="ALFA IN páska ve skladu" data-client="ALFA IN" data-width="48 mm" data-colors="1" data-adhesive-label="HOT MELT" data-industry-label="Logistika" data-location="" data-description="Ruční balení na paletě s oranžovou páskou ALFA IN – potisk v praxi logistického provozu." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: ALFA IN páska ve skladu">
+        <img src="images/gallery/gallery-alfain-sklad.jpg" alt="ALFA IN páska ve skladu" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
         <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
             <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                 <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
@@ -301,26 +301,9 @@
         
     </button>
     <div class="p-4">
-        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">Bonami</p>
-        <h2 class="text-sm font-bold text-slate-900">Pásky s logem Bonami</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">E-commerce</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Akryl</span></div>
-    </div>
-</article>
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="just-nahrin" data-category="vicebarevny" data-adhesive="acryl" data-industry="e-commerce" data-type="reference" data-featured="false" data-image="images/gallery/gallery-just-nahrin.jpg" data-title="Pásky Just+ / nahrin" data-client="Just+ / nahrin" data-width="48 mm" data-colors="3" data-adhesive-label="Akryl" data-industry-label="E-commerce" data-location="" data-description="Vícebarevný potisk log a logistického textu včetně symbolu křehké – branding i instrukce pro příjemce." data-graphic="false" data-graphic-style="security">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Pásky Just+ / nahrin">
-        <img src="images/gallery/gallery-just-nahrin.jpg" alt="Pásky Just+ / nahrin" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
-        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
-            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
-                Zobrazit detail
-            </span>
-        </span>
-        
-    </button>
-    <div class="p-4">
-        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">Just+ / nahrin</p>
-        <h2 class="text-sm font-bold text-slate-900">Pásky Just+ / nahrin</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">E-commerce</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">3 barvy</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Akryl</span></div>
+        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">ALFA IN</p>
+        <h2 class="text-sm font-bold text-slate-900">ALFA IN páska ve skladu</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Logistika</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
     </div>
 </article>
         <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="notino" data-category="jednobarevny" data-adhesive="hot-melt" data-industry="e-commerce" data-type="reference" data-featured="true" data-image="images/gallery/gallery-notino.jpg" data-title="Pásky s logem Notino" data-client="Notino" data-width="48 mm" data-colors="1" data-adhesive-label="HOT MELT" data-industry-label="E-commerce" data-location="" data-description="Kontrastní bílý potisk loga na černé pásce – výrazný branding zásilek v beauty e-commerce." data-graphic="false" data-graphic-style="security">
@@ -340,40 +323,6 @@
         <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">E-commerce</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
     </div>
 </article>
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="vorsicht-glas" data-category="logisticke" data-adhesive="hot-melt" data-industry="logistika" data-type="reference" data-featured="false" data-image="images/gallery/gallery-vorsicht-glas.jpg" data-title="Výstražná páska Vorsicht Glas" data-client="" data-width="48 mm" data-colors="1" data-adhesive-label="HOT MELT" data-industry-label="Logistika" data-location="" data-description="Výstražný potisk „Vorsicht Glas!“ / „Do not drop“ na balicí pásce – ochrana křehkých zásilek při přepravě." data-graphic="false" data-graphic-style="security">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Výstražná páska Vorsicht Glas">
-        <img src="images/gallery/gallery-vorsicht-glas.jpg" alt="Výstražná páska Vorsicht Glas" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
-        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
-            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
-                Zobrazit detail
-            </span>
-        </span>
-        
-    </button>
-    <div class="p-4">
-        
-        <h2 class="text-sm font-bold text-slate-900">Výstražná páska Vorsicht Glas</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Logistika</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
-    </div>
-</article>
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="alfain" data-category="jednobarevny" data-adhesive="hot-melt" data-industry="logistika" data-type="reference" data-featured="false" data-image="images/gallery/gallery-alfain.jpg" data-title="Pásky s logem ALFA IN" data-client="ALFA IN" data-width="48 mm" data-colors="1" data-adhesive-label="HOT MELT" data-industry-label="Logistika" data-location="" data-description="Oranžová BOPP páska s bílým logem ALFA IN – branding zásilek přímo ve skladu." data-graphic="false" data-graphic-style="security">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Pásky s logem ALFA IN">
-        <img src="images/gallery/gallery-alfain.jpg" alt="Pásky s logem ALFA IN" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
-        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
-            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
-                Zobrazit detail
-            </span>
-        </span>
-        
-    </button>
-    <div class="p-4">
-        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">ALFA IN</p>
-        <h2 class="text-sm font-bold text-slate-900">Pásky s logem ALFA IN</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Logistika</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
-    </div>
-</article>
         <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="papir-fsc" data-category="jednobarevny" data-adhesive="acryl" data-industry="e-commerce" data-type="reference" data-featured="false" data-image="images/gallery/gallery-papir-fsc.jpg" data-title="Papírová páska FSC / 22 PAP" data-client="" data-width="48 mm" data-colors="1" data-adhesive-label="Akryl" data-industry-label="E-commerce" data-location="" data-description="Ekologická papírová páska s potiskem FSC a symbolem 22 PAP – udržitelné balení e-commerce zásilek." data-graphic="false" data-graphic-style="security">
     <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Papírová páska FSC / 22 PAP">
         <img src="images/gallery/gallery-papir-fsc.jpg" alt="Papírová páska FSC / 22 PAP" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
@@ -391,23 +340,6 @@
         <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">E-commerce</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Akryl</span></div>
     </div>
 </article>
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="alfain-sklad" data-category="jednobarevny" data-adhesive="hot-melt" data-industry="logistika" data-type="reference" data-featured="false" data-image="images/gallery/gallery-alfain-sklad.jpg" data-title="ALFA IN páska ve skladu" data-client="ALFA IN" data-width="48 mm" data-colors="1" data-adhesive-label="HOT MELT" data-industry-label="Logistika" data-location="" data-description="Ruční balení na paletě s oranžovou páskou ALFA IN – potisk v praxi logistického provozu." data-graphic="false" data-graphic-style="security">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: ALFA IN páska ve skladu">
-        <img src="images/gallery/gallery-alfain-sklad.jpg" alt="ALFA IN páska ve skladu" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
-        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
-            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
-                Zobrazit detail
-            </span>
-        </span>
-        
-    </button>
-    <div class="p-4">
-        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">ALFA IN</p>
-        <h2 class="text-sm font-bold text-slate-900">ALFA IN páska ve skladu</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Logistika</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
-    </div>
-</article>
         <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="fenske" data-category="vicebarevny" data-adhesive="acryl" data-industry="potraviny" data-type="reference" data-featured="false" data-image="images/gallery/gallery-fenske.jpg" data-title="Pásky s logem Fenske" data-client="Fenske" data-width="48 mm" data-colors="2" data-adhesive-label="Akryl" data-industry-label="Potraviny" data-location="" data-description="Dvoubarevný potisk FENSKE / Weine und Feinkost na balicí pásce – branding zásilek vína a delikates." data-graphic="false" data-graphic-style="security">
     <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Pásky s logem Fenske">
         <img src="images/gallery/gallery-fenske.jpg" alt="Pásky s logem Fenske" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
@@ -423,6 +355,74 @@
         <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">Fenske</p>
         <h2 class="text-sm font-bold text-slate-900">Pásky s logem Fenske</h2>
         <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Potraviny</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">2 barvy</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Akryl</span></div>
+    </div>
+</article>
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="bonami" data-category="jednobarevny" data-adhesive="acryl" data-industry="e-commerce" data-type="reference" data-featured="true" data-image="images/gallery/gallery-bonami.jpg" data-title="Pásky s logem Bonami" data-client="Bonami" data-width="48 mm" data-colors="1" data-adhesive-label="Akryl" data-industry-label="E-commerce" data-location="" data-description="Jednobarevný brand potisk na bílé BOPP pásce – logo a ilustrace nábytku pro e-commerce balení." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Pásky s logem Bonami">
+        <img src="images/gallery/gallery-bonami.jpg" alt="Pásky s logem Bonami" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
+            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
+                Zobrazit detail
+            </span>
+        </span>
+        
+    </button>
+    <div class="p-4">
+        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">Bonami</p>
+        <h2 class="text-sm font-bold text-slate-900">Pásky s logem Bonami</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">E-commerce</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Akryl</span></div>
+    </div>
+</article>
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="vorsicht-glas" data-category="logisticke" data-adhesive="hot-melt" data-industry="logistika" data-type="reference" data-featured="false" data-image="images/gallery/gallery-vorsicht-glas.jpg" data-title="Výstražná páska Vorsicht Glas" data-client="" data-width="48 mm" data-colors="1" data-adhesive-label="HOT MELT" data-industry-label="Logistika" data-location="" data-description="Výstražný potisk „Vorsicht Glas!“ / „Do not drop“ na balicí pásce – ochrana křehkých zásilek při přepravě." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Výstražná páska Vorsicht Glas">
+        <img src="images/gallery/gallery-vorsicht-glas.jpg" alt="Výstražná páska Vorsicht Glas" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
+            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
+                Zobrazit detail
+            </span>
+        </span>
+        
+    </button>
+    <div class="p-4">
+        
+        <h2 class="text-sm font-bold text-slate-900">Výstražná páska Vorsicht Glas</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Logistika</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
+    </div>
+</article>
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="just-nahrin" data-category="vicebarevny" data-adhesive="acryl" data-industry="e-commerce" data-type="reference" data-featured="false" data-image="images/gallery/gallery-just-nahrin.jpg" data-title="Pásky Just+ / nahrin" data-client="Just+ / nahrin" data-width="48 mm" data-colors="3" data-adhesive-label="Akryl" data-industry-label="E-commerce" data-location="" data-description="Vícebarevný potisk log a logistického textu včetně symbolu křehké – branding i instrukce pro příjemce." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Pásky Just+ / nahrin">
+        <img src="images/gallery/gallery-just-nahrin.jpg" alt="Pásky Just+ / nahrin" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
+            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
+                Zobrazit detail
+            </span>
+        </span>
+        
+    </button>
+    <div class="p-4">
+        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">Just+ / nahrin</p>
+        <h2 class="text-sm font-bold text-slate-900">Pásky Just+ / nahrin</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">E-commerce</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">3 barvy</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Akryl</span></div>
+    </div>
+</article>
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="alfain" data-category="jednobarevny" data-adhesive="hot-melt" data-industry="logistika" data-type="reference" data-featured="false" data-image="images/gallery/gallery-alfain.jpg" data-title="Pásky s logem ALFA IN" data-client="ALFA IN" data-width="48 mm" data-colors="1" data-adhesive-label="HOT MELT" data-industry-label="Logistika" data-location="" data-description="Oranžová BOPP páska s bílým logem ALFA IN – branding zásilek přímo ve skladu." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Pásky s logem ALFA IN">
+        <img src="images/gallery/gallery-alfain.jpg" alt="Pásky s logem ALFA IN" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
+            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
+                Zobrazit detail
+            </span>
+        </span>
+        
+    </button>
+    <div class="p-4">
+        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">ALFA IN</p>
+        <h2 class="text-sm font-bold text-slate-900">Pásky s logem ALFA IN</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Logistika</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
     </div>
 </article>
     </div>

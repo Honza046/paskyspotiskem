@@ -26,6 +26,7 @@
     "sortiment": "Sortiment",
     "references": "Reference",
     "contacts": "Kontakty",
+    "faq": "FAQ",
     "facebook": "Facebook",
     "instagram": "Instagram",
     "youtube": "YouTube"
@@ -252,7 +253,28 @@
       "title": "Nejste si jistí výběrem? Pošleme Vám vzorek zdarma.",
       "text": "Chápeme, že kvalita lepicí pásky je pro hladký chod Vaší logistiky klíčová. Vyplňte poptávku a poznámku o testovací vzorek doplníme za vás.",
       "cta": "Mám zájem o vzorek"
+    },
+    "faq": {
+      "label": "Časté dotazy",
+      "title": "Odpovědi před objednávkou",
+      "subtitle": "Nejčastější otázky k potisku, dodacím lhůtám a výběru materiálu. Pokud si nejste jistí, napište nám, poradíme.",
+      "all_link": "Zobrazit všechny otázky a vyhledávání →"
     }
+  },
+  "faq": {
+    "label": "Časté dotazy",
+    "title": "Otázky a odpovědi",
+    "subtitle": "Najděte odpověď na potisk, termíny, lepidla i vzorky. Filtrujte podle tématu nebo hledejte klíčové slovo.",
+    "search_label": "Hledat v otázkách",
+    "search_placeholder": "Hledat… např. HOT MELT, vzorek, dodací lhůta",
+    "filters_label": "Filtr témat",
+    "empty_title": "Nic jsme nenašli",
+    "empty_text": "Zkuste jiné klíčové slovo nebo vyberte jiný filtr. Případně nám napište — poradíme.",
+    "empty_cta": "Napsat zprávu →",
+    "contact_label": "Kontakt",
+    "cta_title": "Nenašli jste odpověď?",
+    "cta_text": "Napište nám krátkou zprávu — ozveme se s odpovědí nebo doporučením materiálu a potisku.",
+    "cta_button": "Odeslat zprávu"
   },
   "gallery": {
     "ui": {

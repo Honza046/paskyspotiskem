@@ -492,6 +492,7 @@ def build_cs() -> dict[str, Any]:
             "sortiment": "Sortiment",
             "references": "Reference",
             "contacts": "Kontakty",
+            "faq": "FAQ",
             "facebook": "Facebook",
             "instagram": "Instagram",
             "youtube": "YouTube",
@@ -715,6 +716,27 @@ def build_cs() -> dict[str, Any]:
                 "text": "Chápeme, že kvalita lepicí pásky je pro hladký chod Vaší logistiky klíčová. Vyplňte poptávku a poznámku o testovací vzorek doplníme za vás.",
                 "cta": "Mám zájem o vzorek",
             },
+            "faq": {
+                "label": "Časté dotazy",
+                "title": "Odpovědi před objednávkou",
+                "subtitle": "Nejčastější otázky k potisku, dodacím lhůtám a výběru materiálu. Pokud si nejste jistí, napište nám, poradíme.",
+                "all_link": "Zobrazit všechny otázky a vyhledávání →",
+            },
+        },
+        "faq": {
+            "label": "Časté dotazy",
+            "title": "Otázky a odpovědi",
+            "subtitle": "Najděte odpověď na potisk, termíny, lepidla i vzorky. Filtrujte podle tématu nebo hledejte klíčové slovo.",
+            "search_label": "Hledat v otázkách",
+            "search_placeholder": "Hledat… např. HOT MELT, vzorek, dodací lhůta",
+            "filters_label": "Filtr témat",
+            "empty_title": "Nic jsme nenašli",
+            "empty_text": "Zkuste jiné klíčové slovo nebo vyberte jiný filtr. Případně nám napište — poradíme.",
+            "empty_cta": "Napsat zprávu →",
+            "contact_label": "Kontakt",
+            "cta_title": "Nenašli jste odpověď?",
+            "cta_text": "Napište nám krátkou zprávu — ozveme se s odpovědí nebo doporučením materiálu a potisku.",
+            "cta_button": "Odeslat zprávu",
         },
         "gallery": {
             "ui": {
@@ -878,6 +900,7 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "sortiment": "Products",
             "references": "References",
             "contacts": "Contact",
+            "faq": "FAQ",
             "facebook": "Facebook",
             "instagram": "Instagram",
             "youtube": "YouTube",
@@ -1101,6 +1124,27 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "text": "We understand that tape quality is key to smooth logistics. Fill in the inquiry form and we will add the test sample note for you.",
                 "cta": "I want a sample",
             },
+            "faq": {
+                "label": "FAQ",
+                "title": "Answers before you order",
+                "subtitle": "Common questions about printing, lead times and materials. Not sure? Contact us — we will help.",
+                "all_link": "Browse all questions and search →",
+            },
+        },
+        "faq": {
+            "label": "FAQ",
+            "title": "Questions and answers",
+            "subtitle": "Find answers about printing, lead times, adhesives and samples. Filter by topic or search a keyword.",
+            "search_label": "Search questions",
+            "search_placeholder": "Search… e.g. HOT MELT, sample, lead time",
+            "filters_label": "Topic filter",
+            "empty_title": "No results",
+            "empty_text": "Try another keyword or filter. Or send us an inquiry — we will help.",
+            "empty_cta": "Write a message →",
+            "contact_label": "Contact",
+            "cta_title": "Didn’t find your answer?",
+            "cta_text": "Send us a short message — we will reply with an answer or a material and print recommendation.",
+            "cta_button": "Send message",
         },
         "gallery": {
             "ui": {
@@ -1263,6 +1307,7 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "sortiment": "Sortiment",
             "references": "Referenzen",
             "contacts": "Kontakt",
+            "faq": "FAQ",
             "facebook": "Facebook",
             "instagram": "Instagram",
             "youtube": "YouTube",
@@ -1486,6 +1531,27 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "text": "Wir wissen, dass die Qualität des Klebebands für reibungslose Logistik entscheidend ist. Füllen Sie die Anfrage aus, den Hinweis auf ein Testmuster ergänzen wir für Sie.",
                 "cta": "Ich möchte ein Muster",
             },
+            "faq": {
+                "label": "FAQ",
+                "title": "Antworten vor der Bestellung",
+                "subtitle": "Häufige Fragen zu Druck, Lieferzeiten und Materialien. Unsicher? Schreiben Sie uns — wir helfen.",
+                "all_link": "Alle Fragen und Suche anzeigen →",
+            },
+        },
+        "faq": {
+            "label": "FAQ",
+            "title": "Fragen und Antworten",
+            "subtitle": "Finden Sie Antworten zu Druck, Terminen, Klebstoffen und Mustern. Filtern Sie nach Thema oder suchen Sie ein Stichwort.",
+            "search_label": "In Fragen suchen",
+            "search_placeholder": "Suchen… z. B. HOT MELT, Muster, Lieferzeit",
+            "filters_label": "Themenfilter",
+            "empty_title": "Keine Treffer",
+            "empty_text": "Versuchen Sie ein anderes Stichwort oder einen anderen Filter. Oder schreiben Sie uns — wir helfen.",
+            "empty_cta": "Nachricht schreiben →",
+            "contact_label": "Kontakt",
+            "cta_title": "Keine passende Antwort gefunden?",
+            "cta_text": "Schreiben Sie uns eine kurze Nachricht — wir melden uns mit einer Antwort oder Empfehlung zu Material und Druck.",
+            "cta_button": "Nachricht senden",
         },
         "gallery": {
             "ui": {
@@ -1669,6 +1735,7 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
         "sortiment": "Assortimento",
         "references": "Referenze",
         "contacts": "Contatti",
+        "faq": "FAQ",
         "facebook": "Facebook",
         "instagram": "Instagram",
         "youtube": "YouTube",
@@ -1753,6 +1820,27 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "cta": "Voglio un campione",
         }
     )
+    it["home"]["faq"] = {
+        "label": "Domande frequenti",
+        "title": "Risposte prima dell'ordine",
+        "subtitle": "Le domande più comuni su stampa, tempi di consegna e materiali. Non siete sicuri? Scriveteci — vi aiutiamo.",
+        "all_link": "Vedi tutte le domande e cerca →",
+    }
+    it["faq"] = {
+        "label": "Domande frequenti",
+        "title": "Domande e risposte",
+        "subtitle": "Trovate risposte su stampa, tempi, adesivi e campioni. Filtrate per tema o cercate una parola chiave.",
+        "search_label": "Cerca nelle domande",
+        "search_placeholder": "Cerca… es. HOT MELT, campione, tempi di consegna",
+        "filters_label": "Filtro temi",
+        "empty_title": "Nessun risultato",
+        "empty_text": "Provate un'altra parola chiave o un altro filtro. Oppure scriveteci — vi aiutiamo.",
+        "empty_cta": "Scrivi un messaggio →",
+        "contact_label": "Contatto",
+        "cta_title": "Non avete trovato la risposta?",
+        "cta_text": "Scriveteci un breve messaggio — vi risponderemo con una risposta o un consiglio su materiale e stampa.",
+        "cta_button": "Invia messaggio",
+    }
     it["home"]["lepidla"].update(
         {
             "label": "Guida alla scelta",

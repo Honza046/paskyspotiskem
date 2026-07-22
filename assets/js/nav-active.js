@@ -37,6 +37,9 @@
         if (!href) {
             return null;
         }
+        if (/\/faq(?:$|[?#/])/i.test(href) || /faq\.html/i.test(href)) {
+            return 'faq';
+        }
         if (/galerie/i.test(href)) {
             return 'gallery';
         }
@@ -70,11 +73,17 @@
         if (dataPage === 'sortiment') {
             return 'sortiment';
         }
+        if (dataPage === 'faq') {
+            return 'faq';
+        }
         if (dataPage === 'home') {
             return null;
         }
 
         var path = window.location.pathname || '';
+        if (/\/faq(?:$|\/)/i.test(path) || /faq\.html$/i.test(path)) {
+            return 'faq';
+        }
         if (/galerie/i.test(path)) {
             return 'gallery';
         }

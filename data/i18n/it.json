@@ -26,6 +26,7 @@
     "sortiment": "Assortimento",
     "references": "Referenze",
     "contacts": "Contatti",
+    "faq": "FAQ",
     "facebook": "Facebook",
     "instagram": "Instagram",
     "youtube": "YouTube"
@@ -252,7 +253,28 @@
       "title": "Non siete sicuri della scelta? Vi invieremo un campione gratuito.",
       "text": "Comprendiamo che la qualità del nastro è fondamentale per una logistica fluida. Compilate il modulo di richiesta e aggiungeremo noi la nota sul campione di prova.",
       "cta": "Voglio un campione"
+    },
+    "faq": {
+      "label": "Domande frequenti",
+      "title": "Risposte prima dell'ordine",
+      "subtitle": "Le domande più comuni su stampa, tempi di consegna e materiali. Non siete sicuri? Scriveteci — vi aiutiamo.",
+      "all_link": "Vedi tutte le domande e cerca →"
     }
+  },
+  "faq": {
+    "label": "Domande frequenti",
+    "title": "Domande e risposte",
+    "subtitle": "Trovate risposte su stampa, tempi, adesivi e campioni. Filtrate per tema o cercate una parola chiave.",
+    "search_label": "Cerca nelle domande",
+    "search_placeholder": "Cerca… es. HOT MELT, campione, tempi di consegna",
+    "filters_label": "Filtro temi",
+    "empty_title": "Nessun risultato",
+    "empty_text": "Provate un'altra parola chiave o un altro filtro. Oppure scriveteci — vi aiutiamo.",
+    "empty_cta": "Scrivi un messaggio →",
+    "contact_label": "Contatto",
+    "cta_title": "Non avete trovato la risposta?",
+    "cta_text": "Scriveteci un breve messaggio — vi risponderemo con una risposta o un consiglio su materiale e stampa.",
+    "cta_button": "Invia messaggio"
   },
   "gallery": {
     "ui": {

@@ -31,6 +31,11 @@ GALLERY_DESCRIPTION = (
     'Ukázky lepicích pásek s potiskem – loga firem, bezpečnostní pásky, eko varianty a speciální tisky. '
     'Inspirace pro vaši pásku s potiskem na míru.'
 )
+FAQ_TITLE = 'FAQ | Pásky s potiskem – otázky a odpovědi'
+FAQ_DESCRIPTION = (
+    'Časté otázky k páskám s potiskem – minimální odběr, dodací lhůty, HOT MELT vs Akryl, potisk, vzorky a doprava. '
+    'Odpovědi od výrobce ALFA IN.'
+)
 
 
 def esc(s: str) -> str:
@@ -229,22 +234,34 @@ def product_meta_description(name: str, tagline: str) -> str:
 HOME_FAQ = [
     (
         'Jaké je minimální množství objednávky pásky s potiskem?',
-        'Standardně Akryl od 360 ks a HOT MELT od 504 ks na jednu variantu pásky. U větších objednávek získáte dopravu zdarma v rámci ČR.',
+        'U BOPP pásek 360 ks (Akryl) nebo 504 ks (HOT MELT); u papírových a BOPET pásek závisí minimální odběr individuálně na potisku a krepové vrstvě.',
     ),
     (
         'Jak dlouho trvá výroba pásky s potiskem?',
-        'Typická dodací lhůta je 3 až 4 týdny od schválení grafického náhledu a objednávky.',
+        'Standardní dodací lhůta je 3 až 4 týdny od schválení grafického návrhu a objednávky. U urgentních zakázek se snažíme dodání urychlit.',
     ),
     (
         'Mohu objednat lepicí pásku i bez potisku?',
-        'Ano. Stejný materiál dodáme i v nepotištěném provedení pro okamžité balení nebo skladové zásoby.',
+        'Ano. Pásky dodáváme ve stejné kvalitě i bez potisku.',
     ),
     (
         'Jaký je rozdíl mezi HOT MELT a Akryl lepidlem na páskách?',
-        'HOT MELT rychle a pevně přilne i v chladu. Akryl je tišší při odvíjení a odolnější vůči UV.',
+        'HOT MELT rychle a pevně přilne i v chladu, vhodný do skladů a expedice. Akryl je tišší při odvíjení a odolnější vůči UV, ideální pro dlouhodobé skladování.',
     ),
     (
         'Dodáváte vzorky lepicích pásek zdarma?',
-        'Ano, vzorek nebo nezávaznou kalkulaci připravíme na vyžádání přes formulář na webu.',
+        'Ano, u vybraných materiálů a u stávajících grafických návrhů vám rádi zašleme testovací vzorek.',
+    ),
+    (
+        'Jaké technologie potisku nabízíte?',
+        'Flexotisk až 8 barev a rototisk až 10 barev včetně kvalitního spodního tisku.',
+    ),
+    (
+        'Připravíte grafický návrh za mě?',
+        'Ano. Pošlete logo (ideálně PDF/AI/SVG) a představu o textu nebo barevnosti — připravíme náhled potisku ke schválení před výrobou.',
+    ),
+    (
+        'Máte udržitelné / ECO pásky?',
+        'Ano — řada ECO+ (recyklovaný BOPP), papírové pásky a další udržitelné varianty.',
     ),
 ]

@@ -98,6 +98,16 @@ function parseRecipients() {
 
 function validatePayload(body) {
     const errors = [];
+    const isFaqContact = body.source === 'faq-contact';
+
+    if (isFaqContact) {
+        if (!body.contactName) errors.push('Vyplňte jméno.');
+        if (!body.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(body.email)) errors.push('Vyplňte platný e-mail.');
+        if (!body.note) errors.push('Napište zprávu nebo otázku.');
+        if (!body.gdprConsent) errors.push('Potvrďte souhlas se zpracováním údajů.');
+        return errors;
+    }
+
     if (!body.materialLabel) errors.push('Vyberte typ materiálu.');
     if (!body.adhesive) errors.push('Vyberte typ lepidla.');
     if (!body.baseColor) errors.push('Vyberte podkladovou barvu.');
@@ -138,8 +148,18 @@ module.exports = async function handler(req, res) {
         return res.status(400).json({ ok: false, error: errors.join(' ') });
     }
 
-    const subject = 'Poptávka: ' + (body.company || 'webový formulář');
-    const html = buildEmailHtml(body);
+    const subject =
+        body.source === 'faq-contact'
+            ? 'Kontakt z FAQ: ' + (body.contactName || 'web')
+            : 'Poptávka: ' + (body.company || 'webový formulář');
+    const html = buildEmailHtml(
+        body.source === 'faq-contact'
+            ? Object.assign({}, body, {
+                note: '[FAQ kontakt]\n' + (body.note || ''),
+                company: body.company || '— (kontakt z FAQ)',
+            })
+            : body
+    );
     const text = buildPlainText(body);
     const to = parseRecipients();
 

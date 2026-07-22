@@ -4,7 +4,9 @@
   "rewrites": [
     { "source": "/sortiment", "destination": "/sortiment.html" },
     { "source": "/galerie", "destination": "/galerie.html" },
-    { "source": "/galerie/", "destination": "/galerie.html" }
+    { "source": "/galerie/", "destination": "/galerie.html" },
+    { "source": "/faq", "destination": "/faq.html" },
+    { "source": "/faq/", "destination": "/faq.html" }
   ],
   "headers": [
     {

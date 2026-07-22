@@ -2,7 +2,9 @@
   "name": "paskyonline",
   "private": true,
   "scripts": {
-    "build": "python3 scripts/build_vercel.py"
+    "build": "python3 scripts/build_vercel.py",
+    "dev": "python3 scripts/serve_local.py --port 8000",
+    "preview": "python3 scripts/serve_local.py --port 8000"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1"

@@ -21,6 +21,8 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / 'scripts'))
 
 from seo import (  # noqa: E402
+    FAQ_DESCRIPTION,
+    FAQ_TITLE,
     GALLERY_DESCRIPTION,
     GALLERY_TITLE,
     HOME_DESCRIPTION,
@@ -47,10 +49,13 @@ def absolutize_html(html: str) -> str:
         ("href='galerie.html'", "href='/galerie'"),
         ('href="sortiment.html"', 'href="/sortiment"'),
         ("href='sortiment.html'", "href='/sortiment'"),
+        ('href="faq.html"', 'href="/faq"'),
+        ("href='faq.html'", "href='/faq'"),
         ('href="/index.html#', 'href="/#'),
         ('href="/index.html"', 'href="/"'),
         ('href="/galerie.html"', 'href="/galerie"'),
         ('href="/sortiment.html"', 'href="/sortiment"'),
+        ('href="/faq.html"', 'href="/faq"'),
         ('src="./', 'src="/'),
         ('href="./', 'href="/'),
         ('src="images/', 'src="/images/'),
@@ -124,6 +129,20 @@ def apply_root_seo(path: Path) -> None:
                 ]),
             ],
         )
+    elif name == 'faq.html':
+        content = apply_page_seo(
+            path.read_text(encoding='utf-8'),
+            title=FAQ_TITLE,
+            description=FAQ_DESCRIPTION,
+            path='/faq',
+            schemas=[
+                breadcrumb_schema([
+                    ('/', 'Domů'),
+                    ('/faq', 'FAQ'),
+                ]),
+                faq_schema(HOME_FAQ),
+            ],
+        )
     elif name == 'sortiment.html':
         content = apply_page_seo(
             path.read_text(encoding='utf-8'),
@@ -160,6 +179,7 @@ def main() -> int:
         ROOT / 'index.html',
         ROOT / 'sortiment.html',
         ROOT / 'galerie.html',
+        ROOT / 'faq.html',
     ]
 
     for page in root_pages:
@@ -170,6 +190,13 @@ def main() -> int:
     sortiment_dir.mkdir(exist_ok=True)
     shutil.copy2(ROOT / 'sortiment.html', sortiment_dir / 'index.html')
     print('  copied sortiment.html → sortiment/index.html')
+
+    # FAQ hub also at /faq/
+    faq_dir = ROOT / 'faq'
+    faq_dir.mkdir(exist_ok=True)
+    if (ROOT / 'faq.html').exists():
+        shutil.copy2(ROOT / 'faq.html', faq_dir / 'index.html')
+        print('  copied faq.html → faq/index.html')
 
     # Regenerate gallery + sortiment data/pages.
     scripts = [
