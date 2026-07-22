@@ -21,7 +21,7 @@ ITEMS = [
         "width": "48 mm",
         "colors": 1,
         "adhesive": "acryl",
-        "description": "Jednobarevný brand potisk na bílé BOPP pásce – logo a ilustrace nábytku pro e-commerce balení.",
+        "description": "Jednobarevný brand potisk na bílé BOPP pásce: logo a ilustrace nábytku pro e-commerce balení.",
         "graphic": False,
     },
     {
@@ -36,7 +36,7 @@ ITEMS = [
         "width": "48 mm",
         "colors": 1,
         "adhesive": "hot-melt",
-        "description": "Kontrastní bílý potisk loga na černé pásce – výrazný branding zásilek v beauty e-commerce.",
+        "description": "Kontrastní bílý potisk loga na černé pásce: výrazný branding zásilek v beauty e-commerce.",
         "graphic": False,
     },
     {
@@ -51,7 +51,7 @@ ITEMS = [
         "width": "48 mm",
         "colors": 2,
         "adhesive": "acryl",
-        "description": "Dvoubarevný potisk FENSKE / Weine und Feinkost na balicí pásce – branding zásilek vína a delikates.",
+        "description": "Dvoubarevný potisk FENSKE / Weine und Feinkost na balicí pásce: branding zásilek vína a delikates.",
         "graphic": False,
     },
     {
@@ -66,7 +66,7 @@ ITEMS = [
         "width": "48 mm",
         "colors": 3,
         "adhesive": "acryl",
-        "description": "Vícebarevný potisk log a logistického textu včetně symbolu křehké – branding i instrukce pro příjemce.",
+        "description": "Vícebarevný potisk log a logistického textu včetně symbolu křehké: branding i instrukce pro příjemce.",
         "graphic": False,
     },
     {
@@ -81,7 +81,7 @@ ITEMS = [
         "width": "48 mm",
         "colors": 1,
         "adhesive": "hot-melt",
-        "description": "Výstražný potisk „Vorsicht Glas!“ / „Do not drop“ na balicí pásce – ochrana křehkých zásilek při přepravě.",
+        "description": "Výstražný potisk „Vorsicht Glas!“ / „Do not drop“ na balicí pásce: ochrana křehkých zásilek při přepravě.",
         "graphic": False,
     },
     {
@@ -96,7 +96,7 @@ ITEMS = [
         "width": "48 mm",
         "colors": 1,
         "adhesive": "hot-melt",
-        "description": "Oranžová BOPP páska s bílým logem ALFA IN – branding zásilek přímo ve skladu.",
+        "description": "Oranžová BOPP páska s bílým logem ALFA IN: branding zásilek přímo ve skladu.",
         "graphic": False,
     },
     {
@@ -111,7 +111,7 @@ ITEMS = [
         "width": "48 mm",
         "colors": 1,
         "adhesive": "acryl",
-        "description": "Ekologická papírová páska s potiskem FSC a symbolem 22 PAP – udržitelné balení e-commerce zásilek.",
+        "description": "Ekologická papírová páska s potiskem FSC a symbolem 22 PAP: udržitelné balení e-commerce zásilek.",
         "graphic": False,
     },
     {
@@ -126,7 +126,7 @@ ITEMS = [
         "width": "48 mm",
         "colors": 1,
         "adhesive": "hot-melt",
-        "description": "Ruční balení na paletě s oranžovou páskou ALFA IN – potisk v praxi logistického provozu.",
+        "description": "Ruční balení na paletě s oranžovou páskou ALFA IN: potisk v praxi logistického provozu.",
         "graphic": False,
     },
     {
@@ -143,7 +143,7 @@ ITEMS = [
         "adhesive": "",
         "location": "Empoli, Itálie",
         "pill": "Sklad",
-        "description": "Automatizovaný sklad v Empoli – logistika hotových pásek a fólií.",
+        "description": "Automatizovaný sklad v Empoli: logistika hotových pásek a fólií.",
         "graphic": False,
     },
     {
@@ -166,7 +166,7 @@ ITEMS = [
     {
         "id": "irplast-shuttle",
         "image": "gallery/gallery-irplast-shuttle.jpg",
-        "title": "Výroba – automated shuttle",
+        "title": "Výroba: automated shuttle",
         "category": "vyroba",
         "type": "production",
         "featured": False,
@@ -211,7 +211,7 @@ ITEMS = [
         "adhesive": "",
         "location": "Atessa, Itálie",
         "pill": "Výrobní linka",
-        "description": "Simultánní orientace BOPP fólie – výrobní linka Brückner LISIM / STILANSOL®.",
+        "description": "Simultánní orientace BOPP fólie: výrobní linka Brückner LISIM / STILANSOL®.",
         "graphic": False,
     },
     {
@@ -519,7 +519,7 @@ def render_main() -> str:
 <section id="gallery-production-section" class="mx-auto max-w-7xl px-4 pb-12 pt-12 sm:pb-16 sm:pt-16">
     <div class="mb-6 border-b border-slate-100 pb-4">
         <h2 class="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">Výroba a sklad</h2>
-        <p class="mt-1 text-sm text-slate-500">Automatizované sklady, výrobní linky a suroviny – Empoli a Atessa.</p>
+        <p class="mt-1 text-sm text-slate-500">Automatizované sklady, výrobní linky a suroviny: Empoli a Atessa.</p>
     </div>
     <div id="gallery-production" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 {chr(10).join('        ' + render_card(i) for i in production)}

@@ -251,7 +251,7 @@ CATEGORY_DE: dict[str, dict[str, Any]] = {
             "Čistý design": "Sauberes Design",
         },
         "property_texts": {
-            "Plná recyklovatelnost": "Band und Karton landen in derselben Tonne – kein Trennen der Materialien nötig.",
+            "Plná recyklovatelnost": "Band und Karton landen in derselben Tonne: kein Trennen der Materialien nötig.",
             "Vysoká lepivost": "Zuverlässige Haftung auch auf Recyclingkarton und unebenen Flächen.",
             "Čistý design": "Die matte Papieroberfläche wirkt hochwertig und lässt sich leicht mit Ihrem Logo bedrucken.",
         },
@@ -412,7 +412,7 @@ CATEGORY_DE: dict[str, dict[str, Any]] = {
     "udrzitelne-pasky": {
         "title": "Nachhaltige Klebebänder",
         "description": "Innovative Verpackungslösungen aus recycelten Materialien mit minimalem ökologischen Fußabdruck und Unterstützung der Kreislaufwirtschaft.",
-        "intro": "Unsere nachhaltige Bandserie wird aus recycelten Materialien hergestellt und minimiert die Umweltbelastung. Sie hilft Unternehmen, ESG-Ziele zu erreichen und ein verantwortungsvolles Markenimage aufzubauen – ohne Kompromisse bei der Leistung.",
+        "intro": "Unsere nachhaltige Bandserie wird aus recycelten Materialien hergestellt und minimiert die Umweltbelastung. Sie hilft Unternehmen, ESG-Ziele zu erreichen und ein verantwortungsvolles Markenimage aufzubauen: ohne Kompromisse bei der Leistung.",
         "properties": {
             "Recyklovaný obsah": "Recycelter Anteil",
             "Nižší uhlíková stopa": "Geringerer CO₂-Fußabdruck",
@@ -476,11 +476,11 @@ def build_cs() -> dict[str, Any]:
             "site_name": "Pásky s potiskem",
             "logo_alt": "Pásky s potiskem",
             "home_title": "Pásky s potiskem | Lepicí pásky s logem na míru | ALFA IN",
-            "home_description": "Výroba a prodej lepicích pásek s potiskem – pásky s logem pro firmy, e-shopy a sklady. BOPP, eko a speciální pásky, potisk až 8 barev, dodání po celé ČR. Nezávazná kalkulace.",
+            "home_description": "Výroba a prodej lepicích pásek s potiskem: pásky s logem pro firmy, e-shopy a sklady. BOPP, eko a speciální pásky, potisk až 8 barev, dodání po celé ČR. Nezávazná kalkulace.",
             "gallery_title": "Galerie pásek s potiskem | Realizace ALFA IN",
-            "gallery_description": "Ukázky lepicích pásek s potiskem – loga firem, bezpečnostní pásky, eko varianty a speciální tisky. Inspirace pro vaši pásku s potiskem na míru.",
+            "gallery_description": "Ukázky lepicích pásek s potiskem: loga firem, bezpečnostní pásky, eko varianty a speciální tisky. Inspirace pro vaši pásku s potiskem na míru.",
             "sortiment_title": "Sortiment lepicích pásek | Pásky s potiskem",
-            "sortiment_description": "Kompletní sortiment lepicích pásek s potiskem – BOPP, BOPET, papírové, eko a speciální pásky. Vyberte materiál a poptávejte pásku na míru od výrobce ALFA IN.",
+            "sortiment_description": "Kompletní sortiment lepicích pásek s potiskem: BOPP, BOPET, papírové, eko a speciální pásky. Vyberte materiál a poptávejte pásku na míru od výrobce ALFA IN.",
         },
         "nav": {
             "tagline": "ALFA IN - výroba, poradenství, prodej a servis",
@@ -525,15 +525,15 @@ def build_cs() -> dict[str, Any]:
                 "badge": "ISO 9001 · Přímo od výrobce",
                 "slides": [
                     {
-                        "title": "LEPICÍ PÁSKY SE SPODNÍM TISKEM",
+                        "title": "Lepicí pásky se spodním tiskem",
                         "subtitle": "Spolehlivé BOPP pásky s tiskem chráněným pod folií i eko varianty pro udržitelné balení.",
                     },
                     {
-                        "title": "PROČ SI VYBRAT NÁS?",
+                        "title": "Proč si vybrat nás?",
                         "subtitle": "Více než 20 let zkušeností a spolupráce s e-shopy i průmyslem. Spolehlivost, rychlé dodání a individuální přístup ke každé zakázce.",
                     },
                     {
-                        "title": "OTESTUJTE NAŠI KVALITU VE SVÉM PROVOZU",
+                        "title": "Otestujte naši kvalitu ve svém provozu",
                         "subtitle": "Bezplatný vzorek nebo nezávazná kalkulace na míru. Přesvědčte se o odolnosti a pevnosti lepidla ještě před objednávkou.",
                     },
                 ],
@@ -589,8 +589,8 @@ def build_cs() -> dict[str, Any]:
             },
             "benefits": {
                 "eco_badge": "Udržitelnost",
-                "eco_title": "Pásky ECO+ – regenerát z vlastní výroby",
-                "eco_text": "Fólie ECO+ vzniká z postindustriálního odpadu při výrobě BOPP fólií – materiál se ihned vrací zpět do oběhu. Volíte podíl regenerátu 50 %, 80 % nebo 100 % při stejné pevnosti jako standardní páska, bez ekologické přirážky. Dostupné jako Akryl i HOT MELT, neutrálně i s potiskem.",
+                "eco_title": "Pásky ECO+: regenerát z vlastní výroby",
+                "eco_text": "Fólie ECO+ vzniká z postindustriálního odpadu při výrobě BOPP fólií: materiál se ihned vrací zpět do oběhu. Volíte podíl regenerátu 50 %, 80 % nebo 100 % při stejné pevnosti jako standardní páska, bez ekologické přirážky. Dostupné jako Akryl i HOT MELT, neutrálně i s potiskem.",
                 "eco_link": "Prohlédnout řadu ECO+ →",
                 "glue_badge": "Extrémní lepivost",
                 "glue_title": "EXTRA GLUE+ (Akryl) a TACK+ (HOT MELT)",
@@ -731,11 +731,11 @@ def build_cs() -> dict[str, Any]:
             "search_placeholder": "Hledat… např. HOT MELT, vzorek, dodací lhůta",
             "filters_label": "Filtr témat",
             "empty_title": "Nic jsme nenašli",
-            "empty_text": "Zkuste jiné klíčové slovo nebo vyberte jiný filtr. Případně nám napište — poradíme.",
+            "empty_text": "Zkuste jiné klíčové slovo nebo vyberte jiný filtr. Případně nám napište, poradíme.",
             "empty_cta": "Napsat zprávu →",
             "contact_label": "Kontakt",
             "cta_title": "Nenašli jste odpověď?",
-            "cta_text": "Napište nám krátkou zprávu — ozveme se s odpovědí nebo doporučením materiálu a potisku.",
+            "cta_text": "Napište nám krátkou zprávu, ozveme se s odpovědí nebo doporučením materiálu a potisku.",
             "cta_button": "Odeslat zprávu",
         },
         "gallery": {
@@ -790,7 +790,7 @@ def build_cs() -> dict[str, Any]:
                 "references_title": "Reálné reference",
                 "references_subtitle": "",
                 "production_title": "Výroba a sklad",
-                "production_subtitle": "Automatizované sklady, výrobní linky a suroviny – Empoli a Atessa.",
+                "production_subtitle": "Automatizované sklady, výrobní linky a suroviny: Empoli a Atessa.",
                 "demos_title": "Možnosti tisku a technologie",
                 "demos_subtitle": "Ukázky bezpečnostních, logistických a speciálních řešení, ilustrace technologií, které nabízíme.",
                 "empty": "Žádná ukázka neodpovídá vybraným filtrům. Zkuste ubrat některý z filtrů.",
@@ -921,7 +921,7 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "show_on_map": "Show on map",
             "email_heading": "Email us",
             "phone_heading": "Call us",
-            "phone_hours": "7:00 a.m. – 3:30 p.m.",
+            "phone_hours": "7:00 a.m.–3:30 p.m.",
             "more_contacts": "More contacts",
             "social_heading": "Social media",
             "copyright": "All rights reserved",
@@ -933,15 +933,15 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "badge": "ISO 9001 · Direct from the manufacturer",
                 "slides": [
                     {
-                        "title": "ADHESIVE TAPES WITH REVERSE PRINTING",
+                        "title": "Adhesive tapes with reverse printing",
                         "subtitle": "Reliable BOPP tapes with print protected under the film, plus eco options for sustainable packaging.",
                     },
                     {
-                        "title": "WHY CHOOSE US?",
+                        "title": "Why choose us?",
                         "subtitle": "Over 20 years of experience with e-commerce and industry. Reliability, fast delivery and a personal approach to every order.",
                     },
                     {
-                        "title": "TEST OUR QUALITY IN YOUR OPERATION",
+                        "title": "Test our quality in your operation",
                         "subtitle": "Request a free sample or a no-obligation custom quote. Check strength and adhesion before you order.",
                     },
                 ],
@@ -997,8 +997,8 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             },
             "benefits": {
                 "eco_badge": "Sustainability",
-                "eco_title": "ECO+ tapes – regenerated from our own production",
-                "eco_text": "ECO+ film is made from post-industrial waste from BOPP film production – the material is returned to the loop immediately. Choose 50%, 80% or 100% regenerated content with the same strength as a standard tape, with no eco surcharge. Available as Akryl or HOT MELT, plain or printed.",
+                "eco_title": "ECO+ tapes: regenerated from our own production",
+                "eco_text": "ECO+ film is made from post-industrial waste from BOPP film production: the material is returned to the loop immediately. Choose 50%, 80% or 100% regenerated content with the same strength as a standard tape, with no eco surcharge. Available as Akryl or HOT MELT, plain or printed.",
                 "eco_link": "Browse the ECO+ range →",
                 "glue_badge": "Extreme adhesion",
                 "glue_title": "EXTRA GLUE+ (Akryl) and TACK+ (HOT MELT)",
@@ -1127,7 +1127,7 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "faq": {
                 "label": "FAQ",
                 "title": "Answers before you order",
-                "subtitle": "Common questions about printing, lead times and materials. Not sure? Contact us — we will help.",
+                "subtitle": "Common questions about printing, lead times and materials. Not sure? Contact us, we will help.",
                 "all_link": "Browse all questions and search →",
             },
         },
@@ -1139,11 +1139,11 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "search_placeholder": "Search… e.g. HOT MELT, sample, lead time",
             "filters_label": "Topic filter",
             "empty_title": "No results",
-            "empty_text": "Try another keyword or filter. Or send us an inquiry — we will help.",
+            "empty_text": "Try another keyword or filter. Or send us an inquiry, we will help.",
             "empty_cta": "Write a message →",
             "contact_label": "Contact",
             "cta_title": "Didn’t find your answer?",
-            "cta_text": "Send us a short message — we will reply with an answer or a material and print recommendation.",
+            "cta_text": "Send us a short message, we will reply with an answer or a material and print recommendation.",
             "cta_button": "Send message",
         },
         "gallery": {
@@ -1198,7 +1198,7 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "references_title": "Real references",
                 "references_subtitle": "",
                 "production_title": "Production & warehouse",
-                "production_subtitle": "Automated warehouses, production lines and raw materials – Empoli and Atessa.",
+                "production_subtitle": "Automated warehouses, production lines and raw materials: Empoli and Atessa.",
                 "demos_title": "Print options and technologies",
                 "demos_subtitle": "Examples of security, logistics and special solutions, illustrations of the technologies we offer.",
                 "empty": "No sample matches the selected filters. Try removing one of the filters.",
@@ -1293,12 +1293,12 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "home_title": "Startseite | Bedruckte Verpackungsbänder",
             "home_description": "Bedruckte Verpackungsbänder | Herstellung und Vertrieb bedruckter Klebebänder von ALFA IN a.s.",
             "gallery_title": "Galerie | Bedruckte Verpackungsbänder",
-            "gallery_description": "Galerie bedruckter Verpackungsbänder von ALFA IN a.s. – Einfarbigdruck, Rotogravur, Sicherheits- und Logistikbänder.",
+            "gallery_description": "Galerie bedruckter Verpackungsbänder von ALFA IN a.s.: Einfarbigdruck, Rotogravur, Sicherheits- und Logistikbänder.",
             "sortiment_title": "Sortiment | Bedruckte Verpackungsbänder",
-            "sortiment_description": "ALFA IN Klebeband-Sortiment – BOPP-Bänder HOT MELT und Akryl, Spezialserien und ECO-Produkte mit Bedruckung.",
+            "sortiment_description": "ALFA IN Klebeband-Sortiment: BOPP-Bänder HOT MELT und Akryl, Spezialserien und ECO-Produkte mit Bedruckung.",
         },
         "nav": {
-            "tagline": "ALFA IN – Herstellung, Beratung, Vertrieb und Service",
+            "tagline": "ALFA IN: Herstellung, Beratung, Vertrieb und Service",
             "menu": "Menü öffnen",
             "menu_close": "Menü schließen",
             "main_nav_label": "Hauptnavigation",
@@ -1340,16 +1340,16 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "badge": "ISO 9001 · Direkt vom Hersteller",
                 "slides": [
                     {
-                        "title": "KLEBEBÄNDER MIT RÜCKSEITENDRUCK",
-                        "subtitle": "Zuverlässige BOPP-Bänder mit unter der Folie geschütztem Druck und Öko-Varianten für nachhaltige Verpackung.",
+                        "title": "Klebebänder mit Rückseitendruck",
+                        "subtitle": "Zuverlässige BOPP-Bänder mit unter der Folie geschütztem Druck sowie Öko-Varianten für nachhaltiges Verpacken.",
                     },
                     {
-                        "title": "WARUM UNS WÄHLEN?",
-                        "subtitle": "Mehr als 20 Jahre Erfahrung mit E-Commerce und Industrie. Zuverlässigkeit, schnelle Lieferung und individueller Ansatz bei jeder Bestellung.",
+                        "title": "Warum uns wählen?",
+                        "subtitle": "Über 20 Jahre Erfahrung mit E-Commerce und Industrie. Zuverlässigkeit, schnelle Lieferung und individueller Service für jeden Auftrag.",
                     },
                     {
-                        "title": "TESTEN SIE UNSERE QUALITÄT IN IHREM BETRIEB",
-                        "subtitle": "Kostenloses Muster oder unverbindliche Kalkulation. Überzeugen Sie sich von Festigkeit und Klebkraft vor der Bestellung.",
+                        "title": "Testen Sie unsere Qualität in Ihrem Betrieb",
+                        "subtitle": "Kostenloses Muster oder unverbindliches Angebot nach Maß. Prüfen Sie Festigkeit und Haftung vor der Bestellung.",
                     },
                 ],
                 "cta_offer": "Angebot ansehen",
@@ -1362,7 +1362,7 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "lead": "Seit mehr als 30 Jahren helfen wir Unternehmen, ihre Sendungen sicher zu verpacken und eine starke Marke direkt auf Verpackungsmaterialien aufzubauen. Wir bieten Klebebänder mit individuellem Druck sowie neutrale Varianten ohne Druck.",
                 "body1_prefix": "Unsere ",
                 "body1_highlight": "moderne Produktionsstätte",
-                "body1_tooltip": "Wir produzieren nicht nur Klebebänder, sondern auch die Folien selbst – das verschafft uns bei Rohstoffkrisen am Markt einen deutlichen Wettbewerbsvorteil.",
+                "body1_tooltip": "Wir produzieren nicht nur Klebebänder, sondern auch die Folien selbst: das verschafft uns bei Rohstoffkrisen am Markt einen deutlichen Wettbewerbsvorteil.",
                 "body1_suffix": " ermöglicht es uns, flexibel auf die Bedürfnisse kleiner E-Shops wie auch großer Industrieunternehmen zu reagieren. Wir legen Wert auf präzisen Druck (bis 8 Farben), erstklassige Klebstoffqualität (HOT MELT und Akryl) und schnelle Lieferung in der gesamten Tschechischen Republik und der Europäischen Union.",
                 "body1": "Unsere moderne Produktionsstätte ermöglicht es uns, flexibel auf die Bedürfnisse kleiner E-Shops wie auch großer Industrieunternehmen zu reagieren. Wir legen Wert auf präzisen Druck (bis 8 Farben), erstklassige Klebstoffqualität (Hot Melt, Acryl) und schnelle Lieferung in der gesamten Tschechischen Republik.",
                 "body2": "Dank ISO-9001-zertifizierter Prozesse und dem Einsatz ökologischer, nachhaltiger Materialien sind wir ein zuverlässiger Partner für mehr als 300 aktive Abnehmer.",
@@ -1389,7 +1389,7 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "acryl_badge": "Leise & UV-beständig",
                 "acryl_title": "Akryl",
                 "acryl_subtitle": "Mit geräuscharmem Abrollen",
-                "acryl_text": "Sorgt für leises, komfortables Abrollen in großen Verpackungshallen. Hochbeständig gegen UV-Strahlung und Alterung – die perfekte Wahl für langfristige Lagerung.",
+                "acryl_text": "Sorgt für leises, komfortables Abrollen in großen Verpackungshallen. Hochbeständig gegen UV-Strahlung und Alterung: die perfekte Wahl für langfristige Lagerung.",
             },
             "sustainability": {
                 "label": "Ökologie & Nachhaltigkeit",
@@ -1404,8 +1404,8 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             },
             "benefits": {
                 "eco_badge": "Nachhaltigkeit",
-                "eco_title": "ECO+-Bänder – Regenerat aus eigener Produktion",
-                "eco_text": "ECO+-Folie entsteht aus postindustriellem Abfall der BOPP-Folienproduktion – das Material wird sofort in den Kreislauf zurückgeführt. Wählen Sie 50 %, 80 % oder 100 % Regeneratanteil bei gleicher Festigkeit wie Standardband, ohne Öko-Aufpreis. Erhältlich als Akryl oder HOT MELT, neutral oder bedruckt.",
+                "eco_title": "ECO+-Bänder: Regenerat aus eigener Produktion",
+                "eco_text": "ECO+-Folie entsteht aus postindustriellem Abfall der BOPP-Folienproduktion: das Material wird sofort in den Kreislauf zurückgeführt. Wählen Sie 50 %, 80 % oder 100 % Regeneratanteil bei gleicher Festigkeit wie Standardband, ohne Öko-Aufpreis. Erhältlich als Akryl oder HOT MELT, neutral oder bedruckt.",
                 "eco_link": "ECO+-Serie ansehen →",
                 "glue_badge": "Extreme Klebkraft",
                 "glue_title": "EXTRA GLUE+ (Akryl) und TACK+ (HOT MELT)",
@@ -1534,7 +1534,7 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "faq": {
                 "label": "FAQ",
                 "title": "Antworten vor der Bestellung",
-                "subtitle": "Häufige Fragen zu Druck, Lieferzeiten und Materialien. Unsicher? Schreiben Sie uns — wir helfen.",
+                "subtitle": "Häufige Fragen zu Druck, Lieferzeiten und Materialien. Unsicher? Schreiben Sie uns, wir helfen.",
                 "all_link": "Alle Fragen und Suche anzeigen →",
             },
         },
@@ -1546,18 +1546,18 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "search_placeholder": "Suchen… z. B. HOT MELT, Muster, Lieferzeit",
             "filters_label": "Themenfilter",
             "empty_title": "Keine Treffer",
-            "empty_text": "Versuchen Sie ein anderes Stichwort oder einen anderen Filter. Oder schreiben Sie uns — wir helfen.",
+            "empty_text": "Versuchen Sie ein anderes Stichwort oder einen anderen Filter. Oder schreiben Sie uns, wir helfen.",
             "empty_cta": "Nachricht schreiben →",
             "contact_label": "Kontakt",
             "cta_title": "Keine passende Antwort gefunden?",
-            "cta_text": "Schreiben Sie uns eine kurze Nachricht — wir melden uns mit einer Antwort oder Empfehlung zu Material und Druck.",
+            "cta_text": "Schreiben Sie uns eine kurze Nachricht, wir melden uns mit einer Antwort oder Empfehlung zu Material und Druck.",
             "cta_button": "Nachricht senden",
         },
         "gallery": {
             "ui": {
                 "label": "Galerie",
                 "title": "Beispiele unserer Arbeit",
-                "subtitle": "Echte Produktionsreferenzen und Drucktechnologie-Beispiele – filtern Sie nach Drucktyp, Klebstoff oder Branche.",
+                "subtitle": "Echte Produktionsreferenzen und Drucktechnologie-Beispiele: filtern Sie nach Drucktyp, Klebstoff oder Branche.",
                 "cta_custom": "Ich möchte eigenen Druck",
             },
             "filters": {
@@ -1605,9 +1605,9 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "references_title": "Echte Referenzen",
                 "references_subtitle": "",
                 "production_title": "Produktion und Lager",
-                "production_subtitle": "Automatisierte Lager, Produktionslinien und Rohstoffe – Empoli und Atessa.",
+                "production_subtitle": "Automatisierte Lager, Produktionslinien und Rohstoffe: Empoli und Atessa.",
                 "demos_title": "Druckmöglichkeiten und Technologien",
-                "demos_subtitle": "Beispiele für Sicherheits-, Logistik- und Speziallösungen – Illustrationen der von uns angebotenen Technologien.",
+                "demos_subtitle": "Beispiele für Sicherheits-, Logistik- und Speziallösungen: Illustrationen der von uns angebotenen Technologien.",
                 "empty": "Kein Beispiel entspricht den gewählten Filtern. Versuchen Sie, einen Filter zu entfernen.",
             },
             "cards": {
@@ -1768,16 +1768,16 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "badge": "ISO 9001 · Direttamente dal produttore",
             "slides": [
                 {
-                    "title": "NASTRI ADESIVI CON STAMPA PROTETTA",
-                    "subtitle": "Nastri BOPP affidabili con stampa protetta sotto pellicola e varianti eco per imballaggi sostenibili.",
+                    "title": "Nastri adesivi con stampa protetta",
+                    "subtitle": "Nastri BOPP affidabili con stampa protetta sotto il film e varianti eco per un imballaggio sostenibile.",
                 },
                 {
-                    "title": "PERCHÉ SCEGLIERCI?",
-                    "subtitle": "Oltre 20 anni di esperienza con e-commerce e industria. Affidabilità, consegna rapida e approccio personalizzato a ogni ordine.",
+                    "title": "Perché sceglierci?",
+                    "subtitle": "Oltre 20 anni di esperienza con e-commerce e industria. Affidabilità, consegne rapide e approccio personale a ogni ordine.",
                 },
                 {
-                    "title": "TESTATE LA NOSTRA QUALITÀ NEL VOSTRO REPARTO",
-                    "subtitle": "Campione gratuito o preventivo senza impegno su misura. Verificate resistenza e adesione prima dell'ordine.",
+                    "title": "Testate la nostra qualità nel vostro reparto",
+                    "subtitle": "Campione gratuito o preventivo senza impegno su misura. Verificate resistenza e adesione prima di ordinare.",
                 },
             ],
             "cta_offer": "Scopri la gamma",
@@ -1823,7 +1823,7 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
     it["home"]["faq"] = {
         "label": "Domande frequenti",
         "title": "Risposte prima dell'ordine",
-        "subtitle": "Le domande più comuni su stampa, tempi di consegna e materiali. Non siete sicuri? Scriveteci — vi aiutiamo.",
+        "subtitle": "Le domande più comuni su stampa, tempi di consegna e materiali. Non siete sicuri? Scriveteci, vi aiutiamo.",
         "all_link": "Vedi tutte le domande e cerca →",
     }
     it["faq"] = {
@@ -1834,11 +1834,11 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
         "search_placeholder": "Cerca… es. HOT MELT, campione, tempi di consegna",
         "filters_label": "Filtro temi",
         "empty_title": "Nessun risultato",
-        "empty_text": "Provate un'altra parola chiave o un altro filtro. Oppure scriveteci — vi aiutiamo.",
+        "empty_text": "Provate un'altra parola chiave o un altro filtro. Oppure scriveteci, vi aiutiamo.",
         "empty_cta": "Scrivi un messaggio →",
         "contact_label": "Contatto",
         "cta_title": "Non avete trovato la risposta?",
-        "cta_text": "Scriveteci un breve messaggio — vi risponderemo con una risposta o un consiglio su materiale e stampa.",
+        "cta_text": "Scriveteci un breve messaggio, vi risponderemo con una risposta o un consiglio su materiale e stampa.",
         "cta_button": "Invia messaggio",
     }
     it["home"]["lepidla"].update(
@@ -1871,7 +1871,7 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
     it["home"]["benefits"].update(
         {
             "eco_badge": "Sostenibilità",
-            "eco_title": "Nastri ECO+ – materiale rigenerato dalla nostra produzione",
+            "eco_title": "Nastri ECO+: materiale rigenerato dalla nostra produzione",
             "eco_text": "Il film ECO+ nasce da scarti postindustriali della produzione di film BOPP: il materiale torna subito in circolo. Scegliete il 50%, 80% o 100% di contenuto rigenerato con la stessa resistenza del nastro standard, senza sovrapprezzo ecologico. Disponibili come Akryl o HOT MELT, neutri o stampati.",
             "eco_link": "Scopri la gamma ECO+ →",
             "glue_badge": "Adesione estrema",
@@ -2008,7 +2008,7 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "references_title": "Referenze reali",
             "references_subtitle": "",
             "production_title": "Produzione e magazzino",
-            "production_subtitle": "Magazzini automatizzati, linee di produzione e materie prime – Empoli e Atessa.",
+            "production_subtitle": "Magazzini automatizzati, linee di produzione e materie prime: Empoli e Atessa.",
             "demos_title": "Possibilità di stampa e tecnologie",
             "demos_subtitle": "Esempi di soluzioni di sicurezza, logistica e speciali, illustrazione delle tecnologie che offriamo.",
             "empty": "Nessun esempio corrisponde ai filtri selezionati. Provate a rimuoverne alcuni.",
@@ -2116,6 +2116,8 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
 
 
 def main() -> None:
+    from i18n_faq_content import apply_faq_i18n  # noqa: WPS433
+
     cs = build_cs()
     cs_categories = build_sortiment_categories_cs()
     ns = load_gp_namespace()
@@ -2125,6 +2127,8 @@ def main() -> None:
         "de": build_de(cs, cs_categories),
         "it": build_it(cs, cs_categories),
     }
+    for code, tree in locales.items():
+        apply_faq_i18n(tree, code)
 
     print(f"Writing i18n JSON to {OUT_DIR}/")
     for locale, data in locales.items():

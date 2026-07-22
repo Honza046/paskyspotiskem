@@ -18,22 +18,22 @@ SEO_MARKER_END = '<!-- /seo:extra -->'
 
 HOME_TITLE = 'Pásky s potiskem | Lepicí pásky s logem na míru | ALFA IN'
 HOME_DESCRIPTION = (
-    'Výroba a prodej lepicích pásek s potiskem – pásky s logem pro firmy, e-shopy a sklady. '
+    'Výroba a prodej lepicích pásek s potiskem: pásky s logem pro firmy, e-shopy a sklady. '
     'BOPP, eko a speciální pásky, potisk až 8 barev, dodání po celé ČR. Nezávazná kalkulace.'
 )
 SORTIMENT_TITLE = 'Sortiment lepicích pásek | Pásky s potiskem'
 SORTIMENT_DESCRIPTION = (
-    'Kompletní sortiment lepicích pásek s potiskem – BOPP, BOPET, papírové, eko a speciální pásky. '
+    'Kompletní sortiment lepicích pásek s potiskem: BOPP, BOPET, papírové, eko a speciální pásky. '
     'Vyberte materiál a poptávejte pásku na míru od výrobce ALFA IN.'
 )
 GALLERY_TITLE = 'Galerie pásek s potiskem | Realizace ALFA IN'
 GALLERY_DESCRIPTION = (
-    'Ukázky lepicích pásek s potiskem – loga firem, bezpečnostní pásky, eko varianty a speciální tisky. '
+    'Ukázky lepicích pásek s potiskem: loga firem, bezpečnostní pásky, eko varianty a speciální tisky. '
     'Inspirace pro vaši pásku s potiskem na míru.'
 )
-FAQ_TITLE = 'FAQ | Pásky s potiskem – otázky a odpovědi'
+FAQ_TITLE = 'FAQ | Pásky s potiskem: otázky a odpovědi'
 FAQ_DESCRIPTION = (
-    'Časté otázky k páskám s potiskem – minimální odběr, dodací lhůty, HOT MELT vs Akryl, potisk, vzorky a doprava. '
+    'Časté otázky k páskám s potiskem: minimální odběr, dodací lhůty, HOT MELT vs Akryl, potisk, vzorky a doprava. '
     'Odpovědi od výrobce ALFA IN.'
 )
 
@@ -127,7 +127,7 @@ def organization_schema() -> dict[str, Any]:
     return {
         '@context': 'https://schema.org',
         '@type': 'Organization',
-        'name': f'{ORG_NAME} – {SITE_NAME}',
+        'name': f'{ORG_NAME}: {SITE_NAME}',
         'url': SITE_URL,
         'logo': abs_url('/images/logo.svg'),
         'description': HOME_DESCRIPTION,
@@ -225,7 +225,7 @@ def category_meta_description(title: str, description: str) -> str:
 
 
 def product_meta_description(name: str, tagline: str) -> str:
-    text = f'{name} – {tagline} Lepicí páska s potiskem od ALFA IN.'
+    text = f'{name}: {tagline} Lepicí páska s potiskem od ALFA IN.'
     if len(text) > 158:
         text = text[:155].rstrip(' ,.;') + '…'
     return text
@@ -258,10 +258,10 @@ HOME_FAQ = [
     ),
     (
         'Připravíte grafický návrh za mě?',
-        'Ano. Pošlete logo (ideálně PDF/AI/SVG) a představu o textu nebo barevnosti — připravíme náhled potisku ke schválení před výrobou.',
+        'Ano. Pošlete logo (ideálně PDF/AI/SVG) a představu o textu nebo barevnosti, připravíme náhled potisku ke schválení před výrobou.',
     ),
     (
         'Máte udržitelné / ECO pásky?',
-        'Ano — řada ECO+ (recyklovaný BOPP), papírové pásky a další udržitelné varianty.',
+        'Ano, řada ECO+ (recyklovaný BOPP), papírové pásky a další udržitelné varianty.',
     ),
 ]

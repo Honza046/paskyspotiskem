@@ -14,7 +14,9 @@
       "de": "Deutsch",
       "it": "Italiano"
     },
-    "htmlLang": "it"
+    "htmlLang": "it",
+    "faq_title": "FAQ | Nastri stampati: domande e risposte",
+    "faq_description": "Domande frequenti sui nastri stampati: quantità minima, tempi, HOT MELT vs Akryl, stampa, campioni e spedizione. Risposte dal produttore ALFA IN."
   },
   "nav": {
     "tagline": "ALFA IN, produzione, consulenza, vendita e assistenza",
@@ -47,7 +49,7 @@
     "show_on_map": "Mostra sulla mappa",
     "email_heading": "Scriveteci",
     "phone_heading": "Chiamateci",
-    "phone_hours": "7:00 – 15:30",
+    "phone_hours": "7:00–15:30",
     "more_contacts": "Altri contatti",
     "social_heading": "Social media",
     "copyright": "Tutti i diritti riservati",
@@ -59,16 +61,16 @@
       "badge": "ISO 9001 · Direttamente dal produttore",
       "slides": [
         {
-          "title": "NASTRI ADESIVI CON STAMPA PROTETTA",
-          "subtitle": "Nastri BOPP affidabili con stampa protetta sotto pellicola e varianti eco per imballaggi sostenibili."
+          "title": "Nastri adesivi con stampa protetta",
+          "subtitle": "Nastri BOPP affidabili con stampa protetta sotto il film e varianti eco per un imballaggio sostenibile."
         },
         {
-          "title": "PERCHÉ SCEGLIERCI?",
-          "subtitle": "Oltre 20 anni di esperienza con e-commerce e industria. Affidabilità, consegna rapida e approccio personalizzato a ogni ordine."
+          "title": "Perché sceglierci?",
+          "subtitle": "Oltre 20 anni di esperienza con e-commerce e industria. Affidabilità, consegne rapide e approccio personale a ogni ordine."
         },
         {
-          "title": "TESTATE LA NOSTRA QUALITÀ NEL VOSTRO REPARTO",
-          "subtitle": "Campione gratuito o preventivo senza impegno su misura. Verificate resistenza e adesione prima dell'ordine."
+          "title": "Testate la nostra qualità nel vostro reparto",
+          "subtitle": "Campione gratuito o preventivo senza impegno su misura. Verificate resistenza e adesione prima di ordinare."
         }
       ],
       "cta_offer": "Scopri la gamma",
@@ -123,7 +125,7 @@
     },
     "benefits": {
       "eco_badge": "Sostenibilità",
-      "eco_title": "Nastri ECO+ – materiale rigenerato dalla nostra produzione",
+      "eco_title": "Nastri ECO+: materiale rigenerato dalla nostra produzione",
       "eco_text": "Il film ECO+ nasce da scarti postindustriali della produzione di film BOPP: il materiale torna subito in circolo. Scegliete il 50%, 80% o 100% di contenuto rigenerato con la stessa resistenza del nastro standard, senza sovrapprezzo ecologico. Disponibili come Akryl o HOT MELT, neutri o stampati.",
       "eco_link": "Scopri la gamma ECO+ →",
       "glue_badge": "Adesione estrema",
@@ -257,24 +259,196 @@
     "faq": {
       "label": "Domande frequenti",
       "title": "Risposte prima dell'ordine",
-      "subtitle": "Le domande più comuni su stampa, tempi di consegna e materiali. Non siete sicuri? Scriveteci — vi aiutiamo.",
-      "all_link": "Vedi tutte le domande e cerca →"
+      "subtitle": "Le domande più comuni su stampa, tempi di consegna e materiali. Non siete sicuri? Scriveteci e vi aiutiamo.",
+      "all_link": "Vedi tutte le domande e cerca →",
+      "items": {
+        "0": {
+          "q": "Qual è la quantità minima d'ordine?",
+          "a": "Per i nastri BOPP 360 pz (Akryl) o 504 pz (HOT MELT); per carta e BOPET il minimo dipende individualmente dalla stampa e dallo strato crepato."
+        },
+        "1": {
+          "q": "Quanto tempo richiede la produzione di nastro stampato?",
+          "a": "Il tempo di consegna standard è di 3–4 settimane dall'approvazione della grafica e dell'ordine. Per urgenze cerchiamo di accelerare la consegna."
+        },
+        "2": {
+          "q": "Posso ordinare anche nastro senza stampa?",
+          "a": "Sì. Forniamo la stessa qualità anche senza stampa, ideale per scorte di magazzino o imballaggio immediato."
+        },
+        "3": {
+          "q": "Qual è la differenza tra HOT MELT e Akryl?",
+          "a": "HOT MELT aderisce rapidamente e con forza anche a freddo, ideale per magazzini e spedizioni. Akryl è più silenzioso nello svolgimento e più resistente ai UV, ideale per stoccaggio prolungato. Maggiori info in <a href=\"/#lepidla\">Quale adesivo scegliere?</a>."
+        },
+        "4": {
+          "q": "Fornite campioni gratuiti?",
+          "a": "Sì, per materiali selezionati e grafiche esistenti siamo lieti di inviare un campione di prova. Nella richiesta indicate «Voglio un campione»."
+        },
+        "5": {
+          "q": "Quali tecnologie di stampa offrite?",
+          "a": "Flessografia fino a 8 colori e rotocalco fino a 10 colori, incluso sotto-stampa di qualità. Consigliamo la tecnologia in base a colori, quantità e qualità richiesta."
+        }
+      }
     }
   },
   "faq": {
     "label": "Domande frequenti",
     "title": "Domande e risposte",
     "subtitle": "Trovate risposte su stampa, tempi, adesivi e campioni. Filtrate per tema o cercate una parola chiave.",
+    "hero_cta": "Scrivi un messaggio",
     "search_label": "Cerca nelle domande",
     "search_placeholder": "Cerca… es. HOT MELT, campione, tempi di consegna",
     "filters_label": "Filtro temi",
+    "filters": {
+      "all": "Tutte",
+      "objednavka": "Ordine",
+      "vyroba": "Produzione e tempi",
+      "material": "Materiale e adesivo",
+      "potisk": "Stampa e grafica",
+      "vzorky": "Campioni"
+    },
+    "more": "Mostra altre {n} domande",
+    "count_preview": "Visualizzate {shown} di {total}",
+    "count_all": "{n} domande",
+    "count_filtered": "Visualizzate {visible} di {total}",
     "empty_title": "Nessun risultato",
-    "empty_text": "Provate un'altra parola chiave o un altro filtro. Oppure scriveteci — vi aiutiamo.",
+    "empty_text": "Provate un'altra parola chiave o un altro filtro. Oppure scriveteci e vi aiutiamo.",
     "empty_cta": "Scrivi un messaggio →",
     "contact_label": "Contatto",
     "cta_title": "Non avete trovato la risposta?",
-    "cta_text": "Scriveteci un breve messaggio — vi risponderemo con una risposta o un consiglio su materiale e stampa.",
-    "cta_button": "Invia messaggio"
+    "cta_text": "Scriveteci un breve messaggio e vi risponderemo con una risposta o un consiglio su materiale e stampa.",
+    "cta_button": "Invia messaggio",
+    "form": {
+      "name": "Nome e cognome",
+      "email": "E-mail",
+      "phone": "Telefono",
+      "message": "La vostra domanda / messaggio",
+      "message_placeholder": "Scrivete di cosa avete bisogno…",
+      "gdpr": "Inviando accettate il trattamento dei dati personali per la gestione del messaggio.",
+      "sending": "Invio in corso…",
+      "success": "Grazie, il messaggio è stato inviato. Vi risponderemo al più presto.",
+      "error": "Invio non riuscito. Scriveteci a karel.petrak@alfain.eu."
+    },
+    "items": {
+      "moq": {
+        "q": "Qual è la quantità minima d'ordine?",
+        "a": "Per i nastri BOPP 360 pz (Akryl) o 504 pz (HOT MELT); per carta e BOPET il minimo dipende individualmente dalla stampa e dallo strato crepato.",
+        "search": "minimo moq quantità ordine bopp hot melt akryl"
+      },
+      "lead-time": {
+        "q": "Quanto tempo richiede la produzione di nastro stampato?",
+        "a": "Il tempo di consegna standard è di 3–4 settimane dall'approvazione della grafica e dell'ordine. Per urgenze cerchiamo di accelerare la consegna.",
+        "search": "tempi consegna produzione settimane urgente"
+      },
+      "bez-potisku": {
+        "q": "Posso ordinare anche nastro senza stampa?",
+        "a": "Sì. Forniamo la stessa qualità anche senza stampa, ideale per scorte di magazzino o imballaggio immediato.",
+        "search": "senza stampa neutro plain"
+      },
+      "lepidlo": {
+        "q": "Qual è la differenza tra HOT MELT e Akryl?",
+        "a": "HOT MELT aderisce rapidamente e con forza anche a freddo, ideale per magazzini e spedizioni. Akryl è più silenzioso nello svolgimento e più resistente ai UV, ideale per stoccaggio prolungato. Maggiori info in <a href=\"/#lepidla\">Quale adesivo scegliere?</a>.",
+        "search": "hot melt akryl adesivo adesione uv silenzioso magazzino"
+      },
+      "vzorky": {
+        "q": "Fornite campioni gratuiti?",
+        "a": "Sì, per materiali selezionati e grafiche esistenti siamo lieti di inviare un campione di prova. Nella richiesta indicate «Voglio un campione».",
+        "search": "campione gratis test trial"
+      },
+      "technologie": {
+        "q": "Quali tecnologie di stampa offrite?",
+        "a": "Flessografia fino a 8 colori e rotocalco fino a 10 colori, incluso sotto-stampa di qualità. Consigliamo la tecnologia in base a colori, quantità e qualità richiesta.",
+        "search": "flessografia rotocalco colori stampa tecnologia"
+      },
+      "grafika": {
+        "q": "Preparate voi il progetto grafico?",
+        "a": "Sì. Inviate il logo (idealmente PDF/AI/SVG) e un'idea di testo o colori, prepariamo un'anteprima di stampa da approvare prima della produzione.",
+        "search": "grafica logo anteprima design pdf ai svg"
+      },
+      "sirka": {
+        "q": "Quali larghezze e lunghezze producete?",
+        "a": "Le larghezze più comuni sono 48 mm e 50 mm; altre larghezze e lunghezze di avvolgimento si definiscono individualmente in base a materiale e applicazione (manuale o automatica).",
+        "search": "larghezza lunghezza 48 mm 50 mm bobina"
+      },
+      "eko": {
+        "q": "Avete nastri sostenibili / ECO?",
+        "a": "Sì, linea ECO+ (BOPP riciclato), nastri di carta e altre varianti sostenibili. Dettagli nell'assortimento Nastri sostenibili.",
+        "search": "eco riciclo sostenibile carta fsc"
+      },
+      "stroje": {
+        "q": "I nastri vanno bene anche per imballaggio automatico?",
+        "a": "Sì. In base ad adesivo e materiale consigliamo la variante per svolgitori manuali o per linee automatiche.",
+        "search": "macchina automatica linea svolgitore dispenser"
+      },
+      "doprava": {
+        "q": "Come funzionano spedizione e fatturazione?",
+        "a": "Consegniamo in tutta la Repubblica Ceca e all'estero. Condizioni di trasporto e pagamento si definiscono nell'offerta in base a volume e destinazione.",
+        "search": "spedizione fattura consegna eu prezzo"
+      },
+      "skladovani": {
+        "q": "Come conservare correttamente i nastri?",
+        "a": "Ideale in luogo asciutto, lontano dal sole diretto, a temperatura ambiente. I nastri Akryl tollerano meglio lo stoccaggio lungo; con uso intensivo consigliamo di consumare prima l'HOT MELT.",
+        "search": "stoccaggio temperatura umidità durata"
+      },
+      "barvy": {
+        "q": "Si può stampare secondo Pantone o CMYK?",
+        "a": "Sì. Allineiamo i colori a Pantone o a un campione. Per flessografia e rotocalco consigliamo gli inchiostri adatti al supporto (trasparente, bianco, colorato).",
+        "search": "pantone cmyk colore logo branding"
+      },
+      "opakovat": {
+        "q": "Posso ripetere l'ordine in seguito con la stessa grafica?",
+        "a": "Sì. Conserviamo il progetto approvato e i file di stampa, così un riordino è più rapido senza riapprovare la grafica (se non cambiate nulla).",
+        "search": "riordino reprint stessa grafica"
+      },
+      "cena": {
+        "q": "Da cosa dipende il prezzo del nastro stampato?",
+        "a": "Il prezzo dipende da materiale, adesivo, larghezza e lunghezza della bobina, numero di colori, tecnologia di stampa e volume totale. Inviate una richiesta, prepariamo un'offerta concreta.",
+        "search": "prezzo offerta preventivo calcolo"
+      },
+      "papir-vs-bopp": {
+        "q": "Quando scegliere nastro di carta invece del BOPP?",
+        "a": "Il nastro di carta è adatto a imballaggi eco, cartoni riciclabili e brand dal look naturale. Il BOPP resiste meglio all'umidità ed è spesso più conveniente a volumi alti. Consigliamo in base al vostro processo.",
+        "search": "carta bopp plastica eco cartone"
+      },
+      "bezpecnostni": {
+        "q": "Realizzate nastri di sicurezza o di avvertimento?",
+        "a": "Sì, stampe di avviso, Fragile, Vorsicht Glas, VOID / tamper-evident e testi logistici. Prepariamo il layout secondo le vostre istruzioni e le varianti linguistiche.",
+        "search": "sicurezza void tamper avviso fragile"
+      },
+      "zmena-grafiky": {
+        "q": "E se devo modificare la grafica dopo l'approvazione?",
+        "a": "Finché non partono lastre / stampa, le modifiche di solito sono possibili. Dopo l'avvio della produzione spesso solo con costi e tempi aggiuntivi, controllate quindi attentamente l'anteprima.",
+        "search": "modifica grafica correzione approvazione"
+      },
+      "jadro": {
+        "q": "Quale anima / tubetto usate?",
+        "a": "Di norma forniamo bobine con tubetto di carta standard adatto a svolgitori manuali e automatici. Diametri e resistenze speciali si definiscono individualmente per la vostra linea.",
+        "search": "anima tubetto core diametro"
+      },
+      "zahranici": {
+        "q": "Consegnate anche fuori dalla Repubblica Ceca?",
+        "a": "Sì. Spediamo in UE e oltre, trasporto e condizioni si concordano in base a destinazione e volume.",
+        "search": "estero eu export consegna"
+      },
+      "vzorek-potisk": {
+        "q": "Riceverò un campione già con la mia stampa?",
+        "a": "Per nuove grafiche di solito approvate prima un'anteprima digitale. Un campione fisico stampato si valuta caso per caso, per design esistenti o progetti più grandi.",
+        "search": "campione stampato anteprima trial"
+      },
+      "urgentni": {
+        "q": "Fate produzione urgente / express?",
+        "a": "Per alcuni ordini sì, confermiamo sempre la data in base al carico di lavoro e alla complessità della stampa. Indicate la data desiderata nella richiesta e vi rispondiamo con un'opzione realistica.",
+        "search": "urgente express consegna rapida"
+      },
+      "odstranitelna": {
+        "q": "Avete nastri che si rimuovono in modo pulito?",
+        "a": "Sì, nastri removibili (removable) dove non volete residui di adesivo. Consigliamo il tipo adatto alla superficie. Maggiori info nell'assortimento Nastri removibili.",
+        "search": "removibile removable residui adesivo"
+      },
+      "vice-jazyku": {
+        "q": "Il testo sul nastro può essere in più lingue?",
+        "a": "Sì. Spesso combiniamo logo e testi logistici in ceco, tedesco, inglese e altre lingue, progettati per restare leggibili anche ripetuti lungo il nastro.",
+        "search": "lingue multilingue testo mutazione"
+      }
+    }
   },
   "gallery": {
     "ui": {
@@ -328,7 +502,7 @@
       "references_title": "Referenze reali",
       "references_subtitle": "",
       "production_title": "Produzione e magazzino",
-      "production_subtitle": "Magazzini automatizzati, linee di produzione e materie prime – Empoli e Atessa.",
+      "production_subtitle": "Magazzini automatizzati, linee di produzione e materie prime: Empoli e Atessa.",
       "demos_title": "Possibilità di stampa e tecnologie",
       "demos_subtitle": "Esempi di soluzioni di sicurezza, logistica e speciali, illustrazione delle tecnologie che offriamo.",
       "empty": "Nessun esempio corrisponde ai filtri selezionati. Provate a rimuoverne alcuni."
@@ -359,47 +533,47 @@
     "items": {
       "bonami": {
         "title": "Nastri con logo Bonami",
-        "description": "Stampa del marchio monocolore su nastro BOPP bianco – logo e illustrazioni di arredi per imballaggi e-commerce.",
+        "description": "Stampa del marchio monocolore su nastro BOPP bianco: logo e illustrazioni di arredi per imballaggi e-commerce.",
         "industry_label": "E-commerce"
       },
       "notino": {
         "title": "Nastri con logo Notino",
-        "description": "Stampa bianca ad alto contrasto del logo su nastro nero – branding evidente delle spedizioni nel beauty e-commerce.",
+        "description": "Stampa bianca ad alto contrasto del logo su nastro nero: branding evidente delle spedizioni nel beauty e-commerce.",
         "industry_label": "E-commerce"
       },
       "fenske": {
         "title": "Nastri con logo Fenske",
-        "description": "Stampa bicolore FENSKE / Weine und Feinkost sul nastro da imballaggio – branding per spedizioni di vini e gastronomia.",
+        "description": "Stampa bicolore FENSKE / Weine und Feinkost sul nastro da imballaggio: branding per spedizioni di vini e gastronomia.",
         "industry_label": "Industria alimentare"
       },
       "just-nahrin": {
         "title": "Nastri Just+ / nahrin",
-        "description": "Stampa multicolore di loghi e testo logistico con simbolo fragile – branding e istruzioni per il destinatario.",
+        "description": "Stampa multicolore di loghi e testo logistico con simbolo fragile: branding e istruzioni per il destinatario.",
         "industry_label": "E-commerce"
       },
       "vorsicht-glas": {
         "title": "Nastro di avvertimento Vorsicht Glas",
-        "description": "Stampa di avvertimento “Vorsicht Glas!” / “Do not drop” sul nastro – protezione delle spedizioni fragili in transito.",
+        "description": "Stampa di avvertimento “Vorsicht Glas!” / “Do not drop” sul nastro: protezione delle spedizioni fragili in transito.",
         "industry_label": "Logistica"
       },
       "alfain": {
         "title": "Nastri con logo ALFA IN",
-        "description": "Nastro BOPP arancione con logo ALFA IN bianco – branding delle spedizioni direttamente in magazzino.",
+        "description": "Nastro BOPP arancione con logo ALFA IN bianco: branding delle spedizioni direttamente in magazzino.",
         "industry_label": "Logistica"
       },
       "papir-fsc": {
         "title": "Nastro di carta FSC / 22 PAP",
-        "description": "Nastro di carta ecologico con stampa FSC e simbolo 22 PAP – imballaggio e-commerce sostenibile.",
+        "description": "Nastro di carta ecologico con stampa FSC e simbolo 22 PAP: imballaggio e-commerce sostenibile.",
         "industry_label": "E-commerce"
       },
       "alfain-sklad": {
         "title": "Nastro ALFA IN in magazzino",
-        "description": "Imballaggio manuale su pallet con nastro arancione ALFA IN – stampa nella pratica logistica.",
+        "description": "Imballaggio manuale su pallet con nastro arancione ALFA IN: stampa nella pratica logistica.",
         "industry_label": "Logistica"
       },
       "irplast-warehouse": {
         "title": "Magazzino automatizzato Empoli",
-        "description": "Magazzino automatizzato di Empoli – logistica di nastri e film finiti.",
+        "description": "Magazzino automatizzato di Empoli: logistica di nastri e film finiti.",
         "industry_label": "Produzione"
       },
       "irplast-warehouse-2": {
@@ -408,7 +582,7 @@
         "industry_label": "Produzione"
       },
       "irplast-shuttle": {
-        "title": "Produzione – automated shuttle",
+        "title": "Produzione: automated shuttle",
         "description": "Reparto produttivo con sistema shuttle automatico nello stabilimento di Empoli.",
         "industry_label": "Produzione"
       },
@@ -419,7 +593,7 @@
       },
       "irplast-lisim": {
         "title": "Linea STILANSOL® LISIM",
-        "description": "Orientamento simultaneo del film BOPP – linea di produzione Brückner LISIM / STILANSOL®.",
+        "description": "Orientamento simultaneo del film BOPP: linea di produzione Brückner LISIM / STILANSOL®.",
         "industry_label": "Produzione"
       },
       "irplast-slitter": {
@@ -443,7 +617,7 @@
         "industry_label": "E-commerce"
       },
       "flexotisk-8": {
-        "title": "Stampa flessografica – 8 colori",
+        "title": "Stampa flessografica: 8 colori",
         "description": "Stampa flessografica in quadricromia ad alta risoluzione, adatta a un branding d'impatto sui nastri e alle applicazioni alimentari.",
         "industry_label": "Industria alimentare"
       },
@@ -463,7 +637,7 @@
         "industry_label": "Sicurezza"
       },
       "logisticky-kontakty": {
-        "title": "Stampa logistica – contatti",
+        "title": "Stampa logistica: contatti",
         "description": "Stampa informativa con recapiti, codice QR o istruzioni per il destinatario della spedizione.",
         "industry_label": "Logistica"
       },
@@ -488,7 +662,7 @@
         "industry_label": "E-commerce"
       },
       "vystrizny-krehke": {
-        "title": "Stampa di avvertimento – fragile",
+        "title": "Stampa di avvertimento: fragile",
         "description": "Nastri di avvertimento stampati con “Fragile”, “Non capovolgere” o un simbolo personalizzato per proteggere le merci durante il trasporto.",
         "industry_label": "Logistica"
       },
@@ -1297,7 +1471,7 @@
         ],
         "uses": [
           "Imballaggio manuale con svolgimento silenzioso (low noise)",
-          "Macchine automatiche per imballaggio – versione noisy",
+          "Macchine automatiche per imballaggio: versione noisy",
           "Chiusura standard dei cartoni",
           "Stampa con logo e informazioni aziendali"
         ],

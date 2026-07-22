@@ -7,7 +7,7 @@
     var SUPPORTED = ['cs', 'en', 'de', 'it'];
     var DEFAULT = 'cs';
     var STORAGE_KEY = 'paskyonline_lang';
-    var I18N_VER = '37';
+    var I18N_VER = '40';
     var HTML_LANG = { cs: 'cs', en: 'en', de: 'de', it: 'it' };
     var currentLocale = null;
     var localeCache = {};
@@ -134,6 +134,8 @@
         document.documentElement.lang = meta.htmlLang || lang;
         if (page === 'gallery' && meta.gallery_title) {
             document.title = meta.gallery_title;
+        } else if (page === 'faq' && meta.faq_title) {
+            document.title = meta.faq_title;
         } else if (page === 'sortiment' && meta.sortiment_title && !parseSortimentSlug()) {
             document.title = meta.sortiment_title;
         } else if (meta.home_title && (page === 'home' || !page)) {
@@ -144,8 +146,9 @@
         var desc = document.querySelector('meta[name="description"]');
         var isSortimentDetail = page === 'sortiment' && parseSortimentSlug();
         var descKey = page === 'gallery' ? meta.gallery_description
-            : (page === 'sortiment' && !isSortimentDetail ? meta.sortiment_description : null);
-        if (!descKey && page !== 'sortiment') {
+            : (page === 'faq' ? meta.faq_description
+            : (page === 'sortiment' && !isSortimentDetail ? meta.sortiment_description : null));
+        if (!descKey && page !== 'sortiment' && page !== 'faq') {
             descKey = meta.home_description;
         }
         if (desc && descKey) {
@@ -342,7 +345,12 @@
         if (!Array.isArray(slides) || !window.__heroSlides) return;
         slides.forEach(function (s, i) {
             if (!window.__heroSlides[i]) return;
-            if (s.title) window.__heroSlides[i].title = s.title;
+            // Hero carousel uses `headline` (legacy `title` kept in sync).
+            var headline = s.headline || s.title;
+            if (headline) {
+                window.__heroSlides[i].headline = headline;
+                window.__heroSlides[i].title = headline;
+            }
             if (s.subtitle) window.__heroSlides[i].subtitle = s.subtitle;
 
             var isSampleSlide = i === slides.length - 1 && !!window.__heroSlides[i].ctaPrimary &&

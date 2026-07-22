@@ -3,21 +3,23 @@
     "site_name": "Pásky s potiskem",
     "logo_alt": "Pásky s potiskem",
     "home_title": "Pásky s potiskem | Lepicí pásky s logem na míru | ALFA IN",
-    "home_description": "Výroba a prodej lepicích pásek s potiskem – pásky s logem pro firmy, e-shopy a sklady. BOPP, eko a speciální pásky, potisk až 8 barev, dodání po celé ČR. Nezávazná kalkulace.",
+    "home_description": "Výroba a prodej lepicích pásek s potiskem: pásky s logem pro firmy, e-shopy a sklady. BOPP, eko a speciální pásky, potisk až 8 barev, dodání po celé ČR. Nezávazná kalkulace.",
     "gallery_title": "Galerie pásek s potiskem | Realizace ALFA IN",
-    "gallery_description": "Ukázky lepicích pásek s potiskem – loga firem, bezpečnostní pásky, eko varianty a speciální tisky. Inspirace pro vaši pásku s potiskem na míru.",
+    "gallery_description": "Ukázky lepicích pásek s potiskem: loga firem, bezpečnostní pásky, eko varianty a speciální tisky. Inspirace pro vaši pásku s potiskem na míru.",
     "sortiment_title": "Sortiment lepicích pásek | Pásky s potiskem",
-    "sortiment_description": "Kompletní sortiment lepicích pásek s potiskem – BOPP, BOPET, papírové, eko a speciální pásky. Vyberte materiál a poptávejte pásku na míru od výrobce ALFA IN.",
+    "sortiment_description": "Kompletní sortiment lepicích pásek s potiskem: BOPP, BOPET, papírové, eko a speciální pásky. Vyberte materiál a poptávejte pásku na míru od výrobce ALFA IN.",
     "langNames": {
       "cs": "Čeština",
       "en": "English",
       "de": "Deutsch",
       "it": "Italiano"
     },
-    "htmlLang": "cs"
+    "htmlLang": "cs",
+    "faq_title": "FAQ | Pásky s potiskem: otázky a odpovědi",
+    "faq_description": "Časté otázky k páskám s potiskem: minimální odběr, dodací lhůty, HOT MELT vs Akryl, potisk, vzorky a doprava. Odpovědi od výrobce ALFA IN."
   },
   "nav": {
-    "tagline": "ALFA IN - výroba, poradenství, prodej a servis",
+    "tagline": "ALFA IN: výroba, poradenství, prodej a servis",
     "menu": "Otevřít menu",
     "menu_close": "Zavřít menu",
     "main_nav_label": "Hlavní navigace",
@@ -59,15 +61,15 @@
       "badge": "ISO 9001 · Přímo od výrobce",
       "slides": [
         {
-          "title": "LEPICÍ PÁSKY SE SPODNÍM TISKEM",
+          "title": "Lepicí pásky se spodním tiskem",
           "subtitle": "Spolehlivé BOPP pásky s tiskem chráněným pod folií i eko varianty pro udržitelné balení."
         },
         {
-          "title": "PROČ SI VYBRAT NÁS?",
+          "title": "Proč si vybrat nás?",
           "subtitle": "Více než 20 let zkušeností a spolupráce s e-shopy i průmyslem. Spolehlivost, rychlé dodání a individuální přístup ke každé zakázce."
         },
         {
-          "title": "OTESTUJTE NAŠI KVALITU VE SVÉM PROVOZU",
+          "title": "Otestujte naši kvalitu ve svém provozu",
           "subtitle": "Bezplatný vzorek nebo nezávazná kalkulace na míru. Přesvědčte se o odolnosti a pevnosti lepidla ještě před objednávkou."
         }
       ],
@@ -123,8 +125,8 @@
     },
     "benefits": {
       "eco_badge": "Udržitelnost",
-      "eco_title": "Pásky ECO+ – regenerát z vlastní výroby",
-      "eco_text": "Fólie ECO+ vzniká z postindustriálního odpadu při výrobě BOPP fólií – materiál se ihned vrací zpět do oběhu. Volíte podíl regenerátu 50 %, 80 % nebo 100 % při stejné pevnosti jako standardní páska, bez ekologické přirážky. Dostupné jako Akryl i HOT MELT, neutrálně i s potiskem.",
+      "eco_title": "Pásky ECO+: regenerát z vlastní výroby",
+      "eco_text": "Fólie ECO+ vzniká z postindustriálního odpadu při výrobě BOPP fólií: materiál se ihned vrací zpět do oběhu. Volíte podíl regenerátu 50 %, 80 % nebo 100 % při stejné pevnosti jako standardní páska, bez ekologické přirážky. Dostupné jako Akryl i HOT MELT, neutrálně i s potiskem.",
       "eco_link": "Prohlédnout řadu ECO+ →",
       "glue_badge": "Extrémní lepivost",
       "glue_title": "EXTRA GLUE+ (Akryl) a TACK+ (HOT MELT)",
@@ -258,23 +260,195 @@
       "label": "Časté dotazy",
       "title": "Odpovědi před objednávkou",
       "subtitle": "Nejčastější otázky k potisku, dodacím lhůtám a výběru materiálu. Pokud si nejste jistí, napište nám, poradíme.",
-      "all_link": "Zobrazit všechny otázky a vyhledávání →"
+      "all_link": "Zobrazit všechny otázky a vyhledávání →",
+      "items": {
+        "0": {
+          "q": "Jaké je minimální množství objednávky?",
+          "a": "U BOPP pásek 360 ks (Akryl) nebo 504 ks (HOT MELT); u papírových a BOPET pásek závisí minimální odběr individuálně na potisku a krepové vrstvě."
+        },
+        "1": {
+          "q": "Jak dlouho trvá výroba pásky s potiskem?",
+          "a": "Standardní dodací lhůta je 3 až 4 týdny od schválení grafického návrhu a objednávky. U urgentních zakázek se snažíme dodání urychlit."
+        },
+        "2": {
+          "q": "Mohu objednat pásku i bez potisku?",
+          "a": "Ano. Pásky dodáváme ve stejné kvalitě i bez potisku, ideální pro skladové zásoby nebo okamžité balení."
+        },
+        "3": {
+          "q": "Jaký je rozdíl mezi HOT MELT a Akryl?",
+          "a": "HOT MELT rychle a pevně přilne i v chladu, vhodný do skladů a expedice. Akryl je tišší při odvíjení a odolnější vůči UV, ideální pro dlouhodobé skladování. Více v sekci <a href=\"/#lepidla\">Jaké lepidlo zvolit?</a>."
+        },
+        "4": {
+          "q": "Dodáváte vzorky zdarma?",
+          "a": "Ano, u vybraných materiálů a u stávajících grafických návrhů vám rádi zašleme testovací vzorek. V poptávce uveďte „Mám zájem o vzorek“."
+        },
+        "5": {
+          "q": "Jaké technologie potisku nabízíte?",
+          "a": "Flexotisk až 8 barev a rototisk až 10 barev včetně kvalitního spodního tisku. Vhodnou technologii doporučíme podle nároku na barvy, množství a požadovanou kvalitu tisku."
+        }
+      }
     }
   },
   "faq": {
     "label": "Časté dotazy",
     "title": "Otázky a odpovědi",
     "subtitle": "Najděte odpověď na potisk, termíny, lepidla i vzorky. Filtrujte podle tématu nebo hledejte klíčové slovo.",
+    "hero_cta": "Napsat zprávu",
     "search_label": "Hledat v otázkách",
     "search_placeholder": "Hledat… např. HOT MELT, vzorek, dodací lhůta",
     "filters_label": "Filtr témat",
+    "filters": {
+      "all": "Vše",
+      "objednavka": "Objednávka",
+      "vyroba": "Výroba a termíny",
+      "material": "Materiál a lepidlo",
+      "potisk": "Potisk a grafika",
+      "vzorky": "Vzorky"
+    },
+    "more": "Zobrazit dalších {n} otázek",
+    "count_preview": "Zobrazeno {shown} z {total}",
+    "count_all": "{n} otázek",
+    "count_filtered": "Zobrazeno {visible} z {total}",
     "empty_title": "Nic jsme nenašli",
-    "empty_text": "Zkuste jiné klíčové slovo nebo vyberte jiný filtr. Případně nám napište — poradíme.",
+    "empty_text": "Zkuste jiné klíčové slovo nebo vyberte jiný filtr. Případně nám napište a poradíme.",
     "empty_cta": "Napsat zprávu →",
     "contact_label": "Kontakt",
     "cta_title": "Nenašli jste odpověď?",
-    "cta_text": "Napište nám krátkou zprávu — ozveme se s odpovědí nebo doporučením materiálu a potisku.",
-    "cta_button": "Odeslat zprávu"
+    "cta_text": "Napište nám krátkou zprávu a ozveme se s odpovědí nebo doporučením materiálu a potisku.",
+    "cta_button": "Odeslat zprávu",
+    "form": {
+      "name": "Jméno a příjmení",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "message": "Vaše otázka / zpráva",
+      "message_placeholder": "Napište, s čím potřebujete poradit…",
+      "gdpr": "Odesláním souhlasíte se zpracováním osobních údajů za účelem vyřízení zprávy.",
+      "sending": "Odesílám…",
+      "success": "Děkujeme, zpráva byla odeslána. Ozveme se co nejdřív.",
+      "error": "Odeslání se nezdařilo. Napište nám prosím na karel.petrak@alfain.eu."
+    },
+    "items": {
+      "moq": {
+        "q": "Jaké je minimální množství objednávky?",
+        "a": "U BOPP pásek 360 ks (Akryl) nebo 504 ks (HOT MELT); u papírových a BOPET pásek závisí minimální odběr individuálně na potisku a krepové vrstvě.",
+        "search": "minimum moq odběr množství kusy objednávka bopp hot melt akryl"
+      },
+      "lead-time": {
+        "q": "Jak dlouho trvá výroba pásky s potiskem?",
+        "a": "Standardní dodací lhůta je 3 až 4 týdny od schválení grafického návrhu a objednávky. U urgentních zakázek se snažíme dodání urychlit.",
+        "search": "dodací lhůta výroba termín týdny urgentní expedice"
+      },
+      "bez-potisku": {
+        "q": "Mohu objednat pásku i bez potisku?",
+        "a": "Ano. Pásky dodáváme ve stejné kvalitě i bez potisku, ideální pro skladové zásoby nebo okamžité balení.",
+        "search": "bez potisku nepotištěná neutrální páska"
+      },
+      "lepidlo": {
+        "q": "Jaký je rozdíl mezi HOT MELT a Akryl?",
+        "a": "HOT MELT rychle a pevně přilne i v chladu, vhodný do skladů a expedice. Akryl je tišší při odvíjení a odolnější vůči UV, ideální pro dlouhodobé skladování. Více v sekci <a href=\"/#lepidla\">Jaké lepidlo zvolit?</a>.",
+        "search": "hot melt akryl lepidlo přilnavost uv tiché odvíjení sklad"
+      },
+      "vzorky": {
+        "q": "Dodáváte vzorky zdarma?",
+        "a": "Ano, u vybraných materiálů a u stávajících grafických návrhů vám rádi zašleme testovací vzorek. V poptávce uveďte „Mám zájem o vzorek“.",
+        "search": "vzorek zdarma testování trial sample"
+      },
+      "technologie": {
+        "q": "Jaké technologie potisku nabízíte?",
+        "a": "Flexotisk až 8 barev a rototisk až 10 barev včetně kvalitního spodního tisku. Vhodnou technologii doporučíme podle nároku na barvy, množství a požadovanou kvalitu tisku.",
+        "search": "flexotisk rototisk barvy tisk technologie spodní tisk"
+      },
+      "grafika": {
+        "q": "Připravíte grafický návrh za mě?",
+        "a": "Ano. Pošlete logo (ideálně PDF/AI/SVG) a představu o textu nebo barevnosti, připravíme náhled potisku ke schválení před výrobou.",
+        "search": "grafika návrh logo náhled design pdf ai svg"
+      },
+      "sirka": {
+        "q": "Jaké šířky a délky pásek vyrábíte?",
+        "a": "Nejběžnější šířky jsou 48 mm a 50 mm; další šířky a délky navíjení řešíme individuálně podle materiálu a aplikace (ruční i strojní balení).",
+        "search": "šířka délka 48 mm 50 mm role navíjení"
+      },
+      "eko": {
+        "q": "Máte udržitelné / ECO pásky?",
+        "a": "Ano, řada ECO+ (recyklovaný BOPP), papírové pásky a další udržitelné varianty. Podrobnosti najdete v sortimentu Udržitelné pásky.",
+        "search": "eco eko recyklace udržitelná papírová fsc cirkulární"
+      },
+      "stroje": {
+        "q": "Hodí se pásky i na strojní balení?",
+        "a": "Ano. Podle lepidla a materiálu doporučíme variantu pro ruční odvíjení nebo pro stohovací / automatické balicí linky.",
+        "search": "strojní automatizace linka odvíjení dispenser"
+      },
+      "doprava": {
+        "q": "Jak probíhá doprava a fakturace?",
+        "a": "Dodáváme po celé ČR i do zahraničí. Podmínky dopravy a splatnosti upřesníme v nabídce podle objemu a místa doručení.",
+        "search": "doprava fakturace dodání čr eu cena"
+      },
+      "skladovani": {
+        "q": "Jak pásky správně skladovat?",
+        "a": "Ideálně v suchu, mimo přímé slunce, při běžné pokojové teplotě. Akrylové pásky lépe snášejí delší skladování; HOT MELT doporučujeme spotřebovat dříve při intenzivním používání.",
+        "search": "skladování teplota vlhkost životnost"
+      },
+      "barvy": {
+        "q": "Lze tisknout podle Pantone nebo CMYK?",
+        "a": "Ano. Barvy ladíme podle Pantone nebo vzorku. U flexotisku a rototisku doporučíme vhodné barvy podle podkladu (transparentní, bílá, barevná páska).",
+        "search": "pantone cmyk barva odstín logo branding"
+      },
+      "opakovat": {
+        "q": "Mohu objednávku později zopakovat se stejnou grafikou?",
+        "a": "Ano. Schválený návrh a tiskové podklady uchováváme, takže opakovanou objednávku připravíme rychleji bez nutnosti znovu schvalovat grafiku (pokud nic neměníte).",
+        "search": "opakovaná objednávka reprint stejná grafika"
+      },
+      "cena": {
+        "q": "Od čeho se odvíjí cena pásky s potiskem?",
+        "a": "Cenu ovlivňuje materiál, lepidlo, šířka a délka role, počet barev, technologie tisku a celkový objem. Pošlete poptávku a připravíme konkrétní nabídku.",
+        "search": "cena nabídka kalkulace cena za kus"
+      },
+      "papir-vs-bopp": {
+        "q": "Kdy zvolit papírovou pásku místo BOPP?",
+        "a": "Papírová páska se hodí pro eko balení, recyklovatelné kartony a brand, kde chcete přírodní vzhled. BOPP je odolnější vůči vlhkosti a často výhodnější při vyšších objemech. Rádi doporučíme podle vašeho procesu.",
+        "search": "papírová bopp plast eko karton"
+      },
+      "bezpecnostni": {
+        "q": "Umíte bezpečnostní nebo výstražné pásky?",
+        "a": "Ano, potisk varování, Fragile, Vorsicht Glas, VOID / tamper-evident a logistické texty. Návrh připravíme podle vašich instrukcí a jazykových mutací.",
+        "search": "bezpečnostní void tamper výstražná fragile"
+      },
+      "zmena-grafiky": {
+        "q": "Co když potřebuji upravit grafiku po schválení?",
+        "a": "Dokud nezačne výroba tiskových forem / tisk, změny obvykle stihneme. Po spuštění výroby už úpravy nemusí být možné bez nových nákladů a termínu, proto si náhled pečlivě zkontrolujte.",
+        "search": "změna grafiky korekce schválení"
+      },
+      "jadro": {
+        "q": "Jaké jádro / dutinku pásky používáte?",
+        "a": "Standardně dodáváme role s běžnou papírovou dutinkou vhodnou pro ruční i strojní odvíječe. Speciální průměry a pevnosti jádra řešíme individuálně podle vaší linky.",
+        "search": "jádro dutinka core průměr"
+      },
+      "zahranici": {
+        "q": "Dodáváte i mimo Českou republiku?",
+        "a": "Ano. Zásilky posíláme do EU i dále, dopravu a podmínky domluvíme podle destinace a objemu.",
+        "search": "zahraničí eu export dodání"
+      },
+      "vzorek-potisk": {
+        "q": "Dostanu vzorek už s mým potiskem?",
+        "a": "U nových grafik obvykle nejdřív schválíte digitální náhled. Fyzický vzorek s potiskem řešíme individuálně, u stávajících návrhů nebo při větších projektech.",
+        "search": "vzorek potisk náhled trial"
+      },
+      "urgentni": {
+        "q": "Umíte urgentní / express výrobu?",
+        "a": "U vybraných zakázek ano, termín vždy ověříme podle vytížení výroby a složitosti potisku. Napište v poptávce požadovaný termín, ozveme se s reálnou možností.",
+        "search": "urgentní express rychlé dodání"
+      },
+      "odstranitelna": {
+        "q": "Máte pásky, které jdou čistě odstranit?",
+        "a": "Ano, odstranitelné (removable) pásky vhodné tam, kde nechcete zanechat zbytky lepidla. Doporučíme vhodný typ podle povrchu. Více v sortimentu Odstranitelné pásky.",
+        "search": "odstranitelná removable clean remove lepidlo"
+      },
+      "vice-jazyku": {
+        "q": "Můžu mít na pásce text ve více jazycích?",
+        "a": "Ano. Často kombinujeme logo s logistickými texty v češtině, němčině, angličtině i dalších jazycích, návrh připravíme tak, aby byl čitelný i při opakování po délce pásky.",
+        "search": "jazyky mutace text multilingual"
+      }
+    }
   },
   "gallery": {
     "ui": {
@@ -328,7 +502,7 @@
       "references_title": "Reálné reference",
       "references_subtitle": "",
       "production_title": "Výroba a sklad",
-      "production_subtitle": "Automatizované sklady, výrobní linky a suroviny – Empoli a Atessa.",
+      "production_subtitle": "Automatizované sklady, výrobní linky a suroviny: Empoli a Atessa.",
       "demos_title": "Možnosti tisku a technologie",
       "demos_subtitle": "Ukázky bezpečnostních, logistických a speciálních řešení, ilustrace technologií, které nabízíme.",
       "empty": "Žádná ukázka neodpovídá vybraným filtrům. Zkuste ubrat některý z filtrů."
@@ -360,47 +534,47 @@
     "items": {
       "bonami": {
         "title": "Pásky s logem Bonami",
-        "description": "Jednobarevný brand potisk na bílé BOPP pásce – logo a ilustrace nábytku pro e-commerce balení.",
+        "description": "Jednobarevný brand potisk na bílé BOPP pásce: logo a ilustrace nábytku pro e-commerce balení.",
         "industry_label": "E-commerce"
       },
       "notino": {
         "title": "Pásky s logem Notino",
-        "description": "Kontrastní bílý potisk loga na černé pásce – výrazný branding zásilek v beauty e-commerce.",
+        "description": "Kontrastní bílý potisk loga na černé pásce: výrazný branding zásilek v beauty e-commerce.",
         "industry_label": "E-commerce"
       },
       "fenske": {
         "title": "Pásky s logem Fenske",
-        "description": "Dvoubarevný potisk FENSKE / Weine und Feinkost na balicí pásce – branding zásilek vína a delikates.",
+        "description": "Dvoubarevný potisk FENSKE / Weine und Feinkost na balicí pásce: branding zásilek vína a delikates.",
         "industry_label": "Potraviny"
       },
       "just-nahrin": {
         "title": "Pásky Just+ / nahrin",
-        "description": "Vícebarevný potisk log a logistického textu včetně symbolu křehké – branding i instrukce pro příjemce.",
+        "description": "Vícebarevný potisk log a logistického textu včetně symbolu křehké: branding i instrukce pro příjemce.",
         "industry_label": "E-commerce"
       },
       "vorsicht-glas": {
         "title": "Výstražná páska Vorsicht Glas",
-        "description": "Výstražný potisk „Vorsicht Glas!“ / „Do not drop“ na balicí pásce – ochrana křehkých zásilek při přepravě.",
+        "description": "Výstražný potisk „Vorsicht Glas!“ / „Do not drop“ na balicí pásce: ochrana křehkých zásilek při přepravě.",
         "industry_label": "Logistika"
       },
       "alfain": {
         "title": "Pásky s logem ALFA IN",
-        "description": "Oranžová BOPP páska s bílým logem ALFA IN – branding zásilek přímo ve skladu.",
+        "description": "Oranžová BOPP páska s bílým logem ALFA IN: branding zásilek přímo ve skladu.",
         "industry_label": "Logistika"
       },
       "papir-fsc": {
         "title": "Papírová páska FSC / 22 PAP",
-        "description": "Ekologická papírová páska s potiskem FSC a symbolem 22 PAP – udržitelné balení e-commerce zásilek.",
+        "description": "Ekologická papírová páska s potiskem FSC a symbolem 22 PAP: udržitelné balení e-commerce zásilek.",
         "industry_label": "E-commerce"
       },
       "alfain-sklad": {
         "title": "ALFA IN páska ve skladu",
-        "description": "Ruční balení na paletě s oranžovou páskou ALFA IN – potisk v praxi logistického provozu.",
+        "description": "Ruční balení na paletě s oranžovou páskou ALFA IN: potisk v praxi logistického provozu.",
         "industry_label": "Logistika"
       },
       "irplast-warehouse": {
         "title": "Automatizovaný sklad Empoli",
-        "description": "Automatizovaný sklad v Empoli – logistika hotových pásek a fólií.",
+        "description": "Automatizovaný sklad v Empoli: logistika hotových pásek a fólií.",
         "industry_label": "Výroba"
       },
       "irplast-warehouse-2": {
@@ -409,7 +583,7 @@
         "industry_label": "Výroba"
       },
       "irplast-shuttle": {
-        "title": "Výroba – automated shuttle",
+        "title": "Výroba: automated shuttle",
         "description": "Výrobní oddělení se automatickým shuttle systémem v závodě Empoli.",
         "industry_label": "Výroba"
       },
@@ -420,7 +594,7 @@
       },
       "irplast-lisim": {
         "title": "Linka STILANSOL® LISIM",
-        "description": "Simultánní orientace BOPP fólie – výrobní linka Brückner LISIM / STILANSOL®.",
+        "description": "Simultánní orientace BOPP fólie: výrobní linka Brückner LISIM / STILANSOL®.",
         "industry_label": "Výroba"
       },
       "irplast-slitter": {
@@ -444,7 +618,7 @@
         "industry_label": "E-commerce"
       },
       "flexotisk-8": {
-        "title": "Flexotisk – 8 barev",
+        "title": "Flexotisk: 8 barev",
         "description": "Plnobarevný flexotisk s vysokým rozlišením, vhodný pro atraktivní brand na balících páskách i potravinářských aplikacích.",
         "industry_label": "Potraviny"
       },
@@ -464,7 +638,7 @@
         "industry_label": "Bezpečnost"
       },
       "logisticky-kontakty": {
-        "title": "Logistický potisk – kontakty",
+        "title": "Logistický potisk: kontakty",
         "description": "Informační potisk s kontakty, QR kódem nebo instrukcemi pro příjemce zásilky.",
         "industry_label": "Logistika"
       },
@@ -489,7 +663,7 @@
         "industry_label": "E-commerce"
       },
       "vystrizny-krehke": {
-        "title": "Výstražný potisk – křehké",
+        "title": "Výstražný potisk: křehké",
         "description": "Výstražné pásky s potiskem „Křehké“, „Neklopit“ nebo vlastním symbolem pro ochranu zboží při přepravě.",
         "industry_label": "Logistika"
       },
@@ -586,7 +760,7 @@
         "description": "Ekologické řešení pro bezpečné balení s vysokou lepivostí. Ideální pro plně recyklovatelné kartonové obaly a čistý korporátní design.",
         "intro": "Papírové lepicí pásky spojují spolehlivé lepení s maximální ekologickou šetrností. Díky papírovému nosiči jsou plně recyklovatelné společně s kartonem a představují elegantní, čistě vypadající řešení pro firmy, které dbají na udržitelnost i vizuální dojem zásilek.",
         "properties": {
-          "Plná recyklovatelnost": "Páska i karton putují do jednoho kontejneru – bez nutnosti oddělovat materiály.",
+          "Plná recyklovatelnost": "Páska i karton putují do jednoho kontejneru: bez nutnosti oddělovat materiály.",
           "Vysoká lepivost": "Spolehlivé přilnutí i na recyklovaný karton a členité povrchy.",
           "Čistý design": "Matný papírový povrch působí prémiově a lze jej snadno potisknout logem."
         },
@@ -753,11 +927,11 @@
           },
           {
             "title": "100% regenerovaná BOPP fólie",
-            "text": "Vyrobeno z čistého postindustriálního odpadu z naší vlastní výroby fólií – bez nového granulátu."
+            "text": "Vyrobeno z čistého postindustriálního odpadu z naší vlastní výroby fólií: bez nového granulátu."
           },
           {
             "title": "Podpora firemní reputace",
-            "text": "Pásky řady ECO+ spolehlivě chrání zboží a prokazují ekologickou odpovědnost – ať už v neutrálním provedení, nebo s firemním potiskem."
+            "text": "Pásky řady ECO+ spolehlivě chrání zboží a prokazují ekologickou odpovědnost: ať už v neutrálním provedení, nebo s firemním potiskem."
           }
         ],
         "uses": [
@@ -853,7 +1027,7 @@
           },
           {
             "title": "Podpora firemní reputace",
-            "text": "Pásky řady ECO+ spolehlivě chrání zboží a prokazují ekologickou odpovědnost – ať už v neutrálním provedení, nebo s firemním potiskem."
+            "text": "Pásky řady ECO+ spolehlivě chrání zboží a prokazují ekologickou odpovědnost: ať už v neutrálním provedení, nebo s firemním potiskem."
           }
         ],
         "uses": [
@@ -949,7 +1123,7 @@
           },
           {
             "title": "Podpora firemní reputace",
-            "text": "Pásky řady ECO+ spolehlivě chrání zboží a prokazují ekologickou odpovědnost – ať už v neutrálním provedení, nebo s firemním potiskem."
+            "text": "Pásky řady ECO+ spolehlivě chrání zboží a prokazují ekologickou odpovědnost: ať už v neutrálním provedení, nebo s firemním potiskem."
           }
         ],
         "uses": [
@@ -1099,7 +1273,7 @@
         "benefits": [
           {
             "title": "Bezplastový papírový nosič",
-            "text": "Plně recyklovatelné balení – páska putuje spolu s kartonem bez oddělování."
+            "text": "Plně recyklovatelné balení: páska putuje spolu s kartonem bez oddělování."
           },
           {
             "title": "Akrylové lepidlo",
@@ -1161,7 +1335,7 @@
         "benefits": [
           {
             "title": "Bezplastový papírový nosič",
-            "text": "Plně recyklovatelné balení – páska putuje spolu s kartonem bez oddělování."
+            "text": "Plně recyklovatelné balení: páska putuje spolu s kartonem bez oddělování."
           },
           {
             "title": "Akrylové lepidlo",
@@ -1217,13 +1391,13 @@
       },
       "udrzitelna-paska-poly-plus": {
         "name": "Udržitelná páska POLY+",
-        "tagline": "Ekologická alternativa k PVC – matná neodrážející BOPP páska s tichým akrylovým lepidlem.",
+        "tagline": "Ekologická alternativa k PVC: matná neodrážející BOPP páska s tichým akrylovým lepidlem.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
         "benefits": [
           {
             "title": "Ekologická alternativa k PVC",
-            "text": "Matná BOPP fólie 35 µm bez chloru a rozpouštědel – vhodná náhrada vinylových pásek."
+            "text": "Matná BOPP fólie 35 µm bez chloru a rozpouštědel: vhodná náhrada vinylových pásek."
           },
           {
             "title": "Akrylové lepidlo",
@@ -1289,7 +1463,7 @@
           },
           {
             "title": "Low noise odvíjení",
-            "text": "Možnost nehlučné úpravy – tiché odvíjení a provozní teplota až do −10 °C."
+            "text": "Možnost nehlučné úpravy: tiché odvíjení a provozní teplota až do −10 °C."
           },
           {
             "title": "Vysoká odolnost proti UV",
@@ -1298,7 +1472,7 @@
         ],
         "uses": [
           "Ruční balení s tichým (low noise) odvíjením",
-          "Automatické balicí stroje – hlučná (noisy) verze",
+          "Automatické balicí stroje: hlučná (noisy) verze",
           "Standardní uzavírání kartonů",
           "Potisk firemním logem a informacemi"
         ],
@@ -1505,7 +1679,7 @@
           },
           {
             "title": "Vysoká přilnavost",
-            "text": "Nelze snadno odlepit ze stretch fólií – zřetelný důkaz zabezpečení zásilky."
+            "text": "Nelze snadno odlepit ze stretch fólií: zřetelný důkaz zabezpečení zásilky."
           }
         ],
         "uses": [
@@ -1619,7 +1793,7 @@
       },
       "bopp-paska-tamper-evident": {
         "name": "BOPP páska Tamper Evident",
-        "tagline": "Bezpečnostní páska s VOID efektem – při odlepení zanechá viditelné upozornění, které nelze bez stopy odstranit.",
+        "tagline": "Bezpečnostní páska s VOID efektem: při odlepení zanechá viditelné upozornění, které nelze bez stopy odstranit.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP pásky",
         "benefits": [
@@ -1695,7 +1869,7 @@
           },
           {
             "title": "Extrémní teploty",
-            "text": "Výkon při vysokých teplotách lakování i při mrazu – bez poškození povrchu."
+            "text": "Výkon při vysokých teplotách lakování i při mrazu: bez poškození povrchu."
           }
         ],
         "uses": [
@@ -1757,7 +1931,7 @@
           },
           {
             "title": "Chemická odolnost",
-            "text": "Pevnost 60 N/25 mm – odolává rozpouštědlům, olejům a agresivnímu prostředí."
+            "text": "Pevnost 60 N/25 mm: odolává rozpouštědlům, olejům a agresivnímu prostředí."
           }
         ],
         "uses": [
@@ -1881,7 +2055,7 @@
           },
           {
             "title": "Chemická odolnost",
-            "text": "Pevnost 55 N/25 mm – odolává rozpouštědlům, olejům a agresivnímu prostředí."
+            "text": "Pevnost 55 N/25 mm: odolává rozpouštědlům, olejům a agresivnímu prostředí."
           }
         ],
         "uses": [
@@ -1935,7 +2109,7 @@
         "benefits": [
           {
             "title": "Plná recyklovatelnost",
-            "text": "Kraftový papírový nosič (100 µm) – ekologické balení s čistým matným vzhledem."
+            "text": "Kraftový papírový nosič (100 µm): ekologické balení s čistým matným vzhledem."
           },
           {
             "title": "Akrylové lepidlo",
@@ -1997,7 +2171,7 @@
         "benefits": [
           {
             "title": "Plná recyklovatelnost",
-            "text": "Kraftový papírový nosič (115 µm) – ekologické balení s čistým matným vzhledem."
+            "text": "Kraftový papírový nosič (115 µm): ekologické balení s čistým matným vzhledem."
           },
           {
             "title": "Kaučukové lepidlo",
@@ -2059,7 +2233,7 @@
         "benefits": [
           {
             "title": "Plná recyklovatelnost",
-            "text": "Kraftový papírový nosič (120 µm) – ekologické balení s čistým matným vzhledem."
+            "text": "Kraftový papírový nosič (120 µm): ekologické balení s čistým matným vzhledem."
           },
           {
             "title": "Kaučukové lepidlo",
@@ -2121,7 +2295,7 @@
         "benefits": [
           {
             "title": "Recyklovaný papírový nosič",
-            "text": "Páska i karton putují společně do recyklace – bez oddělování materiálů."
+            "text": "Páska i karton putují společně do recyklace: bez oddělování materiálů."
           },
           {
             "title": "Kaučukové lepidlo",
@@ -2183,11 +2357,11 @@
         "benefits": [
           {
             "title": "Plná recyklovatelnost",
-            "text": "Kraftový papírový nosič (130 µm) – ekologické balení s čistým matným vzhledem."
+            "text": "Kraftový papírový nosič (130 µm): ekologické balení s čistým matným vzhledem."
           },
           {
             "title": "HOT MELT lepidlo",
-            "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
+            "text": "Rychlé a pevné přilnutí i při nižších teplotách: vhodné pro ruční i strojové balení."
           },
           {
             "title": "Pevnost 60 N/25 mm",
@@ -2245,11 +2419,11 @@
         "benefits": [
           {
             "title": "Plná recyklovatelnost",
-            "text": "Kraftový papírový nosič (120 µm) – ekologické balení s čistým matným vzhledem."
+            "text": "Kraftový papírový nosič (120 µm): ekologické balení s čistým matným vzhledem."
           },
           {
             "title": "HOT MELT lepidlo",
-            "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
+            "text": "Rychlé a pevné přilnutí i při nižších teplotách: vhodné pro ruční i strojové balení."
           },
           {
             "title": "Pevnost 55 N/25 mm",
@@ -2307,7 +2481,7 @@
         "benefits": [
           {
             "title": "Plná recyklovatelnost",
-            "text": "Kraftový papírový nosič (150 µm) – ekologické balení s čistým matným vzhledem."
+            "text": "Kraftový papírový nosič (150 µm): ekologické balení s čistým matným vzhledem."
           },
           {
             "title": "Kaučukové lepidlo",
@@ -2369,7 +2543,7 @@
         "benefits": [
           {
             "title": "Beze stop po odlepení",
-            "text": "Recyklovaná PET fólie (19 µm) – po sejmutí nezanechává lepidlo ani poškození povrchu."
+            "text": "Recyklovaná PET fólie (19 µm): po sejmutí nezanechává lepidlo ani poškození povrchu."
           },
           {
             "title": "Akrylové lepidlo",
@@ -2431,7 +2605,7 @@
         "benefits": [
           {
             "title": "Beze stop po odlepení",
-            "text": "BOPP fólie (50 µm) – po sejmutí nezanechává lepidlo ani poškození povrchu."
+            "text": "BOPP fólie (50 µm): po sejmutí nezanechává lepidlo ani poškození povrchu."
           },
           {
             "title": "Akrylové lepidlo",
@@ -2493,15 +2667,15 @@
         "benefits": [
           {
             "title": "Podélná skelná vlákna",
-            "text": "Pevnost v tahu 300 N/25 mm – maximální odolnost ve směru nátahu."
+            "text": "Pevnost v tahu 300 N/25 mm: maximální odolnost ve směru nátahu."
           },
           {
             "title": "HOT MELT lepidlo",
-            "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
+            "text": "Rychlé a pevné přilnutí i při nižších teplotách: vhodné pro ruční i strojové balení."
           },
           {
             "title": "Fixace těžkých břemen",
-            "text": "Přilnavost 4,5 N/25 mm – spolehlivá fixace palet a nadrozměrných zásilek."
+            "text": "Přilnavost 4,5 N/25 mm: spolehlivá fixace palet a nadrozměrných zásilek."
           }
         ],
         "uses": [
@@ -2555,15 +2729,15 @@
         "benefits": [
           {
             "title": "Křížová skelná vlákna",
-            "text": "Pevnost v tahu 320 N/25 mm – odolnost ve všech směrech zatížení."
+            "text": "Pevnost v tahu 320 N/25 mm: odolnost ve všech směrech zatížení."
           },
           {
             "title": "HOT MELT lepidlo",
-            "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
+            "text": "Rychlé a pevné přilnutí i při nižších teplotách: vhodné pro ruční i strojové balení."
           },
           {
             "title": "Fixace těžkých břemen",
-            "text": "Přilnavost 4,7 N/25 mm – spolehlivá fixace palet a nadrozměrných zásilek."
+            "text": "Přilnavost 4,7 N/25 mm: spolehlivá fixace palet a nadrozměrných zásilek."
           }
         ],
         "uses": [
@@ -2621,11 +2795,11 @@
           },
           {
             "title": "HOT MELT lepidlo",
-            "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
+            "text": "Rychlé a pevné přilnutí i při nižších teplotách: vhodné pro ruční i strojové balení."
           },
           {
             "title": "Bez skelných vláken",
-            "text": "Čistá fixace bez uvolňujících se vláken – teplotní rozsah −10 až +60 °C."
+            "text": "Čistá fixace bez uvolňujících se vláken: teplotní rozsah −10 až +60 °C."
           }
         ],
         "uses": [
@@ -2679,7 +2853,7 @@
         "benefits": [
           {
             "title": "Pevnost v tahu 120 N/25 mm",
-            "text": "Textilní výztuž (250 µm) – odolnost proti protržení při náročném použití."
+            "text": "Textilní výztuž (250 µm): odolnost proti protržení při náročném použití."
           },
           {
             "title": "Kaučukové lepidlo",
@@ -2687,7 +2861,7 @@
           },
           {
             "title": "Přilnavost na drsný povrch",
-            "text": "Přilnavost 6,0 N/25 mm – drží na kovu, dřevě, betonu i plastu (−10 až +70 °C)."
+            "text": "Přilnavost 6,0 N/25 mm: drží na kovu, dřevě, betonu i plastu (−10 až +70 °C)."
           }
         ],
         "uses": [
@@ -2741,7 +2915,7 @@
         "benefits": [
           {
             "title": "Pevnost v tahu 130 N/25 mm",
-            "text": "Textilní výztuž (280 µm) – odolnost proti protržení při náročném použití."
+            "text": "Textilní výztuž (280 µm): odolnost proti protržení při náročném použití."
           },
           {
             "title": "Kaučukové lepidlo",
@@ -2749,7 +2923,7 @@
           },
           {
             "title": "Přilnavost na drsný povrch",
-            "text": "Přilnavost 6,5 N/25 mm – drží na kovu, dřevě, betonu i plastu (−10 až +70 °C)."
+            "text": "Přilnavost 6,5 N/25 mm: drží na kovu, dřevě, betonu i plastu (−10 až +70 °C)."
           }
         ],
         "uses": [
@@ -2803,7 +2977,7 @@
         "benefits": [
           {
             "title": "Pevnost v tahu 110 N/25 mm",
-            "text": "Textilní výztuž (220 µm) – odolnost proti protržení při náročném použití."
+            "text": "Textilní výztuž (220 µm): odolnost proti protržení při náročném použití."
           },
           {
             "title": "Kaučukové lepidlo",
@@ -2811,7 +2985,7 @@
           },
           {
             "title": "Přilnavost na drsný povrch",
-            "text": "Přilnavost 5,5 N/25 mm – drží na kovu, dřevě, betonu i plastu (−10 až +65 °C)."
+            "text": "Přilnavost 5,5 N/25 mm: drží na kovu, dřevě, betonu i plastu (−10 až +65 °C)."
           }
         ],
         "uses": [
@@ -2865,7 +3039,7 @@
         "benefits": [
           {
             "title": "Ostré hrany bez protečení",
-            "text": "Krepový nosič (130 µm) – barva nepronikne pod pásku při malování."
+            "text": "Krepový nosič (130 µm): barva nepronikne pod pásku při malování."
           },
           {
             "title": "Kaučukové lepidlo",
@@ -2927,7 +3101,7 @@
         "benefits": [
           {
             "title": "Ostré hrany bez protečení",
-            "text": "Krepový nosič (150 µm) – barva nepronikne pod pásku při malování."
+            "text": "Krepový nosič (150 µm): barva nepronikne pod pásku při malování."
           },
           {
             "title": "Kaučukové lepidlo",

@@ -26,6 +26,19 @@
         }
     });
 
+    function t(key, fallback) {
+        if (window.paskyI18n && typeof window.paskyI18n.t === 'function') {
+            return window.paskyI18n.t(key, fallback);
+        }
+        return fallback;
+    }
+
+    function fmt(template, vars) {
+        return String(template || '').replace(/\{(\w+)\}/g, function (_, key) {
+            return vars[key] != null ? String(vars[key]) : '';
+        });
+    }
+
     function normalize(text) {
         return String(text || '')
             .toLowerCase()
@@ -33,6 +46,18 @@
             .replace(/[\u0300-\u036f]/g, '')
             .replace(/\s+/g, ' ')
             .trim();
+    }
+
+    function syncSearchHaystacks() {
+        items.forEach(function (item) {
+            var id = item.getAttribute('data-id') || '';
+            var qEl = item.querySelector('.faq-item__q');
+            var aEl = item.querySelector('.faq-item__a');
+            var q = qEl ? qEl.textContent : '';
+            var a = aEl ? aEl.textContent : '';
+            var extra = t('faq.items.' + id + '.search', '');
+            item.setAttribute('data-search', [q, a, extra].join(' '));
+        });
     }
 
     function isFiltering() {
@@ -58,7 +83,7 @@
         if (!showBtn) return;
         moreBtn.setAttribute('aria-expanded', 'false');
         moreBtn.innerHTML =
-            'Zobrazit dalších ' + remaining + ' otázek' +
+            fmt(t('faq.more', 'Zobrazit dalších {n} otázek'), { n: remaining }) +
             '<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.25" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>';
     }
 
@@ -66,20 +91,25 @@
         if (!countEl) return;
         var total = items.length;
         if (!isFiltering() && !expanded) {
-            countEl.textContent = 'Zobrazeno ' + Math.min(PREVIEW_LIMIT, total) + ' z ' + total;
+            countEl.textContent = fmt(t('faq.count_preview', 'Zobrazeno {shown} z {total}'), {
+                shown: Math.min(PREVIEW_LIMIT, total),
+                total: total,
+            });
             return;
         }
         if (visible === total && !isFiltering()) {
-            countEl.textContent = total + ' otázek';
+            countEl.textContent = fmt(t('faq.count_all', '{n} otázek'), { n: total });
             return;
         }
-        countEl.textContent = 'Zobrazeno ' + visible + ' z ' + total;
+        countEl.textContent = fmt(t('faq.count_filtered', 'Zobrazeno {visible} z {total}'), {
+            visible: visible,
+            total: total,
+        });
     }
 
     function apply() {
         var visible = 0;
         var remainingMore = 0;
-        var previewShown = 0;
 
         items.forEach(function (item) {
             var match = matches(item);
@@ -91,7 +121,6 @@
                     show = true;
                 } else if (!isMore) {
                     show = true;
-                    previewShown += 1;
                 } else {
                     remainingMore += 1;
                 }
@@ -164,24 +193,39 @@
         }, 50);
     }
 
+    /* --- FAQ contact form ----------------------------------------------- */
+    var form = document.getElementById('faq-contact-form');
+    var submitBtn = form ? form.querySelector('[type="submit"]') : null;
+    var defaultLabel = submitBtn ? submitBtn.textContent : 'Odeslat zprávu';
+    var msgBox = document.getElementById('faq-contact-message');
+
+    function refreshI18nUi() {
+        syncSearchHaystacks();
+        if (searchInput) {
+            query = normalize(searchInput.value);
+        }
+        apply();
+        if (submitBtn && !submitBtn.disabled) {
+            defaultLabel = t('faq.cta_button', defaultLabel);
+            submitBtn.textContent = defaultLabel;
+        }
+    }
+
+    document.addEventListener('pasky:i18n-ready', refreshI18nUi);
+
+    syncSearchHaystacks();
     apply();
     openFromHash();
     window.addEventListener('hashchange', openFromHash);
 
-    /* --- FAQ contact form ----------------------------------------------- */
-    var form = document.getElementById('faq-contact-form');
     if (!form) return;
-
-    var submitBtn = form.querySelector('[type="submit"]');
-    var defaultLabel = submitBtn ? submitBtn.textContent : 'Odeslat zprávu';
-    var msgBox = document.getElementById('faq-contact-message');
 
     function showFormMessage(type, text) {
         if (!msgBox) return;
         msgBox.hidden = false;
         msgBox.setAttribute('role', type === 'error' ? 'alert' : 'status');
         msgBox.className =
-            'mb-4 rounded-xl border px-4 py-3 text-sm ' +
+            'mt-5 mb-0 rounded-xl border px-4 py-3 text-sm ' +
             (type === 'success'
                 ? 'border-emerald-200 bg-emerald-50 text-emerald-800'
                 : 'border-red-200 bg-red-50 text-red-800');
@@ -203,7 +247,7 @@
         };
 
         submitBtn.disabled = true;
-        submitBtn.textContent = 'Odesílám…';
+        submitBtn.textContent = t('faq.form.sending', 'Odesílám…');
 
         fetch('/api/inquiry', {
             method: 'POST',
@@ -217,20 +261,20 @@
             })
             .then(function (result) {
                 if (!result.ok) {
-                    throw new Error((result.data && result.data.error) || 'Odeslání se nezdařilo.');
+                    throw new Error((result.data && result.data.error) || t('faq.form.error', 'Odeslání se nezdařilo.'));
                 }
                 form.reset();
-                showFormMessage('success', 'Děkujeme, zpráva byla odeslána. Ozveme se co nejdřív.');
+                showFormMessage('success', t('faq.form.success', 'Děkujeme, zpráva byla odeslána. Ozveme se co nejdřív.'));
             })
             .catch(function (err) {
                 showFormMessage(
                     'error',
-                    err.message || 'Odeslání se nezdařilo. Napište nám prosím na karel.petrak@alfain.eu.'
+                    err.message || t('faq.form.error', 'Odeslání se nezdařilo. Napište nám prosím na karel.petrak@alfain.eu.')
                 );
             })
             .finally(function () {
                 submitBtn.disabled = false;
-                submitBtn.textContent = defaultLabel;
+                submitBtn.textContent = t('faq.cta_button', defaultLabel);
             });
     });
 })();

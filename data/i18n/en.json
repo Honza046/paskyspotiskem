@@ -14,7 +14,9 @@
       "de": "Deutsch",
       "it": "Italiano"
     },
-    "htmlLang": "en"
+    "htmlLang": "en",
+    "faq_title": "FAQ | Printed tapes: questions and answers",
+    "faq_description": "Common questions about printed tapes: minimum order, lead times, HOT MELT vs Acrylic, print, samples and shipping. Answers from manufacturer ALFA IN."
   },
   "nav": {
     "tagline": "ALFA IN, manufacturing, consulting, sales and service",
@@ -47,7 +49,7 @@
     "show_on_map": "Show on map",
     "email_heading": "Email us",
     "phone_heading": "Call us",
-    "phone_hours": "7:00 a.m. – 3:30 p.m.",
+    "phone_hours": "7:00 a.m.–3:30 p.m.",
     "more_contacts": "More contacts",
     "social_heading": "Social media",
     "copyright": "All rights reserved",
@@ -59,15 +61,15 @@
       "badge": "ISO 9001 · Direct from the manufacturer",
       "slides": [
         {
-          "title": "ADHESIVE TAPES WITH REVERSE PRINTING",
+          "title": "Adhesive tapes with reverse printing",
           "subtitle": "Reliable BOPP tapes with print protected under the film, plus eco options for sustainable packaging."
         },
         {
-          "title": "WHY CHOOSE US?",
+          "title": "Why choose us?",
           "subtitle": "Over 20 years of experience with e-commerce and industry. Reliability, fast delivery and a personal approach to every order."
         },
         {
-          "title": "TEST OUR QUALITY IN YOUR OPERATION",
+          "title": "Test our quality in your operation",
           "subtitle": "Request a free sample or a no-obligation custom quote. Check strength and adhesion before you order."
         }
       ],
@@ -123,8 +125,8 @@
     },
     "benefits": {
       "eco_badge": "Sustainability",
-      "eco_title": "ECO+ tapes – regenerated from our own production",
-      "eco_text": "ECO+ film is made from post-industrial waste from BOPP film production – the material is returned to the loop immediately. Choose 50%, 80% or 100% regenerated content with the same strength as a standard tape, with no eco surcharge. Available as Akryl or HOT MELT, plain or printed.",
+      "eco_title": "ECO+ tapes: regenerated from our own production",
+      "eco_text": "ECO+ film is made from post-industrial waste from BOPP film production: the material is returned to the loop immediately. Choose 50%, 80% or 100% regenerated content with the same strength as a standard tape, with no eco surcharge. Available as Akryl or HOT MELT, plain or printed.",
       "eco_link": "Browse the ECO+ range →",
       "glue_badge": "Extreme adhesion",
       "glue_title": "EXTRA GLUE+ (Akryl) and TACK+ (HOT MELT)",
@@ -257,24 +259,196 @@
     "faq": {
       "label": "FAQ",
       "title": "Answers before you order",
-      "subtitle": "Common questions about printing, lead times and materials. Not sure? Contact us — we will help.",
-      "all_link": "Browse all questions and search →"
+      "subtitle": "Common questions about printing, lead times and materials. Not sure? Contact us and we will help.",
+      "all_link": "Browse all questions and search →",
+      "items": {
+        "0": {
+          "q": "What is the minimum order quantity?",
+          "a": "For BOPP tapes 360 pcs (Acrylic) or 504 pcs (HOT MELT); for paper and BOPET tapes the minimum depends individually on the print and crepe layer."
+        },
+        "1": {
+          "q": "How long does it take to produce printed tape?",
+          "a": "The standard lead time is 3 to 4 weeks from approval of the artwork and order. For urgent jobs we try to speed up delivery."
+        },
+        "2": {
+          "q": "Can I order tape without printing?",
+          "a": "Yes. We supply the same quality tapes without print, ideal for stock or immediate packaging."
+        },
+        "3": {
+          "q": "What is the difference between HOT MELT and Acrylic?",
+          "a": "HOT MELT bonds quickly and firmly even in the cold, ideal for warehouses and dispatch. Acrylic is quieter when unwinding and more UV-resistant, ideal for longer storage. More in <a href=\"/#lepidla\">Which adhesive to choose?</a>."
+        },
+        "4": {
+          "q": "Do you provide free samples?",
+          "a": "Yes, for selected materials and existing artworks we are happy to send a test sample. In your inquiry write “I want a sample”."
+        },
+        "5": {
+          "q": "Which print technologies do you offer?",
+          "a": "Flexo print up to 8 colours and rotogravure up to 10 colours including high-quality reverse print. We recommend the right technology based on colours, volume and print quality needs."
+        }
+      }
     }
   },
   "faq": {
     "label": "FAQ",
     "title": "Questions and answers",
     "subtitle": "Find answers about printing, lead times, adhesives and samples. Filter by topic or search a keyword.",
+    "hero_cta": "Write a message",
     "search_label": "Search questions",
     "search_placeholder": "Search… e.g. HOT MELT, sample, lead time",
     "filters_label": "Topic filter",
+    "filters": {
+      "all": "All",
+      "objednavka": "Ordering",
+      "vyroba": "Production & lead times",
+      "material": "Material & adhesive",
+      "potisk": "Print & artwork",
+      "vzorky": "Samples"
+    },
+    "more": "Show {n} more questions",
+    "count_preview": "Showing {shown} of {total}",
+    "count_all": "{n} questions",
+    "count_filtered": "Showing {visible} of {total}",
     "empty_title": "No results",
-    "empty_text": "Try another keyword or filter. Or send us an inquiry — we will help.",
+    "empty_text": "Try another keyword or filter. Or send us a message and we will help.",
     "empty_cta": "Write a message →",
     "contact_label": "Contact",
     "cta_title": "Didn’t find your answer?",
-    "cta_text": "Send us a short message — we will reply with an answer or a material and print recommendation.",
-    "cta_button": "Send message"
+    "cta_text": "Send us a short message and we will reply with an answer or a material and print recommendation.",
+    "cta_button": "Send message",
+    "form": {
+      "name": "Full name",
+      "email": "E-mail",
+      "phone": "Phone",
+      "message": "Your question / message",
+      "message_placeholder": "Tell us what you need help with…",
+      "gdpr": "By submitting you agree to the processing of personal data for handling this message.",
+      "sending": "Sending…",
+      "success": "Thank you, your message was sent. We will get back to you soon.",
+      "error": "Sending failed. Please e-mail us at karel.petrak@alfain.eu."
+    },
+    "items": {
+      "moq": {
+        "q": "What is the minimum order quantity?",
+        "a": "For BOPP tapes 360 pcs (Acrylic) or 504 pcs (HOT MELT); for paper and BOPET tapes the minimum depends individually on the print and crepe layer.",
+        "search": "minimum moq quantity order bopp hot melt acrylic"
+      },
+      "lead-time": {
+        "q": "How long does it take to produce printed tape?",
+        "a": "The standard lead time is 3 to 4 weeks from approval of the artwork and order. For urgent jobs we try to speed up delivery.",
+        "search": "lead time production weeks urgent shipping"
+      },
+      "bez-potisku": {
+        "q": "Can I order tape without printing?",
+        "a": "Yes. We supply the same quality tapes without print, ideal for stock or immediate packaging.",
+        "search": "unprinted plain neutral tape without print"
+      },
+      "lepidlo": {
+        "q": "What is the difference between HOT MELT and Acrylic?",
+        "a": "HOT MELT bonds quickly and firmly even in the cold, ideal for warehouses and dispatch. Acrylic is quieter when unwinding and more UV-resistant, ideal for longer storage. More in <a href=\"/#lepidla\">Which adhesive to choose?</a>.",
+        "search": "hot melt acrylic adhesive tack uv quiet unwind warehouse"
+      },
+      "vzorky": {
+        "q": "Do you provide free samples?",
+        "a": "Yes, for selected materials and existing artworks we are happy to send a test sample. In your inquiry write “I want a sample”.",
+        "search": "sample free trial testing"
+      },
+      "technologie": {
+        "q": "Which print technologies do you offer?",
+        "a": "Flexo print up to 8 colours and rotogravure up to 10 colours including high-quality reverse print. We recommend the right technology based on colours, volume and print quality needs.",
+        "search": "flexo rotogravure colours print technology reverse print"
+      },
+      "grafika": {
+        "q": "Will you prepare the artwork for me?",
+        "a": "Yes. Send your logo (ideally PDF/AI/SVG) and an idea of text or colours, we prepare a print preview for approval before production.",
+        "search": "artwork design logo preview pdf ai svg"
+      },
+      "sirka": {
+        "q": "What tape widths and lengths do you make?",
+        "a": "The most common widths are 48 mm and 50 mm; other widths and roll lengths are handled individually by material and application (manual or machine packing).",
+        "search": "width length 48 mm 50 mm roll winding"
+      },
+      "eko": {
+        "q": "Do you offer sustainable / ECO tapes?",
+        "a": "Yes, the ECO+ range (recycled BOPP), paper tapes and other sustainable options. Details are in the Sustainable tapes assortment.",
+        "search": "eco recycled sustainable paper fsc circular"
+      },
+      "stroje": {
+        "q": "Are the tapes suitable for machine packing?",
+        "a": "Yes. Based on adhesive and material we recommend a variant for hand dispensers or for automatic packing lines.",
+        "search": "machine automatic line unwind dispenser"
+      },
+      "doprava": {
+        "q": "How do shipping and invoicing work?",
+        "a": "We deliver across Czechia and abroad. Shipping and payment terms are confirmed in the quote based on volume and destination.",
+        "search": "shipping invoicing delivery czech eu price"
+      },
+      "skladovani": {
+        "q": "How should tapes be stored?",
+        "a": "Ideally dry, away from direct sun, at normal room temperature. Acrylic tapes handle longer storage better; with intensive use we recommend consuming HOT MELT sooner.",
+        "search": "storage temperature humidity shelf life"
+      },
+      "barvy": {
+        "q": "Can you print to Pantone or CMYK?",
+        "a": "Yes. We match colours to Pantone or a physical sample. For flexo and rotogravure we recommend suitable inks for the substrate (clear, white or coloured tape).",
+        "search": "pantone cmyk colour shade logo branding"
+      },
+      "opakovat": {
+        "q": "Can I reorder later with the same artwork?",
+        "a": "Yes. We keep the approved design and print files, so a repeat order is faster without re-approving artwork (if nothing changes).",
+        "search": "repeat order reprint same artwork"
+      },
+      "cena": {
+        "q": "What affects the price of printed tape?",
+        "a": "Price depends on material, adhesive, roll width and length, number of colours, print technology and total volume. Send an inquiry and we will prepare a concrete quote.",
+        "search": "price quote calculation cost per roll"
+      },
+      "papir-vs-bopp": {
+        "q": "When should I choose paper tape instead of BOPP?",
+        "a": "Paper tape suits eco packaging, recyclable cartons and brands that want a natural look. BOPP resists moisture better and is often more cost-effective at higher volumes. We are happy to advise for your process.",
+        "search": "paper bopp plastic eco carton"
+      },
+      "bezpecnostni": {
+        "q": "Can you make security or warning tapes?",
+        "a": "Yes, warning prints, Fragile, Vorsicht Glas, VOID / tamper-evident and logistics texts. We prepare the design to your instructions and language variants.",
+        "search": "security void tamper warning fragile"
+      },
+      "zmena-grafiky": {
+        "q": "What if I need to change artwork after approval?",
+        "a": "Until plate-making / printing starts, changes are usually still possible. After production starts, changes may not be possible without extra cost and a new lead time, so check the preview carefully.",
+        "search": "artwork change correction approval"
+      },
+      "jadro": {
+        "q": "What core / cardboard tube do you use?",
+        "a": "We normally supply rolls with a standard paper core suitable for hand and machine unwinders. Special diameters and core strengths are handled individually for your line.",
+        "search": "core tube diameter cardboard"
+      },
+      "zahranici": {
+        "q": "Do you deliver outside Czechia?",
+        "a": "Yes. We ship to the EU and beyond, shipping and terms are agreed by destination and volume.",
+        "search": "abroad eu export delivery international"
+      },
+      "vzorek-potisk": {
+        "q": "Will I get a sample already with my print?",
+        "a": "For new artworks you usually approve a digital preview first. A physical printed sample is handled case by case, for existing designs or larger projects.",
+        "search": "printed sample preview trial"
+      },
+      "urgentni": {
+        "q": "Can you do urgent / express production?",
+        "a": "For selected jobs yes, we always confirm the date based on plant capacity and print complexity. State your required date in the inquiry and we will reply with a realistic option.",
+        "search": "urgent express fast delivery"
+      },
+      "odstranitelna": {
+        "q": "Do you have tapes that remove cleanly?",
+        "a": "Yes, removable tapes for cases where you do not want adhesive residue. We recommend the right type for the surface. See Removable tapes in the assortment.",
+        "search": "removable clean remove adhesive residue"
+      },
+      "vice-jazyku": {
+        "q": "Can the tape text be in multiple languages?",
+        "a": "Yes. We often combine a logo with logistics texts in Czech, German, English and other languages, designed to stay readable when repeated along the tape.",
+        "search": "languages multilingual text mutation"
+      }
+    }
   },
   "gallery": {
     "ui": {
@@ -328,7 +502,7 @@
       "references_title": "Real references",
       "references_subtitle": "",
       "production_title": "Production & warehouse",
-      "production_subtitle": "Automated warehouses, production lines and raw materials – Empoli and Atessa.",
+      "production_subtitle": "Automated warehouses, production lines and raw materials: Empoli and Atessa.",
       "demos_title": "Print options and technologies",
       "demos_subtitle": "Examples of security, logistics and special solutions, illustrations of the technologies we offer.",
       "empty": "No sample matches the selected filters. Try removing one of the filters."
@@ -359,47 +533,47 @@
     "items": {
       "bonami": {
         "title": "Bonami logo tapes",
-        "description": "Single-colour brand print on white BOPP tape – logo and furniture illustrations for e-commerce packaging.",
+        "description": "Single-colour brand print on white BOPP tape: logo and furniture illustrations for e-commerce packaging.",
         "industry_label": "E-commerce"
       },
       "notino": {
         "title": "Notino logo tapes",
-        "description": "High-contrast white logo print on black tape – bold shipment branding for beauty e-commerce.",
+        "description": "High-contrast white logo print on black tape: bold shipment branding for beauty e-commerce.",
         "industry_label": "E-commerce"
       },
       "fenske": {
         "title": "Fenske logo tapes",
-        "description": "Two-colour FENSKE / Weine und Feinkost print on packing tape – branding for wine and gourmet shipments.",
+        "description": "Two-colour FENSKE / Weine und Feinkost print on packing tape: branding for wine and gourmet shipments.",
         "industry_label": "Food industry"
       },
       "just-nahrin": {
         "title": "Just+ / nahrin tapes",
-        "description": "Multi-colour print of logos and logistics text with a fragile symbol – branding plus instructions for the recipient.",
+        "description": "Multi-colour print of logos and logistics text with a fragile symbol: branding plus instructions for the recipient.",
         "industry_label": "E-commerce"
       },
       "vorsicht-glas": {
         "title": "Warning tape Vorsicht Glas",
-        "description": "Warning print “Vorsicht Glas!” / “Do not drop” on packing tape – protecting fragile shipments in transit.",
+        "description": "Warning print “Vorsicht Glas!” / “Do not drop” on packing tape: protecting fragile shipments in transit.",
         "industry_label": "Logistics"
       },
       "alfain": {
         "title": "ALFA IN logo tapes",
-        "description": "Orange BOPP tape with a white ALFA IN logo – shipment branding directly in the warehouse.",
+        "description": "Orange BOPP tape with a white ALFA IN logo: shipment branding directly in the warehouse.",
         "industry_label": "Logistics"
       },
       "papir-fsc": {
         "title": "Paper tape FSC / 22 PAP",
-        "description": "Eco-friendly paper tape printed with FSC and 22 PAP symbols – sustainable e-commerce packaging.",
+        "description": "Eco-friendly paper tape printed with FSC and 22 PAP symbols: sustainable e-commerce packaging.",
         "industry_label": "E-commerce"
       },
       "alfain-sklad": {
         "title": "ALFA IN tape in the warehouse",
-        "description": "Manual packing on a pallet with orange ALFA IN tape – print in real logistics operations.",
+        "description": "Manual packing on a pallet with orange ALFA IN tape: print in real logistics operations.",
         "industry_label": "Logistics"
       },
       "irplast-warehouse": {
         "title": "Automated warehouse Empoli",
-        "description": "Automated warehouse in Empoli – logistics for finished tapes and films.",
+        "description": "Automated warehouse in Empoli: logistics for finished tapes and films.",
         "industry_label": "Manufacturing"
       },
       "irplast-warehouse-2": {
@@ -408,7 +582,7 @@
         "industry_label": "Manufacturing"
       },
       "irplast-shuttle": {
-        "title": "Production – automated shuttle",
+        "title": "Production: automated shuttle",
         "description": "Production department with an automated shuttle system at the Empoli plant.",
         "industry_label": "Manufacturing"
       },
@@ -419,7 +593,7 @@
       },
       "irplast-lisim": {
         "title": "STILANSOL® LISIM line",
-        "description": "Simultaneous BOPP film orientation – Brückner LISIM / STILANSOL® production line.",
+        "description": "Simultaneous BOPP film orientation: Brückner LISIM / STILANSOL® production line.",
         "industry_label": "Manufacturing"
       },
       "irplast-slitter": {
@@ -443,7 +617,7 @@
         "industry_label": "E-commerce"
       },
       "flexotisk-8": {
-        "title": "Flexographic printing – 8 colours",
+        "title": "Flexographic printing: 8 colours",
         "description": "High-resolution full-colour flexographic printing, suitable for impactful tape branding and food-industry applications.",
         "industry_label": "Food industry"
       },
@@ -463,7 +637,7 @@
         "industry_label": "Security"
       },
       "logisticky-kontakty": {
-        "title": "Logistics print – contacts",
+        "title": "Logistics print: contacts",
         "description": "Informational printing with contact details, a QR code or instructions for the shipment recipient.",
         "industry_label": "Logistics"
       },
@@ -488,7 +662,7 @@
         "industry_label": "E-commerce"
       },
       "vystrizny-krehke": {
-        "title": "Warning print – fragile",
+        "title": "Warning print: fragile",
         "description": "Warning tapes printed with “Fragile”, “Do not tilt” or a custom symbol to protect goods during transport.",
         "industry_label": "Logistics"
       },
@@ -1297,7 +1471,7 @@
         ],
         "uses": [
           "Manual packing with quiet (low noise) unwinding",
-          "Automatic packing machines – noisy version",
+          "Automatic packing machines: noisy version",
           "Standard carton sealing",
           "Printing with company logos and information"
         ],
@@ -1618,7 +1792,7 @@
       },
       "bopp-paska-tamper-evident": {
         "name": "BOPP tape Tamper Evident",
-        "tagline": "Security tape with a VOID effect – when peeled off it leaves a visible warning that cannot be removed without a trace.",
+        "tagline": "Security tape with a VOID effect: when peeled off it leaves a visible warning that cannot be removed without a trace.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP tapes",
         "benefits": [
