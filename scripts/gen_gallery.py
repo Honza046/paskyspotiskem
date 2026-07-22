@@ -40,21 +40,6 @@ ITEMS = [
         "graphic": False,
     },
     {
-        "id": "notino-sklad",
-        "image": "gallery/gallery-notino-sklad.jpg",
-        "title": "Notino páska ve skladu",
-        "category": "jednobarevny",
-        "type": "reference",
-        "featured": False,
-        "client": "Notino",
-        "industry": "e-commerce",
-        "width": "48 mm",
-        "colors": 1,
-        "adhesive": "hot-melt",
-        "description": "Balení zásilek v Notino Brno Logistics Hub – černá páska se zlatým logem v reálném expedičním provozu.",
-        "graphic": False,
-    },
-    {
         "id": "fenske",
         "image": "gallery/gallery-fenske.jpg",
         "title": "Pásky s logem Fenske",
@@ -283,7 +268,7 @@ ITEMS = [
 ]
 
 # Real client photos shown in "Reálné reference" (Bonami/Notino also in featured).
-REAL_REFERENCE_IDS = ["bonami", "just-nahrin", "notino", "notino-sklad", "vorsicht-glas", "alfain", "papir-fsc", "alfain-sklad", "fenske"]
+REAL_REFERENCE_IDS = ["bonami", "just-nahrin", "notino", "vorsicht-glas", "alfain", "papir-fsc", "alfain-sklad", "fenske"]
 
 FILTER_GROUPS = {
     "category": {

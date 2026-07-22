@@ -402,7 +402,6 @@ GALLERY_ITEMS = {
     "cs": {
         "bonami": {"title": "Pásky s logem Bonami", "description": "Jednobarevný brand potisk na bílé BOPP pásce – logo a ilustrace nábytku pro e-commerce balení.", "industry_label": "E-commerce"},
         "notino": {"title": "Pásky s logem Notino", "description": "Kontrastní bílý potisk loga na černé pásce – výrazný branding zásilek v beauty e-commerce.", "industry_label": "E-commerce"},
-        "notino-sklad": {"title": "Notino páska ve skladu", "description": "Balení zásilek v Notino Brno Logistics Hub – černá páska se zlatým logem v reálném expedičním provozu.", "industry_label": "E-commerce"},
         "fenske": {"title": "Pásky s logem Fenske", "description": "Dvoubarevný potisk FENSKE / Weine und Feinkost na balicí pásce – branding zásilek vína a delikates.", "industry_label": "Potraviny"},
         "just-nahrin": {"title": "Pásky Just+ / nahrin", "description": "Vícebarevný potisk log a logistického textu včetně symbolu křehké – branding i instrukce pro příjemce.", "industry_label": "E-commerce"},
         "vorsicht-glas": {"title": "Výstražná páska Vorsicht Glas", "description": "Výstražný potisk „Vorsicht Glas!“ / „Do not drop“ na balicí pásce – ochrana křehkých zásilek při přepravě.", "industry_label": "Logistika"},
@@ -433,7 +432,6 @@ GALLERY_ITEMS = {
     "en": {
         "bonami": {"title": "Bonami logo tapes", "description": "Single-colour brand print on white BOPP tape – logo and furniture illustrations for e-commerce packaging.", "industry_label": "E-commerce"},
         "notino": {"title": "Notino logo tapes", "description": "High-contrast white logo print on black tape – bold shipment branding for beauty e-commerce.", "industry_label": "E-commerce"},
-        "notino-sklad": {"title": "Notino tape in the warehouse", "description": "Packing shipments at the Notino Brno Logistics Hub – black tape with gold logo in real dispatch operations.", "industry_label": "E-commerce"},
         "fenske": {"title": "Fenske logo tapes", "description": "Two-colour FENSKE / Weine und Feinkost print on packing tape – branding for wine and gourmet shipments.", "industry_label": "Food industry"},
         "just-nahrin": {"title": "Just+ / nahrin tapes", "description": "Multi-colour print of logos and logistics text with a fragile symbol – branding plus instructions for the recipient.", "industry_label": "E-commerce"},
         "vorsicht-glas": {"title": "Warning tape Vorsicht Glas", "description": "Warning print “Vorsicht Glas!” / “Do not drop” on packing tape – protecting fragile shipments in transit.", "industry_label": "Logistics"},
@@ -464,7 +462,6 @@ GALLERY_ITEMS = {
     "de": {
         "bonami": {"title": "Klebebänder mit Bonami-Logo", "description": "Einfarbiger Markendruck auf weißem BOPP-Band – Logo und Möbelillustrationen für E-Commerce-Verpackungen.", "industry_label": "E-Commerce"},
         "notino": {"title": "Klebebänder mit Notino-Logo", "description": "Kontrastreicher weißer Logodruck auf schwarzem Band – starkes Sendungsbranding für Beauty-E-Commerce.", "industry_label": "E-Commerce"},
-        "notino-sklad": {"title": "Notino-Band im Lager", "description": "Verpacken von Sendungen im Notino Brno Logistics Hub – schwarzes Band mit goldenem Logo im realen Versandbetrieb.", "industry_label": "E-Commerce"},
         "fenske": {"title": "Klebebänder mit Fenske-Logo", "description": "Zweifarbiger Druck FENSKE / Weine und Feinkost auf Klebeband – Branding für Wein- und Feinkostsendungen.", "industry_label": "Lebensmittel"},
         "just-nahrin": {"title": "Just+ / nahrin Klebebänder", "description": "Mehrfarbiger Druck von Logos und Logistiktext inkl. Zerbrechlich-Symbol – Branding und Hinweise für den Empfänger.", "industry_label": "E-Commerce"},
         "vorsicht-glas": {"title": "Warnband Vorsicht Glas", "description": "Warndruck „Vorsicht Glas!“ / „Do not drop“ auf Klebeband – Schutz zerbrechlicher Sendungen beim Transport.", "industry_label": "Logistik"},
@@ -495,7 +492,6 @@ GALLERY_ITEMS = {
     "it": {
         "bonami": {"title": "Nastri con logo Bonami", "description": "Stampa del marchio monocolore su nastro BOPP bianco – logo e illustrazioni di arredi per imballaggi e-commerce.", "industry_label": "E-commerce"},
         "notino": {"title": "Nastri con logo Notino", "description": "Stampa bianca ad alto contrasto del logo su nastro nero – branding evidente delle spedizioni nel beauty e-commerce.", "industry_label": "E-commerce"},
-        "notino-sklad": {"title": "Nastro Notino in magazzino", "description": "Imballaggio delle spedizioni al Notino Brno Logistics Hub – nastro nero con logo dorato nel reale flusso di spedizione.", "industry_label": "E-commerce"},
         "fenske": {"title": "Nastri con logo Fenske", "description": "Stampa bicolore FENSKE / Weine und Feinkost sul nastro da imballaggio – branding per spedizioni di vini e gastronomia.", "industry_label": "Industria alimentare"},
         "just-nahrin": {"title": "Nastri Just+ / nahrin", "description": "Stampa multicolore di loghi e testo logistico con simbolo fragile – branding e istruzioni per il destinatario.", "industry_label": "E-commerce"},
         "vorsicht-glas": {"title": "Nastro di avvertimento Vorsicht Glas", "description": "Stampa di avvertimento “Vorsicht Glas!” / “Do not drop” sul nastro – protezione delle spedizioni fragili in transito.", "industry_label": "Logistica"},
