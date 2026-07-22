@@ -734,6 +734,7 @@ def build_cs() -> dict[str, Any]:
                             "vicebarevny": "Vícebarevný / Rototisk",
                             "bezpecnostni": "Bezpečnostní pásky",
                             "logisticke": "Logistické / Výstražné",
+                            "vyroba": "Výroba / sklad",
                         },
                     },
                     "adhesive": {
@@ -757,7 +758,7 @@ def build_cs() -> dict[str, Any]:
                         "label": "Typ ukázky",
                         "options": {
                             "reference": "Reálné reference",
-                            "demo": "Možnosti tisku",
+                            "production": "Výroba a sklad",
                         },
                     },
                 },
@@ -765,7 +766,9 @@ def build_cs() -> dict[str, Any]:
             "sections": {
                 "featured": "Vybrané ukázky",
                 "references_title": "Reálné reference",
-                "references_subtitle": "Fotografie skutečných potisků z naší výroby. Po novém focení doplníme další reference.",
+                "references_subtitle": "",
+                "production_title": "Výroba a sklad",
+                "production_subtitle": "Automatizované sklady, výrobní linky a suroviny – Empoli a Atessa.",
                 "demos_title": "Možnosti tisku a technologie",
                 "demos_subtitle": "Ukázky bezpečnostních, logistických a speciálních řešení, ilustrace technologií, které nabízíme.",
                 "empty": "Žádná ukázka neodpovídá vybraným filtrům. Zkuste ubrat některý z filtrů.",
@@ -776,6 +779,7 @@ def build_cs() -> dict[str, Any]:
                 "featured_badge": "Vybraná ukázka",
                 "technology_badge": "Technologie",
                 "technology_demo": "Ukázka technologie",
+                "production_badge": "Výroba",
             },
             "lightbox": {
                 "close": "Zavřít",
@@ -786,6 +790,7 @@ def build_cs() -> dict[str, Any]:
                 "meta_width": "Šířka",
                 "meta_colors": "Barvy",
                 "meta_adhesive": "Lepidlo",
+                "meta_location": "Lokalita",
             },
             "cta": {
                 "title": "Máte vlastní logo?",
@@ -1115,6 +1120,7 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                             "vicebarevny": "Multi-colour / Rotogravure",
                             "bezpecnostni": "Security tapes",
                             "logisticke": "Logistics / Warning tapes",
+                            "vyroba": "Production / warehouse",
                         },
                     },
                     "adhesive": {
@@ -1138,7 +1144,7 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                         "label": "Sample type",
                         "options": {
                             "reference": "Real references",
-                            "demo": "Print options",
+                            "production": "Production & warehouse",
                         },
                     },
                 },
@@ -1146,7 +1152,9 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "sections": {
                 "featured": "Featured samples",
                 "references_title": "Real references",
-                "references_subtitle": "Photographs of actual prints from our production. We will add more references after the next photo shoot.",
+                "references_subtitle": "",
+                "production_title": "Production & warehouse",
+                "production_subtitle": "Automated warehouses, production lines and raw materials – Empoli and Atessa.",
                 "demos_title": "Print options and technologies",
                 "demos_subtitle": "Examples of security, logistics and special solutions, illustrations of the technologies we offer.",
                 "empty": "No sample matches the selected filters. Try removing one of the filters.",
@@ -1167,6 +1175,7 @@ def build_en(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "meta_width": "Width",
                 "meta_colors": "Colours",
                 "meta_adhesive": "Adhesive",
+                "meta_location": "Location",
             },
             "cta": {
                 "title": "Have your own logo?",
@@ -1496,6 +1505,7 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                             "vicebarevny": "Mehrfarbig / Rotogravur",
                             "bezpecnostni": "Sicherheitsbänder",
                             "logisticke": "Logistik- / Warnbänder",
+                            "vyroba": "Produktion / Lager",
                         },
                     },
                     "adhesive": {
@@ -1519,7 +1529,7 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                         "label": "Beispieltyp",
                         "options": {
                             "reference": "Echte Referenzen",
-                            "demo": "Druckmöglichkeiten",
+                            "production": "Produktion und Lager",
                         },
                     },
                 },
@@ -1527,7 +1537,9 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "sections": {
                 "featured": "Ausgewählte Beispiele",
                 "references_title": "Echte Referenzen",
-                "references_subtitle": "Fotos echter Drucke aus unserer Produktion. Weitere Referenzen folgen nach dem nächsten Fotoshooting.",
+                "references_subtitle": "",
+                "production_title": "Produktion und Lager",
+                "production_subtitle": "Automatisierte Lager, Produktionslinien und Rohstoffe – Empoli und Atessa.",
                 "demos_title": "Druckmöglichkeiten und Technologien",
                 "demos_subtitle": "Beispiele für Sicherheits-, Logistik- und Speziallösungen – Illustrationen der von uns angebotenen Technologien.",
                 "empty": "Kein Beispiel entspricht den gewählten Filtern. Versuchen Sie, einen Filter zu entfernen.",
@@ -1548,6 +1560,7 @@ def build_de(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "meta_width": "Breite",
                 "meta_colors": "Farben",
                 "meta_adhesive": "Klebstoff",
+                "meta_location": "Standort",
             },
             "cta": {
                 "title": "Haben Sie ein eigenes Logo?",
@@ -1905,7 +1918,9 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
         {
             "featured": "Esempi selezionati",
             "references_title": "Referenze reali",
-            "references_subtitle": "Fotografie di stampe reali dalla nostra produzione. Aggiungeremo altre referenze dopo un nuovo servizio fotografico.",
+            "references_subtitle": "",
+            "production_title": "Produzione e magazzino",
+            "production_subtitle": "Magazzini automatizzati, linee di produzione e materie prime – Empoli e Atessa.",
             "demos_title": "Possibilità di stampa e tecnologie",
             "demos_subtitle": "Esempi di soluzioni di sicurezza, logistica e speciali, illustrazione delle tecnologie che offriamo.",
             "empty": "Nessun esempio corrisponde ai filtri selezionati. Provate a rimuoverne alcuni.",
@@ -1934,6 +1949,7 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
                 "vicebarevny": "Multicolore / Rotocalco",
                 "bezpecnostni": "Nastri di sicurezza",
                 "logisticke": "Nastri logistici / di avvertimento",
+                "vyroba": "Produzione / magazzino",
             },
         }
     )
@@ -1963,7 +1979,7 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "label": "Tipo di esempio",
             "options": {
                 "reference": "Referenze reali",
-                "demo": "Possibilità di stampa",
+                "production": "Produzione e magazzino",
             },
         }
     )
@@ -1977,6 +1993,7 @@ def build_it(cs: dict[str, Any], cs_categories: dict[str, Any]) -> dict[str, Any
             "meta_width": "Larghezza",
             "meta_colors": "Colori",
             "meta_adhesive": "Adesivo",
+            "meta_location": "Località",
         }
     )
     it["gallery"]["cta"].update(

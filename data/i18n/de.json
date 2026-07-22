@@ -271,7 +271,8 @@
             "jednobarevny": "Einfarbig",
             "vicebarevny": "Mehrfarbig / Rotogravur",
             "bezpecnostni": "Sicherheitsbänder",
-            "logisticke": "Logistik- / Warnbänder"
+            "logisticke": "Logistik- / Warnbänder",
+            "vyroba": "Produktion / Lager"
           }
         },
         "adhesive": {
@@ -295,7 +296,7 @@
           "label": "Beispieltyp",
           "options": {
             "reference": "Echte Referenzen",
-            "demo": "Druckmöglichkeiten"
+            "production": "Produktion und Lager"
           }
         }
       }
@@ -303,7 +304,9 @@
     "sections": {
       "featured": "Ausgewählte Beispiele",
       "references_title": "Echte Referenzen",
-      "references_subtitle": "Fotos echter Drucke aus unserer Produktion. Weitere Referenzen folgen nach dem nächsten Fotoshooting.",
+      "references_subtitle": "",
+      "production_title": "Produktion und Lager",
+      "production_subtitle": "Automatisierte Lager, Produktionslinien und Rohstoffe – Empoli und Atessa.",
       "demos_title": "Druckmöglichkeiten und Technologien",
       "demos_subtitle": "Beispiele für Sicherheits-, Logistik- und Speziallösungen – Illustrationen der von uns angebotenen Technologien.",
       "empty": "Kein Beispiel entspricht den gewählten Filtern. Versuchen Sie, einen Filter zu entfernen."
@@ -323,7 +326,8 @@
       "meta_industry": "Branche",
       "meta_width": "Breite",
       "meta_colors": "Farben",
-      "meta_adhesive": "Klebstoff"
+      "meta_adhesive": "Klebstoff",
+      "meta_location": "Standort"
     },
     "cta": {
       "title": "Haben Sie ein eigenes Logo?",
@@ -331,6 +335,91 @@
       "button": "Unverbindlich anfragen"
     },
     "items": {
+      "bonami": {
+        "title": "Klebebänder mit Bonami-Logo",
+        "description": "Einfarbiger Markendruck auf weißem BOPP-Band – Logo und Möbelillustrationen für E-Commerce-Verpackungen.",
+        "industry_label": "E-Commerce"
+      },
+      "notino": {
+        "title": "Klebebänder mit Notino-Logo",
+        "description": "Kontrastreicher weißer Logodruck auf schwarzem Band – starkes Sendungsbranding für Beauty-E-Commerce.",
+        "industry_label": "E-Commerce"
+      },
+      "notino-sklad": {
+        "title": "Notino-Band im Lager",
+        "description": "Verpacken von Sendungen im Notino Brno Logistics Hub – schwarzes Band mit goldenem Logo im realen Versandbetrieb.",
+        "industry_label": "E-Commerce"
+      },
+      "fenske": {
+        "title": "Klebebänder mit Fenske-Logo",
+        "description": "Zweifarbiger Druck FENSKE / Weine und Feinkost auf Klebeband – Branding für Wein- und Feinkostsendungen.",
+        "industry_label": "Lebensmittel"
+      },
+      "just-nahrin": {
+        "title": "Just+ / nahrin Klebebänder",
+        "description": "Mehrfarbiger Druck von Logos und Logistiktext inkl. Zerbrechlich-Symbol – Branding und Hinweise für den Empfänger.",
+        "industry_label": "E-Commerce"
+      },
+      "vorsicht-glas": {
+        "title": "Warnband Vorsicht Glas",
+        "description": "Warndruck „Vorsicht Glas!“ / „Do not drop“ auf Klebeband – Schutz zerbrechlicher Sendungen beim Transport.",
+        "industry_label": "Logistik"
+      },
+      "alfain": {
+        "title": "Klebebänder mit ALFA IN-Logo",
+        "description": "Oranges BOPP-Band mit weißem ALFA IN-Logo – Sendungsbranding direkt im Lager.",
+        "industry_label": "Logistik"
+      },
+      "papir-fsc": {
+        "title": "Papierklebeband FSC / 22 PAP",
+        "description": "Ökologisches Papierklebeband mit FSC- und 22-PAP-Aufdruck – nachhaltige E-Commerce-Verpackung.",
+        "industry_label": "E-Commerce"
+      },
+      "alfain-sklad": {
+        "title": "ALFA IN-Band im Lager",
+        "description": "Manuelles Verpacken auf Palette mit orangem ALFA IN-Band – Druck im realen Logistikbetrieb.",
+        "industry_label": "Logistik"
+      },
+      "irplast-warehouse": {
+        "title": "Automatisiertes Lager Empoli",
+        "description": "Automatisiertes Lager in Empoli – Logistik für fertige Bänder und Folien.",
+        "industry_label": "Produktion"
+      },
+      "irplast-warehouse-2": {
+        "title": "Automatisiertes Lager Empoli",
+        "description": "Blick in das automatisierte Lager Empoli mit hochdichtem Lagern.",
+        "industry_label": "Produktion"
+      },
+      "irplast-shuttle": {
+        "title": "Produktion – Automated Shuttle",
+        "description": "Produktionsbereich mit automatischem Shuttle-System im Werk Empoli.",
+        "industry_label": "Produktion"
+      },
+      "irplast-silos": {
+        "title": "Rohstoffsilos Atessa",
+        "description": "Silos zur Lagerung von Rohstoffen (Polypropylen) im Folienwerk Atessa.",
+        "industry_label": "Produktion"
+      },
+      "irplast-lisim": {
+        "title": "STILANSOL® LISIM-Linie",
+        "description": "Simultane BOPP-Folienorientierung – Brückner LISIM / STILANSOL® Produktionslinie.",
+        "industry_label": "Produktion"
+      },
+      "irplast-slitter": {
+        "title": "Schneidlinie (Taglierina)",
+        "description": "Industrielle Schneidlinie zum Teilen von Folie und Bändern.",
+        "industry_label": "Produktion"
+      },
+      "irplast-carriages": {
+        "title": "Automatische Wagen in der Produktion",
+        "description": "Automatische Handhabungswagen für den Materialfluss in der Produktion.",
+        "industry_label": "Produktion"
+      },
+      "irplast-reels": {
+        "title": "BOPP-Rollenlager",
+        "description": "Lagerung fertiger BOPP-Rollen vor der Konvertierung zu Bändern und Etiketten.",
+        "industry_label": "Produktion"
+      },
       "alza": {
         "title": "Klebebänder mit ALZA-Logo",
         "description": "Mehrsprachiger Markendruck für E-Commerce-Verpackungen mit wiederholtem Logo und Slogan auf Standard-BOPP-Klebeband.",

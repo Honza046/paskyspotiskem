@@ -10,190 +10,280 @@ ROOT = Path(__file__).resolve().parent.parent
 
 ITEMS = [
     {
-        "id": "alza",
-        "image": "gallery/gallery-alza.jpg",
-        "title": "Pásky s logem ALZA",
-        "category": "vicebarevny",
+        "id": "bonami",
+        "image": "gallery/gallery-bonami.jpg",
+        "title": "Pásky s logem Bonami",
+        "category": "jednobarevny",
         "type": "reference",
         "featured": True,
-        "client": "Alza",
+        "client": "Bonami",
         "industry": "e-commerce",
         "width": "48 mm",
-        "colors": 3,
-        "adhesive": "hot-melt",
-        "description": "Vícejazyčný brand potisk pro e-commerce balení s opakovaným logem a sloganem na standardní BOPP pásku.",
+        "colors": 1,
+        "adhesive": "acryl",
+        "description": "Jednobarevný brand potisk na bílé BOPP pásce – logo a ilustrace nábytku pro e-commerce balení.",
         "graphic": False,
     },
     {
-        "id": "jednobarevny-firemni",
-        "image": "gallery/gallery-jednobarevny-firemni.jpg",
-        "title": "Jednobarevný firemní potisk",
+        "id": "notino",
+        "image": "gallery/gallery-notino.jpg",
+        "title": "Pásky s logem Notino",
+        "category": "jednobarevny",
+        "type": "reference",
+        "featured": True,
+        "client": "Notino",
+        "industry": "e-commerce",
+        "width": "48 mm",
+        "colors": 1,
+        "adhesive": "hot-melt",
+        "description": "Kontrastní bílý potisk loga na černé pásce – výrazný branding zásilek v beauty e-commerce.",
+        "graphic": False,
+    },
+    {
+        "id": "notino-sklad",
+        "image": "gallery/gallery-notino-sklad.jpg",
+        "title": "Notino páska ve skladu",
         "category": "jednobarevny",
         "type": "reference",
         "featured": False,
-        "client": "",
-        "industry": "vyroba",
-        "width": "48 mm",
-        "colors": 1,
-        "adhesive": "acryl",
-        "description": "Klasický jednobarevný potisk loga na průhledné nebo bílé BOPP pásky, ideální pro firemní balení a skladovou logistiku.",
-        "graphic": False,
-    },
-    {
-        "id": "flexotisk-8",
-        "image": "gallery/gallery-flexotisk-8.jpg",
-        "title": "Flexotisk – 8 barev",
-        "category": "vicebarevny",
-        "type": "reference",
-        "featured": True,
-        "client": "",
-        "industry": "potraviny",
-        "width": "48 mm",
-        "colors": 8,
-        "adhesive": "hot-melt",
-        "description": "Plnobarevný flexotisk s vysokým rozlišením, vhodný pro atraktivní brand na balících páskách i potravinářských aplikacích.",
-        "graphic": False,
-    },
-    {
-        "id": "rototisk-foto",
-        "image": "gallery/gallery-rototisk-foto.jpg",
-        "title": "Rototisk ve fotokvalitě",
-        "category": "vicebarevny",
-        "type": "reference",
-        "featured": False,
-        "client": "",
-        "industry": "potraviny",
-        "width": "48 mm",
-        "colors": 6,
-        "adhesive": "acryl",
-        "description": "Rotogravurní tisk s fotografickou kvalitou pro náročné vizuály a dlouhodobou odolnost potisku.",
-        "graphic": False,
-    },
-    {
-        "id": "tamper-void",
-        "image": "gallery/gallery-tamper-void.jpg",
-        "title": "Tamper Evident VOID",
-        "category": "bezpecnostni",
-        "type": "demo",
-        "featured": False,
-        "client": "",
-        "industry": "bezpecnost",
-        "width": "48 mm",
-        "colors": 2,
-        "adhesive": "acryl",
-        "description": "Bezpečnostní páska s VOID efektem, při odlepení zanechá viditelné upozornění, které nelze bez stopy odstranit.",
-        "graphic": False,
-        "graphic_style": "security",
-    },
-    {
-        "id": "extra-glue",
-        "image": "gallery/gallery-extra-glue.jpg",
-        "title": "EXTRA GLUE+ bezpečnostní série",
-        "category": "bezpecnostni",
-        "type": "demo",
-        "featured": False,
-        "client": "",
-        "industry": "bezpecnost",
+        "client": "Notino",
+        "industry": "e-commerce",
         "width": "48 mm",
         "colors": 1,
         "adhesive": "hot-melt",
-        "description": "Páska se zvýšenou vrstvou lepidla (+33 %) pro obtížné povrchy, těžké balíky a prašné skladové prostředí.",
+        "description": "Balení zásilek v Notino Brno Logistics Hub – černá páska se zlatým logem v reálném expedičním provozu.",
         "graphic": False,
-        "graphic_style": "glue",
     },
     {
-        "id": "pecetni",
-        "image": "gallery/gallery-pecetni.jpg",
-        "title": "Pečetní páska s potiskem",
-        "category": "bezpecnostni",
+        "id": "fenske",
+        "image": "gallery/gallery-fenske.jpg",
+        "title": "Pásky s logem Fenske",
+        "category": "vicebarevny",
         "type": "reference",
         "featured": False,
-        "client": "",
-        "industry": "bezpecnost",
+        "client": "Fenske",
+        "industry": "potraviny",
         "width": "48 mm",
         "colors": 2,
-        "adhesive": "hot-melt",
-        "description": "Pečetní páska s vlastním potiskem pro zabezpečení zásilek a dokumentů proti neoprávněnému otevření.",
+        "adhesive": "acryl",
+        "description": "Dvoubarevný potisk FENSKE / Weine und Feinkost na balicí pásce – branding zásilek vína a delikates.",
         "graphic": False,
     },
     {
-        "id": "logisticky-kontakty",
-        "image": "gallery/gallery-logisticky-kontakty.jpg",
-        "title": "Logistický potisk – kontakty",
+        "id": "just-nahrin",
+        "image": "gallery/gallery-just-nahrin.jpg",
+        "title": "Pásky Just+ / nahrin",
+        "category": "vicebarevny",
+        "type": "reference",
+        "featured": False,
+        "client": "Just+ / nahrin",
+        "industry": "e-commerce",
+        "width": "48 mm",
+        "colors": 3,
+        "adhesive": "acryl",
+        "description": "Vícebarevný potisk log a logistického textu včetně symbolu křehké – branding i instrukce pro příjemce.",
+        "graphic": False,
+    },
+    {
+        "id": "vorsicht-glas",
+        "image": "gallery/gallery-vorsicht-glas.jpg",
+        "title": "Výstražná páska Vorsicht Glas",
         "category": "logisticke",
         "type": "reference",
         "featured": False,
         "client": "",
         "industry": "logistika",
         "width": "48 mm",
-        "colors": 2,
+        "colors": 1,
         "adhesive": "hot-melt",
-        "description": "Informační potisk s kontakty, QR kódem nebo instrukcemi pro příjemce zásilky.",
+        "description": "Výstražný potisk „Vorsicht Glas!“ / „Do not drop“ na balicí pásce – ochrana křehkých zásilek při přepravě.",
         "graphic": False,
     },
     {
-        "id": "neutralni-bopp",
-        "image": "gallery/gallery-neutralni-bopp.jpg",
-        "title": "Neutrální BOPP 25 mm",
+        "id": "alfain",
+        "image": "gallery/gallery-alfain.jpg",
+        "title": "Pásky s logem ALFA IN",
+        "category": "jednobarevny",
+        "type": "reference",
+        "featured": False,
+        "client": "ALFA IN",
+        "industry": "logistika",
+        "width": "48 mm",
+        "colors": 1,
+        "adhesive": "hot-melt",
+        "description": "Oranžová BOPP páska s bílým logem ALFA IN – branding zásilek přímo ve skladu.",
+        "graphic": False,
+    },
+    {
+        "id": "papir-fsc",
+        "image": "gallery/gallery-papir-fsc.jpg",
+        "title": "Papírová páska FSC / 22 PAP",
         "category": "jednobarevny",
         "type": "reference",
         "featured": False,
         "client": "",
-        "industry": "vyroba",
-        "width": "25 mm",
-        "colors": 1,
-        "adhesive": "acryl",
-        "description": "Úzká BOPP páska s jednoduchým potiskem pro ruční balení a lehčí zásilky.",
-        "graphic": False,
-    },
-    {
-        "id": "prumyslova-serie",
-        "image": "gallery/gallery-prumyslova-serie.jpg",
-        "title": "Průmyslová série pro e-shop",
-        "category": "vicebarevny",
-        "type": "demo",
-        "featured": False,
-        "client": "",
         "industry": "e-commerce",
         "width": "48 mm",
-        "colors": 4,
-        "adhesive": "hot-melt",
-        "description": "Hromadná výroba potištěných pásek pro e-shopy a fulfillment, konzistentní kvalita v celé sérii.",
-        "graphic": False,
-        "graphic_style": "industrial",
-    },
-    {
-        "id": "vystrizny-krehke",
-        "image": "gallery/gallery-vystrizny-krehke.jpg",
-        "title": "Výstražný potisk – křehké",
-        "category": "logisticke",
-        "type": "demo",
-        "featured": False,
-        "client": "",
-        "industry": "logistika",
-        "width": "48 mm",
-        "colors": 3,
+        "colors": 1,
         "adhesive": "acryl",
-        "description": "Výstražné pásky s potiskem „Křehké“, „Neklopit“ nebo vlastním symbolem pro ochranu zboží při přepravě.",
+        "description": "Ekologická papírová páska s potiskem FSC a symbolem 22 PAP – udržitelné balení e-commerce zásilek.",
         "graphic": False,
     },
     {
-        "id": "bezpecnostni-sklad",
-        "image": "gallery/gallery-bezpecnostni-sklad.jpg",
-        "title": "Bezpečnostní páska sklad",
-        "category": "logisticke",
-        "type": "demo",
+        "id": "alfain-sklad",
+        "image": "gallery/gallery-alfain-sklad.jpg",
+        "title": "ALFA IN páska ve skladu",
+        "category": "jednobarevny",
+        "type": "reference",
         "featured": False,
-        "client": "",
-        "industry": "bezpecnost",
+        "client": "ALFA IN",
+        "industry": "logistika",
         "width": "48 mm",
         "colors": 1,
         "adhesive": "hot-melt",
-        "description": "Kombinace logistického a bezpečnostního potisku pro sklady a distribuční centra.",
+        "description": "Ruční balení na paletě s oranžovou páskou ALFA IN – potisk v praxi logistického provozu.",
         "graphic": False,
-        "graphic_style": "security",
+    },
+    {
+        "id": "irplast-warehouse",
+        "image": "gallery/gallery-irplast-warehouse.jpg",
+        "title": "Automatizovaný sklad Empoli",
+        "category": "vyroba",
+        "type": "production",
+        "featured": False,
+        "client": "",
+        "industry": "vyroba",
+        "width": "",
+        "colors": 0,
+        "adhesive": "",
+        "location": "Empoli, Itálie",
+        "pill": "Sklad",
+        "description": "Automatizovaný sklad v Empoli – logistika hotových pásek a fólií.",
+        "graphic": False,
+    },
+    {
+        "id": "irplast-warehouse-2",
+        "image": "gallery/gallery-irplast-warehouse-2.jpg",
+        "title": "Automatizovaný sklad Empoli",
+        "category": "vyroba",
+        "type": "production",
+        "featured": False,
+        "client": "",
+        "industry": "vyroba",
+        "width": "",
+        "colors": 0,
+        "adhesive": "",
+        "location": "Empoli, Itálie",
+        "pill": "Sklad",
+        "description": "Pohled do automatizovaného skladu s vysokohustotním skladováním.",
+        "graphic": False,
+    },
+    {
+        "id": "irplast-shuttle",
+        "image": "gallery/gallery-irplast-shuttle.jpg",
+        "title": "Výroba – automated shuttle",
+        "category": "vyroba",
+        "type": "production",
+        "featured": False,
+        "client": "",
+        "industry": "vyroba",
+        "width": "",
+        "colors": 0,
+        "adhesive": "",
+        "location": "Empoli, Itálie",
+        "pill": "Automatizace",
+        "description": "Výrobní oddělení se automatickým shuttle systémem.",
+        "graphic": False,
+    },
+    {
+        "id": "irplast-silos",
+        "image": "gallery/gallery-irplast-silos.jpg",
+        "title": "Sila na suroviny Atessa",
+        "category": "vyroba",
+        "type": "production",
+        "featured": False,
+        "client": "",
+        "industry": "vyroba",
+        "width": "",
+        "colors": 0,
+        "adhesive": "",
+        "location": "Atessa, Itálie",
+        "pill": "Suroviny",
+        "description": "Sila pro skladování surovin (polypropylen) ve filmovém závodě.",
+        "graphic": False,
+    },
+    {
+        "id": "irplast-lisim",
+        "image": "gallery/gallery-irplast-lisim.jpg",
+        "title": "Linka STILANSOL® LISIM",
+        "category": "vyroba",
+        "type": "production",
+        "featured": False,
+        "client": "",
+        "industry": "vyroba",
+        "width": "",
+        "colors": 0,
+        "adhesive": "",
+        "location": "Atessa, Itálie",
+        "pill": "Výrobní linka",
+        "description": "Simultánní orientace BOPP fólie – výrobní linka Brückner LISIM / STILANSOL®.",
+        "graphic": False,
+    },
+    {
+        "id": "irplast-slitter",
+        "image": "gallery/gallery-irplast-slitter.jpg",
+        "title": "Řezací linka (taglierina)",
+        "category": "vyroba",
+        "type": "production",
+        "featured": False,
+        "client": "",
+        "industry": "vyroba",
+        "width": "",
+        "colors": 0,
+        "adhesive": "",
+        "location": "Itálie",
+        "pill": "Řezání",
+        "description": "Průmyslová řezací linka pro dělení fólie a pásek.",
+        "graphic": False,
+    },
+    {
+        "id": "irplast-carriages",
+        "image": "gallery/gallery-irplast-carriages.jpg",
+        "title": "Automatické vozíky ve výrobě",
+        "category": "vyroba",
+        "type": "production",
+        "featured": False,
+        "client": "",
+        "industry": "vyroba",
+        "width": "",
+        "colors": 0,
+        "adhesive": "",
+        "location": "Empoli, Itálie",
+        "pill": "Manipulace",
+        "description": "Automatické manipulační vozíky zajišťující tok materiálu ve výrobě.",
+        "graphic": False,
+    },
+    {
+        "id": "irplast-reels",
+        "image": "gallery/gallery-irplast-reels.jpg",
+        "title": "Sklad BOPP rolí",
+        "category": "vyroba",
+        "type": "production",
+        "featured": False,
+        "client": "",
+        "industry": "vyroba",
+        "width": "",
+        "colors": 0,
+        "adhesive": "",
+        "location": "Atessa, Itálie",
+        "pill": "Sklad fólie",
+        "description": "Skladování hotových BOPP rolí před konverzí na pásky a etikety.",
+        "graphic": False,
     },
 ]
+
+# Real client photos shown in "Reálné reference" (Bonami/Notino also in featured).
+REAL_REFERENCE_IDS = ["bonami", "just-nahrin", "notino", "notino-sklad", "vorsicht-glas", "alfain", "papir-fsc", "alfain-sklad", "fenske"]
 
 FILTER_GROUPS = {
     "category": {
@@ -203,6 +293,7 @@ FILTER_GROUPS = {
             "vicebarevny": "Vícebarevný / Rototisk",
             "bezpecnostni": "Bezpečnostní pásky",
             "logisticke": "Logistické / Výstražné",
+            "vyroba": "Výroba / sklad",
         },
     },
     "adhesive": {
@@ -223,7 +314,7 @@ FILTER_GROUPS = {
         "label": "Typ ukázky",
         "options": {
             "reference": "Reálné reference",
-            "demo": "Možnosti tisku",
+            "production": "Výroba a sklad",
         },
     },
 }
@@ -269,27 +360,28 @@ def colors_label(n: int) -> str:
 
 def render_card(item: dict, featured_layout: bool = False) -> str:
     img = f"images/{item['image']}"
-    adhesive = ADHESIVE_LABELS[item["adhesive"]]
+    adhesive_key = item.get("adhesive") or ""
+    adhesive = ADHESIVE_LABELS.get(adhesive_key, "")
     industry = INDUSTRY_LABELS.get(item.get("industry", ""), "")
     graphic = item.get("graphic", False)
     style = item.get("graphic_style", "security")
     gradient = GRAPHIC_GRADIENTS.get(style, GRAPHIC_GRADIENTS["security"])
+    is_production = item["type"] == "production"
 
     classes = "group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg"
-    if featured_layout:
-        classes += " lg:col-span-2"
 
-    aspect = "aspect-[16/10] lg:aspect-auto lg:min-h-[280px]" if featured_layout else "aspect-[4/3]"
-    title_cls = "text-base sm:text-lg" if featured_layout else "text-sm"
-    pad = "p-4 sm:p-5" if featured_layout else "p-4"
+    aspect = "aspect-[4/3]"
+    title_cls = "text-sm sm:text-base" if featured_layout else "text-sm"
+    pad = "p-4"
 
     attrs = (
         f'data-gallery-item data-id="{esc(item["id"])}" data-category="{esc(item["category"])}" '
-        f'data-adhesive="{esc(item["adhesive"])}" data-industry="{esc(item["industry"])}" '
+        f'data-adhesive="{esc(adhesive_key)}" data-industry="{esc(item["industry"])}" '
         f'data-type="{esc(item["type"])}" data-featured="{"true" if item.get("featured") else "false"}" '
         f'data-image="{esc(img)}" data-title="{esc(item["title"])}" data-client="{esc(item.get("client", ""))}" '
-        f'data-width="{esc(item["width"])}" data-colors="{item["colors"]}" '
+        f'data-width="{esc(item.get("width") or "")}" data-colors="{item.get("colors") or ""}" '
         f'data-adhesive-label="{esc(adhesive)}" data-industry-label="{esc(industry)}" '
+        f'data-location="{esc(item.get("location", ""))}" '
         f'data-description="{esc(item["description"])}" data-graphic="{"true" if graphic else "false"}" '
         f'data-graphic-style="{esc(style)}"'
     )
@@ -303,17 +395,25 @@ def render_card(item: dict, featured_layout: bool = False) -> str:
         media = f'<img src="{esc(img)}" alt="{esc(item["title"])}" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">'
 
     badges = ""
-    if item.get("featured"):
+    if featured_layout and item.get("featured"):
         badges += '<span class="absolute left-3 top-3 rounded-full bg-orange-600 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white shadow-md">Vybraná ukázka</span>'
-    if item["type"] == "demo":
-        badges += '<span class="absolute right-3 top-3 rounded-full border border-slate-200 bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-600 backdrop-blur-sm">Technologie</span>'
+    if is_production:
+        badges += '<span class="absolute right-3 top-3 rounded-full border border-slate-200 bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-600 backdrop-blur-sm">Výroba</span>'
 
     tags = ""
-    if industry:
-        tags += f'<span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">{esc(industry)}</span>'
-    tags += f'<span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">{esc(item["width"])}</span>'
-    tags += f'<span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">{colors_label(item["colors"])}</span>'
-    tags += f'<span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">{esc(adhesive)}</span>'
+    if is_production:
+        loc = item.get("location") or industry
+        if loc:
+            tags += f'<span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">{esc(loc)}</span>'
+        pill = item.get("pill") or ""
+        if pill:
+            tags += f'<span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">{esc(pill)}</span>'
+    else:
+        if industry:
+            tags += f'<span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">{esc(industry)}</span>'
+        tags += f'<span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">{esc(item["width"])}</span>'
+        tags += f'<span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">{colors_label(item["colors"])}</span>'
+        tags += f'<span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">{esc(adhesive)}</span>'
 
     client = item.get("client", "")
     client_html = f'<p class="text-xs font-semibold uppercase tracking-wide text-orange-600">{esc(client)}</p>' if client else ""
@@ -363,9 +463,10 @@ def render_filters() -> str:
 
 
 def render_main() -> str:
+    by_id = {i["id"]: i for i in ITEMS}
     featured = [i for i in ITEMS if i.get("featured")]
-    references = [i for i in ITEMS if i["type"] == "reference" and not i.get("featured")]
-    demos = [i for i in ITEMS if i["type"] == "demo"]
+    references = [by_id[rid] for rid in REAL_REFERENCE_IDS if rid in by_id]
+    production = [i for i in ITEMS if i["type"] == "production"]
 
     return f"""<main>
 
@@ -404,7 +505,7 @@ def render_main() -> str:
     <div class="mb-5 flex items-center justify-between gap-3">
         <h2 class="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">Vybrané ukázky</h2>
     </div>
-    <div id="gallery-featured" class="grid grid-cols-1 gap-6 lg:grid-cols-4">
+    <div id="gallery-featured" class="mx-auto grid max-w-3xl grid-cols-1 gap-5 sm:grid-cols-2">
 {chr(10).join('        ' + render_card(i, True) for i in featured)}
     </div>
 </section>
@@ -413,21 +514,20 @@ def render_main() -> str:
 <section id="gallery-references-section" class="mx-auto max-w-7xl px-4 pb-4 pt-12 sm:pt-16">
     <div class="mb-6 border-b border-slate-100 pb-4">
         <h2 class="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">Reálné reference</h2>
-        <p class="mt-1 text-sm text-slate-500">Fotografie skutečných potisků z naší výroby. Po novém focení doplníme další reference.</p>
     </div>
     <div id="gallery-references" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 {chr(10).join('        ' + render_card(i) for i in references)}
     </div>
 </section>
 
-<!-- DEMOS -->
-<section id="gallery-demos-section" class="mx-auto max-w-7xl px-4 pb-12 pt-8 sm:pb-16 sm:pt-12">
+<!-- PRODUCTION -->
+<section id="gallery-production-section" class="mx-auto max-w-7xl px-4 pb-12 pt-12 sm:pb-16 sm:pt-16">
     <div class="mb-6 border-b border-slate-100 pb-4">
-        <h2 class="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">Možnosti tisku a technologie</h2>
-        <p class="mt-1 text-sm text-slate-500">Ukázky bezpečnostních, logistických a speciálních řešení, ilustrace technologií, které nabízíme.</p>
+        <h2 class="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">Výroba a sklad</h2>
+        <p class="mt-1 text-sm text-slate-500">Automatizované sklady, výrobní linky a suroviny – Empoli a Atessa.</p>
     </div>
-    <div id="gallery-demos" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-{chr(10).join('        ' + render_card(i) for i in demos)}
+    <div id="gallery-production" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+{chr(10).join('        ' + render_card(i) for i in production)}
     </div>
 </section>
 
@@ -470,10 +570,10 @@ def render_main() -> str:
         <button type="button" id="lightbox-close" class="absolute right-3 top-3 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-md transition hover:bg-white hover:text-orange-600" aria-label="Zavřít">
             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
-        <div class="flex flex-col lg:flex-row">
-            <div id="lightbox-media" class="relative flex min-h-[220px] items-center justify-center bg-slate-100 lg:w-3/5">
-                <img id="lightbox-image" src="" alt="" class="hidden max-h-[50vh] w-full object-contain lg:max-h-[65vh]">
-                <div id="lightbox-graphic" class="hidden flex h-full min-h-[220px] w-full flex-col items-center justify-center bg-gradient-to-br from-rose-50 via-white to-orange-50 p-10 text-center lg:min-h-[320px]">
+        <div class="flex flex-col lg:flex-row lg:items-stretch">
+            <div id="lightbox-media" class="relative min-h-[280px] overflow-hidden bg-slate-100 lg:w-3/5 lg:min-h-[420px]">
+                <img id="lightbox-image" src="" alt="" class="hidden h-full w-full object-cover">
+                <div id="lightbox-graphic" class="hidden flex h-full min-h-[280px] w-full flex-col items-center justify-center bg-gradient-to-br from-rose-50 via-white to-orange-50 p-10 text-center lg:min-h-[420px]">
                     <div id="lightbox-graphic-icon" class="mb-4"></div>
                     <span class="text-xs font-bold uppercase tracking-widest text-slate-500">Ukázka technologie</span>
                 </div>
@@ -499,7 +599,7 @@ def main() -> None:
     content = html_path.read_text(encoding="utf-8")
     new_block = render_main()
     updated = re.sub(
-        r"<main>.*?</main>\s*(?:<!-- LIGHTBOX -->.*?</div>\s*)*<!-- FOOTER -->",
+        r"<main>.*?</main>\s*<!-- LIGHTBOX -->.*?<!-- FOOTER -->",
         new_block + "\n<!-- FOOTER -->",
         content,
         count=1,

@@ -18,7 +18,7 @@
     }
     var featuredSection = document.getElementById('gallery-featured-section');
     var referencesSection = document.getElementById('gallery-references-section');
-    var demosSection = document.getElementById('gallery-demos-section');
+    var productionSection = document.getElementById('gallery-production-section');
     var resultsSection = document.getElementById('gallery-results-section');
     var resultsGrid = document.getElementById('gallery-results');
     var emptyState = document.getElementById('gallery-empty');
@@ -44,6 +44,22 @@
         };
     });
 
+    function uniqueById(list) {
+        var seen = {};
+        var out = [];
+        list.forEach(function (item) {
+            var id = item.getAttribute('data-id') || '';
+            if (seen[id]) {
+                return;
+            }
+            seen[id] = true;
+            out.push(item);
+        });
+        return out;
+    }
+
+    var uniqueItemCount = uniqueById(items).length;
+
     function restoreItems() {
         itemPlaces.forEach(function (place) {
             if (!place.parent) {
@@ -55,7 +71,7 @@
                 place.parent.appendChild(place.item);
             }
             if (place.item.getAttribute('data-featured') === 'true' && place.parent.id === 'gallery-featured') {
-                place.item.classList.add('lg:col-span-2');
+                place.item.classList.remove('lg:col-span-2');
             }
         });
     }
@@ -190,22 +206,30 @@
         updateCounts();
 
         visibleItems = [];
+        var seenVisible = {};
         items.forEach(function (item) {
             var show = !filtered || itemMatches(item, filters);
+            var id = item.getAttribute('data-id') || '';
             if (show) {
-                visibleItems.push(item);
+                if (!seenVisible[id]) {
+                    seenVisible[id] = true;
+                    visibleItems.push(item);
+                } else if (filtered) {
+                    item.classList.add('hidden');
+                    return;
+                }
             }
             item.classList.remove('hidden');
         });
 
         var count = visibleItems.length;
         if (countEl) {
-            if (!filtered || count === items.length) {
-                countEl.textContent = jsT('js.gallery.count_all', '{count} ukázek').replace('{count}', String(items.length));
+            if (!filtered || count === uniqueItemCount) {
+                countEl.textContent = jsT('js.gallery.count_all', '{count} ukázek').replace('{count}', String(uniqueItemCount));
             } else {
                 countEl.textContent = jsT('js.gallery.count_filtered', 'Zobrazeno {visible} z {total}')
                     .replace('{visible}', String(count))
-                    .replace('{total}', String(items.length));
+                    .replace('{total}', String(uniqueItemCount));
             }
         }
 
@@ -218,8 +242,8 @@
             if (referencesSection) {
                 referencesSection.classList.add('hidden');
             }
-            if (demosSection) {
-                demosSection.classList.add('hidden');
+            if (productionSection) {
+                productionSection.classList.add('hidden');
             }
             resultsSection.classList.remove('hidden');
 
@@ -253,8 +277,8 @@
         if (referencesSection) {
             referencesSection.classList.remove('hidden');
         }
-        if (demosSection) {
-            demosSection.classList.remove('hidden');
+        if (productionSection) {
+            productionSection.classList.remove('hidden');
         }
     }
 
@@ -387,9 +411,11 @@
                 colors: item.getAttribute('data-colors'),
                 adhesive: item.getAttribute('data-adhesive-label'),
                 industry: item.getAttribute('data-industry-label'),
+                location: item.getAttribute('data-location'),
                 description: item.getAttribute('data-description'),
                 graphic: item.getAttribute('data-graphic') === 'true',
-                graphicStyle: item.getAttribute('data-graphic-style') || 'security'
+                graphicStyle: item.getAttribute('data-graphic-style') || 'security',
+                type: item.getAttribute('data-type')
             };
         }
 
@@ -443,11 +469,17 @@
                 modalClient.classList.add('hidden');
             }
 
-            modalMeta.innerHTML =
-                metaRow(lightboxLabel('meta_industry', 'Odvětví'), data.industry) +
-                metaRow(lightboxLabel('meta_width', 'Šířka'), data.width) +
-                metaRow(lightboxLabel('meta_colors', 'Barvy'), colorsLabel(data.colors)) +
-                metaRow(lightboxLabel('meta_adhesive', 'Lepidlo'), data.adhesive);
+            if (data.type === 'production') {
+                modalMeta.innerHTML =
+                    metaRow(lightboxLabel('meta_industry', 'Odvětví'), data.industry) +
+                    metaRow(lightboxLabel('meta_location', 'Lokalita'), data.location);
+            } else {
+                modalMeta.innerHTML =
+                    metaRow(lightboxLabel('meta_industry', 'Odvětví'), data.industry) +
+                    metaRow(lightboxLabel('meta_width', 'Šířka'), data.width) +
+                    metaRow(lightboxLabel('meta_colors', 'Barvy'), data.colors ? colorsLabel(data.colors) : '') +
+                    metaRow(lightboxLabel('meta_adhesive', 'Lepidlo'), data.adhesive);
+            }
 
             modalDescription.textContent = data.description || '';
             modalCta.href = inquiryUrl(data.title);

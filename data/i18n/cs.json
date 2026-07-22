@@ -271,7 +271,8 @@
             "jednobarevny": "Jednobarevný tisk",
             "vicebarevny": "Vícebarevný / Rototisk",
             "bezpecnostni": "Bezpečnostní pásky",
-            "logisticke": "Logistické / Výstražné"
+            "logisticke": "Logistické / Výstražné",
+            "vyroba": "Výroba / sklad"
           }
         },
         "adhesive": {
@@ -295,7 +296,7 @@
           "label": "Typ ukázky",
           "options": {
             "reference": "Reálné reference",
-            "demo": "Možnosti tisku"
+            "production": "Výroba a sklad"
           }
         }
       }
@@ -303,7 +304,9 @@
     "sections": {
       "featured": "Vybrané ukázky",
       "references_title": "Reálné reference",
-      "references_subtitle": "Fotografie skutečných potisků z naší výroby. Po novém focení doplníme další reference.",
+      "references_subtitle": "",
+      "production_title": "Výroba a sklad",
+      "production_subtitle": "Automatizované sklady, výrobní linky a suroviny – Empoli a Atessa.",
       "demos_title": "Možnosti tisku a technologie",
       "demos_subtitle": "Ukázky bezpečnostních, logistických a speciálních řešení, ilustrace technologií, které nabízíme.",
       "empty": "Žádná ukázka neodpovídá vybraným filtrům. Zkuste ubrat některý z filtrů."
@@ -313,7 +316,8 @@
       "view_detail_aria": "Zobrazit detail: {title}",
       "featured_badge": "Vybraná ukázka",
       "technology_badge": "Technologie",
-      "technology_demo": "Ukázka technologie"
+      "technology_demo": "Ukázka technologie",
+      "production_badge": "Výroba"
     },
     "lightbox": {
       "close": "Zavřít",
@@ -323,7 +327,8 @@
       "meta_industry": "Odvětví",
       "meta_width": "Šířka",
       "meta_colors": "Barvy",
-      "meta_adhesive": "Lepidlo"
+      "meta_adhesive": "Lepidlo",
+      "meta_location": "Lokalita"
     },
     "cta": {
       "title": "Máte vlastní logo?",
@@ -331,6 +336,91 @@
       "button": "Nezávazně poptat"
     },
     "items": {
+      "bonami": {
+        "title": "Pásky s logem Bonami",
+        "description": "Jednobarevný brand potisk na bílé BOPP pásce – logo a ilustrace nábytku pro e-commerce balení.",
+        "industry_label": "E-commerce"
+      },
+      "notino": {
+        "title": "Pásky s logem Notino",
+        "description": "Kontrastní bílý potisk loga na černé pásce – výrazný branding zásilek v beauty e-commerce.",
+        "industry_label": "E-commerce"
+      },
+      "notino-sklad": {
+        "title": "Notino páska ve skladu",
+        "description": "Balení zásilek v Notino Brno Logistics Hub – černá páska se zlatým logem v reálném expedičním provozu.",
+        "industry_label": "E-commerce"
+      },
+      "fenske": {
+        "title": "Pásky s logem Fenske",
+        "description": "Dvoubarevný potisk FENSKE / Weine und Feinkost na balicí pásce – branding zásilek vína a delikates.",
+        "industry_label": "Potraviny"
+      },
+      "just-nahrin": {
+        "title": "Pásky Just+ / nahrin",
+        "description": "Vícebarevný potisk log a logistického textu včetně symbolu křehké – branding i instrukce pro příjemce.",
+        "industry_label": "E-commerce"
+      },
+      "vorsicht-glas": {
+        "title": "Výstražná páska Vorsicht Glas",
+        "description": "Výstražný potisk „Vorsicht Glas!“ / „Do not drop“ na balicí pásce – ochrana křehkých zásilek při přepravě.",
+        "industry_label": "Logistika"
+      },
+      "alfain": {
+        "title": "Pásky s logem ALFA IN",
+        "description": "Oranžová BOPP páska s bílým logem ALFA IN – branding zásilek přímo ve skladu.",
+        "industry_label": "Logistika"
+      },
+      "papir-fsc": {
+        "title": "Papírová páska FSC / 22 PAP",
+        "description": "Ekologická papírová páska s potiskem FSC a symbolem 22 PAP – udržitelné balení e-commerce zásilek.",
+        "industry_label": "E-commerce"
+      },
+      "alfain-sklad": {
+        "title": "ALFA IN páska ve skladu",
+        "description": "Ruční balení na paletě s oranžovou páskou ALFA IN – potisk v praxi logistického provozu.",
+        "industry_label": "Logistika"
+      },
+      "irplast-warehouse": {
+        "title": "Automatizovaný sklad Empoli",
+        "description": "Automatizovaný sklad v Empoli – logistika hotových pásek a fólií.",
+        "industry_label": "Výroba"
+      },
+      "irplast-warehouse-2": {
+        "title": "Automatizovaný sklad Empoli",
+        "description": "Pohled do automatizovaného skladu závodu Empoli s vysokohustotním skladováním.",
+        "industry_label": "Výroba"
+      },
+      "irplast-shuttle": {
+        "title": "Výroba – automated shuttle",
+        "description": "Výrobní oddělení se automatickým shuttle systémem v závodě Empoli.",
+        "industry_label": "Výroba"
+      },
+      "irplast-silos": {
+        "title": "Sila na suroviny Atessa",
+        "description": "Sila pro skladování surovin (polypropylen) ve filmovém závodě Atessa.",
+        "industry_label": "Výroba"
+      },
+      "irplast-lisim": {
+        "title": "Linka STILANSOL® LISIM",
+        "description": "Simultánní orientace BOPP fólie – výrobní linka Brückner LISIM / STILANSOL®.",
+        "industry_label": "Výroba"
+      },
+      "irplast-slitter": {
+        "title": "Řezací linka (taglierina)",
+        "description": "Průmyslová řezací linka pro dělení fólie a pásek.",
+        "industry_label": "Výroba"
+      },
+      "irplast-carriages": {
+        "title": "Automatické vozíky ve výrobě",
+        "description": "Automatické manipulační vozíky zajišťující tok materiálu ve výrobě.",
+        "industry_label": "Výroba"
+      },
+      "irplast-reels": {
+        "title": "Sklad BOPP rolí",
+        "description": "Skladování hotových BOPP rolí před konverzí na pásky a etikety.",
+        "industry_label": "Výroba"
+      },
       "alza": {
         "title": "Pásky s logem ALZA",
         "description": "Vícejazyčný brand potisk pro e-commerce balení s opakovaným logem a sloganem na standardní BOPP pásku.",

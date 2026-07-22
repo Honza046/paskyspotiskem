@@ -271,7 +271,8 @@
             "jednobarevny": "Stampa monocolore",
             "vicebarevny": "Multicolore / Rotocalco",
             "bezpecnostni": "Nastri di sicurezza",
-            "logisticke": "Nastri logistici / di avvertimento"
+            "logisticke": "Nastri logistici / di avvertimento",
+            "vyroba": "Produzione / magazzino"
           }
         },
         "adhesive": {
@@ -295,7 +296,7 @@
           "label": "Tipo di esempio",
           "options": {
             "reference": "Referenze reali",
-            "demo": "Possibilità di stampa"
+            "production": "Produzione e magazzino"
           }
         }
       }
@@ -303,7 +304,9 @@
     "sections": {
       "featured": "Esempi selezionati",
       "references_title": "Referenze reali",
-      "references_subtitle": "Fotografie di stampe reali dalla nostra produzione. Aggiungeremo altre referenze dopo un nuovo servizio fotografico.",
+      "references_subtitle": "",
+      "production_title": "Produzione e magazzino",
+      "production_subtitle": "Magazzini automatizzati, linee di produzione e materie prime – Empoli e Atessa.",
       "demos_title": "Possibilità di stampa e tecnologie",
       "demos_subtitle": "Esempi di soluzioni di sicurezza, logistica e speciali, illustrazione delle tecnologie che offriamo.",
       "empty": "Nessun esempio corrisponde ai filtri selezionati. Provate a rimuoverne alcuni."
@@ -323,7 +326,8 @@
       "meta_industry": "Settore",
       "meta_width": "Larghezza",
       "meta_colors": "Colori",
-      "meta_adhesive": "Adesivo"
+      "meta_adhesive": "Adesivo",
+      "meta_location": "Località"
     },
     "cta": {
       "title": "Avete un logo?",
@@ -331,6 +335,91 @@
       "button": "Richiedi senza impegno"
     },
     "items": {
+      "bonami": {
+        "title": "Nastri con logo Bonami",
+        "description": "Stampa del marchio monocolore su nastro BOPP bianco – logo e illustrazioni di arredi per imballaggi e-commerce.",
+        "industry_label": "E-commerce"
+      },
+      "notino": {
+        "title": "Nastri con logo Notino",
+        "description": "Stampa bianca ad alto contrasto del logo su nastro nero – branding evidente delle spedizioni nel beauty e-commerce.",
+        "industry_label": "E-commerce"
+      },
+      "notino-sklad": {
+        "title": "Nastro Notino in magazzino",
+        "description": "Imballaggio delle spedizioni al Notino Brno Logistics Hub – nastro nero con logo dorato nel reale flusso di spedizione.",
+        "industry_label": "E-commerce"
+      },
+      "fenske": {
+        "title": "Nastri con logo Fenske",
+        "description": "Stampa bicolore FENSKE / Weine und Feinkost sul nastro da imballaggio – branding per spedizioni di vini e gastronomia.",
+        "industry_label": "Industria alimentare"
+      },
+      "just-nahrin": {
+        "title": "Nastri Just+ / nahrin",
+        "description": "Stampa multicolore di loghi e testo logistico con simbolo fragile – branding e istruzioni per il destinatario.",
+        "industry_label": "E-commerce"
+      },
+      "vorsicht-glas": {
+        "title": "Nastro di avvertimento Vorsicht Glas",
+        "description": "Stampa di avvertimento “Vorsicht Glas!” / “Do not drop” sul nastro – protezione delle spedizioni fragili in transito.",
+        "industry_label": "Logistica"
+      },
+      "alfain": {
+        "title": "Nastri con logo ALFA IN",
+        "description": "Nastro BOPP arancione con logo ALFA IN bianco – branding delle spedizioni direttamente in magazzino.",
+        "industry_label": "Logistica"
+      },
+      "papir-fsc": {
+        "title": "Nastro di carta FSC / 22 PAP",
+        "description": "Nastro di carta ecologico con stampa FSC e simbolo 22 PAP – imballaggio e-commerce sostenibile.",
+        "industry_label": "E-commerce"
+      },
+      "alfain-sklad": {
+        "title": "Nastro ALFA IN in magazzino",
+        "description": "Imballaggio manuale su pallet con nastro arancione ALFA IN – stampa nella pratica logistica.",
+        "industry_label": "Logistica"
+      },
+      "irplast-warehouse": {
+        "title": "Magazzino automatizzato Empoli",
+        "description": "Magazzino automatizzato di Empoli – logistica di nastri e film finiti.",
+        "industry_label": "Produzione"
+      },
+      "irplast-warehouse-2": {
+        "title": "Magazzino automatizzato Empoli",
+        "description": "Vista del magazzino automatizzato di Empoli con stoccaggio ad alta densità.",
+        "industry_label": "Produzione"
+      },
+      "irplast-shuttle": {
+        "title": "Produzione – automated shuttle",
+        "description": "Reparto produttivo con sistema shuttle automatico nello stabilimento di Empoli.",
+        "industry_label": "Produzione"
+      },
+      "irplast-silos": {
+        "title": "Silos materie prime Atessa",
+        "description": "Silos per lo stoccaggio delle materie prime (polipropilene) nello stabilimento film di Atessa.",
+        "industry_label": "Produzione"
+      },
+      "irplast-lisim": {
+        "title": "Linea STILANSOL® LISIM",
+        "description": "Orientamento simultaneo del film BOPP – linea di produzione Brückner LISIM / STILANSOL®.",
+        "industry_label": "Produzione"
+      },
+      "irplast-slitter": {
+        "title": "Linea di taglio (taglierina)",
+        "description": "Linea industriale di taglio per film e nastri.",
+        "industry_label": "Produzione"
+      },
+      "irplast-carriages": {
+        "title": "Carrelli automatici in produzione",
+        "description": "Carrelli automatici di movimentazione che garantiscono il flusso dei materiali in produzione.",
+        "industry_label": "Produzione"
+      },
+      "irplast-reels": {
+        "title": "Stock bobine BOPP",
+        "description": "Stoccaggio delle bobine BOPP finite prima della conversione in nastri ed etichette.",
+        "industry_label": "Produzione"
+      },
       "alza": {
         "title": "Nastri con logo ALZA",
         "description": "Stampa del marchio multilingue per imballaggi e-commerce, con logo e slogan ripetuti su nastro BOPP standard.",

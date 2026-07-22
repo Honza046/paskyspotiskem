@@ -63,7 +63,7 @@
         };
     </script>
     <link rel="stylesheet" href="/assets/css/glass.css?v=1">
-    <link rel="stylesheet" href="/assets/css/gallery-lightbox.css">
+    <link rel="stylesheet" href="/assets/css/gallery-lightbox.css?v=2">
     <style>
         html { scroll-behavior: smooth; background-color: #0f172a; }
         body { user-select: none; -webkit-user-select: none; }
@@ -164,6 +164,10 @@
                                 <span>Logistické / Výstražné</span>
                                 <span data-check class="hidden text-orange-600"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
                             </button>
+                            <button type="button" data-filter-group="category" data-tag="vyroba" data-label="Výroba / sklad" aria-pressed="false" class="flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50">
+                                <span>Výroba / sklad</span>
+                                <span data-check class="hidden text-orange-600"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                            </button>
                 </div>
             </div>
             <div class="relative" data-dropdown>
@@ -223,8 +227,8 @@
                                 <span>Reálné reference</span>
                                 <span data-check class="hidden text-orange-600"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
                             </button>
-                            <button type="button" data-filter-group="type" data-tag="demo" data-label="Možnosti tisku" aria-pressed="false" class="flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50">
-                                <span>Možnosti tisku</span>
+                            <button type="button" data-filter-group="type" data-tag="production" data-label="Výroba a sklad" aria-pressed="false" class="flex items-center justify-between gap-3 rounded-xl px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50">
+                                <span>Výroba a sklad</span>
                                 <span data-check class="hidden text-orange-600"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
                             </button>
                 </div>
@@ -241,10 +245,10 @@
     <div class="mb-5 flex items-center justify-between gap-3">
         <h2 class="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">Vybrané ukázky</h2>
     </div>
-    <div id="gallery-featured" class="grid grid-cols-1 gap-6 lg:grid-cols-4">
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg lg:col-span-2" data-gallery-item data-id="alza" data-category="vicebarevny" data-adhesive="hot-melt" data-industry="e-commerce" data-type="reference" data-featured="true" data-image="images/gallery/gallery-alza.jpg" data-title="Pásky s logem ALZA" data-client="Alza" data-width="48 mm" data-colors="3" data-adhesive-label="HOT MELT" data-industry-label="E-commerce" data-description="Vícejazyčný brand potisk pro e-commerce balení s opakovaným logem a sloganem na standardní BOPP pásku." data-graphic="false" data-graphic-style="security">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[16/10] lg:aspect-auto lg:min-h-[280px]" aria-label="Zobrazit detail: Pásky s logem ALZA">
-        <img src="images/gallery/gallery-alza.jpg" alt="Pásky s logem ALZA" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+    <div id="gallery-featured" class="mx-auto grid max-w-3xl grid-cols-1 gap-5 sm:grid-cols-2">
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="bonami" data-category="jednobarevny" data-adhesive="acryl" data-industry="e-commerce" data-type="reference" data-featured="true" data-image="images/gallery/gallery-bonami.jpg" data-title="Pásky s logem Bonami" data-client="Bonami" data-width="48 mm" data-colors="1" data-adhesive-label="Akryl" data-industry-label="E-commerce" data-location="" data-description="Jednobarevný brand potisk na bílé BOPP pásce – logo a ilustrace nábytku pro e-commerce balení." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Pásky s logem Bonami">
+        <img src="images/gallery/gallery-bonami.jpg" alt="Pásky s logem Bonami" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
         <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
             <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                 <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
@@ -253,15 +257,15 @@
         </span>
         <span class="absolute left-3 top-3 rounded-full bg-orange-600 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white shadow-md">Vybraná ukázka</span>
     </button>
-    <div class="p-4 sm:p-5">
-        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">Alza</p>
-        <h2 class="text-base sm:text-lg font-bold text-slate-900">Pásky s logem ALZA</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">E-commerce</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">3 barvy</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
+    <div class="p-4">
+        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">Bonami</p>
+        <h2 class="text-sm sm:text-base font-bold text-slate-900">Pásky s logem Bonami</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">E-commerce</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Akryl</span></div>
     </div>
 </article>
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg lg:col-span-2" data-gallery-item data-id="flexotisk-8" data-category="vicebarevny" data-adhesive="hot-melt" data-industry="potraviny" data-type="reference" data-featured="true" data-image="images/gallery/gallery-flexotisk-8.jpg" data-title="Flexotisk – 8 barev" data-client="" data-width="48 mm" data-colors="8" data-adhesive-label="HOT MELT" data-industry-label="Potraviny" data-description="Plnobarevný flexotisk s vysokým rozlišením, vhodný pro atraktivní brand na balících páskách i potravinářských aplikacích." data-graphic="false" data-graphic-style="security">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[16/10] lg:aspect-auto lg:min-h-[280px]" aria-label="Zobrazit detail: Flexotisk – 8 barev">
-        <img src="images/gallery/gallery-flexotisk-8.jpg" alt="Flexotisk – 8 barev" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="notino" data-category="jednobarevny" data-adhesive="hot-melt" data-industry="e-commerce" data-type="reference" data-featured="true" data-image="images/gallery/gallery-notino.jpg" data-title="Pásky s logem Notino" data-client="Notino" data-width="48 mm" data-colors="1" data-adhesive-label="HOT MELT" data-industry-label="E-commerce" data-location="" data-description="Kontrastní bílý potisk loga na černé pásce – výrazný branding zásilek v beauty e-commerce." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Pásky s logem Notino">
+        <img src="images/gallery/gallery-notino.jpg" alt="Pásky s logem Notino" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
         <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
             <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                 <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
@@ -270,10 +274,10 @@
         </span>
         <span class="absolute left-3 top-3 rounded-full bg-orange-600 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white shadow-md">Vybraná ukázka</span>
     </button>
-    <div class="p-4 sm:p-5">
-        
-        <h2 class="text-base sm:text-lg font-bold text-slate-900">Flexotisk – 8 barev</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Potraviny</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">8 barev</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
+    <div class="p-4">
+        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">Notino</p>
+        <h2 class="text-sm sm:text-base font-bold text-slate-900">Pásky s logem Notino</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">E-commerce</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
     </div>
 </article>
     </div>
@@ -283,12 +287,11 @@
 <section id="gallery-references-section" class="mx-auto max-w-7xl px-4 pb-4 pt-12 sm:pt-16">
     <div class="mb-6 border-b border-slate-100 pb-4">
         <h2 class="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">Reálné reference</h2>
-        <p class="mt-1 text-sm text-slate-500">Fotografie skutečných potisků z naší výroby. Po novém focení doplníme další reference.</p>
     </div>
     <div id="gallery-references" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="jednobarevny-firemni" data-category="jednobarevny" data-adhesive="acryl" data-industry="vyroba" data-type="reference" data-featured="false" data-image="images/gallery/gallery-jednobarevny-firemni.jpg" data-title="Jednobarevný firemní potisk" data-client="" data-width="48 mm" data-colors="1" data-adhesive-label="Akryl" data-industry-label="Výroba" data-description="Klasický jednobarevný potisk loga na průhledné nebo bílé BOPP pásky, ideální pro firemní balení a skladovou logistiku." data-graphic="false" data-graphic-style="security">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Jednobarevný firemní potisk">
-        <img src="images/gallery/gallery-jednobarevny-firemni.jpg" alt="Jednobarevný firemní potisk" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="bonami" data-category="jednobarevny" data-adhesive="acryl" data-industry="e-commerce" data-type="reference" data-featured="true" data-image="images/gallery/gallery-bonami.jpg" data-title="Pásky s logem Bonami" data-client="Bonami" data-width="48 mm" data-colors="1" data-adhesive-label="Akryl" data-industry-label="E-commerce" data-location="" data-description="Jednobarevný brand potisk na bílé BOPP pásce – logo a ilustrace nábytku pro e-commerce balení." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Pásky s logem Bonami">
+        <img src="images/gallery/gallery-bonami.jpg" alt="Pásky s logem Bonami" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
         <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
             <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                 <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
@@ -298,14 +301,14 @@
         
     </button>
     <div class="p-4">
-        
-        <h2 class="text-sm font-bold text-slate-900">Jednobarevný firemní potisk</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Výroba</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Akryl</span></div>
+        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">Bonami</p>
+        <h2 class="text-sm font-bold text-slate-900">Pásky s logem Bonami</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">E-commerce</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Akryl</span></div>
     </div>
 </article>
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="rototisk-foto" data-category="vicebarevny" data-adhesive="acryl" data-industry="potraviny" data-type="reference" data-featured="false" data-image="images/gallery/gallery-rototisk-foto.jpg" data-title="Rototisk ve fotokvalitě" data-client="" data-width="48 mm" data-colors="6" data-adhesive-label="Akryl" data-industry-label="Potraviny" data-description="Rotogravurní tisk s fotografickou kvalitou pro náročné vizuály a dlouhodobou odolnost potisku." data-graphic="false" data-graphic-style="security">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Rototisk ve fotokvalitě">
-        <img src="images/gallery/gallery-rototisk-foto.jpg" alt="Rototisk ve fotokvalitě" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="just-nahrin" data-category="vicebarevny" data-adhesive="acryl" data-industry="e-commerce" data-type="reference" data-featured="false" data-image="images/gallery/gallery-just-nahrin.jpg" data-title="Pásky Just+ / nahrin" data-client="Just+ / nahrin" data-width="48 mm" data-colors="3" data-adhesive-label="Akryl" data-industry-label="E-commerce" data-location="" data-description="Vícebarevný potisk log a logistického textu včetně symbolu křehké – branding i instrukce pro příjemce." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Pásky Just+ / nahrin">
+        <img src="images/gallery/gallery-just-nahrin.jpg" alt="Pásky Just+ / nahrin" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
         <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
             <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                 <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
@@ -315,14 +318,14 @@
         
     </button>
     <div class="p-4">
-        
-        <h2 class="text-sm font-bold text-slate-900">Rototisk ve fotokvalitě</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Potraviny</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">6 barev</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Akryl</span></div>
+        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">Just+ / nahrin</p>
+        <h2 class="text-sm font-bold text-slate-900">Pásky Just+ / nahrin</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">E-commerce</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">3 barvy</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Akryl</span></div>
     </div>
 </article>
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="pecetni" data-category="bezpecnostni" data-adhesive="hot-melt" data-industry="bezpecnost" data-type="reference" data-featured="false" data-image="images/gallery/gallery-pecetni.jpg" data-title="Pečetní páska s potiskem" data-client="" data-width="48 mm" data-colors="2" data-adhesive-label="HOT MELT" data-industry-label="Bezpečnost" data-description="Pečetní páska s vlastním potiskem pro zabezpečení zásilek a dokumentů proti neoprávněnému otevření." data-graphic="false" data-graphic-style="security">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Pečetní páska s potiskem">
-        <img src="images/gallery/gallery-pecetni.jpg" alt="Pečetní páska s potiskem" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="notino" data-category="jednobarevny" data-adhesive="hot-melt" data-industry="e-commerce" data-type="reference" data-featured="true" data-image="images/gallery/gallery-notino.jpg" data-title="Pásky s logem Notino" data-client="Notino" data-width="48 mm" data-colors="1" data-adhesive-label="HOT MELT" data-industry-label="E-commerce" data-location="" data-description="Kontrastní bílý potisk loga na černé pásce – výrazný branding zásilek v beauty e-commerce." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Pásky s logem Notino">
+        <img src="images/gallery/gallery-notino.jpg" alt="Pásky s logem Notino" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
         <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
             <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                 <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
@@ -332,14 +335,14 @@
         
     </button>
     <div class="p-4">
-        
-        <h2 class="text-sm font-bold text-slate-900">Pečetní páska s potiskem</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Bezpečnost</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">2 barvy</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
+        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">Notino</p>
+        <h2 class="text-sm font-bold text-slate-900">Pásky s logem Notino</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">E-commerce</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
     </div>
 </article>
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="logisticky-kontakty" data-category="logisticke" data-adhesive="hot-melt" data-industry="logistika" data-type="reference" data-featured="false" data-image="images/gallery/gallery-logisticky-kontakty.jpg" data-title="Logistický potisk – kontakty" data-client="" data-width="48 mm" data-colors="2" data-adhesive-label="HOT MELT" data-industry-label="Logistika" data-description="Informační potisk s kontakty, QR kódem nebo instrukcemi pro příjemce zásilky." data-graphic="false" data-graphic-style="security">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Logistický potisk – kontakty">
-        <img src="images/gallery/gallery-logisticky-kontakty.jpg" alt="Logistický potisk – kontakty" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="notino-sklad" data-category="jednobarevny" data-adhesive="hot-melt" data-industry="e-commerce" data-type="reference" data-featured="false" data-image="images/gallery/gallery-notino-sklad.jpg" data-title="Notino páska ve skladu" data-client="Notino" data-width="48 mm" data-colors="1" data-adhesive-label="HOT MELT" data-industry-label="E-commerce" data-location="" data-description="Balení zásilek v Notino Brno Logistics Hub – černá páska se zlatým logem v reálném expedičním provozu." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Notino páska ve skladu">
+        <img src="images/gallery/gallery-notino-sklad.jpg" alt="Notino páska ve skladu" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
         <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
             <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                 <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
@@ -349,14 +352,14 @@
         
     </button>
     <div class="p-4">
-        
-        <h2 class="text-sm font-bold text-slate-900">Logistický potisk – kontakty</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Logistika</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">2 barvy</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
+        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">Notino</p>
+        <h2 class="text-sm font-bold text-slate-900">Notino páska ve skladu</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">E-commerce</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
     </div>
 </article>
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="neutralni-bopp" data-category="jednobarevny" data-adhesive="acryl" data-industry="vyroba" data-type="reference" data-featured="false" data-image="images/gallery/gallery-neutralni-bopp.jpg" data-title="Neutrální BOPP 25 mm" data-client="" data-width="25 mm" data-colors="1" data-adhesive-label="Akryl" data-industry-label="Výroba" data-description="Úzká BOPP páska s jednoduchým potiskem pro ruční balení a lehčí zásilky." data-graphic="false" data-graphic-style="security">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Neutrální BOPP 25 mm">
-        <img src="images/gallery/gallery-neutralni-bopp.jpg" alt="Neutrální BOPP 25 mm" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="vorsicht-glas" data-category="logisticke" data-adhesive="hot-melt" data-industry="logistika" data-type="reference" data-featured="false" data-image="images/gallery/gallery-vorsicht-glas.jpg" data-title="Výstražná páska Vorsicht Glas" data-client="" data-width="48 mm" data-colors="1" data-adhesive-label="HOT MELT" data-industry-label="Logistika" data-location="" data-description="Výstražný potisk „Vorsicht Glas!“ / „Do not drop“ na balicí pásce – ochrana křehkých zásilek při přepravě." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Výstražná páska Vorsicht Glas">
+        <img src="images/gallery/gallery-vorsicht-glas.jpg" alt="Výstražná páska Vorsicht Glas" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
         <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
             <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                 <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
@@ -367,103 +370,222 @@
     </button>
     <div class="p-4">
         
-        <h2 class="text-sm font-bold text-slate-900">Neutrální BOPP 25 mm</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Výroba</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">25 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Akryl</span></div>
+        <h2 class="text-sm font-bold text-slate-900">Výstražná páska Vorsicht Glas</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Logistika</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
+    </div>
+</article>
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="alfain" data-category="jednobarevny" data-adhesive="hot-melt" data-industry="logistika" data-type="reference" data-featured="false" data-image="images/gallery/gallery-alfain.jpg" data-title="Pásky s logem ALFA IN" data-client="ALFA IN" data-width="48 mm" data-colors="1" data-adhesive-label="HOT MELT" data-industry-label="Logistika" data-location="" data-description="Oranžová BOPP páska s bílým logem ALFA IN – branding zásilek přímo ve skladu." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Pásky s logem ALFA IN">
+        <img src="images/gallery/gallery-alfain.jpg" alt="Pásky s logem ALFA IN" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
+            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
+                Zobrazit detail
+            </span>
+        </span>
+        
+    </button>
+    <div class="p-4">
+        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">ALFA IN</p>
+        <h2 class="text-sm font-bold text-slate-900">Pásky s logem ALFA IN</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Logistika</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
+    </div>
+</article>
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="papir-fsc" data-category="jednobarevny" data-adhesive="acryl" data-industry="e-commerce" data-type="reference" data-featured="false" data-image="images/gallery/gallery-papir-fsc.jpg" data-title="Papírová páska FSC / 22 PAP" data-client="" data-width="48 mm" data-colors="1" data-adhesive-label="Akryl" data-industry-label="E-commerce" data-location="" data-description="Ekologická papírová páska s potiskem FSC a symbolem 22 PAP – udržitelné balení e-commerce zásilek." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Papírová páska FSC / 22 PAP">
+        <img src="images/gallery/gallery-papir-fsc.jpg" alt="Papírová páska FSC / 22 PAP" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
+            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
+                Zobrazit detail
+            </span>
+        </span>
+        
+    </button>
+    <div class="p-4">
+        
+        <h2 class="text-sm font-bold text-slate-900">Papírová páska FSC / 22 PAP</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">E-commerce</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Akryl</span></div>
+    </div>
+</article>
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="alfain-sklad" data-category="jednobarevny" data-adhesive="hot-melt" data-industry="logistika" data-type="reference" data-featured="false" data-image="images/gallery/gallery-alfain-sklad.jpg" data-title="ALFA IN páska ve skladu" data-client="ALFA IN" data-width="48 mm" data-colors="1" data-adhesive-label="HOT MELT" data-industry-label="Logistika" data-location="" data-description="Ruční balení na paletě s oranžovou páskou ALFA IN – potisk v praxi logistického provozu." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: ALFA IN páska ve skladu">
+        <img src="images/gallery/gallery-alfain-sklad.jpg" alt="ALFA IN páska ve skladu" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
+            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
+                Zobrazit detail
+            </span>
+        </span>
+        
+    </button>
+    <div class="p-4">
+        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">ALFA IN</p>
+        <h2 class="text-sm font-bold text-slate-900">ALFA IN páska ve skladu</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Logistika</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
+    </div>
+</article>
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="fenske" data-category="vicebarevny" data-adhesive="acryl" data-industry="potraviny" data-type="reference" data-featured="false" data-image="images/gallery/gallery-fenske.jpg" data-title="Pásky s logem Fenske" data-client="Fenske" data-width="48 mm" data-colors="2" data-adhesive-label="Akryl" data-industry-label="Potraviny" data-location="" data-description="Dvoubarevný potisk FENSKE / Weine und Feinkost na balicí pásce – branding zásilek vína a delikates." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Pásky s logem Fenske">
+        <img src="images/gallery/gallery-fenske.jpg" alt="Pásky s logem Fenske" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
+            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
+                Zobrazit detail
+            </span>
+        </span>
+        
+    </button>
+    <div class="p-4">
+        <p class="text-xs font-semibold uppercase tracking-wide text-orange-600">Fenske</p>
+        <h2 class="text-sm font-bold text-slate-900">Pásky s logem Fenske</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Potraviny</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">2 barvy</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Akryl</span></div>
     </div>
 </article>
     </div>
 </section>
 
-<!-- DEMOS -->
-<section id="gallery-demos-section" class="mx-auto max-w-7xl px-4 pb-12 pt-8 sm:pb-16 sm:pt-12">
+<!-- PRODUCTION -->
+<section id="gallery-production-section" class="mx-auto max-w-7xl px-4 pb-12 pt-12 sm:pb-16 sm:pt-16">
     <div class="mb-6 border-b border-slate-100 pb-4">
-        <h2 class="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">Možnosti tisku a technologie</h2>
-        <p class="mt-1 text-sm text-slate-500">Ukázky bezpečnostních, logistických a speciálních řešení, ilustrace technologií, které nabízíme.</p>
+        <h2 class="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">Výroba a sklad</h2>
+        <p class="mt-1 text-sm text-slate-500">Automatizované sklady, výrobní linky a suroviny – Empoli a Atessa.</p>
     </div>
-    <div id="gallery-demos" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="tamper-void" data-category="bezpecnostni" data-adhesive="acryl" data-industry="bezpecnost" data-type="demo" data-featured="false" data-image="images/gallery/gallery-tamper-void.jpg" data-title="Tamper Evident VOID" data-client="" data-width="48 mm" data-colors="2" data-adhesive-label="Akryl" data-industry-label="Bezpečnost" data-description="Bezpečnostní páska s VOID efektem, při odlepení zanechá viditelné upozornění, které nelze bez stopy odstranit." data-graphic="false" data-graphic-style="security">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Tamper Evident VOID">
-        <img src="images/gallery/gallery-tamper-void.jpg" alt="Tamper Evident VOID" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+    <div id="gallery-production" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="irplast-warehouse" data-category="vyroba" data-adhesive="" data-industry="vyroba" data-type="production" data-featured="false" data-image="images/gallery/gallery-irplast-warehouse.jpg" data-title="Automatizovaný sklad Empoli" data-client="" data-width="" data-colors="" data-adhesive-label="" data-industry-label="Výroba" data-location="Empoli, Itálie" data-description="Automatizovaný sklad v Empoli – logistika hotových pásek a fólií." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Automatizovaný sklad Empoli">
+        <img src="images/gallery/gallery-irplast-warehouse.jpg" alt="Automatizovaný sklad Empoli" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
         <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
             <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                 <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
                 Zobrazit detail
             </span>
         </span>
-        <span class="absolute right-3 top-3 rounded-full border border-slate-200 bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-600 backdrop-blur-sm">Technologie</span>
+        <span class="absolute right-3 top-3 rounded-full border border-slate-200 bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-600 backdrop-blur-sm">Výroba</span>
     </button>
     <div class="p-4">
         
-        <h2 class="text-sm font-bold text-slate-900">Tamper Evident VOID</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Bezpečnost</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">2 barvy</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Akryl</span></div>
-    </div>
-</article>
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="extra-glue" data-category="bezpecnostni" data-adhesive="hot-melt" data-industry="bezpecnost" data-type="demo" data-featured="false" data-image="images/gallery/gallery-extra-glue.jpg" data-title="EXTRA GLUE+ bezpečnostní série" data-client="" data-width="48 mm" data-colors="1" data-adhesive-label="HOT MELT" data-industry-label="Bezpečnost" data-description="Páska se zvýšenou vrstvou lepidla (+33 %) pro obtížné povrchy, těžké balíky a prašné skladové prostředí." data-graphic="false" data-graphic-style="glue">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: EXTRA GLUE+ bezpečnostní série">
-        <img src="images/gallery/gallery-extra-glue.jpg" alt="EXTRA GLUE+ bezpečnostní série" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
-        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
-            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
-                Zobrazit detail
-            </span>
-        </span>
-        <span class="absolute right-3 top-3 rounded-full border border-slate-200 bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-600 backdrop-blur-sm">Technologie</span>
-    </button>
-    <div class="p-4">
-        
-        <h2 class="text-sm font-bold text-slate-900">EXTRA GLUE+ bezpečnostní série</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Bezpečnost</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
+        <h2 class="text-sm font-bold text-slate-900">Automatizovaný sklad Empoli</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Empoli, Itálie</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Sklad</span></div>
     </div>
 </article>
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="prumyslova-serie" data-category="vicebarevny" data-adhesive="hot-melt" data-industry="e-commerce" data-type="demo" data-featured="false" data-image="images/gallery/gallery-prumyslova-serie.jpg" data-title="Průmyslová série pro e-shop" data-client="" data-width="48 mm" data-colors="4" data-adhesive-label="HOT MELT" data-industry-label="E-commerce" data-description="Hromadná výroba potištěných pásek pro e-shopy a fulfillment, konzistentní kvalita v celé sérii." data-graphic="false" data-graphic-style="industrial">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Průmyslová série pro e-shop">
-        <img src="images/gallery/gallery-prumyslova-serie.jpg" alt="Průmyslová série pro e-shop" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="irplast-warehouse-2" data-category="vyroba" data-adhesive="" data-industry="vyroba" data-type="production" data-featured="false" data-image="images/gallery/gallery-irplast-warehouse-2.jpg" data-title="Automatizovaný sklad Empoli" data-client="" data-width="" data-colors="" data-adhesive-label="" data-industry-label="Výroba" data-location="Empoli, Itálie" data-description="Pohled do automatizovaného skladu s vysokohustotním skladováním." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Automatizovaný sklad Empoli">
+        <img src="images/gallery/gallery-irplast-warehouse-2.jpg" alt="Automatizovaný sklad Empoli" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
         <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
             <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                 <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
                 Zobrazit detail
             </span>
         </span>
-        <span class="absolute right-3 top-3 rounded-full border border-slate-200 bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-600 backdrop-blur-sm">Technologie</span>
+        <span class="absolute right-3 top-3 rounded-full border border-slate-200 bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-600 backdrop-blur-sm">Výroba</span>
     </button>
     <div class="p-4">
         
-        <h2 class="text-sm font-bold text-slate-900">Průmyslová série pro e-shop</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">E-commerce</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">4 barvy</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
+        <h2 class="text-sm font-bold text-slate-900">Automatizovaný sklad Empoli</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Empoli, Itálie</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Sklad</span></div>
     </div>
 </article>
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="vystrizny-krehke" data-category="logisticke" data-adhesive="acryl" data-industry="logistika" data-type="demo" data-featured="false" data-image="images/gallery/gallery-vystrizny-krehke.jpg" data-title="Výstražný potisk – křehké" data-client="" data-width="48 mm" data-colors="3" data-adhesive-label="Akryl" data-industry-label="Logistika" data-description="Výstražné pásky s potiskem „Křehké“, „Neklopit“ nebo vlastním symbolem pro ochranu zboží při přepravě." data-graphic="false" data-graphic-style="security">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Výstražný potisk – křehké">
-        <img src="images/gallery/gallery-vystrizny-krehke.jpg" alt="Výstražný potisk – křehké" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="irplast-shuttle" data-category="vyroba" data-adhesive="" data-industry="vyroba" data-type="production" data-featured="false" data-image="images/gallery/gallery-irplast-shuttle.jpg" data-title="Výroba – automated shuttle" data-client="" data-width="" data-colors="" data-adhesive-label="" data-industry-label="Výroba" data-location="Empoli, Itálie" data-description="Výrobní oddělení se automatickým shuttle systémem." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Výroba – automated shuttle">
+        <img src="images/gallery/gallery-irplast-shuttle.jpg" alt="Výroba – automated shuttle" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
         <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
             <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                 <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
                 Zobrazit detail
             </span>
         </span>
-        <span class="absolute right-3 top-3 rounded-full border border-slate-200 bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-600 backdrop-blur-sm">Technologie</span>
+        <span class="absolute right-3 top-3 rounded-full border border-slate-200 bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-600 backdrop-blur-sm">Výroba</span>
     </button>
     <div class="p-4">
         
-        <h2 class="text-sm font-bold text-slate-900">Výstražný potisk – křehké</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Logistika</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">3 barvy</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Akryl</span></div>
+        <h2 class="text-sm font-bold text-slate-900">Výroba – automated shuttle</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Empoli, Itálie</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Automatizace</span></div>
     </div>
 </article>
-        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="bezpecnostni-sklad" data-category="logisticke" data-adhesive="hot-melt" data-industry="bezpecnost" data-type="demo" data-featured="false" data-image="images/gallery/gallery-bezpecnostni-sklad.jpg" data-title="Bezpečnostní páska sklad" data-client="" data-width="48 mm" data-colors="1" data-adhesive-label="HOT MELT" data-industry-label="Bezpečnost" data-description="Kombinace logistického a bezpečnostního potisku pro sklady a distribuční centra." data-graphic="false" data-graphic-style="security">
-    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Bezpečnostní páska sklad">
-        <img src="images/gallery/gallery-bezpecnostni-sklad.jpg" alt="Bezpečnostní páska sklad" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="irplast-silos" data-category="vyroba" data-adhesive="" data-industry="vyroba" data-type="production" data-featured="false" data-image="images/gallery/gallery-irplast-silos.jpg" data-title="Sila na suroviny Atessa" data-client="" data-width="" data-colors="" data-adhesive-label="" data-industry-label="Výroba" data-location="Atessa, Itálie" data-description="Sila pro skladování surovin (polypropylen) ve filmovém závodě." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Sila na suroviny Atessa">
+        <img src="images/gallery/gallery-irplast-silos.jpg" alt="Sila na suroviny Atessa" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
         <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
             <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                 <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
                 Zobrazit detail
             </span>
         </span>
-        <span class="absolute right-3 top-3 rounded-full border border-slate-200 bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-600 backdrop-blur-sm">Technologie</span>
+        <span class="absolute right-3 top-3 rounded-full border border-slate-200 bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-600 backdrop-blur-sm">Výroba</span>
     </button>
     <div class="p-4">
         
-        <h2 class="text-sm font-bold text-slate-900">Bezpečnostní páska sklad</h2>
-        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Bezpečnost</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">48 mm</span><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">1 barva</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">HOT MELT</span></div>
+        <h2 class="text-sm font-bold text-slate-900">Sila na suroviny Atessa</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Atessa, Itálie</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Suroviny</span></div>
+    </div>
+</article>
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="irplast-lisim" data-category="vyroba" data-adhesive="" data-industry="vyroba" data-type="production" data-featured="false" data-image="images/gallery/gallery-irplast-lisim.jpg" data-title="Linka STILANSOL® LISIM" data-client="" data-width="" data-colors="" data-adhesive-label="" data-industry-label="Výroba" data-location="Atessa, Itálie" data-description="Simultánní orientace BOPP fólie – výrobní linka Brückner LISIM / STILANSOL®." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Linka STILANSOL® LISIM">
+        <img src="images/gallery/gallery-irplast-lisim.jpg" alt="Linka STILANSOL® LISIM" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
+            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
+                Zobrazit detail
+            </span>
+        </span>
+        <span class="absolute right-3 top-3 rounded-full border border-slate-200 bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-600 backdrop-blur-sm">Výroba</span>
+    </button>
+    <div class="p-4">
+        
+        <h2 class="text-sm font-bold text-slate-900">Linka STILANSOL® LISIM</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Atessa, Itálie</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Výrobní linka</span></div>
+    </div>
+</article>
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="irplast-slitter" data-category="vyroba" data-adhesive="" data-industry="vyroba" data-type="production" data-featured="false" data-image="images/gallery/gallery-irplast-slitter.jpg" data-title="Řezací linka (taglierina)" data-client="" data-width="" data-colors="" data-adhesive-label="" data-industry-label="Výroba" data-location="Itálie" data-description="Průmyslová řezací linka pro dělení fólie a pásek." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Řezací linka (taglierina)">
+        <img src="images/gallery/gallery-irplast-slitter.jpg" alt="Řezací linka (taglierina)" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
+            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
+                Zobrazit detail
+            </span>
+        </span>
+        <span class="absolute right-3 top-3 rounded-full border border-slate-200 bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-600 backdrop-blur-sm">Výroba</span>
+    </button>
+    <div class="p-4">
+        
+        <h2 class="text-sm font-bold text-slate-900">Řezací linka (taglierina)</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Itálie</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Řezání</span></div>
+    </div>
+</article>
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="irplast-carriages" data-category="vyroba" data-adhesive="" data-industry="vyroba" data-type="production" data-featured="false" data-image="images/gallery/gallery-irplast-carriages.jpg" data-title="Automatické vozíky ve výrobě" data-client="" data-width="" data-colors="" data-adhesive-label="" data-industry-label="Výroba" data-location="Empoli, Itálie" data-description="Automatické manipulační vozíky zajišťující tok materiálu ve výrobě." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Automatické vozíky ve výrobě">
+        <img src="images/gallery/gallery-irplast-carriages.jpg" alt="Automatické vozíky ve výrobě" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
+            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
+                Zobrazit detail
+            </span>
+        </span>
+        <span class="absolute right-3 top-3 rounded-full border border-slate-200 bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-600 backdrop-blur-sm">Výroba</span>
+    </button>
+    <div class="p-4">
+        
+        <h2 class="text-sm font-bold text-slate-900">Automatické vozíky ve výrobě</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Empoli, Itálie</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Manipulace</span></div>
+    </div>
+</article>
+        <article class="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:border-slate-200 hover:shadow-lg" data-gallery-item data-id="irplast-reels" data-category="vyroba" data-adhesive="" data-industry="vyroba" data-type="production" data-featured="false" data-image="images/gallery/gallery-irplast-reels.jpg" data-title="Sklad BOPP rolí" data-client="" data-width="" data-colors="" data-adhesive-label="" data-industry-label="Výroba" data-location="Atessa, Itálie" data-description="Skladování hotových BOPP rolí před konverzí na pásky a etikety." data-graphic="false" data-graphic-style="security">
+    <button type="button" data-lightbox-trigger class="relative block w-full overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 aspect-[4/3]" aria-label="Zobrazit detail: Sklad BOPP rolí">
+        <img src="images/gallery/gallery-irplast-reels.jpg" alt="Sklad BOPP rolí" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+        <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-slate-950/0 transition-all duration-300 group-hover:bg-slate-950/40">
+            <span class="flex translate-y-2 items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold text-slate-900 opacity-0 shadow-lg transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <svg class="h-4 w-4 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 18a7 7 0 100-14 7 7 0 000 14z"/></svg>
+                Zobrazit detail
+            </span>
+        </span>
+        <span class="absolute right-3 top-3 rounded-full border border-slate-200 bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-600 backdrop-blur-sm">Výroba</span>
+    </button>
+    <div class="p-4">
+        
+        <h2 class="text-sm font-bold text-slate-900">Sklad BOPP rolí</h2>
+        <div class="mt-2 flex flex-wrap gap-1.5"><span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">Atessa, Itálie</span><span class="rounded-md bg-orange-600 px-2 py-0.5 text-xs font-semibold text-white">Sklad fólie</span></div>
     </div>
 </article>
     </div>
@@ -508,10 +630,10 @@
         <button type="button" id="lightbox-close" class="absolute right-3 top-3 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-md transition hover:bg-white hover:text-orange-600" aria-label="Zavřít">
             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
-        <div class="flex flex-col lg:flex-row">
-            <div id="lightbox-media" class="relative flex min-h-[220px] items-center justify-center bg-slate-100 lg:w-3/5">
-                <img id="lightbox-image" src="" alt="" class="hidden max-h-[50vh] w-full object-contain lg:max-h-[65vh]">
-                <div id="lightbox-graphic" class="hidden flex h-full min-h-[220px] w-full flex-col items-center justify-center bg-gradient-to-br from-rose-50 via-white to-orange-50 p-10 text-center lg:min-h-[320px]">
+        <div class="flex flex-col lg:flex-row lg:items-stretch">
+            <div id="lightbox-media" class="relative min-h-[280px] overflow-hidden bg-slate-100 lg:w-3/5 lg:min-h-[420px]">
+                <img id="lightbox-image" src="" alt="" class="hidden h-full w-full object-cover">
+                <div id="lightbox-graphic" class="hidden flex h-full min-h-[280px] w-full flex-col items-center justify-center bg-gradient-to-br from-rose-50 via-white to-orange-50 p-10 text-center lg:min-h-[420px]">
                     <div id="lightbox-graphic-icon" class="mb-4"></div>
                     <span class="text-xs font-bold uppercase tracking-widest text-slate-500">Ukázka technologie</span>
                 </div>
@@ -584,9 +706,9 @@
     </div>
 </footer>
 
-<script src="/assets/js/i18n.js?v=28"></script>
-<script src="/assets/js/i18n-pages.js?v=22"></script>
-<script src="/assets/js/gallery.js?v=3"></script>
+<script src="/assets/js/i18n.js?v=34"></script>
+<script src="/assets/js/i18n-pages.js?v=25"></script>
+<script src="/assets/js/gallery.js?v=7"></script>
 <script src="/assets/js/cult-effects.js?v=4"></script>
 <script src="/assets/js/nav-active.js"></script>
 <link rel="stylesheet" href="/assets/css/footer-credit.css?v=3">

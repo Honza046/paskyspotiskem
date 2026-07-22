@@ -558,23 +558,27 @@
             }
 
             var techBadge = item.querySelector('[data-lightbox-trigger] > span.absolute.right-3.top-3');
-            if (techBadge && cards.technology_badge) {
-                setText(techBadge, cards.technology_badge);
+            if (techBadge) {
+                if (item.getAttribute('data-type') === 'production' && cards.production_badge) {
+                    setText(techBadge, cards.production_badge);
+                }
             }
 
             applyGalleryCardTags(item, tree, data);
         });
 
-        document.querySelectorAll('#gallery-featured-section h2, #gallery-references-section h2, #gallery-demos-section h2').forEach(function (h2) {
-            if (h2.closest('#gallery-featured-section') && sections.featured) setText(h2, sections.featured);
-            if (h2.closest('#gallery-references-section') && sections.references_title) setText(h2, sections.references_title);
-            if (h2.closest('#gallery-demos-section') && sections.demos_title) setText(h2, sections.demos_title);
-        });
+        var featuredHeading = document.querySelector('#gallery-featured-section > div > h2');
+        if (featuredHeading && sections.featured) setText(featuredHeading, sections.featured);
 
-        document.querySelectorAll('#gallery-references-section p, #gallery-demos-section p').forEach(function (p) {
-            if (p.closest('#gallery-references-section') && sections.references_subtitle) setText(p, sections.references_subtitle);
-            if (p.closest('#gallery-demos-section') && sections.demos_subtitle) setText(p, sections.demos_subtitle);
-        });
+        var referencesHeading = document.querySelector('#gallery-references-section > div > h2');
+        if (referencesHeading && sections.references_title) setText(referencesHeading, sections.references_title);
+        var referencesSubtitle = document.querySelector('#gallery-references-section > div > p');
+        if (referencesSubtitle && sections.references_subtitle) setText(referencesSubtitle, sections.references_subtitle);
+
+        var productionHeading = document.querySelector('#gallery-production-section > div > h2');
+        if (productionHeading && sections.production_title) setText(productionHeading, sections.production_title);
+        var productionSubtitle = document.querySelector('#gallery-production-section > div > p');
+        if (productionSubtitle && sections.production_subtitle) setText(productionSubtitle, sections.production_subtitle);
 
         var cta = tree.get('gallery.cta') || {};
         var ctaSection = document.querySelector('main > section.border-t.border-slate-100.bg-white');

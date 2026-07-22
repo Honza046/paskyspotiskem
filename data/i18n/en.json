@@ -271,7 +271,8 @@
             "jednobarevny": "Single-colour print",
             "vicebarevny": "Multi-colour / Rotogravure",
             "bezpecnostni": "Security tapes",
-            "logisticke": "Logistics / Warning tapes"
+            "logisticke": "Logistics / Warning tapes",
+            "vyroba": "Production / warehouse"
           }
         },
         "adhesive": {
@@ -295,7 +296,7 @@
           "label": "Sample type",
           "options": {
             "reference": "Real references",
-            "demo": "Print options"
+            "production": "Production & warehouse"
           }
         }
       }
@@ -303,7 +304,9 @@
     "sections": {
       "featured": "Featured samples",
       "references_title": "Real references",
-      "references_subtitle": "Photographs of actual prints from our production. We will add more references after the next photo shoot.",
+      "references_subtitle": "",
+      "production_title": "Production & warehouse",
+      "production_subtitle": "Automated warehouses, production lines and raw materials – Empoli and Atessa.",
       "demos_title": "Print options and technologies",
       "demos_subtitle": "Examples of security, logistics and special solutions, illustrations of the technologies we offer.",
       "empty": "No sample matches the selected filters. Try removing one of the filters."
@@ -323,7 +326,8 @@
       "meta_industry": "Industry",
       "meta_width": "Width",
       "meta_colors": "Colours",
-      "meta_adhesive": "Adhesive"
+      "meta_adhesive": "Adhesive",
+      "meta_location": "Location"
     },
     "cta": {
       "title": "Have your own logo?",
@@ -331,6 +335,91 @@
       "button": "Request a quote"
     },
     "items": {
+      "bonami": {
+        "title": "Bonami logo tapes",
+        "description": "Single-colour brand print on white BOPP tape – logo and furniture illustrations for e-commerce packaging.",
+        "industry_label": "E-commerce"
+      },
+      "notino": {
+        "title": "Notino logo tapes",
+        "description": "High-contrast white logo print on black tape – bold shipment branding for beauty e-commerce.",
+        "industry_label": "E-commerce"
+      },
+      "notino-sklad": {
+        "title": "Notino tape in the warehouse",
+        "description": "Packing shipments at the Notino Brno Logistics Hub – black tape with gold logo in real dispatch operations.",
+        "industry_label": "E-commerce"
+      },
+      "fenske": {
+        "title": "Fenske logo tapes",
+        "description": "Two-colour FENSKE / Weine und Feinkost print on packing tape – branding for wine and gourmet shipments.",
+        "industry_label": "Food industry"
+      },
+      "just-nahrin": {
+        "title": "Just+ / nahrin tapes",
+        "description": "Multi-colour print of logos and logistics text with a fragile symbol – branding plus instructions for the recipient.",
+        "industry_label": "E-commerce"
+      },
+      "vorsicht-glas": {
+        "title": "Warning tape Vorsicht Glas",
+        "description": "Warning print “Vorsicht Glas!” / “Do not drop” on packing tape – protecting fragile shipments in transit.",
+        "industry_label": "Logistics"
+      },
+      "alfain": {
+        "title": "ALFA IN logo tapes",
+        "description": "Orange BOPP tape with a white ALFA IN logo – shipment branding directly in the warehouse.",
+        "industry_label": "Logistics"
+      },
+      "papir-fsc": {
+        "title": "Paper tape FSC / 22 PAP",
+        "description": "Eco-friendly paper tape printed with FSC and 22 PAP symbols – sustainable e-commerce packaging.",
+        "industry_label": "E-commerce"
+      },
+      "alfain-sklad": {
+        "title": "ALFA IN tape in the warehouse",
+        "description": "Manual packing on a pallet with orange ALFA IN tape – print in real logistics operations.",
+        "industry_label": "Logistics"
+      },
+      "irplast-warehouse": {
+        "title": "Automated warehouse Empoli",
+        "description": "Automated warehouse in Empoli – logistics for finished tapes and films.",
+        "industry_label": "Manufacturing"
+      },
+      "irplast-warehouse-2": {
+        "title": "Automated warehouse Empoli",
+        "description": "View into the Empoli automated warehouse with high-density storage.",
+        "industry_label": "Manufacturing"
+      },
+      "irplast-shuttle": {
+        "title": "Production – automated shuttle",
+        "description": "Production department with an automated shuttle system at the Empoli plant.",
+        "industry_label": "Manufacturing"
+      },
+      "irplast-silos": {
+        "title": "Raw material silos Atessa",
+        "description": "Silos for storing raw materials (polypropylene) at the Atessa film plant.",
+        "industry_label": "Manufacturing"
+      },
+      "irplast-lisim": {
+        "title": "STILANSOL® LISIM line",
+        "description": "Simultaneous BOPP film orientation – Brückner LISIM / STILANSOL® production line.",
+        "industry_label": "Manufacturing"
+      },
+      "irplast-slitter": {
+        "title": "Slitting line",
+        "description": "Industrial slitting line for cutting film and tapes.",
+        "industry_label": "Manufacturing"
+      },
+      "irplast-carriages": {
+        "title": "Automatic carriages in production",
+        "description": "Automatic handling carriages ensuring material flow in production.",
+        "industry_label": "Manufacturing"
+      },
+      "irplast-reels": {
+        "title": "BOPP reel stock",
+        "description": "Storage of finished BOPP reels before converting into tapes and labels.",
+        "industry_label": "Manufacturing"
+      },
       "alza": {
         "title": "ALZA logo tapes",
         "description": "Multilingual brand printing for e-commerce packaging, featuring a repeated logo and slogan on standard BOPP tape.",
