@@ -116,8 +116,35 @@
                 trigger.setAttribute('aria-expanded', 'true');
                 openDropdown = wrap;
                 rebuildMenu(select, menu);
+                // Keep open list in view and scrollable on short screens
+                window.requestAnimationFrame(function () {
+                    var rect = menu.getBoundingClientRect();
+                    var pad = 16;
+                    if (rect.bottom > window.innerHeight - pad) {
+                        menu.scrollTop = 0;
+                        wrap.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+                    }
+                });
             }
         });
+
+        // Keep wheel/trackpad scrolling on the menu (Safari often scrolls the page instead)
+        menu.addEventListener('wheel', function (e) {
+            var canScroll = menu.scrollHeight > menu.clientHeight + 1;
+            if (!canScroll) return;
+            var top = menu.scrollTop;
+            var max = menu.scrollHeight - menu.clientHeight;
+            var delta = e.deltaY;
+            var atTop = top <= 0 && delta < 0;
+            var atBottom = top >= max - 1 && delta > 0;
+            if (atTop || atBottom) return;
+            e.preventDefault();
+            e.stopPropagation();
+            menu.scrollTop = Math.min(max, Math.max(0, top + delta));
+        }, { passive: false });
+        menu.addEventListener('touchmove', function (e) {
+            e.stopPropagation();
+        }, { passive: true });
 
         select.addEventListener('change', function () {
             rebuildMenu(select, menu);

@@ -54,17 +54,43 @@
 
 .inquiry-dropdown__menu {
     position: absolute;
-    z-index: 50;
+    z-index: 80;
     top: calc(100% + 0.375rem);
     left: 0;
     right: 0;
     display: none;
-    max-height: 16rem;
+    max-height: min(22rem, calc(100vh - 8rem));
+    overflow-x: hidden;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
     margin: 0;
     padding: 0.375rem;
     list-style: none;
     border-radius: 0.75rem;
+}
+
+/*
+ * .glass--menu also sets position/overflow – keep inquiry menus absolute + scrollable.
+ */
+.inquiry-dropdown .inquiry-dropdown__menu.glass--menu,
+.glass--card .inquiry-dropdown .inquiry-dropdown__menu.glass--menu,
+#gform_1 .inquiry-dropdown .inquiry-dropdown__menu {
+    position: absolute;
+    z-index: 80;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+}
+
+/* Form card must not clip the open menu (glass--card defaults to overflow:hidden) */
+#gform_1.glass--card,
+#gform_1 .gform_body,
+#gform_1 .gform_page {
+    overflow: visible;
 }
 
 .inquiry-dropdown.is-open .inquiry-dropdown__menu {

@@ -721,12 +721,14 @@
 
         window.__formQtyTexts = {
             tip: formData.quantity_tip || formData.quantity_min,
+            tipDynamic: formData.quantity_tip_dynamic || formData.quantity_tip,
             tipAcryl: formData.quantity_tip_acryl || formData.quantity_min_acryl || formData.quantity_tip,
             tipHotMelt: formData.quantity_tip_hotmelt || formData.quantity_min_hotmelt || formData.quantity_tip,
             minAcryl: formData.quantity_min_acryl || formData.quantity_min,
             minHotMelt: formData.quantity_min_hotmelt || formData.quantity_min,
             success: formData.quantity_success,
-            invalid: formData.quantity_min || formData.quantity_tip,
+            invalid: formData.quantity_min_dynamic || formData.quantity_min || formData.quantity_tip,
+            invalidDynamic: formData.quantity_min_dynamic || formData.quantity_min,
             invalidAcryl: formData.quantity_min_acryl || formData.quantity_min,
             invalidHotMelt: formData.quantity_min_hotmelt || formData.quantity_min
         };

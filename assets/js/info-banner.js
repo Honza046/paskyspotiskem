@@ -1,6 +1,6 @@
 /**
  * Rotate info-banner messages – one element, fade out → swap → fade in.
- * Messages are loaded from i18n JSON (info_banner.messages).
+ * Priority: live /api/info-banner → i18n JSON → DEFAULT_TEXTS.
  */
 (function () {
     'use strict';
@@ -25,8 +25,20 @@
     var busy = false;
     var timer = null;
     var started = false;
+    var liveLoaded = false;
 
-    function getTexts() {
+    function currentLang() {
+        if (window.paskyI18n && typeof window.paskyI18n.getLang === 'function') {
+            return window.paskyI18n.getLang();
+        }
+        var htmlLang = (document.documentElement.lang || 'cs').toLowerCase();
+        if (htmlLang.indexOf('en') === 0) return 'en';
+        if (htmlLang.indexOf('de') === 0) return 'de';
+        if (htmlLang.indexOf('it') === 0) return 'it';
+        return 'cs';
+    }
+
+    function getI18nTexts() {
         if (window.paskyI18n && typeof window.paskyI18n.get === 'function') {
             var msgs = window.paskyI18n.get('info_banner.messages');
             if (Array.isArray(msgs) && msgs.length) {
@@ -45,6 +57,18 @@
         }
     }
 
+    function setBannerVisible(on) {
+        if (!banner) return;
+        banner.hidden = !on;
+        banner.style.display = on ? '' : 'none';
+        if (typeof window.paskyonlineSyncSiteTopHeight === 'function') {
+            window.paskyonlineSyncSiteTopHeight();
+        }
+        if (typeof window.paskyonlineLockHeroLayout === 'function') {
+            window.paskyonlineLockHeroLayout();
+        }
+    }
+
     function prefersReducedMotion() {
         return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     }
@@ -57,6 +81,10 @@
     }
 
     function setViewportHeight() {
+        if (!TEXTS.length) {
+            viewport.style.minHeight = '0px';
+            return;
+        }
         var measure = document.createElement('p');
         measure.className = 'info-banner__message';
         measure.setAttribute('aria-hidden', 'true');
@@ -142,34 +170,85 @@
     }
 
     function showCurrent() {
+        if (!TEXTS.length) {
+            el.innerHTML = '';
+            setViewportHeight();
+            return;
+        }
         index = 0;
         el.innerHTML = TEXTS[0];
         setViewportHeight();
     }
 
-    function restart() {
+    function restart(texts, enabled) {
         clearTimer();
         busy = false;
-        TEXTS = getTexts();
+        TEXTS = Array.isArray(texts) && texts.length ? texts.slice() : [];
         applyAriaLabel();
+        if (enabled === false || !TEXTS.length) {
+            setBannerVisible(false);
+            return;
+        }
+        setBannerVisible(true);
         showCurrent();
         scheduleNext();
+    }
+
+    function applyLiveConfig(data) {
+        if (!data || !data.ok) return false;
+        liveLoaded = true;
+        var lang = currentLang();
+        var messages = null;
+        if (Array.isArray(data.messages) && data.lang) {
+            messages = data.messages;
+        } else if (data.messages && Array.isArray(data.messages[lang])) {
+            messages = data.messages[lang];
+        } else if (data.messages && Array.isArray(data.messages.cs)) {
+            messages = data.messages.cs;
+        }
+        restart(messages || [], data.enabled !== false);
+        return true;
+    }
+
+    function fetchLive() {
+        var lang = currentLang();
+        var url = '/api/info-banner?lang=' + encodeURIComponent(lang) + '&t=' + Date.now();
+        return fetch(url, { credentials: 'omit', cache: 'no-store' })
+            .then(function (res) {
+                if (!res.ok) throw new Error('banner http ' + res.status);
+                return res.json();
+            })
+            .then(function (data) {
+                applyLiveConfig(data);
+            })
+            .catch(function () {
+                if (!liveLoaded) {
+                    restart(getI18nTexts(), true);
+                }
+            });
     }
 
     function boot() {
         if (started) {
-            restart();
+            if (liveLoaded) {
+                fetchLive();
+            } else {
+                restart(getI18nTexts(), true);
+                fetchLive();
+            }
             return;
         }
         started = true;
-        TEXTS = getTexts();
         applyAriaLabel();
-        showCurrent();
+        restart(getI18nTexts(), true);
         window.addEventListener('resize', setViewportHeight);
-        scheduleNext();
+        fetchLive();
     }
 
     document.addEventListener('pasky:i18n-ready', boot);
+    document.addEventListener('pasky:i18n-pages-applied', function () {
+        if (started) fetchLive();
+    });
 
     if (window.paskyI18n) {
         boot();
@@ -180,4 +259,6 @@
             }
         }, 2500);
     }
+
+    window.paskyonlineReloadInfoBanner = fetchLive;
 })();

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Admin | Info bar | Pásky s potiskem</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/admin.css?v=5">
+</head>
+<body class="admin-body">
+    <div id="admin-app" class="admin-shell">
+        <!-- LOGIN -->
+        <section id="admin-login" class="admin-card admin-login" hidden>
+            <div class="admin-brand">
+                <img src="/images/logo.svg" width="140" height="64" alt="Pásky s potiskem">
+                <h1>Admin přihlášení</h1>
+                <p>Správa horního info baru na webu. Účet dostanete od správce projektu.</p>
+            </div>
+            <form id="login-form" class="admin-form" novalidate>
+                <label>
+                    <span>Uživatelské jméno</span>
+                    <input type="text" id="login-username" name="username" autocomplete="username" required>
+                </label>
+                <label>
+                    <span>Heslo</span>
+                    <input type="password" id="login-password" name="password" autocomplete="current-password" required>
+                </label>
+                <p id="login-error" class="admin-error" hidden></p>
+                <button type="submit" class="admin-btn admin-btn--primary" id="login-submit">Přihlásit se</button>
+            </form>
+        </section>
+
+        <!-- EDITOR -->
+        <section id="admin-editor" class="admin-editor" hidden>
+            <header class="admin-topbar">
+                <div>
+                    <p class="admin-eyebrow">Admin</p>
+                    <h1>Info bar</h1>
+                </div>
+                <div class="admin-topbar__actions">
+                    <span id="admin-user" class="admin-user"></span>
+                    <button type="button" id="logout-btn" class="admin-btn admin-btn--ghost">Odhlásit</button>
+                </div>
+            </header>
+
+            <div class="admin-grid">
+                <div class="admin-card">
+                    <div class="admin-row admin-row--between">
+                        <div>
+                            <h2>Stav</h2>
+                            <p class="admin-muted">Zapněte nebo vypněte oranžový info bar na celém webu.</p>
+                        </div>
+                        <label class="admin-switch">
+                            <input type="checkbox" id="banner-enabled" checked>
+                            <span>Zapnuto</span>
+                        </label>
+                    </div>
+                    <p id="banner-meta" class="admin-meta"></p>
+                </div>
+
+                <div class="admin-card">
+                    <div class="admin-row admin-row--between">
+                        <div>
+                            <h2>České zprávy</h2>
+                            <p class="admin-muted">Pište v češtině. Po uložení se automaticky přeloží do EN / DE / IT.</p>
+                        </div>
+                        <button type="button" id="add-message" class="admin-btn admin-btn--ghost">+ Přidat zprávu</button>
+                    </div>
+                    <div id="messages-cs" class="admin-messages"></div>
+                    <p class="admin-hint">Tip: označte datum a klikněte na <strong>B</strong> (tučné). Funguje i <em>I</em> a <u>U</u>.</p>
+                </div>
+
+                <div class="admin-card">
+                    <div class="admin-row admin-row--between">
+                        <div>
+                            <h2>Překlady</h2>
+                            <p class="admin-muted">Náhled EN / DE / IT. Můžete upravit ručně před uložením.</p>
+                        </div>
+                        <button type="button" id="translate-btn" class="admin-btn admin-btn--secondary">Přeložit z češtiny</button>
+                    </div>
+                    <div class="admin-langs">
+                        <details open>
+                            <summary>English</summary>
+                            <div id="messages-en" class="admin-messages"></div>
+                        </details>
+                        <details>
+                            <summary>Deutsch</summary>
+                            <div id="messages-de" class="admin-messages"></div>
+                        </details>
+                        <details>
+                            <summary>Italiano</summary>
+                            <div id="messages-it" class="admin-messages"></div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admin-footer-bar">
+                <p id="save-status" class="admin-status" role="status"></p>
+                <button type="button" id="save-btn" class="admin-btn admin-btn--primary">Uložit a publikovat</button>
+            </div>
+        </section>
+
+        <p id="boot-error" class="admin-boot-error" hidden></p>
+    </div>
+
+    <script src="/assets/js/admin-banner.js?v=3"></script>
+</body>
+</html>

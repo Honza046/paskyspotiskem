@@ -7,7 +7,7 @@
     var SUPPORTED = ['cs', 'en', 'de', 'it'];
     var DEFAULT = 'cs';
     var STORAGE_KEY = 'paskyonline_lang';
-    var I18N_VER = '40';
+    var I18N_VER = '42';
     var HTML_LANG = { cs: 'cs', en: 'en', de: 'de', it: 'it' };
     var currentLocale = null;
     var localeCache = {};
@@ -375,6 +375,9 @@
         tree._locale = locale;
         window.paskyI18n = {
             locale: locale,
+            getLang: function () {
+                return locale;
+            },
             t: function (key, fallback) {
                 var val = getByPath(tree, key);
                 return typeof val === 'string' ? val : (fallback || key);

@@ -482,13 +482,22 @@
             }
 
             modalDescription.textContent = data.description || '';
-            modalCta.href = inquiryUrl(data.title);
-            if (modalCta.childNodes.length) {
-                var ctaText = lightboxLabel('cta', 'Chci podobný potisk');
-                var ctaSvg = modalCta.querySelector('svg');
-                modalCta.textContent = '';
-                modalCta.appendChild(document.createTextNode(ctaText + (ctaSvg ? ' ' : '')));
-                if (ctaSvg) modalCta.appendChild(ctaSvg);
+
+            // Production photos are not print references – hide inquiry CTA
+            if (modalCta) {
+                if (data.type === 'production') {
+                    modalCta.classList.add('hidden');
+                    modalCta.setAttribute('aria-hidden', 'true');
+                } else {
+                    modalCta.classList.remove('hidden');
+                    modalCta.removeAttribute('aria-hidden');
+                    modalCta.href = inquiryUrl(data.title);
+                    var ctaText = lightboxLabel('cta', 'Chci podobný potisk');
+                    var ctaSvg = modalCta.querySelector('svg');
+                    modalCta.textContent = '';
+                    modalCta.appendChild(document.createTextNode(ctaText + (ctaSvg ? ' ' : '')));
+                    if (ctaSvg) modalCta.appendChild(ctaSvg);
+                }
             }
 
             modal.hidden = false;

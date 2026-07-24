@@ -15,8 +15,8 @@
       "it": "Italiano"
     },
     "htmlLang": "de",
-    "faq_title": "FAQ | Bedruckte Klebebänder: Fragen und Antworten",
-    "faq_description": "Häufige Fragen zu bedruckten Klebebändern: Mindestmenge, Lieferzeiten, HOT MELT vs Akryl, Druck, Muster und Versand. Antworten vom Hersteller ALFA IN."
+    "faq_title": "Tipps & Ratgeber | Bedruckte Klebebänder",
+    "faq_description": "Tipps und Empfehlungen zu bedruckten Klebebändern: Material, Klebstoff, Lieferzeiten, Druck und Muster. Praktische Hinweise von ALFA IN."
   },
   "nav": {
     "tagline": "ALFA IN: Herstellung, Beratung, Vertrieb und Service",
@@ -173,13 +173,15 @@
       "width_label": "Bandbreite in mm",
       "length_label": "Bandlänge in Metern",
       "quantity_label": "Gewünschte Menge in Rollen",
-      "quantity_hint": "Geben Sie eine Zahl je nach gewähltem Klebstoff ein.",
-      "quantity_min": "Akryl ab 360 Stk., HOT MELT ab 504 Stk.",
-      "quantity_min_acryl": "Mindestmenge ab 360 Stk. (Akryl).",
-      "quantity_min_hotmelt": "Mindestmenge ab 504 Stk. (HOT MELT).",
-      "quantity_tip": "Akryl ab 360 Stk., HOT MELT ab 504 Stk. Lieferzeit ca. 3–4 Wochen.",
-      "quantity_tip_acryl": "Mindestmenge ab 360 Stk. (Akryl). Lieferzeit ca. 3–4 Wochen.",
-      "quantity_tip_hotmelt": "Mindestmenge ab 504 Stk. (HOT MELT). Lieferzeit ca. 3–4 Wochen.",
+      "quantity_hint": "Geben Sie eine Zahl je nach Klebstoff und Bandbreite ein.",
+      "quantity_min": "Minimum hängt von Klebstoff und Breite ab (z. B. Akryl 50 mm ab 360 Stk., HOT MELT 50 mm ab 504 Stk.).",
+      "quantity_min_acryl": "Mindestmenge ab {min} Stk. (Akryl, {width} mm).",
+      "quantity_min_hotmelt": "Mindestmenge ab {min} Stk. (HOT MELT, {width} mm).",
+      "quantity_tip": "Minimum hängt von Klebstoff und Breite ab. Lieferzeit ca. 3–4 Wochen.",
+      "quantity_tip_acryl": "Mindestmenge ab {min} Stk. (Akryl, {width} mm). Lieferzeit ca. 3–4 Wochen.",
+      "quantity_tip_hotmelt": "Mindestmenge ab {min} Stk. (HOT MELT, {width} mm). Lieferzeit ca. 3–4 Wochen.",
+      "quantity_tip_dynamic": "Mindestmenge ab {min} Stk. ({adhesive}, {width} mm). Lieferzeit ca. 3–4 Wochen.",
+      "quantity_min_dynamic": "Mindestmenge ab {min} Stk. ({adhesive}, {width} mm).",
       "quantity_success": "🔥 Ausgezeichnete Wahl! Sie haben kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
       "validation": {
         "material_required": "Bitte wählen Sie ein Material aus der Liste.",
@@ -257,196 +259,218 @@
       "cta": "Ich möchte ein Muster"
     },
     "faq": {
-      "label": "FAQ",
-      "title": "Antworten vor der Bestellung",
-      "subtitle": "Häufige Fragen zu Druck, Lieferzeiten und Materialien. Unsicher? Schreiben Sie uns und wir helfen.",
-      "all_link": "Alle Fragen und Suche anzeigen →",
+      "label": "Tipps vor der Bestellung",
+      "title": "Wissenswerte Hinweise",
+      "subtitle": "Kurze Empfehlungen zu Material, Klebstoff, Terminen und Druck. Unsicher? Schreiben Sie uns — wir beraten gerne.",
+      "all_link": "Zum kompletten Tipptagebuch →",
       "items": {
         "0": {
-          "q": "Wie hoch ist die Mindestbestellmenge?",
-          "a": "Bei BOPP-Bändern 360 Stück (Akryl) oder 504 Stück (HOT MELT); bei Papier- und BOPET-Bändern hängt die Mindestmenge individuell von Druck und Kreppauflage ab."
+          "q": "Wie plane ich die Bestellmenge?",
+          "a": "Bei BOPP-Bändern starten wir üblich bei 360 Stk. (Akryl) oder 504 Stk. (HOT MELT). Bei Papier- und BOPET-Bändern stimmen wir die Menge nach Druck und Aufbau ab — wir empfehlen einen praktischen Start für Ihren Bedarf."
         },
         "1": {
-          "q": "Wie lange dauert die Herstellung von bedrucktem Klebeband?",
-          "a": "Die Standardlieferzeit beträgt 3 bis 4 Wochen ab Freigabe des Drucklayouts und der Bestellung. Bei dringenden Aufträgen bemühen wir uns um eine schnellere Lieferung."
+          "q": "Wie plane ich den Liefertermin?",
+          "a": "Rechnen Sie mit 3 bis 4 Wochen ab Freigabe der Grafik und Bestellung. Bei Eile tragen Sie den Wunschtermin in die Anfrage ein — wir prüfen, was realistisch möglich ist."
         },
         "2": {
-          "q": "Kann ich auch unbedrucktes Band bestellen?",
-          "a": "Ja. Wir liefern dieselbe Qualität auch ohne Druck, ideal für Lagerbestände oder sofortiges Verpacken."
+          "q": "Wann unbedrucktes Band wählen?",
+          "a": "Neutrales Band eignet sich als Lagervorrat oder für schnelles Verpacken ohne Branding. Material- und Klebstoffqualität bleiben gleich — Druck können Sie später ergänzen."
         },
         "3": {
-          "q": "Was ist der Unterschied zwischen HOT MELT und Akryl?",
-          "a": "HOT MELT haftet schnell und fest auch bei Kälte, ideal für Lager und Versand. Akryl läuft leiser ab und ist UV-beständiger, ideal für längere Lagerung. Mehr unter <a href=\"/#lepidla\">Welchen Klebstoff wählen?</a>."
+          "q": "Wie zwischen HOT MELT und Akryl wählen?",
+          "a": "HOT MELT empfehlen wir für Kälte und schnelles Verschließen im Lager. Akryl ist leiser beim Abrollen und UV-beständiger bei längerer Lagerung. Mehr unter <a href=\"/#lepidla\">Welchen Klebstoff wählen?</a>."
         },
         "4": {
-          "q": "Liefern Sie kostenlose Muster?",
-          "a": "Ja, bei ausgewählten Materialien und bestehenden Layouts senden wir gerne ein Testmuster. Bitte in der Anfrage „Ich möchte ein Muster“ angeben."
+          "q": "Wie Material vorher testen?",
+          "a": "Bei ausgewählten Materialien und bestehenden Designs senden wir gerne ein Testmuster. In der Anfrage reicht „Ich möchte ein Muster“."
         },
         "5": {
-          "q": "Welche Drucktechnologien bieten Sie an?",
-          "a": "Flexodruck bis 8 Farben und Rotogravur bis 10 Farben inklusive hochwertigem Unterdruck. Die passende Technologie empfehlen wir nach Farben, Menge und Qualitätsanforderung."
+          "q": "Welche Drucktechnologie wählen?",
+          "a": "Flexodruck bis 8 Farben und Rototiefdruck bis 10 Farben inkl. Unterdruck. Nach Logo, Farben und Menge empfehlen wir, was zu Marke und Budget passt."
         }
       }
     }
   },
   "faq": {
-    "label": "FAQ",
-    "title": "Fragen und Antworten",
-    "subtitle": "Finden Sie Antworten zu Druck, Terminen, Klebstoffen und Mustern. Filtern Sie nach Thema oder suchen Sie ein Stichwort.",
+    "label": "Tipps vor der Bestellung",
+    "title": "Tagebuch mit Tipps zu bedruckten Klebebändern",
+    "subtitle": "Praktische Empfehlungen zu Material, Klebstoff, Terminen und Druck. Filtern Sie nach Thema oder suchen Sie ein Stichwort — und schreiben Sie uns bei Unsicherheit.",
     "hero_cta": "Nachricht schreiben",
-    "search_label": "In Fragen suchen",
+    "search_label": "In Tipps suchen",
     "search_placeholder": "Suchen… z. B. HOT MELT, Muster, Lieferzeit",
-    "filters_label": "Themenfilter",
+    "filters_label": "Tippthemen",
     "filters": {
       "all": "Alle",
       "objednavka": "Bestellung",
-      "vyroba": "Produktion & Termine",
+      "vyroba": "Termine & Produktion",
       "material": "Material & Klebstoff",
       "potisk": "Druck & Grafik",
       "vzorky": "Muster"
     },
-    "more": "{n} weitere Fragen anzeigen",
+    "more": "{n} weitere Tipps anzeigen",
+    "less": "Weniger anzeigen",
     "count_preview": "Angezeigt {shown} von {total}",
-    "count_all": "{n} Fragen",
+    "count_all": "{n} Tipps",
     "count_filtered": "Angezeigt {visible} von {total}",
-    "empty_title": "Keine Treffer",
-    "empty_text": "Versuchen Sie ein anderes Stichwort oder einen anderen Filter. Oder schreiben Sie uns und wir helfen.",
+    "empty_title": "Nichts gefunden",
+    "empty_text": "Anderes Stichwort oder Thema versuchen. Oder schreiben Sie uns — wir empfehlen den nächsten Schritt.",
     "empty_cta": "Nachricht schreiben →",
     "contact_label": "Kontakt",
-    "cta_title": "Keine passende Antwort gefunden?",
-    "cta_text": "Schreiben Sie uns eine kurze Nachricht und wir melden uns mit einer Antwort oder Empfehlung zu Material und Druck.",
+    "cta_title": "Individuelle Empfehlung gewünscht?",
+    "cta_text": "Schreiben Sie kurz und wir melden uns mit einem Tipp zu Material, Klebstoff oder Druck für Ihr Packen.",
     "cta_button": "Nachricht senden",
     "form": {
       "name": "Vor- und Nachname",
       "email": "E-Mail",
       "phone": "Telefon",
-      "message": "Ihre Frage / Nachricht",
+      "message": "Ihre Nachricht / wozu beraten",
       "message_placeholder": "Schreiben Sie, wobei wir helfen sollen…",
       "gdpr": "Mit dem Absenden stimmen Sie der Verarbeitung personenbezogener Daten zur Bearbeitung der Nachricht zu.",
+      "gdpr_before": "Mit dem Absenden stimmen Sie der",
+      "gdpr_link": "Verarbeitung personenbezogener Daten",
+      "gdpr_after": "zur Bearbeitung der Nachricht zu.",
+      "gdpr_modal": {
+        "title": "Verarbeitung personenbezogener Daten",
+        "close": "Schließen",
+        "intro": "Informationen gemäß Art. 13 DSGVO zum Ausfüllen und Absenden des Kontaktformulars auf dieser Seite.",
+        "controller_heading": "Verantwortlicher",
+        "controller": "ALFA IN a.s., ID-Nr. 255 35 366, č.p. 74, 675 21 Nová Ves u Třebíče, Tschechien. Kontakt: epo@alfain.eu, Tel. +420 568 840 009, www.alfain.eu",
+        "data_heading": "Verarbeitete Daten",
+        "data": "Name, E-Mail, Telefon und der im Formular eingegebene Nachrichten-/Fragetext.",
+        "purpose_heading": "Zweck und Rechtsgrundlage",
+        "purpose": "Bearbeitung der Nachricht, Beantwortung Ihrer Frage und ggf. Empfehlung von Material oder Druck. Rechtsgrundlage: Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) und Vertragsanbahnung (Art. 6 Abs. 1 lit. b DSGVO).",
+        "retention_heading": "Speicherdauer",
+        "retention": "Für die Dauer der Bearbeitung der Nachricht und höchstens 4 Jahre ab dem letzten Kontakt, wenn kein Vertrag zustande kommt; bei Vertragsverhältnis für die Dauer des Vertrags und danach gesetzlich vorgeschrieben.",
+        "recipients_heading": "Empfänger",
+        "recipients": "Daten können Auftragsverarbeitern (IT-Verwaltung, Hosting, E-Mail-Dienste) auf Grundlage von Auftragsverarbeitungsverträgen und zuständigen Behörden offengelegt werden, sofern gesetzlich vorgeschrieben.",
+        "rights_heading": "Ihre Rechte",
+        "rights": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit, Widerspruch und Beschwerde beim Amt für den Schutz personenbezogener Daten (www.uoou.cz). Anfragen senden Sie an epo@alfain.eu.",
+        "full_link": "Vollständige Datenschutzrichtlinie"
+      },
       "sending": "Wird gesendet…",
       "success": "Danke, Ihre Nachricht wurde gesendet. Wir melden uns bald.",
       "error": "Senden fehlgeschlagen. Bitte schreiben Sie an karel.petrak@alfain.eu."
     },
     "items": {
       "moq": {
-        "q": "Wie hoch ist die Mindestbestellmenge?",
-        "a": "Bei BOPP-Bändern 360 Stück (Akryl) oder 504 Stück (HOT MELT); bei Papier- und BOPET-Bändern hängt die Mindestmenge individuell von Druck und Kreppauflage ab.",
-        "search": "mindestmenge moq bestellung stück bopp hot melt akryl"
+        "q": "Wie plane ich die Bestellmenge?",
+        "a": "Bei BOPP starten wir üblich bei 360 Stk. (Akryl) oder 504 Stk. (HOT MELT). Bei Papier und BOPET stimmen wir individuell nach Druck und Aufbau ab — wir empfehlen einen praktischen Start.",
+        "search": "minimum menge bestellung tipp"
       },
       "lead-time": {
-        "q": "Wie lange dauert die Herstellung von bedrucktem Klebeband?",
-        "a": "Die Standardlieferzeit beträgt 3 bis 4 Wochen ab Freigabe des Drucklayouts und der Bestellung. Bei dringenden Aufträgen bemühen wir uns um eine schnellere Lieferung.",
-        "search": "lieferzeit produktion wochen dringend versand"
+        "q": "Wie plane ich den Liefertermin?",
+        "a": "Rechnen Sie mit 3 bis 4 Wochen ab Freigabe der Grafik und Bestellung. Bei Eile Wunschtermin in die Anfrage — wir prüfen Auslastung und schlagen einen realistischen Weg vor.",
+        "search": "lieferzeit produktion wochen tipp"
       },
       "bez-potisku": {
-        "q": "Kann ich auch unbedrucktes Band bestellen?",
-        "a": "Ja. Wir liefern dieselbe Qualität auch ohne Druck, ideal für Lagerbestände oder sofortiges Verpacken.",
-        "search": "unbedruckt neutral ohne druck"
+        "q": "Wann unbedrucktes Band wählen?",
+        "a": "Neutrales Band eignet sich als Lagervorrat oder für schnelles Verpacken ohne Branding. Qualität bleibt gleich — Druck später ergänzbar.",
+        "search": "unbedruckt tipp"
       },
       "lepidlo": {
-        "q": "Was ist der Unterschied zwischen HOT MELT und Akryl?",
-        "a": "HOT MELT haftet schnell und fest auch bei Kälte, ideal für Lager und Versand. Akryl läuft leiser ab und ist UV-beständiger, ideal für längere Lagerung. Mehr unter <a href=\"/#lepidla\">Welchen Klebstoff wählen?</a>.",
-        "search": "hot melt akryl klebstoff haftung uv leise abrollen lager"
+        "q": "Wie zwischen HOT MELT und Akryl wählen?",
+        "a": "HOT MELT für Kälte und schnelles Verschließen im Lager. Akryl leiser und UV-beständiger bei längerer Lagerung. Mehr unter <a href=\"/#lepidla\">Welchen Klebstoff wählen?</a>.",
+        "search": "hot melt akryl klebstoff tipp"
       },
       "vzorky": {
-        "q": "Liefern Sie kostenlose Muster?",
-        "a": "Ja, bei ausgewählten Materialien und bestehenden Layouts senden wir gerne ein Testmuster. Bitte in der Anfrage „Ich möchte ein Muster“ angeben.",
-        "search": "muster gratis test sample"
+        "q": "Wie Material vorher testen?",
+        "a": "Bei ausgewählten Materialien und bestehenden Designs senden wir gerne ein Testmuster. In der Anfrage „Ich möchte ein Muster“ — wir raten, was zuerst sinnvoll ist.",
+        "search": "muster probe tipp"
       },
       "technologie": {
-        "q": "Welche Drucktechnologien bieten Sie an?",
-        "a": "Flexodruck bis 8 Farben und Rotogravur bis 10 Farben inklusive hochwertigem Unterdruck. Die passende Technologie empfehlen wir nach Farben, Menge und Qualitätsanforderung.",
-        "search": "flexo rotogravur farben druck technologie unterdruck"
+        "q": "Welche Drucktechnologie wählen?",
+        "a": "Flexo bis 8 Farben, Rototiefdruck bis 10 Farben inkl. Unterdruck. Nach Logo, Farben, Menge und Qualitätsanspruch empfehlen wir die passende Technik.",
+        "search": "flexo rototiefdruck tipp"
       },
       "grafika": {
-        "q": "Erstellen Sie das Drucklayout für mich?",
-        "a": "Ja. Senden Sie Logo (idealerweise PDF/AI/SVG) und eine Vorstellung zu Text oder Farben, wir erstellen eine Druckvorschau zur Freigabe vor der Produktion.",
-        "search": "layout grafik logo vorschau design pdf ai svg"
+        "q": "Wie Druckgrafik vorbereiten?",
+        "a": "Am einfachsten Logo (PDF/AI/SVG) und kurze Text-/Farbidee senden. Wir erstellen eine Vorschau zur Freigabe und stimmen den Wiederholungsdruck ab.",
+        "search": "grafik logo vorschau tipp"
       },
       "sirka": {
-        "q": "Welche Breiten und Längen fertigen Sie?",
-        "a": "Die gängigsten Breiten sind 48 mm und 50 mm; weitere Breiten und Wickellängen klären wir individuell nach Material und Anwendung (Hand- oder Maschinenverpackung).",
-        "search": "breite länge 48 mm 50 mm rolle wicklung"
+        "q": "Welche Breite und Länge wählen?",
+        "a": "Am häufigsten empfehlen wir 50 mm (ggf. 48 mm nach bestehender Praxis). Weitere Breiten und Wickellängen stimmen wir nach Material und Hand-/Maschinenpacken ab.",
+        "search": "breite 48 50 mm tipp"
       },
       "eko": {
-        "q": "Haben Sie nachhaltige / ECO-Bänder?",
-        "a": "Ja, die ECO+-Serie (recyceltes BOPP), Papierbänder und weitere nachhaltige Varianten. Details finden Sie im Sortiment Nachhaltige Bänder.",
-        "search": "eco recycling nachhaltig papier fsc"
+        "q": "Wann nachhaltiges Band wählen?",
+        "a": "Für geringeren Fußabdruck: ECO+ (recyceltes BOPP), Papierbänder und weitere Varianten. Wir empfehlen eine Mischung für Betrieb und Marke. Mehr unter Nachhaltige Bänder.",
+        "search": "eco nachhaltig tipp"
       },
       "stroje": {
-        "q": "Eignen sich die Bänder auch für Maschinenverpackung?",
-        "a": "Ja. Je nach Klebstoff und Material empfehlen wir eine Variante für Handabroller oder für automatische Verpackungslinien.",
-        "search": "maschine automatik linie abroller dispenser"
+        "q": "Band für Hand- und Maschinenpacken?",
+        "a": "Für Handpacken oft leises Abrollen. Für Automaten empfehlen wir Material und Klebstoff nach Geschwindigkeit und Applikator — beschreiben Sie Ihre Linie.",
+        "search": "maschine linie tipp"
       },
       "doprava": {
-        "q": "Wie laufen Versand und Rechnungsstellung?",
-        "a": "Wir liefern in ganz Tschechien und ins Ausland. Versand- und Zahlungsbedingungen klären wir im Angebot nach Volumen und Lieferort.",
-        "search": "versand rechnung lieferung eu preis"
+        "q": "Versand und Rechnung planen?",
+        "a": "Lieferung in Tschechien und ins Ausland. Im Angebot klären wir Versand und Zahlungsziel nach Volumen und Zielort.",
+        "search": "versand rechnung tipp"
       },
       "skladovani": {
-        "q": "Wie lagere ich die Bänder richtig?",
-        "a": "Ideal trocken, ohne direkte Sonne, bei Zimmertemperatur. Akryl-Bänder vertragen längere Lagerung besser; bei intensiver Nutzung empfehlen wir, HOT MELT früher zu verbrauchen.",
-        "search": "lagerung temperatur feuchtigkeit haltbarkeit"
+        "q": "Bänder gut lagern?",
+        "a": "Trocken, ohne direkte Sonne, Zimmertemperatur. Akryl hält länger; HOT MELT bei intensivem Packen eher früher verbrauchen.",
+        "search": "lagerung tipp"
       },
       "barvy": {
-        "q": "Können Sie nach Pantone oder CMYK drucken?",
-        "a": "Ja. Farben stimmen wir nach Pantone oder Muster ab. Bei Flexo und Rotogravur empfehlen wir passende Farben je nach Untergrund (transparent, weiß, farbig).",
-        "search": "pantone cmyk farbe logo branding"
+        "q": "Farben abstimmen (Pantone / CMYK)?",
+        "a": "Farben nach Pantone oder Muster. Für Flexo und Rototiefdruck empfehlen wir passende Farben je Untergrund.",
+        "search": "pantone cmyk tipp"
       },
       "opakovat": {
-        "q": "Kann ich die Bestellung später mit demselben Layout wiederholen?",
-        "a": "Ja. Freigegebenes Layout und Druckdaten behalten wir, daher geht eine Nachbestellung schneller ohne erneute Freigabe (wenn nichts geändert wird).",
-        "search": "nachbestellung reprint gleiches layout"
+        "q": "Gleiche Grafik einfach nachbestellen?",
+        "a": "Freigegebene Vorlagen behalten wir. Nachbestellungen gehen schneller — ohne erneute Freigabe, wenn nichts geändert wird.",
+        "search": "nachbestellung tipp"
       },
       "cena": {
-        "q": "Wovon hängt der Preis für bedrucktes Band ab?",
-        "a": "Den Preis beeinflussen Material, Klebstoff, Breite und Länge der Rolle, Farbanzahl, Drucktechnologie und Gesamtmenge. Senden Sie eine Anfrage, wir erstellen ein konkretes Angebot.",
-        "search": "preis angebot kalkulation kosten"
+        "q": "Was beeinflusst den Preis?",
+        "a": "Material, Klebstoff, Breite, Wickellänge, Farbanzahl, Technik und Menge. Anfrage senden — wir erstellen ein Angebot und ggf. einen Wert-Tipp.",
+        "search": "preis angebot tipp"
       },
       "papir-vs-bopp": {
-        "q": "Wann Papierband statt BOPP wählen?",
-        "a": "Papierband eignet sich für Öko-Verpackung, recyclingfähige Kartons und Brands mit natürlichem Look. BOPP ist feuchtigkeitsbeständiger und oft günstiger bei höheren Mengen. Gerne beraten wir zu Ihrem Prozess.",
-        "search": "papier bopp plastik öko karton"
+        "q": "Papierband oder BOPP?",
+        "a": "Papier für Eco-Packing und natürlichen Look. BOPP feuchtigkeitsbeständiger und oft vorteilhaft bei höheren Mengen. Wir beraten nach Prozess.",
+        "search": "papier bopp tipp"
       },
       "bezpecnostni": {
-        "q": "Können Sie Sicherheits- oder Warnbänder fertigen?",
-        "a": "Ja, Warnaufdrucke, Fragile, Vorsicht Glas, VOID / Tamper-Evident und Logistiktexte. Das Layout erstellen wir nach Ihren Vorgaben und Sprachversionen.",
-        "search": "sicherheit void tamper warnung fragile"
+        "q": "Sicherheits- oder Warnaufdruck nutzen?",
+        "a": "Warnungen, Fragile, VOID / Tamper und Logistiktexte schützen Sendung und Marke. Entwurf nach Briefing und Sprachen.",
+        "search": "sicherheit void tipp"
       },
       "zmena-grafiky": {
-        "q": "Was, wenn ich das Layout nach Freigabe ändern muss?",
-        "a": "Solange Druckformen / Druck noch nicht gestartet sind, sind Änderungen meist möglich. Nach Produktionsstart oft nur mit Mehrkosten und neuem Termin, prüfen Sie die Vorschau daher sorgfältig.",
-        "search": "layout änderung korrektur freigabe"
+        "q": "Worauf vor der Freigabe achten?",
+        "a": "Vorschau vor Produktion gründlich prüfen. Bis Druckstart sind Änderungen meist möglich. Danach bedeuten Änderungen Kosten und Termin — deshalb früh Feedback geben.",
+        "search": "freigabe änderung tipp"
       },
       "jadro": {
-        "q": "Welchen Kern / welche Hülse verwenden Sie?",
-        "a": "Standardmäßig liefern wir Rollen mit üblicher Papphülse für Hand- und Maschinenabroller. Spezielle Durchmesser und Kernfestigkeiten klären wir individuell für Ihre Linie.",
-        "search": "kern hülse durchmesser core"
+        "q": "Welchen Kern / Hülse wählen?",
+        "a": "Standard Papierhülse für Hand und Maschine. Spezielle Durchmesser nach Ihrer Linie — Abwicklertyp nennen, wir empfehlen.",
+        "search": "kern hülse tipp"
       },
       "zahranici": {
-        "q": "Liefern Sie auch außerhalb Tschechiens?",
-        "a": "Ja. Wir versenden in die EU und darüber hinaus, Versand und Konditionen stimmen wir nach Ziel und Menge ab.",
-        "search": "ausland eu export lieferung"
+        "q": "Lieferung außerhalb Tschechiens?",
+        "a": "Versand in die EU und darüber hinaus. Versand und Konditionen nach Ziel und Volumen vorab klären.",
+        "search": "export eu tipp"
       },
       "vzorek-potisk": {
-        "q": "Bekomme ich ein Muster schon mit meinem Druck?",
-        "a": "Bei neuen Layouts freigeben Sie zuerst meist eine digitale Vorschau. Ein physisches Druckmuster klären wir individuell, bei bestehenden Designs oder größeren Projekten.",
-        "search": "druckmuster vorschau trial"
+        "q": "Druck vor Serie prüfen?",
+        "a": "Bei neuer Grafik zuerst digitale Vorschau. Physisches Druckmuster individuell, oft bei bestehenden Designs oder größeren Projekten.",
+        "search": "druckmuster tipp"
       },
       "urgentni": {
-        "q": "Können Sie Express- / Eilproduktion?",
-        "a": "Bei ausgewählten Aufträgen ja, den Termin prüfen wir immer nach Auslastung und Druckkomplexität. Nennen Sie den Wunschtermin in der Anfrage, wir melden uns mit einer realistischen Option.",
-        "search": "eilig express schnelle lieferung"
+        "q": "Was tun bei Eile?",
+        "a": "Bei ausgewählten Aufträgen schneller möglich. Wunschtermin in die Anfrage — wir melden realistische Option und Tipps zur Beschleunigung.",
+        "search": "express eilig tipp"
       },
       "odstranitelna": {
-        "q": "Haben Sie sauber ablösbare Bänder?",
-        "a": "Ja, entfernbare (removable) Bänder, wenn keine Klebstoffreste bleiben sollen. Wir empfehlen den passenden Typ je nach Untergrund. Mehr im Sortiment Ablösbare Bänder.",
-        "search": "ablösbar removable rückstandsfrei klebstoff"
+        "q": "Wann abziehbares Band?",
+        "a": "Wo keine Klebstoffreste bleiben sollen. Typ nach Oberfläche empfehlen wir. Mehr unter Abziehbare Bänder.",
+        "search": "abziehbar tipp"
       },
       "vice-jazyku": {
-        "q": "Kann der Text auf dem Band mehrsprachig sein?",
-        "a": "Ja. Häufig kombinieren wir Logo mit Logistiktexten auf Tschechisch, Deutsch, Englisch und weiteren Sprachen, lesbar auch bei Wiederholung entlang des Bandes.",
-        "search": "sprachen mehrsprachig text mutation"
+        "q": "Mehrsprachige Texte?",
+        "a": "Oft Logo plus Logistiktexte in mehreren Sprachen. Entwurf so, dass er bei Wiederholung lesbar bleibt — inkl. Texthierarchie.",
+        "search": "sprachen multilingual tipp"
       }
     }
   },
@@ -475,7 +499,8 @@
           "label": "Klebstoff",
           "options": {
             "hot-melt": "HOT MELT",
-            "acryl": "Akryl"
+            "acryl": "Akryl",
+            "extra-glue": "AC Extra Glue"
           }
         },
         "industry": {
@@ -543,7 +568,7 @@
       },
       "fenske": {
         "title": "Klebebänder mit Fenske-Logo",
-        "description": "Zweifarbiger Druck FENSKE / Weine und Feinkost auf Klebeband: Branding für Wein- und Feinkostsendungen.",
+        "description": "Zweifarbiger Druck FENSKE / Weine und Feinkost auf Papierklebeband: Branding für Wein- und Feinkostsendungen.",
         "industry_label": "Lebensmittel"
       },
       "just-nahrin": {
@@ -577,8 +602,8 @@
         "industry_label": "Produktion"
       },
       "irplast-warehouse-2": {
-        "title": "Automatisiertes Lager Empoli",
-        "description": "Blick in das automatisierte Lager Empoli mit hochdichtem Lagern.",
+        "title": "Just-in-Time-Lieferung",
+        "description": "Bei Vorausbestellung bedrucken wir zuerst die Folie. Erst kurz vor der Lieferung schneiden wir sie zu, tragen den Klebstoff auf und versenden das Band. Just in Time — frisches Produkt genau dann, wenn Sie es brauchen, ohne unnötige Bestände fertiger Rollen.",
         "industry_label": "Produktion"
       },
       "irplast-shuttle": {

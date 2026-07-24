@@ -18,9 +18,9 @@ ITEMS = [
         "featured": True,
         "client": "Bonami",
         "industry": "e-commerce",
-        "width": "48 mm",
+        "width": "50 mm",
         "colors": 1,
-        "adhesive": "acryl",
+        "adhesive": "extra-glue",
         "description": "Jednobarevný brand potisk na bílé BOPP pásce: logo a ilustrace nábytku pro e-commerce balení.",
         "graphic": False,
     },
@@ -33,9 +33,9 @@ ITEMS = [
         "featured": True,
         "client": "Notino",
         "industry": "e-commerce",
-        "width": "48 mm",
+        "width": "50 mm",
         "colors": 1,
-        "adhesive": "hot-melt",
+        "adhesive": "acryl",
         "description": "Kontrastní bílý potisk loga na černé pásce: výrazný branding zásilek v beauty e-commerce.",
         "graphic": False,
     },
@@ -48,10 +48,10 @@ ITEMS = [
         "featured": False,
         "client": "Fenske",
         "industry": "potraviny",
-        "width": "48 mm",
+        "width": "75 mm",
         "colors": 2,
-        "adhesive": "acryl",
-        "description": "Dvoubarevný potisk FENSKE / Weine und Feinkost na balicí pásce: branding zásilek vína a delikates.",
+        "adhesive": "hot-melt",
+        "description": "Dvoubarevný potisk FENSKE / Weine und Feinkost na papírové pásce: branding zásilek vína a delikates.",
         "graphic": False,
     },
     {
@@ -63,7 +63,7 @@ ITEMS = [
         "featured": False,
         "client": "Just+ / nahrin",
         "industry": "e-commerce",
-        "width": "48 mm",
+        "width": "50 mm",
         "colors": 3,
         "adhesive": "acryl",
         "description": "Vícebarevný potisk log a logistického textu včetně symbolu křehké: branding i instrukce pro příjemce.",
@@ -78,7 +78,7 @@ ITEMS = [
         "featured": False,
         "client": "",
         "industry": "logistika",
-        "width": "48 mm",
+        "width": "50 mm",
         "colors": 1,
         "adhesive": "hot-melt",
         "description": "Výstražný potisk „Vorsicht Glas!“ / „Do not drop“ na balicí pásce: ochrana křehkých zásilek při přepravě.",
@@ -93,7 +93,7 @@ ITEMS = [
         "featured": False,
         "client": "ALFA IN",
         "industry": "logistika",
-        "width": "48 mm",
+        "width": "50 mm",
         "colors": 1,
         "adhesive": "hot-melt",
         "description": "Oranžová BOPP páska s bílým logem ALFA IN: branding zásilek přímo ve skladu.",
@@ -108,9 +108,9 @@ ITEMS = [
         "featured": False,
         "client": "",
         "industry": "e-commerce",
-        "width": "48 mm",
+        "width": "50 mm",
         "colors": 1,
-        "adhesive": "acryl",
+        "adhesive": "hot-melt",
         "description": "Ekologická papírová páska s potiskem FSC a symbolem 22 PAP: udržitelné balení e-commerce zásilek.",
         "graphic": False,
     },
@@ -123,7 +123,7 @@ ITEMS = [
         "featured": False,
         "client": "ALFA IN",
         "industry": "logistika",
-        "width": "48 mm",
+        "width": "50 mm",
         "colors": 1,
         "adhesive": "hot-melt",
         "description": "Ruční balení na paletě s oranžovou páskou ALFA IN: potisk v praxi logistického provozu.",
@@ -149,7 +149,7 @@ ITEMS = [
     {
         "id": "irplast-warehouse-2",
         "image": "gallery/gallery-irplast-warehouse-2.jpg",
-        "title": "Automatizovaný sklad Empoli",
+        "title": "Just in Time dodávky",
         "category": "vyroba",
         "type": "production",
         "featured": False,
@@ -159,8 +159,8 @@ ITEMS = [
         "colors": 0,
         "adhesive": "",
         "location": "Empoli, Itálie",
-        "pill": "Sklad",
-        "description": "Pohled do automatizovaného skladu s vysokohustotním skladováním.",
+        "pill": "Just in Time",
+        "description": "Když objednáte dopředu, nejdřív potiskneme fólii. Těsně před dodáním ji teprve nařežeme, naneseme lepidlo a pásku odešleme. Just in Time — čerstvý produkt přesně včas, bez zbytečných zásob hotových rolí.",
         "graphic": False,
     },
     {
@@ -293,7 +293,11 @@ FILTER_GROUPS = {
     },
     "adhesive": {
         "label": "Lepidlo",
-        "options": {"hot-melt": "HOT MELT", "acryl": "Akryl"},
+        "options": {
+            "hot-melt": "HOT MELT",
+            "acryl": "Akryl",
+            "extra-glue": "AC Extra Glue",
+        },
     },
     "industry": {
         "label": "Odvětví",
@@ -314,7 +318,11 @@ FILTER_GROUPS = {
     },
 }
 
-ADHESIVE_LABELS = {"hot-melt": "HOT MELT", "acryl": "Akryl"}
+ADHESIVE_LABELS = {
+    "hot-melt": "HOT MELT",
+    "acryl": "Akryl",
+    "extra-glue": "AC Extra Glue",
+}
 INDUSTRY_LABELS = {
     "e-commerce": "E-commerce",
     "vyroba": "Výroba",
@@ -500,7 +508,7 @@ def render_main() -> str:
     <div class="mb-5 flex items-center justify-between gap-3">
         <h2 class="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">Vybrané ukázky</h2>
     </div>
-    <div id="gallery-featured" class="mx-auto grid max-w-3xl grid-cols-1 gap-5 sm:grid-cols-2">
+    <div id="gallery-featured" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
 {chr(10).join('        ' + render_card(i, True) for i in featured)}
     </div>
 </section>
@@ -510,7 +518,7 @@ def render_main() -> str:
     <div class="mb-6 border-b border-slate-100 pb-4">
         <h2 class="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">Reálné reference</h2>
     </div>
-    <div id="gallery-references" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div id="gallery-references" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
 {chr(10).join('        ' + render_card(i) for i in references)}
     </div>
 </section>
@@ -521,7 +529,7 @@ def render_main() -> str:
         <h2 class="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">Výroba a sklad</h2>
         <p class="mt-1 text-sm text-slate-500">Automatizované sklady, výrobní linky a suroviny: Empoli a Atessa.</p>
     </div>
-    <div id="gallery-production" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div id="gallery-production" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
 {chr(10).join('        ' + render_card(i) for i in production)}
     </div>
 </section>
@@ -531,7 +539,7 @@ def render_main() -> str:
     <div id="gallery-empty" class="mb-8 hidden rounded-2xl border border-dashed border-slate-200 bg-white p-12 text-center">
         <p class="text-slate-500">Žádná ukázka neodpovídá vybraným filtrům. Zkuste ubrat některý z filtrů.</p>
     </div>
-    <div id="gallery-results" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+    <div id="gallery-results" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"></div>
 </section>
 
 <div class="gallery-to-cta-fade" aria-hidden="true"></div>

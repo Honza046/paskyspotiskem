@@ -1,0 +1,23 @@
+{
+  "enabled": true,
+  "updatedAt": "2026-07-24T19:04:25.737Z",
+  "updatedBy": "admin",
+  "messages": {
+    "cs": [
+      "Srpen: výroba a logistika mají 3týdenní výluku. Objednávky s dodáním před výlukou zašlete nejpozději do <strong>10. 7. 2026</strong>.",
+      "U objednávek z července a srpna platí dodací lhůta 3–4 týdny s dodáním v <strong>září 2026</strong>."
+    ],
+    "en": [
+      "August: production and logistics will be shut down for 3 weeks. To receive delivery before the shutdown, place your order by <strong>10 July 2026</strong>.",
+      "For July and August orders, the delivery time is 3–4 weeks with delivery in <strong>September 2026</strong>."
+    ],
+    "de": [
+      "August: Produktion und Logistik sind 3 Wochen lang geschlossen. Bestellungen mit Lieferung vor der Schließung senden Sie bitte bis spätestens <strong>10. 7. 2026</strong>.",
+      "Bei Bestellungen aus Juli und August gilt eine Lieferzeit von 3–4 Wochen mit Lieferung im <strong>September 2026</strong>."
+    ],
+    "it": [
+      "Agosto: produzione e logistica saranno ferme per 3 settimane. Per la consegna prima della pausa, inviate l'ordine entro il <strong>10 luglio 2026</strong>.",
+      "Per gli ordini di luglio e agosto, i tempi di consegna sono di 3–4 settimane con consegna a <strong>settembre 2026</strong>."
+    ]
+  }
+}

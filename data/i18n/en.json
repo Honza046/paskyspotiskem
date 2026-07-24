@@ -15,8 +15,8 @@
       "it": "Italiano"
     },
     "htmlLang": "en",
-    "faq_title": "FAQ | Printed tapes: questions and answers",
-    "faq_description": "Common questions about printed tapes: minimum order, lead times, HOT MELT vs Acrylic, print, samples and shipping. Answers from manufacturer ALFA IN."
+    "faq_title": "Tips & advice | Printed tapes",
+    "faq_description": "Advice and recommendations for printed tapes: materials, adhesives, lead times, print and samples. Practical tips from ALFA IN."
   },
   "nav": {
     "tagline": "ALFA IN, manufacturing, consulting, sales and service",
@@ -173,13 +173,15 @@
       "width_label": "Tape width in mm",
       "length_label": "Tape length in metres",
       "quantity_label": "Requested quantity in rolls",
-      "quantity_hint": "Enter a number based on the selected adhesive.",
-      "quantity_min": "Akryl from 360 pcs, HOT MELT from 504 pcs.",
-      "quantity_min_acryl": "Minimum quantity from 360 pcs (Akryl).",
-      "quantity_min_hotmelt": "Minimum quantity from 504 pcs (HOT MELT).",
-      "quantity_tip": "Akryl from 360 pcs, HOT MELT from 504 pcs. Delivery approx. 3–4 weeks.",
-      "quantity_tip_acryl": "Minimum quantity from 360 pcs (Akryl). Delivery approx. 3–4 weeks.",
-      "quantity_tip_hotmelt": "Minimum quantity from 504 pcs (HOT MELT). Delivery approx. 3–4 weeks.",
+      "quantity_hint": "Minimum depends on adhesive and tape width.",
+      "quantity_min": "Minimum depends on adhesive and width (e.g. Akryl 50 mm from 360 pcs, HOT MELT 50 mm from 504 pcs).",
+      "quantity_min_acryl": "Minimum quantity from {min} pcs (Akryl, {width} mm).",
+      "quantity_min_hotmelt": "Minimum quantity from {min} pcs (HOT MELT, {width} mm).",
+      "quantity_tip": "Minimum depends on adhesive and width. Delivery approx. 3–4 weeks.",
+      "quantity_tip_acryl": "Minimum quantity from {min} pcs (Akryl, {width} mm). Delivery approx. 3–4 weeks.",
+      "quantity_tip_hotmelt": "Minimum quantity from {min} pcs (HOT MELT, {width} mm). Delivery approx. 3–4 weeks.",
+      "quantity_tip_dynamic": "Minimum quantity from {min} pcs ({adhesive}, {width} mm). Delivery approx. 3–4 weeks.",
+      "quantity_min_dynamic": "Minimum quantity from {min} pcs ({adhesive}, {width} mm).",
       "quantity_success": "🔥 Great choice! You have free shipping. Delivery takes approximately 3–4 weeks.",
       "validation": {
         "material_required": "Please select a material from the list.",
@@ -257,196 +259,218 @@
       "cta": "I want a sample"
     },
     "faq": {
-      "label": "FAQ",
-      "title": "Answers before you order",
-      "subtitle": "Common questions about printing, lead times and materials. Not sure? Contact us and we will help.",
-      "all_link": "Browse all questions and search →",
+      "label": "Advice before you order",
+      "title": "Tips worth knowing",
+      "subtitle": "Short recommendations on materials, adhesives, lead times and print. Not sure? Write to us — we are happy to advise.",
+      "all_link": "Open the full tips diary →",
       "items": {
         "0": {
-          "q": "What is the minimum order quantity?",
-          "a": "For BOPP tapes 360 pcs (Acrylic) or 504 pcs (HOT MELT); for paper and BOPET tapes the minimum depends individually on the print and crepe layer."
+          "q": "How to plan your order quantity?",
+          "a": "For BOPP tapes we usually start from 360 pcs (Acrylic) or 504 pcs (HOT MELT). For paper and BOPET tapes we fine-tune quantity by print and construction — we will recommend a practical start for your usage."
         },
         "1": {
-          "q": "How long does it take to produce printed tape?",
-          "a": "The standard lead time is 3 to 4 weeks from approval of the artwork and order. For urgent jobs we try to speed up delivery."
+          "q": "How to plan the delivery date?",
+          "a": "Allow 3 to 4 weeks from artwork approval and order. If you are in a hurry, put your target date in the inquiry and we will check what is realistically possible."
         },
         "2": {
-          "q": "Can I order tape without printing?",
-          "a": "Yes. We supply the same quality tapes without print, ideal for stock or immediate packaging."
+          "q": "When to choose unprinted tape?",
+          "a": "Plain tape works well as stock backup or for fast packing without branding. Material and adhesive quality stay the same — you can add print later when you want stronger shipment visuals."
         },
         "3": {
-          "q": "What is the difference between HOT MELT and Acrylic?",
-          "a": "HOT MELT bonds quickly and firmly even in the cold, ideal for warehouses and dispatch. Acrylic is quieter when unwinding and more UV-resistant, ideal for longer storage. More in <a href=\"/#lepidla\">Which adhesive to choose?</a>."
+          "q": "How to choose between HOT MELT and Acrylic?",
+          "a": "We recommend HOT MELT for cold areas and fast warehouse sealing. Acrylic is quieter when unwinding and more UV-resistant for longer storage. More in <a href=\"/#lepidla\">Which adhesive to choose?</a>."
         },
         "4": {
-          "q": "Do you provide free samples?",
-          "a": "Yes, for selected materials and existing artworks we are happy to send a test sample. In your inquiry write “I want a sample”."
+          "q": "How to try a material first?",
+          "a": "For selected materials and existing artworks we gladly send a test sample. Just note “I want a sample” in the inquiry."
         },
         "5": {
-          "q": "Which print technologies do you offer?",
-          "a": "Flexo print up to 8 colours and rotogravure up to 10 colours including high-quality reverse print. We recommend the right technology based on colours, volume and print quality needs."
+          "q": "Which print technology to choose?",
+          "a": "Flexo up to 8 colours and rotogravure up to 10 colours including solid underprint. Based on logo, colours and volume we recommend what fits brand and budget."
         }
       }
     }
   },
   "faq": {
-    "label": "FAQ",
-    "title": "Questions and answers",
-    "subtitle": "Find answers about printing, lead times, adhesives and samples. Filter by topic or search a keyword.",
-    "hero_cta": "Write a message",
-    "search_label": "Search questions",
+    "label": "Advice before you order",
+    "title": "A diary of tips for printed tapes",
+    "subtitle": "Practical recommendations on materials, adhesives, lead times and print. Filter by topic or search a keyword — and if you are unsure, write to us.",
+    "hero_cta": "Send a message",
+    "search_label": "Search tips",
     "search_placeholder": "Search… e.g. HOT MELT, sample, lead time",
-    "filters_label": "Topic filter",
+    "filters_label": "Tip topics",
     "filters": {
       "all": "All",
       "objednavka": "Ordering",
-      "vyroba": "Production & lead times",
-      "material": "Material & adhesive",
+      "vyroba": "Lead times & production",
+      "material": "Materials & adhesive",
       "potisk": "Print & artwork",
       "vzorky": "Samples"
     },
-    "more": "Show {n} more questions",
+    "more": "Show {n} more tips",
+    "less": "Show less",
     "count_preview": "Showing {shown} of {total}",
-    "count_all": "{n} questions",
+    "count_all": "{n} tips",
     "count_filtered": "Showing {visible} of {total}",
-    "empty_title": "No results",
-    "empty_text": "Try another keyword or filter. Or send us a message and we will help.",
-    "empty_cta": "Write a message →",
+    "empty_title": "Nothing found",
+    "empty_text": "Try another keyword or topic. Or write to us — we will recommend a concrete next step.",
+    "empty_cta": "Send a message →",
     "contact_label": "Contact",
-    "cta_title": "Didn’t find your answer?",
-    "cta_text": "Send us a short message and we will reply with an answer or a material and print recommendation.",
+    "cta_title": "Want tailored advice?",
+    "cta_text": "Send a short message and we will reply with a tip on material, adhesive or print for your packing.",
     "cta_button": "Send message",
     "form": {
       "name": "Full name",
       "email": "E-mail",
       "phone": "Phone",
-      "message": "Your question / message",
+      "message": "Your message / what to advise on",
       "message_placeholder": "Tell us what you need help with…",
       "gdpr": "By submitting you agree to the processing of personal data for handling this message.",
+      "gdpr_before": "By submitting you agree to the",
+      "gdpr_link": "processing of personal data",
+      "gdpr_after": "for handling this message.",
+      "gdpr_modal": {
+        "title": "Processing of personal data",
+        "close": "Close",
+        "intro": "Information pursuant to Art. 13 GDPR for completing and submitting the contact form on this page.",
+        "controller_heading": "Data controller",
+        "controller": "ALFA IN a.s., ID No. 255 35 366, č.p. 74, 675 21 Nová Ves u Třebíče, Czech Republic. Contact: epo@alfain.eu, tel. +420 568 840 009, www.alfain.eu",
+        "data_heading": "Data processed",
+        "data": "Name, e-mail, phone and the message / question text entered in the form.",
+        "purpose_heading": "Purpose and legal basis",
+        "purpose": "Handling the message, answering your question and possibly recommending a material or print. Legal basis: your consent (Art. 6(1)(a) GDPR) and steps prior to entering into a contract (Art. 6(1)(b) GDPR).",
+        "retention_heading": "Retention period",
+        "retention": "For the time needed to handle the message and at most 4 years from the last contact if no contract is concluded; in the case of a contractual relationship for the duration of the contract and thereafter as required by law.",
+        "recipients_heading": "Recipients",
+        "recipients": "Data may be disclosed to processors (IT administration, hosting, e-mail services) under data processing agreements and to relevant authorities where required by law.",
+        "rights_heading": "Your rights",
+        "rights": "You have the right of access, rectification, erasure, restriction of processing, data portability, objection and to lodge a complaint with the Office for Personal Data Protection (www.uoou.cz). Send requests to epo@alfain.eu.",
+        "full_link": "Full privacy policy"
+      },
       "sending": "Sending…",
       "success": "Thank you, your message was sent. We will get back to you soon.",
       "error": "Sending failed. Please e-mail us at karel.petrak@alfain.eu."
     },
     "items": {
       "moq": {
-        "q": "What is the minimum order quantity?",
-        "a": "For BOPP tapes 360 pcs (Acrylic) or 504 pcs (HOT MELT); for paper and BOPET tapes the minimum depends individually on the print and crepe layer.",
-        "search": "minimum moq quantity order bopp hot melt acrylic"
+        "q": "How to plan your order quantity?",
+        "a": "For BOPP tapes we usually start from 360 pcs (Acrylic) or 504 pcs (HOT MELT). For paper and BOPET tapes we fine-tune individually by print and construction — we will recommend a practical start for your offtake.",
+        "search": "minimum moq quantity order bopp hot melt acrylic tip advice"
       },
       "lead-time": {
-        "q": "How long does it take to produce printed tape?",
-        "a": "The standard lead time is 3 to 4 weeks from approval of the artwork and order. For urgent jobs we try to speed up delivery.",
-        "search": "lead time production weeks urgent shipping"
+        "q": "How to plan the delivery date?",
+        "a": "Allow 3 to 4 weeks from artwork approval and order. If you are in a hurry, put the target date in the inquiry — we will check production load and suggest a realistic path.",
+        "search": "lead time production weeks urgent dispatch planning tip"
       },
       "bez-potisku": {
-        "q": "Can I order tape without printing?",
-        "a": "Yes. We supply the same quality tapes without print, ideal for stock or immediate packaging.",
-        "search": "unprinted plain neutral tape without print"
+        "q": "When to choose unprinted tape?",
+        "a": "Plain tape suits stock backup or fast packing without branding. Material and adhesive quality stay the same — add print later when you want stronger shipment visuals.",
+        "search": "unprinted plain tape tip advice"
       },
       "lepidlo": {
-        "q": "What is the difference between HOT MELT and Acrylic?",
-        "a": "HOT MELT bonds quickly and firmly even in the cold, ideal for warehouses and dispatch. Acrylic is quieter when unwinding and more UV-resistant, ideal for longer storage. More in <a href=\"/#lepidla\">Which adhesive to choose?</a>.",
-        "search": "hot melt acrylic adhesive tack uv quiet unwind warehouse"
+        "q": "How to choose between HOT MELT and Acrylic?",
+        "a": "We recommend HOT MELT for cold areas and fast, firm sealing in warehouses and dispatch. Acrylic is quieter when unwinding and more UV-resistant for longer storage. More tips in <a href=\"/#lepidla\">Which adhesive to choose?</a>.",
+        "search": "hot melt acrylic adhesive uv quiet unwind storage tip"
       },
       "vzorky": {
-        "q": "Do you provide free samples?",
-        "a": "Yes, for selected materials and existing artworks we are happy to send a test sample. In your inquiry write “I want a sample”.",
-        "search": "sample free trial testing"
+        "q": "How to try a material first?",
+        "a": "For selected materials and existing artworks we gladly send a test sample. Note “I want a sample” in the inquiry — we will advise what is worth testing first.",
+        "search": "sample free trial tip"
       },
       "technologie": {
-        "q": "Which print technologies do you offer?",
-        "a": "Flexo print up to 8 colours and rotogravure up to 10 colours including high-quality reverse print. We recommend the right technology based on colours, volume and print quality needs.",
-        "search": "flexo rotogravure colours print technology reverse print"
+        "q": "Which print technology to choose?",
+        "a": "We offer flexo up to 8 colours and rotogravure up to 10 colours including solid underprint. Based on logo, colours, volume and quality needs we recommend what fits brand and operations.",
+        "search": "flexo rotogravure colours print technology tip"
       },
       "grafika": {
-        "q": "Will you prepare the artwork for me?",
-        "a": "Yes. Send your logo (ideally PDF/AI/SVG) and an idea of text or colours, we prepare a print preview for approval before production.",
-        "search": "artwork design logo preview pdf ai svg"
+        "q": "How to prepare print artwork?",
+        "a": "The easiest start is sending your logo (ideally PDF/AI/SVG) and a short idea of text or colours. We prepare a preview for approval — together we fine-tune so the print repeats cleanly on the tape.",
+        "search": "artwork logo preview design pdf ai svg tip"
       },
       "sirka": {
-        "q": "What tape widths and lengths do you make?",
-        "a": "The most common widths are 48 mm and 50 mm; other widths and roll lengths are handled individually by material and application (manual or machine packing).",
-        "search": "width length 48 mm 50 mm roll winding"
+        "q": "Which tape width and length to choose?",
+        "a": "Most often we recommend 50 mm (or 48 mm if that matches your current practice). Other widths and roll lengths we fine-tune by material and whether you pack by hand or on a line.",
+        "search": "width length 48 mm 50 mm roll tip advice"
       },
       "eko": {
-        "q": "Do you offer sustainable / ECO tapes?",
-        "a": "Yes, the ECO+ range (recycled BOPP), paper tapes and other sustainable options. Details are in the Sustainable tapes assortment.",
-        "search": "eco recycled sustainable paper fsc circular"
+        "q": "When to choose a sustainable tape?",
+        "a": "If you want a lower footprint, look at ECO+ (recycled BOPP), paper tapes and other sustainable options. We will recommend a mix that holds in operations and fits your brand. More in the Sustainable tapes range.",
+        "search": "eco recycled sustainable paper fsc tip"
       },
       "stroje": {
-        "q": "Are the tapes suitable for machine packing?",
-        "a": "Yes. Based on adhesive and material we recommend a variant for hand dispensers or for automatic packing lines.",
-        "search": "machine automatic line unwind dispenser"
+        "q": "How to choose tape for manual and machine packing?",
+        "a": "For hand packing you often appreciate quiet unwind and easy handling. For stacking or automatic lines we recommend material and adhesive by speed and applicator type — just describe your line.",
+        "search": "machine automation line dispenser tip"
       },
       "doprava": {
-        "q": "How do shipping and invoicing work?",
-        "a": "We deliver across Czechia and abroad. Shipping and payment terms are confirmed in the quote based on volume and destination.",
-        "search": "shipping invoicing delivery czech eu price"
+        "q": "How to plan shipping and invoicing?",
+        "a": "We deliver across Czechia and abroad. In the quote we clarify shipping and payment terms by volume and destination so you know how the shipment will arrive.",
+        "search": "shipping invoice delivery eu tip"
       },
       "skladovani": {
-        "q": "How should tapes be stored?",
-        "a": "Ideally dry, away from direct sun, at normal room temperature. Acrylic tapes handle longer storage better; with intensive use we recommend consuming HOT MELT sooner.",
-        "search": "storage temperature humidity shelf life"
+        "q": "How to store tapes well?",
+        "a": "Best kept dry, out of direct sun, at normal room temperature. Acrylic handles longer storage better; for HOT MELT we recommend using it sooner under heavy packing — so the tape keeps the performance you expect.",
+        "search": "storage temperature humidity shelf life tip"
       },
       "barvy": {
-        "q": "Can you print to Pantone or CMYK?",
-        "a": "Yes. We match colours to Pantone or a physical sample. For flexo and rotogravure we recommend suitable inks for the substrate (clear, white or coloured tape).",
-        "search": "pantone cmyk colour shade logo branding"
+        "q": "How to match print colours (Pantone / CMYK)?",
+        "a": "We match colours to Pantone or a sample. For flexo and rotogravure we recommend suitable inks by substrate (clear, white or coloured tape) so the logo looks consistent on the box.",
+        "search": "pantone cmyk colour branding tip"
       },
       "opakovat": {
-        "q": "Can I reorder later with the same artwork?",
-        "a": "Yes. We keep the approved design and print files, so a repeat order is faster without re-approving artwork (if nothing changes).",
-        "search": "repeat order reprint same artwork"
+        "q": "How to reorder the same artwork easily?",
+        "a": "We keep approved artwork and print data. Reorders are then faster — without re-approving graphics if nothing changes.",
+        "search": "reorder reprint same artwork tip"
       },
       "cena": {
         "q": "What affects the price of printed tape?",
-        "a": "Price depends on material, adhesive, roll width and length, number of colours, print technology and total volume. Send an inquiry and we will prepare a concrete quote.",
-        "search": "price quote calculation cost per roll"
+        "a": "Price comes from material, adhesive, width and roll length, colour count, print technology and total volume. Send an inquiry and we prepare a quote — and may suggest a tweak for better value.",
+        "search": "price quote calculation tip"
       },
       "papir-vs-bopp": {
-        "q": "When should I choose paper tape instead of BOPP?",
-        "a": "Paper tape suits eco packaging, recyclable cartons and brands that want a natural look. BOPP resists moisture better and is often more cost-effective at higher volumes. We are happy to advise for your process.",
-        "search": "paper bopp plastic eco carton"
+        "q": "When to choose paper tape vs BOPP?",
+        "a": "Paper suits eco packing, recyclable cartons and a natural brand look. BOPP handles humidity better and often works better at higher volumes. We gladly recommend based on your process and packing goals.",
+        "search": "paper bopp eco carton tip advice"
       },
       "bezpecnostni": {
-        "q": "Can you make security or warning tapes?",
-        "a": "Yes, warning prints, Fragile, Vorsicht Glas, VOID / tamper-evident and logistics texts. We prepare the design to your instructions and language variants.",
-        "search": "security void tamper warning fragile"
+        "q": "How to use security or warning print?",
+        "a": "Warnings, Fragile, Vorsicht Glas, VOID / tamper-evident and logistics texts help protect the shipment and brand. We prepare artwork by your brief and language versions so text stays readable when repeating on the tape.",
+        "search": "security void tamper warning fragile tip"
       },
       "zmena-grafiky": {
-        "q": "What if I need to change artwork after approval?",
-        "a": "Until plate-making / printing starts, changes are usually still possible. After production starts, changes may not be possible without extra cost and a new lead time, so check the preview carefully.",
-        "search": "artwork change correction approval"
+        "q": "What to check before approving artwork?",
+        "a": "The key is reviewing the preview carefully before production. Until printing plates / printing start, we can usually still adjust. After production starts, changes mean new costs and timing — so take a calm look at the preview and tell us early if something needs fine-tuning.",
+        "search": "artwork change approval tip advice"
       },
       "jadro": {
-        "q": "What core / cardboard tube do you use?",
-        "a": "We normally supply rolls with a standard paper core suitable for hand and machine unwinders. Special diameters and core strengths are handled individually for your line.",
-        "search": "core tube diameter cardboard"
+        "q": "Which core / tube to choose?",
+        "a": "As standard we supply a paper core suitable for hand and machine unwinders. Special diameters and strengths we fine-tune to your line — tell us the unwinder type and we will advise.",
+        "search": "core tube diameter tip"
       },
       "zahranici": {
-        "q": "Do you deliver outside Czechia?",
-        "a": "Yes. We ship to the EU and beyond, shipping and terms are agreed by destination and volume.",
-        "search": "abroad eu export delivery international"
+        "q": "How to handle delivery outside Czechia?",
+        "a": "We ship to the EU and beyond. Shipping and terms are agreed by destination and volume so you know timing and costs upfront.",
+        "search": "export eu delivery abroad tip"
       },
       "vzorek-potisk": {
-        "q": "Will I get a sample already with my print?",
-        "a": "For new artworks you usually approve a digital preview first. A physical printed sample is handled case by case, for existing designs or larger projects.",
-        "search": "printed sample preview trial"
+        "q": "How to validate print before a series?",
+        "a": "For new artwork we first approve a digital preview together — the fastest way to fine-tune colours and text. A physical printed sample is handled case by case, typically for existing designs or larger projects.",
+        "search": "print sample preview trial tip advice"
       },
       "urgentni": {
-        "q": "Can you do urgent / express production?",
-        "a": "For selected jobs yes, we always confirm the date based on plant capacity and print complexity. State your required date in the inquiry and we will reply with a realistic option.",
-        "search": "urgent express fast delivery"
+        "q": "What to do when you are in a hurry?",
+        "a": "For selected jobs we can speed up. We always check production load and print complexity. Put your target date in the inquiry — we reply with a realistic option and tips to prepare the job faster.",
+        "search": "urgent express fast delivery tip"
       },
       "odstranitelna": {
-        "q": "Do you have tapes that remove cleanly?",
-        "a": "Yes, removable tapes for cases where you do not want adhesive residue. We recommend the right type for the surface. See Removable tapes in the assortment.",
-        "search": "removable clean remove adhesive residue"
+        "q": "When to choose removable tape?",
+        "a": "It fits where you do not want adhesive residue. We recommend a type by surface and purpose. More in the Removable tapes range.",
+        "search": "removable clean residue tip"
       },
       "vice-jazyku": {
-        "q": "Can the tape text be in multiple languages?",
-        "a": "Yes. We often combine a logo with logistics texts in Czech, German, English and other languages, designed to stay readable when repeated along the tape.",
-        "search": "languages multilingual text mutation"
+        "q": "How to handle multi-language text?",
+        "a": "We often combine the logo with logistics texts in Czech, German, English and other languages. We prepare artwork so it stays readable when repeating along the tape — and advise on text hierarchy.",
+        "search": "languages multilingual text tip"
       }
     }
   },
@@ -475,7 +499,8 @@
           "label": "Adhesive",
           "options": {
             "hot-melt": "Hot Melt",
-            "acryl": "Acrylic"
+            "acryl": "Acrylic",
+            "extra-glue": "AC Extra Glue"
           }
         },
         "industry": {
@@ -543,7 +568,7 @@
       },
       "fenske": {
         "title": "Fenske logo tapes",
-        "description": "Two-colour FENSKE / Weine und Feinkost print on packing tape: branding for wine and gourmet shipments.",
+        "description": "Two-colour FENSKE / Weine und Feinkost print on paper tape: branding for wine and gourmet shipments.",
         "industry_label": "Food industry"
       },
       "just-nahrin": {
@@ -577,8 +602,8 @@
         "industry_label": "Manufacturing"
       },
       "irplast-warehouse-2": {
-        "title": "Automated warehouse Empoli",
-        "description": "View into the Empoli automated warehouse with high-density storage.",
+        "title": "Just-in-time delivery",
+        "description": "When you order ahead, we print the film first. Only shortly before delivery do we slit it, apply adhesive and ship the tape. Just in time — a fresh product exactly when you need it, without surplus stock of finished rolls.",
         "industry_label": "Manufacturing"
       },
       "irplast-shuttle": {

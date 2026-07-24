@@ -15,8 +15,8 @@
       "it": "Italiano"
     },
     "htmlLang": "cs",
-    "faq_title": "FAQ | Pásky s potiskem: otázky a odpovědi",
-    "faq_description": "Časté otázky k páskám s potiskem: minimální odběr, dodací lhůty, HOT MELT vs Akryl, potisk, vzorky a doprava. Odpovědi od výrobce ALFA IN."
+    "faq_title": "Rady a tipy | Pásky s potiskem",
+    "faq_description": "Rady a doporučení k páskám s potiskem: materiál, lepidlo, termíny, potisk a vzorky. Praktické tipy od výrobce ALFA IN."
   },
   "nav": {
     "tagline": "ALFA IN: výroba, poradenství, prodej a servis",
@@ -173,13 +173,15 @@
       "width_label": "Šíře pásky v mm",
       "length_label": "Délka pásky v metrech",
       "quantity_label": "Poptávané množství v kusech",
-      "quantity_hint": "Zadejte číslo podle zvoleného lepidla.",
-      "quantity_min": "Akryl od 360 ks, HOT MELT od 504 ks.",
-      "quantity_min_acryl": "Minimální množství od 360 ks (Akryl).",
-      "quantity_min_hotmelt": "Minimální množství od 504 ks (HOT MELT).",
-      "quantity_tip": "Akryl od 360 ks, HOT MELT od 504 ks. Dodání cca 3–4 týdny.",
-      "quantity_tip_acryl": "Minimální množství od 360 ks (Akryl). Dodání cca 3–4 týdny.",
-      "quantity_tip_hotmelt": "Minimální množství od 504 ks (HOT MELT). Dodání cca 3–4 týdny.",
+      "quantity_hint": "Zadejte číslo podle zvoleného lepidla a šíře pásky.",
+      "quantity_min": "Minimum závisí na lepidle a šíři (např. Akryl 50 mm od 360 ks, HOT MELT 50 mm od 504 ks).",
+      "quantity_min_acryl": "Minimální množství od {min} ks (Akryl, {width} mm).",
+      "quantity_min_hotmelt": "Minimální množství od {min} ks (HOT MELT, {width} mm).",
+      "quantity_tip": "Minimum závisí na lepidle a šíři. Dodání cca 3–4 týdny.",
+      "quantity_tip_acryl": "Minimální množství od {min} ks (Akryl, {width} mm). Dodání cca 3–4 týdny.",
+      "quantity_tip_hotmelt": "Minimální množství od {min} ks (HOT MELT, {width} mm). Dodání cca 3–4 týdny.",
+      "quantity_tip_dynamic": "Minimální množství od {min} ks ({adhesive}, {width} mm). Dodání cca 3–4 týdny.",
+      "quantity_min_dynamic": "Minimální množství od {min} ks ({adhesive}, {width} mm).",
       "quantity_success": "🔥 Skvělá volba! Máte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
       "validation": {
         "material_required": "Vyberte materiál ze seznamu.",
@@ -257,196 +259,218 @@
       "cta": "Mám zájem o vzorek"
     },
     "faq": {
-      "label": "Časté dotazy",
-      "title": "Odpovědi před objednávkou",
-      "subtitle": "Nejčastější otázky k potisku, dodacím lhůtám a výběru materiálu. Pokud si nejste jistí, napište nám, poradíme.",
-      "all_link": "Zobrazit všechny otázky a vyhledávání →",
+      "label": "Rady před objednávkou",
+      "title": "Tipy, které se hodí znát",
+      "subtitle": "Krátká doporučení k materiálu, lepidlu, termínům a potisku. Když si nejste jistí, napište nám — rádi poradíme.",
+      "all_link": "Otevřít celý deník tipů →",
       "items": {
         "0": {
-          "q": "Jaké je minimální množství objednávky?",
-          "a": "U BOPP pásek 360 ks (Akryl) nebo 504 ks (HOT MELT); u papírových a BOPET pásek závisí minimální odběr individuálně na potisku a krepové vrstvě."
+          "q": "Jak naplánovat množství objednávky?",
+          "a": "U BOPP pásek obvykle vycházíme od 360 ks (Akryl) nebo 504 ks (HOT MELT). U papírových a BOPET pásek množství ladíme podle potisku a konstrukce — doporučíme, co dává smysl pro váš provoz."
         },
         "1": {
-          "q": "Jak dlouho trvá výroba pásky s potiskem?",
-          "a": "Standardní dodací lhůta je 3 až 4 týdny od schválení grafického návrhu a objednávky. U urgentních zakázek se snažíme dodání urychlit."
+          "q": "Jak si naplánovat termín dodání?",
+          "a": "Počítejte se 3 až 4 týdny od schválení grafiky a objednávky. Když spěcháte, napište požadovaný termín do poptávky a ověříme, co je reálně možné."
         },
         "2": {
-          "q": "Mohu objednat pásku i bez potisku?",
-          "a": "Ano. Pásky dodáváme ve stejné kvalitě i bez potisku, ideální pro skladové zásoby nebo okamžité balení."
+          "q": "Kdy zvolit pásku bez potisku?",
+          "a": "Neutrální páska se hodí jako skladová rezerva nebo pro rychlé balení. Stejná kvalita materiálu i lepidla — potisk můžete doplnit později."
         },
         "3": {
-          "q": "Jaký je rozdíl mezi HOT MELT a Akryl?",
-          "a": "HOT MELT rychle a pevně přilne i v chladu, vhodný do skladů a expedice. Akryl je tišší při odvíjení a odolnější vůči UV, ideální pro dlouhodobé skladování. Více v sekci <a href=\"/#lepidla\">Jaké lepidlo zvolit?</a>."
+          "q": "Jak vybrat mezi HOT MELT a Akrylem?",
+          "a": "HOT MELT doporučujeme do chladu a na rychlé balení ve skladu. Akryl je tišší při odvíjení a odolnější vůči UV při delším skladování. Více v sekci <a href=\"/#lepidla\">Jaké lepidlo zvolit?</a>."
         },
         "4": {
-          "q": "Dodáváte vzorky zdarma?",
-          "a": "Ano, u vybraných materiálů a u stávajících grafických návrhů vám rádi zašleme testovací vzorek. V poptávce uveďte „Mám zájem o vzorek“."
+          "q": "Jak si vyzkoušet materiál nanečisto?",
+          "a": "U vybraných materiálů a stávajících návrhů rádi pošleme testovací vzorek. V poptávce stačí uvést „Mám zájem o vzorek“."
         },
         "5": {
-          "q": "Jaké technologie potisku nabízíte?",
-          "a": "Flexotisk až 8 barev a rototisk až 10 barev včetně kvalitního spodního tisku. Vhodnou technologii doporučíme podle nároku na barvy, množství a požadovanou kvalitu tisku."
+          "q": "Jakou technologii potisku zvolit?",
+          "a": "Flexotisk až 8 barev a rototisk až 10 barev včetně kvalitního spodního tisku. Podle logo, počtu barev a objemu doporučíme variantu, která sedí brandu i rozpočtu."
         }
       }
     }
   },
   "faq": {
-    "label": "Časté dotazy",
-    "title": "Otázky a odpovědi",
-    "subtitle": "Najděte odpověď na potisk, termíny, lepidla i vzorky. Filtrujte podle tématu nebo hledejte klíčové slovo.",
+    "label": "Rady před objednávkou",
+    "title": "Deník tipů k páskám s potiskem",
+    "subtitle": "Praktická doporučení k materiálu, lepidlu, termínům a potisku. Filtrujte podle tématu nebo hledejte klíčové slovo — a když si nejste jistí, napište nám.",
     "hero_cta": "Napsat zprávu",
-    "search_label": "Hledat v otázkách",
+    "search_label": "Hledat v tipách",
     "search_placeholder": "Hledat… např. HOT MELT, vzorek, dodací lhůta",
-    "filters_label": "Filtr témat",
+    "filters_label": "Témata tipů",
     "filters": {
       "all": "Vše",
       "objednavka": "Objednávka",
-      "vyroba": "Výroba a termíny",
+      "vyroba": "Termíny a výroba",
       "material": "Materiál a lepidlo",
       "potisk": "Potisk a grafika",
       "vzorky": "Vzorky"
     },
-    "more": "Zobrazit dalších {n} otázek",
+    "more": "Zobrazit dalších {n} tipů",
+    "less": "Zobrazit méně",
     "count_preview": "Zobrazeno {shown} z {total}",
-    "count_all": "{n} otázek",
+    "count_all": "{n} tipů",
     "count_filtered": "Zobrazeno {visible} z {total}",
     "empty_title": "Nic jsme nenašli",
-    "empty_text": "Zkuste jiné klíčové slovo nebo vyberte jiný filtr. Případně nám napište a poradíme.",
+    "empty_text": "Zkuste jiné klíčové slovo nebo jiné téma. Nebo nám napište — doporučíme konkrétní postup.",
     "empty_cta": "Napsat zprávu →",
     "contact_label": "Kontakt",
-    "cta_title": "Nenašli jste odpověď?",
-    "cta_text": "Napište nám krátkou zprávu a ozveme se s odpovědí nebo doporučením materiálu a potisku.",
+    "cta_title": "Chcete doporučení na míru?",
+    "cta_text": "Napište krátkou zprávu a ozveme se s tipem na materiál, lepidlo nebo potisk podle vašeho balení.",
     "cta_button": "Odeslat zprávu",
     "form": {
       "name": "Jméno a příjmení",
       "email": "E-mail",
       "phone": "Telefon",
-      "message": "Vaše otázka / zpráva",
+      "message": "Vaše zpráva / s čím poradit",
       "message_placeholder": "Napište, s čím potřebujete poradit…",
       "gdpr": "Odesláním souhlasíte se zpracováním osobních údajů za účelem vyřízení zprávy.",
+      "gdpr_before": "Odesláním souhlasíte se",
+      "gdpr_link": "zpracováním osobních údajů",
+      "gdpr_after": "za účelem vyřízení zprávy.",
+      "gdpr_modal": {
+        "title": "Zpracování osobních údajů",
+        "close": "Zavřít",
+        "intro": "Informace podle čl. 13 nařízení GDPR k vyplnění a odeslání kontaktního formuláře na této stránce.",
+        "controller_heading": "Správce osobních údajů",
+        "controller": "ALFA IN a.s., IČ 255 35 366, č.p. 74, 675 21 Nová Ves u Třebíče. Kontakt: epo@alfain.eu, tel. +420 568 840 009, www.alfain.eu",
+        "data_heading": "Zpracovávané údaje",
+        "data": "Jméno a příjmení, e-mail, telefon a text zprávy / otázky uvedené ve formuláři.",
+        "purpose_heading": "Účel a právní základ",
+        "purpose": "Vyřízení zprávy, odpověď na dotaz a případné doporučení materiálu či potisku. Právním titulem je váš souhlas (čl. 6 odst. 1 písm. a) GDPR) a jednání před uzavřením smlouvy (čl. 6 odst. 1 písm. b) GDPR).",
+        "retention_heading": "Doba uchovávání",
+        "retention": "Po dobu vyřízení zprávy a nejdéle 4 roky od posledního kontaktu, pokud nedojde k uzavření smlouvy; v případě smluvního vztahu po dobu trvání smlouvy a dále dle zákona.",
+        "recipients_heading": "Příjemci údajů",
+        "recipients": "Údaje mohou být zpřístupněny zpracovatelům (IT správa, hosting, e-mailové služby) na základě smluv o zpracování osobních údajů a příslušným orgánům, pokud to ukládá zákon.",
+        "rights_heading": "Vaše práva",
+        "rights": "Máte právo na přístup, opravu, výmaz, omezení zpracování, přenositelnost údajů, vznesení námitky a podání stížnosti u Úřadu pro ochranu osobních údajů (www.uoou.cz). Žádosti zasílejte na epo@alfain.eu.",
+        "full_link": "Úplné znění zásad ochrany osobních údajů"
+      },
       "sending": "Odesílám…",
       "success": "Děkujeme, zpráva byla odeslána. Ozveme se co nejdřív.",
       "error": "Odeslání se nezdařilo. Napište nám prosím na karel.petrak@alfain.eu."
     },
     "items": {
       "moq": {
-        "q": "Jaké je minimální množství objednávky?",
-        "a": "U BOPP pásek 360 ks (Akryl) nebo 504 ks (HOT MELT); u papírových a BOPET pásek závisí minimální odběr individuálně na potisku a krepové vrstvě.",
-        "search": "minimum moq odběr množství kusy objednávka bopp hot melt akryl"
+        "q": "Jak naplánovat množství objednávky?",
+        "a": "U BOPP pásek obvykle vycházíme od 360 ks (Akryl) nebo 504 ks (HOT MELT). U papírových a BOPET pásek množství ladíme individuálně podle potisku a konstrukce — doporučíme praktický start podle vašeho odběru.",
+        "search": "minimum moq odběr množství kusy objednávka bopp hot melt akryl tip doporučení"
       },
       "lead-time": {
-        "q": "Jak dlouho trvá výroba pásky s potiskem?",
-        "a": "Standardní dodací lhůta je 3 až 4 týdny od schválení grafického návrhu a objednávky. U urgentních zakázek se snažíme dodání urychlit.",
-        "search": "dodací lhůta výroba termín týdny urgentní expedice"
+        "q": "Jak si naplánovat termín dodání?",
+        "a": "Počítejte se 3 až 4 týdny od schválení grafického návrhu a objednávky. Když spěcháte, napište požadovaný termín do poptávky — ověříme vytížení výroby a navrhneme reálný postup.",
+        "search": "dodací lhůta výroba termín týdny urgentní expedice plánování"
       },
       "bez-potisku": {
-        "q": "Mohu objednat pásku i bez potisku?",
-        "a": "Ano. Pásky dodáváme ve stejné kvalitě i bez potisku, ideální pro skladové zásoby nebo okamžité balení.",
-        "search": "bez potisku nepotištěná neutrální páska"
+        "q": "Kdy zvolit pásku bez potisku?",
+        "a": "Neutrální páska se hodí jako skladová rezerva nebo pro rychlé balení bez brandingu. Kvalita materiálu a lepidla zůstává stejná — potisk můžete doplnit, až budete chtít posílit vizuál zásilek.",
+        "search": "bez potisku nepotištěná neutrální páska doporučení"
       },
       "lepidlo": {
-        "q": "Jaký je rozdíl mezi HOT MELT a Akryl?",
-        "a": "HOT MELT rychle a pevně přilne i v chladu, vhodný do skladů a expedice. Akryl je tišší při odvíjení a odolnější vůči UV, ideální pro dlouhodobé skladování. Více v sekci <a href=\"/#lepidla\">Jaké lepidlo zvolit?</a>.",
-        "search": "hot melt akryl lepidlo přilnavost uv tiché odvíjení sklad"
+        "q": "Jak vybrat mezi HOT MELT a Akrylem?",
+        "a": "HOT MELT doporučujeme do chladu a na rychlé, pevné zalepení ve skladu a expedici. Akryl je tišší při odvíjení a odolnější vůči UV při delším skladování. Více tipů najdete v sekci <a href=\"/#lepidla\">Jaké lepidlo zvolit?</a>.",
+        "search": "hot melt akryl lepidlo přilnavost uv tiché odvíjení sklad doporučení"
       },
       "vzorky": {
-        "q": "Dodáváte vzorky zdarma?",
-        "a": "Ano, u vybraných materiálů a u stávajících grafických návrhů vám rádi zašleme testovací vzorek. V poptávce uveďte „Mám zájem o vzorek“.",
-        "search": "vzorek zdarma testování trial sample"
+        "q": "Jak si vyzkoušet materiál nanečisto?",
+        "a": "U vybraných materiálů a stávajících grafických návrhů rádi pošleme testovací vzorek. V poptávce stačí uvést „Mám zájem o vzorek“ — poradíme, co dává smysl vyzkoušet jako první.",
+        "search": "vzorek zdarma testování trial sample tip"
       },
       "technologie": {
-        "q": "Jaké technologie potisku nabízíte?",
-        "a": "Flexotisk až 8 barev a rototisk až 10 barev včetně kvalitního spodního tisku. Vhodnou technologii doporučíme podle nároku na barvy, množství a požadovanou kvalitu tisku.",
-        "search": "flexotisk rototisk barvy tisk technologie spodní tisk"
+        "q": "Jakou technologii potisku zvolit?",
+        "a": "Nabízíme flexotisk až 8 barev a rototisk až 10 barev včetně kvalitního spodního tisku. Podle logo, počtu barev, objemu a požadované kvality doporučíme technologii, která sedí brandu i provozu.",
+        "search": "flexotisk rototisk barvy tisk technologie spodní tisk doporučení"
       },
       "grafika": {
-        "q": "Připravíte grafický návrh za mě?",
-        "a": "Ano. Pošlete logo (ideálně PDF/AI/SVG) a představu o textu nebo barevnosti, připravíme náhled potisku ke schválení před výrobou.",
-        "search": "grafika návrh logo náhled design pdf ai svg"
+        "q": "Jak připravit grafiku potisku?",
+        "a": "Nejjednodušší je poslat logo (ideálně PDF/AI/SVG) a krátkou představu o textu nebo barevnosti. Připravíme náhled ke schválení — společně doladíme, aby potisk na pásce seděl i při opakování.",
+        "search": "grafika návrh logo náhled design pdf ai svg tip"
       },
       "sirka": {
-        "q": "Jaké šířky a délky pásek vyrábíte?",
-        "a": "Nejběžnější šířky jsou 48 mm a 50 mm; další šířky a délky navíjení řešíme individuálně podle materiálu a aplikace (ruční i strojní balení).",
-        "search": "šířka délka 48 mm 50 mm role navíjení"
+        "q": "Jakou šířku a délku pásky zvolit?",
+        "a": "Nejčastěji doporučujeme 50 mm (případně 48 mm podle vaší stávající praxe). Další šířky a délky navíjení ladíme podle materiálu a toho, jestli balíte ručně, nebo na lince.",
+        "search": "šířka délka 48 mm 50 mm role navíjení doporučení"
       },
       "eko": {
-        "q": "Máte udržitelné / ECO pásky?",
-        "a": "Ano, řada ECO+ (recyklovaný BOPP), papírové pásky a další udržitelné varianty. Podrobnosti najdete v sortimentu Udržitelné pásky.",
-        "search": "eco eko recyklace udržitelná papírová fsc cirkulární"
+        "q": "Kdy sáhnout po udržitelné pásce?",
+        "a": "Pokud chcete snížit stopu balení, podívejte se na ECO+ (recyklovaný BOPP), papírové pásky a další udržitelné varianty. Rádi doporučíme kombinaci, která drží v provozu a ladí s vaším brandem. Více v sortimentu Udržitelné pásky.",
+        "search": "eco eko recyklace udržitelná papírová fsc cirkulární tip"
       },
       "stroje": {
-        "q": "Hodí se pásky i na strojní balení?",
-        "a": "Ano. Podle lepidla a materiálu doporučíme variantu pro ruční odvíjení nebo pro stohovací / automatické balicí linky.",
-        "search": "strojní automatizace linka odvíjení dispenser"
+        "q": "Jak vybrat pásku pro ruční a strojní balení?",
+        "a": "Pro ruční odvíjení často oceníte tiché odvíjení a pohodlnou manipulaci. Pro stohovací nebo automatické linky doporučíme materiál a lepidlo podle rychlosti a typu aplikátoru — stačí popsat vaši linku.",
+        "search": "strojní automatizace linka odvíjení dispenser doporučení"
       },
       "doprava": {
-        "q": "Jak probíhá doprava a fakturace?",
-        "a": "Dodáváme po celé ČR i do zahraničí. Podmínky dopravy a splatnosti upřesníme v nabídce podle objemu a místa doručení.",
-        "search": "doprava fakturace dodání čr eu cena"
+        "q": "Jak naplánovat dopravu a fakturaci?",
+        "a": "Dodáváme po celé ČR i do zahraničí. V nabídce upřesníme dopravu a splatnost podle objemu a místa doručení, ať víte dopředu, jak zásilka dorazí.",
+        "search": "doprava fakturace dodání čr eu cena tip"
       },
       "skladovani": {
-        "q": "Jak pásky správně skladovat?",
-        "a": "Ideálně v suchu, mimo přímé slunce, při běžné pokojové teplotě. Akrylové pásky lépe snášejí delší skladování; HOT MELT doporučujeme spotřebovat dříve při intenzivním používání.",
-        "search": "skladování teplota vlhkost životnost"
+        "q": "Jak pásky dobře skladovat?",
+        "a": "Nejlíp v suchu, mimo přímé slunce, při běžné pokojové teplotě. Akryl lépe snáší delší skladování; HOT MELT doporučujeme spotřebovat dříve při intenzivním balení — tak páska drží výkon, na který jste zvyklí.",
+        "search": "skladování teplota vlhkost životnost tip doporučení"
       },
       "barvy": {
-        "q": "Lze tisknout podle Pantone nebo CMYK?",
-        "a": "Ano. Barvy ladíme podle Pantone nebo vzorku. U flexotisku a rototisku doporučíme vhodné barvy podle podkladu (transparentní, bílá, barevná páska).",
-        "search": "pantone cmyk barva odstín logo branding"
+        "q": "Jak ladit barvy potisku (Pantone / CMYK)?",
+        "a": "Barvy ladíme podle Pantone nebo vzorku. U flexotisku i rototisku doporučíme vhodné barvy podle podkladu (transparentní, bílá nebo barevná páska), aby logo na krabici působilo konzistentně.",
+        "search": "pantone cmyk barva odstín logo branding tip"
       },
       "opakovat": {
-        "q": "Mohu objednávku později zopakovat se stejnou grafikou?",
-        "a": "Ano. Schválený návrh a tiskové podklady uchováváme, takže opakovanou objednávku připravíme rychleji bez nutnosti znovu schvalovat grafiku (pokud nic neměníte).",
-        "search": "opakovaná objednávka reprint stejná grafika"
+        "q": "Jak jednoduše zopakovat stejnou grafiku?",
+        "a": "Schválený návrh a tiskové podklady uchováváme. Opakovanou objednávku tak připravíme rychleji — bez znovu schvalování grafiky, pokud nic neměníte.",
+        "search": "opakovaná objednávka reprint stejná grafika tip"
       },
       "cena": {
-        "q": "Od čeho se odvíjí cena pásky s potiskem?",
-        "a": "Cenu ovlivňuje materiál, lepidlo, šířka a délka role, počet barev, technologie tisku a celkový objem. Pošlete poptávku a připravíme konkrétní nabídku.",
-        "search": "cena nabídka kalkulace cena za kus"
+        "q": "Co ovlivňuje cenu pásky s potiskem?",
+        "a": "Cenu tvoří materiál, lepidlo, šířka a délka role, počet barev, technologie tisku a celkový objem. Pošlete poptávku a připravíme nabídku — případně doporučíme úpravu, která dává lepší poměr cena/výkon.",
+        "search": "cena nabídka kalkulace cena za kus tip"
       },
       "papir-vs-bopp": {
-        "q": "Kdy zvolit papírovou pásku místo BOPP?",
-        "a": "Papírová páska se hodí pro eko balení, recyklovatelné kartony a brand, kde chcete přírodní vzhled. BOPP je odolnější vůči vlhkosti a často výhodnější při vyšších objemech. Rádi doporučíme podle vašeho procesu.",
-        "search": "papírová bopp plast eko karton"
+        "q": "Kdy zvolit papírovou pásku a kdy BOPP?",
+        "a": "Papír se hodí pro eko balení, recyklovatelné kartony a přírodní vzhled brandu. BOPP lépe snáší vlhkost a často vychází výhodněji při vyšších objemech. Rádi doporučíme podle vašeho procesu a cílů balení.",
+        "search": "papírová bopp plast eko karton doporučení"
       },
       "bezpecnostni": {
-        "q": "Umíte bezpečnostní nebo výstražné pásky?",
-        "a": "Ano, potisk varování, Fragile, Vorsicht Glas, VOID / tamper-evident a logistické texty. Návrh připravíme podle vašich instrukcí a jazykových mutací.",
-        "search": "bezpečnostní void tamper výstražná fragile"
+        "q": "Jak využít bezpečnostní nebo výstražný potisk?",
+        "a": "Varování, Fragile, Vorsicht Glas, VOID / tamper-evident i logistické texty pomáhají chránit zásilku a brand. Návrh připravíme podle instrukcí a jazykových mutací, ať je text čitelný i při opakování na pásce.",
+        "search": "bezpečnostní void tamper výstražná fragile tip"
       },
       "zmena-grafiky": {
-        "q": "Co když potřebuji upravit grafiku po schválení?",
-        "a": "Dokud nezačne výroba tiskových forem / tisk, změny obvykle stihneme. Po spuštění výroby už úpravy nemusí být možné bez nových nákladů a termínu, proto si náhled pečlivě zkontrolujte.",
-        "search": "změna grafiky korekce schválení"
+        "q": "Na co myslet před schválením grafiky?",
+        "a": "Nejdůležitější je pečlivě zkontrolovat náhled před výrobou. Dokud neběží výroba tiskových forem / tisk, změny obvykle stihneme. Po startu výroby už úpravy znamenají nové náklady a termín — proto si náhled projděte v klidu a ozvěte se hned, když něco doladit.",
+        "search": "změna grafiky korekce schválení tip doporučení"
       },
       "jadro": {
-        "q": "Jaké jádro / dutinku pásky používáte?",
-        "a": "Standardně dodáváme role s běžnou papírovou dutinkou vhodnou pro ruční i strojní odvíječe. Speciální průměry a pevnosti jádra řešíme individuálně podle vaší linky.",
-        "search": "jádro dutinka core průměr"
+        "q": "Jakou dutinku / jádro zvolit?",
+        "a": "Standardně dodáváme papírovou dutinku vhodnou pro ruční i strojní odvíječe. Speciální průměry a pevnosti jádra ladíme podle vaší linky — napište typ odvíječe a doporučíme.",
+        "search": "jádro dutinka core průměr tip"
       },
       "zahranici": {
-        "q": "Dodáváte i mimo Českou republiku?",
-        "a": "Ano. Zásilky posíláme do EU i dále, dopravu a podmínky domluvíme podle destinace a objemu.",
-        "search": "zahraničí eu export dodání"
+        "q": "Jak řešit dodání mimo ČR?",
+        "a": "Zásilky posíláme do EU i dále. Dopravu a podmínky domluvíme podle destinace a objemu, ať víte dopředu termín i náklady.",
+        "search": "zahraničí eu export dodání tip"
       },
       "vzorek-potisk": {
-        "q": "Dostanu vzorek už s mým potiskem?",
-        "a": "U nových grafik obvykle nejdřív schválíte digitální náhled. Fyzický vzorek s potiskem řešíme individuálně, u stávajících návrhů nebo při větších projektech.",
-        "search": "vzorek potisk náhled trial"
+        "q": "Jak ověřit potisk před sérií?",
+        "a": "U nových grafik nejdřív společně schválíte digitální náhled — to je nejrychlejší způsob, jak doladit barvy a text. Fyzický vzorek s potiskem řešíme individuálně, typicky u stávajících návrhů nebo větších projektů.",
+        "search": "vzorek potisk náhled trial tip doporučení"
       },
       "urgentni": {
-        "q": "Umíte urgentní / express výrobu?",
-        "a": "U vybraných zakázek ano, termín vždy ověříme podle vytížení výroby a složitosti potisku. Napište v poptávce požadovaný termín, ozveme se s reálnou možností.",
-        "search": "urgentní express rychlé dodání"
+        "q": "Jak postupovat, když spěcháte?",
+        "a": "U vybraných zakázek umíme termín zrychlit. Vždy ale ověříme vytížení výroby a složitost potisku. Napište požadovaný termín do poptávky — ozveme se s reálnou možností a tipem, jak zakázku připravit rychleji.",
+        "search": "urgentní express rychlé dodání tip"
       },
       "odstranitelna": {
-        "q": "Máte pásky, které jdou čistě odstranit?",
-        "a": "Ano, odstranitelné (removable) pásky vhodné tam, kde nechcete zanechat zbytky lepidla. Doporučíme vhodný typ podle povrchu. Více v sortimentu Odstranitelné pásky.",
-        "search": "odstranitelná removable clean remove lepidlo"
+        "q": "Kdy zvolit odstranitelnou pásku?",
+        "a": "Hodí se tam, kde nechcete zanechat zbytky lepidla. Doporučíme typ podle povrchu a účelu. Více v sortimentu Odstranitelné pásky.",
+        "search": "odstranitelná removable clean remove lepidlo tip"
       },
       "vice-jazyku": {
-        "q": "Můžu mít na pásce text ve více jazycích?",
-        "a": "Ano. Často kombinujeme logo s logistickými texty v češtině, němčině, angličtině i dalších jazycích, návrh připravíme tak, aby byl čitelný i při opakování po délce pásky.",
-        "search": "jazyky mutace text multilingual"
+        "q": "Jak řešit text ve více jazycích?",
+        "a": "Často kombinujeme logo s logistickými texty v češtině, němčině, angličtině i dalších jazycích. Návrh připravíme tak, aby byl čitelný i při opakování po délce pásky — poradíme s hierarchií textů.",
+        "search": "jazyky mutace text multilingual tip"
       }
     }
   },
@@ -475,7 +499,8 @@
           "label": "Lepidlo",
           "options": {
             "hot-melt": "HOT MELT",
-            "acryl": "Akryl"
+            "acryl": "Akryl",
+            "extra-glue": "AC Extra Glue"
           }
         },
         "industry": {
@@ -544,7 +569,7 @@
       },
       "fenske": {
         "title": "Pásky s logem Fenske",
-        "description": "Dvoubarevný potisk FENSKE / Weine und Feinkost na balicí pásce: branding zásilek vína a delikates.",
+        "description": "Dvoubarevný potisk FENSKE / Weine und Feinkost na papírové pásce: branding zásilek vína a delikates.",
         "industry_label": "Potraviny"
       },
       "just-nahrin": {
@@ -578,8 +603,8 @@
         "industry_label": "Výroba"
       },
       "irplast-warehouse-2": {
-        "title": "Automatizovaný sklad Empoli",
-        "description": "Pohled do automatizovaného skladu závodu Empoli s vysokohustotním skladováním.",
+        "title": "Just in Time dodávky",
+        "description": "Když objednáte dopředu, nejdřív potiskneme fólii. Těsně před dodáním ji teprve nařežeme, naneseme lepidlo a pásku odešleme. Just in Time — čerstvý produkt přesně včas, bez zbytečných zásob hotových rolí.",
         "industry_label": "Výroba"
       },
       "irplast-shuttle": {

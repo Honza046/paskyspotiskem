@@ -96,6 +96,24 @@ function parseRecipients() {
     return raw.split(',').map(function (s) { return s.trim(); }).filter(Boolean);
 }
 
+/** Minimální množství podle lepidla a šíře (mm) – proporcionální MOQ */
+const QTY_MIN_BY_WIDTH = {
+    hotmelt: { 19: 1344, 25: 1008, 38: 672, 50: 504, 75: 336 },
+    acryl: { 19: 960, 25: 720, 38: 480, 50: 360, 75: 240 },
+};
+
+function isAcrylAdhesive(adhesive) {
+    const value = String(adhesive || '');
+    return value === 'Akryl' || value === 'ACRYL';
+}
+
+function getMinQuantity(adhesive, widthMm) {
+    const table = isAcrylAdhesive(adhesive) ? QTY_MIN_BY_WIDTH.acryl : QTY_MIN_BY_WIDTH.hotmelt;
+    const width = Number(widthMm) || 50;
+    if (table[width]) return table[width];
+    return isAcrylAdhesive(adhesive) ? 360 : 504;
+}
+
 function validatePayload(body) {
     const errors = [];
     const isFaqContact = body.source === 'faq-contact';
@@ -111,7 +129,10 @@ function validatePayload(body) {
     if (!body.materialLabel) errors.push('Vyberte typ materiálu.');
     if (!body.adhesive) errors.push('Vyberte typ lepidla.');
     if (!body.baseColor) errors.push('Vyberte podkladovou barvu.');
-    if (!body.quantity || Number(body.quantity) < 360) errors.push('Minimální množství je 360 ks.');
+    const minQty = getMinQuantity(body.adhesive, body.widthMm);
+    if (!body.quantity || Number(body.quantity) < minQty) {
+        errors.push('Minimální množství je ' + minQty + ' ks.');
+    }
     if (!body.company) errors.push('Vyplňte název společnosti.');
     if (!body.ico) errors.push('Vyplňte IČ.');
     if (!body.contactName) errors.push('Vyplňte jméno kontaktní osoby.');

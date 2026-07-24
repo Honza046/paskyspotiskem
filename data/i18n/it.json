@@ -15,8 +15,8 @@
       "it": "Italiano"
     },
     "htmlLang": "it",
-    "faq_title": "FAQ | Nastri stampati: domande e risposte",
-    "faq_description": "Domande frequenti sui nastri stampati: quantità minima, tempi, HOT MELT vs Akryl, stampa, campioni e spedizione. Risposte dal produttore ALFA IN."
+    "faq_title": "Consigli e suggerimenti | Nastri stampati",
+    "faq_description": "Consigli e raccomandazioni sui nastri stampati: materiali, adesivi, tempi, stampa e campioni. Suggerimenti pratici da ALFA IN."
   },
   "nav": {
     "tagline": "ALFA IN, produzione, consulenza, vendita e assistenza",
@@ -173,13 +173,15 @@
       "width_label": "Larghezza del nastro in mm",
       "length_label": "Lunghezza del nastro in metri",
       "quantity_label": "Quantità richiesta in rotoli",
-      "quantity_hint": "Inserite un numero in base all'adesivo selezionato.",
-      "quantity_min": "Akryl da 360 pz, HOT MELT da 504 pz.",
-      "quantity_min_acryl": "Quantità minima da 360 pz (Akryl).",
-      "quantity_min_hotmelt": "Quantità minima da 504 pz (HOT MELT).",
-      "quantity_tip": "Akryl da 360 pz, HOT MELT da 504 pz. Consegna circa 3–4 settimane.",
-      "quantity_tip_acryl": "Quantità minima da 360 pz (Akryl). Consegna circa 3–4 settimane.",
-      "quantity_tip_hotmelt": "Quantità minima da 504 pz (HOT MELT). Consegna circa 3–4 settimane.",
+      "quantity_hint": "Inserite un numero in base all'adesivo e alla larghezza del nastro.",
+      "quantity_min": "Il minimo dipende da adesivo e larghezza (es. Akryl 50 mm da 360 pz, HOT MELT 50 mm da 504 pz).",
+      "quantity_min_acryl": "Quantità minima da {min} pz (Akryl, {width} mm).",
+      "quantity_min_hotmelt": "Quantità minima da {min} pz (HOT MELT, {width} mm).",
+      "quantity_tip": "Il minimo dipende da adesivo e larghezza. Consegna circa 3–4 settimane.",
+      "quantity_tip_acryl": "Quantità minima da {min} pz (Akryl, {width} mm). Consegna circa 3–4 settimane.",
+      "quantity_tip_hotmelt": "Quantità minima da {min} pz (HOT MELT, {width} mm). Consegna circa 3–4 settimane.",
+      "quantity_tip_dynamic": "Quantità minima da {min} pz ({adhesive}, {width} mm). Consegna circa 3–4 settimane.",
+      "quantity_min_dynamic": "Quantità minima da {min} pz ({adhesive}, {width} mm).",
       "quantity_success": "🔥 Ottima scelta! Avete la spedizione gratuita. La consegna richiede circa 3–4 settimane.",
       "validation": {
         "material_required": "Selezionate un materiale dall'elenco.",
@@ -257,196 +259,218 @@
       "cta": "Voglio un campione"
     },
     "faq": {
-      "label": "Domande frequenti",
-      "title": "Risposte prima dell'ordine",
-      "subtitle": "Le domande più comuni su stampa, tempi di consegna e materiali. Non siete sicuri? Scriveteci e vi aiutiamo.",
-      "all_link": "Vedi tutte le domande e cerca →",
+      "label": "Consigli prima dell’ordine",
+      "title": "Suggerimenti utili",
+      "subtitle": "Brevi raccomandazioni su materiali, adesivi, tempi e stampa. Non siete sicuri? Scriveteci — siamo lieti di consigliare.",
+      "all_link": "Aprire tutto il diario dei consigli →",
       "items": {
         "0": {
-          "q": "Qual è la quantità minima d'ordine?",
-          "a": "Per i nastri BOPP 360 pz (Akryl) o 504 pz (HOT MELT); per carta e BOPET il minimo dipende individualmente dalla stampa e dallo strato crepato."
+          "q": "Come pianificare la quantità dell’ordine?",
+          "a": "Per i nastri BOPP partiamo di solito da 360 pz (Acrilico) o 504 pz (HOT MELT). Per carta e BOPET adattiamo la quantità a stampa e costruzione — consigliamo un avvio pratico per il vostro consumo."
         },
         "1": {
-          "q": "Quanto tempo richiede la produzione di nastro stampato?",
-          "a": "Il tempo di consegna standard è di 3–4 settimane dall'approvazione della grafica e dell'ordine. Per urgenze cerchiamo di accelerare la consegna."
+          "q": "Come pianificare la data di consegna?",
+          "a": "Prevedete 3–4 settimane dall’approvazione grafica e dall’ordine. Se avete fretta, indicate la data desiderata nella richiesta e verificheremo cosa è realisticamente possibile."
         },
         "2": {
-          "q": "Posso ordinare anche nastro senza stampa?",
-          "a": "Sì. Forniamo la stessa qualità anche senza stampa, ideale per scorte di magazzino o imballaggio immediato."
+          "q": "Quando scegliere un nastro senza stampa?",
+          "a": "Il nastro neutro va bene come scorta o per imballo rapido senza branding. Qualità di materiale e adesivo invariata — potete aggiungere la stampa più avanti."
         },
         "3": {
-          "q": "Qual è la differenza tra HOT MELT e Akryl?",
-          "a": "HOT MELT aderisce rapidamente e con forza anche a freddo, ideale per magazzini e spedizioni. Akryl è più silenzioso nello svolgimento e più resistente ai UV, ideale per stoccaggio prolungato. Maggiori info in <a href=\"/#lepidla\">Quale adesivo scegliere?</a>."
+          "q": "Come scegliere tra HOT MELT e Acrilico?",
+          "a": "Consigliamo HOT MELT per il freddo e la chiusura rapida in magazzino. L’acrilico è più silenzioso nello svolgimento e più resistente ai UV in stoccaggio lungo. Altro in <a href=\"/#lepidla\">Quale adesivo scegliere?</a>."
         },
         "4": {
-          "q": "Fornite campioni gratuiti?",
-          "a": "Sì, per materiali selezionati e grafiche esistenti siamo lieti di inviare un campione di prova. Nella richiesta indicate «Voglio un campione»."
+          "q": "Come provare prima il materiale?",
+          "a": "Per materiali selezionati e grafica già esistente inviamo volentieri un campione. Nella richiesta basta scrivere «Desidero un campione»."
         },
         "5": {
-          "q": "Quali tecnologie di stampa offrite?",
-          "a": "Flessografia fino a 8 colori e rotocalco fino a 10 colori, incluso sotto-stampa di qualità. Consigliamo la tecnologia in base a colori, quantità e qualità richiesta."
+          "q": "Quale tecnologia di stampa scegliere?",
+          "a": "Flessografia fino a 8 colori e rotocalco fino a 10 colori con sottofondo. In base a logo, colori e volume consigliamo ciò che calza al brand e al budget."
         }
       }
     }
   },
   "faq": {
-    "label": "Domande frequenti",
-    "title": "Domande e risposte",
-    "subtitle": "Trovate risposte su stampa, tempi, adesivi e campioni. Filtrate per tema o cercate una parola chiave.",
-    "hero_cta": "Scrivi un messaggio",
-    "search_label": "Cerca nelle domande",
-    "search_placeholder": "Cerca… es. HOT MELT, campione, tempi di consegna",
-    "filters_label": "Filtro temi",
+    "label": "Consigli prima dell’ordine",
+    "title": "Diario di suggerimenti sui nastri stampati",
+    "subtitle": "Raccomandazioni pratiche su materiali, adesivi, tempi e stampa. Filtrate per tema o cercate una parola — e se non siete sicuri, scriveteci.",
+    "hero_cta": "Scrivere un messaggio",
+    "search_label": "Cercare nei consigli",
+    "search_placeholder": "Cerca… es. HOT MELT, campione, tempi",
+    "filters_label": "Temi dei consigli",
     "filters": {
-      "all": "Tutte",
+      "all": "Tutti",
       "objednavka": "Ordine",
-      "vyroba": "Produzione e tempi",
+      "vyroba": "Tempi e produzione",
       "material": "Materiale e adesivo",
       "potisk": "Stampa e grafica",
       "vzorky": "Campioni"
     },
-    "more": "Mostra altre {n} domande",
-    "count_preview": "Visualizzate {shown} di {total}",
-    "count_all": "{n} domande",
-    "count_filtered": "Visualizzate {visible} di {total}",
+    "more": "Mostra altri {n} consigli",
+    "less": "Mostra meno",
+    "count_preview": "Visualizzati {shown} di {total}",
+    "count_all": "{n} consigli",
+    "count_filtered": "Visualizzati {visible} di {total}",
     "empty_title": "Nessun risultato",
-    "empty_text": "Provate un'altra parola chiave o un altro filtro. Oppure scriveteci e vi aiutiamo.",
-    "empty_cta": "Scrivi un messaggio →",
+    "empty_text": "Provare un’altra parola o tema. Oppure scriveteci — indicheremo il passo successivo.",
+    "empty_cta": "Scrivere un messaggio →",
     "contact_label": "Contatto",
-    "cta_title": "Non avete trovato la risposta?",
-    "cta_text": "Scriveteci un breve messaggio e vi risponderemo con una risposta o un consiglio su materiale e stampa.",
-    "cta_button": "Invia messaggio",
+    "cta_title": "Volete un consiglio su misura?",
+    "cta_text": "Scrivete un breve messaggio e risponderemo con un tip su materiale, adesivo o stampa per il vostro imballo.",
+    "cta_button": "Inviare messaggio",
     "form": {
       "name": "Nome e cognome",
       "email": "E-mail",
       "phone": "Telefono",
-      "message": "La vostra domanda / messaggio",
+      "message": "Il vostro messaggio / su cosa consigliare",
       "message_placeholder": "Scrivete di cosa avete bisogno…",
       "gdpr": "Inviando accettate il trattamento dei dati personali per la gestione del messaggio.",
+      "gdpr_before": "Inviando accettate il",
+      "gdpr_link": "trattamento dei dati personali",
+      "gdpr_after": "per la gestione del messaggio.",
+      "gdpr_modal": {
+        "title": "Trattamento dei dati personali",
+        "close": "Chiudi",
+        "intro": "Informazioni ai sensi dell'art. 13 GDPR per la compilazione e l'invio del modulo di contatto su questa pagina.",
+        "controller_heading": "Titolare del trattamento",
+        "controller": "ALFA IN a.s., ID 255 35 366, č.p. 74, 675 21 Nová Ves u Třebíče, Repubblica Ceca. Contatto: epo@alfain.eu, tel. +420 568 840 009, www.alfain.eu",
+        "data_heading": "Dati trattati",
+        "data": "Nome e cognome, e-mail, telefono e il testo del messaggio / della domanda inserito nel modulo.",
+        "purpose_heading": "Finalità e base giuridica",
+        "purpose": "Gestione del messaggio, risposta alla domanda ed eventuale raccomandazione di materiale o stampa. Base giuridica: il vostro consenso (art. 6, par. 1, lett. a GDPR) e le misure precontrattuali (art. 6, par. 1, lett. b GDPR).",
+        "retention_heading": "Periodo di conservazione",
+        "retention": "Per il tempo necessario a gestire il messaggio e al massimo 4 anni dall'ultimo contatto se non viene concluso un contratto; in caso di rapporto contrattuale per la durata del contratto e successivamente secondo legge.",
+        "recipients_heading": "Destinatari",
+        "recipients": "I dati possono essere comunicati a responsabili del trattamento (IT, hosting, servizi e-mail) in base ad accordi di trattamento e alle autorità competenti ove richiesto dalla legge.",
+        "rights_heading": "I vostri diritti",
+        "rights": "Avete diritto di accesso, rettifica, cancellazione, limitazione del trattamento, portabilità, opposizione e di proporre reclamo all'Ufficio per la protezione dei dati personali (www.uoou.cz). Inviate le richieste a epo@alfain.eu.",
+        "full_link": "Testo completo dell'informativa sulla privacy"
+      },
       "sending": "Invio in corso…",
       "success": "Grazie, il messaggio è stato inviato. Vi risponderemo al più presto.",
       "error": "Invio non riuscito. Scriveteci a karel.petrak@alfain.eu."
     },
     "items": {
       "moq": {
-        "q": "Qual è la quantità minima d'ordine?",
-        "a": "Per i nastri BOPP 360 pz (Akryl) o 504 pz (HOT MELT); per carta e BOPET il minimo dipende individualmente dalla stampa e dallo strato crepato.",
-        "search": "minimo moq quantità ordine bopp hot melt akryl"
+        "q": "Come pianificare la quantità dell’ordine?",
+        "a": "Per BOPP partiamo di solito da 360 pz (Acrilico) o 504 pz (HOT MELT). Per carta e BOPET adattiamo individualmente — consigliamo un avvio pratico.",
+        "search": "minimo quantità ordine tip"
       },
       "lead-time": {
-        "q": "Quanto tempo richiede la produzione di nastro stampato?",
-        "a": "Il tempo di consegna standard è di 3–4 settimane dall'approvazione della grafica e dell'ordine. Per urgenze cerchiamo di accelerare la consegna.",
-        "search": "tempi consegna produzione settimane urgente"
+        "q": "Come pianificare la consegna?",
+        "a": "Prevedete 3–4 settimane dall’approvazione grafica e dall’ordine. Con urgenza indicate la data nella richiesta — verifichiamo il carico e proponiamo un percorso realistico.",
+        "search": "tempi produzione settimane tip"
       },
       "bez-potisku": {
-        "q": "Posso ordinare anche nastro senza stampa?",
-        "a": "Sì. Forniamo la stessa qualità anche senza stampa, ideale per scorte di magazzino o imballaggio immediato.",
-        "search": "senza stampa neutro plain"
+        "q": "Quando scegliere nastro senza stampa?",
+        "a": "Utile come scorta o per imballo rapido senza branding. Stessa qualità — la stampa si può aggiungere dopo.",
+        "search": "senza stampa tip"
       },
       "lepidlo": {
-        "q": "Qual è la differenza tra HOT MELT e Akryl?",
-        "a": "HOT MELT aderisce rapidamente e con forza anche a freddo, ideale per magazzini e spedizioni. Akryl è più silenzioso nello svolgimento e più resistente ai UV, ideale per stoccaggio prolungato. Maggiori info in <a href=\"/#lepidla\">Quale adesivo scegliere?</a>.",
-        "search": "hot melt akryl adesivo adesione uv silenzioso magazzino"
+        "q": "Come scegliere tra HOT MELT e Acrilico?",
+        "a": "HOT MELT per freddo e chiusura rapida. Acrilico più silenzioso e resistente ai UV. Altro in <a href=\"/#lepidla\">Quale adesivo scegliere?</a>.",
+        "search": "hot melt acrilico adesivo tip"
       },
       "vzorky": {
-        "q": "Fornite campioni gratuiti?",
-        "a": "Sì, per materiali selezionati e grafiche esistenti siamo lieti di inviare un campione di prova. Nella richiesta indicate «Voglio un campione».",
-        "search": "campione gratis test trial"
+        "q": "Come provare prima il materiale?",
+        "a": "Per materiali selezionati e grafica esistente inviamo un campione. Scrivete «Desidero un campione» — consigliamo cosa testare prima.",
+        "search": "campione tip"
       },
       "technologie": {
-        "q": "Quali tecnologie di stampa offrite?",
-        "a": "Flessografia fino a 8 colori e rotocalco fino a 10 colori, incluso sotto-stampa di qualità. Consigliamo la tecnologia in base a colori, quantità e qualità richiesta.",
-        "search": "flessografia rotocalco colori stampa tecnologia"
+        "q": "Quale tecnologia di stampa scegliere?",
+        "a": "Flessografia fino a 8 colori e rotocalco fino a 10 con sottofondo. Consigliamo in base a logo, colori, volume e qualità.",
+        "search": "flessografia rotocalco tip"
       },
       "grafika": {
-        "q": "Preparate voi il progetto grafico?",
-        "a": "Sì. Inviate il logo (idealmente PDF/AI/SVG) e un'idea di testo o colori, prepariamo un'anteprima di stampa da approvare prima della produzione.",
-        "search": "grafica logo anteprima design pdf ai svg"
+        "q": "Come preparare la grafica?",
+        "a": "Il modo più semplice: logo (PDF/AI/SVG) e idea di testo/colori. Prepariamo un’anteprima da approvare e affiniamo la ripetizione sul nastro.",
+        "search": "grafica logo anteprima tip"
       },
       "sirka": {
-        "q": "Quali larghezze e lunghezze producete?",
-        "a": "Le larghezze più comuni sono 48 mm e 50 mm; altre larghezze e lunghezze di avvolgimento si definiscono individualmente in base a materiale e applicazione (manuale o automatica).",
-        "search": "larghezza lunghezza 48 mm 50 mm bobina"
+        "q": "Quale larghezza e lunghezza scegliere?",
+        "a": "Di solito consigliamo 50 mm (o 48 mm se è la vostra prassi). Altre misure le adattiamo a materiale e imballo manuale/linea.",
+        "search": "larghezza 48 50 mm tip"
       },
       "eko": {
-        "q": "Avete nastri sostenibili / ECO?",
-        "a": "Sì, linea ECO+ (BOPP riciclato), nastri di carta e altre varianti sostenibili. Dettagli nell'assortimento Nastri sostenibili.",
-        "search": "eco riciclo sostenibile carta fsc"
+        "q": "Quando scegliere un nastro sostenibile?",
+        "a": "Per ridurre l’impatto: ECO+ (BOPP riciclato), nastri di carta e altre varianti. Consigliamo un mix adatto a brand e operazioni. Vedi Nastri sostenibili.",
+        "search": "eco sostenibile tip"
       },
       "stroje": {
-        "q": "I nastri vanno bene anche per imballaggio automatico?",
-        "a": "Sì. In base ad adesivo e materiale consigliamo la variante per svolgitori manuali o per linee automatiche.",
-        "search": "macchina automatica linea svolgitore dispenser"
+        "q": "Nastro per imballo manuale e macchina?",
+        "a": "A mano spesso conviene lo svolgimento silenzioso. Per linee automatiche consigliamo materiale e adesivo in base a velocità e applicatore.",
+        "search": "macchina linea tip"
       },
       "doprava": {
-        "q": "Come funzionano spedizione e fatturazione?",
-        "a": "Consegniamo in tutta la Repubblica Ceca e all'estero. Condizioni di trasporto e pagamento si definiscono nell'offerta in base a volume e destinazione.",
-        "search": "spedizione fattura consegna eu prezzo"
+        "q": "Come pianificare spedizione e fattura?",
+        "a": "Consegniamo in CZ e all’estero. Nell’offerta precisiamo spedizione e pagamento secondo volume e destinazione.",
+        "search": "spedizione fattura tip"
       },
       "skladovani": {
-        "q": "Come conservare correttamente i nastri?",
-        "a": "Ideale in luogo asciutto, lontano dal sole diretto, a temperatura ambiente. I nastri Akryl tollerano meglio lo stoccaggio lungo; con uso intensivo consigliamo di consumare prima l'HOT MELT.",
-        "search": "stoccaggio temperatura umidità durata"
+        "q": "Come conservare bene i nastri?",
+        "a": "Al fresco asciutto, fuori dal sole diretto, a temperatura ambiente. L’acrilico tollera meglio lo stoccaggio lungo; HOT MELT meglio consumarlo prima in uso intenso.",
+        "search": "conservazione tip"
       },
       "barvy": {
-        "q": "Si può stampare secondo Pantone o CMYK?",
-        "a": "Sì. Allineiamo i colori a Pantone o a un campione. Per flessografia e rotocalco consigliamo gli inchiostri adatti al supporto (trasparente, bianco, colorato).",
-        "search": "pantone cmyk colore logo branding"
+        "q": "Come allineare i colori (Pantone / CMYK)?",
+        "a": "Allineiamo a Pantone o campione. Consigliamo le tinte secondo supporto (trasparente, bianco, colorato).",
+        "search": "pantone cmyk tip"
       },
       "opakovat": {
-        "q": "Posso ripetere l'ordine in seguito con la stessa grafica?",
-        "a": "Sì. Conserviamo il progetto approvato e i file di stampa, così un riordino è più rapido senza riapprovare la grafica (se non cambiate nulla).",
-        "search": "riordino reprint stessa grafica"
+        "q": "Come riordinare la stessa grafica?",
+        "a": "Conserviamo bozza e dati di stampa. I riordini sono più rapidi — senza riapprovare se non cambiate nulla.",
+        "search": "riordine tip"
       },
       "cena": {
-        "q": "Da cosa dipende il prezzo del nastro stampato?",
-        "a": "Il prezzo dipende da materiale, adesivo, larghezza e lunghezza della bobina, numero di colori, tecnologia di stampa e volume totale. Inviate una richiesta, prepariamo un'offerta concreta.",
-        "search": "prezzo offerta preventivo calcolo"
+        "q": "Cosa influenza il prezzo?",
+        "a": "Materiale, adesivo, larghezza, lunghezza, colori, tecnologia e volume. Mandate una richiesta e prepariamo un’offerta — eventualmente un tip sul miglior rapporto qualità/prezzo.",
+        "search": "prezzo offerta tip"
       },
       "papir-vs-bopp": {
-        "q": "Quando scegliere nastro di carta invece del BOPP?",
-        "a": "Il nastro di carta è adatto a imballaggi eco, cartoni riciclabili e brand dal look naturale. Il BOPP resiste meglio all'umidità ed è spesso più conveniente a volumi alti. Consigliamo in base al vostro processo.",
-        "search": "carta bopp plastica eco cartone"
+        "q": "Carta o BOPP?",
+        "a": "Carta per imballo eco e look naturale. BOPP meglio con umidità e spesso conveniente a volumi alti. Consigliamo in base al processo.",
+        "search": "carta bopp tip"
       },
       "bezpecnostni": {
-        "q": "Realizzate nastri di sicurezza o di avvertimento?",
-        "a": "Sì, stampe di avviso, Fragile, Vorsicht Glas, VOID / tamper-evident e testi logistici. Prepariamo il layout secondo le vostre istruzioni e le varianti linguistiche.",
-        "search": "sicurezza void tamper avviso fragile"
+        "q": "Come usare stampa di sicurezza o avviso?",
+        "a": "Avvisi, Fragile, VOID / tamper e testi logistici proteggono spedizione e brand. Prepariamo il bozzetto per briefing e lingue.",
+        "search": "sicurezza void tip"
       },
       "zmena-grafiky": {
-        "q": "E se devo modificare la grafica dopo l'approvazione?",
-        "a": "Finché non partono lastre / stampa, le modifiche di solito sono possibili. Dopo l'avvio della produzione spesso solo con costi e tempi aggiuntivi, controllate quindi attentamente l'anteprima.",
-        "search": "modifica grafica correzione approvazione"
+        "q": "Cosa controllare prima dell’approvazione?",
+        "a": "Controllate bene l’anteprima prima della produzione. Fino all’avvio stampa le modifiche di solito sono possibili. Dopo, costi e tempi nuovi — segnalate subito eventuali ritocchi.",
+        "search": "approvazione modifica tip"
       },
       "jadro": {
-        "q": "Quale anima / tubetto usate?",
-        "a": "Di norma forniamo bobine con tubetto di carta standard adatto a svolgitori manuali e automatici. Diametri e resistenze speciali si definiscono individualmente per la vostra linea.",
-        "search": "anima tubetto core diametro"
+        "q": "Quale anima / tubo scegliere?",
+        "a": "Di serie tubo di carta per svolgimento manuale e macchina. Diametri speciali secondo la linea — indicate l’aspo e consigliamo.",
+        "search": "anima tubo tip"
       },
       "zahranici": {
-        "q": "Consegnate anche fuori dalla Repubblica Ceca?",
-        "a": "Sì. Spediamo in UE e oltre, trasporto e condizioni si concordano in base a destinazione e volume.",
-        "search": "estero eu export consegna"
+        "q": "Consegne fuori dalla Repubblica Ceca?",
+        "a": "Spediamo in UE e oltre. Spedizione e condizioni secondo destinazione e volume, così conoscete tempi e costi.",
+        "search": "export ue tip"
       },
       "vzorek-potisk": {
-        "q": "Riceverò un campione già con la mia stampa?",
-        "a": "Per nuove grafiche di solito approvate prima un'anteprima digitale. Un campione fisico stampato si valuta caso per caso, per design esistenti o progetti più grandi.",
-        "search": "campione stampato anteprima trial"
+        "q": "Come validare la stampa prima della serie?",
+        "a": "Per grafica nuova prima un’anteprima digitale. Campione fisico stampato caso per caso, tipicamente per design esistenti o progetti grandi.",
+        "search": "campione stampa tip"
       },
       "urgentni": {
-        "q": "Fate produzione urgente / express?",
-        "a": "Per alcuni ordini sì, confermiamo sempre la data in base al carico di lavoro e alla complessità della stampa. Indicate la data desiderata nella richiesta e vi rispondiamo con un'opzione realistica.",
-        "search": "urgente express consegna rapida"
+        "q": "Cosa fare se avete fretta?",
+        "a": "Per alcuni lavori possiamo accelerare. Indicate la data nella richiesta — rispondiamo con opzione realistica e tip per preparare più in fretta.",
+        "search": "urgente express tip"
       },
       "odstranitelna": {
-        "q": "Avete nastri che si rimuovono in modo pulito?",
-        "a": "Sì, nastri removibili (removable) dove non volete residui di adesivo. Consigliamo il tipo adatto alla superficie. Maggiori info nell'assortimento Nastri removibili.",
-        "search": "removibile removable residui adesivo"
+        "q": "Quando scegliere nastro removibile?",
+        "a": "Dove non volete residui di adesivo. Consigliamo il tipo secondo superficie. Vedi Nastri removibili.",
+        "search": "removibile tip"
       },
       "vice-jazyku": {
-        "q": "Il testo sul nastro può essere in più lingue?",
-        "a": "Sì. Spesso combiniamo logo e testi logistici in ceco, tedesco, inglese e altre lingue, progettati per restare leggibili anche ripetuti lungo il nastro.",
-        "search": "lingue multilingue testo mutazione"
+        "q": "Come gestire testi in più lingue?",
+        "a": "Spesso logo più testi logistici in più lingue. Prepariamo il bozzetto leggibile nella ripetizione e consigliamo la gerarchia dei testi.",
+        "search": "lingue multilingue tip"
       }
     }
   },
@@ -475,7 +499,8 @@
           "label": "Adesivo",
           "options": {
             "hot-melt": "Hot Melt",
-            "acryl": "Acrilico"
+            "acryl": "Acrilico",
+            "extra-glue": "AC Extra Glue"
           }
         },
         "industry": {
@@ -543,7 +568,7 @@
       },
       "fenske": {
         "title": "Nastri con logo Fenske",
-        "description": "Stampa bicolore FENSKE / Weine und Feinkost sul nastro da imballaggio: branding per spedizioni di vini e gastronomia.",
+        "description": "Stampa bicolore FENSKE / Weine und Feinkost su nastro di carta: branding per spedizioni di vini e gastronomia.",
         "industry_label": "Industria alimentare"
       },
       "just-nahrin": {
@@ -577,8 +602,8 @@
         "industry_label": "Produzione"
       },
       "irplast-warehouse-2": {
-        "title": "Magazzino automatizzato Empoli",
-        "description": "Vista del magazzino automatizzato di Empoli con stoccaggio ad alta densità.",
+        "title": "Consegne Just in Time",
+        "description": "Con un ordine anticipato stampiamo prima il film. Solo poco prima della consegna lo tagliamo, applichiamo l’adesivo e spediamo il nastro. Just in Time — prodotto fresco al momento giusto, senza scorte inutili di bobine finite.",
         "industry_label": "Produzione"
       },
       "irplast-shuttle": {

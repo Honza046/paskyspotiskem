@@ -15,16 +15,13 @@
     if (!list) return;
 
     var PREVIEW_LIMIT = 5;
+    var BATCH_SIZE = 5;
+    var STAGGER_MS = 45;
     var items = Array.prototype.slice.call(list.querySelectorAll('[data-faq-item]'));
     var activeCategory = 'all';
     var query = '';
-    var expanded = false;
-
-    items.forEach(function (item, index) {
-        if (index >= PREVIEW_LIMIT) {
-            item.setAttribute('data-faq-more', 'true');
-        }
-    });
+    var visibleLimit = PREVIEW_LIMIT;
+    var animToken = 0;
 
     function t(key, fallback) {
         if (window.paskyI18n && typeof window.paskyI18n.t === 'function') {
@@ -76,21 +73,91 @@
         return hay.indexOf(query) !== -1;
     }
 
-    function updateMoreButton(remaining) {
+    function matchedItems() {
+        return items.filter(matches);
+    }
+
+    function prefersReducedMotion() {
+        return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    }
+
+    function closeItem(item) {
+        if (!item.classList.contains('is-open')) return;
+        item.classList.remove('is-open');
+        var trigger = item.querySelector('.faq-item__trigger');
+        if (trigger) trigger.setAttribute('aria-expanded', 'false');
+    }
+
+    function setItemVisible(item, show, instant) {
+        if (show) {
+            item.hidden = false;
+            item.removeAttribute('aria-hidden');
+            if (instant || prefersReducedMotion()) {
+                item.classList.remove('is-hidden', 'is-revealing');
+                return;
+            }
+            if (item.classList.contains('is-hidden')) {
+                item.classList.add('is-revealing');
+                // force reflow so transition runs from collapsed state
+                void item.offsetHeight;
+                item.classList.remove('is-hidden');
+                window.setTimeout(function () {
+                    item.classList.remove('is-revealing');
+                }, 420);
+            } else {
+                item.classList.remove('is-hidden', 'is-revealing');
+            }
+            return;
+        }
+
+        closeItem(item);
+        if (instant || prefersReducedMotion()) {
+            item.classList.add('is-hidden');
+            item.classList.remove('is-revealing');
+            item.hidden = true;
+            item.setAttribute('aria-hidden', 'true');
+            return;
+        }
+        item.classList.add('is-hidden');
+        item.classList.remove('is-revealing');
+        item.setAttribute('aria-hidden', 'true');
+        window.setTimeout(function () {
+            if (item.classList.contains('is-hidden')) {
+                item.hidden = true;
+            }
+        }, 380);
+    }
+
+    function updateMoreButton(shown, totalMatched) {
         if (!moreBtn) return;
-        var showBtn = !isFiltering() && !expanded && remaining > 0;
+        var remaining = Math.max(0, totalMatched - shown);
+        var canCollapse = !isFiltering() && visibleLimit > PREVIEW_LIMIT;
+        var showBtn = !isFiltering() && (remaining > 0 || canCollapse);
         moreBtn.classList.toggle('hidden', !showBtn);
+        moreBtn.disabled = false;
         if (!showBtn) return;
-        moreBtn.setAttribute('aria-expanded', 'false');
+
+        if (remaining > 0) {
+            var next = Math.min(BATCH_SIZE, remaining);
+            moreBtn.dataset.action = 'more';
+            moreBtn.setAttribute('aria-expanded', 'false');
+            moreBtn.innerHTML =
+                fmt(t('faq.more', 'Zobrazit dalších {n} tipů'), { n: next }) +
+                '<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.25" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>';
+            return;
+        }
+
+        moreBtn.dataset.action = 'less';
+        moreBtn.setAttribute('aria-expanded', 'true');
         moreBtn.innerHTML =
-            fmt(t('faq.more', 'Zobrazit dalších {n} otázek'), { n: remaining }) +
-            '<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.25" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>';
+            t('faq.less', 'Zobrazit méně') +
+            '<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.25" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>';
     }
 
     function updateCount(visible) {
         if (!countEl) return;
         var total = items.length;
-        if (!isFiltering() && !expanded) {
+        if (!isFiltering() && visibleLimit <= PREVIEW_LIMIT) {
             countEl.textContent = fmt(t('faq.count_preview', 'Zobrazeno {shown} z {total}'), {
                 shown: Math.min(PREVIEW_LIMIT, total),
                 total: total,
@@ -98,7 +165,7 @@
             return;
         }
         if (visible === total && !isFiltering()) {
-            countEl.textContent = fmt(t('faq.count_all', '{n} otázek'), { n: total });
+            countEl.textContent = fmt(t('faq.count_all', '{n} tipů'), { n: total });
             return;
         }
         countEl.textContent = fmt(t('faq.count_filtered', 'Zobrazeno {visible} z {total}'), {
@@ -107,41 +174,87 @@
         });
     }
 
-    function apply() {
+    function apply(options) {
+        options = options || {};
+        var animate = options.animate !== false;
+        var staggerHide = !!options.staggerHide;
+        var staggerShow = !!options.staggerShow;
+        var token = ++animToken;
+        var matched = matchedItems();
+        var limit = isFiltering() ? matched.length : Math.min(visibleLimit, matched.length);
         var visible = 0;
-        var remainingMore = 0;
+        var toReveal = [];
+        var toHide = [];
 
         items.forEach(function (item) {
-            var match = matches(item);
-            var isMore = item.getAttribute('data-faq-more') === 'true';
-            var show = false;
+            var matchIndex = matched.indexOf(item);
+            var shouldShow = matchIndex !== -1 && matchIndex < limit;
+            var currentlyHidden = item.classList.contains('is-hidden') || item.hidden;
 
-            if (match) {
-                if (isFiltering() || expanded) {
-                    show = true;
-                } else if (!isMore) {
-                    show = true;
-                } else {
-                    remainingMore += 1;
-                }
-            }
-
-            item.classList.toggle('is-hidden', !show);
-            item.hidden = !show;
-
-            if (show) {
+            if (shouldShow) {
                 visible += 1;
-            } else if (item.classList.contains('is-open')) {
-                item.classList.remove('is-open');
-                var trigger = item.querySelector('.faq-item__trigger');
-                if (trigger) trigger.setAttribute('aria-expanded', 'false');
+                if (currentlyHidden) {
+                    toReveal.push(item);
+                } else {
+                    setItemVisible(item, true, true);
+                }
+            } else if (!currentlyHidden) {
+                toHide.push(item);
+            } else {
+                setItemVisible(item, false, true);
             }
+        });
+
+        function runHide(done) {
+            if (!toHide.length) {
+                done();
+                return;
+            }
+            if (!animate || prefersReducedMotion() || !staggerHide) {
+                toHide.forEach(function (item) {
+                    setItemVisible(item, false, !animate);
+                });
+                done();
+                return;
+            }
+            // hide from bottom up for a smoother collapse
+            var ordered = toHide.slice().reverse();
+            ordered.forEach(function (item, i) {
+                window.setTimeout(function () {
+                    if (token !== animToken) return;
+                    setItemVisible(item, false, false);
+                    if (i === ordered.length - 1) {
+                        window.setTimeout(done, 320);
+                    }
+                }, i * STAGGER_MS);
+            });
+        }
+
+        function runReveal() {
+            if (!toReveal.length || token !== animToken) return;
+            if (!animate || prefersReducedMotion() || !staggerShow) {
+                toReveal.forEach(function (item) {
+                    setItemVisible(item, true, !animate);
+                });
+                return;
+            }
+            toReveal.forEach(function (item, i) {
+                window.setTimeout(function () {
+                    if (token !== animToken) return;
+                    setItemVisible(item, true, false);
+                }, i * STAGGER_MS);
+            });
+        }
+
+        runHide(function () {
+            if (token !== animToken) return;
+            runReveal();
         });
 
         if (emptyEl) {
             emptyEl.classList.toggle('hidden', visible !== 0);
         }
-        updateMoreButton(remainingMore);
+        updateMoreButton(limit, matched.length);
         updateCount(visible);
     }
 
@@ -153,7 +266,8 @@
                 other.classList.toggle('is-active', on);
                 other.setAttribute('aria-pressed', on ? 'true' : 'false');
             });
-            apply();
+            visibleLimit = PREVIEW_LIMIT;
+            apply({ animate: false });
         });
     });
 
@@ -163,15 +277,30 @@
             window.clearTimeout(timer);
             timer = window.setTimeout(function () {
                 query = normalize(searchInput.value);
-                apply();
+                visibleLimit = PREVIEW_LIMIT;
+                apply({ animate: false });
             }, 120);
         });
     }
 
     if (moreBtn) {
         moreBtn.addEventListener('click', function () {
-            expanded = true;
-            apply();
+            var matched = matchedItems();
+            var action = moreBtn.dataset.action || 'more';
+
+            if (action === 'less') {
+                visibleLimit = PREVIEW_LIMIT;
+                apply({ animate: true, staggerHide: true, staggerShow: false });
+                window.setTimeout(function () {
+                    if (list && typeof list.scrollIntoView === 'function') {
+                        list.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }, 80);
+                return;
+            }
+
+            visibleLimit = Math.min(visibleLimit + BATCH_SIZE, matched.length);
+            apply({ animate: true, staggerShow: true, staggerHide: false });
         });
     }
 
@@ -180,10 +309,12 @@
         if (!id) return;
         var target = list.querySelector('[data-faq-item][data-id="' + id + '"]');
         if (!target) return;
-        if (target.getAttribute('data-faq-more') === 'true') {
-            expanded = true;
+        var matched = matchedItems();
+        var idx = matched.indexOf(target);
+        if (idx >= PREVIEW_LIMIT) {
+            visibleLimit = Math.max(visibleLimit, idx + 1);
         }
-        apply();
+        apply({ animate: false });
         var trigger = target.querySelector('.faq-item__trigger');
         if (trigger && !target.classList.contains('is-open')) {
             trigger.click();
@@ -204,7 +335,7 @@
         if (searchInput) {
             query = normalize(searchInput.value);
         }
-        apply();
+        apply({ animate: false });
         if (submitBtn && !submitBtn.disabled) {
             defaultLabel = t('faq.cta_button', defaultLabel);
             submitBtn.textContent = defaultLabel;
@@ -214,7 +345,7 @@
     document.addEventListener('pasky:i18n-ready', refreshI18nUi);
 
     syncSearchHaystacks();
-    apply();
+    apply({ animate: false });
     openFromHash();
     window.addEventListener('hashchange', openFromHash);
 

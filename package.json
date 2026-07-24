@@ -4,9 +4,12 @@
   "scripts": {
     "build": "python3 scripts/build_vercel.py",
     "dev": "python3 scripts/serve_local.py --port 8000",
-    "preview": "python3 scripts/serve_local.py --port 8000"
+    "preview": "python3 scripts/serve_local.py --port 8000",
+    "dev:api": "node scripts/local_api_server.js",
+    "dev:vercel": "vercel dev --listen 3000"
   },
   "dependencies": {
-    "@vercel/analytics": "^2.0.1"
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/blob": "^2.6.1"
   }
 }

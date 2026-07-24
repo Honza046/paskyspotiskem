@@ -44,12 +44,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/logo-carousel.css?v=27">
+    <link rel="stylesheet" href="/assets/css/logo-carousel.css?v=28">
     <link rel="stylesheet" href="/assets/css/privacy-modal.css">
     <link rel="stylesheet" href="/assets/css/theme-dark.css?v=10">
     <link rel="stylesheet" href="/assets/css/faq.css?v=3">
     <link rel="stylesheet" href="/assets/css/info-banner.css?v=15">
-    <link rel="stylesheet" href="/assets/css/inquiry-dropdown.css?v=4">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -63,7 +62,8 @@
             },
         };
     </script>
-    <link rel="stylesheet" href="/assets/css/glass.css?v=10">
+    <link rel="stylesheet" href="/assets/css/glass.css?v=11">
+    <link rel="stylesheet" href="/assets/css/inquiry-dropdown.css?v=6">
     <link rel="stylesheet" href="/assets/css/reference-stats.css?v=6">
     <link rel="stylesheet" href="/assets/css/cult-effects.css?v=43">
     <style>
@@ -333,7 +333,7 @@
                         <div class="logo-carousel__item logo-carousel__item--curaprox"><img src="/loga/curaprox-badge.png?v=3" alt="CURAPROX" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/bonami-logo.png" alt="Bonami" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/sportisimo-logo.png" alt="Sportisimo" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item"><img src="/loga/thermo-fisher-logo.png" alt="Thermo Fisher" loading="lazy" decoding="async"></div>
+                        <div class="logo-carousel__item logo-carousel__item--thermo"><img class="logo-carousel__thermo-light" src="/loga/thermo-fisher-logo.png?v=2" alt="Thermo Fisher Scientific" loading="lazy" decoding="async"><img class="logo-carousel__thermo-dark" src="/loga/thermo-fisher-logo-dark.png?v=1" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
                     </div>
                     <div class="logo-carousel__group" aria-hidden="true">
                         <div class="logo-carousel__item logo-carousel__item--kohinoor"><img class="logo-carousel__kohinoor-light" src="/loga/idatQHbzbo_1781781887303.png" alt="" loading="lazy" decoding="async"><img class="logo-carousel__kohinoor-dark" src="/loga/koh-i-noor-dark.png" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
@@ -349,7 +349,7 @@
                         <div class="logo-carousel__item logo-carousel__item--curaprox"><img src="/loga/curaprox-badge.png?v=3" alt="" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/bonami-logo.png" alt="" loading="lazy" decoding="async"></div>
                         <div class="logo-carousel__item"><img src="/loga/sportisimo-logo.png" alt="" loading="lazy" decoding="async"></div>
-                        <div class="logo-carousel__item"><img src="/loga/thermo-fisher-logo.png" alt="" loading="lazy" decoding="async"></div>
+                        <div class="logo-carousel__item logo-carousel__item--thermo"><img class="logo-carousel__thermo-light" src="/loga/thermo-fisher-logo.png?v=2" alt="" loading="lazy" decoding="async"><img class="logo-carousel__thermo-dark" src="/loga/thermo-fisher-logo-dark.png?v=1" alt="" aria-hidden="true" loading="lazy" decoding="async"></div>
                     </div>
                 </div>
             </div>
@@ -483,7 +483,7 @@
     </div>
 
     <div id="gform_wrapper_1" class="gform_wrapper gform-theme--no-framework mx-auto w-full max-w-2xl" data-step="0">
-        <form id="gform_1" action="/api/inquiry" method="post" class="select-text glass glass--card overflow-hidden rounded-2xl" novalidate>
+        <form id="gform_1" action="/api/inquiry" method="post" class="select-text glass glass--card rounded-2xl" novalidate>
             <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="absolute -left-[9999px] h-px w-px opacity-0" value="">
 
             <!-- Progress -->
@@ -617,7 +617,7 @@
                         <label for="qty" class="mb-2 block text-sm font-semibold text-slate-800">Poptávané množství v kusech <span class="text-orange-600">*</span></label>
                         <input type="number" id="qty" name="input_19" min="504" max="9999" placeholder="504" required class="w-full rounded-xl border border-slate-200 px-4 py-3 text-slate-900 transition-all focus:border-orange-500 focus:outline-none focus:ring-4 focus:ring-orange-500/20">
                         <div id="qty-discount-badge" class="mt-2 overflow-hidden rounded-lg border px-3 py-1.5 text-xs leading-snug transition-all duration-300 ease-out opacity-100 max-h-24 border-slate-200 bg-slate-50 font-medium text-slate-500" role="status" aria-live="polite" aria-atomic="true">
-                            <span id="qty-discount-text">Minimální množství od 504 ks (HOT MELT). Dodání cca 3–4 týdny.</span>
+                            <span id="qty-discount-text">Minimální množství od 504 ks (HOT MELT, 50 mm). Dodání cca 3–4 týdny.</span>
                         </div>
                     </div>
 
@@ -743,82 +743,82 @@
 <section id="faq" class="relative">
     <div class="mx-auto max-w-3xl px-4 py-20">
         <div class="mb-10 text-center">
-            <p class="mb-3 text-sm font-bold uppercase tracking-widest text-orange-600" data-i18n="home.faq.label">Časté dotazy</p>
-            <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl" data-i18n="home.faq.title">Odpovědi před objednávkou</h2>
-            <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600" data-i18n="home.faq.subtitle">Nejčastější otázky k potisku, dodacím lhůtám a výběru materiálu. Pokud si nejste jistí, napište nám, poradíme.</p>
+            <p class="mb-3 text-sm font-bold uppercase tracking-widest text-orange-600" data-i18n="home.faq.label">Rady před objednávkou</p>
+            <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl" data-i18n="home.faq.title">Tipy, které se hodí znát</h2>
+            <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600" data-i18n="home.faq.subtitle">Krátká doporučení k materiálu, lepidlu, termínům a potisku. Když si nejste jistí, napište nám — rádi poradíme.</p>
         </div>
 
         <div class="faq-list" data-faq-list>
             <div class="faq-item">
                 <button type="button" class="faq-item__trigger" aria-expanded="false">
-                    <span class="faq-item__q" data-i18n="home.faq.items.0.q">Jaké je minimální množství objednávky?</span>
+                    <span class="faq-item__q" data-i18n="home.faq.items.0.q">Jak naplánovat množství objednávky?</span>
                     <span class="faq-item__icon" aria-hidden="true"></span>
                 </button>
                 <div class="faq-item__panel">
                     <div class="faq-item__panel-inner">
-                        <div class="faq-item__answer"><p class="faq-item__a" data-i18n="home.faq.items.0.a">U BOPP pásek 360 ks (Akryl) nebo 504 ks (HOT MELT); u papírových a BOPET pásek závisí minimální odběr individuálně na potisku a krepové vrstvě.</p></div>
+                        <div class="faq-item__answer"><p class="faq-item__a" data-i18n="home.faq.items.0.a">U BOPP pásek obvykle vycházíme od 360 ks (Akryl) nebo 504 ks (HOT MELT). U papírových a BOPET pásek množství ladíme podle potisku a konstrukce — doporučíme, co dává smysl pro váš provoz.</p></div>
                     </div>
                 </div>
             </div>
             <div class="faq-item">
                 <button type="button" class="faq-item__trigger" aria-expanded="false">
-                    <span class="faq-item__q" data-i18n="home.faq.items.1.q">Jak dlouho trvá výroba pásky s potiskem?</span>
+                    <span class="faq-item__q" data-i18n="home.faq.items.1.q">Jak si naplánovat termín dodání?</span>
                     <span class="faq-item__icon" aria-hidden="true"></span>
                 </button>
                 <div class="faq-item__panel">
                     <div class="faq-item__panel-inner">
-                        <div class="faq-item__answer"><p class="faq-item__a" data-i18n="home.faq.items.1.a">Standardní dodací lhůta je 3 až 4 týdny od schválení grafického návrhu a objednávky. U urgentních zakázek se snažíme dodání urychlit.</p></div>
+                        <div class="faq-item__answer"><p class="faq-item__a" data-i18n="home.faq.items.1.a">Počítejte se 3 až 4 týdny od schválení grafiky a objednávky. Když spěcháte, napište požadovaný termín do poptávky a ověříme, co je reálně možné.</p></div>
                     </div>
                 </div>
             </div>
             <div class="faq-item">
                 <button type="button" class="faq-item__trigger" aria-expanded="false">
-                    <span class="faq-item__q" data-i18n="home.faq.items.2.q">Mohu objednat pásku i bez potisku?</span>
+                    <span class="faq-item__q" data-i18n="home.faq.items.2.q">Kdy zvolit pásku bez potisku?</span>
                     <span class="faq-item__icon" aria-hidden="true"></span>
                 </button>
                 <div class="faq-item__panel">
                     <div class="faq-item__panel-inner">
-                        <div class="faq-item__answer"><p class="faq-item__a" data-i18n="home.faq.items.2.a">Ano. Pásky dodáváme ve stejné kvalitě i bez potisku.</p></div>
+                        <div class="faq-item__answer"><p class="faq-item__a" data-i18n="home.faq.items.2.a">Neutrální páska se hodí jako skladová rezerva nebo pro rychlé balení. Stejná kvalita materiálu i lepidla — potisk můžete doplnit později.</p></div>
                     </div>
                 </div>
             </div>
             <div class="faq-item">
                 <button type="button" class="faq-item__trigger" aria-expanded="false">
-                    <span class="faq-item__q" data-i18n="home.faq.items.3.q">Jaký je rozdíl mezi HOT MELT a Akryl?</span>
+                    <span class="faq-item__q" data-i18n="home.faq.items.3.q">Jak vybrat mezi HOT MELT a Akrylem?</span>
                     <span class="faq-item__icon" aria-hidden="true"></span>
                 </button>
                 <div class="faq-item__panel">
                     <div class="faq-item__panel-inner">
-                        <div class="faq-item__answer"><p class="faq-item__a" data-i18n-html="home.faq.items.3.a">HOT MELT rychle a pevně přilne i v chladu, vhodný do skladů a expedice. Akryl je tišší při odvíjení a odolnější vůči UV, ideální pro dlouhodobé skladování. Více v sekci <a href="#lepidla">Jaké lepidlo zvolit?</a>.</p></div>
+                        <div class="faq-item__answer"><p class="faq-item__a" data-i18n-html="home.faq.items.3.a">HOT MELT doporučujeme do chladu a na rychlé balení ve skladu. Akryl je tišší při odvíjení a odolnější vůči UV při delším skladování. Více v sekci <a href="/#lepidla">Jaké lepidlo zvolit?</a>.</p></div>
                     </div>
                 </div>
             </div>
             <div class="faq-item">
                 <button type="button" class="faq-item__trigger" aria-expanded="false">
-                    <span class="faq-item__q" data-i18n="home.faq.items.4.q">Dodáváte vzorky zdarma?</span>
+                    <span class="faq-item__q" data-i18n="home.faq.items.4.q">Jak si vyzkoušet materiál nanečisto?</span>
                     <span class="faq-item__icon" aria-hidden="true"></span>
                 </button>
                 <div class="faq-item__panel">
                     <div class="faq-item__panel-inner">
-                        <div class="faq-item__answer"><p class="faq-item__a" data-i18n="home.faq.items.4.a">Ano, u vybraných materiálů a u stávajících grafických návrhů vám rádi zašleme testovací vzorek. V poptávce uveďte „Mám zájem o vzorek“ nebo použijte tlačítko níže na stránce.</p></div>
+                        <div class="faq-item__answer"><p class="faq-item__a" data-i18n="home.faq.items.4.a">U vybraných materiálů a stávajících návrhů rádi pošleme testovací vzorek. V poptávce stačí uvést „Mám zájem o vzorek“.</p></div>
                     </div>
                 </div>
             </div>
             <div class="faq-item">
                 <button type="button" class="faq-item__trigger" aria-expanded="false">
-                    <span class="faq-item__q" data-i18n="home.faq.items.5.q">Jaké technologie potisku nabízíte?</span>
+                    <span class="faq-item__q" data-i18n="home.faq.items.5.q">Jakou technologii potisku zvolit?</span>
                     <span class="faq-item__icon" aria-hidden="true"></span>
                 </button>
                 <div class="faq-item__panel">
                     <div class="faq-item__panel-inner">
-                        <div class="faq-item__answer"><p class="faq-item__a" data-i18n="home.faq.items.5.a">Flexotisk až 8 barev a rototisk až 10 barev včetně kvalitního spodního tisku. Vhodnou technologii doporučíme podle nároku na barvy, množství a požadovanou kvalitu tisku.</p></div>
+                        <div class="faq-item__answer"><p class="faq-item__a" data-i18n="home.faq.items.5.a">Flexotisk až 8 barev a rototisk až 10 barev včetně kvalitního spodního tisku. Podle logo, počtu barev a objemu doporučíme variantu, která sedí brandu i rozpočtu.</p></div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="mt-8 text-center">
-            <a href="/faq" class="inline-flex items-center gap-2 text-sm font-semibold text-orange-600 transition-colors hover:text-orange-700" data-i18n="home.faq.all_link">Zobrazit všechny otázky a vyhledávání →</a>
+            <a href="/faq" class="inline-flex items-center gap-2 text-sm font-semibold text-orange-600 transition-colors hover:text-orange-700" data-i18n="home.faq.all_link">Otevřít celý deník tipů →</a>
         </div>
     </div>
 </section>
@@ -1096,12 +1096,12 @@
             }
             if (field.validity.rangeUnderflow) {
                 var qtyTexts = window.__formQtyTexts || {};
-                var adhesive = form.querySelector('input[name="input_8"]:checked');
-                var isAcryl = adhesive && (adhesive.value === 'Akryl' || adhesive.value === 'ACRYL');
-                if (isAcryl) {
-                    return qtyTexts.invalidAcryl || qtyTexts.invalid || 'Minimální množství od 360 ks (Akryl).';
+                var min = typeof window.__getInquiryQtyMin === 'function' ? window.__getInquiryQtyMin() : 360;
+                var template = qtyTexts.invalidDynamic || qtyTexts.invalid || 'Minimální množství od {min} ks.';
+                if (typeof window.__fillInquiryQtyTemplate === 'function') {
+                    return window.__fillInquiryQtyTemplate(template, min);
                 }
-                return qtyTexts.invalidHotMelt || qtyTexts.invalid || 'Minimální množství od 504 ks (HOT MELT).';
+                return String(template).replace(/\{min\}/g, String(min));
             }
             return t.required || 'Vyplňte toto pole.';
         }
@@ -1231,12 +1231,14 @@
             }
         });
 
-        /* Min. množství podle lepidla: Akryl 360 / HOT MELT 504 */
+        /* Min. množství proporcionálně podle lepidla + šíře */
         var qtyInput = document.getElementById('qty');
         var qtyBadge = document.getElementById('qty-discount-badge');
         var qtyBadgeText = document.getElementById('qty-discount-text');
-        var QTY_MIN_ACRYL = 360;
-        var QTY_MIN_HOT_MELT = 504;
+        var QTY_MIN_BY_WIDTH = {
+            hotmelt: { 19: 1344, 25: 1008, 38: 672, 50: 504, 75: 336 },
+            acryl: { 19: 960, 25: 720, 38: 480, 50: 360, 75: 240 }
+        };
 
         function getSelectedAdhesive() {
             var material = form.querySelector('input[name="input_8"]:checked');
@@ -1248,12 +1250,23 @@
             return value === 'Akryl' || value === 'ACRYL';
         }
 
-        function getQtyMin() {
-            return isAcrylAdhesive() ? QTY_MIN_ACRYL : QTY_MIN_HOT_MELT;
+        function getSelectedWidthMm() {
+            var width = form.querySelector('input[name="input_12"]:checked');
+            return width ? parseInt(width.value, 10) : 50;
         }
+
+        function getQtyMin() {
+            var table = isAcrylAdhesive() ? QTY_MIN_BY_WIDTH.acryl : QTY_MIN_BY_WIDTH.hotmelt;
+            var width = getSelectedWidthMm();
+            if (table[width]) return table[width];
+            return isAcrylAdhesive() ? 360 : 504;
+        }
+        window.__getInquiryQtyMin = getQtyMin;
 
         function getQtyTexts() {
             return window.__formQtyTexts || {
+                tipDynamic: 'Minimální množství od {min} ks ({adhesive}, {width} mm). Dodání cca 3–4 týdny.',
+                invalidDynamic: 'Minimální množství od {min} ks ({adhesive}, {width} mm).',
                 tipAcryl: 'Minimální množství od 360 ks (Akryl). Dodání cca 3–4 týdny.',
                 tipHotMelt: 'Minimální množství od 504 ks (HOT MELT). Dodání cca 3–4 týdny.',
                 minAcryl: 'Minimální množství od 360 ks (Akryl).',
@@ -1264,8 +1277,22 @@
             };
         }
 
+        function fillQtyTemplate(template, min) {
+            var adhesive = isAcrylAdhesive() ? 'Akryl' : 'HOT MELT';
+            var width = getSelectedWidthMm();
+            return String(template || '')
+                .replace(/\{min\}/g, String(min))
+                .replace(/\{adhesive\}/g, adhesive)
+                .replace(/\{width\}/g, String(width));
+        }
+        window.__fillInquiryQtyTemplate = fillQtyTemplate;
+
         function qtyTipText() {
             var texts = getQtyTexts();
+            var min = getQtyMin();
+            if (texts.tipDynamic) {
+                return fillQtyTemplate(texts.tipDynamic, min);
+            }
             return isAcrylAdhesive()
                 ? (texts.tipAcryl || texts.minAcryl || texts.tip)
                 : (texts.tipHotMelt || texts.minHotMelt || texts.tip);
@@ -1334,6 +1361,9 @@
                 syncQtyMinForAdhesive();
             });
         });
+        form.querySelectorAll('input[name="input_12"]').forEach(function (radio) {
+            radio.addEventListener('change', syncQtyMinForAdhesive);
+        });
         toggleAcrylNoiseOption();
         syncQtyMinForAdhesive();
 
@@ -1385,9 +1415,9 @@
 </script>
 <script src="/assets/js/cult-effects.js?v=4"></script>
 <script src="/assets/js/faq.js?v=3"></script>
-<script src="/assets/js/inquiry-dropdown.js"></script>
-<script src="/assets/js/i18n.js?v=40"></script>
-<script src="/assets/js/i18n-pages.js?v=22"></script>
+<script src="/assets/js/inquiry-dropdown.js?v=3"></script>
+<script src="/assets/js/i18n.js?v=42"></script>
+<script src="/assets/js/i18n-pages.js?v=23"></script>
 <script src="/assets/js/inquiry-material-picker.js?v=5"></script>
 <script src="/assets/js/inquiry-form.js?v=3"></script>
 <script src="/assets/js/nav-active.js"></script>
@@ -1395,7 +1425,7 @@
 <script src="/assets/js/footer-credit.js?v=3"></script>
 <script src="/assets/js/mobile-nav.js"></script>
 <script src="/assets/js/header-scroll.js?v=16"></script>
-<script src="/assets/js/info-banner.js"></script>
+<script src="/assets/js/info-banner.js?v=2"></script>
 <script src="/assets/js/privacy-modal.js"></script>
 <script src="/assets/js/theme-toggle.js"></script>
 <script src="/assets/js/vercel-analytics.js" defer></script>
