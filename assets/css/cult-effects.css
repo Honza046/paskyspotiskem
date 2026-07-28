@@ -292,6 +292,75 @@ section.border-t.border-slate-100 {
     padding-bottom: 2.5rem;
 }
 
+/*
+ * Light homepage: alternate full-bleed bands so white cards don't float
+ * in endless white (dark mode already has natural contrast).
+ * Soft K1-style fades bridge white ↔ slate (same as dark elevated ↔ page).
+ */
+html:not(.dark) body[data-page="home"] {
+    --home-band-muted: #f1f5f9;
+    --home-band-elevated: #ffffff;
+}
+
+html:not(.dark) body[data-page="home"] #o-nas {
+    background-color: #f8fafc;
+}
+
+html:not(.dark) body[data-page="home"] #reference {
+    background-color: var(--home-band-elevated);
+}
+
+html:not(.dark) body[data-page="home"] #lepidla {
+    background-color: var(--home-band-muted);
+}
+
+html:not(.dark) body[data-page="home"] #udrzitelnost {
+    background-color: var(--home-band-elevated);
+}
+
+html:not(.dark) body[data-page="home"] #vyhody {
+    background-color: var(--home-band-muted);
+}
+
+html:not(.dark) body[data-page="home"] #gf_1 {
+    background-color: var(--home-band-elevated);
+}
+
+html:not(.dark) body[data-page="home"] #reference > .section-edge-fade--bottom,
+html:not(.dark) body[data-page="home"] #udrzitelnost > .section-edge-fade--top,
+html:not(.dark) body[data-page="home"] #udrzitelnost > .section-edge-fade--bottom,
+html:not(.dark) body[data-page="home"] #gf_1 > .section-edge-fade--top {
+    --edge-fade-color: var(--home-band-muted);
+}
+
+/* Udržitelnost: same short washes as Reference / formulář */
+#udrzitelnost > .section-edge-fade--top {
+    --edge-fade-color: var(--page-bg);
+    height: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    #udrzitelnost > .section-edge-fade--top {
+        height: 3rem;
+    }
+}
+
+#udrzitelnost > .section-edge-fade--bottom {
+    --edge-fade-color: var(--page-bg);
+    height: 3rem;
+}
+
+@media (min-width: 768px) {
+    #udrzitelnost > .section-edge-fade--bottom {
+        height: 3.75rem;
+    }
+}
+
+#udrzitelnost .mx-auto {
+    position: relative;
+    z-index: 11;
+}
+
 /* --- Section edge blur (legacy for other pages) -------------------------- */
 .edge-blur-bottom {
     position: relative;

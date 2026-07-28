@@ -62,10 +62,10 @@
             },
         };
     </script>
-    <link rel="stylesheet" href="/assets/css/glass.css?v=11">
+    <link rel="stylesheet" href="/assets/css/glass.css?v=12">
     <link rel="stylesheet" href="/assets/css/inquiry-dropdown.css?v=6">
     <link rel="stylesheet" href="/assets/css/reference-stats.css?v=6">
-    <link rel="stylesheet" href="/assets/css/cult-effects.css?v=43">
+    <link rel="stylesheet" href="/assets/css/cult-effects.css?v=45">
     <style>
         html { scroll-behavior: auto; scroll-padding-top: var(--site-top-height, 7.75rem); overscroll-behavior-y: none; }
         #uvod {
@@ -359,7 +359,7 @@
 </section>
 
 <!-- SROVNÁVAČ LEPIDEL -->
-<section id="lepidla" class="section-join-clean">
+<section id="lepidla" class="section-join-clean relative">
     <div class="mx-auto max-w-7xl px-4 pb-20 pt-16 md:pt-24">
     <div class="mb-12 text-center">
         <p class="mb-3 text-sm font-bold uppercase tracking-widest text-orange-600">Průvodce výběrem</p>
@@ -401,7 +401,9 @@
 </section>
 
 <!-- UDRŽITELNOST -->
-<section id="udrzitelnost" class="mx-auto max-w-7xl px-4 pb-20">
+<section id="udrzitelnost" class="relative">
+    <div class="section-edge-fade section-edge-fade--top" aria-hidden="true"></div>
+    <div class="mx-auto max-w-7xl px-4 pb-20 pt-16 md:pt-20">
     <div class="mb-12 text-center">
         <p class="mb-3 text-sm font-bold uppercase tracking-widest text-emerald-600">Ekologie &amp; udržitelnost</p>
         <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Udržitelné balení pro Váš e-shop i výrobu</h2>
@@ -427,11 +429,13 @@
             <p class="text-sm leading-relaxed text-slate-600">Díky pokročilé technologii dokážou moderní recyklační linky naše pásky z papírových krabic snadno oddělit. Vaši zákazníci tak mohou použité krabice bez obav vyhodit přímo do modrého kontejneru.</p>
         </article>
     </div>
+    </div>
+    <div class="section-edge-fade section-edge-fade--bottom" aria-hidden="true"></div>
 </section>
 
 <!-- VÝHODY: ECO+ & LEPIVOST -->
 <section id="vyhody" class="relative">
-    <div class="mx-auto max-w-7xl px-4 pb-20">
+    <div class="mx-auto max-w-7xl px-4 py-16 md:py-20">
     <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
 
         <article class="group glass glass--card relative flex flex-col overflow-hidden rounded-3xl transition-all duration-300">
@@ -453,9 +457,8 @@
         </article>
 
         <article class="group glass glass--card relative flex flex-col overflow-hidden rounded-3xl transition-all duration-300">
-            <div class="relative h-52 overflow-hidden bg-orange-50 sm:h-56">
-                <img src="/images/Extra-glue.jpg" alt="EXTRA GLUE+ a TACK+ pásky s extrémní lepivostí" class="h-full w-full object-cover object-center" loading="lazy">
-                <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-white/20 via-transparent to-transparent"></div>
+            <div class="relative h-52 overflow-hidden bg-white sm:h-56">
+                <img src="/images/benefit-extra-glue-tack.jpg?v=3" alt="Pásky EXTRA GLUE+ a TACK+ s extrémní lepivostí" class="h-full w-full object-cover object-center" loading="lazy">
             </div>
             <div class="flex flex-1 flex-col px-8 pb-10 pt-6">
                 <span class="inline-flex w-fit rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-xs font-bold uppercase tracking-wide text-orange-700" data-i18n="home.benefits.glue.badge">Extrémní lepivost</span>
