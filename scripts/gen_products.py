@@ -136,8 +136,8 @@ PRODUCTS = {
  "udrzitelne-pasky":[
    P("Udržitelná páska NOPP","Udržitelné Pásky/nopp.jpg","Udržitelná páska bez plastu pro plně recyklovatelné balení.","Papír (FSC)","110 µm","Akrylové (bez rozpouštědel)","4,0 N/25 mm","−5 až +60 °C","50 N/25 mm"),
    P("Udržitelná páska NOPP+","Udržitelné Pásky/nopp+.jpg","Vylepšená bezplastová páska s vyšší pevností a lepivostí.","Papír (FSC)","120 µm","Akrylové","4,4 N/25 mm","−5 až +65 °C","55 N/25 mm"),
-   P("Udržitelná páska LOOPP","Udržitelné Pásky/loopp.jpg","Páska z recyklovaného polypropylenu pro cirkulární ekonomiku.","Recyklovaná PP fólie","45 µm","Akrylové","3,0 N/25 mm","−5 až +60 °C","46 N/25 mm"),
-   P("Udržitelná páska Airtape","Udržitelné Pásky/airtape.jpg","Lehká udržitelná páska pro každodenní ekologické balení.","Recyklovaná PP fólie","40 µm","Akrylové","2,8 N/25 mm","−5 až +60 °C","42 N/25 mm"),
+   P("Udržitelná páska LOOPP","Udržitelné Pásky/loopp.jpg","Prémiová ekologická páska z recyklovaných plastů bez jakýchkoliv kompromisů v pevnosti.","BOPP","28 / 32 µm","Akryl (Low noise)","—","0 až +60 °C","—"),
+   P("Udržitelná páska Airtape+","Udržitelné Pásky/airtape.jpg","Tenká a pevná BOPP páska pro maximální efektivitu a snížení odpadu.","BOPP","19 µm","Akryl (Low noise)","—","−10 až +60 °C","—"),
    P("Udržitelná páska ECO+ 50","Udržitelné Pásky/eco+50.jpg","Efektivní balení s 50% podílem regenerovaného materiálu. Optimální rovnováha mezi ekologií a nejlepší cenou.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
    P("Udržitelná páska ECO+ 80","Udržitelné Pásky/eco+80.jpg","BOPP fólie s 80% podílem regenerovaného materiálu. Spojuje vysoký ekologický standard a stoprocentní pevnost.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
    P("Udržitelná páska ECO+ 100","Udržitelné Pásky/eco+100.jpg","100% regenerovaná BOPP fólie z postindustriálního odpadu. Maximální ekologický standard bez kompromisů ve výkonu.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
@@ -182,8 +182,8 @@ TAGMAP = {
  "Malířská páska CS60-80":["vysoke-teploty","rucni"],
  "Udržitelná páska NOPP":["ekologicke","rucni"],
  "Udržitelná páska NOPP+":["ekologicke","rucni"],
- "Udržitelná páska LOOPP":["ekologicke","stroje"],
- "Udržitelná páska Airtape":["ekologicke","rucni"],
+ "Udržitelná páska LOOPP":["ekologicke","tiche","stroje"],
+ "Udržitelná páska Airtape+":["ekologicke","tiche","rucni","stroje"],
  "Udržitelná páska ECO+ 50":["ekologicke","stroje"],
  "Udržitelná páska ECO+ 80":["ekologicke","stroje"],
  "Udržitelná páska ECO+ 100":["ekologicke","stroje"],
@@ -197,6 +197,7 @@ for k in PRODUCTS:
 SLUG_OVERRIDES = {
     "BOPP páska Akryl": "bopp-paska-acrylic",
     "BOPP páska HOT MELT": "bopp-paska-hot-melt",
+    "Udržitelná páska Airtape+": "udrzitelna-paska-airtape",
 }
 
 # Detailed tech-spec schema (film + adhesive thickness, two temperature ranges).
@@ -290,6 +291,22 @@ TECH_SPEC_PARAMS = {
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "0 až +50 °C",
         "Minimální množství": "od 1080 ks",
+    },
+    "Udržitelná páska Airtape+": {
+        "Nosič": "BOPP",
+        "Tloušťka fólie": "19 µm",
+        "Typ lepidla": "Akryl (Low noise)",
+        "Tloušťka lepidla": "21 µm",
+        "Skladovací a aplikační teplota": "14–28 °C",
+        "Provozní teplota po nalepení": "−10 až +60 °C",
+    },
+    "Udržitelná páska LOOPP": {
+        "Nosič": "BOPP",
+        "Tloušťka fólie": "28 / 32 µm",
+        "Typ lepidla": "Akryl (Low noise)",
+        "Tloušťka lepidla": "21 µm",
+        "Skladovací a aplikační teplota": "14–28 °C",
+        "Provozní teplota po nalepení": "0 až +60 / −10 až +60 °C",
     },
 }
 
@@ -484,6 +501,18 @@ def product_benefits(cat_slug, p):
     nl = nosic.lower()
 
     if cat_slug == "udrzitelne-pasky":
+        if p["name"] == "Udržitelná páska Airtape+":
+            return [
+                ("Inovativní tenká fólie", "Mimořádně tenká, a přesto vysoce pevná fólie efektivně redukuje množství použitého plastového odpadu a snižuje váhu zásilek při zachování maximální spolehlivosti."),
+                ("Větší návin bez zvětšení role", "Díky tenčí fólii se na jednu roli vejde podstatně více metrů pásky bez navýšení jejího průměru. To znamená méně častou výměnu rolí a úsporu místa při skladování."),
+                ("Vysoká odolnost proti UV", "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování a UV zatížení."),
+            ]
+        if p["name"] == "Udržitelná páska LOOPP":
+            return [
+                ("Certifikovaný recyklovaný materiál", "Cirkulární BOPP fólie je vyrobená z polymerů z chemicky recyklovaného spotřebitelského plastového odpadu s mezinárodní certifikací ISCC PLUS (princip hmotnostní bilance)."),
+                ("Identické vlastnosti jako standardní pásky", "Nabízí naprosto shodné mechanické a fyzikální parametry, pevnost v tahu i lepivost jako pásky vyráběné z prvotních fosilních surovin."),
+                ("Nižší spotřeba fosilních surovin", "Výrazně redukuje závislost na primární ropě a pomáhá budovat skutečně cirkulární ekonomiku v obalovém průmyslu."),
+            ]
         if p["name"] == "Udržitelná páska ECO+ 50":
             return [
                 ("Stejná cena i kvalita", "Má stejné mechanické vlastnosti a spolehlivost jako standardní BOPP verze, ale bez „ekologické přirážky“."),

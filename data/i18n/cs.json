@@ -856,22 +856,22 @@
     },
     "products": {
       "udrzitelna-paska-airtape": {
-        "name": "Udržitelná páska Airtape",
-        "tagline": "Lehká udržitelná páska pro každodenní ekologické balení.",
+        "name": "Udržitelná páska Airtape+",
+        "tagline": "Tenká a pevná BOPP páska pro maximální efektivitu a snížení odpadu.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
         "benefits": [
           {
-            "title": "Recyklovaný polypropylen",
-            "text": "Recyklovaná PP fólie s nižší ekologickou stopou při zachování spolehlivého lepení."
+            "title": "Inovativní tenká fólie",
+            "text": "Mimořádně tenká, a přesto vysoce pevná fólie efektivně redukuje množství použitého plastového odpadu a snižuje váhu zásilek při zachování maximální spolehlivosti."
           },
           {
-            "title": "Akrylové lepidlo",
-            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+            "title": "Větší návin bez zvětšení role",
+            "text": "Díky tenčí fólii se na jednu roli vejde podstatně více metrů pásky bez navýšení jejího průměru. To znamená méně častou výměnu rolí a úsporu místa při skladování."
           },
           {
-            "title": "Teplotní rozsah −5 až +60 °C",
-            "text": "Pevnost v tahu 42 N/25 mm pro každodenní provoz skladu i expedice."
+            "title": "Vysoká odolnost proti UV",
+            "text": "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování a UV zatížení."
           }
         ],
         "uses": [
@@ -881,30 +881,31 @@
           "Budování zodpovědné značky"
         ],
         "params_values": {
-          "carrier": "Recyklovaná PP fólie",
-          "thickness": "40 µm",
-          "adhesive": "Akrylové",
-          "adhesion": "2,8 N/25 mm",
-          "temperature": "−5 až +60 °C",
-          "strength": "42 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "19 µm",
+          "adhesive": "Akryl (Low noise)",
+          "adhesion": "21 µm",
+          "strength": "14–28 °C",
+          "temperature": "−10 až +60 °C"
         },
         "spec_pills": [
-          "Recyklovaná PP fólie",
-          "Akrylové",
-          "−5 až +60 °C"
+          "BOPP",
+          "Akryl (Low noise)",
+          "−10 až +60 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1207,21 +1208,21 @@
       },
       "udrzitelna-paska-loopp": {
         "name": "Udržitelná páska LOOPP",
-        "tagline": "Páska z recyklovaného polypropylenu pro cirkulární ekonomiku.",
+        "tagline": "Prémiová ekologická páska z recyklovaných plastů bez jakýchkoliv kompromisů v pevnosti.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
         "benefits": [
           {
-            "title": "Recyklovaný polypropylen",
-            "text": "Recyklovaná PP fólie s nižší ekologickou stopou při zachování spolehlivého lepení."
+            "title": "Certifikovaný recyklovaný materiál",
+            "text": "Cirkulární BOPP fólie je vyrobená z polymerů z chemicky recyklovaného spotřebitelského plastového odpadu s mezinárodní certifikací ISCC PLUS (princip hmotnostní bilance)."
           },
           {
-            "title": "Akrylové lepidlo",
-            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+            "title": "Identické vlastnosti jako standardní pásky",
+            "text": "Nabízí naprosto shodné mechanické a fyzikální parametry, pevnost v tahu i lepivost jako pásky vyráběné z prvotních fosilních surovin."
           },
           {
-            "title": "Teplotní rozsah −5 až +60 °C",
-            "text": "Pevnost v tahu 46 N/25 mm pro každodenní provoz skladu i expedice."
+            "title": "Nižší spotřeba fosilních surovin",
+            "text": "Výrazně redukuje závislost na primární ropě a pomáhá budovat skutečně cirkulární ekonomiku v obalovém průmyslu."
           }
         ],
         "uses": [
@@ -1231,30 +1232,31 @@
           "Automatické balicí linky s ESG cíli"
         ],
         "params_values": {
-          "carrier": "Recyklovaná PP fólie",
-          "thickness": "45 µm",
-          "adhesive": "Akrylové",
-          "adhesion": "3,0 N/25 mm",
-          "temperature": "−5 až +60 °C",
-          "strength": "46 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 / 32 µm",
+          "adhesive": "Akryl (Low noise)",
+          "adhesion": "21 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 až +60 / −10 až +60 °C"
         },
         "spec_pills": [
-          "Recyklovaná PP fólie",
-          "Akrylové",
-          "−5 až +60 °C"
+          "BOPP",
+          "Akryl (Low noise)",
+          "0 až +60 / −10 až +60 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",

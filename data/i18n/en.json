@@ -855,22 +855,22 @@
     },
     "products": {
       "udrzitelna-paska-airtape": {
-        "name": "Sustainable tape Airtape",
-        "tagline": "Lightweight sustainable tape for everyday eco-friendly packaging.",
+        "name": "Sustainable tape Airtape+",
+        "tagline": "Thin and strong BOPP tape for maximum efficiency and less waste.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
         "benefits": [
           {
-            "title": "Recycled polypropylene",
-            "text": "Recycled PP film with a lower environmental footprint while maintaining reliable bonding."
+            "title": "Innovative thin film",
+            "text": "An exceptionally thin yet highly strong film that effectively reduces plastic waste and shipment weight while keeping maximum reliability."
           },
           {
-            "title": "Acrylic adhesive",
-            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+            "title": "More metres per roll without increasing diameter",
+            "text": "Thanks to the thinner film, a single roll holds substantially more metres of tape without a larger diameter. That means fewer roll changes and less storage space."
           },
           {
-            "title": "Temperature range −5 to +60 °C",
-            "text": "Tensile strength 42 N/25 mm for everyday warehouse and dispatch operations."
+            "title": "High UV resistance",
+            "text": "Acrylic adhesive keeps its stickiness during long-term storage and UV exposure."
           }
         ],
         "uses": [
@@ -880,30 +880,31 @@
           "Building a responsible brand"
         ],
         "params_values": {
-          "carrier": "Recycled PP film",
-          "thickness": "40 µm",
-          "adhesive": "Acrylic",
-          "adhesion": "2,8 N/25 mm",
-          "temperature": "−5 to +60 °C",
-          "strength": "42 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "19 µm",
+          "adhesive": "Akryl (Low noise)",
+          "adhesion": "21 µm",
+          "strength": "14–28 °C",
+          "temperature": "−10 to +60 °C"
         },
         "spec_pills": [
-          "Recycled PP film",
-          "Acrylic",
-          "−5 to +60 °C"
+          "BOPP",
+          "Akryl (Low noise)",
+          "−10 to +60 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
           "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application",
+          "min_qty": "Minimum quantity"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1206,21 +1207,21 @@
       },
       "udrzitelna-paska-loopp": {
         "name": "Sustainable tape LOOPP",
-        "tagline": "Tape made from recycled polypropylene for the circular economy.",
+        "tagline": "Premium eco tape from recycled plastics with no compromise on strength.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
         "benefits": [
           {
-            "title": "Recycled polypropylene",
-            "text": "Recycled PP film with a lower environmental footprint while maintaining reliable bonding."
+            "title": "Certified recycled material",
+            "text": "Circular BOPP film made from polymers of chemically recycled post-consumer plastic waste with international ISCC PLUS certification (mass balance principle)."
           },
           {
-            "title": "Acrylic adhesive",
-            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+            "title": "Identical properties to standard tapes",
+            "text": "It offers exactly the same mechanical and physical parameters, tensile strength and tack as tapes made from virgin fossil raw materials."
           },
           {
-            "title": "Temperature range −5 to +60 °C",
-            "text": "Tensile strength 46 N/25 mm for everyday warehouse and dispatch operations."
+            "title": "Lower consumption of fossil raw materials",
+            "text": "It significantly reduces dependence on primary oil and helps build a truly circular economy in the packaging industry."
           }
         ],
         "uses": [
@@ -1230,30 +1231,31 @@
           "Automatic packing lines with ESG goals"
         ],
         "params_values": {
-          "carrier": "Recycled PP film",
-          "thickness": "45 µm",
-          "adhesive": "Acrylic",
-          "adhesion": "3,0 N/25 mm",
-          "temperature": "−5 to +60 °C",
-          "strength": "46 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 / 32 µm",
+          "adhesive": "Akryl (Low noise)",
+          "adhesion": "21 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 to +60 / −10 to +60 °C"
         },
         "spec_pills": [
-          "Recycled PP film",
-          "Acrylic",
-          "−5 to +60 °C"
+          "BOPP",
+          "Akryl (Low noise)",
+          "0 to +60 / −10 to +60 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
           "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application",
+          "min_qty": "Minimum quantity"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",

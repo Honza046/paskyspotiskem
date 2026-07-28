@@ -855,22 +855,22 @@
     },
     "products": {
       "udrzitelna-paska-airtape": {
-        "name": "Nachhaltiges Klebeband Airtape",
-        "tagline": "Leichtes nachhaltiges Klebeband für den täglichen, umweltfreundlichen Einsatz.",
+        "name": "Nachhaltiges Klebeband Airtape+",
+        "tagline": "Dünnes und festes BOPP-Klebeband für maximale Effizienz und weniger Abfall.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nachhaltige Klebebänder",
         "benefits": [
           {
-            "title": "Recyceltes Polypropylen",
-            "text": "Recycelte PP-Folie mit geringerem ökologischen Fußabdruck bei zuverlässiger Klebkraft."
+            "title": "Innovativer dünner Film",
+            "text": "Eine außergewöhnlich dünne und dennoch hochfeste Folie, die Plastikabfall und Sendungsgewicht wirksam reduziert – bei maximaler Zuverlässigkeit."
           },
           {
-            "title": "Acrylklebstoff",
-            "text": "Leises Abrollen, langfristig stabile Klebkraft und zuverlässige Leistung unter Lagerbedingungen."
+            "title": "Mehr Meter pro Rolle ohne größeren Durchmesser",
+            "text": "Dank der dünneren Folie passen deutlich mehr Meter Band auf eine Rolle – ohne größeren Durchmesser. Das bedeutet selteneren Rollenwechsel und weniger Lagerplatz."
           },
           {
-            "title": "Temperaturbereich −5 bis +60 °C",
-            "text": "Zugfestigkeit 42 N/25 mm für den täglichen Lager- und Versandbetrieb."
+            "title": "Hohe UV-Beständigkeit",
+            "text": "Acrylklebstoff behält die Klebkraft auch bei langer Lagerung und UV-Belastung."
           }
         ],
         "uses": [
@@ -880,30 +880,31 @@
           "Aufbau einer verantwortungsvollen Marke"
         ],
         "params_values": {
-          "carrier": "Recycelte PP-Folie",
-          "thickness": "40 µm",
-          "adhesive": "Acryl",
-          "adhesion": "2,8 N/25 mm",
-          "temperature": "−5 bis +60 °C",
-          "strength": "42 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "19 µm",
+          "adhesive": "Akryl (Low noise)",
+          "adhesion": "21 µm",
+          "strength": "14–28 °C",
+          "temperature": "−10 bis +60 °C"
         },
         "spec_pills": [
-          "Recycelte PP-Folie",
-          "Acryl",
-          "−5 bis +60 °C"
+          "BOPP",
+          "Akryl (Low noise)",
+          "−10 bis +60 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
           "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben",
+          "min_qty": "Mindestmenge"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1206,21 +1207,21 @@
       },
       "udrzitelna-paska-loopp": {
         "name": "Nachhaltiges Klebeband LOOPP",
-        "tagline": "Klebeband aus recyceltem Polypropylen für die Kreislaufwirtschaft.",
+        "tagline": "Premium-Öko-Klebeband aus recycelten Kunststoffen ohne Kompromisse bei der Festigkeit.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nachhaltige Klebebänder",
         "benefits": [
           {
-            "title": "Recyceltes Polypropylen",
-            "text": "Recycelte PP-Folie mit geringerem ökologischen Fußabdruck bei zuverlässiger Klebkraft."
+            "title": "Zertifiziertes Recyclingmaterial",
+            "text": "Zirkuläre BOPP-Folie aus Polymeren chemisch recycelten Post-Consumer-Kunststoffabfalls mit internationaler ISCC-PLUS-Zertifizierung (Massenbilanzprinzip)."
           },
           {
-            "title": "Acrylklebstoff",
-            "text": "Leises Abrollen, langfristig stabile Klebkraft und zuverlässige Leistung unter Lagerbedingungen."
+            "title": "Identische Eigenschaften wie Standardbänder",
+            "text": "Es bietet absolut gleiche mechanische und physikalische Parameter, Zugfestigkeit und Klebkraft wie Bänder aus fossilen Primärrohstoffen."
           },
           {
-            "title": "Temperaturbereich −5 bis +60 °C",
-            "text": "Zugfestigkeit 46 N/25 mm für den täglichen Lager- und Versandbetrieb."
+            "title": "Geringerer Verbrauch fossiler Rohstoffe",
+            "text": "Es reduziert die Abhängigkeit von Primäröl deutlich und hilft, eine echte Kreislaufwirtschaft in der Verpackungsindustrie aufzubauen."
           }
         ],
         "uses": [
@@ -1230,30 +1231,31 @@
           "Automatische Verpackungslinien mit ESG-Zielen"
         ],
         "params_values": {
-          "carrier": "Recycelte PP-Folie",
-          "thickness": "45 µm",
-          "adhesive": "Acryl",
-          "adhesion": "3,0 N/25 mm",
-          "temperature": "−5 bis +60 °C",
-          "strength": "46 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 / 32 µm",
+          "adhesive": "Akryl (Low noise)",
+          "adhesion": "21 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 bis +60 / −10 bis +60 °C"
         },
         "spec_pills": [
-          "Recycelte PP-Folie",
-          "Acryl",
-          "−5 bis +60 °C"
+          "BOPP",
+          "Akryl (Low noise)",
+          "0 bis +60 / −10 bis +60 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
           "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben",
+          "min_qty": "Mindestmenge"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
