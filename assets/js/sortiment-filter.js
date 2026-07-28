@@ -70,9 +70,10 @@
         return n >= 2 && n <= 4 ? few : many;
     }
 
-    var TAG_BADGE_ORDER = ['ekologicke', 'mrazuvzdorne', 'vysoke-teploty', 'chemicka-odolnost', 'stroje', 'rucni'];
+    var TAG_BADGE_ORDER = ['ekologicke', 'pet-85', 'mrazuvzdorne', 'vysoke-teploty', 'chemicka-odolnost', 'stroje', 'rucni'];
     var TAG_BADGE_KEYS = {
         ekologicke: 'js.sortiment.tag_eco',
+        'pet-85': 'js.sortiment.tag_pet85',
         mrazuvzdorne: 'js.sortiment.tag_cold',
         'vysoke-teploty': 'js.sortiment.tag_hot',
         'chemicka-odolnost': 'js.sortiment.tag_chem',
@@ -81,6 +82,7 @@
     };
     var TAG_BADGE_FALLBACK = {
         ekologicke: 'ECO',
+        'pet-85': '85% z PET',
         mrazuvzdorne: '-70 °C',
         'vysoke-teploty': 'Vysoké teploty',
         'chemicka-odolnost': 'Chemická odolnost',

@@ -2021,10 +2021,10 @@
           }
         ],
         "uses": [
-          "Demanding industrial operations",
-          "Fixing in high-temperature environments",
-          "Masking during powder coating",
-          "Applications with a focus on more sustainable materials"
+          "Companies with ESG and sustainability goals",
+          "Circular packaging processes",
+          "Building a responsible brand",
+          "Automatic packing lines with ESG goals"
         ],
         "params_values": {
           "carrier": "Recycled PET film",
@@ -3260,7 +3260,14 @@
       "product_few": "{n} products",
       "product_many": "{n} products",
       "detail": "Details",
-      "inquire": "Inquire"
+      "inquire": "Inquire",
+      "tag_pet85": "85% PET",
+      "tag_eco": "ECO",
+      "tag_cold": "-70 °C",
+      "tag_hot": "High temperatures",
+      "tag_chem": "Chemical resistance",
+      "tag_machines": "Machines",
+      "tag_hand": "Manual"
     },
     "form": {
       "step_label": "Step {current} of {total}"

@@ -2021,10 +2021,10 @@
           }
         ],
         "uses": [
-          "Impianti industriali impegnativi",
-          "Fissaggio in ambienti ad alta temperatura",
-          "Mascheratura nella verniciatura a polvere",
-          "Applicazioni con attenzione a materiali più sostenibili"
+          "Aziende con obiettivi ESG e di sostenibilità",
+          "Processi di imballaggio circolari",
+          "Costruzione di un marchio responsabile",
+          "Linee di imballaggio automatiche con obiettivi ESG"
         ],
         "params_values": {
           "carrier": "Film PET riciclato",
@@ -3260,7 +3260,14 @@
       "product_few": "{n} prodotti",
       "product_many": "{n} prodotti",
       "detail": "Dettagli",
-      "inquire": "Richiedi"
+      "inquire": "Richiedi",
+      "tag_pet85": "85% PET",
+      "tag_eco": "ECO",
+      "tag_cold": "-70 °C",
+      "tag_hot": "Alte temperature",
+      "tag_chem": "Resistenza chimica",
+      "tag_machines": "Macchine",
+      "tag_hand": "Manuale"
     },
     "form": {
       "step_label": "Passo {current} di {total}"

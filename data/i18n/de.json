@@ -2021,10 +2021,10 @@
           }
         ],
         "uses": [
-          "Anspruchsvolle Industriebetriebe",
-          "Fixierung in Umgebungen mit hohen Temperaturen",
-          "Abkleben bei der Pulverbeschichtung",
-          "Anwendungen mit Fokus auf nachhaltigere Materialien"
+          "Unternehmen mit ESG- und Nachhaltigkeitszielen",
+          "Zirkuläre Verpackungsprozesse",
+          "Aufbau einer verantwortungsvollen Marke",
+          "Automatische Verpackungslinien mit ESG-Zielen"
         ],
         "params_values": {
           "carrier": "Recycelte PET-Folie",
@@ -3260,7 +3260,14 @@
       "product_few": "{n} Produkte",
       "product_many": "{n} Produkte",
       "detail": "Details",
-      "inquire": "Anfragen"
+      "inquire": "Anfragen",
+      "tag_pet85": "85% PET",
+      "tag_eco": "ECO",
+      "tag_cold": "-70 °C",
+      "tag_hot": "Hohe Temperaturen",
+      "tag_chem": "Chemische Beständigkeit",
+      "tag_machines": "Maschinen",
+      "tag_hand": "Hand"
     },
     "form": {
       "step_label": "Schritt {current} von {total}"

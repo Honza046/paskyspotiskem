@@ -2022,10 +2022,10 @@
           }
         ],
         "uses": [
-          "Náročné průmyslové provozy",
-          "Fixace v prostředí s vysokými teplotami",
-          "Maskování při práškovém lakování",
-          "Aplikace s důrazem na udržitelnější materiál"
+          "Firmy s ESG a udržitelnými cíli",
+          "Cirkulární obalové procesy",
+          "Budování zodpovědné značky",
+          "Automatické balicí linky s ESG cíli"
         ],
         "params_values": {
           "carrier": "Recyklovaná PET fólie",
@@ -3261,7 +3261,14 @@
       "product_few": "{n} produkty",
       "product_many": "{n} produktů",
       "detail": "Detail",
-      "inquire": "Poptat"
+      "inquire": "Poptat",
+      "tag_pet85": "85% z PET",
+      "tag_eco": "ECO",
+      "tag_cold": "-70 °C",
+      "tag_hot": "Vysoké teploty",
+      "tag_chem": "Chemická odolnost",
+      "tag_machines": "Stroje",
+      "tag_hand": "Ruční"
     },
     "form": {
       "step_label": "Krok {current} ze {total}"

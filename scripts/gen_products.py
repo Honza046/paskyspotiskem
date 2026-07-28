@@ -169,7 +169,7 @@ TAGMAP = {
  "BOPET páska ATE23":["vysoke-teploty","chemicka-odolnost"],
  "BOPET páska AIT":["vysoke-teploty","mrazuvzdorne","chemicka-odolnost"],
  "BOPET páska HIT17":["vysoke-teploty","chemicka-odolnost"],
- "BOPET páska ECO HIT19":["ekologicke","vysoke-teploty","chemicka-odolnost"],
+ "BOPET páska ECO HIT19":["ekologicke","pet-85","vysoke-teploty","chemicka-odolnost"],
  "Textilní páska BC":["vyztuzene","rucni"],
  "Textilní páska BC2":["vyztuzene","rucni"],
  "Textilní páska NU":["vyztuzene","rucni"],
@@ -607,14 +607,22 @@ def product_uses(cat, p):
                 uses.append(apps[2])
             uses.append(apps[3])
     elif slug == "bopet-pasky":
-        uses = [apps[0]]
-        if "vysoke-teploty" in tags:
-            uses.append(apps[2])
-        if "chemicka-odolnost" in tags:
-            uses.append(apps[1])
-        if "ekologicke" in tags:
-            uses.append("Aplikace s důrazem na udržitelnější materiál")
-        uses.append(apps[3])
+        if p["name"] == "BOPET páska ECO HIT19":
+            uses = [
+                "Firmy s ESG a udržitelnými cíli",
+                "Cirkulární obalové procesy",
+                "Budování zodpovědné značky",
+                "Automatické balicí linky s ESG cíli",
+            ]
+        else:
+            uses = [apps[0]]
+            if "vysoke-teploty" in tags:
+                uses.append(apps[2])
+            if "chemicka-odolnost" in tags:
+                uses.append(apps[1])
+            if "ekologicke" in tags:
+                uses.append("Aplikace s důrazem na udržitelnější materiál")
+            uses.append(apps[3])
     elif slug == "papirove-pasky":
         uses = [apps[1], apps[2]]
         if "stroje" in tags:
@@ -851,9 +859,10 @@ PRODUCT_BOTTOM_NOTE='''        <div class="product-neutral-note mx-auto mt-14 ma
 IMG_CLS='w-full h-full object-contain max-h-56 mix-blend-multiply contrast-[1.1] brightness-[1.05] transform transition-transform duration-300 group-hover:scale-105'
 PORTRAIT_CATEGORIES = {'udrzitelne-pasky'}
 
-TAG_BADGE_ORDER = ['ekologicke', 'mrazuvzdorne', 'vysoke-teploty', 'chemicka-odolnost', 'stroje', 'rucni']
+TAG_BADGE_ORDER = ['ekologicke', 'pet-85', 'mrazuvzdorne', 'vysoke-teploty', 'chemicka-odolnost', 'stroje', 'rucni']
 TAG_BADGE_LABELS = {
     'ekologicke': 'ECO',
+    'pet-85': '85% z PET',
     'mrazuvzdorne': '-70 °C',
     'vysoke-teploty': 'Vysoké teploty',
     'chemicka-odolnost': 'Chemická odolnost',
