@@ -1,14 +1,15 @@
 /**
- * Sortiment – interactive tag filter (compact bar with dropdowns).
+ * Sortiment – interactive tag filter + text search (products and gallery firms).
  *
- * Reads product data from a <script id="sortiment-products" type="application/json">
- * blob, toggles filter tags via dropdown menus, renders active badges and matching
- * product cards. When no filter is active, the standard category grid is shown.
+ * Reads product data from <script id="sortiment-products"> and optional gallery
+ * refs from <script id="sortiment-gallery-refs">. Tag filters and search query
+ * combine with AND logic across tags; search matches product/gallery text.
  */
 (function () {
     'use strict';
 
     var dataEl = document.getElementById('sortiment-products');
+    var refsEl = document.getElementById('sortiment-gallery-refs');
     var panel = document.getElementById('sortiment-filter');
     var categoryGrid = document.getElementById('sortiment-categories');
     var featuredSection = document.getElementById('sortiment-featured');
@@ -18,6 +19,8 @@
     var emptyState = document.getElementById('sortiment-empty');
     var clearBtn = document.getElementById('sortiment-clear');
     var activeZone = document.getElementById('sortiment-active');
+    var searchInput = document.getElementById('sortiment-search') ||
+        (panel ? panel.querySelector('[data-sortiment-search]') : null);
 
     if (!dataEl || !panel || !categoryGrid || !results || !resultsGrid) {
         return;
@@ -30,9 +33,20 @@
         products = [];
     }
 
+    var galleryRefs = [];
+    if (refsEl) {
+        try {
+            galleryRefs = JSON.parse(refsEl.textContent || '[]');
+        } catch (e) {
+            galleryRefs = [];
+        }
+    }
+
     var inquiryUrl = resultsGrid.getAttribute('data-inquiry') || '/index.html#gf_1';
     var pills = Array.prototype.slice.call(panel.querySelectorAll('[data-tag]'));
     var dropdowns = Array.prototype.slice.call(panel.querySelectorAll('[data-dropdown]'));
+    var searchQuery = '';
+    var searchTimer = null;
 
     function t(key, fallback) {
         if (window.paskyI18n && typeof window.paskyI18n.t === 'function') {
@@ -63,11 +77,39 @@
         };
     }
 
+    function localizedGalleryRef(ref) {
+        var loc = window.paskyI18n && window.paskyI18n.get
+            ? window.paskyI18n.get('gallery.items.' + ref.id)
+            : null;
+        if (!loc) return ref;
+        return {
+            id: ref.id,
+            client: ref.client,
+            title: loc.title || ref.title,
+            description: loc.description || ref.description,
+            image: ref.image,
+            industry_label: loc.industry_label || ref.industry_label || '',
+            href: ref.href || ('/galerie?item=' + encodeURIComponent(ref.id)),
+        };
+    }
+
     function countLabel(n) {
         if (n === 1) return t('js.sortiment.product_one', '1 produkt');
         var few = t('js.sortiment.product_few', '{n} produkty').replace('{n}', String(n));
         var many = t('js.sortiment.product_many', '{n} produktů').replace('{n}', String(n));
         return n >= 2 && n <= 4 ? few : many;
+    }
+
+    function resultCountLabel(productsN, refsN) {
+        var total = productsN + refsN;
+        if (refsN === 0) return countLabel(productsN);
+        if (productsN === 0) {
+            if (refsN === 1) return t('js.sortiment.ref_one', '1 reference');
+            var few = t('js.sortiment.ref_few', '{n} reference').replace('{n}', String(refsN));
+            var many = t('js.sortiment.ref_many', '{n} referencí').replace('{n}', String(refsN));
+            return refsN >= 2 && refsN <= 4 ? few : many;
+        }
+        return t('js.sortiment.results_mixed', '{n} výsledků').replace('{n}', String(total));
     }
 
     var TAG_BADGE_ORDER = ['ekologicke', 'pet-85', 'mrazuvzdorne', 'vysoke-teploty', 'chemicka-odolnost', 'stroje', 'rucni'];
@@ -142,6 +184,37 @@
         });
     }
 
+    function normalize(s) {
+        return String(s || '')
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .trim();
+    }
+
+    function matchesQuery(haystack, query) {
+        if (!query) return true;
+        var hay = normalize(haystack);
+        return query.split(/\s+/).filter(Boolean).every(function (token) {
+            return hay.indexOf(token) !== -1;
+        });
+    }
+
+    function productMatchesQuery(p, query) {
+        if (!query) return true;
+        var loc = localizedProduct(p);
+        var tagLabels = (p.tags || []).map(tagBadgeLabel).join(' ');
+        var hay = [loc.name, loc.tagline, loc.category, tagLabels, (p.tags || []).join(' ')].join(' ');
+        return matchesQuery(hay, query);
+    }
+
+    function refMatchesQuery(ref, query) {
+        if (!query) return false;
+        var loc = localizedGalleryRef(ref);
+        var hay = [loc.client, loc.title, loc.description, loc.industry_label, ref.id].join(' ');
+        return matchesQuery(hay, query);
+    }
+
     function cardHTML(p) {
         p = localizedProduct(p);
         var portrait = !!p.portrait;
@@ -167,6 +240,26 @@
                     '<a href="' + esc(inquiryUrl) + '" class="flex-1 inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 px-4 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:scale-[1.02] hover:shadow-md">' + esc(t('js.sortiment.inquire', 'Poptat')) + '</a>' +
                 '</div>' +
             '</div>' +
+        '</article>';
+    }
+
+    function galleryCardHTML(ref) {
+        ref = localizedGalleryRef(ref);
+        var eyebrow = ref.client || t('js.sortiment.gallery_ref', 'Reference');
+        var href = ref.href || ('/galerie?item=' + encodeURIComponent(ref.id));
+        return '' +
+        '<article class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-orange-100 hover:shadow-lg">' +
+            '<a href="' + esc(href) + '" class="flex flex-1 flex-col p-5 sm:flex-row sm:items-center sm:gap-4">' +
+                '<div class="sortiment-ref-card__thumb mb-4 sm:mb-0">' +
+                    '<img src="' + esc(ref.image) + '" alt="' + esc(ref.title) + '" loading="lazy">' +
+                '</div>' +
+                '<div class="min-w-0 flex-1">' +
+                    '<span class="text-xs font-semibold uppercase tracking-wide text-orange-600">' + esc(eyebrow) + '</span>' +
+                    '<h3 class="mt-1 text-lg font-bold text-slate-900 group-hover:text-orange-600">' + esc(ref.title) + '</h3>' +
+                    '<p class="mt-2 text-sm leading-relaxed text-slate-600 line-clamp-2">' + esc(ref.description || '') + '</p>' +
+                    '<span class="mt-3 inline-flex text-sm font-bold text-orange-600">' + esc(t('js.sortiment.open_gallery', 'Otevřít v galerii →')) + '</span>' +
+                '</div>' +
+            '</a>' +
         '</article>';
     }
 
@@ -198,6 +291,9 @@
 
     function render() {
         var tags = activeTags();
+        var query = normalize(searchQuery);
+        var hasQuery = query.length > 0;
+        var hasFilters = tags.length > 0 || hasQuery;
 
         updateCounts();
 
@@ -205,38 +301,44 @@
             activeZone.innerHTML = tags.map(badgeHTML).join('');
         }
         if (clearBtn) {
-            clearBtn.classList.toggle('hidden', tags.length === 0);
+            clearBtn.classList.toggle('hidden', !hasFilters);
         }
 
-        if (tags.length === 0) {
+        if (!hasFilters) {
             categoryGrid.classList.remove('hidden');
             if (featuredSection) featuredSection.classList.remove('hidden');
             results.classList.add('hidden');
             return;
         }
 
-        // AND logic: product must contain every selected tag.
         var matches = products.filter(function (p) {
             var pt = p.tags || [];
-            return tags.every(function (t) { return pt.indexOf(t) !== -1; });
+            if (!tags.every(function (tag) { return pt.indexOf(tag) !== -1; })) {
+                return false;
+            }
+            return productMatchesQuery(p, query);
         });
+
+        var refMatches = hasQuery
+            ? galleryRefs.filter(function (ref) { return refMatchesQuery(ref, query); })
+            : [];
 
         categoryGrid.classList.add('hidden');
         if (featuredSection) featuredSection.classList.add('hidden');
         results.classList.remove('hidden');
 
         if (resultsCount) {
-            resultsCount.textContent = countLabel(matches.length);
+            resultsCount.textContent = resultCountLabel(matches.length, refMatches.length);
         }
 
-        if (matches.length === 0) {
+        if (matches.length === 0 && refMatches.length === 0) {
             resultsGrid.innerHTML = '';
             if (emptyState) { emptyState.classList.remove('hidden'); }
             return;
         }
 
         if (emptyState) { emptyState.classList.add('hidden'); }
-        resultsGrid.innerHTML = matches.map(cardHTML).join('');
+        resultsGrid.innerHTML = matches.map(cardHTML).concat(refMatches.map(galleryCardHTML)).join('');
     }
 
     // --- Dropdown open / close ---------------------------------------------
@@ -278,6 +380,26 @@
         });
     });
 
+    // --- Search ------------------------------------------------------------
+    if (searchInput) {
+        searchInput.addEventListener('input', function () {
+            var value = searchInput.value || '';
+            if (searchTimer) clearTimeout(searchTimer);
+            searchTimer = setTimeout(function () {
+                searchQuery = value;
+                render();
+            }, 120);
+        });
+        searchInput.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                searchInput.value = '';
+                searchQuery = '';
+                render();
+                searchInput.blur();
+            }
+        });
+    }
+
     // --- Active badge removal (event delegation) ---------------------------
     if (activeZone) {
         activeZone.addEventListener('click', function (e) {
@@ -295,6 +417,10 @@
     if (clearBtn) {
         clearBtn.addEventListener('click', function () {
             pills.forEach(function (p) { setPill(p, false); });
+            if (searchInput) {
+                searchInput.value = '';
+            }
+            searchQuery = '';
             render();
         });
     }

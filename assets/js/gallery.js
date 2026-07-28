@@ -585,5 +585,26 @@
                 openLightboxAt(currentIndex);
             }
         });
+
+        // Deep-link from sortiment search: /galerie?item=bonami
+        try {
+            var params = new URLSearchParams(window.location.search);
+            var deepId = params.get('item');
+            if (deepId) {
+                visibleItems = uniqueById(items);
+                var deepIndex = -1;
+                for (var di = 0; di < visibleItems.length; di++) {
+                    if (visibleItems[di].getAttribute('data-id') === deepId) {
+                        deepIndex = di;
+                        break;
+                    }
+                }
+                if (deepIndex >= 0) {
+                    window.setTimeout(function () {
+                        openLightboxAt(deepIndex);
+                    }, 80);
+                }
+            }
+        } catch (err) { /* ignore */ }
     }
 })();

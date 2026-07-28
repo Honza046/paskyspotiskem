@@ -8,15 +8,15 @@
     "gallery_description": "Galerie bedruckter Verpackungsbänder von ALFA IN a.s.: Einfarbigdruck, Rotogravur, Sicherheits- und Logistikbänder.",
     "sortiment_title": "Sortiment | Bedruckte Verpackungsbänder",
     "sortiment_description": "ALFA IN Klebeband-Sortiment: BOPP-Bänder HOT MELT und Akryl, Spezialserien und ECO-Produkte mit Bedruckung.",
+    "faq_title": "FAQ | Bedruckte Klebebänder: Fragen und Antworten",
+    "faq_description": "Häufige Fragen zu bedruckten Klebebändern: Mindestmenge, Lieferzeiten, HOT MELT vs Akryl, Druck, Muster und Versand. Antworten vom Hersteller ALFA IN.",
     "langNames": {
       "cs": "Čeština",
       "en": "English",
       "de": "Deutsch",
       "it": "Italiano"
     },
-    "htmlLang": "de",
-    "faq_title": "Tipps & Ratgeber | Bedruckte Klebebänder",
-    "faq_description": "Tipps und Empfehlungen zu bedruckten Klebebändern: Material, Klebstoff, Lieferzeiten, Druck und Muster. Praktische Hinweise von ALFA IN."
+    "htmlLang": "de"
   },
   "nav": {
     "tagline": "ALFA IN: Herstellung, Beratung, Vertrieb und Service",
@@ -49,7 +49,7 @@
     "show_on_map": "Auf Karte anzeigen",
     "email_heading": "Schreiben Sie uns",
     "phone_heading": "Rufen Sie uns an",
-    "phone_hours": "7:00–15:30 Uhr",
+    "phone_hours": "7:00 – 15:30 Uhr",
     "more_contacts": "Weitere Kontakte",
     "social_heading": "Soziale Netzwerke",
     "copyright": "Alle Rechte vorbehalten",
@@ -173,15 +173,13 @@
       "width_label": "Bandbreite in mm",
       "length_label": "Bandlänge in Metern",
       "quantity_label": "Gewünschte Menge in Rollen",
-      "quantity_hint": "Geben Sie eine Zahl je nach Klebstoff und Bandbreite ein.",
-      "quantity_min": "Minimum hängt von Klebstoff und Breite ab (z. B. Akryl 50 mm ab 360 Stk., HOT MELT 50 mm ab 504 Stk.).",
-      "quantity_min_acryl": "Mindestmenge ab {min} Stk. (Akryl, {width} mm).",
-      "quantity_min_hotmelt": "Mindestmenge ab {min} Stk. (HOT MELT, {width} mm).",
-      "quantity_tip": "Minimum hängt von Klebstoff und Breite ab. Lieferzeit ca. 3–4 Wochen.",
-      "quantity_tip_acryl": "Mindestmenge ab {min} Stk. (Akryl, {width} mm). Lieferzeit ca. 3–4 Wochen.",
-      "quantity_tip_hotmelt": "Mindestmenge ab {min} Stk. (HOT MELT, {width} mm). Lieferzeit ca. 3–4 Wochen.",
-      "quantity_tip_dynamic": "Mindestmenge ab {min} Stk. ({adhesive}, {width} mm). Lieferzeit ca. 3–4 Wochen.",
-      "quantity_min_dynamic": "Mindestmenge ab {min} Stk. ({adhesive}, {width} mm).",
+      "quantity_hint": "Geben Sie eine Zahl je nach gewähltem Klebstoff ein.",
+      "quantity_min": "Akryl ab 360 Stk., HOT MELT ab 504 Stk.",
+      "quantity_min_acryl": "Mindestmenge ab 360 Stk. (Akryl).",
+      "quantity_min_hotmelt": "Mindestmenge ab 504 Stk. (HOT MELT).",
+      "quantity_tip": "Akryl ab 360 Stk., HOT MELT ab 504 Stk. Lieferzeit ca. 3–4 Wochen.",
+      "quantity_tip_acryl": "Mindestmenge ab 360 Stk. (Akryl). Lieferzeit ca. 3–4 Wochen.",
+      "quantity_tip_hotmelt": "Mindestmenge ab 504 Stk. (HOT MELT). Lieferzeit ca. 3–4 Wochen.",
       "quantity_success": "🔥 Ausgezeichnete Wahl! Sie haben kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
       "validation": {
         "material_required": "Bitte wählen Sie ein Material aus der Liste.",
@@ -259,218 +257,196 @@
       "cta": "Ich möchte ein Muster"
     },
     "faq": {
-      "label": "Tipps vor der Bestellung",
-      "title": "Wissenswerte Hinweise",
-      "subtitle": "Kurze Empfehlungen zu Material, Klebstoff, Terminen und Druck. Unsicher? Schreiben Sie uns — wir beraten gerne.",
-      "all_link": "Zum kompletten Tipptagebuch →",
+      "label": "FAQ",
+      "title": "Antworten vor der Bestellung",
+      "subtitle": "Häufige Fragen zu Druck, Lieferzeiten und Materialien. Unsicher? Schreiben Sie uns, wir helfen.",
+      "all_link": "Alle Fragen und Suche anzeigen →",
       "items": {
         "0": {
-          "q": "Wie plane ich die Bestellmenge?",
-          "a": "Bei BOPP-Bändern starten wir üblich bei 360 Stk. (Akryl) oder 504 Stk. (HOT MELT). Bei Papier- und BOPET-Bändern stimmen wir die Menge nach Druck und Aufbau ab — wir empfehlen einen praktischen Start für Ihren Bedarf."
+          "q": "Wie hoch ist die Mindestbestellmenge?",
+          "a": "Bei BOPP-Bändern 360 Stück (Akryl) oder 504 Stück (HOT MELT); bei Papier- und BOPET-Bändern hängt die Mindestmenge individuell von Druck und Kreppauflage ab."
         },
         "1": {
-          "q": "Wie plane ich den Liefertermin?",
-          "a": "Rechnen Sie mit 3 bis 4 Wochen ab Freigabe der Grafik und Bestellung. Bei Eile tragen Sie den Wunschtermin in die Anfrage ein — wir prüfen, was realistisch möglich ist."
+          "q": "Wie lange dauert die Herstellung von bedrucktem Klebeband?",
+          "a": "Die Standardlieferzeit beträgt 3 bis 4 Wochen ab Freigabe des Drucklayouts und der Bestellung. Bei dringenden Aufträgen bemühen wir uns um eine schnellere Lieferung."
         },
         "2": {
-          "q": "Wann unbedrucktes Band wählen?",
-          "a": "Neutrales Band eignet sich als Lagervorrat oder für schnelles Verpacken ohne Branding. Material- und Klebstoffqualität bleiben gleich — Druck können Sie später ergänzen."
+          "q": "Kann ich auch unbedrucktes Band bestellen?",
+          "a": "Ja. Wir liefern dieselbe Qualität auch ohne Druck, ideal für Lagerbestände oder sofortiges Verpacken."
         },
         "3": {
-          "q": "Wie zwischen HOT MELT und Akryl wählen?",
-          "a": "HOT MELT empfehlen wir für Kälte und schnelles Verschließen im Lager. Akryl ist leiser beim Abrollen und UV-beständiger bei längerer Lagerung. Mehr unter <a href=\"/#lepidla\">Welchen Klebstoff wählen?</a>."
+          "q": "Was ist der Unterschied zwischen HOT MELT und Akryl?",
+          "a": "HOT MELT haftet schnell und fest auch bei Kälte, ideal für Lager und Versand. Akryl läuft leiser ab und ist UV-beständiger, ideal für längere Lagerung. Mehr unter <a href=\"/#lepidla\">Welchen Klebstoff wählen?</a>."
         },
         "4": {
-          "q": "Wie Material vorher testen?",
-          "a": "Bei ausgewählten Materialien und bestehenden Designs senden wir gerne ein Testmuster. In der Anfrage reicht „Ich möchte ein Muster“."
+          "q": "Liefern Sie kostenlose Muster?",
+          "a": "Ja, bei ausgewählten Materialien und bestehenden Layouts senden wir gerne ein Testmuster. Bitte in der Anfrage „Ich möchte ein Muster“ angeben."
         },
         "5": {
-          "q": "Welche Drucktechnologie wählen?",
-          "a": "Flexodruck bis 8 Farben und Rototiefdruck bis 10 Farben inkl. Unterdruck. Nach Logo, Farben und Menge empfehlen wir, was zu Marke und Budget passt."
+          "q": "Welche Drucktechnologien bieten Sie an?",
+          "a": "Flexodruck bis 8 Farben und Rotogravur bis 10 Farben inklusive hochwertigem Unterdruck. Die passende Technologie empfehlen wir nach Farben, Menge und Qualitätsanforderung."
         }
       }
     }
   },
   "faq": {
-    "label": "Tipps vor der Bestellung",
-    "title": "Tagebuch mit Tipps zu bedruckten Klebebändern",
-    "subtitle": "Praktische Empfehlungen zu Material, Klebstoff, Terminen und Druck. Filtern Sie nach Thema oder suchen Sie ein Stichwort — und schreiben Sie uns bei Unsicherheit.",
+    "label": "FAQ",
+    "title": "Fragen und Antworten",
+    "subtitle": "Finden Sie Antworten zu Druck, Terminen, Klebstoffen und Mustern. Filtern Sie nach Thema oder suchen Sie ein Stichwort.",
     "hero_cta": "Nachricht schreiben",
-    "search_label": "In Tipps suchen",
+    "search_label": "In Fragen suchen",
     "search_placeholder": "Suchen… z. B. HOT MELT, Muster, Lieferzeit",
-    "filters_label": "Tippthemen",
+    "filters_label": "Themenfilter",
     "filters": {
       "all": "Alle",
       "objednavka": "Bestellung",
-      "vyroba": "Termine & Produktion",
+      "vyroba": "Produktion & Termine",
       "material": "Material & Klebstoff",
       "potisk": "Druck & Grafik",
       "vzorky": "Muster"
     },
-    "more": "{n} weitere Tipps anzeigen",
-    "less": "Weniger anzeigen",
+    "more": "{n} weitere Fragen anzeigen",
     "count_preview": "Angezeigt {shown} von {total}",
-    "count_all": "{n} Tipps",
+    "count_all": "{n} Fragen",
     "count_filtered": "Angezeigt {visible} von {total}",
-    "empty_title": "Nichts gefunden",
-    "empty_text": "Anderes Stichwort oder Thema versuchen. Oder schreiben Sie uns — wir empfehlen den nächsten Schritt.",
+    "empty_title": "Keine Treffer",
+    "empty_text": "Versuchen Sie ein anderes Stichwort oder einen anderen Filter. Oder schreiben Sie uns und wir helfen.",
     "empty_cta": "Nachricht schreiben →",
     "contact_label": "Kontakt",
-    "cta_title": "Individuelle Empfehlung gewünscht?",
-    "cta_text": "Schreiben Sie kurz und wir melden uns mit einem Tipp zu Material, Klebstoff oder Druck für Ihr Packen.",
+    "cta_title": "Keine passende Antwort gefunden?",
+    "cta_text": "Schreiben Sie uns eine kurze Nachricht und wir melden uns mit einer Antwort oder Empfehlung zu Material und Druck.",
     "cta_button": "Nachricht senden",
     "form": {
       "name": "Vor- und Nachname",
       "email": "E-Mail",
       "phone": "Telefon",
-      "message": "Ihre Nachricht / wozu beraten",
+      "message": "Ihre Frage / Nachricht",
       "message_placeholder": "Schreiben Sie, wobei wir helfen sollen…",
       "gdpr": "Mit dem Absenden stimmen Sie der Verarbeitung personenbezogener Daten zur Bearbeitung der Nachricht zu.",
-      "gdpr_before": "Mit dem Absenden stimmen Sie der",
-      "gdpr_link": "Verarbeitung personenbezogener Daten",
-      "gdpr_after": "zur Bearbeitung der Nachricht zu.",
-      "gdpr_modal": {
-        "title": "Verarbeitung personenbezogener Daten",
-        "close": "Schließen",
-        "intro": "Informationen gemäß Art. 13 DSGVO zum Ausfüllen und Absenden des Kontaktformulars auf dieser Seite.",
-        "controller_heading": "Verantwortlicher",
-        "controller": "ALFA IN a.s., ID-Nr. 255 35 366, č.p. 74, 675 21 Nová Ves u Třebíče, Tschechien. Kontakt: epo@alfain.eu, Tel. +420 568 840 009, www.alfain.eu",
-        "data_heading": "Verarbeitete Daten",
-        "data": "Name, E-Mail, Telefon und der im Formular eingegebene Nachrichten-/Fragetext.",
-        "purpose_heading": "Zweck und Rechtsgrundlage",
-        "purpose": "Bearbeitung der Nachricht, Beantwortung Ihrer Frage und ggf. Empfehlung von Material oder Druck. Rechtsgrundlage: Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) und Vertragsanbahnung (Art. 6 Abs. 1 lit. b DSGVO).",
-        "retention_heading": "Speicherdauer",
-        "retention": "Für die Dauer der Bearbeitung der Nachricht und höchstens 4 Jahre ab dem letzten Kontakt, wenn kein Vertrag zustande kommt; bei Vertragsverhältnis für die Dauer des Vertrags und danach gesetzlich vorgeschrieben.",
-        "recipients_heading": "Empfänger",
-        "recipients": "Daten können Auftragsverarbeitern (IT-Verwaltung, Hosting, E-Mail-Dienste) auf Grundlage von Auftragsverarbeitungsverträgen und zuständigen Behörden offengelegt werden, sofern gesetzlich vorgeschrieben.",
-        "rights_heading": "Ihre Rechte",
-        "rights": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit, Widerspruch und Beschwerde beim Amt für den Schutz personenbezogener Daten (www.uoou.cz). Anfragen senden Sie an epo@alfain.eu.",
-        "full_link": "Vollständige Datenschutzrichtlinie"
-      },
       "sending": "Wird gesendet…",
       "success": "Danke, Ihre Nachricht wurde gesendet. Wir melden uns bald.",
       "error": "Senden fehlgeschlagen. Bitte schreiben Sie an karel.petrak@alfain.eu."
     },
     "items": {
       "moq": {
-        "q": "Wie plane ich die Bestellmenge?",
-        "a": "Bei BOPP starten wir üblich bei 360 Stk. (Akryl) oder 504 Stk. (HOT MELT). Bei Papier und BOPET stimmen wir individuell nach Druck und Aufbau ab — wir empfehlen einen praktischen Start.",
-        "search": "minimum menge bestellung tipp"
+        "q": "Wie hoch ist die Mindestbestellmenge?",
+        "a": "Bei BOPP-Bändern 360 Stück (Akryl) oder 504 Stück (HOT MELT); bei Papier- und BOPET-Bändern hängt die Mindestmenge individuell von Druck und Kreppauflage ab.",
+        "search": "mindestmenge moq bestellung stück bopp hot melt akryl"
       },
       "lead-time": {
-        "q": "Wie plane ich den Liefertermin?",
-        "a": "Rechnen Sie mit 3 bis 4 Wochen ab Freigabe der Grafik und Bestellung. Bei Eile Wunschtermin in die Anfrage — wir prüfen Auslastung und schlagen einen realistischen Weg vor.",
-        "search": "lieferzeit produktion wochen tipp"
+        "q": "Wie lange dauert die Herstellung von bedrucktem Klebeband?",
+        "a": "Die Standardlieferzeit beträgt 3 bis 4 Wochen ab Freigabe des Drucklayouts und der Bestellung. Bei dringenden Aufträgen bemühen wir uns um eine schnellere Lieferung.",
+        "search": "lieferzeit produktion wochen dringend versand"
       },
       "bez-potisku": {
-        "q": "Wann unbedrucktes Band wählen?",
-        "a": "Neutrales Band eignet sich als Lagervorrat oder für schnelles Verpacken ohne Branding. Qualität bleibt gleich — Druck später ergänzbar.",
-        "search": "unbedruckt tipp"
+        "q": "Kann ich auch unbedrucktes Band bestellen?",
+        "a": "Ja. Wir liefern dieselbe Qualität auch ohne Druck, ideal für Lagerbestände oder sofortiges Verpacken.",
+        "search": "unbedruckt neutral ohne druck"
       },
       "lepidlo": {
-        "q": "Wie zwischen HOT MELT und Akryl wählen?",
-        "a": "HOT MELT für Kälte und schnelles Verschließen im Lager. Akryl leiser und UV-beständiger bei längerer Lagerung. Mehr unter <a href=\"/#lepidla\">Welchen Klebstoff wählen?</a>.",
-        "search": "hot melt akryl klebstoff tipp"
+        "q": "Was ist der Unterschied zwischen HOT MELT und Akryl?",
+        "a": "HOT MELT haftet schnell und fest auch bei Kälte, ideal für Lager und Versand. Akryl läuft leiser ab und ist UV-beständiger, ideal für längere Lagerung. Mehr unter <a href=\"/#lepidla\">Welchen Klebstoff wählen?</a>.",
+        "search": "hot melt akryl klebstoff haftung uv leise abrollen lager"
       },
       "vzorky": {
-        "q": "Wie Material vorher testen?",
-        "a": "Bei ausgewählten Materialien und bestehenden Designs senden wir gerne ein Testmuster. In der Anfrage „Ich möchte ein Muster“ — wir raten, was zuerst sinnvoll ist.",
-        "search": "muster probe tipp"
+        "q": "Liefern Sie kostenlose Muster?",
+        "a": "Ja, bei ausgewählten Materialien und bestehenden Layouts senden wir gerne ein Testmuster. Bitte in der Anfrage „Ich möchte ein Muster“ angeben.",
+        "search": "muster gratis test sample"
       },
       "technologie": {
-        "q": "Welche Drucktechnologie wählen?",
-        "a": "Flexo bis 8 Farben, Rototiefdruck bis 10 Farben inkl. Unterdruck. Nach Logo, Farben, Menge und Qualitätsanspruch empfehlen wir die passende Technik.",
-        "search": "flexo rototiefdruck tipp"
+        "q": "Welche Drucktechnologien bieten Sie an?",
+        "a": "Flexodruck bis 8 Farben und Rotogravur bis 10 Farben inklusive hochwertigem Unterdruck. Die passende Technologie empfehlen wir nach Farben, Menge und Qualitätsanforderung.",
+        "search": "flexo rotogravur farben druck technologie unterdruck"
       },
       "grafika": {
-        "q": "Wie Druckgrafik vorbereiten?",
-        "a": "Am einfachsten Logo (PDF/AI/SVG) und kurze Text-/Farbidee senden. Wir erstellen eine Vorschau zur Freigabe und stimmen den Wiederholungsdruck ab.",
-        "search": "grafik logo vorschau tipp"
+        "q": "Erstellen Sie das Drucklayout für mich?",
+        "a": "Ja. Senden Sie Logo (idealerweise PDF/AI/SVG) und eine Vorstellung zu Text oder Farben, wir erstellen eine Druckvorschau zur Freigabe vor der Produktion.",
+        "search": "layout grafik logo vorschau design pdf ai svg"
       },
       "sirka": {
-        "q": "Welche Breite und Länge wählen?",
-        "a": "Am häufigsten empfehlen wir 50 mm (ggf. 48 mm nach bestehender Praxis). Weitere Breiten und Wickellängen stimmen wir nach Material und Hand-/Maschinenpacken ab.",
-        "search": "breite 48 50 mm tipp"
+        "q": "Welche Breiten und Längen fertigen Sie?",
+        "a": "Die gängigsten Breiten sind 48 mm und 50 mm; weitere Breiten und Wickellängen klären wir individuell nach Material und Anwendung (Hand- oder Maschinenverpackung).",
+        "search": "breite länge 48 mm 50 mm rolle wicklung"
       },
       "eko": {
-        "q": "Wann nachhaltiges Band wählen?",
-        "a": "Für geringeren Fußabdruck: ECO+ (recyceltes BOPP), Papierbänder und weitere Varianten. Wir empfehlen eine Mischung für Betrieb und Marke. Mehr unter Nachhaltige Bänder.",
-        "search": "eco nachhaltig tipp"
+        "q": "Haben Sie nachhaltige / ECO-Bänder?",
+        "a": "Ja, die ECO+-Serie (recyceltes BOPP), Papierbänder und weitere nachhaltige Varianten. Details finden Sie im Sortiment Nachhaltige Bänder.",
+        "search": "eco recycling nachhaltig papier fsc"
       },
       "stroje": {
-        "q": "Band für Hand- und Maschinenpacken?",
-        "a": "Für Handpacken oft leises Abrollen. Für Automaten empfehlen wir Material und Klebstoff nach Geschwindigkeit und Applikator — beschreiben Sie Ihre Linie.",
-        "search": "maschine linie tipp"
+        "q": "Eignen sich die Bänder auch für Maschinenverpackung?",
+        "a": "Ja. Je nach Klebstoff und Material empfehlen wir eine Variante für Handabroller oder für automatische Verpackungslinien.",
+        "search": "maschine automatik linie abroller dispenser"
       },
       "doprava": {
-        "q": "Versand und Rechnung planen?",
-        "a": "Lieferung in Tschechien und ins Ausland. Im Angebot klären wir Versand und Zahlungsziel nach Volumen und Zielort.",
-        "search": "versand rechnung tipp"
+        "q": "Wie laufen Versand und Rechnungsstellung?",
+        "a": "Wir liefern in ganz Tschechien und ins Ausland. Versand- und Zahlungsbedingungen klären wir im Angebot nach Volumen und Lieferort.",
+        "search": "versand rechnung lieferung eu preis"
       },
       "skladovani": {
-        "q": "Bänder gut lagern?",
-        "a": "Trocken, ohne direkte Sonne, Zimmertemperatur. Akryl hält länger; HOT MELT bei intensivem Packen eher früher verbrauchen.",
-        "search": "lagerung tipp"
+        "q": "Wie lagere ich die Bänder richtig?",
+        "a": "Ideal trocken, ohne direkte Sonne, bei Zimmertemperatur. Akryl-Bänder vertragen längere Lagerung besser; bei intensiver Nutzung empfehlen wir, HOT MELT früher zu verbrauchen.",
+        "search": "lagerung temperatur feuchtigkeit haltbarkeit"
       },
       "barvy": {
-        "q": "Farben abstimmen (Pantone / CMYK)?",
-        "a": "Farben nach Pantone oder Muster. Für Flexo und Rototiefdruck empfehlen wir passende Farben je Untergrund.",
-        "search": "pantone cmyk tipp"
+        "q": "Können Sie nach Pantone oder CMYK drucken?",
+        "a": "Ja. Farben stimmen wir nach Pantone oder Muster ab. Bei Flexo und Rotogravur empfehlen wir passende Farben je nach Untergrund (transparent, weiß, farbig).",
+        "search": "pantone cmyk farbe logo branding"
       },
       "opakovat": {
-        "q": "Gleiche Grafik einfach nachbestellen?",
-        "a": "Freigegebene Vorlagen behalten wir. Nachbestellungen gehen schneller — ohne erneute Freigabe, wenn nichts geändert wird.",
-        "search": "nachbestellung tipp"
+        "q": "Kann ich die Bestellung später mit demselben Layout wiederholen?",
+        "a": "Ja. Freigegebenes Layout und Druckdaten behalten wir, daher geht eine Nachbestellung schneller ohne erneute Freigabe (wenn nichts geändert wird).",
+        "search": "nachbestellung reprint gleiches layout"
       },
       "cena": {
-        "q": "Was beeinflusst den Preis?",
-        "a": "Material, Klebstoff, Breite, Wickellänge, Farbanzahl, Technik und Menge. Anfrage senden — wir erstellen ein Angebot und ggf. einen Wert-Tipp.",
-        "search": "preis angebot tipp"
+        "q": "Wovon hängt der Preis für bedrucktes Band ab?",
+        "a": "Den Preis beeinflussen Material, Klebstoff, Breite und Länge der Rolle, Farbanzahl, Drucktechnologie und Gesamtmenge. Senden Sie eine Anfrage, wir erstellen ein konkretes Angebot.",
+        "search": "preis angebot kalkulation kosten"
       },
       "papir-vs-bopp": {
-        "q": "Papierband oder BOPP?",
-        "a": "Papier für Eco-Packing und natürlichen Look. BOPP feuchtigkeitsbeständiger und oft vorteilhaft bei höheren Mengen. Wir beraten nach Prozess.",
-        "search": "papier bopp tipp"
+        "q": "Wann Papierband statt BOPP wählen?",
+        "a": "Papierband eignet sich für Öko-Verpackung, recyclingfähige Kartons und Brands mit natürlichem Look. BOPP ist feuchtigkeitsbeständiger und oft günstiger bei höheren Mengen. Gerne beraten wir zu Ihrem Prozess.",
+        "search": "papier bopp plastik öko karton"
       },
       "bezpecnostni": {
-        "q": "Sicherheits- oder Warnaufdruck nutzen?",
-        "a": "Warnungen, Fragile, VOID / Tamper und Logistiktexte schützen Sendung und Marke. Entwurf nach Briefing und Sprachen.",
-        "search": "sicherheit void tipp"
+        "q": "Können Sie Sicherheits- oder Warnbänder fertigen?",
+        "a": "Ja, Warnaufdrucke, Fragile, Vorsicht Glas, VOID / Tamper-Evident und Logistiktexte. Das Layout erstellen wir nach Ihren Vorgaben und Sprachversionen.",
+        "search": "sicherheit void tamper warnung fragile"
       },
       "zmena-grafiky": {
-        "q": "Worauf vor der Freigabe achten?",
-        "a": "Vorschau vor Produktion gründlich prüfen. Bis Druckstart sind Änderungen meist möglich. Danach bedeuten Änderungen Kosten und Termin — deshalb früh Feedback geben.",
-        "search": "freigabe änderung tipp"
+        "q": "Was, wenn ich das Layout nach Freigabe ändern muss?",
+        "a": "Solange Druckformen / Druck noch nicht gestartet sind, sind Änderungen meist möglich. Nach Produktionsstart oft nur mit Mehrkosten und neuem Termin, prüfen Sie die Vorschau daher sorgfältig.",
+        "search": "layout änderung korrektur freigabe"
       },
       "jadro": {
-        "q": "Welchen Kern / Hülse wählen?",
-        "a": "Standard Papierhülse für Hand und Maschine. Spezielle Durchmesser nach Ihrer Linie — Abwicklertyp nennen, wir empfehlen.",
-        "search": "kern hülse tipp"
+        "q": "Welchen Kern / welche Hülse verwenden Sie?",
+        "a": "Standardmäßig liefern wir Rollen mit üblicher Papphülse für Hand- und Maschinenabroller. Spezielle Durchmesser und Kernfestigkeiten klären wir individuell für Ihre Linie.",
+        "search": "kern hülse durchmesser core"
       },
       "zahranici": {
-        "q": "Lieferung außerhalb Tschechiens?",
-        "a": "Versand in die EU und darüber hinaus. Versand und Konditionen nach Ziel und Volumen vorab klären.",
-        "search": "export eu tipp"
+        "q": "Liefern Sie auch außerhalb Tschechiens?",
+        "a": "Ja. Wir versenden in die EU und darüber hinaus, Versand und Konditionen stimmen wir nach Ziel und Menge ab.",
+        "search": "ausland eu export lieferung"
       },
       "vzorek-potisk": {
-        "q": "Druck vor Serie prüfen?",
-        "a": "Bei neuer Grafik zuerst digitale Vorschau. Physisches Druckmuster individuell, oft bei bestehenden Designs oder größeren Projekten.",
-        "search": "druckmuster tipp"
+        "q": "Bekomme ich ein Muster schon mit meinem Druck?",
+        "a": "Bei neuen Layouts freigeben Sie zuerst meist eine digitale Vorschau. Ein physisches Druckmuster klären wir individuell, bei bestehenden Designs oder größeren Projekten.",
+        "search": "druckmuster vorschau trial"
       },
       "urgentni": {
-        "q": "Was tun bei Eile?",
-        "a": "Bei ausgewählten Aufträgen schneller möglich. Wunschtermin in die Anfrage — wir melden realistische Option und Tipps zur Beschleunigung.",
-        "search": "express eilig tipp"
+        "q": "Können Sie Express- / Eilproduktion?",
+        "a": "Bei ausgewählten Aufträgen ja, den Termin prüfen wir immer nach Auslastung und Druckkomplexität. Nennen Sie den Wunschtermin in der Anfrage, wir melden uns mit einer realistischen Option.",
+        "search": "eilig express schnelle lieferung"
       },
       "odstranitelna": {
-        "q": "Wann abziehbares Band?",
-        "a": "Wo keine Klebstoffreste bleiben sollen. Typ nach Oberfläche empfehlen wir. Mehr unter Abziehbare Bänder.",
-        "search": "abziehbar tipp"
+        "q": "Haben Sie sauber ablösbare Bänder?",
+        "a": "Ja, entfernbare (removable) Bänder, wenn keine Klebstoffreste bleiben sollen. Wir empfehlen den passenden Typ je nach Untergrund. Mehr im Sortiment Ablösbare Bänder.",
+        "search": "ablösbar removable rückstandsfrei klebstoff"
       },
       "vice-jazyku": {
-        "q": "Mehrsprachige Texte?",
-        "a": "Oft Logo plus Logistiktexte in mehreren Sprachen. Entwurf so, dass er bei Wiederholung lesbar bleibt — inkl. Texthierarchie.",
-        "search": "sprachen multilingual tipp"
+        "q": "Kann der Text auf dem Band mehrsprachig sein?",
+        "a": "Ja. Häufig kombinieren wir Logo mit Logistiktexten auf Tschechisch, Deutsch, Englisch und weiteren Sprachen, lesbar auch bei Wiederholung entlang des Bandes.",
+        "search": "sprachen mehrsprachig text mutation"
       }
     }
   },
@@ -499,8 +475,7 @@
           "label": "Klebstoff",
           "options": {
             "hot-melt": "HOT MELT",
-            "acryl": "Akryl",
-            "extra-glue": "AC Extra Glue"
+            "acryl": "Akryl"
           }
         },
         "industry": {
@@ -558,47 +533,47 @@
     "items": {
       "bonami": {
         "title": "Klebebänder mit Bonami-Logo",
-        "description": "Einfarbiger Markendruck auf weißem BOPP-Band: Logo und Möbelillustrationen für E-Commerce-Verpackungen.",
+        "description": "Einfarbiger Markendruck auf weißem BOPP-Band – Logo und Möbelillustrationen für E-Commerce-Verpackungen.",
         "industry_label": "E-Commerce"
       },
       "notino": {
         "title": "Klebebänder mit Notino-Logo",
-        "description": "Kontrastreicher weißer Logodruck auf schwarzem Band: starkes Sendungsbranding für Beauty-E-Commerce.",
+        "description": "Kontrastreicher weißer Logodruck auf schwarzem Band – starkes Sendungsbranding für Beauty-E-Commerce.",
         "industry_label": "E-Commerce"
       },
       "fenske": {
         "title": "Klebebänder mit Fenske-Logo",
-        "description": "Zweifarbiger Druck FENSKE / Weine und Feinkost auf Papierklebeband: Branding für Wein- und Feinkostsendungen.",
+        "description": "Zweifarbiger Druck FENSKE / Weine und Feinkost auf Klebeband – Branding für Wein- und Feinkostsendungen.",
         "industry_label": "Lebensmittel"
       },
       "just-nahrin": {
         "title": "Just+ / nahrin Klebebänder",
-        "description": "Mehrfarbiger Druck von Logos und Logistiktext inkl. Zerbrechlich-Symbol: Branding und Hinweise für den Empfänger.",
+        "description": "Mehrfarbiger Druck von Logos und Logistiktext inkl. Zerbrechlich-Symbol – Branding und Hinweise für den Empfänger.",
         "industry_label": "E-Commerce"
       },
       "vorsicht-glas": {
         "title": "Warnband Vorsicht Glas",
-        "description": "Warndruck „Vorsicht Glas!“ / „Do not drop“ auf Klebeband: Schutz zerbrechlicher Sendungen beim Transport.",
+        "description": "Warndruck „Vorsicht Glas!“ / „Do not drop“ auf Klebeband – Schutz zerbrechlicher Sendungen beim Transport.",
         "industry_label": "Logistik"
       },
       "alfain": {
         "title": "Klebebänder mit ALFA IN-Logo",
-        "description": "Oranges BOPP-Band mit weißem ALFA IN-Logo: Sendungsbranding direkt im Lager.",
+        "description": "Oranges BOPP-Band mit weißem ALFA IN-Logo – Sendungsbranding direkt im Lager.",
         "industry_label": "Logistik"
       },
       "papir-fsc": {
         "title": "Papierklebeband FSC / 22 PAP",
-        "description": "Ökologisches Papierklebeband mit FSC- und 22-PAP-Aufdruck: nachhaltige E-Commerce-Verpackung.",
+        "description": "Ökologisches Papierklebeband mit FSC- und 22-PAP-Aufdruck – nachhaltige E-Commerce-Verpackung.",
         "industry_label": "E-Commerce"
       },
       "alfain-sklad": {
         "title": "ALFA IN-Band im Lager",
-        "description": "Manuelles Verpacken auf Palette mit orangem ALFA IN-Band: Druck im realen Logistikbetrieb.",
+        "description": "Manuelles Verpacken auf Palette mit orangem ALFA IN-Band – Druck im realen Logistikbetrieb.",
         "industry_label": "Logistik"
       },
       "irplast-warehouse": {
         "title": "Automatisiertes Lager Empoli",
-        "description": "Automatisiertes Lager in Empoli: Logistik für fertige Bänder und Folien.",
+        "description": "Automatisiertes Lager in Empoli – Logistik für fertige Bänder und Folien.",
         "industry_label": "Produktion"
       },
       "irplast-warehouse-2": {
@@ -607,7 +582,7 @@
         "industry_label": "Produktion"
       },
       "irplast-shuttle": {
-        "title": "Produktion: Automated Shuttle",
+        "title": "Produktion – Automated Shuttle",
         "description": "Produktionsbereich mit automatischem Shuttle-System im Werk Empoli.",
         "industry_label": "Produktion"
       },
@@ -618,7 +593,7 @@
       },
       "irplast-lisim": {
         "title": "STILANSOL® LISIM-Linie",
-        "description": "Simultane BOPP-Folienorientierung: Brückner LISIM / STILANSOL® Produktionslinie.",
+        "description": "Simultane BOPP-Folienorientierung – Brückner LISIM / STILANSOL® Produktionslinie.",
         "industry_label": "Produktion"
       },
       "irplast-slitter": {
@@ -642,7 +617,7 @@
         "industry_label": "E-Commerce"
       },
       "flexotisk-8": {
-        "title": "Flexodruck: 8 Farben",
+        "title": "Flexodruck – 8 Farben",
         "description": "Hochauflösender Vollfarb-Flexodruck für aufmerksamkeitsstarke Markenauftritte auf Klebebändern und Lebensmittelanwendungen.",
         "industry_label": "Lebensmittel"
       },
@@ -662,7 +637,7 @@
         "industry_label": "Sicherheit"
       },
       "logisticky-kontakty": {
-        "title": "Logistikdruck: Kontakte",
+        "title": "Logistikdruck – Kontakte",
         "description": "Informationsdruck mit Kontaktdaten, QR-Code oder Anweisungen für den Empfänger der Sendung.",
         "industry_label": "Logistik"
       },
@@ -687,7 +662,7 @@
         "industry_label": "E-Commerce"
       },
       "vystrizny-krehke": {
-        "title": "Warndruck: zerbrechlich",
+        "title": "Warndruck – zerbrechlich",
         "description": "Warnbänder mit „Zerbrechlich“, „Nicht kippen“ oder einem individuellen Symbol zum Schutz von Waren beim Transport.",
         "industry_label": "Logistik"
       },
@@ -705,8 +680,10 @@
       "subtitle": "Wählen Sie den Produkttyp nach Material und Einsatzzweck. In jeder Kategorie finden Sie eine detaillierte Übersicht der verfügbaren Varianten.",
       "filter": "Filter",
       "clear_all": "Alle löschen",
-      "results_title": "Produkte nach Filtern",
-      "empty": "Kein Band entspricht der gewählten Filterkombination. Versuchen Sie, einen Filter zu entfernen.",
+      "search_label": "Bänder und Firmen suchen",
+      "search_placeholder": "Bänder, Firmen suchen…",
+      "results_title": "Gefundene Ergebnisse",
+      "empty": "Nichts entspricht der Suche oder den Filtern. Versuchen Sie ein anderes Stichwort oder entfernen Sie einen Filter.",
       "show_products": "Produkte anzeigen",
       "cta_quote": "Unverbindliche Kalkulation"
     },
@@ -947,15 +924,15 @@
         "benefits": [
           {
             "title": "Identische mechanische Eigenschaften",
-            "text": "Das Band bietet dieselbe Zugfestigkeit und Zuverlässigkeit wie Standard-BOPP-Varianten: trotz 100 % regeneriertem Material."
+            "text": "Das Band bietet dieselbe Zugfestigkeit und Zuverlässigkeit wie Standard-BOPP-Varianten – trotz 100 % regeneriertem Material."
           },
           {
             "title": "100 % regenerierte BOPP-Folie",
-            "text": "Hergestellt aus sauberem postindustriellen Abfall aus unserer eigenen Folienproduktion: ohne Neumaterial."
+            "text": "Hergestellt aus sauberem postindustriellen Abfall aus unserer eigenen Folienproduktion – ohne Neumaterial."
           },
           {
             "title": "Stärkung der Unternehmensreputation",
-            "text": "ECO+-Bänder schützen Ware zuverlässig und zeigen ökologische Verantwortung: neutral oder mit Firmendruck."
+            "text": "ECO+-Bänder schützen Ware zuverlässig und zeigen ökologische Verantwortung – neutral oder mit Firmendruck."
           }
         ],
         "uses": [
@@ -1043,7 +1020,7 @@
         "benefits": [
           {
             "title": "Gleicher Preis und gleiche Qualität",
-            "text": "Gleiche mechanische Eigenschaften und Zuverlässigkeit wie Standard-BOPP-Varianten: ohne „Öko-Aufpreis“."
+            "text": "Gleiche mechanische Eigenschaften und Zuverlässigkeit wie Standard-BOPP-Varianten – ohne „Öko-Aufpreis“."
           },
           {
             "title": "Folie aus eigenem Produktionsabfall",
@@ -1051,7 +1028,7 @@
           },
           {
             "title": "Stärkung der Unternehmensreputation",
-            "text": "ECO+-Bänder schützen Ware zuverlässig und zeigen ökologische Verantwortung: neutral oder mit Firmendruck."
+            "text": "ECO+-Bänder schützen Ware zuverlässig und zeigen ökologische Verantwortung – neutral oder mit Firmendruck."
           }
         ],
         "uses": [
@@ -1139,7 +1116,7 @@
         "benefits": [
           {
             "title": "Identische mechanische Eigenschaften",
-            "text": "Gleiche Zugfestigkeit und Zuverlässigkeit wie Standard-BOPP-Varianten: trotz hohem Recyclinganteil."
+            "text": "Gleiche Zugfestigkeit und Zuverlässigkeit wie Standard-BOPP-Varianten – trotz hohem Recyclinganteil."
           },
           {
             "title": "Folie aus eigenem Produktionsabfall",
@@ -1147,7 +1124,7 @@
           },
           {
             "title": "Stärkung der Unternehmensreputation",
-            "text": "ECO+-Bänder schützen Ware zuverlässig und zeigen ökologische Verantwortung: neutral oder mit Firmendruck."
+            "text": "ECO+-Bänder schützen Ware zuverlässig und zeigen ökologische Verantwortung – neutral oder mit Firmendruck."
           }
         ],
         "uses": [
@@ -1297,7 +1274,7 @@
         "benefits": [
           {
             "title": "Plastikfreier Papierträger",
-            "text": "Vollständig recycelbare Verpackung: das Band geht gemeinsam mit dem Karton ohne Trennung."
+            "text": "Vollständig recycelbare Verpackung – das Band geht gemeinsam mit dem Karton ohne Trennung."
           },
           {
             "title": "Acrylklebstoff",
@@ -1359,7 +1336,7 @@
         "benefits": [
           {
             "title": "Plastikfreier Papierträger",
-            "text": "Vollständig recycelbare Verpackung: das Band geht gemeinsam mit dem Karton ohne Trennung."
+            "text": "Vollständig recycelbare Verpackung – das Band geht gemeinsam mit dem Karton ohne Trennung."
           },
           {
             "title": "Acrylklebstoff",
@@ -1415,13 +1392,13 @@
       },
       "udrzitelna-paska-poly-plus": {
         "name": "Nachhaltiges Klebeband POLY+",
-        "tagline": "Ökologische PVC-Alternative: mattes, nicht reflektierendes BOPP-Klebeband mit leisem Acrylklebstoff.",
+        "tagline": "Ökologische PVC-Alternative – mattes, nicht reflektierendes BOPP-Klebeband mit leisem Acrylklebstoff.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nachhaltige Klebebänder",
         "benefits": [
           {
             "title": "Ökologische PVC-Alternative",
-            "text": "Matte 35 µm BOPP-Folie ohne Chlor und Lösungsmittel: geeigneter Ersatz für Vinylbänder."
+            "text": "Matte 35 µm BOPP-Folie ohne Chlor und Lösungsmittel – geeigneter Ersatz für Vinylbänder."
           },
           {
             "title": "Acrylklebstoff",
@@ -1487,7 +1464,7 @@
           },
           {
             "title": "Low-Noise-Abrollen",
-            "text": "Optionale geräuscharme Ausstattung: leises Abrollen und Betriebstemperatur bis −10 °C."
+            "text": "Optionale geräuscharme Ausstattung – leises Abrollen und Betriebstemperatur bis −10 °C."
           },
           {
             "title": "Hohe UV-Beständigkeit",
@@ -1496,7 +1473,7 @@
         ],
         "uses": [
           "Manuelles Verpacken mit leisem (Low-Noise) Abrollen",
-          "Automatische Verpackungsmaschinen: laute (Noisy) Version",
+          "Automatische Verpackungsmaschinen – laute (Noisy) Version",
           "Standard-Kartonverschluss",
           "Bedruckung mit Firmenlogo und Informationen"
         ],
@@ -1627,21 +1604,21 @@
       },
       "bopp-paska-evergreen": {
         "name": "BOPP-Klebeband Evergreen",
-        "tagline": "Farbiges BOPP-Klebeband zur Kennzeichnung und visuellen Unterscheidung von Sendungen.",
+        "tagline": "Acrylklebeband für Extrembedingungen und Kälte.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP-Klebebänder",
         "benefits": [
           {
-            "title": "Zugfestigkeit 46 N/25 mm",
-            "text": "BOPP-Folie mit 45 µm Dicke hält Spannung beim Verpacken und bei langfristiger Lagerung stand."
+            "title": "Außergewöhnliche Leistung bei Kälte und Extrembedingungen",
+            "text": "Entwickelt für die Anwendung nahe 0 °C, Kühllagerung und Verklebung auf anspruchsvollen Oberflächen (z. B. minderwertige oder recycelte Kartons)."
           },
           {
-            "title": "Acrylklebstoff",
-            "text": "Leises Abrollen, langfristig stabile Klebkraft und zuverlässige Leistung unter Lagerbedingungen."
+            "title": "Hochleistungsfähiger wasserbasierter Acrylatkleber",
+            "text": "Bietet sofortige Haftung und zuverlässige Klebkraft, die in anspruchsvollen Umgebungen auch Naturkautschukkleber voll ersetzt. Lösungsmittelfrei und hervorragend UV-beständig."
           },
           {
-            "title": "Farbliche Kennzeichnung von Sendungen",
-            "text": "Visuelle Paketkennzeichnung und Lagerorientierung im Bereich −5 až +60 °C."
+            "title": "Hohe UV-Beständigkeit",
+            "text": "Acrylklebstoff behält seine Klebkraft auch bei langfristiger Lagerung und UV-Belastung."
           }
         ],
         "uses": [
@@ -1651,30 +1628,32 @@
           "Bedruckung mit Firmenlogo und Informationen"
         ],
         "params_values": {
-          "carrier": "BOPP-Folie (farbig)",
-          "thickness": "45 µm",
-          "adhesive": "Acryl",
-          "adhesion": "3,0 N/25 mm",
-          "temperature": "−5 bis +60 °C",
-          "strength": "46 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 µm",
+          "adhesive": "Akryl (Noisy)",
+          "adhesion": "22 µm",
+          "strength": "0–28 °C",
+          "temperature": "−20 bis +60 °C",
+          "min_qty": "ab 1 Palette (2376 Stk.)"
         },
         "spec_pills": [
-          "BOPP-Folie (farbig)",
-          "Acryl",
-          "−5 bis +60 °C"
+          "BOPP",
+          "Akryl (Noisy)",
+          "−20 bis +60 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
           "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben",
+          "min_qty": "Mindestmenge"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1703,7 +1682,7 @@
           },
           {
             "title": "Hohe Klebkraft",
-            "text": "Lässt sich nicht leicht von Stretchfolie abziehen: klarer Nachweis der Sendungssicherung."
+            "text": "Lässt sich nicht leicht von Stretchfolie abziehen – klarer Nachweis der Sendungssicherung."
           }
         ],
         "uses": [
@@ -1817,21 +1796,21 @@
       },
       "bopp-paska-tamper-evident": {
         "name": "BOPP-Klebeband Tamper Evident",
-        "tagline": "Sicherheitsband mit VOID-Effekt: beim Abziehen hinterlässt es einen sichtbaren Hinweis, der nicht spurlos entfernt werden kann.",
+        "tagline": "BOPP-Klebeband mit Sicherheitsdruck zur sofortigen Erkennung unbefugten Öffnens.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP-Klebebänder",
         "benefits": [
           {
-            "title": "VOID-Effekt beim Abziehen",
-            "text": "Beim Abziehen hinterlässt es einen VOID-/OPEN-/FRAUD-Hinweis auf dem Karton, der praktisch nicht entfernt werden kann."
+            "title": "Sofortige Manipulationserkennung",
+            "text": "Beim Abziehversuch hinterbleibt eine sichtbare VOID/FRAUD/OPEN-Spur – jeder unbefugte Zugriff auf die Sendung wird sofort erkannt."
           },
           {
             "title": "Neutrales Erscheinungsbild",
-            "text": "Es wirkt wie ein gewöhnliches Klebeband, bis es unbefugt abgezogen wird."
+            "text": "Es wirkt wie gewöhnliches Packband, bis es unbefugt abgezogen wird."
           },
           {
-            "title": "Karton und Stretchfolie",
-            "text": "Geeignet für alle Kartonarten und Stretchfolien, in verschiedenen Farben und mit Bedruckung erhältlich."
+            "title": "Individuelle Personalisierung möglich",
+            "text": "Sicherheitstext oder Motiv lassen sich vollständig anpassen (z. B. Firmenlogo, Warnhinweis, eigener Text „VOID / OFFEN“)."
           }
         ],
         "uses": [
@@ -1841,30 +1820,32 @@
           "Bedruckung mit Firmenlogo und Informationen"
         ],
         "params_values": {
-          "carrier": "BOPP-Folie",
-          "thickness": "45 µm",
-          "adhesive": "Sicherheit (VOID)",
-          "adhesion": "3,5 N/25 mm",
-          "temperature": "−5 bis +60 °C",
-          "strength": "40 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "35 µm",
+          "adhesive": "Akryl (Low noise)",
+          "adhesion": "29 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 bis +50 / 0 bis +60 / −10 bis +60 °C",
+          "min_qty": "ab 180 Stk."
         },
         "spec_pills": [
-          "BOPP-Folie",
-          "Sicherheit (VOID)",
-          "−5 bis +60 °C"
+          "BOPP",
+          "Akryl (Low noise)",
+          "0 bis +50 / 0 bis +60 / −10 bis +60 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
           "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben",
+          "min_qty": "Mindestmenge"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1893,7 +1874,7 @@
           },
           {
             "title": "Extreme Temperaturen",
-            "text": "Leistung bei hohen Lackiertemperaturen und Frost: ohne Oberflächenschäden."
+            "text": "Leistung bei hohen Lackiertemperaturen und Frost – ohne Oberflächenschäden."
           }
         ],
         "uses": [
@@ -1955,7 +1936,7 @@
           },
           {
             "title": "Chemische Beständigkeit",
-            "text": "Festigkeit 60 N/25 mm: beständig gegen Lösungsmittel, Öle und aggressive Umgebungen."
+            "text": "Festigkeit 60 N/25 mm – beständig gegen Lösungsmittel, Öle und aggressive Umgebungen."
           }
         ],
         "uses": [
@@ -2003,21 +1984,21 @@
       },
       "bopet-paska-eco-hit19": {
         "name": "BOPET-Klebeband ECO HIT19",
-        "tagline": "Polyesterband mit recyceltem Anteil und hoher Beständigkeit.",
+        "tagline": "BOPET-Klebeband aus 85 % recycelten PET-Flaschen.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET-Klebebänder",
         "benefits": [
           {
-            "title": "Temperaturbereich −40 bis +150 °C",
-            "text": "Polyesterträger (19 µm) behält seine Eigenschaften in anspruchsvollen Betrieben."
+            "title": "Europäisches Patent & min. 85 % recycelter PET-Abfall",
+            "text": "Das einzige Klebeband in Europa mit geschütztem Patent für recyceltes PET aus Kunststoffflaschen. Ideal für E-Shops und Unternehmen, die Nachhaltigkeits- und ESG-Ziele ernsthaft erfüllen wollen."
           },
           {
-            "title": "Acrylklebstoff",
-            "text": "Leises Abrollen, langfristig stabile Klebkraft und zuverlässige Leistung unter Lagerbedingungen."
+            "title": "Extreme mechanische Beständigkeit",
+            "text": "Der Polyesterträger verleiht dem Band enorme Reißfestigkeit – beim Abrollen und Applizieren dehnt oder verformt es sich nicht."
           },
           {
-            "title": "Recyceltes Polyester",
-            "text": "Festigkeit 58 N/25 mm mit geringerem ökologischen Fußabdruck als übliche PET-Folie."
+            "title": "Höhere Effizienz dank Polyester",
+            "text": "Das dünnere Folienprofil fasst bei Standard-Rollendurchmesser die doppelte Meterzahl. Das bedeutet selteneren Rollenwechsel an Verpackungslinien, flüssigeren Betrieb und weniger Lagerplatz."
           }
         ],
         "uses": [
@@ -2027,30 +2008,32 @@
           "Automatische Verpackungslinien mit ESG-Zielen"
         ],
         "params_values": {
-          "carrier": "Recycelte PET-Folie",
+          "carrier": "BOPET",
           "thickness": "19 µm",
-          "adhesive": "Acryl",
-          "adhesion": "3,3 N/25 mm",
-          "temperature": "−40 bis +150 °C",
-          "strength": "58 N/25 mm"
+          "adhesive": "Hot Melt",
+          "adhesion": "18 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 bis +50 °C",
+          "min_qty": "ab 1080 Stk."
         },
         "spec_pills": [
-          "Recycelte PET-Folie",
-          "Acryl",
-          "−40 bis +150 °C"
+          "BOPET",
+          "Hot Melt",
+          "0 bis +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
           "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben",
+          "min_qty": "Mindestmenge"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -2079,7 +2062,7 @@
           },
           {
             "title": "Chemische Beständigkeit",
-            "text": "Festigkeit 55 N/25 mm: beständig gegen Lösungsmittel, Öle und aggressive Umgebungen."
+            "text": "Festigkeit 55 N/25 mm – beständig gegen Lösungsmittel, Öle und aggressive Umgebungen."
           }
         ],
         "uses": [
@@ -2133,7 +2116,7 @@
         "benefits": [
           {
             "title": "Vollständig recycelbar",
-            "text": "Kraftpapierträger (100 µm): umweltfreundliche Verpackung mit sauberer matter Optik."
+            "text": "Kraftpapierträger (100 µm) – umweltfreundliche Verpackung mit sauberer matter Optik."
           },
           {
             "title": "Acrylklebstoff",
@@ -2195,7 +2178,7 @@
         "benefits": [
           {
             "title": "Vollständig recycelbar",
-            "text": "Kraftpapierträger (115 µm): umweltfreundliche Verpackung mit sauberer matter Optik."
+            "text": "Kraftpapierträger (115 µm) – umweltfreundliche Verpackung mit sauberer matter Optik."
           },
           {
             "title": "Kautschukklebstoff",
@@ -2257,7 +2240,7 @@
         "benefits": [
           {
             "title": "Vollständig recycelbar",
-            "text": "Kraftpapierträger (120 µm): umweltfreundliche Verpackung mit sauberer matter Optik."
+            "text": "Kraftpapierträger (120 µm) – umweltfreundliche Verpackung mit sauberer matter Optik."
           },
           {
             "title": "Kautschukklebstoff",
@@ -2319,7 +2302,7 @@
         "benefits": [
           {
             "title": "Recycelter Papierträger",
-            "text": "Band und Karton werden gemeinsam recycelt: ohne Materialtrennung."
+            "text": "Band und Karton werden gemeinsam recycelt – ohne Materialtrennung."
           },
           {
             "title": "Kautschukklebstoff",
@@ -2381,11 +2364,11 @@
         "benefits": [
           {
             "title": "Vollständig recycelbar",
-            "text": "Kraftpapierträger (130 µm): umweltfreundliche Verpackung mit sauberer matter Optik."
+            "text": "Kraftpapierträger (130 µm) – umweltfreundliche Verpackung mit sauberer matter Optik."
           },
           {
             "title": "Hot-Melt-Klebstoff",
-            "text": "Schnelle, feste Haftung auch bei niedrigen Temperaturen: für manuelles und maschinelles Verpacken."
+            "text": "Schnelle, feste Haftung auch bei niedrigen Temperaturen – für manuelles und maschinelles Verpacken."
           },
           {
             "title": "Festigkeit 60 N/25 mm",
@@ -2443,11 +2426,11 @@
         "benefits": [
           {
             "title": "Vollständig recycelbar",
-            "text": "Kraftpapierträger (120 µm): umweltfreundliche Verpackung mit sauberer matter Optik."
+            "text": "Kraftpapierträger (120 µm) – umweltfreundliche Verpackung mit sauberer matter Optik."
           },
           {
             "title": "Hot-Melt-Klebstoff",
-            "text": "Schnelle, feste Haftung auch bei niedrigen Temperaturen: für manuelles und maschinelles Verpacken."
+            "text": "Schnelle, feste Haftung auch bei niedrigen Temperaturen – für manuelles und maschinelles Verpacken."
           },
           {
             "title": "Festigkeit 55 N/25 mm",
@@ -2505,7 +2488,7 @@
         "benefits": [
           {
             "title": "Vollständig recycelbar",
-            "text": "Kraftpapierträger (150 µm): umweltfreundliche Verpackung mit sauberer matter Optik."
+            "text": "Kraftpapierträger (150 µm) – umweltfreundliche Verpackung mit sauberer matter Optik."
           },
           {
             "title": "Kautschukklebstoff",
@@ -2567,7 +2550,7 @@
         "benefits": [
           {
             "title": "Keine Rückstände nach dem Abziehen",
-            "text": "Recycelte PET-Folie (19 µm): hinterlässt nach dem Abziehen weder Klebstoff noch Oberflächenschäden."
+            "text": "Recycelte PET-Folie (19 µm) – hinterlässt nach dem Abziehen weder Klebstoff noch Oberflächenschäden."
           },
           {
             "title": "Acrylklebstoff",
@@ -2629,7 +2612,7 @@
         "benefits": [
           {
             "title": "Keine Rückstände nach dem Abziehen",
-            "text": "BOPP-Folie (50 µm): hinterlässt nach dem Abziehen weder Klebstoff noch Oberflächenschäden."
+            "text": "BOPP-Folie (50 µm) – hinterlässt nach dem Abziehen weder Klebstoff noch Oberflächenschäden."
           },
           {
             "title": "Acrylklebstoff",
@@ -2691,15 +2674,15 @@
         "benefits": [
           {
             "title": "Längs verlaufende Glasfasern",
-            "text": "Zugfestigkeit 300 N/25 mm: maximale Beständigkeit in Zugrichtung."
+            "text": "Zugfestigkeit 300 N/25 mm – maximale Beständigkeit in Zugrichtung."
           },
           {
             "title": "Hot-Melt-Klebstoff",
-            "text": "Schnelle, feste Haftung auch bei niedrigen Temperaturen: für manuelles und maschinelles Verpacken."
+            "text": "Schnelle, feste Haftung auch bei niedrigen Temperaturen – für manuelles und maschinelles Verpacken."
           },
           {
             "title": "Sicherung schwerer Lasten",
-            "text": "Klebkraft 4,5 N/25 mm: zuverlässige Sicherung von Paletten und übergroßen Sendungen."
+            "text": "Klebkraft 4,5 N/25 mm – zuverlässige Sicherung von Paletten und übergroßen Sendungen."
           }
         ],
         "uses": [
@@ -2753,15 +2736,15 @@
         "benefits": [
           {
             "title": "Kreuzweise Glasfasern",
-            "text": "Zugfestigkeit 320 N/25 mm: Beständigkeit in allen Belastungsrichtungen."
+            "text": "Zugfestigkeit 320 N/25 mm – Beständigkeit in allen Belastungsrichtungen."
           },
           {
             "title": "Hot-Melt-Klebstoff",
-            "text": "Schnelle, feste Haftung auch bei niedrigen Temperaturen: für manuelles und maschinelles Verpacken."
+            "text": "Schnelle, feste Haftung auch bei niedrigen Temperaturen – für manuelles und maschinelles Verpacken."
           },
           {
             "title": "Sicherung schwerer Lasten",
-            "text": "Klebkraft 4,7 N/25 mm: zuverlässige Sicherung von Paletten und übergroßen Sendungen."
+            "text": "Klebkraft 4,7 N/25 mm – zuverlässige Sicherung von Paletten und übergroßen Sendungen."
           }
         ],
         "uses": [
@@ -2819,11 +2802,11 @@
           },
           {
             "title": "Hot-Melt-Klebstoff",
-            "text": "Schnelle, feste Haftung auch bei niedrigen Temperaturen: für manuelles und maschinelles Verpacken."
+            "text": "Schnelle, feste Haftung auch bei niedrigen Temperaturen – für manuelles und maschinelles Verpacken."
           },
           {
             "title": "Ohne Glasfasern",
-            "text": "Saubere Fixierung ohne sich lösende Fasern: Temperaturbereich −10 až +60 °C."
+            "text": "Saubere Fixierung ohne sich lösende Fasern – Temperaturbereich −10 až +60 °C."
           }
         ],
         "uses": [
@@ -2877,7 +2860,7 @@
         "benefits": [
           {
             "title": "Zugfestigkeit 120 N/25 mm",
-            "text": "Gewebeverstärkung (250 µm): Reißfestigkeit bei anspruchsvollem Einsatz."
+            "text": "Gewebeverstärkung (250 µm) – Reißfestigkeit bei anspruchsvollem Einsatz."
           },
           {
             "title": "Kautschukklebstoff",
@@ -2885,7 +2868,7 @@
           },
           {
             "title": "Haftung auf rauen Oberflächen",
-            "text": "Klebkraft 6,0 N/25 mm: haftet auf Metall, Holz, Beton und Kunststoff (−10 až +70 °C)."
+            "text": "Klebkraft 6,0 N/25 mm – haftet auf Metall, Holz, Beton und Kunststoff (−10 až +70 °C)."
           }
         ],
         "uses": [
@@ -2939,7 +2922,7 @@
         "benefits": [
           {
             "title": "Zugfestigkeit 130 N/25 mm",
-            "text": "Gewebeverstärkung (280 µm): Reißfestigkeit bei anspruchsvollem Einsatz."
+            "text": "Gewebeverstärkung (280 µm) – Reißfestigkeit bei anspruchsvollem Einsatz."
           },
           {
             "title": "Kautschukklebstoff",
@@ -2947,7 +2930,7 @@
           },
           {
             "title": "Haftung auf rauen Oberflächen",
-            "text": "Klebkraft 6,5 N/25 mm: haftet auf Metall, Holz, Beton und Kunststoff (−10 až +70 °C)."
+            "text": "Klebkraft 6,5 N/25 mm – haftet auf Metall, Holz, Beton und Kunststoff (−10 až +70 °C)."
           }
         ],
         "uses": [
@@ -3001,7 +2984,7 @@
         "benefits": [
           {
             "title": "Zugfestigkeit 110 N/25 mm",
-            "text": "Gewebeverstärkung (220 µm): Reißfestigkeit bei anspruchsvollem Einsatz."
+            "text": "Gewebeverstärkung (220 µm) – Reißfestigkeit bei anspruchsvollem Einsatz."
           },
           {
             "title": "Kautschukklebstoff",
@@ -3009,7 +2992,7 @@
           },
           {
             "title": "Haftung auf rauen Oberflächen",
-            "text": "Klebkraft 5,5 N/25 mm: haftet auf Metall, Holz, Beton und Kunststoff (−10 až +65 °C)."
+            "text": "Klebkraft 5,5 N/25 mm – haftet auf Metall, Holz, Beton und Kunststoff (−10 až +65 °C)."
           }
         ],
         "uses": [
@@ -3063,7 +3046,7 @@
         "benefits": [
           {
             "title": "Saubere Kanten ohne Auslaufen",
-            "text": "Kreppträger (130 µm): Farbe dringt beim Streichen nicht unter das Band."
+            "text": "Kreppträger (130 µm) – Farbe dringt beim Streichen nicht unter das Band."
           },
           {
             "title": "Kautschukklebstoff",
@@ -3125,7 +3108,7 @@
         "benefits": [
           {
             "title": "Saubere Kanten ohne Auslaufen",
-            "text": "Kreppträger (150 µm): Farbe dringt beim Streichen nicht unter das Band."
+            "text": "Kreppträger (150 µm) – Farbe dringt beim Streichen nicht unter das Band."
           },
           {
             "title": "Kautschukklebstoff",
@@ -3202,7 +3185,7 @@
       "tailor_bullet_consult": "Beratung zu den Parametern vor der Bestellung",
       "tailor_bullet_params": "Verschiedene Klebstoff- und Trägerausführungen",
       "no_print_note": "Dieses Band ist auch ohne Bedruckung erhältlich.",
-      "no_print_body": "Neutrale (unbedruckte) Version desselben Materials: ideal für den sofortigen Einsatz oder Lagerbestand.",
+      "no_print_body": "Neutrale (unbedruckte) Version desselben Materials – ideal für den sofortigen Einsatz oder Lagerbestand.",
       "no_print_link": "Verfügbarkeit anfragen",
       "product_card_detail": "Details anzeigen"
     },
@@ -3259,10 +3242,16 @@
       "product_one": "1 Produkt",
       "product_few": "{n} Produkte",
       "product_many": "{n} Produkte",
+      "ref_one": "1 Referenz",
+      "ref_few": "{n} Referenzen",
+      "ref_many": "{n} Referenzen",
+      "results_mixed": "{n} Ergebnisse",
       "detail": "Details",
       "inquire": "Anfragen",
-      "tag_pet85": "85% PET",
+      "gallery_ref": "Referenz",
+      "open_gallery": "In der Galerie öffnen →",
       "tag_eco": "ECO",
+      "tag_pet85": "85% PET",
       "tag_cold": "-70 °C",
       "tag_hot": "Hohe Temperaturen",
       "tag_chem": "Chemische Beständigkeit",

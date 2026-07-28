@@ -104,14 +104,14 @@ PRODUCTS = {
    P("BOPP páska HOT MELT","BOPP Tapes/BOPPHOTMELT.jpeg","BOPP páska s HOT MELT lepidlem pro rychlé a pevné přilnutí.","BOPP","25 / 28 / 32 µm","HOT MELT","18 µm","0 až +50 °C","14–28 °C"),
    P("BOPP páska EXTRA GLUE+","BOPP Tapes/BOPPACRYLIC.jpeg","Akrylová páska se zvýšenou vrstvou lepidla pro náročné povrchy.","BOPP","28 / 32 / 35 µm","Akryl","28 µm","−10 až +60 °C","14–28 °C"),
    P("BOPP páska TACK+","BOPP Tapes/BOPPHOTMELT1.jpg","HOT MELT páska s extrémní přilnavostí a okamžitým lepivým efektem. Pro obtížné aplikace.","BOPP","28 / 32 µm","HOT MELT (tack+)","18 µm","0 až +50 °C","14–28 °C"),
-   P("BOPP páska Tamper Evident","BOPP Tapes/TAMPER-EVIDENT.jpg","Bezpečnostní páska s VOID efektem – při odlepení zanechá viditelné upozornění, které nelze bez stopy odstranit.","BOPP fólie","45 µm","Bezpečnostní (VOID)","3,5 N/25 mm","−5 až +60 °C","40 N/25 mm"),
-   P("BOPP páska Evergreen","BOPP Tapes/EVERGREEN.jpg","Barevná BOPP páska pro značení a vizuální odlišení zásilek.","BOPP fólie (barevná)","45 µm","Akrylové","3,0 N/25 mm","−5 až +60 °C","46 N/25 mm"),
+   P("BOPP páska Tamper Evident","BOPP Tapes/TAMPER-EVIDENT.jpg","BOPP páska s ochranným potiskem pro okamžitou detekci neoprávněného otevření zásilky.","BOPP","35 µm","Akryl (Low noise)","—","0 až +60 °C","—"),
+   P("BOPP páska Evergreen","BOPP Tapes/EVERGREEN.jpg","Akrylová páska do extrémních podmínek a chladu.","BOPP","28 µm","Akryl (Noisy)","—","−20 až +60 °C","—"),
  ],
  "bopet-pasky":[
    P("BOPET páska ATE23","BOPET Tapes/ATE23.jpg","Tenká polyesterová páska s vysokou teplotní odolností.","Polyesterová (PET) fólie","25 µm","Akrylové","3,5 N/25 mm","−40 až +150 °C","60 N/25 mm"),
    P("BOPET páska AIT","BOPET Tapes/BOPETAIT.jpg","Polyesterová páska se silikonovým lepidlem pro extrémní teploty.","Polyesterová (PET) fólie","30 µm","Silikonové","3,0 N/25 mm","−40 až +180 °C","65 N/25 mm"),
    P("BOPET páska HIT17","BOPET Tapes/BOPETHIT17.jpg","Ultratenká PET páska pro elektrotechniku a přesné aplikace.","Polyesterová (PET) fólie","17 µm","Akrylové","3,2 N/25 mm","−40 až +155 °C","55 N/25 mm"),
-   P("BOPET páska ECO HIT19","BOPET Tapes/ECOHIT19.jpg","Polyesterová páska s recyklovaným obsahem a vysokou odolností.","Recyklovaná PET fólie","19 µm","Akrylové","3,3 N/25 mm","−40 až +150 °C","58 N/25 mm"),
+   P("BOPET páska ECO HIT19","BOPET Tapes/ECOHIT19.jpg","BOPET páska z 85 % recyklovaných PET lahví.","BOPET","19 µm","HOT MELT","—","0 až +50 °C","—"),
  ],
  "textilni-pasky":[
    P("Textilní páska BC","Textilní Lepící Pásky/BC.jpg","Pevná textilní (duct) páska pro opravy a univerzální použití.","Textilní výztuž + PE laminát","250 µm","Kaučukové (syntetické)","6,0 N/25 mm","−10 až +70 °C","120 N/25 mm"),
@@ -169,7 +169,7 @@ TAGMAP = {
  "BOPET páska ATE23":["vysoke-teploty","chemicka-odolnost"],
  "BOPET páska AIT":["vysoke-teploty","mrazuvzdorne","chemicka-odolnost"],
  "BOPET páska HIT17":["vysoke-teploty","chemicka-odolnost"],
- "BOPET páska ECO HIT19":["ekologicke","pet-85","vysoke-teploty","chemicka-odolnost"],
+ "BOPET páska ECO HIT19":["ekologicke","pet-85","stroje"],
  "Textilní páska BC":["vyztuzene","rucni"],
  "Textilní páska BC2":["vyztuzene","rucni"],
  "Textilní páska NU":["vyztuzene","rucni"],
@@ -263,6 +263,33 @@ TECH_SPEC_PARAMS = {
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "0 až +60 °C",
         "Minimální množství": "Akryl od 360 ks / HOT MELT od 504 ks",
+    },
+    "BOPP páska Tamper Evident": {
+        "Nosič": "BOPP",
+        "Tloušťka fólie": "35 µm",
+        "Typ lepidla": "Akryl (Low noise)",
+        "Tloušťka lepidla": "29 µm",
+        "Skladovací a aplikační teplota": "14–28 °C",
+        "Provozní teplota po nalepení": "0 až +50 / 0 až +60 / −10 až +60 °C",
+        "Minimální množství": "od 180 ks",
+    },
+    "BOPP páska Evergreen": {
+        "Nosič": "BOPP",
+        "Tloušťka fólie": "28 µm",
+        "Typ lepidla": "Akryl (Noisy)",
+        "Tloušťka lepidla": "22 µm",
+        "Skladovací a aplikační teplota": "0–28 °C",
+        "Provozní teplota po nalepení": "−20 až +60 °C",
+        "Minimální množství": "od 1 palety (2376 ks)",
+    },
+    "BOPET páska ECO HIT19": {
+        "Nosič": "BOPET",
+        "Tloušťka fólie": "19 µm",
+        "Typ lepidla": "HOT MELT",
+        "Tloušťka lepidla": "18 µm",
+        "Skladovací a aplikační teplota": "14–28 °C",
+        "Provozní teplota po nalepení": "0 až +50 °C",
+        "Minimální množství": "od 1080 ks",
     },
 }
 
@@ -511,9 +538,15 @@ def product_benefits(cat_slug, p):
             ]
         if p["name"] == "BOPP páska Tamper Evident":
             return [
-                ("VOID efekt při odlepení", "Při sejmutí zanechá na krabici upozornění VOID / OPEN / FRAUD, které prakticky nelze odstranit."),
-                ("Neutrální vzhled", "Tváří se jako běžná balicí páska, dokud ji někdo neoprávněně neodlepí."),
-                ("Kartony i stretch fólie", "Vhodná pro všechny typy kartonů i stretch fólií, dostupná v různých barvách a s potiskem."),
+                ("Okamžitá detekce manipulace", "Při pokusu o odlepení zanechá viditelnou stopu VOID/FRAUD/OPEN – jakýkoliv neoprávněný vstup do zásilky je ihned odhalen."),
+                ("Neutrální vzhled", "Tváří se jako běžná balicí páska, dokud není neoprávněně odlepena."),
+                ("Možnost vlastní personalizace", "Bezpečnostní text nebo motiv lze plně přizpůsobit (např. logo firmy, varování, vlastní text „VOID / OTEVŘENO“)."),
+            ]
+        if p["name"] == "BOPP páska Evergreen":
+            return [
+                ("Mimořádný výkon v chladu a extrémech", "Vyvinuta pro aplikaci při teplotách blížících se 0 °C, skladování v chladném prostředí a lepení na náročné povrchy (např. méně kvalitní či recyklované kartony)."),
+                ("Výkonné akrylátové lepidlo na vodní bázi", "Nabízí okamžitou přilnavost a spolehlivou lepivost, která v náročném prostředí plně nahradí i lepidla z přírodního kaučuku. Navíc neobsahuje rozpouštědla a skvěle odolává UV záření."),
+                ("Vysoká odolnost proti UV", "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování i UV zatížení."),
             ]
         b1 = (f"Pevnost v tahu {pevnost}", f"BOPP fólie o tloušťce {tl} vydrží napětí při balení i při dlouhodobém skladování.")
         if "barevn" in nl:
@@ -523,6 +556,12 @@ def product_benefits(cat_slug, p):
         else:
             b3 = ("Rychlé přilnutí", f"Přilnavost {pril} – okamžitě drží i při nižších teplotách ({temp}).")
     elif cat_slug == "bopet-pasky":
+        if p["name"] == "BOPET páska ECO HIT19":
+            return [
+                ("Evropský patent & min. 85 % recyklovaného PET odpadu", "Jediná lepicí páska v Evropě s chráněným patentem na použití recyklovaného PET z plastových lahví. Ideální volba pro e-shopy a firmy, které chtějí reálně plnit své udržitelné a ESG cíle."),
+                ("Extrémní mechanická odolnost", "Polyesterový základ dává pásce obrovskou odolnost proti přetržení – při odvíjení a aplikaci se nenatahuje ani nedeformuje."),
+                ("Vyšší efektivita díky polyesteru", "Tenčí profil fólie pojme na standardním průměru role dvojnásobek metrů. To přináší méně častou výměnu rolí na balicích linkách, vyšší plynulost balení a úsporu skladovacího místa."),
+            ]
         b1 = (f"Teplotní rozsah {temp}", f"Polyesterový nosič ({tl}) si drží vlastnosti v náročných provozech.")
         if "recyklovan" in nl:
             b3 = ("Recyklovaný polyester", f"Pevnost {pevnost} s nižší ekologickou stopou než běžná PET fólie.")
@@ -755,7 +794,47 @@ def inject_product_json(html):
         return html
     i=html.index(start_m)+len(start_m)
     j=html.index(end_m,i)
-    return html[:i]+"\n"+PRODUCT_JSON_BLOB+"\n"+html[j:]
+    html = html[:i]+"\n"+PRODUCT_JSON_BLOB+"\n"+html[j:]
+    return inject_gallery_refs_json(html)
+
+def gallery_search_refs_blob():
+    """Compact gallery entries for sortiment text search (firms / references)."""
+    try:
+        from gen_gallery import ITEMS
+    except Exception:
+        return "[]"
+    refs = []
+    for item in ITEMS:
+        image = item.get("image") or ""
+        if image and not image.startswith("/") and not image.startswith("images/"):
+            image = "images/" + image
+        elif image.startswith("gallery/"):
+            image = "images/" + image
+        refs.append({
+            "id": item["id"],
+            "client": item.get("client") or "",
+            "title": item.get("title") or "",
+            "description": item.get("description") or "",
+            "industry_label": "",
+            "image": "/" + image.lstrip("/") if image else "",
+            "href": "/galerie?item=" + item["id"],
+        })
+    return json.dumps(refs, ensure_ascii=False, indent=2)
+
+def inject_gallery_refs_json(html):
+    start_m = '<script id="sortiment-gallery-refs" type="application/json">'
+    end_m = '</script>'
+    blob = gallery_search_refs_blob()
+    if start_m not in html:
+        # Insert before i18n script if marker missing
+        needle = '<script src="/assets/js/i18n.js'
+        if needle not in html:
+            return html
+        insert = start_m + "\n" + blob + "\n" + end_m + "\n"
+        return html.replace(needle, insert + needle, 1)
+    i = html.index(start_m) + len(start_m)
+    j = html.index(end_m, i)
+    return html[:i] + "\n" + blob + "\n" + html[j:]
 
 _sortiment_html = open("sortiment.html", encoding="utf-8").read()
 open("sortiment.html", "w", encoding="utf-8").write(inject_product_json(_sortiment_html))
