@@ -48,6 +48,10 @@
             email: (document.getElementById('email') || {}).value || '',
             phone: (document.getElementById('phone') || {}).value || '',
             note: (document.getElementById('note') || {}).value || '',
+            wantSample: !!form.querySelector('#want_sample:checked'),
+            deliveryStreet: (document.getElementById('delivery_street') || {}).value || '',
+            deliveryCity: (document.getElementById('delivery_city') || {}).value || '',
+            deliveryZip: (document.getElementById('delivery_zip') || {}).value || '',
             gdprConsent: !!form.querySelector('input[name="input_14.1"]:checked'),
             website: (form.querySelector('input[name="website"]') || {}).value || '',
         };

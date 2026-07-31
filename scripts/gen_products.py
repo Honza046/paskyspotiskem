@@ -136,7 +136,7 @@ PRODUCTS = {
  "udrzitelne-pasky":[
    P("Udržitelná páska NOPP","Udržitelné Pásky/nopp.jpg","Udržitelná páska bez plastu pro plně recyklovatelné balení.","Papír (FSC)","110 µm","Akrylové (bez rozpouštědel)","4,0 N/25 mm","−5 až +60 °C","50 N/25 mm"),
    P("Udržitelná páska NOPP+","Udržitelné Pásky/nopp+.jpg","Vylepšená bezplastová páska s vyšší pevností a lepivostí.","Papír (FSC)","120 µm","Akrylové","4,4 N/25 mm","−5 až +65 °C","55 N/25 mm"),
-   P("Udržitelná páska LOOPP","Udržitelné Pásky/loopp.jpg","Prémiová ekologická páska z recyklovaných plastů bez jakýchkoliv kompromisů v pevnosti.","BOPP","28 / 32 µm","Akryl (Low noise)","—","0 až +60 °C","—"),
+   P("Udržitelná páska LOOPP","Udržitelné Pásky/loopp.jpg","Prémiová ekologická páska z recyklovaných plastů bez jakýchkoliv kompromisů v pevnosti.","BOPP","28 / 32 µm","Akryl / Low noise","—","0 až +60 / −10 až +60 °C","—"),
    P("Udržitelná páska Airtape+","Udržitelné Pásky/airtape.jpg","Tenká a pevná BOPP páska pro maximální efektivitu a snížení odpadu.","BOPP","19 µm","Akryl (Low noise)","—","−10 až +60 °C","—"),
    P("Udržitelná páska ECO+ 50","Udržitelné Pásky/eco+50.jpg","Efektivní balení s 50% podílem regenerovaného materiálu. Optimální rovnováha mezi ekologií a nejlepší cenou.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
    P("Udržitelná páska ECO+ 80","Udržitelné Pásky/eco+80.jpg","BOPP fólie s 80% podílem regenerovaného materiálu. Spojuje vysoký ekologický standard a stoprocentní pevnost.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
@@ -303,7 +303,7 @@ TECH_SPEC_PARAMS = {
     "Udržitelná páska LOOPP": {
         "Nosič": "BOPP",
         "Tloušťka fólie": "28 / 32 µm",
-        "Typ lepidla": "Akryl (Low noise)",
+        "Typ lepidla": "Akryl / Low noise",
         "Tloušťka lepidla": "21 µm",
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "0 až +60 / −10 až +60 °C",
@@ -337,8 +337,25 @@ _HOT_MELT = {
     "Provozní teplota po nalepení": "0 až +50 °C",
     "Minimální množství": "od 504 ks",
 }
+_LOOPP_ACRYL = {
+    "Nosič": "BOPP",
+    "Tloušťka fólie": "28 / 32 µm",
+    "Typ lepidla": "Akryl",
+    "Tloušťka lepidla": "21 µm",
+    "Skladovací a aplikační teplota": "14–28 °C",
+    "Provozní teplota po nalepení": "0 až +60 °C",
+}
+_LOOPP_LOW_NOISE = {
+    "Nosič": "BOPP",
+    "Tloušťka fólie": "28 / 32 µm",
+    "Typ lepidla": "Akryl (Low noise)",
+    "Tloušťka lepidla": "21 µm",
+    "Skladovací a aplikační teplota": "14–28 °C",
+    "Provozní teplota po nalepení": "−10 až +60 °C",
+}
 
 TECH_VARIANT_LABELS = {
+    "acryl": "Akryl",
     "low_noise": "Low noise",
     "noisy": "Noisy",
     "hot_melt": "HOT MELT",
@@ -364,6 +381,10 @@ TECH_VARIANTS = {
         "noisy": dict(_ACRYL_NOISY),
         "hot_melt": dict(_HOT_MELT),
     },
+    "Udržitelná páska LOOPP": {
+        "acryl": dict(_LOOPP_ACRYL),
+        "low_noise": dict(_LOOPP_LOW_NOISE),
+    },
 }
 
 # assign slugs + tags
@@ -384,6 +405,8 @@ def product_spec_pills(p):
         return ("80 % regenerát", "BOPP", "Akryl / HOT MELT")
     if name == "Udržitelná páska ECO+ 100":
         return ("100 % regenerát", "BOPP", "Akryl / HOT MELT")
+    if name == "Udržitelná páska LOOPP":
+        return ("BOPP", "Akryl / Low noise", "0 až +60 / −10 až +60 °C")
     params = p["params"]
     carrier = params.get("Nosič") or params.get("Nosič / materiál", "")
     adhesive = params.get("Typ lepidla", "")
@@ -894,7 +917,7 @@ header=header.replace('<a href="/sortiment.html" class="block rounded-xl px-4 py
 _SVG = 'class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"'
 FEATURE_ICONS = {
     'recycle': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v6h6M20 20v-6h-6"/><path stroke-linecap="round" stroke-linejoin="round" d="M5 19a9 9 0 0114-7.5M19 5a9 9 0 01-14 7.5"/></svg>',
-    'leaf': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4-3-7-7-7-11a7 7 0 0114 0c0 4-3 8-7 11z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 10V21"/></svg>',
+    'leaf': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M11 20A7 7 0 019.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>',
     'shield': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7l8-4z"/></svg>',
     'strength': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M7 12h10M5 9l-2 3 2 3M19 9l2 3-2 3"/></svg>',
     'adhesive': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M12 3c-2.5 0-4 1.8-4 4v9a4 4 0 008 0V7c0-2.2-1.5-4-4-4z"/><path stroke-linecap="round" d="M10 7h4"/></svg>',
@@ -915,42 +938,81 @@ FEATURE_ICONS = {
     'rough_surface': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M4 18l4-6 3 4 4-8 5 10"/></svg>',
     'sharp_edge': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M5 19V5h14"/><path stroke-linecap="round" d="M5 19h14"/></svg>',
     'apply': f'<svg {_SVG}><circle cx="12" cy="12" r="7"/><path stroke-linecap="round" d="M12 8v8M8 12h8"/></svg>',
+    'patent': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l2.2 4.5 5 .7-3.6 3.5.9 5L12 14.8 7.5 16.7l.9-5L4.8 8.2l5-.7L12 3z"/></svg>',
+    'efficiency': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M4 19V5M4 19h16"/><path stroke-linecap="round" stroke-linejoin="round" d="M8 15V9M12 15V7M16 15v-3"/></svg>',
+    'thin': f'<svg {_SVG}><path stroke-linecap="round" d="M4 8h16M6 12h12M8 16h8"/></svg>',
+    'unwind': f'<svg {_SVG}><circle cx="12" cy="12" r="7"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l2.5 1.5"/></svg>',
+    'detect': f'<svg {_SVG}><path stroke-linecap="round" stroke-linejoin="round" d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="2.5"/></svg>',
     'tape': f'<svg {_SVG}><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5"/><path stroke-linecap="round" d="M12 5V3M12 21v-2"/></svg>',
 }
+
+FEATURE_ICON_FALLBACKS = (
+    'thin', 'efficiency', 'strength', 'shield', 'leaf', 'adhesive', 'durability',
+    'recycle', 'temperature', 'grip', 'design', 'unwind', 'patent', 'detect',
+    'chemical', 'tear', 'weight', 'apply', 'rigid', 'fibers', 'tape',
+)
 
 def _norm_feature(title):
     return unicodedata.normalize('NFKD', title).encode('ascii', 'ignore').decode('ascii').lower()
 
-def feature_icon(title):
+def feature_icon_key(title):
     t = _norm_feature(title)
+    # More specific rules first – each benefit icon should match the title meaning.
     rules = (
         (('beze stop', 'odstranitelne lepidlo', 'ciste odlepen', 'bez stop'), 'clean_peel'),
         (('ostre hrany', 'protecen'), 'sharp_edge'),
         (('bez skelnych', 'bez vlaken'), 'no_fibers'),
         (('sklen', 'vlakn', 'podelna', 'krizova'), 'fibers'),
         (('nulova elastic',), 'rigid'),
-        (('uhlikov', 'uhlova stopa'), 'leaf'),
-        (('recykl', 'bezplastov', 'fsc', 'odpadu', 'postindustrial'), 'recycle'),
+        (('patent',), 'patent'),
+        (('tenka', 'tenky profil', 'inovativni tenka'), 'thin'),
+        (('efektiv', 'navin', 'dvojnasob', 'vetsi navin'), 'efficiency'),
+        (('low noise', 'tich', 'odvijen', 'snadne odvijen'), 'unwind'),
+        (('detekce', 'manipulace'), 'detect'),
+        (('personaliz',), 'design'),
+        (('neutralni vzhled',), 'shield'),
+        (('uhlikov', 'uhlova stopa', 'fosil', 'alternativa k pvc', 'ekologicka alternativa'), 'leaf'),
+        (('recykl', 'bezplastov', 'fsc', 'odpadu', 'postindustrial', 'regener'), 'recycle'),
         (('chemick',), 'chemical'),
-        (('teplot', 'extremni teplot'), 'temperature'),
+        (('teplot', 'chladu', 'extremni teplot', 'extram'), 'temperature'),
+        (('zivotnost', 'uv', 'starnut', 'odolnost proti uv'), 'durability'),
         (('roztr', 'pretrz', 'protrz'), 'tear'),
-        (('lepidlo', 'akryl', 'hot melt', 'kaucuk', 'prilnut', 'prilnav', 'lepiv'), 'adhesive'),
-        (('pevnost', 'tahu', 'nosnost', 'extremni pevnost', 'mechanicke'), 'strength'),
-        (('zivotnost', 'uv', 'starnut'), 'durability'),
+        (('vrstva lepidla', 'zvysena vrstva', 'super tack', '+33', '+20',
+          'lepidlo', 'akryl', 'hot melt', 'kaucuk', 'prilnut', 'prilnav', 'lepiv'), 'adhesive'),
+        (('odolnost', 'mechanick', 'pevnost', 'tahu', 'nosnost'), 'strength'),
+        (('identick',), 'shield'),
         (('textiln',), 'fabric'),
-        (('trhani rukou',), 'hand_tear'),
+        (('trhani rukou', 'snadne trhan'), 'hand_tear'),
         (('drsn', 'povrch'), 'rough_surface'),
         (('design', 'potisk', 'barevn', 'cisty design', 'matny', 'reputace', 'firemni'), 'design'),
-        (('drzivost', 'fixace', 'tezke', 'bremen', 'void', 'tamper', 'zabezpec'), 'grip'),
+        (('drzivost', 'fixace', 'tezke', 'bremen', 'void', 'tamper', 'zabezpec',
+          'obtizne', 'partner pro'), 'grip'),
         (('snadna aplik', 'krep'), 'apply'),
         (('setrne k povrchu', 'setrne'), 'surface_safe'),
         (('kompromis', 'spolehliv', 'stejna cena', 'cena i kvalita'), 'shield'),
     )
     for keywords, key in rules:
         if any(k in t for k in keywords):
-            return FEATURE_ICONS[key]
-    return FEATURE_ICONS['tape']
+            return key
+    return 'tape'
 
+def feature_icon(title):
+    return FEATURE_ICONS[feature_icon_key(title)]
+
+def unique_feature_icons(titles):
+    """Within one product/section, never repeat the same icon among the listed titles."""
+    used = set()
+    out = []
+    for title in titles:
+        key = feature_icon_key(title)
+        if key in used:
+            for alt in FEATURE_ICON_FALLBACKS:
+                if alt not in used:
+                    key = alt
+                    break
+        used.add(key)
+        out.append(FEATURE_ICONS[key])
+    return out
 CHK='<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>'
 ARR='<svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>'
 BACK='<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12"/></svg>'
@@ -1142,13 +1204,15 @@ for cat in CATS:
             if min_qty else ''
         )
         tech_table = product_tech_table_html(p)
+        benefits = product_benefits(cat["cat"], p)
+        benefit_icons = unique_feature_icons([t for t, _ in benefits])
         advs="\n".join('''                <div class="flex gap-4 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
                     <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-orange-50 text-orange-600" aria-hidden="true">%s</span>
                     <div>
                         <h3 class="text-base font-bold text-slate-900">%s</h3>
                         <p class="mt-1 text-sm leading-relaxed text-slate-600">%s</p>
                     </div>
-                </div>'''%(feature_icon(t),esc(t),esc(x)) for t,x in product_benefits(cat["cat"], p))
+                </div>'''%(icon,esc(t),esc(x)) for (t,x), icon in zip(benefits, benefit_icons))
         uses="\n".join('''                <li class="flex items-center gap-3 rounded-xl border border-slate-100 bg-white px-5 py-4">
                     <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-orange-600" aria-hidden="true">%s</span>
                     <span class="text-sm font-medium text-slate-700">%s</span>

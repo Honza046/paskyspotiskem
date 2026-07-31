@@ -49,6 +49,8 @@ function buildEmailHtml(data) {
         row('Kontaktní osoba', data.contactName),
         row('E-mail', data.email),
         row('Telefon', data.phone),
+        data.wantSample ? row('Vzorek', 'Ano – zájem o testovací vzorek') : '',
+        data.wantSample ? row('Adresa dodání', [data.deliveryStreet, [data.deliveryZip, data.deliveryCity].filter(Boolean).join(' ')].filter(Boolean).join(', ')) : '',
         row('Poznámka', data.note),
     ].join('');
 
@@ -83,6 +85,8 @@ function buildPlainText(data) {
         data.contactName && 'Kontakt: ' + data.contactName,
         data.email && 'E-mail: ' + data.email,
         data.phone && 'Telefon: ' + data.phone,
+        data.wantSample && 'Vzorek: ano',
+        data.wantSample && data.deliveryStreet && 'Adresa dodání: ' + [data.deliveryStreet, [data.deliveryZip, data.deliveryCity].filter(Boolean).join(' ')].filter(Boolean).join(', '),
         data.note && 'Poznámka: ' + data.note,
     ].filter(Boolean);
     return lines.join('\n');
@@ -138,6 +142,11 @@ function validatePayload(body) {
     if (!body.contactName) errors.push('Vyplňte jméno kontaktní osoby.');
     if (!body.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(body.email)) errors.push('Vyplňte platný e-mail.');
     if (!body.phone) errors.push('Vyplňte telefon.');
+    if (body.wantSample) {
+        if (!body.deliveryStreet) errors.push('Vyplňte ulici a číslo pro doručení vzorku.');
+        if (!body.deliveryCity) errors.push('Vyplňte město pro doručení vzorku.');
+        if (!body.deliveryZip) errors.push('Vyplňte PSČ pro doručení vzorku.');
+    }
     if (!body.gdprConsent) errors.push('Potvrďte souhlas se zpracováním údajů.');
     return errors;
 }

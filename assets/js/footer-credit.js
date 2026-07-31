@@ -11,7 +11,7 @@
         'certifikováno Ctrl+S',
         'potisk A+ ✓',
         'hot melt edition',
-        'made with 🧡 a lepidlem',
+        'made with love a lepidlem',
     ];
 
     function pickMessage() {

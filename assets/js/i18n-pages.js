@@ -714,6 +714,16 @@
         var sampleBtn = document.getElementById('note-sample-btn');
         if (sampleBtn && formData.sample_note_btn) setText(sampleBtn, formData.sample_note_btn);
 
+        var sampleHeading = document.querySelector('#sample-address-fields [data-i18n="home.form.sample_address_heading"]');
+        if (sampleHeading && formData.sample_address_heading) {
+            sampleHeading.innerHTML = escHtml(formData.sample_address_heading) + ' <span class="text-orange-600">*</span>';
+        }
+        var sampleHint = document.querySelector('#sample-address-fields [data-i18n="home.form.sample_address_hint"]');
+        if (sampleHint && formData.sample_address_hint) setText(sampleHint, formData.sample_address_hint);
+        setLabel('delivery_street', formData.delivery_street_label, true);
+        setLabel('delivery_city', formData.delivery_city_label, true);
+        setLabel('delivery_zip', formData.delivery_zip_label, true);
+
         document.querySelectorAll('.btn-next').forEach(function (b) { setText(b, formData.continue || b.textContent); });
         document.querySelectorAll('.btn-prev').forEach(function (b) { setText(b, formData.back || b.textContent); });
         var submit = document.getElementById('gform_submit_button_1');
@@ -833,7 +843,7 @@
                 cards.forEach(function (card, i) {
                     if (!cardKeys[i]) return;
                     setText(card.querySelector('h3'), sus[cardKeys[i][0]]);
-                    setText(card.querySelector('p'), sus[cardKeys[i][1]]);
+                    setHtml(card.querySelector('p'), sus[cardKeys[i][1]]);
                 });
             }
         }

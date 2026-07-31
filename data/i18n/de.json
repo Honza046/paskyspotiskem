@@ -114,14 +114,14 @@
     },
     "sustainability": {
       "label": "Ökologie & Nachhaltigkeit",
-      "title": "Nachhaltige Verpackung für Ihren E-Shop und Ihre Produktion",
-      "subtitle": "Der ökologische Fußabdruck von Verpackungsmaterialien hat für uns Priorität. Wir bieten Klebebänder, die mit Blick auf einfache Recycelbarkeit und minimale Umweltbelastung ausgewählt wurden.",
-      "card1_title": "100 % recycelbare Folie",
-      "card1_text": "Unsere Bänder bestehen aus moderner BOPP-Folie, die vollständig recycelbar ist. Im Gegensatz zu älteren PVC-Materialien entstehen bei der Verarbeitung keine giftigen Stoffe.",
-      "card2_title": "Ökologische lösemittelfreie Klebstoffe",
-      "card2_text": "Wir verwenden ausschließlich umweltfreundliche Klebstoffe. Acrylklebstoffe sind wasserbasiert und die Hot-Melt-Technologie arbeitet ohne chemische Lösungsmittel.",
-      "card3_title": "Problemloses Karton-Recycling",
-      "card3_text": "Dank moderner Technologie können Recyclinganlagen unsere Bänder leicht von Kartons trennen. Ihre Kunden können verwendete Kartons bedenkenlos in die Papiertonne werfen."
+      "title": "Nachhaltige Verpackung ohne Kompromisse bei der Qualität",
+      "subtitle": "Wir liefern Verpackungsmaterialien, die Rohstoffen ein zweites Leben geben. Holen Sie sich eine voll funktionsfähige Lösung für Ihren Versand mit minimaler Umweltbelastung.",
+      "card1_title": "Nachhaltige Materialien mit zweitem Leben",
+      "card1_text": "Im Sortiment: <strong class=\"font-semibold text-slate-800\">ökologische Kraftpapier-Klebebänder</strong>, <strong class=\"font-semibold text-slate-800\">BOPET-Band aus recycelten PET-Flaschen</strong> und Folien mit PCR/PIR-Abfall. Kunststoffe und Papier zurück in den Kreislauf – ohne Verlust an Festigkeit.",
+      "card2_title": "Saubere Klebstoffe ohne aggressive Chemie",
+      "card2_text": "Nur <strong class=\"font-semibold text-slate-800\">Acrylatdispersion auf Wasserbasis</strong> und <strong class=\"font-semibold text-slate-800\">HOT-MELT-Technologie</strong> ohne Lösungsmittel. Keine giftigen Dämpfe, sicher für die Packlinie, mit sofortiger und langfristiger Klebkraft.",
+      "card3_title": "Unterstützung nachhaltiger Logistik und ESG",
+      "card3_text": "Wir helfen B2B-Partnern, den CO₂-Fußabdruck der Verpackung zu senken, Umweltnormen zu erfüllen und ESG-Ziele zu erreichen. Eine verantwortungsvolle Lösung, die den Markenruf bei Kunden und Auditoren stärkt."
     },
     "benefits": {
       "eco_badge": "Nachhaltigkeit",
@@ -180,7 +180,7 @@
       "quantity_tip": "Akryl ab 360 Stk., HOT MELT ab 504 Stk. Lieferzeit ca. 3–4 Wochen.",
       "quantity_tip_acryl": "Mindestmenge ab 360 Stk. (Akryl). Lieferzeit ca. 3–4 Wochen.",
       "quantity_tip_hotmelt": "Mindestmenge ab 504 Stk. (HOT MELT). Lieferzeit ca. 3–4 Wochen.",
-      "quantity_success": "🔥 Ausgezeichnete Wahl! Sie haben kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
+      "quantity_success": "Ausgezeichnete Wahl! Sie haben kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
       "validation": {
         "material_required": "Bitte wählen Sie ein Material aus der Liste.",
         "required": "Bitte füllen Sie dieses Feld aus.",
@@ -190,6 +190,11 @@
       },
       "sample_note_btn": "Ich möchte ein Muster",
       "sample_note_text": "Ich interessiere mich für ein Testmuster.",
+      "sample_address_heading": "Lieferadresse für das Muster",
+      "sample_address_hint": "Für den Versand des Testmusters benötigen wir eine Lieferadresse.",
+      "delivery_street_label": "Straße und Hausnummer",
+      "delivery_city_label": "Stadt",
+      "delivery_zip_label": "PLZ",
       "order_period_label": "Voraussichtliche Bestellfrequenz",
       "order_periods": {
         "monthly": "Jeden Monat",
@@ -1233,18 +1238,38 @@
         "params_values": {
           "carrier": "BOPP",
           "thickness": "28 / 32 µm",
-          "adhesive": "Akryl (Low noise)",
+          "adhesive": "Acryl / Low noise",
           "adhesion": "21 µm",
           "strength": "14–28 °C",
           "temperature": "0 bis +60 / −10 bis +60 °C"
         },
         "spec_pills": [
           "BOPP",
-          "Akryl (Low noise)",
+          "Acryl / Low noise",
           "0 bis +60 / −10 bis +60 °C"
         ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
+        "tech_variants": {
+          "acryl": {
+            "carrier": "BOPP",
+            "thickness": "28 / 32 µm",
+            "adhesive": "Akryl",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 bis +60 °C"
+          },
+          "low_noise": {
+            "carrier": "BOPP",
+            "thickness": "28 / 32 µm",
+            "adhesive": "Akryl (Low noise)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 bis +60 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "acryl": "Akryl",
+          "low_noise": "Low noise"
+        },
         "min_qty_note": "",
         "params_labels": {
           "carrier": "Träger",
