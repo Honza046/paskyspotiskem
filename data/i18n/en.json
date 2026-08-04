@@ -177,9 +177,11 @@
       "quantity_min": "Akryl from 360 pcs, HOT MELT from 504 pcs.",
       "quantity_min_acryl": "Minimum quantity from 360 pcs (Akryl).",
       "quantity_min_hotmelt": "Minimum quantity from 504 pcs (HOT MELT).",
-      "quantity_tip": "Akryl from 360 pcs, HOT MELT from 504 pcs. Delivery approx. 3–4 weeks.",
-      "quantity_tip_acryl": "Minimum quantity from 360 pcs (Akryl). Delivery approx. 3–4 weeks.",
-      "quantity_tip_hotmelt": "Minimum quantity from 504 pcs (HOT MELT). Delivery approx. 3–4 weeks.",
+      "quantity_min_dynamic": "Minimum quantity from {min} pcs ({adhesive}, {width} mm).",
+      "quantity_tip": "Delivery approx. 3–4 weeks.",
+      "quantity_tip_dynamic": "Delivery approx. 3–4 weeks.",
+      "quantity_tip_acryl": "Delivery approx. 3–4 weeks.",
+      "quantity_tip_hotmelt": "Delivery approx. 3–4 weeks.",
       "quantity_success": "Great choice! You have free shipping. Delivery takes approximately 3–4 weeks.",
       "validation": {
         "material_required": "Please select a material from the list.",
@@ -1657,71 +1659,6 @@
           "back_category": "Back to BOPP tapes"
         }
       },
-      "bopp-paska-evergreen": {
-        "name": "BOPP tape Evergreen",
-        "tagline": "Acrylic tape for extreme conditions and cold.",
-        "category_slug": "bopp-pasky",
-        "category_title": "BOPP tapes",
-        "benefits": [
-          {
-            "title": "Outstanding performance in cold and extreme conditions",
-            "text": "Designed for application near 0 °C, cold storage, and bonding to demanding surfaces (e.g. lower-grade or recycled cartons)."
-          },
-          {
-            "title": "High-performance water-based acrylic adhesive",
-            "text": "Delivers instant tack and reliable adhesion that can fully replace natural rubber adhesives in demanding environments. Solvent-free and highly UV resistant."
-          },
-          {
-            "title": "High UV resistance",
-            "text": "Acrylic adhesive keeps its tack even during long-term storage and UV exposure."
-          }
-        ],
-        "uses": [
-          "Standard carton sealing",
-          "Automatic packing machines",
-          "Use in chilled and frozen warehouses",
-          "Printing with company logos and information"
-        ],
-        "params_values": {
-          "carrier": "BOPP",
-          "thickness": "28 µm",
-          "adhesive": "Akryl (Noisy)",
-          "adhesion": "22 µm",
-          "strength": "0–28 °C",
-          "temperature": "−20 to +60 °C",
-          "min_qty": "from 1 pallet (2376 pcs)"
-        },
-        "spec_pills": [
-          "BOPP",
-          "Akryl (Noisy)",
-          "−20 to +60 °C"
-        ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
-        "min_qty_note": "",
-        "params_labels": {
-          "carrier": "Carrier",
-          "thickness": "Film thickness",
-          "adhesive": "Adhesive type",
-          "adhesion": "Adhesive thickness",
-          "strength": "Storage and application temperature",
-          "temperature": "Operating temperature after application",
-          "min_qty": "Minimum quantity"
-        },
-        "tech_spec": true,
-        "paper_spec": false,
-        "ctas": {
-          "hero": "Quote with printing",
-          "tailor_link": "I want a free sample",
-          "tailor_bullets": [
-            "Custom width and roll length",
-            "Base colour and number of print colours",
-            "Quality testing before ordering"
-          ],
-          "bottom": "Free sample or quote",
-          "back_category": "Back to BOPP tapes"
-        }
-      },
       "bopp-paska-hot-melt": {
         "name": "BOPP tape HOT MELT",
         "tagline": "BOPP tape with hot melt adhesive for fast, strong bonding.",
@@ -1917,56 +1854,187 @@
           "back_category": "Back to BOPP tapes"
         }
       },
-      "bopet-paska-ait": {
-        "name": "BOPET tape AIT",
-        "tagline": "Polyester tape with silicone adhesive for extreme temperatures.",
-        "category_slug": "bopet-pasky",
-        "category_title": "BOPET tapes",
+      "bopp-paska-evergreen-100": {
+        "name": "BOPP tape ecoEVERGREEN 100%",
+        "tagline": "Sustainable packing tape made from 100% recycled post-industrial material.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP tapes",
         "benefits": [
           {
-            "title": "Temperature range −40 to +180 °C",
-            "text": "Polyester carrier (30 µm) retains its properties in demanding operations."
+            "title": "Innovative recycling (PIR)",
+            "text": "The tape is made from BOPP film with 100% recycled used cooking oil (U.C.O.) from the food industry. This high-quality post-industrial recyclate (PIR) brings the product’s total recycled content to 54%."
           },
           {
-            "title": "Silicone adhesive",
-            "text": "Stable performance at extreme temperatures and clean removal without adhesive residue."
+            "title": "Outstanding performance in cold and extreme conditions",
+            "text": "Designed for application near 0 °C, cold storage, and bonding to demanding surfaces (e.g. lower-grade or recycled cartons)."
           },
           {
-            "title": "Extreme temperatures",
-            "text": "Performance at high coating temperatures and in frost, without surface damage."
+            "title": "High-performance water-based acrylic adhesive",
+            "text": "Delivers instant tack and reliable adhesion that can fully replace natural rubber adhesives in demanding environments. Solvent-free and highly UV resistant."
           }
         ],
         "uses": [
-          "Demanding industrial operations",
-          "Fixing in high-temperature environments",
-          "Masking during powder coating",
-          "Electronics and specialised manufacturing"
+          "Companies with ESG and sustainability goals",
+          "Use in chilled and frozen warehouses",
+          "Recycled cardboard and demanding surfaces",
+          "Automatic packing machines"
         ],
         "params_values": {
-          "carrier": "Polyester (PET) film",
-          "thickness": "30 µm",
-          "adhesive": "Silicone",
-          "adhesion": "3,0 N/25 mm",
-          "temperature": "−40 to +180 °C",
-          "strength": "65 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 µm",
+          "adhesive": "Acrylic (NOISY)",
+          "adhesion": "22 µm",
+          "strength": "0–25 °C",
+          "temperature": "−20 to +50 °C",
+          "min_qty": "1 pallet (2376 pcs), base 50 mm × 66 m"
         },
         "spec_pills": [
-          "Polyester (PET) film",
-          "Silicone",
-          "−40 to +180 °C"
+          "BOPP",
+          "Acrylic (NOISY)",
+          "−20 to +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
           "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application",
+          "min_qty": "Minimum quantity"
         },
-        "tech_spec": false,
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Quality testing before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to BOPP tapes"
+        }
+      },
+      "bopp-paska-evergreen": {
+        "name": "BOPP tape ecoEVERGREEN 50%",
+        "tagline": "Sustainable packing tape made from 50% recycled post-industrial material.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP tapes",
+        "benefits": [
+          {
+            "title": "Innovative recycling (PIR)",
+            "text": "The tape is made from BOPP film with 50% recycled used cooking oil (U.C.O.) from the food industry. This high-quality post-industrial recyclate (PIR) brings the product’s total recycled content to 27%."
+          },
+          {
+            "title": "Outstanding performance in cold and extreme conditions",
+            "text": "Designed for application near 0 °C, cold storage, and bonding to demanding surfaces (e.g. lower-grade or recycled cartons)."
+          },
+          {
+            "title": "High-performance water-based acrylic adhesive",
+            "text": "Delivers instant tack and reliable adhesion that can fully replace natural rubber adhesives in demanding environments. Solvent-free and highly UV resistant."
+          }
+        ],
+        "uses": [
+          "Companies with ESG and sustainability goals",
+          "Use in chilled and frozen warehouses",
+          "Recycled cardboard and demanding surfaces",
+          "Automatic packing machines"
+        ],
+        "params_values": {
+          "carrier": "BOPP",
+          "thickness": "28 µm",
+          "adhesive": "Acrylic (NOISY)",
+          "adhesion": "22 µm",
+          "strength": "0–25 °C",
+          "temperature": "−20 to +50 °C",
+          "min_qty": "1 pallet (2376 pcs), base 50 mm × 66 m"
+        },
+        "spec_pills": [
+          "BOPP",
+          "Acrylic (NOISY)",
+          "−20 to +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application",
+          "min_qty": "Minimum quantity"
+        },
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Quality testing before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to BOPP tapes"
+        }
+      },
+      "bopet-paska-ait23": {
+        "name": "BOPET tape AIT23",
+        "tagline": "Strong packing tape with a polyester carrier and acrylic adhesive.",
+        "category_slug": "bopet-pasky",
+        "category_title": "BOPET tapes",
+        "benefits": [
+          {
+            "title": "High UV resistance",
+            "text": "Acrylic adhesive keeps its stickiness during long-term storage and UV exposure."
+          },
+          {
+            "title": "Extreme mechanical strength",
+            "text": "The polyester backing gives the tape exceptional tear resistance – it neither stretches nor deforms during unwinding and application."
+          },
+          {
+            "title": "Higher efficiency thanks to polyester",
+            "text": "A thinner film profile fits twice the metres on a standard roll diameter. That means fewer roll changes on packing lines, smoother packing flow and less storage space."
+          }
+        ],
+        "uses": [
+          "Sealing cartons of all surface types",
+          "Automatic packing machines",
+          "Manual and semi-automatic packing",
+          "Dispatch and warehouse logistics"
+        ],
+        "params_values": {
+          "carrier": "BOPET",
+          "thickness": "23 µm",
+          "adhesive": "Akryl",
+          "adhesion": "20 µm",
+          "strength": "15–25 °C",
+          "temperature": "0 to +50 °C"
+        },
+        "spec_pills": [
+          "BOPET",
+          "Akryl",
+          "0 to +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application",
+          "min_qty": "Minimum quantity"
+        },
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
@@ -1982,54 +2050,55 @@
       },
       "bopet-paska-ate23": {
         "name": "BOPET tape ATE23",
-        "tagline": "Thin polyester tape with high temperature resistance.",
+        "tagline": "Security BOPET tape that reveals unauthorized tampering.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET tapes",
         "benefits": [
           {
-            "title": "Temperature range −40 to +150 °C",
-            "text": "Polyester carrier (25 µm) retains its properties in demanding operations."
+            "title": "Immediate tamper detection",
+            "text": "Any attempt to peel it off leaves a visible VOID/FRAUD/OPEN mark – unauthorized access to the parcel is detected immediately."
           },
           {
-            "title": "Acrylic adhesive",
-            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+            "title": "Extreme mechanical strength",
+            "text": "The polyester backing gives the tape exceptional tear resistance – it neither stretches nor deforms during unwinding and application."
           },
           {
-            "title": "Chemical resistance",
-            "text": "Strength 60 N/25 mm, resists solvents, oils and aggressive environments."
+            "title": "Neutral appearance",
+            "text": "It looks like ordinary packing tape until it is peeled off without authorization."
           }
         ],
         "uses": [
-          "Demanding industrial operations",
-          "Fixing in high-temperature environments",
-          "Masking during powder coating",
-          "Electronics and specialised manufacturing"
+          "Securing shipments against unauthorized opening",
+          "E-commerce and valuable parcels",
+          "Manual and semi-automatic packing",
+          "Corporate branding directly on shipments"
         ],
         "params_values": {
-          "carrier": "Polyester (PET) film",
-          "thickness": "25 µm",
-          "adhesive": "Acrylic",
-          "adhesion": "3,5 N/25 mm",
-          "temperature": "−40 to +150 °C",
-          "strength": "60 N/25 mm"
+          "carrier": "BOPET",
+          "thickness": "23 µm",
+          "adhesive": "Akryl",
+          "adhesion": "26 µm",
+          "strength": "15–25 °C",
+          "temperature": "0 to +50 °C"
         },
         "spec_pills": [
-          "Polyester (PET) film",
-          "Acrylic",
-          "−40 to +150 °C"
+          "BOPET",
+          "Akryl",
+          "0 to +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
           "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application",
+          "min_qty": "Minimum quantity"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
@@ -2045,7 +2114,7 @@
       },
       "bopet-paska-eco-hit19": {
         "name": "BOPET tape ECO HIT19",
-        "tagline": "BOPET tape made from 85% recycled PET bottles.",
+        "tagline": "BOPET tape made from 90% recycled PET bottles.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET tapes",
         "benefits": [
@@ -2073,9 +2142,73 @@
           "thickness": "19 µm",
           "adhesive": "Hot melt",
           "adhesion": "18 µm",
-          "strength": "14–28 °C",
+          "strength": "15–25 °C",
           "temperature": "0 to +50 °C",
-          "min_qty": "from 1080 pcs"
+          "min_qty": "from 1080 pcs, base 50 mm × 132 m; 3 colours from 1 pallet (2376 pcs)"
+        },
+        "spec_pills": [
+          "BOPET",
+          "Hot melt",
+          "0 to +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application",
+          "min_qty": "Minimum quantity"
+        },
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Quality testing before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to BOPET tapes"
+        }
+      },
+      "bopet-paska-eco-hit23": {
+        "name": "BOPET tape ECO HIT23",
+        "tagline": "Stronger BOPET tape made from 90% recycled PET bottles.",
+        "category_slug": "bopet-pasky",
+        "category_title": "BOPET tapes",
+        "benefits": [
+          {
+            "title": "Support for the circular economy",
+            "text": "The carrier contains 90% PET waste from recycled PET bottles, with total recycled content reaching 60%. An ideal choice for e-shops and companies that want to meet ESG goals."
+          },
+          {
+            "title": "Extreme mechanical strength",
+            "text": "The polyester backing gives the tape exceptional tear resistance – it neither stretches nor deforms during unwinding and application."
+          },
+          {
+            "title": "Higher efficiency thanks to polyester",
+            "text": "A thinner film profile fits twice the metres on a standard roll diameter. That means fewer roll changes on packing lines, smoother packing flow and less storage space."
+          }
+        ],
+        "uses": [
+          "Companies with ESG and sustainability goals",
+          "Circular packaging processes",
+          "Building a responsible brand",
+          "Automatic packing lines with ESG goals"
+        ],
+        "params_values": {
+          "carrier": "BOPET",
+          "thickness": "23 µm",
+          "adhesive": "Hot melt",
+          "adhesion": "16 µm",
+          "strength": "15–25 °C",
+          "temperature": "0 to +50 °C"
         },
         "spec_pills": [
           "BOPET",
@@ -2110,54 +2243,55 @@
       },
       "bopet-paska-hit17": {
         "name": "BOPET tape HIT17",
-        "tagline": "Ultra-thin PET tape for electronics and precision applications.",
+        "tagline": "High-strength packing tape with a polyester carrier.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET tapes",
         "benefits": [
           {
-            "title": "Temperature range −40 to +155 °C",
-            "text": "Polyester carrier (17 µm) retains its properties in demanding operations."
+            "title": "Partner for recycled cartons",
+            "text": "Thanks to high stickiness, ideal for recycled cartons and dusty environments."
           },
           {
-            "title": "Acrylic adhesive",
-            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+            "title": "Extreme mechanical strength",
+            "text": "The polyester backing gives the tape exceptional tear resistance – it neither stretches nor deforms during unwinding and application."
           },
           {
-            "title": "Chemical resistance",
-            "text": "Strength 55 N/25 mm, resists solvents, oils and aggressive environments."
+            "title": "Higher efficiency thanks to polyester",
+            "text": "A thinner film profile fits twice the metres on a standard roll diameter. That means fewer roll changes on packing lines, smoother packing flow and less storage space."
           }
         ],
         "uses": [
-          "Demanding industrial operations",
-          "Fixing in high-temperature environments",
-          "Masking during powder coating",
-          "Electronics and specialised manufacturing"
+          "Recycled cartons and dusty environments",
+          "Automatic packing machines",
+          "Machine packing of heavy shipments",
+          "Sealing cartons of all surface types"
         ],
         "params_values": {
-          "carrier": "Polyester (PET) film",
+          "carrier": "BOPET",
           "thickness": "17 µm",
-          "adhesive": "Acrylic",
-          "adhesion": "3,2 N/25 mm",
-          "temperature": "−40 to +155 °C",
-          "strength": "55 N/25 mm"
+          "adhesive": "Hot melt",
+          "adhesion": "16 µm",
+          "strength": "15–25 °C",
+          "temperature": "0 to +50 °C"
         },
         "spec_pills": [
-          "Polyester (PET) film",
-          "Acrylic",
-          "−40 to +155 °C"
+          "BOPET",
+          "Hot melt",
+          "0 to +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
           "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application",
+          "min_qty": "Minimum quantity"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",

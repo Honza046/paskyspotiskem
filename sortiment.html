@@ -46,10 +46,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/theme-dark.css?v=12">
-    <link rel="stylesheet" href="/assets/css/info-banner.css?v=15">
+    <link rel="stylesheet" href="/assets/css/theme-dark.css?v=13">
+    <link rel="stylesheet" href="/assets/css/info-banner.css?v=17">
     <link rel="stylesheet" href="/assets/css/sortiment-cards.css?v=13">
-    <link rel="stylesheet" href="/assets/css/cult-effects.css?v=43">
+    <link rel="stylesheet" href="/assets/css/cult-effects.css?v=53">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -208,8 +208,8 @@
             <h2 class="mt-0.5 text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl" data-i18n="sortiment.ui.featured_title">Nejčastěji poptávané pásky</h2>
         </div>
     </div>
-    <div class="sortiment-featured-band rounded-2xl border border-slate-200/70 bg-slate-50 p-3 sm:p-4">
-    <div class="grid grid-cols-1 gap-3 lg:grid-cols-3">
+    <div class="sortiment-featured-band rounded-2xl border border-slate-200/70 bg-slate-50 p-2 sm:p-2.5">
+    <div class="grid grid-cols-1 items-stretch gap-2 lg:grid-cols-3">
         <a href="/sortiment/bopp-pasky/bopp-paska-acrylic" class="shift-card group">
             <div class="shift-card__inner">
                 <div class="shift-card__media">
@@ -225,7 +225,6 @@
                             <span>Stroje i ručně</span>
                         </div>
                     </div>
-                    <span class="shift-card__cta">Zobrazit detail →</span>
                 </div>
             </div>
         </a>
@@ -244,7 +243,6 @@
                             <span>Recyklovaný materiál</span>
                         </div>
                     </div>
-                    <span class="shift-card__cta">Zobrazit detail →</span>
                 </div>
             </div>
         </a>
@@ -256,14 +254,13 @@
                 <div class="shift-card__body">
                     <span class="shift-card__category">BOPET pásky</span>
                     <h3 class="shift-card__title">BOPET páska ECO HIT19</h3>
-                    <p class="shift-card__tagline">BOPET páska z 85 % recyklovaných PET lahví.</p>
+                    <p class="shift-card__tagline">BOPET páska z 90 % recyklovaných PET lahví.</p>
                     <div class="shift-card__extra">
                         <div class="shift-card__tags">
                             <span>ECO</span>
-                            <span>85% z PET</span>
+                            <span>90% z PET</span>
                         </div>
                     </div>
-                    <span class="shift-card__cta">Zobrazit detail →</span>
                 </div>
             </div>
         </a>
@@ -298,7 +295,7 @@
             <img src="/dark/bopp-cover-dark.png?v=2" alt="" aria-hidden="true" class="category-tape-deco category-tape-deco--dark">
             <div class="relative z-10 flex h-full flex-col">
                 <h3 class="text-xl font-bold text-slate-900">BOPP pásky</h3>
-                <span class="category-card__count" data-category-count="5">5 produktů</span>
+                <span class="category-card__count" data-category-count="7">7 produktů</span>
                 <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Nejrozšířenější průmyslové balicí pásky z biaxiálně orientovaného polypropylenu. Vynikají skvělou pevností v tahu a dlouhou životností.</p>
                 <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-orange-600">
                     Zobrazit produkty
@@ -314,7 +311,7 @@
                     <h3 class="text-xl font-bold text-slate-900">BOPET pásky</h3>
                     <span class="category-card__badge product-tag product-tag--ekologicke">ECO</span>
                 </div>
-                <span class="category-card__count" data-category-count="4">4 produkty</span>
+                <span class="category-card__count" data-category-count="5">5 produktů</span>
                 <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">Prémiové polyesterové pásky s extrémní odolností proti roztržení, chemikáliím a teplotním výkyvům. Navržené pro nejnáročnější průmyslové aplikace.</p>
                 <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-orange-600">
                     Zobrazit produkty
@@ -591,18 +588,6 @@
     "portrait": false
   },
   {
-    "name": "BOPP páska Evergreen",
-    "tagline": "Akrylová páska do extrémních podmínek a chladu.",
-    "image": "/BOPP%20Tapes/EVERGREEN.jpg",
-    "detail": "/sortiment/bopp-pasky/bopp-paska-evergreen",
-    "category": "BOPP pásky",
-    "tags": [
-      "mrazuvzdorne",
-      "stroje"
-    ],
-    "portrait": false
-  },
-  {
     "name": "BOPP páska HOT MELT",
     "tagline": "BOPP páska s HOT MELT lepidlem pro rychlé a pevné přilnutí.",
     "image": "/BOPP%20Tapes/BOPPHOTMELT.jpeg",
@@ -639,33 +624,58 @@
     "portrait": false
   },
   {
-    "name": "BOPET páska AIT",
-    "tagline": "Polyesterová páska se silikonovým lepidlem pro extrémní teploty.",
-    "image": "/BOPET%20Tapes/BOPETAIT.jpg",
-    "detail": "/sortiment/bopet-pasky/bopet-paska-ait",
+    "name": "BOPP páska ecoEVERGREEN 100%",
+    "tagline": "Udržitelná balicí páska ze 100 % recyklovaného postindustriálního materiálu.",
+    "image": "/BOPP%20Tapes/EVERGREEN100.jpg",
+    "detail": "/sortiment/bopp-pasky/bopp-paska-evergreen-100",
+    "category": "BOPP pásky",
+    "tags": [
+      "ekologicke",
+      "mrazuvzdorne",
+      "stroje"
+    ],
+    "portrait": false
+  },
+  {
+    "name": "BOPP páska ecoEVERGREEN 50%",
+    "tagline": "Udržitelná balicí páska z 50 % recyklovaného postindustriálního materiálu.",
+    "image": "/BOPP%20Tapes/EVERGREEN.jpg",
+    "detail": "/sortiment/bopp-pasky/bopp-paska-evergreen",
+    "category": "BOPP pásky",
+    "tags": [
+      "ekologicke",
+      "mrazuvzdorne",
+      "stroje"
+    ],
+    "portrait": false
+  },
+  {
+    "name": "BOPET páska AIT23",
+    "tagline": "Pevná balicí páska s polyesterovým nosičem a akrylovým lepidlem.",
+    "image": "/BOPET%20Tapes/AIT23.jpg",
+    "detail": "/sortiment/bopet-pasky/bopet-paska-ait23",
     "category": "BOPET pásky",
     "tags": [
-      "vysoke-teploty",
-      "mrazuvzdorne",
-      "chemicka-odolnost"
+      "rucni",
+      "stroje"
     ],
     "portrait": false
   },
   {
     "name": "BOPET páska ATE23",
-    "tagline": "Tenká polyesterová páska s vysokou teplotní odolností.",
+    "tagline": "Bezpečnostní BOPET páska odhalující neoprávněnou manipulaci.",
     "image": "/BOPET%20Tapes/ATE23.jpg",
     "detail": "/sortiment/bopet-pasky/bopet-paska-ate23",
     "category": "BOPET pásky",
     "tags": [
-      "vysoke-teploty",
-      "chemicka-odolnost"
+      "rucni",
+      "stroje"
     ],
     "portrait": false
   },
   {
     "name": "BOPET páska ECO HIT19",
-    "tagline": "BOPET páska z 85 % recyklovaných PET lahví.",
+    "tagline": "BOPET páska z 90 % recyklovaných PET lahví.",
     "image": "/BOPET%20Tapes/ECOHIT19.jpg",
     "detail": "/sortiment/bopet-pasky/bopet-paska-eco-hit19",
     "category": "BOPET pásky",
@@ -677,14 +687,26 @@
     "portrait": false
   },
   {
+    "name": "BOPET páska ECO HIT23",
+    "tagline": "Silnější BOPET páska z 90 % recyklovaných PET lahví.",
+    "image": "/BOPET%20Tapes/ECOHIT23.jpg",
+    "detail": "/sortiment/bopet-pasky/bopet-paska-eco-hit23",
+    "category": "BOPET pásky",
+    "tags": [
+      "ekologicke",
+      "pet-85",
+      "stroje"
+    ],
+    "portrait": false
+  },
+  {
     "name": "BOPET páska HIT17",
-    "tagline": "Ultratenká PET páska pro elektrotechniku a přesné aplikace.",
+    "tagline": "Vysoce pevná balicí páska s polyesterovým nosičem.",
     "image": "/BOPET%20Tapes/BOPETHIT17.jpg",
     "detail": "/sortiment/bopet-pasky/bopet-paska-hit17",
     "category": "BOPET pásky",
     "tags": [
-      "vysoke-teploty",
-      "chemicka-odolnost"
+      "stroje"
     ],
     "portrait": false
   },
@@ -1063,7 +1085,7 @@
 ]
 </script>
 <script src="/assets/js/i18n.js?v=43"></script>
-<script src="/assets/js/i18n-pages.js?v=29"></script>
+<script src="/assets/js/i18n-pages.js?v=32"></script>
 <script src="/assets/js/cult-effects.js?v=4"></script>
 <script src="/assets/js/sortiment-filter.js?v=4"></script>
 <script src="/assets/js/nav-active.js"></script>
@@ -1071,7 +1093,7 @@
 <script src="/assets/js/footer-credit.js?v=5"></script>
 <script src="/assets/js/mobile-nav.js"></script>
 <script src="/assets/js/info-banner.js?v=2"></script>
-<script src="/assets/js/header-scroll.js?v=16"></script>
+<script src="/assets/js/header-scroll.js?v=17"></script>
 <script src="/assets/js/theme-toggle.js"></script>
 <script src="/assets/js/vercel-analytics.js" defer></script>
 </body>

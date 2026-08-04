@@ -290,13 +290,25 @@
         if (seriesNote && cat.series_note) setText(seriesNote, cat.series_note);
 
         var hints = cat.param_hints || [];
-        document.querySelectorAll('[data-param-hint]').forEach(function (p, i) {
-            if (!hints[i]) return;
-            var h = hints[i];
-            p.innerHTML =
-                '<strong class="font-semibold text-slate-900">' + escHtml(h.title) + ':</strong> ' +
-                escHtml(h.body) + ' ' +
-                '<span class="font-semibold italic text-orange-600">' + escHtml(h.highlight) + '</span>';
+        var hintByKey = {
+            adhesion: hints[0],
+            strength: hints[1],
+            elongation: hints[2]
+        };
+        document.querySelectorAll('[data-param-hint]').forEach(function (el) {
+            var h = hintByKey[el.getAttribute('data-param-hint')];
+            if (!h) return;
+            var labelEl = el.querySelector('[data-param-hint-label]');
+            var tipEl = el.querySelector('[data-param-hint-tip]');
+            if (labelEl && h.title) setText(labelEl, h.title);
+            if (tipEl) {
+                tipEl.innerHTML =
+                    escHtml(h.body || '') +
+                    ' <span class="font-semibold italic text-amber-300">' +
+                    escHtml(h.highlight || '') +
+                    '</span>' +
+                    '<span class="absolute left-8 top-full -translate-x-1/2 border-8 border-transparent border-t-slate-900" aria-hidden="true"></span>';
+            }
         });
 
         var heroImg = document.querySelector('main section img');
@@ -343,7 +355,13 @@
             ? ['carrier', 'thickness', 'adhesive', 'adhesion', 'strength', 'temperature', 'min_qty']
             : ['carrier', 'thickness', 'adhesive', 'adhesion', 'temperature', 'strength'];
         document.querySelectorAll('main table th').forEach(function (th, i) {
-            if (labels[paramKeys[i]]) setText(th, labels[paramKeys[i]]);
+            if (!labels[paramKeys[i]]) return;
+            var hintLabel = th.querySelector('[data-param-hint-label]');
+            if (hintLabel) {
+                setText(hintLabel, labels[paramKeys[i]]);
+            } else {
+                setText(th, labels[paramKeys[i]]);
+            }
         });
 
         var paramsValues = prod.params_values || {};
@@ -370,7 +388,13 @@
                 table.classList.toggle('hidden', variant !== activeVariant);
                 var values = prod.tech_variants[variant];
                 table.querySelectorAll('th').forEach(function (th, i) {
-                    if (labels[paramKeys[i]]) setText(th, labels[paramKeys[i]]);
+                    if (!labels[paramKeys[i]]) return;
+                    var hintLabel = th.querySelector('[data-param-hint-label]');
+                    if (hintLabel) {
+                        setText(hintLabel, labels[paramKeys[i]]);
+                    } else {
+                        setText(th, labels[paramKeys[i]]);
+                    }
                 });
                 table.querySelectorAll('tbody tr td:last-child').forEach(function (td, i) {
                     if (values[paramKeys[i]]) setText(td, values[paramKeys[i]]);
@@ -394,7 +418,7 @@
             }
         }
 
-        var note = document.querySelector('main .overflow-hidden.rounded-2xl + p.text-xs, main table + p.text-xs');
+        var note = document.querySelector('main .rounded-2xl.border.border-slate-100.bg-white.shadow-sm + p.text-xs, main table + p.text-xs');
         if (note && page.params_note) setText(note, page.params_note);
 
         var minQty = document.querySelector('main .product-min-qty');
@@ -751,10 +775,10 @@
         if (submit && formData.submit) submit.textContent = formData.submit;
 
         window.__formQtyTexts = {
-            tip: formData.quantity_tip || formData.quantity_min,
-            tipDynamic: formData.quantity_tip_dynamic || formData.quantity_tip,
-            tipAcryl: formData.quantity_tip_acryl || formData.quantity_min_acryl || formData.quantity_tip,
-            tipHotMelt: formData.quantity_tip_hotmelt || formData.quantity_min_hotmelt || formData.quantity_tip,
+            tip: formData.quantity_tip || 'Dodání cca 3–4 týdny.',
+            tipDynamic: formData.quantity_tip_dynamic || formData.quantity_tip || 'Dodání cca 3–4 týdny.',
+            tipAcryl: formData.quantity_tip_acryl || formData.quantity_tip || 'Dodání cca 3–4 týdny.',
+            tipHotMelt: formData.quantity_tip_hotmelt || formData.quantity_tip || 'Dodání cca 3–4 týdny.',
             minAcryl: formData.quantity_min_acryl || formData.quantity_min,
             minHotMelt: formData.quantity_min_hotmelt || formData.quantity_min,
             success: formData.quantity_success,

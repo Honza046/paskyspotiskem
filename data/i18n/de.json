@@ -177,9 +177,11 @@
       "quantity_min": "Akryl ab 360 Stk., HOT MELT ab 504 Stk.",
       "quantity_min_acryl": "Mindestmenge ab 360 Stk. (Akryl).",
       "quantity_min_hotmelt": "Mindestmenge ab 504 Stk. (HOT MELT).",
-      "quantity_tip": "Akryl ab 360 Stk., HOT MELT ab 504 Stk. Lieferzeit ca. 3–4 Wochen.",
-      "quantity_tip_acryl": "Mindestmenge ab 360 Stk. (Akryl). Lieferzeit ca. 3–4 Wochen.",
-      "quantity_tip_hotmelt": "Mindestmenge ab 504 Stk. (HOT MELT). Lieferzeit ca. 3–4 Wochen.",
+      "quantity_min_dynamic": "Mindestmenge ab {min} Stk. ({adhesive}, {width} mm).",
+      "quantity_tip": "Lieferzeit ca. 3–4 Wochen.",
+      "quantity_tip_dynamic": "Lieferzeit ca. 3–4 Wochen.",
+      "quantity_tip_acryl": "Lieferzeit ca. 3–4 Wochen.",
+      "quantity_tip_hotmelt": "Lieferzeit ca. 3–4 Wochen.",
       "quantity_success": "Ausgezeichnete Wahl! Sie haben kostenlosen Versand. Die Lieferung dauert etwa 3–4 Wochen.",
       "validation": {
         "material_required": "Bitte wählen Sie ein Material aus der Liste.",
@@ -1657,71 +1659,6 @@
           "back_category": "Zurück zu BOPP-Klebebänder"
         }
       },
-      "bopp-paska-evergreen": {
-        "name": "BOPP-Klebeband Evergreen",
-        "tagline": "Acrylklebeband für Extrembedingungen und Kälte.",
-        "category_slug": "bopp-pasky",
-        "category_title": "BOPP-Klebebänder",
-        "benefits": [
-          {
-            "title": "Außergewöhnliche Leistung bei Kälte und Extrembedingungen",
-            "text": "Entwickelt für die Anwendung nahe 0 °C, Kühllagerung und Verklebung auf anspruchsvollen Oberflächen (z. B. minderwertige oder recycelte Kartons)."
-          },
-          {
-            "title": "Hochleistungsfähiger wasserbasierter Acrylatkleber",
-            "text": "Bietet sofortige Haftung und zuverlässige Klebkraft, die in anspruchsvollen Umgebungen auch Naturkautschukkleber voll ersetzt. Lösungsmittelfrei und hervorragend UV-beständig."
-          },
-          {
-            "title": "Hohe UV-Beständigkeit",
-            "text": "Acrylklebstoff behält seine Klebkraft auch bei langfristiger Lagerung und UV-Belastung."
-          }
-        ],
-        "uses": [
-          "Standard-Kartonverschluss",
-          "Automatische Verpackungsmaschinen",
-          "Einsatz in Kühl- und Tiefkühllagern",
-          "Bedruckung mit Firmenlogo und Informationen"
-        ],
-        "params_values": {
-          "carrier": "BOPP",
-          "thickness": "28 µm",
-          "adhesive": "Akryl (Noisy)",
-          "adhesion": "22 µm",
-          "strength": "0–28 °C",
-          "temperature": "−20 bis +60 °C",
-          "min_qty": "ab 1 Palette (2376 Stk.)"
-        },
-        "spec_pills": [
-          "BOPP",
-          "Akryl (Noisy)",
-          "−20 bis +60 °C"
-        ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
-        "min_qty_note": "",
-        "params_labels": {
-          "carrier": "Träger",
-          "thickness": "Foliendicke",
-          "adhesive": "Klebstofftyp",
-          "adhesion": "Klebstoffdicke",
-          "strength": "Lager- und Verarbeitungstemperatur",
-          "temperature": "Betriebstemperatur nach dem Aufkleben",
-          "min_qty": "Mindestmenge"
-        },
-        "tech_spec": true,
-        "paper_spec": false,
-        "ctas": {
-          "hero": "Kalkulation mit Bedruckung",
-          "tailor_link": "Ich möchte ein kostenloses Muster",
-          "tailor_bullets": [
-            "Wählbare Breite und Rollenlänge",
-            "Grundfarbe und Anzahl der Druckfarben",
-            "Qualitätsprüfung vor der Bestellung"
-          ],
-          "bottom": "Kostenloses Muster oder Kalkulation",
-          "back_category": "Zurück zu BOPP-Klebebänder"
-        }
-      },
       "bopp-paska-hot-melt": {
         "name": "BOPP-Klebeband HOT MELT",
         "tagline": "BOPP-Klebeband mit Hot-Melt-Klebstoff für schnelle, feste Haftung.",
@@ -1917,56 +1854,187 @@
           "back_category": "Zurück zu BOPP-Klebebänder"
         }
       },
-      "bopet-paska-ait": {
-        "name": "BOPET-Klebeband AIT",
-        "tagline": "Polyesterband mit Silikonklebstoff für extreme Temperaturen.",
-        "category_slug": "bopet-pasky",
-        "category_title": "BOPET-Klebebänder",
+      "bopp-paska-evergreen-100": {
+        "name": "BOPP-Klebeband ecoEVERGREEN 100%",
+        "tagline": "Nachhaltiges Verpackungsklebeband aus 100 % recyceltem postindustriellem Material.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP-Klebebänder",
         "benefits": [
           {
-            "title": "Temperaturbereich −40 bis +180 °C",
-            "text": "Polyesterträger (30 µm) behält seine Eigenschaften in anspruchsvollen Betrieben."
+            "title": "Innovatives Recycling (PIR)",
+            "text": "Das Band besteht aus BOPP-Folie mit 100 % recyceltem gebrauchtem Speiseöl (U.C.O.) aus der Lebensmittelindustrie. Durch dieses hochwertige postindustrielle Rezyklat (PIR) enthält das Produkt insgesamt 54 % Recyclingmaterial."
           },
           {
-            "title": "Silikonklebstoff",
-            "text": "Stabile Leistung bei extremen Temperaturen und rückstandsfreies Ablösen."
+            "title": "Außergewöhnliche Leistung bei Kälte und Extrembedingungen",
+            "text": "Entwickelt für die Anwendung nahe 0 °C, Kühllagerung und Verklebung auf anspruchsvollen Oberflächen (z. B. minderwertige oder recycelte Kartons)."
           },
           {
-            "title": "Extreme Temperaturen",
-            "text": "Leistung bei hohen Lackiertemperaturen und Frost – ohne Oberflächenschäden."
+            "title": "Hochleistungsfähiger wasserbasierter Acrylatkleber",
+            "text": "Bietet sofortige Haftung und zuverlässige Klebkraft, die in anspruchsvollen Umgebungen auch Naturkautschukkleber voll ersetzt. Lösungsmittelfrei und hervorragend UV-beständig."
           }
         ],
         "uses": [
-          "Anspruchsvolle Industriebetriebe",
-          "Fixierung in Umgebungen mit hohen Temperaturen",
-          "Abkleben bei der Pulverbeschichtung",
-          "Elektrotechnik und spezialisierte Fertigung"
+          "Unternehmen mit ESG- und Nachhaltigkeitszielen",
+          "Einsatz in Kühl- und Tiefkühllagern",
+          "Recyclingkarton und anspruchsvolle Oberflächen",
+          "Automatische Verpackungsmaschinen"
         ],
         "params_values": {
-          "carrier": "Polyester- (PET-) Folie",
-          "thickness": "30 µm",
-          "adhesive": "Silikon",
-          "adhesion": "3,0 N/25 mm",
-          "temperature": "−40 bis +180 °C",
-          "strength": "65 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 µm",
+          "adhesive": "Acryl (NOISY)",
+          "adhesion": "22 µm",
+          "strength": "0–25 °C",
+          "temperature": "−20 bis +50 °C",
+          "min_qty": "1 Palette (2376 Stk.), Basis 50 mm × 66 m"
         },
         "spec_pills": [
-          "Polyester- (PET-) Folie",
-          "Silikon",
-          "−40 bis +180 °C"
+          "BOPP",
+          "Acryl (NOISY)",
+          "−20 bis +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
           "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben",
+          "min_qty": "Mindestmenge"
         },
-        "tech_spec": false,
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Kalkulation mit Bedruckung",
+          "tailor_link": "Ich möchte ein kostenloses Muster",
+          "tailor_bullets": [
+            "Wählbare Breite und Rollenlänge",
+            "Grundfarbe und Anzahl der Druckfarben",
+            "Qualitätsprüfung vor der Bestellung"
+          ],
+          "bottom": "Kostenloses Muster oder Kalkulation",
+          "back_category": "Zurück zu BOPP-Klebebänder"
+        }
+      },
+      "bopp-paska-evergreen": {
+        "name": "BOPP-Klebeband ecoEVERGREEN 50%",
+        "tagline": "Nachhaltiges Verpackungsklebeband aus 50 % recyceltem postindustriellem Material.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP-Klebebänder",
+        "benefits": [
+          {
+            "title": "Innovatives Recycling (PIR)",
+            "text": "Das Band besteht aus BOPP-Folie mit 50 % recyceltem gebrauchtem Speiseöl (U.C.O.) aus der Lebensmittelindustrie. Durch dieses hochwertige postindustrielle Rezyklat (PIR) enthält das Produkt insgesamt 27 % Recyclingmaterial."
+          },
+          {
+            "title": "Außergewöhnliche Leistung bei Kälte und Extrembedingungen",
+            "text": "Entwickelt für die Anwendung nahe 0 °C, Kühllagerung und Verklebung auf anspruchsvollen Oberflächen (z. B. minderwertige oder recycelte Kartons)."
+          },
+          {
+            "title": "Hochleistungsfähiger wasserbasierter Acrylatkleber",
+            "text": "Bietet sofortige Haftung und zuverlässige Klebkraft, die in anspruchsvollen Umgebungen auch Naturkautschukkleber voll ersetzt. Lösungsmittelfrei und hervorragend UV-beständig."
+          }
+        ],
+        "uses": [
+          "Unternehmen mit ESG- und Nachhaltigkeitszielen",
+          "Einsatz in Kühl- und Tiefkühllagern",
+          "Recyclingkarton und anspruchsvolle Oberflächen",
+          "Automatische Verpackungsmaschinen"
+        ],
+        "params_values": {
+          "carrier": "BOPP",
+          "thickness": "28 µm",
+          "adhesive": "Acryl (NOISY)",
+          "adhesion": "22 µm",
+          "strength": "0–25 °C",
+          "temperature": "−20 bis +50 °C",
+          "min_qty": "1 Palette (2376 Stk.), Basis 50 mm × 66 m"
+        },
+        "spec_pills": [
+          "BOPP",
+          "Acryl (NOISY)",
+          "−20 bis +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
+          "adhesive": "Klebstofftyp",
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben",
+          "min_qty": "Mindestmenge"
+        },
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Kalkulation mit Bedruckung",
+          "tailor_link": "Ich möchte ein kostenloses Muster",
+          "tailor_bullets": [
+            "Wählbare Breite und Rollenlänge",
+            "Grundfarbe und Anzahl der Druckfarben",
+            "Qualitätsprüfung vor der Bestellung"
+          ],
+          "bottom": "Kostenloses Muster oder Kalkulation",
+          "back_category": "Zurück zu BOPP-Klebebänder"
+        }
+      },
+      "bopet-paska-ait23": {
+        "name": "BOPET-Klebeband AIT23",
+        "tagline": "Festes Verpackungsklebeband mit Polyesterträger und Acrylklebstoff.",
+        "category_slug": "bopet-pasky",
+        "category_title": "BOPET-Klebebänder",
+        "benefits": [
+          {
+            "title": "Hohe UV-Beständigkeit",
+            "text": "Acrylklebstoff behält die Klebkraft auch bei langer Lagerung und UV-Belastung."
+          },
+          {
+            "title": "Extreme mechanische Beständigkeit",
+            "text": "Der Polyesterträger verleiht dem Band enorme Reißfestigkeit – beim Abrollen und Applizieren dehnt oder verformt es sich nicht."
+          },
+          {
+            "title": "Höhere Effizienz dank Polyester",
+            "text": "Das dünnere Folienprofil fasst bei Standard-Rollendurchmesser die doppelte Meterzahl. Das bedeutet selteneren Rollenwechsel an Verpackungslinien, flüssigeren Betrieb und weniger Lagerplatz."
+          }
+        ],
+        "uses": [
+          "Verschließen von Kartons aller Oberflächentypen",
+          "Automatische Verpackungsmaschinen",
+          "Manuelles und halbautomatisches Verpacken",
+          "Versand und Lagerlogistik"
+        ],
+        "params_values": {
+          "carrier": "BOPET",
+          "thickness": "23 µm",
+          "adhesive": "Akryl",
+          "adhesion": "20 µm",
+          "strength": "15–25 °C",
+          "temperature": "0 bis +50 °C"
+        },
+        "spec_pills": [
+          "BOPET",
+          "Akryl",
+          "0 bis +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
+          "adhesive": "Klebstofftyp",
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben",
+          "min_qty": "Mindestmenge"
+        },
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
@@ -1982,54 +2050,55 @@
       },
       "bopet-paska-ate23": {
         "name": "BOPET-Klebeband ATE23",
-        "tagline": "Dünnes Polyesterband mit hoher Temperaturbeständigkeit.",
+        "tagline": "Sicherheits-BOPET-Klebeband, das unbefugte Manipulation erkennbar macht.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET-Klebebänder",
         "benefits": [
           {
-            "title": "Temperaturbereich −40 bis +150 °C",
-            "text": "Polyesterträger (25 µm) behält seine Eigenschaften in anspruchsvollen Betrieben."
+            "title": "Sofortige Manipulationserkennung",
+            "text": "Beim Abziehversuch hinterbleibt eine sichtbare VOID/FRAUD/OPEN-Spur – jeder unbefugte Zugriff auf die Sendung wird sofort erkannt."
           },
           {
-            "title": "Acrylklebstoff",
-            "text": "Leises Abrollen, langfristig stabile Klebkraft und zuverlässige Leistung unter Lagerbedingungen."
+            "title": "Extreme mechanische Beständigkeit",
+            "text": "Der Polyesterträger verleiht dem Band enorme Reißfestigkeit – beim Abrollen und Applizieren dehnt oder verformt es sich nicht."
           },
           {
-            "title": "Chemische Beständigkeit",
-            "text": "Festigkeit 60 N/25 mm – beständig gegen Lösungsmittel, Öle und aggressive Umgebungen."
+            "title": "Neutrales Erscheinungsbild",
+            "text": "Es wirkt wie gewöhnliches Packband, bis es unbefugt abgezogen wird."
           }
         ],
         "uses": [
-          "Anspruchsvolle Industriebetriebe",
-          "Fixierung in Umgebungen mit hohen Temperaturen",
-          "Abkleben bei der Pulverbeschichtung",
-          "Elektrotechnik und spezialisierte Fertigung"
+          "Sicherung von Sendungen gegen unbefugtes Öffnen",
+          "E-Commerce und wertvolle Pakete",
+          "Manuelles und halbautomatisches Verpacken",
+          "Firmen-Branding direkt auf der Sendung"
         ],
         "params_values": {
-          "carrier": "Polyester- (PET-) Folie",
-          "thickness": "25 µm",
-          "adhesive": "Acryl",
-          "adhesion": "3,5 N/25 mm",
-          "temperature": "−40 bis +150 °C",
-          "strength": "60 N/25 mm"
+          "carrier": "BOPET",
+          "thickness": "23 µm",
+          "adhesive": "Akryl",
+          "adhesion": "26 µm",
+          "strength": "15–25 °C",
+          "temperature": "0 bis +50 °C"
         },
         "spec_pills": [
-          "Polyester- (PET-) Folie",
-          "Acryl",
-          "−40 bis +150 °C"
+          "BOPET",
+          "Akryl",
+          "0 bis +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
           "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben",
+          "min_qty": "Mindestmenge"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
@@ -2045,7 +2114,7 @@
       },
       "bopet-paska-eco-hit19": {
         "name": "BOPET-Klebeband ECO HIT19",
-        "tagline": "BOPET-Klebeband aus 85 % recycelten PET-Flaschen.",
+        "tagline": "BOPET-Klebeband aus 90 % recycelten PET-Flaschen.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET-Klebebänder",
         "benefits": [
@@ -2073,9 +2142,73 @@
           "thickness": "19 µm",
           "adhesive": "Hot Melt",
           "adhesion": "18 µm",
-          "strength": "14–28 °C",
+          "strength": "15–25 °C",
           "temperature": "0 bis +50 °C",
-          "min_qty": "ab 1080 Stk."
+          "min_qty": "ab 1080 Stk., Basis 50 mm × 132 m; 3 Farben ab 1 Palette (2376 Stk.)"
+        },
+        "spec_pills": [
+          "BOPET",
+          "Hot Melt",
+          "0 bis +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
+          "adhesive": "Klebstofftyp",
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben",
+          "min_qty": "Mindestmenge"
+        },
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Kalkulation mit Bedruckung",
+          "tailor_link": "Ich möchte ein kostenloses Muster",
+          "tailor_bullets": [
+            "Wählbare Breite und Rollenlänge",
+            "Grundfarbe und Anzahl der Druckfarben",
+            "Qualitätsprüfung vor der Bestellung"
+          ],
+          "bottom": "Kostenloses Muster oder Kalkulation",
+          "back_category": "Zurück zu BOPET-Klebebänder"
+        }
+      },
+      "bopet-paska-eco-hit23": {
+        "name": "BOPET-Klebeband ECO HIT23",
+        "tagline": "Stärkeres BOPET-Klebeband aus 90 % recycelten PET-Flaschen.",
+        "category_slug": "bopet-pasky",
+        "category_title": "BOPET-Klebebänder",
+        "benefits": [
+          {
+            "title": "Unterstützung der Kreislaufwirtschaft",
+            "text": "Der Träger enthält 90 % PET-Abfall aus recycelten PET-Flaschen; der gesamte Recyclinganteil erreicht 60 %. Ideal für E-Shops und Unternehmen, die ESG-Ziele erfüllen wollen."
+          },
+          {
+            "title": "Extreme mechanische Beständigkeit",
+            "text": "Der Polyesterträger verleiht dem Band enorme Reißfestigkeit – beim Abrollen und Applizieren dehnt oder verformt es sich nicht."
+          },
+          {
+            "title": "Höhere Effizienz dank Polyester",
+            "text": "Das dünnere Folienprofil fasst bei Standard-Rollendurchmesser die doppelte Meterzahl. Das bedeutet selteneren Rollenwechsel an Verpackungslinien, flüssigeren Betrieb und weniger Lagerplatz."
+          }
+        ],
+        "uses": [
+          "Unternehmen mit ESG- und Nachhaltigkeitszielen",
+          "Zirkuläre Verpackungsprozesse",
+          "Aufbau einer verantwortungsvollen Marke",
+          "Automatische Verpackungslinien mit ESG-Zielen"
+        ],
+        "params_values": {
+          "carrier": "BOPET",
+          "thickness": "23 µm",
+          "adhesive": "Hot Melt",
+          "adhesion": "16 µm",
+          "strength": "15–25 °C",
+          "temperature": "0 bis +50 °C"
         },
         "spec_pills": [
           "BOPET",
@@ -2110,54 +2243,55 @@
       },
       "bopet-paska-hit17": {
         "name": "BOPET-Klebeband HIT17",
-        "tagline": "Ultradünnes PET-Band für Elektrotechnik und präzise Anwendungen.",
+        "tagline": "Hochfestes Verpackungsklebeband mit Polyesterträger.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET-Klebebänder",
         "benefits": [
           {
-            "title": "Temperaturbereich −40 bis +155 °C",
-            "text": "Polyesterträger (17 µm) behält seine Eigenschaften in anspruchsvollen Betrieben."
+            "title": "Partner für Recyclingkartons",
+            "text": "Dank hoher Klebkraft ideal für Recyclingkartons und staubige Umgebungen."
           },
           {
-            "title": "Acrylklebstoff",
-            "text": "Leises Abrollen, langfristig stabile Klebkraft und zuverlässige Leistung unter Lagerbedingungen."
+            "title": "Extreme mechanische Beständigkeit",
+            "text": "Der Polyesterträger verleiht dem Band enorme Reißfestigkeit – beim Abrollen und Applizieren dehnt oder verformt es sich nicht."
           },
           {
-            "title": "Chemische Beständigkeit",
-            "text": "Festigkeit 55 N/25 mm – beständig gegen Lösungsmittel, Öle und aggressive Umgebungen."
+            "title": "Höhere Effizienz dank Polyester",
+            "text": "Das dünnere Folienprofil fasst bei Standard-Rollendurchmesser die doppelte Meterzahl. Das bedeutet selteneren Rollenwechsel an Verpackungslinien, flüssigeren Betrieb und weniger Lagerplatz."
           }
         ],
         "uses": [
-          "Anspruchsvolle Industriebetriebe",
-          "Fixierung in Umgebungen mit hohen Temperaturen",
-          "Abkleben bei der Pulverbeschichtung",
-          "Elektrotechnik und spezialisierte Fertigung"
+          "Recyclingkartons und staubige Umgebungen",
+          "Automatische Verpackungsmaschinen",
+          "Maschinelles Verpacken schwerer Sendungen",
+          "Verschließen von Kartons aller Oberflächentypen"
         ],
         "params_values": {
-          "carrier": "Polyester- (PET-) Folie",
+          "carrier": "BOPET",
           "thickness": "17 µm",
-          "adhesive": "Acryl",
-          "adhesion": "3,2 N/25 mm",
-          "temperature": "−40 bis +155 °C",
-          "strength": "55 N/25 mm"
+          "adhesive": "Hot Melt",
+          "adhesion": "16 µm",
+          "strength": "15–25 °C",
+          "temperature": "0 bis +50 °C"
         },
         "spec_pills": [
-          "Polyester- (PET-) Folie",
-          "Acryl",
-          "−40 bis +155 °C"
+          "BOPET",
+          "Hot Melt",
+          "0 bis +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
           "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben",
+          "min_qty": "Mindestmenge"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",

@@ -177,9 +177,11 @@
       "quantity_min": "Akryl od 360 ks, HOT MELT od 504 ks.",
       "quantity_min_acryl": "Minimální množství od 360 ks (Akryl).",
       "quantity_min_hotmelt": "Minimální množství od 504 ks (HOT MELT).",
-      "quantity_tip": "Akryl od 360 ks, HOT MELT od 504 ks. Dodání cca 3–4 týdny.",
-      "quantity_tip_acryl": "Minimální množství od 360 ks (Akryl). Dodání cca 3–4 týdny.",
-      "quantity_tip_hotmelt": "Minimální množství od 504 ks (HOT MELT). Dodání cca 3–4 týdny.",
+      "quantity_min_dynamic": "Minimální množství od {min} ks ({adhesive}, {width} mm).",
+      "quantity_tip": "Dodání cca 3–4 týdny.",
+      "quantity_tip_dynamic": "Dodání cca 3–4 týdny.",
+      "quantity_tip_acryl": "Dodání cca 3–4 týdny.",
+      "quantity_tip_hotmelt": "Dodání cca 3–4 týdny.",
       "quantity_success": "Skvělá volba! Máte dopravu zdarma. Doprava trvá přibližně 3–4 týdny.",
       "validation": {
         "material_required": "Vyberte materiál ze seznamu.",
@@ -1658,71 +1660,6 @@
           "back_category": "Zpět na BOPP pásky"
         }
       },
-      "bopp-paska-evergreen": {
-        "name": "BOPP páska Evergreen",
-        "tagline": "Akrylová páska do extrémních podmínek a chladu.",
-        "category_slug": "bopp-pasky",
-        "category_title": "BOPP pásky",
-        "benefits": [
-          {
-            "title": "Mimořádný výkon v chladu a extrémech",
-            "text": "Vyvinuta pro aplikaci při teplotách blížících se 0 °C, skladování v chladném prostředí a lepení na náročné povrchy (např. méně kvalitní či recyklované kartony)."
-          },
-          {
-            "title": "Výkonné akrylátové lepidlo na vodní bázi",
-            "text": "Nabízí okamžitou přilnavost a spolehlivou lepivost, která v náročném prostředí plně nahradí i lepidla z přírodního kaučuku. Navíc neobsahuje rozpouštědla a skvěle odolává UV záření."
-          },
-          {
-            "title": "Vysoká odolnost proti UV",
-            "text": "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování i UV zatížení."
-          }
-        ],
-        "uses": [
-          "Standardní uzavírání kartonů",
-          "Automatické balicí stroje",
-          "Provoz v chladírenských a mrazicích skladech",
-          "Potisk firemním logem a informacemi"
-        ],
-        "params_values": {
-          "carrier": "BOPP",
-          "thickness": "28 µm",
-          "adhesive": "Akryl (Noisy)",
-          "adhesion": "22 µm",
-          "strength": "0–28 °C",
-          "temperature": "−20 až +60 °C",
-          "min_qty": "od 1 palety (2376 ks)"
-        },
-        "spec_pills": [
-          "BOPP",
-          "Akryl (Noisy)",
-          "−20 až +60 °C"
-        ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
-        "min_qty_note": "",
-        "params_labels": {
-          "carrier": "Nosič",
-          "thickness": "Tloušťka fólie",
-          "adhesive": "Typ lepidla",
-          "adhesion": "Tloušťka lepidla",
-          "strength": "Skladovací a aplikační teplota",
-          "temperature": "Provozní teplota po nalepení",
-          "min_qty": "Minimální množství"
-        },
-        "tech_spec": true,
-        "paper_spec": false,
-        "ctas": {
-          "hero": "Kalkulace s potiskem",
-          "tailor_link": "Chci vzorek zdarma",
-          "tailor_bullets": [
-            "Volitelná šířka a délka návinu",
-            "Barva podkladu a počet barev potisku",
-            "Otestování kvality před objednáním"
-          ],
-          "bottom": "Vzorek nebo kalkulace zdarma",
-          "back_category": "Zpět na BOPP pásky"
-        }
-      },
       "bopp-paska-hot-melt": {
         "name": "BOPP páska HOT MELT",
         "tagline": "BOPP páska s HOT MELT lepidlem pro rychlé a pevné přilnutí.",
@@ -1918,56 +1855,187 @@
           "back_category": "Zpět na BOPP pásky"
         }
       },
-      "bopet-paska-ait": {
-        "name": "BOPET páska AIT",
-        "tagline": "Polyesterová páska se silikonovým lepidlem pro extrémní teploty.",
-        "category_slug": "bopet-pasky",
-        "category_title": "BOPET pásky",
+      "bopp-paska-evergreen-100": {
+        "name": "BOPP páska ecoEVERGREEN 100%",
+        "tagline": "Udržitelná balicí páska ze 100 % recyklovaného postindustriálního materiálu.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP pásky",
         "benefits": [
           {
-            "title": "Teplotní rozsah −40 až +180 °C",
-            "text": "Polyesterový nosič (30 µm) si drží vlastnosti v náročných provozech."
+            "title": "Inovativní recyklace (PIR)",
+            "text": "Páska je vyrobena z BOPP fólie s 100% podílem recyklovaného použitého kuchyňského oleje (U.C.O.) z potravinářského průmyslu. Jedná se o vysoce kvalitní postindustriální recyklát (PIR), díky kterému produkt obsahuje celkem 54 % recyklovaného materiálu."
           },
           {
-            "title": "Silikonové lepidlo",
-            "text": "Stabilní výkon v extrémních teplotách a snadné odlepení bez zbytků lepidla."
+            "title": "Mimořádný výkon v chladu a extrémech",
+            "text": "Vyvinuta pro aplikaci při teplotách blížících se 0 °C, skladování v chladném prostředí a lepení na náročné povrchy (např. méně kvalitní či recyklované kartony)."
           },
           {
-            "title": "Extrémní teploty",
-            "text": "Výkon při vysokých teplotách lakování i při mrazu – bez poškození povrchu."
+            "title": "Výkonné akrylátové lepidlo na vodní bázi",
+            "text": "Nabízí okamžitou přilnavost a spolehlivou lepivost, která v náročném prostředí plně nahradí i lepidla z přírodního kaučuku. Navíc neobsahuje rozpouštědla a skvěle odolává UV záření."
           }
         ],
         "uses": [
-          "Náročné průmyslové provozy",
-          "Fixace v prostředí s vysokými teplotami",
-          "Maskování při práškovém lakování",
-          "Elektrotechnika a specializovaná výroba"
+          "Firmy s ESG a udržitelnými cíli",
+          "Provoz v chladírenských a mrazicích skladech",
+          "Recyklovaný karton a náročné povrchy",
+          "Automatické balicí stroje"
         ],
         "params_values": {
-          "carrier": "Polyesterová (PET) fólie",
-          "thickness": "30 µm",
-          "adhesive": "Silikonové",
-          "adhesion": "3,0 N/25 mm",
-          "temperature": "−40 až +180 °C",
-          "strength": "65 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 µm",
+          "adhesive": "Akryl (NOISY)",
+          "adhesion": "22 µm",
+          "strength": "0–25 °C",
+          "temperature": "−20 až +50 °C",
+          "min_qty": "1 paleta (2376 ks), základ 50 mm × 66 m"
         },
         "spec_pills": [
-          "Polyesterová (PET) fólie",
-          "Silikonové",
-          "−40 až +180 °C"
+          "BOPP",
+          "Akryl (NOISY)",
+          "−20 až +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
         },
-        "tech_spec": false,
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Otestování kvality před objednáním"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na BOPP pásky"
+        }
+      },
+      "bopp-paska-evergreen": {
+        "name": "BOPP páska ecoEVERGREEN 50%",
+        "tagline": "Udržitelná balicí páska z 50 % recyklovaného postindustriálního materiálu.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP pásky",
+        "benefits": [
+          {
+            "title": "Inovativní recyklace (PIR)",
+            "text": "Páska je vyrobena z BOPP fólie s 50% podílem recyklovaného použitého kuchyňského oleje (U.C.O.) z potravinářského průmyslu. Jedná se o vysoce kvalitní postindustriální recyklát (PIR), díky kterému produkt obsahuje celkem 27 % recyklovaného materiálu."
+          },
+          {
+            "title": "Mimořádný výkon v chladu a extrémech",
+            "text": "Vyvinuta pro aplikaci při teplotách blížících se 0 °C, skladování v chladném prostředí a lepení na náročné povrchy (např. méně kvalitní či recyklované kartony)."
+          },
+          {
+            "title": "Výkonné akrylátové lepidlo na vodní bázi",
+            "text": "Nabízí okamžitou přilnavost a spolehlivou lepivost, která v náročném prostředí plně nahradí i lepidla z přírodního kaučuku. Navíc neobsahuje rozpouštědla a skvěle odolává UV záření."
+          }
+        ],
+        "uses": [
+          "Firmy s ESG a udržitelnými cíli",
+          "Provoz v chladírenských a mrazicích skladech",
+          "Recyklovaný karton a náročné povrchy",
+          "Automatické balicí stroje"
+        ],
+        "params_values": {
+          "carrier": "BOPP",
+          "thickness": "28 µm",
+          "adhesive": "Akryl (NOISY)",
+          "adhesion": "22 µm",
+          "strength": "0–25 °C",
+          "temperature": "−20 až +50 °C",
+          "min_qty": "1 paleta (2376 ks), základ 50 mm × 66 m"
+        },
+        "spec_pills": [
+          "BOPP",
+          "Akryl (NOISY)",
+          "−20 až +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
+        },
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Otestování kvality před objednáním"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na BOPP pásky"
+        }
+      },
+      "bopet-paska-ait23": {
+        "name": "BOPET páska AIT23",
+        "tagline": "Pevná balicí páska s polyesterovým nosičem a akrylovým lepidlem.",
+        "category_slug": "bopet-pasky",
+        "category_title": "BOPET pásky",
+        "benefits": [
+          {
+            "title": "Vysoká odolnost proti UV",
+            "text": "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování a UV zatížení."
+          },
+          {
+            "title": "Extrémní mechanická odolnost",
+            "text": "Polyesterový základ dává pásce obrovskou odolnost proti přetržení – při odvíjení a aplikaci se nenatahuje ani nedeformuje."
+          },
+          {
+            "title": "Vyšší efektivita díky polyesteru",
+            "text": "Tenčí profil fólie pojme na standardním průměru role dvojnásobek metrů. To přináší méně častou výměnu rolí na balicích linkách, vyšší plynulost balení a úsporu skladovacího místa."
+          }
+        ],
+        "uses": [
+          "Uzavírání kartonů všech typů povrchů",
+          "Automatické balicí stroje",
+          "Ruční i poloautomatické balení",
+          "Expedice a skladová logistika"
+        ],
+        "params_values": {
+          "carrier": "BOPET",
+          "thickness": "23 µm",
+          "adhesive": "Akryl",
+          "adhesion": "20 µm",
+          "strength": "15–25 °C",
+          "temperature": "0 až +50 °C"
+        },
+        "spec_pills": [
+          "BOPET",
+          "Akryl",
+          "0 až +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
+        },
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
@@ -1983,54 +2051,55 @@
       },
       "bopet-paska-ate23": {
         "name": "BOPET páska ATE23",
-        "tagline": "Tenká polyesterová páska s vysokou teplotní odolností.",
+        "tagline": "Bezpečnostní BOPET páska odhalující neoprávněnou manipulaci.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET pásky",
         "benefits": [
           {
-            "title": "Teplotní rozsah −40 až +150 °C",
-            "text": "Polyesterový nosič (25 µm) si drží vlastnosti v náročných provozech."
+            "title": "Okamžitá detekce manipulace",
+            "text": "Při pokusu o odlepení zanechá viditelnou stopu VOID/FRAUD/OPEN – jakýkoliv neoprávněný vstup do zásilky je ihned odhalen."
           },
           {
-            "title": "Akrylové lepidlo",
-            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+            "title": "Extrémní mechanická odolnost",
+            "text": "Polyesterový základ dává pásce obrovskou odolnost proti přetržení – při odvíjení a aplikaci se nenatahuje ani nedeformuje."
           },
           {
-            "title": "Chemická odolnost",
-            "text": "Pevnost 60 N/25 mm – odolává rozpouštědlům, olejům a agresivnímu prostředí."
+            "title": "Neutrální vzhled",
+            "text": "Tváří se jako běžná balicí páska, dokud není neoprávněně odlepena."
           }
         ],
         "uses": [
-          "Náročné průmyslové provozy",
-          "Fixace v prostředí s vysokými teplotami",
-          "Maskování při práškovém lakování",
-          "Elektrotechnika a specializovaná výroba"
+          "Zabezpečení zásilek proti neoprávněnému otevření",
+          "E-commerce a cenné balíky",
+          "Ruční i poloautomatické balení",
+          "Firemní branding přímo na zásilce"
         ],
         "params_values": {
-          "carrier": "Polyesterová (PET) fólie",
-          "thickness": "25 µm",
-          "adhesive": "Akrylové",
-          "adhesion": "3,5 N/25 mm",
-          "temperature": "−40 až +150 °C",
-          "strength": "60 N/25 mm"
+          "carrier": "BOPET",
+          "thickness": "23 µm",
+          "adhesive": "Akryl",
+          "adhesion": "26 µm",
+          "strength": "15–25 °C",
+          "temperature": "0 až +50 °C"
         },
         "spec_pills": [
-          "Polyesterová (PET) fólie",
-          "Akrylové",
-          "−40 až +150 °C"
+          "BOPET",
+          "Akryl",
+          "0 až +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
@@ -2046,7 +2115,7 @@
       },
       "bopet-paska-eco-hit19": {
         "name": "BOPET páska ECO HIT19",
-        "tagline": "BOPET páska z 85 % recyklovaných PET lahví.",
+        "tagline": "BOPET páska z 90 % recyklovaných PET lahví.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET pásky",
         "benefits": [
@@ -2074,9 +2143,73 @@
           "thickness": "19 µm",
           "adhesive": "HOT MELT",
           "adhesion": "18 µm",
-          "strength": "14–28 °C",
+          "strength": "15–25 °C",
           "temperature": "0 až +50 °C",
-          "min_qty": "od 1080 ks"
+          "min_qty": "od 1080 ks, základ 50 mm × 132 m; 3 barvy od 1 palety (2376 ks)"
+        },
+        "spec_pills": [
+          "BOPET",
+          "HOT MELT",
+          "0 až +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
+          "adhesive": "Typ lepidla",
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
+        },
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Otestování kvality před objednáním"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na BOPET pásky"
+        }
+      },
+      "bopet-paska-eco-hit23": {
+        "name": "BOPET páska ECO HIT23",
+        "tagline": "Silnější BOPET páska z 90 % recyklovaných PET lahví.",
+        "category_slug": "bopet-pasky",
+        "category_title": "BOPET pásky",
+        "benefits": [
+          {
+            "title": "Podpora cirkulární ekonomiky",
+            "text": "Nosný materiál obsahuje 90 % PET odpadu z recyklovaných PET lahví a celkový podíl recyklovaného materiálu dosahuje 60 %. Ideální volba pro e-shopy a firmy, které chtějí plnit ESG cíle."
+          },
+          {
+            "title": "Extrémní mechanická odolnost",
+            "text": "Polyesterový základ dává pásce obrovskou odolnost proti přetržení – při odvíjení a aplikaci se nenatahuje ani nedeformuje."
+          },
+          {
+            "title": "Vyšší efektivita díky polyesteru",
+            "text": "Tenčí profil fólie pojme na standardním průměru role dvojnásobek metrů. To přináší méně častou výměnu rolí na balicích linkách, vyšší plynulost balení a úsporu skladovacího místa."
+          }
+        ],
+        "uses": [
+          "Firmy s ESG a udržitelnými cíli",
+          "Cirkulární obalové procesy",
+          "Budování zodpovědné značky",
+          "Automatické balicí linky s ESG cíli"
+        ],
+        "params_values": {
+          "carrier": "BOPET",
+          "thickness": "23 µm",
+          "adhesive": "HOT MELT",
+          "adhesion": "16 µm",
+          "strength": "15–25 °C",
+          "temperature": "0 až +50 °C"
         },
         "spec_pills": [
           "BOPET",
@@ -2111,54 +2244,55 @@
       },
       "bopet-paska-hit17": {
         "name": "BOPET páska HIT17",
-        "tagline": "Ultratenká PET páska pro elektrotechniku a přesné aplikace.",
+        "tagline": "Vysoce pevná balicí páska s polyesterovým nosičem.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET pásky",
         "benefits": [
           {
-            "title": "Teplotní rozsah −40 až +155 °C",
-            "text": "Polyesterový nosič (17 µm) si drží vlastnosti v náročných provozech."
+            "title": "Partner pro recyklované kartony",
+            "text": "Díky vysoké lepivosti ideální na recyklované kartony a do prašného prostředí."
           },
           {
-            "title": "Akrylové lepidlo",
-            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+            "title": "Extrémní mechanická odolnost",
+            "text": "Polyesterový základ dává pásce obrovskou odolnost proti přetržení – při odvíjení a aplikaci se nenatahuje ani nedeformuje."
           },
           {
-            "title": "Chemická odolnost",
-            "text": "Pevnost 55 N/25 mm – odolává rozpouštědlům, olejům a agresivnímu prostředí."
+            "title": "Vyšší efektivita díky polyesteru",
+            "text": "Tenčí profil fólie pojme na standardním průměru role dvojnásobek metrů. To přináší méně častou výměnu rolí na balicích linkách, vyšší plynulost balení a úsporu skladovacího místa."
           }
         ],
         "uses": [
-          "Náročné průmyslové provozy",
-          "Fixace v prostředí s vysokými teplotami",
-          "Maskování při práškovém lakování",
-          "Elektrotechnika a specializovaná výroba"
+          "Recyklované kartony a prašné prostředí",
+          "Automatické balicí stroje",
+          "Strojové balení těžkých zásilek",
+          "Uzavírání kartonů všech typů povrchů"
         ],
         "params_values": {
-          "carrier": "Polyesterová (PET) fólie",
+          "carrier": "BOPET",
           "thickness": "17 µm",
-          "adhesive": "Akrylové",
-          "adhesion": "3,2 N/25 mm",
-          "temperature": "−40 až +155 °C",
-          "strength": "55 N/25 mm"
+          "adhesive": "HOT MELT",
+          "adhesion": "16 µm",
+          "strength": "15–25 °C",
+          "temperature": "0 až +50 °C"
         },
         "spec_pills": [
-          "Polyesterová (PET) fólie",
-          "Akrylové",
-          "−40 až +155 °C"
+          "BOPET",
+          "HOT MELT",
+          "0 až +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",

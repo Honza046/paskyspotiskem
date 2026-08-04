@@ -87,9 +87,14 @@
         "slug": "bopp-paska-acrylic"
       },
       {
-        "name": "BOPP páska Evergreen",
-        "tagline": "Barevná BOPP páska pro značení a vizuální odlišení zásilek.",
+        "name": "BOPP páska ecoEVERGREEN 50%",
+        "tagline": "Udržitelná balicí páska z 50 % recyklovaného postindustriálního materiálu.",
         "slug": "bopp-paska-evergreen"
+      },
+      {
+        "name": "BOPP páska ecoEVERGREEN 100%",
+        "tagline": "Udržitelná balicí páska ze 100 % recyklovaného postindustriálního materiálu.",
+        "slug": "bopp-paska-evergreen-100"
       },
       {
         "name": "BOPP páska EXTRA GLUE+",
@@ -114,23 +119,27 @@
     ],
     "bopet-pasky": [
       {
-        "name": "BOPET páska AIT",
-        "tagline": "Polyesterová páska se silikonovým lepidlem pro extrémní teploty.",
-        "slug": "bopet-paska-ait"
-      },
+        "name": "BOPET páska AIT23",
+        "tagline": "Pevná balicí páska s polyesterovým nosičem a akrylovým lepidlem.",
+        "slug": "bopet-paska-ait23"      },
       {
         "name": "BOPET páska ATE23",
-        "tagline": "Tenká polyesterová páska s vysokou teplotní odolností.",
+        "tagline": "Bezpečnostní BOPET páska odhalující neoprávněnou manipulaci.",
         "slug": "bopet-paska-ate23"
       },
       {
         "name": "BOPET páska ECO HIT19",
-        "tagline": "Polyesterová páska s recyklovaným obsahem a vysokou odolností.",
+        "tagline": "BOPET páska z 90 % recyklovaných PET lahví.",
         "slug": "bopet-paska-eco-hit19"
       },
       {
+        "name": "BOPET páska ECO HIT23",
+        "tagline": "Silnější BOPET páska z 90 % recyklovaných PET lahví.",
+        "slug": "bopet-paska-eco-hit23"
+      },
+      {
         "name": "BOPET páska HIT17",
-        "tagline": "Ultratenká PET páska pro elektrotechniku a přesné aplikace.",
+        "tagline": "Vysoce pevná balicí páska s polyesterovým nosičem.",
         "slug": "bopet-paska-hit17"
       }
     ],

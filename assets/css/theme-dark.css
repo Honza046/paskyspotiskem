@@ -24,13 +24,13 @@
 
 /* --- Header & nav -------------------------------------------------------- */
 .dark .site-header {
-    border-color: rgb(30 41 59);
-    background-color: rgb(15 23 42 / 0.92);
+    border-color: rgb(51 65 85 / 0.55);
+    background-color: rgb(15 23 42 / 0.72);
 }
 
 .dark #mobile-nav {
-    border-color: rgb(30 41 59);
-    background-color: #0f172a;
+    border-color: rgb(51 65 85 / 0.65);
+    background-color: rgb(15 23 42 / 0.9);
 }
 
 .dark .site-header .text-slate-500 {
@@ -112,10 +112,20 @@
 }
 
 /* Footer social icons – white glyphs (default + brand hover) */
-.dark footer#kontakt1 a[href*="facebook.com"],
-.dark footer#kontakt1 a[href*="instagram.com"],
-.dark footer#kontakt1 a[href*="youtube.com"] {
+.dark footer a[href*="facebook.com"],
+.dark footer a[href*="instagram.com"],
+.dark footer a[href*="youtube.com"] {
     color: #ffffff !important;
+}
+
+/* Footer: same elevated slate as homepage section transitions */
+.dark footer.bg-slate-900,
+.dark footer.texture-overlay {
+    background-color: #1e293b !important;
+}
+
+.dark footer .bg-slate-800 {
+    background-color: #334155 !important;
 }
 
 /* --- Borders ------------------------------------------------------------- */

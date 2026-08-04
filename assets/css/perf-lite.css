@@ -15,6 +15,28 @@ html.perf-lite .site-header-shell > .site-header {
     transition: none !important;
 }
 
+html.perf-lite header.site-header,
+html.perf-lite header.site-header #mobile-nav {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+}
+
+html.perf-lite header.site-header {
+    background-color: #ffffff !important;
+}
+
+html.perf-lite.dark header.site-header {
+    background-color: #0f172a !important;
+}
+
+html.perf-lite header.site-header #mobile-nav {
+    background-color: #ffffff !important;
+}
+
+html.perf-lite.dark header.site-header #mobile-nav {
+    background-color: #0f172a !important;
+}
+
 html.perf-lite .glass--card,
 html.perf-lite .glass--chip,
 html.perf-lite .glass--pill,

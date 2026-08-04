@@ -112,13 +112,15 @@ PRODUCTS = {
    P("BOPP páska EXTRA GLUE+","BOPP Tapes/BOPPACRYLIC.jpeg","Akrylová páska se zvýšenou vrstvou lepidla pro náročné povrchy.","BOPP","28 / 32 / 35 µm","Akryl","28 µm","−10 až +60 °C","14–28 °C"),
    P("BOPP páska TACK+","BOPP Tapes/BOPPHOTMELT1.jpg","HOT MELT páska s extrémní přilnavostí a okamžitým lepivým efektem. Pro obtížné aplikace.","BOPP","28 / 32 µm","HOT MELT (tack+)","18 µm","0 až +50 °C","14–28 °C"),
    P("BOPP páska Tamper Evident","BOPP Tapes/TAMPER-EVIDENT.jpg","BOPP páska s ochranným potiskem pro okamžitou detekci neoprávněného otevření zásilky.","BOPP","35 µm","Akryl (Low noise)","—","0 až +60 °C","—"),
-   P("BOPP páska Evergreen","BOPP Tapes/EVERGREEN.jpg","Akrylová páska do extrémních podmínek a chladu.","BOPP","28 µm","Akryl (Noisy)","—","−20 až +60 °C","—"),
+   P("BOPP páska ecoEVERGREEN 50%","BOPP Tapes/EVERGREEN.jpg","Udržitelná balicí páska z 50 % recyklovaného postindustriálního materiálu.","BOPP","28 µm","Akryl (NOISY)","—","−20 až +50 °C","—"),
+   P("BOPP páska ecoEVERGREEN 100%","BOPP Tapes/EVERGREEN100.jpg","Udržitelná balicí páska ze 100 % recyklovaného postindustriálního materiálu.","BOPP","28 µm","Akryl (NOISY)","—","−20 až +50 °C","—"),
  ],
  "bopet-pasky":[
-   P("BOPET páska ATE23","BOPET Tapes/ATE23.jpg","Tenká polyesterová páska s vysokou teplotní odolností.","Polyesterová (PET) fólie","25 µm","Akrylové","3,5 N/25 mm","−40 až +150 °C","60 N/25 mm"),
-   P("BOPET páska AIT","BOPET Tapes/BOPETAIT.jpg","Polyesterová páska se silikonovým lepidlem pro extrémní teploty.","Polyesterová (PET) fólie","30 µm","Silikonové","3,0 N/25 mm","−40 až +180 °C","65 N/25 mm"),
-   P("BOPET páska HIT17","BOPET Tapes/BOPETHIT17.jpg","Ultratenká PET páska pro elektrotechniku a přesné aplikace.","Polyesterová (PET) fólie","17 µm","Akrylové","3,2 N/25 mm","−40 až +155 °C","55 N/25 mm"),
-   P("BOPET páska ECO HIT19","BOPET Tapes/ECOHIT19.jpg","BOPET páska z 85 % recyklovaných PET lahví.","BOPET","19 µm","HOT MELT","—","0 až +50 °C","—"),
+   P("BOPET páska ATE23","BOPET Tapes/ATE23.jpg","Bezpečnostní BOPET páska odhalující neoprávněnou manipulaci.","BOPET","23 µm","Akryl","—","0 až +50 °C","—"),
+   P("BOPET páska AIT23","BOPET Tapes/AIT23.jpg","Pevná balicí páska s polyesterovým nosičem a akrylovým lepidlem.","BOPET","23 µm","Akryl","—","0 až +50 °C","—"),
+   P("BOPET páska HIT17","BOPET Tapes/BOPETHIT17.jpg","Vysoce pevná balicí páska s polyesterovým nosičem.","BOPET","17 µm","HOT MELT","—","0 až +50 °C","—"),
+   P("BOPET páska ECO HIT19","BOPET Tapes/ECOHIT19.jpg","BOPET páska z 90 % recyklovaných PET lahví.","BOPET","19 µm","HOT MELT","—","0 až +50 °C","—"),
+   P("BOPET páska ECO HIT23","BOPET Tapes/ECOHIT23.jpg","Silnější BOPET páska z 90 % recyklovaných PET lahví.","BOPET","23 µm","HOT MELT","—","0 až +50 °C","—"),
  ],
  "textilni-pasky":[
    P("Textilní páska BC","Textilní Lepící Pásky/BC.jpg","Pevná textilní (duct) páska pro opravy a univerzální použití.","Textilní výztuž + PE laminát","250 µm","Kaučukové (syntetické)","6,0 N/25 mm","−10 až +70 °C","120 N/25 mm"),
@@ -173,11 +175,13 @@ TAGMAP = {
  "BOPP páska EXTRA GLUE+":["tiche","rucni","stroje"],
  "BOPP páska TACK+":["rucni","stroje"],
  "BOPP páska Tamper Evident":["rucni","stroje"],
- "BOPP páska Evergreen":["mrazuvzdorne","stroje"],
- "BOPET páska ATE23":["vysoke-teploty","chemicka-odolnost"],
- "BOPET páska AIT":["vysoke-teploty","mrazuvzdorne","chemicka-odolnost"],
- "BOPET páska HIT17":["vysoke-teploty","chemicka-odolnost"],
+ "BOPP páska ecoEVERGREEN 50%":["ekologicke","mrazuvzdorne","stroje"],
+ "BOPP páska ecoEVERGREEN 100%":["ekologicke","mrazuvzdorne","stroje"],
+ "BOPET páska ATE23":["rucni","stroje"],
+ "BOPET páska AIT23":["rucni","stroje"],
+ "BOPET páska HIT17":["stroje"],
  "BOPET páska ECO HIT19":["ekologicke","pet-85","stroje"],
+ "BOPET páska ECO HIT23":["ekologicke","pet-85","stroje"],
  "Textilní páska BC":["vyztuzene","rucni"],
  "Textilní páska BC2":["vyztuzene","rucni"],
  "Textilní páska NU":["vyztuzene","rucni"],
@@ -205,6 +209,8 @@ for k in PRODUCTS:
 SLUG_OVERRIDES = {
     "BOPP páska Akryl": "bopp-paska-acrylic",
     "BOPP páska HOT MELT": "bopp-paska-hot-melt",
+    "BOPP páska ecoEVERGREEN 50%": "bopp-paska-evergreen",
+    "BOPP páska ecoEVERGREEN 100%": "bopp-paska-evergreen-100",
     "Udržitelná páska Airtape+": "udrzitelna-paska-airtape",
 }
 
@@ -282,23 +288,64 @@ TECH_SPEC_PARAMS = {
         "Provozní teplota po nalepení": "0 až +50 / 0 až +60 / −10 až +60 °C",
         "Minimální množství": "od 180 ks",
     },
-    "BOPP páska Evergreen": {
+    "BOPP páska ecoEVERGREEN 50%": {
         "Nosič": "BOPP",
         "Tloušťka fólie": "28 µm",
-        "Typ lepidla": "Akryl (Noisy)",
+        "Typ lepidla": "Akryl (NOISY)",
         "Tloušťka lepidla": "22 µm",
-        "Skladovací a aplikační teplota": "0–28 °C",
-        "Provozní teplota po nalepení": "−20 až +60 °C",
-        "Minimální množství": "od 1 palety (2376 ks)",
+        "Skladovací a aplikační teplota": "0–25 °C",
+        "Provozní teplota po nalepení": "−20 až +50 °C",
+        "Minimální množství": "1 paleta (2376 ks), základ 50 mm × 66 m",
+    },
+    "BOPP páska ecoEVERGREEN 100%": {
+        "Nosič": "BOPP",
+        "Tloušťka fólie": "28 µm",
+        "Typ lepidla": "Akryl (NOISY)",
+        "Tloušťka lepidla": "22 µm",
+        "Skladovací a aplikační teplota": "0–25 °C",
+        "Provozní teplota po nalepení": "−20 až +50 °C",
+        "Minimální množství": "1 paleta (2376 ks), základ 50 mm × 66 m",
     },
     "BOPET páska ECO HIT19": {
         "Nosič": "BOPET",
         "Tloušťka fólie": "19 µm",
         "Typ lepidla": "HOT MELT",
         "Tloušťka lepidla": "18 µm",
-        "Skladovací a aplikační teplota": "14–28 °C",
+        "Skladovací a aplikační teplota": "15–25 °C",
         "Provozní teplota po nalepení": "0 až +50 °C",
-        "Minimální množství": "od 1080 ks",
+        "Minimální množství": "od 1080 ks, základ 50 mm × 132 m; 3 barvy od 1 palety (2376 ks)",
+    },
+    "BOPET páska ECO HIT23": {
+        "Nosič": "BOPET",
+        "Tloušťka fólie": "23 µm",
+        "Typ lepidla": "HOT MELT",
+        "Tloušťka lepidla": "16 µm",
+        "Skladovací a aplikační teplota": "15–25 °C",
+        "Provozní teplota po nalepení": "0 až +50 °C",
+    },
+    "BOPET páska HIT17": {
+        "Nosič": "BOPET",
+        "Tloušťka fólie": "17 µm",
+        "Typ lepidla": "HOT MELT",
+        "Tloušťka lepidla": "16 µm",
+        "Skladovací a aplikační teplota": "15–25 °C",
+        "Provozní teplota po nalepení": "0 až +50 °C",
+    },
+    "BOPET páska ATE23": {
+        "Nosič": "BOPET",
+        "Tloušťka fólie": "23 µm",
+        "Typ lepidla": "Akryl",
+        "Tloušťka lepidla": "26 µm",
+        "Skladovací a aplikační teplota": "15–25 °C",
+        "Provozní teplota po nalepení": "0 až +50 °C",
+    },
+    "BOPET páska AIT23": {
+        "Nosič": "BOPET",
+        "Tloušťka fólie": "23 µm",
+        "Typ lepidla": "Akryl",
+        "Tloušťka lepidla": "20 µm",
+        "Skladovací a aplikační teplota": "15–25 °C",
+        "Provozní teplota po nalepení": "0 až +50 °C",
     },
     "Udržitelná páska Airtape+": {
         "Nosič": "BOPP",
@@ -535,23 +582,69 @@ def product_min_qty_note(p):
     return ""
 
 
-def product_param_rows_html(params):
-    return "\n".join('''                    <tr class="border-b border-slate-100 last:border-0">
+PARAM_HINT_KEYS = {
+    'Přilnavost k oceli': 'adhesion',
+    'Pevnost v tahu': 'strength',
+    'Tažnost / Prodloužení': 'elongation',
+}
+
+def param_hints_by_label(cat):
+    hints = cat.get('param_hints') or []
+    out = {}
+    for title, body, highlight in hints:
+        out[title] = (body, highlight)
+    return out
+
+def param_label_with_hint_html(label, hint):
+    """Label + hover/focus tooltip (same pattern as homepage O nás)."""
+    body, highlight = hint
+    tip_html = (
+        '%s <span class="font-semibold italic text-amber-300">%s</span>'
+        % (esc(body), esc(highlight))
+    )
+    key = PARAM_HINT_KEYS.get(label, '')
+    return (
+        '<span tabindex="0" class="group relative inline cursor-help border-b border-dotted border-slate-400 outline-none" data-param-hint="%s">'
+        '<span data-param-hint-label>%s</span>'
+        '<span class="pointer-events-none absolute bottom-full left-0 z-30 mb-2 w-72 rounded-xl bg-slate-900 px-4 py-3 text-sm font-normal not-italic leading-snug text-white opacity-0 shadow-xl transition-opacity duration-200 group-hover:opacity-100 group-focus:opacity-100 sm:w-80" data-param-hint-tip role="tooltip">'
+        '%s'
+        '<span class="absolute left-8 top-full -translate-x-1/2 border-8 border-transparent border-t-slate-900" aria-hidden="true"></span>'
+        '</span>'
+        '</span>'
+    ) % (esc(key), esc(label), tip_html)
+
+def product_param_rows_html(params, hints=None):
+    hints = hints or {}
+    rows = []
+    for k, v in params.items():
+        hint = hints.get(k)
+        label_html = param_label_with_hint_html(k, hint) if hint else esc(k)
+        rows.append(
+            '''                    <tr class="border-b border-slate-100 last:border-0">
                         <th scope="row" class="w-1/2 px-6 py-4 pr-4 text-left align-top text-sm font-semibold text-slate-500">%s</th>
                         <td class="px-6 py-4 text-sm font-semibold text-slate-900">%s</td>
-                    </tr>''' % (esc(k), esc(v)) for k, v in params.items())
+                    </tr>''' % (label_html, esc(v))
+        )
+    return "\n".join(rows)
 
 
-def product_tech_table_html(p):
+def product_tech_table_html(p, hints=None):
+    hints = hints or {}
+    # overflow-visible so hover tooltips are not clipped by rounded card
+    wrap_cls = (
+        'overflow-visible rounded-2xl border border-slate-100 bg-white shadow-sm'
+        if hints else
+        'overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm'
+    )
     variants = product_tech_variant_tables(p)
     if not variants:
-        return '''                <div class="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
+        return '''                <div class="%s">
                     <table class="w-full">
                         <tbody>
 %s
                         </tbody>
                     </table>
-                </div>''' % product_param_rows_html(p["params"])
+                </div>''' % (wrap_cls, product_param_rows_html(p["params"], hints))
 
     labels = product_tech_variant_labels(p)
     keys = list(variants.keys())
@@ -570,15 +663,14 @@ def product_tech_table_html(p):
                         <tbody>
 %s
                         </tbody>
-                    </table>''' % (hidden, key, product_param_rows_html(variants[key])))
+                    </table>''' % (hidden, key, product_param_rows_html(variants[key], hints)))
 
     return '''                <div class="mb-4 inline-flex flex-wrap rounded-2xl bg-slate-100 p-1" data-tech-switcher data-active-variant="%s">
                     %s
                 </div>
-                <div class="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
+                <div class="%s">
 %s
-                </div>''' % (default_key, "\n                    ".join(buttons), "\n".join(tables))
-
+                </div>''' % (default_key, "\n                    ".join(buttons), wrap_cls, "\n".join(tables))
 def _adhesive_benefit(lepidlo):
     l = lepidlo.lower()
     if "akryl" in l:
@@ -695,11 +787,17 @@ def product_benefits(cat_slug, p):
                 ("Neutrální vzhled", "Tváří se jako běžná balicí páska, dokud není neoprávněně odlepena."),
                 ("Možnost vlastní personalizace", "Bezpečnostní text nebo motiv lze plně přizpůsobit (např. logo firmy, varování, vlastní text „VOID / OTEVŘENO“)."),
             ]
-        if p["name"] == "BOPP páska Evergreen":
+        if p["name"] == "BOPP páska ecoEVERGREEN 50%":
             return [
+                ("Inovativní recyklace (PIR)", "Páska je vyrobena z BOPP fólie s 50% podílem recyklovaného použitého kuchyňského oleje (U.C.O.) z potravinářského průmyslu. Jedná se o vysoce kvalitní postindustriální recyklát (PIR), díky kterému produkt obsahuje celkem 27 % recyklovaného materiálu."),
                 ("Mimořádný výkon v chladu a extrémech", "Vyvinuta pro aplikaci při teplotách blížících se 0 °C, skladování v chladném prostředí a lepení na náročné povrchy (např. méně kvalitní či recyklované kartony)."),
                 ("Výkonné akrylátové lepidlo na vodní bázi", "Nabízí okamžitou přilnavost a spolehlivou lepivost, která v náročném prostředí plně nahradí i lepidla z přírodního kaučuku. Navíc neobsahuje rozpouštědla a skvěle odolává UV záření."),
-                ("Vysoká odolnost proti UV", "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování i UV zatížení."),
+            ]
+        if p["name"] == "BOPP páska ecoEVERGREEN 100%":
+            return [
+                ("Inovativní recyklace (PIR)", "Páska je vyrobena z BOPP fólie s 100% podílem recyklovaného použitého kuchyňského oleje (U.C.O.) z potravinářského průmyslu. Jedná se o vysoce kvalitní postindustriální recyklát (PIR), díky kterému produkt obsahuje celkem 54 % recyklovaného materiálu."),
+                ("Mimořádný výkon v chladu a extrémech", "Vyvinuta pro aplikaci při teplotách blížících se 0 °C, skladování v chladném prostředí a lepení na náročné povrchy (např. méně kvalitní či recyklované kartony)."),
+                ("Výkonné akrylátové lepidlo na vodní bázi", "Nabízí okamžitou přilnavost a spolehlivou lepivost, která v náročném prostředí plně nahradí i lepidla z přírodního kaučuku. Navíc neobsahuje rozpouštědla a skvěle odolává UV záření."),
             ]
         b1 = (f"Pevnost v tahu {pevnost}", f"BOPP fólie o tloušťce {tl} vydrží napětí při balení i při dlouhodobém skladování.")
         if "barevn" in nl:
@@ -712,6 +810,30 @@ def product_benefits(cat_slug, p):
         if p["name"] == "BOPET páska ECO HIT19":
             return [
                 ("Evropský patent & min. 85 % recyklovaného PET odpadu", "Jediná lepicí páska v Evropě s chráněným patentem na použití recyklovaného PET z plastových lahví. Ideální volba pro e-shopy a firmy, které chtějí reálně plnit své udržitelné a ESG cíle."),
+                ("Extrémní mechanická odolnost", "Polyesterový základ dává pásce obrovskou odolnost proti přetržení – při odvíjení a aplikaci se nenatahuje ani nedeformuje."),
+                ("Vyšší efektivita díky polyesteru", "Tenčí profil fólie pojme na standardním průměru role dvojnásobek metrů. To přináší méně častou výměnu rolí na balicích linkách, vyšší plynulost balení a úsporu skladovacího místa."),
+            ]
+        if p["name"] == "BOPET páska ECO HIT23":
+            return [
+                ("Podpora cirkulární ekonomiky", "Nosný materiál obsahuje 90 % PET odpadu z recyklovaných PET lahví a celkový podíl recyklovaného materiálu dosahuje 60 %. Ideální volba pro e-shopy a firmy, které chtějí plnit ESG cíle."),
+                ("Extrémní mechanická odolnost", "Polyesterový základ dává pásce obrovskou odolnost proti přetržení – při odvíjení a aplikaci se nenatahuje ani nedeformuje."),
+                ("Vyšší efektivita díky polyesteru", "Tenčí profil fólie pojme na standardním průměru role dvojnásobek metrů. To přináší méně častou výměnu rolí na balicích linkách, vyšší plynulost balení a úsporu skladovacího místa."),
+            ]
+        if p["name"] == "BOPET páska HIT17":
+            return [
+                ("Partner pro recyklované kartony", "Díky vysoké lepivosti ideální na recyklované kartony a do prašného prostředí."),
+                ("Extrémní mechanická odolnost", "Polyesterový základ dává pásce obrovskou odolnost proti přetržení – při odvíjení a aplikaci se nenatahuje ani nedeformuje."),
+                ("Vyšší efektivita díky polyesteru", "Tenčí profil fólie pojme na standardním průměru role dvojnásobek metrů. To přináší méně častou výměnu rolí na balicích linkách, vyšší plynulost balení a úsporu skladovacího místa."),
+            ]
+        if p["name"] == "BOPET páska ATE23":
+            return [
+                ("Okamžitá detekce manipulace", "Při pokusu o odlepení zanechá viditelnou stopu VOID/FRAUD/OPEN – jakýkoliv neoprávněný vstup do zásilky je ihned odhalen."),
+                ("Extrémní mechanická odolnost", "Polyesterový základ dává pásce obrovskou odolnost proti přetržení – při odvíjení a aplikaci se nenatahuje ani nedeformuje."),
+                ("Neutrální vzhled", "Tváří se jako běžná balicí páska, dokud není neoprávněně odlepena."),
+            ]
+        if p["name"] == "BOPET páska AIT23":
+            return [
+                ("Vysoká odolnost proti UV", "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování a UV zatížení."),
                 ("Extrémní mechanická odolnost", "Polyesterový základ dává pásce obrovskou odolnost proti přetržení – při odvíjení a aplikaci se nenatahuje ani nedeformuje."),
                 ("Vyšší efektivita díky polyesteru", "Tenčí profil fólie pojme na standardním průměru role dvojnásobek metrů. To přináší méně častou výměnu rolí na balicích linkách, vyšší plynulost balení a úsporu skladovacího místa."),
             ]
@@ -835,6 +957,20 @@ def product_uses(cat, p):
                 apps[2],
                 apps[3],
             ]
+        elif p["name"] == "BOPP páska ecoEVERGREEN 50%":
+            uses = [
+                "Firmy s ESG a udržitelnými cíli",
+                "Provoz v chladírenských a mrazicích skladech",
+                "Recyklovaný karton a náročné povrchy",
+                "Automatické balicí stroje",
+            ]
+        elif p["name"] == "BOPP páska ecoEVERGREEN 100%":
+            uses = [
+                "Firmy s ESG a udržitelnými cíli",
+                "Provoz v chladírenských a mrazicích skladech",
+                "Recyklovaný karton a náročné povrchy",
+                "Automatické balicí stroje",
+            ]
         else:
             uses = [apps[0]]
             if "stroje" in tags:
@@ -853,6 +989,34 @@ def product_uses(cat, p):
                 "Cirkulární obalové procesy",
                 "Budování zodpovědné značky",
                 "Automatické balicí linky s ESG cíli",
+            ]
+        elif p["name"] == "BOPET páska ECO HIT23":
+            uses = [
+                "Firmy s ESG a udržitelnými cíli",
+                "Cirkulární obalové procesy",
+                "Budování zodpovědné značky",
+                "Automatické balicí linky s ESG cíli",
+            ]
+        elif p["name"] == "BOPET páska HIT17":
+            uses = [
+                "Recyklované kartony a prašné prostředí",
+                "Automatické balicí stroje",
+                "Strojové balení těžkých zásilek",
+                "Uzavírání kartonů všech typů povrchů",
+            ]
+        elif p["name"] == "BOPET páska ATE23":
+            uses = [
+                "Zabezpečení zásilek proti neoprávněnému otevření",
+                "E-commerce a cenné balíky",
+                "Ruční i poloautomatické balení",
+                "Firemní branding přímo na zásilce",
+            ]
+        elif p["name"] == "BOPET páska AIT23":
+            uses = [
+                "Uzavírání kartonů všech typů povrchů",
+                "Automatické balicí stroje",
+                "Ruční i poloautomatické balení",
+                "Expedice a skladová logistika",
             ]
         else:
             uses = [apps[0]]
@@ -962,15 +1126,13 @@ def product_tailor_box(cat, p):
         '                            <li class="flex gap-2"><span class="font-bold text-orange-600" aria-hidden="true">•</span>%s</li>' % esc(b)
         for b in bullets
     )
-    return '''                <div class="mt-8">
-                    <div class="product-tailor-box rounded-2xl bg-slate-50 p-6">
-                        <h3 class="text-base font-bold text-slate-900">Na míru vašemu provozu</h3>
-                        <ul class="product-tailor-list mt-3 space-y-2.5 text-sm leading-relaxed text-slate-600">
+    return '''                    <h3 class="mb-4 text-lg font-bold text-slate-900">Na míru vašemu provozu</h3>
+                    <div class="product-tailor-box rounded-2xl bg-slate-50 px-5 py-4">
+                        <ul class="product-tailor-list space-y-2 text-sm leading-relaxed text-slate-600">
 %s
                         </ul>
-                        <a href="/index.html#gf_1" class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-orange-600 transition-colors hover:text-orange-700">%s %s</a>
-                    </div>
-                </div>''' % (bullet_html, esc(cta['tailor_link']), FWD)
+                        <a href="/index.html#gf_1" class="mt-3 inline-flex items-center gap-1 text-sm font-bold text-orange-600 transition-colors hover:text-orange-700">%s %s</a>
+                    </div>''' % (bullet_html, esc(cta['tailor_link']), FWD)
 
 # Build product JSON before page generation (embedded in footer on every page).
 import json
@@ -1203,25 +1365,9 @@ def product_series_note_html(cat, p):
         return ''
     return series_note_html(cat.get('series_note'), compact=True)
 
-ORANGE_ITALIC = 'font-semibold italic text-orange-600'
-
 def param_hints_html(cat):
-    hints = cat.get('param_hints') or []
-    if not hints:
-        return ''
-    items = []
-    for title, body, highlight in hints:
-        items.append(
-            '<p class="text-sm leading-relaxed text-slate-600" data-param-hint>'
-            '<strong class="font-semibold text-slate-900">%s:</strong> %s '
-            '<span class="%s">%s</span>'
-            '</p>' % (esc(title), esc(body), ORANGE_ITALIC, esc(highlight))
-        )
-    return (
-        '<div class="product-param-hints mt-6 space-y-3" data-param-hints>'
-        '%s'
-        '</div>'
-    ) % ('\n'.join(items))
+    # Hints live as hover tooltips on matching tech-table rows.
+    return ''
 
 IMG_CLS='w-full h-full object-contain max-h-56 mix-blend-multiply contrast-[1.1] brightness-[1.05] transform transition-transform duration-300 group-hover:scale-105'
 PORTRAIT_CATEGORIES = {'udrzitelne-pasky'}
@@ -1229,7 +1375,7 @@ PORTRAIT_CATEGORIES = {'udrzitelne-pasky'}
 TAG_BADGE_ORDER = ['ekologicke', 'pet-85', 'mrazuvzdorne', 'vysoke-teploty', 'chemicka-odolnost', 'stroje', 'rucni']
 TAG_BADGE_LABELS = {
     'ekologicke': 'ECO',
-    'pet-85': '85% z PET',
+    'pet-85': '90% z PET',
     'mrazuvzdorne': '-70 °C',
     'vysoke-teploty': 'Vysoké teploty',
     'chemicka-odolnost': 'Chemická odolnost',
@@ -1401,7 +1547,7 @@ for cat in CATS:
             '<p class="product-min-qty mt-3 text-sm font-medium leading-relaxed text-slate-600">%s</p>' % esc(min_qty)
             if min_qty else ''
         )
-        tech_table = product_tech_table_html(p)
+        tech_table = product_tech_table_html(p, param_hints_by_label(cat))
         benefits = product_benefits(cat["cat"], p)
         benefit_icons = unique_feature_icons([t for t, _ in benefits])
         advs="\n".join('''                <div class="flex gap-4 rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
@@ -1411,8 +1557,8 @@ for cat in CATS:
                         <p class="mt-1 text-sm leading-relaxed text-slate-600">%s</p>
                     </div>
                 </div>'''%(icon,esc(t),esc(x)) for (t,x), icon in zip(benefits, benefit_icons))
-        uses="\n".join('''                <li class="flex items-center gap-3 rounded-xl border border-slate-100 bg-white px-5 py-4">
-                    <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-orange-600" aria-hidden="true">%s</span>
+        uses="\n".join('''                <li class="flex items-center gap-3 rounded-xl border border-slate-100 bg-white px-4 py-2.5">
+                    <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-orange-50 text-orange-600" aria-hidden="true">%s</span>
                     <span class="text-sm font-medium text-slate-700">%s</span>
                 </li>'''%(ARR,esc(a)) for a in product_uses(cat, p))
 
@@ -1462,14 +1608,21 @@ for cat in CATS:
                 <p class="mt-4 text-xs leading-relaxed text-slate-400">Uvedené hodnoty jsou orientační a mohou se lišit podle konkrétní šířky, návinu a provedení. Rádi vám připravíme přesnou specifikaci na míru.</p>
 %s
 %s
-%s
             </div>
             <div>
                 <h2 class="mb-6 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">Hlavní výhody a použití</h2>
                 <div class="grid grid-cols-1 gap-4">
 %s
                 </div>
-                <h3 class="mb-4 mt-8 text-lg font-bold text-slate-900">Typické použití</h3>
+            </div>
+        </div>
+
+        <div class="mt-10 grid grid-cols-1 items-start gap-12 lg:mt-12 lg:grid-cols-2 lg:gap-16">
+            <div>
+%s
+            </div>
+            <div>
+                <h3 class="mb-4 text-lg font-bold text-slate-900">Typické použití</h3>
                 <ul class="grid grid-cols-1 gap-3 sm:grid-cols-2">
 %s
                 </ul>
@@ -1491,7 +1644,7 @@ for cat in CATS:
      product_series_note_html(cat, p),
      *[esc(x) for x in product_spec_pills(p)],
      esc(cta['hero']),FWD,cat["cat"],BACK,
-     tech_table,min_qty_html,param_hints_html(cat),tailor,advs,uses,
+     tech_table,min_qty_html,param_hints_html(cat),advs,tailor,uses,
      PRODUCT_BOTTOM_NOTE,
      cat["cat"],BACK,esc(cat["title"]),esc(cta['bottom']))
         os.makedirs("sortiment/%s/%s"%(cat["cat"],p["slug"]),exist_ok=True)

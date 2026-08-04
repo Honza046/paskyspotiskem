@@ -52,7 +52,7 @@
     var SUPPORTED = ['cs', 'en', 'de', 'it'];
     var DEFAULT = 'cs';
     var STORAGE_KEY = 'paskyonline_lang';
-    var I18N_VER = '66';
+    var I18N_VER = '77';
 
     function getLocale() {
         var params = new URLSearchParams(window.location.search);

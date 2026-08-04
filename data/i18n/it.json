@@ -177,9 +177,11 @@
       "quantity_min": "Akryl da 360 pz, HOT MELT da 504 pz.",
       "quantity_min_acryl": "Quantità minima da 360 pz (Akryl).",
       "quantity_min_hotmelt": "Quantità minima da 504 pz (HOT MELT).",
-      "quantity_tip": "Akryl da 360 pz, HOT MELT da 504 pz. Consegna circa 3–4 settimane.",
-      "quantity_tip_acryl": "Quantità minima da 360 pz (Akryl). Consegna circa 3–4 settimane.",
-      "quantity_tip_hotmelt": "Quantità minima da 504 pz (HOT MELT). Consegna circa 3–4 settimane.",
+      "quantity_min_dynamic": "Quantità minima da {min} pz ({adhesive}, {width} mm).",
+      "quantity_tip": "Consegna circa 3–4 settimane.",
+      "quantity_tip_dynamic": "Consegna circa 3–4 settimane.",
+      "quantity_tip_acryl": "Consegna circa 3–4 settimane.",
+      "quantity_tip_hotmelt": "Consegna circa 3–4 settimane.",
       "quantity_success": "Ottima scelta! Avete la spedizione gratuita. La consegna richiede circa 3–4 settimane.",
       "validation": {
         "material_required": "Selezionate un materiale dall'elenco.",
@@ -1657,71 +1659,6 @@
           "back_category": "Torna a Nastri BOPP"
         }
       },
-      "bopp-paska-evergreen": {
-        "name": "Nastro BOPP Evergreen",
-        "tagline": "Nastro acrilico per condizioni estreme e freddo.",
-        "category_slug": "bopp-pasky",
-        "category_title": "Nastri BOPP",
-        "benefits": [
-          {
-            "title": "Prestazioni eccezionali al freddo e in condizioni estreme",
-            "text": "Pensato per applicazione vicino a 0 °C, stoccaggio a freddo e adesione su superfici difficili (es. cartoni di qualità inferiore o riciclati)."
-          },
-          {
-            "title": "Adesivo acrilico ad alte prestazioni a base d’acqua",
-            "text": "Offre adesione immediata e affidabile, in grado di sostituire gli adesivi in gomma naturale anche in ambienti difficili. Senza solventi e molto resistente ai raggi UV."
-          },
-          {
-            "title": "Elevata resistenza ai raggi UV",
-            "text": "L’adesivo acrilico mantiene il tack anche durante lo stoccaggio prolungato e l’esposizione ai raggi UV."
-          }
-        ],
-        "uses": [
-          "Chiusura standard dei cartoni",
-          "Macchine automatiche per imballaggio",
-          "Utilizzo in magazzini refrigerati e congelati",
-          "Stampa con logo e informazioni aziendali"
-        ],
-        "params_values": {
-          "carrier": "BOPP",
-          "thickness": "28 µm",
-          "adhesive": "Akryl (Noisy)",
-          "adhesion": "22 µm",
-          "strength": "0–28 °C",
-          "temperature": "da −20 a +60 °C",
-          "min_qty": "da 1 pallet (2376 pz)"
-        },
-        "spec_pills": [
-          "BOPP",
-          "Akryl (Noisy)",
-          "da −20 a +60 °C"
-        ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
-        "min_qty_note": "",
-        "params_labels": {
-          "carrier": "Supporto",
-          "thickness": "Spessore del film",
-          "adhesive": "Tipo di adesivo",
-          "adhesion": "Spessore dell'adesivo",
-          "strength": "Temperatura di stoccaggio e applicazione",
-          "temperature": "Temperatura di esercizio dopo l'applicazione",
-          "min_qty": "Quantità minima"
-        },
-        "tech_spec": true,
-        "paper_spec": false,
-        "ctas": {
-          "hero": "Preventivo con stampa",
-          "tailor_link": "Voglio un campione gratuito",
-          "tailor_bullets": [
-            "Larghezza e lunghezza della bobina personalizzabili",
-            "Colore di fondo e numero di colori di stampa",
-            "Test della qualità prima dell'ordine"
-          ],
-          "bottom": "Campione o preventivo gratuito",
-          "back_category": "Torna a Nastri BOPP"
-        }
-      },
       "bopp-paska-hot-melt": {
         "name": "Nastro BOPP HOT MELT",
         "tagline": "Nastro BOPP con adesivo hot melt per un'adesione rapida e resistente.",
@@ -1917,56 +1854,187 @@
           "back_category": "Torna a Nastri BOPP"
         }
       },
-      "bopet-paska-ait": {
-        "name": "Nastro BOPET AIT",
-        "tagline": "Nastro in poliestere con adesivo siliconico per temperature estreme.",
-        "category_slug": "bopet-pasky",
-        "category_title": "Nastri BOPET",
+      "bopp-paska-evergreen-100": {
+        "name": "Nastro BOPP ecoEVERGREEN 100%",
+        "tagline": "Nastro da imballaggio sostenibile realizzato con il 100% di materiale riciclato post-industriale.",
+        "category_slug": "bopp-pasky",
+        "category_title": "Nastri BOPP",
         "benefits": [
           {
-            "title": "Intervallo di temperatura −40 a +180 °C",
-            "text": "Supporto in poliestere (30 µm) mantiene le proprie caratteristiche in condizioni impegnative."
+            "title": "Riciclo innovativo (PIR)",
+            "text": "Il nastro è realizzato in film BOPP con il 100% di olio da cucina usato riciclato (U.C.O.) dall’industria alimentare. Questo riciclato post-industriale di alta qualità (PIR) porta il contenuto totale di materiale riciclato al 54%."
           },
           {
-            "title": "Adesivo siliconico",
-            "text": "Prestazioni stabili a temperature estreme e rimozione senza residui di adesivo."
+            "title": "Prestazioni eccezionali al freddo e in condizioni estreme",
+            "text": "Pensato per applicazione vicino a 0 °C, stoccaggio a freddo e adesione su superfici difficili (es. cartoni di qualità inferiore o riciclati)."
           },
           {
-            "title": "Temperature estreme",
-            "text": "Prestazioni ad alte temperature di verniciatura e al freddo, senza danneggiare la superficie."
+            "title": "Adesivo acrilico ad alte prestazioni a base d’acqua",
+            "text": "Offre adesione immediata e affidabile, in grado di sostituire gli adesivi in gomma naturale anche in ambienti difficili. Senza solventi e molto resistente ai raggi UV."
           }
         ],
         "uses": [
-          "Impianti industriali impegnativi",
-          "Fissaggio in ambienti ad alta temperatura",
-          "Mascheratura nella verniciatura a polvere",
-          "Elettrotecnica e produzione specializzata"
+          "Aziende con obiettivi ESG e di sostenibilità",
+          "Utilizzo in magazzini refrigerati e congelati",
+          "Cartone riciclato e superfici difficili",
+          "Macchine automatiche per imballaggio"
         ],
         "params_values": {
-          "carrier": "Film in poliestere (PET)",
-          "thickness": "30 µm",
-          "adhesive": "Silicone",
-          "adhesion": "3,0 N/25 mm",
-          "temperature": "−40 a +180 °C",
-          "strength": "65 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 µm",
+          "adhesive": "Acrilico (NOISY)",
+          "adhesion": "22 µm",
+          "strength": "0–25 °C",
+          "temperature": "−20 a +50 °C",
+          "min_qty": "1 pallet (2376 pz), base 50 mm × 66 m"
         },
         "spec_pills": [
-          "Film in poliestere (PET)",
-          "Silicone",
-          "−40 a +180 °C"
+          "BOPP",
+          "Acrilico (NOISY)",
+          "−20 a +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Supporto / materiale",
-          "thickness": "Spessore",
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
           "adhesive": "Tipo di adesivo",
-          "adhesion": "Adesione (acciaio)",
-          "temperature": "Resistenza alla temperatura",
-          "strength": "Resistenza alla trazione"
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione",
+          "min_qty": "Quantità minima"
         },
-        "tech_spec": false,
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Test della qualità prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri BOPP"
+        }
+      },
+      "bopp-paska-evergreen": {
+        "name": "Nastro BOPP ecoEVERGREEN 50%",
+        "tagline": "Nastro da imballaggio sostenibile realizzato con il 50% di materiale riciclato post-industriale.",
+        "category_slug": "bopp-pasky",
+        "category_title": "Nastri BOPP",
+        "benefits": [
+          {
+            "title": "Riciclo innovativo (PIR)",
+            "text": "Il nastro è realizzato in film BOPP con il 50% di olio da cucina usato riciclato (U.C.O.) dall’industria alimentare. Questo riciclato post-industriale di alta qualità (PIR) porta il contenuto totale di materiale riciclato al 27%."
+          },
+          {
+            "title": "Prestazioni eccezionali al freddo e in condizioni estreme",
+            "text": "Pensato per applicazione vicino a 0 °C, stoccaggio a freddo e adesione su superfici difficili (es. cartoni di qualità inferiore o riciclati)."
+          },
+          {
+            "title": "Adesivo acrilico ad alte prestazioni a base d’acqua",
+            "text": "Offre adesione immediata e affidabile, in grado di sostituire gli adesivi in gomma naturale anche in ambienti difficili. Senza solventi e molto resistente ai raggi UV."
+          }
+        ],
+        "uses": [
+          "Aziende con obiettivi ESG e di sostenibilità",
+          "Utilizzo in magazzini refrigerati e congelati",
+          "Cartone riciclato e superfici difficili",
+          "Macchine automatiche per imballaggio"
+        ],
+        "params_values": {
+          "carrier": "BOPP",
+          "thickness": "28 µm",
+          "adhesive": "Acrilico (NOISY)",
+          "adhesion": "22 µm",
+          "strength": "0–25 °C",
+          "temperature": "−20 a +50 °C",
+          "min_qty": "1 pallet (2376 pz), base 50 mm × 66 m"
+        },
+        "spec_pills": [
+          "BOPP",
+          "Acrilico (NOISY)",
+          "−20 a +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione",
+          "min_qty": "Quantità minima"
+        },
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Test della qualità prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri BOPP"
+        }
+      },
+      "bopet-paska-ait23": {
+        "name": "Nastro BOPET AIT23",
+        "tagline": "Nastro da imballaggio resistente con supporto in poliestere e adesivo acrilico.",
+        "category_slug": "bopet-pasky",
+        "category_title": "Nastri BOPET",
+        "benefits": [
+          {
+            "title": "Elevata resistenza ai raggi UV",
+            "text": "L'adesivo acrilico mantiene l'adesione anche con stoccaggio prolungato e esposizione UV."
+          },
+          {
+            "title": "Estrema resistenza meccanica",
+            "text": "Il supporto in poliestere conferisce un’enorme resistenza allo strappo: non si allunga né si deforma durante svolgimento e applicazione."
+          },
+          {
+            "title": "Maggiore efficienza grazie al poliestere",
+            "text": "Il profilo più sottile del film consente il doppio dei metri su un diametro standard di rotolo. Meno cambi rotolo sulle linee, imballaggio più fluido e meno spazio a magazzino."
+          }
+        ],
+        "uses": [
+          "Chiusura di cartoni su tutti i tipi di superficie",
+          "Macchine automatiche per imballaggio",
+          "Imballaggio manuale e semiautomatico",
+          "Spedizione e logistica di magazzino"
+        ],
+        "params_values": {
+          "carrier": "BOPET",
+          "thickness": "23 µm",
+          "adhesive": "Akryl",
+          "adhesion": "20 µm",
+          "strength": "15–25 °C",
+          "temperature": "0 a +50 °C"
+        },
+        "spec_pills": [
+          "BOPET",
+          "Akryl",
+          "0 a +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione",
+          "min_qty": "Quantità minima"
+        },
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
@@ -1982,54 +2050,55 @@
       },
       "bopet-paska-ate23": {
         "name": "Nastro BOPET ATE23",
-        "tagline": "Nastro sottile in poliestere con elevata resistenza alla temperatura.",
+        "tagline": "Nastro BOPET di sicurezza che rivela manipolazioni non autorizzate.",
         "category_slug": "bopet-pasky",
         "category_title": "Nastri BOPET",
         "benefits": [
           {
-            "title": "Intervallo di temperatura −40 a +150 °C",
-            "text": "Supporto in poliestere (25 µm) mantiene le proprie caratteristiche in condizioni impegnative."
+            "title": "Rilevamento immediato delle manomissioni",
+            "text": "Ogni tentativo di rimozione lascia un segno visibile VOID/FRAUD/OPEN: qualsiasi accesso non autorizzato al pacco viene rilevato subito."
           },
           {
-            "title": "Adesivo acrilico",
-            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+            "title": "Estrema resistenza meccanica",
+            "text": "Il supporto in poliestere conferisce un’enorme resistenza allo strappo: non si allunga né si deforma durante svolgimento e applicazione."
           },
           {
-            "title": "Resistenza chimica",
-            "text": "Resistenza 60 N/25 mm: resiste a solventi, oli e ambienti aggressivi."
+            "title": "Aspetto neutro",
+            "text": "Sembra un nastro da imballaggio comune finché non viene rimosso senza autorizzazione."
           }
         ],
         "uses": [
-          "Impianti industriali impegnativi",
-          "Fissaggio in ambienti ad alta temperatura",
-          "Mascheratura nella verniciatura a polvere",
-          "Elettrotecnica e produzione specializzata"
+          "Protezione delle spedizioni contro l’apertura non autorizzata",
+          "E-commerce e pacchi di valore",
+          "Imballaggio manuale e semiautomatico",
+          "Branding aziendale direttamente sulle spedizioni"
         ],
         "params_values": {
-          "carrier": "Film in poliestere (PET)",
-          "thickness": "25 µm",
-          "adhesive": "Acrilico",
-          "adhesion": "3,5 N/25 mm",
-          "temperature": "−40 a +150 °C",
-          "strength": "60 N/25 mm"
+          "carrier": "BOPET",
+          "thickness": "23 µm",
+          "adhesive": "Akryl",
+          "adhesion": "26 µm",
+          "strength": "15–25 °C",
+          "temperature": "0 a +50 °C"
         },
         "spec_pills": [
-          "Film in poliestere (PET)",
-          "Acrilico",
-          "−40 a +150 °C"
+          "BOPET",
+          "Akryl",
+          "0 a +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Supporto / materiale",
-          "thickness": "Spessore",
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
           "adhesive": "Tipo di adesivo",
-          "adhesion": "Adesione (acciaio)",
-          "temperature": "Resistenza alla temperatura",
-          "strength": "Resistenza alla trazione"
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione",
+          "min_qty": "Quantità minima"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
@@ -2045,7 +2114,7 @@
       },
       "bopet-paska-eco-hit19": {
         "name": "Nastro BOPET ECO HIT19",
-        "tagline": "Nastro BOPET da PET riciclato di bottiglie al 85%.",
+        "tagline": "Nastro BOPET da PET riciclato di bottiglie al 90%.",
         "category_slug": "bopet-pasky",
         "category_title": "Nastri BOPET",
         "benefits": [
@@ -2073,9 +2142,73 @@
           "thickness": "19 µm",
           "adhesive": "Hot melt",
           "adhesion": "18 µm",
-          "strength": "14–28 °C",
+          "strength": "15–25 °C",
           "temperature": "0 a +50 °C",
-          "min_qty": "da 1080 pz"
+          "min_qty": "da 1080 pz, base 50 mm × 132 m; 3 colori da 1 pallet (2376 pz)"
+        },
+        "spec_pills": [
+          "BOPET",
+          "Hot melt",
+          "0 a +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione",
+          "min_qty": "Quantità minima"
+        },
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Test della qualità prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri BOPET"
+        }
+      },
+      "bopet-paska-eco-hit23": {
+        "name": "Nastro BOPET ECO HIT23",
+        "tagline": "Nastro BOPET più resistente da PET riciclato di bottiglie al 90%.",
+        "category_slug": "bopet-pasky",
+        "category_title": "Nastri BOPET",
+        "benefits": [
+          {
+            "title": "Supporto all’economia circolare",
+            "text": "Il supporto contiene il 90% di rifiuti PET da bottiglie riciclate e la quota totale di materiale riciclato arriva al 60%. Scelta ideale per e-shop e aziende che vogliono raggiungere obiettivi ESG."
+          },
+          {
+            "title": "Estrema resistenza meccanica",
+            "text": "Il supporto in poliestere conferisce un’enorme resistenza allo strappo: non si allunga né si deforma durante svolgimento e applicazione."
+          },
+          {
+            "title": "Maggiore efficienza grazie al poliestere",
+            "text": "Il profilo più sottile del film consente il doppio dei metri su un diametro standard di rotolo. Meno cambi rotolo sulle linee, imballaggio più fluido e meno spazio a magazzino."
+          }
+        ],
+        "uses": [
+          "Aziende con obiettivi ESG e di sostenibilità",
+          "Processi di imballaggio circolari",
+          "Costruzione di un marchio responsabile",
+          "Linee di imballaggio automatiche con obiettivi ESG"
+        ],
+        "params_values": {
+          "carrier": "BOPET",
+          "thickness": "23 µm",
+          "adhesive": "Hot melt",
+          "adhesion": "16 µm",
+          "strength": "15–25 °C",
+          "temperature": "0 a +50 °C"
         },
         "spec_pills": [
           "BOPET",
@@ -2110,54 +2243,55 @@
       },
       "bopet-paska-hit17": {
         "name": "Nastro BOPET HIT17",
-        "tagline": "Nastro PET ultrasottile per elettrotecnica e applicazioni di precisione.",
+        "tagline": "Nastro da imballaggio ad alta resistenza con supporto in poliestere.",
         "category_slug": "bopet-pasky",
         "category_title": "Nastri BOPET",
         "benefits": [
           {
-            "title": "Intervallo di temperatura −40 a +155 °C",
-            "text": "Supporto in poliestere (17 µm) mantiene le proprie caratteristiche in condizioni impegnative."
+            "title": "Partner per cartoni riciclati",
+            "text": "Grazie all'elevata adesività, ideale per cartoni riciclati e ambienti polverosi."
           },
           {
-            "title": "Adesivo acrilico",
-            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+            "title": "Estrema resistenza meccanica",
+            "text": "Il supporto in poliestere conferisce un’enorme resistenza allo strappo: non si allunga né si deforma durante svolgimento e applicazione."
           },
           {
-            "title": "Resistenza chimica",
-            "text": "Resistenza 55 N/25 mm: resiste a solventi, oli e ambienti aggressivi."
+            "title": "Maggiore efficienza grazie al poliestere",
+            "text": "Il profilo più sottile del film consente il doppio dei metri su un diametro standard di rotolo. Meno cambi rotolo sulle linee, imballaggio più fluido e meno spazio a magazzino."
           }
         ],
         "uses": [
-          "Impianti industriali impegnativi",
-          "Fissaggio in ambienti ad alta temperatura",
-          "Mascheratura nella verniciatura a polvere",
-          "Elettrotecnica e produzione specializzata"
+          "Cartoni riciclati e ambienti polverosi",
+          "Macchine automatiche per imballaggio",
+          "Imballaggio automatico di spedizioni pesanti",
+          "Chiusura di cartoni su tutti i tipi di superficie"
         ],
         "params_values": {
-          "carrier": "Film in poliestere (PET)",
+          "carrier": "BOPET",
           "thickness": "17 µm",
-          "adhesive": "Acrilico",
-          "adhesion": "3,2 N/25 mm",
-          "temperature": "−40 a +155 °C",
-          "strength": "55 N/25 mm"
+          "adhesive": "Hot melt",
+          "adhesion": "16 µm",
+          "strength": "15–25 °C",
+          "temperature": "0 a +50 °C"
         },
         "spec_pills": [
-          "Film in poliestere (PET)",
-          "Acrilico",
-          "−40 a +155 °C"
+          "BOPET",
+          "Hot melt",
+          "0 a +50 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Supporto / materiale",
-          "thickness": "Spessore",
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
           "adhesive": "Tipo di adesivo",
-          "adhesion": "Adesione (acciaio)",
-          "temperature": "Resistenza alla temperatura",
-          "strength": "Resistenza alla trazione"
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione",
+          "min_qty": "Quantità minima"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",

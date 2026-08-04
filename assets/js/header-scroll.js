@@ -1,5 +1,5 @@
 /**
- * Sticky site-top: locked homepage hero, solid header,
+ * Sticky site-top: locked homepage hero, glass header,
  * hide after hero (scroll down) / reveal on deliberate scroll up.
  */
 (function () {
