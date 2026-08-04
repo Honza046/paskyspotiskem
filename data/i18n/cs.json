@@ -764,7 +764,7 @@
       },
       "papirove-pasky": {
         "title": "Papírové pásky",
-        "description": "Ekologické řešení pro bezpečné balení s vysokou lepivostí. Ideální pro plně recyklovatelné kartonové obaly a čistý korporátní design.",
+        "description": "Ekologické řešení pro elegantní balení s vysokou lepivostí, ideální pro čistý vzhled a plně recyklovatelné kartonové obaly.",
         "intro": "Papírové lepicí pásky spojují spolehlivé lepení s maximální ekologickou šetrností. Díky papírovému nosiči jsou plně recyklovatelné společně s kartonem a představují elegantní, čistě vypadající řešení pro firmy, které dbají na udržitelnost i vizuální dojem zásilek.",
         "properties": {
           "Plná recyklovatelnost": "Páska i karton putují do jednoho kontejneru – bez nutnosti oddělovat materiály.",
@@ -776,6 +776,24 @@
           "Uzavírání kartonových krabic a obalů",
           "Firemní branding přímo na zásilce",
           "Ruční i poloautomatické balení"
+        ],
+        "series_note": "C660, C680, C680R, C680RT a C690 jsou dostupné pro ruční i strojové balení a vyrábějí se z papíru FSC Mix Credit. Všechny tyto typy včetně C780 lze potisknout (až 4 barvy). C680 a C680R jsou dostupné také v bílé barvě. FSC® licence: FSC-C159046.",
+        "param_hints": [
+          {
+            "title": "Přilnavost k oceli",
+            "body": "Měří okamžitou lepivost na povrch.",
+            "highlight": "Běžný standard: 4,0–5,0 N/cm. Hodnoty nad 6,0 N/cm označují extra silnou lepivost."
+          },
+          {
+            "title": "Pevnost v tahu",
+            "body": "Odolnost proti přetržení při napnutí.",
+            "highlight": "Standard pro běžné balíky (do ~15 kg): 30–40 N/cm. Těžké zásilky a výztuže: 50+ N/cm."
+          },
+          {
+            "title": "Tažnost / Prodloužení",
+            "body": "O kolik % se páska natáhne před prasknutím.",
+            "highlight": "Standard pro papír: 8–12 %. Nízká tažnost (okolo 5 %) drží krabici pevně bez průhybu."
+          }
         ]
       },
       "odstranitelne-pasky": {
@@ -911,6 +929,7 @@
           "min_qty": "Minimální množství"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1007,6 +1026,7 @@
           "min_qty": "Minimální množství"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1103,6 +1123,7 @@
           "min_qty": "Minimální množství"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1199,6 +1220,7 @@
           "min_qty": "Minimální množství"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1282,6 +1304,7 @@
           "min_qty": "Minimální množství"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1344,6 +1367,7 @@
           "strength": "Pevnost v tahu"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1406,6 +1430,7 @@
           "strength": "Pevnost v tahu"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1468,6 +1493,7 @@
           "strength": "Pevnost v tahu"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1554,6 +1580,7 @@
           "min_qty": "Minimální množství"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1618,6 +1645,7 @@
           "min_qty": "Minimální množství"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1682,6 +1710,7 @@
           "min_qty": "Minimální množství"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1746,6 +1775,7 @@
           "min_qty": "Minimální množství"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1810,6 +1840,7 @@
           "min_qty": "Minimální množství"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1874,6 +1905,7 @@
           "min_qty": "Minimální množství"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1936,6 +1968,7 @@
           "strength": "Pevnost v tahu"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -1998,6 +2031,7 @@
           "strength": "Pevnost v tahu"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -2062,6 +2096,7 @@
           "min_qty": "Minimální množství"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -2124,6 +2159,7 @@
           "strength": "Pevnost v tahu"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -2138,54 +2174,59 @@
       },
       "papirova-paska-c660": {
         "name": "Papírová páska C660",
-        "tagline": "Ekologická papírová páska s akrylovým lepidlem a čistým odvíjením.",
+        "tagline": "Ekologické řešení pro elegantní balení s vysokou lepivostí.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
         "benefits": [
           {
+            "title": "Krepový nosič FSC",
+            "text": "Přírodní krepový papír z udržitelně obhospodařovaných lesů zaručuje pružnost, odolnost a čistý estetický ráz balení."
+          },
+          {
+            "title": "Rychlá přilnavost",
+            "text": "Lepidlo ze syntetického kaučuku zajišťuje okamžité a spolehlivé uzavření obalů."
+          },
+          {
             "title": "Plná recyklovatelnost",
-            "text": "Kraftový papírový nosič (100 µm) – ekologické balení s čistým matným vzhledem."
-          },
-          {
-            "title": "Akrylové lepidlo",
-            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
-          },
-          {
-            "title": "Pevnost 45 N/25 mm",
-            "text": "Přilnavost 3,8 N/25 mm i na recyklovaný karton a členité povrchy (−5 až +60 °C)."
+            "text": "Umožňuje koncovým zákazníkům vyhodit celou krabici do papírového odpadu bez pracného odlepování pásky."
           }
         ],
         "uses": [
           "E-shopy s důrazem na udržitelné balení",
           "Uzavírání kartonových krabic a obalů",
           "Firemní branding přímo na zásilce",
-          "Ruční balení a uzavírání e-commerce zásilek"
+          "Ruční i poloautomatické balení"
         ],
         "params_values": {
-          "carrier": "Papírový nosič",
-          "thickness": "100 µm",
-          "adhesive": "Akrylové (disperzní)",
-          "adhesion": "3,8 N/25 mm",
-          "temperature": "−5 až +60 °C",
-          "strength": "45 N/25 mm"
+          "carrier": "Krepový papír (FSC certifikace)",
+          "grammage": "60 g/m²",
+          "adhesive": "Syntetický kaučuk (Hot Melt)",
+          "thickness": "120 µm",
+          "adhesion": "4,5 N/cm",
+          "strength": "33 N/cm",
+          "elongation": "10 %",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Papírový nosič",
-          "Akrylové (disperzní)",
-          "−5 až +60 °C"
+          "Krepový papír (FSC certifikace)",
+          "Syntetický kaučuk (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
-          "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "carrier": "Nosič",
+          "grammage": "Gramáž nosiče",
+          "adhesive": "Lepidlo",
+          "thickness": "Celková tloušťka",
+          "adhesion": "Přilnavost k oceli",
+          "strength": "Pevnost v tahu",
+          "elongation": "Tažnost / Prodloužení",
+          "temperature": "Aplikační a skladovací teplota"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -2200,21 +2241,21 @@
       },
       "papirova-paska-c680": {
         "name": "Papírová páska C680",
-        "tagline": "Univerzální papírová páska s vysokou lepivostí na recyklovaný karton.",
+        "tagline": "Tenčí profil s vyšší pevností v tahu pro efektivní balení.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
         "benefits": [
           {
-            "title": "Plná recyklovatelnost",
-            "text": "Kraftový papírový nosič (115 µm) – ekologické balení s čistým matným vzhledem."
+            "title": "Krepový nosič FSC",
+            "text": "Přírodní krepový papír z udržitelně obhospodařovaných lesů zaručuje pružnost, odolnost a čistý estetický ráz balení."
           },
           {
-            "title": "Kaučukové lepidlo",
-            "text": "Vysoká okamžitá přilnavost a pevné spojení i na recyklovaném kartonu."
+            "title": "Rychlá přilnavost",
+            "text": "Lepidlo ze syntetického kaučuku zajišťuje okamžité a spolehlivé uzavření obalů."
           },
           {
-            "title": "Pevnost 50 N/25 mm",
-            "text": "Přilnavost 4,2 N/25 mm i na recyklovaný karton a členité povrchy (−10 až +60 °C)."
+            "title": "Zvýšená pevnost v tahu",
+            "text": "I při nižší celkové tloušťce než C660 nabízí vyšší odolnost proti přetržení při balení."
           }
         ],
         "uses": [
@@ -2224,30 +2265,35 @@
           "Ruční i poloautomatické balení"
         ],
         "params_values": {
-          "carrier": "Papírový nosič",
-          "thickness": "115 µm",
-          "adhesive": "Kaučukové",
-          "adhesion": "4,2 N/25 mm",
-          "temperature": "−10 až +60 °C",
-          "strength": "50 N/25 mm"
+          "carrier": "Krepový papír (FSC certifikace)",
+          "grammage": "60 g/m²",
+          "adhesive": "Syntetický kaučuk (Hot Melt)",
+          "thickness": "110 µm",
+          "adhesion": "4,5 N/cm",
+          "strength": "35 N/cm",
+          "elongation": "10 %",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Papírový nosič",
-          "Kaučukové",
-          "−10 až +60 °C"
+          "Krepový papír (FSC certifikace)",
+          "Syntetický kaučuk (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
-          "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "carrier": "Nosič",
+          "grammage": "Gramáž nosiče",
+          "adhesive": "Lepidlo",
+          "thickness": "Celková tloušťka",
+          "adhesion": "Přilnavost k oceli",
+          "strength": "Pevnost v tahu",
+          "elongation": "Tažnost / Prodloužení",
+          "temperature": "Aplikační a skladovací teplota"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -2262,21 +2308,21 @@
       },
       "papirova-paska-c680-rt": {
         "name": "Papírová páska C680 RT",
-        "tagline": "Odolná papírová páska s vylepšenou přilnavostí pro těžší zásilky.",
+        "tagline": "Křížově vyztužená páska skelným vláknem pro nejnáročnější zásilky.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
         "benefits": [
           {
-            "title": "Plná recyklovatelnost",
-            "text": "Kraftový papírový nosič (120 µm) – ekologické balení s čistým matným vzhledem."
+            "title": "Krepový nosič FSC",
+            "text": "Přírodní krepový papír z udržitelně obhospodařovaných lesů zaručuje pružnost, odolnost a čistý estetický ráz balení."
           },
           {
-            "title": "Kaučukové lepidlo",
-            "text": "Vysoká okamžitá přilnavost a pevné spojení i na recyklovaném kartonu."
+            "title": "Rychlá přilnavost",
+            "text": "Lepidlo ze syntetického kaučuku zajišťuje okamžité a spolehlivé uzavření obalů."
           },
           {
-            "title": "Pevnost 52 N/25 mm",
-            "text": "Přilnavost 4,3 N/25 mm i na recyklovaný karton a členité povrchy (−10 až +65 °C)."
+            "title": "Křížová mřížková výztuž",
+            "text": "Skelná vlákna tkaná v obou směrech dávají pásce špičkovou pevnost v tahu až 60 N/cm."
           }
         ],
         "uses": [
@@ -2286,30 +2332,35 @@
           "Ruční i poloautomatické balení"
         ],
         "params_values": {
-          "carrier": "Papírový nosič",
-          "thickness": "120 µm",
-          "adhesive": "Kaučukové",
-          "adhesion": "4,3 N/25 mm",
-          "temperature": "−10 až +65 °C",
-          "strength": "52 N/25 mm"
+          "carrier": "Krepový papír s křížovým skelným vláknem (FSC)",
+          "grammage": "60 g/m²",
+          "adhesive": "Syntetický kaučuk (Hot Melt)",
+          "thickness": "140 µm",
+          "adhesion": "5,0 N/cm",
+          "strength": "60 N/cm",
+          "elongation": "5 %",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Papírový nosič",
-          "Kaučukové",
-          "−10 až +65 °C"
+          "Krepový papír s křížovým skelným vláknem (FSC)",
+          "Syntetický kaučuk (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
-          "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "carrier": "Nosič",
+          "grammage": "Gramáž nosiče",
+          "adhesive": "Lepidlo",
+          "thickness": "Celková tloušťka",
+          "adhesion": "Přilnavost k oceli",
+          "strength": "Pevnost v tahu",
+          "elongation": "Tažnost / Prodloužení",
+          "temperature": "Aplikační a skladovací teplota"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -2324,54 +2375,59 @@
       },
       "papirova-paska-c680r": {
         "name": "Papírová páska C680R",
-        "tagline": "Papírová páska z recyklovaného papíru pro udržitelné balení.",
+        "tagline": "Skelným vláknem zpevněná páska pro bezpečné balení těžších kartonů.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
         "benefits": [
           {
-            "title": "Recyklovaný papírový nosič",
-            "text": "Páska i karton putují společně do recyklace – bez oddělování materiálů."
+            "title": "Krepový nosič FSC",
+            "text": "Přírodní krepový papír z udržitelně obhospodařovaných lesů zaručuje pružnost, odolnost a čistý estetický ráz balení."
           },
           {
-            "title": "Kaučukové lepidlo",
-            "text": "Vysoká okamžitá přilnavost a pevné spojení i na recyklovaném kartonu."
+            "title": "Rychlá přilnavost",
+            "text": "Lepidlo ze syntetického kaučuku zajišťuje okamžité a spolehlivé uzavření obalů."
           },
           {
-            "title": "Pevnost 48 N/25 mm",
-            "text": "Přilnavost 4,0 N/25 mm i na recyklovaný karton a členité povrchy (−10 až +60 °C)."
+            "title": "Podélná skelná výztuž",
+            "text": "Integrovaná vlákna zvyšují pevnost v tahu na 50 N/cm a brání prasknutí při těžších zásilkách."
           }
         ],
         "uses": [
           "E-shopy s důrazem na udržitelné balení",
           "Uzavírání kartonových krabic a obalů",
           "Firemní branding přímo na zásilce",
-          "Ruční balení a uzavírání e-commerce zásilek"
+          "Ruční i poloautomatické balení"
         ],
         "params_values": {
-          "carrier": "Recyklovaný papír",
-          "thickness": "115 µm",
-          "adhesive": "Kaučukové",
-          "adhesion": "4,0 N/25 mm",
-          "temperature": "−10 až +60 °C",
-          "strength": "48 N/25 mm"
+          "carrier": "Krepový papír s podélným skelným vláknem (FSC)",
+          "grammage": "60 g/m²",
+          "adhesive": "Syntetický kaučuk (Hot Melt)",
+          "thickness": "140 µm",
+          "adhesion": "4,5 N/cm",
+          "strength": "50 N/cm",
+          "elongation": "5 %",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Recyklovaný papír",
-          "Kaučukové",
-          "−10 až +60 °C"
+          "Krepový papír s podélným skelným vláknem (FSC)",
+          "Syntetický kaučuk (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
-          "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "carrier": "Nosič",
+          "grammage": "Gramáž nosiče",
+          "adhesive": "Lepidlo",
+          "thickness": "Celková tloušťka",
+          "adhesion": "Přilnavost k oceli",
+          "strength": "Pevnost v tahu",
+          "elongation": "Tažnost / Prodloužení",
+          "temperature": "Aplikační a skladovací teplota"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -2386,54 +2442,126 @@
       },
       "papirova-paska-c690": {
         "name": "Papírová páska C690",
-        "tagline": "Prémiová kraftová páska s HOT MELT lepidlem a matným povrchem.",
+        "tagline": "Těžký krepový papír pro nejnáročnější kartony.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
         "benefits": [
           {
-            "title": "Plná recyklovatelnost",
-            "text": "Kraftový papírový nosič (130 µm) – ekologické balení s čistým matným vzhledem."
+            "title": "Krepový nosič FSC",
+            "text": "Přírodní krepový papír z udržitelně obhospodařovaných lesů zaručuje pružnost, odolnost a čistý estetický ráz balení."
           },
           {
-            "title": "HOT MELT lepidlo",
-            "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
+            "title": "Extrémní přilnavost",
+            "text": "Nejvyšší lepivost ve své třídě okamžitě přilne i k prašným či recyklovaným kartonům."
           },
           {
-            "title": "Pevnost 60 N/25 mm",
-            "text": "Přilnavost 4,8 N/25 mm i na recyklovaný karton a členité povrchy (−10 až +70 °C)."
+            "title": "Silnější gramáž nosiče (72 g/m²)",
+            "text": "Robustnější papírový podklad pro vyšší otěruvzdornost a prémiový dojem z balíku."
           }
         ],
         "uses": [
           "E-shopy s důrazem na udržitelné balení",
           "Uzavírání kartonových krabic a obalů",
           "Firemní branding přímo na zásilce",
-          "Ruční balení a uzavírání e-commerce zásilek"
+          "Ruční i poloautomatické balení"
         ],
         "params_values": {
-          "carrier": "Papírový nosič (kraft)",
-          "thickness": "130 µm",
-          "adhesive": "HOT MELT",
-          "adhesion": "4,8 N/25 mm",
-          "temperature": "−10 až +70 °C",
-          "strength": "60 N/25 mm"
+          "carrier": "Zesílený krepový papír (FSC certifikace)",
+          "grammage": "72 g/m²",
+          "adhesive": "Syntetický kaučuk (Hot Melt)",
+          "thickness": "125 µm",
+          "adhesion": "7,0 N/cm",
+          "strength": "60 N/cm",
+          "elongation": "6,2 %",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Papírový nosič (kraft)",
-          "HOT MELT",
-          "−10 až +70 °C"
+          "Zesílený krepový papír (FSC certifikace)",
+          "Syntetický kaučuk (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
-          "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "carrier": "Nosič",
+          "grammage": "Gramáž nosiče",
+          "adhesive": "Lepidlo",
+          "thickness": "Celková tloušťka",
+          "adhesion": "Přilnavost k oceli",
+          "strength": "Pevnost v tahu",
+          "elongation": "Tažnost / Prodloužení",
+          "temperature": "Aplikační a skladovací teplota"
         },
         "tech_spec": false,
+        "paper_spec": true,
+        "ctas": {
+          "hero": "Kalkulace s potiskem",
+          "tailor_link": "Chci vzorek zdarma",
+          "tailor_bullets": [
+            "Volitelná šířka a délka návinu",
+            "Barva podkladu a počet barev potisku",
+            "Otestování kvality před objednáním"
+          ],
+          "bottom": "Vzorek nebo kalkulace zdarma",
+          "back_category": "Zpět na Papírové pásky"
+        }
+      },
+      "papirova-paska-c780": {
+        "name": "Papírová páska C780",
+        "tagline": "Prémiová kombinace krepu a přírodního kaučuku pro náročné teplotní podmínky.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Papírové pásky",
+        "benefits": [
+          {
+            "title": "Krepový nosič FSC",
+            "text": "Přírodní krepový papír z udržitelně obhospodařovaných lesů zaručuje pružnost, odolnost a čistý estetický ráz balení."
+          },
+          {
+            "title": "Lepidlo z přírodního kaučuku (Solvent)",
+            "text": "Drží spolehlivě v širokém spektru teplot, nestárne a vytváří trvanlivý spoj i při delším skladování."
+          },
+          {
+            "title": "Plná recyklovatelnost",
+            "text": "Umožňuje koncovým zákazníkům vyhodit celou krabici do papírového odpadu bez pracného odlepování pásky."
+          }
+        ],
+        "uses": [
+          "E-shopy s důrazem na udržitelné balení",
+          "Uzavírání kartonových krabic a obalů",
+          "Firemní branding přímo na zásilce",
+          "Ruční i poloautomatické balení"
+        ],
+        "params_values": {
+          "carrier": "Krepový papír (FSC certifikace)",
+          "grammage": "60 g/m²",
+          "adhesive": "Přírodní kaučuk (Solvent)",
+          "thickness": "130 µm",
+          "adhesion": "2,4 N/cm",
+          "strength": "35 N/cm",
+          "elongation": "8 %",
+          "temperature": "15–25 °C"
+        },
+        "spec_pills": [
+          "Krepový papír (FSC certifikace)",
+          "Přírodní kaučuk (Solvent)",
+          "15–25 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Nosič",
+          "grammage": "Gramáž nosiče",
+          "adhesive": "Lepidlo",
+          "thickness": "Celková tloušťka",
+          "adhesion": "Přilnavost k oceli",
+          "strength": "Pevnost v tahu",
+          "elongation": "Tažnost / Prodloužení",
+          "temperature": "Aplikační a skladovací teplota"
+        },
+        "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -2448,54 +2576,59 @@
       },
       "papirova-paska-kh80": {
         "name": "Papírová páska KH80",
-        "tagline": "Silná papírová páska s HOT MELT lepidlem pro spolehlivé uzavírání kartonů.",
+        "tagline": "Exkluzivní papírová páska z 100% recyklovaného materiálu – dokonalé spojení vysoké estetiky, okamžité přilnavosti a ohleduplnosti k přírodě.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
         "benefits": [
           {
-            "title": "Plná recyklovatelnost",
-            "text": "Kraftový papírový nosič (120 µm) – ekologické balení s čistým matným vzhledem."
+            "title": "Recyklovaný Kraft papír 80 g/m²",
+            "text": "Udržitelný a ekologický podklad ze 100% recyklovaného papíru s FSC certifikací."
           },
           {
-            "title": "HOT MELT lepidlo",
-            "text": "Rychlé a pevné přilnutí i při nižších teplotách – vhodné pro ruční i strojové balení."
+            "title": "Rychlá přilnavost",
+            "text": "Hot Melt lepidlo (syntetický kaučuk) zajišťuje spolehlivé a okamžité uzavření obalů."
           },
           {
-            "title": "Pevnost 55 N/25 mm",
-            "text": "Přilnavost 4,5 N/25 mm i na recyklovaný karton a členité povrchy (−10 až +60 °C)."
+            "title": "Snadná recyklace PAP22",
+            "text": "Certifikovaná papírová páska určená k třídění a recyklaci přímo s papírovým odpadem."
           }
         ],
         "uses": [
           "E-shopy s důrazem na udržitelné balení",
           "Uzavírání kartonových krabic a obalů",
           "Firemní branding přímo na zásilce",
-          "Ruční balení a uzavírání e-commerce zásilek"
+          "Ruční i poloautomatické balení"
         ],
         "params_values": {
-          "carrier": "Papírový nosič (kraft)",
-          "thickness": "120 µm",
-          "adhesive": "HOT MELT (syntetický kaučuk)",
-          "adhesion": "4,5 N/25 mm",
-          "temperature": "−10 až +60 °C",
-          "strength": "55 N/25 mm"
+          "carrier": "Recyklovaný Kraftový papír (100% recyklovaný, FSC certifikace)",
+          "grammage": "80 g/m²",
+          "adhesive": "Syntetický kaučuk (Hot Melt)",
+          "thickness": "135 µm (±15 %)",
+          "adhesion": ">7 N/cm (při odtržení papíru)",
+          "strength": "50 N/cm (±10 %)",
+          "elongation": "2 % (±15 %)",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Papírový nosič (kraft)",
-          "HOT MELT (syntetický kaučuk)",
-          "−10 až +60 °C"
+          "Recyklovaný Kraftový papír (100% recyklovaný, FSC certifikace)",
+          "Syntetický kaučuk (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
-          "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "carrier": "Nosič",
+          "grammage": "Gramáž nosiče",
+          "adhesive": "Lepidlo",
+          "thickness": "Celková tloušťka",
+          "adhesion": "Přilnavost k oceli",
+          "strength": "Pevnost v tahu",
+          "elongation": "Tažnost / Prodloužení",
+          "temperature": "Aplikační a skladovací teplota"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -2510,54 +2643,59 @@
       },
       "papirova-paska-ks165": {
         "name": "Papírová páska KS165",
-        "tagline": "Extra pevná papírová páska s kaučukovým lepidlem pro náročné balení.",
+        "tagline": "Nekompromisní papírové řešení s extrémní nosností pro nejtěžší průmyslové balení, fixaci palet a páskování.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
         "benefits": [
           {
-            "title": "Plná recyklovatelnost",
-            "text": "Kraftový papírový nosič (150 µm) – ekologické balení s čistým matným vzhledem."
+            "title": "Hladký Kraft papír 165 g/m²",
+            "text": "Mimořádně silný a hladký podklad z udržitelného lesního hospodářství (FSC)."
           },
           {
-            "title": "Kaučukové lepidlo",
-            "text": "Vysoká okamžitá přilnavost a pevné spojení i na recyklovaném kartonu."
+            "title": "Rychlá přilnavost",
+            "text": "Lepidlo ze syntetického kaučuku zajišťuje okamžité a spolehlivé uzavření obalů."
           },
           {
-            "title": "Pevnost 70 N/25 mm",
-            "text": "Přilnavost 5,5 N/25 mm i na recyklovaný karton a členité povrchy (−20 až +70 °C)."
+            "title": "Extrémní pevnost v tahu (150 N/cm)",
+            "text": "Nahrazuje plastové či vázací pásky i u nadměrně těžkých kartonů a průmyslových zásilek."
           }
         ],
         "uses": [
           "E-shopy s důrazem na udržitelné balení",
           "Uzavírání kartonových krabic a obalů",
           "Firemní branding přímo na zásilce",
-          "Ruční balení a uzavírání e-commerce zásilek"
+          "Ruční i poloautomatické balení"
         ],
         "params_values": {
-          "carrier": "Papírový nosič (kraft)",
-          "thickness": "150 µm",
-          "adhesive": "Kaučukové (solvent)",
-          "adhesion": "5,5 N/25 mm",
-          "temperature": "−20 až +70 °C",
-          "strength": "70 N/25 mm"
+          "carrier": "Hladký Kraftový papír (FSC certifikace)",
+          "grammage": "165 g/m²",
+          "adhesive": "Syntetický kaučuk (Hot Melt)",
+          "thickness": "225 µm",
+          "adhesion": "6,0 N/cm",
+          "strength": "150 N/cm",
+          "elongation": "14 %",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Papírový nosič (kraft)",
-          "Kaučukové (solvent)",
-          "−20 až +70 °C"
+          "Hladký Kraftový papír (FSC certifikace)",
+          "Syntetický kaučuk (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
-          "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "carrier": "Nosič",
+          "grammage": "Gramáž nosiče",
+          "adhesive": "Lepidlo",
+          "thickness": "Celková tloušťka",
+          "adhesion": "Přilnavost k oceli",
+          "strength": "Pevnost v tahu",
+          "elongation": "Tažnost / Prodloužení",
+          "temperature": "Aplikační a skladovací teplota"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Kalkulace s potiskem",
           "tailor_link": "Chci vzorek zdarma",
@@ -2620,6 +2758,7 @@
           "strength": "Pevnost v tahu"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -2682,6 +2821,7 @@
           "strength": "Pevnost v tahu"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -2744,6 +2884,7 @@
           "strength": "Pevnost v tahu"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -2806,6 +2947,7 @@
           "strength": "Pevnost v tahu"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -2868,6 +3010,7 @@
           "strength": "Pevnost v tahu"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -2930,6 +3073,7 @@
           "strength": "Pevnost v tahu"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -2992,6 +3136,7 @@
           "strength": "Pevnost v tahu"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -3054,6 +3199,7 @@
           "strength": "Pevnost v tahu"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -3116,6 +3262,7 @@
           "strength": "Pevnost v tahu"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -3178,6 +3325,7 @@
           "strength": "Pevnost v tahu"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Vyžádat cenovou nabídku",
           "tailor_link": "Nezávazně konzultovat",
@@ -3219,39 +3367,39 @@
     },
     "category_ctas": {
       "udrzitelne-pasky": {
-        "hero": "Spočítat eko pásku",
+        "hero": "Vyžádat kalkulaci",
         "bottom": "Poptat udržitelnou pásku s potiskem"
       },
       "bopp-pasky": {
-        "hero": "Kalkulace balicí pásky",
+        "hero": "Vyžádat kalkulaci",
         "bottom": "Poptat BOPP pásku s logem"
       },
       "bopet-pasky": {
-        "hero": "Kalkulace technické pásky",
+        "hero": "Vyžádat kalkulaci",
         "bottom": "Poptat BOPET pásku na míru"
       },
       "papirove-pasky": {
-        "hero": "Kalkulace papírové pásky",
+        "hero": "Vyžádat kalkulaci",
         "bottom": "Poptat eko pásku s potiskem"
       },
       "odstranitelne-pasky": {
-        "hero": "Vyžádat cenovou nabídku",
+        "hero": "Vyžádat kalkulaci",
         "bottom": "Poptat odstranitelnou pásku"
       },
       "vyztuzene-pasky": {
-        "hero": "Vyžádat cenovou nabídku",
+        "hero": "Vyžádat kalkulaci",
         "bottom": "Poptat vyztuženou pásku"
       },
       "mopp-pasky": {
-        "hero": "Vyžádat cenovou nabídku",
+        "hero": "Vyžádat kalkulaci",
         "bottom": "Poptat MOPP pásku"
       },
       "textilni-pasky": {
-        "hero": "Vyžádat cenovou nabídku",
+        "hero": "Vyžádat kalkulaci",
         "bottom": "Poptat textilní pásku"
       },
       "malirske-pasky": {
-        "hero": "Vyžádat cenovou nabídku",
+        "hero": "Vyžádat kalkulaci",
         "bottom": "Poptat malířskou pásku"
       }
     }

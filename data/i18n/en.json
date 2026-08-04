@@ -763,7 +763,7 @@
       },
       "papirove-pasky": {
         "title": "Paper tapes",
-        "description": "An eco-friendly solution for secure packaging with high adhesion. Ideal for fully recyclable cardboard boxes and clean corporate branding.",
+        "description": "An eco-friendly solution for elegant packaging with high adhesion, ideal for a clean look and fully recyclable cardboard boxes.",
         "intro": "Paper adhesive tapes combine reliable bonding with maximum environmental responsibility. Thanks to the paper carrier, they are fully recyclable together with cardboard and offer an elegant, clean-looking solution for companies that care about sustainability and the visual impact of their shipments.",
         "properties": {
           "Fully recyclable": "Tape and cardboard go into the same bin, no need to separate materials.",
@@ -775,6 +775,24 @@
           "Sealing cardboard boxes and parcels",
           "Corporate branding directly on shipments",
           "Manual and semi-automatic packing"
+        ],
+        "series_note": "C660, C680, C680R, C680RT and C690 are available both for manual use and taping machines, and are produced with FSC Mix credit paper. All these, together with C780, can also be customized with print on top (up to 4 colours). C680 and C680R are also available in white. FSC® licence: FSC-C159046.",
+        "param_hints": [
+          {
+            "title": "Adhesion to steel",
+            "body": "Measures immediate tack to the surface.",
+            "highlight": "Typical standard: 4.0–5.0 N/cm. Values above 6.0 N/cm indicate extra-strong adhesion."
+          },
+          {
+            "title": "Tensile strength",
+            "body": "Resistance to breaking under tension.",
+            "highlight": "Standard for common parcels (up to ~15 kg): 30–40 N/cm. Heavy shipments and reinforcements: 50+ N/cm."
+          },
+          {
+            "title": "Elongation / stretch",
+            "body": "How many % the tape stretches before breaking.",
+            "highlight": "Paper standard: 8–12 %. Low elongation (around 5 %) holds the box firmly without sagging."
+          }
         ]
       },
       "odstranitelne-pasky": {
@@ -910,6 +928,7 @@
           "min_qty": "Minimum quantity"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1006,6 +1025,7 @@
           "min_qty": "Minimum quantity"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1102,6 +1122,7 @@
           "min_qty": "Minimum quantity"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1198,6 +1219,7 @@
           "min_qty": "Minimum quantity"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1281,6 +1303,7 @@
           "min_qty": "Minimum quantity"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1343,6 +1366,7 @@
           "strength": "Tensile strength"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1405,6 +1429,7 @@
           "strength": "Tensile strength"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1467,6 +1492,7 @@
           "strength": "Tensile strength"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1553,6 +1579,7 @@
           "min_qty": "Minimum quantity"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1617,6 +1644,7 @@
           "min_qty": "Minimum quantity"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1681,6 +1709,7 @@
           "min_qty": "Minimum quantity"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1745,6 +1774,7 @@
           "min_qty": "Minimum quantity"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1809,6 +1839,7 @@
           "min_qty": "Minimum quantity"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1873,6 +1904,7 @@
           "min_qty": "Minimum quantity"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1935,6 +1967,7 @@
           "strength": "Tensile strength"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -1997,6 +2030,7 @@
           "strength": "Tensile strength"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -2061,6 +2095,7 @@
           "min_qty": "Minimum quantity"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -2123,6 +2158,7 @@
           "strength": "Tensile strength"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -2137,54 +2173,59 @@
       },
       "papirova-paska-c660": {
         "name": "Paper tape C660",
-        "tagline": "Eco-friendly paper tape with acrylic adhesive and quiet unwinding.",
+        "tagline": "An eco-friendly solution for elegant packaging with high adhesion.",
         "category_slug": "papirove-pasky",
         "category_title": "Paper tapes",
         "benefits": [
           {
+            "title": "FSC crepe carrier",
+            "text": "Natural crepe paper from sustainably managed forests ensures flexibility, durability and a clean aesthetic look for packaging."
+          },
+          {
+            "title": "Fast adhesion",
+            "text": "Synthetic rubber adhesive ensures instant and reliable sealing of packs."
+          },
+          {
             "title": "Fully recyclable",
-            "text": "Kraft paper carrier (100 µm), eco-friendly packaging with a clean matte look."
-          },
-          {
-            "title": "Acrylic adhesive",
-            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
-          },
-          {
-            "title": "Strength 45 N/25 mm",
-            "text": "Adhesion 3,8 N/25 mm on recycled cardboard and uneven surfaces (−5 až +60 °C)."
+            "text": "Lets end customers dispose of the whole box in paper waste without peeling the tape off."
           }
         ],
         "uses": [
           "E-shops focused on sustainable packaging",
           "Sealing cardboard boxes and packaging",
           "Corporate branding directly on shipments",
-          "Manual packing and sealing of e-commerce shipments"
+          "Manual and semi-automatic packing"
         ],
         "params_values": {
-          "carrier": "Paper carrier",
-          "thickness": "100 µm",
-          "adhesive": "Acrylic (dispersion)",
-          "adhesion": "3,8 N/25 mm",
-          "temperature": "−5 to +60 °C",
-          "strength": "45 N/25 mm"
+          "carrier": "Crepe paper (FSC certified)",
+          "grammage": "60 g/m²",
+          "adhesive": "Synthetic rubber (Hot Melt)",
+          "thickness": "120 µm",
+          "adhesion": "4.5 N/cm",
+          "strength": "33 N/cm",
+          "elongation": "10%",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Paper carrier",
-          "Acrylic (dispersion)",
-          "−5 to +60 °C"
+          "Crepe paper (FSC certified)",
+          "Synthetic rubber (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
-          "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "carrier": "Carrier",
+          "grammage": "Carrier grammage",
+          "adhesive": "Adhesive",
+          "thickness": "Total thickness",
+          "adhesion": "Adhesion to steel",
+          "strength": "Tensile strength",
+          "elongation": "Elongation / stretch",
+          "temperature": "Application and storage temperature"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -2199,21 +2240,21 @@
       },
       "papirova-paska-c680": {
         "name": "Paper tape C680",
-        "tagline": "Universal paper tape with high adhesion on recycled cardboard.",
+        "tagline": "Thinner profile with higher tensile strength for efficient packaging.",
         "category_slug": "papirove-pasky",
         "category_title": "Paper tapes",
         "benefits": [
           {
-            "title": "Fully recyclable",
-            "text": "Kraft paper carrier (115 µm), eco-friendly packaging with a clean matte look."
+            "title": "FSC crepe carrier",
+            "text": "Natural crepe paper from sustainably managed forests ensures flexibility, durability and a clean aesthetic look for packaging."
           },
           {
-            "title": "Rubber adhesive",
-            "text": "High immediate adhesion and a firm bond even on recycled cardboard."
+            "title": "Fast adhesion",
+            "text": "Synthetic rubber adhesive ensures instant and reliable sealing of packs."
           },
           {
-            "title": "Strength 50 N/25 mm",
-            "text": "Adhesion 4,2 N/25 mm on recycled cardboard and uneven surfaces (−10 až +60 °C)."
+            "title": "Increased tensile strength",
+            "text": "Even with a lower total thickness than C660, it offers higher tear resistance during packing."
           }
         ],
         "uses": [
@@ -2223,30 +2264,35 @@
           "Manual and semi-automatic packing"
         ],
         "params_values": {
-          "carrier": "Paper carrier",
-          "thickness": "115 µm",
-          "adhesive": "Rubber-based",
-          "adhesion": "4,2 N/25 mm",
-          "temperature": "−10 to +60 °C",
-          "strength": "50 N/25 mm"
+          "carrier": "Crepe paper (FSC certified)",
+          "grammage": "60 g/m²",
+          "adhesive": "Synthetic rubber (Hot Melt)",
+          "thickness": "110 µm",
+          "adhesion": "4.5 N/cm",
+          "strength": "35 N/cm",
+          "elongation": "10%",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Paper carrier",
-          "Rubber-based",
-          "−10 to +60 °C"
+          "Crepe paper (FSC certified)",
+          "Synthetic rubber (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
-          "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "carrier": "Carrier",
+          "grammage": "Carrier grammage",
+          "adhesive": "Adhesive",
+          "thickness": "Total thickness",
+          "adhesion": "Adhesion to steel",
+          "strength": "Tensile strength",
+          "elongation": "Elongation / stretch",
+          "temperature": "Application and storage temperature"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -2261,21 +2307,21 @@
       },
       "papirova-paska-c680-rt": {
         "name": "Paper tape C680 RT",
-        "tagline": "Durable paper tape with improved adhesion for heavier shipments.",
+        "tagline": "Cross-reinforced glass-fibre tape for the most demanding shipments.",
         "category_slug": "papirove-pasky",
         "category_title": "Paper tapes",
         "benefits": [
           {
-            "title": "Fully recyclable",
-            "text": "Kraft paper carrier (120 µm), eco-friendly packaging with a clean matte look."
+            "title": "FSC crepe carrier",
+            "text": "Natural crepe paper from sustainably managed forests ensures flexibility, durability and a clean aesthetic look for packaging."
           },
           {
-            "title": "Rubber adhesive",
-            "text": "High immediate adhesion and a firm bond even on recycled cardboard."
+            "title": "Fast adhesion",
+            "text": "Synthetic rubber adhesive ensures instant and reliable sealing of packs."
           },
           {
-            "title": "Strength 52 N/25 mm",
-            "text": "Adhesion 4,3 N/25 mm on recycled cardboard and uneven surfaces (−10 až +65 °C)."
+            "title": "Cross-woven mesh reinforcement",
+            "text": "Glass fibres woven in both directions give the tape top tensile strength of up to 60 N/cm."
           }
         ],
         "uses": [
@@ -2285,30 +2331,35 @@
           "Manual and semi-automatic packing"
         ],
         "params_values": {
-          "carrier": "Paper carrier",
-          "thickness": "120 µm",
-          "adhesive": "Rubber-based",
-          "adhesion": "4,3 N/25 mm",
-          "temperature": "−10 to +65 °C",
-          "strength": "52 N/25 mm"
+          "carrier": "Crepe paper with cross-laid glass fibre (FSC)",
+          "grammage": "60 g/m²",
+          "adhesive": "Synthetic rubber (Hot Melt)",
+          "thickness": "140 µm",
+          "adhesion": "5.0 N/cm",
+          "strength": "60 N/cm",
+          "elongation": "5%",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Paper carrier",
-          "Rubber-based",
-          "−10 to +65 °C"
+          "Crepe paper with cross-laid glass fibre (FSC)",
+          "Synthetic rubber (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
-          "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "carrier": "Carrier",
+          "grammage": "Carrier grammage",
+          "adhesive": "Adhesive",
+          "thickness": "Total thickness",
+          "adhesion": "Adhesion to steel",
+          "strength": "Tensile strength",
+          "elongation": "Elongation / stretch",
+          "temperature": "Application and storage temperature"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -2323,54 +2374,59 @@
       },
       "papirova-paska-c680r": {
         "name": "Paper tape C680R",
-        "tagline": "Paper tape made from recycled paper for sustainable packaging.",
+        "tagline": "Glass-fibre reinforced tape for secure packing of heavier cartons.",
         "category_slug": "papirove-pasky",
         "category_title": "Paper tapes",
         "benefits": [
           {
-            "title": "Recycled paper carrier",
-            "text": "Tape and carton are recycled together, no need to separate materials."
+            "title": "FSC crepe carrier",
+            "text": "Natural crepe paper from sustainably managed forests ensures flexibility, durability and a clean aesthetic look for packaging."
           },
           {
-            "title": "Rubber adhesive",
-            "text": "High immediate adhesion and a firm bond even on recycled cardboard."
+            "title": "Fast adhesion",
+            "text": "Synthetic rubber adhesive ensures instant and reliable sealing of packs."
           },
           {
-            "title": "Strength 48 N/25 mm",
-            "text": "Adhesion 4,0 N/25 mm on recycled cardboard and uneven surfaces (−10 až +60 °C)."
+            "title": "Longitudinal glass-fibre reinforcement",
+            "text": "Integrated fibres raise tensile strength to 50 N/cm and help prevent tearing on heavier shipments."
           }
         ],
         "uses": [
           "E-shops focused on sustainable packaging",
           "Sealing cardboard boxes and packaging",
           "Corporate branding directly on shipments",
-          "Manual packing and sealing of e-commerce shipments"
+          "Manual and semi-automatic packing"
         ],
         "params_values": {
-          "carrier": "Recycled paper",
-          "thickness": "115 µm",
-          "adhesive": "Rubber-based",
-          "adhesion": "4,0 N/25 mm",
-          "temperature": "−10 to +60 °C",
-          "strength": "48 N/25 mm"
+          "carrier": "Crepe paper with longitudinal glass fibre (FSC)",
+          "grammage": "60 g/m²",
+          "adhesive": "Synthetic rubber (Hot Melt)",
+          "thickness": "140 µm",
+          "adhesion": "4.5 N/cm",
+          "strength": "50 N/cm",
+          "elongation": "5%",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Recycled paper",
-          "Rubber-based",
-          "−10 to +60 °C"
+          "Crepe paper with longitudinal glass fibre (FSC)",
+          "Synthetic rubber (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
-          "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "carrier": "Carrier",
+          "grammage": "Carrier grammage",
+          "adhesive": "Adhesive",
+          "thickness": "Total thickness",
+          "adhesion": "Adhesion to steel",
+          "strength": "Tensile strength",
+          "elongation": "Elongation / stretch",
+          "temperature": "Application and storage temperature"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -2385,54 +2441,126 @@
       },
       "papirova-paska-c690": {
         "name": "Paper tape C690",
-        "tagline": "Premium kraft paper tape with hot melt adhesive and matte finish.",
+        "tagline": "Heavy crepe paper for the most demanding cartons.",
         "category_slug": "papirove-pasky",
         "category_title": "Paper tapes",
         "benefits": [
           {
-            "title": "Fully recyclable",
-            "text": "Kraft paper carrier (130 µm), eco-friendly packaging with a clean matte look."
+            "title": "FSC crepe carrier",
+            "text": "Natural crepe paper from sustainably managed forests ensures flexibility, durability and a clean aesthetic look for packaging."
           },
           {
-            "title": "Hot melt adhesive",
-            "text": "Fast, strong bonding even at lower temperatures, suitable for manual and machine packing."
+            "title": "Extreme adhesion",
+            "text": "Best-in-class tack that bonds instantly even to dusty or recycled cartons."
           },
           {
-            "title": "Strength 60 N/25 mm",
-            "text": "Adhesion 4,8 N/25 mm on recycled cardboard and uneven surfaces (−10 až +70 °C)."
+            "title": "Heavier carrier grammage (72 g/m²)",
+            "text": "A more robust paper backing for higher abrasion resistance and a premium look of the parcel."
           }
         ],
         "uses": [
           "E-shops focused on sustainable packaging",
           "Sealing cardboard boxes and packaging",
           "Corporate branding directly on shipments",
-          "Manual packing and sealing of e-commerce shipments"
+          "Manual and semi-automatic packing"
         ],
         "params_values": {
-          "carrier": "Paper carrier (kraft)",
-          "thickness": "130 µm",
-          "adhesive": "Hot melt",
-          "adhesion": "4,8 N/25 mm",
-          "temperature": "−10 to +70 °C",
-          "strength": "60 N/25 mm"
+          "carrier": "Reinforced crepe paper (FSC certified)",
+          "grammage": "72 g/m²",
+          "adhesive": "Synthetic rubber (Hot Melt)",
+          "thickness": "125 µm",
+          "adhesion": "7.0 N/cm",
+          "strength": "60 N/cm",
+          "elongation": "6.2%",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Paper carrier (kraft)",
-          "Hot melt",
-          "−10 to +70 °C"
+          "Reinforced crepe paper (FSC certified)",
+          "Synthetic rubber (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
-          "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "carrier": "Carrier",
+          "grammage": "Carrier grammage",
+          "adhesive": "Adhesive",
+          "thickness": "Total thickness",
+          "adhesion": "Adhesion to steel",
+          "strength": "Tensile strength",
+          "elongation": "Elongation / stretch",
+          "temperature": "Application and storage temperature"
         },
         "tech_spec": false,
+        "paper_spec": true,
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Quality testing before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to Paper tapes"
+        }
+      },
+      "papirova-paska-c780": {
+        "name": "Paper tape C780",
+        "tagline": "Premium combination of crepe and natural rubber for demanding temperature conditions.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Paper tapes",
+        "benefits": [
+          {
+            "title": "FSC crepe carrier",
+            "text": "Natural crepe paper from sustainably managed forests ensures flexibility, durability and a clean aesthetic look for packaging."
+          },
+          {
+            "title": "Natural rubber adhesive (Solvent)",
+            "text": "Holds reliably across a wide temperature range, does not age and forms a durable bond even during longer storage."
+          },
+          {
+            "title": "Fully recyclable",
+            "text": "Lets end customers dispose of the whole box in paper waste without peeling the tape off."
+          }
+        ],
+        "uses": [
+          "E-shops focused on sustainable packaging",
+          "Sealing cardboard boxes and packaging",
+          "Corporate branding directly on shipments",
+          "Manual and semi-automatic packing"
+        ],
+        "params_values": {
+          "carrier": "Crepe paper (FSC certified)",
+          "grammage": "60 g/m²",
+          "adhesive": "Natural rubber (Solvent)",
+          "thickness": "130 µm",
+          "adhesion": "2.4 N/cm",
+          "strength": "35 N/cm",
+          "elongation": "8%",
+          "temperature": "15–25 °C"
+        },
+        "spec_pills": [
+          "Crepe paper (FSC certified)",
+          "Natural rubber (Solvent)",
+          "15–25 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Carrier",
+          "grammage": "Carrier grammage",
+          "adhesive": "Adhesive",
+          "thickness": "Total thickness",
+          "adhesion": "Adhesion to steel",
+          "strength": "Tensile strength",
+          "elongation": "Elongation / stretch",
+          "temperature": "Application and storage temperature"
+        },
+        "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -2447,54 +2575,59 @@
       },
       "papirova-paska-kh80": {
         "name": "Paper tape KH80",
-        "tagline": "Strong paper tape with hot melt adhesive for reliable carton sealing.",
+        "tagline": "Exclusive paper tape from 100% recycled material – the perfect blend of high aesthetics, instant adhesion and care for nature.",
         "category_slug": "papirove-pasky",
         "category_title": "Paper tapes",
         "benefits": [
           {
-            "title": "Fully recyclable",
-            "text": "Kraft paper carrier (120 µm), eco-friendly packaging with a clean matte look."
+            "title": "Recycled kraft paper 80 g/m²",
+            "text": "Sustainable eco-friendly backing made from 100% recycled paper with FSC certification."
           },
           {
-            "title": "Hot melt adhesive",
-            "text": "Fast, strong bonding even at lower temperatures, suitable for manual and machine packing."
+            "title": "Fast adhesion",
+            "text": "Hot Melt adhesive (synthetic rubber) ensures reliable and instant sealing of packs."
           },
           {
-            "title": "Strength 55 N/25 mm",
-            "text": "Adhesion 4,5 N/25 mm on recycled cardboard and uneven surfaces (−10 až +60 °C)."
+            "title": "Easy recycling PAP22",
+            "text": "Certified paper tape designed to be sorted and recycled together with paper waste."
           }
         ],
         "uses": [
           "E-shops focused on sustainable packaging",
           "Sealing cardboard boxes and packaging",
           "Corporate branding directly on shipments",
-          "Manual packing and sealing of e-commerce shipments"
+          "Manual and semi-automatic packing"
         ],
         "params_values": {
-          "carrier": "Paper carrier (kraft)",
-          "thickness": "120 µm",
-          "adhesive": "Hot melt (synthetic rubber)",
-          "adhesion": "4,5 N/25 mm",
-          "temperature": "−10 to +60 °C",
-          "strength": "55 N/25 mm"
+          "carrier": "Recycled kraft paper (100% recycled, FSC certified)",
+          "grammage": "80 g/m²",
+          "adhesive": "Synthetic rubber (Hot Melt)",
+          "thickness": "135 µm (±15%)",
+          "adhesion": ">7 N/cm (paper tear)",
+          "strength": "50 N/cm (±10%)",
+          "elongation": "2% (±15%)",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Paper carrier (kraft)",
-          "Hot melt (synthetic rubber)",
-          "−10 to +60 °C"
+          "Recycled kraft paper (100% recycled, FSC certified)",
+          "Synthetic rubber (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
-          "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "carrier": "Carrier",
+          "grammage": "Carrier grammage",
+          "adhesive": "Adhesive",
+          "thickness": "Total thickness",
+          "adhesion": "Adhesion to steel",
+          "strength": "Tensile strength",
+          "elongation": "Elongation / stretch",
+          "temperature": "Application and storage temperature"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -2509,54 +2642,59 @@
       },
       "papirova-paska-ks165": {
         "name": "Paper tape KS165",
-        "tagline": "Extra-strong paper tape with rubber adhesive for demanding packaging.",
+        "tagline": "Uncompromising paper solution with extreme load capacity for the heaviest industrial packing, pallet securing and strapping.",
         "category_slug": "papirove-pasky",
         "category_title": "Paper tapes",
         "benefits": [
           {
-            "title": "Fully recyclable",
-            "text": "Kraft paper carrier (150 µm), eco-friendly packaging with a clean matte look."
+            "title": "Smooth kraft paper 165 g/m²",
+            "text": "Exceptionally strong and smooth backing from sustainable forestry (FSC)."
           },
           {
-            "title": "Rubber adhesive",
-            "text": "High immediate adhesion and a firm bond even on recycled cardboard."
+            "title": "Fast adhesion",
+            "text": "Synthetic rubber adhesive ensures instant and reliable sealing of packs."
           },
           {
-            "title": "Strength 70 N/25 mm",
-            "text": "Adhesion 5,5 N/25 mm on recycled cardboard and uneven surfaces (−20 až +70 °C)."
+            "title": "Extreme tensile strength (150 N/cm)",
+            "text": "Replaces plastic or strapping tapes even on oversized heavy cartons and industrial shipments."
           }
         ],
         "uses": [
           "E-shops focused on sustainable packaging",
           "Sealing cardboard boxes and packaging",
           "Corporate branding directly on shipments",
-          "Manual packing and sealing of e-commerce shipments"
+          "Manual and semi-automatic packing"
         ],
         "params_values": {
-          "carrier": "Paper carrier (kraft)",
-          "thickness": "150 µm",
-          "adhesive": "Rubber-based (solvent)",
-          "adhesion": "5,5 N/25 mm",
-          "temperature": "−20 to +70 °C",
-          "strength": "70 N/25 mm"
+          "carrier": "Smooth kraft paper (FSC certified)",
+          "grammage": "165 g/m²",
+          "adhesive": "Synthetic rubber (Hot Melt)",
+          "thickness": "225 µm",
+          "adhesion": "6.0 N/cm",
+          "strength": "150 N/cm",
+          "elongation": "14%",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Paper carrier (kraft)",
-          "Rubber-based (solvent)",
-          "−20 to +70 °C"
+          "Smooth kraft paper (FSC certified)",
+          "Synthetic rubber (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
-          "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "carrier": "Carrier",
+          "grammage": "Carrier grammage",
+          "adhesive": "Adhesive",
+          "thickness": "Total thickness",
+          "adhesion": "Adhesion to steel",
+          "strength": "Tensile strength",
+          "elongation": "Elongation / stretch",
+          "temperature": "Application and storage temperature"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Quote with printing",
           "tailor_link": "I want a free sample",
@@ -2619,6 +2757,7 @@
           "strength": "Tensile strength"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -2681,6 +2820,7 @@
           "strength": "Tensile strength"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -2743,6 +2883,7 @@
           "strength": "Tensile strength"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -2805,6 +2946,7 @@
           "strength": "Tensile strength"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -2867,6 +3009,7 @@
           "strength": "Tensile strength"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -2929,6 +3072,7 @@
           "strength": "Tensile strength"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -2991,6 +3135,7 @@
           "strength": "Tensile strength"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -3053,6 +3198,7 @@
           "strength": "Tensile strength"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -3115,6 +3261,7 @@
           "strength": "Tensile strength"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -3177,6 +3324,7 @@
           "strength": "Tensile strength"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Request a quote",
           "tailor_link": "Request a consultation",
@@ -3218,19 +3366,19 @@
     },
     "category_ctas": {
       "udrzitelne-pasky": {
-        "hero": "Calculate eco tape quote",
+        "hero": "Request a quote",
         "bottom": "Enquire about sustainable printed tape"
       },
       "bopp-pasky": {
-        "hero": "Packaging tape quote",
+        "hero": "Request a quote",
         "bottom": "Enquire about BOPP tape with logo"
       },
       "bopet-pasky": {
-        "hero": "Technical tape quote",
+        "hero": "Request a quote",
         "bottom": "Enquire about custom BOPET tape"
       },
       "papirove-pasky": {
-        "hero": "Paper tape quote",
+        "hero": "Request a quote",
         "bottom": "Enquire about eco printed tape"
       },
       "odstranitelne-pasky": {

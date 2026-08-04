@@ -51,8 +51,26 @@ CATS = load_cats()
 CATEGORY_EN: dict[str, dict[str, Any]] = {
     "papirove-pasky": {
         "title": "Paper tapes",
-        "description": "An eco-friendly solution for secure packaging with high adhesion. Ideal for fully recyclable cardboard boxes and clean corporate branding.",
+        "description": "An eco-friendly solution for elegant packaging with high adhesion, ideal for a clean look and fully recyclable cardboard boxes.",
         "intro": "Paper adhesive tapes combine reliable bonding with maximum environmental responsibility. Thanks to the paper carrier, they are fully recyclable together with cardboard and offer an elegant, clean-looking solution for companies that care about sustainability and the visual impact of their shipments.",
+        "series_note": "C660, C680, C680R, C680RT and C690 are available both for manual use and taping machines, and are produced with FSC Mix credit paper. All these, together with C780, can also be customized with print on top (up to 4 colours). C680 and C680R are also available in white. FSC® licence: FSC-C159046.",
+        "param_hints": [
+            {
+                "title": "Adhesion to steel",
+                "body": "Measures immediate tack to the surface.",
+                "highlight": "Typical standard: 4.0–5.0 N/cm. Values above 6.0 N/cm indicate extra-strong adhesion.",
+            },
+            {
+                "title": "Tensile strength",
+                "body": "Resistance to breaking under tension.",
+                "highlight": "Standard for common parcels (up to ~15 kg): 30–40 N/cm. Heavy shipments and reinforcements: 50+ N/cm.",
+            },
+            {
+                "title": "Elongation / stretch",
+                "body": "How many % the tape stretches before breaking.",
+                "highlight": "Paper standard: 8–12 %. Low elongation (around 5 %) holds the box firmly without sagging.",
+            },
+        ],
         "properties": {
             "Plná recyklovatelnost": "Fully recyclable",
             "Vysoká lepivost": "High adhesion",
@@ -243,8 +261,26 @@ CATEGORY_EN: dict[str, dict[str, Any]] = {
 CATEGORY_DE: dict[str, dict[str, Any]] = {
     "papirove-pasky": {
         "title": "Papierklebebänder",
-        "description": "Eine umweltfreundliche Lösung für sicheres Verpacken mit hoher Klebkraft. Ideal für vollständig recycelbare Kartonverpackungen und ein sauberes Corporate Design.",
+        "description": "Eine umweltfreundliche Lösung für elegantes Verpacken mit hoher Klebkraft, ideal für ein sauberes Erscheinungsbild und vollständig recycelbare Kartonverpackungen.",
         "intro": "Papierklebebänder verbinden zuverlässige Haftung mit maximaler Umweltverträglichkeit. Dank des Papierträgers sind sie gemeinsam mit dem Karton vollständig recycelbar und bieten eine elegante, saubere Lösung für Unternehmen, die Wert auf Nachhaltigkeit und den visuellen Eindruck ihrer Sendungen legen.",
+        "series_note": "C660, C680, C680R, C680RT und C690 eignen sich für Hand- und Maschinenverpackung und werden aus FSC-Mix-Credit-Papier hergestellt. Alle diese Typen sowie C780 können bedruckt werden (bis zu 4 Farben). C680 und C680R sind auch in Weiß erhältlich. FSC®-Lizenz: FSC-C159046.",
+        "param_hints": [
+            {
+                "title": "Haftung auf Stahl",
+                "body": "Misst die sofortige Klebkraft auf der Oberfläche.",
+                "highlight": "Üblicher Standard: 4,0–5,0 N/cm. Werte über 6,0 N/cm bedeuten besonders starke Haftung.",
+            },
+            {
+                "title": "Zugfestigkeit",
+                "body": "Widerstand gegen Reißen unter Zugbelastung.",
+                "highlight": "Standard für übliche Pakete (bis ~15 kg): 30–40 N/cm. Schwere Sendungen und Verstärkungen: 50+ N/cm.",
+            },
+            {
+                "title": "Dehnung / Verlängerung",
+                "body": "Um wie viel % sich das Band vor dem Reißen dehnt.",
+                "highlight": "Standard für Papier: 8–12 %. Geringe Dehnung (ca. 5 %) hält den Karton fest ohne Durchhängen.",
+            },
+        ],
         "properties": {
             "Plná recyklovatelnost": "Vollständig recycelbar",
             "Vysoká lepivost": "Hohe Klebkraft",
@@ -437,13 +473,21 @@ def build_sortiment_categories_cs() -> dict[str, Any]:
     categories: dict[str, Any] = {}
     for cat in CATS:
         slug = cat["cat"]
-        categories[slug] = {
+        entry: dict[str, Any] = {
             "title": cat["title"],
             "description": cat["description"],
             "intro": cat["intro"],
             "properties": {title: text for title, text in cat["properties"]},
             "applications": list(cat["apps"]),
         }
+        if cat.get("series_note"):
+            entry["series_note"] = cat["series_note"]
+        if cat.get("param_hints"):
+            entry["param_hints"] = [
+                {"title": title, "body": body, "highlight": highlight}
+                for title, body, highlight in cat["param_hints"]
+            ]
+        categories[slug] = entry
     return categories
 
 
@@ -459,13 +503,18 @@ def translate_categories(
             en_title = tr["properties"].get(cs_title, cs_title)
             en_text = tr["property_texts"].get(cs_title, cs_text)
             props_out[en_title] = en_text
-        out[slug] = {
+        entry = {
             "title": tr["title"],
             "description": tr["description"],
             "intro": tr["intro"],
             "properties": props_out,
             "applications": tr["applications"],
         }
+        if tr.get("series_note") or cs_cat.get("series_note"):
+            entry["series_note"] = tr.get("series_note") or cs_cat["series_note"]
+        if tr.get("param_hints") or cs_cat.get("param_hints"):
+            entry["param_hints"] = tr.get("param_hints") or cs_cat["param_hints"]
+        out[slug] = entry
     return out
 
 

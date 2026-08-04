@@ -175,6 +175,9 @@
         setText(heroH1, cat.title);
         setText(heroP, cat.intro);
 
+        var seriesNote = document.querySelector('[data-series-note] p');
+        if (seriesNote && cat.series_note) setText(seriesNote, cat.series_note);
+
         var heroCta = document.querySelector('main section a[href*="gf_1"]');
         var categoryCtas = tree.get('sortiment.category_ctas.' + catSlug) || {};
         if (heroCta && categoryCtas.hero) {
@@ -283,13 +286,29 @@
         var tagline = document.querySelector('main h1 + p');
         if (tagline) setText(tagline, prod.tagline);
 
+        var seriesNote = document.querySelector('[data-series-note] p');
+        if (seriesNote && cat.series_note) setText(seriesNote, cat.series_note);
+
+        var hints = cat.param_hints || [];
+        document.querySelectorAll('[data-param-hint]').forEach(function (p, i) {
+            if (!hints[i]) return;
+            var h = hints[i];
+            p.innerHTML =
+                '<strong class="font-semibold text-slate-900">' + escHtml(h.title) + ':</strong> ' +
+                escHtml(h.body) + ' ' +
+                '<span class="font-semibold italic text-orange-600">' + escHtml(h.highlight) + '</span>';
+        });
+
         var heroImg = document.querySelector('main section img');
         if (heroImg && prod.name) heroImg.alt = prod.name;
 
         var specPills = prod.spec_pills || [];
-        document.querySelectorAll('main h1 + p + div.flex-wrap span.rounded-full').forEach(function (span, i) {
-            if (specPills[i]) setText(span, specPills[i]);
-        });
+        var pillsWrap = document.querySelector('main .flex.flex-wrap.gap-2');
+        if (pillsWrap) {
+            pillsWrap.querySelectorAll('span.rounded-full').forEach(function (span, i) {
+                if (specPills[i]) setText(span, specPills[i]);
+            });
+        }
 
         document.querySelectorAll('main a[href*="gf_1"]').forEach(function (a) {
             if (a.classList.contains('bg-gradient-to-r') || a.classList.contains('from-orange-600')) {
@@ -318,7 +337,9 @@
         });
 
         var labels = prod.params_labels || {};
-        var paramKeys = prod.tech_spec
+        var paramKeys = prod.paper_spec
+            ? ['carrier', 'grammage', 'adhesive', 'thickness', 'adhesion', 'strength', 'elongation', 'temperature']
+            : prod.tech_spec
             ? ['carrier', 'thickness', 'adhesive', 'adhesion', 'strength', 'temperature', 'min_qty']
             : ['carrier', 'thickness', 'adhesive', 'adhesion', 'temperature', 'strength'];
         document.querySelectorAll('main table th').forEach(function (th, i) {

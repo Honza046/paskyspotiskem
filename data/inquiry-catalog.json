@@ -157,17 +157,22 @@
       },
       {
         "name": "Papírová páska C690",
-        "tagline": "Prémiová kraftová páska s HOT MELT lepidlem a matným povrchem.",
+        "tagline": "Těžký krepový papír pro nejnáročnější kartony.",
         "slug": "papirova-paska-c690"
       },
       {
+        "name": "Papírová páska C780",
+        "tagline": "Prémiová kombinace krepu a přírodního kaučuku pro náročné teplotní podmínky.",
+        "slug": "papirova-paska-c780"
+      },
+      {
         "name": "Papírová páska KH80",
-        "tagline": "Silná papírová páska s HOT MELT lepidlem pro spolehlivé uzavírání kartonů.",
+        "tagline": "Exkluzivní papírová páska z 100% recyklovaného materiálu – dokonalé spojení vysoké estetiky, okamžité přilnavosti a ohleduplnosti k přírodě.",
         "slug": "papirova-paska-kh80"
       },
       {
         "name": "Papírová páska KS165",
-        "tagline": "Extra pevná papírová páska s kaučukovým lepidlem pro náročné balení.",
+        "tagline": "Nekompromisní papírové řešení s extrémní nosností pro nejtěžší průmyslové balení, fixaci palet a páskování.",
         "slug": "papirova-paska-ks165"
       }
     ],

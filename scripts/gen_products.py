@@ -50,8 +50,14 @@ CATS = [
   "properties":[("Teplotní odolnost","Stabilní výkon při vysokých i nízkých teplotách."),("Chemická odolnost","Odolává rozpouštědlům, olejům a agresivnímu prostředí."),("Odolnost proti roztržení","Pevná polyesterová fólie s minimální tažností.")],
   "apps":["Náročné průmyslové provozy","Maskování při práškovém lakování","Fixace v prostředí s vysokými teplotami","Elektrotechnika a specializovaná výroba"]},
  {"title":"Papírové pásky","cat":"papirove-pasky","cover":"Papírové Pásky/Papírovácover-nobg.png",
-  "description":"Ekologické řešení pro bezpečné balení s vysokou lepivostí. Ideální pro plně recyklovatelné kartonové obaly a čistý korporátní design.",
+  "description":"Ekologické řešení pro elegantní balení s vysokou lepivostí, ideální pro čistý vzhled a plně recyklovatelné kartonové obaly.",
   "intro":"Papírové lepicí pásky spojují spolehlivé lepení s maximální ekologickou šetrností. Díky papírovému nosiči jsou plně recyklovatelné společně s kartonem a představují elegantní, čistě vypadající řešení pro firmy, které dbají na udržitelnost i vizuální dojem zásilek.",
+  "series_note":"C660, C680, C680R, C680RT a C690 jsou dostupné pro ruční i strojové balení a vyrábějí se z papíru FSC Mix Credit. Všechny tyto typy včetně C780 lze potisknout (až 4 barvy). C680 a C680R jsou dostupné také v bílé barvě. FSC® licence: FSC-C159046.",
+  "param_hints":[
+    ("Přilnavost k oceli","Měří okamžitou lepivost na povrch.","Běžný standard: 4,0–5,0 N/cm. Hodnoty nad 6,0 N/cm označují extra silnou lepivost."),
+    ("Pevnost v tahu","Odolnost proti přetržení při napnutí.","Standard pro běžné balíky (do ~15 kg): 30–40 N/cm. Těžké zásilky a výztuže: 50+ N/cm."),
+    ("Tažnost / Prodloužení","O kolik % se páska natáhne před prasknutím.","Standard pro papír: 8–12 %. Nízká tažnost (okolo 5 %) drží krabici pevně bez průhybu."),
+  ],
   "properties":[("Plná recyklovatelnost","Páska i karton putují do jednoho kontejneru – bez nutnosti oddělovat materiály."),("Vysoká lepivost","Spolehlivé přilnutí i na recyklovaný karton a členité povrchy."),("Čistý design","Matný papírový povrch působí prémiově a lze jej snadno potisknout logem.")],
   "apps":["E-shopy s důrazem na udržitelné balení","Uzavírání kartonových krabic a obalů","Firemní branding přímo na zásilce","Ruční i poloautomatické balení"]},
  {"title":"Odstranitelné pásky","cat":"odstranitelne-pasky","cover":"Odstranitelné Pásky/removable cover.webp",
@@ -91,13 +97,14 @@ def P(name, image, tagline, nosic, tl, lep, pril, temp, pev):
 
 PRODUCTS = {
  "papirove-pasky":[
-   P("Papírová páska KH80","Papírové Pásky/KH80.jpg","Silná papírová páska s HOT MELT lepidlem pro spolehlivé uzavírání kartonů.","Papírový nosič (kraft)","120 µm","HOT MELT (syntetický kaučuk)","4,5 N/25 mm","−10 až +60 °C","55 N/25 mm"),
-   P("Papírová páska KS165","Papírové Pásky/KS165.jpg","Extra pevná papírová páska s kaučukovým lepidlem pro náročné balení.","Papírový nosič (kraft)","150 µm","Kaučukové (solvent)","5,5 N/25 mm","−20 až +70 °C","70 N/25 mm"),
-   P("Papírová páska C660","Papírové Pásky/c660.jpg","Ekologická papírová páska s akrylovým lepidlem a čistým odvíjením.","Papírový nosič","100 µm","Akrylové (disperzní)","3,8 N/25 mm","−5 až +60 °C","45 N/25 mm"),
-   P("Papírová páska C680","Papírové Pásky/c680.jpg","Univerzální papírová páska s vysokou lepivostí na recyklovaný karton.","Papírový nosič","115 µm","Kaučukové","4,2 N/25 mm","−10 až +60 °C","50 N/25 mm"),
-   P("Papírová páska C680R","Papírové Pásky/c680r.jpeg","Papírová páska z recyklovaného papíru pro udržitelné balení.","Recyklovaný papír","115 µm","Kaučukové","4,0 N/25 mm","−10 až +60 °C","48 N/25 mm"),
-   P("Papírová páska C680 RT","Papírové Pásky/c680RT.jpeg","Odolná papírová páska s vylepšenou přilnavostí pro těžší zásilky.","Papírový nosič","120 µm","Kaučukové","4,3 N/25 mm","−10 až +65 °C","52 N/25 mm"),
-   P("Papírová páska C690","Papírové Pásky/c690.jpg","Prémiová kraftová páska s HOT MELT lepidlem a matným povrchem.","Papírový nosič (kraft)","130 µm","HOT MELT","4,8 N/25 mm","−10 až +70 °C","60 N/25 mm"),
+   P("Papírová páska KH80","Papírové Pásky/KH80.jpg","Exkluzivní papírová páska z 100% recyklovaného materiálu – dokonalé spojení vysoké estetiky, okamžité přilnavosti a ohleduplnosti k přírodě.","Recyklovaný Kraftový papír (100% recyklovaný, FSC certifikace)","135 µm (±15 %)","Syntetický kaučuk (Hot Melt)",">7 N/cm (při odtržení papíru)","15–25 °C","50 N/cm (±10 %)"),
+   P("Papírová páska KS165","Papírové Pásky/KS165.jpg","Nekompromisní papírové řešení s extrémní nosností pro nejtěžší průmyslové balení, fixaci palet a páskování.","Hladký Kraftový papír (FSC certifikace)","225 µm","Syntetický kaučuk (Hot Melt)","6,0 N/cm","15–25 °C","150 N/cm"),
+   P("Papírová páska C660","Papírové Pásky/c660.jpg","Ekologické řešení pro elegantní balení s vysokou lepivostí.","Krepový papír (FSC certifikace)","120 µm","Syntetický kaučuk (Hot Melt)","4,5 N/cm","15–25 °C","33 N/cm"),
+   P("Papírová páska C680","Papírové Pásky/c680.jpg","Tenčí profil s vyšší pevností v tahu pro efektivní balení.","Krepový papír (FSC certifikace)","110 µm","Syntetický kaučuk (Hot Melt)","4,5 N/cm","15–25 °C","35 N/cm"),
+   P("Papírová páska C680R","Papírové Pásky/c680r.jpeg","Skelným vláknem zpevněná páska pro bezpečné balení těžších kartonů.","Krepový papír s podélným skelným vláknem (FSC)","140 µm","Syntetický kaučuk (Hot Melt)","4,5 N/cm","15–25 °C","50 N/cm"),
+   P("Papírová páska C680 RT","Papírové Pásky/c680RT.jpeg","Křížově vyztužená páska skelným vláknem pro nejnáročnější zásilky.","Krepový papír s křížovým skelným vláknem (FSC)","140 µm","Syntetický kaučuk (Hot Melt)","5,0 N/cm","15–25 °C","60 N/cm"),
+   P("Papírová páska C690","Papírové Pásky/c690.jpg","Těžký krepový papír pro nejnáročnější kartony.","Zesílený krepový papír (FSC certifikace)","125 µm","Syntetický kaučuk (Hot Melt)","7,0 N/cm","15–25 °C","60 N/cm"),
+   P("Papírová páska C780","Papírové Pásky/c780.jpg","Prémiová kombinace krepu a přírodního kaučuku pro náročné teplotní podmínky.","Krepový papír (FSC certifikace)","130 µm","Přírodní kaučuk (Solvent)","2,4 N/cm","15–25 °C","35 N/cm"),
  ],
  "bopp-pasky":[
    P("BOPP páska Akryl","BOPP Tapes/BOPPACRYLIC.jpeg","Spolehlivá BOPP páska s dlouhou životností.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy)","21 µm","−10 až +60 °C","14–28 °C"),
@@ -153,13 +160,14 @@ PRODUCTS = {
 #   Pouziti:    rucni, stroje
 # ---------------------------------------------------------------------------
 TAGMAP = {
- "Papírová páska KH80":["ekologicke","rucni"],
- "Papírová páska KS165":["ekologicke","rucni"],
- "Papírová páska C660":["ekologicke","tiche","rucni"],
+ "Papírová páska KH80":["ekologicke","rucni","stroje"],
+ "Papírová páska KS165":["ekologicke","rucni","stroje"],
+ "Papírová páska C660":["ekologicke","rucni","stroje"],
  "Papírová páska C680":["ekologicke","rucni","stroje"],
- "Papírová páska C680R":["ekologicke","rucni"],
+ "Papírová páska C680R":["ekologicke","rucni","stroje"],
  "Papírová páska C680 RT":["ekologicke","rucni","stroje"],
- "Papírová páska C690":["ekologicke","rucni"],
+ "Papírová páska C690":["ekologicke","rucni","stroje"],
+ "Papírová páska C780":["ekologicke","rucni","stroje"],
  "BOPP páska Akryl":["tiche","rucni","stroje"],
  "BOPP páska HOT MELT":["rucni","stroje"],
  "BOPP páska EXTRA GLUE+":["tiche","rucni","stroje"],
@@ -310,6 +318,89 @@ TECH_SPEC_PARAMS = {
     },
 }
 
+PAPER_SPEC_PARAMS = {
+    "Papírová páska C660": {
+        "Nosič": "Krepový papír (FSC certifikace)",
+        "Gramáž nosiče": "60 g/m²",
+        "Lepidlo": "Syntetický kaučuk (Hot Melt)",
+        "Celková tloušťka": "120 µm",
+        "Přilnavost k oceli": "4,5 N/cm",
+        "Pevnost v tahu": "33 N/cm",
+        "Tažnost / Prodloužení": "10 %",
+        "Aplikační a skladovací teplota": "15–25 °C",
+    },
+    "Papírová páska C680": {
+        "Nosič": "Krepový papír (FSC certifikace)",
+        "Gramáž nosiče": "60 g/m²",
+        "Lepidlo": "Syntetický kaučuk (Hot Melt)",
+        "Celková tloušťka": "110 µm",
+        "Přilnavost k oceli": "4,5 N/cm",
+        "Pevnost v tahu": "35 N/cm",
+        "Tažnost / Prodloužení": "10 %",
+        "Aplikační a skladovací teplota": "15–25 °C",
+    },
+    "Papírová páska C680R": {
+        "Nosič": "Krepový papír s podélným skelným vláknem (FSC)",
+        "Gramáž nosiče": "60 g/m²",
+        "Lepidlo": "Syntetický kaučuk (Hot Melt)",
+        "Celková tloušťka": "140 µm",
+        "Přilnavost k oceli": "4,5 N/cm",
+        "Pevnost v tahu": "50 N/cm",
+        "Tažnost / Prodloužení": "5 %",
+        "Aplikační a skladovací teplota": "15–25 °C",
+    },
+    "Papírová páska C680 RT": {
+        "Nosič": "Krepový papír s křížovým skelným vláknem (FSC)",
+        "Gramáž nosiče": "60 g/m²",
+        "Lepidlo": "Syntetický kaučuk (Hot Melt)",
+        "Celková tloušťka": "140 µm",
+        "Přilnavost k oceli": "5,0 N/cm",
+        "Pevnost v tahu": "60 N/cm",
+        "Tažnost / Prodloužení": "5 %",
+        "Aplikační a skladovací teplota": "15–25 °C",
+    },
+    "Papírová páska C690": {
+        "Nosič": "Zesílený krepový papír (FSC certifikace)",
+        "Gramáž nosiče": "72 g/m²",
+        "Lepidlo": "Syntetický kaučuk (Hot Melt)",
+        "Celková tloušťka": "125 µm",
+        "Přilnavost k oceli": "7,0 N/cm",
+        "Pevnost v tahu": "60 N/cm",
+        "Tažnost / Prodloužení": "6,2 %",
+        "Aplikační a skladovací teplota": "15–25 °C",
+    },
+    "Papírová páska C780": {
+        "Nosič": "Krepový papír (FSC certifikace)",
+        "Gramáž nosiče": "60 g/m²",
+        "Lepidlo": "Přírodní kaučuk (Solvent)",
+        "Celková tloušťka": "130 µm",
+        "Přilnavost k oceli": "2,4 N/cm",
+        "Pevnost v tahu": "35 N/cm",
+        "Tažnost / Prodloužení": "8 %",
+        "Aplikační a skladovací teplota": "15–25 °C",
+    },
+    "Papírová páska KS165": {
+        "Nosič": "Hladký Kraftový papír (FSC certifikace)",
+        "Gramáž nosiče": "165 g/m²",
+        "Lepidlo": "Syntetický kaučuk (Hot Melt)",
+        "Celková tloušťka": "225 µm",
+        "Přilnavost k oceli": "6,0 N/cm",
+        "Pevnost v tahu": "150 N/cm",
+        "Tažnost / Prodloužení": "14 %",
+        "Aplikační a skladovací teplota": "15–25 °C",
+    },
+    "Papírová páska KH80": {
+        "Nosič": "Recyklovaný Kraftový papír (100% recyklovaný, FSC certifikace)",
+        "Gramáž nosiče": "80 g/m²",
+        "Lepidlo": "Syntetický kaučuk (Hot Melt)",
+        "Celková tloušťka": "135 µm (±15 %)",
+        "Přilnavost k oceli": ">7 N/cm (při odtržení papíru)",
+        "Pevnost v tahu": "50 N/cm (±10 %)",
+        "Tažnost / Prodloužení": "2 % (±15 %)",
+        "Aplikační a skladovací teplota": "15–25 °C",
+    },
+}
+
 _ACRYL_LOW_NOISE = {
     "Nosič": "BOPP",
     "Tloušťka fólie": "25 / 28 / 32 µm",
@@ -395,6 +486,9 @@ for cat in CATS:
         if p["name"] in TECH_SPEC_PARAMS:
             p["params"] = dict(TECH_SPEC_PARAMS[p["name"]])
             p["tech_spec"] = True
+        if p["name"] in PAPER_SPEC_PARAMS:
+            p["params"] = dict(PAPER_SPEC_PARAMS[p["name"]])
+            p["paper_spec"] = True
 
 def product_spec_pills(p):
     """Hero pills: carrier, adhesive type, operating temperature (ECO+ uses regenerát % instead of adhesive/temp)."""
@@ -407,6 +501,13 @@ def product_spec_pills(p):
         return ("100 % regenerát", "BOPP", "Akryl / HOT MELT")
     if name == "Udržitelná páska LOOPP":
         return ("BOPP", "Akryl / Low noise", "0 až +60 / −10 až +60 °C")
+    if p.get("paper_spec"):
+        params = p["params"]
+        return (
+            params.get("Nosič", ""),
+            params.get("Lepidlo", ""),
+            params.get("Aplikační a skladovací teplota", ""),
+        )
     params = p["params"]
     carrier = params.get("Nosič") or params.get("Nosič / materiál", "")
     adhesive = params.get("Typ lepidla", "")
@@ -622,6 +723,54 @@ def product_benefits(cat_slug, p):
         else:
             b3 = ("Chemická odolnost", f"Pevnost {pevnost} – odolává rozpouštědlům, olejům a agresivnímu prostředí.")
     elif cat_slug == "papirove-pasky":
+        if p["name"] == "Papírová páska C660":
+            return [
+                ("Krepový nosič FSC", "Přírodní krepový papír z udržitelně obhospodařovaných lesů zaručuje pružnost, odolnost a čistý estetický ráz balení."),
+                ("Rychlá přilnavost", "Lepidlo ze syntetického kaučuku zajišťuje okamžité a spolehlivé uzavření obalů."),
+                ("Plná recyklovatelnost", "Umožňuje koncovým zákazníkům vyhodit celou krabici do papírového odpadu bez pracného odlepování pásky."),
+            ]
+        if p["name"] == "Papírová páska C680":
+            return [
+                ("Krepový nosič FSC", "Přírodní krepový papír z udržitelně obhospodařovaných lesů zaručuje pružnost, odolnost a čistý estetický ráz balení."),
+                ("Rychlá přilnavost", "Lepidlo ze syntetického kaučuku zajišťuje okamžité a spolehlivé uzavření obalů."),
+                ("Zvýšená pevnost v tahu", "I při nižší celkové tloušťce než C660 nabízí vyšší odolnost proti přetržení při balení."),
+            ]
+        if p["name"] == "Papírová páska C680R":
+            return [
+                ("Krepový nosič FSC", "Přírodní krepový papír z udržitelně obhospodařovaných lesů zaručuje pružnost, odolnost a čistý estetický ráz balení."),
+                ("Rychlá přilnavost", "Lepidlo ze syntetického kaučuku zajišťuje okamžité a spolehlivé uzavření obalů."),
+                ("Podélná skelná výztuž", "Integrovaná vlákna zvyšují pevnost v tahu na 50 N/cm a brání prasknutí při těžších zásilkách."),
+            ]
+        if p["name"] == "Papírová páska C680 RT":
+            return [
+                ("Krepový nosič FSC", "Přírodní krepový papír z udržitelně obhospodařovaných lesů zaručuje pružnost, odolnost a čistý estetický ráz balení."),
+                ("Rychlá přilnavost", "Lepidlo ze syntetického kaučuku zajišťuje okamžité a spolehlivé uzavření obalů."),
+                ("Křížová mřížková výztuž", "Skelná vlákna tkaná v obou směrech dávají pásce špičkovou pevnost v tahu až 60 N/cm."),
+            ]
+        if p["name"] == "Papírová páska C690":
+            return [
+                ("Krepový nosič FSC", "Přírodní krepový papír z udržitelně obhospodařovaných lesů zaručuje pružnost, odolnost a čistý estetický ráz balení."),
+                ("Extrémní přilnavost", "Nejvyšší lepivost ve své třídě okamžitě přilne i k prašným či recyklovaným kartonům."),
+                ("Silnější gramáž nosiče (72 g/m²)", "Robustnější papírový podklad pro vyšší otěruvzdornost a prémiový dojem z balíku."),
+            ]
+        if p["name"] == "Papírová páska C780":
+            return [
+                ("Krepový nosič FSC", "Přírodní krepový papír z udržitelně obhospodařovaných lesů zaručuje pružnost, odolnost a čistý estetický ráz balení."),
+                ("Lepidlo z přírodního kaučuku (Solvent)", "Drží spolehlivě v širokém spektru teplot, nestárne a vytváří trvanlivý spoj i při delším skladování."),
+                ("Plná recyklovatelnost", "Umožňuje koncovým zákazníkům vyhodit celou krabici do papírového odpadu bez pracného odlepování pásky."),
+            ]
+        if p["name"] == "Papírová páska KS165":
+            return [
+                ("Hladký Kraft papír 165 g/m²", "Mimořádně silný a hladký podklad z udržitelného lesního hospodářství (FSC)."),
+                ("Rychlá přilnavost", "Lepidlo ze syntetického kaučuku zajišťuje okamžité a spolehlivé uzavření obalů."),
+                ("Extrémní pevnost v tahu (150 N/cm)", "Nahrazuje plastové či vázací pásky i u nadměrně těžkých kartonů a průmyslových zásilek."),
+            ]
+        if p["name"] == "Papírová páska KH80":
+            return [
+                ("Recyklovaný Kraft papír 80 g/m²", "Udržitelný a ekologický podklad ze 100% recyklovaného papíru s FSC certifikací."),
+                ("Rychlá přilnavost", "Hot Melt lepidlo (syntetický kaučuk) zajišťuje spolehlivé a okamžité uzavření obalů."),
+                ("Snadná recyklace PAP22", "Certifikovaná papírová páska určená k třídění a recyklaci přímo s papírovým odpadem."),
+            ]
         if "recyklovan" in nl:
             b1 = ("Recyklovaný papírový nosič", "Páska i karton putují společně do recyklace – bez oddělování materiálů.")
         else:
@@ -757,19 +906,19 @@ def product_uses(cat, p):
 SAMPLE_CATEGORIES = frozenset({'bopp-pasky', 'bopet-pasky', 'papirove-pasky', 'udrzitelne-pasky'})
 
 CATEGORY_CTA = {
-    'udrzitelne-pasky': ('Spočítat eko pásku', 'Poptat udržitelnou pásku s potiskem'),
-    'bopp-pasky': ('Kalkulace balicí pásky', 'Poptat BOPP pásku s logem'),
-    'bopet-pasky': ('Kalkulace technické pásky', 'Poptat BOPET pásku na míru'),
-    'papirove-pasky': ('Kalkulace papírové pásky', 'Poptat eko pásku s potiskem'),
-    'odstranitelne-pasky': ('Vyžádat cenovou nabídku', 'Poptat odstranitelnou pásku'),
-    'vyztuzene-pasky': ('Vyžádat cenovou nabídku', 'Poptat vyztuženou pásku'),
-    'mopp-pasky': ('Vyžádat cenovou nabídku', 'Poptat MOPP pásku'),
-    'textilni-pasky': ('Vyžádat cenovou nabídku', 'Poptat textilní pásku'),
-    'malirske-pasky': ('Vyžádat cenovou nabídku', 'Poptat malířskou pásku'),
+    'udrzitelne-pasky': ('Vyžádat kalkulaci', 'Poptat udržitelnou pásku s potiskem'),
+    'bopp-pasky': ('Vyžádat kalkulaci', 'Poptat BOPP pásku s logem'),
+    'bopet-pasky': ('Vyžádat kalkulaci', 'Poptat BOPET pásku na míru'),
+    'papirove-pasky': ('Vyžádat kalkulaci', 'Poptat eko pásku s potiskem'),
+    'odstranitelne-pasky': ('Vyžádat kalkulaci', 'Poptat odstranitelnou pásku'),
+    'vyztuzene-pasky': ('Vyžádat kalkulaci', 'Poptat vyztuženou pásku'),
+    'mopp-pasky': ('Vyžádat kalkulaci', 'Poptat MOPP pásku'),
+    'textilni-pasky': ('Vyžádat kalkulaci', 'Poptat textilní pásku'),
+    'malirske-pasky': ('Vyžádat kalkulaci', 'Poptat malířskou pásku'),
 }
 
 def category_ctas(cat):
-    return CATEGORY_CTA.get(cat['cat'], ('Vyžádat cenovou nabídku', 'Poptat z této kategorie'))
+    return CATEGORY_CTA.get(cat['cat'], ('Vyžádat kalkulaci', 'Poptat z této kategorie'))
 
 def product_ctas(cat, p):
     slug = cat['cat']
@@ -1026,6 +1175,54 @@ PRODUCT_BOTTOM_NOTE='''        <div class="product-neutral-note mx-auto mt-14 ma
         </div>
 
         <div class="mt-8 flex flex-wrap items-center justify-center gap-4">'''
+
+PAPER_SERIES_NOTE_SLUGS = frozenset({
+    'papirova-paska-c660',
+    'papirova-paska-c680',
+    'papirova-paska-c680r',
+    'papirova-paska-c680-rt',
+    'papirova-paska-c690',
+    'papirova-paska-c780',
+})
+
+def series_note_html(note, *, compact=False):
+    if not note:
+        return ''
+    margin = 'mt-6' if compact else 'mt-6 max-w-3xl'
+    return (
+        '<aside class="product-series-note %s rounded-2xl border border-emerald-200/80 bg-emerald-50/90 px-5 py-4 text-left sm:px-6" data-series-note>'
+        '<p class="text-sm leading-relaxed text-slate-700">%s</p>'
+        '</aside>'
+    ) % (margin, esc(note))
+
+def category_series_note_html(cat):
+    return series_note_html(cat.get('series_note'), compact=False)
+
+def product_series_note_html(cat, p):
+    if p.get('slug') not in PAPER_SERIES_NOTE_SLUGS:
+        return ''
+    return series_note_html(cat.get('series_note'), compact=True)
+
+ORANGE_ITALIC = 'font-semibold italic text-orange-600'
+
+def param_hints_html(cat):
+    hints = cat.get('param_hints') or []
+    if not hints:
+        return ''
+    items = []
+    for title, body, highlight in hints:
+        items.append(
+            '<p class="text-sm leading-relaxed text-slate-600" data-param-hint>'
+            '<strong class="font-semibold text-slate-900">%s:</strong> %s '
+            '<span class="%s">%s</span>'
+            '</p>' % (esc(title), esc(body), ORANGE_ITALIC, esc(highlight))
+        )
+    return (
+        '<div class="product-param-hints mt-6 space-y-3" data-param-hints>'
+        '%s'
+        '</div>'
+    ) % ('\n'.join(items))
+
 IMG_CLS='w-full h-full object-contain max-h-56 mix-blend-multiply contrast-[1.1] brightness-[1.05] transform transition-transform duration-300 group-hover:scale-105'
 PORTRAIT_CATEGORIES = {'udrzitelne-pasky'}
 
@@ -1133,6 +1330,7 @@ for cat in CATS:
             <div class="max-w-3xl">
                 <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">%s</h1>
                 <p class="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">%s</p>
+%s
             </div>
             <div class="shrink-0">
                 <a href="/index.html#gf_1" class="inline-flex items-center rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25 transition-all hover:scale-[1.02] hover:shadow-xl">%s</a>
@@ -1172,7 +1370,7 @@ for cat in CATS:
 
 </main>
 
-'''%(esc(cat["title"]),esc(cat["title"]),esc(cat["intro"]),esc(cat_cta[0]),props,cards,apps,BACK,esc(cat_cta[1]))
+'''%(esc(cat["title"]),esc(cat["title"]),esc(cat["intro"]),category_series_note_html(cat),esc(cat_cta[0]),props,cards,apps,BACK,esc(cat_cta[1]))
     os.makedirs("sortiment/%s"%cat["cat"],exist_ok=True)
     cat_path = f'/sortiment/{cat["cat"]}'
     cat_desc = category_meta_description(cat['title'], cat['description'])
@@ -1241,6 +1439,7 @@ for cat in CATS:
             <span class="text-sm font-semibold uppercase tracking-wide text-orange-600">%s</span>
             <h1 class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">%s</h1>
             <p class="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">%s</p>
+%s
             <div class="mt-6 flex flex-wrap gap-2">
                 <span class="rounded-full bg-slate-100 px-4 py-1.5 text-xs font-semibold text-slate-700">%s</span>
                 <span class="rounded-full bg-slate-100 px-4 py-1.5 text-xs font-semibold text-slate-700">%s</span>
@@ -1261,6 +1460,7 @@ for cat in CATS:
                 <h2 class="mb-6 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">Technické parametry</h2>
 %s
                 <p class="mt-4 text-xs leading-relaxed text-slate-400">Uvedené hodnoty jsou orientační a mohou se lišit podle konkrétní šířky, návinu a provedení. Rádi vám připravíme přesnou specifikaci na míru.</p>
+%s
 %s
 %s
             </div>
@@ -1288,9 +1488,10 @@ for cat in CATS:
 '''%(cat["cat"],esc(cat["title"]),esc(p["name"]),
      product_detail_image_box(cat["cat"]),url(p["image"]),esc(p["name"]),product_detail_image_cls(cat["cat"]),
      esc(cat["title"]),esc(p["name"]),esc(p["tagline"]),
+     product_series_note_html(cat, p),
      *[esc(x) for x in product_spec_pills(p)],
      esc(cta['hero']),FWD,cat["cat"],BACK,
-     tech_table,min_qty_html,tailor,advs,uses,
+     tech_table,min_qty_html,param_hints_html(cat),tailor,advs,uses,
      PRODUCT_BOTTOM_NOTE,
      cat["cat"],BACK,esc(cat["title"]),esc(cta['bottom']))
         os.makedirs("sortiment/%s/%s"%(cat["cat"],p["slug"]),exist_ok=True)

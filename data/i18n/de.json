@@ -763,7 +763,7 @@
       },
       "papirove-pasky": {
         "title": "Papierklebebänder",
-        "description": "Eine umweltfreundliche Lösung für sicheres Verpacken mit hoher Klebkraft. Ideal für vollständig recycelbare Kartonverpackungen und ein sauberes Corporate Design.",
+        "description": "Eine umweltfreundliche Lösung für elegantes Verpacken mit hoher Klebkraft, ideal für ein sauberes Erscheinungsbild und vollständig recycelbare Kartonverpackungen.",
         "intro": "Papierklebebänder verbinden zuverlässige Haftung mit maximaler Umweltverträglichkeit. Dank des Papierträgers sind sie gemeinsam mit dem Karton vollständig recycelbar und bieten eine elegante, saubere Lösung für Unternehmen, die Wert auf Nachhaltigkeit und den visuellen Eindruck ihrer Sendungen legen.",
         "properties": {
           "Vollständig recycelbar": "Band und Karton landen in derselben Tonne: kein Trennen der Materialien nötig.",
@@ -775,6 +775,24 @@
           "Verschließen von Kartons und Verpackungen",
           "Corporate Branding direkt auf der Sendung",
           "Manuelles und halbautomatisches Verpacken"
+        ],
+        "series_note": "C660, C680, C680R, C680RT und C690 eignen sich für Hand- und Maschinenverpackung und werden aus FSC-Mix-Credit-Papier hergestellt. Alle diese Typen sowie C780 können bedruckt werden (bis zu 4 Farben). C680 und C680R sind auch in Weiß erhältlich. FSC®-Lizenz: FSC-C159046.",
+        "param_hints": [
+          {
+            "title": "Haftung auf Stahl",
+            "body": "Misst die sofortige Klebkraft auf der Oberfläche.",
+            "highlight": "Üblicher Standard: 4,0–5,0 N/cm. Werte über 6,0 N/cm bedeuten besonders starke Haftung."
+          },
+          {
+            "title": "Zugfestigkeit",
+            "body": "Widerstand gegen Reißen unter Zugbelastung.",
+            "highlight": "Standard für übliche Pakete (bis ~15 kg): 30–40 N/cm. Schwere Sendungen und Verstärkungen: 50+ N/cm."
+          },
+          {
+            "title": "Dehnung / Verlängerung",
+            "body": "Um wie viel % sich das Band vor dem Reißen dehnt.",
+            "highlight": "Standard für Papier: 8–12 %. Geringe Dehnung (ca. 5 %) hält den Karton fest ohne Durchhängen."
+          }
         ]
       },
       "odstranitelne-pasky": {
@@ -910,6 +928,7 @@
           "min_qty": "Mindestmenge"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1006,6 +1025,7 @@
           "min_qty": "Mindestmenge"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1102,6 +1122,7 @@
           "min_qty": "Mindestmenge"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1198,6 +1219,7 @@
           "min_qty": "Mindestmenge"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1281,6 +1303,7 @@
           "min_qty": "Mindestmenge"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1343,6 +1366,7 @@
           "strength": "Zugfestigkeit"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1405,6 +1429,7 @@
           "strength": "Zugfestigkeit"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1467,6 +1492,7 @@
           "strength": "Zugfestigkeit"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1553,6 +1579,7 @@
           "min_qty": "Mindestmenge"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1617,6 +1644,7 @@
           "min_qty": "Mindestmenge"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1681,6 +1709,7 @@
           "min_qty": "Mindestmenge"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1745,6 +1774,7 @@
           "min_qty": "Mindestmenge"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1809,6 +1839,7 @@
           "min_qty": "Mindestmenge"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1873,6 +1904,7 @@
           "min_qty": "Mindestmenge"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1935,6 +1967,7 @@
           "strength": "Zugfestigkeit"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -1997,6 +2030,7 @@
           "strength": "Zugfestigkeit"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -2061,6 +2095,7 @@
           "min_qty": "Mindestmenge"
         },
         "tech_spec": true,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -2123,6 +2158,7 @@
           "strength": "Zugfestigkeit"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -2137,54 +2173,59 @@
       },
       "papirova-paska-c660": {
         "name": "Papierklebeband C660",
-        "tagline": "Umweltfreundliches Papierklebeband mit Acrylklebstoff und leisem Abrollen.",
+        "tagline": "Eine umweltfreundliche Lösung für elegantes Verpacken mit hoher Klebkraft.",
         "category_slug": "papirove-pasky",
         "category_title": "Papierklebebänder",
         "benefits": [
           {
+            "title": "FSC-Kreppträger",
+            "text": "Natürliches Krepppapier aus nachhaltig bewirtschafteten Wäldern garantiert Flexibilität, Widerstandsfähigkeit und eine saubere Ästhetik der Verpackung."
+          },
+          {
+            "title": "Schnelle Haftung",
+            "text": "Klebstoff aus Synthesekautschuk sorgt für sofortiges und zuverlässiges Verschließen von Verpackungen."
+          },
+          {
             "title": "Vollständig recycelbar",
-            "text": "Kraftpapierträger (100 µm) – umweltfreundliche Verpackung mit sauberer matter Optik."
-          },
-          {
-            "title": "Acrylklebstoff",
-            "text": "Leises Abrollen, langfristig stabile Klebkraft und zuverlässige Leistung unter Lagerbedingungen."
-          },
-          {
-            "title": "Festigkeit 45 N/25 mm",
-            "text": "Klebkraft 3,8 N/25 mm auch auf Recyclingkarton und unebenen Oberflächen (−5 až +60 °C)."
+            "text": "Ermöglicht Endkunden, den gesamten Karton ohne mühsames Abziehen des Bandes in den Papierabfall zu geben."
           }
         ],
         "uses": [
           "E-Shops mit Fokus auf nachhaltige Verpackung",
           "Verschließen von Kartonschachteln und Verpackungen",
           "Firmen-Branding direkt auf der Sendung",
-          "Manuelles Verpacken und Verschließen von E-Commerce-Sendungen"
+          "Manuelles und halbautomatisches Verpacken"
         ],
         "params_values": {
-          "carrier": "Papierträger",
-          "thickness": "100 µm",
-          "adhesive": "Acryl (Dispersion)",
-          "adhesion": "3,8 N/25 mm",
-          "temperature": "−5 bis +60 °C",
-          "strength": "45 N/25 mm"
+          "carrier": "Krepppapier (FSC-zertifiziert)",
+          "grammage": "60 g/m²",
+          "adhesive": "Synthesekautschuk (Hot Melt)",
+          "thickness": "120 µm",
+          "adhesion": "4,5 N/cm",
+          "strength": "33 N/cm",
+          "elongation": "10 %",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Papierträger",
-          "Acryl (Dispersion)",
-          "−5 bis +60 °C"
+          "Krepppapier (FSC-zertifiziert)",
+          "Synthesekautschuk (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
-          "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "carrier": "Träger",
+          "grammage": "Trägergrammatur",
+          "adhesive": "Klebstoff",
+          "thickness": "Gesamtdicke",
+          "adhesion": "Haftung auf Stahl",
+          "strength": "Zugfestigkeit",
+          "elongation": "Dehnung / Verlängerung",
+          "temperature": "Verarbeitungs- und Lagertemperatur"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -2199,21 +2240,21 @@
       },
       "papirova-paska-c680": {
         "name": "Papierklebeband C680",
-        "tagline": "Universelles Papierklebeband mit hoher Haftung auf Recyclingkarton.",
+        "tagline": "Dünneres Profil mit höherer Zugfestigkeit für effizientes Verpacken.",
         "category_slug": "papirove-pasky",
         "category_title": "Papierklebebänder",
         "benefits": [
           {
-            "title": "Vollständig recycelbar",
-            "text": "Kraftpapierträger (115 µm) – umweltfreundliche Verpackung mit sauberer matter Optik."
+            "title": "FSC-Kreppträger",
+            "text": "Natürliches Krepppapier aus nachhaltig bewirtschafteten Wäldern garantiert Flexibilität, Widerstandsfähigkeit und eine saubere Ästhetik der Verpackung."
           },
           {
-            "title": "Kautschukklebstoff",
-            "text": "Hohe Soforthaftung und feste Verbindung auch auf Recyclingkarton."
+            "title": "Schnelle Haftung",
+            "text": "Klebstoff aus Synthesekautschuk sorgt für sofortiges und zuverlässiges Verschließen von Verpackungen."
           },
           {
-            "title": "Festigkeit 50 N/25 mm",
-            "text": "Klebkraft 4,2 N/25 mm auch auf Recyclingkarton und unebenen Oberflächen (−10 až +60 °C)."
+            "title": "Erhöhte Zugfestigkeit",
+            "text": "Auch bei geringerer Gesamtdicke als C660 bietet es höhere Reißfestigkeit beim Verpacken."
           }
         ],
         "uses": [
@@ -2223,30 +2264,35 @@
           "Manuelles und halbautomatisches Verpacken"
         ],
         "params_values": {
-          "carrier": "Papierträger",
-          "thickness": "115 µm",
-          "adhesive": "Kautschuk",
-          "adhesion": "4,2 N/25 mm",
-          "temperature": "−10 bis +60 °C",
-          "strength": "50 N/25 mm"
+          "carrier": "Krepppapier (FSC-zertifiziert)",
+          "grammage": "60 g/m²",
+          "adhesive": "Synthesekautschuk (Hot Melt)",
+          "thickness": "110 µm",
+          "adhesion": "4,5 N/cm",
+          "strength": "35 N/cm",
+          "elongation": "10 %",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Papierträger",
-          "Kautschuk",
-          "−10 bis +60 °C"
+          "Krepppapier (FSC-zertifiziert)",
+          "Synthesekautschuk (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
-          "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "carrier": "Träger",
+          "grammage": "Trägergrammatur",
+          "adhesive": "Klebstoff",
+          "thickness": "Gesamtdicke",
+          "adhesion": "Haftung auf Stahl",
+          "strength": "Zugfestigkeit",
+          "elongation": "Dehnung / Verlängerung",
+          "temperature": "Verarbeitungs- und Lagertemperatur"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -2261,21 +2307,21 @@
       },
       "papirova-paska-c680-rt": {
         "name": "Papierklebeband C680 RT",
-        "tagline": "Robustes Papierklebeband mit verbesserter Haftung für schwerere Sendungen.",
+        "tagline": "Kreuzweise glasfaserverstärktes Band für anspruchsvollste Sendungen.",
         "category_slug": "papirove-pasky",
         "category_title": "Papierklebebänder",
         "benefits": [
           {
-            "title": "Vollständig recycelbar",
-            "text": "Kraftpapierträger (120 µm) – umweltfreundliche Verpackung mit sauberer matter Optik."
+            "title": "FSC-Kreppträger",
+            "text": "Natürliches Krepppapier aus nachhaltig bewirtschafteten Wäldern garantiert Flexibilität, Widerstandsfähigkeit und eine saubere Ästhetik der Verpackung."
           },
           {
-            "title": "Kautschukklebstoff",
-            "text": "Hohe Soforthaftung und feste Verbindung auch auf Recyclingkarton."
+            "title": "Schnelle Haftung",
+            "text": "Klebstoff aus Synthesekautschuk sorgt für sofortiges und zuverlässiges Verschließen von Verpackungen."
           },
           {
-            "title": "Festigkeit 52 N/25 mm",
-            "text": "Klebkraft 4,3 N/25 mm auch auf Recyclingkarton und unebenen Oberflächen (−10 až +65 °C)."
+            "title": "Kreuzweise Gitterverstärkung",
+            "text": "In beiden Richtungen gewebte Glasfasern verleihen dem Band eine Spitzen-Zugfestigkeit von bis zu 60 N/cm."
           }
         ],
         "uses": [
@@ -2285,30 +2331,35 @@
           "Manuelles und halbautomatisches Verpacken"
         ],
         "params_values": {
-          "carrier": "Papierträger",
-          "thickness": "120 µm",
-          "adhesive": "Kautschuk",
-          "adhesion": "4,3 N/25 mm",
-          "temperature": "−10 bis +65 °C",
-          "strength": "52 N/25 mm"
+          "carrier": "Krepppapier mit kreuzweise Glasfaser (FSC)",
+          "grammage": "60 g/m²",
+          "adhesive": "Synthesekautschuk (Hot Melt)",
+          "thickness": "140 µm",
+          "adhesion": "5,0 N/cm",
+          "strength": "60 N/cm",
+          "elongation": "5 %",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Papierträger",
-          "Kautschuk",
-          "−10 bis +65 °C"
+          "Krepppapier mit kreuzweise Glasfaser (FSC)",
+          "Synthesekautschuk (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
-          "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "carrier": "Träger",
+          "grammage": "Trägergrammatur",
+          "adhesive": "Klebstoff",
+          "thickness": "Gesamtdicke",
+          "adhesion": "Haftung auf Stahl",
+          "strength": "Zugfestigkeit",
+          "elongation": "Dehnung / Verlängerung",
+          "temperature": "Verarbeitungs- und Lagertemperatur"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -2323,54 +2374,59 @@
       },
       "papirova-paska-c680r": {
         "name": "Papierklebeband C680R",
-        "tagline": "Papierklebeband aus Recyclingpapier für nachhaltige Verpackung.",
+        "tagline": "Glasfaserverstärktes Band für sicheres Verpacken schwererer Kartons.",
         "category_slug": "papirove-pasky",
         "category_title": "Papierklebebänder",
         "benefits": [
           {
-            "title": "Recycelter Papierträger",
-            "text": "Band und Karton werden gemeinsam recycelt – ohne Materialtrennung."
+            "title": "FSC-Kreppträger",
+            "text": "Natürliches Krepppapier aus nachhaltig bewirtschafteten Wäldern garantiert Flexibilität, Widerstandsfähigkeit und eine saubere Ästhetik der Verpackung."
           },
           {
-            "title": "Kautschukklebstoff",
-            "text": "Hohe Soforthaftung und feste Verbindung auch auf Recyclingkarton."
+            "title": "Schnelle Haftung",
+            "text": "Klebstoff aus Synthesekautschuk sorgt für sofortiges und zuverlässiges Verschließen von Verpackungen."
           },
           {
-            "title": "Festigkeit 48 N/25 mm",
-            "text": "Klebkraft 4,0 N/25 mm auch auf Recyclingkarton und unebenen Oberflächen (−10 až +60 °C)."
+            "title": "Längs verlaufende Glasfaserverstärkung",
+            "text": "Integrierte Fasern erhöhen die Zugfestigkeit auf 50 N/cm und verhindern das Reißen bei schwereren Sendungen."
           }
         ],
         "uses": [
           "E-Shops mit Fokus auf nachhaltige Verpackung",
           "Verschließen von Kartonschachteln und Verpackungen",
           "Firmen-Branding direkt auf der Sendung",
-          "Manuelles Verpacken und Verschließen von E-Commerce-Sendungen"
+          "Manuelles und halbautomatisches Verpacken"
         ],
         "params_values": {
-          "carrier": "Recyclingpapier",
-          "thickness": "115 µm",
-          "adhesive": "Kautschuk",
-          "adhesion": "4,0 N/25 mm",
-          "temperature": "−10 bis +60 °C",
-          "strength": "48 N/25 mm"
+          "carrier": "Krepppapier mit längs verlaufender Glasfaser (FSC)",
+          "grammage": "60 g/m²",
+          "adhesive": "Synthesekautschuk (Hot Melt)",
+          "thickness": "140 µm",
+          "adhesion": "4,5 N/cm",
+          "strength": "50 N/cm",
+          "elongation": "5 %",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Recyclingpapier",
-          "Kautschuk",
-          "−10 bis +60 °C"
+          "Krepppapier mit längs verlaufender Glasfaser (FSC)",
+          "Synthesekautschuk (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
-          "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "carrier": "Träger",
+          "grammage": "Trägergrammatur",
+          "adhesive": "Klebstoff",
+          "thickness": "Gesamtdicke",
+          "adhesion": "Haftung auf Stahl",
+          "strength": "Zugfestigkeit",
+          "elongation": "Dehnung / Verlängerung",
+          "temperature": "Verarbeitungs- und Lagertemperatur"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -2385,54 +2441,126 @@
       },
       "papirova-paska-c690": {
         "name": "Papierklebeband C690",
-        "tagline": "Premium-Kraftpapierklebeband mit Hot-Melt-Klebstoff und matter Oberfläche.",
+        "tagline": "Schweres Krepppapier für anspruchsvollste Kartons.",
         "category_slug": "papirove-pasky",
         "category_title": "Papierklebebänder",
         "benefits": [
           {
-            "title": "Vollständig recycelbar",
-            "text": "Kraftpapierträger (130 µm) – umweltfreundliche Verpackung mit sauberer matter Optik."
+            "title": "FSC-Kreppträger",
+            "text": "Natürliches Krepppapier aus nachhaltig bewirtschafteten Wäldern garantiert Flexibilität, Widerstandsfähigkeit und eine saubere Ästhetik der Verpackung."
           },
           {
-            "title": "Hot-Melt-Klebstoff",
-            "text": "Schnelle, feste Haftung auch bei niedrigen Temperaturen – für manuelles und maschinelles Verpacken."
+            "title": "Extreme Haftung",
+            "text": "Beste Klebkraft ihrer Klasse – haftet sofort auch auf staubigen oder recycelten Kartons."
           },
           {
-            "title": "Festigkeit 60 N/25 mm",
-            "text": "Klebkraft 4,8 N/25 mm auch auf Recyclingkarton und unebenen Oberflächen (−10 až +70 °C)."
+            "title": "Höhere Trägergrammatur (72 g/m²)",
+            "text": "Robusterer Papierträger für höhere Abriebfestigkeit und eine premiumhafte Paketoptik."
           }
         ],
         "uses": [
           "E-Shops mit Fokus auf nachhaltige Verpackung",
           "Verschließen von Kartonschachteln und Verpackungen",
           "Firmen-Branding direkt auf der Sendung",
-          "Manuelles Verpacken und Verschließen von E-Commerce-Sendungen"
+          "Manuelles und halbautomatisches Verpacken"
         ],
         "params_values": {
-          "carrier": "Papierträger (Kraft)",
-          "thickness": "130 µm",
-          "adhesive": "Hot Melt",
-          "adhesion": "4,8 N/25 mm",
-          "temperature": "−10 bis +70 °C",
-          "strength": "60 N/25 mm"
+          "carrier": "Verstärktes Krepppapier (FSC-zertifiziert)",
+          "grammage": "72 g/m²",
+          "adhesive": "Synthesekautschuk (Hot Melt)",
+          "thickness": "125 µm",
+          "adhesion": "7,0 N/cm",
+          "strength": "60 N/cm",
+          "elongation": "6,2 %",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Papierträger (Kraft)",
-          "Hot Melt",
-          "−10 bis +70 °C"
+          "Verstärktes Krepppapier (FSC-zertifiziert)",
+          "Synthesekautschuk (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
-          "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "carrier": "Träger",
+          "grammage": "Trägergrammatur",
+          "adhesive": "Klebstoff",
+          "thickness": "Gesamtdicke",
+          "adhesion": "Haftung auf Stahl",
+          "strength": "Zugfestigkeit",
+          "elongation": "Dehnung / Verlängerung",
+          "temperature": "Verarbeitungs- und Lagertemperatur"
         },
         "tech_spec": false,
+        "paper_spec": true,
+        "ctas": {
+          "hero": "Kalkulation mit Bedruckung",
+          "tailor_link": "Ich möchte ein kostenloses Muster",
+          "tailor_bullets": [
+            "Wählbare Breite und Rollenlänge",
+            "Grundfarbe und Anzahl der Druckfarben",
+            "Qualitätsprüfung vor der Bestellung"
+          ],
+          "bottom": "Kostenloses Muster oder Kalkulation",
+          "back_category": "Zurück zu Papierklebebänder"
+        }
+      },
+      "papirova-paska-c780": {
+        "name": "Papierklebeband C780",
+        "tagline": "Premium-Kombination aus Krepp und Naturkautschuk für anspruchsvolle Temperaturbedingungen.",
+        "category_slug": "papirove-pasky",
+        "category_title": "Papierklebebänder",
+        "benefits": [
+          {
+            "title": "FSC-Kreppträger",
+            "text": "Natürliches Krepppapier aus nachhaltig bewirtschafteten Wäldern garantiert Flexibilität, Widerstandsfähigkeit und eine saubere Ästhetik der Verpackung."
+          },
+          {
+            "title": "Naturkautschukkleber (Solvent)",
+            "text": "Hält zuverlässig über ein breites Temperaturspektrum, altert nicht und bildet auch bei längerer Lagerung eine dauerhafte Verbindung."
+          },
+          {
+            "title": "Vollständig recycelbar",
+            "text": "Ermöglicht Endkunden, den gesamten Karton ohne mühsames Abziehen des Bandes in den Papierabfall zu geben."
+          }
+        ],
+        "uses": [
+          "E-Shops mit Fokus auf nachhaltige Verpackung",
+          "Verschließen von Kartonschachteln und Verpackungen",
+          "Firmen-Branding direkt auf der Sendung",
+          "Manuelles und halbautomatisches Verpacken"
+        ],
+        "params_values": {
+          "carrier": "Krepppapier (FSC-zertifiziert)",
+          "grammage": "60 g/m²",
+          "adhesive": "Naturkautschuk (Solvent)",
+          "thickness": "130 µm",
+          "adhesion": "2,4 N/cm",
+          "strength": "35 N/cm",
+          "elongation": "8 %",
+          "temperature": "15–25 °C"
+        },
+        "spec_pills": [
+          "Krepppapier (FSC-zertifiziert)",
+          "Naturkautschuk (Solvent)",
+          "15–25 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Träger",
+          "grammage": "Trägergrammatur",
+          "adhesive": "Klebstoff",
+          "thickness": "Gesamtdicke",
+          "adhesion": "Haftung auf Stahl",
+          "strength": "Zugfestigkeit",
+          "elongation": "Dehnung / Verlängerung",
+          "temperature": "Verarbeitungs- und Lagertemperatur"
+        },
+        "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -2447,54 +2575,59 @@
       },
       "papirova-paska-kh80": {
         "name": "Papierklebeband KH80",
-        "tagline": "Starkes Papierklebeband mit Hot-Melt-Klebstoff für zuverlässigen Kartonverschluss.",
+        "tagline": "Exklusives Papierklebeband aus 100 % recyceltem Material – die perfekte Verbindung aus hoher Ästhetik, Soforthaftung und Rücksicht auf die Natur.",
         "category_slug": "papirove-pasky",
         "category_title": "Papierklebebänder",
         "benefits": [
           {
-            "title": "Vollständig recycelbar",
-            "text": "Kraftpapierträger (120 µm) – umweltfreundliche Verpackung mit sauberer matter Optik."
+            "title": "Recyceltes Kraftpapier 80 g/m²",
+            "text": "Nachhaltiger und ökologischer Träger aus 100 % Recyclingpapier mit FSC-Zertifizierung."
           },
           {
-            "title": "Hot-Melt-Klebstoff",
-            "text": "Schnelle, feste Haftung auch bei niedrigen Temperaturen – für manuelles und maschinelles Verpacken."
+            "title": "Schnelle Haftung",
+            "text": "Hot-Melt-Klebstoff (Synthesekautschuk) sorgt für zuverlässiges und sofortiges Verschließen von Verpackungen."
           },
           {
-            "title": "Festigkeit 55 N/25 mm",
-            "text": "Klebkraft 4,5 N/25 mm auch auf Recyclingkarton und unebenen Oberflächen (−10 až +60 °C)."
+            "title": "Einfaches Recycling PAP22",
+            "text": "Zertifiziertes Papierklebeband zum Sortieren und Recyceln direkt mit dem Papierabfall."
           }
         ],
         "uses": [
           "E-Shops mit Fokus auf nachhaltige Verpackung",
           "Verschließen von Kartonschachteln und Verpackungen",
           "Firmen-Branding direkt auf der Sendung",
-          "Manuelles Verpacken und Verschließen von E-Commerce-Sendungen"
+          "Manuelles und halbautomatisches Verpacken"
         ],
         "params_values": {
-          "carrier": "Papierträger (Kraft)",
-          "thickness": "120 µm",
-          "adhesive": "Hot Melt (Synthesekautschuk)",
-          "adhesion": "4,5 N/25 mm",
-          "temperature": "−10 bis +60 °C",
-          "strength": "55 N/25 mm"
+          "carrier": "Recyceltes Kraftpapier (100 % recycelt, FSC-zertifiziert)",
+          "grammage": "80 g/m²",
+          "adhesive": "Synthesekautschuk (Hot Melt)",
+          "thickness": "135 µm (±15 %)",
+          "adhesion": ">7 N/cm (Papierriss)",
+          "strength": "50 N/cm (±10 %)",
+          "elongation": "2 % (±15 %)",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Papierträger (Kraft)",
-          "Hot Melt (Synthesekautschuk)",
-          "−10 bis +60 °C"
+          "Recyceltes Kraftpapier (100 % recycelt, FSC-zertifiziert)",
+          "Synthesekautschuk (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
-          "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "carrier": "Träger",
+          "grammage": "Trägergrammatur",
+          "adhesive": "Klebstoff",
+          "thickness": "Gesamtdicke",
+          "adhesion": "Haftung auf Stahl",
+          "strength": "Zugfestigkeit",
+          "elongation": "Dehnung / Verlängerung",
+          "temperature": "Verarbeitungs- und Lagertemperatur"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -2509,54 +2642,59 @@
       },
       "papirova-paska-ks165": {
         "name": "Papierklebeband KS165",
-        "tagline": "Extra starkes Papierklebeband mit Kautschukklebstoff für anspruchsvolles Verpacken.",
+        "tagline": "Kompromisslose Papierlösung mit extremer Tragfähigkeit für schwerstes Industrieverpacken, Palettenfixierung und Umreifung.",
         "category_slug": "papirove-pasky",
         "category_title": "Papierklebebänder",
         "benefits": [
           {
-            "title": "Vollständig recycelbar",
-            "text": "Kraftpapierträger (150 µm) – umweltfreundliche Verpackung mit sauberer matter Optik."
+            "title": "Glattes Kraftpapier 165 g/m²",
+            "text": "Außergewöhnlich starker und glatter Träger aus nachhaltiger Forstwirtschaft (FSC)."
           },
           {
-            "title": "Kautschukklebstoff",
-            "text": "Hohe Soforthaftung und feste Verbindung auch auf Recyclingkarton."
+            "title": "Schnelle Haftung",
+            "text": "Klebstoff aus Synthesekautschuk sorgt für sofortiges und zuverlässiges Verschließen von Verpackungen."
           },
           {
-            "title": "Festigkeit 70 N/25 mm",
-            "text": "Klebkraft 5,5 N/25 mm auch auf Recyclingkarton und unebenen Oberflächen (−20 až +70 °C)."
+            "title": "Extreme Zugfestigkeit (150 N/cm)",
+            "text": "Ersetzt Kunststoff- oder Umreifungsbänder auch bei übermäßig schweren Kartons und Industriesendungen."
           }
         ],
         "uses": [
           "E-Shops mit Fokus auf nachhaltige Verpackung",
           "Verschließen von Kartonschachteln und Verpackungen",
           "Firmen-Branding direkt auf der Sendung",
-          "Manuelles Verpacken und Verschließen von E-Commerce-Sendungen"
+          "Manuelles und halbautomatisches Verpacken"
         ],
         "params_values": {
-          "carrier": "Papierträger (Kraft)",
-          "thickness": "150 µm",
-          "adhesive": "Kautschuk (Lösungsmittel)",
-          "adhesion": "5,5 N/25 mm",
-          "temperature": "−20 bis +70 °C",
-          "strength": "70 N/25 mm"
+          "carrier": "Glattes Kraftpapier (FSC-zertifiziert)",
+          "grammage": "165 g/m²",
+          "adhesive": "Synthesekautschuk (Hot Melt)",
+          "thickness": "225 µm",
+          "adhesion": "6,0 N/cm",
+          "strength": "150 N/cm",
+          "elongation": "14 %",
+          "temperature": "15–25 °C"
         },
         "spec_pills": [
-          "Papierträger (Kraft)",
-          "Kautschuk (Lösungsmittel)",
-          "−20 bis +70 °C"
+          "Glattes Kraftpapier (FSC-zertifiziert)",
+          "Synthesekautschuk (Hot Melt)",
+          "15–25 °C"
         ],
         "tech_variants": {},
         "tech_variant_labels": {},
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Träger / Material",
-          "thickness": "Dicke",
-          "adhesive": "Klebstofftyp",
-          "adhesion": "Haftung (Stahl)",
-          "temperature": "Temperaturbeständigkeit",
-          "strength": "Zugfestigkeit"
+          "carrier": "Träger",
+          "grammage": "Trägergrammatur",
+          "adhesive": "Klebstoff",
+          "thickness": "Gesamtdicke",
+          "adhesion": "Haftung auf Stahl",
+          "strength": "Zugfestigkeit",
+          "elongation": "Dehnung / Verlängerung",
+          "temperature": "Verarbeitungs- und Lagertemperatur"
         },
         "tech_spec": false,
+        "paper_spec": true,
         "ctas": {
           "hero": "Kalkulation mit Bedruckung",
           "tailor_link": "Ich möchte ein kostenloses Muster",
@@ -2619,6 +2757,7 @@
           "strength": "Zugfestigkeit"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -2681,6 +2820,7 @@
           "strength": "Zugfestigkeit"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -2743,6 +2883,7 @@
           "strength": "Zugfestigkeit"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -2805,6 +2946,7 @@
           "strength": "Zugfestigkeit"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -2867,6 +3009,7 @@
           "strength": "Zugfestigkeit"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -2929,6 +3072,7 @@
           "strength": "Zugfestigkeit"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -2991,6 +3135,7 @@
           "strength": "Zugfestigkeit"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -3053,6 +3198,7 @@
           "strength": "Zugfestigkeit"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -3115,6 +3261,7 @@
           "strength": "Zugfestigkeit"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -3177,6 +3324,7 @@
           "strength": "Zugfestigkeit"
         },
         "tech_spec": false,
+        "paper_spec": false,
         "ctas": {
           "hero": "Angebot anfordern",
           "tailor_link": "Unverbindlich beraten lassen",
@@ -3218,39 +3366,39 @@
     },
     "category_ctas": {
       "udrzitelne-pasky": {
-        "hero": "Öko-Band kalkulieren",
+        "hero": "Kalkulation anfordern",
         "bottom": "Nachhaltiges bedrucktes Band anfragen"
       },
       "bopp-pasky": {
-        "hero": "Kalkulation Verpackungsband",
+        "hero": "Kalkulation anfordern",
         "bottom": "BOPP-Band mit Logo anfragen"
       },
       "bopet-pasky": {
-        "hero": "Kalkulation technisches Band",
+        "hero": "Kalkulation anfordern",
         "bottom": "Maßgeschneidertes BOPET-Band anfragen"
       },
       "papirove-pasky": {
-        "hero": "Kalkulation Papierband",
+        "hero": "Kalkulation anfordern",
         "bottom": "Öko-Band mit Bedruckung anfragen"
       },
       "odstranitelne-pasky": {
-        "hero": "Angebot anfordern",
+        "hero": "Kalkulation anfordern",
         "bottom": "Abziehbares Klebeband anfragen"
       },
       "vyztuzene-pasky": {
-        "hero": "Angebot anfordern",
+        "hero": "Kalkulation anfordern",
         "bottom": "Verstärktes Klebeband anfragen"
       },
       "mopp-pasky": {
-        "hero": "Angebot anfordern",
+        "hero": "Kalkulation anfordern",
         "bottom": "MOPP-Band anfragen"
       },
       "textilni-pasky": {
-        "hero": "Angebot anfordern",
+        "hero": "Kalkulation anfordern",
         "bottom": "Gewebeband anfragen"
       },
       "malirske-pasky": {
-        "hero": "Angebot anfordern",
+        "hero": "Kalkulation anfordern",
         "bottom": "Malerklebeband anfragen"
       }
     }
