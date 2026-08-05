@@ -1352,7 +1352,7 @@ def series_note_html(note, *, compact=False):
         return ''
     margin = 'mt-6' if compact else 'mt-6 max-w-3xl'
     return (
-        '<aside class="product-series-note %s rounded-2xl border border-emerald-200/80 bg-emerald-50/90 px-5 py-4 text-left sm:px-6" data-series-note>'
+        '<aside class="product-series-note %s rounded-2xl border border-emerald-200/80 bg-emerald-50 px-5 py-4 text-left sm:px-6" data-series-note>'
         '<p class="text-sm leading-relaxed text-slate-700">%s</p>'
         '</aside>'
     ) % (margin, esc(note))
