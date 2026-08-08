@@ -1431,14 +1431,21 @@ def related_products_html(cat, current):
     if not siblings:
         return ''
     cards = []
+    punch_slugs = (
+        'airtape', 'eco-50', 'eco-80', 'eco-100', 'nopp', 'loopp', 'poly-plus', 'evergreen',
+    )
     for s in siblings:
         tagline = s['tagline']
         if len(tagline) > 100:
             tagline = tagline[:97].rstrip(' ,.;') + '…'
+        slug = s.get('slug') or ''
+        img_cls = 'related-product-card__img'
+        if any(token in slug for token in punch_slugs):
+            img_cls += ' related-product-card__img--punch'
         cards.append(
-            '''            <a href="/sortiment/%s/%s" class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all hover:-translate-y-0.5 hover:border-orange-100 hover:shadow-md">
-                <div class="flex h-36 w-full items-center justify-center overflow-hidden bg-slate-50 p-3">
-                    <img src="%s" alt="%s" loading="lazy" class="h-full w-auto max-w-full object-contain mix-blend-multiply contrast-[1.1] brightness-[1.05] transition-transform duration-300 group-hover:scale-105">
+            '''            <a href="/sortiment/%s/%s" class="related-product-card group flex h-full flex-col rounded-2xl border border-slate-100 bg-white shadow-sm hover:-translate-y-0.5 hover:border-orange-100 hover:shadow-md">
+                <div class="related-product-card__media flex items-center justify-center p-3">
+                    <img src="%s" alt="%s" loading="lazy" decoding="async" class="%s">
                 </div>
                 <div class="flex flex-1 flex-col p-4">
                     <h3 class="text-sm font-bold text-slate-900 group-hover:text-orange-700">%s</h3>
@@ -1451,6 +1458,7 @@ def related_products_html(cat, current):
                 s['slug'],
                 url(product_public_image(s)),
                 esc(s['name']),
+                img_cls,
                 esc(s['name']),
                 esc(tagline),
             )

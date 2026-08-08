@@ -416,3 +416,90 @@
 .dark .product-neutral-note .font-bold {
     color: #f8fafc;
 }
+
+/* Related products – fixed media height + no hover flash / clipped shadow */
+[data-related-products] .grid {
+    /* Room for hover lift + shadow */
+    padding: 0.35rem 0.15rem 0.85rem;
+    margin: -0.35rem -0.15rem -0.35rem;
+}
+
+.related-product-card {
+    overflow: visible;
+    background-color: #ffffff;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* Full-bleed white stage (no inset square) */
+.related-product-card__media {
+    flex: 0 0 9rem;
+    height: 9rem;
+    min-height: 9rem;
+    max-height: 9rem;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    isolation: isolate;
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+    transform: translateZ(0);
+}
+
+.related-product-card__img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: calc(9rem - 1.5rem); /* media 9rem minus padding */
+    object-fit: contain;
+    object-position: center;
+    aspect-ratio: auto;
+    mix-blend-mode: multiply;
+    filter: contrast(1.1) brightness(1.05);
+    transform: translate3d(0, 0, 0) scale(1);
+    transform-origin: center center;
+    backface-visibility: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Tall packshots – zoom without stretching */
+.related-product-card__img--punch {
+    transform: translate3d(0, 0, 0) scale(1.7);
+}
+
+.related-product-card:hover .related-product-card__img,
+.related-product-card:focus-visible .related-product-card__img {
+    transform: translate3d(0, 0, 0) scale(1.05);
+}
+
+.related-product-card:hover .related-product-card__img--punch,
+.related-product-card:focus-visible .related-product-card__img--punch {
+    transform: translate3d(0, 0, 0) scale(1.8);
+}
+
+/* Text block – slate band under the photo */
+.related-product-card > .flex.flex-1 {
+    border-radius: 0 0 1rem 1rem;
+    background-color: #f1f5f9;
+}
+
+.dark .related-product-card {
+    background-color: #1e293b;
+}
+
+.dark .related-product-card__media {
+    background-color: #ffffff !important;
+    isolation: isolate;
+}
+
+.dark .related-product-card__img {
+    mix-blend-mode: normal !important;
+    filter: contrast(1.08) brightness(1.03) saturate(1.04);
+}
+
+.dark .related-product-card > .flex.flex-1 {
+    background-color: #0f172a !important;
+}

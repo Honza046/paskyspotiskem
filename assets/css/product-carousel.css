@@ -208,14 +208,14 @@
 }
 
 .dark .product-carousel__media {
-    /* White stage so mix-blend-multiply works (same as .product-image-frame) */
-    background: #ffffff;
+    /* White stage; normal blend in dark (multiply silhouettes on navy) */
+    background: #ffffff !important;
     isolation: isolate;
 }
 
 .dark .product-carousel__img {
-    mix-blend-mode: multiply;
-    filter: contrast(1.1) brightness(1.05);
+    mix-blend-mode: normal !important;
+    filter: contrast(1.08) brightness(1.03) saturate(1.04);
 }
 
 .dark .product-carousel__dot {

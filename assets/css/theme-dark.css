@@ -349,21 +349,35 @@
 }
 
 /* --- Product / sortiment images ------------------------------------------ */
+/*
+ * Packshots use mix-blend-multiply in light mode (JPEG white disappears).
+ * In dark mode multiply often blends through the stage onto the navy page
+ * (Safari/WebKit), turning tapes into black silhouettes. Keep a white stage
+ * and force normal blending so photos stay readable everywhere.
+ */
 .product-image-frame {
     background-color: #ffffff;
 }
 
-.dark .product-image-frame {
+.dark .product-image-frame,
+.dark .related-product-card__media,
+.dark .shift-card__media,
+.dark .product-carousel__media,
+.dark #sortiment-featured .shift-card__media {
     background: #ffffff !important;
     border-color: transparent !important;
     box-shadow: none !important;
     isolation: isolate;
 }
 
-/* multiply on white stage = JPEG white vanishes, tape colors stay true */
-.dark .product-image-frame img {
-    mix-blend-mode: multiply !important;
-    filter: contrast(1.1) brightness(1.05) !important;
+.dark .product-image-frame img,
+.dark .related-product-card__img,
+.dark .shift-card__media img,
+.dark .product-carousel__img,
+.dark #sortiment-featured .shift-card__media img,
+.dark img.mix-blend-multiply {
+    mix-blend-mode: normal !important;
+    filter: contrast(1.08) brightness(1.03) saturate(1.04) !important;
 }
 
 /* Product detail – „Na míru vašemu provozu“ box */

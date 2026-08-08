@@ -765,12 +765,12 @@ html:not(.dark) body[data-page="home"] #kontakt1 > .section-edge-fade--bottom {
 }
 
 .dark #sortiment-featured .shift-card__media {
-    background: #ffffff;
+    background: #ffffff !important;
     box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.25);
 }
 
 .dark #sortiment-featured .shift-card__media img {
-    mix-blend-mode: normal;
+    mix-blend-mode: normal !important;
     filter: contrast(1.14) brightness(1.1) saturate(1.08);
 }
 
@@ -916,7 +916,12 @@ html:not(.dark) body[data-page="home"] #kontakt1 > .section-edge-fade--bottom {
 }
 
 .dark .shift-card__media {
-    background: #0f172a;
+    background: #ffffff;
+}
+
+.dark .shift-card__media img {
+    mix-blend-mode: normal;
+    filter: contrast(1.08) brightness(1.03) saturate(1.04);
 }
 
 .dark .shift-card__title {
