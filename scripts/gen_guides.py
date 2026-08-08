@@ -23,11 +23,11 @@ esc = html.escape
 GUIDES = [
     {
         "slug": "pasky-s-potiskem",
-        "title": "Pásky s potiskem",
+        "title": "Kompletní průvodce páskami s potiskem",
         "h1": "Pásky s potiskem na míru",
         "description": (
-            "Pásky s potiskem (pásky s logem): BOPP, papírové, ECO+ a speciální pásky. "
-            "Potisk až 8–10 barev, vzorky a kalkulace pro firmy a e-shopy."
+            "Pásky s potiskem a pásky s logem od výrobce ALFA IN: jak vybrat BOPP, papír, ECO+ "
+            "nebo speciální pásku, potisk až 8–10 barev, vzorky a kalkulace pro firmy a e-shopy."
         ),
         "intro": (
             "Hledáte pásky s potiskem pro firmu, e-shop nebo sklad? Nabízíme lepicí pásky s logem "
