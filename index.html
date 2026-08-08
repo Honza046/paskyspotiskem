@@ -45,16 +45,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/logo-carousel.css?v=28">
+    <link rel="stylesheet" href="/assets/css/product-carousel.css?v=7">
     <link rel="stylesheet" href="/assets/css/privacy-modal.css">
-    <link rel="stylesheet" href="/assets/css/theme-dark.css?v=14">
+    <link rel="stylesheet" href="/assets/css/theme-dark.css?v=18">
     <link rel="stylesheet" href="/assets/css/faq.css?v=3">
-    <link rel="stylesheet" href="/assets/css/info-banner.css?v=17">
+    <link rel="stylesheet" href="/assets/css/info-banner.css?v=19">
     <link rel="stylesheet" href="/assets/css/tw.css?v=2">
 
-    <link rel="stylesheet" href="/assets/css/glass.css?v=14">
+    <link rel="stylesheet" href="/assets/css/glass.css?v=17">
     <link rel="stylesheet" href="/assets/css/inquiry-dropdown.css?v=6">
     <link rel="stylesheet" href="/assets/css/reference-stats.css?v=6">
-    <link rel="stylesheet" href="/assets/css/cult-effects.css?v=53">
+    <link rel="stylesheet" href="/assets/css/cult-effects.css?v=60">
     <style>
         html { scroll-behavior: auto; scroll-padding-top: var(--site-top-height, 7.75rem); overscroll-behavior-y: none; }
         #uvod {
@@ -476,53 +477,110 @@
 </section>
 
 <!-- NEJŽÁDANĚJŠÍ PÁSKY S POTISKEM -->
-<section id="nabidka" class="relative border-t border-slate-100 bg-white">
+<section id="nabidka" class="relative bg-white">
+    <div class="section-edge-fade section-edge-fade--top" aria-hidden="true"></div>
     <div class="mx-auto max-w-7xl px-4 py-16 md:py-20">
-        <div class="mb-10 max-w-3xl">
-            <p class="mb-3 text-sm font-bold uppercase tracking-widest text-orange-600">Sortiment</p>
-            <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Nejžádanější pásky s potiskem</h2>
-            <p class="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">Rychlý výběr materiálů, které firmy a e-shopy poptávají nejčastěji — od klasické BOPP až po ECO+ a papír.</p>
+        <div class="product-carousel" data-product-carousel>
+            <div class="product-carousel__toolbar">
+                <div class="product-carousel__toolbar-copy">
+                    <p class="mb-3 text-sm font-bold uppercase tracking-widest text-orange-600">Sortiment</p>
+                    <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Nejžádanější pásky s potiskem</h2>
+                    <p class="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">Rychlý výběr materiálů, které firmy a e-shopy poptávají nejčastěji: od klasické BOPP až po ECO+ a papír.</p>
+                </div>
+            </div>
+            <div class="product-carousel__viewport" data-carousel-track tabindex="0" aria-label="Nejžádanější pásky s potiskem">
+                <a href="/sortiment/bopp-pasky/bopp-paska-hot-melt" class="product-carousel__slide group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all hover:-translate-y-0.5 hover:border-orange-100 hover:shadow-md">
+                    <div class="product-carousel__media">
+                        <picture class="product-carousel__picture">
+                            <source srcset="/images/products/bopp-paska-hot-melt.webp" type="image/webp">
+                            <img src="/images/products/bopp-paska-hot-melt.jpg" alt="BOPP páska HOT MELT s potiskem" loading="lazy" width="320" height="160" class="product-carousel__img">
+                        </picture>
+                    </div>
+                    <div class="product-carousel__body">
+                        <h3 class="text-sm font-bold text-slate-900 group-hover:text-orange-700 sm:text-base">BOPP HOT MELT</h3>
+                        <p class="mt-1 flex-1 text-xs leading-relaxed text-slate-600 sm:text-sm">Rychlá lepivost pro sklady a expedici</p>
+                        <span class="mt-2 text-xs font-semibold text-orange-600">Zobrazit detail →</span>
+                    </div>
+                </a>
+                <a href="/sortiment/bopp-pasky/bopp-paska-acrylic" class="product-carousel__slide group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all hover:-translate-y-0.5 hover:border-orange-100 hover:shadow-md">
+                    <div class="product-carousel__media">
+                        <picture class="product-carousel__picture">
+                            <source srcset="/images/products/bopp-paska-acrylic.webp" type="image/webp">
+                            <img src="/images/products/bopp-paska-acrylic.jpg" alt="BOPP páska Akryl s potiskem" loading="lazy" width="320" height="160" class="product-carousel__img">
+                        </picture>
+                    </div>
+                    <div class="product-carousel__body">
+                        <h3 class="text-sm font-bold text-slate-900 group-hover:text-orange-700 sm:text-base">BOPP Akryl</h3>
+                        <p class="mt-1 flex-1 text-xs leading-relaxed text-slate-600 sm:text-sm">Tiché odvíjení a UV stabilita</p>
+                        <span class="mt-2 text-xs font-semibold text-orange-600">Zobrazit detail →</span>
+                    </div>
+                </a>
+                <a href="/sortiment/papirove-pasky/papirova-paska-c680" class="product-carousel__slide group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all hover:-translate-y-0.5 hover:border-orange-100 hover:shadow-md">
+                    <div class="product-carousel__media">
+                        <picture class="product-carousel__picture">
+                            <source srcset="/images/products/papirova-paska-c680.webp" type="image/webp">
+                            <img src="/images/products/papirova-paska-c680.jpg" alt="Papírová páska C680 FSC s potiskem" loading="lazy" width="320" height="160" class="product-carousel__img">
+                        </picture>
+                    </div>
+                    <div class="product-carousel__body">
+                        <h3 class="text-sm font-bold text-slate-900 group-hover:text-orange-700 sm:text-base">Papírové FSC pásky</h3>
+                        <p class="mt-1 flex-1 text-xs leading-relaxed text-slate-600 sm:text-sm">Recyklace spolu s kartonem</p>
+                        <span class="mt-2 text-xs font-semibold text-orange-600">Zobrazit detail →</span>
+                    </div>
+                </a>
+                <a href="/sortiment/udrzitelne-pasky/udrzitelna-paska-eco-100" class="product-carousel__slide group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all hover:-translate-y-0.5 hover:border-orange-100 hover:shadow-md">
+                    <div class="product-carousel__media">
+                        <picture class="product-carousel__picture">
+                            <source srcset="/images/products/udrzitelna-paska-eco-100.webp" type="image/webp">
+                            <img src="/images/products/udrzitelna-paska-eco-100.jpg" alt="Udržitelná páska ECO+ 100 s potiskem" loading="lazy" width="320" height="160" class="product-carousel__img product-carousel__img--punch">
+                        </picture>
+                    </div>
+                    <div class="product-carousel__body">
+                        <h3 class="text-sm font-bold text-slate-900 group-hover:text-orange-700 sm:text-base">ECO+ 100</h3>
+                        <p class="mt-1 flex-1 text-xs leading-relaxed text-slate-600 sm:text-sm">100% regenerovaná BOPP fólie</p>
+                        <span class="mt-2 text-xs font-semibold text-orange-600">Zobrazit detail →</span>
+                    </div>
+                </a>
+                <a href="/sortiment/bopp-pasky/bopp-paska-tamper-evident" class="product-carousel__slide group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all hover:-translate-y-0.5 hover:border-orange-100 hover:shadow-md">
+                    <div class="product-carousel__media">
+                        <picture class="product-carousel__picture">
+                            <source srcset="/images/products/bopp-paska-tamper-evident.webp" type="image/webp">
+                            <img src="/images/products/bopp-paska-tamper-evident.jpg" alt="Bezpečnostní páska Tamper Evident s potiskem" loading="lazy" width="320" height="160" class="product-carousel__img">
+                        </picture>
+                    </div>
+                    <div class="product-carousel__body">
+                        <h3 class="text-sm font-bold text-slate-900 group-hover:text-orange-700 sm:text-base">Tamper Evident</h3>
+                        <p class="mt-1 flex-1 text-xs leading-relaxed text-slate-600 sm:text-sm">Bezpečnostní páska s VOID efektem</p>
+                        <span class="mt-2 text-xs font-semibold text-orange-600">Zobrazit detail →</span>
+                    </div>
+                </a>
+                <a href="/sortiment/udrzitelne-pasky/udrzitelna-paska-nopp" class="product-carousel__slide group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all hover:-translate-y-0.5 hover:border-orange-100 hover:shadow-md">
+                    <div class="product-carousel__media">
+                        <picture class="product-carousel__picture">
+                            <source srcset="/images/products/udrzitelna-paska-nopp.webp" type="image/webp">
+                            <img src="/images/products/udrzitelna-paska-nopp.jpg" alt="NOPP páska ISCC PLUS s potiskem" loading="lazy" width="320" height="160" class="product-carousel__img product-carousel__img--punch">
+                        </picture>
+                    </div>
+                    <div class="product-carousel__body">
+                        <h3 class="text-sm font-bold text-slate-900 group-hover:text-orange-700 sm:text-base">NOPP / ISCC PLUS</h3>
+                        <p class="mt-1 flex-1 text-xs leading-relaxed text-slate-600 sm:text-sm">Bio-cirkulární nosič z obnovitelných surovin</p>
+                        <span class="mt-2 text-xs font-semibold text-orange-600">Zobrazit detail →</span>
+                    </div>
+                </a>
+            </div>
+            <div class="product-carousel__dots" data-carousel-dots aria-label="Stránky karuselu"></div>
         </div>
-        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <a href="/sortiment/bopp-pasky/bopp-paska-hot-melt" class="rounded-2xl border border-slate-100 bg-slate-50 p-5 transition hover:border-orange-200 hover:bg-white hover:shadow-md">
-                <h3 class="font-bold text-slate-900">BOPP HOT MELT</h3>
-                <p class="mt-2 text-sm text-slate-600">Rychlá lepivost pro sklady a expedici</p>
-            </a>
-            <a href="/sortiment/bopp-pasky/bopp-paska-acrylic" class="rounded-2xl border border-slate-100 bg-slate-50 p-5 transition hover:border-orange-200 hover:bg-white hover:shadow-md">
-                <h3 class="font-bold text-slate-900">BOPP Akryl</h3>
-                <p class="mt-2 text-sm text-slate-600">Tiché odvíjení a UV stabilita</p>
-            </a>
-            <a href="/sortiment/papirove-pasky" class="rounded-2xl border border-slate-100 bg-slate-50 p-5 transition hover:border-orange-200 hover:bg-white hover:shadow-md">
-                <h3 class="font-bold text-slate-900">Papírové FSC pásky</h3>
-                <p class="mt-2 text-sm text-slate-600">Recyklace spolu s kartonem</p>
-            </a>
-            <a href="/sortiment/udrzitelne-pasky/udrzitelna-paska-eco-100" class="rounded-2xl border border-slate-100 bg-slate-50 p-5 transition hover:border-orange-200 hover:bg-white hover:shadow-md">
-                <h3 class="font-bold text-slate-900">ECO+ 100</h3>
-                <p class="mt-2 text-sm text-slate-600">100% regenerovaná BOPP fólie</p>
-            </a>
-            <a href="/sortiment/bopp-pasky/bopp-paska-tamper-evident" class="rounded-2xl border border-slate-100 bg-slate-50 p-5 transition hover:border-orange-200 hover:bg-white hover:shadow-md">
-                <h3 class="font-bold text-slate-900">Tamper Evident</h3>
-                <p class="mt-2 text-sm text-slate-600">Bezpečnostní páska s VOID efektem</p>
-            </a>
-            <a href="/sortiment/udrzitelne-pasky/udrzitelna-paska-nopp" class="rounded-2xl border border-slate-100 bg-slate-50 p-5 transition hover:border-orange-200 hover:bg-white hover:shadow-md">
-                <h3 class="font-bold text-slate-900">NOPP / ISCC PLUS</h3>
-                <p class="mt-2 text-sm text-slate-600">Bio-cirkulární nosič z obnovitelných surovin</p>
-            </a>
-            <a href="/pruvodce/hot-melt-vs-akryl" class="rounded-2xl border border-slate-100 bg-slate-50 p-5 transition hover:border-orange-200 hover:bg-white hover:shadow-md">
-                <h3 class="font-bold text-slate-900">HOT MELT vs Akryl</h3>
-                <p class="mt-2 text-sm text-slate-600">Průvodce výběrem lepidla</p>
-            </a>
-            <a href="/pruvodce/pasky-s-potiskem" class="rounded-2xl border border-slate-100 bg-slate-50 p-5 transition hover:border-orange-200 hover:bg-white hover:shadow-md">
-                <h3 class="font-bold text-slate-900">Průvodce páskami s potiskem</h3>
-                <p class="mt-2 text-sm text-slate-600">Kompletní přehled od ALFA IN / Petrák</p>
-            </a>
+        <div class="product-carousel__more mt-8 flex flex-wrap items-center">
+            <a href="/sortiment" class="mr-6 mb-2 inline-flex items-center gap-1 text-sm font-bold text-orange-600 hover:text-orange-700">Celý sortiment pásek s potiskem →</a>
+            <a href="/pruvodce/hot-melt-vs-akryl" class="mr-6 mb-2 text-sm font-semibold text-slate-500 hover:text-orange-600">HOT MELT vs Akryl</a>
+            <a href="/pruvodce/pasky-s-potiskem" class="mb-2 text-sm font-semibold text-slate-500 hover:text-orange-600">Průvodce páskami</a>
         </div>
-        <a href="/sortiment" class="mt-8 inline-flex items-center gap-1 text-sm font-bold text-orange-600 hover:text-orange-700">Celý sortiment pásek s potiskem →</a>
     </div>
+    <div class="section-edge-fade section-edge-fade--bottom" aria-hidden="true"></div>
 </section>
 
 <!-- FORMULÁŘ: MULTI-STEP -->
-<section id="gf_1" class="relative bg-white">
+<section id="gf_1" class="relative">
     <div class="section-edge-fade section-edge-fade--top" aria-hidden="true"></div>
     <div class="mx-auto max-w-7xl px-4 pt-16 pb-28 md:pt-20 md:pb-32">
     <div id="form-outer-head" class="mb-8 text-center">
@@ -804,10 +862,12 @@
         <a href="https://www.alfain.eu/s99-kontakt" target="_blank" rel="noopener" class="inline-flex items-center rounded-full bg-gradient-to-r from-orange-600 to-amber-500 px-6 py-3 text-sm font-bold text-white shadow-md transition-all hover:scale-[1.02] hover:shadow-lg" data-i18n="footer.more_contacts">Další kontakty</a>
     </div>
     </div>
+    <div class="section-edge-fade section-edge-fade--bottom" aria-hidden="true"></div>
 </section>
 
 <!-- FAQ -->
 <section id="faq" class="relative">
+    <div class="section-edge-fade section-edge-fade--top" aria-hidden="true"></div>
     <div class="mx-auto max-w-3xl px-4 py-20">
         <div class="mb-10 text-center">
             <p class="mb-3 text-sm font-bold uppercase tracking-widest text-orange-600" data-i18n="home.faq.label">Rady před objednávkou</p>
@@ -1527,17 +1587,18 @@
 })();
 </script>
 <script src="/assets/js/cult-effects.js?v=4"></script>
+<script src="/assets/js/product-carousel.js?v=6"></script>
 <script src="/assets/js/faq.js?v=3"></script>
 <script src="/assets/js/inquiry-dropdown.js?v=3"></script>
 <script src="/assets/js/i18n.js?v=45"></script>
-<script src="/assets/js/i18n-pages.js?v=32"></script>
+<script src="/assets/js/i18n-pages.js?v=34"></script>
 <script src="/assets/js/inquiry-material-picker.js?v=5"></script>
 <script src="/assets/js/inquiry-form.js?v=5"></script>
-<script src="/assets/js/nav-active.js"></script>
+<script src="/assets/js/nav-active.js?v=4"></script>
 <link rel="stylesheet" href="/assets/css/footer-credit.css?v=3">
 <script src="/assets/js/footer-credit.js?v=5"></script>
 <script src="/assets/js/mobile-nav.js"></script>
-<script src="/assets/js/header-scroll.js?v=17"></script>
+<script src="/assets/js/header-scroll.js?v=19"></script>
 <script src="/assets/js/info-banner.js?v=2"></script>
 <script src="/assets/js/privacy-modal.js"></script>
 <script src="/assets/js/theme-toggle.js"></script>

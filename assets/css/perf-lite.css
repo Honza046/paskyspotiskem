@@ -9,13 +9,6 @@ html.perf-lite .info-banner__message {
 }
 
 html.perf-lite header.site-header,
-html.perf-lite .site-header,
-html.perf-lite .site-header-shell,
-html.perf-lite .site-header-shell > .site-header {
-    transition: none !important;
-}
-
-html.perf-lite header.site-header,
 html.perf-lite header.site-header #mobile-nav {
     -webkit-backdrop-filter: none !important;
     backdrop-filter: none !important;
@@ -143,8 +136,3 @@ html.perf-lite .glass--chip {
     transition-duration: 0.15s;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .site-header-shell {
-        transition: none;
-    }
-}

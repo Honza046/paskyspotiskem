@@ -8,7 +8,7 @@
     "gallery_description": "Ukázky lepicích pásek s potiskem: loga firem, bezpečnostní pásky, eko varianty a speciální tisky. Inspirace pro vaši pásku s potiskem na míru.",
     "sortiment_title": "Sortiment lepicích pásek | Pásky s potiskem",
     "sortiment_description": "Kompletní sortiment lepicích pásek s potiskem: BOPP, BOPET, papírové, eko a speciální pásky. Vyberte materiál a poptávejte pásku na míru od výrobce ALFA IN.",
-    "faq_title": "Časté otázky k páskám s potiskem | FAQ ALFA IN",
+    "faq_title": "FAQ | Pásky s potiskem: otázky a odpovědi",
     "faq_description": "Časté otázky k páskám s potiskem: minimální odběr, dodací lhůty, HOT MELT vs Akryl, potisk, vzorky a doprava. Odpovědi od výrobce ALFA IN.",
     "langNames": {
       "cs": "Čeština",
@@ -298,7 +298,7 @@
   },
   "faq": {
     "label": "Časté dotazy",
-    "title": "Časté otázky k páskám s potiskem",
+    "title": "Otázky a odpovědi",
     "subtitle": "Najděte odpověď na potisk, termíny, lepidla i vzorky. Filtrujte podle tématu nebo hledejte klíčové slovo.",
     "hero_cta": "Napsat zprávu",
     "search_label": "Hledat v otázkách",
@@ -3550,6 +3550,7 @@
       "back_to_sortiment": "Zpět na sortiment",
       "back_to_category": "Zpět na kategorii",
       "back_to_category_short": "Zpět na {category}",
+      "related_heading": "Další pásky z kategorie {category}",
       "params_note": "Uvedené hodnoty jsou orientační a mohou se lišit podle konkrétní šířky, návinu a provedení. Rádi vám připravíme přesnou specifikaci na míru.",
       "tailor_title": "Na míru vašemu provozu",
       "tailor_bullet_width": "Volitelná šířka a délka návinu",

@@ -24,6 +24,7 @@ def collect_urls() -> list[tuple[str, str, str]]:
         ('/pruvodce/pasky-pro-e-shopy', 'monthly', '0.8'),
         ('/pruvodce/papirove-fsc-pasky', 'monthly', '0.75'),
         ('/pruvodce/eco-plus-recyklovane-pasky', 'monthly', '0.75'),
+        ('/pruvodce/bezpecnostni-tamper-evident', 'monthly', '0.75'),
     ]
     sortiment_root = ROOT / 'sortiment'
     if sortiment_root.is_dir():

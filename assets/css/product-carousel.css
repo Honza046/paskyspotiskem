@@ -1,0 +1,235 @@
+/**
+ * Homepage product carousel (#nabidka) – one row, ~4 visible, dots + autoplay.
+ */
+
+.product-carousel {
+    position: relative;
+}
+
+.product-carousel__toolbar {
+    margin-bottom: 1.5rem;
+}
+
+.product-carousel__toolbar-copy {
+    max-width: 48rem;
+}
+
+.product-carousel__viewport {
+    display: flex;
+    align-items: stretch;
+    gap: 1.25rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Room for hover lift + shadow (overflow-x would otherwise clip it) */
+    padding: 0.4rem 0.2rem 1rem;
+    margin: -0.4rem -0.2rem -0.35rem;
+}
+
+.product-carousel__viewport::-webkit-scrollbar {
+    display: none;
+}
+
+.product-carousel__slide {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc((100% - 3 * 1.25rem) / 4);
+    scroll-snap-align: start;
+    min-width: 0;
+    min-height: 17rem;
+    height: auto;
+    align-self: stretch;
+    /* Don't clip box-shadow (Tailwind overflow-hidden on the card) */
+    overflow: visible;
+}
+
+.product-carousel__media {
+    position: relative;
+    display: flex;
+    flex: 0 0 9rem;
+    align-items: center;
+    justify-content: center;
+    height: 9rem;
+    overflow: hidden;
+    background: #f8fafc;
+    padding: 0.75rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.product-carousel__picture {
+    position: absolute;
+    inset: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-carousel__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    max-width: none;
+    object-fit: contain;
+    object-position: center;
+    mix-blend-mode: multiply;
+    transform-origin: center center;
+    transition: transform 0.3s ease;
+}
+
+/* Tall packshots with lots of empty canvas (ECO+, NOPP) – zoom to match other rolls */
+.product-carousel__img--punch {
+    transform: scale(2.05);
+}
+
+.product-carousel__slide:hover .product-carousel__img {
+    transform: scale(1.05);
+}
+
+.product-carousel__slide:hover .product-carousel__img--punch {
+    transform: scale(2.15);
+}
+
+.product-carousel__body {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-height: 6.75rem;
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    background: inherit;
+}
+
+.product-carousel__dots {
+    --pc-dot-track: 0.5rem;
+    --pc-dot-idle: 0.5rem;
+    --pc-dot-pick: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+    min-height: 1.5rem;
+}
+
+.product-carousel__dot {
+    position: relative;
+    box-sizing: border-box;
+    height: var(--pc-dot-track);
+    width: var(--pc-dot-idle);
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 9999px;
+    border: 0;
+    padding: 0;
+    background: rgba(148, 163, 184, 0.55);
+    transition: width 0.22s ease, height 0.22s ease, background-color 0.22s ease;
+}
+
+.product-carousel__dot.is-active {
+    width: 2.25rem;
+    background: rgba(234, 88, 12, 0.22);
+}
+
+.product-carousel__dot-fill {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 0;
+    height: 100%;
+    border-radius: 9999px;
+    background: #ea580c;
+}
+
+.product-carousel__dot.is-active .product-carousel__dot-fill.is-filling {
+    animation: product-carousel-dot-fill 4.5s linear forwards;
+}
+
+@keyframes product-carousel-dot-fill {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .product-carousel__dots {
+        gap: 0.625rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .product-carousel__dot {
+        cursor: pointer;
+    }
+
+    .product-carousel__dot::before {
+        content: '';
+        position: absolute;
+        inset: -0.625rem;
+    }
+
+    .product-carousel__dots.is-picking .product-carousel__dot {
+        width: var(--pc-dot-pick);
+        height: var(--pc-dot-pick);
+        background: rgba(148, 163, 184, 0.55);
+    }
+
+    .product-carousel__dots.is-picking .product-carousel__dot.is-active {
+        background: #ea580c;
+    }
+
+    .product-carousel__dots.is-picking .product-carousel__dot-fill {
+        /* Keep progress visible but paused while picking */
+        animation-play-state: paused;
+    }
+
+    .product-carousel__dots.is-picking .product-carousel__dot:not(.is-active):hover,
+    .product-carousel__dots.is-picking .product-carousel__dot:not(.is-active):focus-visible {
+        background: rgba(100, 116, 139, 0.85);
+    }
+}
+
+@media (max-width: 1023px) {
+    .product-carousel__slide {
+        flex-basis: calc((100% - 1.25rem) / 2);
+    }
+}
+
+@media (max-width: 639px) {
+    .product-carousel__slide {
+        flex-basis: min(78%, 18rem);
+    }
+
+    .product-carousel__media {
+        flex-basis: 8rem;
+        height: 8rem;
+    }
+}
+
+.dark .product-carousel__media {
+    /* White stage so mix-blend-multiply works (same as .product-image-frame) */
+    background: #ffffff;
+    isolation: isolate;
+}
+
+.dark .product-carousel__img {
+    mix-blend-mode: multiply;
+    filter: contrast(1.1) brightness(1.05);
+}
+
+.dark .product-carousel__dot {
+    background: rgba(148, 163, 184, 0.35);
+}
+
+.dark .product-carousel__dot.is-active {
+    background: rgba(251, 146, 60, 0.28);
+}
+
+.dark .product-carousel__dot-fill {
+    background: #fb923c;
+}
+
+.dark .product-carousel__dots.is-picking .product-carousel__dot.is-active {
+    background: #fb923c;
+}

@@ -20,7 +20,11 @@
         }
         var style = document.createElement('style');
         style.id = STYLE_ID;
-        style.textContent = '#main-nav a.is-active,#mobile-nav a.is-active{color:#ea580c!important}';
+        style.textContent =
+            '#main-nav a.is-active,#mobile-nav a.is-active,' +
+            '.dark #main-nav a.is-active,.dark #mobile-nav a.is-active,' +
+            'html.dark #main-nav a.is-active,html.dark #mobile-nav a.is-active' +
+            '{color:#ea580c!important}';
         document.head.appendChild(style);
     }
 
@@ -42,6 +46,9 @@
         }
         if (/galerie/i.test(href)) {
             return 'gallery';
+        }
+        if (/pruvodce/i.test(href)) {
+            return 'guides';
         }
         if (/sortiment/i.test(href)) {
             return 'sortiment';
@@ -70,6 +77,9 @@
         if (dataPage === 'gallery') {
             return 'gallery';
         }
+        if (dataPage === 'pruvodce' || dataPage === 'guides') {
+            return 'guides';
+        }
         if (dataPage === 'sortiment') {
             return 'sortiment';
         }
@@ -86,6 +96,9 @@
         }
         if (/galerie/i.test(path)) {
             return 'gallery';
+        }
+        if (/pruvodce/i.test(path)) {
+            return 'guides';
         }
         if (/sortiment/i.test(path)) {
             return 'sortiment';
@@ -105,7 +118,19 @@
     function setActive(key) {
         allNavLinks().forEach(function (link) {
             var linkKey = navKeyFromHref(link.getAttribute('href'));
-            link.classList.toggle('is-active', linkKey === key);
+            var on = linkKey === key;
+            link.classList.toggle('is-active', on);
+            if (on) {
+                link.classList.remove('text-slate-700', 'text-slate-800');
+                link.classList.add('text-orange-600');
+            } else if (link.classList.contains('text-orange-600') && !link.hasAttribute('data-nav-permanent-active')) {
+                link.classList.remove('text-orange-600');
+                if (link.closest('#mobile-nav')) {
+                    link.classList.add('text-slate-800');
+                } else {
+                    link.classList.add('text-slate-700');
+                }
+            }
         });
     }
 

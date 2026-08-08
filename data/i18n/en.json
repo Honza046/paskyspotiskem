@@ -3549,6 +3549,7 @@
       "back_to_sortiment": "Back to product range",
       "back_to_category": "Back to category",
       "back_to_category_short": "Back to {category}",
+      "related_heading": "More tapes from {category}",
       "params_note": "The stated values are indicative and may vary depending on the specific width, roll length and version. We will be happy to prepare an exact specification tailored to your requirements.",
       "tailor_title": "Tailored to your operation",
       "tailor_bullet_width": "Custom width and roll length",

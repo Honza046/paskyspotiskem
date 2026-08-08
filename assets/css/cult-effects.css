@@ -51,8 +51,17 @@ body::-webkit-scrollbar {
     background-clip: text;
 }
 
-#hero-title.gradient-heading {
-    background: linear-gradient(135deg, #ffffff 0%, #fed7aa 42%, #ffffff 88%);
+/* Hero sits on a dark photo overlay — keep the orange accent, but light enough to read */
+#uvod .gradient-heading {
+    background: linear-gradient(135deg, #ffffff 0%, #fdba74 38%, #fb923c 72%, #fff7ed 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.45));
+}
+
+#uvod #hero-headline.gradient-heading {
+    background: linear-gradient(135deg, #ffedd5 0%, #fb923c 55%, #fdba74 100%);
     -webkit-background-clip: text;
     background-clip: text;
 }
@@ -226,9 +235,37 @@ section.border-t.border-slate-100 {
     color: #ffffff !important;
 }
 
-/* Výhody → Poptávka (page → elevated) */
-#gf_1 > .section-edge-fade--top {
+/* Výhody → Nabídka / Nabídka → Poptávka */
+#nabidka > .section-edge-fade--top {
     --edge-fade-color: var(--page-bg);
+    height: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    #nabidka > .section-edge-fade--top {
+        height: 3rem;
+    }
+}
+
+#nabidka > .section-edge-fade--bottom {
+    --edge-fade-color: var(--page-bg);
+    height: 3.25rem;
+}
+
+@media (min-width: 768px) {
+    #nabidka > .section-edge-fade--bottom {
+        height: 4rem;
+    }
+}
+
+#nabidka .mx-auto {
+    position: relative;
+    z-index: 11;
+}
+
+/* Nabídka → Poptávka (elevated → muted / page → elevated) */
+#gf_1 > .section-edge-fade--top {
+    --edge-fade-color: var(--elevated-bg);
     height: 3.25rem;
 }
 
@@ -322,15 +359,104 @@ html:not(.dark) body[data-page="home"] #vyhody {
     background-color: var(--home-band-muted);
 }
 
-html:not(.dark) body[data-page="home"] #gf_1 {
+html:not(.dark) body[data-page="home"] #nabidka {
     background-color: var(--home-band-elevated);
+}
+
+html:not(.dark) body[data-page="home"] #gf_1 {
+    background-color: var(--home-band-muted);
+}
+
+html:not(.dark) body[data-page="home"] #kontakt1 {
+    background-color: var(--home-band-elevated);
+}
+
+html:not(.dark) body[data-page="home"] #faq {
+    background-color: var(--home-band-muted);
 }
 
 html:not(.dark) body[data-page="home"] #reference > .section-edge-fade--bottom,
 html:not(.dark) body[data-page="home"] #udrzitelnost > .section-edge-fade--top,
 html:not(.dark) body[data-page="home"] #udrzitelnost > .section-edge-fade--bottom,
-html:not(.dark) body[data-page="home"] #gf_1 > .section-edge-fade--top {
+html:not(.dark) body[data-page="home"] #nabidka > .section-edge-fade--top {
     --edge-fade-color: var(--home-band-muted);
+}
+
+html:not(.dark) body[data-page="home"] #nabidka > .section-edge-fade--bottom,
+html:not(.dark) body[data-page="home"] #gf_1 > .section-edge-fade--top {
+    --edge-fade-color: var(--home-band-elevated);
+}
+
+html:not(.dark) body[data-page="home"] #gf_1 > .section-edge-fade--bottom,
+html:not(.dark) body[data-page="home"] #faq > .section-edge-fade--top {
+    --edge-fade-color: var(--home-band-elevated);
+}
+
+html:not(.dark) body[data-page="home"] #kontakt1 > .section-edge-fade--bottom {
+    --edge-fade-color: var(--home-band-muted);
+}
+
+/* Dark: nabídka (světlejší) → poptávka (tmavší) → tým (světlejší) → … → footer (tmavší) */
+.dark body[data-page="home"] #nabidka,
+.dark body[data-page="home"] #kontakt1 {
+    background-color: var(--elevated-bg);
+}
+
+.dark body[data-page="home"] #gf_1,
+.dark body[data-page="home"] #faq,
+.dark body[data-page="home"] #vzorek-zdarma {
+    background-color: var(--page-bg);
+}
+
+.dark body[data-page="home"] #nabidka > .section-edge-fade--top {
+    --edge-fade-color: var(--page-bg);
+}
+
+.dark body[data-page="home"] #nabidka > .section-edge-fade--bottom,
+.dark body[data-page="home"] #gf_1 > .section-edge-fade--top {
+    --edge-fade-color: var(--elevated-bg);
+}
+
+.dark body[data-page="home"] #gf_1 > .section-edge-fade--bottom {
+    --edge-fade-color: var(--elevated-bg);
+}
+
+.dark body[data-page="home"] #kontakt1 > .section-edge-fade--bottom,
+.dark body[data-page="home"] #faq > .section-edge-fade--top {
+    --edge-fade-color: var(--elevated-bg);
+}
+
+/* Tým → FAQ */
+#kontakt1 > .section-edge-fade--bottom {
+    --edge-fade-color: var(--page-bg);
+    height: 3.25rem;
+}
+
+@media (min-width: 768px) {
+    #kontakt1 > .section-edge-fade--bottom {
+        height: 4rem;
+    }
+}
+
+#kontakt1 > .mx-auto {
+    position: relative;
+    z-index: 11;
+}
+
+#faq > .section-edge-fade--top {
+    --edge-fade-color: var(--elevated-bg);
+    height: 3.25rem;
+}
+
+@media (min-width: 768px) {
+    #faq > .section-edge-fade--top {
+        height: 4rem;
+    }
+}
+
+#faq > .mx-auto {
+    position: relative;
+    z-index: 11;
 }
 
 /* Udržitelnost: same short washes as Reference / formulář */

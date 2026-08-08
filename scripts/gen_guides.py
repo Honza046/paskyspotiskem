@@ -24,21 +24,20 @@ GUIDES = [
     {
         "slug": "pasky-s-potiskem",
         "title": "Pásky s potiskem",
-        "h1": "Pásky s potiskem na míru od výrobce ALFA IN",
+        "h1": "Pásky s potiskem na míru",
         "description": (
-            "Pásky s potiskem (pásky s logem) od ALFA IN / Petrák: BOPP, papírové, ECO+ a speciální pásky. "
+            "Pásky s potiskem (pásky s logem): BOPP, papírové, ECO+ a speciální pásky. "
             "Potisk až 8–10 barev, vzorky a kalkulace pro firmy a e-shopy."
         ),
         "intro": (
-            "Hledáte pásky s potiskem pro firmu, e-shop nebo sklad? ALFA IN vyrábí lepicí pásky s logem "
-            "na míru — od klasické BOPP přes papírové FSC až po udržitelné ECO+, NOPP a bezpečnostní Tamper Evident. "
-            "Kontaktovat můžete také přímo Karla nebo Vojtěcha Petráka."
+            "Hledáte pásky s potiskem pro firmu, e-shop nebo sklad? Nabízíme lepicí pásky s logem "
+            "na míru: od klasické BOPP přes papírové FSC až po udržitelné ECO+, NOPP a bezpečnostní Tamper Evident."
         ),
         "sections": [
             (
                 "Proč pásky s potiskem",
                 "Potištěná páska uzavírá karton a zároveň branduje zásilku. Logo, slogan nebo instrukce "
-                "cestují s balíkem až k zákazníkovi — levnější a odolnější než mnoho jiných brandingových prvků.",
+                "cestují s balíkem až k zákazníkovi. Levnější a odolnější než mnoho jiných brandingových prvků.",
             ),
             (
                 "Jak vybrat materiál",
@@ -47,7 +46,7 @@ GUIDES = [
                 "HOT MELT vs Akryl.",
             ),
             (
-                "Minimální odběr a výroba",
+                "Minimální odběr a dodání",
                 "U BOPP typicky od 360 ks (Akryl) nebo 504 ks (HOT MELT). Dodání obvykle 3–4 týdny od schválení "
                 "grafiky. Vzorky vybraných materiálů zasíláme zdarma.",
             ),
@@ -63,12 +62,12 @@ GUIDES = [
         "faqs": [
             (
                 "Co jsou pásky s potiskem?",
-                "Lepicí balicí pásky s firemním logem nebo textem — vyrábíme je flexotiskem až 8 barev "
+                "Lepicí balicí pásky s firemním logem nebo textem s potiskem flexotiskem až 8 barev "
                 "a rototiskem až 10 barev.",
             ),
             (
-                "Kdo vyrábí pásky s potiskem ALFA IN?",
-                "Výrobce ALFA IN a.s. Obchodně vás provedou Ing. Karel Petrák a Vojtěch Petrák.",
+                "Jak pásky s potiskem objednat?",
+                "Stačí nezávazná poptávka: materiál, šířka, potisk a množství. Připravíme kalkulaci a grafický návrh.",
             ),
         ],
     },
@@ -82,7 +81,7 @@ GUIDES = [
         ),
         "intro": (
             "Nejčastější otázka při výběru BOPP pásky s potiskem: HOT MELT, nebo Akryl? "
-            "Obě lepidla drží karton — liší se chováním v chladu, hlukem při odvíjení a odolností vůči UV."
+            "Obě lepidla drží karton. Liší se chováním v chladu, hlukem při odvíjení a odolností vůči UV."
         ),
         "sections": [
             (
@@ -140,7 +139,7 @@ GUIDES = [
             ),
             (
                 "Bezpečnost zásilky",
-                "Tamper Evident páska s potiskem zanechá při odlepení VOID stopu — vhodné pro elektroniku, "
+                "Tamper Evident páska s potiskem zanechá při odlepení VOID stopu, vhodné pro elektroniku, "
                 "kosmetiku a vyšší hodnotu zboží.",
             ),
         ],
@@ -159,7 +158,7 @@ GUIDES = [
         "h1": "Papírové FSC pásky s potiskem",
         "description": (
             "Papírové pásky s potiskem a FSC nosičem: recyklace s kartonem, kraftový vzhled, "
-            "varianty C680, KH80, KS165 a další od ALFA IN."
+            "varianty C680, KH80, KS165 a další."
         ),
         "intro": (
             "Papírová páska s potiskem je volba pro značky, které chtějí balení bez plastové fólie. "
@@ -194,7 +193,7 @@ GUIDES = [
         ),
         "intro": (
             "Udržitelná páska s potiskem nemusí znamenat slabší lepivost. Řada ECO+ používá postindustriální "
-            "regenerát z vlastní výroby fólií; NOPP a LOOPP přinášejí ISCC PLUS certifikaci."
+            "regenerát z výroby BOPP fólií; NOPP a LOOPP přinášejí ISCC PLUS certifikaci."
         ),
         "sections": [
             (
@@ -214,6 +213,48 @@ GUIDES = [
             ("/sortiment/udrzitelne-pasky/udrzitelna-paska-poly-plus", "POLY+"),
         ],
         "faqs": [],
+    },
+    {
+        "slug": "bezpecnostni-tamper-evident",
+        "title": "Bezpečnostní Tamper Evident",
+        "h1": "Bezpečnostní Tamper Evident pásky s potiskem",
+        "description": (
+            "Tamper Evident pásky s potiskem: VOID efekt při neoprávněném otevření, branding zásilky "
+            "a ochrana elektroniky, kosmetiky i cenného zboží."
+        ),
+        "intro": (
+            "Bezpečnostní páska Tamper Evident uzavře karton a zároveň odhalí manipulaci. "
+            "Při odlepení zanechá VOID stopu. Zákazník i sklad ihned vidí, že balík někdo otevíral."
+        ),
+        "sections": [
+            (
+                "Jak funguje VOID efekt",
+                "Speciální konstrukce pásky při sejmutí zanechá na kartonu permanentní stopu (typicky nápis VOID). "
+                "Nelze ji nenápadně přelepit zpět. Vhodné jako pečeť proti krádeži a výměně zboží.",
+            ),
+            (
+                "Kde dává smysl",
+                "Elektronika, kosmetika, farmacie, high-value e-commerce a B2B zásilky, kde záleží na důvěře. "
+                "Pásku lze potisknout logem: branding i ochrana v jednom kroku balení.",
+            ),
+            (
+                "Kdy stačí běžná BOPP",
+                "Pro běžné zásilky bez zvýšeného rizika manipulace často stačí HOT MELT nebo Akryl s potiskem. "
+                "Tamper Evident volte tam, kde otevření bez stopy není akceptovatelné.",
+            ),
+        ],
+        "links": [
+            ("/sortiment/bopp-pasky/bopp-paska-tamper-evident", "Tamper Evident detail"),
+            ("/sortiment/bopp-pasky", "BOPP pásky"),
+            ("/pruvodce/pasky-pro-e-shopy", "Pásky pro e-shopy"),
+            ("/#gf_1", "Poptat bezpečnostní pásku"),
+        ],
+        "faqs": [
+            (
+                "Lze Tamper Evident pásku potisknout logem?",
+                "Ano, dostupná je s firemním potiskem i v neutrální variantě, podle vaší grafiky.",
+            ),
+        ],
     },
 ]
 
@@ -240,7 +281,10 @@ def guide_main(g: dict) -> str:
         for title, body in g["sections"]
     )
     links = "\n".join(
-        f'            <li><a class="font-semibold text-orange-600 hover:text-orange-700" href="{esc(href)}">{esc(label)}</a></li>'
+        f'''            <a href="{esc(href)}" class="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-orange-200 hover:text-orange-700">
+                {esc(label)}
+                <span aria-hidden="true" class="text-orange-500">→</span>
+            </a>'''
         for href, label in g["links"]
     )
     return f'''
@@ -256,15 +300,12 @@ def guide_main(g: dict) -> str:
     <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">{esc(g["h1"])}</h1>
     <p class="mt-5 text-lg leading-relaxed text-slate-600">{esc(g["intro"])}</p>
 {sections}
-    <section class="mt-12 rounded-2xl border border-slate-100 bg-slate-50 p-6">
-        <h2 class="text-lg font-bold text-slate-900">Související odkazy</h2>
-        <ul class="mt-4 space-y-2">
+    <nav class="mt-12 border-t border-slate-100 pt-8" aria-label="Související odkazy">
+        <p class="mb-4 text-xs font-bold uppercase tracking-widest text-slate-400">Související odkazy</p>
+        <div class="flex flex-wrap gap-2">
 {links}
-        </ul>
-    </section>
-    <div class="mt-10">
-        <a href="/#gf_1" class="inline-flex items-center rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25">Nezávazná kalkulace pásky s potiskem</a>
-    </div>
+        </div>
+    </nav>
 </section>
 </main>
 '''
@@ -287,7 +328,7 @@ def guide_index_main() -> str:
         <span class="text-slate-600">Průvodce</span>
     </nav>
     <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Průvodce páskami s potiskem</h1>
-    <p class="mt-4 text-lg leading-relaxed text-slate-600">Praktické srovnání materiálů a lepidel — bez marketingového balastu. Od výrobce ALFA IN.</p>
+    <p class="mt-4 text-lg leading-relaxed text-slate-600">Praktické srovnání materiálů a lepidel, bez marketingového balastu.</p>
     <div class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2">
 {cards}
     </div>
@@ -296,9 +337,35 @@ def guide_index_main() -> str:
 '''
 
 
+def prepare_guide_chrome(header: str) -> str:
+    """Guides reuse sortiment chrome — fix page marker + active nav styling."""
+    header = header.replace('data-page="sortiment"', 'data-page="pruvodce"', 1)
+    header = header.replace(
+        'href="/sortiment" class="px-2 py-1 text-sm font-semibold text-orange-600 transition-colors hover:text-orange-600"',
+        'href="/sortiment" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600"',
+        1,
+    )
+    header = header.replace(
+        'href="/sortiment" class="block px-2 py-2 font-semibold text-orange-600"',
+        'href="/sortiment" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600"',
+        1,
+    )
+    header = header.replace(
+        'href="/pruvodce" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600"',
+        'href="/pruvodce" class="px-2 py-1 text-sm font-semibold text-orange-600 transition-colors hover:text-orange-600" data-nav-permanent-active',
+        1,
+    )
+    header = header.replace(
+        'href="/pruvodce" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600"',
+        'href="/pruvodce" class="block px-2 py-2 font-semibold text-orange-600 transition-colors hover:text-orange-600" data-nav-permanent-active',
+        1,
+    )
+    return header
+
+
 def write_page(path: Path, title: str, description: str, url_path: str, main: str, schemas: list):
     header, footer = load_chrome()
-    # Mark Průvodce active lightly via title only; keep shared nav
+    header = prepare_guide_chrome(header)
     html_doc = header + main + footer
     html_doc = apply_page_seo(
         html_doc,

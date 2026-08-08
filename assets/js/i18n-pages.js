@@ -333,12 +333,44 @@
 
         document.querySelectorAll('main a[href*="/sortiment/' + catSlug + '"]').forEach(function (a) {
             if (a.closest('nav')) return;
+            if (a.closest('[data-related-products]')) return;
+            /* Product / related cards must never become "back" CTAs */
+            if (a.querySelector('img, picture, h3')) return;
+
+            var href = (a.getAttribute('href') || '').split('?')[0].replace(/\/$/, '');
+            var categoryOnly =
+                href === '/sortiment/' + catSlug ||
+                href === 'sortiment/' + catSlug ||
+                href.endsWith('/sortiment/' + catSlug);
+            if (!categoryOnly) return;
+
             if (a.classList.contains('border') && a.closest('main > section:first-of-type')) {
                 if (page.back_to_category) setBackLink(a, page.back_to_category);
             } else if (ctas.back_category) {
                 setBackLink(a, ctas.back_category);
             }
         });
+
+        var relatedWrap = document.querySelector('[data-related-products]');
+        if (relatedWrap) {
+            var relatedHeading = relatedWrap.querySelector('h2');
+            if (relatedHeading) {
+                var relatedTpl = page.related_heading || 'Další pásky z kategorie {category}';
+                setText(relatedHeading, relatedTpl.replace('{category}', cat.title || ''));
+            }
+            relatedWrap.querySelectorAll('a[href*="/sortiment/"]').forEach(function (card) {
+                var href = card.getAttribute('href') || '';
+                var slug = href.split('/').filter(Boolean).pop();
+                var sibling = tree.get('sortiment.products.' + slug);
+                if (!sibling) return;
+                setText(card.querySelector('h3'), sibling.name);
+                setText(card.querySelector('p'), sibling.tagline);
+                var cta = card.querySelector('span.text-xs.font-semibold');
+                if (cta && page.view_detail) setText(cta, page.view_detail + ' →');
+                var img = card.querySelector('img');
+                if (img && sibling.name) img.alt = sibling.name;
+            });
+        }
 
         document.querySelectorAll('main h2, main h3').forEach(function (h) {
             var txt = h.textContent.trim();

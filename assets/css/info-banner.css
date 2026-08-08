@@ -38,25 +38,12 @@ html {
     margin: 0;
     padding: 0;
     background-color: transparent;
-    transition: height 0.28s ease;
 }
 
 .site-header-shell > .site-header {
     overflow: visible;
     /* no idle transform – transform traps position:fixed and breaks dropdowns */
     transform: none;
-    transition: transform 0.28s ease;
-}
-
-.site-header-shell.is-collapsed {
-    height: 0;
-    overflow: hidden;
-}
-
-.site-header-shell.is-collapsed > .site-header {
-    overflow: hidden;
-    pointer-events: none;
-    transform: translateY(-100%);
 }
 
 /* Language switcher – positioning in CSS (not Tailwind JIT via JS) */
@@ -90,32 +77,36 @@ html {
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 0 0 1px rgb(0 0 0 / 0.2);
 }
 
-/* Glass header – frosted blur over page content while sticky. */
+/* Glass header – stronger frost, always sticky / visible. */
 header.site-header {
     will-change: backdrop-filter;
-    background-color: rgb(255 255 255 / 0.72);
-    -webkit-backdrop-filter: blur(18px) saturate(1.45);
-    backdrop-filter: blur(18px) saturate(1.45);
-    border-bottom: 1px solid rgb(226 232 240 / 0.55);
-    box-shadow: 0 1px 0 rgb(255 255 255 / 0.45) inset;
+    background-color: rgb(255 255 255 / 0.58);
+    -webkit-backdrop-filter: blur(28px) saturate(1.65);
+    backdrop-filter: blur(28px) saturate(1.65);
+    border-bottom: 1px solid rgb(148 163 184 / 0.28);
+    box-shadow:
+        0 1px 0 rgb(255 255 255 / 0.55) inset,
+        0 8px 24px rgb(15 23 42 / 0.04);
 }
 
 .dark header.site-header {
-    background-color: rgb(15 23 42 / 0.72);
-    border-bottom-color: rgb(51 65 85 / 0.55);
-    box-shadow: 0 1px 0 rgb(148 163 184 / 0.08) inset;
+    background-color: rgb(15 23 42 / 0.55);
+    border-bottom-color: rgb(148 163 184 / 0.18);
+    box-shadow:
+        0 1px 0 rgb(148 163 184 / 0.1) inset,
+        0 8px 24px rgb(0 0 0 / 0.22);
 }
 
 header.site-header #mobile-nav {
-    background-color: rgb(255 255 255 / 0.88) !important;
-    -webkit-backdrop-filter: blur(18px) saturate(1.45);
-    backdrop-filter: blur(18px) saturate(1.45);
-    border-top-color: rgb(226 232 240 / 0.65);
+    background-color: rgb(255 255 255 / 0.72) !important;
+    -webkit-backdrop-filter: blur(28px) saturate(1.65);
+    backdrop-filter: blur(28px) saturate(1.65);
+    border-top-color: rgb(148 163 184 / 0.28);
 }
 
 .dark header.site-header #mobile-nav {
-    background-color: rgb(15 23 42 / 0.9) !important;
-    border-top-color: rgb(51 65 85 / 0.65);
+    background-color: rgb(15 23 42 / 0.78) !important;
+    border-top-color: rgb(148 163 184 / 0.18);
 }
 
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
@@ -155,14 +146,6 @@ header.site-header #mobile-nav {
 
     .dark header.site-header #mobile-nav {
         background-color: #0f172a;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    header.site-header,
-    .site-header-shell,
-    .site-header-shell > .site-header {
-        transition: none;
     }
 }
 

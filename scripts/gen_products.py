@@ -1427,36 +1427,44 @@ BACK='<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
 FWD='<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>'
 
 def related_products_html(cat, current):
-    siblings = [x for x in PRODUCTS[cat['cat']] if x['slug'] != current['slug']][:5]
+    siblings = [x for x in PRODUCTS[cat['cat']] if x['slug'] != current['slug']][:4]
     if not siblings:
         return ''
-    links = '\n'.join(
-        '                <li><a class="text-sm font-semibold text-orange-600 hover:text-orange-700" href="/sortiment/%s/%s">%s</a>'
-        '<span class="text-sm text-slate-500"> — %s</span></li>'
-        % (cat['cat'], s['slug'], esc(s['name']), esc(s['tagline'][:90] + ('…' if len(s['tagline']) > 90 else '')))
-        for s in siblings
-    )
-    return '''        <div class="mx-auto mt-12 max-w-3xl rounded-2xl border border-slate-100 bg-white px-6 py-6 shadow-sm sm:px-8">
-            <h2 class="text-lg font-bold text-slate-900">Další pásky z kategorie %s</h2>
-            <ul class="mt-4 space-y-2">
+    cards = []
+    for s in siblings:
+        tagline = s['tagline']
+        if len(tagline) > 100:
+            tagline = tagline[:97].rstrip(' ,.;') + '…'
+        cards.append(
+            '''            <a href="/sortiment/%s/%s" class="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all hover:-translate-y-0.5 hover:border-orange-100 hover:shadow-md">
+                <div class="flex h-36 w-full items-center justify-center overflow-hidden bg-slate-50 p-3">
+                    <img src="%s" alt="%s" loading="lazy" class="h-full w-auto max-w-full object-contain mix-blend-multiply contrast-[1.1] brightness-[1.05] transition-transform duration-300 group-hover:scale-105">
+                </div>
+                <div class="flex flex-1 flex-col p-4">
+                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-orange-700">%s</h3>
+                    <p class="mt-1.5 flex-1 text-xs leading-relaxed text-slate-600">%s</p>
+                    <span class="mt-3 text-xs font-semibold text-orange-600">Zobrazit detail →</span>
+                </div>
+            </a>'''
+            % (
+                cat['cat'],
+                s['slug'],
+                url(product_public_image(s)),
+                esc(s['name']),
+                esc(s['name']),
+                esc(tagline),
+            )
+        )
+    return '''        <div class="mx-auto mt-14 max-w-5xl" data-related-products>
+            <h2 class="mb-6 text-center text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">Další pásky z kategorie %s</h2>
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
 %s
-            </ul>
-            <p class="mt-4 text-sm text-slate-600">Tipy k výběru: <a class="font-semibold text-orange-600 hover:text-orange-700" href="/pruvodce/hot-melt-vs-akryl">HOT MELT vs Akryl</a>,
-            <a class="font-semibold text-orange-600 hover:text-orange-700" href="/pruvodce/pasky-s-potiskem">pásky s potiskem</a>,
-            <a class="font-semibold text-orange-600 hover:text-orange-700" href="/faq">časté otázky</a>.</p>
+            </div>
         </div>
 
-''' % (esc(cat['title']), links)
+''' % (esc(cat['title']), '\n'.join(cards))
 
-PRODUCT_BOTTOM_NOTE='''        <div class="product-neutral-note mx-auto mt-14 max-w-3xl px-6 py-6 text-center sm:px-8">
-            <p class="text-sm leading-relaxed text-slate-700">
-                <span class="font-bold text-slate-900">Pásku lze objednat i bez potisku.</span>
-                Neutrální (nepotištěná) verze stejného materiálu, ideální pro okamžité balení nebo skladové zásoby.
-                <a href="/#kontakt1" class="font-semibold text-orange-600 transition-colors hover:text-orange-700">Zeptejte se na dostupnost</a>
-            </p>
-        </div>
-
-        <div class="mt-8 flex flex-wrap items-center justify-center gap-4">'''
+PRODUCT_BOTTOM_ACTIONS='''        <div class="mt-10 flex flex-wrap items-center justify-center gap-4">'''
 
 PAPER_SERIES_NOTE_SLUGS = frozenset({
     'papirova-paska-c660',
@@ -1767,7 +1775,7 @@ for cat in CATS:
      *[esc(x) for x in product_spec_pills(p)],
      esc(cta['hero']),FWD,cat["cat"],BACK,
      tech_table,min_qty_html,param_hints_html(cat),advs,tailor,uses,
-     related_products_html(cat, p) + PRODUCT_BOTTOM_NOTE,
+     related_products_html(cat, p) + PRODUCT_BOTTOM_ACTIONS,
      cat["cat"],BACK,esc(cat["title"]),esc(cta['bottom']))
         os.makedirs("sortiment/%s/%s"%(cat["cat"],p["slug"]),exist_ok=True)
         prod_path = f'/sortiment/{cat["cat"]}/{p["slug"]}'

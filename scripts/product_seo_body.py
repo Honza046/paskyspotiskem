@@ -31,7 +31,7 @@ PRODUCT_SEO: dict[str, tuple[str, str]] = {
         "volbou pro HOT MELT linky a sklady, kde rozhoduje tack a odolnost vůči obtížným povrchům.",
     ),
     "BOPP páska EXTRA GLUE+": (
-        "EXTRA GLUE+ je akrylová páska se zesílenou vrstvou lepidla pro obtížné aplikace — nekvalitní kartony, "
+        "EXTRA GLUE+ je akrylová páska se zesílenou vrstvou lepidla pro obtížné aplikace: nekvalitní kartony, "
         "těžké zásilky nebo prašné prostředí. Drží pevněji než standardní Akryl a přitom zachovává výhody "
         "vodní disperze a možnosti tichého odvíjení.",
         "Hotmeltovou alternativou s vyšším tackem je TACK+. EXTRA GLUE+ volte, když chcete akryl + maximální "
@@ -45,7 +45,7 @@ PRODUCT_SEO: dict[str, tuple[str, str]] = {
         "Dodáváme ji s firemním potiskem a v barevných variantách podle potřeby identifikace zásilek.",
     ),
     "BOPP páska ecoEVERGREEN": (
-        "ecoEVERGREEN kombinuje BOPP výkon s vyšším podílem regenerovaného materiálu — vhodné pro firmy, "
+        "ecoEVERGREEN kombinuje BOPP výkon s vyšším podílem regenerovaného materiálu: vhodné pro firmy, "
         "které chtějí zelenější balení bez změny balicí linky. Páska s potiskem funguje stejně spolehlivě "
         "jako standardní BOPP a posiluje ESG komunikaci na krabici.",
         "Pro ještě vyšší podíl regenerátu zvažte řadu ECO+ (50 / 80 / 100 %). ecoEVERGREEN 50 % a 100 % "
@@ -60,7 +60,7 @@ PRODUCT_SEO: dict[str, tuple[str, str]] = {
         "NOPP je BOPP páska s nosnou fólií z bio-cirkulárního materiálu s certifikací ISCC PLUS. "
         "Nosič využívá obnovitelné suroviny z dřevního odpadu (vedlejší produkt výroby celulózy) a nahrazuje "
         "fosilní plasty bez ztráty pevnosti. Ideální páska s potiskem pro firmy s ESG cíli.",
-        "NOPP+ jde ještě dál — certifikaci ISCC PLUS má fólie i lepidlo a nabízí zesílenou přilnavost (Adhesive G1). "
+        "NOPP+ jde ještě dál: certifikaci ISCC PLUS má fólie i lepidlo a nabízí zesílenou přilnavost (Adhesive G1). "
         "NOPP volte jako bio-cirkulární základ; NOPP+ když potřebujete maximum udržitelnosti i tacku.",
     ),
     "Udržitelná páska NOPP+": (
@@ -72,7 +72,7 @@ PRODUCT_SEO: dict[str, tuple[str, str]] = {
     ),
     "Udržitelná páska LOOPP": (
         "LOOPP je cirkulární BOPP páska z polymerů chemicky recyklovaného spotřebitelského plastu "
-        "s certifikací ISCC PLUS. Mechanické vlastnosti odpovídají standardní pásce z primárních surovin — "
+        "s certifikací ISCC PLUS. Mechanické vlastnosti odpovídají standardní pásce z primárních surovin: "
         "bez kompromisů v pevnosti a lepivosti.",
         "Zatímco NOPP staví na bio-cirkulárním nosiči z obnovitelných surovin, LOOPP uzavírá smyčku "
         "recyklovaného plastu. Obě řady podporují pásky s potiskem pro odpovědné značky.",
@@ -80,12 +80,12 @@ PRODUCT_SEO: dict[str, tuple[str, str]] = {
     "Udržitelná páska POLY+": (
         "POLY+ je ekologická a plnohodnotná náhrada PVC pásek s elegantním matným povrchem. "
         "Matná BOPP fólie 35 µm a zesílené akrylové lepidlo (24 µm) dávají prémiový vzhled a pevné uzavření "
-        "i těžších kartonů — ideální, když chcete opustit PVC bez ztráty estetického dojmu.",
+        "i těžších kartonů: ideální, když chcete opustit PVC bez ztráty estetického dojmu.",
         "Proti standardní lesklé BOPP pásce vyniká antireflexním povrchem a lepším kontrastem potisku. "
         "Dostupná jako Akryl / Low noise s potiskem firemního loga.",
     ),
     "Udržitelná páska ECO+ 50": (
-        "ECO+ 50 obsahuje 50 % postindustriálního regenerátu z vlastní výroby fólií — optimální poměr "
+        "ECO+ 50 obsahuje 50 % postindustriálního regenerátu z vlastní výroby fólií: optimální poměr "
         "ceny a ekologie. Mechanické vlastnosti odpovídají standardní BOPP, bez ekologické přirážky. "
         "Dostupná jako Akryl i HOT MELT, neutrálně i s potiskem.",
         "Pro vyšší podíl regenerátu zvolte ECO+ 80 nebo ECO+ 100. Všechny tři varianty se hodí jako "
@@ -97,20 +97,20 @@ PRODUCT_SEO: dict[str, tuple[str, str]] = {
         "ECO+ 50 je levnější vstup do řady; ECO+ 100 je maximum regenerátu. Volba závisí na ESG cílech a rozpočtu.",
     ),
     "Udržitelná páska ECO+ 100": (
-        "ECO+ 100 je 100% regenerovaná BOPP fólie z postindustriálního odpadu — maximální ekologický standard "
+        "ECO+ 100 je 100% regenerovaná BOPP fólie z postindustriálního odpadu: maximální ekologický standard "
         "bez kompromisů ve výkonu. Páska s potiskem vypadá a funguje jako běžná BOPP, ale bez nového granulátu.",
         "Pokud potřebujete nižší cenu při stále vysokém podílu regenerátu, zvažte ECO+ 80. Všechny ECO+ varianty "
         "nabízíme s Akryl / HOT MELT lepidlem.",
     ),
     "Udržitelná páska Airtape+": (
         "Airtape+ je tenká a pevná BOPP páska (19 µm), která snižuje spotřebu materiálu a hmotnost zásilek. "
-        "Na roli se vejde více metrů bez zvětšení průměru — méně výměn a úspora skladového místa. "
+        "Na roli se vejde více metrů bez zvětšení průměru: méně výměn a úspora skladového místa. "
         "Akryl Low noise drží lepivost i při UV zatížení.",
         "Když hledáte maximální efektivitu metráže a nižší plastovou stopu při zachování výkonu, "
         "Airtape+ doplňuje řadu udržitelných pásek s potiskem vedle ECO+ a NOPP.",
     ),
     "Papírová páska C680": (
-        "Papírová páska C680 je oblíbená kraftová volba pro plně recyklovatelné balení — páska jde do sběru "
+        "Papírová páska C680 je oblíbená kraftová volba pro plně recyklovatelné balení: páska jde do sběru "
         "spolu s kartonem. FSC certifikovaný nosič a spolehlivé lepidlo ji dělají vhodnou pro e-shopy "
         "i firmy, které chtějí papírové pásky s potiskem bez plastové fólie.",
         "Pro vyšší pevnost zvažte KS165 nebo vyztužené varianty; pro odnímatelné aplikace jiné řady. "
@@ -129,13 +129,13 @@ PRODUCT_SEO: dict[str, tuple[str, str]] = {
         "na pevnost papírové pásky s potiskem.",
     ),
     "BOPET páska ECO HIT19": (
-        "ECO HIT19 je BOPET páska s podílem materiálu z recyklovaných PET lahví — pevná, odolná a ekologicky "
+        "ECO HIT19 je BOPET páska s podílem materiálu z recyklovaných PET lahví: pevná, odolná a ekologicky "
         "smysluplná alternativa pro náročné balení. Polyesterový nosič nabízí vysokou odolnost proti roztržení.",
         "Pro silnější fólii zvažte ECO HIT23 nebo klasické AIT/ATE řady. ECO HIT19 je vhodná, když chcete "
         "BOPET výkon a zároveň udržitelnější pásku s potiskem.",
     ),
     "BOPET páska ECO HIT23": (
-        "ECO HIT23 kombinuje silnější BOPET fólii s regenerovaným obsahem z PET — pro těžké a náročné aplikace "
+        "ECO HIT23 kombinuje silnější BOPET fólii s regenerovaným obsahem z PET: pro těžké a náročné aplikace "
         "s ESG požadavky. Páska s potiskem odolává mechanickému namáhání lépe než běžná BOPP.",
         "ECO HIT19 je tenčí varianta stejné filozofie. Klasické HIT/AIT/ATE řady volte, když regenerát není priorita.",
     ),
@@ -148,7 +148,7 @@ CATEGORY_SEO_FALLBACK: dict[str, tuple[str, str]] = {
         "Biaxiálně orientovaný polypropylen nabízí výborný poměr pevnosti a ceny a skvěle se potiskuje logem.",
         "Vyberte HOT MELT pro rychlou lepivost v chladu, Akryl pro tiché odvíjení a UV stabilitu, "
         "nebo speciální varianty TACK+ / EXTRA GLUE+ / Tamper Evident podle aplikace. Minimální odběry a potisk "
-        "konzultujeme individuálně — typicky stovky kusů podle typu lepidla.",
+        "konzultujeme individuálně: typicky stovky kusů podle typu lepidla.",
     ),
     "udrzitelne-pasky": (
         "Udržitelné pásky s potiskem od ALFA IN pokrývají regenerovaný BOPP (ECO+), bio-cirkulární NOPP/NOPP+, "
@@ -157,7 +157,7 @@ CATEGORY_SEO_FALLBACK: dict[str, tuple[str, str]] = {
         "Rádi připravíme potisk loga a vzorek zdarma pro ověření v reálném provozu.",
     ),
     "papirove-pasky": (
-        "Papírové pásky s potiskem umožňují plně recyklovatelné balení — páska putuje do sběru spolu s kartonem. "
+        "Papírové pásky s potiskem umožňují plně recyklovatelné balení: páska putuje do sběru spolu s kartonem. "
         "Kraftový vzhled působí přírodně a prémiově a hodí se pro e-shopy i značky s důrazem na udržitelnost.",
         "Volte gramáž a pevnost podle hmotnosti zásilek (např. C680 vs KS165). Potisk firemním logem "
         "a FSC nosič patří k nejčastějším požadavkům B2B zákazníků.",
@@ -166,7 +166,7 @@ CATEGORY_SEO_FALLBACK: dict[str, tuple[str, str]] = {
         "BOPET pásky s potiskem nabízejí polyesterovou pevnost a odolnost pro náročné průmyslové aplikace. "
         "Oproti BOPP lépe vzdorují roztržení a teplotním výkyvům.",
         "Řada ECO HIT přidává regenerovaný obsah z PET lahví. Technické varianty AIT/ATE/HIT volíte podle "
-        "tloušťky fólie a lepidla — rádi doporučíme podle vaší linky.",
+        "tloušťky fólie a lepidla: rádi doporučíme podle vaší linky.",
     ),
     "odstranitelne-pasky": (
         "Odstranitelné pásky s potiskem uzavřou obal a po sejmutí nezanechají lepivé stopy ani poškození povrchu. "

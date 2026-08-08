@@ -313,14 +313,14 @@ label:has(input[type="checkbox"]:checked).glass--chip {
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
 }
 
-/* Ecology cards – soft green glow on hover (no colored border) */
+/* Ecology cards – soft green glow on hover (keep neutral border, no white rim) */
 #udrzitelnost .glass--card {
     cursor: default;
-    transition: box-shadow 0.25s ease, background 0.25s ease;
+    transition: box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease;
 }
 
 #udrzitelnost .glass--card:hover {
-    border-color: rgba(255, 255, 255, 0.82);
+    border-color: #e2e8f0;
     background: linear-gradient(
         160deg,
         rgba(236, 253, 245, 0.78) 0%,
@@ -329,8 +329,7 @@ label:has(input[type="checkbox"]:checked).glass--chip {
     );
     box-shadow:
         0 14px 40px rgba(16, 185, 129, 0.16),
-        0 2px 8px rgba(16, 185, 129, 0.08),
-        inset 0 1px 1px rgba(255, 255, 255, 1);
+        0 2px 8px rgba(16, 185, 129, 0.08);
 }
 
 .dark #udrzitelnost .glass--card:hover {
@@ -342,8 +341,21 @@ label:has(input[type="checkbox"]:checked).glass--chip {
         rgba(4, 120, 87, 0.24) 100%
     );
     box-shadow:
-        0 14px 40px rgba(16, 185, 129, 0.2),
-        inset 0 1px 1px rgba(167, 243, 208, 0.12);
+        0 14px 40px rgba(16, 185, 129, 0.2);
+}
+
+/* Benefit cards (ECO+ / EXTRA GLUE+) – same: no white hover rim */
+#vyhody .glass--card:hover {
+    border-color: #e2e8f0;
+    box-shadow:
+        0 2px 4px rgba(15, 23, 42, 0.05),
+        0 16px 40px rgba(15, 23, 42, 0.1);
+}
+
+.dark #vyhody .glass--card:hover {
+    border-color: rgba(148, 163, 184, 0.35);
+    box-shadow:
+        0 14px 40px rgba(0, 0, 0, 0.35);
 }
 
 /* Glue guide cards – sky / amber tint on hover only (like #udrzitelnost) */
@@ -368,11 +380,11 @@ label:has(input[type="checkbox"]:checked).glass--chip {
 
 #lepidla .glue-card.glass--card {
     cursor: default;
-    transition: box-shadow 0.25s ease, background 0.25s ease;
+    transition: box-shadow 0.25s ease, background 0.25s ease, border-color 0.25s ease;
 }
 
 #lepidla .glue-card--hot-melt.glass--card:hover {
-    border-color: rgba(255, 255, 255, 0.82);
+    border-color: #e2e8f0;
     background: linear-gradient(
         160deg,
         rgba(224, 242, 254, 0.78) 0%,
@@ -381,12 +393,11 @@ label:has(input[type="checkbox"]:checked).glass--chip {
     );
     box-shadow:
         0 14px 40px rgba(14, 165, 233, 0.16),
-        0 2px 8px rgba(14, 165, 233, 0.08),
-        inset 0 1px 1px rgba(255, 255, 255, 1);
+        0 2px 8px rgba(14, 165, 233, 0.08);
 }
 
 #lepidla .glue-card--acryl.glass--card:hover {
-    border-color: rgba(255, 255, 255, 0.82);
+    border-color: #e2e8f0;
     background: linear-gradient(
         160deg,
         rgba(254, 243, 199, 0.78) 0%,
@@ -395,8 +406,7 @@ label:has(input[type="checkbox"]:checked).glass--chip {
     );
     box-shadow:
         0 14px 40px rgba(245, 158, 11, 0.16),
-        0 2px 8px rgba(245, 158, 11, 0.08),
-        inset 0 1px 1px rgba(255, 255, 255, 1);
+        0 2px 8px rgba(245, 158, 11, 0.08);
 }
 
 .dark #lepidla .glue-card--hot-melt.glass--card:hover {

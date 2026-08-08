@@ -46,19 +46,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/theme-dark.css?v=14">
-    <link rel="stylesheet" href="/assets/css/info-banner.css?v=17">
+    <link rel="stylesheet" href="/assets/css/theme-dark.css?v=18">
+    <link rel="stylesheet" href="/assets/css/info-banner.css?v=19">
     <link rel="stylesheet" href="/assets/css/sortiment-cards.css?v=13">
-    <link rel="stylesheet" href="/assets/css/cult-effects.css?v=53">
+    <link rel="stylesheet" href="/assets/css/cult-effects.css?v=60">
     <link rel="stylesheet" href="/assets/css/tw.css?v=2">
 
-    <link rel="stylesheet" href="/assets/css/glass.css?v=14">
+    <link rel="stylesheet" href="/assets/css/glass.css?v=17">
     <style>
         html { scroll-behavior: smooth; }
         body { user-select: none; -webkit-user-select: none; }
         input, textarea, select, button, label, a { user-select: auto; -webkit-user-select: auto; }
     </style>
-</head><body class="select-none bg-slate-50 font-sans text-slate-600 antialiased" data-page="sortiment">
+</head><body class="select-none bg-slate-50 font-sans text-slate-600 antialiased" data-page="pruvodce">
 
 <!-- SITE-TOP -->
 <div class="site-top sticky top-0 z-50">
@@ -78,8 +78,8 @@
             <ul class="flex items-center gap-1">
                 <li><a href="/#uvod" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.home">Úvod</a></li>
                 <li><a href="/galerie" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.gallery">Galerie</a></li>
-                <li><a href="/sortiment" class="px-2 py-1 text-sm font-semibold text-orange-600 transition-colors hover:text-orange-600" data-i18n="nav.sortiment">Sortiment</a></li>
-                <li><a href="/pruvodce" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600">Průvodce</a></li>
+                <li><a href="/sortiment" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.sortiment">Sortiment</a></li>
+                <li><a href="/pruvodce" class="px-2 py-1 text-sm font-semibold text-orange-600 transition-colors hover:text-orange-600" data-nav-permanent-active>Průvodce</a></li>
                 <li><a href="/#reference" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.references">Reference</a></li>
                 <li><a href="/#kontakt1" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.contacts">Kontakty</a></li>
                 <li><a href="/faq" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.faq">FAQ</a></li>
@@ -95,8 +95,8 @@
         <ul class="space-y-1">
             <li><a href="/#uvod" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.home">Úvod</a></li>
             <li><a href="/galerie" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.gallery">Galerie</a></li>
-            <li><a href="/sortiment" class="block px-2 py-2 font-semibold text-orange-600" data-i18n="nav.sortiment">Sortiment</a></li>
-            <li><a href="/pruvodce" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600">Průvodce</a></li>
+            <li><a href="/sortiment" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.sortiment">Sortiment</a></li>
+            <li><a href="/pruvodce" class="block px-2 py-2 font-semibold text-orange-600 transition-colors hover:text-orange-600" data-nav-permanent-active>Průvodce</a></li>
             <li><a href="/#reference" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.references">Reference</a></li>
             <li><a href="/#kontakt1" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.contacts">Kontakty</a></li>
                 <li><a href="/faq" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.faq">FAQ</a></li>
@@ -126,21 +126,33 @@
         </section>
         <section class="mt-10">
             <h2 class="text-2xl font-extrabold tracking-tight text-slate-900">Bezpečnost zásilky</h2>
-            <p class="mt-3 text-base leading-relaxed text-slate-600">Tamper Evident páska s potiskem zanechá při odlepení VOID stopu — vhodné pro elektroniku, kosmetiku a vyšší hodnotu zboží.</p>
+            <p class="mt-3 text-base leading-relaxed text-slate-600">Tamper Evident páska s potiskem zanechá při odlepení VOID stopu, vhodné pro elektroniku, kosmetiku a vyšší hodnotu zboží.</p>
         </section>
-    <section class="mt-12 rounded-2xl border border-slate-100 bg-slate-50 p-6">
-        <h2 class="text-lg font-bold text-slate-900">Související odkazy</h2>
-        <ul class="mt-4 space-y-2">
-            <li><a class="font-semibold text-orange-600 hover:text-orange-700" href="/galerie">Galerie realizací</a></li>
-            <li><a class="font-semibold text-orange-600 hover:text-orange-700" href="/sortiment/bopp-pasky/bopp-paska-tamper-evident">Tamper Evident</a></li>
-            <li><a class="font-semibold text-orange-600 hover:text-orange-700" href="/sortiment/udrzitelne-pasky">ECO a udržitelné pásky</a></li>
-            <li><a class="font-semibold text-orange-600 hover:text-orange-700" href="/sortiment/papirove-pasky">Papírové pásky</a></li>
-            <li><a class="font-semibold text-orange-600 hover:text-orange-700" href="/#gf_1">Poptat pásku pro e-shop</a></li>
-        </ul>
-    </section>
-    <div class="mt-10">
-        <a href="/#gf_1" class="inline-flex items-center rounded-2xl bg-gradient-to-r from-orange-600 to-amber-500 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/25">Nezávazná kalkulace pásky s potiskem</a>
-    </div>
+    <nav class="mt-12 border-t border-slate-100 pt-8" aria-label="Související odkazy">
+        <p class="mb-4 text-xs font-bold uppercase tracking-widest text-slate-400">Související odkazy</p>
+        <div class="flex flex-wrap gap-2">
+            <a href="/galerie" class="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-orange-200 hover:text-orange-700">
+                Galerie realizací
+                <span aria-hidden="true" class="text-orange-500">→</span>
+            </a>
+            <a href="/sortiment/bopp-pasky/bopp-paska-tamper-evident" class="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-orange-200 hover:text-orange-700">
+                Tamper Evident
+                <span aria-hidden="true" class="text-orange-500">→</span>
+            </a>
+            <a href="/sortiment/udrzitelne-pasky" class="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-orange-200 hover:text-orange-700">
+                ECO a udržitelné pásky
+                <span aria-hidden="true" class="text-orange-500">→</span>
+            </a>
+            <a href="/sortiment/papirove-pasky" class="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-orange-200 hover:text-orange-700">
+                Papírové pásky
+                <span aria-hidden="true" class="text-orange-500">→</span>
+            </a>
+            <a href="/#gf_1" class="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-orange-200 hover:text-orange-700">
+                Poptat pásku pro e-shop
+                <span aria-hidden="true" class="text-orange-500">→</span>
+            </a>
+        </div>
+    </nav>
 </section>
 </main>
 <footer id="kontakt1" class="bg-slate-900 text-slate-400">
@@ -825,15 +837,15 @@
 ]
 </script>
 <script src="/assets/js/i18n.js?v=45"></script>
-<script src="/assets/js/i18n-pages.js?v=32"></script>
+<script src="/assets/js/i18n-pages.js?v=34"></script>
 <script src="/assets/js/cult-effects.js?v=4"></script>
 <script src="/assets/js/sortiment-filter.js?v=4"></script>
-<script src="/assets/js/nav-active.js"></script>
+<script src="/assets/js/nav-active.js?v=4"></script>
 <link rel="stylesheet" href="/assets/css/footer-credit.css?v=3">
 <script src="/assets/js/footer-credit.js?v=5"></script>
 <script src="/assets/js/mobile-nav.js"></script>
 <script src="/assets/js/info-banner.js?v=2"></script>
-<script src="/assets/js/header-scroll.js?v=17"></script>
+<script src="/assets/js/header-scroll.js?v=19"></script>
 <script src="/assets/js/theme-toggle.js"></script>
 <script src="/assets/js/vercel-analytics.js" defer></script>
 </body>

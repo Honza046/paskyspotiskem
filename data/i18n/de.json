@@ -3549,6 +3549,7 @@
       "back_to_sortiment": "Zurück zum Sortiment",
       "back_to_category": "Zurück zur Kategorie",
       "back_to_category_short": "Zurück zu {category}",
+      "related_heading": "Weitere Bänder aus {category}",
       "params_note": "Die angegebenen Werte sind Richtwerte und können je nach Breite, Rollenlänge und Ausführung variieren. Gerne erstellen wir Ihnen eine genaue Spezifikation nach Ihren Anforderungen.",
       "tailor_title": "Passend für Ihren Betrieb",
       "tailor_bullet_width": "Wählbare Breite und Rollenlänge",
