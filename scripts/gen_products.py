@@ -143,14 +143,14 @@ PRODUCTS = {
    P("Malířská páska CS60-80","Malířské Pásky/cs60-80.jpg","Teplotně odolná malířská páska pro lakování a náročné maskování.","Krepový papír","150 µm","Kaučukové (odolné teplu)","3,0 N/25 mm","do +100 °C","32 N/25 mm"),
  ],
  "udrzitelne-pasky":[
-   P("Udržitelná páska NOPP","Udržitelné Pásky/nopp.jpg","Udržitelná páska bez plastu pro plně recyklovatelné balení.","Papír (FSC)","110 µm","Akrylové (bez rozpouštědel)","4,0 N/25 mm","−5 až +60 °C","50 N/25 mm"),
-   P("Udržitelná páska NOPP+","Udržitelné Pásky/nopp+.jpg","Vylepšená bezplastová páska s vyšší pevností a lepivostí.","Papír (FSC)","120 µm","Akrylové","4,4 N/25 mm","−5 až +65 °C","55 N/25 mm"),
+   P("Udržitelná páska NOPP","Udržitelné Pásky/nopp.jpg","Páska s nosnou fólií z bio-cirkulárního materiálu s certifikací ISCC PLUS.","BOPP","28 / 32 µm","Akryl / Low noise","—","0 až +60 / −10 až +60 °C","—"),
+   P("Udržitelná páska NOPP+","Udržitelné Pásky/nopp+.jpg","Páska s certifikovaným bio-cirkulárním složením fólie i lepidla pro maximální snížení uhlíkové stopy.","BOPP","28 / 32 µm","Akryl / Low noise","—","0 až +60 / −10 až +60 °C","—"),
    P("Udržitelná páska LOOPP","Udržitelné Pásky/loopp.jpg","Prémiová ekologická páska z recyklovaných plastů bez jakýchkoliv kompromisů v pevnosti.","BOPP","28 / 32 µm","Akryl / Low noise","—","0 až +60 / −10 až +60 °C","—"),
    P("Udržitelná páska Airtape+","Udržitelné Pásky/airtape.jpg","Tenká a pevná BOPP páska pro maximální efektivitu a snížení odpadu.","BOPP","19 µm","Akryl (Low noise)","—","−10 až +60 °C","—"),
    P("Udržitelná páska ECO+ 50","Udržitelné Pásky/eco+50.jpg","Efektivní balení s 50% podílem regenerovaného materiálu. Optimální rovnováha mezi ekologií a nejlepší cenou.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
    P("Udržitelná páska ECO+ 80","Udržitelné Pásky/eco+80.jpg","BOPP fólie s 80% podílem regenerovaného materiálu. Spojuje vysoký ekologický standard a stoprocentní pevnost.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
    P("Udržitelná páska ECO+ 100","Udržitelné Pásky/eco+100.jpg","100% regenerovaná BOPP fólie z postindustriálního odpadu. Maximální ekologický standard bez kompromisů ve výkonu.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
-   P("Udržitelná páska POLY+","Udržitelné Pásky/poly-plus.jpg","Ekologická alternativa k PVC – matná neodrážející BOPP páska s tichým akrylovým lepidlem.","BOPP fólie (matná, 35 µm)","35 µm","Akrylové (tiché, bez rozpouštědel)","3,8 N/25 mm","−5 až +60 °C","50 N/25 mm"),
+   P("Udržitelná páska POLY+","Udržitelné Pásky/poly-plus.jpg","Ekologická a plnohodnotná náhrada PVC pásek s elegantním matným povrchem.","matná BOPP","35 µm","Akryl / Low noise","—","0 až +60 / −10 až +60 °C","—"),
  ],
 }
 
@@ -192,8 +192,8 @@ TAGMAP = {
  "Odstranitelná páska ECO RIT19":["odstranitelne","ekologicke","rucni"],
  "Malířská páska C580":["rucni"],
  "Malířská páska CS60-80":["vysoke-teploty","rucni"],
- "Udržitelná páska NOPP":["ekologicke","rucni"],
- "Udržitelná páska NOPP+":["ekologicke","rucni"],
+ "Udržitelná páska NOPP":["ekologicke","tiche","stroje"],
+ "Udržitelná páska NOPP+":["ekologicke","tiche","stroje"],
  "Udržitelná páska LOOPP":["ekologicke","tiche","stroje"],
  "Udržitelná páska Airtape+":["ekologicke","tiche","rucni","stroje"],
  "Udržitelná páska ECO+ 50":["ekologicke","stroje"],
@@ -363,6 +363,30 @@ TECH_SPEC_PARAMS = {
         "Skladovací a aplikační teplota": "14–28 °C",
         "Provozní teplota po nalepení": "0 až +60 / −10 až +60 °C",
     },
+    "Udržitelná páska NOPP": {
+        "Nosič": "BOPP",
+        "Tloušťka fólie": "28 / 32 µm",
+        "Typ lepidla": "Akryl / Low noise",
+        "Tloušťka lepidla": "21 µm",
+        "Skladovací a aplikační teplota": "14–28 °C",
+        "Provozní teplota po nalepení": "0 až +60 / −10 až +60 °C",
+    },
+    "Udržitelná páska NOPP+": {
+        "Nosič": "BOPP",
+        "Tloušťka fólie": "28 / 32 µm",
+        "Typ lepidla": "Akryl / Low noise",
+        "Tloušťka lepidla": "21 µm",
+        "Skladovací a aplikační teplota": "14–28 °C",
+        "Provozní teplota po nalepení": "0 až +60 / −10 až +60 °C",
+    },
+    "Udržitelná páska POLY+": {
+        "Nosič": "matná BOPP",
+        "Tloušťka fólie": "35 µm",
+        "Typ lepidla": "Akryl / Low noise",
+        "Tloušťka lepidla": "24 µm",
+        "Skladovací a aplikační teplota": "14–28 °C",
+        "Provozní teplota po nalepení": "0 až +60 / −10 až +60 °C",
+    },
 }
 
 PAPER_SPEC_PARAMS = {
@@ -491,6 +515,24 @@ _LOOPP_LOW_NOISE = {
     "Skladovací a aplikační teplota": "14–28 °C",
     "Provozní teplota po nalepení": "−10 až +60 °C",
 }
+_NOPP_ACRYL = dict(_LOOPP_ACRYL)
+_NOPP_LOW_NOISE = dict(_LOOPP_LOW_NOISE)
+_POLY_ACRYL = {
+    "Nosič": "matná BOPP",
+    "Tloušťka fólie": "35 µm",
+    "Typ lepidla": "Akryl",
+    "Tloušťka lepidla": "24 µm",
+    "Skladovací a aplikační teplota": "14–28 °C",
+    "Provozní teplota po nalepení": "0 až +60 °C",
+}
+_POLY_LOW_NOISE = {
+    "Nosič": "matná BOPP",
+    "Tloušťka fólie": "35 µm",
+    "Typ lepidla": "Akryl (Low noise)",
+    "Tloušťka lepidla": "24 µm",
+    "Skladovací a aplikační teplota": "14–28 °C",
+    "Provozní teplota po nalepení": "−10 až +60 °C",
+}
 
 TECH_VARIANT_LABELS = {
     "acryl": "Akryl",
@@ -523,6 +565,18 @@ TECH_VARIANTS = {
         "acryl": dict(_LOOPP_ACRYL),
         "low_noise": dict(_LOOPP_LOW_NOISE),
     },
+    "Udržitelná páska NOPP": {
+        "acryl": dict(_NOPP_ACRYL),
+        "low_noise": dict(_NOPP_LOW_NOISE),
+    },
+    "Udržitelná páska NOPP+": {
+        "acryl": dict(_NOPP_ACRYL),
+        "low_noise": dict(_NOPP_LOW_NOISE),
+    },
+    "Udržitelná páska POLY+": {
+        "acryl": dict(_POLY_ACRYL),
+        "low_noise": dict(_POLY_LOW_NOISE),
+    },
 }
 
 # assign slugs + tags
@@ -548,6 +602,12 @@ def product_spec_pills(p):
         return ("100 % regenerát", "BOPP", "Akryl / HOT MELT")
     if name == "Udržitelná páska LOOPP":
         return ("BOPP", "Akryl / Low noise", "0 až +60 / −10 až +60 °C")
+    if name == "Udržitelná páska NOPP":
+        return ("BOPP", "Akryl / Low noise", "0 až +60 / −10 až +60 °C")
+    if name == "Udržitelná páska NOPP+":
+        return ("BOPP", "Akryl / Low noise", "0 až +60 / −10 až +60 °C")
+    if name == "Udržitelná páska POLY+":
+        return ("matná BOPP", "Akryl / Low noise", "0 až +60 / −10 až +60 °C")
     if p.get("paper_spec"):
         params = p["params"]
         return (
@@ -729,6 +789,18 @@ def product_benefits(cat_slug, p):
                 ("Identické vlastnosti jako standardní pásky", "Nabízí naprosto shodné mechanické a fyzikální parametry, pevnost v tahu i lepivost jako pásky vyráběné z prvotních fosilních surovin."),
                 ("Nižší spotřeba fosilních surovin", "Výrazně redukuje závislost na primární ropě a pomáhá budovat skutečně cirkulární ekonomiku v obalovém průmyslu."),
             ]
+        if p["name"] == "Udržitelná páska NOPP":
+            return [
+                ("Certifikovaný nosič z borovicového oleje", "Nosná BOPP fólie využívá obnovitelné suroviny z dřevního odpadu (vedlejší produkt výroby celulózy) s certifikací ISCC PLUS. Nahrazuje fosilní plasty bez jakýchkoliv kompromisů v pevnosti."),
+                ("Nižší spotřeba fosilních surovin", "Redukuje závislost na primární ropě a pomáhá budovat skutečně cirkulární ekonomiku v obalovém průmyslu."),
+                ("Vysoká odolnost proti UV", "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování a UV zatížení."),
+            ]
+        if p["name"] == "Udržitelná páska NOPP+":
+            return [
+                ("Plně bio-cirkulární složení fólie i lepidla", "NOPP+ posouvá udržitelnost na maximum. Certifikaci ISCC PLUS a obnovitelný původ z přírodních surovin má u této pásky jak nosná fólie, tak i akrylové lepidlo."),
+                ("Zesílená přilnavost pro náročné kartony", "Speciálně formulované akrylové lepidlo (Adhesive G1) přináší vyšší lepivost a okamžitou přilnavost. Páska spolehlivě drží i na drsnějších površích a recyklovaném kartonu."),
+                ("Vysoká odolnost proti UV", "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování a UV zatížení."),
+            ]
         if p["name"] == "Udržitelná páska ECO+ 50":
             return [
                 ("Stejná cena i kvalita", "Má stejné mechanické vlastnosti a spolehlivost jako standardní BOPP verze, ale bez „ekologické přirážky“."),
@@ -748,9 +820,12 @@ def product_benefits(cat_slug, p):
                 ("Podpora firemní reputace", "Pásky řady ECO+ spolehlivě chrání zboží a prokazují ekologickou odpovědnost – ať už v neutrálním provedení, nebo s firemním potiskem."),
             ]
         if p["name"] == "Udržitelná páska POLY+":
-            b1 = ("Ekologická alternativa k PVC", "Matná BOPP fólie 35 µm bez chloru a rozpouštědel – vhodná náhrada vinylových pásek.")
-            b3 = ("Tiché odvíjení a snadné trhání", f"Přilnavost {pril}, nehlučné akrylové lepidlo, snadné tržení a UV odolnost ({temp}).")
-        elif "papír" in nl or "fsc" in nl:
+            return [
+                ("Plnohodnotná ekologická náhrada za PVC pásky", "Ideální řešení pro firmy, které chtějí nahradit ekologicky zatěžující PVC pásky. POLY+ nabízí srovnatelnou tloušťku, vysokou pevnost v tahu a prémiový vzhled."),
+                ("Robustní 35µm nosič se zesíleným lepidlem", "Zesílená fólie o tloušťce 35 µm v kombinaci s výkonným akrylovým lepidlem zajišťuje vysokou mechanickou odolnost a spolehlivé uzavření i těžších kartonů."),
+                ("Prémiový matný vzhled", "Díky matné povrchové úpravě dodává páska balení antireflexní, prémiový charakter s perfektním kontrastem pro firemní potisk."),
+            ]
+        if "papír" in nl or "fsc" in nl:
             b1 = ("Bezplastový papírový nosič", "Plně recyklovatelné balení – páska putuje spolu s kartonem bez oddělování.")
             b3 = ("Teplotní rozsah " + temp, f"Pevnost v tahu {pevnost} pro každodenní provoz skladu i expedice.")
         else:

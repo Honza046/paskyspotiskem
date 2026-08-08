@@ -1321,54 +1321,75 @@
       },
       "udrzitelna-paska-nopp": {
         "name": "Udržitelná páska NOPP",
-        "tagline": "Udržitelná páska bez plastu pro plně recyklovatelné balení.",
+        "tagline": "Páska s nosnou fólií z bio-cirkulárního materiálu s certifikací ISCC PLUS.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
         "benefits": [
           {
-            "title": "Bezplastový papírový nosič",
-            "text": "Plně recyklovatelné balení – páska putuje spolu s kartonem bez oddělování."
+            "title": "Certifikovaný nosič z borovicového oleje",
+            "text": "Nosná BOPP fólie využívá obnovitelné suroviny z dřevního odpadu (vedlejší produkt výroby celulózy) s certifikací ISCC PLUS. Nahrazuje fosilní plasty bez jakýchkoliv kompromisů v pevnosti."
           },
           {
-            "title": "Akrylové lepidlo",
-            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+            "title": "Nižší spotřeba fosilních surovin",
+            "text": "Redukuje závislost na primární ropě a pomáhá budovat skutečně cirkulární ekonomiku v obalovém průmyslu."
           },
           {
-            "title": "Teplotní rozsah −5 až +60 °C",
-            "text": "Pevnost v tahu 50 N/25 mm pro každodenní provoz skladu i expedice."
+            "title": "Vysoká odolnost proti UV",
+            "text": "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování a UV zatížení."
           }
         ],
         "uses": [
           "Firmy s ESG a udržitelnými cíli",
-          "Zelené balení pro e-shopy",
           "Cirkulární obalové procesy",
-          "Budování zodpovědné značky"
+          "Budování zodpovědné značky",
+          "Automatické balicí linky s ESG cíli"
         ],
         "params_values": {
-          "carrier": "Papír (FSC)",
-          "thickness": "110 µm",
-          "adhesive": "Akrylové (bez rozpouštědel)",
-          "adhesion": "4,0 N/25 mm",
-          "temperature": "−5 až +60 °C",
-          "strength": "50 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 / 32 µm",
+          "adhesive": "Akryl / Low noise",
+          "adhesion": "21 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 až +60 / −10 až +60 °C"
         },
         "spec_pills": [
-          "Papír (FSC)",
-          "Akrylové (bez rozpouštědel)",
-          "−5 až +60 °C"
+          "BOPP",
+          "Akryl / Low noise",
+          "0 až +60 / −10 až +60 °C"
         ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
+        "tech_variants": {
+          "acryl": {
+            "carrier": "BOPP",
+            "thickness": "28 / 32 µm",
+            "adhesive": "Akryl",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 až +60 °C"
+          },
+          "low_noise": {
+            "carrier": "BOPP",
+            "thickness": "28 / 32 µm",
+            "adhesive": "Akryl (Low noise)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 až +60 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "acryl": "Akryl",
+          "low_noise": "Low noise"
+        },
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
@@ -1384,54 +1405,75 @@
       },
       "udrzitelna-paska-nopp-plus": {
         "name": "Udržitelná páska NOPP+",
-        "tagline": "Vylepšená bezplastová páska s vyšší pevností a lepivostí.",
+        "tagline": "Páska s certifikovaným bio-cirkulárním složením fólie i lepidla pro maximální snížení uhlíkové stopy.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
         "benefits": [
           {
-            "title": "Bezplastový papírový nosič",
-            "text": "Plně recyklovatelné balení – páska putuje spolu s kartonem bez oddělování."
+            "title": "Plně bio-cirkulární složení fólie i lepidla",
+            "text": "NOPP+ posouvá udržitelnost na maximum. Certifikaci ISCC PLUS a obnovitelný původ z přírodních surovin má u této pásky jak nosná fólie, tak i akrylové lepidlo."
           },
           {
-            "title": "Akrylové lepidlo",
-            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+            "title": "Zesílená přilnavost pro náročné kartony",
+            "text": "Speciálně formulované akrylové lepidlo (Adhesive G1) přináší vyšší lepivost a okamžitou přilnavost. Páska spolehlivě drží i na drsnějších površích a recyklovaném kartonu."
           },
           {
-            "title": "Teplotní rozsah −5 až +65 °C",
-            "text": "Pevnost v tahu 55 N/25 mm pro každodenní provoz skladu i expedice."
+            "title": "Vysoká odolnost proti UV",
+            "text": "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování a UV zatížení."
           }
         ],
         "uses": [
           "Firmy s ESG a udržitelnými cíli",
-          "Zelené balení pro e-shopy",
           "Cirkulární obalové procesy",
-          "Budování zodpovědné značky"
+          "Budování zodpovědné značky",
+          "Automatické balicí linky s ESG cíli"
         ],
         "params_values": {
-          "carrier": "Papír (FSC)",
-          "thickness": "120 µm",
-          "adhesive": "Akrylové",
-          "adhesion": "4,4 N/25 mm",
-          "temperature": "−5 až +65 °C",
-          "strength": "55 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 / 32 µm",
+          "adhesive": "Akryl / Low noise",
+          "adhesion": "21 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 až +60 / −10 až +60 °C"
         },
         "spec_pills": [
-          "Papír (FSC)",
-          "Akrylové",
-          "−5 až +65 °C"
+          "BOPP",
+          "Akryl / Low noise",
+          "0 až +60 / −10 až +60 °C"
         ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
+        "tech_variants": {
+          "acryl": {
+            "carrier": "BOPP",
+            "thickness": "28 / 32 µm",
+            "adhesive": "Akryl",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 až +60 °C"
+          },
+          "low_noise": {
+            "carrier": "BOPP",
+            "thickness": "28 / 32 µm",
+            "adhesive": "Akryl (Low noise)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 až +60 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "acryl": "Akryl",
+          "low_noise": "Low noise"
+        },
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",
@@ -1447,21 +1489,21 @@
       },
       "udrzitelna-paska-poly-plus": {
         "name": "Udržitelná páska POLY+",
-        "tagline": "Ekologická alternativa k PVC – matná neodrážející BOPP páska s tichým akrylovým lepidlem.",
+        "tagline": "Ekologická a plnohodnotná náhrada PVC pásek s elegantním matným povrchem.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
         "benefits": [
           {
-            "title": "Ekologická alternativa k PVC",
-            "text": "Matná BOPP fólie 35 µm bez chloru a rozpouštědel – vhodná náhrada vinylových pásek."
+            "title": "Plnohodnotná ekologická náhrada za PVC pásky",
+            "text": "Ideální řešení pro firmy, které chtějí nahradit ekologicky zatěžující PVC pásky. POLY+ nabízí srovnatelnou tloušťku, vysokou pevnost v tahu a prémiový vzhled."
           },
           {
-            "title": "Akrylové lepidlo",
-            "text": "Tiché odvíjení, dlouhodobá stabilita lepivosti a spolehlivý výkon ve skladových podmínkách."
+            "title": "Robustní 35µm nosič se zesíleným lepidlem",
+            "text": "Zesílená fólie o tloušťce 35 µm v kombinaci s výkonným akrylovým lepidlem zajišťuje vysokou mechanickou odolnost a spolehlivé uzavření i těžších kartonů."
           },
           {
-            "title": "Tiché odvíjení a snadné trhání",
-            "text": "Přilnavost 3,8 N/25 mm, nehlučné akrylové lepidlo, snadné tržení a UV odolnost (−5 až +60 °C)."
+            "title": "Prémiový matný vzhled",
+            "text": "Díky matné povrchové úpravě dodává páska balení antireflexní, prémiový charakter s perfektním kontrastem pro firemní potisk."
           }
         ],
         "uses": [
@@ -1471,30 +1513,51 @@
           "Uzavírání kartonů všech typů povrchů"
         ],
         "params_values": {
-          "carrier": "BOPP fólie (matná, 35 µm)",
+          "carrier": "matná BOPP",
           "thickness": "35 µm",
-          "adhesive": "Akrylové (tiché, bez rozpouštědel)",
-          "adhesion": "3,8 N/25 mm",
-          "temperature": "−5 až +60 °C",
-          "strength": "50 N/25 mm"
+          "adhesive": "Akryl / Low noise",
+          "adhesion": "24 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 až +60 / −10 až +60 °C"
         },
         "spec_pills": [
-          "BOPP fólie (matná, 35 µm)",
-          "Akrylové (tiché, bez rozpouštědel)",
-          "−5 až +60 °C"
+          "matná BOPP",
+          "Akryl / Low noise",
+          "0 až +60 / −10 až +60 °C"
         ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
+        "tech_variants": {
+          "acryl": {
+            "carrier": "matná BOPP",
+            "thickness": "35 µm",
+            "adhesive": "Akryl",
+            "adhesion": "24 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 až +60 °C"
+          },
+          "low_noise": {
+            "carrier": "matná BOPP",
+            "thickness": "35 µm",
+            "adhesive": "Akryl (Low noise)",
+            "adhesion": "24 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 až +60 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "acryl": "Akryl",
+          "low_noise": "Low noise"
+        },
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Nosič / materiál",
-          "thickness": "Tloušťka",
+          "carrier": "Nosič",
+          "thickness": "Tloušťka fólie",
           "adhesive": "Typ lepidla",
-          "adhesion": "Přilnavost (ocel)",
-          "temperature": "Teplotní odolnost",
-          "strength": "Pevnost v tahu"
+          "adhesion": "Tloušťka lepidla",
+          "strength": "Skladovací a aplikační teplota",
+          "temperature": "Provozní teplota po nalepení",
+          "min_qty": "Minimální množství"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Kalkulace s potiskem",

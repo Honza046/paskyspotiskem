@@ -1320,54 +1320,75 @@
       },
       "udrzitelna-paska-nopp": {
         "name": "Sustainable tape NOPP",
-        "tagline": "Plastic-free sustainable tape for fully recyclable packaging.",
+        "tagline": "Tape with a bio-circular carrier film certified ISCC PLUS.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
         "benefits": [
           {
-            "title": "Plastic-free paper carrier",
-            "text": "Fully recyclable packaging, tape goes with the carton without separation."
+            "title": "Certified carrier from pine oil",
+            "text": "The BOPP carrier film uses renewable raw materials from wood waste (a by-product of pulp production) with ISCC PLUS certification. It replaces fossil plastics without any compromise on strength."
           },
           {
-            "title": "Acrylic adhesive",
-            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+            "title": "Lower consumption of fossil raw materials",
+            "text": "It reduces dependence on primary oil and helps build a truly circular economy in the packaging industry."
           },
           {
-            "title": "Temperature range −5 to +60 °C",
-            "text": "Tensile strength 50 N/25 mm for everyday warehouse and dispatch operations."
+            "title": "High UV resistance",
+            "text": "Acrylic adhesive keeps its stickiness during long-term storage and UV exposure."
           }
         ],
         "uses": [
           "Companies with ESG and sustainability goals",
-          "Green packaging for e-shops",
           "Circular packaging processes",
-          "Building a responsible brand"
+          "Building a responsible brand",
+          "Automatic packing lines with ESG goals"
         ],
         "params_values": {
-          "carrier": "Paper (FSC)",
-          "thickness": "110 µm",
-          "adhesive": "Acrylic (solvent-free)",
-          "adhesion": "4,0 N/25 mm",
-          "temperature": "−5 to +60 °C",
-          "strength": "50 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 / 32 µm",
+          "adhesive": "Acrylic / Low noise",
+          "adhesion": "21 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 to +60 / −10 to +60 °C"
         },
         "spec_pills": [
-          "Paper (FSC)",
-          "Acrylic (solvent-free)",
-          "−5 to +60 °C"
+          "BOPP",
+          "Acrylic / Low noise",
+          "0 to +60 / −10 to +60 °C"
         ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
+        "tech_variants": {
+          "acryl": {
+            "carrier": "BOPP",
+            "thickness": "28 / 32 µm",
+            "adhesive": "Akryl",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 to +60 °C"
+          },
+          "low_noise": {
+            "carrier": "BOPP",
+            "thickness": "28 / 32 µm",
+            "adhesive": "Akryl (Low noise)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 to +60 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "acryl": "Akryl",
+          "low_noise": "Low noise"
+        },
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
           "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application",
+          "min_qty": "Minimum quantity"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
@@ -1383,54 +1404,75 @@
       },
       "udrzitelna-paska-nopp-plus": {
         "name": "Sustainable tape NOPP+",
-        "tagline": "Enhanced plastic-free tape with higher strength and adhesion.",
+        "tagline": "Tape with certified bio-circular film and adhesive for maximum carbon footprint reduction.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
         "benefits": [
           {
-            "title": "Plastic-free paper carrier",
-            "text": "Fully recyclable packaging, tape goes with the carton without separation."
+            "title": "Fully bio-circular film and adhesive composition",
+            "text": "NOPP+ takes sustainability to the maximum. Both the carrier film and the acrylic adhesive have ISCC PLUS certification and a renewable origin from natural raw materials."
           },
           {
-            "title": "Acrylic adhesive",
-            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+            "title": "Enhanced adhesion for demanding cartons",
+            "text": "Specially formulated acrylic adhesive (Adhesive G1) delivers higher tack and immediate adhesion. The tape holds reliably even on rougher surfaces and recycled cardboard."
           },
           {
-            "title": "Temperature range −5 to +65 °C",
-            "text": "Tensile strength 55 N/25 mm for everyday warehouse and dispatch operations."
+            "title": "High UV resistance",
+            "text": "Acrylic adhesive keeps its stickiness during long-term storage and UV exposure."
           }
         ],
         "uses": [
           "Companies with ESG and sustainability goals",
-          "Green packaging for e-shops",
           "Circular packaging processes",
-          "Building a responsible brand"
+          "Building a responsible brand",
+          "Automatic packing lines with ESG goals"
         ],
         "params_values": {
-          "carrier": "Paper (FSC)",
-          "thickness": "120 µm",
-          "adhesive": "Acrylic",
-          "adhesion": "4,4 N/25 mm",
-          "temperature": "−5 to +65 °C",
-          "strength": "55 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 / 32 µm",
+          "adhesive": "Acrylic / Low noise",
+          "adhesion": "21 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 to +60 / −10 to +60 °C"
         },
         "spec_pills": [
-          "Paper (FSC)",
-          "Acrylic",
-          "−5 to +65 °C"
+          "BOPP",
+          "Acrylic / Low noise",
+          "0 to +60 / −10 to +60 °C"
         ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
+        "tech_variants": {
+          "acryl": {
+            "carrier": "BOPP",
+            "thickness": "28 / 32 µm",
+            "adhesive": "Akryl",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 to +60 °C"
+          },
+          "low_noise": {
+            "carrier": "BOPP",
+            "thickness": "28 / 32 µm",
+            "adhesive": "Akryl (Low noise)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 to +60 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "acryl": "Akryl",
+          "low_noise": "Low noise"
+        },
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
           "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application",
+          "min_qty": "Minimum quantity"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",
@@ -1446,21 +1488,21 @@
       },
       "udrzitelna-paska-poly-plus": {
         "name": "Sustainable tape POLY+",
-        "tagline": "Eco-friendly PVC alternative, matte non-reflective BOPP tape with quiet acrylic adhesive.",
+        "tagline": "Ecological full replacement for PVC tapes with an elegant matte surface.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
         "benefits": [
           {
-            "title": "Eco-friendly PVC alternative",
-            "text": "Matte 35 µm BOPP film without chlorine or solvents, a suitable replacement for vinyl tapes."
+            "title": "Full ecological replacement for PVC tapes",
+            "text": "Ideal solution for companies that want to replace environmentally burdensome PVC tapes. POLY+ offers comparable thickness, high tensile strength and a premium look."
           },
           {
-            "title": "Acrylic adhesive",
-            "text": "Quiet unwinding, long-term adhesion stability and reliable performance in warehouse conditions."
+            "title": "Robust 35 µm carrier with reinforced adhesive",
+            "text": "Reinforced 35 µm film combined with high-performance acrylic adhesive ensures high mechanical resistance and secure sealing of even heavier cartons."
           },
           {
-            "title": "Quiet unwinding and easy tear",
-            "text": "Adhesion 3,8 N/25 mm, low-noise acrylic adhesive, easy tear and UV resistance (−5 až +60 °C)."
+            "title": "Premium matte look",
+            "text": "Thanks to the matte surface finish, the tape gives packaging a non-glare, premium character with perfect contrast for company printing."
           }
         ],
         "uses": [
@@ -1470,30 +1512,51 @@
           "Sealing cartons of all surface types"
         ],
         "params_values": {
-          "carrier": "BOPP film (matte, 35 µm)",
+          "carrier": "matte BOPP",
           "thickness": "35 µm",
-          "adhesive": "Acrylic (quiet, solvent-free)",
-          "adhesion": "3,8 N/25 mm",
-          "temperature": "−5 to +60 °C",
-          "strength": "50 N/25 mm"
+          "adhesive": "Acrylic / Low noise",
+          "adhesion": "24 µm",
+          "strength": "14–28 °C",
+          "temperature": "0 to +60 / −10 to +60 °C"
         },
         "spec_pills": [
-          "BOPP film (matte, 35 µm)",
-          "Acrylic (quiet, solvent-free)",
-          "−5 to +60 °C"
+          "matte BOPP",
+          "Acrylic / Low noise",
+          "0 to +60 / −10 to +60 °C"
         ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
+        "tech_variants": {
+          "acryl": {
+            "carrier": "matte BOPP",
+            "thickness": "35 µm",
+            "adhesive": "Akryl",
+            "adhesion": "24 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 to +60 °C"
+          },
+          "low_noise": {
+            "carrier": "matte BOPP",
+            "thickness": "35 µm",
+            "adhesive": "Akryl (Low noise)",
+            "adhesion": "24 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 to +60 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "acryl": "Akryl",
+          "low_noise": "Low noise"
+        },
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Carrier / material",
-          "thickness": "Thickness",
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
           "adhesive": "Adhesive type",
-          "adhesion": "Adhesion (steel)",
-          "temperature": "Temperature resistance",
-          "strength": "Tensile strength"
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application",
+          "min_qty": "Minimum quantity"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Quote with printing",

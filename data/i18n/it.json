@@ -1320,54 +1320,75 @@
       },
       "udrzitelna-paska-nopp": {
         "name": "Nastro sostenibile NOPP",
-        "tagline": "Nastro sostenibile senza plastica per imballaggi completamente riciclabili.",
+        "tagline": "Nastro con film di supporto bio-circolare certificato ISCC PLUS.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nastri sostenibili",
         "benefits": [
           {
-            "title": "Supporto in carta senza plastica",
-            "text": "Imballaggio completamente riciclabile: il nastro va con il cartone senza separazione."
+            "title": "Supporto certificato da olio di pino",
+            "text": "Il film di supporto BOPP utilizza materie prime rinnovabili da scarti del legno (sottoprodotto della produzione di cellulosa) con certificazione ISCC PLUS. Sostituisce le plastiche fossili senza alcun compromesso sulla resistenza."
           },
           {
-            "title": "Adesivo acrilico",
-            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+            "title": "Minore consumo di materie prime fossili",
+            "text": "Riduce la dipendenza dal petrolio primario e aiuta a costruire una vera economia circolare nel settore dell’imballaggio."
           },
           {
-            "title": "Intervallo di temperatura −5 a +60 °C",
-            "text": "Resistenza alla trazione 50 N/25 mm per l'uso quotidiano in magazzino e spedizione."
+            "title": "Elevata resistenza ai raggi UV",
+            "text": "L'adesivo acrilico mantiene l'adesione anche con stoccaggio prolungato e esposizione UV."
           }
         ],
         "uses": [
           "Aziende con obiettivi ESG e di sostenibilità",
-          "Imballaggi verdi per e-shop",
           "Processi di imballaggio circolari",
-          "Costruzione di un marchio responsabile"
+          "Costruzione di un marchio responsabile",
+          "Linee di imballaggio automatiche con obiettivi ESG"
         ],
         "params_values": {
-          "carrier": "Carta (FSC)",
-          "thickness": "110 µm",
-          "adhesive": "Acrilico (senza solventi)",
-          "adhesion": "4,0 N/25 mm",
-          "temperature": "−5 a +60 °C",
-          "strength": "50 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 / 32 µm",
+          "adhesive": "Acrilico / Low noise",
+          "adhesion": "21 µm",
+          "strength": "14–28 °C",
+          "temperature": "da 0 a +60 / da −10 a +60 °C"
         },
         "spec_pills": [
-          "Carta (FSC)",
-          "Acrilico (senza solventi)",
-          "−5 a +60 °C"
+          "BOPP",
+          "Acrilico / Low noise",
+          "da 0 a +60 / da −10 a +60 °C"
         ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
+        "tech_variants": {
+          "acryl": {
+            "carrier": "BOPP",
+            "thickness": "28 / 32 µm",
+            "adhesive": "Akryl",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 a +60 °C"
+          },
+          "low_noise": {
+            "carrier": "BOPP",
+            "thickness": "28 / 32 µm",
+            "adhesive": "Akryl (Low noise)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 a +60 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "acryl": "Akryl",
+          "low_noise": "Low noise"
+        },
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Supporto / materiale",
-          "thickness": "Spessore",
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
           "adhesive": "Tipo di adesivo",
-          "adhesion": "Adesione (acciaio)",
-          "temperature": "Resistenza alla temperatura",
-          "strength": "Resistenza alla trazione"
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione",
+          "min_qty": "Quantità minima"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
@@ -1383,54 +1404,75 @@
       },
       "udrzitelna-paska-nopp-plus": {
         "name": "Nastro sostenibile NOPP+",
-        "tagline": "Nastro senza plastica migliorato con maggiore resistenza e adesione.",
+        "tagline": "Nastro con film e adesivo bio-circolari certificati per la massima riduzione dell’impronta di carbonio.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nastri sostenibili",
         "benefits": [
           {
-            "title": "Supporto in carta senza plastica",
-            "text": "Imballaggio completamente riciclabile: il nastro va con il cartone senza separazione."
+            "title": "Composizione completamente bio-circolare di film e adesivo",
+            "text": "NOPP+ porta la sostenibilità al massimo. Sia il film di supporto sia l’adesivo acrilico hanno certificazione ISCC PLUS e origine rinnovabile da materie prime naturali."
           },
           {
-            "title": "Adesivo acrilico",
-            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+            "title": "Adesione rafforzata per cartoni impegnativi",
+            "text": "L’adesivo acrilico formulato appositamente (Adhesive G1) offre maggiore tack e adesione immediata. Il nastro tiene in modo affidabile anche su superfici più ruvide e cartone riciclato."
           },
           {
-            "title": "Intervallo di temperatura −5 a +65 °C",
-            "text": "Resistenza alla trazione 55 N/25 mm per l'uso quotidiano in magazzino e spedizione."
+            "title": "Elevata resistenza ai raggi UV",
+            "text": "L'adesivo acrilico mantiene l'adesione anche con stoccaggio prolungato e esposizione UV."
           }
         ],
         "uses": [
           "Aziende con obiettivi ESG e di sostenibilità",
-          "Imballaggi verdi per e-shop",
           "Processi di imballaggio circolari",
-          "Costruzione di un marchio responsabile"
+          "Costruzione di un marchio responsabile",
+          "Linee di imballaggio automatiche con obiettivi ESG"
         ],
         "params_values": {
-          "carrier": "Carta (FSC)",
-          "thickness": "120 µm",
-          "adhesive": "Acrilico",
-          "adhesion": "4,4 N/25 mm",
-          "temperature": "−5 a +65 °C",
-          "strength": "55 N/25 mm"
+          "carrier": "BOPP",
+          "thickness": "28 / 32 µm",
+          "adhesive": "Acrilico / Low noise",
+          "adhesion": "21 µm",
+          "strength": "14–28 °C",
+          "temperature": "da 0 a +60 / da −10 a +60 °C"
         },
         "spec_pills": [
-          "Carta (FSC)",
-          "Acrilico",
-          "−5 a +65 °C"
+          "BOPP",
+          "Acrilico / Low noise",
+          "da 0 a +60 / da −10 a +60 °C"
         ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
+        "tech_variants": {
+          "acryl": {
+            "carrier": "BOPP",
+            "thickness": "28 / 32 µm",
+            "adhesive": "Akryl",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 a +60 °C"
+          },
+          "low_noise": {
+            "carrier": "BOPP",
+            "thickness": "28 / 32 µm",
+            "adhesive": "Akryl (Low noise)",
+            "adhesion": "21 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 a +60 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "acryl": "Akryl",
+          "low_noise": "Low noise"
+        },
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Supporto / materiale",
-          "thickness": "Spessore",
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
           "adhesive": "Tipo di adesivo",
-          "adhesion": "Adesione (acciaio)",
-          "temperature": "Resistenza alla temperatura",
-          "strength": "Resistenza alla trazione"
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione",
+          "min_qty": "Quantità minima"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
@@ -1446,21 +1488,21 @@
       },
       "udrzitelna-paska-poly-plus": {
         "name": "Nastro sostenibile POLY+",
-        "tagline": "Alternativa ecologica al PVC: nastro BOPP opaco non riflettente con adesivo acrilico silenzioso.",
+        "tagline": "Sostituto ecologico e completo dei nastri in PVC con elegante superficie opaca.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nastri sostenibili",
         "benefits": [
           {
-            "title": "Alternativa ecologica al PVC",
-            "text": "Film BOPP opaco da 35 µm senza cloro né solventi: sostituto adatto ai nastri in vinile."
+            "title": "Sostituto ecologico completo dei nastri in PVC",
+            "text": "Soluzione ideale per le aziende che vogliono sostituire i nastri in PVC impattanti sull’ambiente. POLY+ offre spessore comparabile, elevata resistenza alla trazione e un look premium."
           },
           {
-            "title": "Adesivo acrilico",
-            "text": "Svolgimento silenzioso, adesione stabile nel tempo e prestazioni affidabili in magazzino."
+            "title": "Supporto robusto da 35 µm con adesivo rinforzato",
+            "text": "Il film rinforzato da 35 µm combinato con adesivo acrilico ad alte prestazioni garantisce elevata resistenza meccanica e chiusura sicura anche di cartoni più pesanti."
           },
           {
-            "title": "Svolgimento silenzioso e strappo facile",
-            "text": "Adesione 3,8 N/25 mm, adesivo acrilico silenzioso, strappo facile e resistenza UV (−5 až +60 °C)."
+            "title": "Aspetto opaco premium",
+            "text": "Grazie alla finitura opaca, il nastro conferisce all’imballaggio un carattere premium anti-riflesso con contrasto perfetto per la stampa aziendale."
           }
         ],
         "uses": [
@@ -1470,30 +1512,51 @@
           "Chiusura di cartoni su tutti i tipi di superficie"
         ],
         "params_values": {
-          "carrier": "Film BOPP (opaco, 35 µm)",
+          "carrier": "BOPP opaco",
           "thickness": "35 µm",
-          "adhesive": "Acrilico (silenzioso, senza solventi)",
-          "adhesion": "3,8 N/25 mm",
-          "temperature": "−5 a +60 °C",
-          "strength": "50 N/25 mm"
+          "adhesive": "Acrilico / Low noise",
+          "adhesion": "24 µm",
+          "strength": "14–28 °C",
+          "temperature": "da 0 a +60 / da −10 a +60 °C"
         },
         "spec_pills": [
-          "Film BOPP (opaco, 35 µm)",
-          "Acrilico (silenzioso, senza solventi)",
-          "−5 a +60 °C"
+          "BOPP opaco",
+          "Acrilico / Low noise",
+          "da 0 a +60 / da −10 a +60 °C"
         ],
-        "tech_variants": {},
-        "tech_variant_labels": {},
+        "tech_variants": {
+          "acryl": {
+            "carrier": "BOPP opaco",
+            "thickness": "35 µm",
+            "adhesive": "Akryl",
+            "adhesion": "24 µm",
+            "strength": "14–28 °C",
+            "temperature": "0 a +60 °C"
+          },
+          "low_noise": {
+            "carrier": "BOPP opaco",
+            "thickness": "35 µm",
+            "adhesive": "Akryl (Low noise)",
+            "adhesion": "24 µm",
+            "strength": "14–28 °C",
+            "temperature": "−10 a +60 °C"
+          }
+        },
+        "tech_variant_labels": {
+          "acryl": "Akryl",
+          "low_noise": "Low noise"
+        },
         "min_qty_note": "",
         "params_labels": {
-          "carrier": "Supporto / materiale",
-          "thickness": "Spessore",
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
           "adhesive": "Tipo di adesivo",
-          "adhesion": "Adesione (acciaio)",
-          "temperature": "Resistenza alla temperatura",
-          "strength": "Resistenza alla trazione"
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione",
+          "min_qty": "Quantità minima"
         },
-        "tech_spec": false,
+        "tech_spec": true,
         "paper_spec": false,
         "ctas": {
           "hero": "Preventivo con stampa",
