@@ -17,7 +17,13 @@ def collect_urls() -> list[tuple[str, str, str]]:
         ('/', 'weekly', '1.0'),
         ('/sortiment', 'weekly', '0.9'),
         ('/galerie', 'weekly', '0.8'),
-        ('/faq', 'monthly', '0.7'),
+        ('/faq', 'monthly', '0.8'),
+        ('/pruvodce', 'monthly', '0.85'),
+        ('/pruvodce/pasky-s-potiskem', 'monthly', '0.85'),
+        ('/pruvodce/hot-melt-vs-akryl', 'monthly', '0.8'),
+        ('/pruvodce/pasky-pro-e-shopy', 'monthly', '0.8'),
+        ('/pruvodce/papirove-fsc-pasky', 'monthly', '0.75'),
+        ('/pruvodce/eco-plus-recyklovane-pasky', 'monthly', '0.75'),
     ]
     sortiment_root = ROOT / 'sortiment'
     if sortiment_root.is_dir():
@@ -36,6 +42,17 @@ def collect_urls() -> list[tuple[str, str, str]]:
             else:
                 priority = '0.65'
             urls.append((path, 'monthly', priority))
+    # Auto-discover any extra guide pages
+    pruvodce = ROOT / 'pruvodce'
+    if pruvodce.is_dir():
+        known = {u[0] for u in urls}
+        for html_path in sorted(pruvodce.rglob('index.html')):
+            rel = html_path.relative_to(ROOT).as_posix()
+            if rel == 'pruvodce/index.html':
+                continue
+            path = '/' + rel[:-len('index.html')].rstrip('/')
+            if path not in known:
+                urls.append((path, 'monthly', '0.7'))
     return urls
 
 

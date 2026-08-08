@@ -14,9 +14,31 @@ from seo import (
     product_meta_description,
     product_schema,
 )
+from product_seo_body import product_seo_body_html, product_seo_paragraphs
 
 def esc(s): return html.escape(s, quote=True)
 def url(p): return '/' + urllib.parse.quote(p)
+
+# Prefer clean /images/products/* paths for OG + schema when available.
+SEO_IMAGE_BY_SLUG = {
+    'bopp-paska-hot-melt': 'images/products/bopp-paska-hot-melt.jpg',
+    'bopp-paska-acrylic': 'images/products/bopp-paska-acrylic.jpg',
+    'bopp-paska-tack-plus': 'images/products/bopp-paska-tack-plus.jpg',
+    'bopp-paska-extra-glue-plus': 'images/products/bopp-paska-extra-glue-plus.jpg',
+    'bopp-paska-tamper-evident': 'images/products/bopp-paska-tamper-evident.jpg',
+    'udrzitelna-paska-eco-100': 'images/products/udrzitelna-paska-eco-100.jpg',
+    'udrzitelna-paska-nopp': 'images/products/udrzitelna-paska-nopp.jpg',
+    'udrzitelna-paska-nopp-plus': 'images/products/udrzitelna-paska-nopp-plus.jpg',
+    'udrzitelna-paska-poly-plus': 'images/products/udrzitelna-paska-poly-plus.jpg',
+    'papirova-paska-c680': 'images/products/papirova-paska-c680.jpg',
+}
+
+def product_public_image(p):
+    slug = p.get('slug') or ''
+    alt = SEO_IMAGE_BY_SLUG.get(slug)
+    if alt and os.path.exists(alt):
+        return alt
+    return p['image']
 
 def slugify(s):
     s = unicodedata.normalize('NFKD', s).encode('ascii','ignore').decode('ascii')
@@ -1403,11 +1425,34 @@ CHK='<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" 
 ARR='<svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>'
 BACK='<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12"/></svg>'
 FWD='<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>'
+
+def related_products_html(cat, current):
+    siblings = [x for x in PRODUCTS[cat['cat']] if x['slug'] != current['slug']][:5]
+    if not siblings:
+        return ''
+    links = '\n'.join(
+        '                <li><a class="text-sm font-semibold text-orange-600 hover:text-orange-700" href="/sortiment/%s/%s">%s</a>'
+        '<span class="text-sm text-slate-500"> — %s</span></li>'
+        % (cat['cat'], s['slug'], esc(s['name']), esc(s['tagline'][:90] + ('…' if len(s['tagline']) > 90 else '')))
+        for s in siblings
+    )
+    return '''        <div class="mx-auto mt-12 max-w-3xl rounded-2xl border border-slate-100 bg-white px-6 py-6 shadow-sm sm:px-8">
+            <h2 class="text-lg font-bold text-slate-900">Další pásky z kategorie %s</h2>
+            <ul class="mt-4 space-y-2">
+%s
+            </ul>
+            <p class="mt-4 text-sm text-slate-600">Tipy k výběru: <a class="font-semibold text-orange-600 hover:text-orange-700" href="/pruvodce/hot-melt-vs-akryl">HOT MELT vs Akryl</a>,
+            <a class="font-semibold text-orange-600 hover:text-orange-700" href="/pruvodce/pasky-s-potiskem">pásky s potiskem</a>,
+            <a class="font-semibold text-orange-600 hover:text-orange-700" href="/faq">časté otázky</a>.</p>
+        </div>
+
+''' % (esc(cat['title']), links)
+
 PRODUCT_BOTTOM_NOTE='''        <div class="product-neutral-note mx-auto mt-14 max-w-3xl px-6 py-6 text-center sm:px-8">
             <p class="text-sm leading-relaxed text-slate-700">
                 <span class="font-bold text-slate-900">Pásku lze objednat i bez potisku.</span>
                 Neutrální (nepotištěná) verze stejného materiálu, ideální pro okamžité balení nebo skladové zásoby.
-                <a href="/index.html#kontakt1" class="font-semibold text-orange-600 transition-colors hover:text-orange-700">Zeptejte se na dostupnost</a>
+                <a href="/#kontakt1" class="font-semibold text-orange-600 transition-colors hover:text-orange-700">Zeptejte se na dostupnost</a>
             </p>
         </div>
 
@@ -1642,10 +1687,10 @@ for cat in CATS:
 <main>
 
 <section class="mx-auto max-w-7xl px-4 py-10 sm:py-14">
-    <nav class="mb-8 text-sm text-slate-500" aria-label="Drobečková navigace">
-        <a href="/index.html" class="hover:text-orange-600">Domů</a>
+        <nav class="mb-8 text-sm text-slate-500" aria-label="Drobečková navigace">
+        <a href="/" class="hover:text-orange-600">Domů</a>
         <span class="mx-2 text-slate-300">/</span>
-        <a href="/sortiment.html" class="hover:text-orange-600">Sortiment</a>
+        <a href="/sortiment" class="hover:text-orange-600">Sortiment</a>
         <span class="mx-2 text-slate-300">/</span>
         <a href="/sortiment/%s" class="hover:text-orange-600">%s</a>
         <span class="mx-2 text-slate-300">/</span>
@@ -1660,6 +1705,7 @@ for cat in CATS:
             <span class="text-sm font-semibold uppercase tracking-wide text-orange-600">%s</span>
             <h1 class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">%s</h1>
             <p class="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">%s</p>
+%s
 %s
             <div class="mt-6 flex flex-wrap gap-2">
                 <span class="rounded-full bg-slate-100 px-4 py-1.5 text-xs font-semibold text-slate-700">%s</span>
@@ -1714,17 +1760,20 @@ for cat in CATS:
 </main>
 
 '''%(cat["cat"],esc(cat["title"]),esc(p["name"]),
-     product_detail_image_box(cat["cat"]),url(p["image"]),esc(p["name"]),product_detail_image_cls(cat["cat"]),
+     product_detail_image_box(cat["cat"]),url(p["image"]),esc(p["name"] + ' s potiskem – ALFA IN'),product_detail_image_cls(cat["cat"]),
      esc(cat["title"]),esc(p["name"]),esc(p["tagline"]),
      product_series_note_html(cat, p),
+     product_seo_body_html(cat["cat"], p["name"]),
      *[esc(x) for x in product_spec_pills(p)],
      esc(cta['hero']),FWD,cat["cat"],BACK,
      tech_table,min_qty_html,param_hints_html(cat),advs,tailor,uses,
-     PRODUCT_BOTTOM_NOTE,
+     related_products_html(cat, p) + PRODUCT_BOTTOM_NOTE,
      cat["cat"],BACK,esc(cat["title"]),esc(cta['bottom']))
         os.makedirs("sortiment/%s/%s"%(cat["cat"],p["slug"]),exist_ok=True)
         prod_path = f'/sortiment/{cat["cat"]}/{p["slug"]}'
-        prod_desc = product_meta_description(p['name'], p['tagline'])
+        seo_p1, _seo_p2 = product_seo_paragraphs(cat["cat"], p["name"])
+        prod_desc = product_meta_description(p['name'], p['tagline'], seo_p1)
+        schema_desc = f"{p['tagline']} {seo_p1}"
         prod_schemas = [
             breadcrumb_schema([
                 ('/', 'Domů'),
@@ -1732,12 +1781,12 @@ for cat in CATS:
                 (f'/sortiment/{cat["cat"]}', cat['title']),
                 (prod_path, p['name']),
             ]),
-            product_schema(p['name'], p['tagline'], prod_path, p['image']),
+            product_schema(p['name'], schema_desc, prod_path, product_public_image(p)),
         ]
         open("sortiment/%s/%s/index.html"%(cat["cat"],p["slug"]),"w").write(page(
             p["name"], prod_desc, prod_path, main,
             schemas=prod_schemas,
-            og_image=p['image'],
+            og_image=url(product_public_image(p)) if not product_public_image(p).startswith('/') else product_public_image(p),
             og_type='product',
         ))
         n+=1

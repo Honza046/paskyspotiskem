@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "python3 scripts/build_vercel.py",
+    "build:css": "tailwindcss -i ./assets/css/tw-src.css -o ./assets/css/tw.css --minify",
     "dev": "python3 scripts/serve_local.py --port 8000",
     "preview": "python3 scripts/serve_local.py --port 8000",
     "dev:api": "node scripts/local_api_server.js",
@@ -11,5 +12,8 @@
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
     "@vercel/blob": "^2.6.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
   }
 }

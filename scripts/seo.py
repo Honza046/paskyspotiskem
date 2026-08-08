@@ -16,10 +16,11 @@ DEFAULT_OG_IMAGE = '/images/slide-pasky-1920x624.jpg'
 SEO_MARKER_START = '<!-- seo:extra -->'
 SEO_MARKER_END = '<!-- /seo:extra -->'
 
-HOME_TITLE = 'Pásky s potiskem | Lepicí pásky s logem na míru | ALFA IN'
+HOME_TITLE = 'Pásky s potiskem | Lepicí pásky s logem na míru | ALFA IN / Petrák'
 HOME_DESCRIPTION = (
-    'Výroba a prodej lepicích pásek s potiskem: pásky s logem pro firmy, e-shopy a sklady. '
-    'BOPP, eko a speciální pásky, potisk až 8 barev, dodání po celé ČR. Nezávazná kalkulace.'
+    'Pásky s potiskem od výrobce ALFA IN (Karel a Vojtěch Petrák): lepicí pásky s logem pro firmy, '
+    'e-shopy a sklady. BOPP HOT MELT i Akryl, papírové FSC, ECO+ a speciální pásky. Potisk až 8–10 barev, '
+    'vzorky a kalkulace po celé ČR.'
 )
 SORTIMENT_TITLE = 'Sortiment lepicích pásek | Pásky s potiskem'
 SORTIMENT_DESCRIPTION = (
@@ -31,10 +32,10 @@ GALLERY_DESCRIPTION = (
     'Ukázky lepicích pásek s potiskem: loga firem, bezpečnostní pásky, eko varianty a speciální tisky. '
     'Inspirace pro vaši pásku s potiskem na míru.'
 )
-FAQ_TITLE = 'FAQ | Pásky s potiskem: otázky a odpovědi'
+FAQ_TITLE = 'Časté otázky k páskám s potiskem | FAQ ALFA IN'
 FAQ_DESCRIPTION = (
-    'Časté otázky k páskám s potiskem: minimální odběr, dodací lhůty, HOT MELT vs Akryl, potisk, vzorky a doprava. '
-    'Odpovědi od výrobce ALFA IN.'
+    'Časté otázky k páskám s potiskem: minimální odběr, dodací lhůty, HOT MELT vs Akryl, potisk, '
+    'vzorky, doprava a ECO pásky. Odpovědi od výrobce ALFA IN (Petrák).'
 )
 
 
@@ -207,12 +208,20 @@ def product_schema(name: str, description: str, path: str, image_path: str) -> d
         'brand': {'@type': 'Brand', 'name': ORG_NAME},
         'category': 'Lepicí pásky s potiskem',
         'url': abs_url(path),
+        'manufacturer': {'@type': 'Organization', 'name': ORG_NAME},
         'offers': {
             '@type': 'Offer',
             'url': abs_url('/#gf_1'),
             'priceCurrency': 'CZK',
             'availability': 'https://schema.org/InStock',
+            'itemCondition': 'https://schema.org/NewCondition',
             'seller': {'@type': 'Organization', 'name': ORG_NAME},
+            # Cena na vyžádání – B2B kalkulace podle potisku a množství
+            'priceSpecification': {
+                '@type': 'PriceSpecification',
+                'priceCurrency': 'CZK',
+                'description': 'Cena na vyžádání podle potisku a množství',
+            },
         },
     }
 
@@ -224,8 +233,11 @@ def category_meta_description(title: str, description: str) -> str:
     return text
 
 
-def product_meta_description(name: str, tagline: str) -> str:
-    text = f'{name}: {tagline} Lepicí páska s potiskem od ALFA IN.'
+def product_meta_description(name: str, tagline: str, extra: str = '') -> str:
+    text = f'{name}: {tagline}'
+    if extra:
+        text = f'{text} {extra}'
+    text = f'{text} Lepicí páska s potiskem od ALFA IN.'
     if len(text) > 158:
         text = text[:155].rstrip(' ,.;') + '…'
     return text

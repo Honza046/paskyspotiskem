@@ -175,6 +175,11 @@ def patch_file(path: Path) -> None:
 def main() -> int:
     print('Building static site for Vercel…')
 
+    # Compile Tailwind once up-front (content files already link tw.css).
+    css_cmd = ['npm', 'run', 'build:css']
+    print('  running build:css…')
+    subprocess.run(css_cmd, cwd=ROOT, check=True)
+
     root_pages = [
         ROOT / 'index.html',
         ROOT / 'sortiment.html',
@@ -198,15 +203,20 @@ def main() -> int:
         shutil.copy2(ROOT / 'faq.html', faq_dir / 'index.html')
         print('  copied faq.html → faq/index.html')
 
-    # Regenerate gallery + sortiment data/pages.
+    # Regenerate gallery + sortiment + guide pages.
     scripts = [
         ROOT / 'scripts' / 'gen_gallery.py',
         ROOT / 'scripts' / 'gen_products.py',
+        ROOT / 'scripts' / 'gen_guides.py',
     ]
     for script in scripts:
         if script.exists():
             print(f'  running {script.name}…')
             subprocess.run([sys.executable, str(script)], cwd=ROOT, check=True)
+
+    # Rebuild CSS after generators so new utility classes are included.
+    print('  running build:css (post-generate)…')
+    subprocess.run(css_cmd, cwd=ROOT, check=True)
 
     # Re-patch after generators (they may write relative paths).
     for page in root_pages:
@@ -215,6 +225,11 @@ def main() -> int:
 
     for html_path in (ROOT / 'sortiment').rglob('index.html'):
         patch_file(html_path)
+
+    pruvodce_dir = ROOT / 'pruvodce'
+    if pruvodce_dir.is_dir():
+        for html_path in pruvodce_dir.rglob('index.html'):
+            patch_file(html_path)
 
     for page in root_pages:
         apply_root_seo(page)
