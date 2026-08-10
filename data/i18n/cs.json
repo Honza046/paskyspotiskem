@@ -287,7 +287,7 @@
         },
         "4": {
           "q": "Dodáváte vzorky zdarma?",
-          "a": "Ano, u vybraných materiálů a u stávajících grafických návrhů vám rádi zašleme testovací vzorek. V poptávce uveďte „Mám zájem o vzorek“."
+          "a": "Fyzický vzorek s vaším potiskem nevyrábíme. Rádi vám však zdarma zašleme vzorky materiálů a lepidel, které máme skladem z předchozích realizací. Snadno si tak ještě před objednávkou otestujete kvalitu pásky i její lepivost na vašich kartonech."
         },
         "5": {
           "q": "Jaké technologie potisku nabízíte?",
@@ -357,8 +357,8 @@
       },
       "vzorky": {
         "q": "Dodáváte vzorky zdarma?",
-        "a": "Ano, u vybraných materiálů a u stávajících grafických návrhů vám rádi zašleme testovací vzorek. V poptávce uveďte „Mám zájem o vzorek“.",
-        "search": "vzorek zdarma testování trial sample"
+        "a": "Fyzický vzorek s vaším potiskem nevyrábíme. Rádi vám však zdarma zašleme vzorky materiálů a lepidel, které máme skladem z předchozích realizací. Snadno si tak ještě před objednávkou otestujete kvalitu pásky i její lepivost na vašich kartonech.",
+        "search": "vzorek zdarma materiál lepidlo testování trial sample"
       },
       "technologie": {
         "q": "Jaké technologie potisku nabízíte?",
@@ -367,13 +367,13 @@
       },
       "grafika": {
         "q": "Připravíte grafický návrh za mě?",
-        "a": "Ano. Pošlete logo (ideálně PDF/AI/SVG) a představu o textu nebo barevnosti, připravíme náhled potisku ke schválení před výrobou.",
-        "search": "grafika návrh logo náhled design pdf ai svg"
+        "a": "Ano. Potřebujeme vaše logo (ideálně ve vektorovém formátu PDF, AI nebo EPS), případně text a představu o barevnosti (přesné odstíny PANTONE). Před samotnou výrobou vám pošleme grafický náhled ke schválení.",
+        "search": "grafika návrh logo náhled design pdf ai eps pantone"
       },
       "sirka": {
         "q": "Jaké šířky a délky pásek vyrábíte?",
-        "a": "Nejběžnější šířky jsou 48 mm a 50 mm; další šířky a délky navíjení řešíme individuálně podle materiálu a aplikace (ruční i strojní balení).",
-        "search": "šířka délka 48 mm 50 mm role navíjení"
+        "a": "Dodáváme širokou škálu rozměrů pro ruční i strojní balení. Standardní šířky: 25 mm, 38 mm, 50 mm, 75 mm a 100 mm. Náviny pro ruční balení: 66 m, 100 m, 132 m a 180 m. Strojní náviny (pro balicí linky): 330 m, 660 m, 990 m a 1000 m.",
+        "search": "šířka délka 25 38 50 75 100 mm 66 132 180 330 660 990 1000 role navíjení"
       },
       "eko": {
         "q": "Máte udržitelné / ECO pásky?",
@@ -401,9 +401,14 @@
         "search": "pantone cmyk barva odstín logo branding"
       },
       "opakovat": {
-        "q": "Mohu objednávku později zopakovat se stejnou grafikou?",
-        "a": "Ano. Schválený návrh a tiskové podklady uchováváme, takže opakovanou objednávku připravíme rychleji bez nutnosti znovu schvalovat grafiku (pokud nic neměníte).",
-        "search": "opakovaná objednávka reprint stejná grafika"
+        "q": "Mohu zopakovat objednávku se stejným potiskem?",
+        "a": "Ano. Všechny schválené tiskové matrice ukládáme do archivu. Další objednávka se stejným designem tak proběhne okamžitě bez nového schvalování.",
+        "search": "opakovaná objednávka reprint stejná grafika matrice archiv"
+      },
+      "matrice": {
+        "q": "Platí se tisková matrice i při opakované objednávce?",
+        "a": "Ne. Schválenou tiskovou matrici pro vás uschováváme. Opakovaná výroba se stejným grafickým návrhem probíhá automaticky a bez dalších poplatků za přípravu.",
+        "search": "tisková matrice poplatek opakovaná objednávka archiv forma"
       },
       "cena": {
         "q": "Od čeho se odvíjí cena pásky s potiskem?",
@@ -427,18 +432,13 @@
       },
       "jadro": {
         "q": "Jaké jádro / dutinku pásky používáte?",
-        "a": "Standardně dodáváme role s běžnou papírovou dutinkou vhodnou pro ruční i strojní odvíječe. Speciální průměry a pevnosti jádra řešíme individuálně podle vaší linky.",
-        "search": "jádro dutinka core průměr"
+        "a": "Standardně dodáváme role s běžnou papírovou dutinkou vhodnou pro ruční i strojní odvíječe. Pro naplnění udržitelných a ESG cílů dodáváme také pásky osazené dutinkou z recyklovaného papíru.",
+        "search": "jádro dutinka core průměr recyklovaný esg"
       },
       "zahranici": {
         "q": "Dodáváte i mimo Českou republiku?",
         "a": "Ano. Zásilky posíláme do EU i dále, dopravu a podmínky domluvíme podle destinace a objemu.",
         "search": "zahraničí eu export dodání"
-      },
-      "vzorek-potisk": {
-        "q": "Dostanu vzorek už s mým potiskem?",
-        "a": "U nových grafik obvykle nejdřív schválíte digitální náhled. Fyzický vzorek s potiskem řešíme individuálně, u stávajících návrhů nebo při větších projektech.",
-        "search": "vzorek potisk náhled trial"
       },
       "urgentni": {
         "q": "Umíte urgentní / express výrobu?",
@@ -454,6 +454,21 @@
         "q": "Můžu mít na pásce text ve více jazycích?",
         "a": "Ano. Často kombinujeme logo s logistickými texty v češtině, němčině, angličtině i dalších jazycích, návrh připravíme tak, aby byl čitelný i při opakování po délce pásky.",
         "search": "jazyky mutace text multilingual"
+      },
+      "prilnavost": {
+        "q": "Co znamená přilnavost k oceli?",
+        "a": "Udává, jak silně páska přilne k povrchu ihned po nalepení. Vyšší hodnota znamená, že páska pevněji drží na kartonu a nehrozí její samovolné odlepování.",
+        "search": "přilnavost adhesion tack ocel karton lepivost"
+      },
+      "pevnost-tahu": {
+        "q": "Co znamená pevnost v tahu?",
+        "a": "Měří mechanickou odolnost pásky vůči prasknutí při silném napnutí. Vyšší číslo zaručuje, že se páska nepřetrhne při balení náročných nebo těžkých zásilek.",
+        "search": "pevnost tah tensile strength prasknutí odolnost"
+      },
+      "taznost": {
+        "q": "Co znamená tažnost / prodloužení?",
+        "a": "Procentuální hodnota udává, o kolik se páska dokáže natáhnout, než praskne. Nízká tažnost drží krabici pevně a bez průhybu, vyšší tažnost umožňuje pásce lépe tlumit rázy při přepravě.",
+        "search": "tažnost prodloužení elongation stretch natažení"
       }
     }
   },

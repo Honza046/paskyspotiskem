@@ -287,7 +287,7 @@
         },
         "4": {
           "q": "Liefern Sie kostenlose Muster?",
-          "a": "Ja, bei ausgewählten Materialien und bestehenden Layouts senden wir gerne ein Testmuster. Bitte in der Anfrage „Ich möchte ein Muster“ angeben."
+          "a": "Ein physisches Muster mit Ihrem Aufdruck fertigen wir nicht. Gerne senden wir Ihnen aber kostenlos Material- und Klebstoffmuster aus unserem Bestand früherer Aufträge, damit Sie Qualität und Haftung auf Ihren Kartons vor der Bestellung testen können."
         },
         "5": {
           "q": "Welche Drucktechnologien bieten Sie an?",
@@ -357,8 +357,8 @@
       },
       "vzorky": {
         "q": "Liefern Sie kostenlose Muster?",
-        "a": "Ja, bei ausgewählten Materialien und bestehenden Layouts senden wir gerne ein Testmuster. Bitte in der Anfrage „Ich möchte ein Muster“ angeben.",
-        "search": "muster gratis test sample"
+        "a": "Ein physisches Muster mit Ihrem Aufdruck fertigen wir nicht. Gerne senden wir Ihnen aber kostenlos Material- und Klebstoffmuster aus unserem Bestand früherer Aufträge, damit Sie Qualität und Haftung auf Ihren Kartons vor der Bestellung testen können.",
+        "search": "muster gratis material klebstoff test sample"
       },
       "technologie": {
         "q": "Welche Drucktechnologien bieten Sie an?",
@@ -367,13 +367,13 @@
       },
       "grafika": {
         "q": "Erstellen Sie das Drucklayout für mich?",
-        "a": "Ja. Senden Sie Logo (idealerweise PDF/AI/SVG) und eine Vorstellung zu Text oder Farben, wir erstellen eine Druckvorschau zur Freigabe vor der Produktion.",
-        "search": "layout grafik logo vorschau design pdf ai svg"
+        "a": "Ja. Wir brauchen Ihr Logo (idealerweise Vektor PDF, AI oder EPS), optional Text und Farbvorstellung (genaue Pantone-Töne). Vor der Produktion senden wir eine Grafikvorschau zur Freigabe.",
+        "search": "layout grafik logo vorschau design pdf ai eps pantone"
       },
       "sirka": {
         "q": "Welche Breiten und Längen fertigen Sie?",
-        "a": "Die gängigsten Breiten sind 48 mm und 50 mm; weitere Breiten und Wickellängen klären wir individuell nach Material und Anwendung (Hand- oder Maschinenverpackung).",
-        "search": "breite länge 48 mm 50 mm rolle wicklung"
+        "a": "Wir liefern ein breites Maßangebot für Hand- und Maschinenverpackung. Standardbreiten: 25 mm, 38 mm, 50 mm, 75 mm und 100 mm. Handwicklungen: 66 m, 100 m, 132 m und 180 m. Maschinenwicklungen (Verpackungslinien): 330 m, 660 m, 990 m und 1000 m.",
+        "search": "breite länge 25 38 50 75 100 mm 66 132 180 330 660 990 1000 rolle wicklung"
       },
       "eko": {
         "q": "Haben Sie nachhaltige / ECO-Bänder?",
@@ -401,9 +401,14 @@
         "search": "pantone cmyk farbe logo branding"
       },
       "opakovat": {
-        "q": "Kann ich die Bestellung später mit demselben Layout wiederholen?",
-        "a": "Ja. Freigegebenes Layout und Druckdaten behalten wir, daher geht eine Nachbestellung schneller ohne erneute Freigabe (wenn nichts geändert wird).",
-        "search": "nachbestellung reprint gleiches layout"
+        "q": "Kann ich die Bestellung mit demselben Aufdruck wiederholen?",
+        "a": "Ja. Alle freigegebenen Druckmatrizen archivieren wir. Eine Nachbestellung mit demselben Design läuft daher sofort ohne erneute Freigabe.",
+        "search": "nachbestellung reprint gleiches layout matrix archiv"
+      },
+      "matrice": {
+        "q": "Zahlt man die Druckmatrize auch bei Nachbestellung?",
+        "a": "Nein. Die freigegebene Druckmatrize bewahren wir für Sie auf. Die Wiederholung mit demselben Layout läuft automatisch und ohne weitere Vorbereitungskosten.",
+        "search": "druckmatrize gebühr nachbestellung archiv forme"
       },
       "cena": {
         "q": "Wovon hängt der Preis für bedrucktes Band ab?",
@@ -427,18 +432,13 @@
       },
       "jadro": {
         "q": "Welchen Kern / welche Hülse verwenden Sie?",
-        "a": "Standardmäßig liefern wir Rollen mit üblicher Papphülse für Hand- und Maschinenabroller. Spezielle Durchmesser und Kernfestigkeiten klären wir individuell für Ihre Linie.",
-        "search": "kern hülse durchmesser core"
+        "a": "Standardmäßig liefern wir Rollen mit üblicher Papphülse für Hand- und Maschinenabroller. Für Nachhaltigkeits- und ESG-Ziele bieten wir auch Bänder mit Hülse aus Recyclingpapier.",
+        "search": "kern hülse durchmesser core recycling esg"
       },
       "zahranici": {
         "q": "Liefern Sie auch außerhalb Tschechiens?",
         "a": "Ja. Wir versenden in die EU und darüber hinaus, Versand und Konditionen stimmen wir nach Ziel und Menge ab.",
         "search": "ausland eu export lieferung"
-      },
-      "vzorek-potisk": {
-        "q": "Bekomme ich ein Muster schon mit meinem Druck?",
-        "a": "Bei neuen Layouts freigeben Sie zuerst meist eine digitale Vorschau. Ein physisches Druckmuster klären wir individuell, bei bestehenden Designs oder größeren Projekten.",
-        "search": "druckmuster vorschau trial"
       },
       "urgentni": {
         "q": "Können Sie Express- / Eilproduktion?",
@@ -454,6 +454,21 @@
         "q": "Kann der Text auf dem Band mehrsprachig sein?",
         "a": "Ja. Häufig kombinieren wir Logo mit Logistiktexten auf Tschechisch, Deutsch, Englisch und weiteren Sprachen, lesbar auch bei Wiederholung entlang des Bandes.",
         "search": "sprachen mehrsprachig text mutation"
+      },
+      "prilnavost": {
+        "q": "Was bedeutet Klebkraft auf Stahl?",
+        "a": "Sie gibt an, wie stark das Band sofort nach dem Aufbringen am Untergrund haftet. Ein höherer Wert bedeutet festeren Halt am Karton und weniger Risiko des selbstständigen Ablösens.",
+        "search": "klebkraft adhesion stahl karton haftung"
+      },
+      "pevnost-tahu": {
+        "q": "Was bedeutet Zugfestigkeit?",
+        "a": "Sie misst die mechanische Widerstandsfähigkeit des Bandes gegen Reißen bei starker Spannung. Eine höhere Zahl bedeutet, dass das Band bei anspruchsvollen oder schweren Sendungen weniger leicht reißt.",
+        "search": "zugfestigkeit tensile reißfestigkeit packung"
+      },
+      "taznost": {
+        "q": "Was bedeutet Dehnung / Verlängerung?",
+        "a": "Der Prozentwert gibt an, wie weit sich das Band dehnen kann, bevor es reißt. Geringe Dehnung hält den Karton fest ohne Durchhang; höhere Dehnung hilft, Stöße beim Transport besser abzufangen.",
+        "search": "dehnung elongation stretch transport stoß"
       }
     }
   },

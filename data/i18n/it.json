@@ -287,7 +287,7 @@
         },
         "4": {
           "q": "Fornite campioni gratuiti?",
-          "a": "Sì, per materiali selezionati e grafiche esistenti siamo lieti di inviare un campione di prova. Nella richiesta indicate «Voglio un campione»."
+          "a": "Non produciamo un campione fisico con la vostra stampa. Siamo però lieti di inviare gratis campioni di materiali e adesivi a magazzino da realizzazioni precedenti, così potete testare qualità e adesione sui vostri cartoni prima dell'ordine."
         },
         "5": {
           "q": "Quali tecnologie di stampa offrite?",
@@ -357,8 +357,8 @@
       },
       "vzorky": {
         "q": "Fornite campioni gratuiti?",
-        "a": "Sì, per materiali selezionati e grafiche esistenti siamo lieti di inviare un campione di prova. Nella richiesta indicate «Voglio un campione».",
-        "search": "campione gratis test trial"
+        "a": "Non produciamo un campione fisico con la vostra stampa. Siamo però lieti di inviare gratis campioni di materiali e adesivi a magazzino da realizzazioni precedenti, così potete testare qualità e adesione sui vostri cartoni prima dell'ordine.",
+        "search": "campione gratis materiale adesivo test trial"
       },
       "technologie": {
         "q": "Quali tecnologie di stampa offrite?",
@@ -367,13 +367,13 @@
       },
       "grafika": {
         "q": "Preparate voi il progetto grafico?",
-        "a": "Sì. Inviate il logo (idealmente PDF/AI/SVG) e un'idea di testo o colori, prepariamo un'anteprima di stampa da approvare prima della produzione.",
-        "search": "grafica logo anteprima design pdf ai svg"
+        "a": "Sì. Ci servono il logo (idealmente vettoriale PDF, AI o EPS), eventuale testo e idea di colore (tinte Pantone precise). Prima della produzione inviamo un'anteprima grafica da approvare.",
+        "search": "grafica logo anteprima design pdf ai eps pantone"
       },
       "sirka": {
         "q": "Quali larghezze e lunghezze producete?",
-        "a": "Le larghezze più comuni sono 48 mm e 50 mm; altre larghezze e lunghezze di avvolgimento si definiscono individualmente in base a materiale e applicazione (manuale o automatica).",
-        "search": "larghezza lunghezza 48 mm 50 mm bobina"
+        "a": "Forniamo un'ampia gamma di misure per imballaggio manuale e automatico. Larghezze standard: 25 mm, 38 mm, 50 mm, 75 mm e 100 mm. Lunghezze manuali: 66 m, 100 m, 132 m e 180 m. Lunghezze macchina (linee): 330 m, 660 m, 990 m e 1000 m.",
+        "search": "larghezza lunghezza 25 38 50 75 100 mm 66 132 180 330 660 990 1000 bobina"
       },
       "eko": {
         "q": "Avete nastri sostenibili / ECO?",
@@ -401,9 +401,14 @@
         "search": "pantone cmyk colore logo branding"
       },
       "opakovat": {
-        "q": "Posso ripetere l'ordine in seguito con la stessa grafica?",
-        "a": "Sì. Conserviamo il progetto approvato e i file di stampa, così un riordino è più rapido senza riapprovare la grafica (se non cambiate nulla).",
-        "search": "riordino reprint stessa grafica"
+        "q": "Posso ripetere l'ordine con la stessa stampa?",
+        "a": "Sì. Archiviamo tutte le matrici di stampa approvate. Un riordino con lo stesso design procede quindi subito senza nuova approvazione.",
+        "search": "riordino reprint stessa grafica matrice archivio"
+      },
+      "matrice": {
+        "q": "Si paga di nuovo la matrice di stampa in caso di riordino?",
+        "a": "No. Conserviamo la matrice approvata per voi. La produzione ripetuta con lo stesso layout avviene automaticamente e senza ulteriori costi di preparazione.",
+        "search": "matrice stampa costo riordino archivio"
       },
       "cena": {
         "q": "Da cosa dipende il prezzo del nastro stampato?",
@@ -427,18 +432,13 @@
       },
       "jadro": {
         "q": "Quale anima / tubetto usate?",
-        "a": "Di norma forniamo bobine con tubetto di carta standard adatto a svolgitori manuali e automatici. Diametri e resistenze speciali si definiscono individualmente per la vostra linea.",
-        "search": "anima tubetto core diametro"
+        "a": "Di norma forniamo bobine con tubetto di carta standard adatto a svolgitori manuali e automatici. Per obiettivi di sostenibilità ed ESG offriamo anche nastri con tubetto in carta riciclata.",
+        "search": "anima tubetto core diametro riciclato esg"
       },
       "zahranici": {
         "q": "Consegnate anche fuori dalla Repubblica Ceca?",
         "a": "Sì. Spediamo in UE e oltre, trasporto e condizioni si concordano in base a destinazione e volume.",
         "search": "estero eu export consegna"
-      },
-      "vzorek-potisk": {
-        "q": "Riceverò un campione già con la mia stampa?",
-        "a": "Per nuove grafiche di solito approvate prima un'anteprima digitale. Un campione fisico stampato si valuta caso per caso, per design esistenti o progetti più grandi.",
-        "search": "campione stampato anteprima trial"
       },
       "urgentni": {
         "q": "Fate produzione urgente / express?",
@@ -454,6 +454,21 @@
         "q": "Il testo sul nastro può essere in più lingue?",
         "a": "Sì. Spesso combiniamo logo e testi logistici in ceco, tedesco, inglese e altre lingue, progettati per restare leggibili anche ripetuti lungo il nastro.",
         "search": "lingue multilingue testo mutazione"
+      },
+      "prilnavost": {
+        "q": "Cosa significa adesione all'acciaio?",
+        "a": "Indica quanto fortemente il nastro aderisce alla superficie subito dopo l'applicazione. Un valore più alto significa tenuta più ferma sul cartone e minor rischio di distacco spontaneo.",
+        "search": "adesione acciaio tack cartone adesività"
+      },
+      "pevnost-tahu": {
+        "q": "Cosa significa resistenza alla trazione?",
+        "a": "Misura la resistenza meccanica del nastro alla rottura sotto forte tensione. Un numero più alto garantisce che il nastro non si spezzi nell'imballaggio di spedizioni impegnative o pesanti.",
+        "search": "resistenza trazione tensile rottura imballaggio"
+      },
+      "taznost": {
+        "q": "Cosa significa allungamento / elongazione?",
+        "a": "Il valore percentuale indica di quanto il nastro può allungarsi prima di rompersi. Un allungamento basso tiene la scatola ferma senza cedimenti; uno più alto aiuta ad assorbire gli urti durante il trasporto.",
+        "search": "allungamento elongazione stretch trasporto urti"
       }
     }
   },

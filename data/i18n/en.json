@@ -287,7 +287,7 @@
         },
         "4": {
           "q": "Do you provide free samples?",
-          "a": "Yes, for selected materials and existing artworks we are happy to send a test sample. In your inquiry write “I want a sample”."
+          "a": "We do not produce a physical sample with your print. We are happy to send free samples of materials and adhesives we keep from previous jobs, so you can test tape quality and adhesion on your cartons before ordering."
         },
         "5": {
           "q": "Which print technologies do you offer?",
@@ -357,8 +357,8 @@
       },
       "vzorky": {
         "q": "Do you provide free samples?",
-        "a": "Yes, for selected materials and existing artworks we are happy to send a test sample. In your inquiry write “I want a sample”.",
-        "search": "sample free trial testing"
+        "a": "We do not produce a physical sample with your print. We are happy to send free samples of materials and adhesives we keep from previous jobs, so you can test tape quality and adhesion on your cartons before ordering.",
+        "search": "sample free material adhesive trial testing"
       },
       "technologie": {
         "q": "Which print technologies do you offer?",
@@ -367,13 +367,13 @@
       },
       "grafika": {
         "q": "Will you prepare the artwork for me?",
-        "a": "Yes. Send your logo (ideally PDF/AI/SVG) and an idea of text or colours, we prepare a print preview for approval before production.",
-        "search": "artwork design logo preview pdf ai svg"
+        "a": "Yes. We need your logo (ideally vector PDF, AI or EPS), optional text and colour idea (exact Pantone shades). Before production we send a graphic preview for approval.",
+        "search": "artwork design logo preview pdf ai eps pantone"
       },
       "sirka": {
         "q": "What tape widths and lengths do you make?",
-        "a": "The most common widths are 48 mm and 50 mm; other widths and roll lengths are handled individually by material and application (manual or machine packing).",
-        "search": "width length 48 mm 50 mm roll winding"
+        "a": "We supply a wide range of sizes for hand and machine packing. Standard widths: 25 mm, 38 mm, 50 mm, 75 mm and 100 mm. Hand-roll lengths: 66 m, 100 m, 132 m and 180 m. Machine lengths (packing lines): 330 m, 660 m, 990 m and 1000 m.",
+        "search": "width length 25 38 50 75 100 mm 66 132 180 330 660 990 1000 roll winding"
       },
       "eko": {
         "q": "Do you offer sustainable / ECO tapes?",
@@ -401,9 +401,14 @@
         "search": "pantone cmyk colour shade logo branding"
       },
       "opakovat": {
-        "q": "Can I reorder later with the same artwork?",
-        "a": "Yes. We keep the approved design and print files, so a repeat order is faster without re-approving artwork (if nothing changes).",
-        "search": "repeat order reprint same artwork"
+        "q": "Can I reorder with the same print?",
+        "a": "Yes. We archive all approved printing plates. A repeat order with the same design can therefore proceed immediately without a new approval round.",
+        "search": "repeat order reprint same artwork plate archive"
+      },
+      "matrice": {
+        "q": "Do I pay for the printing plate again on a repeat order?",
+        "a": "No. We keep your approved printing plate. Repeat production with the same artwork runs automatically with no further prep fees.",
+        "search": "printing plate fee repeat order archive forme"
       },
       "cena": {
         "q": "What affects the price of printed tape?",
@@ -427,18 +432,13 @@
       },
       "jadro": {
         "q": "What core / cardboard tube do you use?",
-        "a": "We normally supply rolls with a standard paper core suitable for hand and machine unwinders. Special diameters and core strengths are handled individually for your line.",
-        "search": "core tube diameter cardboard"
+        "a": "We normally supply rolls with a standard paper core suitable for hand and machine unwinders. For sustainability and ESG goals we also offer tapes with a recycled-paper core.",
+        "search": "core tube diameter cardboard recycled esg"
       },
       "zahranici": {
         "q": "Do you deliver outside Czechia?",
         "a": "Yes. We ship to the EU and beyond, shipping and terms are agreed by destination and volume.",
         "search": "abroad eu export delivery international"
-      },
-      "vzorek-potisk": {
-        "q": "Will I get a sample already with my print?",
-        "a": "For new artworks you usually approve a digital preview first. A physical printed sample is handled case by case, for existing designs or larger projects.",
-        "search": "printed sample preview trial"
       },
       "urgentni": {
         "q": "Can you do urgent / express production?",
@@ -454,6 +454,21 @@
         "q": "Can the tape text be in multiple languages?",
         "a": "Yes. We often combine a logo with logistics texts in Czech, German, English and other languages, designed to stay readable when repeated along the tape.",
         "search": "languages multilingual text mutation"
+      },
+      "prilnavost": {
+        "q": "What does adhesion to steel mean?",
+        "a": "It shows how strongly the tape sticks to a surface right after application. A higher value means the tape holds more firmly on the carton and is less likely to peel off on its own.",
+        "search": "adhesion steel tack carton peel"
+      },
+      "pevnost-tahu": {
+        "q": "What does tensile strength mean?",
+        "a": "It measures the tape’s mechanical resistance to breaking under strong tension. A higher number means the tape is less likely to snap when packing demanding or heavy shipments.",
+        "search": "tensile strength break resistance packing"
+      },
+      "taznost": {
+        "q": "What does elongation / stretch mean?",
+        "a": "The percentage shows how much the tape can stretch before it breaks. Low elongation keeps the box firm without sagging; higher elongation helps the tape absorb shocks during transport.",
+        "search": "elongation stretch break shock transport"
       }
     }
   },

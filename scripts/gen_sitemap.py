@@ -21,6 +21,7 @@ def collect_urls() -> list[tuple[str, str, str]]:
         ('/pruvodce', 'monthly', '0.85'),
         ('/pruvodce/pasky-s-potiskem', 'monthly', '0.85'),
         ('/pruvodce/hot-melt-vs-akryl', 'monthly', '0.8'),
+        ('/pruvodce/skladovani-aplikace-teplota', 'monthly', '0.8'),
         ('/pruvodce/pasky-pro-e-shopy', 'monthly', '0.8'),
         ('/pruvodce/papirove-fsc-pasky', 'monthly', '0.75'),
         ('/pruvodce/eco-plus-recyklovane-pasky', 'monthly', '0.75'),

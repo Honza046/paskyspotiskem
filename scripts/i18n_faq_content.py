@@ -33,8 +33,8 @@ def _items_cs() -> dict[str, dict[str, str]]:
         },
         "vzorky": {
             "q": "Dodáváte vzorky zdarma?",
-            "a": "Ano, u vybraných materiálů a u stávajících grafických návrhů vám rádi zašleme testovací vzorek. V poptávce uveďte „Mám zájem o vzorek“.",
-            "search": "vzorek zdarma testování trial sample",
+            "a": "Fyzický vzorek s vaším potiskem nevyrábíme. Rádi vám však zdarma zašleme vzorky materiálů a lepidel, které máme skladem z předchozích realizací. Snadno si tak ještě před objednávkou otestujete kvalitu pásky i její lepivost na vašich kartonech.",
+            "search": "vzorek zdarma materiál lepidlo testování trial sample",
         },
         "technologie": {
             "q": "Jaké technologie potisku nabízíte?",
@@ -43,13 +43,13 @@ def _items_cs() -> dict[str, dict[str, str]]:
         },
         "grafika": {
             "q": "Připravíte grafický návrh za mě?",
-            "a": "Ano. Pošlete logo (ideálně PDF/AI/SVG) a představu o textu nebo barevnosti, připravíme náhled potisku ke schválení před výrobou.",
-            "search": "grafika návrh logo náhled design pdf ai svg",
+            "a": "Ano. Potřebujeme vaše logo (ideálně ve vektorovém formátu PDF, AI nebo EPS), případně text a představu o barevnosti (přesné odstíny PANTONE). Před samotnou výrobou vám pošleme grafický náhled ke schválení.",
+            "search": "grafika návrh logo náhled design pdf ai eps pantone",
         },
         "sirka": {
             "q": "Jaké šířky a délky pásek vyrábíte?",
-            "a": "Nejběžnější šířky jsou 48 mm a 50 mm; další šířky a délky navíjení řešíme individuálně podle materiálu a aplikace (ruční i strojní balení).",
-            "search": "šířka délka 48 mm 50 mm role navíjení",
+            "a": "Dodáváme širokou škálu rozměrů pro ruční i strojní balení. Standardní šířky: 25 mm, 38 mm, 50 mm, 75 mm a 100 mm. Náviny pro ruční balení: 66 m, 100 m, 132 m a 180 m. Strojní náviny (pro balicí linky): 330 m, 660 m, 990 m a 1000 m.",
+            "search": "šířka délka 25 38 50 75 100 mm 66 132 180 330 660 990 1000 role navíjení",
         },
         "eko": {
             "q": "Máte udržitelné / ECO pásky?",
@@ -77,9 +77,14 @@ def _items_cs() -> dict[str, dict[str, str]]:
             "search": "pantone cmyk barva odstín logo branding",
         },
         "opakovat": {
-            "q": "Mohu objednávku později zopakovat se stejnou grafikou?",
-            "a": "Ano. Schválený návrh a tiskové podklady uchováváme, takže opakovanou objednávku připravíme rychleji bez nutnosti znovu schvalovat grafiku (pokud nic neměníte).",
-            "search": "opakovaná objednávka reprint stejná grafika",
+            "q": "Mohu zopakovat objednávku se stejným potiskem?",
+            "a": "Ano. Všechny schválené tiskové matrice ukládáme do archivu. Další objednávka se stejným designem tak proběhne okamžitě bez nového schvalování.",
+            "search": "opakovaná objednávka reprint stejná grafika matrice archiv",
+        },
+        "matrice": {
+            "q": "Platí se tisková matrice i při opakované objednávce?",
+            "a": "Ne. Schválenou tiskovou matrici pro vás uschováváme. Opakovaná výroba se stejným grafickým návrhem probíhá automaticky a bez dalších poplatků za přípravu.",
+            "search": "tisková matrice poplatek opakovaná objednávka archiv forma",
         },
         "cena": {
             "q": "Od čeho se odvíjí cena pásky s potiskem?",
@@ -103,18 +108,13 @@ def _items_cs() -> dict[str, dict[str, str]]:
         },
         "jadro": {
             "q": "Jaké jádro / dutinku pásky používáte?",
-            "a": "Standardně dodáváme role s běžnou papírovou dutinkou vhodnou pro ruční i strojní odvíječe. Speciální průměry a pevnosti jádra řešíme individuálně podle vaší linky.",
-            "search": "jádro dutinka core průměr",
+            "a": "Standardně dodáváme role s běžnou papírovou dutinkou vhodnou pro ruční i strojní odvíječe. Pro naplnění udržitelných a ESG cílů dodáváme také pásky osazené dutinkou z recyklovaného papíru.",
+            "search": "jádro dutinka core průměr recyklovaný esg",
         },
         "zahranici": {
             "q": "Dodáváte i mimo Českou republiku?",
             "a": "Ano. Zásilky posíláme do EU i dále, dopravu a podmínky domluvíme podle destinace a objemu.",
             "search": "zahraničí eu export dodání",
-        },
-        "vzorek-potisk": {
-            "q": "Dostanu vzorek už s mým potiskem?",
-            "a": "U nových grafik obvykle nejdřív schválíte digitální náhled. Fyzický vzorek s potiskem řešíme individuálně, u stávajících návrhů nebo při větších projektech.",
-            "search": "vzorek potisk náhled trial",
         },
         "urgentni": {
             "q": "Umíte urgentní / express výrobu?",
@@ -130,6 +130,21 @@ def _items_cs() -> dict[str, dict[str, str]]:
             "q": "Můžu mít na pásce text ve více jazycích?",
             "a": "Ano. Často kombinujeme logo s logistickými texty v češtině, němčině, angličtině i dalších jazycích, návrh připravíme tak, aby byl čitelný i při opakování po délce pásky.",
             "search": "jazyky mutace text multilingual",
+        },
+        "prilnavost": {
+            "q": "Co znamená přilnavost k oceli?",
+            "a": "Udává, jak silně páska přilne k povrchu ihned po nalepení. Vyšší hodnota znamená, že páska pevněji drží na kartonu a nehrozí její samovolné odlepování.",
+            "search": "přilnavost adhesion tack ocel karton lepivost",
+        },
+        "pevnost-tahu": {
+            "q": "Co znamená pevnost v tahu?",
+            "a": "Měří mechanickou odolnost pásky vůči prasknutí při silném napnutí. Vyšší číslo zaručuje, že se páska nepřetrhne při balení náročných nebo těžkých zásilek.",
+            "search": "pevnost tah tensile strength prasknutí odolnost",
+        },
+        "taznost": {
+            "q": "Co znamená tažnost / prodloužení?",
+            "a": "Procentuální hodnota udává, o kolik se páska dokáže natáhnout, než praskne. Nízká tažnost drží krabici pevně a bez průhybu, vyšší tažnost umožňuje pásce lépe tlumit rázy při přepravě.",
+            "search": "tažnost prodloužení elongation stretch natažení",
         },
     }
 
@@ -158,8 +173,8 @@ def _items_en() -> dict[str, dict[str, str]]:
         },
         "vzorky": {
             "q": "Do you provide free samples?",
-            "a": "Yes, for selected materials and existing artworks we are happy to send a test sample. In your inquiry write “I want a sample”.",
-            "search": "sample free trial testing",
+            "a": "We do not produce a physical sample with your print. We are happy to send free samples of materials and adhesives we keep from previous jobs, so you can test tape quality and adhesion on your cartons before ordering.",
+            "search": "sample free material adhesive trial testing",
         },
         "technologie": {
             "q": "Which print technologies do you offer?",
@@ -168,13 +183,13 @@ def _items_en() -> dict[str, dict[str, str]]:
         },
         "grafika": {
             "q": "Will you prepare the artwork for me?",
-            "a": "Yes. Send your logo (ideally PDF/AI/SVG) and an idea of text or colours, we prepare a print preview for approval before production.",
-            "search": "artwork design logo preview pdf ai svg",
+            "a": "Yes. We need your logo (ideally vector PDF, AI or EPS), optional text and colour idea (exact Pantone shades). Before production we send a graphic preview for approval.",
+            "search": "artwork design logo preview pdf ai eps pantone",
         },
         "sirka": {
             "q": "What tape widths and lengths do you make?",
-            "a": "The most common widths are 48 mm and 50 mm; other widths and roll lengths are handled individually by material and application (manual or machine packing).",
-            "search": "width length 48 mm 50 mm roll winding",
+            "a": "We supply a wide range of sizes for hand and machine packing. Standard widths: 25 mm, 38 mm, 50 mm, 75 mm and 100 mm. Hand-roll lengths: 66 m, 100 m, 132 m and 180 m. Machine lengths (packing lines): 330 m, 660 m, 990 m and 1000 m.",
+            "search": "width length 25 38 50 75 100 mm 66 132 180 330 660 990 1000 roll winding",
         },
         "eko": {
             "q": "Do you offer sustainable / ECO tapes?",
@@ -202,9 +217,14 @@ def _items_en() -> dict[str, dict[str, str]]:
             "search": "pantone cmyk colour shade logo branding",
         },
         "opakovat": {
-            "q": "Can I reorder later with the same artwork?",
-            "a": "Yes. We keep the approved design and print files, so a repeat order is faster without re-approving artwork (if nothing changes).",
-            "search": "repeat order reprint same artwork",
+            "q": "Can I reorder with the same print?",
+            "a": "Yes. We archive all approved printing plates. A repeat order with the same design can therefore proceed immediately without a new approval round.",
+            "search": "repeat order reprint same artwork plate archive",
+        },
+        "matrice": {
+            "q": "Do I pay for the printing plate again on a repeat order?",
+            "a": "No. We keep your approved printing plate. Repeat production with the same artwork runs automatically with no further prep fees.",
+            "search": "printing plate fee repeat order archive forme",
         },
         "cena": {
             "q": "What affects the price of printed tape?",
@@ -228,18 +248,13 @@ def _items_en() -> dict[str, dict[str, str]]:
         },
         "jadro": {
             "q": "What core / cardboard tube do you use?",
-            "a": "We normally supply rolls with a standard paper core suitable for hand and machine unwinders. Special diameters and core strengths are handled individually for your line.",
-            "search": "core tube diameter cardboard",
+            "a": "We normally supply rolls with a standard paper core suitable for hand and machine unwinders. For sustainability and ESG goals we also offer tapes with a recycled-paper core.",
+            "search": "core tube diameter cardboard recycled esg",
         },
         "zahranici": {
             "q": "Do you deliver outside Czechia?",
             "a": "Yes. We ship to the EU and beyond, shipping and terms are agreed by destination and volume.",
             "search": "abroad eu export delivery international",
-        },
-        "vzorek-potisk": {
-            "q": "Will I get a sample already with my print?",
-            "a": "For new artworks you usually approve a digital preview first. A physical printed sample is handled case by case, for existing designs or larger projects.",
-            "search": "printed sample preview trial",
         },
         "urgentni": {
             "q": "Can you do urgent / express production?",
@@ -255,6 +270,21 @@ def _items_en() -> dict[str, dict[str, str]]:
             "q": "Can the tape text be in multiple languages?",
             "a": "Yes. We often combine a logo with logistics texts in Czech, German, English and other languages, designed to stay readable when repeated along the tape.",
             "search": "languages multilingual text mutation",
+        },
+        "prilnavost": {
+            "q": "What does adhesion to steel mean?",
+            "a": "It shows how strongly the tape sticks to a surface right after application. A higher value means the tape holds more firmly on the carton and is less likely to peel off on its own.",
+            "search": "adhesion steel tack carton peel",
+        },
+        "pevnost-tahu": {
+            "q": "What does tensile strength mean?",
+            "a": "It measures the tape’s mechanical resistance to breaking under strong tension. A higher number means the tape is less likely to snap when packing demanding or heavy shipments.",
+            "search": "tensile strength break resistance packing",
+        },
+        "taznost": {
+            "q": "What does elongation / stretch mean?",
+            "a": "The percentage shows how much the tape can stretch before it breaks. Low elongation keeps the box firm without sagging; higher elongation helps the tape absorb shocks during transport.",
+            "search": "elongation stretch break shock transport",
         },
     }
 
@@ -283,8 +313,8 @@ def _items_de() -> dict[str, dict[str, str]]:
         },
         "vzorky": {
             "q": "Liefern Sie kostenlose Muster?",
-            "a": "Ja, bei ausgewählten Materialien und bestehenden Layouts senden wir gerne ein Testmuster. Bitte in der Anfrage „Ich möchte ein Muster“ angeben.",
-            "search": "muster gratis test sample",
+            "a": "Ein physisches Muster mit Ihrem Aufdruck fertigen wir nicht. Gerne senden wir Ihnen aber kostenlos Material- und Klebstoffmuster aus unserem Bestand früherer Aufträge, damit Sie Qualität und Haftung auf Ihren Kartons vor der Bestellung testen können.",
+            "search": "muster gratis material klebstoff test sample",
         },
         "technologie": {
             "q": "Welche Drucktechnologien bieten Sie an?",
@@ -293,13 +323,13 @@ def _items_de() -> dict[str, dict[str, str]]:
         },
         "grafika": {
             "q": "Erstellen Sie das Drucklayout für mich?",
-            "a": "Ja. Senden Sie Logo (idealerweise PDF/AI/SVG) und eine Vorstellung zu Text oder Farben, wir erstellen eine Druckvorschau zur Freigabe vor der Produktion.",
-            "search": "layout grafik logo vorschau design pdf ai svg",
+            "a": "Ja. Wir brauchen Ihr Logo (idealerweise Vektor PDF, AI oder EPS), optional Text und Farbvorstellung (genaue Pantone-Töne). Vor der Produktion senden wir eine Grafikvorschau zur Freigabe.",
+            "search": "layout grafik logo vorschau design pdf ai eps pantone",
         },
         "sirka": {
             "q": "Welche Breiten und Längen fertigen Sie?",
-            "a": "Die gängigsten Breiten sind 48 mm und 50 mm; weitere Breiten und Wickellängen klären wir individuell nach Material und Anwendung (Hand- oder Maschinenverpackung).",
-            "search": "breite länge 48 mm 50 mm rolle wicklung",
+            "a": "Wir liefern ein breites Maßangebot für Hand- und Maschinenverpackung. Standardbreiten: 25 mm, 38 mm, 50 mm, 75 mm und 100 mm. Handwicklungen: 66 m, 100 m, 132 m und 180 m. Maschinenwicklungen (Verpackungslinien): 330 m, 660 m, 990 m und 1000 m.",
+            "search": "breite länge 25 38 50 75 100 mm 66 132 180 330 660 990 1000 rolle wicklung",
         },
         "eko": {
             "q": "Haben Sie nachhaltige / ECO-Bänder?",
@@ -327,9 +357,14 @@ def _items_de() -> dict[str, dict[str, str]]:
             "search": "pantone cmyk farbe logo branding",
         },
         "opakovat": {
-            "q": "Kann ich die Bestellung später mit demselben Layout wiederholen?",
-            "a": "Ja. Freigegebenes Layout und Druckdaten behalten wir, daher geht eine Nachbestellung schneller ohne erneute Freigabe (wenn nichts geändert wird).",
-            "search": "nachbestellung reprint gleiches layout",
+            "q": "Kann ich die Bestellung mit demselben Aufdruck wiederholen?",
+            "a": "Ja. Alle freigegebenen Druckmatrizen archivieren wir. Eine Nachbestellung mit demselben Design läuft daher sofort ohne erneute Freigabe.",
+            "search": "nachbestellung reprint gleiches layout matrix archiv",
+        },
+        "matrice": {
+            "q": "Zahlt man die Druckmatrize auch bei Nachbestellung?",
+            "a": "Nein. Die freigegebene Druckmatrize bewahren wir für Sie auf. Die Wiederholung mit demselben Layout läuft automatisch und ohne weitere Vorbereitungskosten.",
+            "search": "druckmatrize gebühr nachbestellung archiv forme",
         },
         "cena": {
             "q": "Wovon hängt der Preis für bedrucktes Band ab?",
@@ -353,18 +388,13 @@ def _items_de() -> dict[str, dict[str, str]]:
         },
         "jadro": {
             "q": "Welchen Kern / welche Hülse verwenden Sie?",
-            "a": "Standardmäßig liefern wir Rollen mit üblicher Papphülse für Hand- und Maschinenabroller. Spezielle Durchmesser und Kernfestigkeiten klären wir individuell für Ihre Linie.",
-            "search": "kern hülse durchmesser core",
+            "a": "Standardmäßig liefern wir Rollen mit üblicher Papphülse für Hand- und Maschinenabroller. Für Nachhaltigkeits- und ESG-Ziele bieten wir auch Bänder mit Hülse aus Recyclingpapier.",
+            "search": "kern hülse durchmesser core recycling esg",
         },
         "zahranici": {
             "q": "Liefern Sie auch außerhalb Tschechiens?",
             "a": "Ja. Wir versenden in die EU und darüber hinaus, Versand und Konditionen stimmen wir nach Ziel und Menge ab.",
             "search": "ausland eu export lieferung",
-        },
-        "vzorek-potisk": {
-            "q": "Bekomme ich ein Muster schon mit meinem Druck?",
-            "a": "Bei neuen Layouts freigeben Sie zuerst meist eine digitale Vorschau. Ein physisches Druckmuster klären wir individuell, bei bestehenden Designs oder größeren Projekten.",
-            "search": "druckmuster vorschau trial",
         },
         "urgentni": {
             "q": "Können Sie Express- / Eilproduktion?",
@@ -380,6 +410,21 @@ def _items_de() -> dict[str, dict[str, str]]:
             "q": "Kann der Text auf dem Band mehrsprachig sein?",
             "a": "Ja. Häufig kombinieren wir Logo mit Logistiktexten auf Tschechisch, Deutsch, Englisch und weiteren Sprachen, lesbar auch bei Wiederholung entlang des Bandes.",
             "search": "sprachen mehrsprachig text mutation",
+        },
+        "prilnavost": {
+            "q": "Was bedeutet Klebkraft auf Stahl?",
+            "a": "Sie gibt an, wie stark das Band sofort nach dem Aufbringen am Untergrund haftet. Ein höherer Wert bedeutet festeren Halt am Karton und weniger Risiko des selbstständigen Ablösens.",
+            "search": "klebkraft adhesion stahl karton haftung",
+        },
+        "pevnost-tahu": {
+            "q": "Was bedeutet Zugfestigkeit?",
+            "a": "Sie misst die mechanische Widerstandsfähigkeit des Bandes gegen Reißen bei starker Spannung. Eine höhere Zahl bedeutet, dass das Band bei anspruchsvollen oder schweren Sendungen weniger leicht reißt.",
+            "search": "zugfestigkeit tensile reißfestigkeit packung",
+        },
+        "taznost": {
+            "q": "Was bedeutet Dehnung / Verlängerung?",
+            "a": "Der Prozentwert gibt an, wie weit sich das Band dehnen kann, bevor es reißt. Geringe Dehnung hält den Karton fest ohne Durchhang; höhere Dehnung hilft, Stöße beim Transport besser abzufangen.",
+            "search": "dehnung elongation stretch transport stoß",
         },
     }
 
@@ -408,8 +453,8 @@ def _items_it() -> dict[str, dict[str, str]]:
         },
         "vzorky": {
             "q": "Fornite campioni gratuiti?",
-            "a": "Sì, per materiali selezionati e grafiche esistenti siamo lieti di inviare un campione di prova. Nella richiesta indicate «Voglio un campione».",
-            "search": "campione gratis test trial",
+            "a": "Non produciamo un campione fisico con la vostra stampa. Siamo però lieti di inviare gratis campioni di materiali e adesivi a magazzino da realizzazioni precedenti, così potete testare qualità e adesione sui vostri cartoni prima dell'ordine.",
+            "search": "campione gratis materiale adesivo test trial",
         },
         "technologie": {
             "q": "Quali tecnologie di stampa offrite?",
@@ -418,13 +463,13 @@ def _items_it() -> dict[str, dict[str, str]]:
         },
         "grafika": {
             "q": "Preparate voi il progetto grafico?",
-            "a": "Sì. Inviate il logo (idealmente PDF/AI/SVG) e un'idea di testo o colori, prepariamo un'anteprima di stampa da approvare prima della produzione.",
-            "search": "grafica logo anteprima design pdf ai svg",
+            "a": "Sì. Ci servono il logo (idealmente vettoriale PDF, AI o EPS), eventuale testo e idea di colore (tinte Pantone precise). Prima della produzione inviamo un'anteprima grafica da approvare.",
+            "search": "grafica logo anteprima design pdf ai eps pantone",
         },
         "sirka": {
             "q": "Quali larghezze e lunghezze producete?",
-            "a": "Le larghezze più comuni sono 48 mm e 50 mm; altre larghezze e lunghezze di avvolgimento si definiscono individualmente in base a materiale e applicazione (manuale o automatica).",
-            "search": "larghezza lunghezza 48 mm 50 mm bobina",
+            "a": "Forniamo un'ampia gamma di misure per imballaggio manuale e automatico. Larghezze standard: 25 mm, 38 mm, 50 mm, 75 mm e 100 mm. Lunghezze manuali: 66 m, 100 m, 132 m e 180 m. Lunghezze macchina (linee): 330 m, 660 m, 990 m e 1000 m.",
+            "search": "larghezza lunghezza 25 38 50 75 100 mm 66 132 180 330 660 990 1000 bobina",
         },
         "eko": {
             "q": "Avete nastri sostenibili / ECO?",
@@ -452,9 +497,14 @@ def _items_it() -> dict[str, dict[str, str]]:
             "search": "pantone cmyk colore logo branding",
         },
         "opakovat": {
-            "q": "Posso ripetere l'ordine in seguito con la stessa grafica?",
-            "a": "Sì. Conserviamo il progetto approvato e i file di stampa, così un riordino è più rapido senza riapprovare la grafica (se non cambiate nulla).",
-            "search": "riordino reprint stessa grafica",
+            "q": "Posso ripetere l'ordine con la stessa stampa?",
+            "a": "Sì. Archiviamo tutte le matrici di stampa approvate. Un riordino con lo stesso design procede quindi subito senza nuova approvazione.",
+            "search": "riordino reprint stessa grafica matrice archivio",
+        },
+        "matrice": {
+            "q": "Si paga di nuovo la matrice di stampa in caso di riordino?",
+            "a": "No. Conserviamo la matrice approvata per voi. La produzione ripetuta con lo stesso layout avviene automaticamente e senza ulteriori costi di preparazione.",
+            "search": "matrice stampa costo riordino archivio",
         },
         "cena": {
             "q": "Da cosa dipende il prezzo del nastro stampato?",
@@ -478,18 +528,13 @@ def _items_it() -> dict[str, dict[str, str]]:
         },
         "jadro": {
             "q": "Quale anima / tubetto usate?",
-            "a": "Di norma forniamo bobine con tubetto di carta standard adatto a svolgitori manuali e automatici. Diametri e resistenze speciali si definiscono individualmente per la vostra linea.",
-            "search": "anima tubetto core diametro",
+            "a": "Di norma forniamo bobine con tubetto di carta standard adatto a svolgitori manuali e automatici. Per obiettivi di sostenibilità ed ESG offriamo anche nastri con tubetto in carta riciclata.",
+            "search": "anima tubetto core diametro riciclato esg",
         },
         "zahranici": {
             "q": "Consegnate anche fuori dalla Repubblica Ceca?",
             "a": "Sì. Spediamo in UE e oltre, trasporto e condizioni si concordano in base a destinazione e volume.",
             "search": "estero eu export consegna",
-        },
-        "vzorek-potisk": {
-            "q": "Riceverò un campione già con la mia stampa?",
-            "a": "Per nuove grafiche di solito approvate prima un'anteprima digitale. Un campione fisico stampato si valuta caso per caso, per design esistenti o progetti più grandi.",
-            "search": "campione stampato anteprima trial",
         },
         "urgentni": {
             "q": "Fate produzione urgente / express?",
@@ -505,6 +550,21 @@ def _items_it() -> dict[str, dict[str, str]]:
             "q": "Il testo sul nastro può essere in più lingue?",
             "a": "Sì. Spesso combiniamo logo e testi logistici in ceco, tedesco, inglese e altre lingue, progettati per restare leggibili anche ripetuti lungo il nastro.",
             "search": "lingue multilingue testo mutazione",
+        },
+        "prilnavost": {
+            "q": "Cosa significa adesione all'acciaio?",
+            "a": "Indica quanto fortemente il nastro aderisce alla superficie subito dopo l'applicazione. Un valore più alto significa tenuta più ferma sul cartone e minor rischio di distacco spontaneo.",
+            "search": "adesione acciaio tack cartone adesività",
+        },
+        "pevnost-tahu": {
+            "q": "Cosa significa resistenza alla trazione?",
+            "a": "Misura la resistenza meccanica del nastro alla rottura sotto forte tensione. Un numero più alto garantisce che il nastro non si spezzi nell'imballaggio di spedizioni impegnative o pesanti.",
+            "search": "resistenza trazione tensile rottura imballaggio",
+        },
+        "taznost": {
+            "q": "Cosa significa allungamento / elongazione?",
+            "a": "Il valore percentuale indica di quanto il nastro può allungarsi prima di rompersi. Un allungamento basso tiene la scatola ferma senza cedimenti; uno più alto aiuta ad assorbire gli urti durante il trasporto.",
+            "search": "allungamento elongazione stretch trasporto urti",
         },
     }
 

@@ -262,7 +262,7 @@ HOME_FAQ = [
     ),
     (
         'Dodáváte vzorky lepicích pásek zdarma?',
-        'Ano, u vybraných materiálů a u stávajících grafických návrhů vám rádi zašleme testovací vzorek.',
+        'Fyzický vzorek s vaším potiskem nevyrábíme. Rádi vám však zdarma zašleme vzorky materiálů a lepidel ze skladu z předchozích realizací.',
     ),
     (
         'Jaké technologie potisku nabízíte?',
@@ -270,7 +270,7 @@ HOME_FAQ = [
     ),
     (
         'Připravíte grafický návrh za mě?',
-        'Ano. Pošlete logo (ideálně PDF/AI/SVG) a představu o textu nebo barevnosti, připravíme náhled potisku ke schválení před výrobou.',
+        'Ano. Potřebujeme logo (ideálně PDF, AI nebo EPS), případně text a PANTONE. Před výrobou pošleme grafický náhled ke schválení.',
     ),
     (
         'Máte udržitelné / ECO pásky?',
