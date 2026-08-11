@@ -195,44 +195,6 @@ GUIDES = [
         ],
     },
     {
-        "slug": "pasky-pro-e-shopy",
-        "title": "Pásky pro e-shopy",
-        "h1": "Pásky s potiskem pro e-shopy a sklady",
-        "description": (
-            "Jak vybrat pásky s potiskem pro e-shop: branding zásilek, HOT MELT vs Akryl, papírové FSC, "
-            "ECO+ a bezpečnostní Tamper Evident pásky."
-        ),
-        "intro": (
-            "E-shopy potřebují pásku, která drží, vypadá dobře a podporuje značku. "
-            "Potištěná páska s logem je často první věc, kterou zákazník na krabici vidí."
-        ),
-        "sections": [
-            (
-                "Branding a unboxing",
-                "Jednobarevný i vícebarevný potisk, bílá nebo transparentní BOPP, papírový kraft pro přírodní look. "
-                "Galerie ukazuje reálné realizace (Alza, Bonami, Notino a další).",
-            ),
-            (
-                "Rychlost skladu",
-                "Pro ruční balení zvažte Low noise Akryl. Pro linky a chladné sklady HOT MELT. "
-                "Tenčí Airtape+ šetří výměny rolí.",
-            ),
-            (
-                "Bezpečnost zásilky",
-                "Tamper Evident páska s potiskem zanechá při odlepení VOID stopu, vhodné pro elektroniku, "
-                "kosmetiku a vyšší hodnotu zboží.",
-            ),
-        ],
-        "links": [
-            ("/galerie", "Galerie realizací"),
-            ("/sortiment/bopp-pasky/bopp-paska-tamper-evident", "Tamper Evident"),
-            ("/sortiment/udrzitelne-pasky", "ECO a udržitelné pásky"),
-            ("/sortiment/papirove-pasky", "Papírové pásky"),
-            ("/#gf_1", "Poptat pásku pro e-shop"),
-        ],
-        "faqs": [],
-    },
-    {
         "slug": "papirove-fsc-pasky",
         "title": "Papírové FSC pásky",
         "h1": "Papírové FSC pásky s potiskem",
@@ -326,7 +288,7 @@ GUIDES = [
         "links": [
             ("/sortiment/bopp-pasky/bopp-paska-tamper-evident", "Tamper Evident detail"),
             ("/sortiment/bopp-pasky", "BOPP pásky"),
-            ("/pruvodce/pasky-pro-e-shopy", "Pásky pro e-shopy"),
+            ("/pruvodce/pasky-s-potiskem", "Pásky s potiskem na míru"),
             ("/#gf_1", "Poptat bezpečnostní pásku"),
         ],
         "faqs": [

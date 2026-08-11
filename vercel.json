@@ -6,6 +6,11 @@
       "source": "/sortiment/bopet-pasky/bopet-paska-ait",
       "destination": "/sortiment/bopet-pasky/bopet-paska-ait23",
       "permanent": true
+    },
+    {
+      "source": "/pruvodce/pasky-pro-e-shopy",
+      "destination": "/pruvodce/pasky-s-potiskem",
+      "permanent": true
     }
   ],
   "rewrites": [
