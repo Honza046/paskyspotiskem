@@ -142,7 +142,7 @@ GUIDES = [
         "title": "Skladování, aplikace a teplota",
         "h1": "Skladování, aplikace a teplotní odolnost lepicích pásek",
         "description": (
-            "Jak skladovat lepicí pásky (6–12 měsíců, 14–22 °C), proč je důležitý přítlak při lepení "
+            "Jak skladovat lepicí pásky (6–12 měsíců, 14–28 °C), proč je důležitý přítlak při lepení "
             "a jak pásky drží od mrazíren po zámořské kontejnery."
         ),
         "intro": (
@@ -157,7 +157,7 @@ GUIDES = [
                 "pohybuje v rozmezí 6 až 12 měsíců od data odeslání. Pro zachování stoprocentních vlastností "
                 "lepidla doporučujeme pásky skladovat v čistých a suchých prostorách, chránit je před "
                 "nadměrnou vlhkostí a zamezit přímému působení slunečního záření.\n\n"
-                "Ideální teplota pro skladování i samotné balení se pohybuje mezi 14 °C a 22 °C. Pokud jsou "
+                "Ideální teplota pro skladování i samotné balení se pohybuje mezi 14 °C a 28 °C. Pokud jsou "
                 "pásky krátkodobě vystaveny nižším teplotám (například při přepravě nebo v nevytápěném skladu), "
                 "je nezbytné je před použitím přemístit do temperovaného prostředí a nechat materiál plně "
                 "přizpůsobit doporučené pracovní teplotě.",
@@ -190,7 +190,7 @@ GUIDES = [
             (
                 "Jak dlouho pásky vydrží na skladě?",
                 "Obvykle 6 až 12 měsíců od odeslání, podle typu pásky a lepidla, při skladování v suchu "
-                "a při 14–22 °C mimo přímé slunce.",
+                "a při 14–28 °C mimo přímé slunce.",
             ),
         ],
     },
