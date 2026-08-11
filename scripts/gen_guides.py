@@ -31,7 +31,7 @@ GUIDES = [
         ),
         "intro": (
             "Hledáte potištěné lepicí pásky pro firmu, e-shop nebo sklad? Nabízíme řešení na míru přesně "
-            "podle vašich potřeb. Od klasických BOPP pásek přes ekologické papírové varianty s certifikací "
+            "podle vašich potřeb: od klasických BOPP pásek přes ekologické papírové varianty s certifikací "
             "FSC až po udržitelné materiály ECO+, NOPP či bezpečnostní pásky Tamper Evident."
         ),
         "sections": [
@@ -39,7 +39,7 @@ GUIDES = [
                 "Proč zvolit pásky s potiskem?",
                 "Potištěná páska plní dvě funkce najednou – spolehlivě uzavře karton a zároveň buduje značku "
                 "přímo při přepravě. Vaše logo, slogan nebo manipulační instrukce cestují spolu s balíkem až "
-                "k zákazníkovi. Jde o cenově výhodný a mimořádně odolný bezpečnostní prvek, který zaujme "
+                "k zákazníkovi. Jde o cenově výhodný a mimořádně odolný brandingový prvek, který zaujme "
                 "na první pohled.",
             ),
             (
@@ -53,7 +53,7 @@ GUIDES = [
             (
                 "Minimální odběr a termín dodání",
                 "U BOPP pásek začíná minimální odběr typicky na 360 ks (Akryl) nebo 504 ks (HOT MELT). "
-                "Standardní doba dodání se pohybuje mezi 3 a 4 týdny od tiskového schválení grafického návrhu. "
+                "Standardní doba dodání se pohybuje mezi 3 a 4 týdny od finálního schválení grafického návrhu. "
                 "Vzorky vybraných materiálů vám rádi zašleme zdarma na ukázku.",
             ),
         ],
@@ -100,8 +100,8 @@ GUIDES = [
                 "odolnost proti stárnutí a působení UV záření. Skvěle se osvědčují při dlouhodobém uskladnění "
                 "i při aplikaci ve venkovním prostředí. Charakteristickou vlastností akrylu je pozvolnější "
                 "nástup lepicího účinku – lepidlo jednoduše potřebuje určitý čas, aby k povrchu plně přilnulo. "
-                "Pokud tedy vyžadujete okamžitou a silnou fixaci ihned po nalepení, nemusí být nejvhodnější "
-                "volbou, jakmile však proces přilnutí proběhne, vytvoří se mimořádně pevný a trvanlivý spoj.\n\n"
+                "Pokud tedy vyžadujete okamžitou a silnou fixaci ihned po nalepení, nemusí jít o nejvhodnější "
+                "volbu. Jakmile však proces přilnutí proběhne, vytvoří se mimořádně pevný a trvanlivý spoj.\n\n"
                 "V praxi se akrylové pásky nejčastěji uplatňují ve skladech a při balení zásilek, které nejsou "
                 "vystaveny okamžitému extrémnímu zatížení. Pro své vlastnosti jsou velmi oblíbené také "
                 "v kancelářích – díky odolnosti vůči žloutnutí si totiž uchovávají čistý a estetický vzhled "
@@ -115,7 +115,7 @@ GUIDES = [
                 "na široké škále materiálů včetně méně standardních, prašnějších nebo recyklovaných kartonů. "
                 "Zajišťuje maximálně efektivní a rychlé lepení bez rizika odlepování.\n\n"
                 "Hotmelt je perfektním řešením pro rychlé balení v e-commerce, expedici zboží a náročné "
-                "průmyslové provozy s automatickými balicími linkami. Skvěle si poradí i s náročnějšími typy "
+                "průmyslové provozy s automatickými balícími linkami. Skvěle si poradí i s náročnějšími typy "
                 "povrchů či recyklovanými kartonovými krabicemi. Své nenahraditelné místo má v logistice "
                 "a skladování, kde je klíčová okamžitá pevnost a bezproblémová manipulace se zásilkami ihned "
                 "po zabalení.",
