@@ -395,11 +395,6 @@
         "a": "Ideálně v suchu, mimo přímé slunce, při běžné pokojové teplotě. Akrylové pásky lépe snášejí delší skladování; HOT MELT doporučujeme spotřebovat dříve při intenzivním používání.",
         "search": "skladování teplota vlhkost životnost"
       },
-      "barvy": {
-        "q": "Lze tisknout podle Pantone nebo CMYK?",
-        "a": "Ano. Barvy ladíme podle Pantone nebo vzorku. U flexotisku a rototisku doporučíme vhodné barvy podle podkladu (transparentní, bílá, barevná páska).",
-        "search": "pantone cmyk barva odstín logo branding"
-      },
       "opakovat": {
         "q": "Mohu zopakovat objednávku se stejným potiskem?",
         "a": "Ano. Všechny schválené tiskové matrice ukládáme do archivu. Další objednávka se stejným designem tak proběhne okamžitě bez nového schvalování.",
@@ -439,11 +434,6 @@
         "q": "Dodáváte i mimo Českou republiku?",
         "a": "Ano. Zásilky posíláme do EU i dále, dopravu a podmínky domluvíme podle destinace a objemu.",
         "search": "zahraničí eu export dodání"
-      },
-      "urgentni": {
-        "q": "Umíte urgentní / express výrobu?",
-        "a": "U vybraných zakázek ano, termín vždy ověříme podle vytížení výroby a složitosti potisku. Napište v poptávce požadovaný termín, ozveme se s reálnou možností.",
-        "search": "urgentní express rychlé dodání"
       },
       "odstranitelna": {
         "q": "Máte pásky, které jdou čistě odstranit?",

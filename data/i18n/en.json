@@ -395,11 +395,6 @@
         "a": "Ideally dry, away from direct sun, at normal room temperature. Acrylic tapes handle longer storage better; with intensive use we recommend consuming HOT MELT sooner.",
         "search": "storage temperature humidity shelf life"
       },
-      "barvy": {
-        "q": "Can you print to Pantone or CMYK?",
-        "a": "Yes. We match colours to Pantone or a physical sample. For flexo and rotogravure we recommend suitable inks for the substrate (clear, white or coloured tape).",
-        "search": "pantone cmyk colour shade logo branding"
-      },
       "opakovat": {
         "q": "Can I reorder with the same print?",
         "a": "Yes. We archive all approved printing plates. A repeat order with the same design can therefore proceed immediately without a new approval round.",
@@ -439,11 +434,6 @@
         "q": "Do you deliver outside Czechia?",
         "a": "Yes. We ship to the EU and beyond, shipping and terms are agreed by destination and volume.",
         "search": "abroad eu export delivery international"
-      },
-      "urgentni": {
-        "q": "Can you do urgent / express production?",
-        "a": "For selected jobs yes, we always confirm the date based on plant capacity and print complexity. State your required date in the inquiry and we will reply with a realistic option.",
-        "search": "urgent express fast delivery"
       },
       "odstranitelna": {
         "q": "Do you have tapes that remove cleanly?",

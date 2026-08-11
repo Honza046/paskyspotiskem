@@ -395,11 +395,6 @@
         "a": "Ideale in luogo asciutto, lontano dal sole diretto, a temperatura ambiente. I nastri Akryl tollerano meglio lo stoccaggio lungo; con uso intensivo consigliamo di consumare prima l'HOT MELT.",
         "search": "stoccaggio temperatura umidità durata"
       },
-      "barvy": {
-        "q": "Si può stampare secondo Pantone o CMYK?",
-        "a": "Sì. Allineiamo i colori a Pantone o a un campione. Per flessografia e rotocalco consigliamo gli inchiostri adatti al supporto (trasparente, bianco, colorato).",
-        "search": "pantone cmyk colore logo branding"
-      },
       "opakovat": {
         "q": "Posso ripetere l'ordine con la stessa stampa?",
         "a": "Sì. Archiviamo tutte le matrici di stampa approvate. Un riordino con lo stesso design procede quindi subito senza nuova approvazione.",
@@ -439,11 +434,6 @@
         "q": "Consegnate anche fuori dalla Repubblica Ceca?",
         "a": "Sì. Spediamo in UE e oltre, trasporto e condizioni si concordano in base a destinazione e volume.",
         "search": "estero eu export consegna"
-      },
-      "urgentni": {
-        "q": "Fate produzione urgente / express?",
-        "a": "Per alcuni ordini sì, confermiamo sempre la data in base al carico di lavoro e alla complessità della stampa. Indicate la data desiderata nella richiesta e vi rispondiamo con un'opzione realistica.",
-        "search": "urgente express consegna rapida"
       },
       "odstranitelna": {
         "q": "Avete nastri che si rimuovono in modo pulito?",

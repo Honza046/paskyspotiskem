@@ -71,11 +71,6 @@ def _items_cs() -> dict[str, dict[str, str]]:
             "a": "Ideálně v suchu, mimo přímé slunce, při běžné pokojové teplotě. Akrylové pásky lépe snášejí delší skladování; HOT MELT doporučujeme spotřebovat dříve při intenzivním používání.",
             "search": "skladování teplota vlhkost životnost",
         },
-        "barvy": {
-            "q": "Lze tisknout podle Pantone nebo CMYK?",
-            "a": "Ano. Barvy ladíme podle Pantone nebo vzorku. U flexotisku a rototisku doporučíme vhodné barvy podle podkladu (transparentní, bílá, barevná páska).",
-            "search": "pantone cmyk barva odstín logo branding",
-        },
         "opakovat": {
             "q": "Mohu zopakovat objednávku se stejným potiskem?",
             "a": "Ano. Všechny schválené tiskové matrice ukládáme do archivu. Další objednávka se stejným designem tak proběhne okamžitě bez nového schvalování.",
@@ -115,11 +110,6 @@ def _items_cs() -> dict[str, dict[str, str]]:
             "q": "Dodáváte i mimo Českou republiku?",
             "a": "Ano. Zásilky posíláme do EU i dále, dopravu a podmínky domluvíme podle destinace a objemu.",
             "search": "zahraničí eu export dodání",
-        },
-        "urgentni": {
-            "q": "Umíte urgentní / express výrobu?",
-            "a": "U vybraných zakázek ano, termín vždy ověříme podle vytížení výroby a složitosti potisku. Napište v poptávce požadovaný termín, ozveme se s reálnou možností.",
-            "search": "urgentní express rychlé dodání",
         },
         "odstranitelna": {
             "q": "Máte pásky, které jdou čistě odstranit?",
@@ -211,11 +201,6 @@ def _items_en() -> dict[str, dict[str, str]]:
             "a": "Ideally dry, away from direct sun, at normal room temperature. Acrylic tapes handle longer storage better; with intensive use we recommend consuming HOT MELT sooner.",
             "search": "storage temperature humidity shelf life",
         },
-        "barvy": {
-            "q": "Can you print to Pantone or CMYK?",
-            "a": "Yes. We match colours to Pantone or a physical sample. For flexo and rotogravure we recommend suitable inks for the substrate (clear, white or coloured tape).",
-            "search": "pantone cmyk colour shade logo branding",
-        },
         "opakovat": {
             "q": "Can I reorder with the same print?",
             "a": "Yes. We archive all approved printing plates. A repeat order with the same design can therefore proceed immediately without a new approval round.",
@@ -255,11 +240,6 @@ def _items_en() -> dict[str, dict[str, str]]:
             "q": "Do you deliver outside Czechia?",
             "a": "Yes. We ship to the EU and beyond, shipping and terms are agreed by destination and volume.",
             "search": "abroad eu export delivery international",
-        },
-        "urgentni": {
-            "q": "Can you do urgent / express production?",
-            "a": "For selected jobs yes, we always confirm the date based on plant capacity and print complexity. State your required date in the inquiry and we will reply with a realistic option.",
-            "search": "urgent express fast delivery",
         },
         "odstranitelna": {
             "q": "Do you have tapes that remove cleanly?",
@@ -351,11 +331,6 @@ def _items_de() -> dict[str, dict[str, str]]:
             "a": "Ideal trocken, ohne direkte Sonne, bei Zimmertemperatur. Akryl-Bänder vertragen längere Lagerung besser; bei intensiver Nutzung empfehlen wir, HOT MELT früher zu verbrauchen.",
             "search": "lagerung temperatur feuchtigkeit haltbarkeit",
         },
-        "barvy": {
-            "q": "Können Sie nach Pantone oder CMYK drucken?",
-            "a": "Ja. Farben stimmen wir nach Pantone oder Muster ab. Bei Flexo und Rotogravur empfehlen wir passende Farben je nach Untergrund (transparent, weiß, farbig).",
-            "search": "pantone cmyk farbe logo branding",
-        },
         "opakovat": {
             "q": "Kann ich die Bestellung mit demselben Aufdruck wiederholen?",
             "a": "Ja. Alle freigegebenen Druckmatrizen archivieren wir. Eine Nachbestellung mit demselben Design läuft daher sofort ohne erneute Freigabe.",
@@ -395,11 +370,6 @@ def _items_de() -> dict[str, dict[str, str]]:
             "q": "Liefern Sie auch außerhalb Tschechiens?",
             "a": "Ja. Wir versenden in die EU und darüber hinaus, Versand und Konditionen stimmen wir nach Ziel und Menge ab.",
             "search": "ausland eu export lieferung",
-        },
-        "urgentni": {
-            "q": "Können Sie Express- / Eilproduktion?",
-            "a": "Bei ausgewählten Aufträgen ja, den Termin prüfen wir immer nach Auslastung und Druckkomplexität. Nennen Sie den Wunschtermin in der Anfrage, wir melden uns mit einer realistischen Option.",
-            "search": "eilig express schnelle lieferung",
         },
         "odstranitelna": {
             "q": "Haben Sie sauber ablösbare Bänder?",
@@ -491,11 +461,6 @@ def _items_it() -> dict[str, dict[str, str]]:
             "a": "Ideale in luogo asciutto, lontano dal sole diretto, a temperatura ambiente. I nastri Akryl tollerano meglio lo stoccaggio lungo; con uso intensivo consigliamo di consumare prima l'HOT MELT.",
             "search": "stoccaggio temperatura umidità durata",
         },
-        "barvy": {
-            "q": "Si può stampare secondo Pantone o CMYK?",
-            "a": "Sì. Allineiamo i colori a Pantone o a un campione. Per flessografia e rotocalco consigliamo gli inchiostri adatti al supporto (trasparente, bianco, colorato).",
-            "search": "pantone cmyk colore logo branding",
-        },
         "opakovat": {
             "q": "Posso ripetere l'ordine con la stessa stampa?",
             "a": "Sì. Archiviamo tutte le matrici di stampa approvate. Un riordino con lo stesso design procede quindi subito senza nuova approvazione.",
@@ -535,11 +500,6 @@ def _items_it() -> dict[str, dict[str, str]]:
             "q": "Consegnate anche fuori dalla Repubblica Ceca?",
             "a": "Sì. Spediamo in UE e oltre, trasporto e condizioni si concordano in base a destinazione e volume.",
             "search": "estero eu export consegna",
-        },
-        "urgentni": {
-            "q": "Fate produzione urgente / express?",
-            "a": "Per alcuni ordini sì, confermiamo sempre la data in base al carico di lavoro e alla complessità della stampa. Indicate la data desiderata nella richiesta e vi rispondiamo con un'opzione realistica.",
-            "search": "urgente express consegna rapida",
         },
         "odstranitelna": {
             "q": "Avete nastri che si rimuovono in modo pulito?",

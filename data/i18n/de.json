@@ -395,11 +395,6 @@
         "a": "Ideal trocken, ohne direkte Sonne, bei Zimmertemperatur. Akryl-Bänder vertragen längere Lagerung besser; bei intensiver Nutzung empfehlen wir, HOT MELT früher zu verbrauchen.",
         "search": "lagerung temperatur feuchtigkeit haltbarkeit"
       },
-      "barvy": {
-        "q": "Können Sie nach Pantone oder CMYK drucken?",
-        "a": "Ja. Farben stimmen wir nach Pantone oder Muster ab. Bei Flexo und Rotogravur empfehlen wir passende Farben je nach Untergrund (transparent, weiß, farbig).",
-        "search": "pantone cmyk farbe logo branding"
-      },
       "opakovat": {
         "q": "Kann ich die Bestellung mit demselben Aufdruck wiederholen?",
         "a": "Ja. Alle freigegebenen Druckmatrizen archivieren wir. Eine Nachbestellung mit demselben Design läuft daher sofort ohne erneute Freigabe.",
@@ -439,11 +434,6 @@
         "q": "Liefern Sie auch außerhalb Tschechiens?",
         "a": "Ja. Wir versenden in die EU und darüber hinaus, Versand und Konditionen stimmen wir nach Ziel und Menge ab.",
         "search": "ausland eu export lieferung"
-      },
-      "urgentni": {
-        "q": "Können Sie Express- / Eilproduktion?",
-        "a": "Bei ausgewählten Aufträgen ja, den Termin prüfen wir immer nach Auslastung und Druckkomplexität. Nennen Sie den Wunschtermin in der Anfrage, wir melden uns mit einer realistischen Option.",
-        "search": "eilig express schnelle lieferung"
       },
       "odstranitelna": {
         "q": "Haben Sie sauber ablösbare Bänder?",
