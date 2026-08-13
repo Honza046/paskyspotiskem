@@ -265,24 +265,34 @@ GUIDES = [
             "a ochrana elektroniky, kosmetiky i cenného zboží."
         ),
         "intro": (
-            "Bezpečnostní páska Tamper Evident uzavře karton a zároveň odhalí manipulaci. "
-            "Při odlepení zanechá VOID stopu. Zákazník i sklad ihned vidí, že balík někdo otevíral."
+            "Bezpečnostní páska Tamper Evident plní dvojí funkci – spolehlivě uzavře karton a zároveň "
+            "funguje jako neúprosná kontrola jakéhokoliv neoprávněné manipulace. Při pokusu o odlepení "
+            "zanechá na povrchu nesmazatelnou stopu, takže sklad i zákazník okamžitě poznají, že balík "
+            "někdo neoprávněně otevíral."
         ),
         "sections": [
             (
                 "Jak funguje VOID efekt",
-                "Speciální konstrukce pásky při sejmutí zanechá na kartonu permanentní stopu (typicky nápis VOID). "
-                "Nelze ji nenápadně přelepit zpět. Vhodné jako pečeť proti krádeži a výměně zboží.",
+                "Tato páska využívá speciální vícevrstvou konstrukci lepidla. Při jakémkoliv pokusu "
+                "o sejmutí či odlepení se vrstvy oddělí a na kartonu zanechají permanentní bezpečnostní "
+                "otisk (nejčastěji ve formě viditelného nápisu VOID). Pásku již nelze nenápadně přilepit "
+                "zpět ani nahradit, což z ní dělá dokonalou bezpečnostní pečeť proti krádežím obsahu "
+                "nebo nepozorované výměně zboží během přepravy.",
             ),
             (
-                "Kde dává smysl",
-                "Elektronika, kosmetika, farmacie, high-value e-commerce a B2B zásilky, kde záleží na důvěře. "
-                "Pásku lze potisknout logem: branding i ochrana v jednom kroku balení.",
+                "Kde dává bezpečnostní páska největší smysl",
+                "Tamper Evident pásky jsou ideální volbou pro zásilky s vysokou hodnotou nebo citlivým "
+                "obsahem, kde je klíčová absolutní důvěra a ochrana. Typicky se využívají při expedici "
+                "elektroniky, luxusní kosmetiky, farmaceutických výrobků, cenného e-commerce zboží nebo "
+                "u důležitých B2B balíků. Díky možnosti vlastního potisku logem získáte prémiový branding "
+                "i maximální zabezpečení zásilky v jediném kroku.",
             ),
             (
-                "Kdy stačí běžná BOPP",
-                "Pro běžné zásilky bez zvýšeného rizika manipulace často stačí HOT MELT nebo Akryl s potiskem. "
-                "Tamper Evident volte tam, kde otevření bez stopy není akceptovatelné.",
+                "Kdy zvolit Tamper Evident a kdy stačí běžná BOPP?",
+                "Pro standardní zásilky bez zvýšeného rizika odcizení plně postačí klasické BOPP pásky "
+                "s akrylovým nebo hotmeltovým lepidlem a vlastním potiskem. Po bezpečnostní pásce "
+                "Tamper Evident sáhněte v momentech, kdy je jakýkoliv neoprávněný vstup do balíku bez "
+                "zanechání stopy absolutně neakceptovatelný a vy potřebujete mít stoprocentní jistotu.",
             ),
         ],
         "links": [
