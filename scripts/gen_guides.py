@@ -44,17 +44,25 @@ GUIDES = [
             ),
             (
                 "Jak vybrat správný materiál?",
-                "Volba materiálu závisí na vašich provozních potřebách. Pro bleskovou expedici a okamžitou "
-                "lepivost je ideální BOPP HOT MELT, zatímco Akryl vyniká tichým odvíjením a vysokou UV "
-                "stabilitou. Papírové pásky umožňují snadnou recyklaci společně s kartonem a řešení ECO+/NOPP "
-                "vám pomohou naplnit vaše firemní ESG cíle. Podrobné srovnání vlastností jednotlivých lepidel "
-                "najdete v našem průvodci Hotmelt vs. Akryl.",
+                "Volba nosiče pásky závisí na hmotnosti zásilek, provozních nárocích i vašich ekologických "
+                "cílech. Standardní BOPP je osvědčená a cenově nejefektivnější volba pro každodenní balení "
+                "běžných zásilek. Pokud cílíte na plnění ESG cílů, udržitelné řešení ECO+, NOPP a LOOPP staví "
+                "na stejném BOPP základu, avšak s certifikovaným obsahem recyklátů či obnovitelných bio-surovin "
+                "bez ztráty pevnosti. Polyesterové pásky BOPET nabízejí extrémní odolnost proti přetržení pro "
+                "těžké náklady a dynamický návin role, který šetří místo ve skladu. Papírové pásky s FSC "
+                "certifikací pak dodávají balíkům prémiový přírodní vzhled a umožňují stoprocentní recyklaci "
+                "celé krabice bez nutnosti odlepování. S výběrem optimálního materiálu pro vaše balicí procesy "
+                "vám rádi poradíme.",
             ),
             (
-                "Minimální odběr a termín dodání",
-                "U BOPP pásek začíná minimální odběr typicky na 360 ks (Akryl) nebo 504 ks (HOT MELT). "
-                "Standardní doba dodání se pohybuje mezi 3 a 4 týdny od finálního schválení grafického návrhu. "
-                "Vzorky vybraných materiálů vám rádi zašleme zdarma na ukázku.",
+                "Jak vybrat správné lepidlo?",
+                "Typ lepidla rozhoduje o rychlosti lepení i chování pásky v různých podmínkách. HOT MELT "
+                "(syntetický kaučuk) je jasnou volbou pro dynamické provozy a automatické linky díky své "
+                "okamžité počáteční lepivosti. Akryl na vodní bázi vyniká dlouhodobou stálostí, UV odolností "
+                "a možností tichého odvíjení (Low Noise), ideálního pro klidnější pracovní prostředí. Pro "
+                "náročné chladírenské podmínky a mrazy pak nabízíme vysoce odolnou řadu EVERGREEN. Podrobné "
+                "srovnání vlastností a výhod jednotlivých technologií najdete v Hotmelt, nebo akryl? Jak "
+                "vybrat správnou BOPP lepicí pásku.",
             ),
         ],
         "links": [
