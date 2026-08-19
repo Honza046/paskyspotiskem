@@ -11,6 +11,16 @@
       "source": "/pruvodce/pasky-pro-e-shopy",
       "destination": "/pruvodce/pasky-s-potiskem",
       "permanent": true
+    },
+    {
+      "source": "/sortiment/bopp-pasky/bopp-paska-evergreen-50",
+      "destination": "/sortiment/bopp-pasky/bopp-paska-evergreen",
+      "permanent": true
+    },
+    {
+      "source": "/sortiment/bopp-pasky/bopp-paska-evergreen-100",
+      "destination": "/sortiment/bopp-pasky/bopp-paska-evergreen",
+      "permanent": true
     }
   ],
   "rewrites": [
