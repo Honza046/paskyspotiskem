@@ -87,14 +87,19 @@
         "slug": "bopp-paska-acrylic"
       },
       {
-        "name": "BOPP páska ecoEVERGREEN 50%",
-        "tagline": "Udržitelná balicí páska z 50 % recyklovaného postindustriálního materiálu.",
-        "slug": "bopp-paska-evergreen"
-      },
-      {
         "name": "BOPP páska ecoEVERGREEN 100%",
         "tagline": "Udržitelná balicí páska ze 100 % recyklovaného postindustriálního materiálu.",
         "slug": "bopp-paska-evergreen-100"
+      },
+      {
+        "name": "BOPP páska ecoEVERGREEN 50%",
+        "tagline": "Udržitelná balicí páska z 50 % recyklovaného postindustriálního materiálu.",
+        "slug": "bopp-paska-evergreen-50"
+      },
+      {
+        "name": "BOPP páska Evergreen",
+        "tagline": "Akrylová páska do extrémních podmínek a chladu.",
+        "slug": "bopp-paska-evergreen"
       },
       {
         "name": "BOPP páska EXTRA GLUE+",

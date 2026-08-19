@@ -120,29 +120,28 @@ def P(name, image, tagline, nosic, tl, lep, pril, temp, pev):
 PRODUCTS = {
  "papirove-pasky":[
    P("Papírová páska KH80","Papírové Pásky/KH80.jpg","Exkluzivní papírová páska z 100% recyklovaného materiálu – dokonalé spojení vysoké estetiky, okamžité přilnavosti a ohleduplnosti k přírodě.","Recyklovaný Kraftový papír (100% recyklovaný, FSC certifikace)","135 µm (±15 %)","Syntetický kaučuk (Hot Melt)",">7 N/cm (při odtržení papíru)","15–25 °C","50 N/cm (±10 %)"),
-   P("Papírová páska KS165","Papírové Pásky/KS165.jpg","Nekompromisní papírové řešení s extrémní nosností pro nejtěžší průmyslové balení, fixaci palet a páskování.","Hladký Kraftový papír (FSC certifikace)","225 µm","Syntetický kaučuk (Hot Melt)","6,0 N/cm","15–25 °C","150 N/cm"),
    P("Papírová páska C660","Papírové Pásky/c660.jpg","Ekologické řešení pro elegantní balení s vysokou lepivostí.","Krepový papír (FSC certifikace)","120 µm","Syntetický kaučuk (Hot Melt)","4,5 N/cm","15–25 °C","33 N/cm"),
    P("Papírová páska C680","Papírové Pásky/c680.jpg","Tenčí profil s vyšší pevností v tahu pro efektivní balení.","Krepový papír (FSC certifikace)","110 µm","Syntetický kaučuk (Hot Melt)","4,5 N/cm","15–25 °C","35 N/cm"),
-   P("Papírová páska C680R","Papírové Pásky/c680r.jpeg","Skelným vláknem zpevněná páska pro bezpečné balení těžších kartonů.","Krepový papír s podélným skelným vláknem (FSC)","140 µm","Syntetický kaučuk (Hot Melt)","4,5 N/cm","15–25 °C","50 N/cm"),
    P("Papírová páska C680 RT","Papírové Pásky/c680RT.jpeg","Křížově vyztužená páska skelným vláknem pro nejnáročnější zásilky.","Krepový papír s křížovým skelným vláknem (FSC)","140 µm","Syntetický kaučuk (Hot Melt)","5,0 N/cm","15–25 °C","60 N/cm"),
+   P("Papírová páska C680R","Papírové Pásky/c680r.jpeg","Skelným vláknem zpevněná páska pro bezpečné balení těžších kartonů.","Krepový papír s podélným skelným vláknem (FSC)","140 µm","Syntetický kaučuk (Hot Melt)","4,5 N/cm","15–25 °C","50 N/cm"),
    P("Papírová páska C690","Papírové Pásky/c690.jpg","Těžký krepový papír pro nejnáročnější kartony.","Zesílený krepový papír (FSC certifikace)","125 µm","Syntetický kaučuk (Hot Melt)","7,0 N/cm","15–25 °C","60 N/cm"),
    P("Papírová páska C780","Papírové Pásky/c780.jpg","Prémiová kombinace krepu a přírodního kaučuku pro náročné teplotní podmínky.","Krepový papír (FSC certifikace)","130 µm","Přírodní kaučuk (Solvent)","2,4 N/cm","15–25 °C","35 N/cm"),
+   P("Papírová páska KS165","Papírové Pásky/KS165.jpg","Nekompromisní papírové řešení s extrémní nosností pro nejtěžší průmyslové balení, fixaci palet a páskování.","Hladký Kraftový papír (FSC certifikace)","225 µm","Syntetický kaučuk (Hot Melt)","6,0 N/cm","15–25 °C","150 N/cm"),
  ],
  "bopp-pasky":[
    P("BOPP páska Akryl","BOPP Tapes/BOPPACRYLIC.jpeg","Spolehlivá BOPP páska s dlouhou životností.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy)","21 µm","−10 až +60 °C","14–28 °C"),
    P("BOPP páska HOT MELT","BOPP Tapes/BOPPHOTMELT.jpeg","BOPP páska s HOT MELT lepidlem pro rychlé a pevné přilnutí.","BOPP","25 / 28 / 32 µm","HOT MELT","18 µm","0 až +50 °C","14–28 °C"),
-   P("BOPP páska EXTRA GLUE+","BOPP Tapes/BOPPACRYLIC.jpeg","Akrylová páska se zvýšenou vrstvou lepidla pro náročné povrchy.","BOPP","28 / 32 / 35 µm","Akryl","28 µm","−10 až +60 °C","14–28 °C"),
    P("BOPP páska TACK+","BOPP Tapes/BOPPHOTMELT1.jpg","HOT MELT páska s extrémní přilnavostí a okamžitým lepivým efektem. Pro obtížné aplikace.","BOPP","28 / 32 µm","HOT MELT (tack+)","18 µm","0 až +50 °C","14–28 °C"),
+   P("BOPP páska EXTRA GLUE+","BOPP Tapes/BOPPACRYLIC.jpeg","Akrylová páska se zvýšenou vrstvou lepidla pro náročné povrchy.","BOPP","28 / 32 / 35 µm","Akryl","28 µm","−10 až +60 °C","14–28 °C"),
+   P("BOPP páska Evergreen","BOPP Tapes/EVERGREEN.jpg","Akrylová páska do extrémních podmínek a chladu. Nosič BOPP 28 µm, akrylové lepidlo 22 µm na vodní bázi. Aplikace od 0 °C, provoz −20 až +50 °C. Min. odběr 1 paleta (2 376 ks), základ 50 mm × 66 m.","BOPP","28 µm","Akryl (NOISY)","—","−20 až +50 °C","—"),
    P("BOPP páska Tamper Evident","BOPP Tapes/TAMPER-EVIDENT.jpg","BOPP páska s ochranným potiskem pro okamžitou detekci neoprávněného otevření zásilky.","BOPP","35 µm","Akryl (Low noise)","—","0 až +60 °C","—"),
-   P("BOPP páska ecoEVERGREEN 50%","BOPP Tapes/EVERGREEN.jpg","Udržitelná balicí páska z 50 % recyklovaného postindustriálního materiálu.","BOPP","28 µm","Akryl (NOISY)","—","−20 až +50 °C","—"),
-   P("BOPP páska ecoEVERGREEN 100%","BOPP Tapes/EVERGREEN100.jpg","Udržitelná balicí páska ze 100 % recyklovaného postindustriálního materiálu.","BOPP","28 µm","Akryl (NOISY)","—","−20 až +50 °C","—"),
  ],
  "bopet-pasky":[
-   P("BOPET páska ATE23","BOPET Tapes/ATE23.jpg","Bezpečnostní BOPET páska odhalující neoprávněnou manipulaci.","BOPET","23 µm","Akryl","—","0 až +50 °C","—"),
-   P("BOPET páska AIT23","BOPET Tapes/AIT23.jpg","Pevná balicí páska s polyesterovým nosičem a akrylovým lepidlem.","BOPET","23 µm","Akryl","—","0 až +50 °C","—"),
-   P("BOPET páska HIT17","BOPET Tapes/BOPETHIT17.jpg","Vysoce pevná balicí páska s polyesterovým nosičem.","BOPET","17 µm","HOT MELT","—","0 až +50 °C","—"),
    P("BOPET páska ECO HIT19","BOPET Tapes/ECOHIT19.jpg","BOPET páska z 90 % recyklovaných PET lahví.","BOPET","19 µm","HOT MELT","—","0 až +50 °C","—"),
    P("BOPET páska ECO HIT23","BOPET Tapes/ECOHIT23.jpg","Silnější BOPET páska z 90 % recyklovaných PET lahví.","BOPET","23 µm","HOT MELT","—","0 až +50 °C","—"),
+   P("BOPET páska AIT23","BOPET Tapes/AIT23.jpg","Pevná balicí páska s polyesterovým nosičem a akrylovým lepidlem.","BOPET","23 µm","Akryl","—","0 až +50 °C","—"),
+   P("BOPET páska HIT17","BOPET Tapes/BOPETHIT17.jpg","Vysoce pevná balicí páska s polyesterovým nosičem.","BOPET","17 µm","HOT MELT","—","0 až +50 °C","—"),
+   P("BOPET páska ATE23","BOPET Tapes/ATE23.jpg","Bezpečnostní BOPET páska odhalující neoprávněnou manipulaci.","BOPET","23 µm","Akryl","—","0 až +50 °C","—"),
  ],
  "textilni-pasky":[
    P("Textilní páska BC","Textilní Lepící Pásky/BC.jpg","Pevná textilní (duct) páska pro opravy a univerzální použití.","Textilní výztuž + PE laminát","250 µm","Kaučukové (syntetické)","6,0 N/25 mm","−10 až +70 °C","120 N/25 mm"),
@@ -165,14 +164,14 @@ PRODUCTS = {
    P("Malířská páska CS60-80","Malířské Pásky/cs60-80.jpg","Teplotně odolná malířská páska pro lakování a náročné maskování.","Krepový papír","150 µm","Kaučukové (odolné teplu)","3,0 N/25 mm","do +100 °C","32 N/25 mm"),
  ],
  "udrzitelne-pasky":[
+   P("Udržitelná páska ECO+ 100","Udržitelné Pásky/eco+100.jpg","100% regenerovaná BOPP fólie z postindustriálního odpadu. Maximální ekologický standard bez kompromisů ve výkonu.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
+   P("Udržitelná páska ECO+ 80","Udržitelné Pásky/eco+80.jpg","BOPP fólie s 80% podílem regenerovaného materiálu. Spojuje vysoký ekologický standard a stoprocentní pevnost.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
+   P("Udržitelná páska ECO+ 50","Udržitelné Pásky/eco+50.jpg","Efektivní balení s 50% podílem regenerovaného materiálu. Optimální rovnováha mezi ekologií a nejlepší cenou.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
+   P("Udržitelná páska POLY+","Udržitelné Pásky/poly-plus.jpg","Ekologická a plnohodnotná náhrada PVC pásek s elegantním matným povrchem.","matná BOPP","35 µm","Akryl / Low noise","—","0 až +60 / −10 až +60 °C","—"),
+   P("Udržitelná páska Airtape+","Udržitelné Pásky/airtape.jpg","Tenká a pevná BOPP páska pro maximální efektivitu a snížení odpadu.","BOPP","19 µm","Akryl (Low noise)","—","−10 až +60 °C","—"),
+   P("Udržitelná páska LOOPP","Udržitelné Pásky/loopp.jpg","Prémiová ekologická páska z recyklovaných plastů bez jakýchkoliv kompromisů v pevnosti.","BOPP","28 / 32 µm","Akryl / Low noise","—","0 až +60 / −10 až +60 °C","—"),
    P("Udržitelná páska NOPP","Udržitelné Pásky/nopp.jpg","Páska s nosnou fólií z bio-cirkulárního materiálu s certifikací ISCC PLUS.","BOPP","28 / 32 µm","Akryl / Low noise","—","0 až +60 / −10 až +60 °C","—"),
    P("Udržitelná páska NOPP+","Udržitelné Pásky/nopp+.jpg","Páska s certifikovaným bio-cirkulárním složením fólie i lepidla pro maximální snížení uhlíkové stopy.","BOPP","28 / 32 µm","Akryl / Low noise","—","0 až +60 / −10 až +60 °C","—"),
-   P("Udržitelná páska LOOPP","Udržitelné Pásky/loopp.jpg","Prémiová ekologická páska z recyklovaných plastů bez jakýchkoliv kompromisů v pevnosti.","BOPP","28 / 32 µm","Akryl / Low noise","—","0 až +60 / −10 až +60 °C","—"),
-   P("Udržitelná páska Airtape+","Udržitelné Pásky/airtape.jpg","Tenká a pevná BOPP páska pro maximální efektivitu a snížení odpadu.","BOPP","19 µm","Akryl (Low noise)","—","−10 až +60 °C","—"),
-   P("Udržitelná páska ECO+ 50","Udržitelné Pásky/eco+50.jpg","Efektivní balení s 50% podílem regenerovaného materiálu. Optimální rovnováha mezi ekologií a nejlepší cenou.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
-   P("Udržitelná páska ECO+ 80","Udržitelné Pásky/eco+80.jpg","BOPP fólie s 80% podílem regenerovaného materiálu. Spojuje vysoký ekologický standard a stoprocentní pevnost.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
-   P("Udržitelná páska ECO+ 100","Udržitelné Pásky/eco+100.jpg","100% regenerovaná BOPP fólie z postindustriálního odpadu. Maximální ekologický standard bez kompromisů ve výkonu.","BOPP","25 / 28 / 32 µm","Akryl (Low noise / Noisy) / HOT MELT","21 µm (Akryl) / 18 µm (HOT MELT)","0 až +60 °C","14–28 °C"),
-   P("Udržitelná páska POLY+","Udržitelné Pásky/poly-plus.jpg","Ekologická a plnohodnotná náhrada PVC pásek s elegantním matným povrchem.","matná BOPP","35 µm","Akryl / Low noise","—","0 až +60 / −10 až +60 °C","—"),
  ],
 }
 
@@ -197,8 +196,7 @@ TAGMAP = {
  "BOPP páska EXTRA GLUE+":["tiche","rucni","stroje"],
  "BOPP páska TACK+":["rucni","stroje"],
  "BOPP páska Tamper Evident":["rucni","stroje"],
- "BOPP páska ecoEVERGREEN 50%":["ekologicke","mrazuvzdorne","stroje"],
- "BOPP páska ecoEVERGREEN 100%":["ekologicke","mrazuvzdorne","stroje"],
+ "BOPP páska Evergreen":["mrazuvzdorne","stroje"],
  "BOPET páska ATE23":["rucni","stroje"],
  "BOPET páska AIT23":["rucni","stroje"],
  "BOPET páska HIT17":["stroje"],
@@ -224,15 +222,18 @@ TAGMAP = {
  "Udržitelná páska POLY+":["ekologicke","tiche","rucni","stroje"],
 }
 
-# sort products alphabetically within each category
+# Categories with an explicit, client-specified product order (kept as written above).
+MANUALLY_ORDERED_CATS = {"udrzitelne-pasky", "bopp-pasky", "bopet-pasky", "papirove-pasky"}
+
+# sort products alphabetically within each remaining category
 for k in PRODUCTS:
-    PRODUCTS[k] = sorted(PRODUCTS[k], key=lambda p: p["name"])
+    if k not in MANUALLY_ORDERED_CATS:
+        PRODUCTS[k] = sorted(PRODUCTS[k], key=lambda p: p["name"])
 
 SLUG_OVERRIDES = {
     "BOPP páska Akryl": "bopp-paska-acrylic",
     "BOPP páska HOT MELT": "bopp-paska-hot-melt",
-    "BOPP páska ecoEVERGREEN 50%": "bopp-paska-evergreen",
-    "BOPP páska ecoEVERGREEN 100%": "bopp-paska-evergreen-100",
+    "BOPP páska Evergreen": "bopp-paska-evergreen",
     "Udržitelná páska Airtape+": "udrzitelna-paska-airtape",
 }
 
@@ -310,16 +311,7 @@ TECH_SPEC_PARAMS = {
         "Provozní teplota po nalepení": "0 až +50 / 0 až +60 / −10 až +60 °C",
         "Minimální množství": "od 180 ks",
     },
-    "BOPP páska ecoEVERGREEN 50%": {
-        "Nosič": "BOPP",
-        "Tloušťka fólie": "28 µm",
-        "Typ lepidla": "Akryl (NOISY)",
-        "Tloušťka lepidla": "22 µm",
-        "Skladovací a aplikační teplota": "0–25 °C",
-        "Provozní teplota po nalepení": "−20 až +50 °C",
-        "Minimální množství": "1 paleta (2376 ks), základ 50 mm × 66 m",
-    },
-    "BOPP páska ecoEVERGREEN 100%": {
+    "BOPP páska Evergreen": {
         "Nosič": "BOPP",
         "Tloušťka fólie": "28 µm",
         "Typ lepidla": "Akryl (NOISY)",
@@ -884,17 +876,11 @@ def product_benefits(cat_slug, p):
                 ("Neutrální vzhled", "Tváří se jako běžná balicí páska, dokud není neoprávněně odlepena."),
                 ("Možnost vlastní personalizace", "Bezpečnostní text nebo motiv lze plně přizpůsobit (např. logo firmy, varování, vlastní text „VOID / OTEVŘENO“)."),
             ]
-        if p["name"] == "BOPP páska ecoEVERGREEN 50%":
+        if p["name"] == "BOPP páska Evergreen":
             return [
-                ("Inovativní recyklace (PIR)", "Páska je vyrobena z BOPP fólie s 50% podílem recyklovaného použitého kuchyňského oleje (U.C.O.) z potravinářského průmyslu. Jedná se o vysoce kvalitní postindustriální recyklát (PIR), díky kterému produkt obsahuje celkem 27 % recyklovaného materiálu."),
                 ("Mimořádný výkon v chladu a extrémech", "Vyvinuta pro aplikaci při teplotách blížících se 0 °C, skladování v chladném prostředí a lepení na náročné povrchy (např. méně kvalitní či recyklované kartony)."),
                 ("Výkonné akrylátové lepidlo na vodní bázi", "Nabízí okamžitou přilnavost a spolehlivou lepivost, která v náročném prostředí plně nahradí i lepidla z přírodního kaučuku. Navíc neobsahuje rozpouštědla a skvěle odolává UV záření."),
-            ]
-        if p["name"] == "BOPP páska ecoEVERGREEN 100%":
-            return [
-                ("Inovativní recyklace (PIR)", "Páska je vyrobena z BOPP fólie s 100% podílem recyklovaného použitého kuchyňského oleje (U.C.O.) z potravinářského průmyslu. Jedná se o vysoce kvalitní postindustriální recyklát (PIR), díky kterému produkt obsahuje celkem 54 % recyklovaného materiálu."),
-                ("Mimořádný výkon v chladu a extrémech", "Vyvinuta pro aplikaci při teplotách blížících se 0 °C, skladování v chladném prostředí a lepení na náročné povrchy (např. méně kvalitní či recyklované kartony)."),
-                ("Výkonné akrylátové lepidlo na vodní bázi", "Nabízí okamžitou přilnavost a spolehlivou lepivost, která v náročném prostředí plně nahradí i lepidla z přírodního kaučuku. Navíc neobsahuje rozpouštědla a skvěle odolává UV záření."),
+                ("Vysoká odolnost proti UV", "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování i UV zatížení."),
             ]
         b1 = (f"Pevnost v tahu {pevnost}", f"BOPP fólie o tloušťce {tl} vydrží napětí při balení i při dlouhodobém skladování.")
         if "barevn" in nl:
@@ -1054,19 +1040,12 @@ def product_uses(cat, p):
                 apps[2],
                 apps[3],
             ]
-        elif p["name"] == "BOPP páska ecoEVERGREEN 50%":
+        elif p["name"] == "BOPP páska Evergreen":
             uses = [
-                "Firmy s ESG a udržitelnými cíli",
                 "Provoz v chladírenských a mrazicích skladech",
                 "Recyklovaný karton a náročné povrchy",
                 "Automatické balicí stroje",
-            ]
-        elif p["name"] == "BOPP páska ecoEVERGREEN 100%":
-            uses = [
-                "Firmy s ESG a udržitelnými cíli",
-                "Provoz v chladírenských a mrazicích skladech",
-                "Recyklovaný karton a náročné povrchy",
-                "Automatické balicí stroje",
+                apps[3],
             ]
         else:
             uses = [apps[0]]
@@ -1720,7 +1699,6 @@ for cat in CATS:
         <div class="flex flex-col justify-center">
             <span class="text-sm font-semibold uppercase tracking-wide text-orange-600">%s</span>
             <h1 class="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">%s</h1>
-            <p class="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">%s</p>
 %s
 %s
             <div class="mt-6 flex flex-wrap gap-2">
@@ -1777,7 +1755,7 @@ for cat in CATS:
 
 '''%(cat["cat"],esc(cat["title"]),esc(p["name"]),
      product_detail_image_box(cat["cat"]),url(p["image"]),esc(p["name"] + ' s potiskem – ALFA IN'),product_detail_image_cls(cat["cat"]),
-     esc(cat["title"]),esc(p["name"]),esc(p["tagline"]),
+     esc(cat["title"]),esc(p["name"]),
      product_series_note_html(cat, p),
      product_seo_body_html(cat["cat"], p["name"]),
      *[esc(x) for x in product_spec_pills(p)],
