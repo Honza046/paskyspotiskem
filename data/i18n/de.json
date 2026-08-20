@@ -709,7 +709,7 @@
       },
       "resistance": {
         "label": "Beständigkeit",
-        "mrazuvzdorne": "Kältebeständig (bis −70 °C)",
+        "mrazuvzdorne": "Kältebeständig (bis −20 °C)",
         "vysoke-teploty": "Hohe Temperaturen",
         "chemicka-odolnost": "Chemische Beständigkeit"
       },
@@ -3695,7 +3695,7 @@
       "open_gallery": "In der Galerie öffnen →",
       "tag_eco": "ECO",
       "tag_pet85": "85% PET",
-      "tag_cold": "-70 °C",
+      "tag_cold": "-20 °C",
       "tag_hot": "Hohe Temperaturen",
       "tag_chem": "Chemische Beständigkeit",
       "tag_machines": "Maschinen",

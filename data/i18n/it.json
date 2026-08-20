@@ -709,7 +709,7 @@
       },
       "resistance": {
         "label": "Resistance",
-        "mrazuvzdorne": "Cold-resistant (down to −70 °C)",
+        "mrazuvzdorne": "Cold-resistant (down to −20 °C)",
         "vysoke-teploty": "High temperatures",
         "chemicka-odolnost": "Chemical resistance"
       },
@@ -3695,7 +3695,7 @@
       "open_gallery": "Apri in galleria →",
       "tag_eco": "ECO",
       "tag_pet85": "85% PET",
-      "tag_cold": "-70 °C",
+      "tag_cold": "-20 °C",
       "tag_hot": "Alte temperature",
       "tag_chem": "Resistenza chimica",
       "tag_machines": "Macchine",

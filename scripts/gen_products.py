@@ -1534,7 +1534,7 @@ TAG_BADGE_ORDER = ['ekologicke', 'pet-85', 'mrazuvzdorne', 'vysoke-teploty', 'ch
 TAG_BADGE_LABELS = {
     'ekologicke': 'ECO',
     'pet-85': '90% z PET',
-    'mrazuvzdorne': '-70 °C',
+    'mrazuvzdorne': '-20 °C',
     'vysoke-teploty': 'Vysoké teploty',
     'chemicka-odolnost': 'Chemická odolnost',
     'stroje': 'Stroje',

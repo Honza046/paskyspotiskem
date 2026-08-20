@@ -710,7 +710,7 @@
       },
       "resistance": {
         "label": "Odolnost",
-        "mrazuvzdorne": "Mrazuvzdorné (do −70 °C)",
+        "mrazuvzdorne": "Mrazuvzdorné (do −20 °C)",
         "vysoke-teploty": "Vysoké teploty",
         "chemicka-odolnost": "Chemická odolnost"
       },
@@ -3696,7 +3696,7 @@
       "open_gallery": "Otevřít v galerii →",
       "tag_eco": "ECO",
       "tag_pet85": "85% z PET",
-      "tag_cold": "-70 °C",
+      "tag_cold": "-20 °C",
       "tag_hot": "Vysoké teploty",
       "tag_chem": "Chemická odolnost",
       "tag_machines": "Stroje",

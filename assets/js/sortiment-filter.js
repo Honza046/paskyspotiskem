@@ -125,7 +125,7 @@
     var TAG_BADGE_FALLBACK = {
         ekologicke: 'ECO',
         'pet-85': '85% z PET',
-        mrazuvzdorne: '-70 °C',
+        mrazuvzdorne: '-20 °C',
         'vysoke-teploty': 'Vysoké teploty',
         'chemicka-odolnost': 'Chemická odolnost',
         stroje: 'Stroje',
