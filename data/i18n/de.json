@@ -1922,6 +1922,136 @@
           "back_category": "Zurück zu BOPP-Klebebänder"
         }
       },
+      "bopp-paska-evergreen-50": {
+        "name": "BOPP-Klebeband ecoEVERGREEN 50%",
+        "tagline": "Nachhaltiges Verpackungsklebeband aus 50 % recyceltem postindustriellem Material.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP-Klebebänder",
+        "benefits": [
+          {
+            "title": "Innovatives Recycling (PIR)",
+            "text": "Der Träger enthält 50 % PIR-Rezyklat aus gebrauchtem Speiseöl (27 % Gesamtrecyclinganteil)."
+          },
+          {
+            "title": "Außergewöhnliche Leistung bei Kälte und Extrembedingungen",
+            "text": "Die Anwendung ist bereits ab 0 °C problemlos möglich, und nach dem Aufkleben garantiert sie volle Verbindungsfestigkeit bis −20 °C, auch auf staubigen oder minderwertigen Kartons."
+          },
+          {
+            "title": "Hochleistungsfähiger wasserbasierter Acrylatkleber",
+            "text": "Bietet sofortige Haftung und zuverlässige Klebkraft, die in anspruchsvollen Umgebungen auch Naturkautschukkleber voll ersetzt. Lösungsmittelfrei und hervorragend UV-beständig."
+          }
+        ],
+        "uses": [
+          "Unternehmen mit ESG- und Nachhaltigkeitszielen",
+          "Einsatz in Kühl- und Tiefkühllagern",
+          "Recyclingkarton und anspruchsvolle Oberflächen",
+          "Automatische Verpackungsmaschinen"
+        ],
+        "params_values": {
+          "carrier": "BOPP",
+          "thickness": "28 µm",
+          "adhesive": "Acryl (NOISY)",
+          "adhesion": "22 µm",
+          "strength": "0–25 °C",
+          "temperature": "−20 bis +50 °C",
+          "min_qty": "1 Palette (2376 Stk.), Basis 50 mm × 66 m"
+        },
+        "spec_pills": [
+          "BOPP",
+          "Acryl (NOISY)",
+          "−20 bis +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
+          "adhesive": "Klebstofftyp",
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben",
+          "min_qty": "Mindestmenge"
+        },
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Kalkulation mit Bedruckung",
+          "tailor_link": "Ich möchte ein kostenloses Muster",
+          "tailor_bullets": [
+            "Wählbare Breite und Rollenlänge",
+            "Grundfarbe und Anzahl der Druckfarben",
+            "Qualitätsprüfung vor der Bestellung"
+          ],
+          "bottom": "Kostenloses Muster oder Kalkulation",
+          "back_category": "Zurück zu BOPP-Klebebänder"
+        }
+      },
+      "bopp-paska-evergreen-100": {
+        "name": "BOPP-Klebeband ecoEVERGREEN 100%",
+        "tagline": "Nachhaltiges Verpackungsklebeband aus 100 % recyceltem postindustriellem Material.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP-Klebebänder",
+        "benefits": [
+          {
+            "title": "Innovatives Recycling (PIR)",
+            "text": "Der Träger besteht aus 100 % PIR-Rezyklat auf Basis von gebrauchtem Speiseöl (54 % Gesamtrecyclinganteil)."
+          },
+          {
+            "title": "Außergewöhnliche Leistung bei Kälte und Extrembedingungen",
+            "text": "Die Anwendung gelingt zuverlässig auch in kalten Lagern bei Temperaturen nahe 0 °C, und nach dem Aufkleben hält das Band sicher bis −20 °C."
+          },
+          {
+            "title": "Hochleistungsfähiger wasserbasierter Acrylatkleber",
+            "text": "Es ersetzt Naturkautschuk-Klebstoffe vollwertig, enthält keine Lösungsmittel und bietet hervorragende UV-Beständigkeit."
+          }
+        ],
+        "uses": [
+          "Unternehmen mit ESG- und Nachhaltigkeitszielen",
+          "Einsatz in Kühl- und Tiefkühllagern",
+          "Recyclingkarton und anspruchsvolle Oberflächen",
+          "Automatische Verpackungsmaschinen"
+        ],
+        "params_values": {
+          "carrier": "BOPP",
+          "thickness": "28 µm",
+          "adhesive": "Acryl (NOISY)",
+          "adhesion": "22 µm",
+          "strength": "0–25 °C",
+          "temperature": "−20 bis +50 °C",
+          "min_qty": "1 Palette (2376 Stk.), Basis 50 mm × 66 m"
+        },
+        "spec_pills": [
+          "BOPP",
+          "Acryl (NOISY)",
+          "−20 bis +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Träger",
+          "thickness": "Foliendicke",
+          "adhesive": "Klebstofftyp",
+          "adhesion": "Klebstoffdicke",
+          "strength": "Lager- und Verarbeitungstemperatur",
+          "temperature": "Betriebstemperatur nach dem Aufkleben",
+          "min_qty": "Mindestmenge"
+        },
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Kalkulation mit Bedruckung",
+          "tailor_link": "Ich möchte ein kostenloses Muster",
+          "tailor_bullets": [
+            "Wählbare Breite und Rollenlänge",
+            "Grundfarbe und Anzahl der Druckfarben",
+            "Qualitätsprüfung vor der Bestellung"
+          ],
+          "bottom": "Kostenloses Muster oder Kalkulation",
+          "back_category": "Zurück zu BOPP-Klebebänder"
+        }
+      },
       "bopp-paska-tamper-evident": {
         "name": "BOPP-Klebeband Tamper Evident",
         "tagline": "BOPP-Klebeband mit Sicherheitsdruck zur sofortigen Erkennung unbefugten Öffnens.",

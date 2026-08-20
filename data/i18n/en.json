@@ -1922,6 +1922,136 @@
           "back_category": "Back to BOPP tapes"
         }
       },
+      "bopp-paska-evergreen-50": {
+        "name": "BOPP tape ecoEVERGREEN 50%",
+        "tagline": "Sustainable packing tape made from 50% recycled post-industrial material.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP tapes",
+        "benefits": [
+          {
+            "title": "Innovative recycling (PIR)",
+            "text": "The carrier contains 50% PIR recyclate from used cooking oil (27% total recycled content)."
+          },
+          {
+            "title": "Outstanding performance in cold and extreme conditions",
+            "text": "You can apply it from as low as 0 °C, and once applied it guarantees full bond strength down to −20 °C, even on dusty or lower-quality cartons."
+          },
+          {
+            "title": "High-performance water-based acrylic adhesive",
+            "text": "Delivers instant tack and reliable adhesion that can fully replace natural rubber adhesives in demanding environments. Solvent-free and highly UV resistant."
+          }
+        ],
+        "uses": [
+          "Companies with ESG and sustainability goals",
+          "Use in chilled and frozen warehouses",
+          "Recycled cardboard and demanding surfaces",
+          "Automatic packing machines"
+        ],
+        "params_values": {
+          "carrier": "BOPP",
+          "thickness": "28 µm",
+          "adhesive": "Acrylic (NOISY)",
+          "adhesion": "22 µm",
+          "strength": "0–25 °C",
+          "temperature": "−20 to +50 °C",
+          "min_qty": "1 pallet (2376 pcs), base 50 mm × 66 m"
+        },
+        "spec_pills": [
+          "BOPP",
+          "Acrylic (NOISY)",
+          "−20 to +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application",
+          "min_qty": "Minimum quantity"
+        },
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Quality testing before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to BOPP tapes"
+        }
+      },
+      "bopp-paska-evergreen-100": {
+        "name": "BOPP tape ecoEVERGREEN 100%",
+        "tagline": "Sustainable packing tape made from 100% recycled post-industrial material.",
+        "category_slug": "bopp-pasky",
+        "category_title": "BOPP tapes",
+        "benefits": [
+          {
+            "title": "Innovative recycling (PIR)",
+            "text": "The carrier is made from 100% PIR recyclate based on used cooking oil (54% total recycled content)."
+          },
+          {
+            "title": "Outstanding performance in cold and extreme conditions",
+            "text": "You can apply it reliably even in cold warehouses at temperatures close to 0 °C, and once applied the tape holds securely down to −20 °C."
+          },
+          {
+            "title": "High-performance water-based acrylic adhesive",
+            "text": "It fully replaces natural-rubber adhesives, contains no solvents and offers excellent UV resistance."
+          }
+        ],
+        "uses": [
+          "Companies with ESG and sustainability goals",
+          "Use in chilled and frozen warehouses",
+          "Recycled cardboard and demanding surfaces",
+          "Automatic packing machines"
+        ],
+        "params_values": {
+          "carrier": "BOPP",
+          "thickness": "28 µm",
+          "adhesive": "Acrylic (NOISY)",
+          "adhesion": "22 µm",
+          "strength": "0–25 °C",
+          "temperature": "−20 to +50 °C",
+          "min_qty": "1 pallet (2376 pcs), base 50 mm × 66 m"
+        },
+        "spec_pills": [
+          "BOPP",
+          "Acrylic (NOISY)",
+          "−20 to +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Carrier",
+          "thickness": "Film thickness",
+          "adhesive": "Adhesive type",
+          "adhesion": "Adhesive thickness",
+          "strength": "Storage and application temperature",
+          "temperature": "Operating temperature after application",
+          "min_qty": "Minimum quantity"
+        },
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Quote with printing",
+          "tailor_link": "I want a free sample",
+          "tailor_bullets": [
+            "Custom width and roll length",
+            "Base colour and number of print colours",
+            "Quality testing before ordering"
+          ],
+          "bottom": "Free sample or quote",
+          "back_category": "Back to BOPP tapes"
+        }
+      },
       "bopp-paska-tamper-evident": {
         "name": "BOPP tape Tamper Evident",
         "tagline": "BOPP tape with security print for immediate detection of unauthorized parcel opening.",

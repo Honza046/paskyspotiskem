@@ -1922,6 +1922,136 @@
           "back_category": "Torna a Nastri BOPP"
         }
       },
+      "bopp-paska-evergreen-50": {
+        "name": "Nastro BOPP ecoEVERGREEN 50%",
+        "tagline": "Nastro da imballaggio sostenibile realizzato con il 50% di materiale riciclato post-industriale.",
+        "category_slug": "bopp-pasky",
+        "category_title": "Nastri BOPP",
+        "benefits": [
+          {
+            "title": "Riciclo innovativo (PIR)",
+            "text": "Il supporto contiene il 50% di riciclato PIR da olio da cucina esausto (27% di contenuto riciclato totale)."
+          },
+          {
+            "title": "Prestazioni eccezionali al freddo e in condizioni estreme",
+            "text": "Si applica senza problemi già da 0 °C e, una volta incollato, garantisce la piena tenuta fino a −20 °C, anche su cartoni polverosi o di qualità inferiore."
+          },
+          {
+            "title": "Adesivo acrilico ad alte prestazioni a base d’acqua",
+            "text": "Offre adesione immediata e affidabile, in grado di sostituire gli adesivi in gomma naturale anche in ambienti difficili. Senza solventi e molto resistente ai raggi UV."
+          }
+        ],
+        "uses": [
+          "Aziende con obiettivi ESG e di sostenibilità",
+          "Utilizzo in magazzini refrigerati e congelati",
+          "Cartone riciclato e superfici difficili",
+          "Macchine automatiche per imballaggio"
+        ],
+        "params_values": {
+          "carrier": "BOPP",
+          "thickness": "28 µm",
+          "adhesive": "Acrilico (NOISY)",
+          "adhesion": "22 µm",
+          "strength": "0–25 °C",
+          "temperature": "−20 a +50 °C",
+          "min_qty": "1 pallet (2376 pz), base 50 mm × 66 m"
+        },
+        "spec_pills": [
+          "BOPP",
+          "Acrilico (NOISY)",
+          "−20 a +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione",
+          "min_qty": "Quantità minima"
+        },
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Test della qualità prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri BOPP"
+        }
+      },
+      "bopp-paska-evergreen-100": {
+        "name": "Nastro BOPP ecoEVERGREEN 100%",
+        "tagline": "Nastro da imballaggio sostenibile realizzato con il 100% di materiale riciclato post-industriale.",
+        "category_slug": "bopp-pasky",
+        "category_title": "Nastri BOPP",
+        "benefits": [
+          {
+            "title": "Riciclo innovativo (PIR)",
+            "text": "Il supporto è realizzato al 100% con riciclato PIR a base di olio da cucina esausto (54% di contenuto riciclato totale)."
+          },
+          {
+            "title": "Prestazioni eccezionali al freddo e in condizioni estreme",
+            "text": "Si applica in modo affidabile anche nei magazzini freddi a temperature vicine a 0 °C e, una volta incollato, il nastro tiene saldamente fino a −20 °C."
+          },
+          {
+            "title": "Adesivo acrilico ad alte prestazioni a base d’acqua",
+            "text": "Sostituisce pienamente gli adesivi in gomma naturale, non contiene solventi e offre un'eccellente resistenza ai raggi UV."
+          }
+        ],
+        "uses": [
+          "Aziende con obiettivi ESG e di sostenibilità",
+          "Utilizzo in magazzini refrigerati e congelati",
+          "Cartone riciclato e superfici difficili",
+          "Macchine automatiche per imballaggio"
+        ],
+        "params_values": {
+          "carrier": "BOPP",
+          "thickness": "28 µm",
+          "adhesive": "Acrilico (NOISY)",
+          "adhesion": "22 µm",
+          "strength": "0–25 °C",
+          "temperature": "−20 a +50 °C",
+          "min_qty": "1 pallet (2376 pz), base 50 mm × 66 m"
+        },
+        "spec_pills": [
+          "BOPP",
+          "Acrilico (NOISY)",
+          "−20 a +50 °C"
+        ],
+        "tech_variants": {},
+        "tech_variant_labels": {},
+        "min_qty_note": "",
+        "params_labels": {
+          "carrier": "Supporto",
+          "thickness": "Spessore del film",
+          "adhesive": "Tipo di adesivo",
+          "adhesion": "Spessore dell'adesivo",
+          "strength": "Temperatura di stoccaggio e applicazione",
+          "temperature": "Temperatura di esercizio dopo l'applicazione",
+          "min_qty": "Quantità minima"
+        },
+        "tech_spec": true,
+        "paper_spec": false,
+        "ctas": {
+          "hero": "Preventivo con stampa",
+          "tailor_link": "Voglio un campione gratuito",
+          "tailor_bullets": [
+            "Larghezza e lunghezza della bobina personalizzabili",
+            "Colore di fondo e numero di colori di stampa",
+            "Test della qualità prima dell'ordine"
+          ],
+          "bottom": "Campione o preventivo gratuito",
+          "back_category": "Torna a Nastri BOPP"
+        }
+      },
       "bopp-paska-tamper-evident": {
         "name": "Nastro BOPP Tamper Evident",
         "tagline": "Nastro BOPP con stampa di sicurezza per rilevare subito aperture non autorizzate.",

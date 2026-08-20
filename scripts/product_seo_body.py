@@ -133,6 +133,27 @@ PRODUCT_SEO: dict[str, tuple[str, str]] = {
         "provozy a s individuálním firemním potiskem na míru (např. bezpečnostní motivy či logo). Minimální "
         "odběr činí 1 paletu (2 376 ks).",
     ),
+    "BOPP páska ecoEVERGREEN 50%": (
+        "Ideální rovnováha mezi udržitelným balením a špičkovým výkonem v náročných teplotních podmínkách. "
+        "Nosič obsahuje 50 % PIR recyklátu z použitého kuchyňského oleje (27 % celkového recyklovaného obsahu). "
+        "Páska vyniká mimořádnou odolností v chladu – bez problémů ji aplikujete již od 0 °C a po nalepení "
+        "garantuje stoprocentní pevnost spoje v mrazu až do -20 °C, a to i na prašných či méně kvalitních "
+        "kartonech.",
+        "Cenově efektivní krok k ekologičtější expedici a spolehlivému balení pro celoroční i chladírenský "
+        "provoz. Pásky nabízíme v neutrálním provedení i s reprezentativním firemním potiskem na míru, který "
+        "podtrhne zodpovědný přístup vaší značky. Minimální odběr začíná na 1 paletě (2 376 ks).",
+    ),
+    "BOPP páska ecoEVERGREEN 100%": (
+        "Maximálně udržitelná volba pro provozy, které nechtějí dělat kompromisy mezi ekologií a extrémní "
+        "funkčností. Nosič je vyroben ze 100% PIR recyklátu na bázi použitého kuchyňského oleje (celkově 54 % "
+        "recyklovaného podílu). Speciální vysoce výkonné akrylové lepidlo spolehlivě aplikujete i v chladných "
+        "skladech při teplotách blížících se 0 °C, přičemž po nalepení páska bezpečně drží v mrazu až do -20 °C. "
+        "Perfektně přilne i k náročnějším recyklovaným kartonům.",
+        "Představuje plnohodnotnou, zelenou náhradu lepidel z přírodního kaučuku bez nutnosti měnit balicí "
+        "procesy. Pásky dodáváme v neutrálním provedení i s individuálním firemním potiskem na míru, který "
+        "transparentně komunikuje vaše ESG cíle zákazníkům přímo na zásilce. Minimální odběr je 1 paleta "
+        "(2 376 ks).",
+    ),
     "BOPET páska ECO HIT19": (
         "Inovativní ekologické řešení s evropským patentem, které posouvá udržitelnost i efektivitu expedice na "
         "novou úroveň. Polyesterový nosič (BOPET) s tloušťkou pouhých 19 µm obsahuje minimálně 85 % "

@@ -134,6 +134,8 @@ PRODUCTS = {
    P("BOPP páska TACK+","BOPP Tapes/BOPPHOTMELT1.jpg","HOT MELT páska s extrémní přilnavostí a okamžitým lepivým efektem. Pro obtížné aplikace.","BOPP","28 / 32 µm","HOT MELT (tack+)","18 µm","0 až +50 °C","14–28 °C"),
    P("BOPP páska EXTRA GLUE+","BOPP Tapes/BOPPACRYLIC.jpeg","Akrylová páska se zvýšenou vrstvou lepidla pro náročné povrchy.","BOPP","28 / 32 / 35 µm","Akryl","28 µm","−10 až +60 °C","14–28 °C"),
    P("BOPP páska Evergreen","BOPP Tapes/EVERGREEN.jpg","Akrylová páska do extrémních podmínek a chladu. Nosič BOPP 28 µm, akrylové lepidlo 22 µm na vodní bázi. Aplikace od 0 °C, provoz −20 až +50 °C. Min. odběr 1 paleta (2 376 ks), základ 50 mm × 66 m.","BOPP","28 µm","Akryl (NOISY)","—","−20 až +50 °C","—"),
+   P("BOPP páska ecoEVERGREEN 50%","BOPP Tapes/EVERGREEN.jpg","Udržitelná balicí páska z 50 % recyklovaného postindustriálního materiálu.","BOPP","28 µm","Akryl (NOISY)","—","−20 až +50 °C","—"),
+   P("BOPP páska ecoEVERGREEN 100%","BOPP Tapes/EVERGREEN100.jpg","Udržitelná balicí páska ze 100 % recyklovaného postindustriálního materiálu.","BOPP","28 µm","Akryl (NOISY)","—","−20 až +50 °C","—"),
    P("BOPP páska Tamper Evident","BOPP Tapes/TAMPER-EVIDENT.jpg","BOPP páska s ochranným potiskem pro okamžitou detekci neoprávněného otevření zásilky.","BOPP","35 µm","Akryl (Low noise)","—","0 až +60 °C","—"),
  ],
  "bopet-pasky":[
@@ -197,6 +199,8 @@ TAGMAP = {
  "BOPP páska TACK+":["rucni","stroje"],
  "BOPP páska Tamper Evident":["rucni","stroje"],
  "BOPP páska Evergreen":["mrazuvzdorne","stroje"],
+ "BOPP páska ecoEVERGREEN 50%":["ekologicke","mrazuvzdorne","stroje"],
+ "BOPP páska ecoEVERGREEN 100%":["ekologicke","mrazuvzdorne","stroje"],
  "BOPET páska ATE23":["rucni","stroje"],
  "BOPET páska AIT23":["rucni","stroje"],
  "BOPET páska HIT17":["stroje"],
@@ -234,6 +238,8 @@ SLUG_OVERRIDES = {
     "BOPP páska Akryl": "bopp-paska-acrylic",
     "BOPP páska HOT MELT": "bopp-paska-hot-melt",
     "BOPP páska Evergreen": "bopp-paska-evergreen",
+    "BOPP páska ecoEVERGREEN 50%": "bopp-paska-evergreen-50",
+    "BOPP páska ecoEVERGREEN 100%": "bopp-paska-evergreen-100",
     "Udržitelná páska Airtape+": "udrzitelna-paska-airtape",
 }
 
@@ -312,6 +318,24 @@ TECH_SPEC_PARAMS = {
         "Minimální množství": "od 180 ks",
     },
     "BOPP páska Evergreen": {
+        "Nosič": "BOPP",
+        "Tloušťka fólie": "28 µm",
+        "Typ lepidla": "Akryl (NOISY)",
+        "Tloušťka lepidla": "22 µm",
+        "Skladovací a aplikační teplota": "0–25 °C",
+        "Provozní teplota po nalepení": "−20 až +50 °C",
+        "Minimální množství": "1 paleta (2376 ks), základ 50 mm × 66 m",
+    },
+    "BOPP páska ecoEVERGREEN 50%": {
+        "Nosič": "BOPP",
+        "Tloušťka fólie": "28 µm",
+        "Typ lepidla": "Akryl (NOISY)",
+        "Tloušťka lepidla": "22 µm",
+        "Skladovací a aplikační teplota": "0–25 °C",
+        "Provozní teplota po nalepení": "−20 až +50 °C",
+        "Minimální množství": "1 paleta (2376 ks), základ 50 mm × 66 m",
+    },
+    "BOPP páska ecoEVERGREEN 100%": {
         "Nosič": "BOPP",
         "Tloušťka fólie": "28 µm",
         "Typ lepidla": "Akryl (NOISY)",
@@ -882,6 +906,18 @@ def product_benefits(cat_slug, p):
                 ("Výkonné akrylátové lepidlo na vodní bázi", "Nabízí okamžitou přilnavost a spolehlivou lepivost, která v náročném prostředí plně nahradí i lepidla z přírodního kaučuku. Navíc neobsahuje rozpouštědla a skvěle odolává UV záření."),
                 ("Vysoká odolnost proti UV", "Akrylové lepidlo si drží lepivost i při dlouhodobém skladování i UV zatížení."),
             ]
+        if p["name"] == "BOPP páska ecoEVERGREEN 50%":
+            return [
+                ("Inovativní recyklace (PIR)", "Nosič obsahuje 50 % PIR recyklátu z použitého kuchyňského oleje (27 % celkového recyklovaného obsahu)."),
+                ("Mimořádný výkon v chladu a extrémech", "Bez problémů ji aplikujete již od 0 °C a po nalepení garantuje stoprocentní pevnost spoje v mrazu až do −20 °C, a to i na prašných či méně kvalitních kartonech."),
+                ("Výkonné akrylátové lepidlo na vodní bázi", "Nabízí okamžitou přilnavost a spolehlivou lepivost, která v náročném prostředí plně nahradí i lepidla z přírodního kaučuku. Navíc neobsahuje rozpouštědla a skvěle odolává UV záření."),
+            ]
+        if p["name"] == "BOPP páska ecoEVERGREEN 100%":
+            return [
+                ("Inovativní recyklace (PIR)", "Nosič je vyroben ze 100% PIR recyklátu na bázi použitého kuchyňského oleje (celkově 54 % recyklovaného podílu)."),
+                ("Mimořádný výkon v chladu a extrémech", "Spolehlivě aplikujete i v chladných skladech při teplotách blížících se 0 °C, přičemž po nalepení páska bezpečně drží v mrazu až do −20 °C."),
+                ("Výkonné akrylátové lepidlo na vodní bázi", "Plnohodnotně nahrazuje lepidla z přírodního kaučuku, neobsahuje rozpouštědla a skvěle odolává UV záření."),
+            ]
         b1 = (f"Pevnost v tahu {pevnost}", f"BOPP fólie o tloušťce {tl} vydrží napětí při balení i při dlouhodobém skladování.")
         if "barevn" in nl:
             b3 = ("Barevné odlišení zásilek", f"Vizuální značení balíků a skladová orientace v rozsahu {temp}.")
@@ -1046,6 +1082,13 @@ def product_uses(cat, p):
                 "Recyklovaný karton a náročné povrchy",
                 "Automatické balicí stroje",
                 apps[3],
+            ]
+        elif p["name"] in ("BOPP páska ecoEVERGREEN 50%", "BOPP páska ecoEVERGREEN 100%"):
+            uses = [
+                "Firmy s ESG a udržitelnými cíli",
+                "Provoz v chladírenských a mrazicích skladech",
+                "Recyklovaný karton a náročné povrchy",
+                "Automatické balicí stroje",
             ]
         else:
             uses = [apps[0]]
