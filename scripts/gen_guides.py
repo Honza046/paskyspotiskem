@@ -46,10 +46,10 @@ GUIDES = [
                 "Jak vybrat správný materiál?",
                 "Volba nosiče pásky závisí na hmotnosti zásilek, provozních nárocích i vašich ekologických "
                 "cílech. Standardní BOPP je osvědčená a cenově nejefektivnější volba pro každodenní balení "
-                "běžných zásilek. Pokud cílíte na plnění ESG cílů, udržitelné řešení ECO+, NOPP a LOOPP staví "
-                "na stejném BOPP základu, avšak s certifikovaným obsahem recyklátů či obnovitelných bio-surovin "
+                "běžných zásilek. Pokud cílíte na plnění ESG cílů, udržitelná řešení ECO+, NOPP a LOOPP staví "
+                "na stejném BOPP základu, avšak s certifikovaným obsahem recyklátu či obnovitelných bio-surovin "
                 "bez ztráty pevnosti. Polyesterové pásky BOPET nabízejí extrémní odolnost proti přetržení pro "
-                "těžké náklady a dynamický návin role, který šetří místo ve skladu. Papírové pásky s FSC "
+                "těžké náklady a dvojnásobný návin role, který šetří místo ve skladu. Papírové pásky s FSC "
                 "certifikací pak dodávají balíkům prémiový přírodní vzhled a umožňují stoprocentní recyklaci "
                 "celé krabice bez nutnosti odlepování. S výběrem optimálního materiálu pro vaše balicí procesy "
                 "vám rádi poradíme.",
@@ -59,10 +59,16 @@ GUIDES = [
                 "Typ lepidla rozhoduje o rychlosti lepení i chování pásky v různých podmínkách. HOT MELT "
                 "(syntetický kaučuk) je jasnou volbou pro dynamické provozy a automatické linky díky své "
                 "okamžité počáteční lepivosti. Akryl na vodní bázi vyniká dlouhodobou stálostí, UV odolností "
-                "a možností tichého odvíjení (Low Noise), ideálního pro klidnější pracovní prostředí. Pro "
+                "a možností tichého odvíjení Low Noise, ideálního pro klidnější pracovní prostředí. Pro "
                 "náročné chladírenské podmínky a mrazy pak nabízíme vysoce odolnou řadu EVERGREEN. Podrobné "
                 "srovnání vlastností a výhod jednotlivých technologií najdete v Hotmelt, nebo akryl? Jak "
                 "vybrat správnou BOPP lepicí pásku.",
+            ),
+            (
+                "Minimální odběr a termín dodání",
+                "U BOPP pásek začíná minimální odběr typicky na 360 ks (Akryl) nebo 504 ks (HOT MELT). "
+                "Standardní doba dodání se pohybuje mezi 3 a 4 týdny od finálního schválení grafického návrhu. "
+                "Vzorky vybraných materiálů vám rádi zašleme zdarma na ukázku.",
             ),
         ],
         "links": [
@@ -205,28 +211,49 @@ GUIDES = [
     {
         "slug": "papirove-fsc-pasky",
         "title": "Papírové FSC pásky",
-        "h1": "Papírové FSC pásky s potiskem",
+        "h1": "Papírové FSC pásky",
         "description": (
-            "Papírové pásky s potiskem a FSC nosičem: recyklace s kartonem, kraftový vzhled, "
-            "varianty C680, KH80, KS165 a další."
+            "Papírové pásky s FSC certifikací a potiskem: KH80, C660, C680/R/RT, C690 a KS125. "
+            "Recyklace s kartonem, hotmelt lepidlo, e-commerce i B2B."
         ),
         "intro": (
-            "Papírová páska s potiskem je volba pro značky, které chtějí balení bez plastové fólie. "
-            "Páska putuje do sběru spolu s kartonem a kraftový povrch působí přírodně a prémiově."
+            "Papírová lepicí páska představuje ideální volbu pro značky, které chtějí balit ekologicky "
+            "a bez použití plastových fólií. Páska putuje do tříděného sběru společně s kartonem a její "
+            "přírodní kraftový povrch působí prémiovým i udržitelným dojmem. Naše evropské papírové pásky "
+            "jsou standardně opatřeny hotmelt lepidlem ze syntetického kaučuku. Všechny typy disponují "
+            "certifikací FSC a umožňují potisk až ve 4 barvách (u řady KH80 dokonce až v 8 barvách)."
         ),
         "sections": [
             (
                 "FSC a recyklace",
-                "Nosiče s FSC certifikací a lepidla zvolená pro spolehlivé uzavření kartonu. "
-                "Vhodné pro e-commerce i B2B zásilky s ESG požadavky.",
+                "Nosiče s certifikací FSC v kombinaci s kvalitními lepidly zajišťují spolehlivé a trvalé "
+                "uzavření kartonu. Všechny využívají ekologické lepidlo hotmelt bez obsahu rozpouštědel. "
+                "Výjimkou je pouze model C780 se solventním lepidlem. Papírové pásky jsou plně vhodné "
+                "pro e-commerce i B2B zásilky s vysokými ESG požadavky a lze je aplikovat jak ručně, "
+                "tak pomocí odvíječů či balicích strojů.",
             ),
             (
-                "Kterou gramáž",
-                "C680 / KH80 pro běžné balíky, KS165 pro vyšší pevnost. Parametry a potisk doladíme podle hmotnosti zásilek.",
+                "Který typ a pevnost zvolit?",
+                "Široká nabídka materiálů vám umožní vybrat si ideální řešení přesně podle hmotnosti "
+                "a náročnosti vašich zásilek:\n\n"
+                "KH80: Zosobnění maximální udržitelnosti a zelené evoluce v papírových páskách. Je "
+                "vyrobena ze 100% recyklovaného kraftového papíru s certifikací FSC a opatřena "
+                "bezrozpouštědlovým hotmelt lepidlem. K dispozici je v hnědé i bílé variantě a technicky "
+                "podporuje potisk až v 8 barvách.\n\n"
+                "C660: Standardní a cenově dostupná kvalita z krepatého papíru pro běžné balení.\n\n"
+                "C680 a C680R / C680RT: Prémiová řada papírových pásek s vynikajícím poměrem ceny "
+                "a výkonu. K dispozici je v hnědé i bílé variantě a také v zesílené verzi vyztužené "
+                "skelnými vlákny – buď podélně C680R, nebo mřížkově C680RT.\n\n"
+                "C690: Mimořádně pevná nezesílená páska s vysokou pevností v tahu a špičkovou přilnavostí "
+                "k oceli, která představuje skvělou alternativu k mřížkově zesíleným páskám.\n\n"
+                "KS125: Speciální páska z kraftového papíru s extrémně vysokou pevností v tahu. Místo "
+                "běžného zalepování krabic slouží k náročným úkolům, jako je pevné zafixování zboží "
+                "na paletách před odesláním nebo svazování těžkých produktů do svazků.",
             ),
         ],
         "links": [
             ("/sortiment/papirove-pasky", "Všechny papírové pásky"),
+            ("/sortiment/papirove-pasky/papirova-paska-kh80", "Papírová KH80"),
             ("/sortiment/papirove-pasky/papirova-paska-c680", "Papírová C680"),
             ("/sortiment/papirove-pasky/papirova-paska-ks165", "Papírová KS165"),
             ("/pruvodce/eco-plus-recyklovane-pasky", "ECO+ recyklované pásky"),
@@ -238,22 +265,42 @@ GUIDES = [
         "title": "ECO+ a recyklované pásky",
         "h1": "ECO+ a recyklované pásky s potiskem",
         "description": (
-            "Udržitelné pásky s potiskem: ECO+ 50/80/100 z regenerátu, NOPP/NOPP+ ISCC PLUS, "
-            "LOOPP a POLY+ jako náhrada PVC. Bez kompromisů v pevnosti."
+            "Udržitelné pásky s potiskem: ECO+ 50/80/100, NOPP/NOPP+ ISCC PLUS, LOOPP, POLY+, "
+            "AIRTAPE a ecoHIT. Bez kompromisů v pevnosti a lepivosti."
         ),
         "intro": (
-            "Udržitelná páska s potiskem nemusí znamenat slabší lepivost. Řada ECO+ používá postindustriální "
-            "regenerát z výroby BOPP fólií; NOPP a LOOPP přinášejí ISCC PLUS certifikaci."
+            "Udržitelná lepicí páska s potiskem neznamená kompromis v lepivosti ani pevnosti. Dnešní "
+            "ekologické plastové pásky dokáží plně nahradit standardní fólie, zredukovat uhlíkovou stopu "
+            "a pomoci vaší firmě plnit ESG cíle. Využívají k tomu buď ztenčenou tloušťku, vysoký podíl "
+            "recyklátu, nebo bio-cirkulární suroviny s certifikací ISCC PLUS."
         ),
         "sections": [
             (
-                "ECO+ 50 / 80 / 100",
-                "Volíte podíl regenerátu. Mechanické vlastnosti odpovídají standardní BOPP, dostupné jako Akryl i HOT MELT.",
-            ),
-            (
-                "NOPP, NOPP+, LOOPP, POLY+",
-                "NOPP = bio-cirkulární nosič, NOPP+ = fólie i lepidlo ISCC PLUS, LOOPP = chemicky recyklovaný plast, "
-                "POLY+ = matná náhrada PVC.",
+                "Redukce plastu a udržitelné technologie",
+                "Udržitelnosti lze dosáhnout různými cestami – od snižování tloušťky fólie přes zapojení "
+                "recyklovaných plastů až po chemickou recyklaci a bio-materiály:\n\n"
+                "ECO+ (50 / 80 / 100): Řada pásek využívající postindustriální regenerát (PIR) z výroby "
+                "BOPP fólií. Číslo udává procentuální podíl recyklovaného materiálu (50 %, 80 % nebo 100 %). "
+                "Mechanickými vlastnostmi se zcela vyrovná standardním páskám a je k dispozici s akrylovým "
+                "i hotmeltovým lepidlem.\n\n"
+                "NOPP / NOPP+: Pásky založené na principu hmotnostní bilance (mass balance) certifikované "
+                "podle ISCC PLUS. NOPP využívá bio-cirkulární nosič z obnovitelných zdrojů (např. odpadních "
+                "olejů). Verze NOPP+ jde ještě dále a certifikaci ISCC PLUS má jak samotná fólie, tak použité "
+                "lepidlo.\n\n"
+                "LOOPP: Průlomové řešení využívající chemicky recyklovaný plast (PCR). Tento proces vrací "
+                "plastový odpad zpět na úroveň primární suroviny, takže páska dosahuje identické kvality, "
+                "čirosti a pevnosti jako zcela nová BOPP fólie.\n\n"
+                "POLY+: Odolná polypropylenová (BOPP) páska s elegantním matným povrchem, která představuje "
+                "ekologičtější a plně recyklovatelnou náhradu za tradiční PVC pásky. Zajišťuje tiché odvíjení "
+                "a skvělý vzhled.\n\n"
+                "AIRTAPE: Páska se ztenčenou tloušťkou fólie, která při zachování vysoké pevnosti šetří "
+                "množství použitého plastu i celkovou hmotnost zásilek.\n\n"
+                "ecoHIT: Prémiová ekologická páska chráněná evropským patentem, která obsahuje minimálně "
+                "85 % recyklovaného PET odpadu z plastových lahví. Její polyesterový základ jí dává "
+                "extrémní mechanickou odolnost proti přetržení, takže se při aplikaci nepraská, nenatahuje "
+                "ani nedeformuje. Díky tenčímu profilu pojme role standardního průměru dvojnásobný návin "
+                "metrů, což v provozu znamená méně častou výměnu rolí na balicích linkách, vyšší plynulost "
+                "balení a výraznou úsporu skladovacího místa.",
             ),
         ],
         "links": [
@@ -261,6 +308,8 @@ GUIDES = [
             ("/sortiment/udrzitelne-pasky/udrzitelna-paska-eco-100", "ECO+ 100"),
             ("/sortiment/udrzitelne-pasky/udrzitelna-paska-nopp", "NOPP"),
             ("/sortiment/udrzitelne-pasky/udrzitelna-paska-poly-plus", "POLY+"),
+            ("/sortiment/udrzitelne-pasky/udrzitelna-paska-airtape", "AIRTAPE"),
+            ("/sortiment/bopet-pasky/bopet-paska-eco-hit19", "ecoHIT"),
         ],
         "faqs": [],
     },
@@ -274,7 +323,7 @@ GUIDES = [
         ),
         "intro": (
             "Bezpečnostní páska Tamper Evident plní dvojí funkci – spolehlivě uzavře karton a zároveň "
-            "funguje jako neúprosná kontrola jakéhokoliv neoprávněné manipulace. Při pokusu o odlepení "
+            "funguje jako neúprosná kontrola jakékoliv neoprávněné manipulace. Při pokusu o odlepení "
             "zanechá na povrchu nesmazatelnou stopu, takže sklad i zákazník okamžitě poznají, že balík "
             "někdo neoprávněně otevíral."
         ),
@@ -300,7 +349,8 @@ GUIDES = [
                 "Pro standardní zásilky bez zvýšeného rizika odcizení plně postačí klasické BOPP pásky "
                 "s akrylovým nebo hotmeltovým lepidlem a vlastním potiskem. Po bezpečnostní pásce "
                 "Tamper Evident sáhněte v momentech, kdy je jakýkoliv neoprávněný vstup do balíku bez "
-                "zanechání stopy absolutně neakceptovatelný a vy potřebujete mít stoprocentní jistotu.",
+                "zanechání stopy absolutně neakceptovatelný a vy potřebujete mít stoprocentní jistotu, "
+                "že zásilka dorazí k příjemci v netknutém stavu.",
             ),
         ],
         "links": [
