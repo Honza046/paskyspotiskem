@@ -1,10 +1,15 @@
 /**
  * Rotate info-banner messages – one element, fade out → swap → fade in.
  * Priority: live /api/info-banner → i18n JSON → DEFAULT_TEXTS.
+ *
+ * Visibility: banner stays hidden until live config arrives (or cached "on"
+ * from a previous visit via html.info-banner-on). This avoids the 1–2s FOUC
+ * when the admin has disabled the bar.
  */
 (function () {
     'use strict';
 
+    var STORAGE_KEY = 'pasky-info-banner';
     var DEFAULT_TEXTS = [
         'Srpen: výroba a logistika mají 3týdenní výluku. Objednávky s dodáním před výlukou zašlete nejpozději do <strong>10. 7. 2026</strong>.',
         'U objednávek z července a srpna platí dodací lhůta 3–4 týdny s dodáním v <strong>září 2026</strong>.',
@@ -57,10 +62,18 @@
         }
     }
 
+    function persistEnabled(on) {
+        try {
+            localStorage.setItem(STORAGE_KEY, on ? '1' : '0');
+        } catch (e) {}
+        document.documentElement.classList.toggle('info-banner-on', !!on);
+    }
+
     function setBannerVisible(on) {
         if (!banner) return;
+        persistEnabled(on);
         banner.hidden = !on;
-        banner.style.display = on ? '' : 'none';
+        banner.style.display = '';
         if (typeof window.paskyonlineSyncSiteTopHeight === 'function') {
             window.paskyonlineSyncSiteTopHeight();
         }
@@ -230,17 +243,12 @@
 
     function boot() {
         if (started) {
-            if (liveLoaded) {
-                fetchLive();
-            } else {
-                restart(getI18nTexts(), true);
-                fetchLive();
-            }
+            fetchLive();
             return;
         }
         started = true;
         applyAriaLabel();
-        restart(getI18nTexts(), true);
+        // Do not force-show before live config — that caused the orange FOUC.
         window.addEventListener('resize', setViewportHeight);
         fetchLive();
     }
