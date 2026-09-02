@@ -722,6 +722,7 @@
     "categories": {
       "udrzitelne-pasky": {
         "title": "Nastri sostenibili",
+        "h1": "Nastri sostenibili",
         "description": "Soluzioni di imballaggio innovative realizzate con materiali riciclati, con un impatto ambientale minimo e a sostegno dell'economia circolare.",
         "intro": "La nostra gamma di nastri sostenibili è realizzata con materiali riciclati e progettata per ridurre al minimo l'impatto ambientale. Aiuta le aziende a raggiungere gli obiettivi ESG e a costruire un'immagine di marca responsabile senza compromettere le prestazioni.",
         "properties": {
@@ -738,6 +739,7 @@
       },
       "bopp-pasky": {
         "title": "Nastri BOPP",
+        "h1": "Nastri BOPP",
         "description": "I nastri per imballaggio industriale più diffusi, realizzati in polipropilene biorientato. Offrono eccellente resistenza alla trazione e lunga durata.",
         "intro": "I nastri BOPP sono lo standard per l'imballaggio quotidiano nella produzione, nella logistica e nell'e-commerce. Il film in polipropilene biorientato offre un eccellente rapporto qualità-prezzo, versioni acriliche e hot melt e un'ampia scelta di larghezze e colori.",
         "properties": {
@@ -754,6 +756,7 @@
       },
       "bopet-pasky": {
         "title": "Nastri BOPET",
+        "h1": "Nastri BOPET",
         "description": "Nastri in poliestere premium con estrema resistenza allo strappo, agli agenti chimici e alle variazioni di temperatura. Progettati per le applicazioni industriali più impegnative.",
         "intro": "I nastri BOPET a base di film in poliestere sono destinati alle applicazioni in cui i nastri standard non sono sufficienti. Resistono alle alte temperature, agli agenti chimici aggressivi e alle sollecitazioni meccaniche, mantenendo le proprie caratteristiche anche in condizioni estreme.",
         "properties": {
@@ -770,6 +773,7 @@
       },
       "papirove-pasky": {
         "title": "Nastri in carta",
+        "h1": "Nastri in carta",
         "description": "Una soluzione ecologica per un imballaggio elegante con elevata adesione, ideale per un aspetto pulito e scatole in cartone completamente riciclabili.",
         "intro": "I nastri adesivi in carta combinano un incollaggio affidabile con la massima attenzione all'ambiente. Grazie al supporto in carta, sono completamente riciclabili insieme al cartone e rappresentano una soluzione elegante e ordinata per le aziende attente alla sostenibilità e all'immagine delle proprie spedizioni.",
         "properties": {
@@ -804,6 +808,7 @@
       },
       "odstranitelne-pasky": {
         "title": "Nastri rimovibili",
+        "h1": "Nastri rimovibili",
         "description": "Nastri con una speciale formulazione adesiva che non lascia residui dopo la rimozione. Ideali per marcature temporanee, protezione di superfici sensibili o processi logistici.",
         "intro": "I nastri rimovibili utilizzano un adesivo speciale che tiene saldamente ma non lascia residui né danneggia la superficie quando viene rimosso. Sono ideali per applicazioni temporanee e per la protezione di materiali delicati.",
         "properties": {
@@ -820,6 +825,7 @@
       },
       "vyztuzene-pasky": {
         "title": "Nastri rinforzati",
+        "h1": "Nastri rinforzati",
         "description": "Nastri rinforzati con fibre di vetro longitudinali o incrociate. Offrono la massima resistenza per fissare carichi pesanti, pallet e colli fuori sagoma.",
         "intro": "I nastri rinforzati contengono fibre di vetro disposte longitudinalmente o incrociate che aumentano sensibilmente la resistenza alla trazione. Sono progettati per fissare spedizioni pesanti e fuori sagoma, dove è richiesta la massima affidabilità.",
         "properties": {
@@ -836,6 +842,7 @@
       },
       "mopp-pasky": {
         "title": "Nastri MOPP",
+        "h1": "Nastri MOPP",
         "description": "Nastri mono-orientati con estrema resistenza in una direzione ed elasticità pressoché nulla. Specificamente progettati per fissare elettrodomestici, componenti o pallet.",
         "intro": "I nastri MOPP hanno un film mono-orientato con estrema resistenza longitudinale e allungamento praticamente nullo. Sostituiscono i nastri rinforzati dove è necessario un fissaggio solido senza fibre di vetro.",
         "properties": {
@@ -852,6 +859,7 @@
       },
       "textilni-pasky": {
         "title": "Nastri adesivi telati",
+        "h1": "Nastri adesivi telati",
         "description": "Nastri molto resistenti e versatili rinforzati con una rete tessile. Aderiscono perfettamente alle superfici ruvide, si strappano facilmente a mano e sono ideali per riparazioni rapide e fascettatura.",
         "intro": "I nastri telati sono un indispensabile prodotto universale. Il rinforzo tessile conferisce elevata resistenza e consente allo stesso tempo di strapparli facilmente a mano senza forbici. Aderiscono in modo affidabile anche alle superfici ruvide e irregolari.",
         "properties": {
@@ -868,6 +876,7 @@
       },
       "malirske-pasky": {
         "title": "Nastri per mascheratura",
+        "h1": "Nastri per mascheratura",
         "description": "Nastri in carta crespata progettati per una mascheratura precisa durante la pittura e la verniciatura. Proteggono i bordi dalle sbavature di colore e si rimuovono pulitamente al termine del lavoro.",
         "intro": "I nastri di carta crespata per mascheratura garantiscono bordi netti e puliti durante la pittura e la verniciatura. Il supporto in carta crespata si adatta alla superficie, si strappa facilmente e si rimuove senza residui di adesivo al termine del lavoro.",
         "properties": {
@@ -886,6 +895,7 @@
     "products": {
       "udrzitelna-paska-eco-100": {
         "name": "Nastro sostenibile ECO+ 100",
+        "h1": "Nastro sostenibile ECO+ 100",
         "tagline": "Film BOPP rigenerato al 100% da scarti post-industriali. Massimo standard ecologico senza compromessi sulle prestazioni.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nastri sostenibili",
@@ -983,6 +993,7 @@
       },
       "udrzitelna-paska-eco-80": {
         "name": "Nastro sostenibile ECO+ 80",
+        "h1": "Nastro sostenibile ECO+ 80",
         "tagline": "Film BOPP con l’80% di materiale rigenerato. Unisce un elevato standard ecologico e piena resistenza.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nastri sostenibili",
@@ -1080,6 +1091,7 @@
       },
       "udrzitelna-paska-eco-50": {
         "name": "Nastro sostenibile ECO+ 50",
+        "h1": "Nastro sostenibile ECO+ 50",
         "tagline": "Imballaggio efficiente con il 50% di materiale rigenerato. Il giusto equilibrio tra ecologia e miglior prezzo.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nastri sostenibili",
@@ -1177,6 +1189,7 @@
       },
       "udrzitelna-paska-poly-plus": {
         "name": "Nastro sostenibile POLY+",
+        "h1": "Nastro sostenibile POLY+",
         "tagline": "Sostituto ecologico e completo dei nastri in PVC con elegante superficie opaca.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nastri sostenibili",
@@ -1261,6 +1274,7 @@
       },
       "udrzitelna-paska-airtape": {
         "name": "Nastro sostenibile Airtape+",
+        "h1": "Nastro sostenibile Airtape+",
         "tagline": "Nastro BOPP sottile e resistente per massima efficienza e meno rifiuti.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nastri sostenibili",
@@ -1325,6 +1339,7 @@
       },
       "udrzitelna-paska-loopp": {
         "name": "Nastro sostenibile LOOPP",
+        "h1": "Nastro sostenibile LOOPP",
         "tagline": "Nastro eco premium da plastica riciclata senza compromessi sulla resistenza.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nastri sostenibili",
@@ -1409,6 +1424,7 @@
       },
       "udrzitelna-paska-nopp": {
         "name": "Nastro sostenibile NOPP",
+        "h1": "Nastro sostenibile NOPP",
         "tagline": "Nastro con film di supporto bio-circolare certificato ISCC PLUS.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nastri sostenibili",
@@ -1493,6 +1509,7 @@
       },
       "udrzitelna-paska-nopp-plus": {
         "name": "Nastro sostenibile NOPP+",
+        "h1": "Nastro sostenibile NOPP+",
         "tagline": "Nastro con film e adesivo bio-circolari certificati per la massima riduzione dell’impronta di carbonio.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nastri sostenibili",
@@ -1577,6 +1594,7 @@
       },
       "bopp-paska-acrylic": {
         "name": "Nastro BOPP Akryl",
+        "h1": "Nastro BOPP Akryl",
         "tagline": "Nastro BOPP affidabile con lunga durata.",
         "category_slug": "bopp-pasky",
         "category_title": "Nastri BOPP",
@@ -1664,6 +1682,7 @@
       },
       "bopp-paska-hot-melt": {
         "name": "Nastro BOPP HOT MELT",
+        "h1": "Nastro BOPP HOT MELT",
         "tagline": "Nastro BOPP con adesivo hot melt per un'adesione rapida e resistente.",
         "category_slug": "bopp-pasky",
         "category_title": "Nastri BOPP",
@@ -1729,6 +1748,7 @@
       },
       "bopp-paska-tack-plus": {
         "name": "Nastro BOPP TACK+",
+        "h1": "Nastro BOPP TACK+",
         "tagline": "Nastro HOT MELT con adesione estrema e effetto tack immediato. Per applicazioni impegnative.",
         "category_slug": "bopp-pasky",
         "category_title": "Nastri BOPP",
@@ -1794,6 +1814,7 @@
       },
       "bopp-paska-extra-glue-plus": {
         "name": "Nastro BOPP EXTRA GLUE+",
+        "h1": "Nastro BOPP EXTRA GLUE+",
         "tagline": "Nastro acrilico con strato adesivo aumentato per superfici impegnative.",
         "category_slug": "bopp-pasky",
         "category_title": "Nastri BOPP",
@@ -1859,6 +1880,7 @@
       },
       "bopp-paska-evergreen": {
         "name": "Nastro BOPP Evergreen",
+        "h1": "Nastro BOPP Evergreen",
         "tagline": "Nastro acrilico per condizioni estreme e freddo.",
         "category_slug": "bopp-pasky",
         "category_title": "Nastri BOPP",
@@ -1924,6 +1946,7 @@
       },
       "bopp-paska-evergreen-50": {
         "name": "Nastro BOPP ecoEVERGREEN 50%",
+        "h1": "Nastro BOPP ecoEVERGREEN 50%",
         "tagline": "Nastro da imballaggio sostenibile realizzato con il 50% di materiale riciclato post-industriale.",
         "category_slug": "bopp-pasky",
         "category_title": "Nastri BOPP",
@@ -1989,6 +2012,7 @@
       },
       "bopp-paska-evergreen-100": {
         "name": "Nastro BOPP ecoEVERGREEN 100%",
+        "h1": "Nastro BOPP ecoEVERGREEN 100%",
         "tagline": "Nastro da imballaggio sostenibile realizzato con il 100% di materiale riciclato post-industriale.",
         "category_slug": "bopp-pasky",
         "category_title": "Nastri BOPP",
@@ -2054,6 +2078,7 @@
       },
       "bopp-paska-tamper-evident": {
         "name": "Nastro BOPP Tamper Evident",
+        "h1": "Nastro BOPP Tamper Evident",
         "tagline": "Nastro BOPP con stampa di sicurezza per rilevare subito aperture non autorizzate.",
         "category_slug": "bopp-pasky",
         "category_title": "Nastri BOPP",
@@ -2119,6 +2144,7 @@
       },
       "bopet-paska-eco-hit19": {
         "name": "Nastro BOPET ECO HIT19",
+        "h1": "Nastro BOPET ECO HIT19",
         "tagline": "Nastro BOPET da PET riciclato di bottiglie al 90%.",
         "category_slug": "bopet-pasky",
         "category_title": "Nastri BOPET",
@@ -2184,6 +2210,7 @@
       },
       "bopet-paska-eco-hit23": {
         "name": "Nastro BOPET ECO HIT23",
+        "h1": "Nastro BOPET ECO HIT23",
         "tagline": "Nastro BOPET più resistente da PET riciclato di bottiglie al 90%.",
         "category_slug": "bopet-pasky",
         "category_title": "Nastri BOPET",
@@ -2248,6 +2275,7 @@
       },
       "bopet-paska-ait23": {
         "name": "Nastro BOPET AIT23",
+        "h1": "Nastro BOPET AIT23",
         "tagline": "Nastro da imballaggio resistente con supporto in poliestere e adesivo acrilico.",
         "category_slug": "bopet-pasky",
         "category_title": "Nastri BOPET",
@@ -2312,6 +2340,7 @@
       },
       "bopet-paska-hit17": {
         "name": "Nastro BOPET HIT17",
+        "h1": "Nastro BOPET HIT17",
         "tagline": "Nastro da imballaggio ad alta resistenza con supporto in poliestere.",
         "category_slug": "bopet-pasky",
         "category_title": "Nastri BOPET",
@@ -2376,6 +2405,7 @@
       },
       "bopet-paska-ate23": {
         "name": "Nastro BOPET ATE23",
+        "h1": "Nastro BOPET ATE23",
         "tagline": "Nastro BOPET di sicurezza che rivela manipolazioni non autorizzate.",
         "category_slug": "bopet-pasky",
         "category_title": "Nastri BOPET",
@@ -2440,6 +2470,7 @@
       },
       "papirova-paska-kh80": {
         "name": "Nastro di carta KH80",
+        "h1": "Nastro di carta KH80",
         "tagline": "Nastro di carta esclusivo in materiale riciclato al 100%: il connubio perfetto tra estetica elevata, adesione immediata e rispetto per la natura.",
         "category_slug": "papirove-pasky",
         "category_title": "Nastri in carta",
@@ -2507,6 +2538,7 @@
       },
       "papirova-paska-c660": {
         "name": "Nastro di carta C660",
+        "h1": "Nastro di carta C660",
         "tagline": "Una soluzione ecologica per un imballaggio elegante con elevata adesione.",
         "category_slug": "papirove-pasky",
         "category_title": "Nastri in carta",
@@ -2574,6 +2606,7 @@
       },
       "papirova-paska-c680": {
         "name": "Nastro di carta C680",
+        "h1": "Nastro di carta C680",
         "tagline": "Profilo più sottile con maggiore resistenza alla trazione per un imballaggio efficiente.",
         "category_slug": "papirove-pasky",
         "category_title": "Nastri in carta",
@@ -2641,6 +2674,7 @@
       },
       "papirova-paska-c680-rt": {
         "name": "Nastro di carta C680 RT",
+        "h1": "Nastro di carta C680 RT",
         "tagline": "Nastro con rinforzo a croce in fibra di vetro per le spedizioni più impegnative.",
         "category_slug": "papirove-pasky",
         "category_title": "Nastri in carta",
@@ -2708,6 +2742,7 @@
       },
       "papirova-paska-c680r": {
         "name": "Nastro di carta C680R",
+        "h1": "Nastro di carta C680R",
         "tagline": "Nastro rinforzato con fibra di vetro per imballare in sicurezza cartoni più pesanti.",
         "category_slug": "papirove-pasky",
         "category_title": "Nastri in carta",
@@ -2775,6 +2810,7 @@
       },
       "papirova-paska-c690": {
         "name": "Nastro di carta C690",
+        "h1": "Nastro di carta C690",
         "tagline": "Carta crespa pesante per i cartoni più impegnativi.",
         "category_slug": "papirove-pasky",
         "category_title": "Nastri in carta",
@@ -2842,6 +2878,7 @@
       },
       "papirova-paska-c780": {
         "name": "Nastro di carta C780",
+        "h1": "Nastro di carta C780",
         "tagline": "Combinazione premium di carta crespa e gomma naturale per condizioni di temperatura impegnative.",
         "category_slug": "papirove-pasky",
         "category_title": "Nastri in carta",
@@ -2909,6 +2946,7 @@
       },
       "papirova-paska-ks165": {
         "name": "Nastro di carta KS165",
+        "h1": "Nastro di carta KS165",
         "tagline": "Soluzione in carta senza compromessi con capacità di carico estrema per imballaggi industriali pesanti, fissaggio pallet e reggiatura.",
         "category_slug": "papirove-pasky",
         "category_title": "Nastri in carta",
@@ -2976,6 +3014,7 @@
       },
       "odstranitelna-paska-eco-rit19": {
         "name": "Nastro rimovibile ECO RIT19",
+        "h1": "Nastro rimovibile ECO RIT19",
         "tagline": "Nastro rimovibile delicato con contenuto riciclato.",
         "category_slug": "odstranitelne-pasky",
         "category_title": "Nastri rimovibili",
@@ -3039,6 +3078,7 @@
       },
       "odstranitelna-paska-r28-32": {
         "name": "Nastro rimovibile R28-32",
+        "h1": "Nastro rimovibile R28-32",
         "tagline": "Nastro rimovibile che non lascia tracce dopo la rimozione.",
         "category_slug": "odstranitelne-pasky",
         "category_title": "Nastri rimovibili",
@@ -3102,6 +3142,7 @@
       },
       "vyztuzena-paska-rmpp32": {
         "name": "Nastro rinforzato RMPP32",
+        "h1": "Nastro rinforzato RMPP32",
         "tagline": "Nastro rinforzato con fibre di vetro per fissare carichi pesanti.",
         "category_slug": "vyztuzene-pasky",
         "category_title": "Nastri rinforzati",
@@ -3165,6 +3206,7 @@
       },
       "vyztuzena-paska-rtpp32": {
         "name": "Nastro rinforzato RTPP32",
+        "h1": "Nastro rinforzato RTPP32",
         "tagline": "Nastro rinforzato incrociato per la massima resistenza in ogni direzione.",
         "category_slug": "vyztuzene-pasky",
         "category_title": "Nastri rinforzati",
@@ -3228,6 +3270,7 @@
       },
       "mopp-paska-s45-50": {
         "name": "Nastro MOPP S45-50",
+        "h1": "Nastro MOPP S45-50",
         "tagline": "Nastro MOPP monoassiale con resistenza estrema e allungamento nullo.",
         "category_slug": "mopp-pasky",
         "category_title": "Nastri MOPP",
@@ -3291,6 +3334,7 @@
       },
       "textilni-paska-bc": {
         "name": "Nastro telato BC",
+        "h1": "Nastro telato BC",
         "tagline": "Nastro telato resistente (duct tape) per riparazioni e uso universale.",
         "category_slug": "textilni-pasky",
         "category_title": "Nastri adesivi telati",
@@ -3354,6 +3398,7 @@
       },
       "textilni-paska-bc2": {
         "name": "Nastro telato BC2",
+        "h1": "Nastro telato BC2",
         "tagline": "Nastro telato extra resistente con elevata resistenza alla trazione.",
         "category_slug": "textilni-pasky",
         "category_title": "Nastri adesivi telati",
@@ -3417,6 +3462,7 @@
       },
       "textilni-paska-nu": {
         "name": "Nastro telato NU",
+        "h1": "Nastro telato NU",
         "tagline": "Nastro telato universale per fascettatura e fissaggio rapidi.",
         "category_slug": "textilni-pasky",
         "category_title": "Nastri adesivi telati",
@@ -3480,6 +3526,7 @@
       },
       "malirska-paska-c580": {
         "name": "Nastro per mascheratura C580",
+        "h1": "Nastro per mascheratura C580",
         "tagline": "Nastro per mascheratura in carta crespata per bordi netti nella pittura quotidiana.",
         "category_slug": "malirske-pasky",
         "category_title": "Nastri per mascheratura",
@@ -3543,6 +3590,7 @@
       },
       "malirska-paska-cs60-80": {
         "name": "Nastro per mascheratura CS60-80",
+        "h1": "Nastro per mascheratura CS60-80",
         "tagline": "Nastro per mascheratura resistente al calore per verniciatura e mascherature impegnative.",
         "category_slug": "malirske-pasky",
         "category_title": "Nastri per mascheratura",

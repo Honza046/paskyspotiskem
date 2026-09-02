@@ -722,6 +722,7 @@
     "categories": {
       "udrzitelne-pasky": {
         "title": "Sustainable tapes",
+        "h1": "Sustainable tapes",
         "description": "Innovative packaging solutions made from recycled materials with minimal environmental impact and support for the circular economy.",
         "intro": "Our sustainable tape range is made from recycled materials and designed to minimise environmental impact. It helps companies meet ESG goals and build a responsible brand image without compromising performance.",
         "properties": {
@@ -738,6 +739,7 @@
       },
       "bopp-pasky": {
         "title": "BOPP tapes",
+        "h1": "BOPP tapes",
         "description": "The most widely used industrial packaging tapes made from biaxially oriented polypropylene. Outstanding tensile strength and long service life.",
         "intro": "BOPP tapes are the standard for everyday packing in manufacturing, logistics and e-commerce. Biaxially oriented polypropylene film delivers an excellent price-performance ratio, availability in acrylic and hot melt versions, and a wide range of widths and colours.",
         "properties": {
@@ -754,6 +756,7 @@
       },
       "bopet-pasky": {
         "title": "BOPET tapes",
+        "h1": "BOPET tapes",
         "description": "Premium polyester tapes with extreme resistance to tearing, chemicals and temperature fluctuations. Designed for the most demanding industrial applications.",
         "intro": "BOPET tapes based on polyester film are made for applications where standard tapes are not enough. They withstand high temperatures, aggressive chemicals and mechanical stress while maintaining their properties in extreme conditions.",
         "properties": {
@@ -770,6 +773,7 @@
       },
       "papirove-pasky": {
         "title": "Paper tapes",
+        "h1": "Paper tapes",
         "description": "An eco-friendly solution for elegant packaging with high adhesion, ideal for a clean look and fully recyclable cardboard boxes.",
         "intro": "Paper adhesive tapes combine reliable bonding with maximum environmental responsibility. Thanks to the paper carrier, they are fully recyclable together with cardboard and offer an elegant, clean-looking solution for companies that care about sustainability and the visual impact of their shipments.",
         "properties": {
@@ -804,6 +808,7 @@
       },
       "odstranitelne-pasky": {
         "title": "Removable tapes",
+        "h1": "Removable tapes",
         "description": "Tapes with a special adhesive formulation that leaves no residue after removal. Ideal for temporary marking, protecting sensitive surfaces or logistics processes.",
         "intro": "Removable tapes use a special adhesive that holds firmly yet leaves no residue or surface damage when peeled off. They are ideal for temporary applications and protecting sensitive materials.",
         "properties": {
@@ -820,6 +825,7 @@
       },
       "vyztuzene-pasky": {
         "title": "Reinforced tapes",
+        "h1": "Reinforced tapes",
         "description": "Tapes reinforced with longitudinal or cross-laid glass fibres. Maximum strength for securing heavy loads, pallets and oversized parcels.",
         "intro": "Reinforced (filament) tapes contain glass fibres laid longitudinally or crosswise, dramatically increasing tensile strength. They are designed for securing heavy and oversized shipments where absolute reliability is required.",
         "properties": {
@@ -836,6 +842,7 @@
       },
       "mopp-pasky": {
         "title": "MOPP tapes",
+        "h1": "MOPP tapes",
         "description": "Monoaxially oriented tapes with extreme strength in one direction and zero elasticity. Specially designed for securing appliances, components or pallet strapping.",
         "intro": "MOPP tapes feature monoaxially oriented film with extreme longitudinal strength and virtually zero elongation. They replace reinforced tapes where firm securing without glass fibres is needed.",
         "properties": {
@@ -852,6 +859,7 @@
       },
       "textilni-pasky": {
         "title": "Cloth adhesive tapes",
+        "h1": "Cloth adhesive tapes",
         "description": "Highly durable, versatile tapes reinforced with a textile mesh. They grip rough surfaces perfectly, tear easily by hand and are ideal for quick repairs and bundling.",
         "intro": "Cloth (duct) tapes are an indispensable all-rounder. Textile reinforcement gives them high strength while allowing easy hand tearing without scissors. They adhere reliably even to coarse and uneven surfaces.",
         "properties": {
@@ -868,6 +876,7 @@
       },
       "malirske-pasky": {
         "title": "Masking tapes",
+        "h1": "Masking tapes",
         "description": "Crepe paper tapes designed for precise masking during painting and coating. They protect edges from paint bleed and peel off cleanly after the job is done.",
         "intro": "Masking crepe tapes ensure sharp, clean edges when painting and coating. The crepe paper carrier conforms to the surface, tears easily and removes without adhesive residue after completion.",
         "properties": {
@@ -886,6 +895,7 @@
     "products": {
       "udrzitelna-paska-eco-100": {
         "name": "Sustainable tape ECO+ 100",
+        "h1": "Sustainable tape ECO+ 100",
         "tagline": "100% regenerated BOPP film from post-industrial waste. Maximum ecological standard without compromising performance.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
@@ -983,6 +993,7 @@
       },
       "udrzitelna-paska-eco-80": {
         "name": "Sustainable tape ECO+ 80",
+        "h1": "Sustainable tape ECO+ 80",
         "tagline": "BOPP film with 80% regenerated material. Combines a high ecological standard with full strength.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
@@ -1080,6 +1091,7 @@
       },
       "udrzitelna-paska-eco-50": {
         "name": "Sustainable tape ECO+ 50",
+        "h1": "Sustainable tape ECO+ 50",
         "tagline": "Efficient packaging with 50% regenerated material. The optimal balance of ecology and best price.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
@@ -1177,6 +1189,7 @@
       },
       "udrzitelna-paska-poly-plus": {
         "name": "Sustainable tape POLY+",
+        "h1": "Sustainable tape POLY+",
         "tagline": "Ecological full replacement for PVC tapes with an elegant matte surface.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
@@ -1261,6 +1274,7 @@
       },
       "udrzitelna-paska-airtape": {
         "name": "Sustainable tape Airtape+",
+        "h1": "Sustainable tape Airtape+",
         "tagline": "Thin and strong BOPP tape for maximum efficiency and less waste.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
@@ -1325,6 +1339,7 @@
       },
       "udrzitelna-paska-loopp": {
         "name": "Sustainable tape LOOPP",
+        "h1": "Sustainable tape LOOPP",
         "tagline": "Premium eco tape from recycled plastics with no compromise on strength.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
@@ -1409,6 +1424,7 @@
       },
       "udrzitelna-paska-nopp": {
         "name": "Sustainable tape NOPP",
+        "h1": "Sustainable tape NOPP",
         "tagline": "Tape with a bio-circular carrier film certified ISCC PLUS.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
@@ -1493,6 +1509,7 @@
       },
       "udrzitelna-paska-nopp-plus": {
         "name": "Sustainable tape NOPP+",
+        "h1": "Sustainable tape NOPP+",
         "tagline": "Tape with certified bio-circular film and adhesive for maximum carbon footprint reduction.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Sustainable tapes",
@@ -1577,6 +1594,7 @@
       },
       "bopp-paska-acrylic": {
         "name": "BOPP tape Akryl",
+        "h1": "BOPP tape Akryl",
         "tagline": "Reliable BOPP tape with long service life.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP tapes",
@@ -1664,6 +1682,7 @@
       },
       "bopp-paska-hot-melt": {
         "name": "BOPP tape HOT MELT",
+        "h1": "BOPP tape HOT MELT",
         "tagline": "BOPP tape with hot melt adhesive for fast, strong bonding.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP tapes",
@@ -1729,6 +1748,7 @@
       },
       "bopp-paska-tack-plus": {
         "name": "BOPP tape TACK+",
+        "h1": "BOPP tape TACK+",
         "tagline": "HOT MELT tape with extreme adhesion and instant tack. For demanding applications.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP tapes",
@@ -1794,6 +1814,7 @@
       },
       "bopp-paska-extra-glue-plus": {
         "name": "BOPP tape EXTRA GLUE+",
+        "h1": "BOPP tape EXTRA GLUE+",
         "tagline": "Acrylic tape with an increased adhesive layer for demanding surfaces.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP tapes",
@@ -1859,6 +1880,7 @@
       },
       "bopp-paska-evergreen": {
         "name": "BOPP tape Evergreen",
+        "h1": "BOPP tape Evergreen",
         "tagline": "Acrylic tape for extreme conditions and cold.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP tapes",
@@ -1924,6 +1946,7 @@
       },
       "bopp-paska-evergreen-50": {
         "name": "BOPP tape ecoEVERGREEN 50%",
+        "h1": "BOPP tape ecoEVERGREEN 50%",
         "tagline": "Sustainable packing tape made from 50% recycled post-industrial material.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP tapes",
@@ -1989,6 +2012,7 @@
       },
       "bopp-paska-evergreen-100": {
         "name": "BOPP tape ecoEVERGREEN 100%",
+        "h1": "BOPP tape ecoEVERGREEN 100%",
         "tagline": "Sustainable packing tape made from 100% recycled post-industrial material.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP tapes",
@@ -2054,6 +2078,7 @@
       },
       "bopp-paska-tamper-evident": {
         "name": "BOPP tape Tamper Evident",
+        "h1": "BOPP tape Tamper Evident",
         "tagline": "BOPP tape with security print for immediate detection of unauthorized parcel opening.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP tapes",
@@ -2119,6 +2144,7 @@
       },
       "bopet-paska-eco-hit19": {
         "name": "BOPET tape ECO HIT19",
+        "h1": "BOPET tape ECO HIT19",
         "tagline": "BOPET tape made from 90% recycled PET bottles.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET tapes",
@@ -2184,6 +2210,7 @@
       },
       "bopet-paska-eco-hit23": {
         "name": "BOPET tape ECO HIT23",
+        "h1": "BOPET tape ECO HIT23",
         "tagline": "Stronger BOPET tape made from 90% recycled PET bottles.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET tapes",
@@ -2248,6 +2275,7 @@
       },
       "bopet-paska-ait23": {
         "name": "BOPET tape AIT23",
+        "h1": "BOPET tape AIT23",
         "tagline": "Strong packing tape with a polyester carrier and acrylic adhesive.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET tapes",
@@ -2312,6 +2340,7 @@
       },
       "bopet-paska-hit17": {
         "name": "BOPET tape HIT17",
+        "h1": "BOPET tape HIT17",
         "tagline": "High-strength packing tape with a polyester carrier.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET tapes",
@@ -2376,6 +2405,7 @@
       },
       "bopet-paska-ate23": {
         "name": "BOPET tape ATE23",
+        "h1": "BOPET tape ATE23",
         "tagline": "Security BOPET tape that reveals unauthorized tampering.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET tapes",
@@ -2440,6 +2470,7 @@
       },
       "papirova-paska-kh80": {
         "name": "Paper tape KH80",
+        "h1": "Paper tape KH80",
         "tagline": "Exclusive paper tape from 100% recycled material – the perfect blend of high aesthetics, instant adhesion and care for nature.",
         "category_slug": "papirove-pasky",
         "category_title": "Paper tapes",
@@ -2507,6 +2538,7 @@
       },
       "papirova-paska-c660": {
         "name": "Paper tape C660",
+        "h1": "Paper tape C660",
         "tagline": "An eco-friendly solution for elegant packaging with high adhesion.",
         "category_slug": "papirove-pasky",
         "category_title": "Paper tapes",
@@ -2574,6 +2606,7 @@
       },
       "papirova-paska-c680": {
         "name": "Paper tape C680",
+        "h1": "Paper tape C680",
         "tagline": "Thinner profile with higher tensile strength for efficient packaging.",
         "category_slug": "papirove-pasky",
         "category_title": "Paper tapes",
@@ -2641,6 +2674,7 @@
       },
       "papirova-paska-c680-rt": {
         "name": "Paper tape C680 RT",
+        "h1": "Paper tape C680 RT",
         "tagline": "Cross-reinforced glass-fibre tape for the most demanding shipments.",
         "category_slug": "papirove-pasky",
         "category_title": "Paper tapes",
@@ -2708,6 +2742,7 @@
       },
       "papirova-paska-c680r": {
         "name": "Paper tape C680R",
+        "h1": "Paper tape C680R",
         "tagline": "Glass-fibre reinforced tape for secure packing of heavier cartons.",
         "category_slug": "papirove-pasky",
         "category_title": "Paper tapes",
@@ -2775,6 +2810,7 @@
       },
       "papirova-paska-c690": {
         "name": "Paper tape C690",
+        "h1": "Paper tape C690",
         "tagline": "Heavy crepe paper for the most demanding cartons.",
         "category_slug": "papirove-pasky",
         "category_title": "Paper tapes",
@@ -2842,6 +2878,7 @@
       },
       "papirova-paska-c780": {
         "name": "Paper tape C780",
+        "h1": "Paper tape C780",
         "tagline": "Premium combination of crepe and natural rubber for demanding temperature conditions.",
         "category_slug": "papirove-pasky",
         "category_title": "Paper tapes",
@@ -2909,6 +2946,7 @@
       },
       "papirova-paska-ks165": {
         "name": "Paper tape KS165",
+        "h1": "Paper tape KS165",
         "tagline": "Uncompromising paper solution with extreme load capacity for the heaviest industrial packing, pallet securing and strapping.",
         "category_slug": "papirove-pasky",
         "category_title": "Paper tapes",
@@ -2976,6 +3014,7 @@
       },
       "odstranitelna-paska-eco-rit19": {
         "name": "Removable tape ECO RIT19",
+        "h1": "Removable tape ECO RIT19",
         "tagline": "Gentle removable tape with recycled content.",
         "category_slug": "odstranitelne-pasky",
         "category_title": "Removable tapes",
@@ -3039,6 +3078,7 @@
       },
       "odstranitelna-paska-r28-32": {
         "name": "Removable tape R28-32",
+        "h1": "Removable tape R28-32",
         "tagline": "Removable tape that leaves no trace after peeling.",
         "category_slug": "odstranitelne-pasky",
         "category_title": "Removable tapes",
@@ -3102,6 +3142,7 @@
       },
       "vyztuzena-paska-rmpp32": {
         "name": "Reinforced tape RMPP32",
+        "h1": "Reinforced tape RMPP32",
         "tagline": "Reinforced tape with glass fibres for securing heavy loads.",
         "category_slug": "vyztuzene-pasky",
         "category_title": "Reinforced tapes",
@@ -3165,6 +3206,7 @@
       },
       "vyztuzena-paska-rtpp32": {
         "name": "Reinforced tape RTPP32",
+        "h1": "Reinforced tape RTPP32",
         "tagline": "Cross-reinforced tape for maximum strength in all directions.",
         "category_slug": "vyztuzene-pasky",
         "category_title": "Reinforced tapes",
@@ -3228,6 +3270,7 @@
       },
       "mopp-paska-s45-50": {
         "name": "MOPP tape S45-50",
+        "h1": "MOPP tape S45-50",
         "tagline": "Monoaxial MOPP tape with extreme strength and zero stretch.",
         "category_slug": "mopp-pasky",
         "category_title": "MOPP tapes",
@@ -3291,6 +3334,7 @@
       },
       "textilni-paska-bc": {
         "name": "Cloth tape BC",
+        "h1": "Cloth tape BC",
         "tagline": "Strong cloth (duct) tape for repairs and universal use.",
         "category_slug": "textilni-pasky",
         "category_title": "Cloth adhesive tapes",
@@ -3354,6 +3398,7 @@
       },
       "textilni-paska-bc2": {
         "name": "Cloth tape BC2",
+        "h1": "Cloth tape BC2",
         "tagline": "Extra-strong cloth tape with high tensile strength.",
         "category_slug": "textilni-pasky",
         "category_title": "Cloth adhesive tapes",
@@ -3417,6 +3462,7 @@
       },
       "textilni-paska-nu": {
         "name": "Cloth tape NU",
+        "h1": "Cloth tape NU",
         "tagline": "Universal cloth tape for quick bundling and fixing.",
         "category_slug": "textilni-pasky",
         "category_title": "Cloth adhesive tapes",
@@ -3480,6 +3526,7 @@
       },
       "malirska-paska-c580": {
         "name": "Masking tape C580",
+        "h1": "Masking tape C580",
         "tagline": "Crepe masking tape for sharp edges in everyday painting.",
         "category_slug": "malirske-pasky",
         "category_title": "Masking tapes",
@@ -3543,6 +3590,7 @@
       },
       "malirska-paska-cs60-80": {
         "name": "Masking tape CS60-80",
+        "h1": "Masking tape CS60-80",
         "tagline": "Heat-resistant masking tape for painting and demanding masking.",
         "category_slug": "malirske-pasky",
         "category_title": "Masking tapes",

@@ -798,6 +798,10 @@ def _build_cs_product(cat: dict, p: dict, ns: dict) -> tuple[str, dict]:
         labels = PARAM_LABELS["cs"]
     return slug, {
         "name": p["name"],
+        # H1 s klicovym slovem. Bez nej by i18n skript prepsal nadpis zpet
+        # na holy nazev produktu a serverove SEO uprava by se ztratila.
+        "h1": ns["product_h1"](cat, p),
+        "seo_title": ns["product_seo_title"](cat, p),
         "tagline": p["tagline"],
         "category_slug": cat["cat"],
         "category_title": cat["title"],
@@ -841,6 +845,8 @@ def build_products_locale(ns: dict, locale: str) -> dict:
     page = SORTIMENT_PAGE[locale]
     for slug, product in products.items():
         product["name"] = _product_name(locale, product["name"])
+        product["h1"] = product["name"]
+        product.pop("seo_title", None)
         product["tagline"] = TAGLINES[slug][locale]
         product["category_title"] = CATEGORY_TITLES[locale][product["category_slug"]]
         product["benefits"] = [

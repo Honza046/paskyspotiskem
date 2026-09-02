@@ -722,6 +722,7 @@
     "categories": {
       "udrzitelne-pasky": {
         "title": "Nachhaltige Klebebänder",
+        "h1": "Nachhaltige Klebebänder",
         "description": "Innovative Verpackungslösungen aus recycelten Materialien mit minimalem ökologischen Fußabdruck und Unterstützung der Kreislaufwirtschaft.",
         "intro": "Unsere nachhaltige Bandserie wird aus recycelten Materialien hergestellt und minimiert die Umweltbelastung. Sie hilft Unternehmen, ESG-Ziele zu erreichen und ein verantwortungsvolles Markenimage aufzubauen: ohne Kompromisse bei der Leistung.",
         "properties": {
@@ -738,6 +739,7 @@
       },
       "bopp-pasky": {
         "title": "BOPP-Klebebänder",
+        "h1": "BOPP-Klebebänder",
         "description": "Die am weitesten verbreiteten Industrie-Verpackungsbänder aus biaxial orientiertem Polypropylen. Hervorragende Zugfestigkeit und lange Lebensdauer.",
         "intro": "BOPP-Klebebänder sind der Standard für den täglichen Einsatz in Produktion, Logistik und E-Commerce. Die Folie aus biaxial orientiertem Polypropylen bietet ein exzellentes Preis-Leistungs-Verhältnis, Verfügbarkeit in Acryl- und Hot-Melt-Ausführung sowie eine breite Palette an Breiten und Farben.",
         "properties": {
@@ -754,6 +756,7 @@
       },
       "bopet-pasky": {
         "title": "BOPET-Klebebänder",
+        "h1": "BOPET-Klebebänder",
         "description": "Premium-Polyesterbänder mit extremer Beständigkeit gegen Reißen, Chemikalien und Temperaturschwankungen. Für die anspruchsvollsten Industrieanwendungen.",
         "intro": "BOPET-Klebebänder auf Polyesterfolienbasis sind dort im Einsatz, wo Standardbänder nicht ausreichen. Sie widerstehen hohen Temperaturen, aggressiven Chemikalien und mechanischer Belastung und behalten ihre Eigenschaften auch unter extremen Bedingungen.",
         "properties": {
@@ -770,6 +773,7 @@
       },
       "papirove-pasky": {
         "title": "Papierklebebänder",
+        "h1": "Papierklebebänder",
         "description": "Eine umweltfreundliche Lösung für elegantes Verpacken mit hoher Klebkraft, ideal für ein sauberes Erscheinungsbild und vollständig recycelbare Kartonverpackungen.",
         "intro": "Papierklebebänder verbinden zuverlässige Haftung mit maximaler Umweltverträglichkeit. Dank des Papierträgers sind sie gemeinsam mit dem Karton vollständig recycelbar und bieten eine elegante, saubere Lösung für Unternehmen, die Wert auf Nachhaltigkeit und den visuellen Eindruck ihrer Sendungen legen.",
         "properties": {
@@ -804,6 +808,7 @@
       },
       "odstranitelne-pasky": {
         "title": "Abziehbare Klebebänder",
+        "h1": "Abziehbare Klebebänder",
         "description": "Bänder mit spezieller Klebstoffzusammensetzung, die nach dem Abziehen keine Rückstände hinterlassen. Ideal für temporäre Kennzeichnung, Schutz empfindlicher Oberflächen oder Logistikprozesse.",
         "intro": "Abziehbare Klebebänder verwenden einen Spezialklebstoff, der fest haftet, aber beim Abziehen keine Rückstände oder Oberflächenschäden hinterlässt. Sie eignen sich ideal für temporäre Anwendungen und den Schutz empfindlicher Materialien.",
         "properties": {
@@ -820,6 +825,7 @@
       },
       "vyztuzene-pasky": {
         "title": "Verstärkte Klebebänder",
+        "h1": "Verstärkte Klebebänder",
         "description": "Bänder mit längs- oder kreuzverlaufenden Glasfasern. Maximale Festigkeit zur Sicherung schwerer Lasten, Paletten und übergroßer Pakete.",
         "intro": "Verstärkte (Filament-) Klebebänder enthalten längs oder kreuz verlaufende Glasfasern, die die Zugfestigkeit erheblich erhöhen. Sie sind für die Sicherung schwerer und übergroßer Sendungen gedacht, bei denen absolute Zuverlässigkeit gefordert ist.",
         "properties": {
@@ -836,6 +842,7 @@
       },
       "mopp-pasky": {
         "title": "MOPP-Klebebänder",
+        "h1": "MOPP-Klebebänder",
         "description": "Monoaxial orientierte Bänder mit extremer Festigkeit in einer Richtung und null Elastizität. Speziell für die Fixierung von Geräten, Komponenten oder Paletten.",
         "intro": "MOPP-Klebebänder haben eine monoaxial orientierte Folie mit extremer Längsfestigkeit und praktisch null Dehnung. Sie ersetzen verstärkte Bänder dort, wo eine feste Fixierung ohne Glasfasern benötigt wird.",
         "properties": {
@@ -852,6 +859,7 @@
       },
       "textilni-pasky": {
         "title": "Gewebe-Klebebänder",
+        "h1": "Gewebe-Klebebänder",
         "description": "Hochfeste, vielseitige Bänder mit Textilgewebe-Verstärkung. Halten perfekt auf rauen Oberflächen, lassen sich per Hand abreißen und eignen sich ideal für schnelle Reparaturen und Bündelung.",
         "intro": "Gewebe- (Duct-) Klebebänder sind unverzichtbare Allrounder. Die textile Verstärkung verleiht hohe Festigkeit und ermöglicht gleichzeitig ein einfaches Abreißen per Hand ohne Schere. Sie haften zuverlässig auch auf groben und unebenen Flächen.",
         "properties": {
@@ -868,6 +876,7 @@
       },
       "malirske-pasky": {
         "title": "Malerklebebänder",
+        "h1": "Malerklebebänder",
         "description": "Krepp-Papierbänder für präzises Abkleben beim Malen und Lackieren. Schützen Kanten vor Farbaustritt und lassen sich nach der Arbeit rückstandsfrei entfernen.",
         "intro": "Maler-Kreppbänder sorgen für scharfe, saubere Kanten beim Malen und Lackieren. Der Krepp-Papierträger passt sich der Oberfläche an, lässt sich leicht abreißen und entfernt sich nach Abschluss der Arbeit ohne Klebstoffrückstände.",
         "properties": {
@@ -886,6 +895,7 @@
     "products": {
       "udrzitelna-paska-eco-100": {
         "name": "Nachhaltiges Klebeband ECO+ 100",
+        "h1": "Nachhaltiges Klebeband ECO+ 100",
         "tagline": "100 % regenerierte BOPP-Folie aus postindustriellen Abfällen. Maximaler ökologischer Standard ohne Kompromisse bei der Leistung.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nachhaltige Klebebänder",
@@ -983,6 +993,7 @@
       },
       "udrzitelna-paska-eco-80": {
         "name": "Nachhaltiges Klebeband ECO+ 80",
+        "h1": "Nachhaltiges Klebeband ECO+ 80",
         "tagline": "BOPP-Folie mit 80 % regeneriertem Material. Verbindet hohen ökologischen Standard mit voller Festigkeit.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nachhaltige Klebebänder",
@@ -1080,6 +1091,7 @@
       },
       "udrzitelna-paska-eco-50": {
         "name": "Nachhaltiges Klebeband ECO+ 50",
+        "h1": "Nachhaltiges Klebeband ECO+ 50",
         "tagline": "Effizientes Verpacken mit 50 % regeneriertem Material. Optimale Balance aus Ökologie und bestem Preis.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nachhaltige Klebebänder",
@@ -1177,6 +1189,7 @@
       },
       "udrzitelna-paska-poly-plus": {
         "name": "Nachhaltiges Klebeband POLY+",
+        "h1": "Nachhaltiges Klebeband POLY+",
         "tagline": "Ökologischer und vollwertiger Ersatz für PVC-Klebebänder mit elegantem mattem Finish.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nachhaltige Klebebänder",
@@ -1261,6 +1274,7 @@
       },
       "udrzitelna-paska-airtape": {
         "name": "Nachhaltiges Klebeband Airtape+",
+        "h1": "Nachhaltiges Klebeband Airtape+",
         "tagline": "Dünnes und festes BOPP-Klebeband für maximale Effizienz und weniger Abfall.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nachhaltige Klebebänder",
@@ -1325,6 +1339,7 @@
       },
       "udrzitelna-paska-loopp": {
         "name": "Nachhaltiges Klebeband LOOPP",
+        "h1": "Nachhaltiges Klebeband LOOPP",
         "tagline": "Premium-Öko-Klebeband aus recycelten Kunststoffen ohne Kompromisse bei der Festigkeit.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nachhaltige Klebebänder",
@@ -1409,6 +1424,7 @@
       },
       "udrzitelna-paska-nopp": {
         "name": "Nachhaltiges Klebeband NOPP",
+        "h1": "Nachhaltiges Klebeband NOPP",
         "tagline": "Klebeband mit Trägerfolie aus biozirkulärem Material mit ISCC-PLUS-Zertifizierung.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nachhaltige Klebebänder",
@@ -1493,6 +1509,7 @@
       },
       "udrzitelna-paska-nopp-plus": {
         "name": "Nachhaltiges Klebeband NOPP+",
+        "h1": "Nachhaltiges Klebeband NOPP+",
         "tagline": "Klebeband mit zertifizierter biozirkulärer Folie und Klebstoff für maximale Reduktion des CO₂-Fußabdrucks.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Nachhaltige Klebebänder",
@@ -1577,6 +1594,7 @@
       },
       "bopp-paska-acrylic": {
         "name": "BOPP-Klebeband Akryl",
+        "h1": "BOPP-Klebeband Akryl",
         "tagline": "Zuverlässiges BOPP-Klebeband mit langer Lebensdauer.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP-Klebebänder",
@@ -1664,6 +1682,7 @@
       },
       "bopp-paska-hot-melt": {
         "name": "BOPP-Klebeband HOT MELT",
+        "h1": "BOPP-Klebeband HOT MELT",
         "tagline": "BOPP-Klebeband mit Hot-Melt-Klebstoff für schnelle, feste Haftung.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP-Klebebänder",
@@ -1729,6 +1748,7 @@
       },
       "bopp-paska-tack-plus": {
         "name": "BOPP-Klebeband TACK+",
+        "h1": "BOPP-Klebeband TACK+",
         "tagline": "HOT-MELT-Klebeband mit extremer Haftung und sofortigem Tack. Für anspruchsvolle Anwendungen.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP-Klebebänder",
@@ -1794,6 +1814,7 @@
       },
       "bopp-paska-extra-glue-plus": {
         "name": "BOPP-Klebeband EXTRA GLUE+",
+        "h1": "BOPP-Klebeband EXTRA GLUE+",
         "tagline": "Acrylklebeband mit erhöhter Klebstoffschicht für anspruchsvolle Oberflächen.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP-Klebebänder",
@@ -1859,6 +1880,7 @@
       },
       "bopp-paska-evergreen": {
         "name": "BOPP-Klebeband Evergreen",
+        "h1": "BOPP-Klebeband Evergreen",
         "tagline": "Acrylklebeband für extreme Bedingungen und Kälte.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP-Klebebänder",
@@ -1924,6 +1946,7 @@
       },
       "bopp-paska-evergreen-50": {
         "name": "BOPP-Klebeband ecoEVERGREEN 50%",
+        "h1": "BOPP-Klebeband ecoEVERGREEN 50%",
         "tagline": "Nachhaltiges Verpackungsklebeband aus 50 % recyceltem postindustriellem Material.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP-Klebebänder",
@@ -1989,6 +2012,7 @@
       },
       "bopp-paska-evergreen-100": {
         "name": "BOPP-Klebeband ecoEVERGREEN 100%",
+        "h1": "BOPP-Klebeband ecoEVERGREEN 100%",
         "tagline": "Nachhaltiges Verpackungsklebeband aus 100 % recyceltem postindustriellem Material.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP-Klebebänder",
@@ -2054,6 +2078,7 @@
       },
       "bopp-paska-tamper-evident": {
         "name": "BOPP-Klebeband Tamper Evident",
+        "h1": "BOPP-Klebeband Tamper Evident",
         "tagline": "BOPP-Klebeband mit Sicherheitsdruck zur sofortigen Erkennung unbefugten Öffnens.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP-Klebebänder",
@@ -2119,6 +2144,7 @@
       },
       "bopet-paska-eco-hit19": {
         "name": "BOPET-Klebeband ECO HIT19",
+        "h1": "BOPET-Klebeband ECO HIT19",
         "tagline": "BOPET-Klebeband aus 90 % recycelten PET-Flaschen.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET-Klebebänder",
@@ -2184,6 +2210,7 @@
       },
       "bopet-paska-eco-hit23": {
         "name": "BOPET-Klebeband ECO HIT23",
+        "h1": "BOPET-Klebeband ECO HIT23",
         "tagline": "Stärkeres BOPET-Klebeband aus 90 % recycelten PET-Flaschen.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET-Klebebänder",
@@ -2248,6 +2275,7 @@
       },
       "bopet-paska-ait23": {
         "name": "BOPET-Klebeband AIT23",
+        "h1": "BOPET-Klebeband AIT23",
         "tagline": "Festes Verpackungsklebeband mit Polyesterträger und Acrylklebstoff.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET-Klebebänder",
@@ -2312,6 +2340,7 @@
       },
       "bopet-paska-hit17": {
         "name": "BOPET-Klebeband HIT17",
+        "h1": "BOPET-Klebeband HIT17",
         "tagline": "Hochfestes Verpackungsklebeband mit Polyesterträger.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET-Klebebänder",
@@ -2376,6 +2405,7 @@
       },
       "bopet-paska-ate23": {
         "name": "BOPET-Klebeband ATE23",
+        "h1": "BOPET-Klebeband ATE23",
         "tagline": "Sicherheits-BOPET-Klebeband, das unbefugte Manipulation erkennbar macht.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET-Klebebänder",
@@ -2440,6 +2470,7 @@
       },
       "papirova-paska-kh80": {
         "name": "Papierklebeband KH80",
+        "h1": "Papierklebeband KH80",
         "tagline": "Exklusives Papierklebeband aus 100 % recyceltem Material – die perfekte Verbindung aus hoher Ästhetik, Soforthaftung und Rücksicht auf die Natur.",
         "category_slug": "papirove-pasky",
         "category_title": "Papierklebebänder",
@@ -2507,6 +2538,7 @@
       },
       "papirova-paska-c660": {
         "name": "Papierklebeband C660",
+        "h1": "Papierklebeband C660",
         "tagline": "Eine umweltfreundliche Lösung für elegantes Verpacken mit hoher Klebkraft.",
         "category_slug": "papirove-pasky",
         "category_title": "Papierklebebänder",
@@ -2574,6 +2606,7 @@
       },
       "papirova-paska-c680": {
         "name": "Papierklebeband C680",
+        "h1": "Papierklebeband C680",
         "tagline": "Dünneres Profil mit höherer Zugfestigkeit für effizientes Verpacken.",
         "category_slug": "papirove-pasky",
         "category_title": "Papierklebebänder",
@@ -2641,6 +2674,7 @@
       },
       "papirova-paska-c680-rt": {
         "name": "Papierklebeband C680 RT",
+        "h1": "Papierklebeband C680 RT",
         "tagline": "Kreuzweise glasfaserverstärktes Band für anspruchsvollste Sendungen.",
         "category_slug": "papirove-pasky",
         "category_title": "Papierklebebänder",
@@ -2708,6 +2742,7 @@
       },
       "papirova-paska-c680r": {
         "name": "Papierklebeband C680R",
+        "h1": "Papierklebeband C680R",
         "tagline": "Glasfaserverstärktes Band für sicheres Verpacken schwererer Kartons.",
         "category_slug": "papirove-pasky",
         "category_title": "Papierklebebänder",
@@ -2775,6 +2810,7 @@
       },
       "papirova-paska-c690": {
         "name": "Papierklebeband C690",
+        "h1": "Papierklebeband C690",
         "tagline": "Schweres Krepppapier für anspruchsvollste Kartons.",
         "category_slug": "papirove-pasky",
         "category_title": "Papierklebebänder",
@@ -2842,6 +2878,7 @@
       },
       "papirova-paska-c780": {
         "name": "Papierklebeband C780",
+        "h1": "Papierklebeband C780",
         "tagline": "Premium-Kombination aus Krepp und Naturkautschuk für anspruchsvolle Temperaturbedingungen.",
         "category_slug": "papirove-pasky",
         "category_title": "Papierklebebänder",
@@ -2909,6 +2946,7 @@
       },
       "papirova-paska-ks165": {
         "name": "Papierklebeband KS165",
+        "h1": "Papierklebeband KS165",
         "tagline": "Kompromisslose Papierlösung mit extremer Tragfähigkeit für schwerstes Industrieverpacken, Palettenfixierung und Umreifung.",
         "category_slug": "papirove-pasky",
         "category_title": "Papierklebebänder",
@@ -2976,6 +3014,7 @@
       },
       "odstranitelna-paska-eco-rit19": {
         "name": "Abziehbares Klebeband ECO RIT19",
+        "h1": "Abziehbares Klebeband ECO RIT19",
         "tagline": "Schonendes abziehbares Klebeband mit recyceltem Anteil.",
         "category_slug": "odstranitelne-pasky",
         "category_title": "Abziehbare Klebebänder",
@@ -3039,6 +3078,7 @@
       },
       "odstranitelna-paska-r28-32": {
         "name": "Abziehbares Klebeband R28-32",
+        "h1": "Abziehbares Klebeband R28-32",
         "tagline": "Abziehbares Klebeband, das nach dem Entfernen keine Spuren hinterlässt.",
         "category_slug": "odstranitelne-pasky",
         "category_title": "Abziehbare Klebebänder",
@@ -3102,6 +3142,7 @@
       },
       "vyztuzena-paska-rmpp32": {
         "name": "Verstärktes Klebeband RMPP32",
+        "h1": "Verstärktes Klebeband RMPP32",
         "tagline": "Verstärktes Klebeband mit Glasfasern zur Sicherung schwerer Lasten.",
         "category_slug": "vyztuzene-pasky",
         "category_title": "Verstärkte Klebebänder",
@@ -3165,6 +3206,7 @@
       },
       "vyztuzena-paska-rtpp32": {
         "name": "Verstärktes Klebeband RTPP32",
+        "h1": "Verstärktes Klebeband RTPP32",
         "tagline": "Kreuzverstärktes Klebeband für maximale Festigkeit in alle Richtungen.",
         "category_slug": "vyztuzene-pasky",
         "category_title": "Verstärkte Klebebänder",
@@ -3228,6 +3270,7 @@
       },
       "mopp-paska-s45-50": {
         "name": "MOPP-Klebeband S45-50",
+        "h1": "MOPP-Klebeband S45-50",
         "tagline": "Monoaxiales MOPP-Band mit extremer Festigkeit und null Dehnung.",
         "category_slug": "mopp-pasky",
         "category_title": "MOPP-Klebebänder",
@@ -3291,6 +3334,7 @@
       },
       "textilni-paska-bc": {
         "name": "Gewebe-Klebeband BC",
+        "h1": "Gewebe-Klebeband BC",
         "tagline": "Starkes Gewebeband (Duct Tape) für Reparaturen und universellen Einsatz.",
         "category_slug": "textilni-pasky",
         "category_title": "Gewebe-Klebebänder",
@@ -3354,6 +3398,7 @@
       },
       "textilni-paska-bc2": {
         "name": "Gewebe-Klebeband BC2",
+        "h1": "Gewebe-Klebeband BC2",
         "tagline": "Extra starkes Gewebeband mit hoher Zugfestigkeit.",
         "category_slug": "textilni-pasky",
         "category_title": "Gewebe-Klebebänder",
@@ -3417,6 +3462,7 @@
       },
       "textilni-paska-nu": {
         "name": "Gewebe-Klebeband NU",
+        "h1": "Gewebe-Klebeband NU",
         "tagline": "Universelles Gewebeband für schnelles Bündeln und Fixieren.",
         "category_slug": "textilni-pasky",
         "category_title": "Gewebe-Klebebänder",
@@ -3480,6 +3526,7 @@
       },
       "malirska-paska-c580": {
         "name": "Malerklebeband C580",
+        "h1": "Malerklebeband C580",
         "tagline": "Krepp-Malerklebeband für saubere Kanten beim regulären Streichen.",
         "category_slug": "malirske-pasky",
         "category_title": "Malerklebebänder",
@@ -3543,6 +3590,7 @@
       },
       "malirska-paska-cs60-80": {
         "name": "Malerklebeband CS60-80",
+        "h1": "Malerklebeband CS60-80",
         "tagline": "Hitzebeständiges Malerklebeband für Lackierung und anspruchsvolles Abkleben.",
         "category_slug": "malirske-pasky",
         "category_title": "Malerklebebänder",

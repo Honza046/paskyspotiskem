@@ -7,7 +7,7 @@
     var SUPPORTED = ['cs', 'en', 'de', 'it'];
     var DEFAULT = 'cs';
     var STORAGE_KEY = 'paskyonline_lang';
-    var I18N_VER = '83';
+    var I18N_VER = '85';
     var HTML_LANG = { cs: 'cs', en: 'en', de: 'de', it: 'it' };
     var currentLocale = null;
     var localeCache = {};
@@ -148,7 +148,10 @@
         var descKey = page === 'gallery' ? meta.gallery_description
             : (page === 'faq' ? meta.faq_description
             : (page === 'sortiment' && !isSortimentDetail ? meta.sortiment_description : null));
-        if (!descKey && page !== 'sortiment' && page !== 'faq') {
+        // Popisek homepage patri vyhradne homepage. Driv se aplikoval i na
+        // pruvodce a dalsi stranky a prepsal jim jejich vlastni meta description,
+        // takze v renderovanem DOM mely vsechny stejny popisek.
+        if (!descKey && page === 'home') {
             descKey = meta.home_description;
         }
         if (desc && descKey) {

@@ -74,7 +74,7 @@ GALLERY_MAP = [
 
 SORTIMENT_MAP = [
     ('>Sortiment</p>', ' data-i18n="sortiment.ui.label">Sortiment</p>'),
-    ('>Objevte naše lepicí pásky</h1>', ' data-i18n="sortiment.ui.title">Objevte naše lepicí pásky</h1>'),
+    ('>Lepicí pásky s potiskem na míru</h1>', ' data-i18n="sortiment.ui.title">Lepicí pásky s potiskem na míru</h1>'),
     ('>Filtr</div>', ' data-i18n="sortiment.ui.filter">Filtr</div>'),
     ('>Vymazat vše</button>', ' data-i18n="sortiment.ui.clear_all">Vymazat vše</button>'),
     ('>Nalezené produkty podle filtrů</h2>', ' data-i18n="sortiment.ui.results_title">Nalezené produkty podle filtrů</h2>'),

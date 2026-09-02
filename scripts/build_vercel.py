@@ -79,6 +79,76 @@ def absolutize_html(html: str) -> str:
     return html
 
 
+# Stranky generovane pres gen_landing.py. Drzime seznam na jednom miste,
+# aby ho pouzil patch loop i odkazy v paticce.
+LANDING_SLUGS = [
+    'kontakt',
+    'o-nas',
+    'reference',
+    'vyroba-lepicich-pasek',
+    'pasky-s-logem',
+    'pasky-s-potiskem-pro-eshopy',
+    'cena-pasky-s-potiskem',
+]
+
+FOOTER_LINKS = [
+    ('/sortiment', 'Sortiment pásek'),
+    ('/pasky-s-logem', 'Pásky s logem'),
+    ('/pasky-s-potiskem-pro-eshopy', 'Pásky pro e-shopy'),
+    ('/cena-pasky-s-potiskem', 'Cena a kalkulace'),
+    ('/vyroba-lepicich-pasek', 'Výroba pásek'),
+    ('/pruvodce', 'Průvodce výběrem'),
+    ('/galerie', 'Galerie realizací'),
+    ('/reference', 'Reference'),
+    ('/o-nas', 'O nás'),
+    ('/kontakt', 'Kontakt'),
+    ('/faq', 'Časté otázky'),
+]
+
+FOOTER_LINKS_MARKER = '<!-- FOOTER-LINKS -->'
+
+
+def ensure_footer_links(html: str) -> str:
+    """Prida do paticky radek internich odkazu. Kazda stranka tak odkazuje na vsechny ostatni."""
+    if FOOTER_LINKS_MARKER in html:
+        return html
+    anchor = '    <div class="border-t border-slate-800">'
+    if anchor not in html:
+        return html
+    items = '\n'.join(
+        f'                <a href="{href}" class="text-slate-400 transition-colors hover:text-orange-400">{label}</a>'
+        for href, label in FOOTER_LINKS
+    )
+    block = (
+        f'    {FOOTER_LINKS_MARKER}\n'
+        '    <div class="border-t border-slate-800">\n'
+        '        <div class="mx-auto max-w-7xl px-4 py-6">\n'
+        '            <nav class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm font-medium" aria-label="Odkazy v patičce">\n'
+        f'{items}\n'
+        '            </nav>\n'
+        '        </div>\n'
+        '    </div>\n'
+    )
+    return html.replace(anchor, block + anchor, 1)
+
+
+def repoint_nav(html: str) -> str:
+    """Presmeruje polozky Reference a Kontakty z kotev na samostatne URL."""
+    if '<!-- SITE-TOP -->' not in html or '<!-- /SITE-TOP -->' not in html:
+        return html
+    start = html.index('<!-- SITE-TOP -->')
+    end = html.index('<!-- /SITE-TOP -->')
+    top = html[start:end]
+    for old, new in [
+        ('href="/#reference"', 'href="/reference"'),
+        ('href="#reference"', 'href="/reference"'),
+        ('href="/#kontakt1"', 'href="/kontakt"'),
+        ('href="#kontakt1"', 'href="/kontakt"'),
+    ]:
+        top = top.replace(old, new)
+    return html[:start] + top + html[end:]
+
+
 def ensure_footer_credit(html: str) -> str:
     if 'footer-credit.css' in html:
         return html
@@ -100,10 +170,10 @@ def ensure_vercel_analytics(html: str) -> str:
     return html
 
 
-def apply_root_seo(path: Path) -> None:
+def apply_root_seo(path: Path, kind: str | None = None) -> None:
     if not path.exists():
         return
-    name = path.name
+    name = kind or path.name
     if name == 'index.html':
         content = apply_page_seo(
             path.read_text(encoding='utf-8'),
@@ -166,6 +236,8 @@ def patch_file(path: Path) -> None:
     if not path.exists():
         return
     content = absolutize_html(path.read_text(encoding='utf-8'))
+    content = repoint_nav(content)
+    content = ensure_footer_links(content)
     content = ensure_footer_credit(content)
     content = ensure_vercel_analytics(content)
     path.write_text(content, encoding='utf-8')
@@ -208,6 +280,7 @@ def main() -> int:
         ROOT / 'scripts' / 'gen_gallery.py',
         ROOT / 'scripts' / 'gen_products.py',
         ROOT / 'scripts' / 'gen_guides.py',
+        ROOT / 'scripts' / 'gen_landing.py',
     ]
     for script in scripts:
         if script.exists():
@@ -231,9 +304,25 @@ def main() -> int:
         for html_path in pruvodce_dir.rglob('index.html'):
             patch_file(html_path)
 
+    for slug in LANDING_SLUGS:
+        patch_file(ROOT / slug / 'index.html')
+
     for page in root_pages:
         apply_root_seo(page)
-    apply_root_seo(sortiment_dir / 'index.html')
+    apply_root_seo(sortiment_dir / 'index.html', kind='sortiment.html')
+
+    # Kopie /sortiment/ a /faq/ vznikaji drive nez se aplikuje SEO, takze by
+    # jinak zustaly se starym <title>. Prekopirujeme je az po SEO kroku.
+    shutil.copy2(ROOT / 'sortiment.html', sortiment_dir / 'index.html')
+    if (ROOT / 'faq.html').exists():
+        shutil.copy2(ROOT / 'faq.html', faq_dir / 'index.html')
+    print('  resynced sortiment/index.html + faq/index.html')
+
+    # Slouceni CSS az uplne nakonec, kdyz uz jsou vsechny stranky hotove.
+    bundle_script = ROOT / 'scripts' / 'bundle_css.py'
+    if bundle_script.exists():
+        print('  running bundle_css.py…')
+        subprocess.run([sys.executable, str(bundle_script)], cwd=ROOT, check=True)
 
     sitemap_script = ROOT / 'scripts' / 'gen_sitemap.py'
     if sitemap_script.exists():

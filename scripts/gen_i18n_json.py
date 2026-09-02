@@ -12,6 +12,16 @@ from pathlib import Path
 from typing import Any
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from seo import (  # noqa: E402
+    FAQ_DESCRIPTION,
+    FAQ_TITLE,
+    GALLERY_DESCRIPTION,
+    GALLERY_TITLE,
+    HOME_DESCRIPTION,
+    HOME_TITLE,
+    SORTIMENT_DESCRIPTION,
+    SORTIMENT_TITLE,
+)
 from i18n_product_builder import (  # noqa: E402
     CATEGORY_IT,
     load_gp_namespace,
@@ -475,6 +485,9 @@ def build_sortiment_categories_cs() -> dict[str, Any]:
         slug = cat["cat"]
         entry: dict[str, Any] = {
             "title": cat["title"],
+            # H1 drzime zvlast od "title", ktery zustava kratky pro drobecky a karty.
+            "h1": cat["h1"],
+            "seo_title": cat["seo_title"],
             "description": cat["description"],
             "intro": cat["intro"],
             "properties": {title: text for title, text in cat["properties"]},
@@ -505,6 +518,7 @@ def translate_categories(
             props_out[en_title] = en_text
         entry = {
             "title": tr["title"],
+            "h1": tr["title"],
             "description": tr["description"],
             "intro": tr["intro"],
             "properties": props_out,
@@ -524,12 +538,14 @@ def build_cs() -> dict[str, Any]:
         "meta": {
             "site_name": "Pásky s potiskem",
             "logo_alt": "Pásky s potiskem",
-            "home_title": "Pásky s potiskem | Lepicí pásky s logem na míru | ALFA IN",
-            "home_description": "Výroba a prodej lepicích pásek s potiskem: pásky s logem pro firmy, e-shopy a sklady. BOPP, eko a speciální pásky, potisk až 8 barev, dodání po celé ČR. Nezávazná kalkulace.",
-            "gallery_title": "Galerie pásek s potiskem | Realizace ALFA IN",
-            "gallery_description": "Ukázky lepicích pásek s potiskem: loga firem, bezpečnostní pásky, eko varianty a speciální tisky. Inspirace pro vaši pásku s potiskem na míru.",
-            "sortiment_title": "Sortiment lepicích pásek | Pásky s potiskem",
-            "sortiment_description": "Kompletní sortiment lepicích pásek s potiskem: BOPP, BOPET, papírové, eko a speciální pásky. Vyberte materiál a poptávejte pásku na míru od výrobce ALFA IN.",
+            "home_title": HOME_TITLE,
+            "home_description": HOME_DESCRIPTION,
+            "gallery_title": GALLERY_TITLE,
+            "gallery_description": GALLERY_DESCRIPTION,
+            "sortiment_title": SORTIMENT_TITLE,
+            "sortiment_description": SORTIMENT_DESCRIPTION,
+            "faq_title": FAQ_TITLE,
+            "faq_description": FAQ_DESCRIPTION,
         },
         "nav": {
             "tagline": "ALFA IN - výroba, poradenství, prodej a servis",
@@ -879,7 +895,7 @@ def build_cs() -> dict[str, Any]:
         "sortiment": {
             "ui": {
                 "label": "Sortiment",
-                "title": "Objevte naše lepicí pásky",
+                "title": "Lepicí pásky s potiskem na míru",
                 "subtitle": "Vyberte typ produktu podle materiálu a určení. U každé kategorie najdete detailní přehled dostupných variant.",
                 "filter": "Filtr",
                 "clear_all": "Vymazat vše",

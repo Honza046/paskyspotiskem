@@ -25,6 +25,14 @@ def collect_urls() -> list[tuple[str, str, str]]:
         ('/pruvodce/papirove-fsc-pasky', 'monthly', '0.75'),
         ('/pruvodce/eco-plus-recyklovane-pasky', 'monthly', '0.75'),
         ('/pruvodce/bezpecnostni-tamper-evident', 'monthly', '0.75'),
+        # Samostatne vstupni stranky (gen_landing.py)
+        ('/pasky-s-logem', 'monthly', '0.9'),
+        ('/pasky-s-potiskem-pro-eshopy', 'monthly', '0.9'),
+        ('/cena-pasky-s-potiskem', 'monthly', '0.9'),
+        ('/vyroba-lepicich-pasek', 'monthly', '0.85'),
+        ('/o-nas', 'monthly', '0.7'),
+        ('/reference', 'monthly', '0.7'),
+        ('/kontakt', 'monthly', '0.7'),
     ]
     sortiment_root = ROOT / 'sortiment'
     if sortiment_root.is_dir():

@@ -18,3 +18,7 @@ node_modules/
 # Debug / scratch
 .cursor/debug-*.log
 assets/js/perf-debug.js
+
+# Zdrojove nekomprimovane obrazky (nepatri do deploye)
+*.orig.jpg
+*.orig.png

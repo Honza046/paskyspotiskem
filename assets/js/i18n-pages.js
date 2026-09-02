@@ -172,7 +172,7 @@
 
         var heroH1 = document.querySelector('main section h1');
         var heroP = heroH1 ? heroH1.parentElement.querySelector('p') : null;
-        setText(heroH1, cat.title);
+        setText(heroH1, cat.h1 || cat.title);
         setText(heroP, cat.intro);
 
         var seriesNote = document.querySelector('[data-series-note] p');
@@ -244,7 +244,7 @@
             }
         });
 
-        document.title = cat.title + ' | ' + t('meta.site_name', 'Pásky s potiskem');
+        document.title = cat.seo_title || (cat.title + ' | ' + t('meta.site_name', 'Pásky s potiskem'));
     }
 
     function setBackLink(link, label) {
@@ -282,7 +282,7 @@
         var catLabel = document.querySelector('main span.text-orange-600.uppercase');
         if (catLabel) setText(catLabel, cat.title);
         var h1 = document.querySelector('main h1');
-        if (h1) setText(h1, prod.name);
+        if (h1) setText(h1, prod.h1 || prod.name);
         var tagline = document.querySelector('main h1 + p');
         if (tagline) setText(tagline, prod.tagline);
 
@@ -512,7 +512,7 @@
             if (siteName) setText(logoTagline, siteName);
         }
 
-        document.title = prod.name + ' | ' + t('meta.site_name', 'Pásky s potiskem');
+        document.title = prod.seo_title || (prod.name + ' | ' + t('meta.site_name', 'Pásky s potiskem'));
     }
 
     function colorsLabel(num, tree) {

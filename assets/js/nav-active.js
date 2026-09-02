@@ -53,10 +53,10 @@
         if (/sortiment/i.test(href)) {
             return 'sortiment';
         }
-        if (href === '#reference' || /#reference(?:$|[?#])/.test(href)) {
+        if (/\/reference(?:$|[?#/])/i.test(href) || href === '#reference' || /#reference(?:$|[?#])/.test(href)) {
             return 'reference';
         }
-        if (href === '#kontakt1' || /#kontakt/i.test(href)) {
+        if (/\/kontakt(?:$|[?#/])/i.test(href) || href === '#kontakt1' || /#kontakt/i.test(href)) {
             return 'contact';
         }
         if (/#uvod(?:$|[?#])/.test(href)) {
@@ -102,6 +102,12 @@
         }
         if (/sortiment/i.test(path)) {
             return 'sortiment';
+        }
+        if (/^\/reference(?:$|\/)/i.test(path)) {
+            return 'reference';
+        }
+        if (/^\/kontakt(?:$|\/)/i.test(path)) {
+            return 'contact';
         }
         if (/index\.html$/i.test(path) || /\/$/.test(path)) {
             return null;

@@ -56,22 +56,22 @@ def slugify(s):
 # Category meta (cover, texts, properties, applications)
 # ---------------------------------------------------------------------------
 CATS = [
- {"title":"Udržitelné pásky","cat":"udrzitelne-pasky","cover":"Udržitelné Pásky/eco+50.jpg",
+ {"title":"Udržitelné pásky","cat":"udrzitelne-pasky","h1":"Udržitelné pásky s potiskem","seo_title":"Udržitelné pásky s potiskem | Ekologické balicí pásky","cover":"Udržitelné Pásky/eco+50.jpg",
   "description":"Inovativní obalová řešení vyrobená z recyklovaných materiálů s ohledem na minimální ekologickou stopu a podporu cirkulární ekonomiky.",
   "intro":"Udržitelná řada pásek je vyrobena z recyklovaných materiálů a navržena tak, aby minimalizovala dopad na životní prostředí. Pomáhá firmám plnit ESG cíle a budovat obraz zodpovědné značky bez kompromisů ve výkonu.",
   "properties":[("Recyklovaný obsah","Materiály s vysokým podílem recyklátu."),("Nižší uhlíková stopa","Šetrnější výroba a cirkulární přístup."),("Bez kompromisů","Ekologie při zachování spolehlivého lepení.")],
   "apps":["Firmy s ESG a udržitelnými cíli","Zelené balení pro e-shopy","Cirkulární obalové procesy","Budování zodpovědné značky"]},
- {"title":"BOPP pásky","cat":"bopp-pasky","cover":"BOPP Tapes/BOPP_Cover.webp",
+ {"title":"BOPP pásky","cat":"bopp-pasky","h1":"BOPP pásky s potiskem","seo_title":"BOPP pásky s potiskem | Balicí pásky s logem","cover":"BOPP Tapes/BOPP_Cover.webp",
   "description":"Nejrozšířenější průmyslové balicí pásky z biaxiálně orientovaného polypropylenu. Vynikají skvělou pevností v tahu a dlouhou životností.",
   "intro":"BOPP pásky jsou standardem pro každodenní balení ve výrobě, logistice i e-commerce. Fólie z biaxiálně orientovaného polypropylenu nabízí vynikající poměr ceny a výkonu, dostupnost v akrylovém i HOT MELT provedení a širokou škálu šířek a barev.",
   "properties":[("Vynikající poměr cena/výkon","Špičkový výkon za příznivou cenu pro každodenní průmyslové i e-commerce balení."),("Ekologická šetrnost","Neobsahuje prostředí škodlivé látky jako PVC."),("Fyzikální a chemická stálost","Stabilní vlastnosti fólie i lepidla při skladování, přepravě a běžném provozu.")],
   "apps":["Standardní uzavírání kartonů","Automatické balicí stroje","Expedice a skladová logistika","Potisk firemním logem a informacemi"]},
- {"title":"BOPET pásky","cat":"bopet-pasky","cover":"BOPET Tapes/BOPET_Cover.webp",
+ {"title":"BOPET pásky","cat":"bopet-pasky","h1":"BOPET pásky s potiskem","seo_title":"BOPET pásky s potiskem | Polyesterové lepicí pásky","cover":"BOPET Tapes/BOPET_Cover.webp",
   "description":"Prémiové polyesterové pásky s extrémní odolností proti roztržení, chemikáliím a teplotním výkyvům. Navržené pro nejnáročnější průmyslové aplikace.",
   "intro":"BOPET pásky na bázi polyesterové fólie jsou určeny tam, kde běžné pásky nestačí. Zvládají vysoké teploty, agresivní chemické prostředí i mechanické namáhání a udrží si své vlastnosti i v extrémních podmínkách.",
   "properties":[("Teplotní odolnost","Stabilní výkon při vysokých i nízkých teplotách."),("Chemická odolnost","Odolává rozpouštědlům, olejům a agresivnímu prostředí."),("Odolnost proti roztržení","Pevná polyesterová fólie s minimální tažností.")],
   "apps":["Náročné průmyslové provozy","Maskování při práškovém lakování","Fixace v prostředí s vysokými teplotami","Elektrotechnika a specializovaná výroba"]},
- {"title":"Papírové pásky","cat":"papirove-pasky","cover":"Papírové Pásky/Papírovácover-nobg.png",
+ {"title":"Papírové pásky","cat":"papirove-pasky","h1":"Papírové pásky s potiskem","seo_title":"Papírové pásky s potiskem | Kraft pásky FSC","cover":"Papírové Pásky/Papírovácover-nobg.png",
   "description":"Ekologické řešení pro elegantní balení s vysokou lepivostí, ideální pro čistý vzhled a plně recyklovatelné kartonové obaly.",
   "intro":"Papírové lepicí pásky spojují spolehlivé lepení s maximální ekologickou šetrností. Díky papírovému nosiči jsou plně recyklovatelné společně s kartonem a představují elegantní, čistě vypadající řešení pro firmy, které dbají na udržitelnost i vizuální dojem zásilek.",
   "series_note":"C660, C680, C680R, C680RT a C690 jsou dostupné pro ruční i strojové balení a vyrábějí se z papíru FSC Mix Credit. Všechny tyto typy včetně C780 lze potisknout (až 4 barvy). C680 a C680R jsou dostupné také v bílé barvě. FSC® licence: FSC-C159046.",
@@ -82,27 +82,27 @@ CATS = [
   ],
   "properties":[("Plná recyklovatelnost","Páska i karton putují do jednoho kontejneru – bez nutnosti oddělovat materiály."),("Vysoká lepivost","Spolehlivé přilnutí i na recyklovaný karton a členité povrchy."),("Čistý design","Matný papírový povrch působí prémiově a lze jej snadno potisknout logem.")],
   "apps":["E-shopy s důrazem na udržitelné balení","Uzavírání kartonových krabic a obalů","Firemní branding přímo na zásilce","Ruční i poloautomatické balení"]},
- {"title":"Odstranitelné pásky","cat":"odstranitelne-pasky","cover":"Odstranitelné Pásky/removable cover.webp",
+ {"title":"Odstranitelné pásky","cat":"odstranitelne-pasky","h1":"Odstranitelné lepicí pásky","seo_title":"Odstranitelné lepicí pásky bez stop | ALFA IN","cover":"Odstranitelné Pásky/removable cover.webp",
   "description":"Pásky se speciálním složením lepidla, které nezanechává žádné stopy po odlepení. Ideální pro dočasné značení, ochranu citlivých povrchů nebo logistické procesy.",
   "intro":"Odstranitelné pásky používají speciální lepidlo, které pevně drží, ale po odlepení nezanechává žádné zbytky ani poškození povrchu. Jsou ideální pro dočasné aplikace a ochranu citlivých materiálů.",
   "properties":[("Beze stop","Po odlepení nezůstává lepidlo ani reziduum."),("Šetrné k povrchu","Nepoškodí lak, sklo ani citlivé materiály."),("Spolehlivá drživost","Drží po celou dobu potřebné aplikace.")],
   "apps":["Dočasné značení a etikety","Ochrana citlivých povrchů","Logistické a výrobní procesy","Fixace, která se musí opět odstranit"]},
- {"title":"Vyztužené pásky","cat":"vyztuzene-pasky","cover":"Vyztužené Pásky/Reinforcedcover.webp",
+ {"title":"Vyztužené pásky","cat":"vyztuzene-pasky","h1":"Vyztužené lepicí pásky","seo_title":"Vyztužené lepicí pásky s filamenty | ALFA IN","cover":"Vyztužené Pásky/Reinforcedcover.webp",
   "description":"Pásky zpevněné podélnými nebo křížovými skelnými vlákny. Nabízejí maximální pevnost při fixaci těžkých nákladů, palet a nadrozměrných balíků.",
   "intro":"Vyztužené (filament) pásky obsahují skelná vlákna vedená podélně nebo křížem, která zásadně zvyšují pevnost v tahu. Jsou určené pro fixaci těžkých a nadrozměrných zásilek, kde je potřeba absolutní jistota.",
   "properties":[("Skelná vlákna","Podélné nebo křížové vyztužení pro maximální pevnost."),("Nosnost","Spolehlivá fixace těžkých břemen a palet."),("Odolnost proti přetržení","Vydrží i vysoké tahové zatížení.")],
   "apps":["Fixace těžkých a nadrozměrných balíků","Zajištění zboží na paletách","Svazování trubek, profilů a tyčí","Náročná přeprava a export"]},
- {"title":"MOPP pásky","cat":"mopp-pasky","cover":"MOPP Pásky/moppcvoer.webp",
+ {"title":"MOPP pásky","cat":"mopp-pasky","h1":"MOPP pásky pro fixaci","seo_title":"MOPP pásky pro pevnou fixaci palet | ALFA IN","cover":"MOPP Pásky/moppcvoer.webp",
   "description":"Monoaxiálně orientované pásky s extrémní pevností v jednom směru a nulovou elasticitou. Speciálně určené pro fixaci elektrospotřebičů, komponentů nebo stahování palet.",
   "intro":"MOPP pásky mají monoaxiálně orientovanou fólii s extrémní pevností v podélném směru a prakticky nulovou tažností. Nahrazují vyztužené pásky tam, kde je potřeba pevná fixace bez skelných vláken.",
   "properties":[("Extrémní pevnost","Vysoká pevnost v tahu v jednom směru."),("Nulová elasticita","Fixace se nepovolí ani při zatížení."),("Bez skelných vláken","Čistá fixace bez uvolňujících se vláken.")],
   "apps":["Fixace dveří elektrospotřebičů","Zajištění komponentů během přepravy","Stahování a fixace palet","Svazování bez skelných vláken"]},
- {"title":"Textilní lepicí pásky","cat":"textilni-pasky","cover":"Textilní Lepící Pásky/Duct_Cover-2.webp",
+ {"title":"Textilní lepicí pásky","cat":"textilni-pasky","h1":"Textilní lepicí pásky","seo_title":"Textilní lepicí pásky a duct tape | ALFA IN","cover":"Textilní Lepící Pásky/Duct_Cover-2.webp",
   "description":"Vysoce pevné a univerzální pásky zpevněné textilní mřížkou. Perfektně drží na drsném povrchu, snadno se trhají rukou a jsou ideální pro rychlé opravy i svazování.",
   "intro":"Textilní (duct) pásky jsou nepostradatelným univerzálem. Textilní výztuž jim dodává vysokou pevnost a zároveň umožňuje snadné odtržení rukou bez nůžek. Skvěle drží i na hrubých a nerovných površích.",
   "properties":[("Textilní výztuž","Vysoká pevnost a odolnost proti protržení."),("Trhání rukou","Rychlá práce bez nutnosti nářadí."),("Přilnavost na drsný povrch","Drží na kovu, dřevě, betonu i plastu.")],
   "apps":["Rychlé opravy a provizorní spoje","Svazování a fixace předmětů","Zpevnění balíků a obalů","Údržba, montáže a řemeslo"]},
- {"title":"Malířské pásky","cat":"malirske-pasky","cover":"Malířské Pásky/malířskácover.webp",
+ {"title":"Malířské pásky","cat":"malirske-pasky","h1":"Malířské krepové pásky","seo_title":"Malířské pásky pro ostré hrany | ALFA IN","cover":"Malířské Pásky/malířskácover.webp",
   "description":"Krepové papírové pásky navržené pro přesné zakrývání při malování a lakování. Chrání hrany před protečením barvy a po dokončení práce se čistě odlepí.",
   "intro":"Malířské krepové pásky zajišťují ostré a čisté hrany při malování a lakování. Papírový krepový nosič se dobře přizpůsobí povrchu, snadno se trhá a po dokončení práce se odlepí bez zbytků lepidla.",
   "properties":[("Ostré hrany","Zabraňuje protečení barvy pod pásku."),("Čisté odlepení","Po práci nezanechává lepidlo ani stopy."),("Snadná aplikace","Krep se přizpůsobí tvaru a snadno se trhá.")],
@@ -1203,6 +1203,18 @@ CATEGORY_CTA = {
 def category_ctas(cat):
     return CATEGORY_CTA.get(cat['cat'], ('Vyžádat kalkulaci', 'Poptat z této kategorie'))
 
+def product_h1(cat, p):
+    """H1 produktu. Klicove slovo pridavame jen tam, kde potisk skutecne nabizime."""
+    if cat['cat'] in SAMPLE_CATEGORIES:
+        return p['name'] + ' s potiskem'
+    return p['name']
+
+def product_seo_title(cat, p):
+    """Unikatni <title> produktu s kategorii pro kontext."""
+    if cat['cat'] in SAMPLE_CATEGORIES:
+        return p['name'] + ' s potiskem na míru | ALFA IN'
+    return '%s | %s | ALFA IN' % (p['name'], cat['title'])
+
 def product_ctas(cat, p):
     slug = cat['cat']
     name = p['name']
@@ -1575,9 +1587,9 @@ def product_detail_image_cls(cat_slug):
         return 'h-[360px] w-auto max-w-none scale-[1.35] ' + base + ' sm:h-[440px] sm:scale-[1.4]'
     return 'h-[360px] w-full ' + base + ' sm:h-[440px]'
 
-def page(title, description, path, main, schemas=None, og_image=None, og_type='website'):
+def page(title, description, path, main, schemas=None, og_image=None, og_type='website', seo_title=None):
     p = header + main + footer
-    full_title = page_title(title)
+    full_title = seo_title or page_title(title)
     image = og_image or '/images/slide-pasky-1920x624.jpg'
     if image and not image.startswith('/'):
         image = '/' + image
@@ -1674,10 +1686,10 @@ for cat in CATS:
 
 </main>
 
-'''%(esc(cat["title"]),esc(cat["title"]),esc(cat["intro"]),category_series_note_html(cat),esc(cat_cta[0]),props,cards,apps,BACK,esc(cat_cta[1]))
+'''%(esc(cat["title"]),esc(cat["h1"]),esc(cat["intro"]),category_series_note_html(cat),esc(cat_cta[0]),props,cards,apps,BACK,esc(cat_cta[1]))
     os.makedirs("sortiment/%s"%cat["cat"],exist_ok=True)
     cat_path = f'/sortiment/{cat["cat"]}'
-    cat_desc = category_meta_description(cat['title'], cat['description'])
+    cat_desc = category_meta_description(cat['h1'], cat['description'])
     cat_schemas = [
         breadcrumb_schema([
             ('/', 'Domů'),
@@ -1689,6 +1701,7 @@ for cat in CATS:
         cat["title"], cat_desc, cat_path, main,
         schemas=cat_schemas,
         og_image=cat['cover'],
+        seo_title=cat["seo_title"],
     ))
 print("rebuilt %d category pages"%len(CATS))
 
@@ -1797,8 +1810,8 @@ for cat in CATS:
 </main>
 
 '''%(cat["cat"],esc(cat["title"]),esc(p["name"]),
-     product_detail_image_box(cat["cat"]),url(p["image"]),esc(p["name"] + ' s potiskem – ALFA IN'),product_detail_image_cls(cat["cat"]),
-     esc(cat["title"]),esc(p["name"]),
+     product_detail_image_box(cat["cat"]),url(p["image"]),esc(p["name"] + ' s potiskem od výrobce ALFA IN'),product_detail_image_cls(cat["cat"]),
+     esc(cat["title"]),esc(product_h1(cat, p)),
      product_series_note_html(cat, p),
      product_seo_body_html(cat["cat"], p["name"]),
      *[esc(x) for x in product_spec_pills(p)],
@@ -1825,6 +1838,7 @@ for cat in CATS:
             schemas=prod_schemas,
             og_image=url(product_public_image(p)) if not product_public_image(p).startswith('/') else product_public_image(p),
             og_type='product',
+            seo_title=product_seo_title(cat, p),
         ))
         n+=1
 print("generated %d product detail pages"%n)

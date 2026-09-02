@@ -698,9 +698,11 @@ def faq_ui(lang: str) -> dict[str, Any]:
 
 def faq_meta(lang: str) -> dict[str, str]:
     if lang == "cs":
+        # Ceska verze se bere ze seo.py, aby odpovidala staticke HTML hlavicce.
+        from seo import FAQ_DESCRIPTION, FAQ_TITLE
         return {
-            "faq_title": "FAQ | Pásky s potiskem: otázky a odpovědi",
-            "faq_description": "Časté otázky k páskám s potiskem: minimální odběr, dodací lhůty, HOT MELT vs Akryl, potisk, vzorky a doprava. Odpovědi od výrobce ALFA IN.",
+            "faq_title": FAQ_TITLE,
+            "faq_description": FAQ_DESCRIPTION,
         }
     if lang == "en":
         return {

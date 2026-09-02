@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from seo import (  # noqa: E402
     apply_page_seo,
+    article_schema,
     breadcrumb_schema,
     faq_schema,
     page_title,
@@ -23,11 +24,12 @@ esc = html.escape
 GUIDES = [
     {
         "slug": "pasky-s-potiskem",
+        "seo_title": "Pásky s potiskem na míru | Jak je vybrat | ALFA IN",
         "title": "Pásky s potiskem na míru",
         "h1": "Pásky s potiskem na míru",
         "description": (
-            "Pásky s potiskem na míru od ALFA IN: branding zásilek, výběr BOPP HOT MELT / Akryl, "
-            "papírové FSC a ECO+, minimální odběr a dodání 3–4 týdny."
+            "Jak vybrat pásku s potiskem na míru. Branding zásilek, volba mezi BOPP HOT MELT "
+            "a akrylem, papírové FSC i ECO+ varianty, minimální odběr a dodání do 4 týdnů."
         ),
         "intro": (
             "Hledáte potištěné lepicí pásky pro firmu, e-shop nebo sklad? Nabízíme řešení na míru přesně "
@@ -94,10 +96,11 @@ GUIDES = [
     },
     {
         "slug": "hot-melt-vs-akryl",
+        "seo_title": "HOT MELT nebo akryl | Srovnání lepidel na pásky | ALFA IN",
         "title": "Hotmelt, nebo akryl?",
         "h1": "Hotmelt, nebo akryl? Jak vybrat správnou BOPP lepicí pásku",
         "description": (
-            "Hotmelt vs Akryl u BOPP pásek s potiskem: okamžitá lepivost, UV odolnost, skladování "
+            "Srovnání lepidel HOT MELT a akryl u BOPP pásek s potiskem. Okamžitá lepivost, UV odolnost, skladování "
             "a ideální použití pro e-commerce i průmyslové linky."
         ),
         "intro": (
@@ -153,6 +156,7 @@ GUIDES = [
     },
     {
         "slug": "skladovani-aplikace-teplota",
+        "seo_title": "Skladování a aplikace lepicích pásek | Teploty | ALFA IN",
         "title": "Skladování, aplikace a teplota",
         "h1": "Skladování, aplikace a teplotní odolnost lepicích pásek",
         "description": (
@@ -210,10 +214,11 @@ GUIDES = [
     },
     {
         "slug": "papirove-fsc-pasky",
+        "seo_title": "Papírové FSC pásky | Ekologické balení zásilek | ALFA IN",
         "title": "Papírové FSC pásky",
         "h1": "Papírové FSC pásky",
         "description": (
-            "Papírové pásky s FSC certifikací a potiskem: KH80, C660, C680/R/RT, C690 a KS125. "
+            "Papírové pásky s certifikací FSC a potiskem. Typy KH80, C660, C680, C690 a KS125. "
             "Recyklace s kartonem, hotmelt lepidlo, e-commerce i B2B."
         ),
         "intro": (
@@ -262,10 +267,11 @@ GUIDES = [
     },
     {
         "slug": "eco-plus-recyklovane-pasky",
+        "seo_title": "ECO+ a recyklované pásky | Udržitelné balení | ALFA IN",
         "title": "ECO+ a recyklované pásky",
         "h1": "ECO+ a recyklované pásky s potiskem",
         "description": (
-            "Udržitelné pásky s potiskem: ECO+ 50/80/100, NOPP/NOPP+ ISCC PLUS, LOOPP, POLY+, "
+            "Udržitelné pásky s potiskem. Řady ECO+ 50, 80 a 100, dále NOPP+ ISCC PLUS, LOOPP a POLY+, "
             "AIRTAPE a ecoHIT. Bez kompromisů v pevnosti a lepivosti."
         ),
         "intro": (
@@ -315,10 +321,11 @@ GUIDES = [
     },
     {
         "slug": "bezpecnostni-tamper-evident",
+        "seo_title": "Tamper Evident pásky | Bezpečnostní lepicí páska",
         "title": "Bezpečnostní Tamper Evident",
         "h1": "Bezpečnostní Tamper Evident pásky s potiskem",
         "description": (
-            "Tamper Evident pásky s potiskem: VOID efekt při neoprávněném otevření, branding zásilky "
+            "Bezpečnostní pásky Tamper Evident s potiskem. VOID efekt při neoprávněném otevření, branding zásilky "
             "a ochrana elektroniky, kosmetiky i cenného zboží."
         ),
         "intro": (
@@ -485,13 +492,14 @@ def prepare_guide_chrome(header: str) -> str:
     return header
 
 
-def write_page(path: Path, title: str, description: str, url_path: str, main: str, schemas: list):
+def write_page(path: Path, title: str, description: str, url_path: str, main: str, schemas: list,
+               seo_title: str | None = None):
     header, footer = load_chrome()
     header = prepare_guide_chrome(header)
     html_doc = header + main + footer
     html_doc = apply_page_seo(
         html_doc,
-        title=page_title(title),
+        title=seo_title or page_title(title),
         description=description,
         path=url_path,
         schemas=schemas,
@@ -507,10 +515,12 @@ def main() -> None:
     write_page(
         ROOT / "pruvodce" / "index.html",
         "Průvodce páskami s potiskem",
-        "Průvodce výběrem pásek s potiskem: HOT MELT vs Akryl, e-shopy, papírové FSC a ECO+ recyklované pásky.",
+        "Poradíme s výběrem lepicí pásky s potiskem. Srovnání HOT MELT a akrylu, papírové FSC pásky, "
+        "recyklované ECO+ a bezpečnostní Tamper Evident varianty.",
         "/pruvodce",
         guide_index_main(),
         [breadcrumb_schema([("/", "Domů"), ("/pruvodce", "Průvodce")])],
+        seo_title="Jak vybrat lepicí pásku s potiskem | Průvodce | ALFA IN",
     )
     for g in GUIDES:
         schemas = [
@@ -518,7 +528,12 @@ def main() -> None:
                 ("/", "Domů"),
                 ("/pruvodce", "Průvodce"),
                 (f"/pruvodce/{g['slug']}", g["title"]),
-            ])
+            ]),
+            article_schema(
+                headline=g["h1"],
+                description=g["description"],
+                path=f"/pruvodce/{g['slug']}",
+            ),
         ]
         if g.get("faqs"):
             schemas.append(faq_schema(g["faqs"]))
@@ -529,6 +544,7 @@ def main() -> None:
             f"/pruvodce/{g['slug']}",
             guide_main(g),
             schemas,
+            seo_title=g.get("seo_title"),
         )
 
 

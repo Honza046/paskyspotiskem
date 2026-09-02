@@ -2,12 +2,12 @@
   "meta": {
     "site_name": "Pásky s potiskem",
     "logo_alt": "Pásky s potiskem",
-    "home_title": "Pásky s potiskem | Lepicí pásky s logem na míru | ALFA IN",
-    "home_description": "Výroba a prodej lepicích pásek s potiskem: pásky s logem pro firmy, e-shopy a sklady. BOPP, eko a speciální pásky, potisk až 8 barev, dodání po celé ČR. Nezávazná kalkulace.",
-    "gallery_title": "Galerie pásek s potiskem | Realizace ALFA IN",
-    "gallery_description": "Ukázky lepicích pásek s potiskem: loga firem, bezpečnostní pásky, eko varianty a speciální tisky. Inspirace pro vaši pásku s potiskem na míru.",
-    "sortiment_title": "Sortiment lepicích pásek | Pásky s potiskem",
-    "sortiment_description": "Kompletní sortiment lepicích pásek s potiskem: BOPP, BOPET, papírové, eko a speciální pásky. Vyberte materiál a poptávejte pásku na míru od výrobce ALFA IN.",
+    "home_title": "Pásky s potiskem na míru | Lepicí pásky s logem | ALFA IN",
+    "home_description": "Vyrábíme lepicí pásky s potiskem a vlastním logem pro firmy, e-shopy a sklady. BOPP HOT MELT i Akryl, papírové FSC, ECO+ a speciální pásky. Potisk až 10 barev, minimální odběr od 360 ks, vzorky zdarma a kalkulace po celé ČR.",
+    "gallery_title": "Galerie pásek s potiskem | Realizace a reference | ALFA IN",
+    "gallery_description": "Ukázky vyrobených lepicích pásek s potiskem. Loga firem, bezpečnostní pásky, udržitelné varianty a vícebarevné tisky. Inspirace pro vaši pásku s logem na míru.",
+    "sortiment_title": "Lepicí pásky s potiskem | Kompletní sortiment | ALFA IN",
+    "sortiment_description": "Kompletní sortiment lepicích pásek s potiskem. BOPP, BOPET, papírové, udržitelné a speciální pásky s vlastním logem. Vyberte materiál a poptejte pásku na míru od výrobce.",
     "faq_title": "FAQ | Pásky s potiskem: otázky a odpovědi",
     "faq_description": "Časté otázky k páskám s potiskem: minimální odběr, dodací lhůty, HOT MELT vs Akryl, potisk, vzorky a doprava. Odpovědi od výrobce ALFA IN.",
     "langNames": {
@@ -689,7 +689,7 @@
   "sortiment": {
     "ui": {
       "label": "Sortiment",
-      "title": "Objevte naše lepicí pásky",
+      "title": "Lepicí pásky s potiskem na míru",
       "subtitle": "Vyberte typ produktu podle materiálu a určení. U každé kategorie najdete detailní přehled dostupných variant.",
       "filter": "Filtr",
       "clear_all": "Vymazat vše",
@@ -723,6 +723,8 @@
     "categories": {
       "udrzitelne-pasky": {
         "title": "Udržitelné pásky",
+        "h1": "Udržitelné pásky s potiskem",
+        "seo_title": "Udržitelné pásky s potiskem | Ekologické balicí pásky",
         "description": "Inovativní obalová řešení vyrobená z recyklovaných materiálů s ohledem na minimální ekologickou stopu a podporu cirkulární ekonomiky.",
         "intro": "Udržitelná řada pásek je vyrobena z recyklovaných materiálů a navržena tak, aby minimalizovala dopad na životní prostředí. Pomáhá firmám plnit ESG cíle a budovat obraz zodpovědné značky bez kompromisů ve výkonu.",
         "properties": {
@@ -739,6 +741,8 @@
       },
       "bopp-pasky": {
         "title": "BOPP pásky",
+        "h1": "BOPP pásky s potiskem",
+        "seo_title": "BOPP pásky s potiskem | Balicí pásky s logem",
         "description": "Nejrozšířenější průmyslové balicí pásky z biaxiálně orientovaného polypropylenu. Vynikají skvělou pevností v tahu a dlouhou životností.",
         "intro": "BOPP pásky jsou standardem pro každodenní balení ve výrobě, logistice i e-commerce. Fólie z biaxiálně orientovaného polypropylenu nabízí vynikající poměr ceny a výkonu, dostupnost v akrylovém i HOT MELT provedení a širokou škálu šířek a barev.",
         "properties": {
@@ -755,6 +759,8 @@
       },
       "bopet-pasky": {
         "title": "BOPET pásky",
+        "h1": "BOPET pásky s potiskem",
+        "seo_title": "BOPET pásky s potiskem | Polyesterové lepicí pásky",
         "description": "Prémiové polyesterové pásky s extrémní odolností proti roztržení, chemikáliím a teplotním výkyvům. Navržené pro nejnáročnější průmyslové aplikace.",
         "intro": "BOPET pásky na bázi polyesterové fólie jsou určeny tam, kde běžné pásky nestačí. Zvládají vysoké teploty, agresivní chemické prostředí i mechanické namáhání a udrží si své vlastnosti i v extrémních podmínkách.",
         "properties": {
@@ -771,6 +777,8 @@
       },
       "papirove-pasky": {
         "title": "Papírové pásky",
+        "h1": "Papírové pásky s potiskem",
+        "seo_title": "Papírové pásky s potiskem | Kraft pásky FSC",
         "description": "Ekologické řešení pro elegantní balení s vysokou lepivostí, ideální pro čistý vzhled a plně recyklovatelné kartonové obaly.",
         "intro": "Papírové lepicí pásky spojují spolehlivé lepení s maximální ekologickou šetrností. Díky papírovému nosiči jsou plně recyklovatelné společně s kartonem a představují elegantní, čistě vypadající řešení pro firmy, které dbají na udržitelnost i vizuální dojem zásilek.",
         "properties": {
@@ -805,6 +813,8 @@
       },
       "odstranitelne-pasky": {
         "title": "Odstranitelné pásky",
+        "h1": "Odstranitelné lepicí pásky",
+        "seo_title": "Odstranitelné lepicí pásky bez stop | ALFA IN",
         "description": "Pásky se speciálním složením lepidla, které nezanechává žádné stopy po odlepení. Ideální pro dočasné značení, ochranu citlivých povrchů nebo logistické procesy.",
         "intro": "Odstranitelné pásky používají speciální lepidlo, které pevně drží, ale po odlepení nezanechává žádné zbytky ani poškození povrchu. Jsou ideální pro dočasné aplikace a ochranu citlivých materiálů.",
         "properties": {
@@ -821,6 +831,8 @@
       },
       "vyztuzene-pasky": {
         "title": "Vyztužené pásky",
+        "h1": "Vyztužené lepicí pásky",
+        "seo_title": "Vyztužené lepicí pásky s filamenty | ALFA IN",
         "description": "Pásky zpevněné podélnými nebo křížovými skelnými vlákny. Nabízejí maximální pevnost při fixaci těžkých nákladů, palet a nadrozměrných balíků.",
         "intro": "Vyztužené (filament) pásky obsahují skelná vlákna vedená podélně nebo křížem, která zásadně zvyšují pevnost v tahu. Jsou určené pro fixaci těžkých a nadrozměrných zásilek, kde je potřeba absolutní jistota.",
         "properties": {
@@ -837,6 +849,8 @@
       },
       "mopp-pasky": {
         "title": "MOPP pásky",
+        "h1": "MOPP pásky pro fixaci",
+        "seo_title": "MOPP pásky pro pevnou fixaci palet | ALFA IN",
         "description": "Monoaxiálně orientované pásky s extrémní pevností v jednom směru a nulovou elasticitou. Speciálně určené pro fixaci elektrospotřebičů, komponentů nebo stahování palet.",
         "intro": "MOPP pásky mají monoaxiálně orientovanou fólii s extrémní pevností v podélném směru a prakticky nulovou tažností. Nahrazují vyztužené pásky tam, kde je potřeba pevná fixace bez skelných vláken.",
         "properties": {
@@ -853,6 +867,8 @@
       },
       "textilni-pasky": {
         "title": "Textilní lepicí pásky",
+        "h1": "Textilní lepicí pásky",
+        "seo_title": "Textilní lepicí pásky a duct tape | ALFA IN",
         "description": "Vysoce pevné a univerzální pásky zpevněné textilní mřížkou. Perfektně drží na drsném povrchu, snadno se trhají rukou a jsou ideální pro rychlé opravy i svazování.",
         "intro": "Textilní (duct) pásky jsou nepostradatelným univerzálem. Textilní výztuž jim dodává vysokou pevnost a zároveň umožňuje snadné odtržení rukou bez nůžek. Skvěle drží i na hrubých a nerovných površích.",
         "properties": {
@@ -869,6 +885,8 @@
       },
       "malirske-pasky": {
         "title": "Malířské pásky",
+        "h1": "Malířské krepové pásky",
+        "seo_title": "Malířské pásky pro ostré hrany | ALFA IN",
         "description": "Krepové papírové pásky navržené pro přesné zakrývání při malování a lakování. Chrání hrany před protečením barvy a po dokončení práce se čistě odlepí.",
         "intro": "Malířské krepové pásky zajišťují ostré a čisté hrany při malování a lakování. Papírový krepový nosič se dobře přizpůsobí povrchu, snadno se trhá a po dokončení práce se odlepí bez zbytků lepidla.",
         "properties": {
@@ -887,6 +905,8 @@
     "products": {
       "udrzitelna-paska-eco-100": {
         "name": "Udržitelná páska ECO+ 100",
+        "h1": "Udržitelná páska ECO+ 100 s potiskem",
+        "seo_title": "Udržitelná páska ECO+ 100 s potiskem na míru | ALFA IN",
         "tagline": "100% regenerovaná BOPP fólie z postindustriálního odpadu. Maximální ekologický standard bez kompromisů ve výkonu.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
@@ -984,6 +1004,8 @@
       },
       "udrzitelna-paska-eco-80": {
         "name": "Udržitelná páska ECO+ 80",
+        "h1": "Udržitelná páska ECO+ 80 s potiskem",
+        "seo_title": "Udržitelná páska ECO+ 80 s potiskem na míru | ALFA IN",
         "tagline": "BOPP fólie s 80% podílem regenerovaného materiálu. Spojuje vysoký ekologický standard a stoprocentní pevnost.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
@@ -1081,6 +1103,8 @@
       },
       "udrzitelna-paska-eco-50": {
         "name": "Udržitelná páska ECO+ 50",
+        "h1": "Udržitelná páska ECO+ 50 s potiskem",
+        "seo_title": "Udržitelná páska ECO+ 50 s potiskem na míru | ALFA IN",
         "tagline": "Efektivní balení s 50% podílem regenerovaného materiálu. Optimální rovnováha mezi ekologií a nejlepší cenou.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
@@ -1178,6 +1202,8 @@
       },
       "udrzitelna-paska-poly-plus": {
         "name": "Udržitelná páska POLY+",
+        "h1": "Udržitelná páska POLY+ s potiskem",
+        "seo_title": "Udržitelná páska POLY+ s potiskem na míru | ALFA IN",
         "tagline": "Ekologická a plnohodnotná náhrada PVC pásek s elegantním matným povrchem.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
@@ -1262,6 +1288,8 @@
       },
       "udrzitelna-paska-airtape": {
         "name": "Udržitelná páska Airtape+",
+        "h1": "Udržitelná páska Airtape+ s potiskem",
+        "seo_title": "Udržitelná páska Airtape+ s potiskem na míru | ALFA IN",
         "tagline": "Tenká a pevná BOPP páska pro maximální efektivitu a snížení odpadu.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
@@ -1326,6 +1354,8 @@
       },
       "udrzitelna-paska-loopp": {
         "name": "Udržitelná páska LOOPP",
+        "h1": "Udržitelná páska LOOPP s potiskem",
+        "seo_title": "Udržitelná páska LOOPP s potiskem na míru | ALFA IN",
         "tagline": "Prémiová ekologická páska z recyklovaných plastů bez jakýchkoliv kompromisů v pevnosti.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
@@ -1410,6 +1440,8 @@
       },
       "udrzitelna-paska-nopp": {
         "name": "Udržitelná páska NOPP",
+        "h1": "Udržitelná páska NOPP s potiskem",
+        "seo_title": "Udržitelná páska NOPP s potiskem na míru | ALFA IN",
         "tagline": "Páska s nosnou fólií z bio-cirkulárního materiálu s certifikací ISCC PLUS.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
@@ -1494,6 +1526,8 @@
       },
       "udrzitelna-paska-nopp-plus": {
         "name": "Udržitelná páska NOPP+",
+        "h1": "Udržitelná páska NOPP+ s potiskem",
+        "seo_title": "Udržitelná páska NOPP+ s potiskem na míru | ALFA IN",
         "tagline": "Páska s certifikovaným bio-cirkulárním složením fólie i lepidla pro maximální snížení uhlíkové stopy.",
         "category_slug": "udrzitelne-pasky",
         "category_title": "Udržitelné pásky",
@@ -1578,6 +1612,8 @@
       },
       "bopp-paska-acrylic": {
         "name": "BOPP páska Akryl",
+        "h1": "BOPP páska Akryl s potiskem",
+        "seo_title": "BOPP páska Akryl s potiskem na míru | ALFA IN",
         "tagline": "Spolehlivá BOPP páska s dlouhou životností.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP pásky",
@@ -1665,6 +1701,8 @@
       },
       "bopp-paska-hot-melt": {
         "name": "BOPP páska HOT MELT",
+        "h1": "BOPP páska HOT MELT s potiskem",
+        "seo_title": "BOPP páska HOT MELT s potiskem na míru | ALFA IN",
         "tagline": "BOPP páska s HOT MELT lepidlem pro rychlé a pevné přilnutí.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP pásky",
@@ -1730,6 +1768,8 @@
       },
       "bopp-paska-tack-plus": {
         "name": "BOPP páska TACK+",
+        "h1": "BOPP páska TACK+ s potiskem",
+        "seo_title": "BOPP páska TACK+ s potiskem na míru | ALFA IN",
         "tagline": "HOT MELT páska s extrémní přilnavostí a okamžitým lepivým efektem. Pro obtížné aplikace.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP pásky",
@@ -1795,6 +1835,8 @@
       },
       "bopp-paska-extra-glue-plus": {
         "name": "BOPP páska EXTRA GLUE+",
+        "h1": "BOPP páska EXTRA GLUE+ s potiskem",
+        "seo_title": "BOPP páska EXTRA GLUE+ s potiskem na míru | ALFA IN",
         "tagline": "Akrylová páska se zvýšenou vrstvou lepidla pro náročné povrchy.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP pásky",
@@ -1860,6 +1902,8 @@
       },
       "bopp-paska-evergreen": {
         "name": "BOPP páska Evergreen",
+        "h1": "BOPP páska Evergreen s potiskem",
+        "seo_title": "BOPP páska Evergreen s potiskem na míru | ALFA IN",
         "tagline": "Akrylová páska do extrémních podmínek a chladu. Nosič BOPP 28 µm, akrylové lepidlo 22 µm na vodní bázi. Aplikace od 0 °C, provoz −20 až +50 °C. Min. odběr 1 paleta (2 376 ks), základ 50 mm × 66 m.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP pásky",
@@ -1925,6 +1969,8 @@
       },
       "bopp-paska-evergreen-50": {
         "name": "BOPP páska ecoEVERGREEN 50%",
+        "h1": "BOPP páska ecoEVERGREEN 50% s potiskem",
+        "seo_title": "BOPP páska ecoEVERGREEN 50% s potiskem na míru | ALFA IN",
         "tagline": "Udržitelná balicí páska z 50 % recyklovaného postindustriálního materiálu.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP pásky",
@@ -1990,6 +2036,8 @@
       },
       "bopp-paska-evergreen-100": {
         "name": "BOPP páska ecoEVERGREEN 100%",
+        "h1": "BOPP páska ecoEVERGREEN 100% s potiskem",
+        "seo_title": "BOPP páska ecoEVERGREEN 100% s potiskem na míru | ALFA IN",
         "tagline": "Udržitelná balicí páska ze 100 % recyklovaného postindustriálního materiálu.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP pásky",
@@ -2055,6 +2103,8 @@
       },
       "bopp-paska-tamper-evident": {
         "name": "BOPP páska Tamper Evident",
+        "h1": "BOPP páska Tamper Evident s potiskem",
+        "seo_title": "BOPP páska Tamper Evident s potiskem na míru | ALFA IN",
         "tagline": "BOPP páska s ochranným potiskem pro okamžitou detekci neoprávněného otevření zásilky.",
         "category_slug": "bopp-pasky",
         "category_title": "BOPP pásky",
@@ -2120,6 +2170,8 @@
       },
       "bopet-paska-eco-hit19": {
         "name": "BOPET páska ECO HIT19",
+        "h1": "BOPET páska ECO HIT19 s potiskem",
+        "seo_title": "BOPET páska ECO HIT19 s potiskem na míru | ALFA IN",
         "tagline": "BOPET páska z 90 % recyklovaných PET lahví.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET pásky",
@@ -2185,6 +2237,8 @@
       },
       "bopet-paska-eco-hit23": {
         "name": "BOPET páska ECO HIT23",
+        "h1": "BOPET páska ECO HIT23 s potiskem",
+        "seo_title": "BOPET páska ECO HIT23 s potiskem na míru | ALFA IN",
         "tagline": "Silnější BOPET páska z 90 % recyklovaných PET lahví.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET pásky",
@@ -2249,6 +2303,8 @@
       },
       "bopet-paska-ait23": {
         "name": "BOPET páska AIT23",
+        "h1": "BOPET páska AIT23 s potiskem",
+        "seo_title": "BOPET páska AIT23 s potiskem na míru | ALFA IN",
         "tagline": "Pevná balicí páska s polyesterovým nosičem a akrylovým lepidlem.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET pásky",
@@ -2313,6 +2369,8 @@
       },
       "bopet-paska-hit17": {
         "name": "BOPET páska HIT17",
+        "h1": "BOPET páska HIT17 s potiskem",
+        "seo_title": "BOPET páska HIT17 s potiskem na míru | ALFA IN",
         "tagline": "Vysoce pevná balicí páska s polyesterovým nosičem.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET pásky",
@@ -2377,6 +2435,8 @@
       },
       "bopet-paska-ate23": {
         "name": "BOPET páska ATE23",
+        "h1": "BOPET páska ATE23 s potiskem",
+        "seo_title": "BOPET páska ATE23 s potiskem na míru | ALFA IN",
         "tagline": "Bezpečnostní BOPET páska odhalující neoprávněnou manipulaci.",
         "category_slug": "bopet-pasky",
         "category_title": "BOPET pásky",
@@ -2441,6 +2501,8 @@
       },
       "papirova-paska-kh80": {
         "name": "Papírová páska KH80",
+        "h1": "Papírová páska KH80 s potiskem",
+        "seo_title": "Papírová páska KH80 s potiskem na míru | ALFA IN",
         "tagline": "Exkluzivní papírová páska z 100% recyklovaného materiálu – dokonalé spojení vysoké estetiky, okamžité přilnavosti a ohleduplnosti k přírodě.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
@@ -2508,6 +2570,8 @@
       },
       "papirova-paska-c660": {
         "name": "Papírová páska C660",
+        "h1": "Papírová páska C660 s potiskem",
+        "seo_title": "Papírová páska C660 s potiskem na míru | ALFA IN",
         "tagline": "Ekologické řešení pro elegantní balení s vysokou lepivostí.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
@@ -2575,6 +2639,8 @@
       },
       "papirova-paska-c680": {
         "name": "Papírová páska C680",
+        "h1": "Papírová páska C680 s potiskem",
+        "seo_title": "Papírová páska C680 s potiskem na míru | ALFA IN",
         "tagline": "Tenčí profil s vyšší pevností v tahu pro efektivní balení.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
@@ -2642,6 +2708,8 @@
       },
       "papirova-paska-c680-rt": {
         "name": "Papírová páska C680 RT",
+        "h1": "Papírová páska C680 RT s potiskem",
+        "seo_title": "Papírová páska C680 RT s potiskem na míru | ALFA IN",
         "tagline": "Křížově vyztužená páska skelným vláknem pro nejnáročnější zásilky.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
@@ -2709,6 +2777,8 @@
       },
       "papirova-paska-c680r": {
         "name": "Papírová páska C680R",
+        "h1": "Papírová páska C680R s potiskem",
+        "seo_title": "Papírová páska C680R s potiskem na míru | ALFA IN",
         "tagline": "Skelným vláknem zpevněná páska pro bezpečné balení těžších kartonů.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
@@ -2776,6 +2846,8 @@
       },
       "papirova-paska-c690": {
         "name": "Papírová páska C690",
+        "h1": "Papírová páska C690 s potiskem",
+        "seo_title": "Papírová páska C690 s potiskem na míru | ALFA IN",
         "tagline": "Těžký krepový papír pro nejnáročnější kartony.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
@@ -2843,6 +2915,8 @@
       },
       "papirova-paska-c780": {
         "name": "Papírová páska C780",
+        "h1": "Papírová páska C780 s potiskem",
+        "seo_title": "Papírová páska C780 s potiskem na míru | ALFA IN",
         "tagline": "Prémiová kombinace krepu a přírodního kaučuku pro náročné teplotní podmínky.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
@@ -2910,6 +2984,8 @@
       },
       "papirova-paska-ks165": {
         "name": "Papírová páska KS165",
+        "h1": "Papírová páska KS165 s potiskem",
+        "seo_title": "Papírová páska KS165 s potiskem na míru | ALFA IN",
         "tagline": "Nekompromisní papírové řešení s extrémní nosností pro nejtěžší průmyslové balení, fixaci palet a páskování.",
         "category_slug": "papirove-pasky",
         "category_title": "Papírové pásky",
@@ -2977,6 +3053,8 @@
       },
       "odstranitelna-paska-eco-rit19": {
         "name": "Odstranitelná páska ECO RIT19",
+        "h1": "Odstranitelná páska ECO RIT19",
+        "seo_title": "Odstranitelná páska ECO RIT19 | Odstranitelné pásky | ALFA IN",
         "tagline": "Šetrná odstranitelná páska s recyklovaným obsahem.",
         "category_slug": "odstranitelne-pasky",
         "category_title": "Odstranitelné pásky",
@@ -3040,6 +3118,8 @@
       },
       "odstranitelna-paska-r28-32": {
         "name": "Odstranitelná páska R28-32",
+        "h1": "Odstranitelná páska R28-32",
+        "seo_title": "Odstranitelná páska R28-32 | Odstranitelné pásky | ALFA IN",
         "tagline": "Odstranitelná páska, která po odlepení nezanechá žádné stopy.",
         "category_slug": "odstranitelne-pasky",
         "category_title": "Odstranitelné pásky",
@@ -3103,6 +3183,8 @@
       },
       "vyztuzena-paska-rmpp32": {
         "name": "Vyztužená páska RMPP32",
+        "h1": "Vyztužená páska RMPP32",
+        "seo_title": "Vyztužená páska RMPP32 | Vyztužené pásky | ALFA IN",
         "tagline": "Vyztužená páska se skelnými vlákny pro fixaci těžkých břemen.",
         "category_slug": "vyztuzene-pasky",
         "category_title": "Vyztužené pásky",
@@ -3166,6 +3248,8 @@
       },
       "vyztuzena-paska-rtpp32": {
         "name": "Vyztužená páska RTPP32",
+        "h1": "Vyztužená páska RTPP32",
+        "seo_title": "Vyztužená páska RTPP32 | Vyztužené pásky | ALFA IN",
         "tagline": "Křížově vyztužená páska pro maximální pevnost ve všech směrech.",
         "category_slug": "vyztuzene-pasky",
         "category_title": "Vyztužené pásky",
@@ -3229,6 +3313,8 @@
       },
       "mopp-paska-s45-50": {
         "name": "MOPP páska S45-50",
+        "h1": "MOPP páska S45-50",
+        "seo_title": "MOPP páska S45-50 | MOPP pásky | ALFA IN",
         "tagline": "Monoaxiální MOPP páska s extrémní pevností a nulovou tažností.",
         "category_slug": "mopp-pasky",
         "category_title": "MOPP pásky",
@@ -3292,6 +3378,8 @@
       },
       "textilni-paska-bc": {
         "name": "Textilní páska BC",
+        "h1": "Textilní páska BC",
+        "seo_title": "Textilní páska BC | Textilní lepicí pásky | ALFA IN",
         "tagline": "Pevná textilní (duct) páska pro opravy a univerzální použití.",
         "category_slug": "textilni-pasky",
         "category_title": "Textilní lepicí pásky",
@@ -3355,6 +3443,8 @@
       },
       "textilni-paska-bc2": {
         "name": "Textilní páska BC2",
+        "h1": "Textilní páska BC2",
+        "seo_title": "Textilní páska BC2 | Textilní lepicí pásky | ALFA IN",
         "tagline": "Extra silná textilní páska s vysokou pevností v tahu.",
         "category_slug": "textilni-pasky",
         "category_title": "Textilní lepicí pásky",
@@ -3418,6 +3508,8 @@
       },
       "textilni-paska-nu": {
         "name": "Textilní páska NU",
+        "h1": "Textilní páska NU",
+        "seo_title": "Textilní páska NU | Textilní lepicí pásky | ALFA IN",
         "tagline": "Univerzální textilní páska pro rychlé svazování a fixaci.",
         "category_slug": "textilni-pasky",
         "category_title": "Textilní lepicí pásky",
@@ -3481,6 +3573,8 @@
       },
       "malirska-paska-c580": {
         "name": "Malířská páska C580",
+        "h1": "Malířská páska C580",
+        "seo_title": "Malířská páska C580 | Malířské pásky | ALFA IN",
         "tagline": "Krepová malířská páska pro ostré hrany při běžném malování.",
         "category_slug": "malirske-pasky",
         "category_title": "Malířské pásky",
@@ -3544,6 +3638,8 @@
       },
       "malirska-paska-cs60-80": {
         "name": "Malířská páska CS60-80",
+        "h1": "Malířská páska CS60-80",
+        "seo_title": "Malířská páska CS60-80 | Malířské pásky | ALFA IN",
         "tagline": "Teplotně odolná malířská páska pro lakování a náročné maskování.",
         "category_slug": "malirske-pasky",
         "category_title": "Malířské pásky",

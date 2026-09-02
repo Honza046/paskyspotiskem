@@ -1,0 +1,553 @@
+{
+  "cena-pasky-s-potiskem/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "faq/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/privacy-modal.css",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17",
+    "/assets/css/faq.css?v=7"
+  ],
+  "faq.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/privacy-modal.css",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17",
+    "/assets/css/faq.css?v=7"
+  ],
+  "galerie.html": [
+    "/assets/css/theme-dark.css",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17",
+    "/assets/css/gallery-lightbox.css?v=2"
+  ],
+  "index.html": [
+    "/assets/css/logo-carousel.css?v=28",
+    "/assets/css/product-carousel.css?v=9",
+    "/assets/css/privacy-modal.css",
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/faq.css?v=3",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17",
+    "/assets/css/inquiry-dropdown.css?v=6",
+    "/assets/css/reference-stats.css?v=6",
+    "/assets/css/cult-effects.css?v=62"
+  ],
+  "kontakt/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "o-nas/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "pasky-s-logem/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "pasky-s-potiskem-pro-eshopy/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "pruvodce/bezpecnostni-tamper-evident/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "pruvodce/eco-plus-recyklovane-pasky/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "pruvodce/hot-melt-vs-akryl/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "pruvodce/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "pruvodce/papirove-fsc-pasky/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "pruvodce/pasky-s-potiskem/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "pruvodce/skladovani-aplikace-teplota/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "reference/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/bopet-pasky/bopet-paska-ait23/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/bopet-pasky/bopet-paska-ate23/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/bopet-pasky/bopet-paska-eco-hit19/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/bopet-pasky/bopet-paska-eco-hit23/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/bopet-pasky/bopet-paska-hit17/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/bopet-pasky/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/bopp-pasky/bopp-paska-acrylic/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/bopp-pasky/bopp-paska-evergreen/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/bopp-pasky/bopp-paska-evergreen-100/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/bopp-pasky/bopp-paska-evergreen-50/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/bopp-pasky/bopp-paska-extra-glue-plus/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/bopp-pasky/bopp-paska-hot-melt/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/bopp-pasky/bopp-paska-tack-plus/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/bopp-pasky/bopp-paska-tamper-evident/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/bopp-pasky/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/malirske-pasky/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/malirske-pasky/malirska-paska-c580/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/malirske-pasky/malirska-paska-cs60-80/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/mopp-pasky/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/mopp-pasky/mopp-paska-s45-50/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/odstranitelne-pasky/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/odstranitelne-pasky/odstranitelna-paska-eco-rit19/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/odstranitelne-pasky/odstranitelna-paska-r28-32/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/papirove-pasky/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/papirove-pasky/papirova-paska-c660/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/papirove-pasky/papirova-paska-c680/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/papirove-pasky/papirova-paska-c680-rt/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/papirove-pasky/papirova-paska-c680r/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/papirove-pasky/papirova-paska-c690/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/papirove-pasky/papirova-paska-c780/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/papirove-pasky/papirova-paska-kh80/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/papirove-pasky/papirova-paska-ks165/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/textilni-pasky/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/textilni-pasky/textilni-paska-bc/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/textilni-pasky/textilni-paska-bc2/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/textilni-pasky/textilni-paska-nu/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/udrzitelne-pasky/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/udrzitelne-pasky/udrzitelna-paska-airtape/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/udrzitelne-pasky/udrzitelna-paska-eco-100/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/udrzitelne-pasky/udrzitelna-paska-eco-50/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/udrzitelne-pasky/udrzitelna-paska-eco-80/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/udrzitelne-pasky/udrzitelna-paska-loopp/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/udrzitelne-pasky/udrzitelna-paska-nopp/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/udrzitelne-pasky/udrzitelna-paska-nopp-plus/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/udrzitelne-pasky/udrzitelna-paska-poly-plus/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/vyztuzene-pasky/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/vyztuzene-pasky/vyztuzena-paska-rmpp32/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment/vyztuzene-pasky/vyztuzena-paska-rtpp32/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "sortiment.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ],
+  "vyroba-lepicich-pasek/index.html": [
+    "/assets/css/theme-dark.css?v=20",
+    "/assets/css/info-banner.css?v=20",
+    "/assets/css/sortiment-cards.css?v=20",
+    "/assets/css/cult-effects.css?v=62",
+    "/assets/css/tw.css?v=2",
+    "/assets/css/glass.css?v=17"
+  ]
+}

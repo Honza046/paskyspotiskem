@@ -16,26 +16,25 @@ DEFAULT_OG_IMAGE = '/images/slide-pasky-1920x624.jpg'
 SEO_MARKER_START = '<!-- seo:extra -->'
 SEO_MARKER_END = '<!-- /seo:extra -->'
 
-HOME_TITLE = 'Pásky s potiskem | Lepicí pásky s logem na míru | ALFA IN / Petrák'
+HOME_TITLE = 'Pásky s potiskem na míru | Lepicí pásky s logem | ALFA IN'
 HOME_DESCRIPTION = (
-    'Pásky s potiskem od výrobce ALFA IN (Karel a Vojtěch Petrák): lepicí pásky s logem pro firmy, '
-    'e-shopy a sklady. BOPP HOT MELT i Akryl, papírové FSC, ECO+ a speciální pásky. Potisk až 8–10 barev, '
-    'vzorky a kalkulace po celé ČR.'
+    'Vyrábíme lepicí pásky s potiskem a vlastním logem pro firmy, e-shopy a sklady. '
+    'Potisk až 10 barev, odběr od 360 ks, vzorky zdarma a kalkulace po celé ČR.'
 )
-SORTIMENT_TITLE = 'Sortiment lepicích pásek | Pásky s potiskem'
+SORTIMENT_TITLE = 'Lepicí pásky s potiskem | Kompletní sortiment | ALFA IN'
 SORTIMENT_DESCRIPTION = (
-    'Kompletní sortiment lepicích pásek s potiskem: BOPP, BOPET, papírové, eko a speciální pásky. '
-    'Vyberte materiál a poptávejte pásku na míru od výrobce ALFA IN.'
+    'Kompletní sortiment lepicích pásek s potiskem. BOPP, BOPET, papírové i udržitelné '
+    'pásky s vlastním logem. Vyberte materiál a poptejte pásku na míru.'
 )
-GALLERY_TITLE = 'Galerie pásek s potiskem | Realizace ALFA IN'
+GALLERY_TITLE = 'Galerie pásek s potiskem | Realizace a reference | ALFA IN'
 GALLERY_DESCRIPTION = (
-    'Ukázky lepicích pásek s potiskem: loga firem, bezpečnostní pásky, eko varianty a speciální tisky. '
-    'Inspirace pro vaši pásku s potiskem na míru.'
+    'Ukázky vyrobených lepicích pásek s potiskem. Loga firem, bezpečnostní pásky '
+    'i vícebarevné tisky. Inspirace pro vaši pásku s logem na míru.'
 )
-FAQ_TITLE = 'Časté otázky k páskám s potiskem | FAQ ALFA IN'
+FAQ_TITLE = 'Pásky s potiskem | Časté otázky a odpovědi | ALFA IN'
 FAQ_DESCRIPTION = (
-    'Časté otázky k páskám s potiskem: minimální odběr, dodací lhůty, HOT MELT vs Akryl, potisk, '
-    'vzorky, doprava a ECO pásky. Odpovědi od výrobce ALFA IN (Petrák).'
+    'Odpovědi na časté otázky k páskám s potiskem. Minimální odběr, dodací lhůty, '
+    'rozdíl mezi HOT MELT a akrylem, technologie potisku a vzorky zdarma.'
 )
 
 
@@ -127,11 +126,41 @@ def apply_page_seo(
 def organization_schema() -> dict[str, Any]:
     return {
         '@context': 'https://schema.org',
-        '@type': 'Organization',
-        'name': f'{ORG_NAME}: {SITE_NAME}',
+        '@type': ['Organization', 'LocalBusiness'],
+        '@id': SITE_URL + '/#organization',
+        'name': f'{ORG_NAME} | {SITE_NAME}',
         'url': SITE_URL,
         'logo': abs_url('/images/logo.svg'),
+        'image': abs_url(DEFAULT_OG_IMAGE),
         'description': HOME_DESCRIPTION,
+        'email': 'karel.petrak@alfain.eu',
+        'telephone': '+420-602-746-017',
+        'address': {
+            '@type': 'PostalAddress',
+            'streetAddress': 'Nová Ves 74',
+            'addressLocality': 'Nová Ves u Třebíče',
+            'postalCode': '675 21',
+            'addressRegion': 'Kraj Vysočina',
+            'addressCountry': 'CZ',
+        },
+        'geo': {
+            '@type': 'GeoCoordinates',
+            'latitude': 49.2306,
+            'longitude': 15.9633,
+        },
+        'openingHoursSpecification': [
+            {
+                '@type': 'OpeningHoursSpecification',
+                'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                'opens': '07:00',
+                'closes': '15:30',
+            }
+        ],
+        'areaServed': [
+            {'@type': 'Country', 'name': 'Česká republika'},
+            {'@type': 'Place', 'name': 'Evropská unie'},
+        ],
+        'knowsLanguage': ['cs', 'en', 'de', 'it'],
         'parentOrganization': {
             '@type': 'Organization',
             'name': ORG_NAME,
@@ -198,6 +227,22 @@ def breadcrumb_schema(items: list[tuple[str, str]]) -> dict[str, Any]:
     }
 
 
+def article_schema(*, headline: str, description: str, path: str,
+                   image: str = DEFAULT_OG_IMAGE) -> dict[str, Any]:
+    """Article schema pro pruvodce. Posiluje signal odbornosti u informacnich dotazu."""
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        'headline': headline,
+        'description': description,
+        'mainEntityOfPage': {'@type': 'WebPage', '@id': abs_url(path)},
+        'image': abs_url(image),
+        'inLanguage': 'cs-CZ',
+        'author': {'@type': 'Organization', '@id': SITE_URL + '/#organization', 'name': ORG_NAME},
+        'publisher': {'@type': 'Organization', '@id': SITE_URL + '/#organization', 'name': ORG_NAME},
+    }
+
+
 def product_schema(name: str, description: str, path: str, image_path: str) -> dict[str, Any]:
     return {
         '@context': 'https://schema.org',
@@ -208,36 +253,27 @@ def product_schema(name: str, description: str, path: str, image_path: str) -> d
         'brand': {'@type': 'Brand', 'name': ORG_NAME},
         'category': 'Lepicí pásky s potiskem',
         'url': abs_url(path),
-        'manufacturer': {'@type': 'Organization', 'name': ORG_NAME},
-        'offers': {
-            '@type': 'Offer',
-            'url': abs_url('/#gf_1'),
-            'priceCurrency': 'CZK',
-            'availability': 'https://schema.org/InStock',
-            'itemCondition': 'https://schema.org/NewCondition',
-            'seller': {'@type': 'Organization', 'name': ORG_NAME},
-            # Cena na vyžádání – B2B kalkulace podle potisku a množství
-            'priceSpecification': {
-                '@type': 'PriceSpecification',
-                'priceCurrency': 'CZK',
-                'description': 'Cena na vyžádání podle potisku a množství',
-            },
-        },
+        'manufacturer': {'@type': 'Organization', '@id': SITE_URL + '/#organization', 'name': ORG_NAME},
+        'countryOfOrigin': {'@type': 'Country', 'name': 'CZ'},
+        'itemCondition': 'https://schema.org/NewCondition',
+        # Zamerne bez 'offers'. B2B cena vznika az kalkulaci podle potisku a mnozstvi,
+        # a Offer bez pole 'price' Google odmita jako neplatny (chyba v Search Console).
+        # Az budou k dispozici realne cenove hladiny, doplnit AggregateOffer s lowPrice.
     }
 
 
 def category_meta_description(title: str, description: str) -> str:
-    text = f'{title} s potiskem na míru. {description}'
+    text = f'{title} na míru s vlastním logem. {description}'
     if len(text) > 158:
         text = text[:155].rstrip(' ,.;') + '…'
     return text
 
 
 def product_meta_description(name: str, tagline: str, extra: str = '') -> str:
-    text = f'{name}: {tagline}'
+    text = f'{name} na míru. {tagline}'
     if extra:
         text = f'{text} {extra}'
-    text = f'{text} Lepicí páska s potiskem od ALFA IN.'
+    text = f'{text} Lepicí páska s potiskem a vlastním logem od výrobce.'
     if len(text) > 158:
         text = text[:155].rstrip(' ,.;') + '…'
     return text
