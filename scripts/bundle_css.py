@@ -88,6 +88,22 @@ def main() -> int:
     written: set[str] = set()
     changed = 0
 
+    # Prvni pruchod: mapa nazev bundlu -> puvodni seznam CSS.
+    by_bundle: dict[str, list[str]] = {}
+    for rel, hrefs in manifest.items():
+        name, _ = build_bundle(hrefs)
+        by_bundle.setdefault(name, hrefs)
+    for path in html_pages():
+        head_end = path.read_text(encoding='utf-8').find('</head>')
+        if head_end == -1:
+            continue
+        head = path.read_text(encoding='utf-8')[:head_end]
+        rel = path.relative_to(ROOT).as_posix()
+        real = [h for h in LINK_RE.findall(head) if '/bundle-' not in h]
+        if real:
+            name, _ = build_bundle(real)
+            by_bundle.setdefault(name, real)
+
     for path in html_pages():
         rel = path.relative_to(ROOT).as_posix()
         html = path.read_text(encoding='utf-8')
@@ -107,12 +123,18 @@ def main() -> int:
         elif rel in manifest:
             hrefs = manifest[rel]
         elif stale:
-            # Stranka odkazuje na bundle, ale chybi zaznam v manifestu. Bez nej
-            # nelze puvodni seznam CSS obnovit a stranka by zustala bez stylu.
-            raise SystemExit(
-                f'CHYBA: {rel} odkazuje na {stale[0]}, ale bundles.json nema jeji zaznam.\n'
-                f'Obnovte assets/css/bundles.json z gitu, nebo vratte puvodni <link> tagy.'
-            )
+            # Nova stranka zdedila hlavicku uz slouceneho webu. Seznam CSS
+            # prevezmeme od stranky, ktera pouziva stejny bundle.
+            inherited = by_bundle.get(stale[0].split('/')[-1].split('?')[0])
+            if inherited:
+                manifest[rel] = inherited
+                hrefs = inherited
+            else:
+                raise SystemExit(
+                    f'CHYBA: {rel} odkazuje na {stale[0]}, ale bundles.json nema jeji zaznam\n'
+                    f'a zadna jina stranka tento bundle nepouziva. Obnovte assets/css/bundles.json\n'
+                    f'z gitu, nebo vratte do stranky puvodni <link> tagy.'
+                )
         else:
             continue
 

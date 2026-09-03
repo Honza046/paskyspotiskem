@@ -11,6 +11,7 @@ Prepare the project for Vercel static deployment.
 
 from __future__ import annotations
 
+import os
 import re
 import shutil
 import subprocess
@@ -89,11 +90,15 @@ LANDING_SLUGS = [
     'pasky-s-logem',
     'pasky-s-potiskem-pro-eshopy',
     'cena-pasky-s-potiskem',
+    'srovnani-lepicich-pasek',
+    'bezpecnostni-pasky-proti-kradezi',
 ]
 
 FOOTER_LINKS = [
     ('/sortiment', 'Sortiment pásek'),
+    ('/srovnani-lepicich-pasek', 'Srovnání materiálů'),
     ('/pasky-s-logem', 'Pásky s logem'),
+    ('/bezpecnostni-pasky-proti-kradezi', 'Bezpečnostní pásky'),
     ('/pasky-s-potiskem-pro-eshopy', 'Pásky pro e-shopy'),
     ('/cena-pasky-s-potiskem', 'Cena a kalkulace'),
     ('/vyroba-lepicich-pasek', 'Výroba pásek'),
@@ -306,6 +311,7 @@ def main() -> int:
 
     for slug in LANDING_SLUGS:
         patch_file(ROOT / slug / 'index.html')
+    patch_file(ROOT / '404.html')
 
     for page in root_pages:
         apply_root_seo(page)
@@ -328,6 +334,13 @@ def main() -> int:
     if sitemap_script.exists():
         print('  running gen_sitemap.py…')
         subprocess.run([sys.executable, str(sitemap_script)], cwd=ROOT, check=True)
+
+    # IndexNow ohlasujeme jen z produkcniho nasazeni, ne z lokalniho buildu
+    # ani z preview deploye. Selhani nikdy neshodi build.
+    indexnow = ROOT / 'scripts' / 'indexnow_ping.py'
+    if indexnow.exists() and os.environ.get('VERCEL_ENV') == 'production':
+        print('  running indexnow_ping.py…')
+        subprocess.run([sys.executable, str(indexnow)], cwd=ROOT, check=False)
 
     print('Done.')
     return 0

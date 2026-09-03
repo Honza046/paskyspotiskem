@@ -27,6 +27,8 @@ def collect_urls() -> list[tuple[str, str, str]]:
         ('/pruvodce/bezpecnostni-tamper-evident', 'monthly', '0.75'),
         # Samostatne vstupni stranky (gen_landing.py)
         ('/pasky-s-logem', 'monthly', '0.9'),
+        ('/srovnani-lepicich-pasek', 'monthly', '0.9'),
+        ('/bezpecnostni-pasky-proti-kradezi', 'monthly', '0.85'),
         ('/pasky-s-potiskem-pro-eshopy', 'monthly', '0.9'),
         ('/cena-pasky-s-potiskem', 'monthly', '0.9'),
         ('/vyroba-lepicich-pasek', 'monthly', '0.85'),

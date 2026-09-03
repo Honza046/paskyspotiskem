@@ -13,6 +13,15 @@ SITE_NAME = 'Pásky s potiskem'
 ORG_NAME = 'ALFA IN a.s.'
 DEFAULT_OG_IMAGE = '/images/slide-pasky-1920x624.jpg'
 
+# Overovaci kody pro nastroje pro webmastery.
+# Google Search Console: v GSC zvolte zpusob overeni "Znacka HTML" a sem vlozte
+# hodnotu atributu content (samotny kod, ne cely tag). Pote spustte `npm run build`.
+# Bing se overuje souborem BingSiteAuth.xml v koreni, ten uz na webu je.
+SITE_VERIFICATION = {
+    'google-site-verification': '',
+}
+
+
 SEO_MARKER_START = '<!-- seo:extra -->'
 SEO_MARKER_END = '<!-- /seo:extra -->'
 
@@ -68,6 +77,10 @@ def extra_head(
     image = abs_url(og_image)
     lines = [
         f'<link rel="canonical" href="{esc(canonical)}">',
+        *(
+            f'<meta name="{esc(name)}" content="{esc(code)}">'
+            for name, code in SITE_VERIFICATION.items() if code
+        ),
         f'<meta name="robots" content="{esc(robots)}">',
         f'<meta property="og:type" content="{esc(og_type)}">',
         f'<meta property="og:site_name" content="{esc(SITE_NAME)}">',
@@ -240,6 +253,27 @@ def article_schema(*, headline: str, description: str, path: str,
         'inLanguage': 'cs-CZ',
         'author': {'@type': 'Organization', '@id': SITE_URL + '/#organization', 'name': ORG_NAME},
         'publisher': {'@type': 'Organization', '@id': SITE_URL + '/#organization', 'name': ORG_NAME},
+    }
+
+
+def item_list_schema(name: str, path: str, items: list[tuple[str, str]]) -> dict[str, Any]:
+    """ItemList pro kategorie. Vyjmenuje produkty v poradi, v jakem jsou na strance."""
+    return {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        'name': name,
+        'url': abs_url(path),
+        'numberOfItems': len(items),
+        'itemListOrder': 'https://schema.org/ItemListOrderAscending',
+        'itemListElement': [
+            {
+                '@type': 'ListItem',
+                'position': i + 1,
+                'name': item_name,
+                'url': abs_url(item_path),
+            }
+            for i, (item_path, item_name) in enumerate(items)
+        ],
     }
 
 

@@ -361,8 +361,8 @@ PAGES = [
                 "tak, aby dával smysl i v případě, kdy je jeho část zakrytá.",
             ]),
             ("Nejčastější chyby při návrhu potisku", [
-                "Příliš mnoho detailu. Páska má typicky 48 nebo 50 milimetrů. Jemné linky a drobný text "
-                "se na takové šířce ztratí, zvlášť při rychlém odvíjení.",
+                "Příliš mnoho detailu. Páska je úzký pruh a jemné linky ani drobný text se na něm "
+                "neuplatní, zvlášť když se motiv čte za pohybu při odvíjení.",
                 "Rastrové logo v nízkém rozlišení. Ze skenu nebo z obrázku z webu nelze udělat ostrý tisk. "
                 "Vektorový podklad tento problém řeší úplně.",
                 "Opomenutá opakovací rozteč. Motiv se na pásce opakuje, takže je dobré vědět, jak často "
@@ -473,6 +473,166 @@ PAGES = [
         "schema_type": "WebPage",
     },
     {
+        "slug": "srovnani-lepicich-pasek",
+        "nav": "Srovnání materiálů",
+        "h1": "Srovnání lepicích pásek podle materiálu",
+        "seo_title": "Srovnání lepicích pásek | Jaký materiál vybrat",
+        "description": (
+            "Přehledné srovnání lepicích pásek podle materiálu. BOPP, BOPET, papírové, MOPP, "
+            "vyztužené a textilní pásky, jejich silné stránky a typické použití."
+        ),
+        "intro": (
+            "Materiál nosiče rozhoduje o tom, jak páska drží, kolik unese a jestli půjde recyklovat "
+            "spolu s krabicí. Níže najdete přehled všech typů, které vyrábíme, a k čemu se každý hodí."
+        ),
+        "sections": [
+            ("Rychlá orientace", [
+                "Balíte běžné zásilky a chcete nejlepší poměr ceny a výkonu, sáhněte po BOPP.",
+                "Chcete, aby zákazník vyhodil celou krabici i s páskou do papíru, zvolte papírovou "
+                "pásku s certifikací FSC.",
+                "Posíláte těžké nebo nadrozměrné zásilky a potřebujete extrémní odolnost proti přetržení, "
+                "volte BOPET nebo vyztužené pásky.",
+                "Fixujete palety a komponenty, kde se nic nesmí povolit, jsou na řadě MOPP pásky.",
+                "Plníte ESG cíle a řešíte uhlíkovou stopu balení, podívejte se na udržitelnou řadu.",
+            ]),
+            ("BOPP je standard pro většinu provozů", [
+                "Biaxiálně orientovaný polypropylen je nejrozšířenější nosič balicích pásek. Nabízí "
+                "vynikající poměr ceny a výkonu, dobrou pevnost v tahu a dlouhou životnost.",
+                "Dostanete jej v akrylovém i HOT MELT provedení, v široké škále šířek a barev. "
+                "Neobsahuje PVC ani jiné látky škodlivé prostředí.",
+                "Hodí se na standardní uzavírání kartonů, automatické balicí stroje, expedici "
+                "a skladovou logistiku. Pro potisk firemním logem je to nejčastější volba.",
+            ]),
+            ("Papírové pásky pro plnou recyklovatelnost", [
+                "Papírový nosič z pevného kraftu umožňuje recyklovat pásku i karton společně "
+                "v jednom kontejneru, bez nutnosti cokoli odlepovat.",
+                "Matný papírový povrch působí prémiově a dobře se potiskuje. Typy C660, C680, C680R, "
+                "C680RT a C690 vyrábíme z papíru FSC Mix Credit a lze je potisknout až 4 barvami.",
+                "Papír má vysokou lepivost i na recyklovaný karton a členité povrchy. Nevýhodou je "
+                "vyšší cena oproti BOPP a nižší odolnost proti vlhkosti.",
+            ]),
+            ("BOPET tam, kde běžná páska nestačí", [
+                "Polyesterová fólie odolává vysokým i nízkým teplotám, rozpouštědlům, olejům "
+                "a agresivnímu chemickému prostředí. Má minimální tažnost a vysokou odolnost proti roztržení.",
+                "Praktickou výhodou je dvojnásobný návin role oproti běžné pásce. Obsluha méně často "
+                "mění roli a ve skladu zabere zásoba méně místa.",
+                "Uplatní se v náročných průmyslových provozech, při maskování během práškového lakování "
+                "a v elektrotechnice. Nabízíme i varianty z recyklovaných PET lahví.",
+            ]),
+            ("MOPP a vyztužené pásky na fixaci", [
+                "MOPP je monoaxiálně orientovaná fólie s extrémní pevností v podélném směru a prakticky "
+                "nulovou tažností. Fixace se nepovolí ani při zatížení a páska neobsahuje skelná vlákna.",
+                "Vyztužené pásky mají podélná nebo křížová skelná vlákna a nabízejí nejvyšší pevnost "
+                "v tahu ze všech typů. Použijete je na zajištění zboží na paletách, svazování trubek "
+                "a profilů nebo na náročný export.",
+                "Rozdíl je v čistotě. Kde vám vadí uvolňující se skelná vlákna, volte MOPP.",
+            ]),
+            ("Textilní, malířské a odstranitelné pásky", [
+                "Textilní neboli duct pásky mají textilní výztuž, snadno se trhají rukou bez nůžek "
+                "a drží i na kovu, dřevě, betonu a plastu. Hodí se na rychlé opravy, svazování a údržbu.",
+                "Malířské krepové pásky zajišťují ostré hrany při malování a lakování a po dokončení "
+                "práce se odlepí bez zbytků lepidla.",
+                "Odstranitelné pásky drží pevně, ale po odlepení nezanechají lepidlo ani poškození "
+                "povrchu. Používají se na dočasné značení a ochranu citlivých materiálů.",
+            ]),
+            ("Na co ještě myslet kromě materiálu", [
+                "Typ lepidla je stejně důležitý jako nosič. HOT MELT přilne okamžitě a zvládá chlad "
+                "i recyklované kartony, akryl je tišší při odvíjení a odolnější vůči UV záření.",
+                "Šířku a délku návinu volíte podle svého balicího procesu. Delší návin znamená méně "
+                "výměn rolí a nižší jednotkovou cenu.",
+                "Potisk nabízíme na BOPP, BOPET, papírové a udržitelné pásky. Zbylé typy dodáváme "
+                "v neutrálním provedení.",
+            ]),
+        ],
+        "faqs": [
+            ("Jaká lepicí páska je nejlepší?",
+             "Univerzálně nejlepší páska neexistuje. Pro běžné balení zásilek je nejvýhodnější BOPP, "
+             "pro plně recyklovatelné balení papírová páska s FSC certifikací a pro těžké nebo náročné "
+             "aplikace BOPET či vyztužené pásky."),
+            ("Je papírová páska stejně pevná jako BOPP?",
+             "Papírová páska má vysokou lepivost a pro běžné zásilky je zcela dostačující. BOPP ale "
+             "lépe odolává vlhkosti a u velmi těžkých balíků je spolehlivější."),
+            ("Kterou pásku zvolit na recyklovaný karton?",
+             "Rozhoduje spíš lepidlo než nosič. Nejlépe drží HOT MELT s vysokou počáteční přilnavostí, "
+             "u obzvlášť hrubých kartonů varianta se zvýšenou vrstvou lepidla."),
+        ],
+        "links": [
+            ("/sortiment", "Kompletní sortiment"),
+            ("/pruvodce/hot-melt-vs-akryl", "HOT MELT nebo akryl"),
+            ("/pruvodce/paska-na-recyklovany-karton", "Páska na recyklovaný karton"),
+            ("/cena-pasky-s-potiskem", "Co ovlivňuje cenu"),
+        ],
+        "schema_type": "WebPage",
+    },
+    {
+        "slug": "bezpecnostni-pasky-proti-kradezi",
+        "nav": "Bezpečnostní pásky",
+        "h1": "Bezpečnostní pásky proti krádeži zásilek",
+        "seo_title": "Bezpečnostní pásky proti krádeži | Tamper Evident",
+        "description": (
+            "Bezpečnostní pásky Tamper Evident s potiskem. Při odlepení zanechají viditelnou stopu, "
+            "takže neoprávněné otevření zásilky nelze zamaskovat. Ochrana cenného zboží."
+        ),
+        "intro": (
+            "Pokud posíláte cenné zboží, potřebujete poznat, jestli s balíkem někdo manipuloval. "
+            "Bezpečnostní páska Tamper Evident to řeší tak, že po pokusu o odlepení zůstane na kartonu "
+            "trvalá viditelná stopa, kterou nelze vrátit do původního stavu."
+        ),
+        "sections": [
+            ("Jak Tamper Evident funguje", [
+                "Páska je konstruovaná tak, aby se při odlepení nevrátila zpět. Na kartonu zůstane "
+                "zřetelný otisk a samotná páska se znehodnotí, takže ji nelze znovu nalepit.",
+                "Příjemce i dopravce tak vidí na první pohled, zda byla zásilka otevřena. To zásadně "
+                "mění situaci při reklamaci, protože máte důkaz, ve které fázi přepravy k zásahu došlo.",
+                "Preventivní efekt bývá stejně důležitý jako důkazní. Zásilka, na které je zjevně "
+                "bezpečnostní páska, je pro příležitostnou krádež mnohem méně atraktivní.",
+            ]),
+            ("Kdy se vyplatí", [
+                "U elektroniky, mobilních telefonů a dalšího drobného zboží s vysokou hodnotou, "
+                "které se snadno odcizí a špatně dohledá.",
+                "U zásilek, které procházejí více překladišti nebo jdou do zahraničí. Čím delší "
+                "přepravní řetězec, tím víc rukou se zásilky dotkne.",
+                "U léčiv, zdravotnického materiálu a všude, kde potřebujete doložit neporušenost "
+                "obalu kvůli předpisům nebo auditu.",
+                "U reklamačních sporů s dopravci, kde je potřeba prokázat, že zboží bylo odesláno kompletní.",
+            ]),
+            ("Levnější alternativy, které také fungují", [
+                "Pokud plná bezpečnostní páska není v rozpočtu, hodně pomůže i běžná páska s hustým "
+                "vlastním potiskem. Jakýkoli zásah naruší tištěný motiv a je při přebírání dobře patrný.",
+                "Zároveň se taková páska prakticky nedá nahradit. Útočník by musel mít roli s vaším "
+                "konkrétním potiskem, což u cílené krádeže výrazně zvyšuje laťku.",
+                "Pokud fixujete zboží stretch fólií, volte lepidlo HOT MELT. Z fólie ho nelze snadno "
+                "odlepit, takže případná manipulace zůstane zřetelná.",
+            ]),
+            ("Jak to zkombinovat s brandingem", [
+                "Bezpečnostní pásku lze potisknout stejně jako běžnou. Nemusíte tedy volit mezi ochranou "
+                "zásilky a viditelností značky.",
+                "Osvědčuje se kombinovat logo s textem, který upozorní na zabezpečení. Příjemce pak ví, "
+                "že má obal při převzetí zkontrolovat, a preventivní efekt roste.",
+                "Potisk zvládneme flexotiskem až v 8 barvách nebo rototiskem až v 10 barvách. Grafický "
+                "náhled vždy posíláme ke schválení před výrobou.",
+            ]),
+        ],
+        "faqs": [
+            ("Co je Tamper Evident páska?",
+             "Bezpečnostní lepicí páska, která po odlepení zanechá na kartonu viditelnou trvalou stopu "
+             "a sama se znehodnotí. Neoprávněné otevření zásilky proto nelze zamaskovat."),
+            ("Lze bezpečnostní pásku potisknout logem?",
+             "Ano. Bezpečnostní pásku potiskujeme stejně jako běžnou, flexotiskem až v 8 barvách "
+             "nebo rototiskem až v 10 barvách."),
+            ("Stačí místo ní obyčejná páska s potiskem?",
+             "U méně rizikových zásilek často ano. Hustý vlastní potisk se při zásahu naruší a útočník "
+             "by musel mít roli s vaším konkrétním motivem. U cenného zboží ale doporučujeme Tamper Evident."),
+        ],
+        "links": [
+            ("/sortiment/bopp-pasky/bopp-paska-tamper-evident", "Páska Tamper Evident"),
+            ("/pruvodce/bezpecnostni-tamper-evident", "Jak Tamper Evident funguje"),
+            ("/pasky-s-logem", "Potisk pásek"),
+            ("/#gf_1", "Nezávazná kalkulace"),
+        ],
+        "schema_type": "WebPage",
+    },
+    {
         "slug": "vyroba-lepicich-pasek",
         "nav": "Výroba",
         "h1": "Výroba lepicích pásek na míru",
@@ -563,6 +723,20 @@ def load_chrome() -> tuple[str, str]:
     # i18n tyto stranky povazoval za sortiment a prepsal jim <title>,
     # nav-active by navic zvyraznil polozku Sortiment.
     header = header.replace('data-page="sortiment"', 'data-page="landing"', 1)
+    # Hlavicka ze sortimentu ma polozku Sortiment natvrdo zvyraznenou.
+    # Na samostatnych strankach by zustala oranzova, proto ji vratime do klidu.
+    header = header.replace(
+        '<a href="/sortiment" class="px-2 py-1 text-sm font-semibold text-orange-600 '
+        'transition-colors hover:text-orange-600"',
+        '<a href="/sortiment" class="px-2 py-1 text-sm font-semibold text-slate-700 '
+        'transition-colors hover:text-orange-600"',
+        1,
+    )
+    header = header.replace(
+        '<a href="/sortiment" class="block px-2 py-2 font-semibold text-orange-600"',
+        '<a href="/sortiment" class="block px-2 py-2 font-semibold text-slate-800"',
+        1,
+    )
     footer = base[base.index('<footer id="kontakt1"'):]
     return header, footer
 
@@ -650,6 +824,51 @@ def page_schemas(pg: dict) -> list:
     return schemas
 
 
+NOT_FOUND_LINKS = [
+    ("/sortiment", "Kompletní sortiment pásek"),
+    ("/srovnani-lepicich-pasek", "Srovnání materiálů"),
+    ("/pasky-s-logem", "Pásky s logem"),
+    ("/cena-pasky-s-potiskem", "Cena a kalkulace"),
+    ("/pruvodce", "Průvodce výběrem"),
+    ("/kontakt", "Kontakt"),
+]
+
+_NF_LINK = (
+    '            <a href="{href}" class="inline-flex items-center gap-1.5 rounded-full '
+    'border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 '
+    'transition hover:border-orange-200 hover:text-orange-700">\n'
+    '                {label} {arrow}\n'
+    '            </a>'
+)
+
+
+def render_not_found() -> str:
+    """Vlastni 404. Vercel ji u statickeho webu servíruje z korenoveho 404.html."""
+    links = "\n".join(
+        _NF_LINK.format(href=esc(href), label=esc(label), arrow=ARROW)
+        for href, label in NOT_FOUND_LINKS
+    )
+    return (
+        '\n\n<main>\n\n'
+        '<section class="mx-auto max-w-3xl px-4 py-20 text-center sm:py-28">\n'
+        '    <p class="text-sm font-bold uppercase tracking-widest text-orange-600">Chyba 404</p>\n'
+        '    <h1 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">'
+        'Tuhle stránku jsme nenašli</h1>\n'
+        '    <p class="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-slate-600">'
+        'Adresa možná zanikla nebo je v ní překlep. Zkuste některý z odkazů níže, '
+        'nebo nám rovnou napište a poradíme s výběrem pásky.</p>\n'
+        '    <div class="mt-9 flex flex-wrap justify-center gap-3">\n'
+        f'{links}\n'
+        '    </div>\n'
+        '    <a href="/#gf_1" class="mt-10 inline-flex items-center gap-2 rounded-2xl '
+        'bg-gradient-to-r from-orange-600 to-amber-500 px-8 py-3.5 text-sm font-bold text-white '
+        'shadow-lg shadow-orange-600/25 transition-all hover:scale-[1.02]">'
+        f'Nezávazná kalkulace {ARROW}</a>\n'
+        '</section>\n\n'
+        '</main>\n\n'
+    )
+
+
 def main() -> None:
     os.chdir(ROOT)
     print("Generating landing pages…")
@@ -667,6 +886,26 @@ def main() -> None:
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(doc, encoding="utf-8")
         print(f"  wrote {out.relative_to(ROOT)}")
+
+    # 404 nesmi byt indexovana, ale ma nabidnout cestu zpatky do webu.
+    nf = header + render_not_found() + footer
+    nf = apply_page_seo(
+        nf,
+        title="Stránka nenalezena | Pásky s potiskem",
+        description=(
+            "Požadovaná stránka neexistuje. Přejděte na sortiment lepicích pásek "
+            "s potiskem nebo nám napište."
+        ),
+        path="/404",
+        schemas=[],
+    )
+    nf = nf.replace(
+        '<meta name="robots" content="index, follow">',
+        '<meta name="robots" content="noindex, follow">',
+        1,
+    )
+    (ROOT / "404.html").write_text(nf, encoding="utf-8")
+    print("  wrote 404.html")
 
 
 if __name__ == "__main__":

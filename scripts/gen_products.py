@@ -11,6 +11,7 @@ from seo import (
     breadcrumb_schema,
     category_meta_description,
     page_title,
+    item_list_schema,
     product_meta_description,
     product_schema,
 )
@@ -1696,6 +1697,11 @@ for cat in CATS:
             ('/sortiment', 'Sortiment'),
             (cat_path, cat['title']),
         ]),
+        item_list_schema(
+            cat['h1'],
+            cat_path,
+            [(f'{cat_path}/{prod["slug"]}', prod['name']) for prod in PRODUCTS[cat['cat']]],
+        ),
     ]
     open("sortiment/%s/index.html"%cat["cat"],"w").write(page(
         cat["title"], cat_desc, cat_path, main,

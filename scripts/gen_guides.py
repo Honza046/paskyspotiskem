@@ -95,6 +95,83 @@ GUIDES = [
         ],
     },
     {
+        "slug": "paska-na-recyklovany-karton",
+        "seo_title": "Páska na recyklovaný karton | Která drží | ALFA IN",
+        "title": "Páska na recyklovaný karton",
+        "h1": "Která páska drží na recyklovaném kartonu",
+        "description": (
+            "Proč páska na recyklovaném kartonu odlepuje a jak to vyřešit. Vliv prachu a hrubého "
+            "povrchu, volba lepidla HOT MELT a varianty se zvýšenou vrstvou lepidla."
+        ),
+        "intro": (
+            "Recyklovaný karton je dnes standard a řada firem na něj přešla kvůli ceně i ekologii. "
+            "Pak ale zjistí, že páska, která roky spolehlivě fungovala, najednou začne odskakovat. "
+            "Není to vada pásky. Je to vlastnost povrchu, na který lepíte."
+        ),
+        "sections": [
+            (
+                "Proč recyklovaný karton dělá problémy",
+                "Recyklovaný papír má kratší a hrubší vlákna než papír z primární suroviny. Povrch kartonu "
+                "je proto pórovitější a méně hladký, takže lepidlo nemá k čemu se pořádně přichytit. "
+                "Kontaktní plocha mezi páskou a kartonem je fakticky menší, i když to okem nepoznáte.\n\n"
+                "K tomu se přidává prach. Při řezání a manipulaci se z recyklovaného kartonu uvolňuje víc "
+                "papírového prachu než z běžného. Ten se usadí na povrchu a chová se jako separační vrstva. "
+                "Lepidlo se pak lepí na prach místo na karton a spoj povolí během přepravy."
+            ),
+            (
+                "Volte lepidlo HOT MELT",
+                "Na recyklovaný karton se hodí lepidlo HOT MELT na bázi syntetického kaučuku. Má vysokou "
+                "počáteční přilnavost, takže vytvoří pevný spoj okamžitě po přitlačení a nečeká, až "
+                "postupně zateče do povrchu.\n\n"
+                "Akrylové lepidlo na vodní bázi potřebuje na plné přilnutí čas. Na hladkém novém kartonu "
+                "to nevadí, protože spoj dozraje během skladování. Na pórovitém recyklovaném povrchu ale "
+                "často nestihne vytvořit dost pevné spojení dřív, než balík projde manipulací u dopravce."
+            ),
+            (
+                "Když ani standardní HOT MELT nestačí",
+                "U obzvlášť hrubých nebo prašných kartonů se vyplatí sáhnout po variantě se zvýšenou "
+                "vrstvou lepidla. Silnější vrstva vyplní nerovnosti povrchu a zvětší reálnou kontaktní "
+                "plochu, takže spoj drží i tam, kde běžná páska selhává.\n\n"
+                "V naší nabídce tomu odpovídá TACK+ s lepidlem HOT MELT a extrémní přilnavostí "
+                "a EXTRA GLUE+, což je akrylová varianta se zvýšenou vrstvou lepidla pro náročné povrchy."
+            ),
+            (
+                "Na co se ještě podívat v provozu",
+                "Přítlak. Páska potřebuje při aplikaci přitlačit, jinak se lepidlo s povrchem nespojí. "
+                "U ručního balení to bývá nejčastější příčina problému, protože obsluha pásku jen položí.\n\n"
+                "Teplota. Studený karton lepení výrazně zhoršuje. Pokud balíte v nevytápěném skladu, "
+                "je HOT MELT prakticky jediná rozumná volba.\n\n"
+                "Čistota povrchu. Pokud se karton dlouho skladoval nebo se s ním hodně manipulovalo, "
+                "stojí za to zkusit místo lepení jednoduše otřít."
+            ),
+        ],
+        "links": [
+            ("/sortiment/bopp-pasky/bopp-paska-hot-melt", "BOPP HOT MELT"),
+            ("/sortiment/bopp-pasky/bopp-paska-tack-plus", "TACK+"),
+            ("/sortiment/bopp-pasky/bopp-paska-extra-glue-plus", "EXTRA GLUE+"),
+            ("/pruvodce/hot-melt-vs-akryl", "HOT MELT nebo akryl"),
+            ("/pruvodce/skladovani-aplikace-teplota", "Skladování a aplikace"),
+        ],
+        "faqs": [
+            (
+                "Proč mi páska na recyklovaném kartonu odlepuje?",
+                "Recyklovaný karton má pórovitější povrch a uvolňuje víc prachu, takže lepidlo má menší "
+                "kontaktní plochu. Pomáhá lepidlo HOT MELT s vysokou počáteční přilnavostí a dostatečný "
+                "přítlak při aplikaci.",
+            ),
+            (
+                "Která páska drží na recyklovaném kartonu nejlépe?",
+                "Páska s lepidlem HOT MELT. U obzvlášť hrubých nebo prašných kartonů se osvědčuje varianta "
+                "se zvýšenou vrstvou lepidla, například TACK+ nebo EXTRA GLUE+.",
+            ),
+            (
+                "Pomůže silnější páska?",
+                "Tloušťka nosiče problém neřeší, protože ten určuje pevnost v tahu, ne přilnavost. "
+                "Rozhoduje typ a množství lepidla.",
+            ),
+        ],
+    },
+    {
         "slug": "hot-melt-vs-akryl",
         "seo_title": "HOT MELT nebo akryl | Srovnání lepidel na pásky | ALFA IN",
         "title": "Hotmelt, nebo akryl?",

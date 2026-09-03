@@ -166,7 +166,7 @@ ITEMS = [
     {
         "id": "irplast-shuttle",
         "image": "gallery/gallery-irplast-shuttle.jpg",
-        "title": "Výroba: automated shuttle",
+        "title": "Automatizovaný sklad ve výrobě",
         "category": "vyroba",
         "type": "production",
         "featured": False,
