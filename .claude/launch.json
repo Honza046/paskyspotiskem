@@ -3,7 +3,9 @@
   "configurations": [
     {
       "name": "static-site",
-      "url": "http://localhost:8000"
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["scripts/serve_local.py", "--port", "8080"],
+      "port": 8080
     }
   ]
 }

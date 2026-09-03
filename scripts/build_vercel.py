@@ -96,43 +96,65 @@ LANDING_SLUGS = [
 
 FOOTER_LINKS = [
     ('/sortiment', 'Sortiment pásek'),
-    ('/srovnani-lepicich-pasek', 'Srovnání materiálů'),
+    ('/srovnani-lepicich-pasek', 'Srovnání pásek'),
     ('/pasky-s-logem', 'Pásky s logem'),
     ('/bezpecnostni-pasky-proti-kradezi', 'Bezpečnostní pásky'),
     ('/pasky-s-potiskem-pro-eshopy', 'Pásky pro e-shopy'),
-    ('/cena-pasky-s-potiskem', 'Cena a kalkulace'),
+    ('/cena-pasky-s-potiskem', 'Cena pásek'),
     ('/vyroba-lepicich-pasek', 'Výroba pásek'),
-    ('/pruvodce', 'Průvodce výběrem'),
-    ('/galerie', 'Galerie realizací'),
+    ('/pruvodce', 'Průvodce'),
+    ('/galerie', 'Galerie'),
     ('/reference', 'Reference'),
     ('/o-nas', 'O nás'),
     ('/kontakt', 'Kontakt'),
-    ('/faq', 'Časté otázky'),
+    ('/faq', 'FAQ'),
 ]
 
 FOOTER_LINKS_MARKER = '<!-- FOOTER-LINKS -->'
+FOOTER_LINKS_END = '<!-- /FOOTER-LINKS -->'
+
+
+def strip_footer_links(html: str) -> str:
+    """Odstrani drive vlozeny blok odkazu, aby se dal prepsat aktualnim seznamem."""
+    if FOOTER_LINKS_MARKER not in html:
+        return html
+    if FOOTER_LINKS_END in html:
+        start = html.index(FOOTER_LINKS_MARKER)
+        end = html.index(FOOTER_LINKS_END) + len(FOOTER_LINKS_END) + 1
+        return html[:start].rstrip(' ') + html[end:]
+    # Starsi varianta bez koncove znacky. Blok konci hned za uzavrenim <nav>.
+    return re.sub(
+        re.escape(FOOTER_LINKS_MARKER) + r'.*?</nav>\s*</div>\s*</div>\s*',
+        '',
+        html,
+        count=1,
+        flags=re.DOTALL,
+    )
 
 
 def ensure_footer_links(html: str) -> str:
-    """Prida do paticky radek internich odkazu. Kazda stranka tak odkazuje na vsechny ostatni."""
-    if FOOTER_LINKS_MARKER in html:
-        return html
+    """Vlozi do paticky radek internich odkazu. Kazda stranka tak odkazuje na vsechny ostatni.
+
+    Blok se pri kazdem buildu prepise, takze se do nej promitnou i nove stranky.
+    """
+    html = strip_footer_links(html)
     anchor = '    <div class="border-t border-slate-800">'
     if anchor not in html:
         return html
     items = '\n'.join(
-        f'                <a href="{href}" class="text-slate-400 transition-colors hover:text-orange-400">{label}</a>'
+        f'                <a href="{href}" class="whitespace-nowrap text-slate-400 transition-colors hover:text-orange-400">{label}</a>'
         for href, label in FOOTER_LINKS
     )
     block = (
         f'    {FOOTER_LINKS_MARKER}\n'
         '    <div class="border-t border-slate-800">\n'
-        '        <div class="mx-auto max-w-7xl px-4 py-6">\n'
-        '            <nav class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm font-medium" aria-label="Odkazy v patičce">\n'
+        '        <div class="mx-auto max-w-screen-2xl px-4 py-6">\n'
+        '            <nav class="flex flex-wrap justify-center gap-x-4 gap-y-3 text-[13px] font-medium" aria-label="Odkazy v patičce">\n'
         f'{items}\n'
         '            </nav>\n'
         '        </div>\n'
         '    </div>\n'
+        f'    {FOOTER_LINKS_END}\n'
     )
     return html.replace(anchor, block + anchor, 1)
 
