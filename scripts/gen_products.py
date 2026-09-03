@@ -120,7 +120,7 @@ def P(name, image, tagline, nosic, tl, lep, pril, temp, pev):
 
 PRODUCTS = {
  "papirove-pasky":[
-   P("Papírová páska KH80","Papírové Pásky/KH80.jpg","Exkluzivní papírová páska z 100% recyklovaného materiálu – dokonalé spojení vysoké estetiky, okamžité přilnavosti a ohleduplnosti k přírodě.","Recyklovaný Kraftový papír (100% recyklovaný, FSC certifikace)","135 µm (±15 %)","Syntetický kaučuk (Hot Melt)",">7 N/cm (při odtržení papíru)","15–25 °C","50 N/cm (±10 %)"),
+   P("Papírová páska KH80","Papírové Pásky/KH80.jpg","Exkluzivní papírová páska ze 100% recyklovaného materiálu. Spojuje vysokou estetiku, okamžitou přilnavost a ohleduplnost k přírodě.","Recyklovaný Kraftový papír (100% recyklovaný, FSC certifikace)","135 µm (±15 %)","Syntetický kaučuk (Hot Melt)",">7 N/cm (při odtržení papíru)","15–25 °C","50 N/cm (±10 %)"),
    P("Papírová páska C660","Papírové Pásky/c660.jpg","Ekologické řešení pro elegantní balení s vysokou lepivostí.","Krepový papír (FSC certifikace)","120 µm","Syntetický kaučuk (Hot Melt)","4,5 N/cm","15–25 °C","33 N/cm"),
    P("Papírová páska C680","Papírové Pásky/c680.jpg","Tenčí profil s vyšší pevností v tahu pro efektivní balení.","Krepový papír (FSC certifikace)","110 µm","Syntetický kaučuk (Hot Melt)","4,5 N/cm","15–25 °C","35 N/cm"),
    P("Papírová páska C680 RT","Papírové Pásky/c680RT.jpeg","Křížově vyztužená páska skelným vláknem pro nejnáročnější zásilky.","Krepový papír s křížovým skelným vláknem (FSC)","140 µm","Syntetický kaučuk (Hot Melt)","5,0 N/cm","15–25 °C","60 N/cm"),
@@ -134,7 +134,7 @@ PRODUCTS = {
    P("BOPP páska HOT MELT","BOPP Tapes/BOPPHOTMELT.jpeg","BOPP páska s HOT MELT lepidlem pro rychlé a pevné přilnutí.","BOPP","25 / 28 / 32 µm","HOT MELT","18 µm","0 až +50 °C","14–28 °C"),
    P("BOPP páska TACK+","BOPP Tapes/BOPPHOTMELT1.jpg","HOT MELT páska s extrémní přilnavostí a okamžitým lepivým efektem. Pro obtížné aplikace.","BOPP","28 / 32 µm","HOT MELT (tack+)","18 µm","0 až +50 °C","14–28 °C"),
    P("BOPP páska EXTRA GLUE+","BOPP Tapes/BOPPACRYLIC.jpeg","Akrylová páska se zvýšenou vrstvou lepidla pro náročné povrchy.","BOPP","28 / 32 / 35 µm","Akryl","28 µm","−10 až +60 °C","14–28 °C"),
-   P("BOPP páska Evergreen","BOPP Tapes/EVERGREEN.jpg","Akrylová páska do extrémních podmínek a chladu. Nosič BOPP 28 µm, akrylové lepidlo 22 µm na vodní bázi. Aplikace od 0 °C, provoz −20 až +50 °C. Min. odběr 1 paleta (2 376 ks), základ 50 mm × 66 m.","BOPP","28 µm","Akryl (NOISY)","—","−20 až +50 °C","—"),
+   P("BOPP páska Evergreen","BOPP Tapes/EVERGREEN.jpg","Akrylová páska do extrémních podmínek a chladu. Aplikace už od 0 °C, po nalepení drží do −20 °C.","BOPP","28 µm","Akryl (NOISY)","—","−20 až +50 °C","—"),
    P("BOPP páska ecoEVERGREEN 50%","BOPP Tapes/EVERGREEN.jpg","Udržitelná balicí páska z 50 % recyklovaného postindustriálního materiálu.","BOPP","28 µm","Akryl (NOISY)","—","−20 až +50 °C","—"),
    P("BOPP páska ecoEVERGREEN 100%","BOPP Tapes/EVERGREEN100.jpg","Udržitelná balicí páska ze 100 % recyklovaného postindustriálního materiálu.","BOPP","28 µm","Akryl (NOISY)","—","−20 až +50 °C","—"),
    P("BOPP páska Tamper Evident","BOPP Tapes/TAMPER-EVIDENT.jpg","BOPP páska s ochranným potiskem pro okamžitou detekci neoprávněného otevření zásilky.","BOPP","35 µm","Akryl (Low noise)","—","0 až +60 °C","—"),

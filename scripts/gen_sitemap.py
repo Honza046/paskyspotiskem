@@ -68,8 +68,12 @@ def collect_urls() -> list[tuple[str, str, str]]:
 
 
 def write_robots() -> None:
+    # /scripts/ a /admin/ nemaji co delat ve vysledcich vyhledavani.
+    # /data/ zamerne nezakazujeme, i18n JSON potrebuje Google pri renderovani.
     content = f"""User-agent: *
 Allow: /
+Disallow: /scripts/
+Disallow: /admin/
 
 Sitemap: {SITE_URL}/sitemap.xml
 """
