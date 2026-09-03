@@ -95,6 +95,81 @@ GUIDES = [
         ],
     },
     {
+        "slug": "pasky-do-mrazu-a-chladu",
+        "seo_title": "Páska do mrazu a chladu | Mrazírny a nevytápěné sklady",
+        "title": "Pásky do mrazu a chladu",
+        "h1": "Která páska drží v mrazu a chladu",
+        "description": (
+            "Jak vybrat lepicí pásku do mrazíren a nevytápěných skladů. Rozdíl mezi aplikační "
+            "a provozní teplotou, volba lepidla a řada Evergreen s provozem do −20 °C."
+        ),
+        "intro": (
+            "V chladu se páska chová jinak než v temperované hale. Lepidlo tuhne, hůř zatéká "
+            "do povrchu a spoj se nestihne vytvořit. Většina problémů přitom nevzniká v mrazáku, "
+            "ale už při samotném lepení."
+        ),
+        "sections": [
+            (
+                "Aplikační a provozní teplota nejsou totéž",
+                "Aplikační teplota říká, při jaké teplotě se páska lepí a kdy vznikne spoj. Provozní "
+                "teplota po nalepení říká, co spoj vydrží potom. Tyhle dvě hodnoty se u pásek liší "
+                "často o desítky stupňů a právě jejich záměna stojí za většinou reklamací.\n\n"
+                "V praxi to znamená, že pásku nalepíte v temperované expedici a zásilka pak bez problémů "
+                "vydrží cestu v chladicím voze. Opačně to ale nefunguje. Pokud lepíte přímo v mrazírně, "
+                "musíte vybírat podle aplikační teploty, ne podle provozní."
+            ),
+            (
+                "Standardní pásky a jejich hranice",
+                "BOPP páska s lepidlem HOT MELT má skladovací a aplikační teplotu 14 až 28 °C a po nalepení "
+                "snese provoz od 0 do +50 °C. Díky okamžité počáteční přilnavosti je to dobrá volba "
+                "do nevytápěných skladů, kde se ještě lepí za běžné pokojové teploty.\n\n"
+                "BOPP páska s akrylovým lepidlem má stejnou aplikační teplotu 14 až 28 °C, ale širší "
+                "provozní rozsah −10 až +60 °C. Hodí se tam, kde zásilka projde chladem i teplem, "
+                "ale samotné balení probíhá v normálních podmínkách."
+            ),
+            (
+                "Když se lepí přímo v chladu",
+                "Pro balení v chladném provozu máme řadu Evergreen. Jde o akrylovou pásku na nosiči "
+                "BOPP 28 µm s lepidlem 22 µm na vodní bázi, kterou lze aplikovat už od 0 °C.\n\n"
+                "Po nalepení drží spoj v rozsahu −20 až +50 °C, takže zvládne mrazírenský sklad "
+                "i zimní přepravu. Minimální odběr je jedna paleta, tedy 2 376 kusů v základu "
+                "50 mm × 66 m."
+            ),
+            (
+                "Co ještě v chladu rozhoduje",
+                "Přítlak. Studené lepidlo je tužší a potřebuje delší a silnější přitlačení, aby se "
+                "spojilo s povrchem. U ručního balení je to nejčastější příčina, proč páska druhý den povolí.\n\n"
+                "Vlhkost a námraza. Na orosený nebo namrzlý karton nedrží žádná páska. Pokud zboží "
+                "přichází z chladu do teplé haly, nechte obal oschnout, než začnete balit.\n\n"
+                "Skladování rolí. Samotné role skladujte v temperovaném prostoru a do chladu je "
+                "berte až na balení. Prochladlá role lepí výrazně hůř než ta, která přišla ze skladu."
+            ),
+        ],
+        "links": [
+            ("/sortiment/bopp-pasky/bopp-paska-evergreen", "BOPP Evergreen"),
+            ("/sortiment/bopp-pasky/bopp-paska-hot-melt", "BOPP HOT MELT"),
+            ("/pruvodce/skladovani-aplikace-teplota", "Skladování a aplikace"),
+            ("/pruvodce/hot-melt-vs-akryl", "HOT MELT nebo akryl"),
+        ],
+        "faqs": [
+            (
+                "Jaká páska drží v mrazu?",
+                "Do mrazu se hodí řada Evergreen. Aplikovat ji lze už od 0 °C a po nalepení drží "
+                "spoj v rozsahu −20 až +50 °C.",
+            ),
+            (
+                "Proč mi páska v chladném skladu odlepuje?",
+                "Nejčastěji proto, že lepidlo při nízké teplotě nestihlo vytvořit spoj. Pomůže "
+                "silnější přítlak, temperované skladování rolí a páska určená pro nízké teploty.",
+            ),
+            (
+                "Můžu lepit přímo v mrazírně?",
+                "Se standardní BOPP páskou ne, ta má aplikační teplotu 14 až 28 °C. Pro lepení "
+                "v chladu je určená řada Evergreen s aplikací od 0 °C.",
+            ),
+        ],
+    },
+    {
         "slug": "paska-na-recyklovany-karton",
         "seo_title": "Páska na recyklovaný karton | Která drží | ALFA IN",
         "title": "Páska na recyklovaný karton",
@@ -501,7 +576,7 @@ def guide_main(g: dict) -> str:
         <span class="mx-2 text-slate-300">/</span>
         <a href="/pruvodce" class="hover:text-orange-600">Průvodce</a>
         <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-600">{esc(g["title"])}</span>
+        <span class="font-semibold text-orange-600">{esc(g["title"])}</span>
     </nav>
     <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">{esc(g["h1"])}</h1>
 {intro_html}
@@ -531,7 +606,7 @@ def guide_index_main() -> str:
     <nav class="mb-8 text-sm text-slate-500" aria-label="Drobečková navigace">
         <a href="/" class="hover:text-orange-600">Domů</a>
         <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-600">Průvodce</span>
+        <span class="font-semibold text-orange-600">Průvodce</span>
     </nav>
     <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">Průvodce páskami s potiskem</h1>
     <p class="mt-4 text-lg leading-relaxed text-slate-600">Praktické srovnání materiálů a lepidel, bez marketingového balastu.</p>

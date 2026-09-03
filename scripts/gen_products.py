@@ -1467,7 +1467,7 @@ def related_products_html(cat, current):
         return ''
     cards = []
     punch_slugs = (
-        'airtape', 'eco-50', 'eco-80', 'eco-100', 'nopp', 'loopp', 'poly-plus', 'evergreen',
+        'airtape', 'eco-50', 'eco-80', 'eco-100', 'nopp', 'loopp', 'poly-plus',
     )
     for s in siblings:
         tagline = s['tagline']
@@ -1484,7 +1484,7 @@ def related_products_html(cat, current):
                 </div>
                 <div class="flex flex-1 flex-col p-4">
                     <h3 class="text-sm font-bold text-slate-900 group-hover:text-orange-700">%s</h3>
-                    <p class="mt-1.5 flex-1 text-xs leading-relaxed text-slate-600">%s</p>
+                    <p class="related-product-card__tagline mt-1.5 flex-1 text-xs leading-relaxed text-slate-600">%s</p>
                     <span class="mt-3 text-xs font-semibold text-orange-600">Zobrazit detail →</span>
                 </div>
             </a>'''
@@ -1639,9 +1639,9 @@ for cat in CATS:
         <nav class="mb-6 text-sm text-slate-500" aria-label="Drobečková navigace">
             <a href="/index.html" class="hover:text-orange-600">Domů</a>
             <span class="mx-2 text-slate-300">/</span>
-            <a href="/sortiment.html" class="font-semibold text-orange-600 hover:text-orange-700">Sortiment</a>
+            <a href="/sortiment.html" class="hover:text-orange-600">Sortiment</a>
             <span class="mx-2 text-slate-300">/</span>
-            <span class="text-slate-600">%s</span>
+            <span class="font-semibold text-orange-600">%s</span>
         </nav>
         <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div class="max-w-3xl">
@@ -1751,7 +1751,7 @@ for cat in CATS:
         <span class="mx-2 text-slate-300">/</span>
         <a href="/sortiment/%s" class="hover:text-orange-600">%s</a>
         <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-600">%s</span>
+        <span class="font-semibold text-orange-600">%s</span>
     </nav>
 
     <div class="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-14">

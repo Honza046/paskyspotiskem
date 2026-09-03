@@ -94,69 +94,166 @@ LANDING_SLUGS = [
     'bezpecnostni-pasky-proti-kradezi',
 ]
 
-FOOTER_LINKS = [
-    ('/sortiment', 'Sortiment pásek'),
-    ('/srovnani-lepicich-pasek', 'Srovnání pásek'),
-    ('/pasky-s-logem', 'Pásky s logem'),
-    ('/bezpecnostni-pasky-proti-kradezi', 'Bezpečnostní pásky'),
-    ('/pasky-s-potiskem-pro-eshopy', 'Pásky pro e-shopy'),
-    ('/cena-pasky-s-potiskem', 'Cena pásek'),
-    ('/vyroba-lepicich-pasek', 'Výroba pásek'),
-    ('/pruvodce', 'Průvodce'),
-    ('/galerie', 'Galerie'),
-    ('/reference', 'Reference'),
-    ('/o-nas', 'O nás'),
-    ('/kontakt', 'Kontakt'),
-    ('/faq', 'FAQ'),
+FOOTER_COLUMNS = [
+    ('Pásky', [
+        ('/sortiment', 'Sortiment pásek'),
+        ('/srovnani-lepicich-pasek', 'Srovnání pásek'),
+        ('/pasky-s-logem', 'Pásky s logem'),
+        ('/bezpecnostni-pasky-proti-kradezi', 'Bezpečnostní pásky'),
+        ('/pasky-s-potiskem-pro-eshopy', 'Pásky pro e-shopy'),
+    ]),
+    ('Poradna', [
+        ('/pruvodce', 'Průvodce výběrem'),
+        ('/pruvodce/hot-melt-vs-akryl', 'HOT MELT nebo akryl'),
+        ('/pruvodce/paska-na-recyklovany-karton', 'Recyklovaný karton'),
+        ('/cena-pasky-s-potiskem', 'Cena pásek'),
+        ('/faq', 'Časté otázky'),
+    ]),
+    ('Firma', [
+        ('/o-nas', 'O nás'),
+        ('/vyroba-lepicich-pasek', 'Výroba pásek'),
+        ('/reference', 'Reference'),
+        ('/galerie', 'Galerie realizací'),
+        ('/kontakt', 'Kontakt'),
+    ]),
 ]
 
-FOOTER_LINKS_MARKER = '<!-- FOOTER-LINKS -->'
-FOOTER_LINKS_END = '<!-- /FOOTER-LINKS -->'
+FOOTER_GRID_START = '<!-- FOOTER-GRID -->'
+FOOTER_GRID_END = '<!-- /FOOTER-GRID -->'
+FOOTER_CONTACT_START = '<!--FC'
+
+FOOTER_GRID_OPEN = '<div class="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:grid-cols-2 lg:grid-cols-4">'
+LEGACY_LINKS_MARKER = '<!-- FOOTER-LINKS -->'
+LEGACY_LINKS_END = '<!-- /FOOTER-LINKS -->'
 
 
-def strip_footer_links(html: str) -> str:
-    """Odstrani drive vlozeny blok odkazu, aby se dal prepsat aktualnim seznamem."""
-    if FOOTER_LINKS_MARKER not in html:
+def _match_div(html: str, open_at: int) -> int:
+    """Vrati index za uzavíracím </div>, ktery patri k <div> na pozici open_at."""
+    depth = 0
+    i = open_at
+    while i < len(html):
+        if html.startswith('<div', i):
+            depth += 1
+            i += 4
+        elif html.startswith('</div>', i):
+            depth -= 1
+            i += 6
+            if depth == 0:
+                return i
+        else:
+            i += 1
+    raise ValueError('neuzavreny <div> v paticce')
+
+
+def _split_top_level_divs(inner: str) -> list[str]:
+    blocks, i = [], 0
+    while True:
+        start = inner.find('<div', i)
+        if start == -1:
+            return blocks
+        end = _match_div(inner, start)
+        blocks.append(inner[start:end])
+        i = end
+
+
+def _strip_legacy_links(html: str) -> str:
+    """Odstrani drivejsi jednoradkovy pruh odkazu, ktery nahrazuji sloupce."""
+    if LEGACY_LINKS_MARKER not in html:
         return html
-    if FOOTER_LINKS_END in html:
-        start = html.index(FOOTER_LINKS_MARKER)
-        end = html.index(FOOTER_LINKS_END) + len(FOOTER_LINKS_END) + 1
-        return html[:start].rstrip(' ') + html[end:]
-    # Starsi varianta bez koncove znacky. Blok konci hned za uzavrenim <nav>.
+    if LEGACY_LINKS_END in html:
+        a = html.index(LEGACY_LINKS_MARKER)
+        b = html.index(LEGACY_LINKS_END) + len(LEGACY_LINKS_END) + 1
+        return html[:a].rstrip(' ') + html[b:]
     return re.sub(
-        re.escape(FOOTER_LINKS_MARKER) + r'.*?</nav>\s*</div>\s*</div>\s*',
-        '',
-        html,
-        count=1,
-        flags=re.DOTALL,
+        re.escape(LEGACY_LINKS_MARKER) + r'.*?</nav>\s*</div>\s*</div>\s*',
+        '', html, count=1, flags=re.DOTALL,
     )
 
 
-def ensure_footer_links(html: str) -> str:
-    """Vlozi do paticky radek internich odkazu. Kazda stranka tak odkazuje na vsechny ostatni.
+def _footer_link_columns() -> str:
+    cols = []
+    for heading, links in FOOTER_COLUMNS:
+        items = '\n'.join(
+            f'                <li><a href="{href}" class="transition-colors hover:text-orange-400">{label}</a></li>'
+            for href, label in links
+        )
+        cols.append(
+            '        <div>\n'
+            f'            <h4 class="mb-5 text-sm font-bold uppercase tracking-wider text-white">{heading}</h4>\n'
+            # Velikost i rozestupy drzime na urovni kontaktnich udaju vlevo,
+            # jinak sloupce odkazu vyjdou o sto pixelu kratsi a vpravo zbyde diry.
+            '            <ul class="space-y-4 text-base">\n'
+            f'{items}\n'
+            '            </ul>\n'
+            '        </div>'
+        )
+    return '\n'.join(cols)
 
-    Blok se pri kazdem buildu prepise, takze se do nej promitnou i nove stranky.
+
+def rebuild_footer(html: str) -> str:
+    """Prerovna paticku na pet vyvazenych sloupcu.
+
+    Puvodni rozlozeni melo ctyri kontaktni bloky nad sebou v jednom sloupci,
+    ktery byl proti sloupcum odkazu nekolikanasobne vyssi. Kontakty proto
+    delime do dvou sloupcu (adresa se sitemi, spojeni) a odkazy do tri.
+
+    Kontaktni bloky se neopisuji do kodu, prebiraji se z existujiciho HTML,
+    takze zmena telefonu nebo adresy ve zdroji se propise sama. Cely blok se
+    pri kazdem buildu prestavi znovu, aby se do odkazu dostaly i nove stranky.
     """
-    html = strip_footer_links(html)
-    anchor = '    <div class="border-t border-slate-800">'
-    if anchor not in html:
+    html = _strip_legacy_links(html)
+
+    if FOOTER_CONTACT_START in html:
+        blocks = re.findall(
+            re.escape(FOOTER_CONTACT_START) + r'(\d)-->(.*?)<!--/FC-->',
+            html, flags=re.DOTALL,
+        )
+        contact = [b for _, b in sorted(blocks, key=lambda x: x[0])]
+        g = html.index(FOOTER_GRID_START)
+        g_end = html.index(FOOTER_GRID_END) + len(FOOTER_GRID_END) + 1
+        before, after = html[:g], html[g_end:]
+    elif FOOTER_GRID_OPEN in html:
+        i = html.index(FOOTER_GRID_OPEN)
+        j = _match_div(html, i)
+        inner = html[i + len(FOOTER_GRID_OPEN):j - len('</div>')]
+        contact = _split_top_level_divs(inner)
+        before, after = html[:i], html[j:]
+    else:
         return html
-    items = '\n'.join(
-        f'                <a href="{href}" class="whitespace-nowrap text-slate-400 transition-colors hover:text-orange-400">{label}</a>'
-        for href, label in FOOTER_LINKS
+
+    if len(contact) < 4:
+        return before + FOOTER_GRID_OPEN + '\n'.join(contact) + '</div>' + after
+
+    def keep(idx: int) -> str:
+        block = contact[idx]
+        if idx == 0:
+            # Nadpis "Najdete nas na adrese" je nadbytecny, adresa se pozna sama.
+            # Odstranenim se levy sloupec posune nahoru a spodek ikon socialnich
+            # siti sedne na uroven otevirací doby ve vedlejsim sloupci.
+            block = re.sub(
+                r'\s*<h4[^>]*data-i18n="footer\.address_heading"[^>]*>.*?</h4>',
+                '', block, count=1, flags=re.DOTALL,
+            )
+        return f'{FOOTER_CONTACT_START}{idx}-->{block}<!--/FC-->'
+
+    # 0 adresa, 1 e-mail, 2 telefon, 3 socialni site
+    col_address = f'        <div class="space-y-8">\n{keep(0)}\n{keep(3)}\n        </div>'
+    col_reach = f'        <div class="space-y-8">\n{keep(1)}\n{keep(2)}\n        </div>'
+
+    grid_open = (
+        '<div class="mx-auto grid max-w-7xl gap-x-8 gap-y-10 px-4 py-16 '
+        'sm:grid-cols-2 lg:grid-cols-5">'
     )
-    block = (
-        f'    {FOOTER_LINKS_MARKER}\n'
-        '    <div class="border-t border-slate-800">\n'
-        '        <div class="mx-auto max-w-screen-2xl px-4 py-6">\n'
-        '            <nav class="flex flex-wrap justify-center gap-x-4 gap-y-3 text-[13px] font-medium" aria-label="Odkazy v patičce">\n'
-        f'{items}\n'
-        '            </nav>\n'
-        '        </div>\n'
+    grid = (
+        f'{FOOTER_GRID_START}\n'
+        f'    {grid_open}\n'
+        f'{col_address}\n'
+        f'{col_reach}\n'
+        f'{_footer_link_columns()}\n'
         '    </div>\n'
-        f'    {FOOTER_LINKS_END}\n'
+        f'    {FOOTER_GRID_END}\n'
     )
-    return html.replace(anchor, block + anchor, 1)
+    return before + grid + after
 
 
 def repoint_nav(html: str) -> str:
@@ -264,7 +361,7 @@ def patch_file(path: Path) -> None:
         return
     content = absolutize_html(path.read_text(encoding='utf-8'))
     content = repoint_nav(content)
-    content = ensure_footer_links(content)
+    content = rebuild_footer(content)
     content = ensure_footer_credit(content)
     content = ensure_vercel_analytics(content)
     path.write_text(content, encoding='utf-8')

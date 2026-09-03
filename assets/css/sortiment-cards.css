@@ -480,6 +480,19 @@
     transform: translate3d(0, 0, 0) scale(1.8);
 }
 
+/*
+ * Popisek karty orezavame na tri radky. Delka taglinu se lisi produkt od
+ * produktu a i18n navic dosazuje vlastni text, takze bez orezu by jedna
+ * karta prerostla ostatni a rozhodila mrizku.
+ */
+.related-product-card__tagline {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+}
+
 /* Text block – slate band under the photo */
 .related-product-card > .flex.flex-1 {
     border-radius: 0 0 1rem 1rem;

@@ -371,7 +371,8 @@ html:not(.dark) body[data-page="home"] #kontakt1 {
     background-color: var(--home-band-elevated);
 }
 
-html:not(.dark) body[data-page="home"] #faq {
+html:not(.dark) body[data-page="home"] #faq,
+html:not(.dark) body[data-page="home"] #vzorek-zdarma {
     background-color: var(--home-band-muted);
 }
 
@@ -392,8 +393,13 @@ html:not(.dark) body[data-page="home"] #faq > .section-edge-fade--top {
     --edge-fade-color: var(--home-band-elevated);
 }
 
+/*
+ * Prechod tym -> FAQ nese spodni fade sekce #faq (bily wash do sedeho pasu),
+ * stejne jako v tmavem rezimu. Tady proto musi byt bila, jinak by se nad
+ * hranici objevil sedy pruh a pod ni bily, cimz vznikne ostry obraceny zlom.
+ */
 html:not(.dark) body[data-page="home"] #kontakt1 > .section-edge-fade--bottom {
-    --edge-fade-color: var(--home-band-muted);
+    --edge-fade-color: var(--home-band-elevated);
 }
 
 /* Dark: nabídka (světlejší) → poptávka (tmavší) → tým (světlejší) → … → footer (tmavší) */

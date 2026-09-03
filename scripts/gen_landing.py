@@ -784,7 +784,7 @@ def render_main(pg: dict) -> str:
     <nav class="mb-6 text-sm text-slate-500" aria-label="Drobečková navigace">
         <a href="/" class="hover:text-orange-600">Domů</a>
         <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-600">{esc(pg["nav"])}</span>
+        <span class="font-semibold text-orange-600">{esc(pg["nav"])}</span>
     </nav>
 
     <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">{esc(pg["h1"])}</h1>
