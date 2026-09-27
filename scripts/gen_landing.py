@@ -43,45 +43,99 @@ PAGES = [
             "Kontakty na obchodní oddělení pro balicí pásky s potiskem. Telefon, e-mail, "
             "sídlo ALFA IN v Nové Vsi u Třebíče a postup nezávazné poptávky."
         ),
-        "intro": (
+        "intro_parts": [
             "Obraťte se na nás s poptávkou balicích pásek pro váš provoz. Cenovou nabídku obvykle "
-            "vypracujeme ještě v den zadání. Pomůžeme vám vybrat ideální materiál, v případě potřeby "
-            "zajistíme provzorování ve vašem provozu a připravíme potisk přesně podle potřeb vaší expedice."
-        ),
+            "vypracujeme ",
+            ("strong", "ještě v den zadání"),
+            ". Pomůžeme vám vybrat ideální materiál, v případě potřeby zajistíme provzorování "
+            "ve vašem provozu a připravíme potisk přesně podle potřeb vaší expedice.",
+        ],
         "sections": [
             ("Obchodní oddělení", [
-                "Ing. Karel Petrák | Prodej balicích pásek. Telefon: +420 602 746 017 | "
-                "E-mail: karel.petrak@alfain.eu",
-                "Vojtěch Petrák | Asistent prodeje. Telefon: +420 773 216 266 | "
-                "E-mail: vojtech.petrak@alfain.eu",
-                "Provozní doba: Pracovní dny 7:00 – 15:30 hod.",
+                {
+                    "type": "person",
+                    "name": "Ing. Karel Petrák | Prodej balicích pásek",
+                    "phone": "+420 602 746 017",
+                    "phone_href": "tel:+420602746017",
+                    "email": "karel.petrak@alfain.eu",
+                },
+                {
+                    "type": "person",
+                    "name": "Vojtěch Petrák | Asistent prodeje",
+                    "phone": "+420 773 216 266",
+                    "phone_href": "tel:+420773216266",
+                    "email": "vojtech.petrak@alfain.eu",
+                },
+                {
+                    "type": "labeled",
+                    "label": "Provozní doba:",
+                    "text": "Pracovní dny 7:00 – 15:30 hod.",
+                },
             ]),
             ("Sídlo společnosti", [
-                "ALFA IN a.s., Nová Ves 74, 675 21 Nová Ves u Třebíče, Česká republika",
+                {
+                    "type": "p_strong_start",
+                    "strong": "ALFA IN a.s.",
+                    "text": ", Nová Ves 74, 675 21 Nová Ves u Třebíče, Česká republika",
+                },
                 "Pravidelně zásobujeme provozy po celé ČR. Osobní schůzku nebo vyzvednutí materiálu "
                 "lze sjednat po předchozí domluvě.",
             ]),
             ("Co uvést do poptávky pro rychlou kalkulaci", [
                 "Pokud máte konkrétní představu, urychlí nám práci tyto údaje:",
-                "Materiál a rozměr: Typ nosiče (fólie BOPP, recyklovaný plast, papír), šířka role "
-                "a návin (standardně 50 mm × 66 m pro ruční odvíječe nebo dlouhé strojní náviny "
-                "pro balicí linky).",
-                "Plánovaný odběr: Orientační počet rolí nebo kartonů.",
-                "Podklady pro potisk: Počet barev, případně požadavek na celoplošný barevný podklad. "
-                "Logo zašlete nejlépe ve vektorech (PDF, AI, EPS) s uvedením odstínů Pantone.",
-                "Nemáte-li přesné parametry, nevadí. Popište nám, co balíte, v jakém prostředí zásilky "
-                "připravujete a jak jsou těžké. Správnou kombinaci pásky i lepidla vybereme za vás.",
+                {
+                    "type": "ul",
+                    "items": [
+                        (
+                            "Materiál a rozměr:",
+                            "Typ nosiče (fólie BOPP, recyklovaný plast, papír), šířka role a návin "
+                            "(standardně 50 mm × 66 m pro ruční odvíječe nebo dlouhé strojní náviny "
+                            "pro balicí linky).",
+                        ),
+                        ("Plánovaný odběr:", "Orientační počet rolí nebo kartonů."),
+                        (
+                            "Podklady pro potisk:",
+                            "Počet barev, případně požadavek na celoplošný barevný podklad. Logo "
+                            "zašlete nejlépe ve vektorech (PDF, AI, EPS) s uvedením odstínů Pantone.",
+                        ),
+                    ],
+                },
+                {
+                    "type": "italic",
+                    "text": (
+                        "Nemáte-li přesné parametry, nevadí. Popište nám, co balíte, v jakém prostředí "
+                        "zásilky připravujete a jak jsou těžké. Správnou kombinaci pásky i lepidla "
+                        "vybereme za vás."
+                    ),
+                },
             ]),
             ("Jak probíhá spolupráce", [
-                "Nabídka a doporučení materiálu: Na základě vašeho zadání obratem navrhneme optimální "
-                "pásku a pošleme nezávaznou cenovou kalkulaci.",
-                "Bezplatné provzorování: Před potvrzením zakázky vám rádi zdarma zašleme vzorky reálných "
-                "materiálů a lepidel ze skladu. Funkčnost a přilnavost si tak sami otestujete přímo "
-                "ve vašem provozu – ať už lepíte na kartony, nebo do stretch fólie.",
-                "Výrobní náhled potisku: Připravíme oficiální grafický náhled pásky s vaším logem "
-                "k finálnímu odsouhlasení před spuštěním tiskové přípravy.",
-                "Výroba a dodání: Standardně dodáváme během 3 až 4 týdnů od schválení grafiky "
-                "a potvrzení objednávky. Zboží expedujeme bezpečně na nevratných EURO paletách.",
+                {
+                    "type": "ol",
+                    "items": [
+                        (
+                            "Nabídka a doporučení materiálu:",
+                            "Na základě vašeho zadání obratem navrhneme optimální pásku a pošleme "
+                            "nezávaznou cenovou kalkulaci.",
+                        ),
+                        (
+                            "Bezplatné provzorování:",
+                            "Před potvrzením zakázky vám rádi zdarma zašleme vzorky reálných materiálů "
+                            "a lepidel ze skladu. Funkčnost a přilnavost si tak sami otestujete přímo "
+                            "ve vašem provozu – ať už lepíte na kartony, nebo do stretch fólie.",
+                        ),
+                        (
+                            "Výrobní náhled potisku:",
+                            "Připravíme oficiální grafický náhled pásky s vaším logem k finálnímu "
+                            "odsouhlasení před spuštěním tiskové přípravy.",
+                        ),
+                        (
+                            "Výroba a dodání:",
+                            "Standardně dodáváme během 3 až 4 týdnů od schválení grafiky a potvrzení "
+                            "objednávky. Zboží expedujeme bezpečně na nevratných EURO paletách.",
+                        ),
+                    ],
+                },
             ]),
         ],
         "links": [
@@ -168,8 +222,8 @@ PAGES = [
             "Denně jistíme expedici pro více než 300 aktivních provozů. Pásky s potiskem "
             "i bez něj pro e-commerce, výrobu, automotive i zdravotnictví."
         ),
+        "intro_lead": "Denně jistíme expedici pro více než 300 aktivních provozů",
         "intro": (
-            "Denně jistíme expedici pro více než 300 aktivních provozů. "
             "Dodáváme spolehlivá obalová řešení pro rostoucí i zavedené e-commerce firmy, "
             "distribuční sklady i výrobní a automotive provozy. Zajišťujeme zakázkovou výrobu "
             "pásek s vlastním potiskem pro silný branding zásilek i velkoobjemové dodávky "
@@ -177,54 +231,113 @@ PAGES = [
         ),
         "sections": [
             ("Proč firmy volí pásky s potiskem?", [
-                "Branding za zlomek ceny. Potištěná lepicí páska promění obyčejnou hnědou krabici "
-                "v plnohodnotný nosič značky. Odpadá nutnost objednávat, draze platit a skladovat "
-                "potištěné kartony ve všech rozměrech. Jedna role pásky s logem sjednotí vizuál "
-                "celého skladu a výrazně šetří provozní náklady i místo na paletách.",
-                "Potisk, který se při přepravě neosetře. Využíváme pokročilou technologii spodního "
-                "sendvičového tisku – barva se nanáší na vnitřní stranu nosné fólie ještě před "
-                "nanesením lepidla. Grafika je tak 100% chráněná proti mechanickému oděru, "
-                "poškrábání i vlhkosti při manipulaci přepravců.",
-                "Bezpečnostní pečeť obsahu (Tamper Evident). Vlastní firemní potisk funguje jako "
-                "okamžitá bezpečnostní pečeť proti vykrádání zásilek na depech. Balík nelze "
-                "nepozorovaně otevřít a přelepit běžnou páskou, což výrazně eliminuje ztráty "
-                "při transportu.",
-                "Ekologické balení a plnění ESG cílů. Pro provozy sledující uhlíkovou stopu "
-                "dodáváme certifikované papírové pásky (100% recyklovatelné přímo s kartonem), "
-                "inovativní pásky z recyklovaných PET lahví i řadu ECO+ využívající recyklovaný "
-                "materiál z vlastní výroby fólií. Všechna udržitelná řešení dodáváme s potiskem "
-                "i v čistém neutrálním provedení.",
+                {
+                    "type": "h3p",
+                    "h3": "Branding za zlomek ceny",
+                    "p": (
+                        "Potištěná lepicí páska promění obyčejnou hnědou krabici v plnohodnotný nosič "
+                        "značky. Odpadá nutnost objednávat, draze platit a skladovat potištěné kartony "
+                        "ve všech rozměrech. Jedna role pásky s logem sjednotí vizuál celého skladu "
+                        "a výrazně šetří provozní náklady i místo na paletách."
+                    ),
+                },
+                {
+                    "type": "h3p",
+                    "h3": "Potisk, který se při přepravě neosetře",
+                    "p": (
+                        "Využíváme pokročilou technologii spodního sendvičového tisku – barva se nanáší "
+                        "na vnitřní stranu nosné fólie ještě před nanesením lepidla. Grafika je tak "
+                        "100% chráněná proti mechanickému oděru, poškrábání i vlhkosti při manipulaci "
+                        "přepravců."
+                    ),
+                },
+                {
+                    "type": "h3p",
+                    "h3": "Bezpečnostní pečeť obsahu (Tamper Evident)",
+                    "p": (
+                        "Vlastní firemní potisk funguje jako okamžitá bezpečnostní pečeť proti vykrádání "
+                        "zásilek na depech. Balík nelze nepozorovaně otevřít a přelepit běžnou páskou, "
+                        "což výrazně eliminuje ztráty při transportu."
+                    ),
+                },
+                {
+                    "type": "h3p",
+                    "h3": "Ekologické balení a plnění ESG cílů",
+                    "p": (
+                        "Pro provozy sledující uhlíkovou stopu dodáváme certifikované papírové pásky "
+                        "(100% recyklovatelné přímo s kartonem), inovativní pásky z recyklovaných PET "
+                        "lahví i řadu ECO+ využívající recyklovaný materiál z vlastní výroby fólií. "
+                        "Všechna udržitelná řešení dodáváme s potiskem i v čistém neutrálním provedení."
+                    ),
+                },
             ]),
             ("Čím se můžeme doložit: Zázemí, kapacita a certifikace", [
-                "Plně integrované výrobní zázemí. Na rozdíl od běžných distributorů, kteří čistou "
-                "fólii pouze přeprodávají od třetích stran, disponujeme zázemím s přímou výrobou "
-                "BOPP fólií. Fólii nemusíme nakupovat od dalších zprostředkovatelů. V případě "
-                "výkyvů na trhu tak držíme stoprocentní kontinuitu dodávek i garantované kapacity, "
-                "což představuje naši zásadní konkurenční výhodu.",
-                "Špičková kapacita flexotisku i rototisku. Zvládáme flexotisk až do 8 barev "
-                "i průmyslový tisk až do 10 barev. Realizujeme precizní jednobarevná i vícebarevná "
-                "loga, jemné rastry, celoplošné podtisky i velkoobjemové série standardních "
-                "nepotištěných pásek v libovolných šířkách a návinech.",
-                "Certifikovaná kvalita ISO 9001 a auditované standardy. Výrobní procesy "
-                "a laboratorní stálost lepidel podléhají normě ISO 9001. Udržitelný sortiment "
-                "opíráme o mezinárodní certifikace – krepové a kraftové papíry s certifikací FSC, "
-                "fólie s certifikací ISCC PLUS na bázi hmotnostní bilance a recyklované materiály "
-                "s garantovaným původem.",
-                "Ověřená průmyslová lepidla bez chemických rozpouštědel. Stavíme na šetrných "
-                "a výkonných lepicích systémech bez obsahu těkavých chemických rozpouštědel. "
-                "Dodáváme ekologické akrylátové disperze na vodní bázi (s tichým odvíjením, "
-                "vysokou stálostí a odolností proti UV záření) i vysoce přilnavý Hot Melt "
-                "na bázi syntetického kaučuku, který zaručuje okamžitý nátrh a pevné uzavření "
-                "kartonů i při nižších teplotách pod 18 °C a na recyklovaném papíru.",
+                {
+                    "type": "h3p",
+                    "h3": "Plně integrované výrobní zázemí",
+                    "p": (
+                        "Na rozdíl od běžných distributorů, kteří čistou fólii pouze přeprodávají "
+                        "od třetích stran, disponujeme zázemím s přímou výrobou BOPP fólií. Fólii "
+                        "nemusíme nakupovat od dalších zprostředkovatelů. V případě výkyvů na trhu "
+                        "tak držíme stoprocentní kontinuitu dodávek i garantované kapacity, což "
+                        "představuje naši zásadní konkurenční výhodu."
+                    ),
+                },
+                {
+                    "type": "h3p",
+                    "h3": "Špičková kapacita flexotisku i rototisku",
+                    "p": (
+                        "Zvládáme flexotisk až do 8 barev i průmyslový tisk až do 10 barev. Realizujeme "
+                        "precizní jednobarevná i vícebarevná loga, jemné rastry, celoplošné podtisky "
+                        "i velkoobjemové série standardních nepotištěných pásek v libovolných šířkách "
+                        "a návinech."
+                    ),
+                },
+                {
+                    "type": "h3p",
+                    "h3": "Certifikovaná kvalita ISO 9001 a auditované standardy",
+                    "p": (
+                        "Výrobní procesy a laboratorní stálost lepidel podléhají normě ISO 9001. "
+                        "Udržitelný sortiment opíráme o mezinárodní certifikace – krepové a kraftové "
+                        "papíry s certifikací FSC, fólie s certifikací ISCC PLUS na bázi hmotnostní "
+                        "bilance a recyklované materiály s garantovaným původem."
+                    ),
+                },
+                {
+                    "type": "h3p",
+                    "h3": "Ověřená průmyslová lepidla bez chemických rozpouštědel",
+                    "p": (
+                        "Stavíme na šetrných a výkonných lepicích systémech bez obsahu těkavých "
+                        "chemických rozpouštědel. Dodáváme ekologické akrylátové disperze na vodní "
+                        "bázi (s tichým odvíjením, vysokou stálostí a odolností proti UV záření) "
+                        "i vysoce přilnavý Hot Melt na bázi syntetického kaučuku, který zaručuje "
+                        "okamžitý nátrh a pevné uzavření kartonů i při nižších teplotách pod 18 °C "
+                        "a na recyklovaném papíru."
+                    ),
+                },
             ]),
             ("Řešení na míru pro různé segmenty", [
-                "E-commerce firmy: Profesionální unboxing zážitek, okamžitá vizuální identifikace "
-                "zásilky a výrazná úspora expedičních nákladů nahrazením drahých zakázkových krabic.",
-                "Výroba & automotive: Vysoká pevnost pásky v tahu, okamžitý silný příchyt "
-                "a spolehlivé uzavření těžkých kartonů i stabilní fixace palet.",
-                "Farmacie & zdravotnictví: Čisté technologie lepidel bez zápachu a chemických "
-                "rozpouštědel, certifikovaná stálost materiálů a spolehlivá ochrana citlivých "
-                "zásilek před neoprávněným vniknutím.",
+                {
+                    "type": "ul",
+                    "items": [
+                        (
+                            "E-commerce firmy:",
+                            "Profesionální unboxing zážitek, okamžitá vizuální identifikace zásilky "
+                            "a výrazná úspora expedičních nákladů nahrazením drahých zakázkových krabic.",
+                        ),
+                        (
+                            "Výroba & automotive:",
+                            "Vysoká pevnost pásky v tahu, okamžitý silný příchyt a spolehlivé uzavření "
+                            "těžkých kartonů i stabilní fixace palet.",
+                        ),
+                        (
+                            "Farmacie & zdravotnictví:",
+                            "Čisté technologie lepidel bez zápachu a chemických rozpouštědel, "
+                            "certifikovaná stálost materiálů a spolehlivá ochrana citlivých zásilek "
+                            "před neoprávněným vniknutím.",
+                        ),
+                    ],
+                },
             ]),
             ("Vyzkoušejte kvalitu na vlastních kartonech", [
                 "Nákupčí nepotřebuje sliby, ale jistotu funkčnosti ve svém provozu.",
@@ -238,6 +351,15 @@ PAGES = [
             ("/pasky-s-logem", "Pásky s logem"),
             ("/#gf_1", "Vyžádat vzorky zdarma"),
         ],
+        "cta": {
+            "title": "Vyzkoušejte kvalitu na vlastních kartonech",
+            "text": (
+                "Rádi vám bezplatně zašleme reálné vzorky materiálů a lepidel ze skladu, abyste si "
+                "pevnost a přilnavost otestovali přímo na vašich typech krabic."
+            ),
+            "button": "Vyžádat vzorky zdarma",
+            "href": "/#gf_1",
+        },
         "schema_type": "WebPage",
     },
     {
@@ -736,13 +858,110 @@ def load_chrome() -> tuple[str, str]:
     return header, footer
 
 
+def render_block(block) -> str:
+    """Render one section body block: plain string or structured dict."""
+    if isinstance(block, str):
+        return (
+            f'            <p class="mt-3 text-base leading-relaxed text-slate-600">'
+            f'{esc(block)}</p>'
+        )
+
+    kind = block["type"]
+    if kind == "h3p":
+        return (
+            f'            <h3 class="mt-6 text-base font-bold text-slate-900">{esc(block["h3"])}</h3>\n'
+            f'            <p class="mt-2 text-base leading-relaxed text-slate-600">{esc(block["p"])}</p>'
+        )
+    if kind == "person":
+        return (
+            '                <div>\n'
+            f'                    <p class="text-base font-bold text-slate-900">{esc(block["name"])}</p>\n'
+            f'                    <p class="mt-1 text-base leading-relaxed text-slate-600">'
+            f'Telefon: <a href="{esc(block["phone_href"])}" class="font-semibold text-orange-700 '
+            f'hover:text-orange-600">{esc(block["phone"])}</a> | E-mail: '
+            f'<a href="mailto:{esc(block["email"])}" class="font-semibold text-orange-700 '
+            f'hover:text-orange-600">{esc(block["email"])}</a></p>\n'
+            '                </div>'
+        )
+    if kind == "labeled":
+        return (
+            f'                <p class="text-base leading-relaxed text-slate-600">'
+            f'<span class="font-bold text-slate-900">{esc(block["label"])}</span> '
+            f'{esc(block["text"])}</p>'
+        )
+    if kind == "p_strong_start":
+        return (
+            f'            <p class="mt-3 text-base leading-relaxed text-slate-600">'
+            f'<strong class="font-bold text-slate-900">{esc(block["strong"])}</strong>'
+            f'{esc(block["text"])}</p>'
+        )
+    if kind == "italic":
+        return (
+            f'            <p class="mt-4 text-base italic leading-relaxed text-slate-600">'
+            f'{esc(block["text"])}</p>'
+        )
+    if kind in ("ul", "ol"):
+        tag = kind
+        list_style = "disc" if tag == "ul" else "decimal"
+        items = []
+        for label, text in block["items"]:
+            items.append(
+                f'                <li><strong class="font-bold text-slate-900">{esc(label)}</strong> '
+                f'{esc(text)}</li>'
+            )
+        return (
+            f'            <{tag} class="mt-4 list-{list_style} '
+            f'space-y-3 pl-5 text-base leading-relaxed text-slate-600">\n'
+            + "\n".join(items)
+            + f'\n            </{tag}>'
+        )
+    raise ValueError(f"Unknown block type: {kind}")
+
+
+def render_section_body(blocks: list) -> str:
+    """Wrap person/labeled blocks in a contact stack; otherwise render sequentially."""
+    if blocks and isinstance(blocks[0], dict) and blocks[0].get("type") in ("person", "labeled"):
+        inner = "\n".join(render_block(b) for b in blocks)
+        return f'            <div class="mt-4 space-y-5">\n{inner}\n            </div>'
+    return "\n".join(render_block(b) for b in blocks)
+
+
+def render_intro(pg: dict) -> str:
+    parts = []
+    if pg.get("intro_lead"):
+        parts.append(
+            f'    <p class="mt-4 text-lg font-semibold leading-relaxed text-slate-800">'
+            f'{esc(pg["intro_lead"])}</p>'
+        )
+        intro_cls = "mt-3"
+    else:
+        intro_cls = "mt-4"
+
+    if pg.get("intro_parts"):
+        chunks = []
+        for part in pg["intro_parts"]:
+            if isinstance(part, tuple) and part[0] == "strong":
+                chunks.append(
+                    f'<strong class="font-semibold text-slate-800">{esc(part[1])}</strong>'
+                )
+            else:
+                chunks.append(esc(part))
+        parts.append(
+            f'    <p class="{intro_cls} text-lg leading-relaxed text-slate-600">'
+            f'{"".join(chunks)}</p>'
+        )
+    elif pg.get("intro"):
+        parts.append(
+            f'    <p class="{intro_cls} text-lg leading-relaxed text-slate-600">'
+            f'{esc(pg["intro"])}</p>'
+        )
+    return "\n".join(parts)
+
+
 def render_main(pg: dict) -> str:
     sections = []
-    for title, paras in pg["sections"]:
-        body = "\n".join(
-            f'            <p class="mt-3 text-base leading-relaxed text-slate-600">{esc(t)}</p>'
-            for t in paras
-        )
+    for title, blocks in pg["sections"]:
+        body = render_section_body(blocks)
         sections.append(
             f'''        <section class="mt-10">
             <h2 class="text-2xl font-extrabold tracking-tight text-slate-900">{esc(title)}</h2>
@@ -771,6 +990,16 @@ def render_main(pg: dict) -> str:
         for href, label in pg["links"]
     )
 
+    cta = pg.get("cta") or {
+        "title": "Nezávazná kalkulace zdarma",
+        "text": (
+            "Napište nám, co balíte, a my doporučíme vhodný materiál i lepidlo. "
+            "Vzorky ze skladu posíláme zdarma."
+        ),
+        "button": "Chci kalkulaci",
+        "href": "/#gf_1",
+    }
+
     return f'''
 
 <main>
@@ -783,7 +1012,7 @@ def render_main(pg: dict) -> str:
     </nav>
 
     <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">{esc(pg["h1"])}</h1>
-    <p class="mt-4 text-lg leading-relaxed text-slate-600">{esc(pg["intro"])}</p>
+{render_intro(pg)}
 
 {chr(10).join(sections)}
 
@@ -797,9 +1026,9 @@ def render_main(pg: dict) -> str:
     </section>
 
     <section class="mt-10 rounded-3xl bg-gradient-to-r from-orange-600 to-amber-500 p-8 text-center shadow-lg sm:p-10">
-        <h2 class="text-2xl font-extrabold tracking-tight text-white">Nezávazná kalkulace zdarma</h2>
-        <p class="mx-auto mt-3 max-w-xl text-base leading-relaxed text-orange-50">Napište nám, co balíte, a my doporučíme vhodný materiál i lepidlo. Vzorky ze skladu posíláme zdarma.</p>
-        <a href="/#gf_1" class="mt-6 inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-3.5 text-sm font-bold text-orange-700 shadow-md transition-all hover:scale-[1.02]">Chci kalkulaci {ARROW}</a>
+        <h2 class="text-2xl font-extrabold tracking-tight text-white">{esc(cta["title"])}</h2>
+        <p class="mx-auto mt-3 max-w-xl text-base leading-relaxed text-orange-50">{esc(cta["text"])}</p>
+        <a href="{esc(cta["href"])}" class="mt-6 inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-3.5 text-sm font-bold text-orange-700 shadow-md transition-all hover:scale-[1.02]">{esc(cta["button"])} {ARROW}</a>
     </section>
 
 </section>
