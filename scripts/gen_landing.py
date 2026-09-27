@@ -37,53 +37,51 @@ PAGES = [
     {
         "slug": "kontakt",
         "nav": "Kontakt",
-        "h1": "Kontakty na výrobce pásek s potiskem",
-        "seo_title": "Kontakt | Pásky s potiskem od ALFA IN | Nová Ves u Třebíče",
+        "h1": "Kontakty a nezávazná poptávka",
+        "seo_title": "Kontakty a nezávazná poptávka | Pásky s potiskem | ALFA IN",
         "description": (
-            "Kontakty na obchodní oddělení pro lepicí pásky s potiskem. Telefon, e-mail, "
-            "adresa výroby v Nové Vsi u Třebíče a postup nezávazné poptávky."
+            "Kontakty na obchodní oddělení pro balicí pásky s potiskem. Telefon, e-mail, "
+            "sídlo ALFA IN v Nové Vsi u Třebíče a postup nezávazné poptávky."
         ),
         "intro": (
-            "Poptávku na pásky s potiskem vyřizujeme osobně a obvykle se ozveme ještě týž pracovní den. "
-            "Napište nebo zavolejte přímo na obchodní oddělení, které má balicí pásky na starosti."
+            "Obraťte se na nás s poptávkou balicích pásek pro váš provoz. Cenovou nabídku obvykle "
+            "vypracujeme ještě v den zadání. Pomůžeme vám vybrat ideální materiál, v případě potřeby "
+            "zajistíme provzorování ve vašem provozu a připravíme potisk přesně podle potřeb vaší expedice."
         ),
         "sections": [
-            ("Obchodní oddělení pro balicí pásky", [
-                "Ing. Karel Petrák zastupuje prodej balicích pásek. Zastihnete ho na čísle +420 602 746 017 "
-                "nebo na e-mailu karel.petrak@alfain.eu.",
-                "Vojtěch Petrák pracuje jako asistent prodeje a pomůže s přípravou nabídky i grafického návrhu. "
-                "Volejte +420 773 216 266 nebo pište na vojtech.petrak@alfain.eu.",
-                "Obchodní oddělení je dostupné v pracovní dny od 7.00 do 15.30 hodin.",
+            ("Obchodní oddělení", [
+                "Ing. Karel Petrák | Prodej balicích pásek. Telefon: +420 602 746 017 | "
+                "E-mail: karel.petrak@alfain.eu",
+                "Vojtěch Petrák | Asistent prodeje. Telefon: +420 773 216 266 | "
+                "E-mail: vojtech.petrak@alfain.eu",
+                "Provozní doba: Pracovní dny 7:00 – 15:30 hod.",
             ]),
-            ("Kde nás najdete", [
-                "Sídlo i výroba se nacházejí na adrese ALFA IN a.s., Nová Ves 74, 675 21 Nová Ves u Třebíče, "
-                "Česká republika.",
-                "Dodáváme po celé České republice i do zemí Evropské unie. Osobní odběr i schůzku ve výrobě "
-                "je možné domluvit předem telefonicky.",
+            ("Sídlo společnosti", [
+                "ALFA IN a.s., Nová Ves 74, 675 21 Nová Ves u Třebíče, Česká republika",
+                "Pravidelně zásobujeme provozy po celé ČR. Osobní schůzku nebo vyzvednutí materiálu "
+                "lze sjednat po předchozí domluvě.",
             ]),
-            ("Co nám poslat do poptávky", [
-                "Abychom mohli připravit přesnou kalkulaci, hodí se znát požadovaný materiál pásky, šířku a "
-                "délku návinu, orientované množství rolí a počet barev potisku.",
-                "Pokud chcete pásku s logem, přiložte prosím logo ve vektorovém formátu PDF, AI nebo EPS. "
-                "Vhodné je také uvést odstíny Pantone, pokud je vaše značka má definované.",
-                "Nemáte podklady kompletní? Nevadí. Stačí napsat, k čemu budete pásku používat, a zbytek "
-                "doladíme společně.",
+            ("Co uvést do poptávky pro rychlou kalkulaci", [
+                "Pokud máte konkrétní představu, urychlí nám práci tyto údaje:",
+                "Materiál a rozměr: Typ nosiče (fólie BOPP, recyklovaný plast, papír), šířka role "
+                "a návin (standardně 50 mm × 66 m pro ruční odvíječe nebo dlouhé strojní náviny "
+                "pro balicí linky).",
+                "Plánovaný odběr: Orientační počet rolí nebo kartonů.",
+                "Podklady pro potisk: Počet barev, případně požadavek na celoplošný barevný podklad. "
+                "Logo zašlete nejlépe ve vektorech (PDF, AI, EPS) s uvedením odstínů Pantone.",
+                "Nemáte-li přesné parametry, nevadí. Popište nám, co balíte, v jakém prostředí zásilky "
+                "připravujete a jak jsou těžké. Správnou kombinaci pásky i lepidla vybereme za vás.",
             ]),
-            ("Jak poptávka probíhá", [
-                "Po obdržení zadání připravíme cenovou nabídku a doporučíme vhodný materiál i typ lepidla. "
-                "Následně zpracujeme grafický náhled pásky, který vám pošleme ke schválení.",
-                "Standardní dodací lhůta je 3 až 4 týdny od schválení grafického návrhu a potvrzení objednávky. "
-                "U urgentních zakázek se snažíme dodání urychlit.",
-                "Vzorky materiálů a lepidel ze skladu zasíláme zdarma, abyste si mohli kvalitu ověřit ještě "
-                "před objednávkou.",
-            ]),
-            ("Na co se nás zákazníci ptají nejčastěji", [
-                "Zda dodáváme i pásky bez potisku. Ano, dodáváme je ve stejné kvalitě a minimální odběry "
-                "jsou v tom případě nižší.",
-                "Zda zvládneme malou sérii. U BOPP pásek začínáme na 360 kusech s akrylovým lepidlem "
-                "a na 504 kusech s lepidlem HOT MELT, takže i menší e-shop se do minimálního odběru vejde.",
-                "Zda umíme poradit s výběrem. To je běžná součást naší práce. Stačí popsat, co balíte, "
-                "v jakém prostředí a jak těžké zásilky posíláte, a vhodný materiál i lepidlo doporučíme sami.",
+            ("Jak probíhá spolupráce", [
+                "Nabídka a doporučení materiálu: Na základě vašeho zadání obratem navrhneme optimální "
+                "pásku a pošleme nezávaznou cenovou kalkulaci.",
+                "Bezplatné provzorování: Před potvrzením zakázky vám rádi zdarma zašleme vzorky reálných "
+                "materiálů a lepidel ze skladu. Funkčnost a přilnavost si tak sami otestujete přímo "
+                "ve vašem provozu – ať už lepíte na kartony, nebo do stretch fólie.",
+                "Výrobní náhled potisku: Připravíme oficiální grafický náhled pásky s vaším logem "
+                "k finálnímu odsouhlasení před spuštěním tiskové přípravy.",
+                "Výroba a dodání: Standardně dodáváme během 3 až 4 týdnů od schválení grafiky "
+                "a potvrzení objednávky. Zboží expedujeme bezpečně na nevratných EURO paletách.",
             ]),
         ],
         "links": [
@@ -164,60 +162,81 @@ PAGES = [
     {
         "slug": "reference",
         "nav": "Reference",
-        "h1": "Reference a zákazníci",
-        "seo_title": "Reference | Firmy, které používají naše pásky s potiskem",
+        "h1": "Reference a průmyslové balicí pásky",
+        "seo_title": "Reference | Průmyslové balicí pásky s potiskem | ALFA IN",
         "description": (
-            "Pásky s potiskem od ALFA IN používá přes 300 aktivních odběratelů z e-commerce, "
-            "automotive, nápojového průmyslu i zdravotnictví. Podívejte se na realizace."
+            "Denně jistíme expedici pro více než 300 aktivních provozů. Pásky s potiskem "
+            "i bez něj pro e-commerce, výrobu, automotive i zdravotnictví."
         ),
         "intro": (
-            "Na naše pásky s potiskem spoléhá každý den více než 300 aktivních odběratelů. "
-            "Najdete mezi nimi e-shopy, výrobní podniky i nadnárodní průmyslové skupiny."
+            "Denně jistíme expedici pro více než 300 aktivních provozů. "
+            "Dodáváme spolehlivá obalová řešení pro rostoucí i zavedené e-commerce firmy, "
+            "distribuční sklady i výrobní a automotive provozy. Zajišťujeme zakázkovou výrobu "
+            "pásek s vlastním potiskem pro silný branding zásilek i velkoobjemové dodávky "
+            "neutrálních pásek bez potisku pro ruční odvíječe i automatizované balicí linky."
         ),
         "sections": [
-            ("Firmy, které s námi spolupracují", [
-                "Mezi naše odběratele patří například Mobil Pohotovost, GLOBAL WINES & SPIRITS, PIERBURG "
-                "a RHEINMETALL AUTOMOTIVE.",
-                "Rozsah spolupráce se liší podle potřeb. Pro některé partnery vyrábíme jednu vizuálně "
-                "výraznou pásku s logem, pro jiné zajišťujeme celou škálu obalových pásek napříč provozy.",
+            ("Proč firmy volí pásky s potiskem?", [
+                "Branding za zlomek ceny. Potištěná lepicí páska promění obyčejnou hnědou krabici "
+                "v plnohodnotný nosič značky. Odpadá nutnost objednávat, draze platit a skladovat "
+                "potištěné kartony ve všech rozměrech. Jedna role pásky s logem sjednotí vizuál "
+                "celého skladu a výrazně šetří provozní náklady i místo na paletách.",
+                "Potisk, který se při přepravě neosetře. Využíváme pokročilou technologii spodního "
+                "sendvičového tisku – barva se nanáší na vnitřní stranu nosné fólie ještě před "
+                "nanesením lepidla. Grafika je tak 100% chráněná proti mechanickému oděru, "
+                "poškrábání i vlhkosti při manipulaci přepravců.",
+                "Bezpečnostní pečeť obsahu (Tamper Evident). Vlastní firemní potisk funguje jako "
+                "okamžitá bezpečnostní pečeť proti vykrádání zásilek na depech. Balík nelze "
+                "nepozorovaně otevřít a přelepit běžnou páskou, což výrazně eliminuje ztráty "
+                "při transportu.",
+                "Ekologické balení a plnění ESG cílů. Pro provozy sledující uhlíkovou stopu "
+                "dodáváme certifikované papírové pásky (100% recyklovatelné přímo s kartonem), "
+                "inovativní pásky z recyklovaných PET lahví i řadu ECO+ využívající recyklovaný "
+                "materiál z vlastní výroby fólií. Všechna udržitelná řešení dodáváme s potiskem "
+                "i v čistém neutrálním provedení.",
             ]),
-            ("Obory, ve kterých se osvědčily", [
-                "V e-commerce oceňují zákazníci hlavně brandingový efekt. Páska s logem promění každou "
-                "expedovanou zásilku v nosič reklamy, který zákazník uvidí při doručení.",
-                "V automotive a strojírenství jde především o spolehlivost fixace a odolnost v náročném "
-                "provozu, kde běžná páska nestačí.",
-                "V nápojovém a potravinářském průmyslu řešíme kombinaci pevnosti a čistoty balení, "
-                "často spolu s požadavkem na recyklovatelnost celého obalu.",
-                "Ve zdravotnictví je klíčová stabilita lepidla a čistota provedení bez agresivní chemie.",
+            ("Čím se můžeme doložit: Zázemí, kapacita a certifikace", [
+                "Plně integrované výrobní zázemí. Na rozdíl od běžných distributorů, kteří čistou "
+                "fólii pouze přeprodávají od třetích stran, disponujeme zázemím s přímou výrobou "
+                "BOPP fólií. Fólii nemusíme nakupovat od dalších zprostředkovatelů. V případě "
+                "výkyvů na trhu tak držíme stoprocentní kontinuitu dodávek i garantované kapacity, "
+                "což představuje naši zásadní konkurenční výhodu.",
+                "Špičková kapacita flexotisku i rototisku. Zvládáme flexotisk až do 8 barev "
+                "i průmyslový tisk až do 10 barev. Realizujeme precizní jednobarevná i vícebarevná "
+                "loga, jemné rastry, celoplošné podtisky i velkoobjemové série standardních "
+                "nepotištěných pásek v libovolných šířkách a návinech.",
+                "Certifikovaná kvalita ISO 9001 a auditované standardy. Výrobní procesy "
+                "a laboratorní stálost lepidel podléhají normě ISO 9001. Udržitelný sortiment "
+                "opíráme o mezinárodní certifikace – krepové a kraftové papíry s certifikací FSC, "
+                "fólie s certifikací ISCC PLUS na bázi hmotnostní bilance a recyklované materiály "
+                "s garantovaným původem.",
+                "Ověřená průmyslová lepidla bez chemických rozpouštědel. Stavíme na šetrných "
+                "a výkonných lepicích systémech bez obsahu těkavých chemických rozpouštědel. "
+                "Dodáváme ekologické akrylátové disperze na vodní bázi (s tichým odvíjením, "
+                "vysokou stálostí a odolností proti UV záření) i vysoce přilnavý Hot Melt "
+                "na bázi syntetického kaučuku, který zaručuje okamžitý nátrh a pevné uzavření "
+                "kartonů i při nižších teplotách pod 18 °C a na recyklovaném papíru.",
             ]),
-            ("Čím se můžeme doložit", [
-                "Za sebou máme více než 30 let zkušeností s potiskem obalových pásek a certifikovanou "
-                "výrobu podle normy ISO 9001.",
-                "Konkrétní realizace včetně vícebarevných tisků a bezpečnostních pásek najdete v galerii. "
-                "Rádi vám také zašleme vzorky materiálů a lepidel ze skladu zdarma.",
+            ("Řešení na míru pro různé segmenty", [
+                "E-commerce firmy: Profesionální unboxing zážitek, okamžitá vizuální identifikace "
+                "zásilky a výrazná úspora expedičních nákladů nahrazením drahých zakázkových krabic.",
+                "Výroba & automotive: Vysoká pevnost pásky v tahu, okamžitý silný příchyt "
+                "a spolehlivé uzavření těžkých kartonů i stabilní fixace palet.",
+                "Farmacie & zdravotnictví: Čisté technologie lepidel bez zápachu a chemických "
+                "rozpouštědel, certifikovaná stálost materiálů a spolehlivá ochrana citlivých "
+                "zásilek před neoprávněným vniknutím.",
             ]),
-            ("Co u nás zákazníci nejčastěji řeší", [
-                "Branding zásilek. Firmy chtějí, aby balík poznal zákazník už na první pohled, a přitom "
-                "nechtějí platit potištěné krabice v každém rozměru.",
-                "Udržitelné balení. Roste poptávka po papírových páskách s certifikací FSC a po řadě ECO+ "
-                "z recyklovaného BOPP, protože obojí pomáhá plnit ESG cíle.",
-                "Bezpečnost obsahu. Pásky Tamper Evident zanechají při odlepení viditelnou stopu, takže je "
-                "jasné, že se zásilkou někdo manipuloval.",
-                "Fixaci těžkých nákladů. Zde nastupují vyztužené a MOPP pásky, které udrží paletu i nadrozměrnou "
-                "zásilku bez povolení.",
-            ]),
-            ("Jak spolupráce obvykle začíná", [
-                "Většina partnerů začíná jednou páskou pro nejčastější typ zásilky. Ověří si kvalitu "
-                "v běžném provozu a teprve pak rozšiřuje odběr na další materiály.",
-                "Než se rozhodnete, pošleme vám zdarma vzorky materiálů a lepidel ze skladu z předchozích "
-                "realizací, abyste si mohli osahat kvalitu nosiče i chování lepidla.",
+            ("Vyzkoušejte kvalitu na vlastních kartonech", [
+                "Nákupčí nepotřebuje sliby, ale jistotu funkčnosti ve svém provozu.",
+                "Rádi vám bezplatně zašleme reálné vzorky materiálů a lepidel ze skladu, abyste si "
+                "pevnost a přilnavost otestovali přímo na vašich typech krabic.",
             ]),
         ],
         "links": [
             ("/galerie", "Galerie realizací"),
             ("/o-nas", "O výrobci"),
             ("/pasky-s-logem", "Pásky s logem"),
-            ("/#gf_1", "Nezávazná kalkulace"),
+            ("/#gf_1", "Vyžádat vzorky zdarma"),
         ],
         "schema_type": "WebPage",
     },
@@ -249,8 +268,8 @@ PAGES = [
                 "Pokud balíte v nevytápěném skladu nebo expedujete rychle, sáhněte po lepidle HOT MELT. "
                 "Přilne okamžitě a pevně i v chladu.",
                 "Pro tiché odvíjení ve velké balicí hale a pro dlouhodobé skladování zboží se hodí akryl "
-                "na vodní bázi, který lépe odolává UV záření a stárnutí.",
-                "Chcete li, aby zákazník mohl celou krabici i s páskou vyhodit do papíru, zvolte papírovou "
+                "s nehlučnou úpravou, který lépe odolává UV záření a stárnutí.",
+                "Chcete-li, aby zákazník mohl celou krabici i s páskou vyhodit do papíru, zvolte papírovou "
                 "pásku s certifikací FSC.",
             ]),
             ("Kolik pásky vlastně potřebujete", [
@@ -267,6 +286,9 @@ PAGES = [
                 "umožňuje recyklovat celou krabici najednou bez odlepování.",
                 "Alternativou je řada ECO+ z recyklovaného BOPP, která si zachovává mechanické vlastnosti "
                 "standardní pásky, ale využívá regenerát z naší vlastní výroby fólií.",
+                "Pro ještě vyšší nároky na udržitelnost nabízíme pásky ecoHIT s evropským patentem, "
+                "vyrobené z recyklovaných PET lahví, které vynikají extrémní pevností v tahu "
+                "a delším návinem na roli.",
             ]),
             ("Bezpečnost zásilek proti nepozorované manipulaci", [
                 "U dražšího zboží se vyplatí bezpečnostní páska Tamper Evident. Při pokusu o odlepení "
@@ -279,24 +301,11 @@ PAGES = [
             ("Sezónní špičky a plánování zásob", [
                 "Před Vánoci a při výprodejových akcích spotřeba pásky skokově roste. Protože standardní "
                 "dodací lhůta jsou 3 až 4 týdny od schválení návrhu, je dobré objednávat s předstihem.",
-                "U opakovaných odběratelů se osvědčuje domluvit větší sérii dopředu a odebírat ji postupně. "
+                "U opakovaných dodávek se osvědčuje domluvit větší sérii dopředu a odebírat ji postupně. "
                 "Jednotková cena klesá a nehrozí, že vám páska dojde uprostřed sezóny.",
                 "Pásky skladujte v prostředí o teplotě přibližně 14 až 28 stupňů Celsia, aby si lepidlo "
                 "udrželo deklarované vlastnosti.",
             ]),
-        ],
-        "faqs": [
-            ("Jaká je minimální objednávka pásky s potiskem pro e-shop?",
-             "U BOPP pásek je to 360 kusů s akrylovým lepidlem nebo 504 kusů s lepidlem HOT MELT. "
-             "U papírových a BOPET pásek závisí minimální odběr na konkrétním potisku."),
-            ("Za jak dlouho pásku dodáte?",
-             "Standardní dodací lhůta je 3 až 4 týdny od schválení grafického návrhu a potvrzení objednávky."),
-            ("Připravíte grafický návrh pásky?",
-             "Ano. Potřebujeme logo ideálně ve formátu PDF, AI nebo EPS, případně text a odstíny Pantone. "
-             "Před výrobou pošleme grafický náhled ke schválení."),
-            ("Dostanu vzorek zdarma?",
-             "Fyzický vzorek s vaším vlastním potiskem nevyrábíme. Zdarma však zašleme vzorky materiálů "
-             "a lepidel ze skladu z předchozích realizací."),
         ],
         "links": [
             ("/sortiment/bopp-pasky", "BOPP pásky"),
@@ -403,11 +412,9 @@ PAGES = [
         "sections": [
             ("Z čeho se cena skládá", [
                 "Základ tvoří materiál nosiče a typ lepidla. Standardní BOPP je nejúspornější volba, "
-                "polyesterové BOPET a papírové pásky s certifikací FSC patří do vyšší cenové hladiny.",
+                "polyesterové BOPET a papírové pásky s certifikací FSC patří do vyšší cenové kategorie.",
                 "Druhým faktorem je potisk. Rozhoduje počet barev, plocha pokrytí a zvolená technologie, "
                 "tedy flexotisk nebo rototisk.",
-                "Třetím faktorem je rozměr. Šířka pásky a délka návinu určují, kolik materiálu na jednu "
-                "roli připadne.",
                 "Poslední a často nejvýraznější položkou je odebrané množství. S rostoucím počtem rolí "
                 "klesá jednotková cena, protože se náklady na přípravu tisku rozloží do větší série.",
             ]),
@@ -417,13 +424,12 @@ PAGES = [
                 "U papírových a BOPET pásek se minimální množství stanovuje individuálně podle potisku "
                 "a krepové vrstvy.",
                 "Pásky dodáváme i bez potisku ve stejné kvalitě. Pokud vám branding zatím nedává smysl, "
-                "neutrální varianta bývá cenově výhodnější a minimální odběry jsou nižší.",
+                "neutrální varianta bývá cenově výhodnější.",
             ]),
             ("Jak ušetřit, aniž byste slevili z kvality", [
-                "Nejsnazší úspora vede přes počet barev. Dvoubarevné logo na jednobarevném podkladu "
-                "je výrazně levnější než plnobarevný motiv a v praxi bývá stejně dobře viditelné.",
-                "Druhou cestou je delší návin. Méně výměn rolí znamená nižší jednotkovou cenu i rychlejší "
-                "balení. Například BOPET pásky nabízejí dvojnásobný návin oproti běžné pásce.",
+                "Nejsnazší úspora vede přes počet barev. Dvoubarevné logo na základním (bílém, "
+                "transparentním nebo hnědém) podkladu je výrazně levnější než plnobarevný motiv "
+                "a v praxi bývá stejně dobře viditelné.",
                 "Pokud odebíráte pravidelně, vyplatí se domluvit větší sérii s postupným odvoláváním "
                 "místo opakovaných malých objednávek.",
             ]),
@@ -447,7 +453,7 @@ PAGES = [
                 "Pokud pásku používáte na vnitřní přesuny mezi sklady nebo na obaly, které zákazník nikdy "
                 "neuvidí, branding žádnou hodnotu nepřidá a neutrální varianta je levnější.",
                 "Naopak u zásilek, které jdou přímo ke koncovému zákazníkovi, bývá potisk jedním "
-                "z nejlevnějších reklamních nosičů v poměru k počtu zhlédnutí.",
+                "z nejlevnějších a nejlepších reklamních nosičů v poměru k počtu zhlédnutí.",
                 "Řada firem kombinuje obojí. Potištěnou pásku nasadí na expedici k zákazníkům a neutrální "
                 "na interní logistiku.",
             ]),
@@ -474,12 +480,12 @@ PAGES = [
     },
     {
         "slug": "srovnani-lepicich-pasek",
-        "nav": "Srovnání materiálů",
+        "nav": "Srovnání pásek",
         "h1": "Srovnání lepicích pásek podle materiálu",
         "seo_title": "Srovnání lepicích pásek | Jaký materiál vybrat",
         "description": (
-            "Přehledné srovnání lepicích pásek podle materiálu. BOPP, BOPET, papírové, MOPP, "
-            "vyztužené a textilní pásky, jejich silné stránky a typické použití."
+            "Přehledné srovnání lepicích pásek podle materiálu. BOPP, BOPET, papírové, MOPP "
+            "a vyztužené pásky, jejich silné stránky a typické použití."
         ),
         "intro": (
             "Materiál nosiče rozhoduje o tom, jak páska drží, kolik unese a jestli půjde recyklovat "
@@ -491,9 +497,10 @@ PAGES = [
                 "Chcete, aby zákazník vyhodil celou krabici i s páskou do papíru, zvolte papírovou "
                 "pásku s certifikací FSC.",
                 "Posíláte těžké nebo nadrozměrné zásilky a potřebujete extrémní odolnost proti přetržení, "
-                "volte BOPET nebo vyztužené pásky.",
+                "volte TACK+, Extra glue+ nebo vyztužené pásky.",
                 "Fixujete palety a komponenty, kde se nic nesmí povolit, jsou na řadě MOPP pásky.",
-                "Plníte ESG cíle a řešíte uhlíkovou stopu balení, podívejte se na udržitelnou řadu.",
+                "Plníte ESG cíle a řešíte uhlíkovou stopu balení, podívejte se na udržitelnou řadu "
+                "nebo ecoHIT.",
             ]),
             ("BOPP je standard pro většinu provozů", [
                 "Biaxiálně orientovaný polypropylen je nejrozšířenější nosič balicích pásek. Nabízí "
@@ -506,7 +513,7 @@ PAGES = [
             ("Papírové pásky pro plnou recyklovatelnost", [
                 "Papírový nosič z pevného kraftu umožňuje recyklovat pásku i karton společně "
                 "v jednom kontejneru, bez nutnosti cokoli odlepovat.",
-                "Matný papírový povrch působí prémiově a dobře se potiskuje. Typy C660, C680, C680R, "
+                "Matný papírový povrch působí na zákazníka velmi prémiově. Typy C660, C680, C680R, "
                 "C680RT a C690 vyrábíme z papíru FSC Mix Credit a lze je potisknout až 4 barvami.",
                 "Papír má vysokou lepivost i na recyklovaný karton a členité povrchy. Nevýhodou je "
                 "vyšší cena oproti BOPP a nižší odolnost proti vlhkosti.",
@@ -516,8 +523,6 @@ PAGES = [
                 "a agresivnímu chemickému prostředí. Má minimální tažnost a vysokou odolnost proti roztržení.",
                 "Praktickou výhodou je dvojnásobný návin role oproti běžné pásce. Obsluha méně často "
                 "mění roli a ve skladu zabere zásoba méně místa.",
-                "Uplatní se v náročných průmyslových provozech, při maskování během práškového lakování "
-                "a v elektrotechnice. Nabízíme i varianty z recyklovaných PET lahví.",
             ]),
             ("MOPP a vyztužené pásky na fixaci", [
                 "MOPP je monoaxiálně orientovaná fólie s extrémní pevností v podélném směru a prakticky "
@@ -527,21 +532,11 @@ PAGES = [
                 "a profilů nebo na náročný export.",
                 "Rozdíl je v čistotě. Kde vám vadí uvolňující se skelná vlákna, volte MOPP.",
             ]),
-            ("Textilní, malířské a odstranitelné pásky", [
-                "Textilní neboli duct pásky mají textilní výztuž, snadno se trhají rukou bez nůžek "
-                "a drží i na kovu, dřevě, betonu a plastu. Hodí se na rychlé opravy, svazování a údržbu.",
-                "Malířské krepové pásky zajišťují ostré hrany při malování a lakování a po dokončení "
-                "práce se odlepí bez zbytků lepidla.",
-                "Odstranitelné pásky drží pevně, ale po odlepení nezanechají lepidlo ani poškození "
-                "povrchu. Používají se na dočasné značení a ochranu citlivých materiálů.",
-            ]),
             ("Na co ještě myslet kromě materiálu", [
                 "Typ lepidla je stejně důležitý jako nosič. HOT MELT přilne okamžitě a zvládá chlad "
                 "i recyklované kartony, akryl je tišší při odvíjení a odolnější vůči UV záření.",
                 "Šířku a délku návinu volíte podle svého balicího procesu. Delší návin znamená méně "
-                "výměn rolí a nižší jednotkovou cenu.",
-                "Potisk nabízíme na BOPP, BOPET, papírové a udržitelné pásky. Zbylé typy dodáváme "
-                "v neutrálním provedení.",
+                "výměn rolí.",
             ]),
         ],
         "faqs": [
@@ -826,7 +821,7 @@ def page_schemas(pg: dict) -> list:
 
 NOT_FOUND_LINKS = [
     ("/sortiment", "Kompletní sortiment pásek"),
-    ("/srovnani-lepicich-pasek", "Srovnání materiálů"),
+    ("/srovnani-lepicich-pasek", "Srovnání pásek"),
     ("/pasky-s-logem", "Pásky s logem"),
     ("/cena-pasky-s-potiskem", "Cena a kalkulace"),
     ("/pruvodce", "Průvodce výběrem"),
