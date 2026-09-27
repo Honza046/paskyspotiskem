@@ -46,11 +46,33 @@
         return decimals > 0 ? n.toFixed(decimals) : String(Math.round(n));
     }
 
-    function animateNumberEl(el) {
-        if (el.dataset.animated === '1') {
+    function cancelNumberAnimation(el) {
+        if (el._animateRaf) {
+            cancelAnimationFrame(el._animateRaf);
+            el._animateRaf = null;
+        }
+        el._animateToken = (el._animateToken || 0) + 1;
+    }
+
+    function resetNumberEl(el) {
+        cancelNumberAnimation(el);
+        el.classList.remove('is-visible');
+
+        var staticText = el.getAttribute('data-animate-static');
+        if (staticText) {
+            el.textContent = staticText;
             return;
         }
-        el.dataset.animated = '1';
+
+        var suffix = el.getAttribute('data-animate-suffix') || '';
+        var prefix = el.getAttribute('data-animate-prefix') || '';
+        var decimals = parseInt(el.getAttribute('data-animate-decimals') || '0', 10);
+        el.textContent = prefix + formatNumber(0, decimals) + suffix;
+    }
+
+    function animateNumberEl(el) {
+        cancelNumberAnimation(el);
+        el.classList.remove('is-visible');
         el.classList.add('animate-number');
 
         var staticText = el.getAttribute('data-animate-static');
@@ -65,8 +87,7 @@
         var prefix = el.getAttribute('data-animate-prefix') || '';
         var decimals = parseInt(el.getAttribute('data-animate-decimals') || '0', 10);
         var duration = reducedMotion ? 0 : parseInt(el.getAttribute('data-animate-duration') || '1400', 10);
-
-        el.classList.add('animate-number');
+        var token = el._animateToken;
 
         if (reducedMotion || duration === 0 || isNaN(target)) {
             el.textContent = prefix + formatNumber(target, decimals) + suffix;
@@ -74,19 +95,25 @@
             return;
         }
 
+        el.textContent = prefix + formatNumber(0, decimals) + suffix;
+
         var start = null;
         function step(ts) {
+            if (el._animateToken !== token) {
+                return;
+            }
             if (!start) start = ts;
             var p = Math.min((ts - start) / duration, 1);
             var eased = 1 - Math.pow(1 - p, 3);
             el.textContent = prefix + formatNumber(target * eased, decimals) + suffix;
             if (p < 1) {
-                requestAnimationFrame(step);
+                el._animateRaf = requestAnimationFrame(step);
             } else {
+                el._animateRaf = null;
                 el.classList.add('is-visible');
             }
         }
-        requestAnimationFrame(step);
+        el._animateRaf = requestAnimationFrame(step);
     }
 
     function initAnimatedNumbers() {
@@ -99,7 +126,8 @@
                 entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
                         animateNumberEl(entry.target);
-                        obs.unobserve(entry.target);
+                    } else {
+                        resetNumberEl(entry.target);
                     }
                 });
             }, { threshold: 0.35 });
