@@ -944,21 +944,6 @@ html:not(.dark) body[data-page="home"] #kontakt1 > .section-edge-fade--bottom {
     font-variant-numeric: tabular-nums;
 }
 
-.animate-number.is-visible {
-    animation: cult-number-pop 0.5s cubic-bezier(0.34, 1.2, 0.64, 1) both;
-}
-
-@keyframes cult-number-pop {
-    from {
-        opacity: 0;
-        transform: translateY(0.5rem) scale(0.92);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
 @media (prefers-reduced-motion: reduce) {
     .shift-card:hover .shift-card__body {
         transform: none;
@@ -971,9 +956,5 @@ html:not(.dark) body[data-page="home"] #kontakt1 > .section-edge-fade--bottom {
 
     .dir-tabs__indicator {
         transition: none;
-    }
-
-    .animate-number.is-visible {
-        animation: none;
     }
 }

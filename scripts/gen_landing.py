@@ -28,6 +28,26 @@ from seo import (  # noqa: E402
 
 esc = html.escape
 
+
+def rich_parts(parts) -> str:
+    """Inline fragments: plain str, ("strong", text), or ("br",)."""
+    chunks = []
+    for part in parts:
+        if isinstance(part, tuple):
+            kind = part[0]
+            if kind == "strong":
+                chunks.append(
+                    f'<strong class="font-bold text-slate-900">{esc(part[1])}</strong>'
+                )
+            elif kind == "br":
+                chunks.append("<br>")
+            else:
+                chunks.append(esc(part[1]))
+        else:
+            chunks.append(esc(part))
+    return "".join(chunks)
+
+
 # ---------------------------------------------------------------------------
 # Obsah stranek. Vsechna fakta pochazi z existujiciho webu (homepage, FAQ,
 # pruvodci, paticka). Ceny ani udaje, ktere web neuvadi, zde nevymyslime.
@@ -752,63 +772,269 @@ PAGES = [
     {
         "slug": "vyroba-lepicich-pasek",
         "nav": "Výroba",
-        "h1": "Výroba lepicích pásek na míru",
-        "seo_title": "Výroba lepicích pásek | Český výrobce pásek na míru",
+        "h1": "Lepicí pásky na míru – špičková italská výroba, zázemí v ČR",
+        "seo_title": "Výroba lepicích pásek na míru | Italská produkce, zázemí ALFA IN",
         "description": (
-            "Jak vzniká lepicí páska na míru. Vlastní výroba BOPP fólií, nanášení lepidla, "
-            "potisk až 10 barev, řezání návinu a výstupní kontrola podle ISO 9001."
+            "Lepicí pásky z přední italské produkce s přímým zastoupením ALFA IN a.s. "
+            "Vlastní BOPP fólie, lepidla bez rozpouštědel, potisk až 10 barev a dodání 3–4 týdny."
         ),
-        "intro": (
-            "Lepicí pásky vyrábíme v Nové Vsi u Třebíče více než 30 let. Na rozdíl od většiny dodavatelů "
-            "si vyrábíme i samotné fólie, ze kterých pásky vznikají."
-        ),
+        "intro_paragraphs": [
+            [
+                "Dodáváme lepicí pásky z přední italské produkce s více než 20letou tradicí, "
+                "která patří k technologické špičce v Evropě. Jako společnost ",
+                ("strong", "ALFA IN a.s."),
+                " zajišťujeme přímé obchodní i technické zastoupení, odborné poradenství "
+                "a kompletní zákaznický servis pro český a slovenský trh.",
+            ],
+            [
+                "Na rozdíl od běžných přeprodejců spolupracujeme přímo s výrobním závodem, který si ",
+                ("strong", "sám vyrábí i podkladové BOPP fólie"),
+                ". Díky tomu garantujeme firmám stálou kvalitu, spolehlivé termíny a výhodné přímé ceny "
+                "bez zbytečných prostředníků.",
+            ],
+        ],
         "sections": [
-            ("Začínáme u vlastní fólie", [
-                "Nevyrábíme pouze pásky, ale i BOPP fólie, které slouží jako nosič. Díky tomu nejsme "
-                "závislí na externích dodavatelích nosiče a snáz ustojíme surovinové výkyvy na trhu.",
-                "Z vlastní výroby fólií vzniká také postindustriální regenerát, který dále používáme "
-                "v udržitelné řadě ECO+. Materiál tak zůstává v oběhu místo toho, aby skončil jako odpad.",
+            ("Základ ve vlastní výrobě fólií a udržitelnost", [
+                {
+                    "type": "p_strong_start",
+                    "strong": "Nezávislost a cenová stabilita:",
+                    "text": (
+                        " Výrobní závod disponuje vlastní extruzní linkou na BOPP fólie. "
+                        "Soběstačnost v nosném materiálu nás i naše zákazníky chrání před cenovými "
+                        "výkyvy a výpadky na trhu surovin."
+                    ),
+                },
+                {
+                    "type": "p_strong_start",
+                    "strong": "Cirkulární ekonomika a řada ECO+:",
+                    "text": (
+                        " Odstřižky a zbytky z produkce fólií se přímo v závodě regranulují "
+                        "a vrací se zpět do výrobního cyklu v udržitelné řadě ECO+. Šetříme tak "
+                        "primární suroviny i životní prostředí."
+                    ),
+                },
             ]),
-            ("Nanášení lepidla", [
-                "Podle určení pásky nanášíme buď akrylátovou disperzi na vodní bázi, nebo lepidlo HOT MELT "
-                "na bázi syntetického kaučuku.",
-                "Ani jedna technologie nepoužívá rozpouštědla. Lepidla proto neuvolňují toxické výpary "
-                "a jsou bezpečná pro pracovníky, kteří s páskou manipulují celý den.",
-                "Tloušťku vrstvy lepidla přizpůsobujeme účelu. Pro náročné a členité povrchy nabízíme "
-                "provedení se zvýšenou vrstvou lepidla.",
+            ("Ekologická lepidla bez rozpouštědel: Jaké vybrat?", [
+                "Všechna používaná lepidla jsou 100% bez rozpouštědel. Neuvolňují žádné toxické výpary "
+                "a jsou bezpečná pro personál i při celodenním balení. Volba typu závisí na způsobu "
+                "balení a teplotě ve skladu:",
+                {
+                    "type": "h3p",
+                    "h3": "HOT MELT (syntetický kaučuk) – okamžitá síla i v chladu:",
+                    "p": (
+                        "Vyniká bleskovou přilnavostí k povrchu kartonu. Je ideální volbou i do "
+                        "chladnějších provozů a nevytápěných skladů, kde drží i při teplotách pod "
+                        "18 °C. Používá se jako spolehlivý standard pro papírové i plastové pásky."
+                    ),
+                },
+                {
+                    "type": "h3p",
+                    "h3": "Akrylát na vodní bázi – tichý chod a dlouhá životnost:",
+                    "p": (
+                        "Vhodný pro dlouhodobé skladování, kde páska netrpí stárnutím ani UV zářením. "
+                        "Vyznačuje se velmi tichým a plynulým odvíjením, což oceníte především "
+                        "ve vícesměnných provozech."
+                    ),
+                },
             ]),
-            ("Potisk podle zadání", [
-                "Potisk zajišťujeme flexotiskem až v 8 barvách nebo rototiskem až v 10 barvách včetně "
-                "kvalitního spodního tisku.",
-                "Před zahájením výroby vždy připravíme grafický náhled a odešleme jej ke schválení. "
-                "Do výroby jde až podoba, kterou jste potvrdili.",
+            ("Certifikovaný potisk: Zviditelněte svou značku", [
+                {
+                    "type": "p_parts",
+                    "parts": [("strong", "Technologie tisku:")],
+                },
+                {
+                    "type": "ul_parts",
+                    "items": [
+                        [("strong", "Flexotisk"), " až v 8 barvách"],
+                        [
+                            ("strong", "Rototisk"),
+                            " až v 10 barvách pro ty nejjemnější detaily a složité motivy",
+                        ],
+                        [
+                            ("strong", "Sendvičový tisk"),
+                            " – barva je chráněna samotným nosičem, takže se při přepravě "
+                            "ani manipulaci neodře",
+                        ],
+                    ],
+                },
+                {
+                    "type": "p_parts",
+                    "parts": [
+                        ("strong", "100% kontrola před zahájením výroby:"),
+                        " s potvrzením objednávky vám zašleme přesný grafický náhled. "
+                        "Tiskneme výhradně to, co sami potvrdíte.",
+                    ],
+                },
             ]),
-            ("Řezání, návin a kontrola", [
-                "Hotový materiál řežeme na požadovanou šířku a navíjíme na zvolenou délku role. Šířku "
-                "i návin volíte podle svého balicího procesu, ať už balíte ručně nebo na automatické lince.",
-                "Výroba probíhá podle certifikovaných procesů ISO 9001. Papírové pásky navíc vyrábíme "
-                "z papíru FSC Mix Credit pod licencí FSC-C159046.",
-                "Standardní dodací lhůta je 3 až 4 týdny od schválení grafického návrhu a potvrzení "
-                "objednávky. U urgentních zakázek se snažíme dodání urychlit.",
+            ("Přehled materiálů a sortimentu", [
+                {
+                    "type": "table",
+                    "headers": [
+                        "Nosič / Typ",
+                        "Označení & Specifikace",
+                        "Vlastnosti a doporučené použití",
+                    ],
+                    "rows": [
+                        [
+                            [("strong", "BOPP")],
+                            "Standardní & tiché pásky",
+                            "Nejžádanější ekonomické řešení pro každodenní expedici. Skvělý poměr ceny a pevnosti.",
+                        ],
+                        [
+                            [("strong", "BOPET")],
+                            "Polyesterový nosič",
+                            [
+                                "Vysoce odolný materiál pro extrémní mechanické i teplotní namáhání. "
+                                "Tenčí profil dovoluje až ",
+                                ("strong", "dvojnásobný návin role"),
+                                " bez nutnosti časté výměny.",
+                            ],
+                        ],
+                        [
+                            [("strong", "Krepový papír")],
+                            [
+                                ("strong", "C660"),
+                                " (standardní krep, 60 g/m²)",
+                                ("br",),
+                                ("strong", "C680"),
+                                " (prémiový krep, 60 g/m²)",
+                            ],
+                            [
+                                "Samolepicí papírové pásky s certifikací ",
+                                ("strong", "FSC® Mix Credit"),
+                                ". Snadno se odvíjejí, kopírují hrany kartonu a hodí se "
+                                "pro ruční strojky i balicí automaty.",
+                            ],
+                        ],
+                        [
+                            [("strong", "Vyztužený krepový papír")],
+                            [
+                                ("strong", "C680R"),
+                                " (vyztuženo podélnými skleněnými vlákny)",
+                            ],
+                            (
+                                "Pro těžké zásilky a náročný transport. Odolává extrémnímu tahu "
+                                "bez prasknutí a plnohodnotně nahrazuje plastové vázací pásky."
+                            ),
+                        ],
+                        [
+                            [("strong", "Kraftový papír")],
+                            [
+                                ("strong", "KH80"),
+                                " (100% recyklovaný papír, 80 g/m²)",
+                            ],
+                            [
+                                "Maximálně udržitelná volba s certifikací ",
+                                ("strong", "FSC® Recycled"),
+                                " a certifikátem recyklovatelnosti ",
+                                ("strong", "Aticelca 501"),
+                                ". Zásilku lze recyklovat vcelku i s krabicí bez strhávání pásky.",
+                            ],
+                        ],
+                        [
+                            [("strong", "MOPP")],
+                            "Páskovací fólie",
+                            (
+                                "Pevný, jednosměrně tažený nosič s minimální tažností. Ideální "
+                                "pro fixaci palet, svazkování těžkých profilů či trubek."
+                            ),
+                        ],
+                    ],
+                },
             ]),
-            ("Materiály, které zpracováváme", [
-                "Nejčastějším nosičem je BOPP, tedy biaxiálně orientovaný polypropylen. Nabízí nejlepší "
-                "poměr ceny a pevnosti pro každodenní balení.",
-                "Polyesterový BOPET používáme tam, kde běžná páska nestačí. Odolává vysokým i nízkým teplotám, "
-                "chemikáliím a mechanickému namáhání a umožňuje dvojnásobný návin role.",
-                "Papírový nosič z pevného kraftu volíme pro plně recyklovatelné balení. Páska putuje "
-                "do sběru společně s kartonem bez nutnosti odlepování.",
-                "Dále zpracováváme monoaxiálně orientovaný MOPP pro pevnou fixaci, textilní nosiče "
-                "pro univerzální použití a krepový papír pro malířské pásky.",
+            ("Technické parametry – na co se zaměřit při výběru:", [
+                {
+                    "type": "h3p",
+                    "h3": "Přilnavost k oceli:",
+                    "p": None,
+                },
+                {
+                    "type": "p_parts",
+                    "parts": [
+                        "Udává rychlost a sílu počátečního přilepení pásky k podkladu. "
+                        "Pro standardní kartony postačuje běžný nános lepidla. Pro recyklované, "
+                        "prašné nebo strukturované povrchy nabízíme pásky se zesíleným nánosem "
+                        "a okamžitou fixací (",
+                        ("strong", "TACK+"),
+                        ", ",
+                        ("strong", "Extra Glue"),
+                        "), které zaručí stoprocentní spoj i v náročných podmínkách.",
+                    ],
+                },
+                {
+                    "type": "h3p",
+                    "h3": "Pevnost v tahu:",
+                    "p": None,
+                },
+                {
+                    "type": "p_parts",
+                    "parts": [
+                        "Míra odolnosti pásky proti přetržení při namáhání. U běžných balíků "
+                        "do cca 15 kg plně postačí standardní BOPP či papírová páska (30–40 N/cm). "
+                        "U těžkých zásilek, paletizace nebo vázání doporučujeme zesílené fólie "
+                        "či pásky zpevněné skelnými vlákny (",
+                        ("strong", "C680R"),
+                        "), které snesou zatížení 50 N/cm a více.",
+                    ],
+                },
+                {
+                    "type": "h3p",
+                    "h3": "Tažnost:",
+                    "p": "Schopnost materiálu pružit a absorbovat rázy před přetržením:",
+                },
+                {
+                    "type": "p_strong_start",
+                    "strong": "BOPP fólie:",
+                    "text": (
+                        " Mají vysokou průtažnost (často přes 100 %), díky čemuž výborně tlumí "
+                        "nárazy při přepravě a manipulaci bez rizika prasknutí."
+                    ),
+                },
+                {
+                    "type": "p_strong_start",
+                    "strong": "Krepový papír:",
+                    "text": (
+                        " Přirozená mírná pružnost (kolem 8–10 %) umožňuje pásce perfektně "
+                        "kopírovat hrany krabice."
+                    ),
+                },
+                {
+                    "type": "p_strong_start",
+                    "strong": "Kraftový papír a vláknité pásky:",
+                    "text": (
+                        " Vyznačují se minimální tažností – po zalepení drží spoj nehybně "
+                        "a pevně bez jakéhokoliv povolení."
+                    ),
+                },
             ]),
-            ("Co u pásky sledujeme", [
-                "Přilnavost k oceli vypovídá o okamžité lepivosti na hladký povrch. U papírových pásek "
-                "se běžný standard pohybuje mezi 4,0 a 5,0 N na centimetr, hodnoty nad 6,0 N na centimetr "
-                "znamenají extra silnou lepivost.",
-                "Pevnost v tahu ukazuje odolnost proti přetržení. Pro běžné balíky do zhruba 15 kilogramů "
-                "stačí 30 až 40 N na centimetr, u těžkých zásilek a výztuh jde o 50 N na centimetr a více.",
-                "Tažnost udává, o kolik procent se páska natáhne, než praskne. U papírových pásek je "
-                "standardem 8 až 12 procent, přičemž nízká tažnost okolo 5 procent drží krabici pevně bez průhybu.",
+            ("Dodací podmínky a servis ALFA IN", [
+                {
+                    "type": "p_strong_start",
+                    "strong": "Vzorky k otestování zdarma:",
+                    "text": (
+                        " Než zadáte ostrou objednávku, rádi vám zašleme testovací role vybraných "
+                        "pásek, abyste si ověřili jejich pevnost a lepení přímo na svých krabicích "
+                        "a linkách."
+                    ),
+                },
+                {
+                    "type": "p_strong_start",
+                    "strong": "Přímá doprava z výroby:",
+                    "text": (
+                        " Žádné zbytečné překládání po meziskladech – hotové zakázky expedujeme "
+                        "kamionem přímo z italského závodu rovnou na adresu vaší firmy. Šetříme "
+                        "tím čas i přepravní náklady."
+                    ),
+                },
+                {
+                    "type": "p_parts",
+                    "parts": [
+                        ("strong", "Dodací lhůty:"),
+                        " Standardní doba dodání zakázek s potiskem je ",
+                        ("strong", "3 až 4 týdny"),
+                        " od finálního odsouhlasení grafického návrhu.",
+                    ],
+                },
             ]),
         ],
         "links": [
@@ -868,10 +1094,16 @@ def render_block(block) -> str:
 
     kind = block["type"]
     if kind == "h3p":
-        return (
-            f'            <h3 class="mt-6 text-base font-bold text-slate-900">{esc(block["h3"])}</h3>\n'
-            f'            <p class="mt-2 text-base leading-relaxed text-slate-600">{esc(block["p"])}</p>'
+        out = (
+            f'            <h3 class="mt-6 text-base font-bold text-slate-900">'
+            f'{esc(block["h3"])}</h3>'
         )
+        if block.get("p"):
+            out += (
+                f'\n            <p class="mt-2 text-base leading-relaxed text-slate-600">'
+                f'{esc(block["p"])}</p>'
+            )
+        return out
     if kind == "person":
         return (
             '                <div>\n'
@@ -895,6 +1127,11 @@ def render_block(block) -> str:
             f'<strong class="font-bold text-slate-900">{esc(block["strong"])}</strong>'
             f'{esc(block["text"])}</p>'
         )
+    if kind == "p_parts":
+        return (
+            f'            <p class="mt-3 text-base leading-relaxed text-slate-600">'
+            f'{rich_parts(block["parts"])}</p>'
+        )
     if kind == "italic":
         return (
             f'            <p class="mt-4 text-base italic leading-relaxed text-slate-600">'
@@ -914,6 +1151,50 @@ def render_block(block) -> str:
             f'space-y-3 pl-5 text-base leading-relaxed text-slate-600">\n'
             + "\n".join(items)
             + f'\n            </{tag}>'
+        )
+    if kind == "ul_parts":
+        items = []
+        for parts in block["items"]:
+            items.append(f'                <li>{rich_parts(parts)}</li>')
+        return (
+            '            <ul class="mt-4 list-disc space-y-3 pl-5 text-base '
+            'leading-relaxed text-slate-600">\n'
+            + "\n".join(items)
+            + '\n            </ul>'
+        )
+    if kind == "table":
+        def cell_html(cell) -> str:
+            if isinstance(cell, list):
+                return rich_parts(cell)
+            if isinstance(cell, tuple):
+                return rich_parts([cell])
+            return esc(cell)
+
+        head_cells = "".join(
+            f'<th scope="col" class="px-3 py-3 text-left text-sm font-bold text-slate-900 '
+            f'sm:px-4">{esc(h)}</th>'
+            for h in block["headers"]
+        )
+        body_rows = []
+        for row in block["rows"]:
+            tds = "".join(
+                f'<td class="px-3 py-3 align-top text-sm leading-relaxed text-slate-600 '
+                f'sm:px-4">{cell_html(c)}</td>'
+                for c in row
+            )
+            body_rows.append(f'                    <tr class="border-t border-slate-100">{tds}</tr>')
+        return (
+            '            <div class="mt-5 overflow-x-auto rounded-2xl border border-slate-200 '
+            'bg-white shadow-sm">\n'
+            '                <table class="min-w-full border-collapse text-left">\n'
+            '                    <thead class="bg-slate-50">\n'
+            f'                        <tr>{head_cells}</tr>\n'
+            '                    </thead>\n'
+            '                    <tbody>\n'
+            + "\n".join(body_rows)
+            + '\n                    </tbody>\n'
+            '                </table>\n'
+            '            </div>'
         )
     raise ValueError(f"Unknown block type: {kind}")
 
@@ -937,7 +1218,15 @@ def render_intro(pg: dict) -> str:
     else:
         intro_cls = "mt-4"
 
-    if pg.get("intro_parts"):
+    if pg.get("intro_paragraphs"):
+        for i, para_parts in enumerate(pg["intro_paragraphs"]):
+            cls = intro_cls if i == 0 else "mt-3"
+            size = "text-lg" if i == 0 else "text-base"
+            parts.append(
+                f'    <p class="{cls} {size} leading-relaxed text-slate-600">'
+                f'{rich_parts(para_parts)}</p>'
+            )
+    elif pg.get("intro_parts"):
         chunks = []
         for part in pg["intro_parts"]:
             if isinstance(part, tuple) and part[0] == "strong":

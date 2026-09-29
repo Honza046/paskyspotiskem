@@ -56,7 +56,6 @@
 
     function resetNumberEl(el) {
         cancelNumberAnimation(el);
-        el.classList.remove('is-visible');
 
         var staticText = el.getAttribute('data-animate-static');
         if (staticText) {
@@ -72,13 +71,11 @@
 
     function animateNumberEl(el) {
         cancelNumberAnimation(el);
-        el.classList.remove('is-visible');
         el.classList.add('animate-number');
 
         var staticText = el.getAttribute('data-animate-static');
         if (staticText) {
             el.textContent = staticText;
-            el.classList.add('is-visible');
             return;
         }
 
@@ -91,7 +88,6 @@
 
         if (reducedMotion || duration === 0 || isNaN(target)) {
             el.textContent = prefix + formatNumber(target, decimals) + suffix;
-            el.classList.add('is-visible');
             return;
         }
 
@@ -110,7 +106,6 @@
                 el._animateRaf = requestAnimationFrame(step);
             } else {
                 el._animateRaf = null;
-                el.classList.add('is-visible');
             }
         }
         el._animateRaf = requestAnimationFrame(step);

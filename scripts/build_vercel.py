@@ -257,7 +257,7 @@ def rebuild_footer(html: str) -> str:
 
 
 def repoint_nav(html: str) -> str:
-    """Presmeruje polozky Reference a Kontakty z kotev na samostatne URL."""
+    """Reference → /reference; header Kontakty → /#kontakt1 (footer zůstává /kontakt)."""
     if '<!-- SITE-TOP -->' not in html or '<!-- /SITE-TOP -->' not in html:
         return html
     start = html.index('<!-- SITE-TOP -->')
@@ -266,10 +266,21 @@ def repoint_nav(html: str) -> str:
     for old, new in [
         ('href="/#reference"', 'href="/reference"'),
         ('href="#reference"', 'href="/reference"'),
-        ('href="/#kontakt1"', 'href="/kontakt"'),
-        ('href="#kontakt1"', 'href="/kontakt"'),
     ]:
         top = top.replace(old, new)
+    # Header Kontakty (desktop + mobile) → homepage sekce #kontakt1
+    top = top.replace(
+        'href="/kontakt" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.contacts"',
+        'href="/#kontakt1" class="px-2 py-1 text-sm font-semibold text-slate-700 transition-colors hover:text-orange-600" data-i18n="nav.contacts"',
+    )
+    top = top.replace(
+        'href="/kontakt" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.contacts"',
+        'href="/#kontakt1" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600" data-i18n="nav.contacts"',
+    )
+    top = top.replace(
+        'href="/kontakt" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600 hover:bg-slate-50" data-i18n="nav.contacts"',
+        'href="/#kontakt1" class="block px-2 py-2 font-semibold text-slate-800 transition-colors hover:text-orange-600 hover:bg-slate-50" data-i18n="nav.contacts"',
+    )
     return html[:start] + top + html[end:]
 
 

@@ -92,40 +92,23 @@
         if (show) {
             item.hidden = false;
             item.removeAttribute('aria-hidden');
+            item.classList.remove('is-hidden');
             if (instant || prefersReducedMotion()) {
-                item.classList.remove('is-hidden', 'is-revealing');
+                item.classList.remove('is-revealing');
                 return;
             }
-            if (item.classList.contains('is-hidden')) {
-                item.classList.add('is-revealing');
-                // force reflow so transition runs from collapsed state
-                void item.offsetHeight;
-                item.classList.remove('is-hidden');
-                window.setTimeout(function () {
-                    item.classList.remove('is-revealing');
-                }, 420);
-            } else {
-                item.classList.remove('is-hidden', 'is-revealing');
-            }
+            item.classList.add('is-revealing');
+            window.setTimeout(function () {
+                item.classList.remove('is-revealing');
+            }, 360);
             return;
         }
 
         closeItem(item);
-        if (instant || prefersReducedMotion()) {
-            item.classList.add('is-hidden');
-            item.classList.remove('is-revealing');
-            item.hidden = true;
-            item.setAttribute('aria-hidden', 'true');
-            return;
-        }
         item.classList.add('is-hidden');
         item.classList.remove('is-revealing');
+        item.hidden = true;
         item.setAttribute('aria-hidden', 'true');
-        window.setTimeout(function () {
-            if (item.classList.contains('is-hidden')) {
-                item.hidden = true;
-            }
-        }, 380);
     }
 
     function updateMoreButton(shown, totalMatched) {
@@ -177,8 +160,8 @@
     function apply(options) {
         options = options || {};
         var animate = options.animate !== false;
-        var staggerHide = !!options.staggerHide;
         var staggerShow = !!options.staggerShow;
+        var revealFrom = typeof options.revealFrom === 'number' ? options.revealFrom : 0;
         var token = ++animToken;
         var matched = matchedItems();
         var limit = isFiltering() ? matched.length : Math.min(visibleLimit, matched.length);
@@ -194,7 +177,12 @@
             if (shouldShow) {
                 visible += 1;
                 if (currentlyHidden) {
-                    toReveal.push(item);
+                    // Already-visible range (e.g. after cancelled stagger) → show instantly.
+                    if (matchIndex < revealFrom || !animate || !staggerShow) {
+                        setItemVisible(item, true, true);
+                    } else {
+                        toReveal.push(item);
+                    }
                 } else {
                     setItemVisible(item, true, true);
                 }
@@ -205,51 +193,24 @@
             }
         });
 
-        function runHide(done) {
-            if (!toHide.length) {
-                done();
-                return;
-            }
-            if (!animate || prefersReducedMotion() || !staggerHide) {
-                toHide.forEach(function (item) {
-                    setItemVisible(item, false, !animate);
-                });
-                done();
-                return;
-            }
-            // hide from bottom up for a smoother collapse
-            var ordered = toHide.slice().reverse();
-            ordered.forEach(function (item, i) {
-                window.setTimeout(function () {
-                    if (token !== animToken) return;
-                    setItemVisible(item, false, false);
-                    if (i === ordered.length - 1) {
-                        window.setTimeout(done, 320);
-                    }
-                }, i * STAGGER_MS);
-            });
-        }
+        toHide.forEach(function (item) {
+            setItemVisible(item, false, true);
+        });
 
-        function runReveal() {
-            if (!toReveal.length || token !== animToken) return;
+        if (toReveal.length && token === animToken) {
             if (!animate || prefersReducedMotion() || !staggerShow) {
                 toReveal.forEach(function (item) {
-                    setItemVisible(item, true, !animate);
+                    setItemVisible(item, true, true);
                 });
-                return;
+            } else {
+                toReveal.forEach(function (item, i) {
+                    window.setTimeout(function () {
+                        if (token !== animToken) return;
+                        setItemVisible(item, true, false);
+                    }, i * STAGGER_MS);
+                });
             }
-            toReveal.forEach(function (item, i) {
-                window.setTimeout(function () {
-                    if (token !== animToken) return;
-                    setItemVisible(item, true, false);
-                }, i * STAGGER_MS);
-            });
         }
-
-        runHide(function () {
-            if (token !== animToken) return;
-            runReveal();
-        });
 
         if (emptyEl) {
             emptyEl.classList.toggle('hidden', visible !== 0);
@@ -283,6 +244,19 @@
         });
     }
 
+    function scrollListIntoView() {
+        if (!list) return;
+        var header = document.querySelector('.site-header');
+        var banner = document.querySelector('.info-banner, [data-info-banner]');
+        var pad = 16;
+        if (header) pad += header.getBoundingClientRect().height;
+        if (banner && !banner.hidden && getComputedStyle(banner).display !== 'none') {
+            pad += banner.getBoundingClientRect().height;
+        }
+        var top = list.getBoundingClientRect().top + window.scrollY - pad;
+        window.scrollTo({ top: Math.max(0, top), behavior: 'auto' });
+    }
+
     if (moreBtn) {
         moreBtn.addEventListener('click', function () {
             var matched = matchedItems();
@@ -290,17 +264,15 @@
 
             if (action === 'less') {
                 visibleLimit = PREVIEW_LIMIT;
-                apply({ animate: true, staggerHide: true, staggerShow: false });
-                window.setTimeout(function () {
-                    if (list && typeof list.scrollIntoView === 'function') {
-                        list.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                }, 80);
+                // Instant collapse — animated hide + smooth scroll fights the height drop.
+                apply({ animate: false });
+                scrollListIntoView();
                 return;
             }
 
+            var before = visibleLimit;
             visibleLimit = Math.min(visibleLimit + BATCH_SIZE, matched.length);
-            apply({ animate: true, staggerShow: true, staggerHide: false });
+            apply({ animate: true, staggerShow: true, revealFrom: before });
         });
     }
 
