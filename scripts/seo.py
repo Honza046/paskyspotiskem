@@ -27,7 +27,7 @@ SEO_MARKER_END = '<!-- /seo:extra -->'
 
 HOME_TITLE = 'Pásky s potiskem na míru | Lepicí pásky s logem | ALFA IN'
 HOME_DESCRIPTION = (
-    'Vyrábíme lepicí pásky s potiskem a vlastním logem pro firmy, e-shopy a sklady. '
+    'Dodáváme lepicí pásky s potiskem a vlastním logem pro firmy, e-shopy a sklady. '
     'Potisk až 10 barev, odběr od 360 ks, vzorky zdarma a kalkulace po celé ČR.'
 )
 SORTIMENT_TITLE = 'Lepicí pásky s potiskem | Kompletní sortiment | ALFA IN'

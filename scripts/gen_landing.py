@@ -169,10 +169,10 @@ PAGES = [
     {
         "slug": "o-nas",
         "nav": "O nás",
-        "h1": "O výrobci lepicích pásek ALFA IN",
-        "seo_title": "O nás | Český výrobce lepicích pásek s potiskem | ALFA IN",
+        "h1": "O dodavateli lepicích pásek ALFA IN",
+        "seo_title": "O nás | Český dodavatel lepicích pásek s potiskem | ALFA IN",
         "description": (
-            "Vyrábíme lepicí pásky s potiskem více než 30 let. Vlastní výroba fólií, certifikace "
+            "Tradiční český dodavatel pásek s potiskem více než 30 let. Vlastní výroba fólií, certifikace "
             "ISO 9001 a FSC, přes 300 aktivních odběratelů a důraz na udržitelné materiály."
         ),
         "intro": (
