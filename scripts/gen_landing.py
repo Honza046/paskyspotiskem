@@ -461,10 +461,10 @@ PAGES = [
         "slug": "pasky-s-logem",
         "nav": "Pásky s logem",
         "h1": "Lepicí pásky s logem na míru",
-        "seo_title": "Pásky s logem | Potisk lepicích pásek až 10 barev",
+        "seo_title": "Lepicí páska s logem na míru | Potisk až 10 barev | ALFA IN",
         "description": (
-            "Lepicí pásky s vlastním logem. Flexotisk až 8 barev, rototisk až 10 barev, "
-            "příprava podkladů, odstíny Pantone a grafický náhled před výrobou."
+            "Lepicí páska s vlastním logem pro firmy a e-shopy. Flexotisk až 8 barev, rototisk až 10, "
+            "od 360 ks, grafický náhled zdarma a dodání po celé ČR."
         ),
         "intro": (
             "Páska s logem je jeden z nejlevnějších brandingových prvků, které firma může nasadit. "

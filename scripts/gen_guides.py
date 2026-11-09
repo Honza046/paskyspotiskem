@@ -248,12 +248,12 @@ GUIDES = [
     },
     {
         "slug": "hot-melt-vs-akryl",
-        "seo_title": "HOT MELT nebo akryl | Srovnání lepidel na pásky | ALFA IN",
+        "seo_title": "HOT MELT vs akryl: které lepidlo na pásku zvolit? | ALFA IN",
         "title": "Hotmelt, nebo akryl?",
         "h1": "Hotmelt, nebo akryl? Jak vybrat správnou BOPP lepicí pásku",
         "description": (
-            "Srovnání lepidel HOT MELT a akryl u BOPP pásek s potiskem. Okamžitá lepivost, UV odolnost, skladování "
-            "a ideální použití pro e-commerce i průmyslové linky."
+            "Hotmelt, nebo akryl? Srovnání lepivosti, UV odolnosti a použití u BOPP pásek. "
+            "Pro e-commerce, sklady i automatické linky – vyberte správné lepidlo za 2 minuty."
         ),
         "intro": (
             "Při výběru ideální BOPP lepicí pásky se nejčastěji setkáte s klíčovou otázkou: Sáhnout po "
@@ -308,12 +308,12 @@ GUIDES = [
     },
     {
         "slug": "skladovani-aplikace-teplota",
-        "seo_title": "Skladování a aplikace lepicích pásek | Teploty | ALFA IN",
+        "seo_title": "Jak skladovat lepicí pásky a při jaké teplotě lepit | ALFA IN",
         "title": "Skladování, aplikace a teplota",
         "h1": "Skladování, aplikace a teplotní odolnost lepicích pásek",
         "description": (
-            "Jak skladovat lepicí pásky (6–12 měsíců, 14–28 °C), proč je důležitý přítlak při lepení "
-            "a jak pásky drží od mrazíren po zámořské kontejnery."
+            "Skladujte pásky 6–12 měsíců při 14–28 °C. Proč je důležitý přítlak při lepení, "
+            "jak pásky drží v mrazu i v kontejneru a kdy lepidlo selže."
         ),
         "intro": (
             "Správné skladování a aplikace rozhodují o tom, jak páska drží v praxi – stejně jako výběr "

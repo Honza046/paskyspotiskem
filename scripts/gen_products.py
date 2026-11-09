@@ -1212,6 +1212,9 @@ def product_h1(cat, p):
 
 def product_seo_title(cat, p):
     """Unikatni <title> produktu s kategorii pro kontext."""
+    # CTR: lide hledaji „hit19“ – dej znacku na zacatek title.
+    if p.get('name') == 'BOPET páska ECO HIT19':
+        return 'HIT19 / ECO HIT19 | BOPET páska z recyklovaných PET lahví | ALFA IN'
     if cat['cat'] in SAMPLE_CATEGORIES:
         return p['name'] + ' s potiskem na míru | ALFA IN'
     return '%s | %s | ALFA IN' % (p['name'], cat['title'])

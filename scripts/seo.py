@@ -304,10 +304,17 @@ def category_meta_description(title: str, description: str) -> str:
 
 
 def product_meta_description(name: str, tagline: str, extra: str = '') -> str:
+    # CTR override pro produkt s vysokymi impressemi a 0 kliky (dotaz „hit19“).
+    if name == 'BOPET páska ECO HIT19':
+        text = (
+            'HIT19 (ECO HIT19): BOPET páska z min. 85 % recyklovaného PET. '
+            'Patentovaná eko páska, dvojnásobný návin a extrémní pevnost. Potisk na míru.'
+        )
+        return text if len(text) <= 158 else text[:155].rstrip(' ,.;') + '…'
     text = f'{name} na míru. {tagline}'
     if extra:
         text = f'{text} {extra}'
-    text = f'{text} Lepicí páska s potiskem a vlastním logem od výrobce.'
+    text = f'{text} Lepicí páska s potiskem a vlastním logem. Kalkulace zdarma.'
     if len(text) > 158:
         text = text[:155].rstrip(' ,.;') + '…'
     return text
