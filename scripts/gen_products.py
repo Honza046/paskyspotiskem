@@ -57,23 +57,23 @@ def slugify(s):
 # Category meta (cover, texts, properties, applications)
 # ---------------------------------------------------------------------------
 CATS = [
- {"title":"Udržitelné pásky","cat":"udrzitelne-pasky","h1":"Udržitelné pásky s potiskem","seo_title":"Udržitelné pásky s potiskem | Ekologické balicí pásky","cover":"Udržitelné Pásky/eco+50.jpg",
-  "description":"Inovativní obalová řešení vyrobená z recyklovaných materiálů s ohledem na minimální ekologickou stopu a podporu cirkulární ekonomiky.",
+ {"title":"Udržitelné pásky","cat":"udrzitelne-pasky","h1":"Udržitelné pásky s potiskem","seo_title":"Eko páska s potiskem | ECO+ 50–100 %, HIT19, NOPP+ | ALFA IN","cover":"Udržitelné Pásky/eco+50.jpg",
+  "description":"Eko pásky s potiskem: ECO+ 50/80/100 %, NOPP+, LOOPP, POLY+ a HIT19 z recyklovaného PET. ESG bez kompromisu v lepivosti.",
   "intro":"Udržitelná řada pásek je vyrobena z recyklovaných materiálů a navržena tak, aby minimalizovala dopad na životní prostředí. Pomáhá firmám plnit ESG cíle a budovat obraz zodpovědné značky bez kompromisů ve výkonu.",
   "properties":[("Recyklovaný obsah","Materiály s vysokým podílem recyklátu."),("Nižší uhlíková stopa","Šetrnější výroba a cirkulární přístup."),("Bez kompromisů","Ekologie při zachování spolehlivého lepení.")],
   "apps":["Firmy s ESG a udržitelnými cíli","Zelené balení pro e-shopy","Cirkulární obalové procesy","Budování zodpovědné značky"]},
- {"title":"BOPP pásky","cat":"bopp-pasky","h1":"BOPP pásky s potiskem","seo_title":"BOPP pásky s potiskem | Balicí pásky s logem","cover":"BOPP Tapes/BOPP_Cover.webp",
-  "description":"Nejrozšířenější průmyslové balicí pásky z biaxiálně orientovaného polypropylenu. Vynikají skvělou pevností v tahu a dlouhou životností.",
+ {"title":"BOPP pásky","cat":"bopp-pasky","h1":"BOPP pásky s potiskem","seo_title":"BOPP pásky s logem | HOT MELT i akryl | ALFA IN","cover":"BOPP Tapes/BOPP_Cover.webp",
+  "description":"BOPP pásky s logem pro expedici a e-shopy. HOT MELT i akryl, od 360/504 ks, rychlé lepení i tiché odvíjení.",
   "intro":"BOPP pásky jsou standardem pro každodenní balení ve výrobě, logistice i e-commerce. Fólie z biaxiálně orientovaného polypropylenu nabízí vynikající poměr ceny a výkonu, dostupnost v akrylovém i HOT MELT provedení a širokou škálu šířek a barev.",
   "properties":[("Vynikající poměr cena/výkon","Špičkový výkon za příznivou cenu pro každodenní průmyslové i e-commerce balení."),("Ekologická šetrnost","Neobsahuje prostředí škodlivé látky jako PVC."),("Fyzikální a chemická stálost","Stabilní vlastnosti fólie i lepidla při skladování, přepravě a běžném provozu.")],
   "apps":["Standardní uzavírání kartonů","Automatické balicí stroje","Expedice a skladová logistika","Potisk firemním logem a informacemi"]},
- {"title":"BOPET pásky","cat":"bopet-pasky","h1":"BOPET pásky s potiskem","seo_title":"BOPET pásky s potiskem | Polyesterové lepicí pásky","cover":"BOPET Tapes/BOPET_Cover.webp",
-  "description":"Prémiové polyesterové pásky s extrémní odolností proti roztržení, chemikáliím a teplotním výkyvům. Navržené pro nejnáročnější průmyslové aplikace.",
+ {"title":"BOPET pásky","cat":"bopet-pasky","h1":"BOPET pásky s potiskem","seo_title":"BOPET pásky | HIT19, AIT23, Tamper | ALFA IN","cover":"BOPET Tapes/BOPET_Cover.webp",
+  "description":"BOPET pásky HIT19, AIT23 a Tamper: extrémní pevnost, dvojnásobný návin a potisk logem. Pro náročné balení a ESG.",
   "intro":"BOPET pásky na bázi polyesterové fólie jsou určeny tam, kde běžné pásky nestačí. Zvládají vysoké teploty, agresivní chemické prostředí i mechanické namáhání a udrží si své vlastnosti i v extrémních podmínkách.",
   "properties":[("Teplotní odolnost","Stabilní výkon při vysokých i nízkých teplotách."),("Chemická odolnost","Odolává rozpouštědlům, olejům a agresivnímu prostředí."),("Odolnost proti roztržení","Pevná polyesterová fólie s minimální tažností.")],
   "apps":["Náročné průmyslové provozy","Maskování při práškovém lakování","Fixace v prostředí s vysokými teplotami","Elektrotechnika a specializovaná výroba"]},
- {"title":"Papírové pásky","cat":"papirove-pasky","h1":"Papírové pásky s potiskem","seo_title":"Papírové pásky s potiskem | Kraft pásky FSC","cover":"Papírové Pásky/Papírovácover-nobg.png",
-  "description":"Ekologické řešení pro elegantní balení s vysokou lepivostí, ideální pro čistý vzhled a plně recyklovatelné kartonové obaly.",
+ {"title":"Papírové pásky","cat":"papirove-pasky","h1":"Papírové pásky s potiskem","seo_title":"Papírové pásky s potiskem | FSC, recyklace s kartonem | ALFA IN","cover":"Papírové Pásky/Papírovácover-nobg.png",
+  "description":"Papírové FSC pásky s potiskem: KH80, C660–C690. Recyklace s kartonem, hotmelt lepivost, ideální pro e-shopy.",
   "intro":"Papírové lepicí pásky spojují spolehlivé lepení s maximální ekologickou šetrností. Díky papírovému nosiči jsou plně recyklovatelné společně s kartonem a představují elegantní, čistě vypadající řešení pro firmy, které dbají na udržitelnost i vizuální dojem zásilek.",
   "series_note":"C660, C680, C680R, C680RT a C690 jsou dostupné pro ruční i strojové balení a vyrábějí se z papíru FSC Mix Credit. Všechny tyto typy včetně C780 lze potisknout (až 4 barvy). C680 a C680R jsou dostupné také v bílé barvě. FSC® licence: FSC-C159046.",
   "param_hints":[
@@ -1210,13 +1210,25 @@ def product_h1(cat, p):
         return p['name'] + ' s potiskem'
     return p['name']
 
+PRODUCT_SEO_TITLES = {
+    'BOPET páska ECO HIT19': 'HIT19 / ECO HIT19 | BOPET páska z recyklovaných PET lahví | ALFA IN',
+    'BOPP páska HOT MELT': 'HOT MELT páska s potiskem | rychlé lepení ve skladu | ALFA IN',
+    'BOPP páska Akryl': 'BOPP páska Akryl s potiskem | tiché odvíjení, UV | ALFA IN',
+    'BOPP páska Tamper Evident': 'Tamper Evident páska | VOID efekt + potisk logem | ALFA IN',
+    'BOPP páska TACK+': 'TACK+ páska | extrémní přilnavost HOT MELT | ALFA IN',
+    'BOPP páska EXTRA GLUE+': 'EXTRA GLUE+ páska | silnější akryl na náročný karton | ALFA IN',
+    'BOPET páska ECO HIT23': 'ECO HIT23 | silnější BOPET z recyklovaných PET lahví | ALFA IN',
+    'BOPET páska ATE23': 'ATE23 Tamper Evident | BOPET bezpečnostní páska | ALFA IN',
+}
+
+
 def product_seo_title(cat, p):
     """Unikatni <title> produktu s kategorii pro kontext."""
-    # CTR: lide hledaji „hit19“ – dej znacku na zacatek title.
-    if p.get('name') == 'BOPET páska ECO HIT19':
-        return 'HIT19 / ECO HIT19 | BOPET páska z recyklovaných PET lahví | ALFA IN'
+    name = p.get('name', '')
+    if name in PRODUCT_SEO_TITLES:
+        return PRODUCT_SEO_TITLES[name]
     if cat['cat'] in SAMPLE_CATEGORIES:
-        return p['name'] + ' s potiskem na míru | ALFA IN'
+        return p['name'] + ' s potiskem | ALFA IN'
     return '%s | %s | ALFA IN' % (p['name'], cat['title'])
 
 def product_ctas(cat, p):

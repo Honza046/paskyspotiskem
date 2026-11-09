@@ -24,12 +24,12 @@ esc = html.escape
 GUIDES = [
     {
         "slug": "pasky-s-potiskem",
-        "seo_title": "Pásky s potiskem na míru | Jak je vybrat | ALFA IN",
+        "seo_title": "Pásky s potiskem: jak vybrat materiál a lepidlo? | od 360 ks",
         "title": "Pásky s potiskem na míru",
         "h1": "Pásky s potiskem na míru",
         "description": (
-            "Jak vybrat pásku s potiskem na míru. Branding zásilek, volba mezi BOPP HOT MELT "
-            "a akrylem, papírové FSC i ECO+ varianty, minimální odběr a dodání do 4 týdnů."
+            "Jak vybrat pásku s potiskem: BOPP HOT MELT vs akryl, papír FSC i ECO+. "
+            "Od 360 ks, potisk až 10 barev, náhled zdarma a dodání do 4 týdnů."
         ),
         "intro": (
             "Hledáte potištěné lepicí pásky pro firmu, e-shop nebo sklad? Nabízíme řešení na míru přesně "
@@ -419,12 +419,12 @@ GUIDES = [
     },
     {
         "slug": "eco-plus-recyklovane-pasky",
-        "seo_title": "ECO+ a recyklované pásky | Udržitelné balení | ALFA IN",
+        "seo_title": "Eko páska: ECO+ 50, 80, 100 % vs HIT19 | srovnání | ALFA IN",
         "title": "ECO+ a recyklované pásky",
         "h1": "ECO+ a recyklované pásky s potiskem",
         "description": (
-            "Udržitelné pásky s potiskem. Řady ECO+ 50, 80 a 100, dále NOPP+ ISCC PLUS, LOOPP a POLY+, "
-            "AIRTAPE a ecoHIT. Bez kompromisů v pevnosti a lepivosti."
+            "Eko páska s potiskem: ECO+ 50/80/100 %, NOPP+, LOOPP, POLY+, AIRTAPE a HIT19. "
+            "Srovnání % recyklátu, pevnosti a lepivosti. Kalkulace zdarma."
         ),
         "intro": (
             "Udržitelná lepicí páska s potiskem neznamená kompromis v lepivosti ani pevnosti. Dnešní "
@@ -473,12 +473,12 @@ GUIDES = [
     },
     {
         "slug": "bezpecnostni-tamper-evident",
-        "seo_title": "Tamper Evident pásky | Bezpečnostní lepicí páska",
+        "seo_title": "Tamper Evident páska | VOID efekt + potisk logem | ALFA IN",
         "title": "Bezpečnostní Tamper Evident",
         "h1": "Bezpečnostní Tamper Evident pásky s potiskem",
         "description": (
-            "Bezpečnostní pásky Tamper Evident s potiskem. VOID efekt při neoprávněném otevření, branding zásilky "
-            "a ochrana elektroniky, kosmetiky i cenného zboží."
+            "Tamper Evident páska s potiskem: při odlepení zanechá VOID stopu. "
+            "Ochrana elektroniky, kosmetiky i cenného zboží + branding zásilky."
         ),
         "intro": (
             "Bezpečnostní páska Tamper Evident plní dvojí funkci – spolehlivě uzavře karton a zároveň "

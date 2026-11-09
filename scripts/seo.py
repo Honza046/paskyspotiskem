@@ -25,25 +25,25 @@ SITE_VERIFICATION = {
 SEO_MARKER_START = '<!-- seo:extra -->'
 SEO_MARKER_END = '<!-- /seo:extra -->'
 
-HOME_TITLE = 'Pásky s potiskem na míru | Lepicí pásky s logem | ALFA IN'
+HOME_TITLE = 'Pásky s potiskem | od 360 ks, potisk až 10 barev | ALFA IN'
 HOME_DESCRIPTION = (
-    'Dodáváme lepicí pásky s potiskem a vlastním logem pro firmy, e-shopy a sklady. '
-    'Potisk až 10 barev, odběr od 360 ks, vzorky zdarma a kalkulace po celé ČR.'
+    'Český dodavatel lepicích pásek s potiskem pro firmy, e-shopy a sklady. '
+    'Od 360 ks, potisk až 10 barev, dodání 3–4 týdny, vzorky a kalkulace zdarma.'
 )
-SORTIMENT_TITLE = 'Lepicí pásky s potiskem | Kompletní sortiment | ALFA IN'
+SORTIMENT_TITLE = 'Lepicí pásky s potiskem | BOPP, BOPET, papír, ECO+ | ALFA IN'
 SORTIMENT_DESCRIPTION = (
-    'Kompletní sortiment lepicích pásek s potiskem. BOPP, BOPET, papírové i udržitelné '
-    'pásky s vlastním logem. Vyberte materiál a poptejte pásku na míru.'
+    'Vyberte typ lepicí pásky s potiskem: BOPP, BOPET, papírové FSC i ECO+. '
+    '9 kategorií, vlastní logo, nezávazná kalkulace zdarma.'
 )
 GALLERY_TITLE = 'Galerie pásek s potiskem | Realizace a reference | ALFA IN'
 GALLERY_DESCRIPTION = (
     'Ukázky vyrobených lepicích pásek s potiskem. Loga firem, bezpečnostní pásky '
     'i vícebarevné tisky. Inspirace pro vaši pásku s logem na míru.'
 )
-FAQ_TITLE = 'Pásky s potiskem | Časté otázky a odpovědi | ALFA IN'
+FAQ_TITLE = 'FAQ: minimální odběr, cena a dodání pásky s potiskem | ALFA IN'
 FAQ_DESCRIPTION = (
-    'Odpovědi na časté otázky k páskám s potiskem. Minimální odběr, dodací lhůty, '
-    'rozdíl mezi HOT MELT a akrylem, technologie potisku a vzorky zdarma.'
+    '360 ks, 3–4 týdny dodání, HOT MELT vs akryl, potisk až 10 barev a vzorky zdarma. '
+    'Odpovědi na nejčastější otázky k páskám s logem.'
 )
 
 
@@ -297,24 +297,51 @@ def product_schema(name: str, description: str, path: str, image_path: str) -> d
 
 
 def category_meta_description(title: str, description: str) -> str:
-    text = f'{title} na míru s vlastním logem. {description}'
+    # CTR: description napřed (benefit), bez generického „na míru…“ prefixu.
+    text = (description or title).strip()
+    if 'kalkulace' not in text.lower() and len(text) < 130:
+        text = f'{text} Nezávazná kalkulace zdarma.'
     if len(text) > 158:
         text = text[:155].rstrip(' ,.;') + '…'
     return text
 
 
+# CTR overrides: benefit / dotaz v popisu pred useknutim.
+PRODUCT_META_OVERRIDES = {
+    'BOPET páska ECO HIT19': (
+        'HIT19 (ECO HIT19): BOPET páska z min. 85 % recyklovaného PET. '
+        'Patentovaná eko páska, dvojnásobný návin a extrémní pevnost. Potisk na míru.'
+    ),
+    'BOPP páska HOT MELT': (
+        'HOT MELT páska: okamžitá přilnavost i ve skladu a chladu. '
+        'Potisk logem od 504 ks, vhodné pro e-shopy i automatické linky. Kalkulace zdarma.'
+    ),
+    'BOPP páska Akryl': (
+        'Akrylová BOPP páska: tiché odvíjení a UV odolnost pro dlouhodobé skladování. '
+        'Potisk logem od 360 ks. Kalkulace zdarma.'
+    ),
+    'BOPP páska Tamper Evident': (
+        'Tamper Evident páska: při odlepení zanechá VOID stopu. '
+        'Ochrana zásilek + potisk vlastním logem. Kalkulace zdarma.'
+    ),
+    'BOPET páska ECO HIT23': (
+        'ECO HIT23: silnější BOPET z 90 % recyklovaných PET lahví. '
+        'Extrémní pevnost, dvojnásobný návin, potisk na míru. Kalkulace zdarma.'
+    ),
+}
+
+
 def product_meta_description(name: str, tagline: str, extra: str = '') -> str:
-    # CTR override pro produkt s vysokymi impressemi a 0 kliky (dotaz „hit19“).
-    if name == 'BOPET páska ECO HIT19':
-        text = (
-            'HIT19 (ECO HIT19): BOPET páska z min. 85 % recyklovaného PET. '
-            'Patentovaná eko páska, dvojnásobný návin a extrémní pevnost. Potisk na míru.'
-        )
+    if name in PRODUCT_META_OVERRIDES:
+        text = PRODUCT_META_OVERRIDES[name]
         return text if len(text) <= 158 else text[:155].rstrip(' ,.;') + '…'
-    text = f'{name} na míru. {tagline}'
+    # Benefit (tagline) napřed – Google usekava konec, ne zacatek.
+    text = tagline.strip()
+    if text and not text.endswith('.'):
+        text += '.'
+    text = f'{text} {name} s potiskem logem. Kalkulace zdarma.'
     if extra:
         text = f'{text} {extra}'
-    text = f'{text} Lepicí páska s potiskem a vlastním logem. Kalkulace zdarma.'
     if len(text) > 158:
         text = text[:155].rstrip(' ,.;') + '…'
     return text

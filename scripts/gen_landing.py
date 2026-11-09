@@ -705,10 +705,10 @@ PAGES = [
         "slug": "bezpecnostni-pasky-proti-kradezi",
         "nav": "Bezpečnostní pásky",
         "h1": "Bezpečnostní pásky proti krádeži zásilek",
-        "seo_title": "Bezpečnostní pásky proti krádeži | Tamper Evident",
+        "seo_title": "Tamper Evident páska proti krádeži | VOID + logo | ALFA IN",
         "description": (
-            "Bezpečnostní pásky Tamper Evident s potiskem. Při odlepení zanechají viditelnou stopu, "
-            "takže neoprávněné otevření zásilky nelze zamaskovat. Ochrana cenného zboží."
+            "Tamper Evident páska s potiskem: při odlepení zanechá viditelnou VOID stopu. "
+            "Ochrana cenného zboží a branding zásilky. Kalkulace zdarma."
         ),
         "intro": (
             "Pokud posíláte cenné zboží, potřebujete poznat, jestli s balíkem někdo manipuloval. "
